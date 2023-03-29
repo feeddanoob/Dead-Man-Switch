@@ -56,6 +56,15 @@ namespace DMS
             }
         }
 
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            if(Scribe.mode == LoadSaveMode.PostLoadInit)
+            {
+                this.Drawer?.renderer?.graphics.SetAllGraphicsDirty();
+            }
+        }
+
         public override void Draw()
         {
             base.Draw();
