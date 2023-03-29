@@ -155,7 +155,7 @@ namespace DMS
                 workingEquipmentList.AddRange(SelPawnForGear.apparel.WornApparel.Where((Apparel x) => x.def.apparel.layers.Contains(ApparelLayerDefOf.Belt)));
                 foreach (Thing workingEquipment in workingEquipmentList)
                 {
-                    DrawThingRow(ref curY, viewRect.width, workingEquipment);
+                    DrawThingRow(ref curY, viewRect.width, workingEquipment, true);
                 }
             }
 
@@ -168,7 +168,7 @@ namespace DMS
                                          orderby ap.def.apparel.bodyPartGroups[0].listOrder descending
                                          select ap)
                 {
-                    DrawThingRow(ref curY, viewRect.width, item);
+                    DrawThingRow(ref curY, viewRect.width, item, true);
                 }
             }
 
