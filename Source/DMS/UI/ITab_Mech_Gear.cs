@@ -65,17 +65,12 @@ namespace DMS
                     return false;
                 }
 
-                if (selPawnForGear.Faction != Faction.OfPlayer && !selPawnForGear.IsPrisonerOfColony)
+                if (selPawnForGear.Faction != Faction.OfPlayer)
                 {
                     return false;
                 }
 
-                if (selPawnForGear.IsPrisonerOfColony && selPawnForGear.Spawned && !selPawnForGear.Map.mapPawns.AnyFreeColonistSpawned)
-                {
-                    return false;
-                }
-
-                if (selPawnForGear.IsPrisonerOfColony && (PrisonBreakUtility.IsPrisonBreaking(selPawnForGear) || (selPawnForGear.CurJob != null && selPawnForGear.CurJob.exitMapOnArrival)))
+                if (selPawnForGear.IsPrisonerOfColony)
                 {
                     return false;
                 }
@@ -88,12 +83,7 @@ namespace DMS
         {
             get
             {
-                if (CanControl)
-                {
-                    return SelPawnForGear is HumanlikeMech && SelPawnForGear.Faction != null && SelPawnForGear.Faction.IsPlayer;
-                }
-
-                return false;
+                return SelPawnForGear is HumanlikeMech && CanControl;
             }
         }
 
