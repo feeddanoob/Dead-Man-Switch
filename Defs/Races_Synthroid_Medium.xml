@@ -100,17 +100,21 @@
     </comps>
   </ThingDef>
 
-  <ThingDef ParentName="DMS_BaseSynthroidRace">
+  <ThingDef ParentName="DMS_BaseSynthroidRace"><!-- 男性框架，性能平衡，體型1 -->
     <defName>DMS_Synthroid_Male</defName>
     <label>Synthroid Type-M</label>
     <description>A synthetic automatriod, capable to use human weapon and equipment. It is the product of the combination of biogenetic engineering and war industry.</description>
-
+    
     <statBases>
       <MarketValue>2000</MarketValue>
       <MoveSpeed>5</MoveSpeed>
       <BandwidthCost>2</BandwidthCost>
       <ControlTakingTime>30</ControlTakingTime>
     </statBases>
+    <race>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>1.2</baseHealthScale>
+    </race>
     <modExtensions>
       <li Class="DMS.HumanlikeMechExtension">
         <bodyTypeOverride>Male</bodyTypeOverride>
@@ -118,58 +122,122 @@
           <texPath>Things/Synthroid/Head/Head_Cubic</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.4</drawSize>
-        </headGraphic>
-        
+        </headGraphic>        
         <headOffset>(0,0,0.3)</headOffset>
       </li>
     </modExtensions>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseMechanoidKind">
-    <defName>DMS_SynthroidKind_Male</defName>
-    <label>Synthroid</label>
-    <race>DMS_Synthroid_Male</race>
-    <combatPower>150</combatPower>
-    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-    <apparelMoney>350~600</apparelMoney>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-      <li>IndustrialAdvanced</li>
-      <li>IndustrialMilitaryBasic</li>
-      <li>BeltDefensePop</li>
-    </apparelTags>
-    <aiAvoidCover>false</aiAvoidCover>
-    <canStrip>true</canStrip>
-    <allowInMechClusters>false</allowInMechClusters>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Synthroid/Body/Synthroid_Male</texPath>
+  <ThingDef ParentName="DMS_BaseSynthroidRace"><!-- 胖框架， 速度最慢，攻擊也不高，體型1.4 -->
+    <defName>DMS_Synthroid_Round</defName>
+    <label>Synthroid Type-R</label>
+    <description>A synthetic automatriod, capable to use human weapon and equipment. It is the product of the combination of biogenetic engineering and war industry.</description>
+    
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MoveSpeed>4.5</MoveSpeed>
+      <BandwidthCost>2</BandwidthCost>
+      <ControlTakingTime>30</ControlTakingTime>
+    </statBases>
+    <race>
+      <baseBodySize>1.2</baseBodySize>
+      <baseHealthScale>1.6</baseHealthScale>
+    </race>
+    <modExtensions>
+      <li Class="DMS.HumanlikeMechExtension">
+        <bodyTypeOverride>Fat</bodyTypeOverride>
+        <headGraphic>
+          <texPath>Things/Synthroid/Head/Head_Cubic</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.4</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.8, 0.6)</volume>
-          </shadowData>
-        </bodyGraphicData>
+        </headGraphic>        
+        <headOffset>(0,0,0.3)</headOffset>
       </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Synthroid/Body/Synthroid_Male</texPath>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="DMS_BaseSynthroidRace"><!-- 重型框架，速度稍慢，體型1.2 -->
+    <defName>DMS_Synthroid_Hulk</defName>
+    <label>Synthroid Type-H</label>
+    <description>A synthetic automatriod, capable to use human weapon and equipment. It is the product of the combination of biogenetic engineering and war industry.</description>
+    
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MoveSpeed>5.5</MoveSpeed>
+      <BandwidthCost>2</BandwidthCost>
+      <ControlTakingTime>30</ControlTakingTime>
+    </statBases>
+    <race>
+      <baseBodySize>1.2</baseBodySize>
+      <baseHealthScale>1.4</baseHealthScale>
+    </race>
+    <modExtensions>
+      <li Class="DMS.HumanlikeMechExtension">
+        <bodyTypeOverride>Hulk</bodyTypeOverride>
+        <headGraphic>
+          <texPath>Things/Synthroid/Head/Head_Cubic</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.4</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.8, 0.6)</volume>
-          </shadowData>
-        </bodyGraphicData>
+        </headGraphic>        
+        <headOffset>(0,0,0.35)</headOffset>
       </li>
-    </lifeStages>
-    <weaponMoney>9999~9999</weaponMoney>
-    <weaponTags>
-      <li>DMS_LMG</li>
-    </weaponTags>
-    <techHediffsChance>1</techHediffsChance>
-    <techHediffsMoney>9999~9999</techHediffsMoney>
-    <controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
-  </PawnKindDef>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="DMS_BaseSynthroidRace"><!-- 女性框架，移動速度與攻擊速度都較快，體型0.8 -->
+    <defName>DMS_Synthroid_Female</defName>
+    <label>Synthroid Type-F</label>
+    <description>A synthetic automatriod, capable to use human weapon and equipment. It is the product of the combination of biogenetic engineering and war industry.</description>
+    
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MoveSpeed>7</MoveSpeed>
+      <BandwidthCost>2</BandwidthCost>
+      <ControlTakingTime>30</ControlTakingTime>
+    </statBases>
+    <race>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>1.0</baseHealthScale>
+    </race>
+    <modExtensions>
+      <li Class="DMS.HumanlikeMechExtension">
+        <bodyTypeOverride>Female</bodyTypeOverride>
+        <headGraphic>
+          <texPath>Things/Synthroid/Head/Head_Cubic</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+        </headGraphic>        
+        <headOffset>(0,0,0.25)</headOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="DMS_BaseSynthroidRace"><!-- 纖細框架，移動速度更快，體型0.6 -->
+    <defName>DMS_Synthroid_Thin</defName>
+    <label>Synthroid Type-T</label>
+    <description>A synthetic automatriod, capable to use human weapon and equipment. It is the product of the combination of biogenetic engineering and war industry.</description>
+    
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MoveSpeed>8</MoveSpeed>
+      <BandwidthCost>2</BandwidthCost>
+      <ControlTakingTime>30</ControlTakingTime>
+    </statBases>
+    <race>
+      <baseBodySize>0.8</baseBodySize>
+      <baseHealthScale>0.8</baseHealthScale>
+    </race>
+    <modExtensions>
+      <li Class="DMS.HumanlikeMechExtension">
+        <bodyTypeOverride>Thin</bodyTypeOverride>
+        <headGraphic>
+          <texPath>Things/Synthroid/Head/Head_Cubic</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+        </headGraphic>        
+        <headOffset>(0,0,0.25)</headOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
  
 </Defs>

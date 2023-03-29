@@ -349,6 +349,7 @@
 		</weaponClasses>		
 		<weaponTags>
 			<li>SniperRifle</li>
+			<li>DMS_IndustrialGunAdvanced</li>
 		</weaponTags>		
 		
 		<graphicData>
@@ -422,7 +423,7 @@
 		  <li>LongShots</li>
 		</weaponClasses>
 		<weaponTags>
-			<li>GunGrenadeLauncher</li>
+			<li>DMS_GunGrenadeLauncher</li>
 			<li>GunHeavy</li>
 		</weaponTags>
 		
@@ -496,9 +497,8 @@
 		  <li>LongShots</li>
 		</weaponClasses>
 		<weaponTags>
-			<li>GunGrenadeLauncher</li>
-			<li>GunHeavy</li>
-			<li>GrenadeEMP</li>
+			<li>DMS_IndustrialGunAdvanced</li>
+			<li>DMS_GunGrenadeLauncher</li>
 		</weaponTags>
 		
 		<graphicData>
@@ -594,6 +594,7 @@
 		</weaponClasses>
 		<weaponTags>
 			<li>SniperRifle</li>
+			<li>DMS_IndustrialGunAdvanced</li>
 		</weaponTags>
 		
 		<graphicData>
@@ -660,7 +661,7 @@
 		<label>military LMG</label>
 		<description>Supressive weapon chambered in full power rifle round.</description>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
+			<li>DMS_IndustrialGunAdvanced</li>
 			<li>DMS_LMG</li>
 		</weaponTags>
 		
@@ -748,7 +749,7 @@
 			<li>Ranged</li>
 		</weaponClasses>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
+			<li>DMS_IndustrialGunAdvanced</li>
 		</weaponTags>
 		
 		<graphicData>
@@ -837,6 +838,7 @@
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<weaponTags>
+			<li>DMS_MeleeWeapon</li>
 		</weaponTags>
 		<costStuffCount>100</costStuffCount>
 		<statBases>

@@ -147,6 +147,14 @@
                   <def>SmellSensor</def>
                   <coverage>0.1</coverage>
                 </li>
+                <li>
+                  <def>DMS_ChestBrain</def>
+                  <coverage>0.05</coverage>
+                  <groups>
+                    <li>UpperHead</li>
+                  </groups>
+                  <depth>Inside</depth>
+                </li>
               </parts>
             </li>
             <li>
@@ -262,14 +270,6 @@
             <li>Torso</li>
           </groups>
           <depth>Outside</depth>
-        </li>
-        <li>
-          <def>DMS_ChestBrain</def>
-          <coverage>0.05</coverage>
-          <groups>
-            <li>Torso</li>
-          </groups>
-          <depth>Inside</depth>
         </li>
         <li>
           <def>DMS_SynthicPlate</def>
