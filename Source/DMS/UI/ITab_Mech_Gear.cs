@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+Modified from RimWorld.ITab_Pawn_Gear
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld.Planet;
@@ -206,27 +210,21 @@ namespace DMS
             Rect rect = new Rect(0f, y, width, 28f);
             Widgets.InfoCardButton(rect.width - 24f, y, thing);
             rect.width -= 24f;
-            bool flag = false;
+            bool locked = false;
             if (CanControl && (inventory || CanControlColonist || (SelPawnForGear.Spawned && !SelPawnForGear.Map.IsPlayerHome)))
             {
                 Rect rect2 = new Rect(rect.width - 24f, y, 24f, 24f);
-                bool flag2 = false;
+                bool hasQuestLock = false;
                 if (SelPawnForGear.IsQuestLodger())
                 {
-                    flag2 = inventory || !EquipmentUtility.QuestLodgerCanUnequip(thing, SelPawnForGear);
+                    hasQuestLock = inventory || !EquipmentUtility.QuestLodgerCanUnequip(thing, SelPawnForGear);
                 }
 
-                bool flag3 = !inventory && SelPawnForGear.kindDef.destroyGearOnDrop;
-                Apparel apparel;
-                bool flag4 = (apparel = thing as Apparel) != null && SelPawnForGear.apparel != null && SelPawnForGear.apparel.IsLocked(apparel);
-                flag = flag2 || flag4 || flag3;
+                bool isDestroyOnDrop = !inventory && SelPawnForGear.kindDef.destroyGearOnDrop;
+                locked = hasQuestLock || isDestroyOnDrop;
                 if (Mouse.IsOver(rect2))
                 {
-                    if (flag4)
-                    {
-                        TooltipHandler.TipRegion(rect2, "DropThingLocked".Translate());
-                    }
-                    else if (flag2)
+                    if (hasQuestLock)
                     {
                         TooltipHandler.TipRegion(rect2, "DropThingLodger".Translate());
                     }
@@ -236,9 +234,9 @@ namespace DMS
                     }
                 }
 
-                Color color = (flag ? Color.grey : Color.white);
-                Color mouseoverColor = (flag ? color : GenUI.MouseoverColor);
-                if (Widgets.ButtonImage(rect2, TexButton.Drop, color, mouseoverColor, !flag) && !flag)
+                Color color = (locked ? Color.grey : Color.white);
+                Color mouseoverColor = (locked ? color : GenUI.MouseoverColor);
+                if (Widgets.ButtonImage(rect2, TexButton.Drop, color, mouseoverColor, !locked) && !locked)
                 {
                     Action action = delegate
                     {
@@ -295,7 +293,7 @@ namespace DMS
                 text += ", " + "ApparelForcedLower".Translate();
             }
 
-            if (flag)
+            if (locked)
             {
                 text += " (" + "ApparelLockedLower".Translate() + ")";
             }
