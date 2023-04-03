@@ -13,7 +13,20 @@ namespace DMS
 {
     public class HumanlikeMech : Pawn
     {
+        private PawnDownedWiggler _wiggler;
         public HumanlikeMechExtension Extension { get; private set; }
+        public PawnDownedWiggler Wiggler
+        {
+            get
+            {
+                if (_wiggler == null)
+                {
+                    _wiggler = new PawnDownedWiggler(this);
+                }
+                return _wiggler;
+            }
+        }
+        
         public Graphic_Multi HeadGraphic
         {
             get
