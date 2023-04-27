@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Base -->
+  <ThingDef Name="BaseAutomatroidRace" ParentName="BaseMechanoid" Abstract="True">
+    <statBases>
+      <MoveSpeed>4.7</MoveSpeed>
+      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <MarketValue>1200</MarketValue>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">12</ControlTakingTime>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.33</MechEnergyLossPerHP>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge>
+      <WorkSpeedGlobal MayRequire="Ludeon.Rimworld.Biotech">0.5</WorkSpeedGlobal>
+    </statBases>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <baseBodySize>1</baseBodySize>
+      <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">NamerMech</nameGenerator>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
+      <thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>
+    </race>
+    <butcherProducts>
+      <Steel>10</Steel>
+    </butcherProducts>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef Name="BaseAutomatroidKind" ParentName="BaseMechanoidKind" Abstract="True">
+    <defaultFactionType>Mechanoid</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
+    <canStrip>false</canStrip>
+    <minGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</minGenerationAge>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <weaponMoney>9999~9999</weaponMoney>
+    <combatPower>10</combatPower>
+    <weaponTags></weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <controlGroupPortraitZoom>1.8</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+    <!-- T0 DMS_MechBasis--> 
+  <!-- 垃圾桶 -->
+  <ThingDef ParentName="BaseAutomatroidRace">
+    <defName>DMS_Mech_TrashBin</defName>
+    <label>trash bin</label>
+    <description>圓筒狀的服務用機器人,常見於中寰世界的現代化都市中用來提供道路清潔,快遞與送餐到府服務,以及在應急事件發生時第一時間到場協助疏散與維護秩序.</description>
+    <statBases>
+      <CleaningSpeed>0.85</CleaningSpeed>
+    </statBases>
+    <race>
+      <body>DMS_TrashBin</body>
+      <baseBodySize>1</baseBodySize>
+      <mechWeightClass>Light</mechWeightClass>
+      <mechEnabledWorkTypes>
+        <li>PlantCutting</li>
+        <li>Hauling</li>
+        <li>Cleaning</li>
+        <li>Firefighter</li>
+      </mechEnabledWorkTypes>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_TrashBin</defName>
+    <label>trash bin</label>
+    <race>DMS_Mech_TrashBin</race>
+    <isFighter>false</isFighter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/trashBin</texPath>
+          <maskPath>Things/None</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  <!-- 武裝四軸 -->
+  <!-- 馱馬 -->
+
+    <!-- T1 DMS_DeadMansSwitch-->
+  <!-- 獵犬 -->
+  <!-- 士兵 -->
+  <!-- 機槍馬車 -->
+  <!-- 戰鬥框架 DMS_BattleFrame-->
+
+    <!-- T2 DMS_Automatroid-->
+  <!-- 座狼 DMS_Hybird-->
+  <!-- 猿人 -->
+
+    <!-- T3 DMS_HumanoidEngineering-->
+  <!-- 火槍手 -->
+  <!-- 塔盾手 -->
+  <!-- 浪人 -->
+  <!-- 戰鬥步行者 -->
+
+    <!-- T4 DMS_HeavyMachines-->
+  <!-- 駭蜥 -->
+  <!-- 象龜 -->
+  <!-- 射水魚 -->
+  <!-- 攀行者 -->
+
+
+
+
+  <!-- lady -->
+  <ThingDef ParentName="BaseAutomatroidRace">
+    <defName>DMS_Automatroid_lady</defName>
+    <label>lady</label>
+    <description>todo</description>
+    <thingClass>DMS.HumanlikeMech</thingClass>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MoveSpeed>5</MoveSpeed>
+      <BandwidthCost>2</BandwidthCost>
+      <ControlTakingTime>30</ControlTakingTime>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+    <race>
+      <makesFootprints>true</makesFootprints>
+      <body>DMS_Humanoid_TypeB</body>
+      <mechEnabledWorkTypes>
+        <li>Hauling</li>
+        <li>Construction</li>
+        <li>PlantCutting</li>
+        <li>Growing</li>
+        <li>Cleaning</li>
+        <li>Firefighter</li>
+        <li>Doctor</li>
+      </mechEnabledWorkTypes>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Legionary_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Legionary_Death</soundDeath>
+          <soundCall>Pawn_Mech_Legionary_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Legionary_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Legionary_Death</soundDeath>
+          <soundCall>Pawn_Mech_Legionary_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+    <comps>
+      <li Class="DMS.CompProperties_MechApparel">
+
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="DMS.HumanlikeMechExtension">
+        <bodyTypeOverride>Female</bodyTypeOverride>
+        <headGraphic>
+          <texPath>Things/Automatroid/seperated/ladyHead</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+        </headGraphic>
+        <headOffset>(0,0,0.22)</headOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_AutomatroidKind_lady</defName>
+    <label>lady</label>
+    <race>DMS_Automatroid_lady</race>
+    <combatPower>150</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/seperated/lady</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/seperated/lady</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>DMS_LMG</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+</Defs>

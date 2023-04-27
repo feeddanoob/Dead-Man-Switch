@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ResearchTabDef>
+    <defName>DMS_Tab</defName>
+    <label>DMS Engineering</label>
+  </ResearchTabDef>
+
+  <ResearchProjectDef Name="DMS_BaseTech" Abstract="True">
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <tab>DMS_Tab</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_Material</defName>
+    <label>material engineering</label>
+    <description>"A perfect material can be calculate through scientific methods" this is one of the breakthough mankind are ever achived.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>BiofuelRefining</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.50</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_Plasfiber</defName>
+    <label>artificial fiber</label>
+    <description>unlock the production of artificial fabrics,these man-made fabric has their pros and cons.</description>
+    <baseCost>1250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DMS_Material</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1.15</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_MechBasis</defName>
+    <label>mecha gear</label>
+    <description>"mecha gear"is a tern that cover those near future machining design pattern, was originally satirize exaggerated designs that do not correspond to reality. \n\n However, advanced materials that have been invented and improved over millennia have become the basis for bringing these designs to life.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DMS_Material</li>
+      <li>Machining</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- T1 -->
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_DeadMansSwitch</defName>
+    <label>Dead Man's Switch</label>
+    <description>The Dead Man's Switch is a mechanical safety mechanism intended to self-terminate device active when the operator becomes incapacitated. \n\n Before human seek into space, they discovered this machanism will eventually made artificial intelligence understand...the meaning of death...\n this discover lead humanity to new era of history....\n\n an era of those fifth level ai.</description>
+    <baseCost>1250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>MicroelectronicsBasics</li>
+      <li>DMS_MechBasis</li>
+    </prerequisites>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_Atrifuscle</defName>
+    <label>artificial muscle</label>
+    <description>atrifuscle is a type of prosthetic material made by genetically engineered sauromorph muscle bundles, and soon... Arms dealers realized the future of mechanical-biological hybrid weapons.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SterileMaterials</li>
+      <li>DMS_Plasfiber</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>1.15</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_Prosthetic</defName>
+    <label>military prosthetic</label>
+    <description>The predecessor of the mechanical soldier project, mechanical prosthetic are for disabled soldiers, is cheap and durable. However, due to the consideration of durability and mass production, its work efficiency is not as good as the original one.</description>
+    <baseCost>1250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Prosthetics</li>
+      <li>DMS_MechBasis</li>
+    </prerequisites>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>2.90</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_EquipmentBasis</defName>
+    <label>pioneer equipment</label>
+    <description>uniform and equipment designed for human, mainly for colonization purpose include for survival specialist, dropcraft crew and Biotoxicity Handling Squad.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>ComplexClothing</li>
+      <li>Gunsmithing</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.15</researchViewY>
+  </ResearchProjectDef> 
+
+  <!-- T2 -->
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_OrganSurgery</defName>
+    <label>organ surgery</label>
+    <description>Humanity gave up a lot in that long war... even if it can be made up later, there is something lost forever.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DMS_Prosthetic</li>
+      <li>SterileMaterials</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>2.90</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_Automatroid</defName>
+    <label>automatroid basis</label>
+    <description>because they are not just a weapon but weapon that is capable to eliminate target by themselves, these robots was such a topic and own a name to them "automatroid" \n\n Such a morally outrageous weapon should never acceptable at normal, but since it is widely used by nations during ww3 so it has become a mundane part of the battlefield..</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DMS_DeadMansSwitch</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>4.75</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_EquipmentAdvanced</defName>
+    <label>defence equipment</label>
+    <description>equipment designed for human and automatroid, mainly for colony defence and riot purpose.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>ComplexClothing</li>
+      <li>Gunsmithing</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.15</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_EquipmentElite</defName>
+    <label>military equipment</label>
+    <description>equipment designed for automatroid which too heavy to operated by humankind, mainly for military purpose.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>ComplexClothing</li>
+      <li>Gunsmithing</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.15</researchViewY>
+  </ResearchProjectDef> 
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_EquipmentHeavy</defName>
+    <label>heavy weaponry</label>
+    <description>heavy equipment designed for automatroid which even too heavy to be operated by some small automatroid, mainly for military purpose.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>ComplexClothing</li>
+      <li>Gunsmithing</li>
+    </prerequisites>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.15</researchViewY>
+  </ResearchProjectDef> 
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_BattleFrame</defName>
+    <label>battle friend</label>
+    <description>Due to the ages, we have been unable to know the correct name supposed to be "battle frame" or "battle friend", but anyway these are type of automatic exoskeleton that can be a frame of equipment or friend in combat.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DMS_Automatroid</li>
+    </prerequisites>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>4.75</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_Hybird</defName>
+    <label>Hybird Engineering</label>
+    <description>The establishment of biological-mechanical hybrid technology was during World War three, where mercenary who was soldiers in countries whrere involved in the war established an armed state with military personnel,using drone and hybrid prosthetic helping the retired wounded return to battle. \n\n And soon, countries military realized the influence of bio-mechanical hybrids on modern warfare and rushed to armed in their armies.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DMS_DeadMansSwitch</li>
+      <li>DMS_Atrifuscle</li>
+    </prerequisites>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>1.15</researchViewY>
+  </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_Bionics</defName>
+    <label>Biosynthetic</label>
+    <description>with the advance of robotic and bionic engineering, making bionic with biological-mechanical hybrid technology has became possible.</description>
+    <baseCost>1250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DMS_Hybird</li>
+      <li>Bionics</li>
+    </prerequisites>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>1.75</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- T3 -->
+  
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_Hypothesis</defName>
+    <label>in short hypothesis</label>
+    <description>after the discover of The Dead man's switch, yánzhī Jiǎn an AI algorithm engineer proposed a hypothetical solution to the halting problem...\n\n And around this conjecture, we seem to be getting closer to the so-called omnipotent machinery.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DMS_DeadMansSwitch</li>
+      <li>MultiAnalyzer</li>
+    </prerequisites>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_HumanoidEngineering</defName>
+    <label>humanoid engineering</label>
+    <description>during war, automatroid with human shapes are proven to be a good design where the ergonomics and psychological suggestion are work on them.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>DMS_BattleFrame</li>
+      <li>DMS_Hypothesis</li>
+    </prerequisites>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_Synthroid</defName>
+    <label>Next-Gen weaponry(WIP)</label>
+    <description>the weapon development around mechanical-biological hybrid continued until the Fourth World War, and it reach to the height a man can thought before ...synthetic humanoid.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>DMS_Hybird</li>
+      <li>DMS_HumanoidEngineering</li>
+    </prerequisites>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>1.10</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

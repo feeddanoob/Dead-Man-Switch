@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_TaticalPistol</defName>
 		<label>military tactical pistol</label>
 		<description>Defensive firearm with refined manufacture process and additional tactical attachments, offers better accuracy than comparable weapons.</description>
@@ -28,7 +28,10 @@
 			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>Gunsmithing</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>BlowbackOperation</li>
+      			<li>DMS_EquipmentElite</li>
+    		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>35</Steel>
@@ -68,7 +71,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_SMG</defName>
 		<label>Military SMG</label>
 		<description>Steel-cast mass-produced drum-fed submachinegun. Despite being named as SMG, it has the weight and fire sustainability of a light machinegun.</description>
@@ -96,7 +99,10 @@
 		  <RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>BlowbackOperation</li>
+      			<li>DMS_EquipmentElite</li>
+    		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>55</Steel>
@@ -138,7 +144,92 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
+		<defName>DMS_RiotShotgun</defName>
+		<label>riot shotgun</label>
+		<description>pump-action shotgun manufactured with stamped component.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<weaponTags>
+			<li>DMS_IndustrialGun</li>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		
+		<graphicData>
+			<texPath>Things/Weapons/DMS_RiotShogun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.3,1.3)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>31000</WorkToMake>
+			<Mass>5.5</Mass>
+			<AccuracyTouch>0.57</AccuracyTouch>
+			<AccuracyShort>0.64</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+		    <researchPrerequisites>
+      			<li>Gunsmithing</li>
+      			<li>DMS_EquipmentAdvanced</li>
+    		</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>65</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>DMS_Bullet_RiotShotgun</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>19.9</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Shot_Shotgun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				  <li>Blunt</li>
+				  <li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>DMS_Bullet_RiotShotgun</defName>
+    <label>riot beanbag</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Blunt</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <stoppingPower>7</stoppingPower>
+      <armorPenetrationBase>0.14</armorPenetrationBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_AssaultShotgun</defName>
 		<label>military assault shotgun</label>
 		<description>Automatic shotgun rapidly manufactured with stamped component.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
@@ -163,7 +254,10 @@
 			<RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>GasOperation</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>GasOperation</li>
+      			<li>DMS_EquipmentElite</li>
+    		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>85</Steel>
@@ -205,7 +299,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_AssaultRifle</defName>
 		<label>military assault rifle</label>
 		<description>Full metal assault weapon made for fast production, with a picatinny rail as long as the gun itself for all your tacticool Christmass tree needs.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
@@ -230,7 +324,10 @@
 			<RangedWeapon_Cooldown>1.30</RangedWeapon_Cooldown>
 		</statBases>		
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>PrecisionRifling</li>
+      			<li>DMS_EquipmentElite</li>
+    		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>80</Steel>
@@ -272,13 +369,13 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_AssaultPiercer</defName>
 		<label>military assault piercer</label>
 		<description>Submachinegun sized automatic weapon chambered in anti-materiel rounds, capable of defeating heavy armor at close range. Refered as piercer due to lack of comparable weapon in human arsenal.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponTags>
-			  <li>IndustrialGunAdvanced</li>
-			  <li>AssaultRifle</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>AssaultRifle</li>
 		</weaponTags>
 		
 		<graphicData>
@@ -297,7 +394,10 @@
 			<WorkToMake>45000</WorkToMake>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>PrecisionRifling</li>
+      			<li>DMS_EquipmentElite</li>
+    		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>100</Steel>
@@ -339,9 +439,9 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_AntiMaterialRifle</defName>
-		<label>military anti-material rifle</label>
+		<label>anti-material rifle</label>
 		<description>High caliber sniper rifle made to be used by MS-4E Jadger automatroids to snipe armored target at long range.</description>
 		<weaponClasses>
 		  <li>RangedHeavy</li>
@@ -372,7 +472,10 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>PrecisionRifling</li>
+      			<li>DMS_EquipmentHeavy</li>
+    		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>110</Steel>
@@ -414,7 +517,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_AutomaticGrenadeLauncher</defName>
 		<label>automatic grenade launcher</label>
 		<description>Handheld automatic grenade launcher for clearing out clustered targets.</description>
@@ -442,7 +545,10 @@
 		  <MoveSpeed>-0.15</MoveSpeed>
 		</equippedStatOffsets>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>PrecisionRifling</li>
+      			<li>DMS_EquipmentElite</li>
+    		</researchPrerequisites>
 		</recipeMaker>		
 		<costList>
 			<Steel>140</Steel>
@@ -488,9 +594,9 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_SniperGrenadeLauncher</defName>
-		<label>military sniper grenade launcher</label>
+		<label>sniper grenade launcher</label>
 		<description>Precise grenade launcher designed to fit in anti-sniper role.</description>
 		<weaponClasses>
 		  <li>RangedHeavy</li>
@@ -516,7 +622,10 @@
 		  <MoveSpeed>-0.15</MoveSpeed>
 		</equippedStatOffsets>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>PrecisionRifling</li>
+      			<li>DMS_EquipmentAdvanced</li>
+    		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>145</Steel>
@@ -584,9 +693,9 @@
 	</ThingDef>
   
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_AntiWalkerRifle</defName>
-		<label>military anti-walker rifle</label>
+		<label>anti-walker cannon</label>
 		<description>Super heavy sniper cannon intended to penetrate the frontal armor of mechanoid combat units at extreme range.</description>
 		<weaponClasses>
 			<li>LongShots</li>
@@ -616,7 +725,10 @@
 		  <MoveSpeed>-0.25</MoveSpeed>
 		</equippedStatOffsets>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>PrecisionRifling</li>
+      			<li>DMS_EquipmentHeavy</li>
+    		</researchPrerequisites>
 		</recipeMaker>		
 		<costList>
 			<Steel>160</Steel>
@@ -656,7 +768,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_LightMachineGun</defName>
 		<label>military LMG</label>
 		<description>Supressive weapon chambered in full power rifle round.</description>
@@ -684,7 +796,10 @@
 		  <MoveSpeed>-0.15</MoveSpeed>
 		</equippedStatOffsets>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>GasOperation</li>
+      			<li>DMS_EquipmentElite</li>
+    		</researchPrerequisites>
 		</recipeMaker>		
 		<costList>
 			<Steel>100</Steel>
@@ -740,7 +855,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_HeavyMachineGun</defName>
 		<label>military HMG</label>
 		<description>heavy machine gun for mech soldier or infantry support platform.</description>
@@ -771,7 +886,10 @@
 			<MoveSpeed>-0.25</MoveSpeed>
 		</equippedStatOffsets>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>GasOperation</li>
+      			<li>DMS_EquipmentHeavy</li>
+    		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>165</Steel>
@@ -830,13 +948,13 @@
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>DMS_Machete</defName>
-		<label>longsword</label>
+		<label>machete</label>
 		<description>Designed to cut bushes and vines in jungle environment, yet equally capable of cutting human heads.</description>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Machete</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Industrial</techLevel>
 		<weaponTags>
 			<li>DMS_MeleeWeapon</li>
 		</weaponTags>

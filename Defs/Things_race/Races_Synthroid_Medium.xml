@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BaseAutomatroid" Name="DMS_BaseSynthroidRace" Abstract="True">
+    <thingClass>DMS.HumanlikeMech</thingClass>
+    <inspectorTabs Inherit="False">
+      <li>ITab_Pawn_Health</li>
+      <li>ITab_Pawn_Needs</li>
+      <li>ITab_Pawn_Character</li>
+      <li>ITab_Pawn_Training</li>
+      <li>ITab_Pawn_Social</li>
+      <li>ITab_Pawn_Guest</li>
+      <li>ITab_Pawn_Prisoner</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ITab_Pawn_Slave</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ITab_Pawn_Feeding</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ITab_Genes</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ITab_GenesPregnancy</li>
+      <li>ITab_Pawn_FormingCaravan</li>
+      <li>DMS.ITab_Mech_Gear</li>
+      <li>ITab_Pawn_Log</li>
+    </inspectorTabs>
+    <race>
+      <makesFootprints>true</makesFootprints>
+      <body>DMS_Synthroid</body>
+      <mechEnabledWorkTypes>
+        <li>Hauling</li>
+        <li>Construction</li>
+        <li>PlantCutting</li>
+        <li>Growing</li>
+        <li>Cleaning</li>
+        <li>Firefighter</li>
+        <li>Doctor</li>
+      </mechEnabledWorkTypes>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Legionary_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Legionary_Death</soundDeath>
+          <soundCall>Pawn_Mech_Legionary_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Legionary_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Legionary_Death</soundDeath>
+          <soundCall>Pawn_Mech_Legionary_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <comps>
+      <li Class="DMS.CompProperties_MechApparel"></li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="DMS_BaseSynthroidRace"><!-- 男性框架，性能平衡，體型1 -->
+    <defName>DMS_Synthroid_Male</defName>
+    <label>Synthroid Type-M</label>
+    <description>A synthetic automatriod, capable to use human weapon and equipment. It is the product of the combination of biogenetic engineering and war industry.</description>
+    
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MoveSpeed>5</MoveSpeed>
+      <BandwidthCost>2</BandwidthCost>
+      <ControlTakingTime>30</ControlTakingTime>
+    </statBases>
+    <race>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>1.2</baseHealthScale>
+    </race>
+    <modExtensions>
+      <li Class="DMS.HumanlikeMechExtension">
+        <bodyTypeOverride>Male</bodyTypeOverride>
+        <headGraphic>
+          <texPath>Things/Synthroid/Head/Head_Cubic</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+        </headGraphic>        
+        <headOffset>(0,0,0.3)</headOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="DMS_BaseSynthroidRace"><!-- 胖框架， 速度最慢，攻擊也不高，體型1.4 -->
+    <defName>DMS_Synthroid_Round</defName>
+    <label>Synthroid Type-R</label>
+    <description>A synthetic automatriod, capable to use human weapon and equipment. It is the product of the combination of biogenetic engineering and war industry.</description>
+    
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MoveSpeed>4.5</MoveSpeed>
+      <BandwidthCost>2</BandwidthCost>
+      <ControlTakingTime>30</ControlTakingTime>
+    </statBases>
+    <race>
+      <baseBodySize>1.2</baseBodySize>
+      <baseHealthScale>1.6</baseHealthScale>
+    </race>
+    <modExtensions>
+      <li Class="DMS.HumanlikeMechExtension">
+        <bodyTypeOverride>Fat</bodyTypeOverride>
+        <headGraphic>
+          <texPath>Things/Synthroid/Head/Head_Cubic</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+        </headGraphic>        
+        <headOffset>(0,0,0.3)</headOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="DMS_BaseSynthroidRace"><!-- 重型框架，速度稍慢，體型1.2 -->
+    <defName>DMS_Synthroid_Hulk</defName>
+    <label>Synthroid Type-H</label>
+    <description>A synthetic automatriod, capable to use human weapon and equipment. It is the product of the combination of biogenetic engineering and war industry.</description>
+    
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MoveSpeed>5.5</MoveSpeed>
+      <BandwidthCost>2</BandwidthCost>
+      <ControlTakingTime>30</ControlTakingTime>
+    </statBases>
+    <race>
+      <baseBodySize>1.2</baseBodySize>
+      <baseHealthScale>1.4</baseHealthScale>
+    </race>
+    <modExtensions>
+      <li Class="DMS.HumanlikeMechExtension">
+        <bodyTypeOverride>Hulk</bodyTypeOverride>
+        <headGraphic>
+          <texPath>Things/Synthroid/Head/Head_Cubic</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+        </headGraphic>        
+        <headOffset>(0,0,0.35)</headOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="DMS_BaseSynthroidRace"><!-- 女性框架，移動速度與攻擊速度都較快，體型0.8 -->
+    <defName>DMS_Synthroid_Female</defName>
+    <label>Synthroid Type-F</label>
+    <description>A synthetic automatriod, capable to use human weapon and equipment. It is the product of the combination of biogenetic engineering and war industry.</description>
+    
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MoveSpeed>7</MoveSpeed>
+      <BandwidthCost>2</BandwidthCost>
+      <ControlTakingTime>30</ControlTakingTime>
+    </statBases>
+    <race>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>1.0</baseHealthScale>
+    </race>
+    <modExtensions>
+      <li Class="DMS.HumanlikeMechExtension">
+        <bodyTypeOverride>Female</bodyTypeOverride>
+        <headGraphic>
+          <texPath>Things/Synthroid/Head/Head_Cubic</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+        </headGraphic>        
+        <headOffset>(0,0,0.25)</headOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="DMS_BaseSynthroidRace"><!-- 纖細框架，移動速度更快，體型0.6 -->
+    <defName>DMS_Synthroid_Thin</defName>
+    <label>Synthroid Type-T</label>
+    <description>A synthetic automatriod, capable to use human weapon and equipment. It is the product of the combination of biogenetic engineering and war industry.</description>
+    
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MoveSpeed>8</MoveSpeed>
+      <BandwidthCost>2</BandwidthCost>
+      <ControlTakingTime>30</ControlTakingTime>
+    </statBases>
+    <race>
+      <baseBodySize>0.8</baseBodySize>
+      <baseHealthScale>0.8</baseHealthScale>
+    </race>
+    <modExtensions>
+      <li Class="DMS.HumanlikeMechExtension">
+        <bodyTypeOverride>Thin</bodyTypeOverride>
+        <headGraphic>
+          <texPath>Things/Synthroid/Head/Head_Cubic</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+        </headGraphic>        
+        <headOffset>(0,0,0.25)</headOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+ 
+</Defs>

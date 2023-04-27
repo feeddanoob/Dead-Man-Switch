@@ -1,6 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="BaseMakeableGun">
+
+  <ThingDef Name="DMS_BaseMakeableGun" ParentName="BaseGun" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>DMS_TableMachinePrinter</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_KnuckledusterRevolver</defName>
 		<label>knuckleduster Revolver</label>
 		<description>Minature self-defense weapon commonly found on midworlds, barely takes up any space when folded. Accepts multiple calibers and may also used as a knuckle in a pinch.</description>
@@ -29,7 +43,10 @@
 			<WorkToMake>2000</WorkToMake>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>Gunsmithing</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>Gunsmithing</li>
+				<li>DMS_EquipmentBasis</li>
+    		</researchPrerequisites>
 		</recipeMaker>	
 		<costList>
 			<Steel>15</Steel>
@@ -69,7 +86,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_MassProduct_Pistiol</defName>
 		<label>Defensive pistol</label>
 		<description>Small caliber firearm used by non-combatants. While it lacks in armor penetration, it is made up with being able to fire the first shot faster than your enemy.</description>
@@ -115,7 +132,10 @@
 			</li>
 		</verbs>
 		<recipeMaker>
-			<researchPrerequisite>Gunsmithing</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>BlowbackOperation</li>
+      			<li>DMS_EquipmentAdvanced</li>
+    		</researchPrerequisites>
 		</recipeMaker>
 		<tools>
 			<li>
@@ -138,7 +158,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_MassProduct_SMG</defName>
 		<label>Defensive SMG</label>
 		<description>A mass produced submachinegun nicknamed by many as "Sweeper". With simple and robust design, it is often issued to secondary security personnels for fire suppression.</description>
@@ -167,7 +187,10 @@
 			<WorkToMake>18500</WorkToMake>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>BlowbackOperation</li>			
+      			<li>DMS_EquipmentAdvanced</li>
+    		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>45</Steel>
@@ -210,7 +233,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_MiniMachineGun</defName>
 		<label>Defensive LMG</label>
 		<description>Pistol caliber machinegun designed for colony defense. Chops down unarmored enemy hords and prisoner riots with ease.</description>
@@ -251,7 +274,10 @@
 			</li>
 		</verbs>
 		<recipeMaker>
-			<researchPrerequisite>GasOperation</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>GasOperation</li>
+      			<li>DMS_EquipmentAdvanced</li>
+    		</researchPrerequisites>
 		</recipeMaker>
 		<tools>
 			<li>
@@ -274,7 +300,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_SurvivalRifle</defName>
 		<label>survival rifle</label>
 		<description>Foldable rifle issued to war machine crew members. Accepts multiple common calibers.</description>
@@ -305,7 +331,10 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>Gunsmithing</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>Gunsmithing</li>
+      			<li>DMS_EquipmentBasis</li>
+    		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>35</Steel>
@@ -346,7 +375,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_ElephantGun</defName>
 		<label>elephant rifle</label>
 		<description>Single-shot high caliber heavy hunting rifle. While made to hunt giant games or stop large hostile lifeform with sheer kinetic energy, it is also used by early industrial colonies against mechanoids thanks to its simple manufacture requirements.</description>
@@ -378,7 +407,10 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>Gunsmithing</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>BlowbackOperation</li>
+      			<li>DMS_EquipmentBasis</li>
+    		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>135</Steel>
@@ -434,7 +466,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_MassProduct_GrenadeLauncher</defName>
 		<label>firefoam launcher</label>
 		<description>Single shot light grenade launcher meant to throw firefoam grenades. Totally capable of launching military grade grenades.</description>
@@ -454,7 +486,11 @@
 			<RangedWeapon_Cooldown>1.04</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		    <researchPrerequisites>
+      			<li>Gunsmithing</li>
+				<li>Firefoam</li>
+      			<li>DMS_EquipmentBasis</li>
+    		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>20</Steel>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <WorkGiverDef>
+    <defName>DMS_Operate</defName>
+    <label>Operate Machine</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>140</priorityInType>
+    <fixedBillGiverDefs>
+      <li>DMS_TableAtrifuscle</li>
+      <li>DMS_TableMachinePrinter</li>
+      <li>DMS_ReactionChamber</li>
+      <li>DMS_Furnace</li>
+    </fixedBillGiverDefs>
+    <verb>Operate</verb>
+    <gerund>Operating at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+	<ThingDef ParentName="BenchBase" Name="DMS_BenchBase" Abstract="True">
+		<thingClass>Building_WorkTable</thingClass>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.8</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>80</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<surfaceType>Item</surfaceType>
+	  <inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<constructEffect>ConstructMetal</constructEffect>
+		<comps>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+					<li MayRequire="Aoba.Fortress.Industrial.Citadel">FT_transformer</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+	</ThingDef>
+
+  <ThingDef ParentName="DMS_BenchBase">
+    <defName>DMS_ReactionChamber</defName>
+    <label>pressure chamber</label>
+    <description>巨大的工業生產設備,用於在常溫常壓環境下製造出高壓環境來使材料發生交互反應.</description>
+    <graphicData>
+      <texPath>Things/Building/ReactionChamber</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <Steel>500</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+	    <ComponentSpacer>1</ComponentSpacer>
+    </costList>   
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Cleanliness>2</Cleanliness>
+      <WorkTableWorkSpeedFactor>2.0</WorkTableWorkSpeedFactor>
+    </statBases>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <size>(3,3)</size> 
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <recipes>
+    </recipes>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>900</basePowerConsumption>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>DMS_Material</li>
+    </researchPrerequisites>
+    <modExtensions>
+      <li Class="RecipeInheritance.ThingDefExtension">
+        <inheritRecipesFrom>
+          <li>BiofuelRefinery</li>
+        </inheritRecipesFrom>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="DMS_BenchBase">
+    <defName>DMS_Furnace</defName>
+    <label>sintering furnace</label>
+    <description>巨大的工業生產設備,用於在封閉空間中製造超高溫環境來使金屬或陶瓷燒結,也可以用來熔煉金屬.</description>
+    <graphicData>
+      <texPath>Things/Building/Sintering_Furnace</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <Steel>800</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>   
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Cleanliness>-10</Cleanliness>
+      <WorkTableWorkSpeedFactor>3.0</WorkTableWorkSpeedFactor>
+    </statBases>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <size>(3,3)</size> 
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <recipes>
+    </recipes>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>2000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>36</heatPerSecond>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>DMS_Material</li>
+    </researchPrerequisites>
+    <modExtensions>
+      <li Class="RecipeInheritance.ThingDefExtension">
+        <inheritRecipesFrom>
+          <li>ElectricSmelter</li>
+        </inheritRecipesFrom>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="DMS_BenchBase">
+    <defName>DMS_TableAtrifuscle</defName>
+    <label>atrifuscle chamber</label>
+    <description>用於培育人造肌肉束與人造肌肉仿生體的高端生產設備.</description>
+    <graphicData>
+      <texPath>Things/Building/AtrifuscleTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+	    <ComponentSpacer>1</ComponentSpacer>
+    </costList>   
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Cleanliness>2</Cleanliness>
+    </statBases>
+    <size>(3,1)</size> 
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <recipes>
+    </recipes>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>800</basePowerConsumption>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>DMS_Atrifuscle</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 機械打印機 -->
+
+  <ThingDef ParentName="DMS_BenchBase">
+    <defName>DMS_TableMachinePrinter</defName>
+    <label>machinery printer</label>
+    <description>用於加工量產機械的複合金屬打印機,能以冷鍛方式快速製造與組裝金屬製品與武器.</description>
+    <graphicData>
+      <texPath>Things/Building/StampTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <Steel>275</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+	    <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0.25</Flammability>
+      <WorkTableWorkSpeedFactor>2.0</WorkTableWorkSpeedFactor>
+    </statBases>
+	  <recipes>
+	  </recipes>
+    <size>(3,2)</size>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>1000</basePowerConsumption>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>DMS_MechBasis</li>
+    </researchPrerequisites>
+    <modExtensions>
+      <li Class="RecipeInheritance.ThingDefExtension">
+        <inheritRecipesFrom>
+          <li>TableMachining</li>
+          <li>ElectricSmithy</li>
+        </inheritRecipesFrom>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+
+  <ThingDef Name="DMS_MechConstructorFormingBase" ParentName="MechGestatorFormingBase">
+    <defName>DMS_MechConstructorForming</defName>
+    <graphicData>
+      <texPath>Things/Building/MechBuilder_Glass</texPath>
+      <shaderParameters>
+        <_MistOpacityTex>/Things/Building/MechBuilder_Glass</_MistOpacityTex>
+        <_ScanOffset>-0.11</_ScanOffset>
+        <_ScanScale>12.5</_ScanScale>
+      </shaderParameters>
+      <drawSize>(4, 4)</drawSize>
+    </graphicData>
+  </ThingDef> 
+
+  <ThingDef ParentName="DMS_MechConstructorFormingBase">
+    <defName>DMS_MechConstructorCycleComplete</defName>
+    <graphicData>
+      <color>(1, 0.36, 0)</color>
+    </graphicData>
+  </ThingDef>
+
+  <!-- Mech gestator - Formed -->
+  <ThingDef ParentName="DMS_MechConstructorFormingBase">
+    <defName>DMS_MechConstructorFormed</defName>
+    <graphicData>
+      <color>(0.2, 1, 0.15)</color>
+    </graphicData>
+  </ThingDef>
+
+  <WorkGiverDef>
+    <defName>DMS_DoBillsMechConstructor</defName>
+    <label>make things at automatroid constructor</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>200</priorityInType>
+    <fixedBillGiverDefs>
+      <li>DMS_MechGestatorSamll</li>
+    </fixedBillGiverDefs>
+    <verb>work at</verb>
+    <gerund>working at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <ThingDef ParentName="MechGestatorBase">
+    <defName>DMS_MechGestatorSamll</defName>
+    <label>automatroid constructor</label>
+    <description>Todo.</description>
+    <graphicData>
+      <texPath>Things/Building/MechBuilder_Base</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4, 4)</drawSize>
+      <shadowData>
+        <volume>(3.8, 3, 2.7)</volume>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Building/MechBuilder_Icon</uiIconPath>
+    <uiIconScale>1.5</uiIconScale>
+    <interactionCellOffset>(0,0,2)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Mass>35</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(3,3)</size>
+    <costList>
+      <Steel>500</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>DMS_DeadMansSwitch</li>
+    </researchPrerequisites>
+    <building>
+      <barDrawData>
+        <north>
+          <preRotationOffset>(0, 0)</preRotationOffset>
+          <size>(0.0, 0.0)</size>
+        </north>
+        <south>
+          <preRotationOffset>(0, 0)</preRotationOffset>
+          <size>(0.0, 0.0)</size>
+        </south>
+        <east>
+          <preRotationOffset>(0, 0)</preRotationOffset>
+          <size>(0.0, 0.0)</size>
+        </east>
+        <west>
+          <preRotationOffset>(0, 0)</preRotationOffset>
+          <size>(0.0, 0.0)</size>
+        </west>
+      </barDrawData>
+      <formingGraphicData>
+        <texPath>Things/Pawn/Mechanoid/HalfGestatedMechLarge</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1.65,1.65)</drawSize>
+      </formingGraphicData>
+      <formingMechBobSpeed>0.0005</formingMechBobSpeed>
+      <formingMechYBobDistance>0.05</formingMechYBobDistance>
+      <formingMechPerRotationOffset>
+        <li>(0, 0, 0.225)</li>
+        <li>(0, 0, 0.225)</li>
+        <li>(0, 0, 0.225)</li>
+        <li>(0, 0, 0.225)</li>
+      </formingMechPerRotationOffset>
+      <mechGestatorCylinderGraphic>
+        <texPath>Things/Building/MechBuilder_Glass</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(4, 4)</drawSize>
+        <shaderType>Transparent</shaderType>
+      </mechGestatorCylinderGraphic>
+      <mechGestatorTopGraphic>
+        <texPath>Things/Building/MechBuilder_Top</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(4, 4)</drawSize>
+      </mechGestatorTopGraphic>
+      <gestatorFormingMote>
+        <north>DMS_MechConstructorForming</north>
+        <east>DMS_MechConstructorForming</east>
+        <west>DMS_MechConstructorForming</west>
+        <south>DMS_MechConstructorForming</south>
+      </gestatorFormingMote>
+      <gestatorCycleCompleteMote>
+        <north>DMS_MechConstructorCycleComplete</north>
+        <east>DMS_MechConstructorCycleComplete</east>
+        <west>DMS_MechConstructorCycleComplete</west>
+        <south>DMS_MechConstructorCycleComplete</south>
+      </gestatorCycleCompleteMote>
+      <gestatorFormedMote>
+        <north>DMS_MechConstructorFormed</north>
+        <east>DMS_MechConstructorFormed</east>
+        <west>DMS_MechConstructorFormed</west>
+        <south>DMS_MechConstructorFormed</south>
+      </gestatorFormedMote>
+    </building>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <recipes>
+      <li>Pikeman</li>
+      <li>Scorcher</li>
+      <li>Scyther</li>
+      <li>Tunneler</li>
+      <li>Lancer</li>
+      <li>Tesseron</li>
+      <li>Legionary</li>
+      <li>CentipedeGunner</li>
+      <li>CentipedeBurner</li>
+      <li>CentipedeBlaster</li>
+      <li>Diabolus</li>
+      <li>Centurion</li>
+      <li>Warqueen</li>
+      <li>ResurrectMediumMech</li>
+      <li>ResurrectHeavyMech</li>
+      <li>ResurrectUltraheavyMech</li>
+    </recipes>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>500</basePowerConsumption>
+        <idlePowerDraw>50</idlePowerDraw>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>	
