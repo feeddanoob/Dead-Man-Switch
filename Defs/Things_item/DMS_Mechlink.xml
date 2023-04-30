@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <!-- Mechlink -->
+  <ThingDef ParentName="MechanitorImplantBase">
+    <defName>DMS_MechLink</defName>
+    <label>cluster transceiver</label>
+    <description>A man-made bionic implant that allows direct control of mechanoids. No one know if it is the early model of Mechlink or it's reverse engineered product by later generations. anyway it is mechlink in all degree but humans in rimworld can understand and imitate.\n\nDue to processing precision issues, these imitations from rimworld often have some installation side effects...</description>
+    <thingClass>Mechlink</thingClass>
+    <descriptionHyperlinks><HediffDef>MechlinkImplant</HediffDef></descriptionHyperlinks>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Beauty>-4</Beauty>
+      <Mass>1</Mass>
+      <MarketValue>5000</MarketValue>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <costList>
+      <Plasfiber>20</Plasfiber>
+      <ComponentSpacer>15</ComponentSpacer>
+      <MedicineUltratech>5</MedicineUltratech>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>DMS_Mechlink</researchPrerequisite>
+      <recipeUsers>
+        <li>DMS_TableAtrifuscle</li>
+      </recipeUsers>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Mechlink</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.65</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>InstallMechlink</useJob>
+        <useLabel>Install {0_label} to become mechanitor</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <compClass>CompUseEffect_InstallImplantMechlink</compClass>
+        <hediffDef>MechlinkImplant</hediffDef>
+        <bodyPart>Brain</bodyPart>
+        <requiresPsychicallySensitive>true</requiresPsychicallySensitive>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <compClass>CompUseEffect_InstallImplantMechlink</compClass>
+        <hediffDef>DMS_MechlinkKillSwitch</hediffDef>
+        <bodyPart>Brain</bodyPart>
+        <requiresPsychicallySensitive>true</requiresPsychicallySensitive>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <compClass>CompUseEffect_InstallImplantMechlink</compClass>
+        <hediffDef>DMS_MechlinkRejection</hediffDef>
+        <bodyPart>Brain</bodyPart>
+        <requiresPsychicallySensitive>true</requiresPsychicallySensitive>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechlinkInstalled</soundOnUsed>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- 之後寫DMS專屬的重型機兵Boss戰鬥，以及擊敗Boss的不可製造戰利品 -->
+</Defs>	

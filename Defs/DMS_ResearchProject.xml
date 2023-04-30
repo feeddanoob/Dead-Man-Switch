@@ -34,7 +34,7 @@
     <prerequisites>
       <li>DMS_Material</li>
     </prerequisites>
-    <researchViewX>2.00</researchViewX>
+    <researchViewX>1.00</researchViewX>
     <researchViewY>1.15</researchViewY>
   </ResearchProjectDef>
 
@@ -48,7 +48,7 @@
       <li>DMS_Material</li>
       <li>Machining</li>
     </prerequisites>
-    <researchViewX>2.00</researchViewX>
+    <researchViewX>1.00</researchViewX>
     <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
 
@@ -77,7 +77,7 @@
       <li>SterileMaterials</li>
       <li>DMS_Plasfiber</li>
     </prerequisites>
-    <researchViewX>4.00</researchViewX>
+    <researchViewX>2.00</researchViewX>
     <researchViewY>1.15</researchViewY>
   </ResearchProjectDef>
 
@@ -89,10 +89,10 @@
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>Prosthetics</li>
-      <li>DMS_MechBasis</li>
+      <li>DMS_DeadMansSwitch</li>
     </prerequisites>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>2.90</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>2.85</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
@@ -105,24 +105,24 @@
       <li>ComplexClothing</li>
       <li>Gunsmithing</li>
     </prerequisites>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>0.15</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>4.75</researchViewY>
   </ResearchProjectDef> 
 
   <!-- T2 -->
 
-  <ResearchProjectDef ParentName="DMS_BaseTech">
-    <defName>DMS_OrganSurgery</defName>
-    <label>organ surgery</label>
-    <description>Humanity gave up a lot in that long war... even if it can be made up later, there is something lost forever.</description>
+ <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_Mechlink</defName>
+    <label>cluster transceiver</label>
+    <description>Swarm transceivers are a way humans have developed to control robots in war, and of course it's not very comfortable for robots that generate self-awareness through DMS.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
-      <li>DMS_Prosthetic</li>
+      <li>DMS_DeadMansSwitch</li>
       <li>SterileMaterials</li>
     </prerequisites>
     <researchViewX>4.00</researchViewX>
-    <researchViewY>2.90</researchViewY>
+    <researchViewY>1.75</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
@@ -135,7 +135,7 @@
       <li>DMS_DeadMansSwitch</li>
     </prerequisites>
     <researchViewX>4.00</researchViewX>
-    <researchViewY>4.75</researchViewY>
+    <researchViewY>4.25</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
@@ -148,8 +148,8 @@
       <li>ComplexClothing</li>
       <li>Gunsmithing</li>
     </prerequisites>
-    <researchViewX>1.00</researchViewX>
-    <researchViewY>0.15</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.75</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
@@ -162,8 +162,8 @@
       <li>ComplexClothing</li>
       <li>Gunsmithing</li>
     </prerequisites>
-    <researchViewX>2.00</researchViewX>
-    <researchViewY>0.15</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>4.75</researchViewY>
   </ResearchProjectDef> 
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
@@ -176,21 +176,21 @@
       <li>ComplexClothing</li>
       <li>Gunsmithing</li>
     </prerequisites>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>0.15</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>4.75</researchViewY>
   </ResearchProjectDef> 
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
     <defName>DMS_BattleFrame</defName>
-    <label>battle friend</label>
-    <description>Due to the ages, we have been unable to know the correct name supposed to be "battle frame" or "battle friend", but anyway these are type of automatic exoskeleton that can be a frame of equipment or friend in combat.</description>
+    <label>battle friends</label>
+    <description>Due to the ages, we have been unable to know the correct name supposed to be "battle frames" or "battle friends", but anyway these are type of automatic exoskeleton that can be a frame of equipment or friend in combat.</description>
     <baseCost>800</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_Automatroid</li>
     </prerequisites>
-    <researchViewX>5.00</researchViewX>
-    <researchViewY>4.75</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
@@ -203,7 +203,7 @@
       <li>DMS_DeadMansSwitch</li>
       <li>DMS_Atrifuscle</li>
     </prerequisites>
-    <researchViewX>5.00</researchViewX>
+    <researchViewX>4.00</researchViewX>
     <researchViewY>1.15</researchViewY>
   </ResearchProjectDef>
 
@@ -215,9 +215,22 @@
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_Hybird</li>
-      <li>Bionics</li>
     </prerequisites>
     <researchViewX>6.00</researchViewX>
+    <researchViewY>1.75</researchViewY>
+  </ResearchProjectDef>
+
+<ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_OrganSurgery</defName>
+    <label>organ surgery</label>
+    <description>Humanity gave up a lot in that long war... even if it can be made up later, there is something lost forever.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DMS_Bionics</li>
+      <li>SterileMaterials</li>
+    </prerequisites>
+    <researchViewX>7.00</researchViewX>
     <researchViewY>1.75</researchViewY>
   </ResearchProjectDef>
 
@@ -233,8 +246,21 @@
       <li>DMS_DeadMansSwitch</li>
       <li>MultiAnalyzer</li>
     </prerequisites>
-    <researchViewX>5.00</researchViewX>
+    <researchViewX>6.00</researchViewX>
     <researchViewY>3.50</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_HeavyAutomatroid</defName>
+    <label>heavy automatroid</label>
+    <description>These heavy machines were prepared for a full-scale war among mankind, but forturnatelly these scale of war doesn't often.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DMS_Hypothesis</li>
+    </prerequisites>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
@@ -244,10 +270,9 @@
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>
-      <li>DMS_BattleFrame</li>
       <li>DMS_Hypothesis</li>
     </prerequisites>
-    <researchViewX>7.00</researchViewX>
+    <researchViewX>8.00</researchViewX>
     <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
 
@@ -262,7 +287,7 @@
       <li>DMS_HumanoidEngineering</li>
     </prerequisites>
     <researchViewX>10.00</researchViewX>
-    <researchViewY>1.10</researchViewY>
+    <researchViewY>1.15</researchViewY>
   </ResearchProjectDef>
 
 </Defs>

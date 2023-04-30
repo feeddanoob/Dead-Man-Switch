@@ -9,10 +9,10 @@
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
       <MarketValue>1200</MarketValue>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
-      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">12</ControlTakingTime>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">5</ControlTakingTime>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
       <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.33</MechEnergyLossPerHP>
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">1</WastepacksPerRecharge>
       <WorkSpeedGlobal MayRequire="Ludeon.Rimworld.Biotech">0.5</WorkSpeedGlobal>
     </statBases>
     <race>
@@ -105,6 +105,47 @@
     </lifeStages>
   </PawnKindDef>
   <!-- 武裝四軸 -->
+  <ThingDef ParentName="BaseAutomatroidRace">
+    <defName>DMS_Mech_VerlingBird</defName>
+    <label>verling bird</label>
+    <description>偵查用四軸無人機，對於戰鬥而言相當的脆弱但移動速度極快，搭載了一挺小口徑衝鋒槍並能提供一定的牽制能力.</description>
+    <statBases>
+      <MoveSpeed>12</MoveSpeed>
+      <ArmorRating_Blunt>0</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0</ArmorRating_Sharp>
+    </statBases>
+    <race>
+      <body>DMS_Chop</body>
+      <baseBodySize>1</baseBodySize>
+      <mechWeightClass>Light</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_VerlingBird</defName>
+    <label>verling bird</label>
+    <race>DMS_Mech_VerlingBird</race>
+    <isFighter>false</isFighter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/chad</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
   <!-- 馱馬 -->
 
     <!-- T1 DMS_DeadMansSwitch-->
@@ -115,6 +156,7 @@
 
     <!-- T2 DMS_Automatroid-->
   <!-- 座狼 DMS_Hybird-->
+  <!-- 雙足飛龍 --> 
   <!-- 猿人 -->
 
     <!-- T3 DMS_HumanoidEngineering-->

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <ThingDef ParentName="BaseAutomatroid" Name="DMS_BaseSynthroidRace" Abstract="True">
+  <ThingDef ParentName="BaseAutomatroidRace" Name="DMS_BaseSynthroidRace" Abstract="True">
     <thingClass>DMS.HumanlikeMech</thingClass>
     <inspectorTabs Inherit="False">
       <li>ITab_Pawn_Health</li>

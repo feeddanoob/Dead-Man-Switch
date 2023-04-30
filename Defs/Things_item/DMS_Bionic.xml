@@ -41,7 +41,7 @@
   <!-- DMS_ProstheticEye -->
   <ThingDef ParentName="DMS_BioMechBionicBase">
     <defName>DMS_ProstheticEye</defName>
-    <label>bio-mechanical visual senser</label>
+    <label>mechaneural visual senser</label>
     <description>An artificial light receiver with nerve-link, with night vision and aim assist it might be better than the original one...maybe ?</description>
     <descriptionHyperlinks><RecipeDef>DMS_InstallProstheticEye</RecipeDef></descriptionHyperlinks>
     <costList>
@@ -57,13 +57,22 @@
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DMS_ProstheticEye</defName>
-    <label>bio-mechanical visual senser</label>
+    <label>visual senser</label>
     <labelNoun>a bionic senser</labelNoun>
     <description>An installed visual sensor, as a replacement of eye.</description>
     <descriptionHyperlinks><ThingDef>DMS_ProstheticEye</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>DMS_ProstheticEye</spawnThingOnRemoved>
     <woundAnchorRange>0</woundAnchorRange>
     <displayWound>true</displayWound>
+    <hediffGivers>
+      <li Class="HediffGiver_Random">
+        <mtbDays>15</mtbDays>
+        <hediff>DMS_BionicShock</hediff>
+        <partsToAffect>
+          <li>Torso</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
     <stages>
       <li>
         <statOffsets>
@@ -74,7 +83,7 @@
     </stages>
     <addedPartProps>
       <solid>true</solid>
-      <partEfficiency>1.15</partEfficiency>
+      <partEfficiency>1.25</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
     <eyeGraphicSouth>
@@ -90,8 +99,8 @@
 
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
     <defName>DMS_InstallProstheticEye</defName>
-    <label>install bio-mechanical visual senser</label>
-    <description>Install a bio-mechanical visual senser.</description>
+    <label>install mechaneural visual senser</label>
+    <description>Install a neural-mechanical visual senser.</description>
     <descriptionHyperlinks>
       <ThingDef>DMS_ProstheticEye</ThingDef>
       <HediffDef>DMS_ProstheticEye</HediffDef>
@@ -122,9 +131,9 @@
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DMS_ProstheticArm</defName>
-    <label>bio-mechanical arm</label>
-    <labelNoun>a bio-mechanical arm</labelNoun>
-    <description>An installed bio-mechanical arm.</description>
+    <label>mechaneural arm</label>
+    <labelNoun>a neural-mechanical arm</labelNoun>
+    <description>An installed neural-mechanical arm.</description>
     <descriptionHyperlinks><ThingDef>DMS_ProstheticArm</ThingDef></descriptionHyperlinks>
     <comps>
       <li Class="HediffCompProperties_VerbGiver">
@@ -142,6 +151,15 @@
         </tools>
       </li>
     </comps>
+    <hediffGivers>
+      <li Class="HediffGiver_Random">
+        <mtbDays>31</mtbDays>
+        <hediff>DMS_BionicShock</hediff>
+        <partsToAffect>
+          <li>Torso</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
     <stages>
       <li>
         <statOffsets>
@@ -153,14 +171,14 @@
     <spawnThingOnRemoved>DMS_ProstheticArm</spawnThingOnRemoved>
     <addedPartProps>
       <solid>true</solid>
-      <partEfficiency>1.15</partEfficiency>
+      <partEfficiency>1.25</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="DMS_BioMechBionicBase">
     <defName>DMS_ProstheticArm</defName>
-    <label>bio-mechanical arm</label>
+    <label>mechaneural arm</label>
     <description>An advanced artificial arm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
     <descriptionHyperlinks><RecipeDef>DMS_InstallProstheticArm</RecipeDef></descriptionHyperlinks>
     <costList>
@@ -176,13 +194,13 @@
 
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
     <defName>DMS_InstallProstheticArm</defName>
-    <label>install bio-mechanical arm</label>
-    <description>Install a bio-mechanical arm.</description>
+    <label>install mechaneural arm</label>
+    <description>Install a neural-mechanical arm.</description>
     <descriptionHyperlinks>
       <ThingDef>DMS_ProstheticArm</ThingDef>
       <HediffDef>DMS_ProstheticArm</HediffDef>
     </descriptionHyperlinks>
-    <jobString>Installing bio-mechanical arm.</jobString>
+    <jobString>Installing neural-mechanical arm.</jobString>
     <ingredients>
       <li>
         <filter>
@@ -208,11 +226,20 @@
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DMS_ProstheticLeg</defName>
-    <label>bio-mechanical leg</label>
-    <labelNoun>a bio-mechanical leg</labelNoun>
-    <description>An installed bio-mechanical leg.</description>
+    <label>mechaneural leg</label>
+    <labelNoun>a neural-mechanical leg</labelNoun>
+    <description>An installed neural-mechanical leg.</description>
     <descriptionHyperlinks><ThingDef>DMS_ProstheticLeg</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>DMS_ProstheticLeg</spawnThingOnRemoved>
+    <hediffGivers>
+      <li Class="HediffGiver_Random">
+        <mtbDays>32</mtbDays>
+        <hediff>DMS_BionicShock</hediff>
+        <partsToAffect>
+          <li>Torso</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
     <stages>
       <li>
         <statOffsets>
@@ -223,14 +250,14 @@
     </stages>
     <addedPartProps>
       <solid>true</solid>
-      <partEfficiency>1.15</partEfficiency>
+      <partEfficiency>1.25</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="DMS_BioMechBionicBase">
     <defName>DMS_ProstheticLeg</defName>
-    <label>bio-mechanical leg</label>
+    <label>mechaneural leg</label>
     <description>An advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
     <descriptionHyperlinks><RecipeDef>DMS_InstallProstheticLeg</RecipeDef></descriptionHyperlinks>
     <costList>
@@ -246,13 +273,13 @@
 
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
     <defName>DMS_InstallProstheticLeg</defName>
-    <label>install bio-mechanical leg</label>
-    <description>Install a bio-mechanical leg.</description>
+    <label>install mechaneural leg</label>
+    <description>Install a neural-mechanical leg.</description>
     <descriptionHyperlinks>
       <ThingDef>DMS_ProstheticLeg</ThingDef>
       <HediffDef>DMS_ProstheticLeg</HediffDef>
     </descriptionHyperlinks>
-    <jobString>Installing bio-mechanical leg.</jobString>
+    <jobString>Installing neural-mechanical leg.</jobString>
     <ingredients>
       <li>
         <filter>
@@ -278,11 +305,20 @@
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DMS_ProstheticSpine</defName>
-    <label>bio-mechanical neurochord</label>
-    <labelNoun>An advanced bio-mechanical spine work as a sub-brain \n\n It can take over the user's reflex nerves and thereby reduce the operator's brain burden, but has some side effects.</labelNoun>
+    <label>mechaneural neurochord</label>
+    <labelNoun>An advanced neural-mechanical spine work as a sub-brain \n\n It can take over the user's reflex nerves and thereby reduce the operator's brain burden, but has some side effects.</labelNoun>
     <description>An installed bionic spine.</description>
     <descriptionHyperlinks><ThingDef>DMS_ProstheticSpine</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>DMS_ProstheticSpine</spawnThingOnRemoved>
+    <hediffGivers>
+      <li Class="HediffGiver_Random">
+        <mtbDays>15</mtbDays>
+        <hediff>DMS_BionicShock</hediff>
+        <partsToAffect>
+          <li>Torso</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
     <stages>
       <li>
         <statOffsets>
@@ -366,6 +402,15 @@
       <li>Outdoors</li>
       <li>Indoors</li>
     </disablesNeeds>
+    <hediffGivers>
+      <li Class="HediffGiver_Random">
+        <mtbDays>10</mtbDays>
+        <hediff>DMS_BionicShock</hediff>
+        <partsToAffect>
+          <li>Torso</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
     <stages>
       <li>
         <capMods>
@@ -379,7 +424,6 @@
           <BondAnimalChanceFactor>-1</BondAnimalChanceFactor>
           <PsychicSensitivity>-1</PsychicSensitivity>
         </statOffsets>
-    
       </li>
     </stages>
     <comps>
@@ -445,6 +489,7 @@
     </descriptionHyperlinks>
     <jobString>Removing sensory filter.</jobString>
     <removesHediff>DMS_SensoryFilter</removesHediff>
+    <addsHediff>DMS_FilterShock</addsHediff>
   </RecipeDef>
 
 <!-- 營養泵送接口 -->
@@ -545,7 +590,7 @@
       <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
       <skillRequirements>
         <Crafting>10</Crafting>
-        <Medical>5</Medical>
+        <Medicine>5</Medicine>
       </skillRequirements>
       <researchPrerequisite>DMS_Bionics</researchPrerequisite>
       <recipeUsers>
@@ -554,5 +599,179 @@
       <displayPriority>300</displayPriority>
     </recipeMaker>
   </ThingDef>
+
+ <!-- DMS_SyntheticArm-->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>DMS_SyntheticArm</defName>
+    <label>biosynthetic arm</label>
+    <labelNoun>a biosynthetic arm</labelNoun>
+    <description>An installed biosynthetic arm.</description>
+    <descriptionHyperlinks><ThingDef>DMS_SyntheticArm</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>20</power>
+            <cooldownTime>2</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <hediffGivers>
+      <li Class="HediffGiver_Random">
+        <mtbDays>20</mtbDays>
+        <hediff>DMS_SyntheticRejection</hediff>
+        <partsToAffect>
+          <li>Torso</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
+    <stages>
+      <li>
+        <statOffsets>
+          <RestFallRateFactor>0.1</RestFallRateFactor>
+          <IncomingDamageFactor>-0.05</IncomingDamageFactor>
+        </statOffsets>
+      </li>
+    </stages>
+    <spawnThingOnRemoved>DMS_SyntheticArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="DMS_SynthicBionicBase">
+    <defName>DMS_SyntheticArm</defName>
+    <label>biosynthetic arm</label>
+    <description>An advanced artificial arm. Composed of synthetic muscles and plasfiber skin grown on bone made by tungsteel.</description>
+    <descriptionHyperlinks><RecipeDef>DMS_InstallSyntheticArm</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Tungsteel>10</Tungsteel>
+      <Plasfiber>10</Plasfiber>
+      <Atrifuscle>25</Atrifuscle>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>DMS_InstallSyntheticArm</defName>
+    <label>install biosynthetic arm</label>
+    <description>Install a biosynthetic arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_SyntheticArm</ThingDef>
+      <HediffDef>DMS_SyntheticArm</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing biosynthetic arm.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DMS_SyntheticArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DMS_SyntheticArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DMS_SyntheticArm</addsHediff>
+  </RecipeDef>
+
+  <!-- Bionic leg -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>DMS_SyntheticLeg</defName>
+    <label>biosynthetic leg</label>
+    <labelNoun>a biosynthetic leg</labelNoun>
+    <description>An installed biosynthetic leg.</description>
+    <descriptionHyperlinks><ThingDef>DMS_SyntheticLeg</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>DMS_SyntheticLeg</spawnThingOnRemoved>
+    <hediffGivers>
+      <li Class="HediffGiver_Random">
+        <mtbDays>32</mtbDays>
+        <hediff>DMS_SyntheticRejection</hediff>
+        <partsToAffect>
+          <li>Torso</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
+    <stages>
+      <li>
+        <statOffsets>
+          <RestFallRateFactor>0.1</RestFallRateFactor>
+          <IncomingDamageFactor>-0.05</IncomingDamageFactor>
+        </statOffsets>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="DMS_SynthicBionicBase">
+    <defName>DMS_SyntheticLeg</defName>
+    <label>biosynthetic leg</label>
+    <description>An advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
+    <descriptionHyperlinks><RecipeDef>DMS_InstallSyntheticLeg</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Tungsteel>10</Tungsteel>
+      <Plasfiber>10</Plasfiber>
+      <Atrifuscle>25</Atrifuscle>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>DMS_InstallSyntheticLeg</defName>
+    <label>install biosynthetic leg</label>
+    <description>Install a biosynthetic leg.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_SyntheticLeg</ThingDef>
+      <HediffDef>DMS_SyntheticLeg</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing neural-mechanical leg.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DMS_SyntheticLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DMS_SyntheticLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DMS_SyntheticLeg</addsHediff>
+  </RecipeDef>
 
 </Defs>	
