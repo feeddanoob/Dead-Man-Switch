@@ -50,7 +50,6 @@
     <forceNormalGearQuality>true</forceNormalGearQuality>
     <weaponMoney>9999~9999</weaponMoney>
     <combatPower>10</combatPower>
-    <weaponTags></weaponTags>
     <techHediffsChance>1</techHediffsChance>
     <techHediffsMoney>9999~9999</techHediffsMoney>
     <controlGroupPortraitZoom>1.8</controlGroupPortraitZoom>
@@ -96,7 +95,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Automatroid/trashBin</texPath>
-          <maskPath>Things/None</maskPath>
+          <maskPath>Things/Automatroid/AllegianceOverlays/trashBin</maskPath>
           <shaderType>CutoutWithOverlay</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.1</drawSize>
@@ -104,6 +103,7 @@
       </li>
     </lifeStages>
   </PawnKindDef>
+
   <!-- 武裝四軸 -->
   <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_VerlingBird</defName>
@@ -134,7 +134,8 @@
     <defName>DMS_Mech_VerlingBird</defName>
     <label>verling bird</label>
     <race>DMS_Mech_VerlingBird</race>
-    <isFighter>false</isFighter>
+    <isFighter>true</isFighter>
+    <weaponTags></weaponTags>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -146,11 +147,13 @@
       </li>
     </lifeStages>
   </PawnKindDef>
+
   <!-- 馱馬 -->
 
     <!-- T1 DMS_DeadMansSwitch-->
   <!-- 獵犬 -->
   <!-- 士兵 -->
+  
   <!-- 機槍馬車 -->
   <!-- 戰鬥框架 DMS_BattleFrame-->
 
