@@ -39,14 +39,10 @@
           <soundDeath>Pawn_Mech_Legionary_Death</soundDeath>
           <soundCall>Pawn_Mech_Legionary_Call</soundCall>
         </li>
-        <li>
-          <def>MechanoidFullyFormed</def>
-          <minAge>100</minAge>
-          <soundWounded>Pawn_Mech_Legionary_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Legionary_Death</soundDeath>
-          <soundCall>Pawn_Mech_Legionary_Call</soundCall>
-        </li>
       </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
     </race>
     <tools>
       <li>
@@ -216,7 +212,6 @@
     <defName>DMS_Synthroid_Thin</defName>
     <label>Synthroid Type-T</label>
     <description>A synthetic automatriod, capable to use human weapon and equipment. It is the product of the combination of biogenetic engineering and war industry.</description>
-    
     <statBases>
       <MarketValue>2000</MarketValue>
       <MoveSpeed>8</MoveSpeed>

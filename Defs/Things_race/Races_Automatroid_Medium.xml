@@ -1,13 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  <RulePackDef>
+    <defName>DMS_AutomaticArmy</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=6)->[namefile]-[Code]</li>
+        <li>r_name->[exoticname]-[Code]</li>
+        <li>name->[Code]-[Color]</li>
+
+        <li>Code->alpha</li>
+        <li>Code->bravo</li>
+        <li>Code->charlie</li>
+        <li>Code->delta</li>
+        <li>Code->echo</li>
+        <li>Code->foxtrot</li>
+        <li>Code->golf</li>
+        <li>Code->hotel</li>
+        <li>Code->india</li>
+        <li>Code->junker</li>
+        <li>Code->kilo</li>
+        <li>Code->lima</li>
+        <li>Code->mike</li>
+        <li>Code->november</li>
+        <li>Code->oscar</li>
+        <li>Code->papa</li>
+        <li>Code->quiet</li>
+        <li>Code->rotor</li>
+        <li>Code->sierra</li>
+        <li>Code->tango</li>
+        <li>Code->uniform</li>
+        <li>Code->victor</li>
+        <li>Code->whiskey</li>
+        <li>Code->xeno</li>
+        <li>Code->yankee</li>
+        <li>Code->zulu</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>namefile->Names/Mech_Unisex</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
 
   <!-- Base -->
   <ThingDef Name="BaseAutomatroidRace" ParentName="BaseMechanoid" Abstract="True">
     <statBases>
       <MoveSpeed>4.7</MoveSpeed>
-      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-      <MarketValue>1200</MarketValue>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+      <MarketValue>800</MarketValue>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
       <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">5</ControlTakingTime>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
@@ -18,11 +58,13 @@
     <race>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>Mechanoid</thinkTreeMain>
-      <baseBodySize>1</baseBodySize>
-      <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">NamerMech</nameGenerator>
+      <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">DMS_AutomaticArmy</nameGenerator>
       <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
       <soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
       <thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>   
     </race>
     <butcherProducts>
       <Steel>10</Steel>
@@ -41,6 +83,52 @@
     </tools>
   </ThingDef>
 
+  <ThingDef ParentName="BaseAutomatroidRace" Name="BaseAutomatroidWalker" Abstract="True">
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <baseBodySize>1.0</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+        </li>
+        <!-- <li MayRequire="Ludeon.RimWorld.Biotech"> 未來做戰損的話可以弄，但現在先留著
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+        </li> -->
+      </lifeStageAges>
+    </race>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+    </tools>
+  </ThingDef>
+
   <PawnKindDef Name="BaseAutomatroidKind" ParentName="BaseMechanoidKind" Abstract="True">
     <defaultFactionType>Mechanoid</defaultFactionType>
     <aiAvoidCover>true</aiAvoidCover>
@@ -55,7 +143,7 @@
     <controlGroupPortraitZoom>1.8</controlGroupPortraitZoom>
   </PawnKindDef>
 
-    <!-- T0 DMS_MechBasis--> 
+  <!-- T0 DMS_MechBasis-->
   <!-- 垃圾桶 -->
   <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_TrashBin</defName>
@@ -63,6 +151,9 @@
     <description>圓筒狀的服務用機器人,常見於中寰世界的現代化都市中用來提供道路清潔,快遞與送餐到府服務,以及在應急事件發生時第一時間到場協助疏散與維護秩序.</description>
     <statBases>
       <CleaningSpeed>0.85</CleaningSpeed>
+      <MoveSpeed>4.7</MoveSpeed>
+      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
     </statBases>
     <race>
       <body>DMS_TrashBin</body>
@@ -84,6 +175,9 @@
         </li>
       </lifeStageAges>
     </race>
+    <butcherProducts>
+      <Steel>15</Steel>
+    </butcherProducts>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">
@@ -110,13 +204,13 @@
     <label>verling bird</label>
     <description>偵查用四軸無人機，對於戰鬥而言相當的脆弱但移動速度極快，搭載了一挺小口徑衝鋒槍並能提供一定的牽制能力.</description>
     <statBases>
-      <MoveSpeed>12</MoveSpeed>
+      <MoveSpeed>10</MoveSpeed>
       <ArmorRating_Blunt>0</ArmorRating_Blunt>
       <ArmorRating_Sharp>0</ArmorRating_Sharp>
     </statBases>
     <race>
       <body>DMS_Chop</body>
-      <baseBodySize>1</baseBodySize>
+      <baseBodySize>0.25</baseBodySize>
       <mechWeightClass>Light</mechWeightClass>
       <lifeStageAges>
         <li>
@@ -150,31 +244,90 @@
 
   <!-- 馱馬 -->
 
-    <!-- T1 DMS_DeadMansSwitch-->
+  <!-- T1 DMS_DeadMansSwitch-->
   <!-- 獵犬 -->
+  <ThingDef ParentName="BaseAutomatroidRace">
+    <defName>DMS_Mech_Hound</defName>
+    <label>hound</label>
+    <description>四足移動的仿生機械狗,裝備了一把防禦用霰彈槍，能夠輕易地穿行於那些人類難以應對的區域並在武裝行動中提供偵查與救援.</description>
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+    </statBases>
+    <race>
+      <body>DMS_Hound</body>
+      <baseBodySize>0.75</baseBodySize>
+      <mechWeightClass>Light</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_Hound</defName>
+    <label>hound</label>
+    <race>DMS_Mech_Hound</race>
+    <isFighter>true</isFighter>
+    <weaponTags></weaponTags>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/hound</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
   <!-- 士兵 -->
-  
+  <ThingDef Name="LancerMechanoidWalker" ParentName="BaseMechanoidWalker">
+    <defName>DMS_Mech_Soldat</defName>
+    <label>soldat</label>
+    <description></description>
+    <race>
+      <body>DMS_Humanoid_Soldat</body>
+      <baseHealthScale>1</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+    </race>
+    <statBases>
+      <MoveSpeed>4.7</MoveSpeed>
+      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
+    </statBases>
+  </ThingDef>
+
   <!-- 機槍馬車 -->
   <!-- 戰鬥框架 DMS_BattleFrame-->
 
-    <!-- T2 DMS_Automatroid-->
+  <!-- T2 DMS_Automatroid-->
   <!-- 座狼 DMS_Hybird-->
-  <!-- 雙足飛龍 --> 
+  <!-- 雙足飛龍 -->
   <!-- 猿人 -->
 
-    <!-- T3 DMS_HumanoidEngineering-->
+  <!-- T3 DMS_HumanoidEngineering-->
   <!-- 火槍手 -->
   <!-- 塔盾手 -->
   <!-- 浪人 -->
   <!-- 戰鬥步行者 -->
 
-    <!-- T4 DMS_HeavyMachines-->
+  <!-- T4 DMS_HeavyMachines-->
   <!-- 駭蜥 -->
   <!-- 象龜 -->
   <!-- 射水魚 -->
   <!-- 攀行者 -->
-
-
 
 
   <!-- lady -->

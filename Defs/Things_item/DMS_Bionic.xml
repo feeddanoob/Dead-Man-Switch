@@ -301,7 +301,7 @@
     <addsHediff>DMS_ProstheticLeg</addsHediff>
   </RecipeDef>
 
-  <!-- 神經輔助脊索 -->
+  <!-- 輔助神經索 -->
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DMS_ProstheticSpine</defName>

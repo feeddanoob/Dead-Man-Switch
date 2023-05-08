@@ -22,16 +22,6 @@
           </shadowData>
         </bodyGraphicData>
       </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Synthroid/Body/Synthroid_Male</texPath>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.5</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.8, 0.6)</volume>
-          </shadowData>
-        </bodyGraphicData>
-      </li>
     </lifeStages>
     <weaponMoney>9999~9999</weaponMoney>
     <weaponTags>
@@ -54,16 +44,6 @@
     <canStrip>true</canStrip>
     <allowInMechClusters>false</allowInMechClusters>
     <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Synthroid/Body/Synthroid_Female</texPath>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.5</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.8, 0.6)</volume>
-          </shadowData>
-        </bodyGraphicData>
-      </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Synthroid/Body/Synthroid_Female</texPath>
@@ -105,16 +85,6 @@
           </shadowData>
         </bodyGraphicData>
       </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Synthroid/Body/Synthroid_Hulk</texPath>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.5</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.8, 0.6)</volume>
-          </shadowData>
-        </bodyGraphicData>
-      </li>
     </lifeStages>
     <weaponMoney>9999~9999</weaponMoney>
     <weaponTags>
@@ -136,16 +106,6 @@
     <canStrip>true</canStrip>
     <allowInMechClusters>false</allowInMechClusters>
     <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Synthroid/Body/Synthroid_Fat</texPath>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.5</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.8, 0.6)</volume>
-          </shadowData>
-        </bodyGraphicData>
-      </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Synthroid/Body/Synthroid_Fat</texPath>
@@ -178,16 +138,6 @@
     <canStrip>true</canStrip>
     <allowInMechClusters>false</allowInMechClusters>
     <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Synthroid/Body/Synthroid_Thin</texPath>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.5</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.8, 0.6)</volume>
-          </shadowData>
-        </bodyGraphicData>
-      </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Synthroid/Body/Synthroid_Thin</texPath>
