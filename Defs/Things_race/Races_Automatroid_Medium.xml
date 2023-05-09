@@ -88,22 +88,6 @@
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>Mechanoid</thinkTreeMain>
       <baseBodySize>1.0</baseBodySize>
-      <lifeStageAges>
-        <li>
-          <def>MechanoidFullyFormed</def>
-          <minAge>0</minAge>
-          <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
-          <soundCall>Pawn_Mech_Scyther_Call</soundCall>
-        </li>
-        <!-- <li MayRequire="Ludeon.RimWorld.Biotech"> 未來做戰損的話可以弄，但現在先留著
-          <def>MechanoidFullyFormed</def>
-          <minAge>100</minAge>
-          <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
-          <soundCall>Pawn_Mech_Scyther_Call</soundCall>
-        </li> -->
-      </lifeStageAges>
     </race>
     <tools>
       <li>
@@ -196,6 +180,9 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
+      <weaponTags>
+        <li></li>                                                                     <!--武器-->
+      </weaponTags>
   </PawnKindDef>
 
   <!-- 武裝四軸 -->
@@ -204,130 +191,767 @@
     <label>verling bird</label>
     <description>偵查用四軸無人機，對於戰鬥而言相當的脆弱但移動速度極快，搭載了一挺小口徑衝鋒槍並能提供一定的牽制能力.</description>
     <statBases>
-      <MoveSpeed>10</MoveSpeed>
-      <ArmorRating_Blunt>0</ArmorRating_Blunt>
+      <MoveSpeed>10</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>0</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0</ArmorRating_Sharp>
+	  <EMPResistance>1</EMPResistance>                                             <!--EMP抵抗力-->
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
     </statBases>
-    <race>
-      <body>DMS_Chop</body>
-      <baseBodySize>0.25</baseBodySize>
-      <mechWeightClass>Light</mechWeightClass>
-      <lifeStageAges>
-        <li>
-          <def>MechanoidFullyFormed</def>
-          <minAge>0</minAge>
-          <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
-          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
-        </li>
-      </lifeStageAges>
-    </race>
-  </ThingDef>
-
+	<race>
+	    <!--<mechEnabledWorkTypes>-->
+        <!--  <li></li>-->                                                  <!--允許的工作類型-->
+        <!--</mechEnabledWorkTypes>-->
+        <body>DMS_Chop</body>                                                      <!--身體(另外的def)-->
+        <baseBodySize>0.25</baseBodySize>
+		<mechWeightClass>Light</mechWeightClass>
+        <lifeStageAges>
+			<li>
+				<def>MechanoidFullyFormed</def>
+				<minAge>0</minAge>
+				<soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+				<soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+				<soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+			</li>
+		</lifeStageAges>
+      </race>
+	  <!--<comps>-->
+		<!--<li Class="CompProperties_TurretGun">-->
+		<!--	<turretDef>Gun_ChargeBlasterTurret</turretDef>--><!--身上的砲塔-->
+		<!--	<angleOffset>-90</angleOffset>-->
+        <!--</li>-->
+      <!--</comps>-->
+    </ThingDef>
+    
   <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_VerlingBird</defName>
-    <label>verling bird</label>
-    <race>DMS_Mech_VerlingBird</race>
-    <isFighter>true</isFighter>
-    <weaponTags></weaponTags>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/chad</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.1</drawSize>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
+      <defName>DMS_Mech_VerlingBird</defName>
+      <label>verling bird</label>
+      <race>DMS_Mech_VerlingBird</race>
+	  <isFighter>true</isFighter>
+      <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
+      <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
+      <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
+      <lifeStages>                                                                 <!--身體圖片-->
+		<li>
+			<bodyGraphicData>
+				<texPath>Things/Automatroid/chad</texPath>
+				<shaderType>CutoutComplex</shaderType>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>1.1</drawSize>
+			</bodyGraphicData>
+		</li>
+      </lifeStages>      
+      <weaponTags>
+        <li></li>                                                                     <!--武器-->
+      </weaponTags>
+      <!--<abilities>
+        <li></li>
+      </abilities>-->
+    </PawnKindDef>
 
   <!-- 馱馬 -->
 
   <!-- T1 DMS_DeadMansSwitch-->
   <!-- 獵犬 -->
-  <ThingDef ParentName="BaseAutomatroidRace">
+<ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_Hound</defName>
     <label>hound</label>
     <description>四足移動的仿生機械狗,裝備了一把防禦用霰彈槍，能夠輕易地穿行於那些人類難以應對的區域並在武裝行動中提供偵查與救援.</description>
     <statBases>
-      <MoveSpeed>5</MoveSpeed>
-      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <MoveSpeed>5</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+	  <EMPResistance>1</EMPResistance>                                             <!--EMP抵抗力-->
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
     </statBases>
-    <race>
-      <body>DMS_Hound</body>
-      <baseBodySize>0.75</baseBodySize>
-      <mechWeightClass>Light</mechWeightClass>
-      <lifeStageAges>
-        <li>
-          <def>MechanoidFullyFormed</def>
-          <minAge>0</minAge>
-          <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
-          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
-        </li>
-      </lifeStageAges>
-    </race>
-  </ThingDef>
-
+	<race>
+	    <!--<mechEnabledWorkTypes>-->
+        <!--  <li></li>-->                                                  <!--允許的工作類型-->
+        <!--</mechEnabledWorkTypes>-->
+        <body>DMS_Hound</body>                                                      <!--身體(另外的def)-->
+        <baseBodySize>0.75</baseBodySize>
+		<mechWeightClass>Light</mechWeightClass>
+        <lifeStageAges>
+			<li>
+				<def>MechanoidFullyFormed</def>
+				<minAge>0</minAge>
+				<soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+				<soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+				<soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+			</li>
+		</lifeStageAges>
+      </race>
+	  <!--<comps>-->
+		<!--<li Class="CompProperties_TurretGun">-->
+		<!--	<turretDef>Gun_ChargeBlasterTurret</turretDef>--><!--身上的砲塔-->
+		<!--	<angleOffset>-90</angleOffset>-->
+        <!--</li>-->
+      <!--</comps>-->
+    </ThingDef>
+    
   <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_Hound</defName>
-    <label>hound</label>
-    <race>DMS_Mech_Hound</race>
-    <isFighter>true</isFighter>
-    <weaponTags></weaponTags>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/hound</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.1</drawSize>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
+      <defName>DMS_Mech_Hound</defName>
+      <label>hound</label>
+      <race>DMS_Mech_Hound</race>
+	  <isFighter>true</isFighter>
+      <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
+      <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
+      <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
+      <lifeStages>                                                                 <!--身體圖片-->
+		<li>
+			<bodyGraphicData>
+				<texPath>Things/Automatroid/hound</texPath>
+				<shaderType>CutoutComplex</shaderType>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>1.1</drawSize>
+			</bodyGraphicData>
+		</li>
+      </lifeStages>      
+      <weaponTags>
+        <li></li>                                                                     <!--武器-->
+      </weaponTags>
+      <!--<abilities>-->                                                   <!--特殊技能-->
+        <!--<li></li>
+      </abilities>-->
+    </PawnKindDef>
 
-  <!-- 士兵 -->
-  <ThingDef Name="LancerMechanoidWalker" ParentName="BaseMechanoidWalker">
+  <!-- 士兵 --><!--部分數據缺失-->  
+<ThingDef ParentName="BaseAutomatroidWalker">
     <defName>DMS_Mech_Soldat</defName>
     <label>soldat</label>
-    <description></description>
-    <race>
-      <body>DMS_Humanoid_Soldat</body>
-      <baseHealthScale>1</baseHealthScale>
-      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
-    </race>
+    <description>1234567890</description>
     <statBases>
-      <MoveSpeed>4.7</MoveSpeed>
-      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
+      <MoveSpeed>4.7</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>                                     <!--護甲-->
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+	  <EMPResistance>1</EMPResistance>                                             <!--EMP抵抗力-->
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
     </statBases>
-  </ThingDef>
+	<race>
+	    <!--<mechEnabledWorkTypes>-->
+        <!--  <li></li>-->                                                  <!--允許的工作類型-->
+        <!--</mechEnabledWorkTypes>-->
+        <body>DMS_Humanoid_Soldat</body>                                                      <!--身體(另外的def)-->
+        <baseBodySize>0.75</baseBodySize>
+		<mechWeightClass>Light</mechWeightClass>
+        <lifeStageAges>
+			<li>
+				<def>MechanoidFullyFormed</def>
+				<minAge>0</minAge>
+				<soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+				<soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+				<soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+			</li>
+		</lifeStageAges>
+      </race>
+	  <!--<comps>-->
+		<!--<li Class="CompProperties_TurretGun">-->
+		<!--	<turretDef>Gun_ChargeBlasterTurret</turretDef>--><!--身上的砲塔-->
+		<!--	<angleOffset>-90</angleOffset>-->
+        <!--</li>-->
+      <!--</comps>-->
+    </ThingDef>
+    
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+      <defName>DMS_Mech_Soldat</defName>
+      <label>soldat</label>
+      <race>DMS_Mech_Soldat</race>
+	  <isFighter>true</isFighter>
+      <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
+      <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
+      <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
+      <lifeStages>                                                                 <!--身體圖片-->
+		<li>
+			<bodyGraphicData>
+				<texPath>Things/Automatroid/soldat</texPath>
+				<shaderType>CutoutComplex</shaderType>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>1.1</drawSize>
+			</bodyGraphicData>
+		</li>
+      </lifeStages>      
+      <weaponTags>
+        <li></li>                                                                     <!--武器-->
+      </weaponTags>
+      <!--<abilities>-->                                                   <!--特殊技能-->
+        <!--<li></li>
+      </abilities>-->
+    </PawnKindDef>
+  
+  <!-- 士官 --><!--部分數據缺失-->
+<ThingDef ParentName="BaseAutomatroidWalker">
+    <defName>DMS_Mech_Sergeant</defName>
+    <label>sergeant</label>
+    <description>1234567890</description>
+    <statBases>
+      <MoveSpeed>4.7</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>                                     <!--護甲-->
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+	  <EMPResistance>1</EMPResistance>                                             <!--EMP抵抗力-->
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+    </statBases>
+	<race>
+	    <!--<mechEnabledWorkTypes>-->
+        <!--  <li></li>-->                                                  <!--允許的工作類型-->
+        <!--</mechEnabledWorkTypes>-->
+        <body>DMS_Humanoid_Soldat</body>                                                      <!--身體(另外的def)-->
+        <baseBodySize>0.75</baseBodySize>
+		<mechWeightClass>Light</mechWeightClass>
+        <lifeStageAges>
+			<li>
+				<def>MechanoidFullyFormed</def>
+				<minAge>0</minAge>
+				<soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+				<soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+				<soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+			</li>
+		</lifeStageAges>
+      </race>
+	  <!--<comps>-->
+		<!--<li Class="CompProperties_TurretGun">-->
+		<!--	<turretDef>Gun_ChargeBlasterTurret</turretDef>--><!--身上的砲塔-->
+		<!--	<angleOffset>-90</angleOffset>-->
+        <!--</li>-->
+      <!--</comps>-->
+    </ThingDef>
+    
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+      <defName>DMS_Mech_Sergeant</defName>
+      <label>sergeant</label>
+      <race>DMS_Mech_Sergeant</race>
+	  <isFighter>true</isFighter>
+      <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
+      <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
+      <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
+      <lifeStages>                                                                 <!--身體圖片-->
+		<li>
+			<bodyGraphicData>
+				<texPath>Things/Automatroid/sergeant</texPath>
+				<shaderType>CutoutComplex</shaderType>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>1.1</drawSize>
+			</bodyGraphicData>
+		</li>
+      </lifeStages>      
+      <weaponTags>
+        <li></li>                                                                     <!--武器-->
+      </weaponTags>
+      <!--<abilities>-->                                                   <!--特殊技能-->
+        <!--<li></li>
+      </abilities>-->
+    </PawnKindDef>
 
   <!-- 機槍馬車 -->
   <!-- 戰鬥框架 DMS_BattleFrame-->
 
   <!-- T2 DMS_Automatroid-->
-  <!-- 座狼 DMS_Hybird-->
-  <!-- 雙足飛龍 -->
-  <!-- 猿人 -->
+  <!-- 座狼 warg--><!--部分數據缺失-->
+<ThingDef ParentName="BaseAutomatroidRace">
+    <defName>DMS_Mech_Warg</defName>
+    <label>warg</label>
+    <description>1234567890</description>
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>                                     <!--護甲-->
+      <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+	  <EMPResistance>1</EMPResistance>                                             <!--EMP抵抗力-->
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+    </statBases>
+	<race>
+	    <!--<mechEnabledWorkTypes>-->
+        <!--  <li></li>-->                                                  <!--允許的工作類型-->
+        <!--</mechEnabledWorkTypes>-->
+        <body>DMS_Warg</body>                                                      <!--身體(另外的def)-->
+        <baseBodySize>0.75</baseBodySize>
+		<mechWeightClass>Light</mechWeightClass>
+        <lifeStageAges>
+			<li>
+				<def>MechanoidFullyFormed</def>
+				<minAge>0</minAge>
+				<soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+				<soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+				<soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+			</li>
+		</lifeStageAges>
+      </race>
+	  <!--<comps>-->
+		<!--<li Class="CompProperties_TurretGun">-->
+		<!--	<turretDef>Gun_ChargeBlasterTurret</turretDef>--><!--身上的砲塔-->
+		<!--	<angleOffset>-90</angleOffset>-->
+        <!--</li>-->
+      <!--</comps>-->
+    </ThingDef>
+    
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+      <defName>DMS_Mech_Warg</defName>
+      <label>warg</label>
+      <race>DMS_Mech_Warg</race>
+	  <isFighter>true</isFighter>
+      <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
+      <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
+      <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
+      <lifeStages>                                                                 <!--身體圖片-->
+		<li>
+			<bodyGraphicData>
+				<texPath>Things/Automatroid/warg</texPath>
+				<shaderType>CutoutComplex</shaderType>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>1.1</drawSize>
+			</bodyGraphicData>
+		</li>
+      </lifeStages>      
+      <weaponTags>
+        <li></li>                                                                     <!--武器-->
+      </weaponTags>
+      <!--<abilities>-->                                                   <!--特殊技能-->
+        <!--<li></li>
+      </abilities>-->
+    </PawnKindDef>
+  <!-- 雙足飛龍 Reptile--><!--部分數據缺失-->
+   <ThingDef ParentName="BaseAutomatroidRace">
+    <defName>DMS_Mech_Reptile</defName>
+    <label>reptile</label>
+    <description>1234567890</description>
+    <statBases>
+      <MoveSpeed>2</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>1.2</ArmorRating_Blunt>                                     <!--護甲-->
+      <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+	  <EMPResistance>1</EMPResistance>                                             <!--EMP抵抗力-->
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>        <!--帶寬消耗-->
+    </statBases>
+	<race>
+	    <!--<mechEnabledWorkTypes>-->
+        <!--  <li></li>-->                                                  <!--允許的工作類型-->
+        <!--</mechEnabledWorkTypes>-->
+        <body>DMS_Bipedal</body>                                                      <!--身體(另外的def)-->
+        <baseBodySize>3</baseBodySize>
+		<mechWeightClass>Light</mechWeightClass>
+        <lifeStageAges>
+			<li>
+				<def>MechanoidFullyFormed</def>
+				<minAge>0</minAge>
+				<soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+				<soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+				<soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+			</li>
+		</lifeStageAges>
+      </race>
+	  <!--<comps>-->
+		<!--<li Class="CompProperties_TurretGun">-->
+		<!--	<turretDef>Gun_ChargeBlasterTurret</turretDef>--><!--身上的砲塔-->
+		<!--	<angleOffset>-90</angleOffset>-->
+        <!--</li>-->
+      <!--</comps>-->
+    </ThingDef>
+    
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+      <defName>DMS_Mech_Reptile</defName>
+      <label>reptile</label>
+      <race>DMS_Mech_Reptile</race>
+	  <isFighter>true</isFighter>
+      <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
+      <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
+      <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
+      <lifeStages>                                                                 <!--身體圖片-->
+		<li>
+			<bodyGraphicData>
+				<texPath>Things/Automatroid/Reptile</texPath>
+				<shaderType>CutoutComplex</shaderType>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>3</drawSize>
+			</bodyGraphicData>
+		</li>
+      </lifeStages>      
+      <weaponTags>
+        <li></li>                                                                     <!--武器-->
+      </weaponTags>
+      <!--<abilities>-->                                                   <!--特殊技能-->
+        <!--<li></li>
+      </abilities>-->
+    </PawnKindDef>
+
+  <!-- 猿人 ape--><!--部分數據缺失-->
+<ThingDef ParentName="BaseAutomatroidWalker">
+    <defName>DMS_Mech_Ape</defName>
+    <label>ape</label>
+    <description>1234567890</description>
+    <statBases>
+      <MoveSpeed>1</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>                                     <!--護甲-->
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+	  <EMPResistance>1</EMPResistance>                                             <!--EMP抵抗力-->
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+    </statBases>
+	<race>
+	    <!--<mechEnabledWorkTypes>-->
+        <!--  <li></li>-->                                                  <!--允許的工作類型-->
+        <!--</mechEnabledWorkTypes>-->
+        <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
+        <baseBodySize>1.1</baseBodySize>
+		<mechWeightClass>Light</mechWeightClass>
+        <lifeStageAges>
+			<li>
+				<def>MechanoidFullyFormed</def>
+				<minAge>0</minAge>
+				<soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+				<soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+				<soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+			</li>
+		</lifeStageAges>
+      </race>
+	  <!--<comps>-->
+		<!--<li Class="CompProperties_TurretGun">-->
+		<!--	<turretDef>Gun_ChargeBlasterTurret</turretDef>--><!--身上的砲塔-->
+		<!--	<angleOffset>-90</angleOffset>-->
+        <!--</li>-->
+      <!--</comps>-->
+    </ThingDef>
+    
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+      <defName>DMS_Mech_Ape</defName>
+      <label>ape</label>
+      <race>DMS_Mech_Ape</race>
+	  <isFighter>true</isFighter>
+      <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
+      <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
+      <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
+      <lifeStages>                                                                 <!--身體圖片-->
+		<li>
+			<bodyGraphicData>
+				<texPath>Things/Automatroid/ape</texPath>
+				<shaderType>CutoutComplex</shaderType>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>1.1</drawSize>
+			</bodyGraphicData>
+		</li>
+      </lifeStages>      
+      <weaponTags>
+        <li></li>                                                                     <!--武器-->
+      </weaponTags>
+      <!--<abilities>-->                                                   <!--特殊技能-->
+        <!--<li></li>
+      </abilities>-->
+    </PawnKindDef>
 
   <!-- T3 DMS_HumanoidEngineering-->
-  <!-- 火槍手 -->
-  <!-- 塔盾手 -->
-  <!-- 浪人 -->
-  <!-- 戰鬥步行者 -->
+  <!-- 火槍手 arquebusier--><!--部分數據缺失-->
+<ThingDef ParentName="BaseAutomatroidWalker">
+    <defName>DMS_Mech_Arquebusier</defName>
+    <label>arquebusier</label>
+    <description>1234567890</description>
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>0.12</ArmorRating_Blunt>                                     <!--護甲-->
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+	  <EMPResistance>1</EMPResistance>                                             <!--EMP抵抗力-->
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>        <!--帶寬消耗-->
+    </statBases>
+	<race>
+	    <!--<mechEnabledWorkTypes>-->
+        <!--  <li></li>-->                                                  <!--允許的工作類型-->
+        <!--</mechEnabledWorkTypes>-->
+        <body>DMS_Humanoid_TypeA</body>                                                      <!--身體(另外的def)-->
+        <baseBodySize>1.1</baseBodySize>
+		<mechWeightClass>Light</mechWeightClass>
+        <lifeStageAges>
+			<li>
+				<def>MechanoidFullyFormed</def>
+				<minAge>0</minAge>
+				<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+				<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+				<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+			</li>
+		</lifeStageAges>
+      </race>
+	  <!--<comps>-->
+		<!--<li Class="CompProperties_TurretGun">-->
+		<!--	<turretDef>Gun_ChargeBlasterTurret</turretDef>--><!--身上的砲塔-->
+		<!--	<angleOffset>-90</angleOffset>-->
+        <!--</li>-->
+      <!--</comps>-->
+    </ThingDef>
+    
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+      <defName>DMS_Mech_Arquebusier</defName>
+      <label>arquebusier</label>
+      <race>DMS_Mech_Arquebusier</race>
+	  <isFighter>true</isFighter>
+      <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
+      <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
+      <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
+      <lifeStages>                                                                 <!--身體圖片-->
+		<li>
+			<bodyGraphicData>
+				<texPath>Things/Automatroid/arquebusier</texPath>
+				<shaderType>CutoutComplex</shaderType>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>1.1</drawSize>
+			</bodyGraphicData>
+		</li>
+	 </lifeStages> 
+       <weaponTags>
+        <li></li>                                                                     <!--武器-->
+      </weaponTags>
+      <!--<abilities>-->                                                   <!--特殊技能-->
+        <!--<li></li>
+      </abilities>-->
+    </PawnKindDef>
+  
+  <!-- 塔盾手 protector--><!--部分數據缺失-->
+<ThingDef ParentName="BaseAutomatroidWalker">
+    <defName>DMS_Mech_Protector</defName>
+    <label>protector</label>
+    <description>1234567890</description>
+    <statBases>
+      <MoveSpeed>3.5</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>                                     <!--護甲-->
+      <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+	  <EMPResistance>1</EMPResistance>                                             <!--EMP抵抗力-->
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->
+    </statBases>
+	<race>
+	    <!--<mechEnabledWorkTypes>-->
+        <!--  <li></li>-->                                                  <!--允許的工作類型-->
+        <!--</mechEnabledWorkTypes>-->
+        <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
+        <baseBodySize>1.15</baseBodySize>
+		<mechWeightClass>Light</mechWeightClass>
+        <lifeStageAges>
+			<li>
+				<def>MechanoidFullyFormed</def>
+				<minAge>0</minAge>
+				<soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+				<soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+				<soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+			</li>
+		</lifeStageAges>
+      </race>
+	  <!--<comps>-->
+		<!--<li Class="CompProperties_TurretGun">-->
+		<!--	<turretDef>Gun_ChargeBlasterTurret</turretDef>--><!--身上的砲塔-->
+		<!--	<angleOffset>-90</angleOffset>-->
+        <!--</li>-->
+      <!--</comps>-->
+    </ThingDef>
+    
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+      <defName>DMS_Mech_Protector</defName>
+      <label>protector</label>
+      <race>DMS_Mech_Protector</race>
+	  <isFighter>true</isFighter>
+      <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
+      <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
+      <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
+      <lifeStages>                                                                 <!--身體圖片-->
+		<li>
+			<bodyGraphicData>
+				<texPath>Things/Automatroid/protector</texPath>
+				<shaderType>CutoutComplex</shaderType>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>1.15</drawSize>
+			</bodyGraphicData>
+		</li>
+      </lifeStages>      
+      <weaponTags>
+        <li></li>                                                                     <!--武器-->
+      </weaponTags>
+      <!--<abilities>-->                                                   <!--特殊技能-->
+        <!--<li></li>
+      </abilities>-->
+    </PawnKindDef>
+  <!-- 浪人 ronin--><!--部分數據缺失-->
+<ThingDef ParentName="BaseAutomatroidWalker">
+    <defName>DMS_Mech_Ronin</defName>
+    <label>ronin</label>
+    <description>1234567890</description>
+    <statBases>
+      <MoveSpeed>4</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>                                     <!--護甲-->
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+	  <EMPResistance>1</EMPResistance>                                             <!--EMP抵抗力-->
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->
+    </statBases>
+	<race>
+	    <!--<mechEnabledWorkTypes>-->
+        <!--  <li></li>-->                                                  <!--允許的工作類型-->
+        <!--</mechEnabledWorkTypes>-->
+        <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
+        <baseBodySize>1.1</baseBodySize>
+		<mechWeightClass>Light</mechWeightClass>
+        <lifeStageAges>
+			<li>
+				<def>MechanoidFullyFormed</def>
+				<minAge>0</minAge>
+				<soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+				<soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+				<soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+			</li>
+		</lifeStageAges>
+      </race>
+	  <!--<comps>-->
+		<!--<li Class="CompProperties_TurretGun">-->
+		<!--	<turretDef>Gun_ChargeBlasterTurret</turretDef>--><!--身上的砲塔-->
+		<!--	<angleOffset>-90</angleOffset>-->
+        <!--</li>-->
+      <!--</comps>-->
+    </ThingDef>
+    
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+      <defName>DMS_Mech_Ronin</defName>
+      <label>ronin</label>
+      <race>DMS_Mech_Ronin</race>
+	  <isFighter>true</isFighter>
+      <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
+      <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
+      <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
+      <lifeStages>                                                                 <!--身體圖片-->
+		<li>
+			<bodyGraphicData>
+				<texPath>Things/Automatroid/ronin</texPath>
+				<shaderType>CutoutComplex</shaderType>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>1.1</drawSize>
+			</bodyGraphicData>
+		</li>
+      </lifeStages>      
+      <weaponTags>
+        <li></li>                                                                     <!--武器-->
+      </weaponTags>
+      <!--<abilities>-->                                                   <!--特殊技能-->
+        <!--<li></li>
+      </abilities>-->
+    </PawnKindDef>
+  
+  <!-- 戰鬥步行者 WIP-->
 
   <!-- T4 DMS_HeavyMachines-->
-  <!-- 駭蜥 -->
-  <!-- 象龜 -->
-  <!-- 射水魚 -->
-  <!-- 攀行者 -->
+  <!-- 駭蜥 tarbosaurus--><!--部分數據缺失-->
+   <ThingDef ParentName="BaseAutomatroidRace">
+    <defName>DMS_Mech_Tarbosaurus</defName>
+    <label>tarbosaurus</label>
+    <description>1234567890</description>
+    <statBases>
+      <MoveSpeed>1</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>                                     <!--護甲-->
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+	  <EMPResistance>1</EMPResistance>                                             <!--EMP抵抗力-->
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+    </statBases>
+	<race>
+	    <!--<mechEnabledWorkTypes>-->
+        <!--  <li></li>-->                                                  <!--允許的工作類型-->
+        <!--</mechEnabledWorkTypes>-->
+        <body>DMS_Bipedal</body>                                                      <!--身體(另外的def)-->
+        <baseBodySize>3</baseBodySize>
+		<mechWeightClass>Light</mechWeightClass>
+        <lifeStageAges>
+			<li>
+				<def>MechanoidFullyFormed</def>
+				<minAge>0</minAge>
+				<soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+				<soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+				<soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+			</li>
+		</lifeStageAges>
+      </race>
+	  <!--<comps>-->
+		<!--<li Class="CompProperties_TurretGun">-->
+		<!--	<turretDef>Gun_ChargeBlasterTurret</turretDef>--><!--身上的砲塔-->
+		<!--	<angleOffset>-90</angleOffset>-->
+        <!--</li>-->
+      <!--</comps>-->
+    </ThingDef>
+    
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+      <defName>DMS_Mech_Tarbosaurus</defName>
+      <label>tarbosaurus</label>
+      <race>DMS_Mech_Tarbosaurus</race>
+	  <isFighter>true</isFighter>
+      <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
+      <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
+      <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
+      <lifeStages>                                                                 <!--身體圖片-->
+		<li>
+			<bodyGraphicData>
+				<texPath>Things/Automatroid/tarbosaurus</texPath>
+				<shaderType>CutoutComplex</shaderType>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>3</drawSize>
+			</bodyGraphicData>
+		</li>
+      </lifeStages>      
+      <weaponTags>
+        <li></li>                                                                     <!--武器-->
+      </weaponTags>
+      <!--<abilities>-->                                                   <!--特殊技能-->
+        <!--<li></li>
+      </abilities>-->
+    </PawnKindDef>
+	
+  <!-- 象龜 geochelone--><!--部分數據缺失-->
+   <ThingDef ParentName="BaseAutomatroidRace">
+    <defName>DMS_Mech_Geochelone</defName>
+    <label>geochelone</label>
+    <description>1234567890</description>
+    <statBases>
+      <MoveSpeed>1</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>                                     <!--護甲-->
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+	  <EMPResistance>1</EMPResistance>                                             <!--EMP抵抗力-->
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+    </statBases>
+	<race>
+	    <!--<mechEnabledWorkTypes>-->
+        <!--  <li></li>-->                                                  <!--允許的工作類型-->
+        <!--</mechEnabledWorkTypes>-->
+        <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
+        <baseBodySize>2</baseBodySize>
+		<mechWeightClass>Light</mechWeightClass>
+        <lifeStageAges>
+			<li>
+				<def>MechanoidFullyFormed</def>
+				<minAge>0</minAge>
+				<soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+				<soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+				<soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+			</li>
+		</lifeStageAges>
+      </race>
+	  <!--<comps>-->
+		<!--<li Class="CompProperties_TurretGun">-->
+		<!--	<turretDef>Gun_ChargeBlasterTurret</turretDef>--><!--身上的砲塔-->
+		<!--	<angleOffset>-90</angleOffset>-->
+        <!--</li>-->
+      <!--</comps>-->
+    </ThingDef>
+    
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+      <defName>DMS_Mech_Geochelone</defName>
+      <label>geochelone</label>
+      <race>DMS_Mech_Geochelone</race>
+	  <isFighter>true</isFighter>
+      <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
+      <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
+      <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
+      <lifeStages>                                                                 <!--身體圖片-->
+		<li>
+			<bodyGraphicData>
+				<texPath>Things/Automatroid/geochelone</texPath>
+				<shaderType>CutoutComplex</shaderType>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>2</drawSize>
+			</bodyGraphicData>
+		</li>
+      </lifeStages>      
+      <weaponTags>
+        <li></li>                                                                     <!--武器-->
+      </weaponTags>
+      <!--<abilities>-->                                                   <!--特殊技能-->
+        <!--<li></li>
+      </abilities>-->
+    </PawnKindDef>
+  <!-- 射水魚 WIP-->
+  <!-- 攀行者 WIP--> 
+
 
 
   <!-- lady -->
