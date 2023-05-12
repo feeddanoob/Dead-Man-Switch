@@ -111,7 +111,7 @@
 
   <!-- T2 -->
 
- <ResearchProjectDef ParentName="DMS_BaseTech">
+ <ResearchProjectDef ParentName="DMS_BaseTech" MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_Mechlink</defName>
     <label>cluster transceiver</label>
     <description>Swarm transceivers are a way humans have developed to control robots in war, and of course it's not very comfortable for robots that generate self-awareness through DMS.</description>
@@ -125,7 +125,7 @@
     <researchViewY>1.75</researchViewY>
   </ResearchProjectDef>
 
-  <ResearchProjectDef ParentName="DMS_BaseTech">
+  <ResearchProjectDef ParentName="DMS_BaseTech" MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_Automatroid</defName>
     <label>automatroid basis</label>
     <description>because they are not just a weapon but weapon that is capable to eliminate target by themselves, these robots was such a topic and own a name to them "automatroid" \n\n Such a morally outrageous weapon should never acceptable at normal, but since it is widely used by nations during ww3 so it has become a mundane part of the battlefield..</description>
@@ -180,7 +180,7 @@
     <researchViewY>4.75</researchViewY>
   </ResearchProjectDef> 
 
-  <ResearchProjectDef ParentName="DMS_BaseTech">
+  <ResearchProjectDef ParentName="DMS_BaseTech" MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_BattleFrame</defName>
     <label>battle friends</label>
     <description>Due to the ages, we have been unable to know the correct name supposed to be "battle frames" or "battle friends", but anyway these are type of automatic exoskeleton that can be a frame of equipment or friend in combat.</description>
@@ -250,7 +250,7 @@
     <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
 
-  <ResearchProjectDef ParentName="DMS_BaseTech">
+  <ResearchProjectDef ParentName="DMS_BaseTech" MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_HeavyAutomatroid</defName>
     <label>heavy automatroid</label>
     <description>These heavy machines were prepared for a full-scale war among mankind, but forturnatelly these scale of war doesn't often.</description>
@@ -263,7 +263,7 @@
     <researchViewY>4.25</researchViewY>
   </ResearchProjectDef>
 
-  <ResearchProjectDef ParentName="DMS_BaseTech">
+  <ResearchProjectDef ParentName="DMS_BaseTech" MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_HumanoidEngineering</defName>
     <label>humanoid engineering</label>
     <description>during war, automatroid with human shapes are proven to be a good design where the ergonomics and psychological suggestion are work on them.</description>
@@ -276,7 +276,7 @@
     <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
 
-  <ResearchProjectDef ParentName="DMS_BaseTech">
+  <ResearchProjectDef ParentName="DMS_BaseTech" MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_Synthroid</defName>
     <label>Next-Gen weaponry(WIP)</label>
     <description>the weapon development around mechanical-biological hybrid continued until the Fourth World War, and it reach to the height a man can thought before ...synthetic humanoid.</description>

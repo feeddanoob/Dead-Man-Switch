@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- <HediffDef>
+ <HediffDef MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_MechlinkKillSwitch</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>kill switch</label>
@@ -27,7 +27,7 @@
   </HediffDef>
 
   <!-- 安裝DMS機控中樞後的永久副作用Hediff，會在安裝者死亡後銷毀機控中樞 -->
-  <HediffDef>
+  <HediffDef MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_MechlinkRejection</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>mechlink rejection</label>

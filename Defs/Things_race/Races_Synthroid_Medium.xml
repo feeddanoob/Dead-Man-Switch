@@ -104,8 +104,8 @@
     <statBases>
       <MarketValue>2000</MarketValue>
       <MoveSpeed>5</MoveSpeed>
-      <BandwidthCost>2</BandwidthCost>
-      <ControlTakingTime>30</ControlTakingTime>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">30</ControlTakingTime>
     </statBases>
     <race>
       <baseBodySize>1.0</baseBodySize>
@@ -132,8 +132,8 @@
     <statBases>
       <MarketValue>2000</MarketValue>
       <MoveSpeed>4.5</MoveSpeed>
-      <BandwidthCost>2</BandwidthCost>
-      <ControlTakingTime>30</ControlTakingTime>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">30</ControlTakingTime>
     </statBases>
     <race>
       <baseBodySize>1.2</baseBodySize>
@@ -160,8 +160,8 @@
     <statBases>
       <MarketValue>2000</MarketValue>
       <MoveSpeed>5.5</MoveSpeed>
-      <BandwidthCost>2</BandwidthCost>
-      <ControlTakingTime>30</ControlTakingTime>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">30</ControlTakingTime>
     </statBases>
     <race>
       <baseBodySize>1.2</baseBodySize>
@@ -188,8 +188,8 @@
     <statBases>
       <MarketValue>2000</MarketValue>
       <MoveSpeed>7</MoveSpeed>
-      <BandwidthCost>2</BandwidthCost>
-      <ControlTakingTime>30</ControlTakingTime>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">30</ControlTakingTime>
     </statBases>
     <race>
       <baseBodySize>1.0</baseBodySize>
@@ -215,8 +215,8 @@
     <statBases>
       <MarketValue>2000</MarketValue>
       <MoveSpeed>8</MoveSpeed>
-      <BandwidthCost>2</BandwidthCost>
-      <ControlTakingTime>30</ControlTakingTime>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">30</ControlTakingTime>
     </statBases>
     <race>
       <baseBodySize>0.8</baseBodySize>
