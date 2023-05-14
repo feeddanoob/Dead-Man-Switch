@@ -420,25 +420,6 @@
       <li>ResurrectMediumMech</li>
       <li>ResurrectHeavyMech</li>
       <li>ResurrectUltraheavyMech</li>
-	  <li>DMS_Mech_TrashBin</li>
-	  <li>DMS_Mech_VerlingBird</li>
-	  <li>DMS_Mech_Hound</li>
-	  <li>DMS_Mech_Soldat</li>
-	  <li>DMS_Mech_Sergeant</li>
-	  <li>DMS_Mech_Warg</li>
-	  <li>DMS_Mech_Reptile</li>
-	  <li>DMS_Mech_Ape</li>
-	  <li>DMS_Mech_Arquebusier</li>
-	  <li>DMS_Mech_Protector</li>
-	  <li>DMS_Mech_Ronin</li>
-	  <!--<li>DMS_Mech_Tarbosaurus</li>-->
-	  <!--<li>DMS_Mech_Geochelone</li>-->
-	  <li>DMS_Automatroid_lady</li>
-	  <li>DMS_Synthroid_Male</li>
-	  <li>>DMS_Synthroid_Round</li>
-	  <li>DMS_Synthroid_Hulk</li>
-	  <li>DMS_Synthroid_Female</li>
-	  <li>DMS_Synthroid_Thin</li>
     </recipes>
     <comps>
       <li Class="CompProperties_Power">

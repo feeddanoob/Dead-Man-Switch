@@ -53,7 +53,7 @@
       <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">5</ControlTakingTime>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
       <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.33</MechEnergyLossPerHP>
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">1</WastepacksPerRecharge>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">1</WastepacksPerRecharge><!--充電/培養時產出廢料-->
       <WorkSpeedGlobal MayRequire="Ludeon.Rimworld.Biotech">0.5</WorkSpeedGlobal>
     </statBases>
     <race>
@@ -141,6 +141,7 @@
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
 	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
     <race>
       <body>DMS_TrashBin</body>
@@ -199,6 +200,7 @@
       <ArmorRating_Sharp>0</ArmorRating_Sharp>
 	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">0</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
 	<race>
 	    <!--<mechEnabledWorkTypes>-->
@@ -265,6 +267,7 @@
       <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
 	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
 	<race>
 	    <!--<mechEnabledWorkTypes>-->
@@ -328,6 +331,7 @@
       <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
 	<race>
 	    <!--<mechEnabledWorkTypes>-->
@@ -391,6 +395,7 @@
       <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
 	<race>
 	    <!--<mechEnabledWorkTypes>-->
@@ -458,6 +463,7 @@
       <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
 	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
 	<race>
 	    <!--<mechEnabledWorkTypes>-->
@@ -520,6 +526,7 @@
       <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
 	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>        <!--帶寬消耗-->
+	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">4</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
 	<race>
 	    <!--<mechEnabledWorkTypes>-->
@@ -583,6 +590,7 @@
       <ArmorRating_Sharp>1</ArmorRating_Sharp>
 	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">0</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
 	<race>
 	    <!--<mechEnabledWorkTypes>-->
@@ -647,6 +655,8 @@
       <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>        <!--帶寬消耗-->
+	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">4</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+	  
     </statBases>
 	<race>
 	    <!--<mechEnabledWorkTypes>-->
@@ -710,6 +720,7 @@
       <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
 	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->
+	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
 	<race>
 	    <!--<mechEnabledWorkTypes>-->
@@ -772,6 +783,7 @@
       <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
 	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->
+	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
 	<race>
 	    <!--<mechEnabledWorkTypes>-->
@@ -838,6 +850,7 @@
       <ArmorRating_Sharp>1</ArmorRating_Sharp>
 	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">0</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
 	<race>
 	    <!--<mechEnabledWorkTypes>-->
@@ -901,6 +914,7 @@
       <ArmorRating_Sharp>1</ArmorRating_Sharp>
 	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">0</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
 	<race>
 	    <!--<mechEnabledWorkTypes>-->
