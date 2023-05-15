@@ -205,7 +205,7 @@
     </recipeUsers>
     <workAmount>15000</workAmount>
     <skillRequirements>
-      <Crafting>10</Crafting>
+      <Crafting>3</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
