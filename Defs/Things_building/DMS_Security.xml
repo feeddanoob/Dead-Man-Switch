@@ -207,7 +207,7 @@
       <Mass>150</Mass>
     </statBases>
 	<researchPrerequisites>
-      <li>GunTurrets</li>
+      <li>HeavyTurrets</li>
     </researchPrerequisites>
   </ThingDef>
   
@@ -232,11 +232,7 @@
       <WorkToBuild>7500</WorkToBuild>
       <Beauty>-2</Beauty>
 	  <ShootingAccuracyTurret>0.98</ShootingAccuracyTurret>
-<<<<<<< Updated upstream
-      <Mass>500</Mass>
-=======
       <Mass>15000</Mass>
->>>>>>> Stashed changes
     </statBases>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -283,17 +279,6 @@
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
-<<<<<<< Updated upstream
-      <Steel>50</Steel>
-	  <Tungsteel>250</Tungsteel>
-	  <ComponentStamped>10</ComponentStamped>
-      <ComponentIndustrial>5</ComponentIndustrial>
-      <ReinforcedBarrel>12</ReinforcedBarrel>
-    </costList>
-    <!--<researchPrerequisites>
-      <li></li>
-    </researchPrerequisites>-->
-=======
       <Steel>150</Steel>
 	  <Tungsteel>300</Tungsteel>
 	  <ComponentStamped>10</ComponentStamped>
@@ -304,7 +289,6 @@
       	<li>BlowbackOperation</li>
       	<li>DMS_EquipmentElite</li>
     </researchPrerequisites>
->>>>>>> Stashed changes
     <uiIconPath>Things/Turrets/DMS_Tunguska</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
 	<minifiedDef></minifiedDef>
@@ -319,7 +303,7 @@
 	  <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyTouch>0.75</AccuracyTouch>
       <AccuracyShort>0.85</AccuracyShort>
       <AccuracyMedium>0.80</AccuracyMedium>
       <AccuracyLong>0.75</AccuracyLong>
@@ -333,11 +317,7 @@
         <!--<isMortar>false</isMortar>-->
         <warmupTime>1</warmupTime>
         <minRange>5.9</minRange>
-<<<<<<< Updated upstream
-        <range>70</range>
-=======
         <range>45</range>
->>>>>>> Stashed changes
         <ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
         <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
         <burstShotCount>100</burstShotCount>
@@ -374,11 +354,7 @@
       <WorkToBuild>3000</WorkToBuild>
       <Beauty>-2</Beauty>
 	  <ShootingAccuracyTurret>1.00</ShootingAccuracyTurret>
-<<<<<<< Updated upstream
-      <Mass>250</Mass>
-=======
       <Mass>10000</Mass>
->>>>>>> Stashed changes
     </statBases>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -425,17 +401,6 @@
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
-<<<<<<< Updated upstream
-      <Steel>45</Steel>
-	  <Tungsteel>125</Tungsteel>
-	  <ComponentStamped>7</ComponentStamped>
-      <ComponentIndustrial>3</ComponentIndustrial>
-      <ReinforcedBarrel>7</ReinforcedBarrel>
-    </costList>
-    <!--<researchPrerequisites>
-      <li></li>
-    </researchPrerequisites>-->
-=======
       <Steel>150</Steel>
 	  <Tungsteel>150</Tungsteel>
 	  <ComponentStamped>15</ComponentStamped>
@@ -443,11 +408,9 @@
       <ReinforcedBarrel>7</ReinforcedBarrel>
     </costList>
 	<researchPrerequisites>
-      	<li>BlowbackOperation</li>
       	<li>DMS_EquipmentElite</li>
 		<li>MultibarrelWeapons</li>
     </researchPrerequisites>
->>>>>>> Stashed changes
     <uiIconPath>Things/Turrets/DMS_GateKeeper</uiIconPath>
     <uiIconScale>2</uiIconScale>
 	<minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->
@@ -479,11 +442,7 @@
         <!--<isMortar>false</isMortar>-->
         <warmupTime>2</warmupTime>
         <minRange>3.9</minRange>
-<<<<<<< Updated upstream
-        <range>70</range>
-=======
         <range>45</range>
->>>>>>> Stashed changes
         <ai_AvoidFriendlyFireRadius>4.9</ai_AvoidFriendlyFireRadius>
         <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
         <burstShotCount>50</burstShotCount>
@@ -608,16 +567,10 @@
       <ComponentIndustrial>2</ComponentIndustrial>
       <ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
-<<<<<<< Updated upstream
-    <!--<researchPrerequisites>
-      <li></li>
-    </researchPrerequisites>-->
-=======
 	<researchPrerequisites>
       	<li>BlowbackOperation</li>
       	<li>DMS_EquipmentElite</li>
     </researchPrerequisites>
->>>>>>> Stashed changes
     <uiIconPath>Things/Turrets/DMS_5ETs16U</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
 	<minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->

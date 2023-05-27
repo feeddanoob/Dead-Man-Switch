@@ -48,13 +48,13 @@
       <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
       <MarketValue>800</MarketValue>
-	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
       <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">5</ControlTakingTime>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
       <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.33</MechEnergyLossPerHP>
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">1</WastepacksPerRecharge><!--充電/培養時產出廢料-->
       <WorkSpeedGlobal MayRequire="Ludeon.Rimworld.Biotech">0.5</WorkSpeedGlobal>
+	  	  <PsychicSensitivity>0</PsychicSensitivity>
     </statBases>
     <race>
       <intelligence>ToolUser</intelligence>
@@ -82,6 +82,24 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>
+	<damageMultipliers>
+		  <li>
+			<damageDef>EMP</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Stun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">
+				<damageDef>MechBandShockwave</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="CETeam.CombatExtended">
+				<damageDef>Electrical</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+	</damageMultipliers>
   </ThingDef>
 
   <ThingDef ParentName="BaseAutomatroidRace" Name="BaseAutomatroidWalker" Abstract="True">
@@ -139,7 +157,6 @@
       <MoveSpeed>4.7</MoveSpeed>
       <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
 	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -198,7 +215,6 @@
       <MoveSpeed>10</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0</ArmorRating_Sharp>
-	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
 	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">0</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -265,7 +281,6 @@
       <MoveSpeed>5</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0.2</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
-	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
 	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -329,7 +344,6 @@
       <MoveSpeed>4.7</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0.2</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
 	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -393,7 +407,6 @@
       <MoveSpeed>4.7</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0.2</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
 	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -461,7 +474,6 @@
       <MoveSpeed>5</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0.2</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
-	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
 	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -524,7 +536,6 @@
       <MoveSpeed>2</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>1.2</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
-	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>        <!--帶寬消耗-->
 	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">4</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -588,7 +599,6 @@
       <MoveSpeed>1</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>1</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>1</ArmorRating_Sharp>
-	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
 	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">0</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -653,7 +663,6 @@
       <MoveSpeed>5</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0.12</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>        <!--帶寬消耗-->
 	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">4</WastepacksPerRecharge><!--充電/培養時產出廢料-->
 	  
@@ -718,7 +727,6 @@
       <MoveSpeed>3.5</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0.75</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
-	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->
 	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -781,7 +789,6 @@
       <MoveSpeed>4</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0.4</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
-	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->
 	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -848,7 +855,6 @@
       <MoveSpeed>1</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>1</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>1</ArmorRating_Sharp>
-	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
 	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">0</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -912,7 +918,6 @@
       <MoveSpeed>1</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>1</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>1</ArmorRating_Sharp>
-	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>        <!--EMP抵抗力-->
 	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
 	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">0</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -955,7 +960,201 @@
 				<texPath>Things/Automatroid/geochelone</texPath>
 				<shaderType>CutoutComplex</shaderType>
 				<graphicClass>Graphic_Multi</graphicClass>
-				<drawSize>2</drawSize>
+				<drawSize>3.5</drawSize>
+			</bodyGraphicData>
+		</li>
+      </lifeStages>      
+      <weaponTags>
+        <li></li>                                                                     <!--武器-->
+      </weaponTags>
+      <!--<abilities>-->                                                   <!--特殊技能-->
+        <!--<li></li>
+      </abilities>-->
+    </PawnKindDef>
+	
+  <!-- Killdozer -->
+   <ThingDef ParentName="BaseAutomatroidRace">
+    <defName>DMS_Mech_Killdozer</defName>
+    <label>killdozer</label>
+    <description>一輛無人的小型突擊破障車，正面配備裝有尖牙的推土板，對防禦工事的威脅極大，同時也起到了裝甲盾牌的作用。整車大面積採用傾斜裝甲，並且車內配有強力的護盾發生器，是個不好對付的重型單位。/n/n名稱來源於一本書，書名後來被用於稱呼一輛被打造出來用於反抗政府打壓的的裝甲推土機，整個事件過程中沒有任何無辜人員傷亡，但駕駛最後在車內飲彈自盡。</description>
+    <statBases>
+      <MoveSpeed>1</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>                                     <!--護甲-->
+      <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+	  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">0</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+	  <EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>3</EnergyShieldEnergyMax>
+    </statBases>
+	<race>
+	    <!--<mechEnabledWorkTypes>-->
+        <!--  <li></li>-->                                                  <!--允許的工作類型-->
+        <!--</mechEnabledWorkTypes>-->
+        <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
+        <baseBodySize>2</baseBodySize>
+		<mechWeightClass>Light</mechWeightClass>
+        <lifeStageAges>
+			<li>
+				<def>MechanoidFullyFormed</def>
+				<minAge>0</minAge>
+				<soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+				<soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+				<soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+			</li>
+		</lifeStageAges>
+      </race>
+	   <comps>
+			<!--<li Class="CompProperties_ProjectileInterceptor">
+				<radius>2</radius>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<color>(0.5, 0, 1)</color>
+				<reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+				<activeSound>BulletShield_Ambience</activeSound>
+				<hitPoints>300</hitPoints>
+				<hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+				<chargeDurationTicks>1</chargeDurationTicks>
+				<rechargeHitPointsIntervalTicks>1</rechargeHitPointsIntervalTicks>
+				<minIdleAlpha>0.2</minIdleAlpha>
+				<drawWithNoSelection>True</drawWithNoSelection>
+				<disarmedByEmpForTicks>0</disarmedByEmpForTicks>
+				<gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+			</li>-->
+			<li Class="CompProperties_ProjectileInterceptor">
+				<radius>2.25</radius>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<interceptNonHostileProjectiles>true</interceptNonHostileProjectiles>
+				<interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+				<reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+				<activeSound>BulletShield_Ambience</activeSound>
+				<color>(1, 1, 0.5)</color>
+				<idlePulseSpeed>3</idlePulseSpeed>
+				<minIdleAlpha>0.05</minIdleAlpha>
+				<drawWithNoSelection>True</drawWithNoSelection>
+				<disarmedByEmpForTicks>0</disarmedByEmpForTicks>
+			</li>
+			<li Class="CompProperties_ProjectileInterceptor">
+				<radius>2.5</radius>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<interceptNonHostileProjectiles>true</interceptNonHostileProjectiles>
+				<interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+				<reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+				<activeSound>BulletShield_Ambience</activeSound>
+				<color>(1, 0, 0.5)</color>
+				<idlePulseSpeed>3</idlePulseSpeed>
+				<minIdleAlpha>0.05</minIdleAlpha>
+				<drawWithNoSelection>True</drawWithNoSelection>
+				<disarmedByEmpForTicks>0</disarmedByEmpForTicks>
+			</li>
+			<li Class="CompProperties_ProjectileInterceptor">
+				<radius>2.75</radius>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<interceptNonHostileProjectiles>true</interceptNonHostileProjectiles>
+				<interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+				<reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+				<activeSound>BulletShield_Ambience</activeSound>
+				<color>(0, 1, 0.5)</color>
+				<idlePulseSpeed>3</idlePulseSpeed>
+				<minIdleAlpha>0.05</minIdleAlpha>
+				<drawWithNoSelection>True</drawWithNoSelection>
+				<disarmedByEmpForTicks>0</disarmedByEmpForTicks>
+			</li>
+			<li Class="CompProperties_ProjectileInterceptor">
+				<radius>3</radius>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<interceptNonHostileProjectiles>true</interceptNonHostileProjectiles>
+				<interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+				<reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+				<activeSound>BulletShield_Ambience</activeSound>
+				<color>(1, 0.5, 0.5)</color>
+				<idlePulseSpeed>3</idlePulseSpeed>
+				<minIdleAlpha>0.05</minIdleAlpha>
+				<drawWithNoSelection>True</drawWithNoSelection>
+				<disarmedByEmpForTicks>0</disarmedByEmpForTicks>
+			</li>
+			<li Class="CompProperties_ProjectileInterceptor">
+				<radius>3.25</radius>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<interceptNonHostileProjectiles>true</interceptNonHostileProjectiles>
+				<interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+				<reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+				<activeSound>BulletShield_Ambience</activeSound>
+				<color>(0, 0.5, 1)</color>
+				<idlePulseSpeed>3</idlePulseSpeed>
+				<minIdleAlpha>0.05</minIdleAlpha>
+				<drawWithNoSelection>True</drawWithNoSelection>
+				<disarmedByEmpForTicks>0</disarmedByEmpForTicks>
+			</li>
+			<li Class="CompProperties_ProjectileInterceptor">
+				<radius>3.5</radius>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<interceptNonHostileProjectiles>true</interceptNonHostileProjectiles>
+				<interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+				<reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+				<activeSound>BulletShield_Ambience</activeSound>
+				<color>(1, 0.5, 1)</color>
+				<idlePulseSpeed>3</idlePulseSpeed>
+				<minIdleAlpha>0.05</minIdleAlpha>
+				<drawWithNoSelection>True</drawWithNoSelection>
+				<disarmedByEmpForTicks>0</disarmedByEmpForTicks>
+			</li>
+			<li Class="CompProperties_ProjectileInterceptor">
+				<radius>3.75</radius>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<interceptNonHostileProjectiles>true</interceptNonHostileProjectiles>
+				<interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+				<reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+				<activeSound>BulletShield_Ambience</activeSound>
+				<color>(0.5, 1, 1)</color>
+				<idlePulseSpeed>3</idlePulseSpeed>
+				<minIdleAlpha>0.05</minIdleAlpha>
+				<drawWithNoSelection>True</drawWithNoSelection>
+				<disarmedByEmpForTicks>0</disarmedByEmpForTicks>
+			</li>
+			<li Class="CompProperties_ProjectileInterceptor">
+				<radius>4</radius>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<interceptNonHostileProjectiles>true</interceptNonHostileProjectiles>
+				<interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+				<reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+				<activeSound>BulletShield_Ambience</activeSound>
+				<color>(10, 0.5, 1)</color>
+				<idlePulseSpeed>3</idlePulseSpeed>
+				<minIdleAlpha>0.05</minIdleAlpha>
+				<drawWithNoSelection>True</drawWithNoSelection>
+				<disarmedByEmpForTicks>0</disarmedByEmpForTicks>
+			</li>
+			<li Class="CompProperties_Shield">
+				<startingTicksToReset>1200</startingTicksToReset><!-- 10 mins -->
+				<minDrawSize>4</minDrawSize>
+				<maxDrawSize>4</maxDrawSize>
+				<energyLossPerDamage>0.3</energyLossPerDamage>
+				<energyOnReset>0.1</energyOnReset>
+				<blocksRangedWeapons>false</blocksRangedWeapons>
+			</li>
+		</comps>
+	  <!--<comps>
+		<li Class="CompProperties_TurretGun">
+			<turretDef>Gun_ChargeBlasterTurret</turretDef>身上的砲塔
+			<angleOffset>90</angleOffset>
+        </li>
+      </comps>-->
+    </ThingDef>
+    
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+      <defName>DMS_Mech_Killdozer</defName>
+      <label>killdozer</label>
+      <race>DMS_Mech_Killdozer</race>
+	  <isFighter>true</isFighter>
+      <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
+      <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
+      <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
+      <lifeStages>                                                                 <!--身體圖片-->
+		<li>
+			<bodyGraphicData>
+				<texPath>Things/Automatroid/killdozer_ERA</texPath>
+				<shaderType>CutoutComplex</shaderType>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>3.75</drawSize>
 			</bodyGraphicData>
 		</li>
       </lifeStages>      
