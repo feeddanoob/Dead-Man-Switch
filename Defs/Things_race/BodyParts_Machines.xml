@@ -87,7 +87,7 @@
     <defName>DMS_CompactSenser</defName>
     <label>integrated senser</label>
     <hitPoints>20</hitPoints>
-    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <frostbiteVulnerability>1</frostbiteVulnerability>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <solid>true</solid>
@@ -390,7 +390,154 @@
     </corePart>
   </BodyDef>
   <!-- 座狼機器人是四條生物腿加一個生物軀幹,前腿有爪子,然後軀幹上有三塊大裝甲,然後加一顆頭,有脖子-->
-
+  <BodyDef>
+    <defName>DMS_Warg</defName>
+    <label>synthic quadruped</label>
+    <corePart>
+      <def>DMS_Chassis</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+          <coverage>0.10</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+              <coverage>0.60</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>ArtificialBrain</def>
+                  <coverage>0.05</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>central sight sensor</customLabel>
+                  <coverage>0.20</coverage>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>infrared sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>left hearing sensor</customLabel>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>right hearing sensor</customLabel>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.05</coverage>
+                </li>
+              </parts>
+            </li>
+            <li>
+              <def>DMS_SynthicPlate</def>
+              <coverage>0.06</coverage>
+              <height>Middle</height>
+              <depth>Outside</depth>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DMS_SynthicPlate</def>
+          <coverage>0.06</coverage>
+          <height>Middle</height>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>DMS_SynthicPlate</def>
+          <coverage>0.06</coverage>
+          <height>Middle</height>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>DMS_CompactSenser</def>
+          <coverage>0.04</coverage>
+          <height>Middle</height>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>DMS_Battery</def>
+          <customLabel>main battery</customLabel>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>DMS_SynthicLeg</def>
+          <customLabel>left front leg</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DMS_SynthicFoot</def>
+              <customLabel>left front foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DMS_SynthicLeg</def>
+          <customLabel>left back leg</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DMS_SynthicFoot</def>
+              <customLabel>left back foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DMS_SynthicLeg</def>
+          <customLabel>right front leg</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DMS_SynthicFoot</def>
+              <customLabel>right front foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DMS_SynthicLeg</def>
+          <customLabel>right back leg</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DMS_SynthicFoot</def>
+              <customLabel>right back foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
   <!-- 士兵框架是一對機械腿,一對手臂加軀幹,然後軀幹分上下各有一塊裝甲,然後加一顆頭,有脖子,頭部是上下傳感器,有三隻眼睛-->
   <BodyDef>
     <defName>DMS_Humanoid_Soldat</defName>

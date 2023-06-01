@@ -211,4 +211,54 @@
     </thingCategories>
     <allowedArchonexusCount>10</allowedArchonexusCount>
   </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>ABCDEFG</defName>
+    <label>防彈陶瓷</label>
+    <description>防彈陶瓷</description>
+    <graphicData>
+      <texPath>Things/Resource/Polyester</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>2</MarketValue>
+      <Mass>0.025</Mass>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.25</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.8</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>75</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0.50</commonality>
+      <color>(63,63,63)</color>
+      <statFactors>
+        <Flammability>0</Flammability>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <Beauty>0.5</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+  
 </Defs>

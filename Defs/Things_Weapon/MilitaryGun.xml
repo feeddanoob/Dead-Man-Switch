@@ -944,7 +944,83 @@
 			<speed>100</speed>
 		</projectile>
 	</ThingDef>
-  
+
+<!--大口徑半自動步槍--><!--文本缺失-->
+	<ThingDef ParentName="DMS_BaseMakeableGun">
+		<defName>DMS_SemiAutoRifle</defName>
+		<label>military SemiAutoRifle</label>
+		<description>半自動反器材步槍，沒有安裝任何光學瞄具，就別想著打遠了。</description>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>Ranged</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>DMS_IndustrialGunAdvanced</li>
+		</weaponTags>
+		
+		<graphicData>
+			<texPath>Things/Weapons/DMS_SemiAutoRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.75,1.75)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>47500</WorkToMake>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+			<Mass>14.80</Mass>
+			<RangedWeapon_Cooldown>1.38</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.15</MoveSpeed>
+		</equippedStatOffsets>
+		<recipeMaker>
+		    <researchPrerequisites>
+      			<li>GasOperation</li>
+      			<li>DMS_EquipmentHeavy</li>
+    		</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>165</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+			
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_DMS_AMR</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>50</ticksBetweenBurstShots>
+				<range>35</range>
+				<soundCast>Shot_TurretSniper</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				  <li>Blunt</li>
+				  <li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>  
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>DMS_Machete</defName>

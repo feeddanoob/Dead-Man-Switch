@@ -266,7 +266,7 @@
   </ThingDef>
 
 
-  <ThingDef Name="DMS_MechConstructorFormingBase" ParentName="MechGestatorFormingBase">
+  <ThingDef Name="DMS_MechConstructorFormingBase" ParentName="MechGestatorFormingBase" MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_MechConstructorForming</defName>
     <graphicData>
       <texPath>Things/Building/MechBuilder_Glass</texPath>
@@ -279,7 +279,7 @@
     </graphicData>
   </ThingDef> 
 
-  <ThingDef ParentName="DMS_MechConstructorFormingBase">
+  <ThingDef ParentName="DMS_MechConstructorFormingBase" MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_MechConstructorCycleComplete</defName>
     <graphicData>
       <color>(1, 0.36, 0)</color>
@@ -287,14 +287,14 @@
   </ThingDef>
 
   <!-- Mech gestator - Formed -->
-  <ThingDef ParentName="DMS_MechConstructorFormingBase">
+  <ThingDef ParentName="DMS_MechConstructorFormingBase" MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_MechConstructorFormed</defName>
     <graphicData>
       <color>(0.2, 1, 0.15)</color>
     </graphicData>
   </ThingDef>
 
-  <WorkGiverDef>
+  <WorkGiverDef MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_DoBillsMechConstructor</defName>
     <label>make things at automatroid constructor</label>
     <giverClass>WorkGiver_DoBill</giverClass>
@@ -311,7 +311,7 @@
     <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
 
-  <ThingDef ParentName="MechGestatorBase">
+  <ThingDef ParentName="MechGestatorBase" MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_MechGestatorSamll</defName>
     <label>automatroid constructor</label>
     <description>Todo.</description>
