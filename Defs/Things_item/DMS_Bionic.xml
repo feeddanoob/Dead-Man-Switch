@@ -95,6 +95,11 @@
       <texPath>Things/Misc/DMS_BionicEye_east</texPath><!-- 這個以後改 -->
     </eyeGraphicEast>
     <eyeGraphicScale>0.2</eyeGraphicScale>
+	<comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
+		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+			<scaleAdjustment>0.75</scaleAdjustment>
+		</li>
+	</comps>
   </HediffDef>
 
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
@@ -150,6 +155,9 @@
           </li>
         </tools>
       </li>
+		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">            <!-- 部件血量加多少% -->
+			<scaleAdjustment>0.75</scaleAdjustment>
+		</li>
     </comps>
     <hediffGivers>
       <li Class="HediffGiver_Random">
@@ -164,7 +172,6 @@
       <li>
         <statOffsets>
           <RestFallRateFactor>0.1</RestFallRateFactor>
-          <IncomingDamageFactor>-0.05</IncomingDamageFactor>
         </statOffsets>
       </li>
     </stages>
@@ -244,7 +251,6 @@
       <li>
         <statOffsets>
           <RestFallRateFactor>0.1</RestFallRateFactor>
-          <IncomingDamageFactor>-0.05</IncomingDamageFactor>
         </statOffsets>
       </li>
     </stages>
@@ -253,6 +259,11 @@
       <partEfficiency>1.25</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
+	<comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
+		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+			<scaleAdjustment>0.75</scaleAdjustment>
+		</li>
+	</comps>
   </HediffDef>
 
   <ThingDef ParentName="DMS_BioMechBionicBase">
@@ -335,6 +346,9 @@
         <damageDefIncoming>EMP</damageDefIncoming>
         <createHediff>BrainShock</createHediff>
       </li>
+		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">            <!-- 部件血量加多少% -->
+			<scaleAdjustment>0.5</scaleAdjustment>
+		</li>
     </comps>
   </HediffDef>
 
@@ -431,6 +445,9 @@
         <damageDefIncoming>EMP</damageDefIncoming>
         <createHediff>BrainShock</createHediff>
       </li>
+		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">            <!-- 部件血量加多少% -->
+			<scaleAdjustment>0.20</scaleAdjustment>
+		</li>
     </comps>
   </HediffDef>
 
@@ -514,6 +531,11 @@
       <partEfficiency>0.2</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
+	<comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
+		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+			<scaleAdjustment>0.5</scaleAdjustment>
+		</li>
+	</comps>
   </HediffDef>
 
   <ThingDef ParentName="DMS_BioMechBionicBase">
@@ -623,6 +645,9 @@
           </li>
         </tools>
       </li>
+		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">            <!-- 部件血量加多少% -->
+			<scaleAdjustment>0.5</scaleAdjustment>
+		</li>
     </comps>
     <hediffGivers>
       <li Class="HediffGiver_Random">
@@ -637,7 +662,6 @@
       <li>
         <statOffsets>
           <RestFallRateFactor>0.1</RestFallRateFactor>
-          <IncomingDamageFactor>-0.05</IncomingDamageFactor>
         </statOffsets>
       </li>
     </stages>
@@ -717,7 +741,6 @@
       <li>
         <statOffsets>
           <RestFallRateFactor>0.1</RestFallRateFactor>
-          <IncomingDamageFactor>-0.05</IncomingDamageFactor>
         </statOffsets>
       </li>
     </stages>
@@ -726,6 +749,11 @@
       <partEfficiency>1.25</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
+	<comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
+		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+			<scaleAdjustment>0.5</scaleAdjustment>
+		</li>
+	</comps>
   </HediffDef>
 
   <ThingDef ParentName="DMS_SynthicBionicBase">

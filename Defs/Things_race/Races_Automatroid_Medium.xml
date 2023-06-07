@@ -976,7 +976,7 @@
    <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_Killdozer</defName>
     <label>killdozer</label>
-    <description>一輛無人的小型突擊破障車，正面配備裝有尖牙的推土板，對防禦工事的威脅極大，同時也起到了裝甲盾牌的作用。整車大面積採用傾斜裝甲，並且車內配有強力的護盾發生器，是個不好對付的重型單位。/n/n名稱來源於一本書，書名後來被用於稱呼一輛被打造出來用於反抗政府打壓的的裝甲推土機，整個事件過程中沒有任何無辜人員傷亡，但駕駛最後在車內飲彈自盡。</description>
+    <description>一輛無人的小型突擊破障車</description>
     <statBases>
       <MoveSpeed>1</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>1</ArmorRating_Blunt>                                     <!--護甲-->

@@ -52,9 +52,6 @@
         <soundCast>Shot_Autocannon</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
 		<forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
@@ -119,12 +116,9 @@
         <range>40</range>
         <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
         <burstShotCount>21</burstShotCount>
-        <soundCast>Shot_Autocannon</soundCast>
+        <soundCast>Shot_Minigun</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
 		<forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
