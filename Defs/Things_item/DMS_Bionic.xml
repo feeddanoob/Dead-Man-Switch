@@ -96,7 +96,7 @@
     </eyeGraphicEast>
     <eyeGraphicScale>0.2</eyeGraphicScale>
 	<comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
-		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">
 			<scaleAdjustment>0.75</scaleAdjustment>
 		</li>
 	</comps>
@@ -260,7 +260,7 @@
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
 	<comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
-		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">
 			<scaleAdjustment>0.75</scaleAdjustment>
 		</li>
 	</comps>
@@ -532,7 +532,7 @@
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
 	<comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
-		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">
 			<scaleAdjustment>0.5</scaleAdjustment>
 		</li>
 	</comps>
@@ -750,7 +750,7 @@
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
 	<comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
-		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">
 			<scaleAdjustment>0.5</scaleAdjustment>
 		</li>
 	</comps>
