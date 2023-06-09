@@ -49,8 +49,8 @@
   
   <ThingDef ParentName="ResourceBase">
     <defName>Plasfiber</defName>
-    <label>plasfiber</label>
-    <description>A type of synthetic fiber made by plasteel, which is airtight and certain degree of sharp-proof performance. However, it does not have much resistance to blunt impact.\n\n Plasfiber has a importance in the medical field. As a biomimetic surface material, it does not produce rejection reactions from the immune system.</description>
+    <label>plastic fiber</label>
+    <description>A type of synthetic fiber made by plasteel, which is airtight and certain degree of sharp-proof performance. However, it does not have much resistance to blunt impact.\n\n Plastic fiber has a importance in the medical field. As a biomimetic surface material, it does not produce rejection reactions from the immune system.</description>
     <graphicData>
       <texPath>Things/Resource/Plasfiber</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>

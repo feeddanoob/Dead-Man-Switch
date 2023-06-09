@@ -7,7 +7,7 @@ namespace DMS
     {
         public HediffCompProperties_RemoveHediffsOnDeath()
         {
-            this.compClass = typeof(HediffComp_RemoveHediffsOnDeath);
+            compClass = typeof(HediffComp_RemoveHediffsOnDeath);
         }
         public List<HediffDefWtihSeverity> hediffs;
     }
