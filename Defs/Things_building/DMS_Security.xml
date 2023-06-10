@@ -446,7 +446,7 @@
         <ai_AvoidFriendlyFireRadius>4.9</ai_AvoidFriendlyFireRadius>
         <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
         <burstShotCount>50</burstShotCount>
-        <soundCast>Shot_Autocannon</soundCast>
+        <soundCast>Shot_Minigun</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>15</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>

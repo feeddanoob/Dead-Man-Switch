@@ -368,6 +368,154 @@
 			</li>
 		</tools>
 	</ThingDef>
+	
+<!--射手步槍，文本缺失-->
+	<ThingDef ParentName="DMS_BaseMakeableGun">
+		<defName>DMS_MarksmanRifle_Scoop</defName>
+		<label>12345</label>
+		<description>12345</description>
+		<weaponClasses>
+		  <li>RangedHeavy</li>
+		  <li>LongShots</li>
+		</weaponClasses>		
+		<weaponTags>
+			<li>SniperRifle</li>
+			<li>DMS_IndustrialGunAdvanced</li>
+		</weaponTags>		
+		<graphicData>
+			<texPath>Things/Weapons/DMS_MarksmanRifle_Scoop</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>8.5</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.85</AccuracyLong>
+			<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+		</statBases>		
+		<recipeMaker>
+		    <researchPrerequisites>
+      			<li>PrecisionRifling</li>
+      			<li>DMS_EquipmentHeavy</li>
+    		</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>90</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>45</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<soundCast>Shot_AssaultRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>7</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+<!--射手步槍，沒鏡，文本缺失-->
+	<ThingDef ParentName="DMS_BaseMakeableGun">
+		<defName>DMS_MarksmanRifle</defName>
+		<label>12345</label>
+		<description>12345</description>
+		<weaponClasses>
+		  <li>RangedHeavy</li>
+		  <li>LongShots</li>
+		</weaponClasses>		
+		<weaponTags>
+			<li>SniperRifle</li>
+			<li>DMS_IndustrialGunAdvanced</li>
+		</weaponTags>		
+		<graphicData>
+			<texPath>Things/Weapons/DMS_MarksmanRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>8.5</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.85</AccuracyLong>
+			<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+		</statBases>		
+		<recipeMaker>
+		    <researchPrerequisites>
+      			<li>PrecisionRifling</li>
+      			<li>DMS_EquipmentHeavy</li>
+    		</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>85</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>37</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>16</ticksBetweenBurstShots>
+				<soundCast>Shot_AssaultRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>7</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 
 	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_AssaultPiercer</defName>
@@ -992,10 +1140,10 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_AMR</defaultProjectile>
-				<warmupTime>1.5</warmupTime>
-				<burstShotCount>2</burstShotCount>
+				<warmupTime>1.25</warmupTime>
+				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>50</ticksBetweenBurstShots>
-				<range>35</range>
+				<range>37</range>
 				<soundCast>Shot_TurretSniper</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
