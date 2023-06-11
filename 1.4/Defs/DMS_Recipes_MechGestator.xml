@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<!--四軸-->
+  <!--四軸-->
   <RecipeDef ParentName="BaseMechanoidRecipe">
-    <recipeUsers>
-     <li>DMS_MechGestatorSamll</li>
-    </recipeUsers>
     <defName>VerlingBird</defName>
+    <recipeUsers>
+      <li>DMS_MechGestatorSamll</li>
+    </recipeUsers>
     <label>gestate verlingBird</label>
     <description>Gestate a verlingBird mechanoid.</description>
     <products>
       <DMS_Mech_VerlingBird>1</DMS_Mech_VerlingBird>
     </products>
-	<gestationCycles>1</gestationCycles>
+    <gestationCycles>1</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_VerlingBird</ThingDef>
     </descriptionHyperlinks>
@@ -51,19 +51,20 @@
       </li>-->
     </ingredients>
   </RecipeDef>
-  
-<!--垃圾桶-->
+
+  <!--垃圾桶-->
   <RecipeDef ParentName="BaseMechanoidRecipe">
-    <recipeUsers>
-     <li>DMS_MechGestatorSamll</li>
-    </recipeUsers>
     <defName>TrashBin</defName>
+    <recipeUsers>
+      <li>DMS_MechGestatorSamll</li>
+    </recipeUsers>
+
     <label>gestate trashbin</label>
     <description>Gestate a trashbin mechanoid.</description>
     <products>
       <DMS_Mech_TrashBin>1</DMS_Mech_TrashBin>
     </products>
-	<gestationCycles>1</gestationCycles>
+    <gestationCycles>1</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_TrashBin</ThingDef>
     </descriptionHyperlinks>
@@ -94,19 +95,19 @@
       </li>
     </ingredients>
   </RecipeDef>
-  
-<!--獵犬-->
+
+  <!--獵犬-->
   <RecipeDef ParentName="BaseMechanoidRecipe">
-    <recipeUsers>
-     <li>DMS_MechGestatorSamll</li>
-    </recipeUsers>
     <defName>Hound</defName>
+    <recipeUsers>
+      <li>DMS_MechGestatorSamll</li>
+    </recipeUsers>
     <label>gestate hound</label>
     <description>Gestate a hound mechanoid.</description>
     <products>
       <DMS_Mech_Hound>1</DMS_Mech_Hound>
     </products>
-	<gestationCycles>1</gestationCycles>
+    <gestationCycles>1</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Hound</ThingDef>
     </descriptionHyperlinks>
@@ -137,19 +138,19 @@
       </li>
     </ingredients>
   </RecipeDef>
-  
-<!--士兵-->
+
+  <!--士兵-->
   <RecipeDef ParentName="BaseMechanoidRecipe">
-    <recipeUsers>
-     <li>DMS_MechGestatorSamll</li>
-    </recipeUsers>
     <defName>Soldat</defName>
+    <recipeUsers>
+      <li>DMS_MechGestatorSamll</li>
+    </recipeUsers>
     <label>gestate soldat</label>
     <description>Gestate a soldat mechanoid.</description>
     <products>
       <DMS_Mech_Soldat>1</DMS_Mech_Soldat>
     </products>
-	<gestationCycles>1</gestationCycles>
+    <gestationCycles>1</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Soldat</ThingDef>
     </descriptionHyperlinks>
@@ -181,10 +182,10 @@
     </ingredients>
   </RecipeDef>
 
-<!--士官-->
+  <!--士官-->
   <RecipeDef ParentName="BaseMechanoidRecipe">
     <recipeUsers>
-     <li>DMS_MechGestatorSamll</li>
+      <li>DMS_MechGestatorSamll</li>
     </recipeUsers>
     <defName>Sergeant</defName>
     <label>gestate sergeant</label>
@@ -192,7 +193,7 @@
     <products>
       <DMS_Mech_Sergeant>1</DMS_Mech_Sergeant>
     </products>
-	<gestationCycles>1</gestationCycles>
+    <gestationCycles>1</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Sergeant</ThingDef>
     </descriptionHyperlinks>
@@ -224,10 +225,10 @@
     </ingredients>
   </RecipeDef>
 
-<!--塔盾手-->
+  <!--塔盾手-->
   <RecipeDef ParentName="BaseMechanoidRecipe">
     <recipeUsers>
-     <li>DMS_MechGestatorSamll</li>
+      <li>DMS_MechGestatorSamll</li>
     </recipeUsers>
     <defName>Protector</defName>
     <label>gestate protector</label>
@@ -235,7 +236,7 @@
     <products>
       <DMS_Mech_Protector>1</DMS_Mech_Protector>
     </products>
-	<gestationCycles>2</gestationCycles>
+    <gestationCycles>2</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Protector</ThingDef>
     </descriptionHyperlinks>
@@ -248,7 +249,7 @@
         </filter>
         <count>80</count>
       </li>
-	  <li>
+      <li>
         <filter>
           <thingDefs>
             <li>Synthread</li>
@@ -275,10 +276,10 @@
     </ingredients>
   </RecipeDef>
 
-<!--浪人-->
+  <!--浪人-->
   <RecipeDef ParentName="BaseMechanoidRecipe">
     <recipeUsers>
-     <li>DMS_MechGestatorSamll</li>
+      <li>DMS_MechGestatorSamll</li>
     </recipeUsers>
     <defName>Ronin</defName>
     <label>gestate ronin</label>
@@ -286,7 +287,7 @@
     <products>
       <DMS_Mech_Ronin>1</DMS_Mech_Ronin>
     </products>
-	<gestationCycles>2</gestationCycles>
+    <gestationCycles>2</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Ronin</ThingDef>
     </descriptionHyperlinks>
@@ -299,7 +300,7 @@
         </filter>
         <count>75</count>
       </li>
-	  <li>
+      <li>
         <filter>
           <thingDefs>
             <li>Synthread</li>
@@ -326,10 +327,10 @@
     </ingredients>
   </RecipeDef>
 
-<!--火槍手-->
+  <!--火槍手-->
   <RecipeDef ParentName="BaseMechanoidRecipe">
     <recipeUsers>
-     <li>DMS_MechGestatorSamll</li>
+      <li>DMS_MechGestatorSamll</li>
     </recipeUsers>
     <defName>Arquebusier</defName>
     <label>gestate arquebusier</label>
@@ -337,7 +338,7 @@
     <products>
       <DMS_Mech_Arquebusier>1</DMS_Mech_Arquebusier>
     </products>
-	<gestationCycles>2</gestationCycles>
+    <gestationCycles>2</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Arquebusier</ThingDef>
     </descriptionHyperlinks>
@@ -350,7 +351,7 @@
         </filter>
         <count>60</count>
       </li>
-	  <li>
+      <li>
         <filter>
           <thingDefs>
             <li>Synthread</li>
@@ -376,11 +377,11 @@
       </li>
     </ingredients>
   </RecipeDef>
-  
-<!--雙足飛龍-->
+
+  <!--雙足飛龍-->
   <RecipeDef ParentName="BaseMechanoidRecipe">
     <recipeUsers>
-     <li>DMS_MechGestatorSamll</li>
+      <li>DMS_MechGestatorSamll</li>
     </recipeUsers>
     <defName>Reptile</defName>
     <label>gestate reptile</label>
@@ -388,7 +389,7 @@
     <products>
       <DMS_Mech_Reptile>1</DMS_Mech_Reptile>
     </products>
-	<gestationCycles>5</gestationCycles>
+    <gestationCycles>5</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Reptile</ThingDef>
     </descriptionHyperlinks>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
 
@@ -27,211 +27,213 @@
     <designationCategory>Security</designationCategory>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <comps>
-		<li Class="CompProperties_Forbiddable" />
-		<!--<li Class="CompProperties_Mannable">
+      <li Class="CompProperties_Forbiddable" />
+      <!--<li
+      Class="CompProperties_Mannable">
 			<manWorkType>Violent</manWorkType>
 		</li>-->
-		<li Class="CompProperties_Flickable"/>
-		<li>
+      <li Class="CompProperties_Flickable" />
+      <li>
         <compClass>DMS.CompForceTargetable</compClass>
-		</li>
+      </li>
     </comps>
-		<damageMultipliers>
-		  <li>
-			<damageDef>Cut</damageDef>
-			<multiplier>0.1</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Crush</damageDef>
-			<multiplier>0.1</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Stab</damageDef>
-			<multiplier>0.1</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Scratch</damageDef>
-			<multiplier>0.05</multiplier>
-		  </li>
-		   <li>
-			<damageDef>ScratchToxic</damageDef>
-			<multiplier>0.05</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Bite</damageDef>
-			<multiplier>0.05</multiplier>
-		  </li>
-		  <li>
-			<damageDef>ToxicBite</damageDef>
-			<multiplier>0.05</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Blunt</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Poke</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Bomb</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  <li>
-			<damageDef>BombSuper</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>	  
-		  <li>
-			<damageDef>Demolish</damageDef>
-			<multiplier>0.5</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Thump</damageDef>
-			<multiplier>0.35</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Bullet</damageDef>
-			<multiplier>0.5</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Arrow</damageDef>
-			<multiplier>0.1</multiplier>
-		  </li>
-		  <li>
-			<damageDef>ArrowHighVelocity</damageDef>
-			<multiplier>0.1</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Flame</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Burn</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Frostbite</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li>
-			<damageDef>TornadoScratch</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Mining</damageDef>
-			<multiplier>0.1</multiplier>
-		  </li>
-		  <li>
-			<damageDef>EMP</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Stun</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-<!--Biotech DLC -->
-			<li MayRequire="Ludeon.RimWorld.Biotech">
-				<damageDef>Vaporize</damageDef>
-				<multiplier>0.13</multiplier>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Biotech">
-				<damageDef>BulletToxic</damageDef>
-				<multiplier>0.5</multiplier>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Biotech">
-				<damageDef>AcidBurn</damageDef>
-				<multiplier>0.25</multiplier>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Biotech">
-				<damageDef>Beam</damageDef>
-				<multiplier>0.5</multiplier>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Biotech">
-				<damageDef>MechBandShockwave</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-<!--==========-->
-<!-- Combat Extended -->
-			<li MayRequire="CETeam.CombatExtended">
-				<damageDef>Beanbag</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-			<li MayRequire="CETeam.CombatExtended">
-				<damageDef>Taser</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-			<li MayRequire="CETeam.CombatExtended">
-				<damageDef>Fragment</damageDef>
-				<multiplier>0.25</multiplier>
-			</li>
-			<li MayRequire="CETeam.CombatExtended">
-				<damageDef>PrometheumFlame</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-			<li MayRequire="CETeam.CombatExtended">
-				<damageDef>Bomb_Secondary</damageDef>
-				<multiplier>0.25</multiplier>
-			</li>
-			<li MayRequire="CETeam.CombatExtended">
-				<damageDef>Flame_Secondary</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-			<li MayRequire="CETeam.CombatExtended">
-				<damageDef>ArrowVenom</damageDef>
-				<multiplier>0.1</multiplier>
-			</li>
-			<li MayRequire="CETeam.CombatExtended">
-				<damageDef>ArrowFire</damageDef>
-				<multiplier>0.1</multiplier>
-			</li>
-			<li MayRequire="CETeam.CombatExtended">
-				<damageDef>Tranquilizer</damageDef>
-				<multiplier>0.5</multiplier>
-			</li>
-			<li MayRequire="CETeam.CombatExtended">
-				<damageDef>Electrical</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-<!--==========-->
-		</damageMultipliers>
+    <damageMultipliers>
+      <li>
+        <damageDef>Cut</damageDef>
+        <multiplier>0.1</multiplier>
+      </li>
+      <li>
+        <damageDef>Crush</damageDef>
+        <multiplier>0.1</multiplier>
+      </li>
+      <li>
+        <damageDef>Stab</damageDef>
+        <multiplier>0.1</multiplier>
+      </li>
+      <li>
+        <damageDef>Scratch</damageDef>
+        <multiplier>0.05</multiplier>
+      </li>
+      <li>
+        <damageDef>ScratchToxic</damageDef>
+        <multiplier>0.05</multiplier>
+      </li>
+      <li>
+        <damageDef>Bite</damageDef>
+        <multiplier>0.05</multiplier>
+      </li>
+      <li>
+        <damageDef>ToxicBite</damageDef>
+        <multiplier>0.05</multiplier>
+      </li>
+      <li>
+        <damageDef>Blunt</damageDef>
+        <multiplier>0.25</multiplier>
+      </li>
+      <li>
+        <damageDef>Poke</damageDef>
+        <multiplier>0.25</multiplier>
+      </li>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.25</multiplier>
+      </li>
+      <li>
+        <damageDef>BombSuper</damageDef>
+        <multiplier>0.25</multiplier>
+      </li>
+      <li>
+        <damageDef>Demolish</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>0.35</multiplier>
+      </li>
+      <li>
+        <damageDef>Bullet</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>Arrow</damageDef>
+        <multiplier>0.1</multiplier>
+      </li>
+      <li>
+        <damageDef>ArrowHighVelocity</damageDef>
+        <multiplier>0.1</multiplier>
+      </li>
+      <li>
+        <damageDef>Flame</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Burn</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Frostbite</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>TornadoScratch</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Mining</damageDef>
+        <multiplier>0.1</multiplier>
+      </li>
+      <li>
+        <damageDef>EMP</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Stun</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <!--Biotech
+      DLC -->
+      <li MayRequire="Ludeon.RimWorld.Biotech">
+        <damageDef>Vaporize</damageDef>
+        <multiplier>0.13</multiplier>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">
+        <damageDef>BulletToxic</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">
+        <damageDef>AcidBurn</damageDef>
+        <multiplier>0.25</multiplier>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">
+        <damageDef>Beam</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">
+        <damageDef>MechBandShockwave</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <!--==========-->
+      <!-- Combat Extended -->
+      <li MayRequire="CETeam.CombatExtended">
+        <damageDef>Beanbag</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li MayRequire="CETeam.CombatExtended">
+        <damageDef>Taser</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li MayRequire="CETeam.CombatExtended">
+        <damageDef>Fragment</damageDef>
+        <multiplier>0.25</multiplier>
+      </li>
+      <li MayRequire="CETeam.CombatExtended">
+        <damageDef>PrometheumFlame</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li MayRequire="CETeam.CombatExtended">
+        <damageDef>Bomb_Secondary</damageDef>
+        <multiplier>0.25</multiplier>
+      </li>
+      <li MayRequire="CETeam.CombatExtended">
+        <damageDef>Flame_Secondary</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li MayRequire="CETeam.CombatExtended">
+        <damageDef>ArrowVenom</damageDef>
+        <multiplier>0.1</multiplier>
+      </li>
+      <li MayRequire="CETeam.CombatExtended">
+        <damageDef>ArrowFire</damageDef>
+        <multiplier>0.1</multiplier>
+      </li>
+      <li MayRequire="CETeam.CombatExtended">
+        <damageDef>Tranquilizer</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li MayRequire="CETeam.CombatExtended">
+        <damageDef>Electrical</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <!--==========-->
+    </damageMultipliers>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
-	  <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <uiIconScale>1.1</uiIconScale>
     <statBases>
       <Mass>150</Mass>
     </statBases>
-	<researchPrerequisites>
+    <researchPrerequisites>
       <li>HeavyTurrets</li>
     </researchPrerequisites>
   </ThingDef>
-  
-<!--通古斯卡--><!--文本缺失-->
-   <ThingDef ParentName="DMS_BaseCannonBuilding">
+
+  <!--通古斯卡--><!--文本缺失-->
+  <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_Tunguska</defName>
     <label>Tunguska</label>
     <description>Tunguska</description>
     <techLevel>Industrial</techLevel>
     <graphicData>
-		<texPath>Things/Turrets/DMS_Base_Tunguska_GateKeeper</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-      <drawSize>6.75</drawSize>
+      <texPath>Things/Turrets/DMS_Base_Tunguska_GateKeeper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>4</drawSize>
       <drawOffset>(0,0,0)</drawOffset>
     </graphicData>
-    <size>(5,5)</size>
-	<rotatable>false</rotatable>
+    <size>(3,3)</size>
+    <rotatable>false</rotatable>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <statBases>   <!--================血量與重量工作量================-->
       <MaxHitPoints>2500</MaxHitPoints>
       <Flammability>0.5</Flammability>
       <WorkToBuild>7500</WorkToBuild>
       <Beauty>-2</Beauty>
-	  <ShootingAccuracyTurret>0.98</ShootingAccuracyTurret>
+      <ShootingAccuracyTurret>0.98</ShootingAccuracyTurret>
       <Mass>15000</Mass>
     </statBases>
     <comps>
@@ -239,7 +241,7 @@
         <wickTicks>500</wickTicks>
         <explosiveRadius>6.5</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
-		<startWickHitPointsPercent>0.1</startWickHitPointsPercent>
+        <startWickHitPointsPercent>0.1</startWickHitPointsPercent>
       </li>
       <li Class="CompProperties_Refuelable">
         <fuelLabel>Shots until barrel change</fuelLabel>
@@ -252,21 +254,21 @@
         </fuelFilter>
         <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
         <fuelCapacity>2000</fuelCapacity>    <!-- 20 burst -->
-		<fuelMultiplier>100</fuelMultiplier><!-- 1 Barrel=100 ammo -->
+        <fuelMultiplier>100</fuelMultiplier><!-- 1 Barrel=100 ammo -->
         <initialFuelPercent>1</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-		<initialConfigurableTargetFuelLevel>2000</initialConfigurableTargetFuelLevel>
-		<autoRefuelPercent>100</autoRefuelPercent>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+        <initialConfigurableTargetFuelLevel>2000</initialConfigurableTargetFuelLevel>
+        <autoRefuelPercent>100</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
-	  	<li Class="CompProperties_Power">
-			<compClass>CompPowerTrader</compClass>
-			<basePowerConsumption>2500</basePowerConsumption>
-		</li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2500</basePowerConsumption>
+      </li>
     </comps>
     <building>
       <turretGunDef>DMS_Gun_Tunguska</turretGunDef>
@@ -280,18 +282,18 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
       <Steel>150</Steel>
-	  <Tungsteel>300</Tungsteel>
-	  <ComponentStamped>10</ComponentStamped>
+      <Tungsteel>300</Tungsteel>
+      <ComponentStamped>10</ComponentStamped>
       <ComponentIndustrial>7</ComponentIndustrial>
       <ReinforcedBarrel>12</ReinforcedBarrel>
     </costList>
-	<researchPrerequisites>
-      	<li>BlowbackOperation</li>
-      	<li>DMS_EquipmentElite</li>
+    <researchPrerequisites>
+      <li>BlowbackOperation</li>
+      <li>DMS_EquipmentElite</li>
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_Tunguska</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
-	<minifiedDef></minifiedDef>
+    <minifiedDef></minifiedDef>
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
@@ -300,7 +302,7 @@
     <description>Tunguska</description>
     <graphicData>
       <texPath>Things/Turrets/DMS_Gun_Tunguska</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
       <AccuracyTouch>0.75</AccuracyTouch>
@@ -328,32 +330,32 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		<forcedMissRadius>0.1</forcedMissRadius>
+        <forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>
-  
-<!--守門員&方陣融合體--><!--文本缺失-->
-   <ThingDef ParentName="DMS_BaseCannonBuilding">
+
+  <!--守門員&方陣融合體--><!--文本缺失-->
+  <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_GateKeeper</defName>
     <label>GateKeeper</label>
     <description>GateKeeper</description>
     <techLevel>Industrial</techLevel>
     <graphicData>
-		<texPath>Things/Turrets/DMS_Base_Tunguska_GateKeeper</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Turrets/DMS_Base_Tunguska_GateKeeper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>4</drawSize>
       <drawOffset>(0,0,0)</drawOffset>
     </graphicData>
     <size>(3,3)</size>
-	<rotatable>false</rotatable>
+    <rotatable>false</rotatable>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <statBases>   <!--================血量與重量工作量================-->
       <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0.5</Flammability>
       <WorkToBuild>3000</WorkToBuild>
       <Beauty>-2</Beauty>
-	  <ShootingAccuracyTurret>1.00</ShootingAccuracyTurret>
+      <ShootingAccuracyTurret>1.00</ShootingAccuracyTurret>
       <Mass>10000</Mass>
     </statBases>
     <comps>
@@ -361,7 +363,7 @@
         <wickTicks>240</wickTicks>
         <explosiveRadius>2.9</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
-		<startWickHitPointsPercent>0.1</startWickHitPointsPercent>
+        <startWickHitPointsPercent>0.1</startWickHitPointsPercent>
       </li>
       <li Class="CompProperties_Refuelable">
         <fuelLabel>Shots until barrel change</fuelLabel>
@@ -374,21 +376,21 @@
         </fuelFilter>
         <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
         <fuelCapacity>1000</fuelCapacity>    <!-- 20 burst -->
-		<fuelMultiplier>100</fuelMultiplier><!-- 1 Barrel=100 ammo -->
+        <fuelMultiplier>100</fuelMultiplier><!-- 1 Barrel=100 ammo -->
         <initialFuelPercent>1</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-		<initialConfigurableTargetFuelLevel>1000</initialConfigurableTargetFuelLevel>
-		<autoRefuelPercent>100</autoRefuelPercent>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+        <initialConfigurableTargetFuelLevel>1000</initialConfigurableTargetFuelLevel>
+        <autoRefuelPercent>100</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
-	  	<li Class="CompProperties_Power">
-			<compClass>CompPowerTrader</compClass>
-			<basePowerConsumption>1000</basePowerConsumption>
-		</li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+      </li>
     </comps>
     <building>
       <turretGunDef>DMS_Gun_GateKeeper</turretGunDef>
@@ -402,18 +404,18 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
       <Steel>150</Steel>
-	  <Tungsteel>150</Tungsteel>
-	  <ComponentStamped>15</ComponentStamped>
+      <Tungsteel>150</Tungsteel>
+      <ComponentStamped>15</ComponentStamped>
       <ComponentIndustrial>9</ComponentIndustrial>
       <ReinforcedBarrel>7</ReinforcedBarrel>
     </costList>
-	<researchPrerequisites>
-      	<li>DMS_EquipmentElite</li>
-		<li>MultibarrelWeapons</li>
+    <researchPrerequisites>
+      <li>DMS_EquipmentElite</li>
+      <li>MultibarrelWeapons</li>
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_GateKeeper</uiIconPath>
     <uiIconScale>2</uiIconScale>
-	<minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->
+    <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->
     <thingCategories>
       <li>BuildingsSecurity</li>
     </thingCategories>
@@ -425,7 +427,7 @@
     <description>GateKeeper</description>
     <graphicData>
       <texPath>Things/Turrets/DMS_Gun_GateKeeper</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
       <AccuracyTouch>0.90</AccuracyTouch>
@@ -453,34 +455,34 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		<forcedMissRadius>0.1</forcedMissRadius>
+        <forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>
-  
+
   <ThingDef ParentName="BaseBullet">
     <defName>DMS_Bullet_CIWS</defName>
     <label>APT shell</label>
-	<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
+    <thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.3</drawSize>
     </graphicData>
-		<comps>
-			<li Class="Fortification.CompProperties_CompositeExplosion">
-				<compositeExplosions>
-					<li>
-					<countdown>1</countdown>
-					<radius>0.5</radius>
-					<damamgeDef>Bomb</damamgeDef>
-					<amount>10</amount>
-					<armorPenetration>1.5</armorPenetration>
-					<explosionSound>MortarBomb_Explode</explosionSound>
-					</li>
-				</compositeExplosions>
-			</li>
-		</comps>
+    <comps>
+      <li Class="Fortification.CompProperties_CompositeExplosion">
+        <compositeExplosions>
+          <li>
+            <countdown>1</countdown>
+            <radius>0.5</radius>
+            <damamgeDef>Bomb</damamgeDef>
+            <amount>10</amount>
+            <armorPenetration>1.5</armorPenetration>
+            <explosionSound>MortarBomb_Explode</explosionSound>
+          </li>
+        </compositeExplosions>
+      </li>
+    </comps>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>22</damageAmountBase>
@@ -489,37 +491,37 @@
       <speed>125</speed>
       <arcHeightFactor>0.3</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
-	  	<explosionDelay>2</explosionDelay>
-		<!--<explosionEffect>ExtinguisherExplosion</explosionEffect>-->
-		<!--<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>-->
-		<soundExplode>Explosion_GiantBomb</soundExplode>
-		<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-		<soundAmbient>MortarRound_Ambient</soundAmbient>
+      <explosionDelay>2</explosionDelay>
+      <!--<explosionEffect>ExtinguisherExplosion</explosionEffect>-->
+      <!--<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>-->
+      <soundExplode>Explosion_GiantBomb</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
   </ThingDef>
-  
-<!--遙控砲塔--><!--文本缺失-->
-   <ThingDef ParentName="DMS_BaseCannonBuilding">
+
+  <!--遙控砲塔--><!--文本缺失-->
+  <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_5ETs16U</defName>
     <label>5ETs16U</label>
     <description>5ETs16U</description>
     <techLevel>Industrial</techLevel>
     <graphicData>
-		<texPath>Things/Turrets/DMS_Base_Tunguska_GateKeeper</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Turrets/DMS_Base_Tunguska_GateKeeper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>2.5</drawSize>
       <drawOffset>(0,0,0)</drawOffset>
     </graphicData>
     <size>(3,3)</size>
-	<rotatable>false</rotatable>
+    <rotatable>false</rotatable>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-	<fillPercent>0.6</fillPercent>
+    <fillPercent>0.6</fillPercent>
     <statBases>   <!--================血量與重量工作量================-->
       <MaxHitPoints>750</MaxHitPoints>
       <Flammability>0.5</Flammability>
       <WorkToBuild>1500</WorkToBuild>
       <Beauty>-2</Beauty>
-	  <ShootingAccuracyTurret>1.05</ShootingAccuracyTurret>
+      <ShootingAccuracyTurret>1.05</ShootingAccuracyTurret>
     </statBases>
     <comps>
       <li Class="CompProperties_Refuelable">
@@ -533,24 +535,24 @@
         </fuelFilter>
         <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
         <fuelCapacity>300</fuelCapacity>    <!-- 30 burst -->
-		<fuelMultiplier>150</fuelMultiplier><!-- 1 Barrel=150 ammo -->
+        <fuelMultiplier>150</fuelMultiplier><!-- 1 Barrel=150 ammo -->
         <initialFuelPercent>1</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-		<initialConfigurableTargetFuelLevel>200</initialConfigurableTargetFuelLevel>
-		<autoRefuelPercent>100</autoRefuelPercent>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+        <initialConfigurableTargetFuelLevel>200</initialConfigurableTargetFuelLevel>
+        <autoRefuelPercent>100</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
-	  <li Class="CompProperties_Power">
-		<compClass>CompPowerTrader</compClass>
-		<basePowerConsumption>500</basePowerConsumption>
-	  </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>500</basePowerConsumption>
+      </li>
     </comps>
     <building>
-	  <isEdifice>false</isEdifice>
+      <isEdifice>false</isEdifice>
       <turretGunDef>DMS_Gun_Kord</turretGunDef>
       <turretTopDrawSize>3</turretTopDrawSize>
       <turretBurstWarmupTime>1.5</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
@@ -562,18 +564,18 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
       <Steel>30</Steel>
-	  <Tungsteel>75</Tungsteel>
-	  <ComponentStamped>4</ComponentStamped>
+      <Tungsteel>75</Tungsteel>
+      <ComponentStamped>4</ComponentStamped>
       <ComponentIndustrial>2</ComponentIndustrial>
       <ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
-	<researchPrerequisites>
-      	<li>BlowbackOperation</li>
-      	<li>DMS_EquipmentElite</li>
+    <researchPrerequisites>
+      <li>BlowbackOperation</li>
+      <li>DMS_EquipmentElite</li>
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_5ETs16U</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
-	<minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->
+    <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->
     <thingCategories>
       <li>BuildingsSecurity</li>
     </thingCategories>
@@ -585,7 +587,7 @@
     <description>kord</description>
     <graphicData>
       <texPath>Things/Turrets/DMS_Gun_Kord</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
       <AccuracyTouch>0.95</AccuracyTouch>
@@ -616,7 +618,7 @@
       </li>
     </verbs>
   </ThingDef>
-  
+
   <ThingDef ParentName="BaseBullet">
     <defName>DMS_Bullet_Kord</defName>
     <label>uranium APT shell</label>

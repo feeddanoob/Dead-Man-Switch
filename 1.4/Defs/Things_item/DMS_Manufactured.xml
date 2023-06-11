@@ -185,7 +185,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ComponentStamped</defName>
     <label>stamponent</label>
-    <description>液壓一體成形的高強度零件，被用於那些大量生產的早期太空科技造物上。</description>
+    <description>Hydraulic integrally formed component. Used in products that require mass production on the assembly line.</description>
     <possessionCount>2</possessionCount>
     <graphicData>
       <texPath>Things/Resource/ComponentStamped</texPath>
@@ -211,13 +211,43 @@
     </thingCategories>
     <allowedArchonexusCount>10</allowedArchonexusCount>
   </ThingDef>
+
+ <ThingDef ParentName="ResourceBase">
+    <defName>Neurocomputer</defName>
+    <label>wetware computer</label>
+    <description>an organic computer also be known as an artificial organic brain or a neurocomputer, it's the perfect computer unit source for factions without access to rare metals and precision machining.</description>
+    <possessionCount>2</possessionCount>
+    <graphicData>
+      <texPath>Things/Resource/ComponentBioCPU</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>25</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>20</MaxHitPoints>
+      <MarketValue>60</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>20</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
+  </ThingDef>  
   
   <ThingDef ParentName="ResourceBase">
-    <defName>ABCDEFG</defName>
-    <label>防彈陶瓷</label>
-    <description>防彈陶瓷</description>
+    <defName>DMS_Ceramics</defName>
+    <label>Ceramics</label>
+    <description>a military standard composite ceramic plate widely used as Defensive Additions for war machines.\n\n As a military standard material, it's durability is somewhat poor, but it is superior in its protection and light weight.</description>
     <graphicData>
-      <texPath>Things/Resource/Polyester</texPath>
+      <texPath>Things/Resource/Ceramic</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
@@ -234,13 +264,14 @@
       <SharpDamageMultiplier>1</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
     </statBases>
-    <burnableByRecipe>true</burnableByRecipe>
+    <burnableByRecipe>false</burnableByRecipe>
     <healthAffectsPrice>false</healthAffectsPrice>
     <minRewardCount>75</minRewardCount>
     <stuffProps>
       <categories>
-        <li>Fabric</li>
+        <li>Metallic</li>
       </categories>
+      <appearance>Metal</appearance>
       <commonality>0.50</commonality>
       <color>(63,63,63)</color>
       <statFactors>
@@ -250,7 +281,7 @@
       </statFactors>
     </stuffProps>
     <thingCategories>
-      <li>Textiles</li>
+      <li>ResourcesRaw</li>
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
