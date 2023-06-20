@@ -144,6 +144,59 @@
     </products>
   </RecipeDef>
 
+  <RecipeDef>
+    <defName>DMS_Make_Ceramics</defName>
+    <label>make ceramics</label>
+    <description>making ceramics.</description>
+    <jobString>making.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <recipeUsers>
+      <li>DMS_Furnace</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>1</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>DMS_Material</researchPrerequisite>
+    <workAmount>5000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneBlocks</li>
+      </categories>
+      <disallowedThingDefs>
+        <!-- <li MayRequire="aoba.fortress.industrial">FT_BlocksConcrete</li>
+        <li MayRequire="aoba.fortress.industrial">FT_WoodConcrete</li> -->
+		    <li MayRequire="aoba.fortress.industrial">FT_ReinforcedConcreteBag</li>
+      </disallowedThingDefs>
+      <thingDefs>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <DMS_Ceramics>20</DMS_Ceramics>
+    </products>
+  </RecipeDef>
+
   <!-- 沖壓製造機 -->
 
   <RecipeDef>
@@ -235,7 +288,7 @@
     <defName>DMS_Make_Atrifuscle</defName>
     <label>grow atrifuscle</label>
     <description>grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood</description>
-    <jobString>growing neutroamine.</jobString>
+    <jobString>growing atrifuscle.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -294,4 +347,57 @@
     <workSkill>Medicine</workSkill>
   </RecipeDef>
 
+  <RecipeDef>
+    <defName>DMS_Make_WetWare</defName>
+    <label>grow wetware computer</label>
+    <description>grow wetware computer, A high-precision computer that can be produced and used on a large scale.</description>
+    <jobString>wetware computer.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <recipeUsers>
+      <li>DMS_TableAtrifuscle</li>
+    </recipeUsers>
+    <workAmount>7500</workAmount>
+     <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasfiber</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Gold</li>
+        <li>Plasfiber</li>
+        <li>Neutroamine</li>        
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Neurocomputer>1</Neurocomputer>
+    </products>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <workSkill>Medicine</workSkill>
+  </RecipeDef>
 </Defs>	

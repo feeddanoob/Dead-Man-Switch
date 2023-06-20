@@ -288,7 +288,6 @@
       <ReinforcedBarrel>12</ReinforcedBarrel>
     </costList>
     <researchPrerequisites>
-      <li>BlowbackOperation</li>
       <li>DMS_EquipmentElite</li>
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_Tunguska</uiIconPath>
@@ -507,12 +506,12 @@
     <description>5ETs16U</description>
     <techLevel>Industrial</techLevel>
     <graphicData>
-      <texPath>Things/Turrets/DMS_Base_Tunguska_GateKeeper</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>2.5</drawSize>
+      <texPath>Things/Turrets/DMS_Weapon_Base</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>2.25</drawSize>
       <drawOffset>(0,0,0)</drawOffset>
     </graphicData>
-    <size>(3,3)</size>
+    <size>(1,1)</size>
     <rotatable>false</rotatable>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <fillPercent>0.6</fillPercent>
@@ -521,7 +520,7 @@
       <Flammability>0.5</Flammability>
       <WorkToBuild>1500</WorkToBuild>
       <Beauty>-2</Beauty>
-      <ShootingAccuracyTurret>1.05</ShootingAccuracyTurret>
+      <ShootingAccuracyTurret>0.9</ShootingAccuracyTurret>
     </statBases>
     <comps>
       <li Class="CompProperties_Refuelable">
@@ -570,7 +569,6 @@
       <ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
     <researchPrerequisites>
-      <li>BlowbackOperation</li>
       <li>DMS_EquipmentElite</li>
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_5ETs16U</uiIconPath>

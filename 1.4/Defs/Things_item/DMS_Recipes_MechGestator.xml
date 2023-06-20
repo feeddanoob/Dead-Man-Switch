@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <RecipeDef Name="DMS_LightMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
+    <gestationCycles>1</gestationCycles>
+    <researchPrerequisite>DMS_Automatroid</researchPrerequisite>
+  </RecipeDef>
+  
+    <RecipeDef Name="DMS_MidiumMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
+    <gestationCycles>2</gestationCycles>
+    <researchPrerequisite>DMS_Automatroid</researchPrerequisite>
+  </RecipeDef>
+  
+    <RecipeDef Name="DMS_HeavyMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
+    <gestationCycles>2</gestationCycles>
+    <researchPrerequisite>DMS_BattleFrame</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef Name="DMS_SuperHeavyMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
+    <gestationCycles>5</gestationCycles>
+    <researchPrerequisite>DMS_HeavyAutomatroid</researchPrerequisite>
+  </RecipeDef>
+   
+  <RecipeDef Name="DMS_HumanoidMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
+    <gestationCycles>5</gestationCycles>
+    <researchPrerequisite>DMS_HumanoidEngineering</researchPrerequisite>
+  </RecipeDef>
+
   <!--四軸-->
   <RecipeDef ParentName="BaseMechanoidRecipe">
     <defName>VerlingBird</defName>
@@ -421,7 +446,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ComponentSpacer</li>
+            <li>Neurocomputer</li>
           </thingDefs>
         </filter>
         <count>1</count>

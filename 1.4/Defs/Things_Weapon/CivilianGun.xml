@@ -48,6 +48,7 @@
 			<li>SimpleGun</li>
 			<li>Revolver</li>
 		</weaponTags>
+		<uiIconScale>1.8</uiIconScale>
 		<graphicData>
 			<texPath>Things/Weapons/HumanWeapon/KnuckledusterRevolver</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -260,6 +261,7 @@
 		<defName>DMS_MiniMachineGun</defName>
 		<label>Riot LMG</label>
 		<description>Pistol caliber machinegun designed for colony defense. Chops down unarmored enemy hords and prisoner riots with ease.</description>
+	    <uiIconScale>1.4</uiIconScale>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_MiniMachineGun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
