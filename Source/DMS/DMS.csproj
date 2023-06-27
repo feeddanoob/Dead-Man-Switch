@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Component\CompCommandRelay.cs" />
+    <Compile Include="Component\CompDeadManSwitch.cs" />
     <Compile Include="Component\CompMechApparel.cs" />
     <Compile Include="Component\CompPositionalTurretGun.cs" />
     <Compile Include="Component\CompProperties_MechApparel.cs" />
@@ -64,6 +65,9 @@
     <Compile Include="Hediff\HediffComp_GiveHediffWtihSeverity.cs" />
     <Compile Include="Hediff\HediffComp_RemoveHediffsOnDeath.cs" />
     <Compile Include="Hediff\HediffComp_SeverityBybandwidth.cs" />
+    <Compile Include="Component\CompForceTargetable.cs" />
+    <Compile Include="Patch\Patch_CommandRelay.cs" />
+    <Compile Include="Patch\Patch_ForceTarget.cs" />
     <Compile Include="UI\Command_SelectApparelOutfit.cs" />
     <Compile Include="UI\ITab_Mech_Gear.cs" />
     <Compile Include="Utility\FloatMenuUtility.cs" />

@@ -444,7 +444,7 @@
 		<projectile>
 		  <damageDef>Bullet</damageDef>
 		  <stoppingPower>4</stoppingPower>
-		  <damageAmountBase>40</damageAmountBase>
+		  <damageAmountBase>30</damageAmountBase>
 		  <speed>100</speed>
 		</projectile>
 	</ThingDef>

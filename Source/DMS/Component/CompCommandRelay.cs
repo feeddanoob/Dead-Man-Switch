@@ -1,9 +1,6 @@
 ﻿using RimWorld;
-using RimWorld.Planet;
 using UnityEngine;
-using UnityEngine.WSA;
 using Verse;
-using static UnityEngine.GraphicsBuffer;
 
 namespace DMS
 {
@@ -36,6 +33,7 @@ namespace DMS
                 GenDraw.DrawRadiusRing(this.parent.Position, currentRadius);
             }
         }
+        
         Pawn Pawn => this.parent as Pawn;
         private bool SameMap => Pawn.Map == Pawn.GetOverseer().Map;
     }

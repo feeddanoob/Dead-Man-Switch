@@ -52,6 +52,19 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="HeavyWeapons.HeavyWeapon">
+				<isHeavy>true</isHeavy>
+				<supportedArmors>
+					<li MayRequire="VanillaExpanded.VWEHW" >VWE_Apparel_Exoframe</li>
+					<li MayRequire="AOBA.RimThunder.MobileInfantry" >RTMI_MobileSuit</li>
+				</supportedArmors>
+				<supportedTraits>
+					<li>Tough</li>
+				</supportedTraits>
+				<disableOptionLabelKey>DMS.CannotEquipHeavy</disableOptionLabelKey>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 <!-- DMS_TaticalPistol -->
@@ -787,6 +800,7 @@
 		</weaponClasses>
 		<weaponTags>
 			<li>DMS_MidQuarter</li>
+			<li>DMS_SemiAutoRifle</li>
 			<li>DMS_MarksManRifle</li>
 		</weaponTags>	
 		<graphicData>
