@@ -389,155 +389,7 @@
       </parts>
     </corePart>
   </BodyDef>
-  <!-- 座狼機器人是四條生物腿加一個生物軀幹,前腿有爪子,然後軀幹上有三塊大裝甲,然後加一顆頭,有脖子-->
-  <BodyDef>
-    <defName>DMS_Warg</defName>
-    <label>synthic quadruped</label>
-    <corePart>
-      <def>DMS_Chassis</def>
-      <height>Middle</height>
-      <depth>Outside</depth>
-      <parts>
-        <li>
-          <def>MechanicalNeck</def>
-          <coverage>0.10</coverage>
-          <height>Top</height>
-          <parts>
-            <li>
-              <def>MechanicalHead</def>
-              <coverage>0.60</coverage>
-              <groups>
-                <li>HeadAttackTool</li>
-              </groups>
-              <parts>
-                <li>
-                  <def>ArtificialBrain</def>
-                  <coverage>0.05</coverage>
-                  <depth>Inside</depth>
-                </li>
-                <li>
-                  <def>SightSensor</def>
-                  <customLabel>central sight sensor</customLabel>
-                  <coverage>0.20</coverage>
-                </li>
-                <li>
-                  <def>SightSensor</def>
-                  <customLabel>infrared sensor</customLabel>
-                  <coverage>0.10</coverage>
-                </li>
-                <li>
-                  <def>HearingSensor</def>
-                  <customLabel>left hearing sensor</customLabel>
-                  <coverage>0.05</coverage>
-                </li>
-                <li>
-                  <def>HearingSensor</def>
-                  <customLabel>right hearing sensor</customLabel>
-                  <coverage>0.05</coverage>
-                </li>
-                <li>
-                  <def>SmellSensor</def>
-                  <coverage>0.05</coverage>
-                </li>
-              </parts>
-            </li>
-            <li>
-              <def>DMS_SynthicPlate</def>
-              <coverage>0.06</coverage>
-              <height>Middle</height>
-              <depth>Outside</depth>
-            </li>
-          </parts>
-        </li>
-        <li>
-          <def>DMS_SynthicPlate</def>
-          <coverage>0.06</coverage>
-          <height>Middle</height>
-          <depth>Outside</depth>
-        </li>
-        <li>
-          <def>DMS_SynthicPlate</def>
-          <coverage>0.06</coverage>
-          <height>Middle</height>
-          <depth>Outside</depth>
-        </li>
-        <li>
-          <def>DMS_CompactSenser</def>
-          <coverage>0.04</coverage>
-          <height>Middle</height>
-          <depth>Outside</depth>
-        </li>
-        <li>
-          <def>DMS_Battery</def>
-          <customLabel>main battery</customLabel>
-          <coverage>0.04</coverage>
-          <depth>Inside</depth>
-        </li>
-        <li>
-          <def>FluidReprocessor</def>
-          <coverage>0.05</coverage>
-          <depth>Inside</depth>
-        </li>
-        <li>
-          <def>FluidReprocessor</def>
-          <coverage>0.05</coverage>
-          <depth>Inside</depth>
-        </li>
-        <li>
-          <def>DMS_SynthicLeg</def>
-          <customLabel>left front leg</customLabel>
-          <coverage>0.15</coverage>
-          <height>Bottom</height>
-          <parts>
-            <li>
-              <def>DMS_SynthicFoot</def>
-              <customLabel>left front foot</customLabel>
-              <coverage>0.2</coverage>
-            </li>
-          </parts>
-        </li>
-        <li>
-          <def>DMS_SynthicLeg</def>
-          <customLabel>left back leg</customLabel>
-          <coverage>0.15</coverage>
-          <height>Bottom</height>
-          <parts>
-            <li>
-              <def>DMS_SynthicFoot</def>
-              <customLabel>left back foot</customLabel>
-              <coverage>0.2</coverage>
-            </li>
-          </parts>
-        </li>
-        <li>
-          <def>DMS_SynthicLeg</def>
-          <customLabel>right front leg</customLabel>
-          <coverage>0.15</coverage>
-          <height>Bottom</height>
-          <parts>
-            <li>
-              <def>DMS_SynthicFoot</def>
-              <customLabel>right front foot</customLabel>
-              <coverage>0.2</coverage>
-            </li>
-          </parts>
-        </li>
-        <li>
-          <def>DMS_SynthicLeg</def>
-          <customLabel>right back leg</customLabel>
-          <coverage>0.15</coverage>
-          <height>Bottom</height>
-          <parts>
-            <li>
-              <def>DMS_SynthicFoot</def>
-              <customLabel>right back foot</customLabel>
-              <coverage>0.2</coverage>
-            </li>
-          </parts>
-        </li>
-      </parts>
-    </corePart>
-  </BodyDef>
+
   <!-- 士兵框架是一對機械腿,一對手臂加軀幹,然後軀幹分上下各有一塊裝甲,然後加一顆頭,有脖子,頭部是上下傳感器,有三隻眼睛-->
   <BodyDef>
     <defName>DMS_Humanoid_Soldat</defName>
@@ -1405,6 +1257,127 @@
           <def>DMS_ChestBrain</def>
           <coverage>0.05</coverage>
           <depth>Inside</depth>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+    <!-- 履帶式車輛，顧名思義，由兩個血量很高的動力履帶機構和一個血量超高的車體組成-->
+  <BodyDef>
+    <defName>DMS_Caterpillar</defName>
+    <label>caterpillar</label>
+    <corePart>
+      <def>DMS_Chassis</def>
+      <customLabel>chassis</customLabel>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li> <!-- 思考核心0.005 -->
+          <def>DMS_ChestBrain</def>
+          <customLabel>wetware computer core</customLabel>
+          <coverage>0.005</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li> <!-- 砲塔0.05 -->
+          <def>MechanicalShoulder</def>
+          <customLabel>turret seat</customLabel>
+          <coverage>0.05</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>elevator</customLabel>
+              <coverage>0.25</coverage>
+            </li>
+          </parts>
+        </li>
+        <li> <!-- 攝像頭0.05 -->
+          <def>MechanicalNeck</def>
+          <customLabel>integrated sensor system</customLabel>
+          <coverage>0.05</coverage>
+          <height>Top</height>
+          <parts>
+            <li><!-- 雷達本體0.3 -->
+              <def>MechanicalHead</def>
+              <coverage>0.30</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li><!-- 雷達本體0.6 -->
+                  <def>DMS_HeadRadar</def>
+                  <coverage>0.6</coverage>
+                  <depth>Outside</depth>
+                </li>
+              </parts>
+            </li>
+            <li><!-- 雷達外殼0.6 -->
+              <def>DMS_ArmourPlate</def>
+              <customLabel>armored casing</customLabel>
+              <coverage>0.60</coverage>
+              <height>Top</height>
+            </li>
+          </parts>
+        </li>
+        <li> <!-- 主動力系統0.05 -->
+          <def>DMS_Battery</def>
+          <customLabel>main generator</customLabel>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li> <!-- 副動力系統0.05 -->
+          <def>DMS_Battery</def>
+          <customLabel>secondary generator</customLabel>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li> <!-- 散熱系統0.05 -->
+          <def>FluidReprocessor</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li> <!-- 附加裝甲0.1 -->
+          <def>DMS_ArmourPlate</def>
+          <customLabel>front armour plate</customLabel>
+          <coverage>0.1</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li> <!-- 附加裝甲0.1 -->
+          <def>DMS_ArmourPlate</def>
+          <customLabel>right armour plate</customLabel>
+          <coverage>0.1</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li> <!-- 附加裝甲0.1 -->
+          <def>DMS_ArmourPlate</def>
+          <customLabel>left armour plate</customLabel>
+          <coverage>0.1</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li> <!-- 左履帶0.15 -->
+          <def>MechanicalLeg</def>
+          <customLabel>left leg</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>left wheel</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li> <!-- 右履帶0.15 -->
+          <def>MechanicalLeg</def>
+          <customLabel>right leg</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>right wheel</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
         </li>
       </parts>
     </corePart>

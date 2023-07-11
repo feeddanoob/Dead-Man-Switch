@@ -108,6 +108,7 @@
 		<weaponTags>
 			<li>SimpleGun</li>
 			<li>Autopistol</li>
+			<li>DMS_MechWeaponLight</li>
 		</weaponTags>
 		<weaponClasses>
 			<li>RangedLight</li>

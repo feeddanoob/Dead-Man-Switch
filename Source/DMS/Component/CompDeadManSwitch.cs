@@ -8,9 +8,6 @@ namespace DMS
     {
         public CompProperties_DeadManSwitch Props => (CompProperties_DeadManSwitch)this.props;
 
-        private CompOverseerSubject overseerSubject;
-
-
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
         }

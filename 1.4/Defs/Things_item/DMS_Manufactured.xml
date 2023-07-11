@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+  <!-- 尼龍纖維 玩家能量產的丐版合成纖維，美觀度低但作為衣服十分耐用-->
   <ThingDef ParentName="ResourceBase">
     <defName>Polyester</defName>
     <label>polyester</label>
@@ -47,7 +49,7 @@
     </thingSetMakerTags>
     <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
-  
+  <!-- 塑化纖維 玩家能生產的進階纖維，性質接近魔鬼布。製造需要塑鋼。-->  
   <ThingDef ParentName="ResourceBase">
     <defName>Plasfiber</defName>
     <label>plastic fiber</label>
@@ -95,7 +97,7 @@
     </thingSetMakerTags>
     <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
-
+  <!-- 鎢鋼合金 強度介於塑鋼與鋼鐵之間的材料，是大多數DMS機兵的製造用料-->  
   <ThingDef ParentName="ResourceBase">
     <defName>Tungsteel</defName>
     <label>tungsteel</label>
@@ -151,7 +153,58 @@
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
-
+  <!-- 複合陶瓷 強度很高但耐久很低的石質材料，是部分DMS機兵的製造用料-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>DMS_Ceramics</defName>
+    <label>Ceramics</label>
+    <description>a military standard composite ceramic plate widely used as Defensive Additions for war machines.\n\n As a military standard material, it's durability is somewhat poor, but it is superior in its protection and light weight.</description>
+    <descriptionHyperlinks><ThingDef>DMS_Furnace</ThingDef></descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Resource/Ceramic</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>2</MarketValue>
+      <Mass>0.025</Mass>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.25</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.8</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+    </statBases>
+    <burnableByRecipe>false</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>75</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>0.05</commonality>
+      <color>(63,63,63)</color>
+      <statFactors>
+        <Flammability>0</Flammability>
+        <MaxHitPoints>0.25</MaxHitPoints>
+        <Beauty>0.75</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+  <!-- 人造肌肉 能拿來造仿生體的人工合成肌肉束，也同時是一些特種機兵的製造用料-->  
   <ThingDef ParentName="ResourceBase">
     <defName>Atrifuscle</defName>
     <label>atrifuscle</label>
@@ -188,7 +241,7 @@
     </comps>
     <allowedArchonexusCount>10</allowedArchonexusCount>
   </ThingDef>
-
+  <!-- 沖壓機件 DMS裡廣泛使用的零件，機兵與建築等複雜機器都會需要用到，也可以轉換成工業零件-->
   <ThingDef ParentName="ResourceBase">
     <defName>ComponentStamped</defName>
     <label>stamponent</label>
@@ -222,7 +275,7 @@
     </thingCategories>
     <allowedArchonexusCount>10</allowedArchonexusCount>
   </ThingDef>
-
+  <!-- 生物濕件 重型機兵的關鍵零件，前期只能靠打機兵軍團獲取，後期可以自己生產-->
   <ThingDef ParentName="ResourceBase">
     <defName>Neurocomputer</defName>
     <label>wetware computer</label>
@@ -239,8 +292,8 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <MaxHitPoints>20</MaxHitPoints>
-      <MarketValue>60</MarketValue>
-      <Mass>0.5</Mass>
+      <MarketValue>600</MarketValue>
+      <Mass>3</Mass>
       <Flammability>0</Flammability>
       <DeteriorationRate>20</DeteriorationRate>
     </statBases>
@@ -256,56 +309,105 @@
     </thingCategories>
     <allowedArchonexusCount>10</allowedArchonexusCount>
   </ThingDef>  
-  
+  <!-- 收發組件 可以透過擊殺指揮中樞型號的機兵有一定機率獲取，能拿來造特殊機兵與DMS機控中樞-->
   <ThingDef ParentName="ResourceBase">
-    <defName>DMS_Ceramics</defName>
-    <label>Ceramics</label>
-    <description>a military standard composite ceramic plate widely used as Defensive Additions for war machines.\n\n As a military standard material, it's durability is somewhat poor, but it is superior in its protection and light weight.</description>
-    <descriptionHyperlinks><ThingDef>DMS_Furnace</ThingDef></descriptionHyperlinks>
+    <defName>ComponentTransmitter</defName>
+    <label>T/R Component</label>
+    <description>Precision electronic components for radar and communication devices.</description>
+    <possessionCount>2</possessionCount>
     <graphicData>
-      <texPath>Things/Resource/Ceramic</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Things/Resource/ComponentBioCPU</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <statBases>
-      <MaxHitPoints>50</MaxHitPoints>
-      <MarketValue>2</MarketValue>
-      <Mass>0.025</Mass>
-      <Flammability>0.2</Flammability>
-      <DeteriorationRate>0.5</DeteriorationRate>
-      <StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.25</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.8</StuffPower_Armor_Heat>
-      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-      <SharpDamageMultiplier>1</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
-    </statBases>
-    <burnableByRecipe>false</burnableByRecipe>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>25</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
-    <minRewardCount>75</minRewardCount>
-    <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
-      <appearance>Metal</appearance>
-      <commonality>0.05</commonality>
-      <color>(63,63,63)</color>
-      <statFactors>
-        <Flammability>0</Flammability>
-        <MaxHitPoints>0.5</MaxHitPoints>
-        <Beauty>0.5</Beauty>
-      </statFactors>
-    </stuffProps>
-    <thingCategories>
-      <li>ResourcesRaw</li>
-    </thingCategories>
-    <tradeTags>
-      <li>ExoticMisc</li>
-    </tradeTags>
+    <statBases>
+      <MaxHitPoints>5</MaxHitPoints>
+      <MarketValue>500</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>20</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
     <thingSetMakerTags>
       <li>RewardStandardCore</li>
     </thingSetMakerTags>
-    <allowedArchonexusCount>80</allowedArchonexusCount>
-  </ThingDef>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
+  </ThingDef>  
+  <!-- 數控芯片 造精密打印機的關鍵零件，可以透過擊敗DMS戰艦(WIP)從殘骸中獲取 -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>ComponentControlChip</defName>
+    <label>cluster control chipsets</label>
+    <description>a chipsets for remote machine controller and the core of industrial machines.</description>
+    <possessionCount>2</possessionCount>
+    <graphicData>
+      <texPath>Things/Resource/ComponentBioCPU</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>25</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>8</MaxHitPoints>
+      <MarketValue>1200</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>20</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
+  </ThingDef>  
+  <!-- 火控芯片 可以透過擊殺長程曲射攻擊的機兵有一定機率獲取，可以用來造戰鬥輔助用仿生體-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>ComponentFireControl</defName>
+    <label>fire control system</label>
+    <description>a chipsets designed for weapon control assist and trajectory tracking.</description>
+    <possessionCount>2</possessionCount>
+    <graphicData>
+      <texPath>Things/Resource/ComponentBioCPU</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>25</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>8</MaxHitPoints>
+      <MarketValue>500</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>20</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
+  </ThingDef>  
+
   
 </Defs>

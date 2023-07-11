@@ -11,8 +11,6 @@ using UnityEngine;
 namespace DMS
 {
 
-    
-
     public class CompMechApparel:ThingComp
     {
         public static readonly int REFRESH_INTERVAL = 6000;
@@ -84,6 +82,17 @@ namespace DMS
             if (!this.parent.IsHashIntervalTick(REFRESH_INTERVAL)) return;
             if (this.ParentPawn.CurJobDef == JobDefOf.Wear) return;
             this.ParentPawn.TryOptimizeApparel();
+        }
+    }
+
+    public class CompProperties_MechApparel : CompProperties
+    {
+        [NoTranslate]
+        public string gizmoIconPath;
+
+        public CompProperties_MechApparel()
+        {
+            this.compClass = typeof(CompMechApparel);
         }
     }
 }

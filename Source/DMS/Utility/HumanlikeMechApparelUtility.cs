@@ -12,7 +12,6 @@ using UnityEngine;
 namespace DMS
 {
     delegate bool AvailableFunc(Verb verb, DefModExtension extension);
-    
 
     //Copied from the RimWorld.JobGiver_OptimizeApparel
     public static class HumanlikeMechApparelUtility

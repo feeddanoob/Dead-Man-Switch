@@ -98,38 +98,6 @@
     </ingredients>
   </RecipeDef>
 
-  <!--獵犬-->
-  <RecipeDef ParentName="DMS_LightMechanoidRecipe">
-    <defName>Hound</defName>
-    <label>gestate hound</label>
-    <description>Gestate a hound mechanoid.</description>
-    <products>
-      <DMS_Mech_Hound>1</DMS_Mech_Hound>
-    </products>
-    <gestationCycles>1</gestationCycles>
-    <descriptionHyperlinks>
-      <ThingDef>DMS_Mech_Hound</ThingDef>
-    </descriptionHyperlinks>
-    <ingredients Inherit="False">
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>60</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-  </RecipeDef>
-
 
   <!--士兵-->
   <RecipeDef ParentName="DMS_MidiumMechanoidRecipe">

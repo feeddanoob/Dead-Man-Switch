@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- 重型武器為機兵範疇，分機載與車載，在原版情況下相同定位的武器傷害都x1.5,重量x1.75，穿甲與鈍傷能力都有額外的0.5 -->
+
+	<!-- 重型機兵用武器 DMS_MechWeaponHeavy //猿人使用的槍型重武器裝備-->
+	<!-- 載具型機兵用重型武器 DMS_VehicleWeapon //象龜使用的砲塔型重武器裝備，復仇者機砲與無後座力炮，2A38M等-->
+	<ThingDef Name="DMS_AutomatroidTurretGun" ParentName="BaseGun" Abstract="True">
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<relicChance>0</relicChance>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+<!--LMG這個是固定在不可替換武器類型機兵上的版本。-->
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>DMS_LightMachineGunMounted</defName>
+		<label>mounted LMG</label>
+		<description>Supressive weapon chambered in full power rifle round.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<weaponTags>
+			<li>DMS_VehicleWeapon</li>
+		</weaponTags>
+    	<tradeability>None</tradeability>
+    	<destroyOnDrop>true</destroyOnDrop>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_Vehicle_LMG</texPath>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>11.5</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.58</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.36</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_DMS_LightMachineGun</defaultProjectile>
+				<warmupTime>2.3</warmupTime>
+				<range>25.9</range>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<burstShotCount>12</burstShotCount>
+				<soundCast>DMS_MachineGunLight_Shot</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+  </ThingDef>
+
+
+
+	<!--HMG這個是固定在不可替換武器類型機兵上的版本。-->
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>DMS_HeavyMachineGunMounted</defName>
+		<label>mounted HMG</label>
+		<description>heavy machine gun for mech soldier or infantry support platform.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<weaponTags>
+			<li>DMS_VehicleWeapon</li>
+		</weaponTags>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_Vehicle_HMG</texPath>
+			<drawSize>(1.75,1.75)</drawSize>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.86</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<Mass>14.50</Mass>
+			<RangedWeapon_Cooldown>3.56</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_DMS_HeavyMachineGun</defaultProjectile>
+				<warmupTime>2.3</warmupTime>
+				<range>80.9</range>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	<!--2A38 30mm 駭蜥的主武器-->
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>DMS_Tarbosaurus_Gun</defName>
+		<label>2A38M autocannon</label>
+		<description>heavy autocannon mounted with underbarrel anti air missile for infantry suppress platform.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<weaponTags>
+			<li>DMS_Tarbosaurus_Gun</li>
+		</weaponTags>
+		<equippedDistanceOffset >-0.3</equippedDistanceOffset >
+		<graphicData>
+			<texPath>Things/Weapons/DMS_Weapon_2A38M</texPath>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>DMS_Bullet_CIWS</defaultProjectile>
+				<requireLineOfSight>true</requireLineOfSight>
+				<warmupTime>1</warmupTime>
+				<minRange>5.9</minRange>
+				<range>45</range>
+				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
+				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+				<burstShotCount>100</burstShotCount>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>15</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--Gau-8
+	Avenger 30mm 駭蜥的主武器-->
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>DMS_GAU8Gatlinggun</defName>
+		<label>GAU-8 "Avenger"</label>
+		<description>a rapid-firing multiple-barrel firearm chambered in high-cailber autocannon rounds, deadly and destructive.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<weaponTags>
+			<li>DMS_VehicleWeapon</li>
+		</weaponTags>
+    	<tradeability>None</tradeability>
+    	<destroyOnDrop>true</destroyOnDrop>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_Weapon_GAU8</texPath>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>11.5</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.58</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.36</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_DMS_LightMachineGun</defaultProjectile>
+				<warmupTime>2.3</warmupTime>
+				<range>25.9</range>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<burstShotCount>12</burstShotCount>
+				<soundCast>DMS_MachineGunLight_Shot</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+  	</ThingDef>
+	<!--M163 Vulcan 20mm 象龜的主武器-->
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>DMS_GAU4Gatlinggun</defName>
+		<label>M61 "Vulcan"</label>
+		<description>a rapid-firing multiple-barrel firearm chambered in autocannon rounds.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<weaponTags>
+			<li>DMS_VehicleWeapon</li>
+		</weaponTags>
+    	<tradeability>None</tradeability>
+    	<destroyOnDrop>true</destroyOnDrop>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_Weapon_M61Vulcan</texPath>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.58</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.36</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_DMS_LightMachineGun</defaultProjectile>
+				<warmupTime>2.3</warmupTime>
+				<range>25.9</range>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<burstShotCount>12</burstShotCount>
+				<soundCast>DMS_MachineGunLight_Shot</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+  	</ThingDef>
+	<!-- GAU-19A 12.7mm 雙足飛龍的主武器，也可以被猿人與戰鬥框架裝備-->
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>DMS_GAU19Gatlinggun</defName>
+		<label>GAU-19/A "Attacker"</label>
+		<description>a rapid-firing multiple-barrel firearm chambered in full power rifle rounds.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<weaponTags>
+			<li>DMS_VehicleWeapon</li>
+		</weaponTags>
+    	<tradeability>None</tradeability>
+    	<destroyOnDrop>true</destroyOnDrop>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_Weapon_GAU19</texPath>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>11.5</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.58</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.36</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_DMS_LightMachineGun</defaultProjectile>
+				<warmupTime>2.3</warmupTime>
+				<range>25.9</range>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<burstShotCount>12</burstShotCount>
+				<soundCast>DMS_MachineGunLight_Shot</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+  	</ThingDef>
+	<!-- M214 12.7mm 雙足飛龍的主武器，也可以被猿人與戰鬥框架裝備-->
+
+</Defs>

@@ -4,20 +4,19 @@
 <!-- 軍用武器為機兵範疇，在原版情況下相同定位的武器傷害都x1.5,重量x1.75，穿甲與鈍傷能力都有額外的0.5 -->
 
 <!-- weaponTags -->
-<!-- 機兵用輕型武器 DMS_Light //狗狗與部分非戰鬥單位使用，霰彈手槍與衝鋒槍範疇-->
-<!-- 機兵用輕型武器 DMS_Sub_Weapon //霰彈手槍與單手衝鋒槍,戰術手槍等-->
-<!-- 機兵用鎮暴武器 DMS_RiotControl //鎮暴型塔盾手與浪人的裝備，鎮暴霰彈槍,鎮暴機槍,霰彈手槍等-->
+<!-- 機兵用輕型武器 DMS_MechWeaponLight //狗狗與部分非戰鬥單位使用，霰彈手槍與衝鋒槍範疇-->
 
-<!-- 機兵用近距離武器 DMS_CloseQuarter //近距離戰鬥，突擊霰彈槍,短托衝鋒槍等-->
-<!-- 機兵用中距離武器 DMS_MidQuarter //中距離戰鬥，突擊步槍與重型衝鋒槍-->
-<!-- 機兵用火力壓制武器 DMS_suppress//中距離火力壓制，輕機槍-->
+<!-- 機兵用副武器 DMS_Sub_Weapon //霰彈手槍與單手衝鋒槍,戰術手槍等-->
 
-<!-- 機兵用精確射手武器 DMS_MarksManRifle //中遠距離精確射擊，精確射手步槍與半自動步槍-->
-<!-- 機兵用曲射支援武器 DMS_FireSupport //遠距離火力支援，自動榴彈發射器與狙擊榴彈發射器-->
-<!-- 機兵用精確射手武器 DMS_Sniper //獵人狙擊型的反器材步槍與狙擊槍-->
+<!-- 機兵用霰彈武器 DMS_MechWeaponShotgun //鎮暴霰彈槍,霰彈手槍等-->
 
-<!-- 機兵用反坦克武器 DMS_AntiTank //反器材步槍,反坦克火箭砲-->
-<!-- 機兵用重型武器 DMS_HeavyWeapon //猿人與攀行者使用的重武器裝備，復仇者機砲與無後座力炮，2A38M等-->
+<!-- 中等體型機兵用武器 DMS_MechWeaponMeduim //中等體型機兵使用的武器，精確射手步槍與半自動步槍，突擊步槍與重型衝鋒槍等-->
+<!-- 中等體型機兵用長身管武器 DMS_MechWeaponLongRifle//中等體型機兵使用的長身管武器，輕機槍，反器材步槍與狙擊槍-->
+
+<!-- 機兵用反坦克武器 DMS_MechWeaponAntiTank //反器材步槍,反坦克火箭砲，自動榴彈發射器與狙擊榴彈發射器-->
+
+<!-- 重型機兵用武器 DMS_MechWeaponHeavy //猿人使用的槍型重武器裝備-->
+<!-- 載具型機兵用重型武器 DMS_VehicleWeapon //象龜使用的砲塔型重武器裝備，復仇者機砲與無後座力炮，2A38M等-->
 
     <ThingCategoryDef>
         <defName>AutomatroidWeapon</defName>
@@ -52,6 +51,14 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<comps>
+			<li Class="DMS.CompProperties_MechOnlyWeapon">
+				<allowedRaces>
+					<li>DMS_Mech_Soldat</li>
+					<li>DMS_Mech_Sergeant</li>
+				</allowedRaces>
+			</li>
+		</comps>
 		<modExtensions>
 			<li Class="HeavyWeapons.HeavyWeapon">
 				<isHeavy>true</isHeavy>
@@ -77,8 +84,7 @@
 			<li>ShortShots</li>
 		</weaponClasses>		
 		<weaponTags>
-			<li>DMS_Light</li>
-			<li>DMS_Sub_Weapon</li>
+			<li>DMS_MechWeaponLight</li>
 		</weaponTags>
     	<uiIconScale>1.8</uiIconScale>
 		<graphicData>
@@ -216,8 +222,7 @@
 		<label>military assault shotgun</label>
 		<description>Automatic shotgun rapidly manufactured with stamped component.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponTags>
-			<li>DMS_IndustrialGun</li>
-			<li>DMS_CloseQuarter</li>
+			<li>DMS_MechWeaponShotgun</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_AssaultShotgun</texPath>
@@ -265,8 +270,7 @@
 		<label>military assault piercer</label>
 		<description>Submachinegun sized automatic weapon chambered in anti-materiel rounds, capable of defeating heavy armor at close range. Refered as piercer due to lack of comparable weapon in human arsenal.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
-			<li>AssaultRifle</li>
+			<li>DMS_MechWeaponMeduim</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_AssaultPiercer</texPath>
@@ -316,8 +320,7 @@
 		<label>military assault rifle</label>
 		<description>a full metal assault rifle designed for mech soldiers, with a picatinny rail as long as the gun itself for all tacticool needs.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponTags>
-			  <li>IndustrialGunAdvanced</li>
-			  <li>AssaultRifle</li>
+			  <li>DMS_MechWeaponMeduim</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_AssaultRifle</texPath>
@@ -358,7 +361,62 @@
 			</li>
 		</verbs>
 	</ThingDef>
-	
+
+<!--SAR-->
+	<ThingDef ParentName="DMS_AutomatroidGun">
+		<defName>DMS_SemiAutoRifle</defName>
+		<label>military SemiAutoRifle</label>
+		<description>a gas action semi-auto rifle used by mech soldier, reliable but too heavy for human.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>Ranged</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>DMS_MechWeaponMeduim</li>
+		</weaponTags>	
+		<graphicData>
+			<texPath>Things/Weapons/DMS_SemiAutoRifle</texPath>
+			<drawSize>(1.75,1.75)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>47500</WorkToMake>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+			<Mass>14.80</Mass>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.15</MoveSpeed>
+		</equippedStatOffsets>
+		<recipeMaker>
+		    <researchPrerequisites>
+      			<li>GasOperation</li>
+      			<li>DMS_EquipmentHeavy</li>
+    		</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>165</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>		
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_DMS_AMR</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>50</ticksBetweenBurstShots>
+				<range>40</range>
+				<soundCast>Shot_TurretSniper</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>  
+
 <!--DMS_MarksmanRifle 射手步槍，文本缺失-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_MarksmanRifle</defName>
@@ -369,8 +427,7 @@
 		  <li>LongShots</li>
 		</weaponClasses>		
 		<weaponTags>
-			<li>SniperRifle</li>
-			<li>DMS_IndustrialGunAdvanced</li>
+			<li>DMS_MechWeaponMeduim</li>
 		</weaponTags>		
 		<graphicData>
 			<texPath>Things/Weapons/DMS_MarksmanRifle</texPath>
@@ -422,10 +479,8 @@
 		  <li>LongShots</li>
 		</weaponClasses>		
 		<weaponTags>
-			<li>SniperRifle</li>
-			<li>DMS_IndustrialGunAdvanced</li>
-		</weaponTags>		
-		
+			<li>DMS_MechWeaponLongRifle</li>
+		</weaponTags>				
 		<graphicData>
 			<texPath>Things/Weapons/DMS_AntiMaterialRifle</texPath>
 			<drawSize>(1.8,1.8)</drawSize>
@@ -479,8 +534,7 @@
 		  <li>LongShots</li>
 		</weaponClasses>
 		<weaponTags>
-			<li>DMS_GunGrenadeLauncher</li>
-			<li>GunHeavy</li>
+			<li>DMS_MechWeaponAntiTank</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_AutomaticGrenadeLauncher</texPath>
@@ -534,8 +588,7 @@
 		  <li>LongShots</li>
 		</weaponClasses>
 		<weaponTags>
-			<li>DMS_IndustrialGunAdvanced</li>
-			<li>DMS_GunGrenadeLauncher</li>
+			<li>DMS_MechWeaponAntiTank</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_SniperGrenadeLauncher</texPath>
@@ -611,8 +664,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<weaponTags>
-			<li>SniperRifle</li>
-			<li>DMS_IndustrialGunAdvanced</li>
+			<li>DMS_MechWeaponAntiTank</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_AntiWalkerRifle</texPath>
@@ -660,8 +712,7 @@
 		<label>military LMG</label>
 		<description>Supressive weapon chambered in full power rifle round.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponTags>
-			<li>DMS_IndustrialGunAdvanced</li>
-			<li>DMS_LMG</li>
+			<li>DMS_MechWeaponLongRifle</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_LightMachineGun</texPath>
@@ -730,7 +781,7 @@
 			<li>Ranged</li>
 		</weaponClasses>
 		<weaponTags>
-			<li>DMS_IndustrialGunAdvanced</li>
+			<li>DMS_MechWeaponHeavy</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_HeavyMachineGun</texPath>
@@ -788,63 +839,6 @@
 			<speed>100</speed>
 		</projectile>
 	</ThingDef>
-
-<!--SAR-->
-	<ThingDef ParentName="DMS_AutomatroidGun">
-		<defName>DMS_SemiAutoRifle</defName>
-		<label>military SemiAutoRifle</label>
-		<description>a gas action semi-auto rifle used by mech soldier, reliable but too heavy for human.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
-		<weaponClasses>
-			<li>RangedHeavy</li>
-			<li>Ranged</li>
-		</weaponClasses>
-		<weaponTags>
-			<li>DMS_MidQuarter</li>
-			<li>DMS_SemiAutoRifle</li>
-			<li>DMS_MarksManRifle</li>
-		</weaponTags>	
-		<graphicData>
-			<texPath>Things/Weapons/DMS_SemiAutoRifle</texPath>
-			<drawSize>(1.75,1.75)</drawSize>
-		</graphicData>
-		<soundInteract>Interact_Rifle</soundInteract>
-		<statBases>
-			<WorkToMake>47500</WorkToMake>
-			<AccuracyTouch>0.60</AccuracyTouch>
-			<AccuracyShort>0.95</AccuracyShort>
-			<AccuracyMedium>0.80</AccuracyMedium>
-			<AccuracyLong>0.75</AccuracyLong>
-			<Mass>14.80</Mass>
-			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
-		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>-0.15</MoveSpeed>
-		</equippedStatOffsets>
-		<recipeMaker>
-		    <researchPrerequisites>
-      			<li>GasOperation</li>
-      			<li>DMS_EquipmentHeavy</li>
-    		</researchPrerequisites>
-		</recipeMaker>
-		<costList>
-			<Steel>165</Steel>
-			<ComponentIndustrial>8</ComponentIndustrial>
-		</costList>		
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_DMS_AMR</defaultProjectile>
-				<warmupTime>0.5</warmupTime>
-				<burstShotCount>1</burstShotCount>
-				<ticksBetweenBurstShots>50</ticksBetweenBurstShots>
-				<range>40</range>
-				<soundCast>Shot_TurretSniper</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-			</li>
-		</verbs>
-	</ThingDef>  
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>DMS_Machete</defName>

@@ -87,7 +87,7 @@ namespace DMS
         {
             get
             {
-                return SelPawnForGear is HumanlikeMech && CanControl;
+                return (SelPawnForGear is HumanlikeMech || SelPawnForGear is WeaponUsableMech) && CanControl;
             }
         }
 
