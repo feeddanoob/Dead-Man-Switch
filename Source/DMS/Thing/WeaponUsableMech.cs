@@ -41,9 +41,16 @@ namespace DMS
                 {
                     if (tmp == null) continue;
                     //沒有開啟武器過濾的情況下任意武器都應該能裝備//如果該裝備是可以使用的
-                    if (tmp.TryGetComp<CompEquippable>() != null && IsMechUseable(tmp))//
+                    if (tmp.TryGetComp<CompEquippable>() != null)
                     {
-                        yield return this.TryMakeFloatMenuForWeapon(tmp);
+                        if (IsMechUseable(tmp))
+                        {
+                            yield return this.TryMakeFloatMenuForWeapon(tmp);
+                        }
+                        else
+                        {
+                            yield return new FloatMenuOption("CannotEquip".Translate(tmp) + "DMS_WeaponNotSupported".Translate(), null);
+                        }                 
                     }
                 }
             }
@@ -51,26 +58,28 @@ namespace DMS
         }
         private bool IsMechUseable(ThingWithComps tmp)
         {
-           //開了Tag過濾的話先看是否通過Tag過濾，然後InTechLevel包含了對於EnableTechLevelFilter的判斷
-            if (MechWeapon.EnableWeaponFilter)
+            //開了Tag過濾的話先看是否通過Tag過濾，然後InTechLevel包含了對於EnableTechLevelFilter的判斷
+            if (this.MechWeapon.EnableWeaponFilter)
             {
-                foreach (var item in MechWeapon.UsableWeaponTags)
+                foreach (var item in this.MechWeapon.UsableWeaponTags)
                 {
-                    Log.Warning(tmp.def.defName + "," + InTechLevel(tmp) + "," + (tmp.def.weaponTags.NotNullAndContains(item) && InTechLevel(tmp)));
-                    if (tmp.def.weaponTags.NotNullAndContains(item)&& InTechLevel(tmp))
+                    if (tmp.def.weaponTags.NotNullAndContains(item) && InTechLevel(tmp))
                     {
-
                         return true;
                     }
                 }
+                return false;
             }
-            return InTechLevel(tmp);
-        }
-        private bool InTechLevel(ThingWithComps tmp)//沒開或者為可用的科技等級。
-        {
-            if (MechWeapon.EnableTechLevelFilter)
-                return MechWeapon.UsableTechLevels.NotNullAndContains(tmp.def.techLevel.ToString());
+            else if (this.MechWeapon.EnableTechLevelFilter)
+            {
+                return this.MechWeapon.UsableTechLevels.NotNullAndContains(tmp.def.techLevel.ToString());
+            }
             return true;
+        }
+        private bool InTechLevel(ThingWithComps tmp)//為可用的科技等級。
+        {
+            if (!this.MechWeapon.EnableTechLevelFilter) return true;
+            else return this.MechWeapon.UsableTechLevels.NotNullAndContains(tmp.def.techLevel.ToString());
         }
         public override void ExposeData()
         {

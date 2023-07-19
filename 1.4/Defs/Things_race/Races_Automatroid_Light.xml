@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- T0 DMS_MechBasis-->
+  <!-- 垃圾桶 -->
+  <ThingDef ParentName="BaseAutomatroidRace">
+    <defName>DMS_Mech_TrashBin</defName>
+    <label>trash bin</label>
+    <description>圓筒狀的服務用機器人,常見於中寰世界的現代化都市中用來提供道路清潔,快遞與送餐到府服務,以及在應急事件發生時第一時間到場協助疏散與維護秩序.</description>
+    <statBases>
+      <CleaningSpeed>0.85</CleaningSpeed>
+      <MoveSpeed>4.7</MoveSpeed>
+      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+    </statBases>
+    <race>
+      <body>DMS_TrashBin</body>
+      <baseBodySize>1</baseBodySize>
+      <mechWeightClass>Light</mechWeightClass>
+      <mechEnabledWorkTypes>
+        <li>PlantCutting</li>
+        <li>Hauling</li>
+        <li>Cleaning</li>
+        <li>Firefighter</li>
+      </mechEnabledWorkTypes>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+    <butcherProducts>
+      <Steel>15</Steel>
+    </butcherProducts>
+  </ThingDef>
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_TrashBin</defName>
+    <label>trash bin</label>
+    <race>DMS_Mech_TrashBin</race>
+    <isFighter>false</isFighter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/trashBin</texPath>
+          <maskPath>Things/Automatroid/AllegianceOverlays/trashBin</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags>
+      <li></li>                                                                     <!--武器-->
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- 武裝四軸 -->
+  <ThingDef ParentName="BaseAutomatroidRace">
+    <defName>DMS_Mech_VerlingBird</defName>
+    <label>verling bird</label>
+    <description>偵查用四軸無人機，對於戰鬥而言相當的脆弱但移動速度極快，搭載了一挺小口徑衝鋒槍並能提供一定的牽制能力.</description>
+    <statBases>
+      <MoveSpeed>10</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>0</ArmorRating_Blunt>                                     <!--護甲-->
+      <ArmorRating_Sharp>0</ArmorRating_Sharp>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">0</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+    </statBases>
+    <thingClass>DMS.WeaponUsableMech</thingClass>
+    <inspectorTabs Inherit="False">
+      <li>ITab_Pawn_Health</li>
+      <li>ITab_Pawn_Needs</li>
+      <li>ITab_Pawn_Character</li>
+      <li>ITab_Pawn_Training</li>
+      <li>ITab_Pawn_Social</li>
+      <li>ITab_Pawn_Guest</li>
+      <li>ITab_Pawn_Prisoner</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ITab_Pawn_Slave</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ITab_Pawn_Feeding</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ITab_Genes</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ITab_GenesPregnancy</li>
+      <li>ITab_Pawn_FormingCaravan</li>
+      <li>DMS.ITab_Mech_Gear</li>
+      <li>ITab_Pawn_Log</li>
+    </inspectorTabs>
+    <race>
+      <body>DMS_Chop</body>                                                      <!--身體(另外的def)-->
+      <baseBodySize>0.25</baseBodySize>
+      <mechWeightClass>Light</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+    <modExtensions>
+      <li Class="DMS.MechWeaponExtension">
+        <EnableWeaponFilter>true</EnableWeaponFilter>
+        <UsableWeaponTags>
+          <li>DMS_MechWeaponUltraLight</li>
+        </UsableWeaponTags>
+        <EnableTechLevelFilter>true</EnableTechLevelFilter>
+        <UsableTechLevels>
+          <li>Industrial</li>
+        </UsableTechLevels>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_VerlingBird</defName>
+    <label>verling bird</label>
+    <race>DMS_Mech_VerlingBird</race>
+    <isFighter>true</isFighter>
+    <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
+    <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
+    <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
+    <lifeStages>                                                                 <!--身體圖片-->
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/chad</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags>
+      <li></li>                                                                     <!--武器-->
+    </weaponTags>
+    <!--<abilities>
+        <li></li>
+      </abilities>-->
+  </PawnKindDef>
+
+  <!-- 馱馬 -->
+
+  <!-- T1 DMS_DeadMansSwitch-->
+  <!-- 獵犬 -->
+  <ThingDef Name="DMS_MechHoundBase" ParentName="BaseAutomatroidRace" Abstract="True">  <!-- DMS_Mech_Hound 獵犬常規型 -->
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge>
+    </statBases>
+    <race>
+      <body>DMS_Hound</body>
+      <baseBodySize>0.75</baseBodySize>
+      <mechWeightClass>Light</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+  </ThingDef>
+
+  <ThingDef ParentName="DMS_MechHoundBase">  <!-- DMS_Mech_Hound_RC 獵犬常規型 -->
+    <defName>DMS_Mech_Hound</defName>
+    <label>hound</label>
+    <description>A four-legged robot dog, can provide vanguard Scouting and early warning detect during armed operations.</description>
+  </ThingDef>
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_Hound</defName>
+    <label>hound</label>
+    <race>DMS_Mech_Hound</race>
+    <isFighter>true</isFighter>
+    <combatPower>30</combatPower>
+    <maxPerGroup>15</maxPerGroup>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/hound</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags>
+    </weaponTags>
+  </PawnKindDef>
+
+  <ThingDef ParentName="DMS_MechHoundBase">  <!-- DMS_Mech_Hound_RC 獵犬鎮暴型 -->
+    <defName>DMS_Mech_Hound_RC</defName>
+    <label>watchdog</label>
+    <description>a sub-variant of hound, designed for riot control and prison patrol.</description>
+    <comps>
+		  <li Class="DMS.CompProperties_VehicleWeapon">
+			  <defaultWeapon>DMS_Revolver</defaultWeapon>			  
+        <drawSize>1</drawSize>
+			  <drawOffset>(0,0,0)</drawOffset>
+			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
+        <rotationSmoothTime>0.12</rotationSmoothTime>
+      </li>
+    </comps>
+  </ThingDef>
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_Hound_RC</defName>
+    <label>watchdog</label>
+    <race>DMS_Mech_Hound_RC</race>
+    <isFighter>true</isFighter>
+    <combatPower>30</combatPower>
+    <maxPerGroup>15</maxPerGroup>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/hound</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags>
+    </weaponTags>
+  </PawnKindDef>
+
+  <ThingDef ParentName="DMS_MechHoundBase"><!-- DMS_Mech_Hound_SMG 獵犬壓制型 -->
+    <defName>DMS_Mech_Hound_FS</defName>
+    <label>hetzen</label>
+    <description>a sub-variant of hound, designed for urban combat fire support.</description>
+    <comps>
+		  <li Class="DMS.CompProperties_VehicleWeapon">
+			  <defaultWeapon>DMS_SubMachineGunMounted</defaultWeapon>			  
+        <drawSize>1</drawSize>
+			  <drawOffset>(0,0,0)</drawOffset>
+			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
+        <rotationSmoothTime>0.12</rotationSmoothTime>
+      </li>
+    </comps>
+  </ThingDef>
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_Hound_FS</defName>
+    <label>hetzen</label>
+    <race>DMS_Mech_Hound_FS</race>
+    <isFighter>true</isFighter>
+    <combatPower>50</combatPower>
+    <maxPerGroup>15</maxPerGroup>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/hound</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags>
+    </weaponTags>
+  </PawnKindDef>
+
+</Defs>

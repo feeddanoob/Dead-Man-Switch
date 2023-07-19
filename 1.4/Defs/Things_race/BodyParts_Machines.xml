@@ -178,6 +178,11 @@
           <coverage>0.2</coverage>
         </li>
         <li>
+          <def>MechanicalArm</def>
+          <customLabel>weapon mount</customLabel>
+          <coverage>0.15</coverage>
+        </li>
+        <li>
           <def>DMS_ChestBrain</def>
           <coverage>0.02</coverage>
           <depth>Inside</depth>
@@ -269,7 +274,7 @@
       <parts>
         <li>
           <def>MechanicalNeck</def>
-          <coverage>0.10</coverage>
+          <coverage>0.05</coverage>
           <height>Top</height>
           <parts>
             <li>
@@ -313,6 +318,54 @@
           </parts>
         </li>
         <li>
+          <def>MechanicalArm</def>
+          <customLabel>robotic arm</customLabel>
+          <coverage>0.15</coverage>
+          <parts>
+            <li>
+              <def>MechanicalHand</def>
+              <customLabel>robotic hand</customLabel>
+              <coverage>0.2</coverage>
+              <height>Bottom</height>
+              <parts>
+                <li>
+                  <def>MechanicalFinger</def>
+                  <customLabel>pinky</customLabel>
+                  <coverage>0.15</coverage>
+                  <groups>
+                    <li>LeftHand</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MechanicalFinger</def>
+                  <customLabel>middle finger</customLabel>
+                  <coverage>0.15</coverage>
+                  <groups>
+                    <li>LeftHand</li>
+                    <li>MiddleFingers</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MechanicalFinger</def>
+                  <customLabel>index finger</customLabel>
+                  <coverage>0.15</coverage>
+                  <groups>
+                    <li>LeftHand</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MechanicalFinger</def>
+                  <customLabel>thumb</customLabel>
+                  <coverage>0.15</coverage>
+                  <groups>
+                    <li>LeftHand</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+         <li>
           <def>DMS_CompactSenser</def>
           <coverage>0.04</coverage>
           <height>Middle</height>

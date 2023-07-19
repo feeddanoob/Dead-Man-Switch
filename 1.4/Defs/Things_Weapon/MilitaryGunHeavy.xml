@@ -1,13 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- 重型武器為機兵範疇，分機載與車載，在原版情況下相同定位的武器傷害都x1.5,重量x1.75，穿甲與鈍傷能力都有額外的0.5 -->
-
-	<!-- 重型機兵用武器 DMS_MechWeaponHeavy //猿人使用的槍型重武器裝備-->
-	<!-- 載具型機兵用重型武器 DMS_VehicleWeapon //象龜使用的砲塔型重武器裝備，復仇者機砲與無後座力炮，2A38M等-->
 	<ThingDef Name="DMS_AutomatroidTurretGun" ParentName="BaseGun" Abstract="True">
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
+    	<tradeability>None</tradeability>
+    	<destroyOnDrop>true</destroyOnDrop>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -24,17 +20,51 @@
 			</li>
 		</tools>
 	</ThingDef>
-
-<!--LMG這個是固定在不可替換武器類型機兵上的版本。-->
-	<ThingDef ParentName="BaseWeaponTurret">
-		<defName>DMS_LightMachineGunMounted</defName>
-		<label>mounted LMG</label>
-		<description>Supressive weapon chambered in full power rifle round.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+	<!--SMG	這個是固定在不可替換武器類型機兵上的版本。-->
+	<ThingDef ParentName="DMS_AutomatroidTurretGun">
+		<defName>DMS_SubMachineGunMounted</defName>
+		<label>mounted SMG</label>
+		<description>Supressive weapon chambered in pistol caliber round.\n\nThis weapon is designed specially for mounted use, so only specific unit can equip it.</description>
 		<weaponTags>
 			<li>DMS_VehicleWeapon</li>
+			<li>V_SMG</li>
 		</weaponTags>
-    	<tradeability>None</tradeability>
-    	<destroyOnDrop>true</destroyOnDrop>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_Vehicle_SMG</texPath>
+			<drawSize>(1.3,1.3)</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>3</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.76</AccuracyShort>
+			<AccuracyMedium>0.5</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
+			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>19.9</range>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>Shot_MachinePistol</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+  	</ThingDef>
+	<!--LMG	這個是固定在不可替換武器類型機兵上的版本。-->
+	<ThingDef ParentName="DMS_AutomatroidTurretGun">
+		<defName>DMS_LightMachineGunMounted</defName>
+		<label>mounted LMG</label>
+		<description>Supressive weapon chambered in full power rifle round.\n\nThis weapon is designed specially for mounted use, so only specific unit can equip it.</description>
+		<weaponTags>
+			<li>DMS_VehicleWeapon</li>
+			<li>V_LMG</li>
+		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Vehicle_LMG</texPath>
 			<drawSize>(1.5,1.5)</drawSize>
@@ -61,17 +91,15 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
-  </ThingDef>
-
-
-
-	<!--HMG這個是固定在不可替換武器類型機兵上的版本。-->
-	<ThingDef ParentName="BaseWeaponTurret">
+  	</ThingDef>
+	<!--HMG	這個是固定在不可替換武器類型機兵上的版本。-->
+	<ThingDef ParentName="DMS_AutomatroidTurretGun">
 		<defName>DMS_HeavyMachineGunMounted</defName>
 		<label>mounted HMG</label>
-		<description>heavy machine gun for mech soldier or infantry support platform.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<description>heavy machine gun for mech soldier or infantry support platform.\n\nThis weapon is designed specially for mounted use, so only specific unit can equip it.</description>
 		<weaponTags>
 			<li>DMS_VehicleWeapon</li>
+			<li>V_HMG</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Vehicle_HMG</texPath>
@@ -100,11 +128,12 @@
 			</li>
 		</verbs>
 	</ThingDef>
+
 	<!--2A38 30mm 駭蜥的主武器-->
-	<ThingDef ParentName="BaseWeaponTurret">
+	<ThingDef ParentName="DMS_AutomatroidTurretGun">
 		<defName>DMS_Tarbosaurus_Gun</defName>
-		<label>2A38M autocannon</label>
-		<description>heavy autocannon mounted with underbarrel anti air missile for infantry suppress platform.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<label>2K22/TWS</label>
+		<description>2K22 / Tarbosaurus Weapon System included heavy autocannon with anti air missile array for infantry suppress / anti air platform.</description>
 		<weaponTags>
 			<li>DMS_Tarbosaurus_Gun</li>
 		</weaponTags>
@@ -142,17 +171,15 @@
 		</verbs>
 	</ThingDef>
 
-	<!--Gau-8
-	Avenger 30mm 駭蜥的主武器-->
-	<ThingDef ParentName="BaseWeaponTurret">
+	<!--Gau-8 Avenger 30mm 駭蜥的主武器-->
+	<ThingDef ParentName="DMS_AutomatroidTurretGun">
 		<defName>DMS_GAU8Gatlinggun</defName>
 		<label>GAU-8 "Avenger"</label>
 		<description>a rapid-firing multiple-barrel firearm chambered in high-cailber autocannon rounds, deadly and destructive.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponTags>
 			<li>DMS_VehicleWeapon</li>
+			<li>V_Gatling30mm</li>
 		</weaponTags>
-    	<tradeability>None</tradeability>
-    	<destroyOnDrop>true</destroyOnDrop>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_GAU8</texPath>
 			<drawSize>(1.5,1.5)</drawSize>
@@ -180,19 +207,18 @@
 			</li>
 		</verbs>
   	</ThingDef>
-	<!--M163 Vulcan 20mm 象龜的主武器-->
-	<ThingDef ParentName="BaseWeaponTurret">
+	<!--M163 Vulcan 20mm 蠵龜的主武器-->
+	<ThingDef ParentName="DMS_AutomatroidTurretGun">
 		<defName>DMS_GAU4Gatlinggun</defName>
-		<label>M61 "Vulcan"</label>
+		<label>GAU-4 "Vulcan"</label>
 		<description>a rapid-firing multiple-barrel firearm chambered in autocannon rounds.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponTags>
 			<li>DMS_VehicleWeapon</li>
+			<li>V_Gatling20mm</li>
 		</weaponTags>
-    	<tradeability>None</tradeability>
-    	<destroyOnDrop>true</destroyOnDrop>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_M61Vulcan</texPath>
-			<drawSize>(1.5,1.5)</drawSize>
+			<drawSize>2.5</drawSize>
 		</graphicData>
 		<statBases>
 			<AccuracyTouch>0.50</AccuracyTouch>
@@ -208,8 +234,8 @@
 				<defaultProjectile>Bullet_DMS_LightMachineGun</defaultProjectile>
 				<warmupTime>2.3</warmupTime>
 				<range>25.9</range>
-				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-				<burstShotCount>12</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>24</burstShotCount>
 				<soundCast>DMS_MachineGunLight_Shot</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -217,15 +243,14 @@
 		</verbs>
   	</ThingDef>
 	<!-- GAU-19A 12.7mm 雙足飛龍的主武器，也可以被猿人與戰鬥框架裝備-->
-	<ThingDef ParentName="BaseWeaponTurret">
+	<ThingDef ParentName="DMS_AutomatroidTurretGun">
 		<defName>DMS_GAU19Gatlinggun</defName>
 		<label>GAU-19/A "Attacker"</label>
 		<description>a rapid-firing multiple-barrel firearm chambered in full power rifle rounds.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponTags>
 			<li>DMS_VehicleWeapon</li>
+			<li>V_Gatling762mm</li>
 		</weaponTags>
-    	<tradeability>None</tradeability>
-    	<destroyOnDrop>true</destroyOnDrop>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_GAU19</texPath>
 			<drawSize>(1.5,1.5)</drawSize>

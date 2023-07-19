@@ -1,6 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+
+  <!-- 戰鬥框架 DMS_Mech_BattleFrame-->
+  <ThingDef ParentName="BaseAutomatroidHumanRace">
+    <defName>DMS_Mech_BattleFrame</defName>
+    <label>battle friend</label>
+    <description>Designed to be a light infantry fighting unit. battle friend has a considerable load capacity and ability to use most of human equipments, which isn't surpised that it has been mass-services by forces and depoly in various environments when it can equip heavy weapon with amount of ammos.</description>
+    <statBases>
+      <MoveSpeed>4</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp><!--銳抗-->
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt><!--鈍抗-->
+      <ArmorRating_Heat>1.3</ArmorRating_Heat>  <!--能抗-->
+      <AimingDelayFactor>0.5</AimingDelayFactor>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">10</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+    </statBases>
+    <race>
+      <body>DMS_Humanoid_Soldat</body>                                                      <!--身體(另外的def)-->
+      <baseBodySize>1.3</baseBodySize>
+      <baseHealthScale>1.5</baseHealthScale>
+      <mechWeightClass>Heavy</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+    <modExtensions  Inherit="False">
+      <li Class="DMS.MechWeaponExtension">
+        <EnableWeaponFilter>true</EnableWeaponFilter>
+        <UsableWeaponTags>
+          <li>DMS_MechWeaponLongRifle</li>
+          <li>DMS_MechWeaponLight</li>
+          <li>Gun</li>        
+        </UsableWeaponTags>
+        <EnableTechLevelFilter>true</EnableTechLevelFilter>
+        <UsableTechLevels>
+          <li>Industrial</li>
+        </UsableTechLevels>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_BattleFrame</defName>
+    <label>battle friend</label>
+    <race>DMS_Mech_BattleFrame</race>
+    <isFighter>true</isFighter>
+    <combatPower>200</combatPower>
+    <maxPerGroup>10</maxPerGroup>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/battleFrame</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags><!--武器-->
+      <li>DMS_MechWeaponLongRifle</li>
+      <li>DMS_MechWeaponLight</li>
+      <li>Gun</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+    <!--戰鬥框架的機械師中繼變體-->   
+  <ThingDef ParentName="BaseAutomatroidHumanRace">
+    <defName>DMS_Mech_FieldCommand</defName>
+    <label>field command</label>
+    <description>a battle friend sub-variant model. it can be the mechnitor command realy but due to its weight with reduced fire control system, which can only equip a light weapon for self defense.</description>
+    <statBases>
+      <MoveSpeed>3.8</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp><!--銳抗-->
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt><!--鈍抗-->
+      <ArmorRating_Heat>1.3</ArmorRating_Heat>  <!--能抗-->
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">10</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+    </statBases>
+    <race>
+      <body>DMS_Humanoid_Soldat</body>
+      <baseBodySize>1.4</baseBodySize>
+      <baseHealthScale>1.2</baseHealthScale>
+      <mechWeightClass>Heavy</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+    <comps>
+      <li Class="DMS.CompProperties_CommandRelay">
+        <maxWorldMapRadius>10</maxWorldMapRadius>
+        <maxRelayRadius>20</maxRelayRadius>
+        <minRelayRadius>5</minRelayRadius>
+      </li>
+    </comps>
+    <modExtensions  Inherit="False">
+      <li Class="DMS.MechWeaponExtension">
+        <EnableWeaponFilter>true</EnableWeaponFilter>
+        <UsableWeaponTags>
+          <li>DMS_MechWeaponLight</li>
+          <li>Autopistol</li>     
+        </UsableWeaponTags>
+        <EnableTechLevelFilter>true</EnableTechLevelFilter>
+        <UsableTechLevels>
+          <li>Industrial</li>
+        </UsableTechLevels>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_FieldCommand</defName>
+    <label>field command</label>
+    <race>DMS_Mech_FieldCommand</race>
+    <isFighter>true</isFighter>
+    <combatPower>150</combatPower>
+    <maxPerGroup>1</maxPerGroup>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/FieldCommand</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags>
+      <li>DMS_MechWeaponLight</li>
+      <li>Autopistol</li>  
+    </weaponTags>
+  </PawnKindDef>
+
   <!-- T2 DMS_Automatroid-->
   <!-- 雙足飛龍 Reptile-->
   <ThingDef ParentName="BaseAutomatroidRace">
@@ -182,7 +323,7 @@
       </abilities>-->
   </PawnKindDef>
   <!-- 蠵龜Caretta  -->
-<ThingDef ParentName="BaseAutomatroidRace">
+  <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_Caretta</defName>
     <label>caretta</label>
     <description>an mobile anti-air support platform variant of geochelone.</description>
@@ -211,7 +352,7 @@
     </race>
     <comps>
 		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <defaultWeapon>DMS_Gun_GateKeeper</defaultWeapon>			  
+			  <defaultWeapon>DMS_GAU4Gatlinggun</defaultWeapon>			  
         <drawSize>4</drawSize>
 			  <drawOffset>(0,0,0)</drawOffset>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  

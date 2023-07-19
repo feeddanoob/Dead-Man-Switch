@@ -406,15 +406,16 @@
     <recipes>
       <li>ResurrectMediumMech</li>
       <li>ResurrectHeavyMech</li>
-      <li>VerlingBird</li>
-      <li>TrashBin</li>
-      <li>Hound</li>
-      <li>Soldat</li>
-      <li>Sergeant</li>
-      <li>Protector</li>
-      <li>Ronin</li>
-      <li>Arquebusier</li>
-      <li>Reptile</li>
+      <li>DMS_Make_VerlingBird</li>
+      <li>DMS_Make_TrashBin</li>
+      <li>DMS_Make_Hound</li>
+      <li>DMS_Make_Hound_RC</li>
+      <li>DMS_Make_Hound_FS</li>
+      <li>DMS_Make_Soldat</li>
+      <li>DMS_Make_Sergeant</li>
+      <li>DMS_Make_Ronin</li>
+      <li>DMS_Make_Arquebusier</li>
+      <li>DMS_Make_Reptile</li>
     </recipes>
     <comps>
       <li Class="CompProperties_Power">

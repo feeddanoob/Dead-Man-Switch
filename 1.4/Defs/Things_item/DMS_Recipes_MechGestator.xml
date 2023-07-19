@@ -5,22 +5,22 @@
     <gestationCycles>1</gestationCycles>
     <researchPrerequisite>DMS_UAVBasis</researchPrerequisite>
   </RecipeDef>
-  
-    <RecipeDef Name="DMS_MidiumMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
+
+  <RecipeDef Name="DMS_MidiumMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
     <gestationCycles>2</gestationCycles>
     <researchPrerequisite>DMS_Automatroid</researchPrerequisite>
   </RecipeDef>
-  
-    <RecipeDef Name="DMS_HeavyMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
+
+  <RecipeDef Name="DMS_HeavyMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
     <gestationCycles>2</gestationCycles>
     <researchPrerequisite>DMS_BattleFrame</researchPrerequisite>
   </RecipeDef>
-  
+
   <RecipeDef Name="DMS_SuperHeavyMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
     <gestationCycles>5</gestationCycles>
     <researchPrerequisite>DMS_HeavyAutomatroid</researchPrerequisite>
   </RecipeDef>
-   
+
   <RecipeDef Name="DMS_HumanoidMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
     <gestationCycles>5</gestationCycles>
     <researchPrerequisite>DMS_HumanoidEngineering</researchPrerequisite>
@@ -28,7 +28,7 @@
 
   <!--四軸-->
   <RecipeDef ParentName="DMS_LightMechanoidRecipe">
-    <defName>VerlingBird</defName>
+    <defName>DMS_Make_VerlingBird</defName>
     <label>gestate verlingBird</label>
     <description>Gestate a verlingBird mechanoid.</description>
     <products>
@@ -53,22 +53,14 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>2</count>
       </li>
-      <!--<li>
-        <filter>
-          <thingDefs>
-            <li>SubcoreRegular</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>-->
     </ingredients>
   </RecipeDef>
 
   <!--垃圾桶-->
   <RecipeDef ParentName="DMS_LightMechanoidRecipe">
-    <defName>TrashBin</defName>
+    <defName>DMS_Make_TrashBin</defName>
     <label>gestate trashbin</label>
     <description>Gestate a trashbin mechanoid.</description>
     <products>
@@ -98,10 +90,105 @@
     </ingredients>
   </RecipeDef>
 
+  <!--獵犬常規型-->
+  <RecipeDef ParentName="DMS_LightMechanoidRecipe">
+    <defName>DMS_Make_Hound</defName>
+    <label>gestate hound</label>
+    <description>Gestate a hound mechanoid armed with a pistol.</description>
+    <products>
+      <DMS_Mech_Hound>1</DMS_Mech_Hound>
+    </products>
+    <gestationCycles>1</gestationCycles>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_Hound</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+
+  <!--獵犬鎮暴型-->
+    <RecipeDef ParentName="DMS_LightMechanoidRecipe">
+      <defName>DMS_Make_Hound_RC</defName>
+      <label>gestate hetzen</label>
+      <description>Gestate a hound variant model armed with a riot revolver.</description>
+      <products>
+        <DMS_Mech_Hound_RC>1</DMS_Mech_Hound_RC>
+      </products>
+      <gestationCycles>1</gestationCycles>
+      <descriptionHyperlinks>
+        <ThingDef>DMS_Mech_Hound</ThingDef>
+      </descriptionHyperlinks>
+      <ingredients Inherit="False">
+        <li>
+          <filter>
+            <thingDefs>
+              <li>Steel</li>
+            </thingDefs>
+          </filter>
+          <count>75</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>ComponentIndustrial</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+    </RecipeDef>
+
+  <!--獵犬壓制型-->
+  <RecipeDef ParentName="DMS_LightMechanoidRecipe">
+    <defName>DMS_Make_Hound_FS</defName>
+    <label>gestate hound - fire suppress model</label>
+    <description>Gestate a hound variant model armed with a mounted submachinegun.</description>
+    <products>
+      <DMS_Mech_Hound_FS>1</DMS_Mech_Hound_FS>
+    </products>
+    <gestationCycles>1</gestationCycles>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_Hound</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
 
   <!--士兵-->
   <RecipeDef ParentName="DMS_MidiumMechanoidRecipe">
-    <defName>Soldat</defName>
+    <defName>DMS_Make_Soldat</defName>
     <label>gestate soldat</label>
     <description>Gestate a soldat mechanoid.</description>
     <products>
@@ -141,7 +228,7 @@
 
   <!--士官-->
   <RecipeDef ParentName="DMS_MidiumMechanoidRecipe">
-    <defName>Sergeant</defName>
+    <defName>DMS_Make_Sergeant</defName>
     <label>gestate sergeant</label>
     <description>Gestate a sergeant mechanoid.</description>
     <products>
@@ -187,66 +274,9 @@
     </ingredients>
   </RecipeDef>
 
-
-  <!--塔盾手-->
-  <RecipeDef ParentName="DMS_HeavyMechanoidRecipe">
-    <defName>Protector</defName>
-    <label>gestate protector</label>
-    <description>Gestate a protector mechanoid.</description>
-    <products>
-      <DMS_Mech_Protector>1</DMS_Mech_Protector>
-    </products>
-    <gestationCycles>2</gestationCycles>
-    <descriptionHyperlinks>
-      <ThingDef>DMS_Mech_Protector</ThingDef>
-    </descriptionHyperlinks>
-    <ingredients Inherit="False">
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Tungsteel</li>
-          </thingDefs>
-        </filter>
-        <count>80</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Synthread</li>
-          </thingDefs>
-        </filter>
-        <count>35</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentStamped</li>
-          </thingDefs>
-        </filter>
-        <count>3</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>3</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Neurocomputer</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-  </RecipeDef>
-
   <!--浪人-->
   <RecipeDef ParentName="DMS_HeavyMechanoidRecipe">
-    <defName>Ronin</defName>
+    <defName>DMS_Make_Ronin</defName>
     <label>gestate ronin</label>
     <description>Gestate a ronin mechanoid.</description>
     <products>
@@ -302,7 +332,7 @@
 
   <!--火槍手-->
   <RecipeDef ParentName="DMS_HeavyMechanoidRecipe">
-    <defName>Arquebusier</defName>
+    <defName>DMS_Make_Arquebusier</defName>
     <label>gestate arquebusier</label>
     <description>Gestate a arquebusier mechanoid.</description>
     <products>
@@ -358,7 +388,7 @@
 
   <!--雙足飛龍-->
   <RecipeDef ParentName="DMS_SuperHeavyMechanoidRecipe">
-    <defName>Reptile</defName>
+    <defName>DMS_Make_Reptile</defName>
     <label>gestate reptile</label>
     <description>Gestate a reptile mechanoid.</description>
     <products>

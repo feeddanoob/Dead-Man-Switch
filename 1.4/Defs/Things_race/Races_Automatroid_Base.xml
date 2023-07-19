@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>DMS_AutomaticArmy</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=6)->[namefile]-[Code]</li>
+        <li>r_name->[exoticname]-[Code]</li>
+        <li>name->[Code]-[Color]</li>
+
+        <li>Code->alpha</li>
+        <li>Code->bravo</li>
+        <li>Code->charlie</li>
+        <li>Code->delta</li>
+        <li>Code->echo</li>
+        <li>Code->foxtrot</li>
+        <li>Code->golf</li>
+        <li>Code->hotel</li>
+        <li>Code->india</li>
+        <li>Code->junker</li>
+        <li>Code->kilo</li>
+        <li>Code->lima</li>
+        <li>Code->mike</li>
+        <li>Code->november</li>
+        <li>Code->oscar</li>
+        <li>Code->papa</li>
+        <li>Code->quiet</li>
+        <li>Code->rotor</li>
+        <li>Code->sierra</li>
+        <li>Code->tango</li>
+        <li>Code->uniform</li>
+        <li>Code->victor</li>
+        <li>Code->whiskey</li>
+        <li>Code->xeno</li>
+        <li>Code->yankee</li>
+        <li>Code->zulu</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>namefile->Names/Mech_Unisex</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  <!-- Base -->
+  <ThingDef Name="BaseAutomatroidRace" ParentName="BaseMechanoid" Abstract="True">
+    <statBases>
+      <MoveSpeed>4.7</MoveSpeed>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+      <MarketValue>800</MarketValue>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">5</ControlTakingTime>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.33</MechEnergyLossPerHP>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">1</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+      <WorkSpeedGlobal MayRequire="Ludeon.Rimworld.Biotech">0.75</WorkSpeedGlobal>
+      <PsychicSensitivity>0</PsychicSensitivity>
+    </statBases>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">DMS_AutomaticArmy</nameGenerator>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
+      <thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+    </race>
+    <comps>
+      <li MayRequire="Ludeon.Rimworld.Biotech" Class="DMS.CompProperties_DeadManSwitch">
+        <minDelayUntilDMS>3000</minDelayUntilDMS>
+      </li>
+    </comps>
+    <butcherProducts>
+      <Steel>10</Steel>
+    </butcherProducts>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <damageMultipliers>
+      <li>
+        <damageDef>EMP</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Stun</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">
+        <damageDef>MechBandShockwave</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li MayRequire="CETeam.CombatExtended">
+        <damageDef>Electrical</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+    </damageMultipliers>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseAutomatroidRace" Name="BaseAutomatroidWalker" Abstract="True">
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <baseBodySize>1.0</baseBodySize>
+    </race>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef Name="BaseAutomatroidKind" ParentName="BaseMechanoidKind" Abstract="True">
+    <defaultFactionType>Mechanoid</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <allowInMechClusters>false</allowInMechClusters>                             <!--是否出現在機械集群-->
+    <destroyGearOnDrop>true</destroyGearOnDrop>
+    <canStrip>false</canStrip>
+    <minGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</minGenerationAge>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <weaponMoney>9999~9999</weaponMoney>
+    <combatPower>10</combatPower>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <controlGroupPortraitZoom>1.8</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+  <ThingDef Name="BaseAutomatroidHumanRace" ParentName="BaseAutomatroidWalker" Abstract="True">
+    <thingClass>DMS.WeaponUsableMech</thingClass>
+    <inspectorTabs Inherit="False">
+      <li>ITab_Pawn_Health</li>
+      <li>ITab_Pawn_Needs</li>
+      <li>ITab_Pawn_Character</li>
+      <li>ITab_Pawn_Training</li>
+      <li>ITab_Pawn_Social</li>
+      <li>ITab_Pawn_Guest</li>
+      <li>ITab_Pawn_Prisoner</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ITab_Pawn_Slave</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ITab_Pawn_Feeding</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ITab_Genes</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ITab_GenesPregnancy</li>
+      <li>ITab_Pawn_FormingCaravan</li>
+      <li>DMS.ITab_Mech_Gear</li>
+      <li>ITab_Pawn_Log</li>
+    </inspectorTabs>
+  </ThingDef>
+
+</Defs>

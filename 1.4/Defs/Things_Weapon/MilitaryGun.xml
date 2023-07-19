@@ -77,7 +77,7 @@
 <!-- DMS_TaticalPistol -->
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_TaticalPistol</defName>
-		<label>tactical pistol</label>
+		<label>mech pistol</label>
 		<description>Defensive firearm with refined manufacture process and additional tactical attachments, it's too heavy for human but suitable to mech soldier. offers better stop power than comparable weapons.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponClasses>
 			<li>RangedLight</li>
@@ -85,6 +85,7 @@
 		</weaponClasses>		
 		<weaponTags>
 			<li>DMS_MechWeaponLight</li>
+			<li>A_Pistol</li>
 		</weaponTags>
     	<uiIconScale>1.8</uiIconScale>
 		<graphicData>
@@ -92,13 +93,13 @@
 			<drawSize>(0.8,0.8)</drawSize>
 		</graphicData>
 		<statBases>
-			<Mass>1.6</Mass>
-			<AccuracyTouch>0.85</AccuracyTouch>
-			<AccuracyShort>0.8</AccuracyShort>
-			<AccuracyMedium>0.60</AccuracyMedium>
-			<AccuracyLong>0.50</AccuracyLong>
-			<WorkToMake>6000</WorkToMake>
-			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+			<Mass>2.5</Mass>
+			<AccuracyTouch>0.8</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
+			<WorkToMake>18000</WorkToMake>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
 		    <researchPrerequisites>
@@ -107,8 +108,8 @@
     		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<Steel>35</Steel>
-			<ComponentIndustrial>4</ComponentIndustrial>
+			<Tungsteel>30</Tungsteel>
+			<ComponentStamped>2</ComponentStamped>
 		</costList>
 		<verbs>
 			<li>
@@ -219,10 +220,17 @@
 <!-- DMS_AssaultShotgun -->
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_AssaultShotgun</defName>
-		<label>military assault shotgun</label>
+		<label>mech assault shotgun</label>
 		<description>Automatic shotgun rapidly manufactured with stamped component.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<weaponClasses>
+			<li>ShortShots</li>
+			<li>RangedHeavy</li>
+			<li>Ranged</li>
+		</weaponClasses>
 		<weaponTags>
-			<li>DMS_MechWeaponShotgun</li>
+			<li>DMS_MechWeaponMeduim</li>
+			<li>DMS_MechWeaponShotgun</li>		
+			<li>A_SG_LongRifle</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_AssaultShotgun</texPath>
@@ -230,13 +238,13 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>31000</WorkToMake>
-			<Mass>5.5</Mass>
-			<AccuracyTouch>0.57</AccuracyTouch>
+			<WorkToMake>41000</WorkToMake>
+			<Mass>6.75</Mass>
+			<AccuracyTouch>0.70</AccuracyTouch>
 			<AccuracyShort>0.64</AccuracyShort>
 			<AccuracyMedium>0.55</AccuracyMedium>
 			<AccuracyLong>0.45</AccuracyLong>
-			<RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
 		    <researchPrerequisites>
@@ -245,8 +253,8 @@
     		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<Steel>85</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
+			<Tungsteel>70</Tungsteel>
+			<ComponentStamped>4</ComponentStamped>		
 		</costList>
 		<verbs>
 			<li>
@@ -254,8 +262,8 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_Shotgun</defaultProjectile>
 				<warmupTime>1.2</warmupTime>
-				<range>19.9</range>
-				<burstShotCount>4</burstShotCount>
+				<range>14.9</range>
+				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<soundCast>Shot_Shotgun</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -264,7 +272,7 @@
 		</verbs>
 	</ThingDef>
 
-<!--DMS_AssaultPiercer 突擊射釘槍,專門用於近距離擊穿裝甲單位的短托大口徑槍械，超高穿甲射擊CD很短但傷害不高-->
+<!--DMS_AssaultPiercer 突擊射釘槍,專門用於近距離擊穿裝甲單位的短托大口徑槍械，超高穿甲射擊CD很短但傷害不高
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_AssaultPiercer</defName>
 		<label>military assault piercer</label>
@@ -312,15 +320,22 @@
 			</li>
 		</verbs>
 	</ThingDef>
+-->
 
 	<!-- 中距離槍族 -->
 <!-- DMS_AssaultRifle -->
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_AssaultRifle</defName>
-		<label>military assault rifle</label>
+		<label>mech assault rifle</label>
 		<description>a full metal assault rifle designed for mech soldiers, with a picatinny rail as long as the gun itself for all tacticool needs.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<weaponClasses>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
+			<li>Ranged</li>
+		</weaponClasses>
 		<weaponTags>
-			  <li>DMS_MechWeaponMeduim</li>
+			<li>DMS_MechWeaponMeduim</li>
+			<li>A_AR_LongRifle</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_AssaultRifle</texPath>
@@ -329,12 +344,12 @@
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
-			<Mass>8.5</Mass>
-			<AccuracyTouch>0.75</AccuracyTouch>
-			<AccuracyShort>0.85</AccuracyShort>
-			<AccuracyMedium>0.65</AccuracyMedium>
-			<AccuracyLong>0.55</AccuracyLong>
-			<RangedWeapon_Cooldown>1.30</RangedWeapon_Cooldown>
+			<Mass>5.25</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>		
 		<recipeMaker>
 		    <researchPrerequisites>
@@ -343,18 +358,18 @@
     		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<Steel>80</Steel>
-			<ComponentIndustrial>7</ComponentIndustrial>
+			<Tungsteel>60</Tungsteel>
+			<ComponentStamped>4</ComponentStamped>	
 		</costList>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
-				<warmupTime>1.1</warmupTime>
+				<warmupTime>1</warmupTime>
 				<range>34.9</range>
-				<burstShotCount>4</burstShotCount>
-				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -362,17 +377,20 @@
 		</verbs>
 	</ThingDef>
 
-<!--SAR-->
+	<!--SAR-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_SemiAutoRifle</defName>
-		<label>military SemiAutoRifle</label>
+		<label>mech SemiAutoRifle</label>
 		<description>a gas action semi-auto rifle used by mech soldier, reliable but too heavy for human.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponClasses>
+			<li>LongShots</li>
 			<li>RangedHeavy</li>
 			<li>Ranged</li>
 		</weaponClasses>
 		<weaponTags>
 			<li>DMS_MechWeaponMeduim</li>
+			<li>A_SAR_LongRifle</li>
+			<li>A_DMR_LongRifle</li>
 		</weaponTags>	
 		<graphicData>
 			<texPath>Things/Weapons/DMS_SemiAutoRifle</texPath>
@@ -380,12 +398,12 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>47500</WorkToMake>
-			<AccuracyTouch>0.60</AccuracyTouch>
-			<AccuracyShort>0.95</AccuracyShort>
-			<AccuracyMedium>0.80</AccuracyMedium>
+			<WorkToMake>30000</WorkToMake>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.8</AccuracyShort>
+			<AccuracyMedium>0.9</AccuracyMedium>
 			<AccuracyLong>0.75</AccuracyLong>
-			<Mass>14.80</Mass>
+			<Mass>4.80</Mass>
 			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
@@ -394,22 +412,21 @@
 		<recipeMaker>
 		    <researchPrerequisites>
       			<li>GasOperation</li>
-      			<li>DMS_EquipmentHeavy</li>
+      			<li>DMS_EquipmentAdvanced</li>
     		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<Steel>165</Steel>
-			<ComponentIndustrial>8</ComponentIndustrial>
-		</costList>		
+			<Tungsteel>50</Tungsteel>
+			<ComponentStamped>2</ComponentStamped>		
+		</costList>	
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_AMR</defaultProjectile>
-				<warmupTime>0.5</warmupTime>
+				<warmupTime>0.8</warmupTime>
 				<burstShotCount>1</burstShotCount>
-				<ticksBetweenBurstShots>50</ticksBetweenBurstShots>
-				<range>40</range>
+				<range>39.9</range>
 				<soundCast>Shot_TurretSniper</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -417,134 +434,86 @@
 		</verbs>
 	</ThingDef>  
 
-<!--DMS_MarksmanRifle 射手步槍，文本缺失-->
+	<!--DMR-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_MarksmanRifle</defName>
-		<label>marksman rifle</label>
+		<label>mech marksman rifle</label>
 		<description>An automatic rifle with high shooting accuracy and burst capability. \n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponClasses>
 		  <li>RangedHeavy</li>
 		  <li>LongShots</li>
-		</weaponClasses>		
+		  <li>Ranged</li>
+		</weaponClasses>
 		<weaponTags>
-			<li>DMS_MechWeaponMeduim</li>
-		</weaponTags>		
+			<li>DMS_MechWeaponMeduim</li>	
+			<li>A_DMR_LongRifle</li>
+		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_MarksmanRifle</texPath>
-			<drawSize>(1.2,1.2)</drawSize>
+			<drawSize>(1.75,1.75)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>40000</WorkToMake>
-			<Mass>8.5</Mass>
-			<AccuracyTouch>0.55</AccuracyTouch>
-			<AccuracyShort>0.70</AccuracyShort>
-			<AccuracyMedium>0.95</AccuracyMedium>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>6</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.85</AccuracyMedium>
 			<AccuracyLong>0.85</AccuracyLong>
-			<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
 		</statBases>		
 		<recipeMaker>
 		    <researchPrerequisites>
       			<li>PrecisionRifling</li>
-      			<li>DMS_EquipmentHeavy</li>
+      			<li>DMS_EquipmentElite</li>
     		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<Steel>90</Steel>
-			<ComponentIndustrial>8</ComponentIndustrial>
+			<Tungsteel>70</Tungsteel>
+			<ComponentStamped>5</ComponentStamped>
 		</costList>
-		
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
-				<warmupTime>1.2</warmupTime>
-				<range>45</range>
-				<burstShotCount>3</burstShotCount>
-				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<warmupTime>3</warmupTime>
+				<range>39.9</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>7</muzzleFlashScale>
 			</li>
 		</verbs>
 	</ThingDef>
-<!--AMR-->
+	<!--AMR-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_AntiMaterialRifle</defName>
-		<label>anti-material rifle</label>
+		<label>mech AMR</label>
 		<description>High caliber sniper rifle made to be used by MS-4E Jadger automatroids to snipe armored target at long range.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponClasses>
 		  <li>RangedHeavy</li>
 		  <li>LongShots</li>
-		</weaponClasses>		
-		<weaponTags>
-			<li>DMS_MechWeaponLongRifle</li>
-		</weaponTags>				
-		<graphicData>
-			<texPath>Things/Weapons/DMS_AntiMaterialRifle</texPath>
-			<drawSize>(1.8,1.8)</drawSize>
-		</graphicData>
-		<soundInteract>Interact_Rifle</soundInteract>
-		<statBases>
-			<WorkToMake>47500</WorkToMake>
-			<AccuracyTouch>0.45</AccuracyTouch>
-			<AccuracyShort>0.55</AccuracyShort>
-			<AccuracyMedium>0.85</AccuracyMedium>
-			<AccuracyLong>0.90</AccuracyLong>
-			<Mass>14.80</Mass>
-			<RangedWeapon_Cooldown>3.38</RangedWeapon_Cooldown>
-		</statBases>
-		<equippedStatOffsets>
-		  <MoveSpeed>-0.15</MoveSpeed>
-		</equippedStatOffsets>
-		
-		<recipeMaker>
-		    <researchPrerequisites>
-      			<li>PrecisionRifling</li>
-      			<li>DMS_EquipmentHeavy</li>
-    		</researchPrerequisites>
-		</recipeMaker>
-		<costList>
-			<Steel>110</Steel>
-			<ComponentIndustrial>8</ComponentIndustrial>
-		</costList>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_DMS_AMR</defaultProjectile>
-				<warmupTime>3.5</warmupTime>
-				<burstShotCount>3</burstShotCount>
-				<ticksBetweenBurstShots>50</ticksBetweenBurstShots>
-				<range>58</range>
-				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-			</li>
-		</verbs>
-	</ThingDef>
-<!--AGL-->
-	<ThingDef ParentName="DMS_AutomatroidGun">
-		<defName>DMS_AutomaticGrenadeLauncher</defName>
-		<label>automatic grenade launcher</label>
-		<description>Handheld automatic grenade launcher for clearing out clustered targets.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
-		<weaponClasses>
-		  <li>RangedHeavy</li>
-		  <li>LongShots</li>
+		  <li>Ranged</li>
 		</weaponClasses>
 		<weaponTags>
-			<li>DMS_MechWeaponAntiTank</li>
+			<li>DMS_MechWeaponLongRifle</li>
+			<li>A_SR_LongRifle</li>
 		</weaponTags>
 		<graphicData>
-			<texPath>Things/Weapons/DMS_AutomaticGrenadeLauncher</texPath>
-			<drawSize>(1.25,1.25)</drawSize>
+			<texPath>Things/Weapons/DMS_AntiMaterialRifle</texPath>
+			<drawSize>(1.75,1.75)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>38500</WorkToMake>
-			<Mass>12.70</Mass>
-			<RangedWeapon_Cooldown>2.93</RangedWeapon_Cooldown>
+			<WorkToMake>60000</WorkToMake>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<Mass>13.00</Mass>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 		  <MoveSpeed>-0.15</MoveSpeed>
@@ -554,74 +523,71 @@
       			<li>PrecisionRifling</li>
       			<li>DMS_EquipmentElite</li>
     		</researchPrerequisites>
-		</recipeMaker>		
+		</recipeMaker>
 		<costList>
-			<Steel>140</Steel>
-			<ComponentIndustrial>8</ComponentIndustrial>
+			<Tungsteel>70</Tungsteel>
+			<ComponentStamped>4</ComponentStamped>		
 		</costList>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_DMS_GrenadeLauncher</defaultProjectile>
-				<warmupTime>3.5</warmupTime>
-				<range>23.9</range>
-				<forcedMissRadius>1.9</forcedMissRadius>
-				<burstShotCount>3</burstShotCount>
-				<ticksBetweenBurstShots>40</ticksBetweenBurstShots>
-				<soundCast>Shot_IncendiaryLauncher</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>14</muzzleFlashScale>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
+				<defaultProjectile>Bullet_DMS_AMR</defaultProjectile>
+				<warmupTime>3.0</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<range>49.9</range>
+				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
 	</ThingDef>
-<!--SGL-->
+	<!--AGL-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
-		<defName>DMS_SniperGrenadeLauncher</defName>
-		<label>sniper grenade launcher</label>
-		<description>Precise grenade launcher designed to fit in anti-sniper role.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<defName>DMS_AutomaticGrenadeLauncher</defName>
+		<label>mech grenade launcher</label>
+		<description>Handheld automatic grenade launcher for clearing out clustered targets.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponClasses>
-		  <li>RangedHeavy</li>
-		  <li>LongShots</li>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
 		</weaponClasses>
 		<weaponTags>
 			<li>DMS_MechWeaponAntiTank</li>
+			<li>A_MG_GrenadeLauncher</li>
 		</weaponTags>
 		<graphicData>
-			<texPath>Things/Weapons/DMS_SniperGrenadeLauncher</texPath>
-			<drawSize>(1.4,1.4)</drawSize>
+			<texPath>Things/Weapons/DMS_AutomaticGrenadeLauncher</texPath>
+			<drawSize>(1.25,1.25)</drawSize>
 		</graphicData>
-		<soundInteract>Interact_Rifle</soundInteract>	
+		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>35500</WorkToMake>
-			<Mass>15.70</Mass>
-			<RangedWeapon_Cooldown>1.93</RangedWeapon_Cooldown>
+			<WorkToMake>75000</WorkToMake>
+			<Mass>20.70</Mass>
+			<RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
-		  <MoveSpeed>-0.15</MoveSpeed>
+		  	<MoveSpeed>-0.15</MoveSpeed>
 		</equippedStatOffsets>
 		<recipeMaker>
 		    <researchPrerequisites>
       			<li>PrecisionRifling</li>
-      			<li>DMS_EquipmentAdvanced</li>
+      			<li>DMS_EquipmentElite</li>
     		</researchPrerequisites>
-		</recipeMaker>
+		</recipeMaker>		
 		<costList>
-			<Steel>145</Steel>
-			<ComponentIndustrial>8</ComponentIndustrial>
+			<Tungsteel>115</Tungsteel>
+			<ComponentStamped>5</ComponentStamped>
 		</costList>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_GrenadeLauncher</defaultProjectile>
-				<warmupTime>3.5</warmupTime>
-				<range>44.9</range>
-				<forcedMissRadius>1.9</forcedMissRadius>
-				<burstShotCount>1</burstShotCount>
+				<warmupTime>3.0</warmupTime>
+				<range>39.9</range>
+				<forcedMissRadius>1.5</forcedMissRadius>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>Shot_IncendiaryLauncher</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>14</muzzleFlashScale>
@@ -644,75 +610,29 @@
 		<projectile>
 			<speed>40</speed>
 			<damageDef>Bomb</damageDef>
-			<!-- Use default damage from explosion def -->
-			<explosionRadius>1.5</explosionRadius>
-			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
-			<preExplosionSpawnChance>0.6</preExplosionSpawnChance>
-			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<damageAmountBase>30</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<explosionRadius>1.6</explosionRadius>
+			<ai_IsIncendiary>false</ai_IsIncendiary>
 			<arcHeightFactor>0.5</arcHeightFactor>
 			<shadowSize>0.6</shadowSize>
 		</projectile>
-	</ThingDef>
-  
-<!--AWR-->
-	<ThingDef ParentName="DMS_AutomatroidGun">
-		<defName>DMS_AntiWalkerRifle</defName>
-		<label>anti-walker cannon</label>
-		<description>Super heavy sniper cannon intended to penetrate the frontal armor of mechanoid combat units at extreme range.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
-		<weaponClasses>
-			<li>LongShots</li>
-			<li>RangedHeavy</li>
-		</weaponClasses>
-		<weaponTags>
-			<li>DMS_MechWeaponAntiTank</li>
-		</weaponTags>
-		<graphicData>
-			<texPath>Things/Weapons/DMS_AntiWalkerRifle</texPath>
-			<drawSize>(2,2)</drawSize>
-		</graphicData>
-		<statBases>
-			<Mass>18</Mass>
-			<WorkToMake>55500</WorkToMake>
-			<AccuracyTouch>0.50</AccuracyTouch>
-			<AccuracyShort>0.70</AccuracyShort>
-			<AccuracyMedium>0.86</AccuracyMedium>
-			<AccuracyLong>0.88</AccuracyLong>
-			<RangedWeapon_Cooldown>1.38</RangedWeapon_Cooldown>
-		</statBases>
-		<equippedStatOffsets>
-		  <MoveSpeed>-0.25</MoveSpeed>
-		</equippedStatOffsets>
-		<recipeMaker>
-		    <researchPrerequisites>
-      			<li>PrecisionRifling</li>
-      			<li>DMS_EquipmentHeavy</li>
-    		</researchPrerequisites>
-		</recipeMaker>		
-		<costList>
-			<Steel>160</Steel>
-			<ComponentIndustrial>8</ComponentIndustrial>
-		</costList>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_TurretSniper</defaultProjectile>
-				<warmupTime>3.5</warmupTime>
-				<range>50.9</range>
-				<soundCast>Shot_TurretSniper</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-			</li>
-		</verbs>
 	</ThingDef>
 
 <!--LMG-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_LightMachineGun</defName>
-		<label>military LMG</label>
-		<description>Supressive weapon chambered in full power rifle round.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<label>mech LMG</label>
+		<description>Supressive weapon chambered in full power rifle round.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>		
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
+			<li>Ranged</li>
+		</weaponClasses>
 		<weaponTags>
-			<li>DMS_MechWeaponLongRifle</li>
+			<li>DMS_MechWeaponLongRifle</li>			
+			<li>A_SuppressWeapon</li>
+			<li>A_MG_Light</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_LightMachineGun</texPath>
@@ -720,13 +640,13 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>37500</WorkToMake>
-			<Mass>11.5</Mass>
-			<AccuracyTouch>0.50</AccuracyTouch>
-			<AccuracyShort>0.58</AccuracyShort>
-			<AccuracyMedium>0.45</AccuracyMedium>
-			<AccuracyLong>0.36</AccuracyLong>
-			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>12.75</Mass>
+			<AccuracyTouch>0.45</AccuracyTouch>
+			<AccuracyShort>0.57</AccuracyShort>
+			<AccuracyMedium>0.5</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>	
 		<equippedStatOffsets>
 		  <MoveSpeed>-0.15</MoveSpeed>
@@ -738,18 +658,18 @@
     		</researchPrerequisites>
 		</recipeMaker>		
 		<costList>
-			<Steel>100</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
-		</costList>
+			<Tungsteel>75</Tungsteel>
+			<ComponentStamped>5</ComponentStamped>		
+		</costList>	
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_LightMachineGun</defaultProjectile>
 				<warmupTime>2.3</warmupTime>
-				<range>25.9</range>
-				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-				<burstShotCount>12</burstShotCount>
+				<range>29.9</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>7</burstShotCount>
 				<soundCast>DMS_MachineGunLight_Shot</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -761,9 +681,9 @@
 		<label>full-power rifle bullet</label>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>18</damageAmountBase>
-			<stoppingPower>1.5</stoppingPower>
-			<speed>70</speed>
+			<damageAmountBase>15</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>80</speed>
 		</projectile>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_big</texPath>
@@ -774,14 +694,17 @@
 <!--HMG-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_HeavyMachineGun</defName>
-		<label>military HMG</label>
+		<label>mech HMG</label>
 		<description>heavy machine gun for mech soldier or infantry support platform.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponClasses>
 			<li>RangedHeavy</li>
+			<li>LongShots</li>
 			<li>Ranged</li>
 		</weaponClasses>
 		<weaponTags>
 			<li>DMS_MechWeaponHeavy</li>
+			<li>A_SuppressWeaponHeavy</li>
+			<li>A_MG_Heavy</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_HeavyMachineGun</texPath>
@@ -789,16 +712,16 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>45000</WorkToMake>
-			<AccuracyTouch>0.50</AccuracyTouch>
+			<WorkToMake>60000</WorkToMake>
+			<AccuracyTouch>0.65</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
-			<AccuracyMedium>0.86</AccuracyMedium>
-			<AccuracyLong>0.88</AccuracyLong>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
 			<Mass>14.50</Mass>
-			<RangedWeapon_Cooldown>3.56</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.25</MoveSpeed>
+			<MoveSpeed>-0.15</MoveSpeed>
 		</equippedStatOffsets>
 		<recipeMaker>
 		    <researchPrerequisites>
@@ -807,18 +730,18 @@
     		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<Steel>165</Steel>
-			<ComponentIndustrial>8</ComponentIndustrial>
-		</costList>
+			<Tungsteel>95</Tungsteel>
+			<ComponentStamped>5</ComponentStamped>		
+		</costList>	
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_HeavyMachineGun</defaultProjectile>
-				<warmupTime>2.3</warmupTime>
-				<range>80.9</range>
-				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<burstShotCount>5</burstShotCount>
+				<warmupTime>3</warmupTime>
+				<range>49.9</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
 				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -834,13 +757,15 @@
     </graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>30</damageAmountBase>
-			<stoppingPower>2</stoppingPower>
-			<speed>100</speed>
+			<damageAmountBase>28</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>80</speed>
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+
+	<!-- 待完成 : 重型無後座力砲，單手榴彈發射槍(消防/燃燒/毒氣) -->
+<!--	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>DMS_Machete</defName>
 		<label>machete</label>
 		<description>Designed to cut bushes and vines in jungle environment, yet equally capable to be a melee weapon.</description>
@@ -894,5 +819,7 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
+
+-->
 
 </Defs>
