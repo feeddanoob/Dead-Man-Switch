@@ -156,7 +156,7 @@
 				<requireLineOfSight>true</requireLineOfSight>
 				<warmupTime>1</warmupTime>
 				<minRange>5.9</minRange>
-				<range>45</range>
+				<range>44.9</range>
 				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
 				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
 				<burstShotCount>100</burstShotCount>
@@ -167,6 +167,7 @@
 				<targetParams>
 				<canTargetLocations>true</canTargetLocations>
 				</targetParams>
+				<forcedMissRadius>0.1</forcedMissRadius>
 			</li>
 		</verbs>
 	</ThingDef>
@@ -185,25 +186,29 @@
 			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
 		<statBases>
-			<Mass>11.5</Mass>
-			<AccuracyTouch>0.50</AccuracyTouch>
-			<AccuracyShort>0.58</AccuracyShort>
-			<AccuracyMedium>0.45</AccuracyMedium>
-			<AccuracyLong>0.36</AccuracyLong>
-			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+			<Mass>281</Mass>
+			<AccuracyTouch>0.18</AccuracyTouch>
+			<AccuracyShort>0.18</AccuracyShort>
+			<AccuracyMedium>0.18</AccuracyMedium>
+			<AccuracyLong>0.18</AccuracyLong>
+			<RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_DMS_LightMachineGun</defaultProjectile>
-				<warmupTime>2.3</warmupTime>
-				<range>25.9</range>
-				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-				<burstShotCount>12</burstShotCount>
-				<soundCast>DMS_MachineGunLight_Shot</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
+				<defaultProjectile>Bullet_CIWS</defaultProjectile>
+				<warmupTime>4</warmupTime>
+				<range>44.9</range>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>28</burstShotCount>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>15</muzzleFlashScale>
+				<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<forcedMissRadius>0.1</forcedMissRadius>
 			</li>
 		</verbs>
   	</ThingDef>
@@ -221,24 +226,26 @@
 			<drawSize>2.5</drawSize>
 		</graphicData>
 		<statBases>
-			<AccuracyTouch>0.50</AccuracyTouch>
-			<AccuracyShort>0.58</AccuracyShort>
-			<AccuracyMedium>0.45</AccuracyMedium>
-			<AccuracyLong>0.36</AccuracyLong>
-			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+			<Mass>92</Mass>
+			<AccuracyTouch>0.18</AccuracyTouch>
+			<AccuracyShort>0.2</AccuracyShort>
+			<AccuracyMedium>0.4</AccuracyMedium>
+			<AccuracyLong>0.18</AccuracyLong>
+			<RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_LightMachineGun</defaultProjectile>
-				<warmupTime>2.3</warmupTime>
+				<warmupTime>3.5</warmupTime>
 				<range>25.9</range>
+				<minRange>1.9</minRange>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-				<burstShotCount>24</burstShotCount>
-				<soundCast>DMS_MachineGunLight_Shot</soundCast>
+				<burstShotCount>18</burstShotCount>
+				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
+				<muzzleFlashScale>12</muzzleFlashScale>
 			</li>
 		</verbs>
   	</ThingDef>
@@ -256,28 +263,103 @@
 			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
 		<statBases>
-			<Mass>11.5</Mass>
-			<AccuracyTouch>0.50</AccuracyTouch>
-			<AccuracyShort>0.58</AccuracyShort>
-			<AccuracyMedium>0.45</AccuracyMedium>
-			<AccuracyLong>0.36</AccuracyLong>
-			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+			<Mass>48</Mass>
+			<AccuracyTouch>0.2</AccuracyTouch>
+			<AccuracyShort>0.3</AccuracyShort>
+			<AccuracyMedium>0.25</AccuracyMedium>
+			<AccuracyLong>0.18</AccuracyLong>
+			<RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_DMS_LightMachineGun</defaultProjectile>
-				<warmupTime>2.3</warmupTime>
+				<defaultProjectile>DMS_Bullet_Kord</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<range>44.9</range>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>24</burstShotCount>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+  	</ThingDef>
+	<!-- Kord 象龜&推土機的砲塔-->
+	<ThingDef ParentName="DMS_AutomatroidTurretGun">
+		<defName>DMS_Gun_Kord_Vehicle</defName>
+		<label>kord</label>
+		<description>kord</description>
+		<graphicData>
+		<texPath>Things/Turrets/DMS_Gun_Kord</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>3</drawSize>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>DMS_Bullet_Kord</defaultProjectile>
+				<requireLineOfSight>true</requireLineOfSight>
+				<!--<isMortar>false</isMortar>-->
+				<warmupTime>1.5</warmupTime>
+				<!--<minRange>1.9</minRange>-->
+				<range>39.9</range>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<!--<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>-->
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<!-- M214 5.56mm 雙足飛龍的主武器，也可以被猿人與戰鬥框架裝備-->
+	<ThingDef ParentName="DMS_AutomatroidTurretGun">
+		<defName>DMS_MGatlinggun</defName>
+		<label>M214</label>
+		<description>a rapid-firing multiple-barrel firearm chambered in full power rifle rounds.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<weaponTags>
+			<li>DMS_VehicleWeapon</li>
+			<!--<li>V_Gatling556mm</li>-->
+		</weaponTags>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_Weapon_M214</texPath>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>10</Mass>
+			<AccuracyTouch>04</AccuracyTouch>
+			<AccuracyShort>0.3</AccuracyShort>
+			<AccuracyMedium>0.2</AccuracyMedium>
+			<AccuracyLong>0.15</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+				<warmupTime>2</warmupTime>
 				<range>25.9</range>
-				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-				<burstShotCount>12</burstShotCount>
-				<soundCast>DMS_MachineGunLight_Shot</soundCast>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>30</burstShotCount>
+				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
   	</ThingDef>
-	<!-- M214 12.7mm 雙足飛龍的主武器，也可以被猿人與戰鬥框架裝備-->
 
 </Defs>

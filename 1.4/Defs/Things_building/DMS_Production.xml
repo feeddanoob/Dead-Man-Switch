@@ -258,7 +258,7 @@
     <modExtensions>
       <li Class="RecipeInheritance.ThingDefExtension">
         <inheritRecipesFrom>
-          <li>TableMachining</li>
+          <!--<li>TableMachining</li>-->
           <li>ElectricSmithy</li>
         </inheritRecipesFrom>
       </li>

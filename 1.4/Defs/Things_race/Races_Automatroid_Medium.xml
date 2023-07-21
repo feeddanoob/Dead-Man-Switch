@@ -326,7 +326,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/jaeger</texPath>
+          <texPath>Things/Automatroid/Jaeger</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.3</drawSize>
@@ -368,7 +368,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/pioneer</texPath>
+          <texPath>Things/Automatroid/Pioneer</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.3</drawSize>
@@ -411,7 +411,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/sniper</texPath>
+          <texPath>Things/Automatroid/Sniper</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.3</drawSize>

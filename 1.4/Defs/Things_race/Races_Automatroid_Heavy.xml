@@ -412,7 +412,7 @@
     </race>
     <comps>
 		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <defaultWeapon>DMS_Gun_Kord</defaultWeapon>			  
+			  <defaultWeapon>DMS_Gun_Kord_Vehicle</defaultWeapon>			  
         <drawSize>3</drawSize>
 			  <drawOffset>(0,0,0)</drawOffset>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
@@ -448,13 +448,14 @@
     <label>killdozer</label>
     <description>一輛無人的小型突擊破障車</description>
     <statBases>
-      <MoveSpeed>1</MoveSpeed>                                                    <!--移動速度-->
-      <ArmorRating_Blunt>1</ArmorRating_Blunt>                                     <!--護甲-->
-      <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">0</WastepacksPerRecharge><!--充電/培養時產出廢料-->
-      <EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
-      <EnergyShieldEnergyMax>3</EnergyShieldEnergyMax>
+      <MoveSpeed>2.5</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>1.5</ArmorRating_Blunt>                                     <!--護甲-->
+      <ArmorRating_Sharp>2.0</ArmorRating_Sharp>
+	  <ArmorRating_Heat>1.5</ArmorRating_Heat>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5</BandwidthCost>        <!--帶寬消耗-->
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">10</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+      <!--<EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>3</EnergyShieldEnergyMax>-->
     </statBases>
     <race>
       <!--<mechEnabledWorkTypes>-->
@@ -476,7 +477,7 @@
     </race>
     <comps>
 		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <defaultWeapon>DMS_Gun_Kord</defaultWeapon>			  
+			  <defaultWeapon>DMS_Gun_Kord_Vehicle</defaultWeapon>			  
         <drawSize>3</drawSize>
 			  <drawOffset>(0,0,0)</drawOffset>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
@@ -499,7 +500,7 @@
           <texPath>Things/Automatroid/killdozer_ERA</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>3.75</drawSize>
+          <drawSize>4.05</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
