@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- T3軍方人員 -->
+  <PawnKindDef Name="DMS_SoldierBase" ParentName="OutlanderBase">
+    <defName>DMS_Soldier</defName>
+    <label>soldier</label>
+    <combatPower>75</combatPower>
+    <initialResistanceRange>15~24</initialResistanceRange>
+    <initialWillRange>20~50</initialWillRange>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.6~2</gearHealthRange>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelMoney>5000~8000</apparelMoney>
+    <apparelRequired>
+      <li>DMS_Apparel_TacticalHelmet</li>
+      <li>DMS_Apparel_TacticalVest</li>
+      <li MayRequire="vanillaexpanded.vappe">VAE_Apparel_MilitaryUniform</li>
+    </apparelRequired>
+    <apparelTags>
+      <li>IndustrialMilitaryBasic</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <weaponMoney>2500~5000</weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>200~700</techHediffsMoney>
+    <techHediffsTags>
+      <li>DMS_BM_Bionic</li>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <maxGenerationAge>45</maxGenerationAge>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>DMS_Fighter</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
+    <biocodeWeaponChance>0.5</biocodeWeaponChance>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>8~16</range>
+      </li>      
+      <li>
+        <skill>Melee</skill>
+        <range>8~10</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+</Defs>

@@ -14,15 +14,6 @@
       <body>DMS_Humanoid_Soldat</body>
       <baseBodySize>1</baseBodySize>
       <mechWeightClass>Medium</mechWeightClass>
-      <lifeStageAges>
-        <li>
-          <def>MechanoidFullyFormed</def>
-          <minAge>0</minAge>
-          <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
-          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
-        </li>
-      </lifeStageAges>
     </race>
   </ThingDef>
 
@@ -59,6 +50,14 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Automatroid/soldat</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/OldTexture/soldat</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.1</drawSize>
@@ -111,6 +110,14 @@
           <drawSize>1.1</drawSize>
         </bodyGraphicData>
       </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/OldTexture/grenadier</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
     </lifeStages>
     <weaponTags><!--武器-->
       <li>SimpleGun</li>
@@ -153,6 +160,14 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Automatroid/soldat</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/OldTexture/soldat</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.1</drawSize>
@@ -217,6 +232,14 @@
           <drawSize>1.1</drawSize>
         </bodyGraphicData>
       </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/OldTexture/sergeant</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
     </lifeStages>
     <weaponTags>
       <li>DMS_MechWeaponLight</li>                                                                     <!--武器-->
@@ -238,15 +261,6 @@
       <body>DMS_Humanoid_TypeA</body>
       <baseBodySize>1.1</baseBodySize>
       <mechWeightClass>Medium</mechWeightClass>
-      <lifeStageAges>
-        <li>
-          <def>MechanoidFullyFormed</def>
-          <minAge>0</minAge>
-          <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
-          <soundCall>Pawn_Mech_Scyther_Call</soundCall>
-        </li>
-      </lifeStageAges>
     </race>
   </ThingDef>
 
@@ -275,10 +289,9 @@
     <label>arquebusier</label>
     <race>DMS_Mech_Arquebusier</race>
     <isFighter>true</isFighter>
-    <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
-    <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
-    <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
-    <lifeStages>                                                                 <!--身體圖片-->
+    <combatPower>180</combatPower>
+    <maxPerGroup>12</maxPerGroup>
+    <lifeStages>
       <li>
         <bodyGraphicData>
           <texPath>Things/Automatroid/arquebusier</texPath>
@@ -287,13 +300,18 @@
           <drawSize>1.3</drawSize>
         </bodyGraphicData>
       </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/OldTexture/arquebusier</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+      </li>
     </lifeStages>
     <weaponTags>
-      <li></li>                                                                     <!--武器-->
+      <li>A_DMR_LongRifle</li><!--武器-->
     </weaponTags>
-    <!--<abilities>-->                                                   <!--特殊技能-->
-    <!--<li></li>
-      </abilities>-->
   </PawnKindDef>
 
   <!-- DMS_Mech_Jaeger 火槍手獵兵型 -->
@@ -324,6 +342,14 @@
     <combatPower>200</combatPower>
     <maxPerGroup>8</maxPerGroup>
     <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/Jaeger</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+      </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Automatroid/Jaeger</texPath>
@@ -374,6 +400,14 @@
           <drawSize>1.3</drawSize>
         </bodyGraphicData>
       </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/OldTexture/Pioneer</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+      </li>
     </lifeStages>
     <weaponTags>
       <li>A_AR_LongRifle</li>
@@ -417,6 +451,14 @@
           <drawSize>1.3</drawSize>
         </bodyGraphicData>
       </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/OldTexture/Sniper</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+      </li>
     </lifeStages>
     <weaponTags>
       <li>A_SR_GrenadeLauncher</li>
@@ -443,15 +485,6 @@
       <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>1.1</baseBodySize>
       <mechWeightClass>Medium</mechWeightClass>
-      <lifeStageAges>
-        <li>
-          <def>MechanoidFullyFormed</def>
-          <minAge>0</minAge>
-          <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
-          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
-        </li>
-      </lifeStageAges>
     </race>
     <modExtensions  Inherit="False">
       <li Class="DMS.MechWeaponExtension">
@@ -477,10 +510,18 @@
     <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
     <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
     <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
-    <lifeStages>                                                                 <!--身體圖片-->
+    <lifeStages>      
+    <li>
+      <bodyGraphicData>
+        <texPath>Things/Automatroid/ronin</texPath>
+        <shaderType>CutoutComplex</shaderType>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>1.3</drawSize>
+      </bodyGraphicData>
+    </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/ronin</texPath>
+          <texPath>Things/Automatroid/OldTexture/ronin</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.3</drawSize>
@@ -490,9 +531,6 @@
     <weaponTags>
       <li></li>                                                                     <!--武器-->
     </weaponTags>
-    <!--<abilities>-->                                                   <!--特殊技能-->
-    <!--<li></li>
-      </abilities>-->
   </PawnKindDef>
   
   <PawnKindDef ParentName="BaseAutomatroidKind">  <!-- DMS_Mech_Protector 塔盾手:防禦特化  -->
@@ -503,7 +541,7 @@
     <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
     <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
     <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
-    <lifeStages>                                                                 <!--身體圖片-->
+    <lifeStages>
       <li>
         <bodyGraphicData>
           <texPath>Things/Automatroid/protector</texPath>
@@ -512,13 +550,18 @@
           <drawSize>1.3</drawSize>
         </bodyGraphicData>
       </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/OldTexture/protector</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+      </li>
     </lifeStages>
     <weaponTags>
-      <li></li>                                                                     <!--武器-->
+      <li></li>
     </weaponTags>
-    <!--<abilities>-->                                                   <!--特殊技能-->
-    <!--<li></li>
-      </abilities>-->
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">  <!-- DMS_Mech_Stormer 突擊手:攻擊特化 -->
@@ -533,6 +576,14 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Automatroid/stormer</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/OldTexture/stormer</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.3</drawSize>

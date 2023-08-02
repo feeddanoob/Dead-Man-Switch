@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--============================== 非戰鬥人員 ============================-->
+
+  <BackstoryDef>
+    <defName>DMS_Civilian01</defName>
+    <title>todo</title>
+    <titleShort>todo</titleShort>
+    <baseDesc>todo.</baseDesc>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <spawnCategories>
+      <li>DMSCommon</li>
+    </spawnCategories>
+    <skillGains>
+      <li><key>Cooking</key><value>3</value></li>
+      <li><key>Construction</key><value>3</value></li>
+      <li><key>Mining</key><value>4</value></li>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DMS_Civilian02</defName>
+    <title>todo</title>
+    <titleShort>todo</titleShort>
+    <baseDesc>todo.</baseDesc>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>DMSCommon</li>
+    </spawnCategories>
+    <skillGains>
+      <li><key>Cooking</key><value>3</value></li>
+      <li><key>Construction</key><value>3</value></li>
+      <li><key>Mining</key><value>4</value></li>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DMS_Civilian03</defName>
+    <title>todo</title>
+    <titleShort>todo</titleShort>
+    <baseDesc>todo.</baseDesc>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>DMSCommon</li>
+    </spawnCategories>
+    <skillGains>
+      <li><key>Cooking</key><value>3</value></li>
+      <li><key>Construction</key><value>3</value></li>
+      <li><key>Mining</key><value>4</value></li>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+  </BackstoryDef>
+
+</Defs>

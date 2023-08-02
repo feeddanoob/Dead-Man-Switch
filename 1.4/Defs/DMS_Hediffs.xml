@@ -97,7 +97,7 @@
     <defName>DMS_BionicShockRemove</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>phantom limb syndrome</label>
-    <description>a Psychological Syndrome that is common to occur in pre-spacer world when removed a neural machinery bionic Prosthesis.</description>
+    <description>a psychological syndrome that is common to occur in pre-spacer world when removed a neural machinery bionic Prosthesis.</description>
     <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
     <initialSeverity>1</initialSeverity><!-- Severity is bound to level of implant -->
     <isBad>true</isBad>
@@ -129,7 +129,7 @@
     <defName>DMS_BionicShock</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>xeno limb syndrome</label>
-    <description>a Psychological Syndrome that is common to occur in pre-spacer world when having one or more neural machinery bionic prosthesis installed, Due to the lack of biological receptors, the body system will temporarily reject the connection after the nerve is connected.\n\nThe severity of these symptoms can be divided into five levels.</description>
+    <description>a psychological syndrome that is common to occur in pre-spacer world when having one or more neural machinery bionic prosthesis installed, Due to the lack of biological receptors, the body system will temporarily reject the connection after the nerve is connected.\n\nThe severity of these symptoms can be divided into five levels.</description>
     <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
     <minSeverity>0</minSeverity>
     <maxSeverity>6</maxSeverity>
@@ -221,12 +221,13 @@
       </li>
     </stages>
   </HediffDef>
+
   <!-- DMS_FilterShock 情感錯位症候群 -->
   <HediffDef>
     <defName>DMS_FilterShock</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>emotional misalignment</label>
-    <description>a Psychological Syndrome after removed the sensory filter, known as the "price of pawn",will have some mental break but it won't last long.</description>
+    <description>a psychological syndrome after removed the sensory filter, known as the "price of pawn", will have some mental break but it won't last long.</description>
     <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
     <minSeverity>0.001</minSeverity>
     <isBad>true</isBad>
@@ -237,7 +238,7 @@
       </li>
     </comps>
     <stages>
-      <li><!-- 第一級，患病部位會出現明顯搔癢感，一般來說會隨著時間過去自行消退 -->
+      <li>
         <label>catatonic</label>
         <minSeverity>0.001</minSeverity>
         <mentalBreakMtbDays>0.25</mentalBreakMtbDays>

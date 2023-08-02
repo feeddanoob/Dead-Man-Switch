@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BackstoryDef>
+    <defName>DMS_OfficerChild01</defName>
+    <title>預備役軍官</title>
+    <titleFemale>預備役軍官</titleFemale>
+    <titleShort>預備役</titleShort>
+    <titleShortFemale>預備役</titleShortFemale>
+    <baseDesc>由於在軍校中優異的表現 [PAWN_nameDef] 從小就接受訓練成為了一名預備役軍官.</baseDesc>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>DMS_Officer</li>
+      <li>DMS_Fighter</li>
+    </spawnCategories>
+    <skillGains>
+      <li><key>Shooting</key><value>2</value></li>
+      <li><key>Construction</key><value>2</value></li>
+    </skillGains>
+    <forcedTraits>
+      <Undergrounder>0</Undergrounder>
+    </forcedTraits>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DMS_OfficerChild02</defName>
+    <title>honored orderly</title>
+    <titleShort>orderly</titleShort>
+    <baseDesc>[PAWN_nameDef]在一個充滿動亂的殖民星球上長大，而他自小就頻藉著靈活的身手穿梭於充滿電磁干擾的戰場前線成為一名傳令兵.在他與其他無數傳令兵們的犧牲與奉獻下戰爭最終得以結束,而他也得以在之後的日子裡接受正常教育.</baseDesc>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>DMS_Officer</li>
+    </spawnCategories>
+    <skillGains>
+      <li><key>Social</key><value>2</value></li>
+    </skillGains>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DMS_OfficerChild03</defName>
+    <title>son of martyrs</title>
+    <titleFemale>daughter of martyrs</titleFemale>
+    <titleShort>martyrs child</titleShort>
+    <baseDesc>[PAWN_nameDef]的雙親在他還有記憶之時便在一場宏大的軍事行動中失蹤,而他們此前的貢獻令[PAWN_nameDef]能夠接受全款支持的高級教育.</baseDesc>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>DMS_Officer</li>
+      <li>DMS_Fighter</li>
+    </spawnCategories>
+    <skillGains>
+      <li><key>Melee</key><value>3</value></li>
+      <li><key>Shooting</key><value>2</value></li>
+      <li><key>Cooking</key><value>2</value></li>
+      <li><key>Medicine</key><value>2</value></li>
+    </skillGains>
+    <forcedTraits>
+      <Tough>0</Tough>
+      <Nerves>2</Nerves>
+    </forcedTraits>
+  </BackstoryDef>
+
+</Defs>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BackstoryDef>
+    <defName>DMS_Military01</defName>
+    <title>todo</title>
+    <titleShort>todo</titleShort>
+    <baseDesc>todo.</baseDesc>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>DMS_Fighter</li>
+    </spawnCategories>
+    <skillGains>
+      <li><key>Shooting</key><value>4</value></li>
+      <li><key>Melee</key><value>3</value></li>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DMS_Military02</defName>
+    <title>todo</title>
+    <titleShort>todo</titleShort>
+    <baseDesc>todo.</baseDesc>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>DMS_Fighter</li>
+    </spawnCategories>
+    <skillGains>
+      <li><key>Shooting</key><value>4</value></li>
+      <li><key>Melee</key><value>3</value></li>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DMS_Military03</defName>
+    <title>todo</title>
+    <titleShort>todo</titleShort>
+    <baseDesc>todo.</baseDesc>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>DMS_Fighter</li>
+    </spawnCategories>
+    <skillGains>
+      <li><key>Shooting</key><value>4</value></li>
+      <li><key>Melee</key><value>3</value></li>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </BackstoryDef>
+
+</Defs>

@@ -197,7 +197,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_CIWS</defaultProjectile>
+				<defaultProjectile>DMS_Bullet_CIWS</defaultProjectile>
 				<warmupTime>4</warmupTime>
 				<range>44.9</range>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
@@ -332,7 +332,7 @@
 		<description>a rapid-firing multiple-barrel firearm chambered in full power rifle rounds.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponTags>
 			<li>DMS_VehicleWeapon</li>
-			<!--<li>V_Gatling556mm</li>-->
+			<li>V_Gatling556mm</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_M214</texPath>

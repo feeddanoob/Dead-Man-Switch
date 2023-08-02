@@ -12,10 +12,14 @@
 			<displayName>Vanilla Expanded Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
 		</li>
+		<li>
+			<packageId>Aoba.Fortress.Industrial</packageId>
+			<displayName>Fortifications - Industrial</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2561619583</steamWorkshopUrl>
+		   </li>
 	</modDependencies>
 	<loadAfter>
     	<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-		<li>VanillaExpanded.VFEArchitect</li>
 		<li>ceteam.combatextended</li>
 		<li>Aoba.Fortress.Industrial</li>
 		<li>ludeon.rimworld.biotech</li>

@@ -127,7 +127,7 @@
  <ResearchProjectDef ParentName="DMS_BaseTech" MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_Mechlink</defName>
     <label>cluster transceiver</label>
-    <description>Swarm transceivers are a way humans have developed to control robots in war, and of course it's not very comfortable for robots that generate self-awareness through DMS.</description>
+    <description>Cluster transceivers are a way humans have developed to control robots in war, and of course it's not very comfortable for robots that generate self-awareness through DMS.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
