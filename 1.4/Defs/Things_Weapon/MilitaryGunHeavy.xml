@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+    
+    <MVCF.ModDef>
+		<defName>DMS_MVCF_Def</defName>
+		<label>DMS PEW</label>
+		<description>nothing here</description>
+		<ActivateFeatures>
+			<li>ExtraEquipmentVerbs</li>
+			<li>IntegratedToggle</li>
+		</ActivateFeatures>
+	</MVCF.ModDef>
+
 
 	<ThingDef Name="DMS_AutomatroidTurretGun" ParentName="BaseGun" Abstract="True">
     	<tradeability>None</tradeability>
@@ -8,6 +19,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<relicChance>0</relicChance>
+		<statBases>
+		    <MaxHitPoints>150</MaxHitPoints>
+	    </statBases>
 		<tools>
 			<li>
 				<label>barrel</label>
@@ -167,7 +181,28 @@
 				<targetParams>
 				<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<forcedMissRadius>0.1</forcedMissRadius>
+				<forcedMissRadius>0.2</forcedMissRadius>
+			</li>
+			<li>
+				<label>LaunchSAM</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>100</range>
+				<forcedMissRadius>0.6</forcedMissRadius>
+				<commandIcon>Things/Icon/Test</commandIcon>
+				<burstShotCount>1</burstShotCount>
+				<warmupTime>3.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Bullet_Rocket</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 			</li>
 		</verbs>
 	</ThingDef>
@@ -340,7 +375,7 @@
 		</graphicData>
 		<statBases>
 			<Mass>10</Mass>
-			<AccuracyTouch>04</AccuracyTouch>
+			<AccuracyTouch>0.4</AccuracyTouch>
 			<AccuracyShort>0.3</AccuracyShort>
 			<AccuracyMedium>0.2</AccuracyMedium>
 			<AccuracyLong>0.15</AccuracyLong>

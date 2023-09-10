@@ -28,7 +28,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingCategories>
-			<li>ApparelMisc</li>
+			<li>ApparelArmor</li>
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -59,7 +59,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<defaultOutfitTags>
-				<li>Worker</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
@@ -290,4 +290,5 @@
 			<li>Armor</li>
 		</tradeTags>
 	</ThingDef>
+	
 </Defs>

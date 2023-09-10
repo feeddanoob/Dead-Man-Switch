@@ -189,8 +189,9 @@
       <color>(63,63,63)</color>
       <statFactors>
         <Flammability>0</Flammability>
-        <MaxHitPoints>0.25</MaxHitPoints>
+        <MaxHitPoints>0.6</MaxHitPoints>
         <Beauty>0.75</Beauty>
+        <Mass>0.65</Mass>
       </statFactors>
     </stuffProps>
     <thingCategories>

@@ -32,7 +32,10 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<tools Inherit="False">
+		<statBases>
+		    <MaxHitPoints>150</MaxHitPoints>
+	    </statBases>
+		<tools>
 			<li>
 				<label>stock</label>
 				<capacities>
@@ -111,6 +114,25 @@
 			<Tungsteel>30</Tungsteel>
 			<ComponentStamped>2</ComponentStamped>
 		</costList>
+		<tools Inherit="False">
+			<li>
+				<label>grip</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>

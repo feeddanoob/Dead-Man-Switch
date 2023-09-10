@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef Name="DMS_BaseMakeableGun" ParentName="BaseGun" Abstract="True">
+	<ThingDef Name="DMS_BaseMakeableGun" ParentName="BaseHumanMakeableGun" Abstract="True">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -10,14 +10,14 @@
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
-			<recipeUsers>
+			<recipeUsers  Inherit="False">
 				<li>DMS_TableMachinePrinter</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
 		</recipeMaker>
         <soundInteract>Interact_Rifle</soundInteract>
     	<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
-		<tools>
+		<!--<tools>
 			<li>
 				<label>stock</label>
 				<capacities>
@@ -35,7 +35,7 @@
 				<power>9</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
-		</tools>
+		</tools>-->
 	</ThingDef>
 
 	<!-- 口袋手槍 -->
@@ -391,6 +391,25 @@
 			<Tungsteel>15</Tungsteel>
 			<ComponentStamped>2</ComponentStamped>
 		</costList>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				  <li>Blunt</li>
+				  <li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
