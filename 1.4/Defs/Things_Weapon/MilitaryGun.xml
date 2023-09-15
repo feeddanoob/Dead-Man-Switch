@@ -24,11 +24,22 @@
         <parent>WeaponsRanged</parent>
     </ThingCategoryDef>
 
-	<ThingDef Name="DMS_AutomatroidGun" ParentName="DMS_BaseMakeableGun" Abstract="True">
+	<ThingDef Name="DMS_AutomatroidGun" ParentName="BaseGun" Abstract="True">
         <soundInteract>DMS_EquipGear</soundInteract>
 		<thingCategories Inherit="False">
       		<li>AutomatroidWeapon</li>
     	</thingCategories>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers Inherit="False">
+				<li>DMS_TableMachinePrinter</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+    	<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
