@@ -74,6 +74,7 @@
     <Compile Include="Patch\Patch_DrawVehicleTurret.cs" />
     <Compile Include="Patch\Patch_FloatMenuMakerMap.cs" />
     <Compile Include="Patch\Patch_ForceTarget.cs" />
+    <Compile Include="Thing\WeaponUsableMachine.cs" />
     <Compile Include="Thing\WeaponUsableMech.cs" />
     <Compile Include="UI\Command_SelectApparelOutfit.cs" />
     <Compile Include="UI\ITab_Mech_Gear.cs" />
