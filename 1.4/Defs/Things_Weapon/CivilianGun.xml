@@ -51,7 +51,6 @@
 		<weaponTags>
 			<li>SimpleGun</li>
 			<li>Revolver</li>
-			<li>KnuckledusterRevolver</li>
 			<li>DMS_MechWeaponUltraLight</li>
 		</weaponTags>
 		<uiIconScale>1.8</uiIconScale>
@@ -132,7 +131,6 @@
 			<li>A_Pistol</li>
 			<li>A_RC_Pistol</li>
 			<li>A_SG_Pistol</li>
-			<li>DMS_RiotWeapon</li>
 			<li>DMS_MechWeaponLight</li>
 		</weaponTags>
 		<weaponClasses>
@@ -221,7 +219,6 @@
 		<weaponTags>
 			<li>A_RC_LongRifle</li>
 			<li>A_SG_LongRifle</li>
-			<li>DMS_RiotWeapon</li>
 			<li>DMS_MechWeaponShotgun</li>
 		</weaponTags>
 		<weaponClasses>
@@ -311,7 +308,6 @@
 		</graphicData>
 		<weaponTags>
 			<li>A_RC_LongRifle</li>
-			<li>DMS_RiotWeapon</li>
 			<li>IndustrialGun</li>
 	  	</weaponTags>
 		<soundInteract>Interact_Rifle</soundInteract>	
@@ -362,7 +358,6 @@
 		</weaponClasses>
 		<weaponTags>
 			<li>IndustrialGun</li>
-			<li>SurvivalRifle</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/HumanWeapon/SurvivalRifle</texPath>
@@ -434,7 +429,6 @@
 		</weaponClasses>
 		<weaponTags>
 			<li>IndustrialGun</li>
-			<li>DMS_ElephantGun</li>
 		</weaponTags>	
 		<graphicData>
 			<texPath>Things/Weapons/HumanWeapon/ElephantGun</texPath>

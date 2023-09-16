@@ -54,6 +54,10 @@
       <HintPath>..\Reference\UnityEngine.TextRenderingModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="VFECore">
+      <HintPath>..\..\..\VanillaExpandedFramework\1.4\Assemblies\VFECore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Component\CompCommandRelay.cs" />
@@ -70,9 +74,11 @@
     <Compile Include="Patch\Patch_DrawVehicleTurret.cs" />
     <Compile Include="Patch\Patch_FloatMenuMakerMap.cs" />
     <Compile Include="Patch\Patch_ForceTarget.cs" />
+    <Compile Include="Thing\WeaponUsableMachine.cs" />
     <Compile Include="Thing\WeaponUsableMech.cs" />
     <Compile Include="UI\Command_SelectApparelOutfit.cs" />
     <Compile Include="UI\ITab_Mech_Gear.cs" />
+    <Compile Include="Utility\CheckUtility.cs" />
     <Compile Include="Utility\FloatMenuUtility.cs" />
     <Compile Include="Patch\HarmonyEntry.cs" />
     <Compile Include="Thing\HumanlikeMech.cs" />

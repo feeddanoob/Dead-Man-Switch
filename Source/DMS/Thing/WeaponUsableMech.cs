@@ -3,6 +3,7 @@ using Verse;
 using RimWorld;
 using UnityEngine;
 using Verse.AI;
+using VFEMech;
 
 namespace DMS
 {
@@ -13,6 +14,8 @@ namespace DMS
         public bool EnableTechLevelFilter = false;
         public List<string> UsableTechLevels = new List<string>();
     }
+
+    //一般情況的
     public class WeaponUsableMech : Pawn
     {
         public MechWeaponExtension MechWeapon { get; private set; }
@@ -89,12 +92,6 @@ namespace DMS
                 this.Drawer?.renderer?.graphics.SetAllGraphicsDirty();
             }
         }
-
-        public override void Draw()
-        {
-            base.Draw();
-        }
-
         public void Equip(ThingWithComps equipment)
         {
             equipment.SetForbidden(false);

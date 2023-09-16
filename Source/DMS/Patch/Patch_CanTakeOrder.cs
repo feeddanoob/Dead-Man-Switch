@@ -15,7 +15,7 @@ namespace DMS
         [HarmonyPostfix]
         public static void AllowTakeOrder(Pawn pawn,ref bool __result)
         {
-            if (pawn is HumanlikeMech | pawn is WeaponUsableMech)
+            if (pawn is HumanlikeMech | pawn is WeaponUsableMech | pawn is WeaponUsableMachine)
             {
                 __result = true;
             }
