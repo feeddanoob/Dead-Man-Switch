@@ -1,23 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- T0 DMS_MechBasis-->
+
+
+  <ThingDef ParentName="BasePawn" Name="BaseDMSMachine" Abstract="True">
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<statBases>
+      <MarketValue>800</MarketValue>
+			<ToxicResistance>1</ToxicResistance>
+			<Flammability>0</Flammability>
+			<MeatAmount>0</MeatAmount>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.00</ArmorRating_Heat>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <WorkSpeedGlobal MayRequire="Ludeon.Rimworld.Biotech">0.75</WorkSpeedGlobal>
+      <PsychicSensitivity>0</PsychicSensitivity>
+		</statBases>
+		<receivesSignals>true</receivesSignals>
+    <tradeability>None</tradeability>
+		<race>
+      <intelligence>ToolUser</intelligence>
+      <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">DMS_AutomaticArmy</nameGenerator>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
+			<fleshType>Mechanoid</fleshType>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<foodType>None</foodType>
+			<lifeExpectancy>2500</lifeExpectancy>
+			<bloodDef>Filth_MachineBits</bloodDef>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <lifeStageAges>
+        <li>
+          <def>DMS_Automatroid_BrandNew</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+        </li>
+        <li>
+          <def>DMS_Automatroid_Damaged</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+        </li>
+      </lifeStageAges>
+		</race>
+		<comps>
+			<li Class="CompProperties_CanBeDormant" />
+			<li Class="CompProperties_WakeUpDormant">
+				<wakeUpOnDamage>true</wakeUpOnDamage>
+				<wakeUpCheckRadius>30</wakeUpCheckRadius>
+				<wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+			</li>
+		</comps>
+    <butcherProducts>
+      <Steel>10</Steel>
+    </butcherProducts>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <damageMultipliers>
+      <li>
+        <damageDef>EMP</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>Stun</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">
+        <damageDef>MechBandShockwave</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li MayRequire="CETeam.CombatExtended">
+        <damageDef>Electrical</damageDef>
+        <multiplier>0.7</multiplier>
+      </li>
+    </damageMultipliers>
+	</ThingDef>
+
   <!-- 垃圾桶 -->
-  <ThingDef ParentName="BaseAutomatroidRace">
+  <ThingDef ParentName="BaseDMSMachine">
     <defName>DMS_Mech_TrashBin</defName>
     <label>trash bin</label>
     <description>圓筒狀的服務用機器人,常見於中寰世界的現代化都市中用來提供道路清潔,快遞與送餐到府服務,以及在應急事件發生時第一時間到場協助疏散與維護秩序.</description>
+    <thingClass>VFEMech.Machine</thingClass>
     <statBases>
       <CleaningSpeed>0.85</CleaningSpeed>
       <MoveSpeed>4.7</MoveSpeed>
       <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
     <race>
       <body>DMS_TrashBin</body>
       <baseBodySize>1</baseBodySize>
-      <mechWeightClass>Light</mechWeightClass>
+      <!--<mechWeightClass>Light</mechWeightClass>-->
+      <thinkTreeMain>VFE_Mechanoids_Machine</thinkTreeMain>
       <mechEnabledWorkTypes>
         <li>PlantCutting</li>
         <li>Hauling</li>
@@ -58,7 +150,7 @@
   </PawnKindDef>
 
   <!-- 武裝四軸 -->
-  <ThingDef ParentName="BaseAutomatroidRace">
+  <ThingDef ParentName="BaseDMSMachine">
     <defName>DMS_Mech_VerlingBird</defName>
     <label>verling bird</label>
     <description>偵查用四軸無人機，對於戰鬥而言相當的脆弱但移動速度極快，搭載了一挺小口徑衝鋒槍並能提供一定的牽制能力.</description>
@@ -66,10 +158,10 @@
       <MoveSpeed>10</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0</ArmorRating_Sharp>
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>        <!--帶寬消耗-->
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">0</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+      <!--<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>-->        <!--帶寬消耗-->
+      <!--<WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">0</WastepacksPerRecharge>--><!--充電/培養時產出廢料-->
     </statBases>
-    <thingClass>DMS.WeaponUsableMech</thingClass>
+    <thingClass>DMS.WeaponUsableMachine</thingClass>
     <inspectorTabs Inherit="False">
       <li>ITab_Pawn_Health</li>
       <li>ITab_Pawn_Needs</li>
@@ -137,19 +229,20 @@
 
   <!-- T1 DMS_DeadMansSwitch-->
   <!-- 獵犬 -->
-  <ThingDef Name="DMS_MechHoundBase" ParentName="BaseAutomatroidRace" Abstract="True">  <!-- DMS_Mech_Hound 獵犬常規型 -->
+  <ThingDef Name="DMS_MechHoundBase" ParentName="BaseDMSMachine" Abstract="True">  <!-- DMS_Mech_Hound 獵犬常規型 -->
     <statBases>
       <MoveSpeed>5</MoveSpeed>
       <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge>
+      <!--<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge>-->
     </statBases>
     <race>
       <body>DMS_Hound</body>
       <baseBodySize>0.75</baseBodySize>
-      <mechWeightClass>Light</mechWeightClass>
+      <!--<mechWeightClass>Light</mechWeightClass>-->
     </race>
+    <thingClass>VFEMech.Machine</thingClass>
   </ThingDef>
 
   <ThingDef ParentName="DMS_MechHoundBase">  <!-- DMS_Mech_Hound_RC 獵犬常規型 -->

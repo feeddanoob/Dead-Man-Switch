@@ -188,7 +188,7 @@
 				<verbClass>Verb_LaunchProjectileStatic</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<onlyManualCast>True</onlyManualCast>
-				<range>100</range>
+				<range>89.9</range>
 				<forcedMissRadius>0.6</forcedMissRadius>
 				<commandIcon>Things/Icon/Test</commandIcon>
 				<burstShotCount>1</burstShotCount>
@@ -201,11 +201,38 @@
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<defaultProjectile>Bullet_Rocket</defaultProjectile>
+				<defaultProjectile>Bullet_9M311V</defaultProjectile>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 			</li>
 		</verbs>
 	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_9M311V</defName>
+		<label>9M311</label>
+		<graphicData>
+		  <texPath>Things/Ammo/76mm9M311Missile/Projectile</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+		  <damageDef>Bomb</damageDef>
+		  <damageAmountBase>150</damageAmountBase>
+		  <armorPenetrationBase>1.75</armorPenetrationBase>
+          <stoppingPower>5</stoppingPower>
+          <arcHeightFactor>1</arcHeightFactor>
+          <shadowSize>1</shadowSize>
+		  <explosionRadius>3.9</explosionRadius>
+		  <speed>75</speed>
+		</projectile>
+		<comps>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>Smoke</fleck>
+				<fleckSize>1</fleckSize>
+			</li>
+		</comps>
+	  </ThingDef>
 
 	<!--Gau-8 Avenger 30mm 駭蜥的主武器-->
 	<ThingDef ParentName="DMS_AutomatroidTurretGun">

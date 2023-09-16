@@ -41,7 +41,7 @@
 					<defName>Ammo_9M311_SAM</defName>
 					<label>9M311 Treugol'nik Missile (SAM)</label>
 					<graphicData>
-						<texPath>Things/Ammo/RPG/RPG32_Thermobaric</texPath>         <!-- tex placeholder till AOBA finish-->
+						<texPath>Things/Ammo/76mm9M311Missile/Item</texPath>         <!-- tex placeholder till AOBA finish-->
 						<graphicClass>Graphic_StackCount</graphicClass>
 						<drawSize>1</drawSize>
 					</graphicData>
@@ -61,7 +61,7 @@
 					<thingClass>BillDoorsFramework.ProjectileMissileCE</thingClass>
 					<label>9M311 Treugol'nik Missile (SAM)</label>
 					<graphicData>
-						<texPath>Things/Projectile/Rocket/132mmM13</texPath>
+						<texPath>Things/Ammo/76mm9M311Missile/Projectile</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
       						<shaderType>TransparentPostLight</shaderType>
 					</graphicData>
@@ -79,7 +79,7 @@
 			            <flyOverhead>true</flyOverhead>
 			            <gravityFactor>20</gravityFactor>
 			            <soundAmbient>RocketPropelledLoop_Small</soundAmbient>
-						<armingDelay>0.5</armingDelay>
+						<!--<armingDelay>0.5</armingDelay>-->
 					</projectile>
 					<comps>
 						<li Class="CombatExtended.CompProperties_Fragments">
@@ -120,7 +120,7 @@
 									<li>ComponentIndustrial</li>
 								</thingDefs>
 							</filter>
-							<count>3</count>
+							<count>4</count>
 						</li>
 						<li>
 							<filter>
