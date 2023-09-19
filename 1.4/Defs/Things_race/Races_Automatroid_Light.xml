@@ -5,6 +5,7 @@
 
   <ThingDef ParentName="BasePawn" Name="BaseDMSMachine" Abstract="True">
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingClass>VFEMech.Machine</thingClass>
 		<statBases>
       <MarketValue>800</MarketValue>
 			<ToxicResistance>1</ToxicResistance>
@@ -13,6 +14,8 @@
       <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
 			<ArmorRating_Heat>2.00</ArmorRating_Heat>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMax>250</ComfyTemperatureMax>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
       <WorkSpeedGlobal MayRequire="Ludeon.Rimworld.Biotech">0.75</WorkSpeedGlobal>
       <PsychicSensitivity>0</PsychicSensitivity>
@@ -98,7 +101,6 @@
     <defName>DMS_Mech_TrashBin</defName>
     <label>trash bin</label>
     <description>圓筒狀的服務用機器人,常見於中寰世界的現代化都市中用來提供道路清潔,快遞與送餐到府服務,以及在應急事件發生時第一時間到場協助疏散與維護秩序.</description>
-    <thingClass>VFEMech.Machine</thingClass>
     <statBases>
       <CleaningSpeed>0.85</CleaningSpeed>
       <MoveSpeed>4.7</MoveSpeed>
@@ -120,7 +122,13 @@
     <butcherProducts>
       <Steel>15</Steel>
     </butcherProducts>
+    <comps>
+			<li Class="VFE.Mechanoids.CompProperties_Machine">
+				<hoursActive>72</hoursActive>
+			</li>
+		</comps>
   </ThingDef>
+
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Mech_TrashBin</defName>
     <label>trash bin</label>
@@ -165,7 +173,7 @@
     <inspectorTabs Inherit="False">
       <li>ITab_Pawn_Health</li>
       <li>ITab_Pawn_Needs</li>
-      <li>ITab_Pawn_Character</li>
+    <!--  <li>ITab_Pawn_Character</li>
       <li>ITab_Pawn_Training</li>
       <li>ITab_Pawn_Social</li>
       <li>ITab_Pawn_Guest</li>
@@ -173,7 +181,7 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">ITab_Pawn_Slave</li>
       <li MayRequire="Ludeon.RimWorld.Biotech">ITab_Pawn_Feeding</li>
       <li MayRequire="Ludeon.RimWorld.Biotech">ITab_Genes</li>
-      <li MayRequire="Ludeon.RimWorld.Biotech">ITab_GenesPregnancy</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ITab_GenesPregnancy</li>-->
       <li>ITab_Pawn_FormingCaravan</li>
       <li>DMS.ITab_Mech_Gear</li>
       <li>ITab_Pawn_Log</li>
@@ -182,11 +190,21 @@
       <body>DMS_Chop</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>0.25</baseBodySize>
       <mechWeightClass>Light</mechWeightClass>
+      <thinkTreeMain>VFE_Mechanoids_ViolentMachine</thinkTreeMain>
     </race>
+    <comps>
+			<li Class="VFE.Mechanoids.CompProperties_Machine">
+        <violent>true</violent>
+				<hoursActive>24</hoursActive>
+			</li>
+      <li Class="AnimalBehaviours.CompProperties_Floating">
+      </li>
+		</comps>
     <modExtensions>
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>VerlingBird_Weapon</li>
           <li>DMS_MechWeaponUltraLight</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
@@ -241,8 +259,14 @@
       <body>DMS_Hound</body>
       <baseBodySize>0.75</baseBodySize>
       <!--<mechWeightClass>Light</mechWeightClass>-->
+      <thinkTreeMain>VFE_Mechanoids_ViolentMachine</thinkTreeMain>
     </race>
-    <thingClass>VFEMech.Machine</thingClass>
+    <comps>
+			<li Class="VFE.Mechanoids.CompProperties_Machine">
+        <violent>true</violent>
+				<hoursActive>36</hoursActive>
+			</li>
+		</comps>
   </ThingDef>
 
   <ThingDef ParentName="DMS_MechHoundBase">  <!-- DMS_Mech_Hound_RC 獵犬常規型 -->

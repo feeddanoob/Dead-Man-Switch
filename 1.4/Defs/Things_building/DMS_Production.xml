@@ -406,11 +406,12 @@
     <recipes>
       <li>ResurrectMediumMech</li>
       <li>ResurrectHeavyMech</li>
+      <!--
       <li>DMS_Make_VerlingBird</li>
       <li>DMS_Make_TrashBin</li>
       <li>DMS_Make_Hound</li>
       <li>DMS_Make_Hound_RC</li>
-      <li>DMS_Make_Hound_FS</li>
+      <li>DMS_Make_Hound_FS</li>-->
       <li>DMS_Make_Soldat</li>
       <li>DMS_Make_Sergeant</li>
       <li>DMS_Make_Ronin</li>

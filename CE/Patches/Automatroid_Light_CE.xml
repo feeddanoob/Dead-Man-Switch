@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+	<!-- ========== PawnKind Patches ========== -->
+
+
+	<li Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="DMS_Mech_VerlingBird"]</xpath>
+		<value>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>0</min>
+					<max>2</max>
+				</primaryMagazineCount>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="DMS_Mech_Hound_RC" or defName="DMS_Mech_Hound_FS"]</xpath>
+		<value>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>4</min>
+					<max>6</max>
+				</primaryMagazineCount>
+			</li>
+		</value>
+	</li>
+
+	<!-- ========== Base DMS Machine ========== -->
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="BaseDMSMachine"]/statBases</xpath>
+		<value>
+			<SmokeSensitivity>0</SmokeSensitivity>
+			<NightVisionEfficiency>0.25</NightVisionEfficiency>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="BaseDMSMachine"]/statBases/ArmorRating_Heat</xpath>
+		<value>
+			<ArmorRating_Heat>0.00</ArmorRating_Heat>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="BaseDMSMachine"]/comps</xpath>
+		<value>
+			<li>
+				<compClass>CombatExtended.CompPawnGizmo</compClass>
+			</li>
+			<li>
+				<compClass>CombatExtended.CompAmmoGiver</compClass>
+			</li>
+			<li Class="CombatExtended.CompProperties_MechAmmo">
+				<gizmoIconSetMagCount>UI/Buttons/SetMagCount</gizmoIconSetMagCount>
+				<gizmoIconTakeAmmoNow>UI/Buttons/TakeAmmoNow</gizmoIconTakeAmmoNow>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[@Name="BaseDMSMachine"]</xpath>
+		<value>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<useStatic>false</useStatic>
+						<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+						<parts>
+							<li>SightSensor</li>
+						</parts>
+					</li>
+					<li>
+						<useStatic>false</useStatic>
+						<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+						<parts>
+							<li>SightSensor</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="BaseDMSMachine"]/statBases</xpath>
+		<value>
+			<PartialArmorBody>0</PartialArmorBody>
+		</value>
+	</li>
+
+
+	<!-- TrashBin -->
+	<li Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_TrashBin"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_TrashBin"]/statBases</xpath>
+		<value>
+			<CarryWeight>30</CarryWeight>
+			<CarryBulk>25</CarryBulk>
+			<MeleeDodgeChance>0.05</MeleeDodgeChance>
+			<MeleeCritChance>0.01</MeleeCritChance>
+			<MeleeParryChance>0.01</MeleeParryChance>
+			<MaxHitPoints>150</MaxHitPoints>
+			<baseBodySize>0.8</baseBodySize>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_TrashBin"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>4</ArmorRating_Blunt>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_TrashBin"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>2</ArmorRating_Sharp>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_TrashBin"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>2.5</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>1.875</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_TrashBin"]/comps</xpath>
+		<value>
+			<li Class="CombatExtended.CompProperties_ArmorDurability">
+				<Durability>300</Durability>
+				<Regenerates>true</Regenerates>
+				<RegenInterval>950</RegenInterval>
+				<RegenValue>5</RegenValue>
+				<Repairable>true</Repairable>
+				<RepairIngredients>
+					<Steel>3</Steel>
+				</RepairIngredients>
+				<RepairTime>80</RepairTime>
+				<RepairValue>100</RepairValue>
+				<CanOverHeal>true</CanOverHeal>
+				<MaxOverHeal>20</MaxOverHeal>
+				<MinArmorPct>0.75</MinArmorPct>
+			</li>
+		</value>
+	</li>
+
+
+	<!-- Verling Bird -->
+	<li Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_VerlingBird"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Vehicle</bodyShape>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_VerlingBird"]/statBases</xpath>
+		<value>
+			<CarryWeight>5</CarryWeight>
+			<CarryBulk>8</CarryBulk>
+			<AimingAccuracy>0.2</AimingAccuracy>
+			<ShootingAccuracyPawn>0.35</ShootingAccuracyPawn>
+			<MeleeDodgeChance>0.65</MeleeDodgeChance>
+			<MeleeCritChance>0.01</MeleeCritChance>
+			<MeleeParryChance>0.00</MeleeParryChance>
+			<MaxHitPoints>25</MaxHitPoints>
+			<baseBodySize>0.2</baseBodySize>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_VerlingBird"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_VerlingBird"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_VerlingBird"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>4</power>
+					<cooldownTime>2</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>1.875</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+
+	<!--LAW for Birdy -->
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="CE_DisposableRocketLauncher"]/weaponTags</xpath>
+		<value>
+			<li>VerlingBird_Weapon</li>
+		</value>
+	</li>
+
+		<!-- Hound -->
+		<li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[@Name="DMS_MechHoundBase"]</xpath>
+			<value>
+				<li Class="CombatExtended.RacePropertiesExtensionCE">
+					<bodyShape>QuadrupedLow</bodyShape>
+				</li>
+			</value>
+		</li>
+	
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DMS_MechHoundBase"]/statBases</xpath>
+			<value>
+				<CarryWeight>25</CarryWeight>
+				<CarryBulk>30</CarryBulk>
+				<AimingAccuracy>0.4</AimingAccuracy>
+			    <ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
+				<MeleeDodgeChance>0.35</MeleeDodgeChance>
+				<MeleeCritChance>0.01</MeleeCritChance>
+				<MeleeParryChance>0.03</MeleeParryChance>
+				<MaxHitPoints>125</MaxHitPoints>
+			</value>
+		</li>
+	
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name="DMS_MechHoundBase"]/statBases/ArmorRating_Blunt</xpath>
+			<value>
+				<ArmorRating_Blunt>2</ArmorRating_Blunt>
+			</value>
+		</li>
+	
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name="DMS_MechHoundBase"]/statBases/ArmorRating_Sharp</xpath>
+			<value>
+				<ArmorRating_Sharp>1</ArmorRating_Sharp>
+			</value>
+		</li>
+	
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name="DMS_MechHoundBase"]/tools</xpath>
+			<value>
+				<tools>
+					<li Class="CombatExtended.ToolCE">
+						<label>head</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>6</power>
+						<cooldownTime>2.5</cooldownTime>
+						<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+						<armorPenetrationBlunt>1.875</armorPenetrationBlunt>
+					</li>
+				</tools>
+			</value>
+		</li>
+	
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[@Name="DMS_MechHoundBase"]/comps</xpath>
+			<value>
+				<li Class="CombatExtended.CompProperties_ArmorDurability">
+					<Durability>225</Durability>
+					<Regenerates>true</Regenerates>
+					<RegenInterval>950</RegenInterval>
+					<RegenValue>5</RegenValue>
+					<Repairable>true</Repairable>
+					<RepairIngredients>
+						<Steel>3</Steel>
+					</RepairIngredients>
+					<RepairTime>80</RepairTime>
+					<RepairValue>100</RepairValue>
+					<CanOverHeal>true</CanOverHeal>
+					<MaxOverHeal>20</MaxOverHeal>
+					<MinArmorPct>0.75</MinArmorPct>
+				</li>
+			</value>
+		</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>
