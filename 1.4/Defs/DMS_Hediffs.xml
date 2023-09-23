@@ -44,7 +44,6 @@
     <stages>
       <li>
         <label>fever</label>
-        <minSeverity>0.001</minSeverity>
         <painOffset>0.20</painOffset>
         <capMods>
           <li>
@@ -77,7 +76,6 @@
     <stages>
       <li>
         <label>fever</label>
-        <minSeverity>0.001</minSeverity>
         <painOffset>0.20</painOffset>
         <capMods>
           <li>

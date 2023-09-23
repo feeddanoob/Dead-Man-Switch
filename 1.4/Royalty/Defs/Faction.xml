@@ -19,7 +19,7 @@
     <factionIconPath>World/WorldObjects/Expanding/Empire</factionIconPath>
     <factionNameMaker>NamerFactionEmpire</factionNameMaker>
     <settlementNameMaker>NamerSettlementEmpire</settlementNameMaker>
-    <allowedCultures><li>DMS_Culture_Nara</li></allowedCultures>
+    <allowedCultures><li>DMS_Nara_Culture</li></allowedCultures>
     <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
@@ -31,8 +31,6 @@
     </allowedMemes>
     <disallowedPrecepts>
       <li>Slavery_Classic</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>

@@ -1,360 +1,191 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <!-- trashbin charge station -->
-    <ThingDef ParentName="BuildingBase">
-        <defName>DMS_TrashBin_Base</defName>
-        <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
-        <label>trashbin charging station</label>
-        <description>A station for assembling and recharging trashbin.</description>
-        <graphicData>
-          <texPath>Things/Building/Facility_Base</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-          <drawSize>(2,2)</drawSize>
-          <shadowData>
-            <volume>(0.5,0.3,0.7)</volume>
-            <offset>(0,0,-0.15)</offset>
-          </shadowData>
-          <damageData>
-            <rect>(0.234375,0,0.515625,0.984375)</rect>
-            <cornerTL>Damage/Corner</cornerTL>
-            <cornerTR>Damage/Corner</cornerTR>
-            <cornerBL>Damage/Corner</cornerBL>
-            <cornerBR>Damage/Corner</cornerBR>
-          </damageData>
-        </graphicData>       
-        <altitudeLayer>FloorEmplacement</altitudeLayer>
-        <passability>Standable</passability>
-        <blockWind>false</blockWind>
-        <rotatable>false</rotatable>
-        <fillPercent>0.1</fillPercent>
-        <uiIconScale>1.2</uiIconScale>
-        <thingCategories>
-          <li>BuildingsProduction</li>
-        </thingCategories>
-        <statBases>
-          <WorkToBuild>1000</WorkToBuild>
-          <MaxHitPoints>100</MaxHitPoints>
-          <Mass>6</Mass>
-          <Flammability>0.5</Flammability>
-        </statBases>
-        <tickerType>Rare</tickerType>
-        <building>
-          <destroySound>BuildingDestroyed_Metal_Small</destroySound>
-          <bed_humanlike>false</bed_humanlike>
-          <bed_showSleeperBody>True</bed_showSleeperBody>
-          <sowTag>SupportPlantsOnly</sowTag>
-          <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-          <ai_chillDestination>false</ai_chillDestination>
-          <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-        </building>
-        <costList>
-          <Steel>75</Steel>
-          <ComponentIndustrial>3</ComponentIndustrial>
-        </costList>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <comps>
-          <li Class="CompProperties_Power">
-            <compClass>CompPowerTrader</compClass>
-            <basePowerConsumption>200</basePowerConsumption>
-          </li>
-          <li Class="CompProperties_Flickable"/>
-          <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
-            <pawnToSpawn>DMS_Mech_TrashBin</pawnToSpawn>
-            <extraChargingPower>1400</extraChargingPower>
-            <hoursToRecharge>24</hoursToRecharge>
-          </li>
-        </comps>
-        <designationCategory>Production</designationCategory>
-        <researchPrerequisites>
-          <li>DMS_UAVBasis</li>
-        </researchPrerequisites>
-        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-      </ThingDef>
+  <ThingDef Name="DMS_BaseChargeStation" ParentName="BuildingBase" Abstract="True">
+    <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Facility_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(0.5,0.3,0.7)</volume>
+        <offset>(0,0,-0.15)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.234375,0,0.515625,0.984375)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+      <altitudeLayer>FloorEmplacement</altitudeLayer>
+      <passability>Standable</passability>
+      <blockWind>false</blockWind>
+      <rotatable>false</rotatable>
+      <fillPercent>0.1</fillPercent>
+      <uiIconScale>1.2</uiIconScale>
+      <thingCategories>
+        <li>BuildingsProduction</li>
+      </thingCategories>
+    </graphicData>
+    <tickerType>Rare</tickerType>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+      <bed_humanlike>false</bed_humanlike>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+    <comps>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <researchPrerequisites>
+      <li>DMS_UAVBasis</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+
+  <!-- trashbin charge station -->
+  <ThingDef ParentName="DMS_BaseChargeStation">
+    <defName>DMS_TrashBin_Base</defName>
+    <label>trashbin charging station</label>
+    <description>A station for assembling and recharging trashbin.</description>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>6</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+        <pawnToSpawn>DMS_Mech_TrashBin</pawnToSpawn>
+        <extraChargingPower>1400</extraChargingPower>
+        <hoursToRecharge>24</hoursToRecharge>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Verling Bird charge station -->
+  <ThingDef ParentName="DMS_BaseChargeStation">
+    <defName>DMS_VerlingBird_Base</defName>
+    <label>verlingbird charging station</label>
+    <description>A station for assembling and recharging verlingbird.</description>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>6</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+        <pawnToSpawn>DMS_Mech_VerlingBird</pawnToSpawn>
+        <extraChargingPower>1400</extraChargingPower>
+        <hoursToRecharge>24</hoursToRecharge>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Hound charge station -->
+  <ThingDef ParentName="DMS_BaseChargeStation">
+    <defName>DMS_Hound_Base</defName>
+    <label>Hound charging station</label>
+    <description>A station for assembling and recharging Hound.</description>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>6</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+        <pawnToSpawn>DMS_Mech_Hound</pawnToSpawn>
+        <extraChargingPower>1400</extraChargingPower>
+        <hoursToRecharge>24</hoursToRecharge>
+      </li>
+    </comps>
+  </ThingDef>
 
 
-      <!-- Verling Bird charge station -->
-      <ThingDef ParentName="BuildingBase">
-        <defName>DMS_VerlingBird_Base</defName>
-        <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
-        <label>verlingbird charging station</label>
-        <description>A station for assembling and recharging verlingbird.</description>
-        <graphicData>
-          <texPath>Things/Building/Facility_Base</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-          <drawSize>(2,2)</drawSize>
-          <shadowData>
-            <volume>(0.5,0.3,0.7)</volume>
-            <offset>(0,0,-0.15)</offset>
-          </shadowData>
-          <damageData>
-            <rect>(0.234375,0,0.515625,0.984375)</rect>
-            <cornerTL>Damage/Corner</cornerTL>
-            <cornerTR>Damage/Corner</cornerTR>
-            <cornerBL>Damage/Corner</cornerBL>
-            <cornerBR>Damage/Corner</cornerBR>
-          </damageData>
-        </graphicData>
-        <altitudeLayer>FloorEmplacement</altitudeLayer>
-        <passability>Standable</passability>
-        <blockWind>false</blockWind>
-        <rotatable>false</rotatable>
-        <fillPercent>0.1</fillPercent>
-        <uiIconScale>1.2</uiIconScale>
-        <thingCategories>
-          <li>BuildingsProduction</li>
-        </thingCategories>
-        <statBases>
-          <WorkToBuild>1000</WorkToBuild>
-          <MaxHitPoints>100</MaxHitPoints>
-          <Mass>6</Mass>
-          <Flammability>0.5</Flammability>
-        </statBases>
-        <tickerType>Rare</tickerType>
-        <building>
-          <destroySound>BuildingDestroyed_Metal_Small</destroySound>
-          <bed_humanlike>false</bed_humanlike>
-          <bed_showSleeperBody>True</bed_showSleeperBody>
-          <sowTag>SupportPlantsOnly</sowTag>
-          <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-          <ai_chillDestination>false</ai_chillDestination>
-          <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-        </building>
-        <costList>
-          <Steel>30</Steel>
-          <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <comps>
-          <li Class="CompProperties_Power">
-            <compClass>CompPowerTrader</compClass>
-            <basePowerConsumption>200</basePowerConsumption>
-          </li>
-          <li Class="CompProperties_Flickable"/>
-          <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
-            <pawnToSpawn>DMS_Mech_VerlingBird</pawnToSpawn>
-            <extraChargingPower>1400</extraChargingPower>
-            <hoursToRecharge>24</hoursToRecharge>
-          </li>
-        </comps>
-        <designationCategory>Production</designationCategory>
-        <researchPrerequisites>
-          <li>DMS_UAVBasis</li>
-        </researchPrerequisites>
-        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-      </ThingDef>
+  <!-- Hound(RC) charge station -->
+  <ThingDef ParentName="DMS_BaseChargeStation">
+    <defName>DMS_Hound_RC_Base</defName>
+    <label>Hound(Riot Control) charging station</label>
+    <description>A station for assembling and recharging Riot Control Hound.</description>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>6</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+        <pawnToSpawn>DMS_Mech_Hound_RC</pawnToSpawn>
+        <extraChargingPower>1400</extraChargingPower>
+        <hoursToRecharge>24</hoursToRecharge>
+      </li>
+    </comps>
+  </ThingDef>
 
-      <!-- Hound charge station -->
-      <ThingDef ParentName="BuildingBase">
-        <defName>DMS_Hound_Base</defName>
-        <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
-        <label>Hound charging station</label>
-        <description>A station for assembling and recharging Hound.</description>
-        <graphicData>
-          <texPath>Things/Building/Facility_Base</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-          <drawSize>(2,2)</drawSize>
-          <shadowData>
-            <volume>(0.5,0.3,0.7)</volume>
-            <offset>(0,0,-0.15)</offset>
-          </shadowData>
-          <damageData>
-            <rect>(0.234375,0,0.515625,0.984375)</rect>
-            <cornerTL>Damage/Corner</cornerTL>
-            <cornerTR>Damage/Corner</cornerTR>
-            <cornerBL>Damage/Corner</cornerBL>
-            <cornerBR>Damage/Corner</cornerBR>
-          </damageData>
-        </graphicData> 
-        <altitudeLayer>FloorEmplacement</altitudeLayer>
-        <passability>Standable</passability>
-        <blockWind>false</blockWind>
-        <rotatable>false</rotatable>
-        <fillPercent>0.1</fillPercent>
-        <uiIconScale>1.2</uiIconScale>
-        <thingCategories>
-          <li>BuildingsProduction</li>
-        </thingCategories>
-        <statBases>
-          <WorkToBuild>1000</WorkToBuild>
-          <MaxHitPoints>100</MaxHitPoints>
-          <Mass>6</Mass>
-          <Flammability>0.5</Flammability>
-        </statBases>
-        <tickerType>Rare</tickerType>
-        <building>
-          <destroySound>BuildingDestroyed_Metal_Small</destroySound>
-          <bed_humanlike>false</bed_humanlike>
-          <bed_showSleeperBody>True</bed_showSleeperBody>
-          <sowTag>SupportPlantsOnly</sowTag>
-          <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-          <ai_chillDestination>false</ai_chillDestination>
-          <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-        </building>
-        <costList>
-          <Steel>75</Steel>
-          <ComponentIndustrial>2</ComponentIndustrial>
-        </costList>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <comps>
-          <li Class="CompProperties_Power">
-            <compClass>CompPowerTrader</compClass>
-            <basePowerConsumption>200</basePowerConsumption>
-          </li>
-          <li Class="CompProperties_Flickable"/>
-          <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
-            <pawnToSpawn>DMS_Mech_Hound</pawnToSpawn>
-            <extraChargingPower>1400</extraChargingPower>
-            <hoursToRecharge>24</hoursToRecharge>
-          </li>
-        </comps>
-        <designationCategory>Production</designationCategory>
-        <researchPrerequisites>
-          <li>DMS_UAVBasis</li>
-        </researchPrerequisites>
-        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-      </ThingDef>
-
-
-      <!-- Hound(RC) charge station -->
-      <ThingDef ParentName="BuildingBase">
-        <defName>DMS_Hound_RC_Base</defName>
-        <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
-        <label>Hound(Riot Control) charging station</label>
-        <description>A station for assembling and recharging Riot Control Hound.</description>
-        <graphicData>
-          <texPath>Things/Building/Facility_Base</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-          <drawSize>(2,2)</drawSize>
-          <shadowData>
-            <volume>(0.5,0.3,0.7)</volume>
-            <offset>(0,0,-0.15)</offset>
-          </shadowData>
-          <damageData>
-            <rect>(0.234375,0,0.515625,0.984375)</rect>
-            <cornerTL>Damage/Corner</cornerTL>
-            <cornerTR>Damage/Corner</cornerTR>
-            <cornerBL>Damage/Corner</cornerBL>
-            <cornerBR>Damage/Corner</cornerBR>
-          </damageData>
-        </graphicData>
-        <altitudeLayer>FloorEmplacement</altitudeLayer>
-        <passability>Standable</passability>
-        <blockWind>false</blockWind>
-        <rotatable>false</rotatable>
-        <fillPercent>0.1</fillPercent>
-        <uiIconScale>1.2</uiIconScale>
-        <thingCategories>
-          <li>BuildingsProduction</li>
-        </thingCategories>
-        <statBases>
-          <WorkToBuild>1000</WorkToBuild>
-          <MaxHitPoints>100</MaxHitPoints>
-          <Mass>6</Mass>
-          <Flammability>0.5</Flammability>
-        </statBases>
-        <tickerType>Rare</tickerType>
-        <building>
-          <destroySound>BuildingDestroyed_Metal_Small</destroySound>
-          <bed_humanlike>false</bed_humanlike>
-          <bed_showSleeperBody>True</bed_showSleeperBody>
-          <sowTag>SupportPlantsOnly</sowTag>
-          <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-          <ai_chillDestination>false</ai_chillDestination>
-          <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-        </building>
-        <costList>
-          <Steel>75</Steel>
-          <ComponentIndustrial>2</ComponentIndustrial>
-        </costList>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <comps>
-          <li Class="CompProperties_Power">
-            <compClass>CompPowerTrader</compClass>
-            <basePowerConsumption>200</basePowerConsumption>
-          </li>
-          <li Class="CompProperties_Flickable"/>
-          <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
-            <pawnToSpawn>DMS_Mech_Hound_RC</pawnToSpawn>
-            <extraChargingPower>1400</extraChargingPower>
-            <hoursToRecharge>24</hoursToRecharge>
-          </li>
-        </comps>
-        <designationCategory>Production</designationCategory>
-        <researchPrerequisites>
-          <li>DMS_UAVBasis</li>
-        </researchPrerequisites>
-        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-      </ThingDef>
-
-
-    <!-- Hound(FS) charge station -->
-    <ThingDef ParentName="BuildingBase">
-        <defName>DMS_Hound_FS_Base</defName>
-        <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
-        <label>Hound(Fire Suppress) charging station</label>
-        <description>A station for assembling and recharging Fire Hound.</description>
-        <graphicData>
-          <texPath>Things/Building/Facility_Base</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-          <drawSize>(2,2)</drawSize>
-          <shadowData>
-            <volume>(0.5,0.3,0.7)</volume>
-            <offset>(0,0,-0.15)</offset>
-          </shadowData>
-          <damageData>
-            <rect>(0.234375,0,0.515625,0.984375)</rect>
-            <cornerTL>Damage/Corner</cornerTL>
-            <cornerTR>Damage/Corner</cornerTR>
-            <cornerBL>Damage/Corner</cornerBL>
-            <cornerBR>Damage/Corner</cornerBR>
-          </damageData>
-        </graphicData>
-        <altitudeLayer>FloorEmplacement</altitudeLayer>
-        <passability>Standable</passability>
-        <blockWind>false</blockWind>
-        <rotatable>false</rotatable>
-        <fillPercent>0.1</fillPercent>
-        <uiIconScale>1.2</uiIconScale>
-        <thingCategories>
-          <li>BuildingsProduction</li>
-        </thingCategories>
-        <statBases>
-          <WorkToBuild>1000</WorkToBuild>
-          <MaxHitPoints>100</MaxHitPoints>
-          <Mass>6</Mass>
-          <Flammability>0.5</Flammability>
-        </statBases>
-        <tickerType>Rare</tickerType>
-        <building>
-          <destroySound>BuildingDestroyed_Metal_Small</destroySound>
-          <bed_humanlike>false</bed_humanlike>
-          <bed_showSleeperBody>True</bed_showSleeperBody>
-          <sowTag>SupportPlantsOnly</sowTag>
-          <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-          <ai_chillDestination>false</ai_chillDestination>
-          <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-        </building>
-        <costList>
-          <Steel>75</Steel>
-          <ComponentIndustrial>2</ComponentIndustrial>
-        </costList>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <comps>
-          <li Class="CompProperties_Power">
-            <compClass>CompPowerTrader</compClass>
-            <basePowerConsumption>200</basePowerConsumption>
-          </li>
-          <li Class="CompProperties_Flickable"/>
-          <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
-            <pawnToSpawn>DMS_Mech_Hound_RC</pawnToSpawn>
-            <extraChargingPower>1400</extraChargingPower>
-            <hoursToRecharge>24</hoursToRecharge>
-          </li>
-        </comps>
-        <designationCategory>Production</designationCategory>
-        <researchPrerequisites>
-          <li>DMS_UAVBasis</li>
-        </researchPrerequisites>
-        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-      </ThingDef>
+  <!-- Hound(FS) charge station -->
+  <ThingDef ParentName="DMS_BaseChargeStation">
+    <defName>DMS_Hound_FS_Base</defName>
+    <label>Hound(Fire Suppress) charging station</label>
+    <description>A station for assembling and recharging Fire Hound.</description>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>6</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+        <pawnToSpawn>DMS_Mech_Hound_FS</pawnToSpawn>
+        <extraChargingPower>1400</extraChargingPower>
+        <hoursToRecharge>24</hoursToRecharge>
+      </li>
+    </comps>
+  </ThingDef>
 </Defs>
