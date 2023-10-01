@@ -69,6 +69,9 @@
 			<WorkToMake>2000</WorkToMake>
 		</statBases>
 		<recipeMaker>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
 		    <researchPrerequisites>
       			<li>Gunsmithing</li>
 				<li>DMS_EquipmentBasis</li>
@@ -141,6 +144,9 @@
 
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<recipeMaker>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
 		    <researchPrerequisites>
       			<li>Gunsmithing</li>
 				<li>DMS_EquipmentBasis</li>
@@ -377,6 +383,9 @@
 		  <HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>	
 		<recipeMaker>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
 		    <researchPrerequisites>
       			<li>Gunsmithing</li>
       			<li>DMS_EquipmentBasis</li>
@@ -448,6 +457,9 @@
 		  <MoveSpeed>-0.15</MoveSpeed>
 		</equippedStatOffsets>
 		<recipeMaker>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			  </skillRequirements>
