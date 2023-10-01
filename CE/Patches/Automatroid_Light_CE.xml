@@ -87,6 +87,20 @@
 							<li>SightSensor</li>
 						</parts>
 					</li>
+					<li>
+						<useStatic>false</useStatic>
+						<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+						<parts>
+							<li>DMS_CompactSenser</li>
+						</parts>
+					</li>
+					<li>
+						<useStatic>false</useStatic>
+						<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+						<parts>
+							<li>DMS_CompactSenser</li>
+						</parts>
+					</li>
 				</stats>
 			</li>
 		</value>

@@ -798,7 +798,7 @@
 
 
 	<!-- 待完成 : 重型無後座力砲，單手榴彈發射槍(消防/燃燒/毒氣) -->
-<!--	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>DMS_Machete</defName>
 		<label>machete</label>
 		<description>Designed to cut bushes and vines in jungle environment, yet equally capable to be a melee weapon.</description>
@@ -853,6 +853,6 @@
 		</recipeMaker>
 	</ThingDef>
 
--->
+
 
 </Defs>
