@@ -75,30 +75,16 @@
 				<stats>
 					<li>
 						<useStatic>false</useStatic>
-						<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+						<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 						<parts>
 							<li>SightSensor</li>
 						</parts>
 					</li>
 					<li>
 						<useStatic>false</useStatic>
-						<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+						<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 						<parts>
 							<li>SightSensor</li>
-						</parts>
-					</li>
-					<li>
-						<useStatic>false</useStatic>
-						<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-						<parts>
-							<li>DMS_CompactSenser</li>
-						</parts>
-					</li>
-					<li>
-						<useStatic>false</useStatic>
-						<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
-						<parts>
-							<li>DMS_CompactSenser</li>
 						</parts>
 					</li>
 				</stats>
@@ -110,6 +96,24 @@
 		<xpath>Defs/ThingDef[@Name="BaseDMSMachine"]/statBases</xpath>
 		<value>
 			<PartialArmorBody>0</PartialArmorBody>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="BaseDMSMachine"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>2.5</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>1.875</armorPenetrationBlunt>
+				</li>
+			</tools>
 		</value>
 	</li>
 
@@ -133,7 +137,6 @@
 			<MeleeCritChance>0.01</MeleeCritChance>
 			<MeleeParryChance>0.01</MeleeParryChance>
 			<MaxHitPoints>150</MaxHitPoints>
-			<baseBodySize>0.8</baseBodySize>
 		</value>
 	</li>
 
@@ -148,24 +151,6 @@
 		<xpath>Defs/ThingDef[defName="DMS_Mech_TrashBin"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
 			<ArmorRating_Sharp>2</ArmorRating_Sharp>
-		</value>
-	</li>
-
-	<li Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_TrashBin"]/tools</xpath>
-		<value>
-			<tools>
-				<li Class="CombatExtended.ToolCE">
-					<label>head</label>
-					<capacities>
-						<li>Blunt</li>
-					</capacities>
-					<power>6</power>
-					<cooldownTime>2.5</cooldownTime>
-					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-					<armorPenetrationBlunt>1.875</armorPenetrationBlunt>
-				</li>
-			</tools>
 		</value>
 	</li>
 
@@ -208,43 +193,24 @@
 			<CarryBulk>8</CarryBulk>
 			<AimingAccuracy>0.2</AimingAccuracy>
 			<ShootingAccuracyPawn>0.35</ShootingAccuracyPawn>
-			<MeleeDodgeChance>0.65</MeleeDodgeChance>
+			<MeleeDodgeChance>12</MeleeDodgeChance>
 			<MeleeCritChance>0.01</MeleeCritChance>
 			<MeleeParryChance>0.00</MeleeParryChance>
 			<MaxHitPoints>25</MaxHitPoints>
-			<baseBodySize>0.2</baseBodySize>
 		</value>
 	</li>
 
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="DMS_Mech_VerlingBird"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
-			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 		</value>
 	</li>
 
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="DMS_Mech_VerlingBird"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
-			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-		</value>
-	</li>
-
-	<li Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_VerlingBird"]/tools</xpath>
-		<value>
-			<tools>
-				<li Class="CombatExtended.ToolCE">
-					<label>head</label>
-					<capacities>
-						<li>Blunt</li>
-					</capacities>
-					<power>4</power>
-					<cooldownTime>2</cooldownTime>
-					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-					<armorPenetrationBlunt>1.875</armorPenetrationBlunt>
-				</li>
-			</tools>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 		</value>
 	</li>
 
@@ -268,13 +234,13 @@
 		</li>
 	
 		<li Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="DMS_MechHoundBase"]/statBases</xpath>
+			<xpath>Defs/ThingDef[@Name="DMS_MechHoundBase"]/statBases</xpath>
 			<value>
 				<CarryWeight>25</CarryWeight>
 				<CarryBulk>30</CarryBulk>
 				<AimingAccuracy>0.4</AimingAccuracy>
 			    <ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
-				<MeleeDodgeChance>0.35</MeleeDodgeChance>
+				<MeleeDodgeChance>6</MeleeDodgeChance>
 				<MeleeCritChance>0.01</MeleeCritChance>
 				<MeleeParryChance>0.03</MeleeParryChance>
 				<MaxHitPoints>125</MaxHitPoints>
@@ -292,24 +258,6 @@
 			<xpath>Defs/ThingDef[@Name="DMS_MechHoundBase"]/statBases/ArmorRating_Sharp</xpath>
 			<value>
 				<ArmorRating_Sharp>1</ArmorRating_Sharp>
-			</value>
-		</li>
-	
-		<li Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[@Name="DMS_MechHoundBase"]/tools</xpath>
-			<value>
-				<tools>
-					<li Class="CombatExtended.ToolCE">
-						<label>head</label>
-						<capacities>
-							<li>Blunt</li>
-						</capacities>
-						<power>6</power>
-						<cooldownTime>2.5</cooldownTime>
-						<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-						<armorPenetrationBlunt>1.875</armorPenetrationBlunt>
-					</li>
-				</tools>
 			</value>
 		</li>
 	

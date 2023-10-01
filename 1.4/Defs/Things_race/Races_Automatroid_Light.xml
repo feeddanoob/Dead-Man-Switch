@@ -189,7 +189,7 @@
     <race>
       <body>DMS_Chop</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>0.25</baseBodySize>
-      <mechWeightClass>Light</mechWeightClass>
+      <!--<mechWeightClass>Light</mechWeightClass>-->
       <thinkTreeMain>VFE_Mechanoids_ViolentMachine</thinkTreeMain>
     </race>
     <comps>
