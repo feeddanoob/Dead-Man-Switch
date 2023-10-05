@@ -17,15 +17,6 @@
         <cornerBL>Damage/Corner</cornerBL>
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
-      <altitudeLayer>FloorEmplacement</altitudeLayer>
-      <passability>Standable</passability>
-      <blockWind>false</blockWind>
-      <rotatable>false</rotatable>
-      <fillPercent>0.1</fillPercent>
-      <uiIconScale>1.2</uiIconScale>
-      <thingCategories>
-        <li>BuildingsProduction</li>
-      </thingCategories>
     </graphicData>
     <tickerType>Rare</tickerType>
     <building>
@@ -40,6 +31,12 @@
     <comps>
       <li Class="CompProperties_Flickable" />
     </comps>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+      <passability>Standable</passability>
+      <blockWind>false</blockWind>
+      <rotatable>false</rotatable>
+      <fillPercent>0.1</fillPercent>
+      <uiIconScale>1.2</uiIconScale>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Production</designationCategory>
     <researchPrerequisites>

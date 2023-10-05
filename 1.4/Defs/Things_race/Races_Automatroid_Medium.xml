@@ -65,6 +65,7 @@
     </lifeStages>
     <weaponTags><!--武器-->
       <li>SimpleGun</li>
+      <li>ShortShots</li>
       <li>DMS_MechWeaponLight</li>
       <li>A_AR_LongRifle</li>                                                                     
     </weaponTags>
@@ -80,9 +81,9 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>SimpleGun</li>
-          <li>ShortShots</li>
           <li>Autopistol</li>
           <li>DMS_MechWeaponLight</li>
+          <li>A_MG_GrenadeLauncher</li> 
           <li>GrenadeDestructive</li>
           <li>GrenadeEMP</li>
           <li>GrenadeSmoke</li>
@@ -121,8 +122,6 @@
       </li>
     </lifeStages>
     <weaponTags><!--武器-->
-      <li>SimpleGun</li>
-      <li>IndustrialGunAdvanced</li>
       <li>A_MG_GrenadeLauncher</li>                                                                    
     </weaponTags>
   </PawnKindDef>
@@ -137,7 +136,6 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>SimpleGun</li>
-          <li>ShortShots</li>
           <li>Autopistol</li>
           <li>DMS_MechWeaponLight</li>
           <li>GunSingleUse</li>
@@ -251,6 +249,7 @@
       <MoveSpeed>4.5</MoveSpeed>
       <ArmorRating_Blunt>0.12</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <ArmorRating_Heat>1.5</ArmorRating_Heat>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost> 
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">4</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -272,7 +271,7 @@
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
           <li>A_MG_Light</li>
-          <li>A_DMR_LongRifle</li>    
+          <li>A_DMR_LongRifle</li>  
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -308,6 +307,7 @@
       </li>
     </lifeStages>
     <weaponTags>
+      <li>A_MG_Light</li>
       <li>A_DMR_LongRifle</li><!--武器-->
     </weaponTags>
   </PawnKindDef>
@@ -326,6 +326,7 @@
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
           <li>A_DMR_LongRifle</li>
+          <li>SniperRifle</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -376,6 +377,7 @@
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
           <li>A_AR_LongRifle</li>
+          <li>AssaultRifle</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -427,6 +429,7 @@
           <li>DMS_MechWeaponLight</li>
           <li>A_SR_GrenadeLauncher</li>
           <li>A_SR_LongRifle</li>
+          <li>SniperRifle</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -476,6 +479,7 @@
       <MoveSpeed>5</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0.4</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <ArmorRating_Heat>1.5</ArmorRating_Heat>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -485,6 +489,7 @@
       <!--</mechEnabledWorkTypes>-->
       <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>1.1</baseBodySize>
+      <baseHealthScale>1.12</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
     <modExtensions  Inherit="False">
@@ -535,6 +540,9 @@
       <li>A_AR_LongRifle</li>                                                                     <!--武器-->
       <li>MedievalMeleeAdvanced</li>
     </weaponTags>
+    <abilities>
+      <li>LongjumpMech</li>
+    </abilities>
   </PawnKindDef>
   
   <!-- 塔盾手 Protector-->
@@ -546,6 +554,7 @@
       <MoveSpeed>3</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0.55</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0.68</ArmorRating_Sharp>
+      <ArmorRating_Heat>2</ArmorRating_Heat>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -555,6 +564,7 @@
       <!--</mechEnabledWorkTypes>-->
       <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>1.1</baseBodySize>
+      <baseHealthScale>1.54</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
     <modExtensions  Inherit="False">
@@ -613,6 +623,7 @@
       <MoveSpeed>4.3</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0.45</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+      <ArmorRating_Heat>1.5</ArmorRating_Heat>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -622,6 +633,7 @@
       <!--</mechEnabledWorkTypes>-->
       <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>1.1</baseBodySize>
+      <baseHealthScale>1.32</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
     <modExtensions  Inherit="False">
@@ -650,7 +662,7 @@
     <lifeStages>                                                                 <!--身體圖片-->
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/stormer</texPath>
+          <texPath>Things/Automatroid/siegeBreaker</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.3</drawSize>

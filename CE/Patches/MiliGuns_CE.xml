@@ -182,7 +182,7 @@
                     <Mass>8.15</Mass>
                     <Bulk>9.85</Bulk>
                     <SwayFactor>1.47</SwayFactor>
-                    <ShotSpread>0.09</ShotSpread>
+                    <ShotSpread>0.06</ShotSpread>
                     <SightsEfficiency>1.0</SightsEfficiency>
                     <RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
                 </statBases>
@@ -192,7 +192,7 @@
                     <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
                     <warmupTime>1</warmupTime>
                     <range>55</range>
-					<burstShotCount>5</burstShotCount>
+					<burstShotCount>6</burstShotCount>
 				    <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                     <soundCast>Shot_AssaultRifle</soundCast>
                     <soundCastTail>GunTail_Medium</soundCastTail>
@@ -207,7 +207,7 @@
                 <FireModes>
                     <aiUseBurstMode>TRUE</aiUseBurstMode>
 				    <aiAimMode>AimedShot</aiAimMode>
-					<aimedBurstShotCount>2</aimedBurstShotCount>
+					<aimedBurstShotCount>3</aimedBurstShotCount>
                 </FireModes>
                 <weaponTags>
 				    <li>CE_AI_AR</li>
@@ -231,12 +231,12 @@
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-                    <warmupTime>1.35</warmupTime>
-                    <range>62</range>
+                    <warmupTime>1.3</warmupTime>
+                    <range>65</range>
                     <soundCast>Shot_TurretSniper</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
-                    <recoilAmount>2.59</recoilAmount>
+                    <recoilAmount>2.33</recoilAmount>
                 </Properties>
                 <AmmoUser>
                     <magazineSize>8</magazineSize>
@@ -257,11 +257,11 @@
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_MarksmanRifle</defName>
                 <statBases>
-                    <Mass>10.84</Mass>
-                    <Bulk>10.35</Bulk>
+                    <Mass>12.54</Mass>
+                    <Bulk>14.65</Bulk>
                     <SwayFactor>1.86</SwayFactor>
-                    <ShotSpread>0.03</ShotSpread>
-                    <SightsEfficiency>2.25</SightsEfficiency>
+                    <ShotSpread>0.02</ShotSpread>
+                    <SightsEfficiency>2.45</SightsEfficiency>
                     <RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
@@ -269,7 +269,7 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
                     <warmupTime>1.4</warmupTime>
-                    <range>75</range>
+                    <range>86</range>
                     <soundCast>Shot_AssaultRifle</soundCast>
                     <soundCastTail>GunTail_Medium</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
@@ -296,7 +296,7 @@
                     <Mass>33</Mass>
                     <Bulk>17.34</Bulk>
                     <SwayFactor>3.24</SwayFactor>
-                    <ShotSpread>0.02</ShotSpread>
+                    <ShotSpread>0.01</ShotSpread>
                     <SightsEfficiency>2.85</SightsEfficiency>
                     <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
                 </statBases>
@@ -306,7 +306,7 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_20x102mmNATO_AP</defaultProjectile>
                     <warmupTime>3.55</warmupTime>
-                    <range>86</range>
+                    <range>95</range>
                     <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>16</muzzleFlashScale>
@@ -356,9 +356,9 @@
                     <ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
                 </AmmoUser>
                 <FireModes>
-				    <aiUseBurstMode>TRUE</aiUseBurstMode>
+				    <!--<aiUseBurstMode>TRUE</aiUseBurstMode>-->
 				    <aiAimMode>AimedShot</aiAimMode>
-					<aimedBurstShotCount>2</aimedBurstShotCount>
+					<!--<aimedBurstShotCount>2</aimedBurstShotCount>-->
                 </FireModes>
                 <weaponTags>
 					<li>CE_AI_AOE</li>
