@@ -18,13 +18,51 @@
 	</li>
 
 	<li Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="DMS_Mech_Grenadier" or defName="DMS_Mech_Kanonier" or defName="DMS_Mech_Siegebreaker"]</xpath>
+		<xpath>Defs/PawnKindDef[defName="DMS_Mech_Grenadier"]</xpath>
 		<value>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
 					<min>3</min>
 					<max>5</max>
 				</primaryMagazineCount>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="DMS_Mech_Siegebreaker"]</xpath>
+		<value>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>4</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>RocketThermobaric</forcedAmmoCategory>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="DMS_Mech_Kanonier"]</xpath>
+		<value>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>2</max>
+				</primaryMagazineCount>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>150</min>
+						<max>350</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>DMS_MechWeaponLight</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>5</max>
+					</magazineCount>
+				</forcedSidearm>
 			</li>
 		</value>
 	</li>
@@ -522,8 +560,8 @@
 	<li Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="DMS_Mech_Siegebreaker"]/statBases</xpath>
 		<value>
-			<CarryWeight>50</CarryWeight>
-			<CarryBulk>30</CarryBulk>
+			<CarryWeight>60</CarryWeight>
+			<CarryBulk>120</CarryBulk> <!--damn rpg-32 has such high bulk...-->
 			<AimingAccuracy>1</AimingAccuracy>
 			<ShootingAccuracyPawn>1.25</ShootingAccuracyPawn>
 			<MeleeDodgeChance>0.09</MeleeDodgeChance>

@@ -23,7 +23,8 @@
                                      defName="DMS_AntiMaterialRifle" or
                                      defName="DMS_AutomaticGrenadeLauncher" or
                                      defName="DMS_LightMachineGun" or
-                                     defName="DMS_HeavyMachineGun"
+                                     defName="DMS_HeavyMachineGun" or
+                                     defName="DMS_DoorBreaker"
                                      ]/equippedStatOffsets/MoveSpeed</xpath>
 			</li>
 
@@ -72,7 +73,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_TaticalPistol"]/tools</xpath>
                 <value>
-                    <tools> 
+                    <tools Inherit="False"> 
 			            <li Class="CombatExtended.ToolCE">
 				            <label>grip</label>
 				            <capacities>
@@ -412,7 +413,7 @@
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_HeavyMachineGun</defName>
                 <statBases>
-                    <Mass>39.4</Mass>
+                    <Mass>35.4</Mass>
                     <Bulk>25.6</Bulk>
                     <SwayFactor>1.94</SwayFactor>
                     <ShotSpread>0.05</ShotSpread>
@@ -420,7 +421,7 @@
                     <RangedWeapon_Cooldown>0.46</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
-				    <recoilAmount>1.98</recoilAmount>
+				    <recoilAmount>1.79</recoilAmount>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
@@ -431,6 +432,7 @@
                     <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
                     <soundCastTail>GunTail_Medium</soundCastTail>
                     <muzzleFlashScale>14</muzzleFlashScale>
+                    <recoilPattern>Mounted</recoilPattern>
                 </Properties>
                 <AmmoUser>
                     <magazineSize>80</magazineSize>
@@ -447,7 +449,152 @@
 			        <li>Bipod_LMG</li>
                 </weaponTags>
             </li>
+
+
+            <!--====Progressive Machete====-->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="DMS_Machete"]/tools</xpath>
+                <value>
+                    <tools>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>handle</label>
+                            <capacities>
+                                <li>Poke</li>
+                            </capacities>
+                            <power>2</power>
+                            <chanceFactor>0.1</chanceFactor>
+                            <cooldownTime>1.5</cooldownTime>
+                            <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>edge</label>
+                            <capacities>
+                                <li>Cut</li>
+                            </capacities>
+                            <power>31</power>
+                            <cooldownTime>0.83</cooldownTime>
+                            <armorPenetrationBlunt>2.88</armorPenetrationBlunt>
+                            <armorPenetrationSharp>16</armorPenetrationSharp>
+                            <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>point</label>
+                            <capacities>
+                                <li>Stab</li>
+                            </capacities>
+                            <power>11</power>
+                            <cooldownTime>0.94</cooldownTime>
+                            <armorPenetrationBlunt>1.28</armorPenetrationBlunt>
+                            <armorPenetrationSharp>12</armorPenetrationSharp>
+                        </li>
+                    </tools>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="DMS_Machete"]/statBases/Mass</xpath>
+                <value>
+                    <Mass>6.3</Mass>
+                </value>
+            </li>
+        
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DMS_Machete"]/statBases</xpath>
+                <value>
+                    <Bulk>5.4</Bulk>
+                    <MeleeCounterParryBonus>0.33</MeleeCounterParryBonus>
+                </value>
+            </li>
+        
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DMS_Machete"]</xpath>
+                <value>
+                    <equippedStatOffsets>
+                        <MeleeCritChance>0.56</MeleeCritChance>
+                        <MeleeParryChance>0.25</MeleeParryChance>
+                        <MeleeDodgeChance>0.34</MeleeDodgeChance>
+                    </equippedStatOffsets>
+                </value>
+            </li>
+        
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DMS_Machete"]/weaponTags</xpath>
+                <value>
+                    <li>CE_OneHandedWeapon</li>
+                </value>
+            </li>
 			
+            <!--===== Door Breaker =====-->
+			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>DMS_DoorBreaker</defName>
+                <statBases>
+                    <Mass>24.8</Mass>
+                    <Bulk>16.8</Bulk>
+                    <SwayFactor>1.74</SwayFactor>
+                    <ShotSpread>0.14</ShotSpread>
+                    <SightsEfficiency>1.25</SightsEfficiency>
+                    <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+                </statBases>
+                <Properties>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_RPG32Rocket_Thermobaric</defaultProjectile>
+                    <warmupTime>3.35</warmupTime>
+                    <range>43</range>
+                    <minRange>6</minRange>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                    </targetParams>
+                    <soundCast>InfernoCannon_Fire</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>16</muzzleFlashScale>
+                    <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+                    <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                </Properties>
+                <AmmoUser>
+                    <magazineSize>1</magazineSize>
+                    <reloadTime>7.2</reloadTime>
+                    <ammoSet>AmmoSet_RPG32Rocket</ammoSet>
+                </AmmoUser>
+                <FireModes>
+				    <aiUseBurstMode>FALSE</aiUseBurstMode>
+				    <aiAimMode>AimedShot</aiAimMode>
+                </FireModes>
+                <weaponTags>
+					<li>CE_AI_AOE</li>
+                    <li>NoSwitch</li>
+                </weaponTags>
+            </li>
+
+            <!--custom demolish tool for door breaker-->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="DMS_DoorBreaker"]/tools</xpath>
+                <value>
+                    <tools Inherit="False"> 
+			            <li Class="CombatExtended.ToolCE">
+				            <label>barrel</label>
+				            <capacities>
+					           <li>Blunt</li>
+				            </capacities>
+				            <power>18</power>
+				            <cooldownTime>2.65</cooldownTime>
+				            <armorPenetrationBlunt>7.3</armorPenetrationBlunt>
+				            <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			            </li>
+			            <li Class="CombatExtended.ToolCE">
+				            <label>head</label>
+					        <capacities>
+						        <li>Demolish</li>
+					        </capacities>
+					        <power>51</power>
+					        <cooldownTime>3.85</cooldownTime>
+					        <armorPenetrationBlunt>31.7</armorPenetrationBlunt>
+					        <linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			            </li>
+                    </tools>
+                </value>
+            </li>
 			
 			</operations>
 		</match>
