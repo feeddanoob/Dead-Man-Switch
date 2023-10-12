@@ -193,7 +193,7 @@
 			<CarryBulk>8</CarryBulk>
 			<AimingAccuracy>0.2</AimingAccuracy>
 			<ShootingAccuracyPawn>0.35</ShootingAccuracyPawn>
-			<MeleeDodgeChance>12</MeleeDodgeChance>
+			<MeleeDodgeChance>6</MeleeDodgeChance>
 			<MeleeCritChance>0.01</MeleeCritChance>
 			<MeleeParryChance>0.00</MeleeParryChance>
 			<MaxHitPoints>25</MaxHitPoints>
@@ -240,7 +240,7 @@
 				<CarryBulk>30</CarryBulk>
 				<AimingAccuracy>0.4</AimingAccuracy>
 			    <ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
-				<MeleeDodgeChance>6</MeleeDodgeChance>
+				<MeleeDodgeChance>4</MeleeDodgeChance>
 				<MeleeCritChance>0.01</MeleeCritChance>
 				<MeleeParryChance>0.03</MeleeParryChance>
 				<MaxHitPoints>125</MaxHitPoints>

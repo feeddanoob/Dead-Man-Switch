@@ -3,9 +3,11 @@
     
     <!--give grenades to birdy-->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[@Name="BaseMakeableGrenade"]/weaponTags</xpath>
+        <xpath>Defs/ThingDef[@Name="BaseMakeableGrenade"]</xpath>
             <value>
-                <li>VerlingBird_Weapon</li>
+                <weaponTags>
+                    <li>VerlingBird_Weapon</li>
+                </weaponTags>
             </value>
     </Operation>
 

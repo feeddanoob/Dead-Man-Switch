@@ -363,7 +363,6 @@
                 </FireModes>
                 <weaponTags>
 					<li>CE_AI_AOE</li>
-					<li>Bipod_DMR</li>
                 </weaponTags>
             </li>
 			
@@ -393,7 +392,7 @@
                     <muzzleFlashScale>9</muzzleFlashScale>
                 </Properties>
                 <AmmoUser>
-                    <magazineSize>80</magazineSize>
+                    <magazineSize>100</magazineSize>
                     <reloadTime>7.4</reloadTime>
                     <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
                 </AmmoUser>
@@ -404,7 +403,7 @@
                 </FireModes>
                 <weaponTags>
 					<li>CE_AI_LMG</li>
-			        <li>Bipod_LMG</li>
+			        <li>Bipod_SAW</li>
                 </weaponTags>
             </li>
 			
@@ -413,7 +412,7 @@
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_HeavyMachineGun</defName>
                 <statBases>
-                    <Mass>35.4</Mass>
+                    <Mass>32.4</Mass>
                     <Bulk>25.6</Bulk>
                     <SwayFactor>1.94</SwayFactor>
                     <ShotSpread>0.05</ShotSpread>
@@ -421,7 +420,7 @@
                     <RangedWeapon_Cooldown>0.46</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
-				    <recoilAmount>1.79</recoilAmount>
+				    <recoilAmount>1.67</recoilAmount>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
@@ -446,7 +445,7 @@
                 </FireModes>
                 <weaponTags>
 					<li>CE_AI_Suppressive</li>
-			        <li>Bipod_LMG</li>
+			        <!--<li>Bipod_LMG</li>-->
                 </weaponTags>
             </li>
 
@@ -562,7 +561,7 @@
 				    <aiAimMode>AimedShot</aiAimMode>
                 </FireModes>
                 <weaponTags>
-					<li>CE_AI_AOE</li>
+					<li>CE_AI_Launcher</li>
                     <li>NoSwitch</li>
                 </weaponTags>
             </li>
