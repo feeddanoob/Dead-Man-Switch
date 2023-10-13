@@ -26,6 +26,20 @@ namespace DMS
                 pawn.Equip(equipment);
             });
         }
+        public static FloatMenuOption TryMakeFloatMenuForWeapon(this WeaponUsableMachine pawn, ThingWithComps equipment)
+        {
+            string labelShort = equipment.LabelShort;
+            if (!pawn.CanReach(equipment, PathEndMode.ClosestTouch, Danger.Deadly, false, false, TraverseMode.ByPawn))
+            {
+                return new FloatMenuOption("CannotEquip".Translate(labelShort) + ": " + "NoPath".Translate().CapitalizeFirst(), null);
+            }
+
+            return new FloatMenuOption("Equip".Translate(labelShort), () =>
+            {
+                pawn.Equip(equipment);
+            });
+        }
+
         public static FloatMenuOption TryMakeFloatMenuForWeapon(this HumanlikeMech pawn, ThingWithComps equipment)
         {
             string labelShort = equipment.LabelShort;

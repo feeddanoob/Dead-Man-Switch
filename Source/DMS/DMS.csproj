@@ -55,8 +55,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="VFECore">
-      <HintPath>..\..\..\VanillaExpandedFramework\1.4\Assemblies\VFECore.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\Reference\VFECore.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -78,7 +77,6 @@
     <Compile Include="Thing\WeaponUsableMech.cs" />
     <Compile Include="UI\Command_SelectApparelOutfit.cs" />
     <Compile Include="UI\ITab_Mech_Gear.cs" />
-    <Compile Include="Utility\CheckUtility.cs" />
     <Compile Include="Utility\FloatMenuUtility.cs" />
     <Compile Include="Patch\HarmonyEntry.cs" />
     <Compile Include="Thing\HumanlikeMech.cs" />
