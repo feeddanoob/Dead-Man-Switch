@@ -13,6 +13,7 @@
     <race>
       <body>DMS_Humanoid_Soldat</body>
       <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
   </ThingDef>
@@ -256,6 +257,7 @@
     <race>
       <body>DMS_Humanoid_TypeA</body>
       <baseBodySize>1.1</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
   </ThingDef>
@@ -489,7 +491,7 @@
       <!--</mechEnabledWorkTypes>-->
       <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>1.1</baseBodySize>
-      <baseHealthScale>1.12</baseHealthScale>
+      <baseHealthScale>1.32</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
     <modExtensions  Inherit="False">
@@ -564,7 +566,7 @@
       <!--</mechEnabledWorkTypes>-->
       <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>1.1</baseBodySize>
-      <baseHealthScale>1.54</baseHealthScale>
+      <baseHealthScale>1.85</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
     <modExtensions  Inherit="False">
@@ -633,7 +635,7 @@
       <!--</mechEnabledWorkTypes>-->
       <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>1.1</baseBodySize>
-      <baseHealthScale>1.32</baseHealthScale>
+      <baseHealthScale>1.54</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
     <modExtensions  Inherit="False">

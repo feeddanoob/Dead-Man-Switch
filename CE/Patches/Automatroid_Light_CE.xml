@@ -12,7 +12,7 @@
 
 
 	<li Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="DMS_Mech_VerlingBird"]</xpath>
+		<xpath>Defs/PawnKindDef[defName="DMS_Mech_VerlingBirdA"]</xpath>
 		<value>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
@@ -178,7 +178,7 @@
 
 	<!-- Verling Bird -->
 	<li Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_VerlingBird"]</xpath>
+		<xpath>Defs/ThingDef[@Name="VerlingBirdBase"]</xpath>
 		<value>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>Vehicle</bodyShape>
@@ -187,13 +187,13 @@
 	</li>
 
 	<li Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_VerlingBird"]/statBases</xpath>
+		<xpath>Defs/ThingDef[@Name="VerlingBirdBase"]/statBases</xpath>
 		<value>
 			<CarryWeight>5</CarryWeight>
 			<CarryBulk>8</CarryBulk>
 			<AimingAccuracy>0.2</AimingAccuracy>
 			<ShootingAccuracyPawn>0.35</ShootingAccuracyPawn>
-			<MeleeDodgeChance>6</MeleeDodgeChance>
+			<MeleeDodgeChance>8</MeleeDodgeChance>
 			<MeleeCritChance>0.01</MeleeCritChance>
 			<MeleeParryChance>0.00</MeleeParryChance>
 			<MaxHitPoints>25</MaxHitPoints>
@@ -201,28 +201,20 @@
 	</li>
 
 	<li Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_VerlingBird"]/statBases/ArmorRating_Blunt</xpath>
+		<xpath>Defs/ThingDef[@Name="VerlingBirdBase"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
 			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 		</value>
 	</li>
 
 	<li Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_VerlingBird"]/statBases/ArmorRating_Sharp</xpath>
+		<xpath>Defs/ThingDef[@Name="VerlingBirdBase"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 		</value>
 	</li>
 
-
-	<!--LAW for Birdy -->
-	<li Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="CE_DisposableRocketLauncher"]/weaponTags</xpath>
-		<value>
-			<li>VerlingBird_Weapon</li>
-		</value>
-	</li>
-
+	
 		<!-- Hound -->
 		<li Class="PatchOperationAddModExtension">
 			<xpath>Defs/ThingDef[@Name="DMS_MechHoundBase"]</xpath>

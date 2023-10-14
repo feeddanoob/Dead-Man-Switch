@@ -400,6 +400,7 @@
 				    <aiUseBurstMode>FALSE</aiUseBurstMode>
 				    <aiAimMode>SuppressFire</aiAimMode>
 					<aimedBurstShotCount>5</aimedBurstShotCount>
+                    <noSingleShot>true</noSingleShot>
                 </FireModes>
                 <weaponTags>
 					<li>CE_AI_LMG</li>
@@ -431,7 +432,6 @@
                     <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
                     <soundCastTail>GunTail_Medium</soundCastTail>
                     <muzzleFlashScale>14</muzzleFlashScale>
-                    <recoilPattern>Mounted</recoilPattern>
                 </Properties>
                 <AmmoUser>
                     <magazineSize>80</magazineSize>
@@ -442,6 +442,7 @@
 				    <aiUseBurstMode>FALSE</aiUseBurstMode>
 				    <aiAimMode>SuppressFire</aiAimMode>
 					<aimedBurstShotCount>5</aimedBurstShotCount>
+                    <noSingleShot>true</noSingleShot>
                 </FireModes>
                 <weaponTags>
 					<li>CE_AI_Suppressive</li>

@@ -41,14 +41,14 @@
 					<defName>Ammo_9M311_SAM</defName>
 					<label>9M311 Treugol'nik Missile (SAM)</label>
 					<graphicData>
-						<texPath>Things/Ammo/76mm9M311Missile/Item</texPath>         <!-- tex placeholder till AOBA finish-->
+						<texPath>Things/Ammo/76mm9M311Missile/Item</texPath>        
 						<graphicClass>Graphic_StackCount</graphicClass>
 						<drawSize>1</drawSize>
 					</graphicData>
 					<statBases>
 						<MarketValue>248.27</MarketValue>
-						<Mass>57</Mass>
-						<Bulk>79</Bulk>
+						<Mass>42</Mass>
+						<Bulk>67</Bulk>
 					</statBases>
 					<ammoClass>GrenadeHE</ammoClass>
 					<detonateProjectile>Bullet_9M311_SAM</detonateProjectile>
@@ -58,7 +58,7 @@
 
 				<ThingDef ParentName="BaseBulletCE">
 					<defName>Bullet_9M311_SAM</defName>
-					<thingClass>BillDoorsFramework.ProjectileMissileCE</thingClass>
+					<thingClass>BillDoorsFramework.Projectile_HeightFuseCE</thingClass>
 					<label>9M311 Treugol'nik Missile (SAM)</label>
 					<graphicData>
 						<texPath>Things/Ammo/76mm9M311Missile/Projectile</texPath>
@@ -68,18 +68,19 @@
 					<projectile Class="CombatExtended.ProjectilePropertiesCE">
 						<suppressionFactor>1.5</suppressionFactor>
 						<explosionRadius>2.5</explosionRadius>
+						<speed>150</speed>
 			            <damageDef>Bomb</damageDef>
 			            <armorPenetrationSharp>0</armorPenetrationSharp>
 			            <damageAmountBase>286</damageAmountBase>
 			            <armorPenetrationBlunt>0</armorPenetrationBlunt>
 			            <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-			            <!--<aimHeightOffset>5</aimHeightOffset>-->
+			            <aimHeightOffset>3.5</aimHeightOffset>
                         <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
 			            <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
 			            <flyOverhead>true</flyOverhead>
-			            <gravityFactor>20</gravityFactor>
+			            <gravityFactor>50</gravityFactor>
 			            <soundAmbient>RocketPropelledLoop_Small</soundAmbient>
-						<!--<armingDelay>0.5</armingDelay>-->
+						<armingDelay>0.5</armingDelay>
 					</projectile>
 					<comps>
 						<li Class="CombatExtended.CompProperties_Fragments">
@@ -88,12 +89,20 @@
 								<Fragment_Medium>50</Fragment_Medium>
 								<Fragment_Small>125</Fragment_Small>
 							</fragments>
-                            <!--<fragAngleRange>-100~-5</fragAngleRange>-->
+                            <fragAngleRange>-100~-5</fragAngleRange>
 						</li>
 						<li Class="AOBAUtilities.CompProperties_Flecker">
                             <fleck>Smoke</fleck>
-                            <fleckSize>1</fleckSize>
+                            <fleckSize>0.5</fleckSize>
                         </li>
+						<li Class="AOBAUtilities.CompProperties_Flecker">
+							<fleck>FT_ExhaustFlame</fleck>
+							<fleckSize>0.5</fleckSize>
+						</li>
+						<li Class="AOBAUtilities.CompProperties_Flecker">
+							<fleck>FT_ExhaustFlameGlow</fleck>
+							<fleckSize>0.5</fleckSize>
+						</li>
 					</comps>
 				</ThingDef>
 

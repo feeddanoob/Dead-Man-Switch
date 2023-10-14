@@ -141,27 +141,15 @@
     </tags>
   </BodyPartDef>
 
-  <BodyPartDef>
+  <BodyPartGroupDef>
     <defName>LeftMechanicalLeg</defName>
     <label>left mechanical leg</label>
-    <frostbiteVulnerability>0</frostbiteVulnerability>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <solid>true</solid>
-    <alive>false</alive>
-    <bleedRate>0</bleedRate>
-  </BodyPartDef>
+  </BodyPartGroupDef>
   
-  <BodyPartDef>
+  <BodyPartGroupDef>
     <defName>RightMechanicalLeg</defName>
     <label>right mechanical leg</label>
-    <frostbiteVulnerability>0</frostbiteVulnerability>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <solid>true</solid>
-    <alive>false</alive>
-    <bleedRate>0</bleedRate>
-  </BodyPartDef>
+  </BodyPartGroupDef>
 
 
   <!-- 四軸無人機是一個主本體,上面有傳感器,然後是一套外緣推進器-->
@@ -257,6 +245,11 @@
           <def>DMS_HoverRotor</def>
           <customLabel>hover system</customLabel>
           <coverage>0.25</coverage>
+        </li>
+        <li>
+          <def>MechanicalArm</def>
+          <customLabel>grabbing arm</customLabel>
+          <coverage>0.15</coverage>
         </li>
         <li>
           <def>DMS_ChestBrain</def>
