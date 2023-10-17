@@ -80,7 +80,7 @@
                     <ammoSet>AmmoSet_22LR</ammoSet>
                 </AmmoUser>
                 <FireModes>
-                    <aiUseBurstMode>FALSE</aiUseBurstMode>
+                    <!--<aiUseBurstMode>FALSE</aiUseBurstMode>-->
                     <aiAimMode>Snapshot</aiAimMode>
                     <aimedBurstShotCount>5</aimedBurstShotCount>
                 </FireModes>
@@ -121,7 +121,7 @@
                     <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
                 </AmmoUser>
                 <FireModes>
-				    <aiUseBurstMode>FALSE</aiUseBurstMode>
+				    <!--<aiUseBurstMode>FALSE</aiUseBurstMode>-->
 				    <aiAimMode>SuppressFire</aiAimMode>
 					<aimedBurstShotCount>10</aimedBurstShotCount>
                 </FireModes>
@@ -223,8 +223,41 @@
                 </weaponTags>    
             </li>
             
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DMS_Tarbosaurus_Gun"]/comps</xpath>
+                <value>
+                    <li Class="CombatExtended.CompProperties_UnderBarrel">
+                        <propsUnderBarrel>
+                            <magazineSize>6</magazineSize>
+                            <reloadTime>15</reloadTime>
+                            <ammoSet>AmmoSet_9M311</ammoSet>
+                        </propsUnderBarrel>
+                        <verbPropsUnderBarrel>
+                            <recoilAmount>4.31</recoilAmount>
+                            <verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
+                            <hasStandardCommand>true</hasStandardCommand>
+                            <requireLineOfSight>true</requireLineOfSight>
+                            <defaultProjectile>Bullet_9M311_SAM</defaultProjectile>
+                            <warmupTime>3.5</warmupTime>
+                            <range>120</range>
+                            <minRange>40</minRange>
+                            <targetParams>
+                                <canTargetLocations>true</canTargetLocations>
+                            </targetParams>
+                            <soundCast>Shot_IncendiaryLauncher</soundCast>
+                            <soundCastTail>GunTail_Heavy</soundCastTail>
+                            <muzzleFlashScale>18</muzzleFlashScale>
+                        </verbPropsUnderBarrel>
+                        <propsFireModesUnderBarrel>
+                            <aiUseBurstMode>FALSE</aiUseBurstMode>
+                            <aiAimMode>AimedShot</aiAimMode>
+                            <aimedBurstShotCount>1</aimedBurstShotCount>
+                        </propsFireModesUnderBarrel>
+                    </li>
+                </value>
+            </li>
             
-
+            <!--
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DMS_Tarbosaurus_Gun"]/comps</xpath>
                 <value>
@@ -247,7 +280,7 @@
                             <muzzleFlashScale>18</muzzleFlashScale>
                             <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
                             <circularError>1</circularError>
-                            <!--<indirectFirePenalty>0.2</indirectFirePenalty>-->
+                            <indirectFirePenalty>0.2</indirectFirePenalty>
                         </secondaryVerb>
                         <secondaryAmmoProps>
                             <magazineSize>6</magazineSize>
@@ -268,7 +301,7 @@
                     </li>
                 </value>
             </li>
-        
+            -->
             <!-- GAU-8 -->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_GAU8Gatlinggun</defName>

@@ -137,9 +137,9 @@
                 <hasStandardCommand>true</hasStandardCommand>
 				<requireLineOfSight>true</requireLineOfSight>
                 <defaultProjectile>Bullet_9M311_SAM</defaultProjectile>
-				<defaultCooldownTime>10</defaultCooldownTime>
+				<defaultCooldownTime>15</defaultCooldownTime>
                 <range>120</range>
-				<minRange>25</minRange>
+				<minRange>40</minRange>
                 <soundCast>Shot_IncendiaryLauncher</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>18</muzzleFlashScale>

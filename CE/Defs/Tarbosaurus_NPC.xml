@@ -11,8 +11,8 @@
       <ArmorRating_Sharp>36</ArmorRating_Sharp><!--銳抗-->
       <ArmorRating_Blunt>68</ArmorRating_Blunt><!--鈍抗-->
       <ArmorRating_Heat>0.5</ArmorRating_Heat>  <!--能抗-->
-      <CarryWeight>1250</CarryWeight>
-      <CarryBulk>1000</CarryBulk>
+      <CarryWeight>300</CarryWeight>
+      <CarryBulk>230</CarryBulk>
 	  <AimingAccuracy>1.35</AimingAccuracy>
 	  <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
 	  <MeleeDodgeChance>0.04</MeleeDodgeChance>

@@ -63,12 +63,13 @@
 					<graphicData>
 						<texPath>Things/Ammo/76mm9M311Missile/Projectile</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
-      						<shaderType>TransparentPostLight</shaderType>
+      					<shaderType>TransparentPostLight</shaderType>
+						<drawSize>2</drawSize>
 					</graphicData>
 					<projectile Class="CombatExtended.ProjectilePropertiesCE">
 						<suppressionFactor>1.5</suppressionFactor>
 						<explosionRadius>2.5</explosionRadius>
-						<speed>150</speed>
+						<speed>110</speed>
 			            <damageDef>Bomb</damageDef>
 			            <armorPenetrationSharp>0</armorPenetrationSharp>
 			            <damageAmountBase>286</damageAmountBase>
@@ -78,7 +79,7 @@
                         <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
 			            <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
 			            <flyOverhead>true</flyOverhead>
-			            <gravityFactor>50</gravityFactor>
+			            <gravityFactor>35</gravityFactor>
 			            <soundAmbient>RocketPropelledLoop_Small</soundAmbient>
 						<armingDelay>0.5</armingDelay>
 					</projectile>
@@ -93,7 +94,7 @@
 						</li>
 						<li Class="AOBAUtilities.CompProperties_Flecker">
                             <fleck>Smoke</fleck>
-                            <fleckSize>0.5</fleckSize>
+                            <fleckSize>1</fleckSize>
                         </li>
 						<li Class="AOBAUtilities.CompProperties_Flecker">
 							<fleck>FT_ExhaustFlame</fleck>

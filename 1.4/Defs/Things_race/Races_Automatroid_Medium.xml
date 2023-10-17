@@ -31,6 +31,7 @@
           <li>ShortShots</li>
           <li>Autopistol</li>
           <li>DMS_MechWeaponLight</li>
+          <li>IndustrialGun</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -564,7 +565,7 @@
       <!--<mechEnabledWorkTypes>-->
       <!--  <li></li>-->                                                  <!--允許的工作類型-->
       <!--</mechEnabledWorkTypes>-->
-      <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
+      <body>DMS_Humanoid_TypeB_ShieldL</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>1.1</baseBodySize>
       <baseHealthScale>1.85</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
@@ -583,6 +584,42 @@
         </UsableTechLevels>
       </li>
     </modExtensions>
+    <tools Inherit="False">
+      <li>
+        <label>ballistic shield</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>BallisticShield</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>18</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">  <!-- DMS_Mech_Protector 塔盾手:防禦特化  -->
@@ -599,7 +636,7 @@
           <texPath>Things/Automatroid/protector</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
+          <drawSize>2</drawSize>
         </bodyGraphicData>
       </li>
       <li>
@@ -607,7 +644,7 @@
           <texPath>Things/Automatroid/OldTexture/protector</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
+          <drawSize>2</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>

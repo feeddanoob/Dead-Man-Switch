@@ -397,7 +397,7 @@
                     <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
                 </AmmoUser>
                 <FireModes>
-				    <aiUseBurstMode>FALSE</aiUseBurstMode>
+				    <!--<aiUseBurstMode>FALSE</aiUseBurstMode>-->
 				    <aiAimMode>SuppressFire</aiAimMode>
 					<aimedBurstShotCount>5</aimedBurstShotCount>
                     <noSingleShot>true</noSingleShot>
@@ -439,7 +439,7 @@
                     <ammoSet>AmmoSet_50BMG</ammoSet>
                 </AmmoUser>
                 <FireModes>
-				    <aiUseBurstMode>FALSE</aiUseBurstMode>
+				    <!--<aiUseBurstMode>FALSE</aiUseBurstMode>-->
 				    <aiAimMode>SuppressFire</aiAimMode>
 					<aimedBurstShotCount>5</aimedBurstShotCount>
                     <noSingleShot>true</noSingleShot>

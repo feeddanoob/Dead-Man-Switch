@@ -112,9 +112,10 @@
 	<li Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="BaseAutomatroidRace"]/comps</xpath>
 		<value>
+			<!--
 			<li>
 				<compClass>CombatExtended.CompPawnGizmo</compClass>
-			</li>
+			</li>-->
 			<li>
 				<compClass>CombatExtended.CompAmmoGiver</compClass>
 			</li>
@@ -573,6 +574,44 @@
 		</value>
 	</li>
 
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Protector"]/tools</xpath>
+		<value>
+			<tools Inherit="Fasle">
+				<li Class="CombatExtended.ToolCE">
+					<label>ballistic shield</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>9</power>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Stun</def>
+								<amount>8</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
+					<cooldownTime>1.54</cooldownTime>
+					<linkedBodyPartsGroup>BallisticShield</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>2.155</armorPenetrationBlunt>
+					<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>1.11</cooldownTime>
+					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>1.688</armorPenetrationBlunt>
+					<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				</li>
+			</tools>
+		</value>
+	</li>
+
 
 
 	<!-- ======Siegerbreaker======-->
@@ -664,6 +703,14 @@
 						<li>Blunt</li>
 					</capacities>
 					<power>3</power>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Stun</def>
+								<amount>5</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
 					<cooldownTime>1.01</cooldownTime>
 					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 					<armorPenetrationBlunt>0.873</armorPenetrationBlunt>
@@ -675,6 +722,14 @@
 						<li>Blunt</li>
 					</capacities>
 					<power>3</power>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Stun</def>
+								<amount>5</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
 					<cooldownTime>1.01</cooldownTime>
 					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 					<armorPenetrationBlunt>0.873</armorPenetrationBlunt>

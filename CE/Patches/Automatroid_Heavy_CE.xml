@@ -11,7 +11,10 @@
 
 	<!-- ========== PawnKind Patches ========== -->
     <li Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="DMS_Mech_Reptile" or 
+		<xpath>Defs/PawnKindDef[defName="DMS_Mech_BattleFrame" or
+			                    defName="DMS_Mech_FieldCommand" or
+			                    defName="DMS_Mech_Ape" or
+			                    defName="DMS_Mech_Reptile" or 
 			                    defName="DMS_Mech_Tarbosaurus" or
 								defName="DMS_Mech_Caretta" or 
 								defName="DMS_Mech_Geochelone" or 
@@ -46,8 +49,8 @@
 	<li Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="BaseBattleFrame"]/statBases</xpath>
 		<value>
-			<CarryWeight>120</CarryWeight>
-			<CarryBulk>75</CarryBulk>
+			<CarryWeight>80</CarryWeight>
+			<CarryBulk>50</CarryBulk>
 			<AimingAccuracy>0.75</AimingAccuracy>
 			<ShootingAccuracyPawn>0.9</ShootingAccuracyPawn>
 			<MeleeDodgeChance>0.01</MeleeDodgeChance>
@@ -63,8 +66,8 @@
 		<xpath>Defs/ThingDef[defName="DMS_Mech_FieldCommand"]</xpath>
 		<value>
 			<statBases>
-			    <CarryWeight>30</CarryWeight>
-			    <CarryBulk>20</CarryBulk>
+			    <CarryWeight>25</CarryWeight>
+			    <CarryBulk>18</CarryBulk>
 		    </statBases>
 		</value>
 	</li>
@@ -131,8 +134,8 @@
 		<li Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[defName="DMS_Mech_Reptile"]/statBases</xpath>
 			<value>
-				<CarryWeight>200</CarryWeight>
-				<CarryBulk>175</CarryBulk>
+				<CarryWeight>100</CarryWeight>
+				<CarryBulk>80</CarryBulk>
 				<AimingAccuracy>1</AimingAccuracy>
 				<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
 				<MeleeDodgeChance>0.08</MeleeDodgeChance>
@@ -211,6 +214,14 @@
 							<li>Blunt</li>
 						</capacities>
 						<power>26</power>
+						<surpriseAttack>
+							<extraMeleeDamages>
+								<li>
+									<def>Stun</def>
+									<amount>10</amount>
+								</li>
+							</extraMeleeDamages>
+						</surpriseAttack>
 						<cooldownTime>3.65</cooldownTime>
 						<linkedBodyPartsGroup>LeftMechanicalLeg</linkedBodyPartsGroup>
 						<armorPenetrationBlunt>28.5</armorPenetrationBlunt>
@@ -222,6 +233,14 @@
 							<li>Blunt</li>
 						</capacities>
 						<power>26</power>
+						<surpriseAttack>
+							<extraMeleeDamages>
+								<li>
+									<def>Stun</def>
+									<amount>10</amount>
+								</li>
+							</extraMeleeDamages>
+						</surpriseAttack>
 						<cooldownTime>3.65</cooldownTime>
 						<linkedBodyPartsGroup>RightMechanicalLeg</linkedBodyPartsGroup>
 						<armorPenetrationBlunt>28.5</armorPenetrationBlunt>
@@ -247,8 +266,8 @@
 	<li Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="DMS_Mech_Ape"]/statBases</xpath>
 		<value>
-			<CarryWeight>80</CarryWeight>
-			<CarryBulk>60</CarryBulk>
+			<CarryWeight>70</CarryWeight>
+			<CarryBulk>55</CarryBulk>
 			<AimingAccuracy>1</AimingAccuracy>
 			<ShootingAccuracyPawn>1.35</ShootingAccuracyPawn>
 			<MeleeDodgeChance>0.09</MeleeDodgeChance>
@@ -319,10 +338,10 @@
 
 	<!-- ======Tarbosaurus (mech boss1)======-->
 	<li Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus" or defName="DMS_Mech_Tarbosaurus_A"]/statBases</xpath>
 		<value>
-			<CarryWeight>1250</CarryWeight> <!--ridiculously overweight and over bulk weapon system and ammo :(-->
-			<CarryBulk>1000</CarryBulk>
+			<CarryWeight>300</CarryWeight> <!--ridiculously overweight and over bulk weapon system and ammo :(-->
+			<CarryBulk>230</CarryBulk>
 			<AimingAccuracy>1.35</AimingAccuracy>
 			<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
 			<MeleeDodgeChance>0.04</MeleeDodgeChance>
@@ -334,31 +353,31 @@
 	</li>
 
 	<li Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus"]/statBases/ArmorRating_Blunt</xpath>
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus" or defName="DMS_Mech_Tarbosaurus_A"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
-			<ArmorRating_Blunt>68</ArmorRating_Blunt>
+			<ArmorRating_Blunt>65</ArmorRating_Blunt>
 		</value>
 	</li>
 	
 	<!--only torso (maybe also head since it's a bipedal mech)-->
 	<li Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus"]/statBases/ArmorRating_Sharp</xpath>
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus" or defName="DMS_Mech_Tarbosaurus_A"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
 			<ArmorRating_Sharp>36</ArmorRating_Sharp>
 		</value>
 	</li>
 
 	<li Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus"]/statBases/ArmorRating_Heat</xpath>
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus" or defName="DMS_Mech_Tarbosaurus_A"]/statBases/ArmorRating_Heat</xpath>
 		<value>
 			<ArmorRating_Heat>0.5</ArmorRating_Heat>
 		</value>
 	</li>
 
 	<li Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus" or defName="DMS_Mech_Tarbosaurus_A"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus"]</xpath>
+			<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus" or defName="DMS_Mech_Tarbosaurus_A"]</xpath>
 			<value>
 				<comps />
 			</value>
@@ -366,13 +385,13 @@
 	</li>
 
 	<li Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus" or defName="DMS_Mech_Tarbosaurus_A"]/comps</xpath>
 		<value>
 			<li Class="CombatExtended.CompProperties_ArmorDurability">
-				<Durability>4250</Durability>
+				<Durability>4500</Durability>
 				<Regenerates>true</Regenerates>
 				<RegenInterval>1250</RegenInterval>
-				<RegenValue>5</RegenValue>
+				<RegenValue>25</RegenValue>
 				<Repairable>true</Repairable>
 				<RepairIngredients>
 					<Steel>5</Steel>
@@ -381,8 +400,8 @@
 				<RepairTime>300</RepairTime>
 				<RepairValue>200</RepairValue>
 				<CanOverHeal>true</CanOverHeal>
-				<MaxOverHeal>425</MaxOverHeal>
-				<MinArmorPct>0.75</MinArmorPct>
+				<MaxOverHeal>450</MaxOverHeal>
+				<MinArmorPct>0.8</MinArmorPct>
 				<!-- <MinArmorValueSharp>10</MinArmorValueSharp>
 				<MinArmorValueBlunt>22</MinArmorValueBlunt>
 				<MinArmorValueHeat>0.2</MinArmorValueHeat>
@@ -401,6 +420,14 @@
 						<li>Blunt</li>
 					</capacities>
 					<power>35</power>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Stun</def>
+								<amount>15</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
 					<cooldownTime>3.65</cooldownTime>
 					<linkedBodyPartsGroup>LeftMechanicalLeg</linkedBodyPartsGroup>
 					<armorPenetrationBlunt>49</armorPenetrationBlunt>
@@ -412,6 +439,14 @@
 						<li>Blunt</li>
 					</capacities>
 					<power>35</power>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Stun</def>
+								<amount>15</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
 					<cooldownTime>3.65</cooldownTime>
 					<linkedBodyPartsGroup>RightMechanicalLeg</linkedBodyPartsGroup>
 					<armorPenetrationBlunt>49</armorPenetrationBlunt>
@@ -431,6 +466,193 @@
 			</tools>
 		</value>
 	</li>
+
+
+	<!-- ====== Caretta and Geochelone(both are IFV but first one has 20mm cannon)======-->
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or defName="DMS_Mech_Geochelone"]/statBases</xpath>
+		<value>
+			<CarryWeight>300</CarryWeight>
+			<CarryBulk>200</CarryBulk>
+			<AimingAccuracy>1</AimingAccuracy>
+			<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+			<MeleeDodgeChance>0.00</MeleeDodgeChance>
+			<MeleeCritChance>0.18</MeleeCritChance>
+			<MeleeParryChance>0.48</MeleeParryChance>
+			<MaxHitPoints>500</MaxHitPoints>
+			<NightVisionEfficiency>0.8</NightVisionEfficiency>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or defName="DMS_Mech_Geochelone"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>76</ArmorRating_Blunt>
+		</value>
+	</li>
+    
+	<!--only torso-->
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or defName="DMS_Mech_Geochelone"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>40</ArmorRating_Sharp>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or defName="DMS_Mech_Geochelone"]/statBases/ArmorRating_Heat</xpath>
+		<value>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+		</value>
+	</li>
+
+	<li Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or defName="DMS_Mech_Geochelone"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or defName="DMS_Mech_Geochelone"]</xpath>
+			<value>
+				<comps />
+			</value>
+		</nomatch>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or defName="DMS_Mech_Geochelone"]/comps</xpath>
+		<value>
+			<li Class="CombatExtended.CompProperties_ArmorDurability">
+				<Durability>4250</Durability>
+				<Regenerates>true</Regenerates>
+				<RegenInterval>1250</RegenInterval>
+				<RegenValue>10</RegenValue>
+				<Repairable>true</Repairable>
+				<RepairIngredients>
+					<Steel>5</Steel>
+					<Tungsteel>5</Tungsteel>
+				</RepairIngredients>
+				<RepairTime>300</RepairTime>
+				<RepairValue>200</RepairValue>
+				<CanOverHeal>true</CanOverHeal>
+				<MaxOverHeal>425</MaxOverHeal>
+				<MinArmorPct>0.8</MinArmorPct>
+				<!-- <MinArmorValueSharp>10</MinArmorValueSharp>
+				<MinArmorValueBlunt>22</MinArmorValueBlunt>
+				<MinArmorValueHeat>0.2</MinArmorValueHeat>
+				<MinArmorValueElectric>0.1</MinArmorValueElectric> -->
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or defName="DMS_Mech_Geochelone"]/tools</xpath>
+		<value>
+			<tools Inherit="False">
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>40</power>
+					<cooldownTime>5.53</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>43</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+
+	<!-- ====== KillDozer======-->
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Killdozer"]/statBases</xpath>
+		<value>
+			<CarryWeight>200</CarryWeight> <!--additional armor reduce capacity-->
+			<CarryBulk>140</CarryBulk>
+			<AimingAccuracy>1</AimingAccuracy>
+			<ShootingAccuracyPawn>1.2</ShootingAccuracyPawn> <!--dozer block shot and reduce gun handling(?)-->
+			<MeleeDodgeChance>0.00</MeleeDodgeChance>
+			<MeleeCritChance>0.15</MeleeCritChance>
+			<MeleeParryChance>0.65</MeleeParryChance><!--big dozer big block-->
+			<MaxHitPoints>500</MaxHitPoints>
+			<NightVisionEfficiency>0.8</NightVisionEfficiency>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Killdozer"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>88</ArmorRating_Blunt>
+		</value>
+	</li>
+    
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Killdozer"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>55</ArmorRating_Sharp>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Killdozer"]/statBases/ArmorRating_Heat</xpath>
+		<value>
+			<ArmorRating_Heat>0.35</ArmorRating_Heat>
+		</value>
+	</li>
+
+	<li Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Killdozer"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DMS_Mech_Killdozer"]</xpath>
+			<value>
+				<comps />
+			</value>
+		</nomatch>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Killdozer"]/comps</xpath>
+		<value>
+			<li Class="CombatExtended.CompProperties_ArmorDurability">
+				<Durability>4250</Durability>
+				<Regenerates>true</Regenerates>
+				<RegenInterval>1250</RegenInterval>
+				<RegenValue>10</RegenValue>
+				<Repairable>true</Repairable>
+				<RepairIngredients>
+					<Steel>5</Steel>
+					<Tungsteel>5</Tungsteel>
+				</RepairIngredients>
+				<RepairTime>300</RepairTime>
+				<RepairValue>200</RepairValue>
+				<CanOverHeal>true</CanOverHeal>
+				<MaxOverHeal>425</MaxOverHeal>
+				<MinArmorPct>0.85</MinArmorPct>
+				<!-- <MinArmorValueSharp>10</MinArmorValueSharp>
+				<MinArmorValueBlunt>22</MinArmorValueBlunt>
+				<MinArmorValueHeat>0.2</MinArmorValueHeat>
+				<MinArmorValueElectric>0.1</MinArmorValueElectric> -->
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Killdozer"]/tools</xpath>
+		<value>
+			<tools Inherit="False">
+				<li Class="CombatExtended.ToolCE">
+					<label>dozer blade</label>
+					<capacities>
+						<li>Blunt</li>
+						<li>Demolish</li>
+					</capacities>
+					<power>50</power>
+					<cooldownTime>6.2</cooldownTime>
+					<linkedBodyPartsGroup>DozerBlade</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>48</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</li>
+
 		   
 
 			</operations>
