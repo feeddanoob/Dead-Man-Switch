@@ -42,6 +42,27 @@
 		</value>
 	</li>
 
+	<li Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Reptile" or defName="DMS_Mech_Tarbosaurus"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>QuadrupedTall</bodyShape>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or 
+			                 defName="DMS_Mech_Geochelone" or 
+			                 defName="DMS_Mech_Killdozer"
+			                ]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadrupeds</bodyShape>
+			</li>
+		</value>
+	</li>
+
 
     <!-- ======Battleframe (early stage of attempt on humanoid mech production)======-->
 	<!-- yet being a weapon platform compatible with all kinds of weapons, it has very bad combat capability,

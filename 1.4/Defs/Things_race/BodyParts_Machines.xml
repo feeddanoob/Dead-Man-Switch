@@ -171,7 +171,7 @@
   <BodyPartDef>
     <defName>DMS_DozerBlade</defName>
     <label>dozer blade</label>
-    <hitPoints>100</hitPoints>
+    <hitPoints>150</hitPoints>
     <frostbiteVulnerability>0</frostbiteVulnerability>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
