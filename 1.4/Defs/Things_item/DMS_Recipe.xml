@@ -87,8 +87,8 @@
     <label>make tungsteel</label>
     <description>sintering tungsteel.</description>
     <jobString>sintering.</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>ConstructMetal</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <recipeUsers>
       <li>DMS_Furnace</li>

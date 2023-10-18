@@ -161,19 +161,57 @@
 			<AccuracyShort>0.85</AccuracyShort>
 			<AccuracyMedium>0.80</AccuracyMedium>
 			<AccuracyLong>0.75</AccuracyLong>
-			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
+		<comps Inherit="False">
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li Class="MVCF.Comps.CompProperties_VerbProps">
+				<verbProps>
+					<li>
+						<label>LaunchSAM</label>						
+						<visualLabel>launch SAM</visualLabel>
+						<description>launch 9M311 missile</description>
+						<canBeToggled>true</canBeToggled>
+						<comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
+								<compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
+								<cooldownTime>15</cooldownTime>
+							</li>
+							<!--
+							<li Class="MVCF.Reloading.Comps.VerbCompProperties_Reloadable">
+								<compClass>MVCF.Reloading.Comps.VerbComp_Reloadable</compClass>
+								<AmmoFilter>
+									<thingDefs>
+										<li>Shell_HighExplosive</li>
+									</thingDefs>
+								</AmmoFilter>
+								<ItemsPerShot>1</ItemsPerShot>
+								<MaxShots>6</MaxShots>
+								<ReloadSound>Standard_Reload</ReloadSound>
+								<ReloadTimePerShot>10</ReloadTimePerShot>
+								<GenerateAmmo>
+									<Shell_HighExplosive>6</Shell_HighExplosive>
+								</GenerateAmmo>
+							</li>-->
+						</comps>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
 		<verbs>
 			<li>
+				<label>2K22/TWS</label>
 				<verbClass>Verb_Shoot</verbClass>
 				<defaultProjectile>DMS_Bullet_CIWS</defaultProjectile>
 				<requireLineOfSight>true</requireLineOfSight>
-				<warmupTime>1</warmupTime>
+				<warmupTime>1.45</warmupTime>
 				<minRange>5.9</minRange>
 				<range>44.9</range>
 				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
 				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-				<burstShotCount>100</burstShotCount>
+				<burstShotCount>40</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>15</muzzleFlashScale>

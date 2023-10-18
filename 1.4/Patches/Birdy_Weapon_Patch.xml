@@ -2,14 +2,13 @@
 <Patch>
     
     <!--give grenades to birdy-->
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[@Name="BaseMakeableGrenade"]/weaponTags</xpath>
-        <match Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[@Name="BaseMakeableGrenade"]/weaponTags</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="BaseMakeableGrenade"]</xpath>
             <value>
-                <li>VerlingBird_Weapon</li>
+                <weaponTags>
+                    <li>VerlingBird_Weapon</li>
+                </weaponTags>
             </value>
-        </match>
     </Operation>
 
 

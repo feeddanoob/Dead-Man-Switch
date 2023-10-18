@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <!-- T3軍方人員 -->
-  <PawnKindDef Name="DMS_SoldierBase" ParentName="OutlanderBase">
-    <defName>DMS_Soldier</defName>
+
+  <!-- T2警務人員 -->
+  <PawnKindDef Name="DMS_SoldierBase" ParentName="DMS_OutlanderBase" Abstract="True">
     <label>soldier</label>
-    <combatPower>75</combatPower>
+    <combatPower>100</combatPower>
     <initialResistanceRange>15~24</initialResistanceRange>
     <initialWillRange>20~50</initialWillRange>
     <isFighter>true</isFighter>
     <gearHealthRange>0.6~2</gearHealthRange>
-    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-    <apparelMoney>5000~8000</apparelMoney>
-    <apparelRequired>
-      <li>DMS_Apparel_TacticalHelmet</li>
-      <li>DMS_Apparel_TacticalVest</li>
-      <li MayRequire="vanillaexpanded.vappe">VAE_Apparel_MilitaryUniform</li>
-    </apparelRequired>
     <apparelTags>
       <li>IndustrialMilitaryBasic</li>
-      <li>BeltDefensePop</li>
     </apparelTags>
-    <weaponMoney>2500~5000</weaponMoney>
-    <weaponTags>
-      <li>Gun</li>
-    </weaponTags>
+    <apparelMoney>2000~3000</apparelMoney>
+    <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
     <techHediffsChance>0.04</techHediffsChance>
     <techHediffsMoney>200~700</techHediffsMoney>
     <techHediffsTags>
@@ -32,27 +22,63 @@
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
     <maxGenerationAge>45</maxGenerationAge>
-    <backstoryFiltersOverride>
+    <!-- <backstoryFiltersOverride>
       <li>
         <categories>
           <li>DMS_Fighter</li>
         </categories>
       </li>
-    </backstoryFiltersOverride>
+    </backstoryFiltersOverride> -->
     <disallowedTraits>
       <li>BodyPurist</li>
     </disallowedTraits>
-    <biocodeWeaponChance>0.5</biocodeWeaponChance>
+  </PawnKindDef>
+
+  <!-- T3軍方人員 -->
+  <PawnKindDef ParentName="DMS_SoldierBase">
+    <defName>DMS_Soldier</defName>
+    <label>soldier</label>
+    <apparelRequired>
+      <li>DMS_Apparel_TacticalHelmet</li>
+      <li>DMS_Apparel_PowerSkelton</li>
+      <li>DMS_Apparel_TacticalVest</li>
+      <li MayRequire="vanillaexpanded.vappe">VAE_Apparel_MilitaryUniform</li>
+    </apparelRequired>
+    <weaponMoney>2500~5000</weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
     <skills>
       <li>
         <skill>Shooting</skill>
         <range>8~16</range>
-      </li>      
+      </li>
       <li>
         <skill>Melee</skill>
         <range>8~10</range>
       </li>
     </skills>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(90, 100, 90)</only>
+            </li>
+          </options>
+        </colorGenerator>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Middle</apparelLayer>
+        <stuff>DMS_Ceramics</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <apparelLayer>Overhead</apparelLayer>
+        <stuff>Tungsteel</stuff>
+      </li>
+    </specificApparelRequirements>
   </PawnKindDef>
 
 </Defs>

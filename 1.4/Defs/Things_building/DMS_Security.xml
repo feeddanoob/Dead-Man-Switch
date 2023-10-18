@@ -24,7 +24,7 @@
     <pathCost>50</pathCost>
     <fillPercent>0.75</fillPercent>
     <tickerType>Normal</tickerType>
-    <designationCategory>Security</designationCategory>
+    <designationCategory>DMS_Category</designationCategory>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <comps>
       <li Class="CompProperties_Forbiddable" />

@@ -77,6 +77,7 @@
 			<li Class="HeavyWeapons.HeavyWeapon">
 				<isHeavy>true</isHeavy>
 				<supportedArmors>
+					<li>DMS_Apparel_PowerSkelton</li>
 					<li MayRequire="VanillaExpanded.VWEHW" >VWE_Apparel_Exoframe</li>
 					<li MayRequire="AOBA.RimThunder.MobileInfantry" >RTMI_MobileSuit</li>
 				</supportedArmors>
@@ -798,10 +799,11 @@
 
 
 	<!-- 待完成 : 重型無後座力砲，單手榴彈發射槍(消防/燃燒/毒氣) -->
-<!--	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<!--高周波開山刀-->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>DMS_Machete</defName>
-		<label>machete</label>
-		<description>Designed to cut bushes and vines in jungle environment, yet equally capable to be a melee weapon.</description>
+		<label>progressive machete</label>
+		<description>May look like a normal machete, but it's a weapon with unique design which specify for mech's melee combat capability.\n\nWith its high frequency vibrating edge, it can cut through most things with ease.</description>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Machete</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -810,15 +812,11 @@
 		<weaponTags>
 			<li>DMS_MeleeWeapon</li>
 		</weaponTags>
-		<costStuffCount>100</costStuffCount>
 		<statBases>
-			<WorkToMake>18000</WorkToMake>
+			<WorkToMake>43000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<tools>
 			<li>
 				<label>handle</label>
@@ -845,14 +843,96 @@
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 		</tools>
+		<costList>
+			<Tungsteel>115</Tungsteel>
+			<Plasteel>30</Plasteel>
+			<ComponentStamped>7</ComponentStamped>
+		</costList>
 		<recipeMaker>
-			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<researchPrerequisites>
+				<li>LongBlades</li>
+                <li>DMS_EquipmentElite</li>
+			</researchPrerequisites>
 			<skillRequirements>
-				<Crafting>5</Crafting>
+				<Crafting>8</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
 
--->
+    <!-- Door Breaker, breach weapon for siegebreaker-->
+	<ThingDef ParentName="DMS_AutomatroidGun">
+		<defName>DMS_DoorBreaker</defName>
+		<label>Door Breaker</label>
+		<description>A special design battering ram for mech breacher which has a built-in launcher, and an explosive ramming head.</description>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>		
+		<weaponTags>
+			<li>DMS_MechWeaponBreach</li>			
+		</weaponTags>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_DoorBreaker</texPath>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>20.75</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.87</AccuracyShort>
+			<AccuracyMedium>0.64</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>	
+		<equippedStatOffsets>
+		  <MoveSpeed>-0.15</MoveSpeed>
+		</equippedStatOffsets>
+		<recipeMaker>
+		    <researchPrerequisites>
+      			<li>GasOperation</li>
+      			<li>DMS_EquipmentElite</li>
+    		</researchPrerequisites>
+		</recipeMaker>		
+		<costList>
+			<Tungsteel>95</Tungsteel>
+			<ComponentStamped>5</ComponentStamped>
+			<Chemfuel>20</Chemfuel>		
+		</costList>	
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ThumpCannon</defaultProjectile>
+				<forcedMissRadius>1.2</forcedMissRadius>
+				<warmupTime>3.5</warmupTime>
+				<range>24.9</range>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				  </targetParams>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<noiseRadius>4</noiseRadius>
+			</li>
+		</verbs>
+		<tools Inherit="False">
+			<li>
+				<label>head</label>
+				<capacities>
+				  <li>Demolish</li>
+				</capacities>
+				<power>22.5</power>
+				<cooldownTime>3.8</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 
 </Defs>

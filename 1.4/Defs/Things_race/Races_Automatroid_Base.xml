@@ -125,7 +125,7 @@
     <damageMultipliers>
       <li>
         <damageDef>EMP</damageDef>
-        <multiplier>0</multiplier>
+        <multiplier>0.7</multiplier>
       </li>
       <li>
         <damageDef>Stun</damageDef>
@@ -137,7 +137,7 @@
       </li>
       <li MayRequire="CETeam.CombatExtended">
         <damageDef>Electrical</damageDef>
-        <multiplier>0</multiplier>
+        <multiplier>0.5</multiplier>
       </li>
     </damageMultipliers>
   </ThingDef>
@@ -192,7 +192,7 @@
     <inspectorTabs Inherit="False">
       <li>ITab_Pawn_Health</li>
       <li>ITab_Pawn_Needs</li>
-      <li>ITab_Pawn_Character</li>
+      <!--<li>ITab_Pawn_Character</li>
       <li>ITab_Pawn_Training</li>
       <li>ITab_Pawn_Social</li>
       <li>ITab_Pawn_Guest</li>
@@ -200,7 +200,7 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">ITab_Pawn_Slave</li>
       <li MayRequire="Ludeon.RimWorld.Biotech">ITab_Pawn_Feeding</li>
       <li MayRequire="Ludeon.RimWorld.Biotech">ITab_Genes</li>
-      <li MayRequire="Ludeon.RimWorld.Biotech">ITab_GenesPregnancy</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ITab_GenesPregnancy</li>-->
       <li>ITab_Pawn_FormingCaravan</li>
       <li>DMS.ITab_Mech_Gear</li>
       <li>ITab_Pawn_Log</li>

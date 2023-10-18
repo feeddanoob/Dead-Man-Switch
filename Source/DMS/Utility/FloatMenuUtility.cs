@@ -13,7 +13,6 @@ namespace DMS
 {
     public static class FloatMenuUtility
     {
-        
         public static FloatMenuOption TryMakeFloatMenuForWeapon(this WeaponUsableMech pawn, ThingWithComps equipment)
         {
             string labelShort = equipment.LabelShort;
@@ -40,6 +39,7 @@ namespace DMS
                 pawn.Equip(equipment);
             });
         }
+
         public static FloatMenuOption TryMakeFloatMenuForWeapon(this HumanlikeMech pawn, ThingWithComps equipment)
         {
             string labelShort = equipment.LabelShort;

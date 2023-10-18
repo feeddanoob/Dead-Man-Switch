@@ -3,7 +3,6 @@ using Verse;
 using RimWorld;
 using UnityEngine;
 using Verse.AI;
-using VFEMech;
 
 namespace DMS
 {
@@ -22,7 +21,7 @@ namespace DMS
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            this.MechWeapon = this.def.GetModExtension<MechWeaponExtension>();           
+            MechWeapon = def.GetModExtension<MechWeaponExtension>();           
         }
 
         public override IEnumerable<FloatMenuOption> GetExtraFloatMenuOptionsFor(IntVec3 sq)
@@ -31,12 +30,12 @@ namespace DMS
             {
                 yield return item;
             }
-            if (this.Map == null)
+            if (Map == null)
             {
                 Log.Error("Error");
                 yield break;
             } 
-            List<Thing> things = sq.GetThingList(this.Map);
+            List<Thing> things = sq.GetThingList(Map);
 
             for (int i = 0; i < things.Count; i++)
             {
@@ -46,7 +45,7 @@ namespace DMS
                     //沒有開啟武器過濾的情況下任意武器都應該能裝備//如果該裝備是可以使用的
                     if (tmp.TryGetComp<CompEquippable>() != null)
                     {
-                        if (IsMechUseable(tmp))
+                        if (CheckUtility.IsMechUseable(MechWeapon, tmp))
                         {
                             yield return this.TryMakeFloatMenuForWeapon(tmp);
                         }
@@ -59,43 +58,18 @@ namespace DMS
             }
             yield break;
         }
-        private bool IsMechUseable(ThingWithComps tmp)
-        {
-            //開了Tag過濾的話先看是否通過Tag過濾，然後InTechLevel包含了對於EnableTechLevelFilter的判斷
-            if (this.MechWeapon.EnableWeaponFilter)
-            {
-                foreach (var item in this.MechWeapon.UsableWeaponTags)
-                {
-                    if (tmp.def.weaponTags.NotNullAndContains(item) && InTechLevel(tmp))
-                    {
-                        return true;
-                    }
-                }
-                return false;
-            }
-            else if (this.MechWeapon.EnableTechLevelFilter)
-            {
-                return this.MechWeapon.UsableTechLevels.NotNullAndContains(tmp.def.techLevel.ToString());
-            }
-            return true;
-        }
-        private bool InTechLevel(ThingWithComps tmp)//為可用的科技等級。
-        {
-            if (!this.MechWeapon.EnableTechLevelFilter) return true;
-            else return this.MechWeapon.UsableTechLevels.NotNullAndContains(tmp.def.techLevel.ToString());
-        }
         public override void ExposeData()
         {
             base.ExposeData();
             if(Scribe.mode == LoadSaveMode.PostLoadInit)
             {
-                this.Drawer?.renderer?.graphics.SetAllGraphicsDirty();
+                Drawer?.renderer?.graphics.SetAllGraphicsDirty();
             }
         }
         public void Equip(ThingWithComps equipment)
         {
             equipment.SetForbidden(false);
-            this.jobs.TryTakeOrderedJob(JobMaker.MakeJob(JobDefOf.Equip, equipment), JobTag.Misc);
+            jobs.TryTakeOrderedJob(JobMaker.MakeJob(JobDefOf.Equip, equipment), JobTag.Misc);
         }
     }
 }

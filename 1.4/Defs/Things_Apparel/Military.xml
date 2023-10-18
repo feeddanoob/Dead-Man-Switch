@@ -12,7 +12,8 @@
 			<soundWorking>Recipe_Tailor</soundWorking>
 			<recipeUsers>
 				<li>DMS_TableAtrifuscle</li>
-			</recipeUsers>
+			</recipeUsers>	
+			<researchPrerequisite>DMS_Atrifuscle</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 		</recipeMaker>
 		<costList>

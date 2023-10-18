@@ -16,3 +16,10 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\_Dead-Man-Switch-mai
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\_Dead-Man-Switch-main\Source\DMS\obj\Release\DMS.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\_Dead-Man-Switch-main\Source\DMS\obj\Release\DMS.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\_Dead-Man-Switch-main\Source\DMS\obj\Release\DMS.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\_Dead-Man-Switch\Assemblies\DMS.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\_Dead-Man-Switch\Assemblies\DMS.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\_Dead-Man-Switch\Source\DMS\obj\Release\DMS.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\_Dead-Man-Switch\Source\DMS\obj\Release\DMS.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\_Dead-Man-Switch\Source\DMS\obj\Release\DMS.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\_Dead-Man-Switch\Source\DMS\obj\Release\DMS.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\_Dead-Man-Switch\Source\DMS\obj\Release\DMS.pdb
