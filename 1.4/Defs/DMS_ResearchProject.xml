@@ -96,8 +96,8 @@
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
     <defName>DMS_Prosthetic</defName>
-    <label>military prosthetic</label>
-    <description>The predecessor of the mechanical soldier project, mechanical prosthetic are for disabled soldiers, is cheap and durable. However, due to the consideration of durability and mass production, its work efficiency is not as good as the original one.</description>
+    <label>neural prosthetic</label>
+    <description>Neural prosthetic are designed for disabled soldiers. It is durable and the need for adaptation training is almost negligible. However, due to the consideration of durability and mass production, its work efficiency is not as good as the original one.</description>
     <baseCost>1250</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>

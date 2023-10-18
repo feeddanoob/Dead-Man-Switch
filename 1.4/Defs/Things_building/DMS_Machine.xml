@@ -38,7 +38,7 @@
       <fillPercent>0.1</fillPercent>
       <uiIconScale>1.2</uiIconScale>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>DMS_Category</designationCategory>
     <researchPrerequisites>
       <li>DMS_UAVBasis</li>
     </researchPrerequisites>

@@ -4,12 +4,12 @@
   <PawnKindDef Name="DMS_OutlanderBase" Abstract="True">
     <race>Human</race>
     <defaultFactionType>OutlanderCivil</defaultFactionType>
-    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
     <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <gearHealthRange>0.75~2.0</gearHealthRange>
     <invNutrition>2.55</invNutrition>
     <apparelTags>
       <li>IndustrialBasic</li>
-      <li>IndustrialAdvanced</li>
     </apparelTags>
   </PawnKindDef>
 
@@ -19,7 +19,6 @@
     <combatPower>45</combatPower>
     <itemQuality>Poor</itemQuality>
     <isFighter>false</isFighter>
-    <gearHealthRange>0.75~2.0</gearHealthRange>
     <weaponTags>
       <li>Gun</li>
       <li>MedievalMeleeBasic</li>
@@ -36,6 +35,59 @@
     </techHediffsTags>
     <initialWillRange>10~15</initialWillRange>
     <initialResistanceRange>10~17</initialResistanceRange>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(0.7, 0.7, 0.7)</only>
+            </li>
+            <li>
+              <only>(0.5, 0.5, 0.5)</only>
+            </li>
+            <li>
+              <only>(0.6, 0.6, 0.6)</only>
+            </li>
+            <li>
+              <only>(104, 120, 119)</only> <!-- drab dark blue -->
+            </li>
+            <li>
+              <only>(119, 145, 121)</only> <!-- drab light green -->
+            </li>
+            <li>
+              <only>(106, 120, 104)</only> <!-- drab dark green -->
+            </li>
+            <li>
+              <only>(140, 140, 119)</only> <!-- tan -->
+            </li>
+            <li>
+              <only>(99, 87, 67)</only> <!-- muted brown -->
+            </li>
+            <li>
+              <only>(128, 116, 84)</only> <!-- light brown -->
+            </li>
+            <li>
+              <only>(107, 94, 64)</only> <!-- mid brown -->
+            </li>
+            <li>
+              <only>(77, 66, 45)</only> <!-- dark brown -->
+            </li>
+          </options>
+        </colorGenerator>
+      </li>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <stuff>Polyester</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>Polyester</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>Polyester</stuff>
+      </li>
+    </specificApparelRequirements>
   </PawnKindDef>
 
 
@@ -46,7 +98,6 @@
     <trader>true</trader>
     <combatPower>45</combatPower>
     <isFighter>false</isFighter>
-    <gearHealthRange>1~1</gearHealthRange>
     <itemQuality>Normal</itemQuality>
     <weaponTags>
       <li>Gun</li>
@@ -86,7 +137,6 @@
     <factionLeader>true</factionLeader>
     <minGenerationAge>30</minGenerationAge>
     <isFighter>false</isFighter>
-    <gearHealthRange>1~1</gearHealthRange>
     <itemQuality>Good</itemQuality>
     <weaponMoney>200~200</weaponMoney>
     <weaponTags>

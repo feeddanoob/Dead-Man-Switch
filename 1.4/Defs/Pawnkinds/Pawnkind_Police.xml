@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- T2警務人員 -->
-  <PawnKindDef ParentName="DMS_OutlanderBase" Name="DMS_PoliceBase">
+  <PawnKindDef ParentName="DMS_OutlanderBase" Name="DMS_PoliceBase" Abstract="True">
     <defName>DMS_Police</defName>
     <label>police</label>
     <combatPower>60</combatPower>
@@ -110,13 +110,63 @@
     </weaponTags>
   </PawnKindDef>
 
+  <!-- 特勤步槍手(AR,衝鋒槍)-->
+  <PawnKindDef ParentName="DMS_PoliceBase">
+    <defName>DMS_Pawn_Police_Assault</defName>
+    <label>police assaulter</label>
+    <combatPower>70</combatPower>
+    <apparelRequired>
+      <li>DMS_Apparel_TacticalHelmet</li>
+      <li>DMS_Apparel_TacticalVest</li>
+      <li MayRequire="vanillaexpanded.vappe">VAE_Apparel_MilitaryUniform</li>
+    </apparelRequired>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(60, 70, 100)</only>
+            </li>
+          </options>
+        </colorGenerator>
+      </li>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>        
+        <apparelLayer>Middle</apparelLayer> 
+        <stuff>Steel</stuff>
+        <color>(68,68,68)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Middle</apparelLayer> 
+        <stuff>Steel</stuff>
+      </li>
+    </specificApparelRequirements>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>10~14</range>
+      </li>
+    </skills>
+    <apparelTags>
+      <li>DMS_Tactical</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <weaponMoney>530~2000</weaponMoney>
+    <weaponTags Inherit="False">
+			<li>A_RC_LongRifle</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+  </PawnKindDef>  
+
+    <!-- 特勤射手(狙擊)-->
   <PawnKindDef ParentName="DMS_PoliceBase">
     <defName>DMS_Pawn_Police_Ranged</defName>
     <label>police sniper</label>
-    <combatPower>70</combatPower>
+    <combatPower>100</combatPower>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
-      <li>DMS_Apparel_TacticalVest</li>
+      <li>Apparel_FlakVest</li>
       <li MayRequire="vanillaexpanded.vappe">VAE_Apparel_MilitaryUniform</li>
     </apparelRequired>
     <specificApparelRequirements>
