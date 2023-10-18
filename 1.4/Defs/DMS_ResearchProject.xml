@@ -112,7 +112,8 @@
     <defName>DMS_EquipmentBasis</defName>
     <label>pioneer equipment</label>
     <description>uniform and equipment designed for human, mainly for colonization purpose include for survival specialist, dropcraft crew and Biotoxicity Handling Squad.</description>
-    <baseCost>100</baseCost>
+    <baseCost>500</baseCost>
+    <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>ComplexClothing</li>
@@ -155,7 +156,7 @@
     <defName>DMS_EquipmentAdvanced</defName>
     <label>defence equipment</label>
     <description>equipment designed for human and automatroid, mainly for colony defence and riot purpose.</description>
-    <baseCost>500</baseCost>
+    <baseCost>750</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>ComplexClothing</li>
@@ -169,7 +170,7 @@
     <defName>DMS_EquipmentElite</defName>
     <label>military equipment</label>
     <description>equipment designed for automatroid which too heavy to operated by humankind, mainly for military purpose.</description>
-    <baseCost>1000</baseCost>
+    <baseCost>1200</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>ComplexClothing</li>
