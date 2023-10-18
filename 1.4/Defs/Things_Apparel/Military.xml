@@ -78,23 +78,37 @@
 		<thingCategories>
 			<li>Apparel</li>
 		</thingCategories>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>	
+			<researchPrerequisite>DMS_EquipmentBasis</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		</recipeMaker>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
 		<statBases>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<MaxHitPoints>50</MaxHitPoints>
-			<WorkToMake>5000</WorkToMake>
+			<WorkToMake>2500</WorkToMake>
 			<Mass>0.05</Mass>
-			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
-			<ArmorRating_Heat>1.2</ArmorRating_Heat>
 			<Insulation_Cold>7</Insulation_Cold>
 			<Insulation_Heat>6</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
+			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>		
 			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
 		</equippedStatOffsets>
-		<costList>
-			<Cloth>45</Cloth>
-		</costList>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>

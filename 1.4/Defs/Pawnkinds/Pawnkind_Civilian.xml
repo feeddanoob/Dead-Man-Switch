@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  
+
   <PawnKindDef Name="DMS_OutlanderBase" Abstract="True">
     <race>Human</race>
     <defaultFactionType>OutlanderCivil</defaultFactionType>
@@ -8,6 +8,9 @@
     <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
     <gearHealthRange>0.75~2.0</gearHealthRange>
     <invNutrition>2.55</invNutrition>
+    <apparelRequired>
+      <li>DMS_Apparel_UnitSuit</li>
+    </apparelRequired>
     <apparelTags>
       <li>IndustrialBasic</li>
     </apparelTags>
@@ -89,7 +92,6 @@
       </li>
     </specificApparelRequirements>
   </PawnKindDef>
-
 
 
   <PawnKindDef ParentName="DMS_OutlanderBase" Name="DMS_TraderBase">
