@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- T2警務人員 -->
+  <!-- T3軍方人員 -->
   <PawnKindDef Name="DMS_SoldierBase" ParentName="DMS_OutlanderBase" Abstract="True">
     <label>soldier</label>
     <combatPower>100</combatPower>
@@ -9,9 +9,6 @@
     <initialWillRange>20~50</initialWillRange>
     <isFighter>true</isFighter>
     <gearHealthRange>0.6~2</gearHealthRange>
-    <apparelTags>
-      <li>IndustrialMilitaryBasic</li>
-    </apparelTags>
     <apparelMoney>2000~3000</apparelMoney>
     <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
     <techHediffsChance>0.04</techHediffsChance>
@@ -22,19 +19,61 @@
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
     <maxGenerationAge>45</maxGenerationAge>
-    <!-- <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>DMS_Fighter</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride> -->
     <disallowedTraits>
       <li>BodyPurist</li>
+      <li>Brawler</li>
     </disallowedTraits>
   </PawnKindDef>
 
-  <!-- T3軍方人員 -->
+  <!-- 勤務兵:訓練中的新兵，軍隊系統裡的半個戰鬥人員 -->
+  <PawnKindDef ParentName="DMS_SoldierBase">
+    <defName>DMS_ServiceMan</defName>
+    <label>service man</label>
+    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Reservist</minTitleRequired>
+    <combatPower>50</combatPower>
+    <apparelRequired>
+      <li>DMS_Apparel_ArmyCap</li>
+    </apparelRequired>
+    <weaponMoney>300~1000</weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>3~8</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>3~8</range>
+      </li>
+    </skills>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(90, 100, 90)</only>
+            </li>            
+            <li>
+              <only>(85, 100, 95)</only>
+            </li>
+            <li>
+              <only>(95, 100, 85)</only>
+            </li>
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+  <!-- 崗哨槍手:負責駐守據點與哨站的輕裝步兵，通常只會穿戴戰術防彈衣與頭盔來保證機動性，使用突擊步槍與衝鋒槍作為主要武裝 -->
+
+  <!-- 機械化步兵機槍手:穿戴動力外骨骼的機槍手，使用機兵輕機槍作為主要武裝-->
+
+  <!-- 機械化破障工兵:穿戴動力外骨骼與重裝甲的工兵，使用破障錘作為主要武裝-->
+  
+  <!-- 機械化精確射手:穿戴動力外骨骼與斥候頭盔的半自動步槍射手，使用機兵精確射手步槍作為主要武裝-->
   <PawnKindDef ParentName="DMS_SoldierBase">
     <defName>DMS_Soldier</defName>
     <label>soldier</label>
@@ -42,7 +81,6 @@
       <li>DMS_Apparel_TacticalHelmet</li>
       <li>DMS_Apparel_PowerSkelton</li>
       <li>DMS_Apparel_TacticalVest</li>
-      <li MayRequire="vanillaexpanded.vappe">VAE_Apparel_MilitaryUniform</li>
     </apparelRequired>
     <weaponMoney>2500~5000</weaponMoney>
     <weaponTags>
@@ -76,7 +114,7 @@
       <li>
         <bodyPartGroup>UpperHead</bodyPartGroup>
         <apparelLayer>Overhead</apparelLayer>
-        <stuff>Tungsteel</stuff>
+        <stuff>Plasteel</stuff>
       </li>
     </specificApparelRequirements>
   </PawnKindDef>
