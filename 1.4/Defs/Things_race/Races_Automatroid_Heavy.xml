@@ -402,6 +402,12 @@
         </surpriseAttack>
       </li>
     </tools>
+    <damageMultipliers>
+      <li>
+        <damageDef>Blunt</damageDef>
+        <multiplier>0.6</multiplier>
+      </li>
+    </damageMultipliers>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">
@@ -474,6 +480,12 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>
+    <damageMultipliers>
+      <li>
+        <damageDef>Blunt</damageDef>
+        <multiplier>0.6</multiplier>
+      </li>
+    </damageMultipliers>
   </ThingDef>
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Mech_Caretta</defName>
@@ -545,6 +557,12 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>
+    <damageMultipliers>
+      <li>
+        <damageDef>Blunt</damageDef>
+        <multiplier>0.6</multiplier>
+      </li>
+    </damageMultipliers>
   </ThingDef>
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Mech_Geochelone</defName>
@@ -619,6 +637,12 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>
+    <damageMultipliers>
+      <li>
+        <damageDef>Blunt</damageDef>
+        <multiplier>0.4</multiplier>
+      </li>
+    </damageMultipliers>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">

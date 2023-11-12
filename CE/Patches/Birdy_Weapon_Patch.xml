@@ -12,7 +12,12 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[defName="DMS_Mech_VerlingBirdA"]/weaponTags</xpath>
             <value>
-                <li>CE_AI_Grenade</li>
+                <li>CE_GrenadeFlashbang</li>
+                <li>GrenadeDestructive</li>
+                <li>GrenadeEMP</li>
+                <li>GrenadeSmoke</li>
+                <li>GrenadeFlame</li>
+                <li>CE_GrenadeNeolithic</li>
             </value>
     </Operation>
 

@@ -363,6 +363,7 @@
 		  <li>LongShots</li>
 		</weaponClasses>
 		<weaponTags>
+			<li>Simple_LongRange</li>
 			<li>IndustrialGun</li>
 		</weaponTags>
 		<graphicData>
@@ -437,6 +438,7 @@
 		  <li>LongShots</li>
 		</weaponClasses>
 		<weaponTags>
+			<li>ElephantGun</li>
 			<li>IndustrialGun</li>
 		</weaponTags>	
 		<graphicData>

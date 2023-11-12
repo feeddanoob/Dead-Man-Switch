@@ -16,6 +16,9 @@
     </apparelTags>
   </PawnKindDef>
 
+
+
+  <!--====== Traders and Civillians ====== -->
   <PawnKindDef ParentName="DMS_OutlanderBase" Name="DMS_CivilianBase">
     <defName>DMS_Civilian</defName>
     <label>civilian</label>
@@ -23,7 +26,7 @@
     <itemQuality>Poor</itemQuality>
     <isFighter>false</isFighter>
     <weaponTags>
-      <li>Gun</li>
+      <li>DMS_MechWeaponUltraLight</li>
       <li>MedievalMeleeBasic</li>
     </weaponTags>
     <weaponMoney>65~250</weaponMoney>
@@ -91,6 +94,16 @@
         <stuff>Polyester</stuff>
       </li>
     </specificApparelRequirements>
+    <forcedSkills>
+      <li>
+        <skill>Shooting</skill>
+        <range>1~5</range>
+      </li>
+	    <li>
+        <skill>Melee</skill>
+        <range>1~5</range>
+      </li>	    	     
+	  </forcedSkills>
   </PawnKindDef>
 
 
@@ -102,7 +115,7 @@
     <isFighter>false</isFighter>
     <itemQuality>Normal</itemQuality>
     <weaponTags>
-      <li>Gun</li>
+      <!--<li>Gun</li>-->
     </weaponTags>
     <weaponMoney>200~200</weaponMoney>
     <apparelMoney>400~600</apparelMoney>
@@ -131,6 +144,89 @@
     </xenotypeSet>
   </PawnKindDef>
 
+  <PawnKindDef ParentName="DMS_CivilianBase">
+    <defName>DMS_MinuteMan</defName>
+    <label>minute man</label>
+    <itemQuality>Normal</itemQuality>
+    <weaponTags Inherit="False">
+      <li>Simple_LongRange</li>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <weaponMoney>200~250</weaponMoney>
+    <apparelMoney>500~1000</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelRequired>
+      <li>Apparel_FlakVest</li>
+      <li>Apparel_SimpleHelmet</li>
+    </apparelRequired>
+    <forcedSkills Inherit="False">
+      <li>
+        <skill>Shooting</skill>
+        <range>4~8</range>
+      </li>
+	    <li>
+        <skill>Melee</skill>
+        <range>4~8</range>
+      </li>	    	     
+	  </forcedSkills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="DMS_CivilianBase">
+    <defName>DMS_MinuteMan_Heavy</defName>
+    <label>heavy minute man</label>
+    <itemQuality>Normal</itemQuality>
+    <weaponTags Inherit="False">
+      <li>ElephantGun</li>
+    </weaponTags>
+    <weaponMoney>300~300</weaponMoney>
+    <apparelMoney>500~1000</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelRequired>
+      <li>Apparel_FlakVest</li>
+      <li>Apparel_SimpleHelmet</li>
+    </apparelRequired>
+    <forcedSkills Inherit="False">
+      <li>
+        <skill>Shooting</skill>
+        <range>4~8</range>
+      </li>
+	    <li>
+        <skill>Melee</skill>
+        <range>5~10</range>
+      </li>	    	     
+	  </forcedSkills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="DMS_CivilianBase">
+    <defName>DMS_Security</defName>
+    <label>security guard</label>
+    <itemQuality>Normal</itemQuality>
+    <weaponTags Inherit="False">
+      <li>A_RC_Pistol</li>
+    </weaponTags>
+    <weaponMoney>200~200</weaponMoney>
+    <apparelMoney>500~1000</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelRequired>
+      <li>Apparel_FlakVest</li>
+      <li>Apparel_SimpleHelmet</li>
+    </apparelRequired>
+    <specificApparelRequirements Inherit="False">
+       <!-- light red uniform-->
+    </specificApparelRequirements>
+    <forcedSkills Inherit="False">
+      <li>
+        <skill>Shooting</skill>
+        <range>4~8</range>
+      </li>
+	    <li>
+        <skill>Melee</skill>
+        <range>4~8</range>
+      </li>	    	     
+	  </forcedSkills>
+  </PawnKindDef>
+
+  <!--
   <PawnKindDef ParentName="DMS_OutlanderBase" Name="DMS_OfficerBase">
     <defName>DMS_Officer</defName>
     <label>military officer</label>
@@ -162,5 +258,5 @@
     <initialWillRange>3~5</initialWillRange>
     <initialResistanceRange>7~11</initialResistanceRange>
   </PawnKindDef>
-
+-->
 </Defs>

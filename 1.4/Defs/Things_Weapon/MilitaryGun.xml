@@ -874,7 +874,6 @@
 			<texPath>Things/Weapons/DMS_DoorBreaker</texPath>
 			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
-		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
 			<WorkToMake>50000</WorkToMake>
 			<Mass>20.75</Mass>

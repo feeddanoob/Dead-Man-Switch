@@ -27,16 +27,18 @@
 
   <!-- 勤務兵:訓練中的新兵，軍隊系統裡的半個戰鬥人員 -->
   <PawnKindDef ParentName="DMS_SoldierBase">
-    <defName>DMS_ServiceMan</defName>
+    <defName>DMS_Squad_ServiceMan</defName>
     <label>service man</label>
     <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Reservist</minTitleRequired>
     <combatPower>50</combatPower>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
+      <li MayRequire="vanillaexpanded.vappe">VAE_Apparel_MilitaryUniform</li>
     </apparelRequired>
     <weaponMoney>300~1000</weaponMoney>
     <weaponTags>
-      <li>Gun</li>
+      <li>A_SG_Pistol</li>
+      <li>Simple_LongRange</li>
     </weaponTags>
     <skills>
       <li>
@@ -46,6 +48,14 @@
       <li>
         <skill>Melee</skill>
         <range>3~8</range>
+      </li>
+      <li>
+        <skill>Cooking</skill>
+        <range>5~10</range>
+      </li>
+      <li>
+        <skill>Social</skill>
+        <range>5~10</range>
       </li>
     </skills>
     <specificApparelRequirements>
@@ -74,6 +84,52 @@
   <!-- 機械化破障工兵:穿戴動力外骨骼與重裝甲的工兵，使用破障錘作為主要武裝-->
   
   <!-- 機械化精確射手:穿戴動力外骨骼與斥候頭盔的半自動步槍射手，使用機兵精確射手步槍作為主要武裝-->
+  <PawnKindDef ParentName="DMS_SoldierBase">
+    <defName>DMS_Squad_Sniper</defName>
+    <label>Marksman</label>
+    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Private</minTitleRequired>
+    <combatPower>80</combatPower>
+    <apparelRequired>
+      <li>Apparel_ArmorHelmetRecon</li>
+      <li>DMS_Apparel_TacticalVest</li>
+      <li>DMS_Apparel_PowerSkelton</li>
+      <li>DMS_Apparel_BionicSuit</li>
+    </apparelRequired>
+    <weaponMoney>530~2000</weaponMoney>
+    <weaponTags>
+      <li>SniperRifle</li>
+      <li>A_DMR_LongRifle</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>14~20</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>1~10</range>
+      </li>
+    </skills>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(90, 100, 90)</only>
+            </li>            
+            <li>
+              <only>(85, 100, 95)</only>
+            </li>
+            <li>
+              <only>(95, 100, 85)</only>
+            </li>
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+
   <PawnKindDef ParentName="DMS_SoldierBase">
     <defName>DMS_Soldier</defName>
     <label>soldier</label>

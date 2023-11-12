@@ -620,6 +620,12 @@
         </surpriseAttack>
       </li>
     </tools>
+    <damageMultipliers>
+      <li>
+        <damageDef>Blunt</damageDef>
+        <multiplier>0.8</multiplier>
+      </li>
+    </damageMultipliers>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">  <!-- DMS_Mech_Protector 塔盾手:防禦特化  -->

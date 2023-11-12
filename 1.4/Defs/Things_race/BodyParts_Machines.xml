@@ -1381,7 +1381,7 @@
       <parts>
         <li>
           <def>MechanicalNeck</def>
-          <coverage>0.09</coverage>
+          <coverage>0.03</coverage>
           <height>Top</height>
           <parts>
             <li>
@@ -1414,7 +1414,7 @@
         <li>
           <def>MechanicalShoulder</def>
           <customLabel>left shoulder</customLabel>
-          <coverage>0.01</coverage>
+          <coverage>0.001</coverage>
           <parts>
             <li>
               <def>MechanicalArm</def>
@@ -1524,7 +1524,7 @@
         <li>
           <def>MechanicalLeg</def>
           <customLabel>left leg</customLabel>
-          <coverage>0.01</coverage>
+          <coverage>0.04</coverage>
           <height>Bottom</height>
           <parts>
             <li>
@@ -1552,7 +1552,7 @@
         <li>
           <def>DMS_BallisticShield</def> 
           <customLabel>ballistic shield</customLabel>
-          <coverage>0.55</coverage>
+          <coverage>0.6</coverage>
           <height>Middle</height>
           <depth>Outside</depth>
           <groups>
@@ -1563,30 +1563,30 @@
         <li>
           <def>DMS_ArmourPlate</def>
           <customLabel>waist armour plate</customLabel>
-          <coverage>0.03</coverage>
+          <coverage>0.02</coverage>
           <depth>Outside</depth>
         </li>
         <li>
           <def>DMS_ArmourPlate</def>
           <customLabel>chest armour plate</customLabel>
-          <coverage>0.06</coverage>
+          <coverage>0.04</coverage>
           <depth>Outside</depth>
         </li>
         <li>
           <def>DMS_Battery</def>
           <customLabel>main battery</customLabel>
-          <coverage>0.015</coverage>
+          <coverage>0.01</coverage>
           <depth>Inside</depth>
         </li>
         <li>
           <def>DMS_Battery</def>
           <customLabel>secondary battery</customLabel>
-          <coverage>0.03</coverage>s
+          <coverage>0.02</coverage>
           <depth>Inside</depth>
         </li>
         <li>
           <def>FluidReprocessor</def>
-          <coverage>0.03</coverage>
+          <coverage>0.02</coverage>
           <depth>Inside</depth>
         </li>
         <li>

@@ -55,7 +55,11 @@
     <skills>
       <li>
         <skill>Melee</skill>
-        <range>8~10</range>
+        <range>5~8</range>
+      </li>
+      <li>
+        <skill>Shooting</skill>
+        <range>7~10</range>
       </li>
     </skills>
     <apparelTags>
@@ -96,6 +100,57 @@
     <skills>
       <li>
         <skill>Melee</skill>
+        <range>8~12</range>
+      </li>
+      <li>
+        <skill>Shooting</skill>
+        <range>4~8</range>
+      </li>
+    </skills>
+    <apparelTags>
+      <li>DMS_Tactical</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <weaponTags Inherit="False">
+			<li>DMS_RC_Melee</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- 警務長 -->
+  <PawnKindDef ParentName="DMS_PoliceBase">
+    <defName>DMS_Police_Leader</defName>
+    <label>police leader</label>
+    <apparelRequired>
+      <li>DMS_Apparel_ArmyCap</li>
+      <li>Apparel_FlakVest</li>
+    </apparelRequired>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Middle</apparelLayer> 
+        <stuff>Steel</stuff>
+      </li>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(60, 70, 100)</only>
+            </li>
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>5~8</range>
+      </li>
+      <li>
+        <skill>Shooting</skill>
+        <range>8~12</range>
+      </li>
+      <li>
+        <skill>Social</skill>
         <range>8~10</range>
       </li>
     </skills>
@@ -104,8 +159,7 @@
       <li>IndustrialBasic</li>
     </apparelTags>
     <weaponTags Inherit="False">
-			<li>DMS_RiotWeapon</li>
-      <li>MedievalMeleeDecent</li>
+			<li>Revolver</li>
     </weaponTags>
   </PawnKindDef>
 
@@ -143,8 +197,12 @@
     </specificApparelRequirements>
     <skills>
       <li>
+        <skill>Melee</skill>
+        <range>5~8</range>
+      </li>
+      <li>
         <skill>Shooting</skill>
-        <range>10~14</range>
+        <range>8~12</range>
       </li>
     </skills>
     <apparelTags>
