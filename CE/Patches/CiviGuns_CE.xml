@@ -217,17 +217,17 @@
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_RiotShotgun</defName>
                 <statBases>
-                    <Mass>4</Mass>
+                    <Mass>5</Mass>
                     <Bulk>6.53</Bulk>
                     <SwayFactor>1.32</SwayFactor>
                     <ShotSpread>0.15</ShotSpread>
                     <SightsEfficiency>1.0</SightsEfficiency>
-                    <RangedWeapon_Cooldown>0.40</RangedWeapon_Cooldown>
+                    <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>Bullet_10Gauge_Beanbag</defaultProjectile>
+                    <defaultProjectile>Bullet_23x75mmR_Buck</defaultProjectile>
                     <warmupTime>0.6</warmupTime>
                     <range>17</range>
                     <soundCast>Shot_Shotgun</soundCast>
@@ -236,10 +236,10 @@
                     <recoilAmount>3.21</recoilAmount>
                 </Properties>
                 <AmmoUser>
-                    <magazineSize>8</magazineSize>
-					<reloadOneAtATime>true</reloadOneAtATime>
-                    <reloadTime>0.85</reloadTime>
-                    <ammoSet>AmmoSet_10Gauge</ammoSet>
+                    <magazineSize>6</magazineSize>
+                    <reloadOneAtATime>True</reloadOneAtATime>
+                    <reloadTime>0.65</reloadTime>
+                    <ammoSet>AmmoSet_23x75mmR</ammoSet>
                 </AmmoUser>
                 <FireModes>
                     <aiAimMode>Snapshot</aiAimMode>

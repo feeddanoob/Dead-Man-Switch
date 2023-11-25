@@ -267,8 +267,8 @@
     </statBases>
     <race>
       <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
-      <baseBodySize>1.1</baseBodySize>
-      <baseHealthScale>1.35</baseHealthScale>
+      <baseBodySize>1.75</baseBodySize>
+      <baseHealthScale>1.5</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
     <!--<comps>-->
@@ -294,7 +294,7 @@
           <texPath>Things/Automatroid/ape</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.1</drawSize>
+          <drawSize>1.5</drawSize>
         </bodyGraphicData>
       </li>
       <li>
@@ -302,7 +302,7 @@
           <texPath>Things/Automatroid/OldTexture/ape</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.1</drawSize>
+          <drawSize>1.5</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
