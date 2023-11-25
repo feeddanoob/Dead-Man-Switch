@@ -27,7 +27,7 @@
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName="DMS_Turret_Tunguska" or
                                          defName="DMS_Turret_GateKeeper" or
-                                         defName="DMS_Turret_5ETs16U"
+                                         defName="DMS_Turret_Okhotnik"
                                          ]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
 				</li>
 

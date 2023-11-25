@@ -468,8 +468,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.3</drawSize>
     </graphicData>
-    <comps>
-      <li Class="Fortification.CompProperties_CompositeExplosion">
+    <modExtensions>
+      <li Class="Fortification.ModExtension_CompositeExplosion">
         <compositeExplosions>
           <li>
             <countdown>1</countdown>
@@ -481,7 +481,7 @@
           </li>
         </compositeExplosions>
       </li>
-    </comps>
+    </modExtensions>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>22</damageAmountBase>
@@ -491,8 +491,6 @@
       <arcHeightFactor>0.3</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
       <explosionDelay>2</explosionDelay>
-      <!--<explosionEffect>ExtinguisherExplosion</explosionEffect>-->
-      <!--<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>-->
       <soundExplode>Explosion_GiantBomb</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
@@ -503,7 +501,7 @@
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_5ETs16U</defName>
     <label>Okhotnik</label>
-    <description>an ancient design of remote control turret,widely used on armored vehicle and mechs armor platforms.</description>
+    <description>an ancient design of remote control turret, widely used on armored vehicle and mechs armor platforms.</description>
     <techLevel>Industrial</techLevel>
     <graphicData>
       <texPath>Things/Turrets/DMS_Weapon_Base</texPath>

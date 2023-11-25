@@ -72,7 +72,7 @@
 		<label>army cap</label>
 		<description>a soft cap for military man when combat helmet is not required.</description>
 		<graphicData>
-			<texPath>Things/Apparel/ArmyCap/ArmyCap_icon</texPath>
+			<texPath>Things/Apparel/ArmyCap/headgear_icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingCategories>
@@ -124,7 +124,7 @@
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
-			<wornGraphicPath>Things/Apparel/ArmyCap/ArmyCap</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/ArmyCap/headgear</wornGraphicPath>
 			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 		</apparel>
 		<tradeTags>
