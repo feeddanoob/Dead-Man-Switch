@@ -96,11 +96,11 @@
       <texPath>Things/Misc/DMS_BionicEye_east</texPath><!-- 這個以後改 -->
     </eyeGraphicEast>
     <eyeGraphicScale>0.2</eyeGraphicScale>
-	<comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
-		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">
-			<scaleAdjustment>0.75</scaleAdjustment>
-		</li>
-	</comps>
+    <comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
+      <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">
+        <scaleAdjustment>0.75</scaleAdjustment>
+      </li>
+    </comps>
   </HediffDef>
 
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
@@ -260,11 +260,11 @@
       <partEfficiency>1.25</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
-	<comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
-		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">
-			<scaleAdjustment>0.75</scaleAdjustment>
-		</li>
-	</comps>
+    <comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
+      <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">
+        <scaleAdjustment>0.75</scaleAdjustment>
+      </li>
+    </comps>
   </HediffDef>
 
   <ThingDef ParentName="DMS_BioMechBionicBase">

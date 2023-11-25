@@ -8,7 +8,6 @@
 
 		<match Class="PatchOperationSequence">
 			<operations>
-                
 				<!-- DMS civilian and traders -->
 				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/PawnKindDef[@Name="DMS_CivilianBase"]</xpath>
@@ -60,7 +59,6 @@
 					</value>
 				</li>
 
-
 				<!-- T2 riot police (melee) -->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/PawnKindDef[defName="DMS_Pawn_Police_Melee"]/apparelRequired</xpath>
@@ -69,6 +67,63 @@
 					</value>
 				</li>
 
+				<!-- T2 squad service man -->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/PawnKindDef[defName="DMS_Squad_ServiceMan"]</xpath>
+					<value>
+						<li Class="CombatExtended.LoadoutPropertiesExtension">
+							<primaryMagazineCount>
+								<min>3</min>
+								<max>5</max>
+							</primaryMagazineCount>
+							<sidearms>
+								<li>
+									<sidearmMoney>
+										<min>250</min>
+										<max>500</max>
+									</sidearmMoney>
+									<weaponTags>
+										<li>RangedLight</li>
+										<li>CE_Sidearm_Melee</li>
+									</weaponTags>
+									<magazineCount>
+										<min>0</min>
+										<max>1</max>
+									</magazineCount>
+								</li>
+							</sidearms>
+						</li>
+					</value>
+				</li>	
+
+				<!-- T2 squad Sniper -->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/PawnKindDef[defName="DMS_Squad_Sniper"]</xpath>
+					<value>
+						<li Class="CombatExtended.LoadoutPropertiesExtension">
+							<primaryMagazineCount>
+								<min>3</min>
+								<max>5</max>
+							</primaryMagazineCount>
+							<sidearms>
+								<li>
+									<sidearmMoney>
+										<min>250</min>
+										<max>500</max>
+									</sidearmMoney>
+									<weaponTags>
+										<li>RangedLight</li>
+										<li>CE_Sidearm_Melee</li>
+									</weaponTags>
+									<magazineCount>
+										<min>0</min>
+										<max>1</max>
+									</magazineCount>
+								</li>
+							</sidearms>
+						</li>
+					</value>
+				</li>	
 
 				<!-- T2 riot police (ranged) -->
 				<li Class="PatchOperationAddModExtension">

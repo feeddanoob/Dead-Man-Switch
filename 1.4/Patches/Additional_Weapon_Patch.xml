@@ -13,21 +13,17 @@
 
     <!--bolt-action doesn't even own a f@cking tag-->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]</xpath>
+        <xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/weaponTags</xpath>
             <value>
-                <weaponTags>
-                    <li>Simple_LongRange</li>
-                </weaponTags>
+                <li>Simple_LongRange</li>
             </value>
     </Operation>
 
     <!--vanilla blunt weapon tag for RC units-->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="MeleeWeapon_Mace"]</xpath>
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Mace"]/weaponTags</xpath>
             <value>
-                <weaponTags>
-                    <li>DMS_RC_Melee</li>
-                </weaponTags>
+                <li>DMS_RC_Melee</li>
             </value>
     </Operation>
 

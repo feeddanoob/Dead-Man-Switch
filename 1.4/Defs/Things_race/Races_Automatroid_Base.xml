@@ -174,7 +174,6 @@
 
   <PawnKindDef Name="BaseAutomatroidKind" ParentName="BaseMechanoidKind" Abstract="True">
     <defaultFactionType>Mechanoid</defaultFactionType>
-    <aiAvoidCover>true</aiAvoidCover>
     <allowInMechClusters>false</allowInMechClusters>                             <!--是否出現在機械集群-->
     <destroyGearOnDrop>true</destroyGearOnDrop>
     <canStrip>false</canStrip>

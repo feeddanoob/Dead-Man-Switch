@@ -146,7 +146,7 @@
                     <SwayFactor>1.41</SwayFactor>
                     <ShotSpread>0.15</ShotSpread>
                     <SightsEfficiency>1.0</SightsEfficiency>
-                    <RangedWeapon_Cooldown>0.40</RangedWeapon_Cooldown>
+                    <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
@@ -155,16 +155,17 @@
                     <warmupTime>0.6</warmupTime>
                     <range>17</range>
 					<burstShotCount>3</burstShotCount>
-					<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+					<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
                     <soundCast>Shot_Shotgun</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                     <recoilAmount>3.89</recoilAmount>
                 </Properties>
                 <AmmoUser>
-                    <magazineSize>12</magazineSize>
-                    <reloadTime>4.8</reloadTime>
-                    <ammoSet>AmmoSet_23x75mmR</ammoSet>
+                    <magazineSize>32</magazineSize>
+                    <reloadOneAtATime>True</reloadOneAtATime>
+                    <reloadTime>0.35</reloadTime>
+                    <ammoSet>AmmoSet_12Gauge</ammoSet>
                 </AmmoUser>
                 <FireModes>
                     <aiAimMode>Snapshot</aiAimMode>

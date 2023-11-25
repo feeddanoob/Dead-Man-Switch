@@ -499,7 +499,7 @@
 
   <!--遙控砲塔--><!--文本缺失-->
   <ThingDef ParentName="DMS_BaseCannonBuilding">
-    <defName>DMS_Turret_5ETs16U</defName>
+    <defName>DMS_Turret_Okhotnik</defName>
     <label>Okhotnik</label>
     <description>an ancient design of remote control turret, widely used on armored vehicle and mechs armor platforms.</description>
     <techLevel>Industrial</techLevel>

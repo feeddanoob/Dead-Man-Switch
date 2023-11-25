@@ -94,7 +94,7 @@
         <stuff>Polyester</stuff>
       </li>
     </specificApparelRequirements>
-    <forcedSkills>
+    <skills>
       <li>
         <skill>Shooting</skill>
         <range>1~5</range>
@@ -103,7 +103,7 @@
         <skill>Melee</skill>
         <range>1~5</range>
       </li>	    	     
-	  </forcedSkills>
+	  </skills>
   </PawnKindDef>
 
 
@@ -159,7 +159,7 @@
       <li>Apparel_FlakVest</li>
       <li>Apparel_SimpleHelmet</li>
     </apparelRequired>
-    <forcedSkills Inherit="False">
+    <skills Inherit="False">
       <li>
         <skill>Shooting</skill>
         <range>4~8</range>
@@ -168,7 +168,7 @@
         <skill>Melee</skill>
         <range>4~8</range>
       </li>	    	     
-	  </forcedSkills>
+	  </skills>
   </PawnKindDef>
 
   <PawnKindDef ParentName="DMS_CivilianBase">
@@ -178,14 +178,14 @@
     <weaponTags Inherit="False">
       <li>ElephantGun</li>
     </weaponTags>
-    <weaponMoney>300~300</weaponMoney>
+    <weaponMoney>400~500</weaponMoney>
     <apparelMoney>500~1000</apparelMoney>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <apparelRequired>
       <li>Apparel_FlakVest</li>
       <li>Apparel_SimpleHelmet</li>
     </apparelRequired>
-    <forcedSkills Inherit="False">
+    <skills Inherit="False">
       <li>
         <skill>Shooting</skill>
         <range>4~8</range>
@@ -194,12 +194,12 @@
         <skill>Melee</skill>
         <range>5~10</range>
       </li>	    	     
-	  </forcedSkills>
+	  </skills>
   </PawnKindDef>
 
   <PawnKindDef ParentName="DMS_CivilianBase">
     <defName>DMS_Security</defName>
-    <label>security guard</label>
+    <label>garrision guard</label>
     <itemQuality>Normal</itemQuality>
     <weaponTags Inherit="False">
       <li>A_RC_Pistol</li>
@@ -209,12 +209,13 @@
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <apparelRequired>
       <li>Apparel_FlakVest</li>
-      <li>Apparel_SimpleHelmet</li>
+      <li>DMS_Apparel_GarrisionCoat</li>
+      <li>DMS_Apparel_GarrisionCap</li>
     </apparelRequired>
     <specificApparelRequirements Inherit="False">
        <!-- light red uniform-->
     </specificApparelRequirements>
-    <forcedSkills Inherit="False">
+    <skills Inherit="False">
       <li>
         <skill>Shooting</skill>
         <range>4~8</range>
@@ -223,7 +224,7 @@
         <skill>Melee</skill>
         <range>4~8</range>
       </li>	    	     
-	  </forcedSkills>
+	  </skills>
   </PawnKindDef>
 
   <!--

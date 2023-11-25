@@ -72,6 +72,127 @@
 		</apparel>
 	</ThingDef>
 
+	<ThingDef ParentName="DMS_CapBase"><!-- GarrisionCap -->
+		<defName>DMS_Apparel_GarrisionCap</defName>
+		<label>garrision cap</label>
+		<description>a soft cap for military man when combat helmet is not required.</description>
+		<graphicData>
+			<texPath>Things/Apparel/GarrisionCap/headgear_icon</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>DMS_EquipmentBasis</researchPrerequisite>
+		</recipeMaker>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>0.05</Mass>
+			<Insulation_Cold>7</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/GarrisionCap/headgear</wornGraphicPath>
+			<tags>
+				<li>DMS_Garrision</li>
+				<li>GarrisionCap</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>DMS_Apparel_GarrisionCoat</defName>
+		<label>garrision coat</label>
+		<description>A typical coats for army, keep one warm in chilly weather.</description>
+		<possessionCount>1</possessionCount>
+		<recipeMaker>
+		  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		  <displayPriority>210</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/GarrisionCoat/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<costStuffCount>70</costStuffCount>
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+		  <li>ApparelMisc</li>
+		</thingCategories>
+		<statBases>
+		  <MaxHitPoints>160</MaxHitPoints>
+		  <WorkToMake>7000</WorkToMake>
+		  <Mass>1.5</Mass>
+		  <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.80</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+		  <EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Things/Apparel/GarrisionCoat/Apparel</wornGraphicPath>
+		  <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+		  <layers>
+			<li>Shell</li>
+		  </layers>
+		  <tags>
+			<li>IndustrialAdvanced</li>
+			<li>DMS_Garrision</li>
+		  </tags>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+		  <options>
+			<li>
+			  <weight>10</weight>
+			  <only>(0.33,0.33,0.33)</only>
+			</li>
+			<li>
+			  <weight>10</weight>
+			  <only>(0.65,0.65,0.65)</only>
+			</li>
+			<li>
+			  <weight>10</weight>
+			  <only>(0.4,0.3,0.15)</only>
+			</li>
+			<li>
+			  <weight>15</weight>
+			  <min>(0.3,0.3,0.3)</min>
+			  <max>(0.5,0.5,0.5)</max>
+			</li>
+			<li>
+			  <weight>6</weight>
+			  <min>(0.5,0.5,0.5)</min>
+			  <max>(1,1,1)</max>
+			</li>
+		  </options>
+		</colorGenerator>
+		<tradeTags>
+		  <li>BasicClothing</li>
+		</tradeTags>
+	  </ThingDef>
+
 	<ThingDef ParentName="ApparelBase">
 		<defName>DMS_Apparel_HazardSuit</defName>
 		<label>hazard suit</label>
@@ -154,7 +275,7 @@
 			<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
 			<effectWorking>ConstructMetal</effectWorking>
 			<soundWorking>Recipe_Machining</soundWorking>
-			<researchPrerequisite>DMS_Prosthetic</researchPrerequisite>
+			<researchPrerequisite>DMS_MechBasis</researchPrerequisite>
 			<recipeUsers>
 			  <li>DMS_TableMachinePrinter</li>
 			</recipeUsers>
@@ -163,7 +284,7 @@
 		<costList>
 			<Tungsteel>75</Tungsteel>
 			<Plasfiber>50</Plasfiber>
-			<Uranium>20</Uranium>
+			<Uranium>10</Uranium>
 			<ComponentStamped>7</ComponentStamped>
 		</costList>
 		<tradeTags>

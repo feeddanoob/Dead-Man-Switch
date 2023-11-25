@@ -9,10 +9,13 @@
     <initialWillRange>20~50</initialWillRange>
     <isFighter>true</isFighter>
     <gearHealthRange>0.6~2</gearHealthRange>
-    <apparelMoney>2000~3000</apparelMoney>
+    <apparelMoney>1000~3000</apparelMoney>
     <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
     <techHediffsChance>0.04</techHediffsChance>
     <techHediffsMoney>200~700</techHediffsMoney>
+    <apparelTags>
+      <li>DMS_Garrision</li>
+    </apparelTags>
     <techHediffsTags>
       <li>DMS_BM_Bionic</li>
       <li>Advanced</li>
@@ -86,10 +89,10 @@
   <!-- 機械化精確射手:穿戴動力外骨骼與斥候頭盔的半自動步槍射手，使用機兵精確射手步槍作為主要武裝-->
   <PawnKindDef ParentName="DMS_SoldierBase">
     <defName>DMS_Squad_Sniper</defName>
-    <label>Marksman</label>
+    <label>marksman</label>
     <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Private</minTitleRequired>
     <combatPower>80</combatPower>
-    <apparelRequired>
+    <apparelRequired Inherit="false">
       <li>Apparel_ArmorHelmetRecon</li>
       <li>DMS_Apparel_TacticalVest</li>
       <li>DMS_Apparel_PowerSkelton</li>

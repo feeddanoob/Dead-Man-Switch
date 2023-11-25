@@ -316,6 +316,7 @@
 
   <!-- T4 DMS_HeavyMachines-->
   <!-- 駭蜥 tarbosaurus--><!--部分數據缺失-->
+
   <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_Tarbosaurus</defName>
     <label>tarbosaurus</label>

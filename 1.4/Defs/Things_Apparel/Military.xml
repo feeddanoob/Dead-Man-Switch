@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+	<!-- 仿生作戰服 -->
 	<ThingDef ParentName="ApparelBase">
 		<defName>DMS_Apparel_BionicSuit</defName>
 		<label>bionic suit</label>
-		<description>Physical enhancement equipment sewn from artificial muscle fibers. Can effectively increase the wearer's muscle strength and mobility.</description>
+		<description>Physical enhancement equipment sewn from artificial muscle fibers. Can
+			effectively increase the wearer's muscle strength and mobility.</description>
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -12,7 +15,7 @@
 			<soundWorking>Recipe_Tailor</soundWorking>
 			<recipeUsers>
 				<li>DMS_TableAtrifuscle</li>
-			</recipeUsers>	
+			</recipeUsers>
 			<researchPrerequisite>DMS_Atrifuscle</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 		</recipeMaker>
@@ -67,12 +70,10 @@
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>DMS_Apparel_ArmyCap</defName>
-		<label>army cap</label>
+	<!-- DMS帽子 -->
+	<ThingDef ParentName="ApparelMakeableBase" Name="DMS_CapBase" Abstract="True">
 		<description>a soft cap for military man when combat helmet is not required.</description>
 		<graphicData>
-			<texPath>Things/Apparel/ArmyCap/headgear_icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingCategories>
@@ -86,15 +87,9 @@
 			<recipeUsers>
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
-			</recipeUsers>	
-			<researchPrerequisite>DMS_EquipmentBasis</researchPrerequisite>
+			</recipeUsers>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 		</recipeMaker>
-		<costStuffCount>45</costStuffCount>
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
 		<statBases>
 			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
@@ -106,9 +101,6 @@
 			<Insulation_Heat>6</Insulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
-		<equippedStatOffsets>		
-			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
-		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
@@ -117,14 +109,9 @@
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<tags>
-				<li>DMS_Soldier</li>
-				<li>ArmyCap</li>
-			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
-			<wornGraphicPath>Things/Apparel/ArmyCap/headgear</wornGraphicPath>
 			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 		</apparel>
 		<tradeTags>
@@ -147,83 +134,196 @@
 		</colorGenerator>
 	</ThingDef>
 
+	<ThingDef ParentName="DMS_CapBase"><!-- ArmyCap -->
+		<defName>DMS_Apparel_ArmyCap</defName>
+		<label>army cap</label>
+		<description>a soft cap for military man when combat helmet is not required.</description>
+		<graphicData>
+			<texPath>Things/Apparel/ArmyCap/headgear_icon</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>DMS_EquipmentBasis</researchPrerequisite>
+		</recipeMaker>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>0.05</Mass>
+			<Insulation_Cold>7</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/ArmyCap/headgear</wornGraphicPath>
+			<tags>
+				<li>DMS_Tactical</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DMS_CapBase"><!-- SoftKepi -->
+		<defName>DMS_Apparel_SoftKepi</defName>
+		<label>soft kepi</label>
+		<description>a soft cap for military man when combat helmet is not required.</description>
+		<graphicData>
+			<texPath>Things/Apparel/SoftKepi/headgear_icon</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>DMS_EquipmentBasis</researchPrerequisite>
+		</recipeMaker>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>0.05</Mass>
+			<Insulation_Cold>7</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/SoftKepi/headgear</wornGraphicPath>
+			<tags>
+				<li>DMS_Tactical</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DMS_CapBase"><!-- Beret -->
+		<defName>DMS_Apparel_Beret</defName>
+		<label>beret</label>
+		<description>a soft cap for military man when combat helmet is not required.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Beret/headgear_icon</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>DMS_EquipmentBasis</researchPrerequisite>
+		</recipeMaker>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>0.05</Mass>
+			<Insulation_Cold>7</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<tags>
+				<li>Beret</li>
+			</tags>
+			<wornGraphicPath>Things/Apparel/Beret/headgear</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<!-- 戰術裝備 -->
+
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>DMS_Apparel_TacticalHelmet</defName>
 		<label>tactical helmet</label>
 		<description>A lightweight combat helmet with a complex design, reinforced with plasteel. Not effective against blunt weapons.</description>
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
-		  <researchPrerequisite>FlakArmor</researchPrerequisite>
-		  <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
-		  <skillRequirements>
-			<Crafting>5</Crafting>
-		  </skillRequirements>
-		  <displayPriority>205</displayPriority>
+			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<displayPriority>205</displayPriority>
 		</recipeMaker>
 		<graphicData>
-		  <texPath>Things/Apparel/PASGT/Icon</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Apparel/PASGT/Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1</uiIconScale>
 		<statBases>
-		  <WorkToMake>12000</WorkToMake>
-		  <MaxHitPoints>150</MaxHitPoints>
-		  <Mass>1.5</Mass>
-		  <StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
-		  <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-		  <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-		  <EquipDelay>1.75</EquipDelay>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.75</EquipDelay>
 		</statBases>
 		<stuffCategories>
-		  <li>Metallic</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<costList>
-		  <ComponentStamped>1</ComponentStamped>
-		  <Polyester>20</Polyester>
+			<ComponentStamped>1</ComponentStamped>
+			<Polyester>20</Polyester>
 		</costList>
 		<apparel>
-		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
-		  <bodyPartGroups>
-			<li>UpperHead</li>
-		  </bodyPartGroups>
-		  <wornGraphicPath>Things/Apparel/PASGT/Apparel</wornGraphicPath>
-		  <layers>
-			<li>Overhead</li>
-		  </layers>
-		  <tags>
-			<li>DMS_Tactical</li>
-			<li>IndustrialMilitaryAdvanced</li>
-		  </tags>
-		  <defaultOutfitTags>
-			<li>Soldier</li>
-		  </defaultOutfitTags>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/PASGT/Apparel</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>DMS_Tactical</li>
+				<li>IndustrialMilitaryAdvanced</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
-		  <options>
-			<li>
-			  <weight>10</weight>
-			  <only>(0.33,0.33,0.33,1)</only>
-			</li>
-			<li>
-			  <weight>10</weight>
-			  <only>(0.65,0.65,0.65,1)</only>
-			</li>
-			<li>
-			  <weight>6</weight>
-			  <min>(0.3,0.3,0.3,1)</min>
-			  <max>(0.5,0.5,0.5,1)</max>
-			</li>
-			<li>
-			  <weight>10</weight>
-			  <only>(0.9,0.9,0.9,1)</only>
-			</li>
-		  </options>
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.5,0.5,0.5,1)</max>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+			</options>
 		</colorGenerator>
 		<tradeTags>
-		  <li>Armor</li>
+			<li>Armor</li>
 		</tradeTags>
-	  </ThingDef>
+	</ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>DMS_Apparel_TacticalVest</defName>
@@ -255,12 +355,12 @@
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>
-		  </stuffCategories>
+		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
 		<costList>
 			<ComponentStamped>1</ComponentStamped>
 			<Polyester>30</Polyester>
-		  </costList>
+		</costList>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.15</MoveSpeed>
 		</equippedStatOffsets>
@@ -305,5 +405,5 @@
 			<li>Armor</li>
 		</tradeTags>
 	</ThingDef>
-	
+
 </Defs>
