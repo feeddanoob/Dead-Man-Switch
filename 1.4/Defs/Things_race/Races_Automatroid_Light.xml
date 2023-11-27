@@ -161,7 +161,7 @@
   <!-- 武裝四軸 -->
   <ThingDef Name="VerlingBirdBase" ParentName="BaseDMSMachine" Abstract="True">
     <label>verling bird</label>
-    <description>偵查用四軸無人機，對於戰鬥而言相當的脆弱但移動速度極快，搭載了一挺小口徑衝鋒槍並能提供一定的牽制能力.</description>
+    <description>A quad-drone for reconnaissance. It is quite fragile for combat but moves extremely fast. can equipped with a small-caliber gun or grenade to provide certain containment capabilities.</description>
     <statBases>
       <MoveSpeed>10</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0</ArmorRating_Blunt>                                     <!--護甲-->
@@ -172,7 +172,7 @@
     <inspectorTabs Inherit="False">
       <li>ITab_Pawn_Health</li>
       <li>ITab_Pawn_Needs</li>
-    <!--  <li>ITab_Pawn_Character</li>
+<!--  <li>ITab_Pawn_Character</li>
       <li>ITab_Pawn_Training</li>
       <li>ITab_Pawn_Social</li>
       <li>ITab_Pawn_Guest</li>
@@ -238,7 +238,7 @@
           <texPath>Things/Automatroid/chad</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.1</drawSize>
+          <drawSize>1.5</drawSize>
         </bodyGraphicData>
       </li>
       <li>
@@ -246,7 +246,7 @@
           <texPath>Things/Automatroid/OldTexture/chad</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.1</drawSize>
+          <drawSize>1.5</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -267,7 +267,7 @@
           <texPath>Things/Automatroid/chad</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.1</drawSize>
+          <drawSize>1.5</drawSize>
         </bodyGraphicData>
       </li>
       <li>
@@ -275,7 +275,7 @@
           <texPath>Things/Automatroid/OldTexture/chad</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.1</drawSize>
+          <drawSize>1.5</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>

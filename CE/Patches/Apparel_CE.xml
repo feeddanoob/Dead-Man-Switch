@@ -43,6 +43,33 @@
 					<li>StrappedHead</li>
 				</value>
 			</li>
+			<!--power skelton-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_PowerSkelton"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>1</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_PowerSkelton"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>5</ArmorRating_Blunt>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_PowerSkelton"]/statBases</xpath>
+				<value>
+					<Bulk>15</Bulk>
+					<WornBulk>5</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_PowerSkelton"]/equippedStatOffsets</xpath>
+				<value>
+					<CarryWeight>50</CarryWeight>
+				</value>
+			</li>
 
 			<!--Bionic suit-->
 			<li Class="PatchOperationReplace">
@@ -61,14 +88,14 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Apparel_BionicSuit"]/statBases</xpath>
 				<value>
-					<Bulk>10</Bulk>
-					<WornBulk>6</WornBulk>
+					<Bulk>5</Bulk>
+					<WornBulk>0</WornBulk>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Apparel_BionicSuit"]/equippedStatOffsets</xpath>
 				<value>
-					<CarryWeight>10</CarryWeight>
+					<CarryWeight>25</CarryWeight>
 				</value>
 			</li>
 

@@ -503,7 +503,8 @@
           <li>DMS_MechWeaponShotgun</li>
           <li>DMS_MechWeaponLight</li>
           <li>A_AR_LongRifle</li>
-          <li>MedievalMeleeAdvanced</li>        
+          <li>MedievalMeleeBasic</li>
+          <li>MedievalMeleeAdvanced</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
