@@ -11,6 +11,7 @@
     </statBases>
     <race>
       <body>DMS_Humanoid_Soldat</body>
+      <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
       <baseBodySize>1.3</baseBodySize>
       <baseHealthScale>1.5</baseHealthScale>
       <mechWeightClass>Heavy</mechWeightClass>
@@ -155,6 +156,7 @@
     </statBases>
     <race>
       <body>DMS_Bipedal</body>                                                      <!--身體(另外的def)-->
+      <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
       <baseBodySize>2.25</baseBodySize>
       <baseHealthScale>2.5</baseHealthScale>
       <mechWeightClass>Heavy</mechWeightClass>
@@ -267,6 +269,7 @@
     </statBases>
     <race>
       <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
+      <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
       <baseBodySize>1.75</baseBodySize>
       <baseHealthScale>1.5</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
@@ -331,6 +334,7 @@
     </statBases>
     <race>
       <body>DMS_Bipedal</body>
+      <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
       <baseBodySize>4.5</baseBodySize>
       <baseHealthScale>5</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
@@ -456,6 +460,7 @@
     </statBases>
     <race>
       <body>DMS_Caterpillar</body>
+      <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
       <baseBodySize>4</baseBodySize>
       <baseHealthScale>5</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
@@ -533,6 +538,7 @@
     </statBases>
     <race>
       <body>DMS_Caterpillar</body>
+      <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
       <baseBodySize>4</baseBodySize>
       <baseHealthScale>5</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
@@ -612,6 +618,7 @@
     </statBases>
     <race>
       <body>DMS_KillDozer</body>                                                      <!--身體(另外的def)-->
+      <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
       <baseBodySize>4.3</baseBodySize>
       <baseHealthScale>5</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>

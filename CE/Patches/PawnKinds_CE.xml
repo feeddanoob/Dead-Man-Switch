@@ -36,7 +36,7 @@
 
 				<!-- T2 patrol police  -->
 				<li Class="PatchOperationAddModExtension">
-					<xpath>Defs/PawnKindDef[defName="DMS_Pawn_Police_Pistol"]</xpath>
+					<xpath>Defs/PawnKindDef[defName="DMS_Police_Pistol"]</xpath>
 					<value>
 						<li Class="CombatExtended.LoadoutPropertiesExtension">
 							<primaryMagazineCount>
@@ -61,7 +61,7 @@
 
 				<!-- T2 riot police (melee) -->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/PawnKindDef[defName="DMS_Pawn_Police_Melee"]/apparelRequired</xpath>
+					<xpath>Defs/PawnKindDef[defName="DMS_Police_Melee"]/apparelRequired</xpath>
 					<value>
 						<li>CE_Apparel_BallisticShield</li>
 					</value>
@@ -127,7 +127,7 @@
 
 				<!-- T2 riot police (ranged) -->
 				<li Class="PatchOperationAddModExtension">
-					<xpath>Defs/PawnKindDef[defName="DMS_Pawn_Police_Ranged"]</xpath>
+					<xpath>Defs/PawnKindDef[defName="DMS_Police_Ranged"]</xpath>
 					<value>
 						<li Class="CombatExtended.LoadoutPropertiesExtension">
 							<primaryMagazineCount>

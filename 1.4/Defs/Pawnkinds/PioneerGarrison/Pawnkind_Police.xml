@@ -30,7 +30,7 @@
 
 <!-- 配槍巡警-->
   <PawnKindDef ParentName="DMS_PoliceBase">
-    <defName>DMS_Pawn_Police_Pistol</defName>
+    <defName>DMS_Police_Pistol</defName>
     <label>police</label>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
@@ -74,7 +74,7 @@
 
   <!-- 民警(近戰)-->
   <PawnKindDef ParentName="DMS_PoliceBase">
-    <defName>DMS_Pawn_Police_Melee</defName>
+    <defName>DMS_Police_Melee</defName>
     <label>police</label>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
@@ -165,7 +165,7 @@
 
   <!-- 特勤步槍手(AR,衝鋒槍)-->
   <PawnKindDef ParentName="DMS_PoliceBase">
-    <defName>DMS_Pawn_Police_Assault</defName>
+    <defName>DMS_Police_Assault</defName>
     <label>police assaulter</label>
     <combatPower>70</combatPower>
     <apparelRequired>
@@ -218,7 +218,7 @@
 
     <!-- 特勤射手(狙擊)-->
   <PawnKindDef ParentName="DMS_PoliceBase">
-    <defName>DMS_Pawn_Police_Ranged</defName>
+    <defName>DMS_Police_Ranged</defName>
     <label>police sniper</label>
     <combatPower>100</combatPower>
     <apparelRequired>

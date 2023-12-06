@@ -20,46 +20,6 @@
     </statOffsets>
   </LifeStageDef>
 
-  <RulePackDef>
-    <defName>DMS_AutomaticArmy</defName>
-    <rulePack>
-      <rulesStrings>
-        <li>r_name(p=6)->[namefile]-[Code]</li>
-        <li>r_name->[exoticname]-[Code]</li>
-        <li>name->[Code]-[Color]</li>
-
-        <li>Code->alpha</li>
-        <li>Code->bravo</li>
-        <li>Code->charlie</li>
-        <li>Code->delta</li>
-        <li>Code->echo</li>
-        <li>Code->foxtrot</li>
-        <li>Code->golf</li>
-        <li>Code->hotel</li>
-        <li>Code->india</li>
-        <li>Code->junker</li>
-        <li>Code->kilo</li>
-        <li>Code->lima</li>
-        <li>Code->mike</li>
-        <li>Code->nova</li>
-        <li>Code->oscar</li>
-        <li>Code->pela</li>
-        <li>Code->quiet</li>
-        <li>Code->rotor</li>
-        <li>Code->sierra</li>
-        <li>Code->tango</li>
-        <li>Code->uniform</li>
-        <li>Code->vega</li>
-        <li>Code->whiskey</li>
-        <li>Code->xeno</li>
-        <li>Code->yezi</li>
-        <li>Code->zulu</li>
-      </rulesStrings>
-      <rulesFiles>
-        <li>namefile->Names/Mech_Unisex</li>
-      </rulesFiles>
-    </rulePack>
-  </RulePackDef>
   <!-- Base -->
   <ThingDef Name="BaseAutomatroidRace" ParentName="BaseMechanoid" Abstract="True">
     <statBases>
@@ -78,7 +38,7 @@
     <race>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>Mechanoid</thinkTreeMain>
-      <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">DMS_AutomaticArmy</nameGenerator>
+      <nameGenerator>DMS_VanguardMechStandard</nameGenerator>
       <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
       <soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
       <thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>

@@ -24,7 +24,7 @@
     <tradeability>None</tradeability>
 		<race>
       <intelligence>ToolUser</intelligence>
-      <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">DMS_AutomaticArmy</nameGenerator>
+      <nameGenerator>DMS_AutomaticArmy</nameGenerator>
       <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
       <soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
 			<fleshType>Mechanoid</fleshType>

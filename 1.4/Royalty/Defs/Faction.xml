@@ -17,8 +17,8 @@
     <royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
     <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
     <factionIconPath>World/WorldObjects/Expanding/Empire</factionIconPath>
-    <factionNameMaker>NamerFactionEmpire</factionNameMaker>
-    <settlementNameMaker>NamerSettlementEmpire</settlementNameMaker>
+    <factionNameMaker>DMS_VanguardFaction</factionNameMaker>
+    <settlementNameMaker>DMS_VanguardBase</settlementNameMaker>
     <allowedCultures><li>DMS_Nara_Culture</li></allowedCultures>
     <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
@@ -107,6 +107,7 @@
           <Empire_Common_Trader>1</Empire_Common_Trader>
         </traders>
         <carriers>
+          <DMS_Mech_EscortLifter>10</DMS_Mech_EscortLifter>
           <Muffalo>6</Muffalo>
           <Dromedary>5</Dromedary>
           <Alpaca>2</Alpaca>
@@ -114,7 +115,7 @@
         </carriers>
         <guards>
           <Villager>3</Villager>
-          <Empire_Fighter_Trooper>10</Empire_Fighter_Trooper>
+          <DMS_Mech_Soldat>10</DMS_Mech_Soldat>
           <Empire_Fighter_Cataphract>1.5</Empire_Fighter_Cataphract>
           <Empire_Fighter_Janissary>7</Empire_Fighter_Janissary>
           <Empire_Fighter_Champion>10</Empire_Fighter_Champion>
@@ -125,10 +126,13 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <Empire_Fighter_Trooper>5</Empire_Fighter_Trooper>
-          <Empire_Fighter_Janissary>3.5</Empire_Fighter_Janissary>
-          <Empire_Fighter_Cataphract>2</Empire_Fighter_Cataphract>
-          <Empire_Fighter_Champion>4</Empire_Fighter_Champion>
+          <DMS_Mech_VerlingBirdA>3</DMS_Mech_VerlingBirdA>
+          <DMS_Mech_Pioneer>5</DMS_Mech_Pioneer>
+          <DMS_Mech_Jaeger>3.5</DMS_Mech_Jaeger>
+          <DMS_Soldier>3</DMS_Soldier>
+          <DMS_Mech_Sniper>2</DMS_Mech_Sniper>
+          <DMS_Mech_Arquebusier>4</DMS_Mech_Arquebusier>
+          <DMS_Mech_Reptile>1</DMS_Mech_Reptile>
         </options>
       </li>
       <li>
@@ -136,21 +140,26 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Empire_Fighter_Grenadier>2</Empire_Fighter_Grenadier>
-          <Empire_Fighter_Trooper>5</Empire_Fighter_Trooper>
-          <Empire_Fighter_Janissary>3.5</Empire_Fighter_Janissary>
-          <Empire_Fighter_Cataphract>2</Empire_Fighter_Cataphract>
-          <Empire_Fighter_Champion>4</Empire_Fighter_Champion>
+          <DMS_Mech_Grenadier>6</DMS_Mech_Grenadier>
+          <DMS_Squad_Sniper>2</DMS_Squad_Sniper>
+          <DMS_Mech_Ronin>6</DMS_Mech_Ronin>
+          <DMS_Mech_Protector>5</DMS_Mech_Protector>
+          <DMS_Mech_Siegebreaker>4</DMS_Mech_Siegebreaker>
+          <DMS_Mech_Kanonier>1</DMS_Mech_Kanonier>
         </options>
       </li>
       <li>
         <!-- Base defense, mainly ranged with melee mix-ins -->
         <kindDef>Settlement</kindDef>
         <options>
-          <Empire_Fighter_Trooper>5</Empire_Fighter_Trooper>
-          <Empire_Fighter_Janissary>3.5</Empire_Fighter_Janissary>
-          <Empire_Fighter_Cataphract>2</Empire_Fighter_Cataphract>
-          <Empire_Fighter_Champion>4</Empire_Fighter_Champion>
+          <DMS_Mech_BattleFrame>3</DMS_Mech_BattleFrame>
+          <DMS_Squad_ServiceMan>5</DMS_Squad_ServiceMan>
+          <DMS_Police_Melee>5</DMS_Police_Melee>         
+          <DMS_MinuteMan>4</DMS_MinuteMan>
+          <DMS_Police_Pistol>4</DMS_Police_Pistol>
+          <DMS_Police_Ranged>3.5</DMS_Police_Ranged>
+          <DMS_MinuteMan_Heavy>3</DMS_MinuteMan_Heavy>
+          <DMS_Soldier>2</DMS_Soldier>
       </options>
       </li>
     </pawnGroupMakers>
