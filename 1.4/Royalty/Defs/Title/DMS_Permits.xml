@@ -1,61 +1,78 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- ============================= Permits from royal titles ============================= -->
 
-  <RoyalTitlePermitDef>
-    <defName>TradeSettlement</defName>
-    <label>trade with settlements</label>
-  </RoyalTitlePermitDef>
-  
-  <RoyalTitlePermitDef>
-    <defName>TradeOrbital</defName>
-    <label>trade with orbital traders</label>
-  </RoyalTitlePermitDef>
-  
-  <RoyalTitlePermitDef>
-    <defName>TradeCaravan</defName>
-    <label>trade with caravans</label>
-  </RoyalTitlePermitDef>
+  <!-- 物品支援 -->
 
-
-  <!-- ============================= Faction permits ============================= -->
-
-  <!-- Econ -->
-
-  <RoyalTitlePermitDef Name="DropResourcesBase" Abstract="True">
+  <RoyalTitlePermitDef Name="DMS_DropSupplyBase" Abstract="True">
     <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
-    <faction>Empire</faction>
+    <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
-    <cooldownDays>45</cooldownDays>
+    <cooldownDays>30</cooldownDays>
     <usableOnWorldMap>true</usableOnWorldMap>
     <royalAid>
       <targetingRange>39.9</targetingRange>
     </royalAid>
   </RoyalTitlePermitDef>
-  
+
   <RoyalTitlePermitDef ParentName="DropResourcesBase">
-    <defName>SteelDrop</defName>
-    <label>steel drop</label>
-    <description>Call for a drop of 250 steel.</description>
-    <minTitle>Acolyte</minTitle>
-    <faction>Empire</faction>
-    <permitPointCost>1</permitPointCost>
+    <defName>DMS_CombatDrop</defName>
+    <label>combat supply drop</label>
+    <description>Call for a drop of standard combat supply.</description>
     <uiPosition>(0,0)</uiPosition>
+    <minTitle>DMS_Private</minTitle>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>30</cooldownDays>
     <royalAid>
       <itemsToDrop>
-        <Steel>250</Steel>
+        <MealNutrientPaste>5</MealNutrientPaste>     
+        <MedicineIndustrial>2</MedicineIndustrial>
       </itemsToDrop>
-      <favorCost>4</favorCost>
+      <favorCost>3</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>DMS_LogiDrop</defName>
+    <label>logistic supply drop</label>
+    <description>Call for a drop of 20 survival pack, 8 medicine and 4 compoment.</description>
+    <uiPosition>(0,1)</uiPosition> 
+    <minTitle>DMS_Corporal</minTitle>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>30</cooldownDays>
+    <royalAid>
+      <itemsToDrop>
+        <Steel>50</Steel>
+        <ComponentIndustrial>4</ComponentIndustrial>  
+      </itemsToDrop>
+      <favorCost>3</favorCost>
     </royalAid>
   </RoyalTitlePermitDef>
 
   <RoyalTitlePermitDef ParentName="DropResourcesBase">
-    <defName>FoodDrop</defName>
-    <label>food drop</label>
+    <defName>DMS_FoodDrop</defName>
+    <label>food supply drop</label>
     <description>Call for a drop of 20 packaged survival meals.</description>
+    <minTitle>DMS_Corporal</minTitle>
+    <uiPosition>(0,2)</uiPosition>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>30</cooldownDays>
+    <royalAid>
+      <itemsToDrop>
+        <MealSurvivalPack>12</MealSurvivalPack>
+      </itemsToDrop>
+      <favorCost>3</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>DMS_GearDrop</defName>
+    <label>combat equipment drop</label>
+    <description>Call for a combat supply for a combatant, include a set of tactical gears, and an assault rifle.</description>
     <minTitle>Acolyte</minTitle>
     <uiPosition>(0,1)</uiPosition>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>30</cooldownDays>
     <royalAid>
       <itemsToDrop>
         <MealSurvivalPack>20</MealSurvivalPack>
@@ -65,25 +82,13 @@
   </RoyalTitlePermitDef>
 
   <RoyalTitlePermitDef ParentName="DropResourcesBase">
-    <defName>SilverDrop</defName>
-    <label>silver drop</label>
-    <description>Call for a drop of 500 silver.</description>
-    <minTitle>Knight</minTitle>
-    <uiPosition>(0,4)</uiPosition>
-    <royalAid>
-      <itemsToDrop>
-        <Silver>500</Silver>
-      </itemsToDrop>
-      <favorCost>6</favorCost>
-    </royalAid>
-  </RoyalTitlePermitDef>
-
-  <RoyalTitlePermitDef ParentName="DropResourcesBase">
-    <defName>GlitterMedDrop</defName>
+    <defName>DMS_CompDrop</defName>
     <label>glitter med drop</label>
     <description>Call for a drop of 5 glitterworld medicine.</description>
     <minTitle>Baron</minTitle>
     <uiPosition>(0,8)</uiPosition>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>30</cooldownDays>
     <royalAid>
       <itemsToDrop>
         <MedicineUltratech>5</MedicineUltratech>
@@ -92,13 +97,33 @@
     </royalAid>
   </RoyalTitlePermitDef>
 
+  <RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>DMS_PreSergeant</defName>
+    <label>construct material drop</label>
+    <description>Call for a drop of 500 silver.</description>
+    <minTitle>Knight</minTitle>
+    <uiPosition>(0,4)</uiPosition>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>30</cooldownDays>
+    <prerequisite>DMS_CompDrop</prerequisite>
+    <royalAid>
+      <itemsToDrop>
+        <Steel>250</Steel>
+        <Silver>500</Silver>
+      </itemsToDrop>
+      <favorCost>6</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <!-- 臨時人手支援 -->
+
   <RoyalTitlePermitDef>
-    <defName>CallLaborerTeam</defName>
-    <label>call laborer team</label>
-    <description>Call a group of 4 laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
+    <defName>DMS_WorkerTeam</defName>
+    <label>call worker team</label>
+    <description>Call a group of 4 worker to assist you for 6 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
     <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
     <minTitle>Acolyte</minTitle>
-    <faction>Empire</faction>
+    <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
     <uiPosition>(0,2)</uiPosition>
     <royalAid>
@@ -111,12 +136,12 @@
   </RoyalTitlePermitDef>
 
   <RoyalTitlePermitDef>
-    <defName>CallLaborerGang</defName>
-    <label>call laborer gang</label>
-    <description>Call a group of 8 laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
+    <defName>DMS_WorkerGroup</defName>
+    <label>call worker group</label>
+    <description>Call a group of 8 worker to assist you for 6 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
     <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
     <minTitle>Count</minTitle>
-    <faction>Empire</faction>
+    <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
     <prerequisite>CallLaborerTeam</prerequisite>
     <uiPosition>(1,2)</uiPosition>
@@ -138,7 +163,7 @@
     <description>Call a group of 4 light troopers to aid you in battle.</description>
     <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
     <minTitle>Acolyte</minTitle>
-    <faction>Empire</faction>
+    <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
     <uiPosition>(0,3)</uiPosition>
     <royalAid>
@@ -156,7 +181,7 @@
     <description>Call a group of 4 professional janissaries to aid you in battle.</description>
     <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
     <minTitle>Praetor</minTitle>
-    <faction>Empire</faction>
+    <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
     <uiPosition>(0,7)</uiPosition>
     <royalAid>
@@ -174,7 +199,7 @@
     <description>Call a group of 4 heavy cataphracts to aid you in battle.</description>
     <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
     <minTitle>Count</minTitle>
-    <faction>Empire</faction>
+    <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
     <prerequisite>CallMilitaryAidLarge</prerequisite>
     <uiPosition>(1,7)</uiPosition>
@@ -193,7 +218,7 @@
     <description>Call a single-impact aerodrone strike at a target position.</description>
     <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
     <minTitle>Knight</minTitle>
-    <faction>Empire</faction>
+    <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
     <cooldownDays>45</cooldownDays>
     <uiPosition>(0,5)</uiPosition>
@@ -214,7 +239,7 @@
     <description>Call a salvo of aerodrone strikes around a target position.</description>
     <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
     <minTitle>Praetor</minTitle>
-    <faction>Empire</faction>
+    <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
     <prerequisite>CallOrbitalStrike</prerequisite>
     <cooldownDays>60</cooldownDays>
@@ -239,7 +264,7 @@
     <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
     <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
     <minTitle>Knight</minTitle>
-    <faction>Empire</faction>
+    <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
     <cooldownDays>40</cooldownDays>
     <usableOnWorldMap>true</usableOnWorldMap>

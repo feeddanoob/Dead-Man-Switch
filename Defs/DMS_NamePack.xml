@@ -5,15 +5,14 @@
     <defName>DMS_VanguardFaction</defName>
     <rulePack>
       <rulesStrings>
-        <!-- 機械化 XXX 無人兵團 -->
-        <li>r_name->Vanguard [BrigadeNum0][BrigadeNum1][BrigadeNum2] [BrigadeType]</li>
+        <!-- 153rd Frontier Division-->
+        <li>r_name->[BrigadeNum0][BrigadeNum1][BrigadeNum2] [BrigadeType] Division</li>
       
-        <li>BrigadeType->IR</li>
-        <li>BrigadeType->FAB</li>
-        <li>BrigadeType->ECB</li>
-        <li>BrigadeType->MB</li>
-        <li>BrigadeType->MPP</li>
-        <li>BrigadeType->IFB</li>
+        <li>BrigadeType->Pioneer</li>
+        <li>BrigadeType->Colonial</li>
+        <li>BrigadeType->Frontier</li>
+        <li>BrigadeType->Vanguard</li>
+        <li>BrigadeType->Logistic</li>
       
         <li>BrigadeNum0->1</li>
         <li>BrigadeNum0->2</li>

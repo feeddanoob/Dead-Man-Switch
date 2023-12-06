@@ -2,7 +2,7 @@
 <Defs>
   <FactionDef ParentName="FactionBase">
     <defName>DMS_Army</defName>
-    <label>Vanguard</label>
+    <label>Colonization Forces</label>
     <categoryTag>Empire</categoryTag>
     <description>A militarized colonial organization led by AI systems. Their culture is highly based on a military class system. Through a strict responsibility mechanism, anyone can find their places if they proofed their ability. \n\nIt can be determined that behind this colonial force is a huge organization capable of coordinating actions across galaxies even when interstellar voyages take decades.</description>
     <pawnSingular>serviceman</pawnSingular>
@@ -12,11 +12,11 @@
     <maxCountAtGameStart>1</maxCountAtGameStart>
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
-    <leaderTitle>sector command</leaderTitle>
+    <leaderTitle>sector commander</leaderTitle>
     <royalFavorLabel>honor</royalFavorLabel>
-    <royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
+    <royalFavorIconPath>UI/Faction/ArmyFavor</royalFavorIconPath>
     <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-    <factionIconPath>World/WorldObjects/Expanding/Empire</factionIconPath>
+    <factionIconPath>UI/Faction/VanguardIcon</factionIconPath>
     <factionNameMaker>DMS_VanguardFaction</factionNameMaker>
     <settlementNameMaker>DMS_VanguardBase</settlementNameMaker>
     <allowedCultures><li>DMS_Nara_Culture</li></allowedCultures>
@@ -65,12 +65,12 @@
       </disallowedThingDefs>
     </apparelStuffFilter>
     <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
-    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <settlementTexturePath>UI/Faction/VanguardSite</settlementTexturePath>
     <colorSpectrum>
-      <li>(0.85, 0.85, 0.75)</li>
+      <li>(0.5, 0.65, 0.5)</li>
     </colorSpectrum>
     <fixedLeaderKinds>
-      <li>Empire_Royal_Stellarch</li>      <!-- WIP -->
+      <li>DMS_Officer_Leader</li>
     </fixedLeaderKinds>
     <royalTitleTags>
       <li>DMS_Title</li>
@@ -111,7 +111,6 @@
           <Muffalo>6</Muffalo>
           <Dromedary>5</Dromedary>
           <Alpaca>2</Alpaca>
-          <Elephant>1</Elephant>
         </carriers>
         <guards>
           <Villager>3</Villager>

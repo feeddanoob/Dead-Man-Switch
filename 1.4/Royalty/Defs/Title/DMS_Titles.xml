@@ -23,6 +23,7 @@
           <li>IndustrialMilitaryBasic</li>
           <li>IndustrialAdvanced</li>
           <li>DMS_Tactical</li>
+          <li>DMS_Garrision</li>
         </allowedTags>
       </li>
     </requiredApparel>
@@ -53,7 +54,7 @@
   <RoyalTitleDef ParentName="BaseDMSTitle">
     <defName>DMS_Corporal</defName>
     <label>corporal</label>
-    <description>pre-sergeant is a rank specially for outsider enlistment with no formal training.</description>
+    <description>corporal is the lowest officer rank in the military system, leading a squad or a task forces.</description>
     <seniority>50</seniority>
     <favorCost>10</favorCost>
     <changeHeirQuestPoints>1000</changeHeirQuestPoints>

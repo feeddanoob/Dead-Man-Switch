@@ -3,6 +3,7 @@
 
   <PawnKindDef Name="DMS_OutlanderBase" Abstract="True">
     <race>Human</race>
+    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Sergeant</minTitleRequired>
     <defaultFactionType>OutlanderCivil</defaultFactionType>
     <chemicalAddictionChance>0</chemicalAddictionChance>
     <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>

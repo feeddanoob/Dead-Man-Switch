@@ -120,6 +120,7 @@
   <PawnKindDef ParentName="DMS_PoliceBase">
     <defName>DMS_Police_Leader</defName>
     <label>police leader</label>
+    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Sergeant</minTitleRequired>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
       <li>Apparel_FlakVest</li>
@@ -168,6 +169,7 @@
     <defName>DMS_Police_Assault</defName>
     <label>police assaulter</label>
     <combatPower>70</combatPower>
+    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Corporal</minTitleRequired>
     <apparelRequired>
       <li>DMS_Apparel_TacticalHelmet</li>
       <li>DMS_Apparel_TacticalVest</li>
@@ -221,6 +223,7 @@
     <defName>DMS_Police_Ranged</defName>
     <label>police sniper</label>
     <combatPower>100</combatPower>
+    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Corporal</minTitleRequired>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
       <li>Apparel_FlakVest</li>

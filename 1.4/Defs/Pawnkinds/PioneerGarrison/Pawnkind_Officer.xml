@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- T1官員,貿易代表 -->
+  <PawnKindDef ParentName="DMS_OutlanderBase" Name="DMS_OfficerBase" Abstract="True">
+    <factionLeader>false</factionLeader>
+    <minGenerationAge>20</minGenerationAge>
+    <gearHealthRange>1~2</gearHealthRange>
+    <apparelMoney>400~600</apparelMoney>
+    <weaponMoney>250~400</weaponMoney>
+    <techHediffsChance>0.4</techHediffsChance>
+    <techHediffsMoney>2000~7000</techHediffsMoney>
+    <techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>15~24</initialResistanceRange>
+  </PawnKindDef>
+
+  <!-- T2官員,排導 -->
+  <PawnKindDef ParentName="DMS_OfficerBase">
+    <defName>DMS_Officer_A</defName>
+    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Sergeant</minTitleRequired>
+    <label>platoon guide</label>
+    <labelPlural>officer</labelPlural>
+    <combatPower>40</combatPower>
+    <apparelTags>
+      <li>IndustrialMilitaryBasic</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelMoney>400~600</apparelMoney>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+  </PawnKindDef>
+
+  <!-- T3官員,排長 -->
+  <PawnKindDef ParentName="DMS_OfficerBase">
+    <defName>DMS_Officer_B</defName>
+    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Lieutenant</minTitleRequired>
+    <label>platoon leader</label>
+    <labelPlural>officer</labelPlural>
+    <combatPower>40</combatPower>
+    <apparelTags>
+      <li>IndustrialMilitaryBasic</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelMoney>400~600</apparelMoney>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+  </PawnKindDef>
+
+  <!-- T4官員,前線指揮官 -->
+  <PawnKindDef ParentName="DMS_OfficerBase">
+    <defName>DMS_Officer_C</defName>
+    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Major</minTitleRequired>
+    <label>forward commander</label>
+    <labelPlural>officer</labelPlural>
+    <combatPower>40</combatPower>
+    <apparelTags>
+      <li>IndustrialMilitaryBasic</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelMoney>400~600</apparelMoney>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+  </PawnKindDef>
+
+  <!-- T5官員,作戰領導 -->
+  <PawnKindDef ParentName="DMS_OfficerBase">
+    <defName>DMS_Officer_Leader</defName>
+    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Brigadier</minTitleRequired>
+    <label>sector command</label>
+    <labelPlural>officer</labelPlural>
+    <factionLeader>true</factionLeader>
+    <combatPower>10</combatPower>
+    <apparelTags>
+      <li>IndustrialMilitaryBasic</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelMoney>1400~1600</apparelMoney>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+  </PawnKindDef>
+
+</Defs>
