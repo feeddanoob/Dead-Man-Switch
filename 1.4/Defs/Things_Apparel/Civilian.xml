@@ -75,7 +75,7 @@
 	<ThingDef ParentName="DMS_CapBase"><!-- GarrisionCap -->
 		<defName>DMS_Apparel_GarrisionCap</defName>
 		<label>garrision cap</label>
-		<description>a soft cap for military man when combat helmet is not required.</description>
+		<description>a soft cap for service man when combat helmet is not required.</description>
 		<graphicData>
 			<texPath>Things/Apparel/GarrisionCap/headgear_icon</texPath>
 		</graphicData>
@@ -88,7 +88,6 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<statBases>
-			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<MaxHitPoints>50</MaxHitPoints>
@@ -136,7 +135,7 @@
 		  <MaxHitPoints>160</MaxHitPoints>
 		  <WorkToMake>7000</WorkToMake>
 		  <Mass>1.5</Mass>
-		  <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 		  <StuffEffectMultiplierInsulation_Cold>0.80</StuffEffectMultiplierInsulation_Cold>
 		  <StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
 		  <EquipDelay>1.5</EquipDelay>

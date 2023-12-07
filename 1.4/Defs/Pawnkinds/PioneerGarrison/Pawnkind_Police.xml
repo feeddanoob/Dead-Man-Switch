@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- T2警務人員 -->
-  <PawnKindDef ParentName="DMS_OutlanderBase" Name="DMS_PoliceBase" Abstract="True">
+  <PawnKindDef ParentName="DMS_OutlanderBase" Name="DMS_PoliceBase">
     <defName>DMS_Police</defName>
     <label>police</label>
     <combatPower>60</combatPower>

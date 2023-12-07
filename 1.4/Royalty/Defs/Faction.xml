@@ -90,7 +90,7 @@
         <li>(0, 1)</li> <!--Constant 1 at all points levels-->
       </points>
     </raidCommonalityFromPointsCurve>
-    <raidLootMaker>EmpireRaidLootMaker</raidLootMaker>      <!-- WIP -->
+    <raidLootMaker>VanguardRaidLootMaker</raidLootMaker>
     <maxPawnCostPerTotalPointsCurve>
       <points>
         <li>(500, 100)</li> <!-- Can always use relatively strong pawns, because empire doesn't really have weak ones -->
@@ -104,7 +104,7 @@
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <Empire_Common_Trader>1</Empire_Common_Trader>
+          <DMS_Trader>1</DMS_Trader>
         </traders>
         <carriers>
           <DMS_Mech_EscortLifter>10</DMS_Mech_EscortLifter>
@@ -113,11 +113,11 @@
           <Alpaca>2</Alpaca>
         </carriers>
         <guards>
-          <Villager>3</Villager>
+          <DMS_Civilian>3</DMS_Civilian>
           <DMS_Mech_Soldat>10</DMS_Mech_Soldat>
-          <Empire_Fighter_Cataphract>1.5</Empire_Fighter_Cataphract>
-          <Empire_Fighter_Janissary>7</Empire_Fighter_Janissary>
-          <Empire_Fighter_Champion>10</Empire_Fighter_Champion>
+          <DMS_MinuteMan_Heavy>1.5</DMS_MinuteMan_Heavy>
+          <DMS_MinuteMan>7</DMS_MinuteMan>
+          <DMS_Security>10</DMS_Security>
         </guards>
       </li>
       <li>
@@ -138,12 +138,13 @@
         <!-- breach fights -->
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
-        <options>
+        <options>       
+          <DMS_Mech_VerlingBirdA>3</DMS_Mech_VerlingBirdA>
           <DMS_Mech_Grenadier>6</DMS_Mech_Grenadier>
           <DMS_Squad_Sniper>2</DMS_Squad_Sniper>
           <DMS_Mech_Ronin>6</DMS_Mech_Ronin>
           <DMS_Mech_Protector>5</DMS_Mech_Protector>
-          <DMS_Mech_Siegebreaker>4</DMS_Mech_Siegebreaker>
+          <DMS_Mech_Siegebreaker>3</DMS_Mech_Siegebreaker>
           <DMS_Mech_Kanonier>1</DMS_Mech_Kanonier>
         </options>
       </li>
@@ -170,7 +171,7 @@
   </FactionDef>
 
   <ThingSetMakerDef>
-    <defName>EmpireRaidLootMaker</defName>
+    <defName>VanguardRaidLootMaker</defName>
     <root Class="ThingSetMaker_MarketValue">
       <fixedParams>
         <filter>

@@ -3,7 +3,6 @@
 
   <PawnKindDef Name="DMS_OutlanderBase" Abstract="True">
     <race>Human</race>
-    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Sergeant</minTitleRequired>
     <defaultFactionType>OutlanderCivil</defaultFactionType>
     <chemicalAddictionChance>0</chemicalAddictionChance>
     <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
@@ -228,37 +227,4 @@
 	  </skills>
   </PawnKindDef>
 
-  <!--
-  <PawnKindDef ParentName="DMS_OutlanderBase" Name="DMS_OfficerBase">
-    <defName>DMS_Officer</defName>
-    <label>military officer</label>
-    <labelPlural>officer</labelPlural>
-    <combatPower>40</combatPower>
-    <factionLeader>true</factionLeader>
-    <minGenerationAge>30</minGenerationAge>
-    <isFighter>false</isFighter>
-    <itemQuality>Good</itemQuality>
-    <weaponMoney>200~200</weaponMoney>
-    <weaponTags>
-      <li>Gun</li>
-    </weaponTags>
-    <apparelMoney>700~1200</apparelMoney>
-    <apparelTags>
-      <li>IndustrialMilitaryBasic</li>
-      <li>BeltDefensePop</li>
-    </apparelTags>
-    <apparelRequired>
-      <li>Apparel_BowlerHat</li>
-    </apparelRequired>
-    <techHediffsChance>0.15</techHediffsChance>
-    <techHediffsMoney>600~1500</techHediffsMoney>
-    <techHediffsTags>
-      <li>Simple</li>
-      <li>Advanced</li>
-      <li>ImplantEmpireCommon</li>
-    </techHediffsTags>
-    <initialWillRange>3~5</initialWillRange>
-    <initialResistanceRange>7~11</initialResistanceRange>
-  </PawnKindDef>
--->
 </Defs>

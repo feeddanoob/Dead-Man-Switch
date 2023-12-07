@@ -91,7 +91,6 @@
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 		</recipeMaker>
 		<statBases>
-			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<MaxHitPoints>50</MaxHitPoints>
@@ -137,7 +136,7 @@
 	<ThingDef ParentName="DMS_CapBase"><!-- ArmyCap -->
 		<defName>DMS_Apparel_ArmyCap</defName>
 		<label>army cap</label>
-		<description>a soft cap for military man when combat helmet is not required.</description>
+		<description>a soft cap for service man when combat helmet is not required.</description>
 		<graphicData>
 			<texPath>Things/Apparel/ArmyCap/headgear_icon</texPath>
 		</graphicData>
