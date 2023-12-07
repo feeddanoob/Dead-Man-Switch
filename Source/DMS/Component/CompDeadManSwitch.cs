@@ -13,17 +13,16 @@ namespace DMS
         }
         public override void CompTickRare()
         {
-            base.CompTickRare();
-            if (parent.Faction != Faction.OfPlayer) return;
+            //if (parent.Faction != Faction.OfPlayer) return;
 
-            Pawn p = parent as Pawn;
-            if (!p.Dead)
-            {
-                if (parent.GetComp<CompOverseerSubject>().DelayUntilFeralCheckTicks <= Props.minDelayUntilDMS)
-                {
-                    parent.Kill();
-                }
-            }
+            //Pawn p = parent as Pawn;
+            //if (!p.Dead)
+            //{
+            //    if (parent.GetComp<CompOverseerSubject>().DelayUntilFeralCheckTicks <= Props.minDelayUntilDMS)
+            //    {
+            //        parent.Kill();
+            //    }
+            //}
         }
         public override string CompInspectStringExtra()
         {   if (parent.Faction != Faction.OfPlayer || parent.GetComp<CompOverseerSubject>() == null) return null;

@@ -64,6 +64,8 @@
     <Compile Include="Component\CompMechApparel.cs" />
     <Compile Include="Component\CompMechOnlyWeapon.cs" />
     <Compile Include="Component\CompVehicleWeapon.cs" />
+    <Compile Include="Royalty\RoyalTitlePermitWorker_MechJoin.cs" />
+    <Compile Include="Royalty\RoyalTitlePermitWorker_PawnJoin.cs" />
     <Compile Include="Hediff\CompMechanitorRange.cs" />
     <Compile Include="Hediff\HediffComp_GiveHediffWtihSeverity.cs" />
     <Compile Include="Hediff\HediffComp_RemoveHediffsOnDeath.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="Thing\WeaponUsableMech.cs" />
     <Compile Include="UI\Command_SelectApparelOutfit.cs" />
     <Compile Include="UI\ITab_Mech_Gear.cs" />
+    <Compile Include="Utility\CheckUtility.cs" />
     <Compile Include="Utility\FloatMenuUtility.cs" />
     <Compile Include="Patch\HarmonyEntry.cs" />
     <Compile Include="Thing\HumanlikeMech.cs" />
@@ -87,5 +90,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\HumnalikeMechRenderingUtility.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

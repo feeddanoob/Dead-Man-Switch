@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using RimWorld;
 using Verse;
 using UnityEngine;
 
@@ -135,8 +134,6 @@ namespace DMS
             base.CompTickRare();
             _turretAnglePerFrame = Rand.Range(-0.5f, 0.5f);
         }
-
-
     }
     public class CompProperties_VehicleWeapon : CompProperties
     {
@@ -144,7 +141,6 @@ namespace DMS
         {
             this.compClass = typeof(CompVehicleWeapon);
         }
-
         public Vector3 drawOffset = Vector3.zero;
         public bool turretRotationFollowPawn = false;
         public float rotationSmoothTime = 0.12f;
