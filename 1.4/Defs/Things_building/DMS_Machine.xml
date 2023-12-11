@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+  <DesignatorDropdownGroupDef>
+    <defName>DMS_MachineHound</defName>
+    <label>hound variants</label>
+  </DesignatorDropdownGroupDef>
+
   <ThingDef Name="DMS_BaseChargeStation" ParentName="BuildingBase" Abstract="True">
     <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
     <graphicData>
@@ -66,7 +72,7 @@
         <basePowerConsumption>200</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
-        <pawnToSpawn>DMS_Mech_TrashBin</pawnToSpawn>
+        <pawnToSpawn>DMS_Machine_TrashBin</pawnToSpawn>
         <extraChargingPower>1400</extraChargingPower>
         <hoursToRecharge>24</hoursToRecharge>
       </li>
@@ -94,7 +100,7 @@
         <basePowerConsumption>200</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
-        <pawnToSpawn>DMS_Mech_VerlingBird</pawnToSpawn>
+        <pawnToSpawn>DMS_Machine_VerlingBird</pawnToSpawn>
         <extraChargingPower>1400</extraChargingPower>
         <hoursToRecharge>24</hoursToRecharge>
       </li>
@@ -106,6 +112,7 @@
     <defName>DMS_Hound_Base</defName>
     <label>Hound charging station</label>
     <description>A station for assembling and recharging Hound.</description>
+    <designatorDropdown>DMS_MachineHound</designatorDropdown>
     <statBases>
       <WorkToBuild>1000</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
@@ -122,19 +129,19 @@
         <basePowerConsumption>200</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
-        <pawnToSpawn>DMS_Mech_Hound</pawnToSpawn>
+        <pawnToSpawn>DMS_Machine_Hound</pawnToSpawn>
         <extraChargingPower>1400</extraChargingPower>
         <hoursToRecharge>24</hoursToRecharge>
       </li>
     </comps>
   </ThingDef>
 
-
   <!-- Hound(RC) charge station -->
   <ThingDef ParentName="DMS_BaseChargeStation">
     <defName>DMS_Hound_RC_Base</defName>
     <label>Hound(Riot Control) charging station</label>
     <description>A station for assembling and recharging Riot Control Hound.</description>
+    <designatorDropdown>DMS_MachineHound</designatorDropdown>
     <statBases>
       <WorkToBuild>1000</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
@@ -151,7 +158,7 @@
         <basePowerConsumption>200</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
-        <pawnToSpawn>DMS_Mech_Hound_RC</pawnToSpawn>
+        <pawnToSpawn>DMS_Machine_Hound_RC</pawnToSpawn>
         <extraChargingPower>1400</extraChargingPower>
         <hoursToRecharge>24</hoursToRecharge>
       </li>
@@ -163,6 +170,7 @@
     <defName>DMS_Hound_FS_Base</defName>
     <label>Hound(Fire Suppress) charging station</label>
     <description>A station for assembling and recharging Fire Hound.</description>
+    <designatorDropdown>DMS_MachineHound</designatorDropdown>
     <statBases>
       <WorkToBuild>1000</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
@@ -179,7 +187,7 @@
         <basePowerConsumption>200</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
-        <pawnToSpawn>DMS_Mech_Hound_FS</pawnToSpawn>
+        <pawnToSpawn>DMS_Machine_Hound_FS</pawnToSpawn>
         <extraChargingPower>1400</extraChargingPower>
         <hoursToRecharge>24</hoursToRecharge>
       </li>

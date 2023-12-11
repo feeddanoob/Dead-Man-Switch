@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- T4 DMS_HeavyMachines-->
+  <!-- 駭蜥 tarbosaurus-->
+
+  <ThingDef ParentName="BaseAutomatroidRace">
+    <defName>DMS_Mech_Tarbosaurus</defName>
+    <label>tarbosaurus</label>
+    <description>1234567890</description>
+    <statBases>
+      <MoveSpeed>4</MoveSpeed>
+      <ArmorRating_Sharp>0.9</ArmorRating_Sharp><!--銳抗-->
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt><!--鈍抗-->
+      <ArmorRating_Heat>2</ArmorRating_Heat>  <!--能抗-->
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">10</BandwidthCost>        <!--帶寬消耗-->
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">50</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+    </statBases>
+    <race>
+      <body>DMS_Bipedal</body>
+      <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
+      <baseBodySize>4.5</baseBodySize>
+      <baseHealthScale>5</baseHealthScale>
+      <mechWeightClass>UltraHeavy</mechWeightClass>
+    </race>    
+    <comps>
+		  <li Class="DMS.CompProperties_VehicleWeapon">
+			  <defaultWeapon>DMS_Tarbosaurus_Gun</defaultWeapon>			  
+        <drawSize>3</drawSize>
+			  <drawOffset>(0,0,0)</drawOffset>
+			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
+        <rotationSmoothTime>0.12</rotationSmoothTime>
+      </li>     
+      <li Class="CompProperties_TurretGun">
+        <turretDef>Gun_ChargeBlasterTurret</turretDef>
+        <angleOffset>-90</angleOffset>
+      </li>
+    </comps>
+    <killedLeavingsPlayerHostile>
+      <Neurocomputer>1</Neurocomputer>
+    </killedLeavingsPlayerHostile>
+    <tools Inherit="False">
+      <li>
+        <label>Mechanical Head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>35</power>
+        <cooldownTime>5.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.08</chanceFactor>
+		    <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>20</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>Left Leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>3.5</cooldownTime>
+        <linkedBodyPartsGroup>LeftMechanicalLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+		    <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>16</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>Right Leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>3.5</cooldownTime>
+        <linkedBodyPartsGroup>RightMechanicalLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+		    <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>16</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+    <damageMultipliers>
+      <li>
+        <damageDef>Blunt</damageDef>
+        <multiplier>0.6</multiplier>
+      </li>
+    </damageMultipliers>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_Tarbosaurus</defName>
+    <label>tarbosaurus</label>
+    <race>DMS_Mech_Tarbosaurus</race>
+    <isFighter>true</isFighter>
+    <combatPower>300</combatPower>                                               <!--威脅點數-->
+    <maxPerGroup>2</maxPerGroup>                                                 <!--單個集群內的數量-->
+    <allowInMechClusters>false</allowInMechClusters>                             <!--是否出現在機械集群-->
+    <lifeStages>                                                                 <!--身體圖片-->
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/tarbosaurus</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.75</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/OldTexture/tarbosaurus</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.75</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags/>
+  </PawnKindDef>
+
+</Defs>

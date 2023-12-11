@@ -32,13 +32,12 @@ namespace DMS
 
 			Vector3 drawLoc = pawn.DrawPos;
 			drawLoc.y += Altitudes.AltInc;
-			drawLoc += compWeapon.Props.drawOffset;
+			drawLoc += compWeapon.Props.drawOffset.RotatedBy(pawn.Rotation.AsAngle);
 			float num = (aimAngle - 90f) % 360f;
 			Matrix4x4 matrix = default;
 			matrix.SetTRS(drawLoc, Quaternion.AngleAxis(num, Vector3.up), new Vector3(equipment.Graphic.drawSize.x, 1f, equipment.Graphic.drawSize.y));
 			Graphics.DrawMesh(MeshPool.plane10, matrix, (!(equipment.Graphic is Graphic_StackCount graphic_StackCount)) ? equipment.Graphic.MatSingle : graphic_StackCount.SubGraphicForStackCount(1, equipment.def).MatSingle, 0);
 		}
-
 		public static Mesh plane10Flip = MeshMakerPlanes.NewPlaneMesh(1f, true);
 	}
 }

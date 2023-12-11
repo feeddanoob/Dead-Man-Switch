@@ -179,6 +179,37 @@
 					</li>
 				</value>
 			</li>
+
+
+			<!--unit suit-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_UnitSuit"]/statBases/StuffEffectMultiplierArmor</xpath>
+				<value>
+					<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_UnitSuit"]/statBases</xpath>
+				<value>
+					<Bulk>2</Bulk>
+					<WornBulk>0</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_UnitSuit"]/equippedStatOffsets</xpath>
+				<value>
+					<CarryWeight>5</CarryWeight>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_UnitSuit"]/apparel/bodyPartGroups</xpath>
+				<value>
+					<li>Hands</li>
+					<li>Feet</li>
+				</value>
+			</li>
+
 		</operations>
 	</Operation>
 </Patch>

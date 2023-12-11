@@ -3,7 +3,7 @@
 
   <PawnKindDef Name="DMS_OutlanderBase" Abstract="True">
     <race>Human</race>
-    <defaultFactionType>OutlanderCivil</defaultFactionType>
+    <defaultFactionType>DMS_Army</defaultFactionType>
     <chemicalAddictionChance>0</chemicalAddictionChance>
     <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
     <gearHealthRange>0.75~2.0</gearHealthRange>

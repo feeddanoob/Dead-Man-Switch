@@ -143,6 +143,7 @@ namespace DMS
         }
         public Vector3 drawOffset = Vector3.zero;
         public bool turretRotationFollowPawn = false;
+        public bool horizontalFlip = false;
         public float rotationSmoothTime = 0.12f;
         public ThingDef defaultWeapon;
         public float drawSize = 2f;

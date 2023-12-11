@@ -125,7 +125,7 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <DMS_Mech_VerlingBirdA>3</DMS_Mech_VerlingBirdA>
+          <DMS_Machine_VerlingBirdA>3</DMS_Machine_VerlingBirdA>
           <DMS_Mech_Pioneer>5</DMS_Mech_Pioneer>
           <DMS_Mech_Jaeger>3.5</DMS_Mech_Jaeger>
           <DMS_Soldier>3</DMS_Soldier>
@@ -139,7 +139,7 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>       
-          <DMS_Mech_VerlingBirdA>3</DMS_Mech_VerlingBirdA>
+          <DMS_Machine_VerlingBirdA>3</DMS_Machine_VerlingBirdA>
           <DMS_Mech_Grenadier>6</DMS_Mech_Grenadier>
           <DMS_Squad_Sniper>2</DMS_Squad_Sniper>
           <DMS_Mech_Ronin>6</DMS_Mech_Ronin>
@@ -186,106 +186,4 @@
     </root>
   </ThingSetMakerDef>
   
-  <!-- =============================== Names =============================== -->
-
-  <RulePackDef>
-    <defName>NamerFactionEmpire</defName>
-    <include>
-      <li>EmpireNameUtility</li>
-    </include>
-    <rulePack>
-      <rulesStrings>
-        <li>r_name(p=2)->[empire] of [ofThing]</li>
-        <li>r_name(p=2)->The [empire] of [ofThing]</li>
-        <li>r_name->The Exodus [empire]</li>
-        <li>r_name->The Refugee [empire]</li>
-        <li>r_name->The Broken [empire]</li>
-        <li>r_name->The Shattered [empire]</li>
-        <li>r_name->The Fallen [empire]</li>
-        <li>r_name->The [Color] [empire]</li>
-
-        <li>empire(p=4)->Empire</li>
-        <li>empire->Commonwealth</li>
-        <li>empire->Imperium</li>
-        <li>empire->Dominion</li>
-        <li>empire->Sovereignty</li>
-
-        <li>ofThing(p=4)->[WordImperial]</li>
-        <li>ofThing->the Sun</li>
-        <li>ofThing->the Moon</li>
-        <li>ofThing->the Universe</li>
-        <li>ofThing->God</li>
-        <li>ofThing->Perfection</li>
-        <li>ofThing->Eternity</li>
-        <li>ofThing->the Spirit</li>
-      </rulesStrings>
-    </rulePack>
-  </RulePackDef>
-
-  <RulePackDef>
-    <defName>NamerSettlementEmpire</defName>
-    <include>
-      <li>EmpireNameUtility</li>
-    </include>
-    <rulePack>
-      <rulesStrings>
-        <li>r_name->[townname_wordgen]</li>
-        <li>r_name->[townname_fixed]</li>
-
-        <li>townname_wordgen->[WordImperial]</li>
-        <li>townname_wordgen->[WordImperial][townend]</li>
-        <li>townend(p=3)->ium</li>
-        <li>townend(p=3)->ior</li>
-        <li>townend(p=3)->polis</li>
-        <li>townend->nor</li>
-        <li>townend->lan</li>
-        <li>townend->lax</li>
-        <li>townend->lix</li>
-        <li>townend->lin</li>
-        <li>townend->lian</li>
-        <li>townend->phrum</li>
-        <li>townend->phor</li>
-        <li>townend->teor</li>
-        <li>townend->ople</li>
-        <li>townend->opium</li>
-        <li>townend->or</li>
-        <li>townend->aetor</li>
-        <li>townend->aeum</li>
-        <li>townend->aetium</li>
-        <li>townend->am</li>
-        <li>townend->aeum</li>
-      </rulesStrings>
-      <rulesFiles>
-        <li>townname_fixed->Names/EmpireTown</li>
-      </rulesFiles>
-    </rulePack>
-  </RulePackDef>
-
-  <RulePackDef>
-    <defName>NamerPersonSophian</defName>
-    <include>
-      <li>EmpireNameUtility</li>
-    </include>
-    <rulePack>
-      <rulesStrings>
-        <li>r_name(p=3)->[ImperialNameFirstMale] [ImperialNameLast]</li>
-        <li>r_name(p=2)->[ImperialNameFirstMale] [WordImperial]</li>
-        <li>r_name(p=2)->[WordImperial] [WordImperial]</li>
-      </rulesStrings>
-    </rulePack>
-  </RulePackDef>
-
-  <RulePackDef>
-    <defName>NamerPersonSophianFemale</defName>
-    <include>
-      <li>EmpireNameUtility</li>
-    </include>
-    <rulePack>
-      <rulesStrings>
-        <li>r_name(p=3)->[ImperialNameFirstFemale] [ImperialNameLast]</li>
-        <li>r_name(p=2)->[ImperialNameFirstFemale] [WordImperial]</li>
-        <li>r_name(p=2)->[WordImperial] [WordImperial]</li>
-      </rulesStrings>
-    </rulePack>
-  </RulePackDef>
 </Defs>

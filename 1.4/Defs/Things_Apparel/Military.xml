@@ -11,13 +11,13 @@
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
-			<effectWorking>Tailor</effectWorking>
-			<soundWorking>Recipe_Tailor</soundWorking>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
 			<recipeUsers>
 				<li>DMS_TableAtrifuscle</li>
 			</recipeUsers>
 			<researchPrerequisite>DMS_Atrifuscle</researchPrerequisite>
-			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
 			<Plasfiber>40</Plasfiber>
@@ -79,25 +79,13 @@
 		<thingCategories>
 			<li>Apparel</li>
 		</thingCategories>
-		<recipeMaker>
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Tailor</effectWorking>
-			<soundWorking>Recipe_Tailor</soundWorking>
-			<recipeUsers>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-			</recipeUsers>
-			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-		</recipeMaker>
 		<statBases>
-			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
 			<MaxHitPoints>50</MaxHitPoints>
 			<WorkToMake>2500</WorkToMake>
 			<Mass>0.05</Mass>
-			<Insulation_Cold>7</Insulation_Cold>
-			<Insulation_Heat>6</Insulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<apparel>
@@ -114,23 +102,34 @@
 			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 		</apparel>
 		<tradeTags>
-			<li>Armor</li>
+			<li>Clothing</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
-				<li>
-					<only>(0.33,0.33,0.33)</only>
-				</li>
-				<li>
-					<only>(0.65,0.65,0.65)</only>
-				</li>
-				<li>
-					<weight>0.5</weight>
-					<min>(0.3,0.3,0.3)</min>
-					<max>(0.5,0.5,0.5)</max>
-				</li>
+			  <li>
+				<weight>10</weight>
+				<only>(0.33,0.33,0.33)</only>
+			  </li>
+			  <li>
+				<weight>10</weight>
+				<only>(0.65,0.65,0.65)</only>
+			  </li>
+			  <li>
+				<weight>10</weight>
+				<only>(0.4,0.3,0.15)</only>
+			  </li>
+			  <li>
+				<weight>15</weight>
+				<min>(0.3,0.3,0.3)</min>
+				<max>(0.5,0.5,0.5)</max>
+			  </li>
+			  <li>
+				<weight>6</weight>
+				<min>(0.5,0.5,0.5)</min>
+				<max>(1,1,1)</max>
+			  </li>
 			</options>
-		</colorGenerator>
+		  </colorGenerator>
 	</ThingDef>
 
 	<ThingDef ParentName="DMS_CapBase"><!-- ArmyCap -->
@@ -149,14 +148,9 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<statBases>
-			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<MaxHitPoints>50</MaxHitPoints>
 			<WorkToMake>2500</WorkToMake>
 			<Mass>0.05</Mass>
-			<Insulation_Cold>7</Insulation_Cold>
-			<Insulation_Heat>6</Insulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -186,14 +180,9 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<statBases>
-			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<MaxHitPoints>50</MaxHitPoints>
 			<WorkToMake>2500</WorkToMake>
 			<Mass>0.05</Mass>
-			<Insulation_Cold>7</Insulation_Cold>
-			<Insulation_Heat>6</Insulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -223,14 +212,9 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<statBases>
-			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<MaxHitPoints>50</MaxHitPoints>
 			<WorkToMake>2500</WorkToMake>
 			<Mass>0.05</Mass>
-			<Insulation_Cold>7</Insulation_Cold>
-			<Insulation_Heat>6</Insulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -300,25 +284,30 @@
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
-				<li>
-					<weight>10</weight>
-					<only>(0.33,0.33,0.33,1)</only>
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>(0.65,0.65,0.65,1)</only>
-				</li>
-				<li>
-					<weight>6</weight>
-					<min>(0.3,0.3,0.3,1)</min>
-					<max>(0.5,0.5,0.5,1)</max>
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>(0.9,0.9,0.9,1)</only>
-				</li>
+			  <li>
+				<weight>10</weight>
+				<only>(0.33,0.33,0.33)</only>
+			  </li>
+			  <li>
+				<weight>10</weight>
+				<only>(0.65,0.65,0.65)</only>
+			  </li>
+			  <li>
+				<weight>10</weight>
+				<only>(0.4,0.3,0.15)</only>
+			  </li>
+			  <li>
+				<weight>15</weight>
+				<min>(0.3,0.3,0.3)</min>
+				<max>(0.5,0.5,0.5)</max>
+			  </li>
+			  <li>
+				<weight>6</weight>
+				<min>(0.5,0.5,0.5)</min>
+				<max>(1,1,1)</max>
+			  </li>
 			</options>
-		</colorGenerator>
+		  </colorGenerator>
 		<tradeTags>
 			<li>Armor</li>
 		</tradeTags>
@@ -387,19 +376,30 @@
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
-				<li>
-					<only>(0.33,0.33,0.33)</only>
-				</li>
-				<li>
-					<only>(0.65,0.65,0.65)</only>
-				</li>
-				<li>
-					<weight>0.5</weight>
-					<min>(0.3,0.3,0.3)</min>
-					<max>(0.5,0.5,0.5)</max>
-				</li>
+			  <li>
+				<weight>10</weight>
+				<only>(0.33,0.33,0.33)</only>
+			  </li>
+			  <li>
+				<weight>10</weight>
+				<only>(0.65,0.65,0.65)</only>
+			  </li>
+			  <li>
+				<weight>10</weight>
+				<only>(0.4,0.3,0.15)</only>
+			  </li>
+			  <li>
+				<weight>15</weight>
+				<min>(0.3,0.3,0.3)</min>
+				<max>(0.5,0.5,0.5)</max>
+			  </li>
+			  <li>
+				<weight>6</weight>
+				<min>(0.5,0.5,0.5)</min>
+				<max>(1,1,1)</max>
+			  </li>
 			</options>
-		</colorGenerator>
+		  </colorGenerator>
 		<tradeTags>
 			<li>Armor</li>
 		</tradeTags>

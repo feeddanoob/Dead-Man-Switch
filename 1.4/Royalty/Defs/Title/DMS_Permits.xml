@@ -265,52 +265,53 @@
     <cooldownDays>40</cooldownDays>
   </RoyalTitlePermitDef>
 
+
   <RoyalTitlePermitDef>
-    <defName>CallMilitaryAidLarge</defName>
-    <label>call janissary squad</label>
-    <description>Call a group of 4 professional janissaries to aid you in battle.</description>
+    <defName>DMS_Platoon_MT</defName>
+    <label>call squad support</label>
+    <description>Call a squad of soldiers to aid you in battle.</description>
     <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
-    <minTitle>Praetor</minTitle>
+    <minTitle>DMS_Colonel</minTitle>
     <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
     <uiPosition>(0,7)</uiPosition>
     <royalAid>
       <favorCost>6</favorCost>
-      <pawnKindDef>Empire_Fighter_Janissary</pawnKindDef>
-      <pawnCount>4</pawnCount>
+      <pawnKindDef>DMS_Soldier</pawnKindDef>
+      <pawnCount>16</pawnCount>
       <targetingRange>39.9</targetingRange>
     </royalAid>
-    <cooldownDays>50</cooldownDays>
+    <cooldownDays>30</cooldownDays>
   </RoyalTitlePermitDef>
-
+  
   <RoyalTitlePermitDef>
-    <defName>CallMilitaryAidGrand</defName>
-    <label>call cataphract squad</label>
-    <description>Call a group of 4 heavy cataphracts to aid you in battle.</description>
+    <defName>DMS_Platoon_AC</defName>
+    <label>call platoon support</label>
+    <description>Call a platoon of soldiers to aid you in battle.</description>
     <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
-    <minTitle>Count</minTitle>
+    <minTitle>DMS_Brigadier</minTitle>
     <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
     <prerequisite>CallMilitaryAidLarge</prerequisite>
     <uiPosition>(1,7)</uiPosition>
     <royalAid>
       <favorCost>8</favorCost>
-      <pawnKindDef>Empire_Fighter_Cataphract</pawnKindDef>
-      <pawnCount>4</pawnCount>
+      <pawnKindDef>DMS_Soldier</pawnKindDef>
+      <pawnCount>25</pawnCount>
       <targetingRange>39.9</targetingRange>
     </royalAid>
     <cooldownDays>60</cooldownDays>
   </RoyalTitlePermitDef>
 
   <RoyalTitlePermitDef>
-    <defName>CallOrbitalStrike</defName>
+    <defName>DMS_CallOrbitalStrike</defName>
     <label>call aerodrone strike</label>
     <description>Call a single-impact aerodrone strike at a target position.</description>
     <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
-    <minTitle>Knight</minTitle>
+    <minTitle>DMS_Captain</minTitle>
     <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
-    <cooldownDays>45</cooldownDays>
+    <cooldownDays>15</cooldownDays>
     <uiPosition>(0,5)</uiPosition>
     <royalAid>
       <favorCost>6</favorCost>
@@ -324,15 +325,15 @@
   </RoyalTitlePermitDef>
 
   <RoyalTitlePermitDef>
-    <defName>CallOrbitalSalvo</defName>
+    <defName>DMS_CallOrbitalSalvo</defName>
     <label>call aerodrone salvo</label>
     <description>Call a salvo of aerodrone strikes around a target position.</description>
     <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
-    <minTitle>Praetor</minTitle>
+    <minTitle>DMS_Brigadier</minTitle>
     <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
     <prerequisite>CallOrbitalStrike</prerequisite>
-    <cooldownDays>60</cooldownDays>
+    <cooldownDays>15</cooldownDays>
     <uiPosition>(1,5)</uiPosition>
     <royalAid>
       <favorCost>8</favorCost>
@@ -349,11 +350,11 @@
   <!-- Utility -->
 
   <RoyalTitlePermitDef>
-    <defName>CallTransportShuttle</defName>
+    <defName>DMS_CallTransportShuttle</defName>
     <label>call transport shuttle</label>
     <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
     <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
-    <minTitle>Knight</minTitle>
+    <minTitle>DMS_Lieutenant</minTitle>
     <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
     <cooldownDays>40</cooldownDays>

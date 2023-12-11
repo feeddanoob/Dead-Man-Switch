@@ -3,14 +3,14 @@
     
     <!--give CE grenades to birdy-->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="DMS_Mech_VerlingBird"]/modExtensions/li[@Class="DMS.MechWeaponExtension"]/UsableWeaponTags</xpath>
+        <xpath>Defs/ThingDef[defName="DMS_Machine_VerlingBird"]/modExtensions/li[@Class="DMS.MechWeaponExtension"]/UsableWeaponTags</xpath>
             <value>
                 <li>CE_AI_Grenade</li>
             </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/PawnKindDef[defName="DMS_Mech_VerlingBirdA"]/weaponTags</xpath>
+        <xpath>Defs/PawnKindDef[defName="DMS_Machine_VerlingBirdA"]/weaponTags</xpath>
             <value>
                 <li>CE_GrenadeFlashbang</li>
                 <li>GrenadeDestructive</li>

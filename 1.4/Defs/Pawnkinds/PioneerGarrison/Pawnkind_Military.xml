@@ -144,6 +144,9 @@
     <weaponMoney>2500~5000</weaponMoney>
     <weaponTags>
       <li>Gun</li>
+      <li>DMS_MechWeaponLight</li>
+      <li>A_AR_LongRifle</li>
+      <li>AssaultRifle</li>
     </weaponTags>
     <skills>
       <li>

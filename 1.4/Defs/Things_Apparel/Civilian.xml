@@ -88,13 +88,9 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<statBases>
-			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<MaxHitPoints>50</MaxHitPoints>
 			<WorkToMake>2500</WorkToMake>
 			<Mass>0.05</Mass>
-			<Insulation_Cold>7</Insulation_Cold>
-			<Insulation_Heat>6</Insulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -135,7 +131,7 @@
 		  <MaxHitPoints>160</MaxHitPoints>
 		  <WorkToMake>7000</WorkToMake>
 		  <Mass>1.5</Mass>
-		  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
 		  <StuffEffectMultiplierInsulation_Cold>0.80</StuffEffectMultiplierInsulation_Cold>
 		  <StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
 		  <EquipDelay>1.5</EquipDelay>
@@ -207,7 +203,7 @@
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 			<researchPrerequisite>DMS_Plasfiber</researchPrerequisite>
-			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
 			<Plasfiber>80</Plasfiber>
@@ -278,7 +274,7 @@
 			<recipeUsers>
 			  <li>DMS_TableMachinePrinter</li>
 			</recipeUsers>
-			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
 			<Tungsteel>75</Tungsteel>

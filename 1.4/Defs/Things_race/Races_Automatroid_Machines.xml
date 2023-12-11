@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- T0 DMS_MechBasis-->
-
-
   <ThingDef ParentName="BasePawn" Name="BaseDMSMachine" Abstract="True">
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <thingClass>VFEMech.Machine</thingClass>
@@ -98,7 +96,7 @@
 
   <!-- 垃圾桶 -->
   <ThingDef ParentName="BaseDMSMachine">
-    <defName>DMS_Mech_TrashBin</defName>
+    <defName>DMS_Machine_TrashBin</defName>
     <label>trash bin</label>
     <description>圓筒狀的服務用機器人,常見於中寰世界的現代化都市中用來提供道路清潔,快遞與送餐到府服務,以及在應急事件發生時第一時間到場協助疏散與維護秩序.</description>
     <statBases>
@@ -131,9 +129,9 @@
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_TrashBin</defName>
+    <defName>DMS_Machine_TrashBin</defName>
     <label>trash bin</label>
-    <race>DMS_Mech_TrashBin</race>
+    <race>DMS_Machine_TrashBin</race>
     <isFighter>false</isFighter>
     <lifeStages>
       <li>
@@ -203,7 +201,7 @@
   </ThingDef>
 
   <ThingDef ParentName="VerlingBirdBase">
-    <defName>DMS_Mech_VerlingBird</defName>
+    <defName>DMS_Machine_VerlingBird</defName>
     <thingClass>DMS.WeaponUsableMachine</thingClass>
     <modExtensions>
       <li Class="DMS.MechWeaponExtension">
@@ -221,14 +219,14 @@
   </ThingDef>
 
   <ThingDef ParentName="VerlingBirdBase">
-    <defName>DMS_Mech_VerlingBirdA</defName>
+    <defName>DMS_Machine_VerlingBirdA</defName>
     <thingClass>VFEMech.Machine</thingClass>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_VerlingBird</defName>
+    <defName>DMS_Machine_VerlingBird</defName>
     <label>verling bird</label>
-    <race>DMS_Mech_VerlingBird</race>
+    <race>DMS_Machine_VerlingBird</race>
     <isFighter>true</isFighter>
     <combatPower>20</combatPower>
     <maxPerGroup>30</maxPerGroup>
@@ -255,9 +253,9 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_VerlingBirdA</defName>
+    <defName>DMS_Machine_VerlingBirdA</defName>
     <label>verling bird</label>
-    <race>DMS_Mech_VerlingBird</race>
+    <race>DMS_Machine_VerlingBird</race>
     <isFighter>true</isFighter>
     <combatPower>20</combatPower>
     <maxPerGroup>30</maxPerGroup>
@@ -289,7 +287,7 @@
 
   <!-- T1 DMS_DeadMansSwitch-->
   <!-- 獵犬 -->
-  <ThingDef Name="DMS_MechHoundBase" ParentName="BaseDMSMachine" Abstract="True">  <!-- DMS_Mech_Hound 獵犬常規型 -->
+  <ThingDef Name="DMS_MechHoundBase" ParentName="BaseDMSMachine" Abstract="True">  <!-- DMS_Machine_Hound 獵犬常規型 -->
     <statBases>
       <MoveSpeed>5</MoveSpeed>
       <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
@@ -312,15 +310,15 @@
 		</comps>
   </ThingDef>
 
-  <ThingDef ParentName="DMS_MechHoundBase">  <!-- DMS_Mech_Hound_RC 獵犬常規型 -->
-    <defName>DMS_Mech_Hound</defName>
+  <ThingDef ParentName="DMS_MechHoundBase">  <!-- DMS_Machine_Hound_RC 獵犬常規型 -->
+    <defName>DMS_Machine_Hound</defName>
     <label>hound</label>
     <description>A four-legged robot dog, can provide vanguard Scouting and early warning detect during armed operations.</description>
   </ThingDef>
   <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_Hound</defName>
+    <defName>DMS_Machine_Hound</defName>
     <label>hound</label>
-    <race>DMS_Mech_Hound</race>
+    <race>DMS_Machine_Hound</race>
     <isFighter>true</isFighter>
     <combatPower>30</combatPower>
     <maxPerGroup>15</maxPerGroup>
@@ -345,8 +343,8 @@
     <weaponTags></weaponTags>
   </PawnKindDef>
 
-  <ThingDef ParentName="DMS_MechHoundBase">  <!-- DMS_Mech_Hound_RC 獵犬鎮暴型 -->
-    <defName>DMS_Mech_Hound_RC</defName>
+  <ThingDef ParentName="DMS_MechHoundBase">  <!-- DMS_Machine_Hound_RC 獵犬鎮暴型 -->
+    <defName>DMS_Machine_Hound_RC</defName>
     <label>watchdog</label>
     <description>a sub-variant of hound, designed for riot control and prison patrol.</description>
     <comps>
@@ -360,9 +358,9 @@
     </comps>
   </ThingDef>
   <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_Hound_RC</defName>
+    <defName>DMS_Machine_Hound_RC</defName>
     <label>watchdog</label>
-    <race>DMS_Mech_Hound_RC</race>
+    <race>DMS_Machine_Hound_RC</race>
     <isFighter>true</isFighter>
     <combatPower>30</combatPower>
     <maxPerGroup>15</maxPerGroup>
@@ -387,8 +385,8 @@
     <weaponTags></weaponTags>
   </PawnKindDef>
 
-  <ThingDef ParentName="DMS_MechHoundBase"><!-- DMS_Mech_Hound_SMG 獵犬壓制型 -->
-    <defName>DMS_Mech_Hound_FS</defName>
+  <ThingDef ParentName="DMS_MechHoundBase"><!-- DMS_Machine_Hound_SMG 獵犬壓制型 -->
+    <defName>DMS_Machine_Hound_FS</defName>
     <label>hetzen</label>
     <description>a sub-variant of hound, designed for urban combat fire support.</description>
     <comps>
@@ -402,9 +400,9 @@
     </comps>
   </ThingDef>
   <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_Hound_FS</defName>
+    <defName>DMS_Machine_Hound_FS</defName>
     <label>hetzen</label>
-    <race>DMS_Mech_Hound_FS</race>
+    <race>DMS_Machine_Hound_FS</race>
     <isFighter>true</isFighter>
     <combatPower>50</combatPower>
     <maxPerGroup>15</maxPerGroup>

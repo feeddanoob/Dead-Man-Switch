@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="BaseBattleFrame" ParentName="BaseAutomatroidHumanRace" Abstract="True">
+    <statBases>                                               
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp><!--銳抗-->
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt><!--鈍抗-->
+      <ArmorRating_Heat>1.3</ArmorRating_Heat>  <!--能抗-->
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">10</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+    </statBases>
+    <race>
+      <body>DMS_Humanoid_Soldat</body>
+      <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
+      <baseBodySize>1.3</baseBodySize>
+      <baseHealthScale>1.5</baseHealthScale>
+      <mechWeightClass>Heavy</mechWeightClass>
+    </race>
+  </ThingDef>
+
+  <!-- 戰鬥框架 DMS_Mech_BattleFrame-->
+  <ThingDef ParentName="BaseBattleFrame">
+    <defName>DMS_Mech_BattleFrame</defName>
+    <label>battle friend</label>
+    <description>Designed to be a light infantry fighting unit. battle friend has a considerable load capacity and ability to use most of human equipments, \n which isn't surpised that it has been mass-services by forces and depoly in various environments when it can equip heavy weapon with amount of ammo.</description>
+    <statBases>
+			<CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
+      <MoveSpeed>4</MoveSpeed><!--移動速度-->
+      <AimingDelayFactor>0.5</AimingDelayFactor>
+    </statBases>
+    <modExtensions  Inherit="False">
+      <li Class="DMS.MechWeaponExtension">
+        <EnableWeaponFilter>true</EnableWeaponFilter>
+        <UsableWeaponTags>
+          <li>DMS_MechWeaponLongRifle</li>
+          <li>DMS_MechWeaponLight</li>
+          <li>Gun</li>
+        </UsableWeaponTags>
+        <EnableTechLevelFilter>true</EnableTechLevelFilter>
+        <UsableTechLevels>
+          <li>Industrial</li>
+        </UsableTechLevels>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_BattleFrame</defName>
+    <label>battle friend</label>
+    <race>DMS_Mech_BattleFrame</race>
+    <isFighter>true</isFighter>
+    <combatPower>200</combatPower>
+    <maxPerGroup>10</maxPerGroup>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/battleFrame</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/battleFrame</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags><!--武器-->
+      <li>DMS_MechWeaponLongRifle</li>
+      <li>DMS_MechWeaponLight</li>
+      <li>GrenadeSmoke</li>
+      <li>GunHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_BattleFrame_P</defName>
+    <label>battle friend</label>
+    <race>DMS_Mech_BattleFrame</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/battleFrame</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/battleFrame</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags/>
+  </PawnKindDef>
+  
+    <!--戰鬥框架的機械師中繼變體-->
+  <ThingDef ParentName="BaseBattleFrame">
+    <defName>DMS_Mech_FieldCommand</defName>
+    <label>field command</label>
+    <description>a battle friend sub-variant model. it can be the mechnitor command realy but due to its weight with reduced fire control system, which can only equip a light weapon for self defense.</description>
+    <statBases>
+      <MoveSpeed>3.8</MoveSpeed>
+      <AimingDelayFactor>0.85</AimingDelayFactor>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
+    </statBases>
+    <comps>
+      <li Class="DMS.CompProperties_CommandRelay">
+        <maxWorldMapRadius>20</maxWorldMapRadius>
+        <maxRelayRadius>32</maxRelayRadius>
+        <minRelayRadius>8</minRelayRadius>
+      </li>
+    </comps>
+    <modExtensions  Inherit="False">
+      <li Class="DMS.MechWeaponExtension">
+        <EnableWeaponFilter>true</EnableWeaponFilter>
+        <UsableWeaponTags>
+          <li>DMS_MechWeaponLight</li>
+          <li>Autopistol</li>     
+        </UsableWeaponTags>
+        <EnableTechLevelFilter>true</EnableTechLevelFilter>
+        <UsableTechLevels>
+          <li>Industrial</li>
+        </UsableTechLevels>
+      </li>
+    </modExtensions>
+    <killedLeavingsPlayerHostile>
+      <ComponentTransmitter>1</ComponentTransmitter>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_FieldCommand</defName>
+    <label>field command</label>
+    <race>DMS_Mech_FieldCommand</race>
+    <isFighter>true</isFighter>
+    <combatPower>150</combatPower>
+    <maxPerGroup>1</maxPerGroup>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/FieldCommand</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/FieldCommand</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags>
+      <li>DMS_MechWeaponLight</li>
+      <li>Autopistol</li>  
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_FieldCommand_P</defName>
+    <label>field command</label>
+    <race>DMS_Mech_FieldCommand</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/FieldCommand</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/FieldCommand</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags/>
+  </PawnKindDef>
+
+  <ThingDef ParentName="BaseBattleFrame">
+    <defName>DMS_Mech_EscortLifter</defName>
+    <label>escort lifter</label>
+    <description>As an early stage mass-production automatroid, even though it's no longer a standard service equipment, there're still lots of them modified to used for transportation purpose.</description>
+    <statBases>
+      <MoveSpeed>4.2</MoveSpeed>
+      <ArmorRating_Sharp>0.3</ArmorRating_Sharp><!--銳抗-->
+      <ArmorRating_Blunt>0.18</ArmorRating_Blunt><!--鈍抗-->
+      <ArmorRating_Heat>1.0</ArmorRating_Heat>  <!--能抗-->
+      <AimingDelayFactor>0.5</AimingDelayFactor>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">8</WastepacksPerRecharge>
+    </statBases>
+    <modExtensions  Inherit="False">
+      <li Class="DMS.MechWeaponExtension">
+        <EnableWeaponFilter>true</EnableWeaponFilter>
+        <UsableWeaponTags>
+          <li>DMS_MechWeaponLight</li>
+          <li>Autopistol</li>     
+        </UsableWeaponTags>
+        <EnableTechLevelFilter>true</EnableTechLevelFilter>
+        <UsableTechLevels>
+          <li>Industrial</li>
+        </UsableTechLevels>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- NPC載貨型 -->
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_EscortLifter</defName>
+    <label>escort lifter</label>
+    <race>DMS_Mech_EscortLifter</race>
+    <isFighter>true</isFighter>
+    <combatPower>200</combatPower>
+    <maxPerGroup>10</maxPerGroup>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/escortLifter</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/escortLifter</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags><!--武器-->
+      <li>IndustrialGun</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_EscortLifter_P</defName>
+    <label>escort lifter</label>
+    <race>DMS_Mech_EscortLifter</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/escortLifter</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/escortLifter</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags/>
+  </PawnKindDef>
+
+  <!-- 海盜型 -->
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_Tachanka</defName>
+    <label>tachanka</label>
+    <race>DMS_Mech_BattleFrame</race>
+    <isFighter>true</isFighter>
+    <combatPower>200</combatPower>
+    <maxPerGroup>15</maxPerGroup>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/Pirate/battleFrame</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/Pirate/battleFrame</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags><!--武器-->
+      <li>IndustrialGun</li>
+    </weaponTags>
+  </PawnKindDef>
+</Defs>

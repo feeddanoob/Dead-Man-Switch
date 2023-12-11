@@ -1,145 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-  <ThingDef Name="BaseBattleFrame" ParentName="BaseAutomatroidHumanRace" Abstract="True">
-    <statBases>                                               
-      <ArmorRating_Sharp>0.4</ArmorRating_Sharp><!--銳抗-->
-      <ArmorRating_Blunt>0.2</ArmorRating_Blunt><!--鈍抗-->
-      <ArmorRating_Heat>1.3</ArmorRating_Heat>  <!--能抗-->
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">10</WastepacksPerRecharge><!--充電/培養時產出廢料-->
-    </statBases>
-    <race>
-      <body>DMS_Humanoid_Soldat</body>
-      <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
-      <baseBodySize>1.3</baseBodySize>
-      <baseHealthScale>1.5</baseHealthScale>
-      <mechWeightClass>Heavy</mechWeightClass>
-    </race>
-  </ThingDef>
-
-  <!-- 戰鬥框架 DMS_Mech_BattleFrame-->
-  <ThingDef ParentName="BaseBattleFrame">
-    <defName>DMS_Mech_BattleFrame</defName>
-    <label>battle friend</label>
-    <description>Designed to be a light infantry fighting unit. battle friend has a considerable load capacity and ability to use most of human equipments, \n which isn't surpised that it has been mass-services by forces and depoly in various environments when it can equip heavy weapon with amount of ammo.</description>
-    <statBases>
-			<CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
-      <MoveSpeed>4</MoveSpeed><!--移動速度-->
-      <AimingDelayFactor>0.5</AimingDelayFactor>
-    </statBases>
-    <modExtensions  Inherit="False">
-      <li Class="DMS.MechWeaponExtension">
-        <EnableWeaponFilter>true</EnableWeaponFilter>
-        <UsableWeaponTags>
-          <li>DMS_MechWeaponLongRifle</li>
-          <li>DMS_MechWeaponLight</li>
-          <li>Gun</li>
-        </UsableWeaponTags>
-        <EnableTechLevelFilter>true</EnableTechLevelFilter>
-        <UsableTechLevels>
-          <li>Industrial</li>
-        </UsableTechLevels>
-      </li>
-    </modExtensions>
-  </ThingDef>
-  
-  <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_BattleFrame</defName>
-    <label>battle friend</label>
-    <race>DMS_Mech_BattleFrame</race>
-    <isFighter>true</isFighter>
-    <combatPower>200</combatPower>
-    <maxPerGroup>10</maxPerGroup>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/battleFrame</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.75</drawSize>
-        </bodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/battleFrame</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.75</drawSize>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-    <weaponTags><!--武器-->
-      <li>DMS_MechWeaponLongRifle</li>
-      <li>DMS_MechWeaponLight</li>
-      <li>GrenadeSmoke</li>
-      <li>GunHeavy</li>
-    </weaponTags>
-  </PawnKindDef>
-  
-    <!--戰鬥框架的機械師中繼變體-->
-  <ThingDef ParentName="BaseBattleFrame">
-    <defName>DMS_Mech_FieldCommand</defName>
-    <label>field command</label>
-    <description>a battle friend sub-variant model. it can be the mechnitor command realy but due to its weight with reduced fire control system, which can only equip a light weapon for self defense.</description>
-    <statBases>
-      <MoveSpeed>3.8</MoveSpeed>
-      <AimingDelayFactor>0.85</AimingDelayFactor>
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
-    </statBases>
-    <comps>
-      <li Class="DMS.CompProperties_CommandRelay">
-        <maxWorldMapRadius>10</maxWorldMapRadius>
-        <maxRelayRadius>20</maxRelayRadius>
-        <minRelayRadius>5</minRelayRadius>
-      </li>
-    </comps>
-    <modExtensions  Inherit="False">
-      <li Class="DMS.MechWeaponExtension">
-        <EnableWeaponFilter>true</EnableWeaponFilter>
-        <UsableWeaponTags>
-          <li>DMS_MechWeaponLight</li>
-          <li>Autopistol</li>     
-        </UsableWeaponTags>
-        <EnableTechLevelFilter>true</EnableTechLevelFilter>
-        <UsableTechLevels>
-          <li>Industrial</li>
-        </UsableTechLevels>
-      </li>
-    </modExtensions>
-  </ThingDef>
-
-  <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_FieldCommand</defName>
-    <label>field command</label>
-    <race>DMS_Mech_FieldCommand</race>
-    <isFighter>true</isFighter>
-    <combatPower>150</combatPower>
-    <maxPerGroup>1</maxPerGroup>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/FieldCommand</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.75</drawSize>
-        </bodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/FieldCommand</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.75</drawSize>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-    <weaponTags>
-      <li>DMS_MechWeaponLight</li>
-      <li>Autopistol</li>  
-    </weaponTags>
-  </PawnKindDef>
-
   <!-- T2 DMS_Automatroid-->
   <!-- 雙足飛龍 Reptile-->
   <ThingDef ParentName="BaseAutomatroidRace">
@@ -161,6 +21,16 @@
       <baseHealthScale>2.5</baseHealthScale>
       <mechWeightClass>Heavy</mechWeightClass>
     </race>
+    <comps>  
+		  <li Class="DMS.CompProperties_VehicleWeapon">
+			  <defaultWeapon>DMS_HeavyMachineGunMounted</defaultWeapon>			  
+        <drawSize>3</drawSize>
+			  <drawOffset>(0.25,0,1)</drawOffset>
+			  <turretRotationFollowPawn>true</turretRotationFollowPawn>
+        <horizontalFlip>true</horizontalFlip>	  
+        <rotationSmoothTime>0.1</rotationSmoothTime>
+      </li>
+    </comps>
     <!--need new melee tools based on their legs, not arms(those "arms" are supporting mechnical arms)-->
     <tools Inherit="False">
       <li>
@@ -249,199 +119,8 @@
       </li>
     </lifeStages>
     <weaponTags>
-      <li></li>                                                                     <!--武器-->
-    </weaponTags>
-  </PawnKindDef>
-
-  <!-- 猿人 ape--><!--部分數據缺失-->
-  <ThingDef ParentName="BaseAutomatroidHumanRace">
-    <defName>DMS_Mech_Ape</defName>
-    <label>ape</label>
-    <description>An prototype design on testing the feasibility of humanoid automatroid, it's designed to equip with a heavy weapon.</description>
-    <statBases>
-      <MoveSpeed>3</MoveSpeed>                                                    <!--移動速度-->
-      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>                                     <!--護甲-->
-      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
-      <ArmorRating_Heat>1.2</ArmorRating_Heat> 
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">10</WastepacksPerRecharge><!--充電/培養時產出廢料-->
-      <!--幫他加掛砲塔之類的以符合這個消耗-->
-    </statBases>
-    <race>
-      <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
-      <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
-      <baseBodySize>1.75</baseBodySize>
-      <baseHealthScale>1.5</baseHealthScale>
-      <mechWeightClass>Medium</mechWeightClass>
-    </race>
-    <!--<comps>-->
-    <!--<li
-    Class="CompProperties_TurretGun">-->
-    <!--	<turretDef>Gun_ChargeBlasterTurret</turretDef>--><!--身上的砲塔-->
-    <!--	<angleOffset>-90</angleOffset>-->
-    <!--</li>-->
-    <!--</comps>-->
-  </ThingDef>
-
-  <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_Ape</defName>
-    <label>ape</label>
-    <race>DMS_Mech_Ape</race>
-    <isFighter>true</isFighter>
-    <!--<combatPower>100</combatPower>-->                                               <!--威脅點數-->
-    <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
-    <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
-    <lifeStages>                                                                 <!--身體圖片-->
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/ape</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.5</drawSize>
-        </bodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/OldTexture/ape</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.5</drawSize>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-    <weaponTags>
-      <li>DMS_MechWeaponHeavy</li>                                                                     <!--武器-->
-    </weaponTags>
-    <!--<abilities>-->                                                   <!--特殊技能-->
-    <!--<li></li>
-      </abilities>-->
-  </PawnKindDef>
-
-  <!-- T4 DMS_HeavyMachines-->
-  <!-- 駭蜥 tarbosaurus--><!--部分數據缺失-->
-
-  <ThingDef ParentName="BaseAutomatroidRace">
-    <defName>DMS_Mech_Tarbosaurus</defName>
-    <label>tarbosaurus</label>
-    <description>1234567890</description>
-    <statBases>
-      <MoveSpeed>3</MoveSpeed>
-      <ArmorRating_Sharp>0.9</ArmorRating_Sharp><!--銳抗-->
-      <ArmorRating_Blunt>0.75</ArmorRating_Blunt><!--鈍抗-->
-      <ArmorRating_Heat>2</ArmorRating_Heat>  <!--能抗-->
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">10</BandwidthCost>        <!--帶寬消耗-->
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">50</WastepacksPerRecharge><!--充電/培養時產出廢料-->
-    </statBases>
-    <race>
-      <body>DMS_Bipedal</body>
-      <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
-      <baseBodySize>4.5</baseBodySize>
-      <baseHealthScale>5</baseHealthScale>
-      <mechWeightClass>UltraHeavy</mechWeightClass>
-    </race>    
-    <comps>
-		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <defaultWeapon>DMS_Tarbosaurus_Gun</defaultWeapon>			  
-        <drawSize>3</drawSize>
-			  <drawOffset>(0,0,0)</drawOffset>
-			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
-        <rotationSmoothTime>0.12</rotationSmoothTime>
-      </li>
-    </comps>
-    <tools Inherit="False">
-      <li>
-        <label>Mechanical Head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>35</power>
-        <cooldownTime>5.5</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.08</chanceFactor>
-		    <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>20</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>Left Leg</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>24</power>
-        <cooldownTime>3.5</cooldownTime>
-        <linkedBodyPartsGroup>LeftMechanicalLeg</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-		    <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>16</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>Right Leg</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>24</power>
-        <cooldownTime>3.5</cooldownTime>
-        <linkedBodyPartsGroup>RightMechanicalLeg</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-		    <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>16</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-    </tools>
-    <damageMultipliers>
-      <li>
-        <damageDef>Blunt</damageDef>
-        <multiplier>0.6</multiplier>
-      </li>
-    </damageMultipliers>
-  </ThingDef>
-
-  <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_Tarbosaurus</defName>
-    <label>tarbosaurus</label>
-    <race>DMS_Mech_Tarbosaurus</race>
-    <isFighter>true</isFighter>
-    <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
-    <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
-    <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
-    <lifeStages>                                                                 <!--身體圖片-->
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/tarbosaurus</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>3.75</drawSize>
-        </bodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/OldTexture/tarbosaurus</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>3.75</drawSize>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-    <weaponTags>
+      <li>V_HMG</li>                                                                     <!--武器-->
+      <li>V_Gatling556mm</li>
     </weaponTags>
   </PawnKindDef>
 
@@ -449,7 +128,7 @@
   <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_Caretta</defName>
     <label>caretta</label>
-    <description>an mobile anti-air support platform variant of geochelone.</description>
+    <description>a mobile anti-air support platform variant of geochelone.</description>
     <statBases>
       <MoveSpeed>2.5</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Sharp>1.0</ArmorRating_Sharp><!--銳抗-->

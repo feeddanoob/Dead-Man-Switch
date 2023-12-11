@@ -12,7 +12,7 @@
 
 
 	<li Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="DMS_Mech_VerlingBirdA"]</xpath>
+		<xpath>Defs/PawnKindDef[defName="DMS_Machine_VerlingBirdA"]</xpath>
 		<value>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
@@ -24,7 +24,7 @@
 	</li>
 
 	<li Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="DMS_Mech_Hound_RC" or defName="DMS_Mech_Hound_FS"]</xpath>
+		<xpath>Defs/PawnKindDef[defName="DMS_Machine_Hound_RC" or defName="DMS_Machine_Hound_FS"]</xpath>
 		<value>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
@@ -120,7 +120,7 @@
 
 	<!-- TrashBin -->
 	<li Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_TrashBin"]</xpath>
+		<xpath>Defs/ThingDef[defName="DMS_Machine_TrashBin"]</xpath>
 		<value>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>Humanoid</bodyShape>
@@ -129,7 +129,7 @@
 	</li>
 
 	<li Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_TrashBin"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="DMS_Machine_TrashBin"]/statBases</xpath>
 		<value>
 			<CarryWeight>30</CarryWeight>
 			<CarryBulk>25</CarryBulk>
@@ -141,21 +141,21 @@
 	</li>
 
 	<li Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_TrashBin"]/statBases/ArmorRating_Blunt</xpath>
+		<xpath>Defs/ThingDef[defName="DMS_Machine_TrashBin"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
 			<ArmorRating_Blunt>4</ArmorRating_Blunt>
 		</value>
 	</li>
 
 	<li Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_TrashBin"]/statBases/ArmorRating_Sharp</xpath>
+		<xpath>Defs/ThingDef[defName="DMS_Machine_TrashBin"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
 			<ArmorRating_Sharp>2</ArmorRating_Sharp>
 		</value>
 	</li>
 
 	<li Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_TrashBin"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="DMS_Machine_TrashBin"]/comps</xpath>
 		<value>
 			<li Class="CombatExtended.CompProperties_ArmorDurability">
 				<Durability>300</Durability>

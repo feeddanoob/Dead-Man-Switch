@@ -207,7 +207,6 @@
     <defName>DMS_VanguardMechHeavy</defName>
     <rulePack>
       <rulesStrings>
-        <!-- 重型二五 "阿爾法" -->
         <li>r_name->[MechType] [BrigadeNum0]-[BrigadeNum1] "[Callsign]"</li>
       
         

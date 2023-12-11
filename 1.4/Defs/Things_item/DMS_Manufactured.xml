@@ -302,9 +302,9 @@
     <thingSetMakerTags>
       <li>RewardStandardCore</li>
     </thingSetMakerTags>
-    <tradeTags>
+    <!-- <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
+    </tradeTags> -->
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
@@ -332,12 +332,12 @@
       <DeteriorationRate>20</DeteriorationRate>
     </statBases>
     <intricate>true</intricate>
-    <thingSetMakerTags>
+    <!-- <thingSetMakerTags>
       <li>RewardStandardCore</li>
-    </thingSetMakerTags>
-    <tradeTags>
+    </thingSetMakerTags> -->
+    <!-- <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
+    </tradeTags> -->
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
@@ -365,12 +365,12 @@
       <DeteriorationRate>20</DeteriorationRate>
     </statBases>
     <intricate>true</intricate>
-    <thingSetMakerTags>
+    <!-- <thingSetMakerTags>
       <li>RewardStandardCore</li>
-    </thingSetMakerTags>
-    <tradeTags>
+    </thingSetMakerTags> -->
+    <!-- <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
+    </tradeTags> -->
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
@@ -398,12 +398,12 @@
       <DeteriorationRate>20</DeteriorationRate>
     </statBases>
     <intricate>true</intricate>
-    <thingSetMakerTags>
+    <!-- <thingSetMakerTags>
       <li>RewardStandardCore</li>
-    </thingSetMakerTags>
-    <tradeTags>
+    </thingSetMakerTags> -->
+    <!-- <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
+    </tradeTags> -->
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
