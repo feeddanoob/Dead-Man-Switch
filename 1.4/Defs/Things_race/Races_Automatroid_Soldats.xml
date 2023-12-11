@@ -68,8 +68,7 @@
     <weaponTags><!--武器-->
       <li>SimpleGun</li>
       <li>ShortShots</li>
-      <li>DMS_MechWeaponLight</li>
-      <li>A_AR_LongRifle</li>                                                                     
+      <li>SurvivalRifle</li>
     </weaponTags>
   </PawnKindDef>
 
@@ -123,8 +122,11 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <weaponTags><!--武器-->
-      <li>A_MG_GrenadeLauncher</li>                                                                    
+    <weaponTags><!--武器--> 
+      <li>GrenadeDestructive</li>
+      <li>GrenadeEMP</li>
+      <li>GrenadeSmoke</li>
+      <li>GrenadeFlame</li>                                                                 
     </weaponTags>
   </PawnKindDef>
 
@@ -245,4 +247,5 @@
       <li>DMS_MechWeaponLight</li>                                                                     <!--武器-->
     </weaponTags>
   </PawnKindDef>
+
 </Defs>

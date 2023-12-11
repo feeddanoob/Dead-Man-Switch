@@ -75,31 +75,6 @@
       <li>GunHeavy</li>
     </weaponTags>
   </PawnKindDef>
-
-  <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_BattleFrame_P</defName>
-    <label>battle friend</label>
-    <race>DMS_Mech_BattleFrame</race>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/battleFrame</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.75</drawSize>
-        </bodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/battleFrame</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.75</drawSize>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-    <weaponTags/>
-  </PawnKindDef>
   
     <!--戰鬥框架的機械師中繼變體-->
   <ThingDef ParentName="BaseBattleFrame">
@@ -167,31 +142,6 @@
     </weaponTags>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_FieldCommand_P</defName>
-    <label>field command</label>
-    <race>DMS_Mech_FieldCommand</race>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/FieldCommand</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.75</drawSize>
-        </bodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/FieldCommand</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.75</drawSize>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-    <weaponTags/>
-  </PawnKindDef>
-
   <ThingDef ParentName="BaseBattleFrame">
     <defName>DMS_Mech_EscortLifter</defName>
     <label>escort lifter</label>
@@ -205,6 +155,11 @@
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">8</WastepacksPerRecharge>
     </statBases>
+    <race>
+      <mechEnabledWorkTypes>
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+    </race>
     <modExtensions  Inherit="False">
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
@@ -220,7 +175,7 @@
     </modExtensions>
   </ThingDef>
 
-  <!-- NPC載貨型 -->
+  <!-- 載貨型 -->
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Mech_EscortLifter</defName>
     <label>escort lifter</label>
@@ -249,31 +204,6 @@
     <weaponTags><!--武器-->
       <li>IndustrialGun</li>
     </weaponTags>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_EscortLifter_P</defName>
-    <label>escort lifter</label>
-    <race>DMS_Mech_EscortLifter</race>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/escortLifter</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.75</drawSize>
-        </bodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/escortLifter</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.75</drawSize>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-    <weaponTags/>
   </PawnKindDef>
 
   <!-- 海盜型 -->

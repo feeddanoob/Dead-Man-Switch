@@ -73,31 +73,6 @@
     </weaponTags>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_Arquebusier_P</defName>
-    <label>arquebusier</label>
-    <race>DMS_Mech_Arquebusier</race>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/arquebusier</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
-        </bodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/OldTexture/arquebusier</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-    <weaponTags/>
-  </PawnKindDef>
-
   <!-- DMS_Mech_Jaeger 火槍手獵兵型 -->
   <ThingDef ParentName="BaseMechRace_Arquebusier">
     <defName>DMS_Mech_Jaeger</defName>
@@ -203,31 +178,6 @@
     </weaponTags>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Mech_Pioneer_P</defName>
-    <label>pioneer</label>
-    <race>DMS_Mech_Pioneer</race>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/Pioneer</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
-        </bodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/OldTexture/Pioneer</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.3</drawSize>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-    <weaponTags/>
-  </PawnKindDef>
-
   <!-- DMS_Mech_Sniper 火槍手狙擊型 -->
   <ThingDef ParentName="BaseMechRace_Arquebusier">
     <defName>DMS_Mech_Sniper</defName>
@@ -327,9 +277,8 @@
     <label>ronin</label>
     <race>DMS_Mech_Ronin</race>
     <isFighter>true</isFighter>
-    <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
+    <combatPower>150</combatPower>
     <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
-    <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
     <lifeStages>      
     <li>
       <bodyGraphicData>

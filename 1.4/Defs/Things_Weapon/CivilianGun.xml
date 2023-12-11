@@ -365,6 +365,7 @@
 		<weaponTags>
 			<li>Simple_LongRange</li>
 			<li>IndustrialGun</li>
+			<li>SurvivalRifle</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/HumanWeapon/SurvivalRifle</texPath>

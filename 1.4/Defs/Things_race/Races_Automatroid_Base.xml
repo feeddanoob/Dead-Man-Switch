@@ -139,8 +139,8 @@
     <canStrip>false</canStrip>
     <minGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</minGenerationAge>
     <forceNormalGearQuality>true</forceNormalGearQuality>
-    <weaponMoney>9999~9999</weaponMoney>
-    <combatPower>10</combatPower>
+    <weaponMoney>1300~9999</weaponMoney>
+    <combatPower>100</combatPower>
     <techHediffsChance>1</techHediffsChance>
     <techHediffsMoney>9999~9999</techHediffsMoney>
     <controlGroupPortraitZoom>1.8</controlGroupPortraitZoom>

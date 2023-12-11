@@ -143,6 +143,7 @@
         <filter>
           <thingDefs>
             <li>Synthread</li>
+            <li>Polyester</li>
           </thingDefs>
         </filter>
         <count>20</count>
@@ -191,6 +192,7 @@
         <filter>
           <thingDefs>
             <li>Synthread</li>
+            <li>Polyester</li>
           </thingDefs>
         </filter>
         <count>20</count>
@@ -247,6 +249,7 @@
         <filter>
           <thingDefs>
             <li>Synthread</li>
+            <li>Polyester</li>
           </thingDefs>
         </filter>
         <count>15</count>
@@ -295,6 +298,7 @@
         <filter>
           <thingDefs>
             <li>Synthread</li>
+            <li>Polyester</li>
           </thingDefs>
         </filter>
         <count>25</count>
@@ -343,6 +347,7 @@
         <filter>
           <thingDefs>
             <li>Synthread</li>
+            <li>Polyester</li>
           </thingDefs>
         </filter>
         <count>25</count>
@@ -391,6 +396,7 @@
         <filter>
           <thingDefs>
             <li>Synthread</li>
+            <li>Polyester</li>
           </thingDefs>
         </filter>
         <count>25</count>
