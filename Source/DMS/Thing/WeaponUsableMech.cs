@@ -6,13 +6,6 @@ using Verse.AI;
 
 namespace DMS
 {
-    public class MechWeaponExtension : DefModExtension
-    {
-        public bool EnableWeaponFilter = true;
-        public List<string> UsableWeaponTags = new List<string>();
-        public bool EnableTechLevelFilter = false;
-        public List<string> UsableTechLevels = new List<string>();
-    }
 
     //一般情況的
     public class WeaponUsableMech : Pawn

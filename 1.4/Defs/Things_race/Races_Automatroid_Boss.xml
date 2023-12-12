@@ -25,15 +25,9 @@
     </race>    
     <comps>
 		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <defaultWeapon>DMS_Tarbosaurus_Gun</defaultWeapon>			  
-        <drawSize>3</drawSize>
 			  <drawOffset>(0,0,0)</drawOffset>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
         <rotationSmoothTime>0.12</rotationSmoothTime>
-      </li>     
-      <li Class="CompProperties_TurretGun">
-        <turretDef>Gun_ChargeBlasterTurret</turretDef>
-        <angleOffset>-90</angleOffset>
       </li>
     </comps>
     <killedLeavingsPlayerHostile>
@@ -132,7 +126,9 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <weaponTags/>
+    <weaponTags>
+      <li>DMS_Tarbosaurus_Gun</li>
+    </weaponTags>
   </PawnKindDef>
 
 </Defs>

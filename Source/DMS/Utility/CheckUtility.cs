@@ -1,7 +1,8 @@
 ﻿using Verse;
 using DMS;
+using System.Linq;
 
-public static class CheckUtility
+public static partial class CheckUtility
 {
     public static bool IsMechUseable(MechWeaponExtension extension, ThingWithComps tmp)
     {
@@ -10,16 +11,26 @@ public static class CheckUtility
         {
             foreach (var item in extension.UsableWeaponTags)
             {
-                if (tmp.def.weaponTags.NotNullAndContains(item) && InTechLevel(extension,tmp))
+                if (tmp.def.weaponTags.NotNullAndContains(item) && InTechLevel(extension, tmp))
                 {
                     return true;
                 }
             }
             return false;
         }
+
         else if (extension.EnableTechLevelFilter)
         {
-            return extension.UsableTechLevels.NotNullAndContains(tmp.def.techLevel.ToString());
+            return InTechLevel(extension, tmp);
+        }
+
+        else if (extension.EnableClassFilter)
+        {
+            foreach (var item in extension.UsableWeaponClasses)
+            {
+                return tmp.def.weaponClasses?.Where(p => p.defName == item).FirstOrDefault() != null;
+            }
+            return false;
         }
         return true;
     }
@@ -27,5 +38,10 @@ public static class CheckUtility
     {
         if (!extension.EnableTechLevelFilter) return true;
         else return extension.UsableTechLevels.NotNullAndContains(tmp.def.techLevel.ToString());
+    }
+
+    public static bool BypassedUseable(MechWeaponExtension extension, string defName)//白名單直接可用
+    {
+        return (extension.UsableWeaponTags.Where(p => p == defName).FirstOrDefault() != null);
     }
 }

@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-  <BossgroupDef Abstract="True" Name="BaseBossgroup">
-    <quest>Bossgroup</quest>
-    <repeatWaveStartIndex>2</repeatWaveStartIndex>
-  </BossgroupDef>
-
-
   <BossDef>
     <defName>DMS_Boss_Geochelone</defName>
     <kindDef>DMS_Mech_Geochelone</kindDef>
@@ -128,22 +121,22 @@
       <li> <!-- 0 -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>3</Mech_Militor>
+          <DMS_Mech_Soldat>3</DMS_Mech_Soldat>
         </escorts>
       </li>
       <li> <!-- 1 -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>4</Mech_Militor>
-          <Mech_Pikeman>2</Mech_Pikeman>
+          <DMS_Mech_Soldat>4</DMS_Mech_Soldat>
+          <DMS_Mech_Ronin>2</DMS_Mech_Ronin>
         </escorts>
       </li>
       <li> <!-- 2 - Repeat starts here -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>7</Mech_Militor>
-          <Mech_Pikeman>2</Mech_Pikeman>
-          <Mech_Tesseron>1</Mech_Tesseron>
+          <DMS_Mech_Soldat>7</DMS_Mech_Soldat>
+          <DMS_Mech_Ronin>2</DMS_Mech_Ronin>
+          <DMS_Mech_Reptile>1</DMS_Mech_Reptile>
         </escorts>
         <bossApparel>
           <li><thing>Apparel_HeavyShield</thing></li>
@@ -152,9 +145,9 @@
       <li> <!-- 3 -->
         <bossCount>2</bossCount>
         <escorts>
-          <Mech_Militor>10</Mech_Militor>
-          <Mech_Legionary>3</Mech_Legionary>
-          <Mech_Centurion>1</Mech_Centurion>
+          <DMS_Mech_Soldat>10</DMS_Mech_Soldat>
+          <DMS_Mech_Ronin>3</DMS_Mech_Ronin>
+          <DMS_Mech_Reptile>1</DMS_Mech_Reptile>
         </escorts>
         <bossApparel>
           <li><thing>Apparel_HeavyShield</thing></li>
@@ -163,9 +156,9 @@
       <li> <!-- 4 -->
         <bossCount>2</bossCount>
         <escorts>
-          <Mech_Militor>10</Mech_Militor>
-          <Mech_Scyther>5</Mech_Scyther>
-          <Mech_CentipedeGunner>3</Mech_CentipedeGunner>
+          <DMS_Mech_Soldat>10</DMS_Mech_Soldat>
+          <DMS_Mech_Ronin>5</DMS_Mech_Ronin>
+          <DMS_Mech_Reptile>3</DMS_Mech_Reptile>
         </escorts>
         <bossApparel>
           <li><thing>Apparel_HeavyShield</thing></li>
@@ -174,42 +167,13 @@
       <li> <!-- 5 -->
         <bossCount>2</bossCount>
         <escorts>
-          <Mech_Militor>15</Mech_Militor>
-          <Mech_Pikeman>8</Mech_Pikeman>
-          <Mech_CentipedeGunner>4</Mech_CentipedeGunner>
-          <Mech_Centurion>1</Mech_Centurion>
+          <DMS_Mech_Soldat>15</DMS_Mech_Soldat>
+          <DMS_Mech_Ronin>8</DMS_Mech_Ronin>
+          <DMS_Mech_Reptile>4</DMS_Mech_Reptile>
+          <DMS_Mech_Sniper>1</DMS_Mech_Sniper>
         </escorts>
         <bossApparel>
-          <li>
-            <thing>Apparel_HeavyShield</thing>
-          </li>
-        </bossApparel>
-      </li>
-      <li> <!-- 6 -->
-        <bossCount>2</bossCount>
-        <escorts>
-          <Mech_Militor>15</Mech_Militor>
-          <Mech_Lancer>10</Mech_Lancer>
-          <Mech_CentipedeGunner>5</Mech_CentipedeGunner>
-        </escorts>
-        <bossApparel>
-          <li>
-            <thing>Apparel_HeavyShield</thing>
-          </li>
-        </bossApparel>
-      </li>
-      <li> <!-- 7 -->
-        <bossCount>3</bossCount>
-        <escorts>
-          <Mech_Militor>15</Mech_Militor>
-          <Mech_Tesseron>10</Mech_Tesseron>
-          <Mech_CentipedeGunner>6</Mech_CentipedeGunner>
-          <Mech_Centurion>1</Mech_Centurion>
-        </escorts>
-        <bossApparel>
-          <li>
-            <thing>Apparel_HeavyShield</thing>
-          </li>
+          <li><thing>Apparel_HeavyShield</thing></li>
         </bossApparel>
       </li>
     </waves>

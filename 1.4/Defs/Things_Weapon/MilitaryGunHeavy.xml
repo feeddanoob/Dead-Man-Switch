@@ -39,21 +39,22 @@
 		</graphicData>
 		<statBases>
 			<Mass>3</Mass>
+			<MarketValue>800</MarketValue>
 			<AccuracyTouch>0.80</AccuracyTouch>
-			<AccuracyShort>0.76</AccuracyShort>
-			<AccuracyMedium>0.5</AccuracyMedium>
-			<AccuracyLong>0.4</AccuracyLong>
-			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+			<AccuracyShort>0.6</AccuracyShort>
+			<AccuracyMedium>0.3</AccuracyMedium>
+			<AccuracyLong>0.2</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
-				<warmupTime>0.3</warmupTime>
+				<warmupTime>0.5</warmupTime>
 				<range>19.9</range>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-				<burstShotCount>6</burstShotCount>
+				<burstShotCount>4</burstShotCount>
 				<soundCast>Shot_MachinePistol</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -75,6 +76,7 @@
 		</graphicData>
 		<statBases>
 			<Mass>11.5</Mass>
+			<MarketValue>1000</MarketValue>
 			<AccuracyTouch>0.50</AccuracyTouch>
 			<AccuracyShort>0.58</AccuracyShort>
 			<AccuracyMedium>0.45</AccuracyMedium>
@@ -114,6 +116,7 @@
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.86</AccuracyMedium>
 			<AccuracyLong>0.88</AccuracyLong>
+			<MarketValue>1500</MarketValue>
 			<Mass>14.50</Mass>
 			<RangedWeapon_Cooldown>3.56</RangedWeapon_Cooldown>
 		</statBases>
@@ -126,7 +129,7 @@
 				<range>80.9</range>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<burstShotCount>5</burstShotCount>
-				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
+				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -147,6 +150,7 @@
 			<drawSize>3</drawSize>
 		</graphicData>
 		<statBases>
+			<MarketValue>1200</MarketValue>
 			<AccuracyTouch>0.75</AccuracyTouch>
 			<AccuracyShort>0.85</AccuracyShort>
 			<AccuracyMedium>0.80</AccuracyMedium>
@@ -186,7 +190,7 @@
 				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
-				<soundCast>Shot_Autocannon</soundCast>
+				<soundCast>Shot_TurretSniper</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>15</muzzleFlashScale>
 				<consumeFuelPerShot>1</consumeFuelPerShot>
@@ -261,6 +265,7 @@
 		</graphicData>
 		<statBases>
 			<Mass>281</Mass>
+			<MarketValue>9000</MarketValue>
 			<AccuracyTouch>0.18</AccuracyTouch>
 			<AccuracyShort>0.18</AccuracyShort>
 			<AccuracyMedium>0.18</AccuracyMedium>
@@ -297,10 +302,11 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_M61Vulcan</texPath>
-			<drawSize>2.5</drawSize>
+			<drawSize>3.5</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>92</Mass>
+			<MarketValue>5000</MarketValue>
 			<AccuracyTouch>0.18</AccuracyTouch>
 			<AccuracyShort>0.2</AccuracyShort>
 			<AccuracyMedium>0.4</AccuracyMedium>
@@ -317,7 +323,7 @@
 				<minRange>1.9</minRange>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<burstShotCount>18</burstShotCount>
-				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
+				<soundCast>Shot_Minigun</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>12</muzzleFlashScale>
 			</li>
@@ -338,6 +344,7 @@
 		</graphicData>
 		<statBases>
 			<Mass>48</Mass>
+			<MarketValue>8000</MarketValue>
 			<AccuracyTouch>0.2</AccuracyTouch>
 			<AccuracyShort>0.3</AccuracyShort>
 			<AccuracyMedium>0.25</AccuracyMedium>
@@ -376,15 +383,16 @@
 			<AccuracyLong>0.80</AccuracyLong>
 			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
 		</statBases>
+		<weaponTags>
+			<li>Geochelone_Weapon</li>
+		</weaponTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_Kord</defaultProjectile>
 				<requireLineOfSight>true</requireLineOfSight>
-				<!--<isMortar>false</isMortar>-->
 				<warmupTime>1.5</warmupTime>
-				<!--<minRange>1.9</minRange>-->
 				<range>39.9</range>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
@@ -414,6 +422,7 @@
 		</graphicData>
 		<statBases>
 			<Mass>10</Mass>
+			<MarketValue>2000</MarketValue>
 			<AccuracyTouch>0.4</AccuracyTouch>
 			<AccuracyShort>0.3</AccuracyShort>
 			<AccuracyMedium>0.2</AccuracyMedium>
@@ -429,7 +438,7 @@
 				<range>25.9</range>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<burstShotCount>30</burstShotCount>
-				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
+				<soundCast>Shot_MachinePistol</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>

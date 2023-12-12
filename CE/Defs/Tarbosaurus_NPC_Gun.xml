@@ -75,10 +75,10 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_30x165mm_AP</defaultProjectile>
 				<burstShotCount>30</burstShotCount>
-				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <warmupTime>1.35</warmupTime>
                 <range>75</range>
-                <soundCast>Shot_Autocannon</soundCast>
+                <soundCast>Shot_TurretSniper</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>14</muzzleFlashScale>
                 <recoilPattern>Mounted</recoilPattern>

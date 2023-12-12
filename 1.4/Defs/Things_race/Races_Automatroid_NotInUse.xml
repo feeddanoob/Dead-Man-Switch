@@ -59,7 +59,7 @@
 
     
   <!-- lady -->
-  <ThingDef ParentName="BaseAutomatroidRace">
+  <ThingDef ParentName="BaseAutomatroidRace" Abstract="True">
     <defName>DMS_Automatroid_lady</defName>
     <label>lady</label>
     <description>lady</description>
@@ -155,7 +155,7 @@
     </modExtensions>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseAutomatroidKind">
+  <PawnKindDef ParentName="BaseAutomatroidKind" Abstract="True">
     <defName>DMS_AutomatroidKind_lady</defName>
     <label>lady</label>
     <race>DMS_Automatroid_lady</race>

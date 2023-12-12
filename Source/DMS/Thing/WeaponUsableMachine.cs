@@ -1,7 +1,6 @@
 ﻿using Verse;
 using RimWorld;
 using Verse.AI;
-using VFE.Mechanoids;
 using VFEMech;
 using System.Collections.Generic;
 

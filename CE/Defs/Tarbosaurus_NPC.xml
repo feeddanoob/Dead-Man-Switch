@@ -33,8 +33,6 @@
         <angleOffset>-90</angleOffset>
       </li>
 		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <defaultWeapon>DMS_Tarbosaurus_Gun_A</defaultWeapon>			  
-        <drawSize>3</drawSize>
 			  <drawOffset>(0,0,0)</drawOffset>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
         <rotationSmoothTime>0.12</rotationSmoothTime>
@@ -98,9 +96,14 @@
     <label>tarbosaurus</label>
     <race>DMS_Mech_Tarbosaurus_A</race>
     <isFighter>true</isFighter>
-    <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
-    <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
-    <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>2</max>
+				</primaryMagazineCount>
+			</li>
+    </modExtensions>
     <lifeStages>                                                                 <!--身體圖片-->
       <li>
         <bodyGraphicData>
@@ -120,6 +123,7 @@
       </li>
     </lifeStages>
     <weaponTags>
+      <li>DMS_Tarbosaurus_Gun_A</li>
     </weaponTags>
   </PawnKindDef>
 

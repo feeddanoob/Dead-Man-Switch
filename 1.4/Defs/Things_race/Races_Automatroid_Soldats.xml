@@ -128,6 +128,7 @@
       <li>GrenadeSmoke</li>
       <li>GrenadeFlame</li>                                                                 
     </weaponTags>
+    <weaponMoney>570~3000</weaponMoney>
   </PawnKindDef>
 
   <!-- DMS_Mech_Kanonier 士兵砲兵型 : 能夠使用末日火箭等各式大威力武器 -->
@@ -176,6 +177,7 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
+    <weaponMoney>570~3000</weaponMoney>
     <weaponTags><!--武器-->
       <li>GunSingleUse</li>                                                              
     </weaponTags>

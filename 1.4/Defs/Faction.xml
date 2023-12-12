@@ -19,7 +19,9 @@
     <factionIconPath>UI/Faction/VanguardIcon</factionIconPath>
     <factionNameMaker>DMS_VanguardFaction</factionNameMaker>
     <settlementNameMaker>DMS_VanguardBase</settlementNameMaker>
-    <allowedCultures><li>DMS_Nara_Culture</li></allowedCultures>
+    <allowedCultures>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DMS_Nara_Culture</li>
+    </allowedCultures>
     <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>

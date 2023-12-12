@@ -121,7 +121,8 @@
     <weaponTags>
       <li>V_HMG</li>                                                                     <!--武器-->
       <li>V_Gatling556mm</li>
-    </weaponTags>
+    </weaponTags>    
+    <weaponMoney>3000~9999</weaponMoney>
   </PawnKindDef>
 
   <!-- 蠵龜Caretta  -->
@@ -146,8 +147,6 @@
     </race>
     <comps>
 		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <defaultWeapon>DMS_GAU4Gatlinggun</defaultWeapon>			  
-        <drawSize>4</drawSize>
 			  <drawOffset>(0,0,0)</drawOffset>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
         <rotationSmoothTime>0.2</rotationSmoothTime>
@@ -182,7 +181,7 @@
     <lifeStages>                                                                 <!--身體圖片-->
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/geochelone</texPath>
+          <texPath>Things/Automatroid/caterpillar</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>3.5</drawSize>
@@ -190,7 +189,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/geochelone</texPath>
+          <texPath>Things/Automatroid/caterpillar</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>3.5</drawSize>
@@ -198,21 +197,22 @@
       </li>
     </lifeStages>
     <weaponTags>
-      <li></li>                                                                     <!--武器-->
+      <li>V_Gatling20mm</li>
     </weaponTags>
+    <weaponMoney>5000~9999</weaponMoney>
   </PawnKindDef>
 
   <!-- 象龜 geochelone-->
   <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_Geochelone</defName>
     <label>geochelone</label>
-    <description>an unmanned all-terrain tracked infantry support platform with various of production model and variant.</description>
+    <description>an unmanned all-terrain tracked pluse shield support platform with various of production model and variant.</description>
     <statBases>
       <MoveSpeed>2.5</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Sharp>1.0</ArmorRating_Sharp><!--銳抗-->
       <ArmorRating_Blunt>1.3</ArmorRating_Blunt><!--鈍抗-->
       <ArmorRating_Heat>1.2</ArmorRating_Heat>  <!--能抗-->
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5 </BandwidthCost>        <!--帶寬消耗-->
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5</BandwidthCost>        <!--帶寬消耗-->
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">10</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
     <race>
@@ -224,11 +224,24 @@
     </race>
     <comps>
 		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <defaultWeapon>DMS_Gun_Kord_Vehicle</defaultWeapon>			  
-        <drawSize>3</drawSize>
 			  <drawOffset>(0,0,0)</drawOffset>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
         <rotationSmoothTime>0.12</rotationSmoothTime>
+      </li>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>5</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.4, 0.4, 0.6)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>900</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>1800</chargeDurationTicks><!-- 30s -->
+        <rechargeHitPointsIntervalTicks>120</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.5</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>3000</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
       </li>
     </comps>
     <tools Inherit="False">
@@ -275,9 +288,10 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <weaponTags>
-      <li></li>                                                                     <!--武器-->
-    </weaponTags>
+		<weaponTags>
+			<li>V_SMG</li>
+		</weaponTags>
+    <weaponMoney>9999~9999</weaponMoney>
   </PawnKindDef>
 
   <!-- Killdozer -->
@@ -304,8 +318,6 @@
     </race>
     <comps>
 		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <defaultWeapon>DMS_Gun_Kord_Vehicle</defaultWeapon>			  
-        <drawSize>3</drawSize>
 			  <drawOffset>(0,0,0)</drawOffset>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
         <rotationSmoothTime>0.12</rotationSmoothTime>
@@ -358,9 +370,10 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <weaponTags>
-      <li></li>                                                                     <!--武器-->
-    </weaponTags>
+		<weaponTags>
+			<li>Geochelone_Weapon</li>
+		</weaponTags>
+    <weaponMoney>9999~9999</weaponMoney>
   </PawnKindDef>
 
 </Defs>

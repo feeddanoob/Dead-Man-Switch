@@ -96,6 +96,7 @@
                     <li>CE_Sidearm</li>
                     <li>CE_OneHandedWeapon</li>
                     <li>CE_AI_BROOM</li>
+                    <li>NoSwitch</li>
                 </weaponTags>
             </li>
 		
@@ -330,6 +331,7 @@
                     <aimedBurstShotCount>8</aimedBurstShotCount>
                 </FireModes>
                 <weaponTags>
+                    <li>CE_OneHandedWeapon</li>
 					<li>CE_MachineGun</li>
                     <li>CE_AI_LMG</li>
                     <li>Bipod_SAW</li>
@@ -369,6 +371,7 @@
                     <aiAimMode>AimedShot</aiAimMode>
                 </FireModes>
                 <weaponTags>
+                    <li>CE_OneHandedWeapon</li>
                     <li>CE_AI_SR</li>
                 </weaponTags>
             </li>

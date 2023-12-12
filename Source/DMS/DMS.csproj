@@ -89,6 +89,7 @@
     <Compile Include="Patch\Patch_ResolveApparelGraphics.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\HumnalikeMechRenderingUtility.cs" />
+    <Compile Include="Utility\WeaponTagUtil.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
