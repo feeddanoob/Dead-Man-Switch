@@ -23,14 +23,27 @@
     </race>
     <comps>  
 		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <defaultWeapon>DMS_HeavyMachineGunMounted</defaultWeapon>			  
-        <drawSize>3</drawSize>
-			  <drawOffset>(0.25,0,1)</drawOffset>
+			  <drawOffset>(0.2,0,0.5)</drawOffset>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>
-        <horizontalFlip>true</horizontalFlip>	  
         <rotationSmoothTime>0.1</rotationSmoothTime>
       </li>
     </comps>
+    <modExtensions>
+      <li Class="DMS.MechWeaponExtension">
+        <EnableWeaponFilter>true</EnableWeaponFilter>
+        <UsableWeaponTags>
+          <li>DMS_MechWeaponHeavy</li>
+          <li>H_Gatling20mm</li>
+        </UsableWeaponTags>
+        <EnableTechLevelFilter>true</EnableTechLevelFilter>
+        <UsableTechLevels>
+          <li>Industrial</li>
+        </UsableTechLevels>
+        <BypassUsableWeapons>
+          <li>Gun_BinocularsRadio</li>
+        </BypassUsableWeapons>
+      </li>
+    </modExtensions>
     <!--need new melee tools based on their legs, not arms(those "arms" are supporting mechnical arms)-->
     <tools Inherit="False">
       <li>
@@ -119,9 +132,9 @@
       </li>
     </lifeStages>
     <weaponTags>
-      <li>V_HMG</li>                                                                     <!--武器-->
-      <li>V_Gatling556mm</li>
-    </weaponTags>    
+      <li>DMS_MechWeaponHeavy</li>                                                                     <!--武器-->
+      <li>H_Gatling20mm</li>
+    </weaponTags>   
     <weaponMoney>3000~9999</weaponMoney>
   </PawnKindDef>
 

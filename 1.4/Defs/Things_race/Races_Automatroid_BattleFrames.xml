@@ -80,7 +80,7 @@
   <ThingDef ParentName="BaseBattleFrame">
     <defName>DMS_Mech_FieldCommand</defName>
     <label>field command</label>
-    <description>a battle friend sub-variant model. it can be the mechnitor command realy but due to its weight with reduced fire control system, which can only equip a light weapon for self defense.</description>
+    <description>a battle friend sub-variant model. it can be the mechnitor command relay but due to its weight with reduced fire control system, which can only equip a light weapon for self defense.</description>
     <statBases>
       <MoveSpeed>3.8</MoveSpeed>
       <AimingDelayFactor>0.85</AimingDelayFactor>

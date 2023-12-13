@@ -22,6 +22,7 @@
 
   <!-- Base -->
   <ThingDef Name="BaseAutomatroidRace" ParentName="BaseMechanoid" Abstract="True">
+    <thingClass>DMS.WeaponUsableMech</thingClass>
     <statBases>
       <MoveSpeed>4.7</MoveSpeed>
       <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
@@ -148,7 +149,6 @@
   </PawnKindDef>
 
   <ThingDef Name="BaseAutomatroidHumanRace" ParentName="BaseAutomatroidWalker" Abstract="True">
-    <thingClass>DMS.WeaponUsableMech</thingClass>
     <inspectorTabs Inherit="False">
       <li>ITab_Pawn_Health</li>
       <li>ITab_Pawn_Needs</li>

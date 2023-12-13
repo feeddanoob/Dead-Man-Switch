@@ -245,9 +245,6 @@
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
     <race>
-      <!--<mechEnabledWorkTypes>-->
-      <!--  <li></li>-->                                                  <!--允許的工作類型-->
-      <!--</mechEnabledWorkTypes>-->
       <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>1.1</baseBodySize>
       <baseHealthScale>1.32</baseHealthScale>
@@ -263,6 +260,7 @@
           <li>A_AR_LongRifle</li>
           <li>MedievalMeleeBasic</li>
           <li>MedievalMeleeAdvanced</li>
+          <li>DMS_MeleeWeapon</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -298,8 +296,9 @@
       </li>
     </lifeStages>
     <weaponTags>
-      <li>A_AR_LongRifle</li>                                                                     <!--武器-->
+      <li>A_SG_LongRifle</li>                                                                     <!--武器-->
       <li>MedievalMeleeAdvanced</li>
+      <li>DMS_MeleeWeapon</li>
     </weaponTags>
     <abilities>
       <li>LongjumpMech</li>

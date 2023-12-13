@@ -65,14 +65,6 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<comps>
-			<li Class="DMS.CompProperties_MechOnlyWeapon">
-				<allowedRaces>
-					<li>DMS_Mech_Soldat</li>
-					<li>DMS_Mech_Sergeant</li>
-				</allowedRaces>
-			</li>
-		</comps>
 		<modExtensions>
 			<li Class="HeavyWeapons.HeavyWeapon">
 				<isHeavy>true</isHeavy>
@@ -119,7 +111,7 @@
 		<recipeMaker>
 		    <researchPrerequisites>
       			<li>BlowbackOperation</li>
-      			<li>DMS_EquipmentElite</li>
+				<li>DMS_EquipmentAdvanced</li>
     		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
@@ -664,7 +656,7 @@
 			<li>Ranged</li>
 		</weaponClasses>
 		<weaponTags>
-			<li>DMS_MechWeaponLongRifle</li>			
+			<li>DMS_MechWeaponLongRifle</li>
 			<li>A_SuppressWeapon</li>
 			<li>A_MG_Light</li>
 		</weaponTags>
@@ -725,84 +717,61 @@
 		</graphicData>
 	</ThingDef>
 
-<!--HMG-->
+	<!-- M214 5.56mm 雙足飛龍的主武器，也可以被猿人與戰鬥框架裝備-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
-		<defName>DMS_HeavyMachineGun</defName>
-		<label>mech HMG</label>
-		<description>heavy machine gun for mech soldier or infantry support platform.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
-		<weaponClasses>
-			<li>RangedHeavy</li>
-			<li>LongShots</li>
-			<li>Ranged</li>
-		</weaponClasses>
+		<defName>DMS_MGatlinggun</defName>
+		<label>M214</label>
+		<description>a rapid-firing multiple-barrel firearm chambered in assault rifle rounds.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponTags>
-			<li>DMS_MechWeaponHeavy</li>
-			<li>A_SuppressWeaponHeavy</li>
-			<li>A_MG_Heavy</li>
+			<li>A_SuppressWeapon</li>
+			<li>V_Gatling556mm</li>
 		</weaponTags>
 		<graphicData>
-			<texPath>Things/Weapons/DMS_HeavyMachineGun</texPath>
-			<drawSize>(1.75,1.75)</drawSize>
+			<texPath>Things/Weapons/DMS_Weapon_M214</texPath>
+			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
-		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>60000</WorkToMake>
-			<AccuracyTouch>0.65</AccuracyTouch>
-			<AccuracyShort>0.70</AccuracyShort>
-			<AccuracyMedium>0.70</AccuracyMedium>
-			<AccuracyLong>0.65</AccuracyLong>
-			<Mass>14.50</Mass>
+			<Mass>10</Mass>
+			<MarketValue>2000</MarketValue>
+			<AccuracyTouch>0.4</AccuracyTouch>
+			<AccuracyShort>0.3</AccuracyShort>
+			<AccuracyMedium>0.2</AccuracyMedium>
+			<AccuracyLong>0.15</AccuracyLong>
 			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>-0.15</MoveSpeed>
-		</equippedStatOffsets>
 		<recipeMaker>
-		    <researchPrerequisites>
-      			<li>GasOperation</li>
-      			<li>DMS_EquipmentHeavy</li>
-    		</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<researchPrerequisites>
+				<li>MultibarrelWeapons</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<Tungsteel>95</Tungsteel>
-			<ComponentStamped>5</ComponentStamped>		
-		</costList>	
+			<Tungsteel>75</Tungsteel>
+			<ComponentStamped>5</ComponentStamped>
+		</costList>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_DMS_HeavyMachineGun</defaultProjectile>
-				<warmupTime>3</warmupTime>
-				<range>49.9</range>
-				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
-				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
+				<defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>25.9</range>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>30</burstShotCount>
+				<soundCast>Shot_MachinePistol</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
 	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-    <defName>Bullet_DMS_HeavyMachineGun</defName>
-    <label>heavy machine gun bullet</label>
-    <graphicData>
-		<texPath>Things/Projectile/Bullet_Big</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>28</damageAmountBase>
-			<stoppingPower>3</stoppingPower>
-			<speed>80</speed>
-		</projectile>
-	</ThingDef>
-
-
+	
 	<!-- 待完成 : 重型無後座力砲，單手榴彈發射槍(消防/燃燒/毒氣) -->
 	<!--高周波開山刀-->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>DMS_Machete</defName>
-		<label>progressive machete</label>
+		<label>machete</label>
 		<description>May look like a normal machete, but it's a weapon with unique design which specify for mech's melee combat capability.\n\nWith its high frequency vibrating edge, it can cut through most things with ease.</description>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Machete</texPath>
@@ -851,7 +820,7 @@
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>LongBlades</li>
-                <li>DMS_EquipmentElite</li>
+                <li>DMS_EquipmentAdvanced</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>8</Crafting>

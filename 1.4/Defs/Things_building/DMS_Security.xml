@@ -18,12 +18,13 @@
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <stealable>false</stealable>
+    <rotatable>true</rotatable>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.75</fillPercent>
     <tickerType>Normal</tickerType>
     <designationCategory>DMS_Category</designationCategory>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <comps>
       <li Class="CompProperties_Forbiddable" />
       <li Class="CompProperties_Flickable" />
@@ -220,8 +221,8 @@
       <drawOffset>(0,0,0)</drawOffset>
     </graphicData>
     <size>(3,3)</size>
-    <rotatable>false</rotatable>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <rotatable>true</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <statBases>   <!--================血量與重量工作量================-->
       <MaxHitPoints>2500</MaxHitPoints>
       <Flammability>0.5</Flammability>
@@ -276,10 +277,11 @@
       <Tungsteel>300</Tungsteel>
       <ComponentStamped>10</ComponentStamped>
       <ComponentIndustrial>7</ComponentIndustrial>
-      <ReinforcedBarrel>12</ReinforcedBarrel>
+      <ReinforcedBarrel>4</ReinforcedBarrel>
+      <ComponentFireControl>1</ComponentFireControl>
     </costList>
     <researchPrerequisites>
-      <li>DMS_EquipmentElite</li>
+      <li>DMS_EquipmentHeavy</li>
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_Tunguska</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
@@ -337,8 +339,8 @@
       <drawOffset>(0,0,0)</drawOffset>
     </graphicData>
     <size>(3,3)</size>
-    <rotatable>false</rotatable>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <rotatable>true</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <statBases>   <!--================血量與重量工作量================-->
       <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0.5</Flammability>
@@ -383,7 +385,7 @@
     </comps>
     <building>
       <turretGunDef>DMS_Gun_GateKeeper</turretGunDef>
-      <turretTopDrawSize>6</turretTopDrawSize>
+      <turretTopDrawSize>7</turretTopDrawSize>
       <turretBurstWarmupTime>2.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
     </building>
@@ -417,32 +419,31 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <AccuracyTouch>0.90</AccuracyTouch>
-      <AccuracyShort>0.85</AccuracyShort>
-      <AccuracyMedium>0.80</AccuracyMedium>
-      <AccuracyLong>0.75</AccuracyLong>
-      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.45</AccuracyTouch>
+			<AccuracyShort>0.6</AccuracyShort>
+			<AccuracyMedium>0.78</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <defaultProjectile>DMS_Bullet_CIWS</defaultProjectile>
         <requireLineOfSight>true</requireLineOfSight>
-        <!--<isMortar>false</isMortar>-->
-        <warmupTime>2</warmupTime>
+        <warmupTime>0.25</warmupTime>
         <minRange>3.9</minRange>
-        <range>45</range>
+				<range>59.9</range>
         <ai_AvoidFriendlyFireRadius>4.9</ai_AvoidFriendlyFireRadius>
-        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-        <burstShotCount>50</burstShotCount>
-        <soundCast>Shot_Minigun</soundCast>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <burstShotCount>16</burstShotCount>
+        <soundCast>Shot_TurretSniper</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>15</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		<forcedMissRadius>0.1</forcedMissRadius>
+		    <forcedMissRadius>1.5</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>
@@ -450,40 +451,28 @@
   <ThingDef ParentName="BaseBullet">
     <defName>DMS_Bullet_CIWS</defName>
     <label>APT shell</label>
-    <thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
+    <thingClass>Projectile_Explosive</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.3</drawSize>
     </graphicData>
-    <modExtensions>
-      <li Class="Fortification.ModExtension_CompositeExplosion">
-        <compositeExplosions>
-          <li>
-            <countdown>1</countdown>
-            <radius>0.5</radius>
-            <damamgeDef>Bomb</damamgeDef>
-            <amount>10</amount>
-            <armorPenetration>1.5</armorPenetration>
-            <explosionSound>MortarBomb_Explode</explosionSound>
-          </li>
-        </compositeExplosions>
-      </li>
-    </modExtensions>
     <projectile>
-      <damageDef>Bullet</damageDef>
+      <speed>80</speed>
+      <damageDef>Bomb</damageDef>
+      <screenShakeFactor>0</screenShakeFactor>
       <damageAmountBase>22</damageAmountBase>
       <armorPenetrationBase>1.75</armorPenetrationBase>
-      <stoppingPower>20</stoppingPower>
-      <speed>125</speed>
-      <arcHeightFactor>0.3</arcHeightFactor>
+      <stoppingPower>8</stoppingPower>
+      <explosionRadius>1.4</explosionRadius>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+      <arcHeightFactor>0.5</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
-      <explosionDelay>2</explosionDelay>
-      <soundExplode>Explosion_GiantBomb</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
   </ThingDef>
+
 
   <!--遙控砲塔--><!--文本缺失-->
   <ThingDef ParentName="DMS_BaseCannonBuilding">

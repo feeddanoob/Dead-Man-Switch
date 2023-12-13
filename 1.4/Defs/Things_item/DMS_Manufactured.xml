@@ -302,6 +302,15 @@
     <thingSetMakerTags>
       <li>RewardStandardCore</li>
     </thingSetMakerTags>
+    <isTechHediff>true</isTechHediff>
+    <comps>
+      <li Class="CompProperties_Studiable">
+        <cost>5</cost>
+        <completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+        <completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetterText>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+      </li>
+    </comps>
     <!-- <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags> -->
@@ -309,7 +318,8 @@
       <li>Manufactured</li>
     </thingCategories>
     <allowedArchonexusCount>10</allowedArchonexusCount>
-  </ThingDef>  
+  </ThingDef>
+
   <!-- 收發組件 可以透過擊殺指揮中樞型號的機兵有一定機率獲取，能拿來造特殊機兵與DMS機控中樞-->
   <ThingDef ParentName="ResourceBase">
     <defName>ComponentTransmitter</defName>
@@ -332,6 +342,15 @@
       <DeteriorationRate>20</DeteriorationRate>
     </statBases>
     <intricate>true</intricate>
+    <isTechHediff>true</isTechHediff>
+    <comps>
+      <li Class="CompProperties_Studiable">
+        <cost>5</cost>
+        <completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+        <completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetterText>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+      </li>
+    </comps>
     <!-- <thingSetMakerTags>
       <li>RewardStandardCore</li>
     </thingSetMakerTags> -->
@@ -342,7 +361,8 @@
       <li>Manufactured</li>
     </thingCategories>
     <allowedArchonexusCount>10</allowedArchonexusCount>
-  </ThingDef>  
+  </ThingDef>
+
   <!-- 數控芯片 造精密打印機的關鍵零件，可以透過擊敗DMS戰艦(WIP)從殘骸中獲取 -->
   <ThingDef ParentName="ResourceBase">
     <defName>ComponentControlChip</defName>
@@ -365,6 +385,15 @@
       <DeteriorationRate>20</DeteriorationRate>
     </statBases>
     <intricate>true</intricate>
+    <isTechHediff>true</isTechHediff>
+    <comps>
+      <li Class="CompProperties_Studiable">
+        <cost>5</cost>
+        <completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+        <completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetterText>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+      </li>
+    </comps>
     <!-- <thingSetMakerTags>
       <li>RewardStandardCore</li>
     </thingSetMakerTags> -->
@@ -398,6 +427,15 @@
       <DeteriorationRate>20</DeteriorationRate>
     </statBases>
     <intricate>true</intricate>
+    <isTechHediff>true</isTechHediff>
+    <comps>
+      <li Class="CompProperties_Studiable">
+        <cost>5</cost>
+        <completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+        <completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetterText>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+      </li>
+    </comps>
     <!-- <thingSetMakerTags>
       <li>RewardStandardCore</li>
     </thingSetMakerTags> -->

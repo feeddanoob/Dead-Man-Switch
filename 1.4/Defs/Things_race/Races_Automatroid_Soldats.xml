@@ -187,7 +187,7 @@
   <ThingDef ParentName="BaseMechRace_Soldat">
     <defName>DMS_Mech_Sergeant</defName>
     <label>sergeant</label>
-    <description>As a relay command variant of a mech soldat, it has a very recognizable disc-shaped omnidirectional radar and transceiver antenna. it can be the mechnitor command realy but due to its weight with reduced fire control system, which can only equip a light weapon for self defense.</description>
+    <description>As a relay command variant of a mech soldat, it has a very recognizable disc-shaped omnidirectional radar and transceiver antenna. it can be the mechnitor command relay but due to its weight with reduced fire control system, which can only equip a light weapon for self defense.</description>
     <statBases>
       <MoveSpeed>4</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Sharp>0.2</ArmorRating_Sharp><!--銳抗-->

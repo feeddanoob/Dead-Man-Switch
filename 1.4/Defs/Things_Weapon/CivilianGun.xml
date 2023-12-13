@@ -553,7 +553,7 @@
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>PrecisionRifling</li>
-				<li>DMS_EquipmentAdvanced</li>
+				<li>DMS_EquipmentElite</li>
 			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
