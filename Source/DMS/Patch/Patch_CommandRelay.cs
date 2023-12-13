@@ -5,7 +5,7 @@ using Verse;
 namespace DMS
 {
     [HarmonyPatch(typeof(MechanitorUtility), "InMechanitorCommandRange")]
-    internal class Patch
+    internal class Patch_CommandRelay
     {
         private static void Postfix(Pawn mech, LocalTargetInfo target, ref bool __result)
         {

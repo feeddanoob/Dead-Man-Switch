@@ -315,6 +315,7 @@
     <defName>DMS_MechGestatorSamll</defName>
     <label>automatroid constructor</label>
     <description>Todo.</description>
+		<designationCategory>DMS_Category</designationCategory>
     <graphicData>
       <texPath>Things/Building/MechBuilder_Base</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -360,7 +361,7 @@
         </west>
       </barDrawData>
       <formingGraphicData>
-        <texPath>Things/Pawn/Mechanoid/HalfGestatedMechLarge</texPath>
+        <texPath>Things/mechForming</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <drawSize>(1.65,1.65)</drawSize>
       </formingGraphicData>

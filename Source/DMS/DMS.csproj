@@ -64,6 +64,7 @@
     <Compile Include="Component\CompMechApparel.cs" />
     <Compile Include="Component\CompMechOnlyWeapon.cs" />
     <Compile Include="Component\CompVehicleWeapon.cs" />
+    <Compile Include="Patch\Patch_IsMissingWeapon.cs" />
     <Compile Include="Royalty\RoyalTitlePermitWorker_MechJoin.cs" />
     <Compile Include="Royalty\RoyalTitlePermitWorker_PawnJoin.cs" />
     <Compile Include="Hediff\CompMechanitorRange.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Patch\Patch_DrawVehicleTurret.cs" />
     <Compile Include="Patch\Patch_FloatMenuMakerMap.cs" />
     <Compile Include="Patch\Patch_ForceTarget.cs" />
+    <Compile Include="Thing\MechWeaponExtension.cs" />
     <Compile Include="Thing\WeaponUsableMachine.cs" />
     <Compile Include="Thing\WeaponUsableMech.cs" />
     <Compile Include="UI\Command_SelectApparelOutfit.cs" />

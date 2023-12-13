@@ -164,7 +164,13 @@
         </filter>
         <count>4</count>
       </li>
-    </ingredients>
+    </ingredients>    
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Polyester</li>
+      </thingDefs>
+    </fixedIngredientFilter>
   </RecipeDef>
 
   

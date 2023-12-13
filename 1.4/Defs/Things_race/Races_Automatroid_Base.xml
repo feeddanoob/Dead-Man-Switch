@@ -138,12 +138,14 @@
     <destroyGearOnDrop>true</destroyGearOnDrop>
     <canStrip>false</canStrip>
     <minGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</minGenerationAge>
+    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">98</maxGenerationAge>
     <forceNormalGearQuality>true</forceNormalGearQuality>
     <weaponMoney>1300~9999</weaponMoney>
     <combatPower>100</combatPower>
     <techHediffsChance>1</techHediffsChance>
     <techHediffsMoney>9999~9999</techHediffsMoney>
     <controlGroupPortraitZoom>1.8</controlGroupPortraitZoom>
+    
   </PawnKindDef>
 
   <ThingDef Name="BaseAutomatroidHumanRace" ParentName="BaseAutomatroidWalker" Abstract="True">

@@ -8,7 +8,7 @@ namespace DMS
 {
 
     //一般情況的
-    public class WeaponUsableMech : Pawn
+    public class WeaponUsableMech : Pawn , WeaponUsable
     {
         public MechWeaponExtension MechWeapon { get; private set; }
         public override void SpawnSetup(Map map, bool respawningAfterLoad)

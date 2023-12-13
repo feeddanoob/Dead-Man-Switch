@@ -5,7 +5,7 @@ using HarmonyLib;
 
 namespace DMS
 {
-	[HarmonyPatch(typeof(PawnRenderer), "DrawEquipment")]
+    [HarmonyPatch(typeof(PawnRenderer), "DrawEquipment")]
 	public class Patch_DrawVehicleTurret
 	{
 		[HarmonyPriority(600)]
@@ -40,4 +40,5 @@ namespace DMS
 		}
 		public static Mesh plane10Flip = MeshMakerPlanes.NewPlaneMesh(1f, true);
 	}
+
 }

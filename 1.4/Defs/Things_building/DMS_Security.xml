@@ -275,9 +275,6 @@
       <turretTopDrawSize>5</turretTopDrawSize>
       <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
-      <buildingTags>
-        <li>Artillery_MannedMortar</li>
-      </buildingTags>
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
@@ -395,9 +392,6 @@
       <turretTopDrawSize>6</turretTopDrawSize>
       <turretBurstWarmupTime>2.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
-      <buildingTags>
-        <li>Artillery_MannedMortar</li>
-      </buildingTags>
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
@@ -549,14 +543,10 @@
       </li>
     </comps>
     <building>
-      <isEdifice>false</isEdifice>
       <turretGunDef>DMS_Gun_Kord</turretGunDef>
       <turretTopDrawSize>3</turretTopDrawSize>
       <turretBurstWarmupTime>1.5</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>2</turretBurstCooldownTime>
-      <buildingTags>
-        <li>Artillery_MannedMortar</li>
-      </buildingTags>
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>

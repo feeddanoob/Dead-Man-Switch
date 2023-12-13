@@ -6,8 +6,12 @@ using System.Collections.Generic;
 
 namespace DMS
 {
+    public interface WeaponUsable
+    {
+        void Equip(ThingWithComps equipment);
+    }
     //給VFEM機械使用的
-    public class WeaponUsableMachine : Machine
+    public class WeaponUsableMachine : Machine , WeaponUsable
     {
         public MechWeaponExtension MechWeapon { get; private set; }
         public override void SpawnSetup(Map map, bool respawningAfterLoad)

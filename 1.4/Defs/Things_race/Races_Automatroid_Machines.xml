@@ -133,6 +133,7 @@
     <label>trash bin</label>
     <race>DMS_Machine_TrashBin</race>
     <isFighter>false</isFighter>
+    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</maxGenerationAge>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -216,6 +217,7 @@
     <label>verling bird</label>
     <race>DMS_Machine_VerlingBird</race>
     <isFighter>true</isFighter>
+    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</maxGenerationAge>
     <combatPower>20</combatPower>
     <maxPerGroup>30</maxPerGroup>
     <lifeStages>
@@ -304,6 +306,7 @@
     <label>hound</label>
     <race>DMS_Machine_Hound</race>
     <isFighter>true</isFighter>
+    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</maxGenerationAge>
     <combatPower>30</combatPower>
     <maxPerGroup>15</maxPerGroup>
     <lifeStages>
@@ -344,6 +347,7 @@
     <label>watchdog</label>
     <race>DMS_Machine_Hound_RC</race>
     <isFighter>true</isFighter>
+    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</maxGenerationAge>
     <combatPower>30</combatPower>
     <maxPerGroup>15</maxPerGroup>
     <lifeStages>
@@ -386,6 +390,7 @@
     <label>hetzen</label>
     <race>DMS_Machine_Hound_FS</race>
     <isFighter>true</isFighter>
+    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</maxGenerationAge>
     <combatPower>50</combatPower>
     <maxPerGroup>15</maxPerGroup>
     <lifeStages>

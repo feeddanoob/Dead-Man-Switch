@@ -79,6 +79,8 @@
     </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>3.50</researchViewY>
+    <discoveredLetterTitle>About: Advanced Parts</discoveredLetterTitle>
+    <discoveredLetterText>Some of the Advanced Automatroid Required specific part which is not manufactured in gravity environment. But the colonial fleet told us that can feel free to attract and destroy their out of command automatroids to obtain those parts.</discoveredLetterText>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
