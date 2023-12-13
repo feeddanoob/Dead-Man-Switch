@@ -102,8 +102,8 @@
         </bossApparel>
       </li>
     </waves>
-    <leaderDescription>The {LEADERKIND_label} are ancient war machine deployed all over the rimworld during The great machine wars. Tho the time has passed but those war machines thought the war has not ended yet.</leaderDescription>
-    <rewardDef>ComponentTransmitter</rewardDef>
+    <leaderDescription>This {LEADERKIND_label} was one of machines deployed all over this plants. Tho it has out of command due to the lost of their commander.</leaderDescription>
+    <rewardDef>Neurocomputer</rewardDef>
   </BossgroupDef>
 
   <!-- DMS_Mech_Tarbosaurus -->
@@ -177,8 +177,8 @@
         </bossApparel>
       </li>
     </waves>
-    <leaderDescription>The {LEADERKIND_label} are ancient war machine deployed all over the rimworld during The great machine wars. Tho the time has passed but those war machines thought the war has not ended yet.</leaderDescription>
-    <rewardDef>Neurocomputer</rewardDef>
+    <leaderDescription>This {LEADERKIND_label} was one of machines deployed all over this plants. Tho it has out of command due to the lost of their commander.</leaderDescription>
+    <rewardDef>ComponentFireControl</rewardDef>
   </BossgroupDef>
 
 </Defs>

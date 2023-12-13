@@ -345,6 +345,7 @@
       <Medicine>8</Medicine>
     </skillRequirements>
     <workSkill>Medicine</workSkill>
+    <researchPrerequisite>DMS_Atrifuscle</researchPrerequisite>
   </RecipeDef>
 
   <RecipeDef>
@@ -399,5 +400,6 @@
       <Medicine>8</Medicine>
     </skillRequirements>
     <workSkill>Medicine</workSkill>
+    <researchPrerequisite>DMS_Hypothesis</researchPrerequisite>
   </RecipeDef>
 </Defs>	

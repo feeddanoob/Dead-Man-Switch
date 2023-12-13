@@ -101,7 +101,8 @@
   <ThingDef ParentName="ResourceBase">
     <defName>Tungsteel</defName>
     <label>tungsteel</label>
-    <description>高強度高延展性且耐磨耐熱的軍工級合金,經過表面碳處理後通常被用於製造高性能武器,裝甲與特種機械零件,雖然性能優異但其原料在自然界的稀缺使得其需要從大量的岩質材料中提純.</description>
+    <!-- 高強度高延展性且耐磨耐熱的軍工級合金,經過表面碳處理後通常被用於製造高性能武器,裝甲與特種機械零件,雖然性能優異但其原料在自然界的稀缺使得其需要從大量的岩質材料中提純. -->
+    <description>a military standard alloy, Usually used to manufacture high-performance weapons, armor and special mechanical parts.</description>
     <descriptionHyperlinks><ThingDef>DMS_Furnace</ThingDef></descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Resource/Tungsteel</texPath>
@@ -239,7 +240,14 @@
       <li Class="CompProperties_Rottable">
         <daysToRotStart>10</daysToRotStart>
       </li>
+      <li Class="CompProperties_Studiable">
+        <cost>100</cost>
+        <completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+        <completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetterText>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+      </li>
     </comps>
+    <isTechHediff>true</isTechHediff>
     <allowedArchonexusCount>10</allowedArchonexusCount>
   </ThingDef>
   <!-- 沖壓機件 DMS裡廣泛使用的零件，機兵與建築等複雜機器都會需要用到，也可以轉換成工業零件-->

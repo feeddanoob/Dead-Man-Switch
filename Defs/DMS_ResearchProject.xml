@@ -19,7 +19,7 @@
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
-      <li>BiofuelRefining</li>
+      <li>Electricity</li>
     </prerequisites>
     <researchViewX>0.00</researchViewX>
     <researchViewY>2.50</researchViewY>
@@ -29,7 +29,7 @@
     <defName>DMS_Plasfiber</defName>
     <label>artificial fiber</label>
     <description>unlock the production of artificial fabrics,these man-made fabric has their pros and cons.</description>
-    <baseCost>1250</baseCost>
+    <baseCost>500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_Material</li>
@@ -71,7 +71,7 @@
     <defName>DMS_DeadMansSwitch</defName>
     <label>Dead Man's Switch</label>
     <description>The Dead Man's Switch is a mechanical safety mechanism intended to self-terminate device active when the operator becomes incapacitated. \n\n Before human seek into space, they discovered this machanism will eventually made artificial intelligence understand...the meaning of death...\n this discover lead humanity to new era of history....\n\n an era of those fifth level ai.</description>
-    <baseCost>1250</baseCost>
+    <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>MicroelectronicsBasics</li>
@@ -134,15 +134,16 @@
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
-      <li>DMS_DeadMansSwitch</li>
+      <li>DMS_Hypothesis</li>
       <li>SterileMaterials</li>
     </prerequisites>
-    <researchViewX>4.00</researchViewX>
-    <researchViewY>1.75</researchViewY>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>2.70</researchViewY>
     <requiredStudied>
       <li>ComponentTransmitter</li>
     </requiredStudied>
   </ResearchProjectDef>
+
 
   <ResearchProjectDef ParentName="DMS_BaseTech" MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_Automatroid</defName>
@@ -225,7 +226,7 @@
     <researchViewX>4.00</researchViewX>
     <researchViewY>1.15</researchViewY>
     <requiredStudied>
-      <li>Neurocomputer</li>
+      <li>Atrifuscle</li>
     </requiredStudied>
   </ResearchProjectDef>
 
@@ -262,7 +263,7 @@
     <defName>DMS_Hypothesis</defName>
     <label>in short hypothesis</label>
     <description>after the discover of The Dead man's switch, yánzhī Jiǎn an AI algorithm engineer proposed a hypothetical solution to the halting problem...\n\n And around this conjecture, we seem to be getting closer to the so-called omnipotent machinery.</description>
-    <baseCost>3000</baseCost>
+    <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_DeadMansSwitch</li>
@@ -286,13 +287,16 @@
     </prerequisites>
     <researchViewX>8.00</researchViewX>
     <researchViewY>4.25</researchViewY>
+    <requiredStudied>
+      <li>ComponentFireControl</li>
+    </requiredStudied>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech" MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_HumanoidEngineering</defName>
     <label>humanoid engineering</label>
     <description>during war, automatroid with human shapes are proven to be a good design where the ergonomics and psychological suggestion are work on them.</description>
-    <baseCost>3000</baseCost>
+    <baseCost>1500</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>DMS_Hypothesis</li>

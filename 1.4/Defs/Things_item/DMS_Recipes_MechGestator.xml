@@ -20,7 +20,7 @@
   </RecipeDef>
 
   <RecipeDef Name="DMS_SuperHeavyMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
-    <gestationCycles>5</gestationCycles>
+    <gestationCycles>10</gestationCycles>
     <researchPrerequisite>DMS_HeavyAutomatroid</researchPrerequisite>
     <recipeUsers><li>DMS_MechGestatorSamll</li></recipeUsers>
   </RecipeDef>
@@ -29,6 +29,47 @@
     <gestationCycles>5</gestationCycles>
     <researchPrerequisite>DMS_HumanoidEngineering</researchPrerequisite>
     <recipeUsers><li>DMS_MechGestatorSamll</li></recipeUsers>
+  </RecipeDef>
+
+  <!-- DMS_Mech_Ape -->
+  <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
+    <defName>DMS_Make_Ape</defName>
+    <label>gestate ape</label>
+    <description>Gestate an ape mechanoid.</description>
+    <products>
+      <DMS_Mech_Ape>1</DMS_Mech_Ape>
+    </products>
+    <researchPrerequisite>DMS_DeadMansSwitch</researchPrerequisite>
+    <gestationCycles>3</gestationCycles>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_Ape</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentStamped</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
   </RecipeDef>
 
   <!--士兵-->
@@ -426,47 +467,6 @@
     </ingredients>
   </RecipeDef>
 
-  <!-- DMS_Mech_Ape -->
-  <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
-    <defName>DMS_Make_Ape</defName>
-    <label>gestate ape</label>
-    <description>Gestate an ape mechanoid.</description>
-    <products>
-      <DMS_Mech_Ape>1</DMS_Mech_Ape>
-    </products>
-    <researchPrerequisite>DMS_Hypothesis</researchPrerequisite>
-    <gestationCycles>3</gestationCycles>
-    <descriptionHyperlinks>
-      <ThingDef>DMS_Mech_Ape</ThingDef>
-    </descriptionHyperlinks>
-    <ingredients Inherit="False">
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>100</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentStamped</li>
-          </thingDefs>
-        </filter>
-        <count>8</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>4</count>
-      </li>
-    </ingredients>
-  </RecipeDef>
-
   <!--DMS_Make_Reptile-->
   <RecipeDef ParentName="DMS_SuperHeavyMechanoidRecipe">
     <defName>DMS_Make_Reptile</defName>
@@ -475,6 +475,7 @@
     <products>
       <DMS_Mech_Reptile>1</DMS_Mech_Reptile>
     </products>
+    <researchPrerequisite>DMS_Hypothesis</researchPrerequisite>
     <gestationCycles>5</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Reptile</ThingDef>
@@ -524,7 +525,6 @@
     <products>
       <DMS_Mech_Geochelone>1</DMS_Mech_Geochelone>
     </products>
-    <gestationCycles>5</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Geochelone</ThingDef>
     </descriptionHyperlinks>
@@ -552,6 +552,61 @@
           </thingDefs>
         </filter>
         <count>8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neurocomputer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+
+  <!--DMS_Mech_Tarbosaurus-->
+  <RecipeDef ParentName="DMS_SuperHeavyMechanoidRecipe">
+    <defName>DMS_Make_Tarbosaurus</defName>
+    <label>gestate tarbosaurus</label>
+    <description>Gestate a tarbosaurus mechanoid.</description>
+    <products>
+      <DMS_Mech_Tarbosaurus>1</DMS_Mech_Tarbosaurus>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_Tarbosaurus</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Tungsteel</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Atrifuscle</li>
+          </thingDefs>
+        </filter>
+        <count>125</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>18</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentStamped</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
       </li>
       <li>
         <filter>

@@ -177,13 +177,8 @@
       <body>DMS_Chop</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>0.25</baseBodySize>
       <baseHealthScale>0.5</baseHealthScale>
-      <thinkTreeMain>VFE_Mechanoids_ViolentMachine</thinkTreeMain>
     </race>
     <comps>
-			<li Class="VFE.Mechanoids.CompProperties_Machine">
-        <violent>true</violent>
-				<hoursActive>24</hoursActive>
-			</li>
       <li Class="AnimalBehaviours.CompProperties_Floating">
       </li>
 		</comps>
@@ -192,6 +187,15 @@
   <ThingDef ParentName="VerlingBirdBase">
     <defName>DMS_Machine_VerlingBird</defName>
     <thingClass>DMS.WeaponUsableMachine</thingClass>
+    <comps>
+			<li Class="VFE.Mechanoids.CompProperties_Machine">
+        <violent>true</violent>
+				<hoursActive>24</hoursActive>
+			</li>
+    </comps>
+    <race> 
+      <thinkTreeMain>VFE_Mechanoids_ViolentMachine</thinkTreeMain>
+    </race>
     <modExtensions>
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
@@ -208,11 +212,6 @@
         </BypassUsableWeapons>
       </li>
     </modExtensions>
-  </ThingDef>
-
-  <ThingDef ParentName="VerlingBirdBase">   <!-- NPC用版本 -->
-    <defName>DMS_Machine_VerlingBirdA</defName>
-    <thingClass>VFEMech.Machine</thingClass>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">
@@ -244,6 +243,17 @@
     <weaponTags/>
   </PawnKindDef>
 
+  <!-- NPC用版本 -->
+  <ThingDef ParentName="VerlingBirdBase">   
+    <defName>DMS_Machine_VerlingBirdA</defName>
+    <thingClass>DMS.WeaponUsableMech</thingClass>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>
+    </race>
+  </ThingDef>
+  
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Machine_VerlingBirdA</defName>
     <label>verling bird</label>
