@@ -350,6 +350,9 @@
         <multiplier>0.6</multiplier>
       </li>
     </damageMultipliers>
+    <killedLeavingsPlayerHostile>
+      <Neurocomputer>1</Neurocomputer>
+    </killedLeavingsPlayerHostile>
   </ThingDef>
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Mech_Geochelone</defName>

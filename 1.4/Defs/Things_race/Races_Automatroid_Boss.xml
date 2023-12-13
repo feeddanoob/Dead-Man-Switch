@@ -30,9 +30,6 @@
         <rotationSmoothTime>0.12</rotationSmoothTime>
       </li>
     </comps>
-    <killedLeavingsPlayerHostile>
-      <Neurocomputer>1</Neurocomputer>
-    </killedLeavingsPlayerHostile>
     <tools Inherit="False">
       <li>
         <label>Mechanical Head</label>
@@ -98,6 +95,9 @@
         <multiplier>0.6</multiplier>
       </li>
     </damageMultipliers>
+    <killedLeavingsPlayerHostile>
+      <ComponentFireControl>1</ComponentFireControl>
+    </killedLeavingsPlayerHostile>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">
