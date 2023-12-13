@@ -135,7 +135,7 @@
   <PawnKindDef Name="BaseAutomatroidKind" ParentName="BaseMechanoidKind" Abstract="True">
     <defaultFactionType>Mechanoid</defaultFactionType>
     <allowInMechClusters>false</allowInMechClusters>                             <!--是否出現在機械集群-->
-    <destroyGearOnDrop>true</destroyGearOnDrop>
+    <destroyGearOnDrop>false</destroyGearOnDrop>
     <canStrip>false</canStrip>
     <minGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</minGenerationAge>
     <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">98</maxGenerationAge>
@@ -145,7 +145,6 @@
     <techHediffsChance>1</techHediffsChance>
     <techHediffsMoney>9999~9999</techHediffsMoney>
     <controlGroupPortraitZoom>1.8</controlGroupPortraitZoom>
-    
   </PawnKindDef>
 
   <ThingDef Name="BaseAutomatroidHumanRace" ParentName="BaseAutomatroidWalker" Abstract="True">

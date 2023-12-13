@@ -177,7 +177,7 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <weaponMoney>570~3000</weaponMoney>
+    <weaponMoney>1000~3000</weaponMoney>
     <weaponTags><!--武器-->
       <li>GunSingleUse</li>                                                              
     </weaponTags>
@@ -214,6 +214,9 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons>
+          <li>Gun_BinocularsRadio</li>
+        </BypassUsableWeapons>
       </li>
     </modExtensions>
     <killedLeavingsPlayerHostile>

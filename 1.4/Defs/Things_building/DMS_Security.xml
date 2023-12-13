@@ -17,8 +17,6 @@
       </shadowData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
-    <!--<hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(-1,0,-1)</interactionCellOffset>-->
     <stealable>false</stealable>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
@@ -28,10 +26,6 @@
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <comps>
       <li Class="CompProperties_Forbiddable" />
-      <!--<li
-      Class="CompProperties_Mannable">
-			<manWorkType>Violent</manWorkType>
-		</li>-->
       <li Class="CompProperties_Flickable" />
       <li>
         <compClass>DMS.CompForceTargetable</compClass>

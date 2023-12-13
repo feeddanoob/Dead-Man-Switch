@@ -64,7 +64,9 @@
     <Compile Include="Component\CompMechApparel.cs" />
     <Compile Include="Component\CompMechOnlyWeapon.cs" />
     <Compile Include="Component\CompVehicleWeapon.cs" />
+    <Compile Include="Patch\Patch_Building_MechGestator.cs" />
     <Compile Include="Patch\Patch_IsMissingWeapon.cs" />
+    <Compile Include="Patch\Patch_Pawn.cs" />
     <Compile Include="Royalty\RoyalTitlePermitWorker_MechJoin.cs" />
     <Compile Include="Royalty\RoyalTitlePermitWorker_PawnJoin.cs" />
     <Compile Include="Hediff\CompMechanitorRange.cs" />

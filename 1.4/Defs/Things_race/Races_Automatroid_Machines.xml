@@ -203,11 +203,14 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons>
+          <li>Gun_BinocularsRadio</li>
+        </BypassUsableWeapons>
       </li>
     </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="VerlingBirdBase">
+  <ThingDef ParentName="VerlingBirdBase">   <!-- NPC用版本 -->
     <defName>DMS_Machine_VerlingBirdA</defName>
     <thingClass>VFEMech.Machine</thingClass>
   </ThingDef>
