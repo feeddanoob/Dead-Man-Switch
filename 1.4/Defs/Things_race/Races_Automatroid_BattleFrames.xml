@@ -33,6 +33,7 @@
         <UsableWeaponTags>
           <li>DMS_MechWeaponLongRifle</li>
           <li>DMS_MechWeaponLight</li>
+          <li>GrenadeSmoke</li>
           <li>Gun</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
@@ -72,7 +73,7 @@
       <li>DMS_MechWeaponLongRifle</li>
       <li>DMS_MechWeaponLight</li>
       <li>GrenadeSmoke</li>
-      <li>GunHeavy</li>
+      <li>Gun</li>
     </weaponTags>
   </PawnKindDef>
   

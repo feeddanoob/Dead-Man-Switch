@@ -11,7 +11,7 @@ using Verse.AI;
 
 namespace DMS
 {
-    public class HumanlikeMech : Pawn
+    public class HumanlikeMech : Pawn , WeaponUsable
     {
         private PawnDownedWiggler _wiggler;
         public HumanlikeMechExtension Extension { get; private set; }

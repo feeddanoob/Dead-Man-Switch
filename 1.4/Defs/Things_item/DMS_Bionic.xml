@@ -405,7 +405,7 @@
     <defName>DMS_SensoryFilter</defName>
     <label>sensory filter</label>
     <labelNoun>a sensory filter</labelNoun>
-    <description>No will to fear,\nNo more to disgust,\nNo way to feel,\nNo tears to cry... \n\nAnd what else... \nis this little pawn have to sacrifice?</description>
+    <description>No will for fear,\nNo more to disgust,\nNo way to feel,\nNo tears to cry... \n\nAnd what else... \nWill this little pawn have to sacrifice?</description>
     <descriptionHyperlinks><ThingDef>DMS_SensoryFilter</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>DMS_SensoryFilter</spawnThingOnRemoved>
     <disablesNeeds>
@@ -434,11 +434,11 @@
             <postFactor>0.25</postFactor>
           </li>
         </capMods>
-        <statOffsets>  
-          <SocialImpact>-0.5</SocialImpact>
-          <BondAnimalChanceFactor>-1</BondAnimalChanceFactor>
-          <PsychicSensitivity>-1</PsychicSensitivity>
-        </statOffsets>
+        <statFactors>
+          <PsychicSensitivity>0</PsychicSensitivity>
+          <SocialImpact>0</SocialImpact>
+          <BondAnimalChanceFactor>0</BondAnimalChanceFactor>
+        </statFactors>
       </li>
     </stages>
     <comps>
@@ -516,7 +516,7 @@
     <defName>DMS_NutrientPort</defName>
     <label>nutrition port</label>
     <labelNoun>an nutrition port</labelNoun>
-    <description>a total overhaul removed part of user's digestive system and replace with an artificial nutrition storage/fueling port.</description>
+    <description>A total overhaul of the patient's digestive system, replacing it with a fueling port and nutrient storage.</description>
     <descriptionHyperlinks><ThingDef>DMS_NutrientPort</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>DMS_NutrientPort</spawnThingOnRemoved>
     <stages>
@@ -524,7 +524,7 @@
         <statOffsets>
           <MaxNutrition>2</MaxNutrition>   
         </statOffsets>
-        <foodPoisoningChanceFactor>1</foodPoisoningChanceFactor>
+        <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
       </li>
     </stages>
     <addedPartProps>
@@ -542,7 +542,7 @@
   <ThingDef ParentName="DMS_BioMechBionicBase">
     <defName>DMS_NutrientPort</defName>
     <label>nutrition port</label>
-    <description>a total overhaul removed part of user's digestive system and replace with an artificial nutrition storage/fueling port.</description>
+    <description>A total overhaul of the patient's digestive system, replacing it with a fueling port and nutrient storage.</description>
     <descriptionHyperlinks><RecipeDef>DMS_InstallNutrientPort</RecipeDef></descriptionHyperlinks>
     <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
     <costList>

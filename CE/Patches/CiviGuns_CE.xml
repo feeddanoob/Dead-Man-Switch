@@ -246,6 +246,7 @@
                     <aiAimMode>Snapshot</aiAimMode>
                 </FireModes>
                 <weaponTags>
+                    <li>CE_OneHandedWeapon</li>
                     <li>CE_AI_AssaultWeapon</li>
                 </weaponTags>
             </li>

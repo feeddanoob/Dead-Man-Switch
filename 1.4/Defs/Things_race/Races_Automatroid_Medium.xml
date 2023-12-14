@@ -229,6 +229,10 @@
       <li>A_SR_GrenadeLauncher</li>
       <li>A_SR_LongRifle</li>
     </weaponTags>
+    <abilities>
+      <li>DMS_SharpShooting</li>
+      <li>DMS_RangeFinder</li>
+    </abilities>
   </PawnKindDef>
 
   <!-- 浪人 ronin-->
@@ -319,9 +323,6 @@
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
     <race>
-      <!--<mechEnabledWorkTypes>-->
-      <!--  <li></li>-->                                                  <!--允許的工作類型-->
-      <!--</mechEnabledWorkTypes>-->
       <body>DMS_Humanoid_TypeB_ShieldL</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>1.1</baseBodySize>
       <baseHealthScale>1.85</baseHealthScale>

@@ -434,7 +434,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Tungsteel</li>
+            <li>Steel</li>
           </thingDefs>
         </filter>
         <count>60</count>
@@ -467,18 +467,75 @@
     </ingredients>
   </RecipeDef>
 
-  <!--DMS_Make_Reptile-->
-  <RecipeDef ParentName="DMS_SuperHeavyMechanoidRecipe">
-    <defName>DMS_Make_Reptile</defName>
-    <label>gestate reptile</label>
-    <description>Gestate a reptile mechanoid.</description>
+  <!-- DMS_Mech_Pioneer -->
+  <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
+    <defName>DMS_Make_Sniper</defName>
+    <label>gestate sinper</label>
+    <description>Gestate a sinper mechanoid.</description>
     <products>
-      <DMS_Mech_Reptile>1</DMS_Mech_Reptile>
+      <DMS_Mech_Sniper>1</DMS_Mech_Sniper>
+    </products>
+    <gestationCycles>2</gestationCycles>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_Sniper</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Tungsteel</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Synthread</li>
+            <li>Polyester</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentStamped</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentFireControl</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+
+  <!--DMS_Make_Iguana-->
+  <RecipeDef ParentName="DMS_SuperHeavyMechanoidRecipe">
+    <defName>DMS_Make_Iguana</defName>
+    <label>gestate Iguana</label>
+    <description>Gestate a Iguana mechanoid.</description>
+    <products>
+      <DMS_Mech_Iguana>1</DMS_Mech_Iguana>
     </products>
     <researchPrerequisite>DMS_Hypothesis</researchPrerequisite>
     <gestationCycles>5</gestationCycles>
     <descriptionHyperlinks>
-      <ThingDef>DMS_Mech_Reptile</ThingDef>
+      <ThingDef>DMS_Mech_Iguana</ThingDef>
     </descriptionHyperlinks>
     <ingredients Inherit="False">
       <li>
@@ -516,6 +573,62 @@
     </ingredients>
   </RecipeDef>
 
+  <!--DMS_Make_Gecko-->
+  <RecipeDef ParentName="DMS_SuperHeavyMechanoidRecipe">
+    <defName>DMS_Make_Gecko</defName>
+    <label>gestate Gecko</label>
+    <description>Gestate a gecko mechanoid.</description>
+    <products>
+      <DMS_Mech_Gecko>1</DMS_Mech_Gecko>
+    </products>
+    <researchPrerequisite>DMS_Hypothesis</researchPrerequisite>
+    <gestationCycles>5</gestationCycles>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_Gecko</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Tungsteel</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentStamped</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neurocomputer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
 
   <!--DMS_Mech_Geochelone-->
   <RecipeDef ParentName="DMS_SuperHeavyMechanoidRecipe">

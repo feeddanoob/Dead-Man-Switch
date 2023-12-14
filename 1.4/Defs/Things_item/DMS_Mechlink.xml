@@ -56,6 +56,12 @@
       </li>
       <li Class="CompProperties_UseEffectInstallImplant">
         <compClass>CompUseEffect_InstallImplantMechlink</compClass>
+        <hediffDef>DMS_MechlinkOverload</hediffDef>
+        <bodyPart>Brain</bodyPart>
+        <requiresPsychicallySensitive>true</requiresPsychicallySensitive>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <compClass>CompUseEffect_InstallImplantMechlink</compClass>
         <hediffDef>DMS_MechlinkKillSwitch</hediffDef>
         <bodyPart>Brain</bodyPart>
         <requiresPsychicallySensitive>true</requiresPsychicallySensitive>

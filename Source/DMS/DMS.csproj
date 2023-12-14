@@ -64,6 +64,7 @@
     <Compile Include="Component\CompMechApparel.cs" />
     <Compile Include="Component\CompMechOnlyWeapon.cs" />
     <Compile Include="Component\CompVehicleWeapon.cs" />
+    <Compile Include="Component\CompComputeArray.cs" />
     <Compile Include="Patch\Patch_Building_MechGestator.cs" />
     <Compile Include="Patch\Patch_IsMissingWeapon.cs" />
     <Compile Include="Patch\Patch_Pawn.cs" />
@@ -72,7 +73,7 @@
     <Compile Include="Hediff\CompMechanitorRange.cs" />
     <Compile Include="Hediff\HediffComp_GiveHediffWtihSeverity.cs" />
     <Compile Include="Hediff\HediffComp_RemoveHediffsOnDeath.cs" />
-    <Compile Include="Hediff\HediffComp_SeverityBybandwidth.cs" />
+    <Compile Include="Hediff\Hediff_SeverityByBandwidth.cs" />
     <Compile Include="Component\CompForceTargetable.cs" />
     <Compile Include="Patch\Patch_CommandRelay.cs" />
     <Compile Include="Patch\Patch_DrawVehicleTurret.cs" />

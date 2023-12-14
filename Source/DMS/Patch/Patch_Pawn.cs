@@ -11,7 +11,7 @@ namespace DMS
         [HarmonyPrefix]
         static bool PreFix(Pawn __instance)
         {
-            if (__instance is WeaponUsableMech pawn && pawn.Faction != Faction.OfPlayer)
+            if (__instance is WeaponUsable && __instance.Faction != Faction.OfPlayer)
             {
                 __instance.equipment.DestroyAllEquipment();
                 __instance.apparel.DestroyAll();

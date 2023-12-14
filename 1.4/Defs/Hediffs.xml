@@ -16,9 +16,6 @@
             <hediffDef>MechlinkImplant</hediffDef>
           </li>
           <li>
-            <hediffDef>DMS_MechlinkRejection</hediffDef>
-          </li>
-          <li>
             <hediffDef>DMS_MechlinkKillSwitch</hediffDef>
           </li>
         </hediffs>
@@ -31,15 +28,16 @@
     <defName>DMS_MechlinkRejection</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>mechlink rejection</label>
-    <description>Due to the limited technology and lack of medical nanomachines, there is some side-effect after installing mechlink, it will last of a while before implanter's nervous system adjusts to its presence.</description>
+    <description>Due to the limited technology and lack of medical nanomachines, there is some side-effect after installing this mechlink, it will last of a while before implanter's nervous system adjusts to its presence.</description>
     <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
     <initialSeverity>1</initialSeverity><!-- Severity is bound to level of implant -->
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>300000</disappearsAfterTicks>
+        <disappearsAfterTicks>10000~300000</disappearsAfterTicks>
         <showRemainingTime>true</showRemainingTime>
       </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
     </comps>
     <stages>
       <li>
@@ -58,6 +56,100 @@
       </li>
     </stages>
   </HediffDef>
+
+  <HediffDef MayRequire="Ludeon.Rimworld.Biotech">
+    <defName>DMS_MechlinkOverload</defName>
+    <hediffClass>DMS.Hediff_SeverityByBandwidth</hediffClass>
+    <label>N.A.C.S.</label>
+    <description>Neural-Auxiliary Compute and Control System, this system with it's unique protocol allow user to connect with not only existing mech techs, but also Automatroid tech.</description>
+    <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+    <initialSeverity>0.1</initialSeverity><!-- Severity is bound to level of implant -->
+    <lethalSeverity>2</lethalSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+    <stages>
+      <li>
+        <label>low</label>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>medium</label>
+        <minSeverity>0.25</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.15</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>high</label>
+        <minSeverity>0.50</minSeverity>
+        <painOffset>0.1</painOffset>
+      </li>
+      <li>
+        <label>very high</label>
+        <minSeverity>0.75</minSeverity>
+        <painOffset>0.4</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.25</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>overloaded</label>
+        <minSeverity>1.00</minSeverity>
+        <painOffset>0.8</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.5</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>danger</label>
+        <minSeverity>1.25</minSeverity>
+        <painOffset>1.6</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.75</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.5</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>  
+
   <!-- DMS_BionicShockRemove 幻肢症，免疫系統複寫，生物混合仿生的臨時副作用-->
   <HediffDef>
     <defName>DMS_SyntheticRejection</defName>
@@ -68,6 +160,7 @@
     <initialSeverity>1</initialSeverity><!-- Severity is bound to level of implant -->
     <isBad>true</isBad>
     <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>300000</disappearsAfterTicks>
         <showRemainingTime>true</showRemainingTime>
@@ -100,6 +193,7 @@
     <initialSeverity>1</initialSeverity><!-- Severity is bound to level of implant -->
     <isBad>true</isBad>
     <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1</severityPerDay>
       </li>
@@ -135,6 +229,7 @@
     <lethalSeverity>5</lethalSeverity>
     <isBad>true</isBad>
     <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1</severityPerDay>
       </li>
@@ -230,6 +325,7 @@
     <minSeverity>0.001</minSeverity>
     <isBad>true</isBad>
     <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>36000</disappearsAfterTicks>
         <showRemainingTime>true</showRemainingTime>
@@ -239,7 +335,7 @@
       <li>
         <label>catatonic</label>
         <minSeverity>0.001</minSeverity>
-        <mentalBreakMtbDays>0.25</mentalBreakMtbDays>
+        <mentalBreakMtbDays>0.05</mentalBreakMtbDays>
         <painOffset>-0.90</painOffset>
         <capMods>
           <li>

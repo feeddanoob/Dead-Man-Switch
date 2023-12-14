@@ -5,10 +5,11 @@
 		<operations>
 			<!-- ========== PawnKind Patches ========== -->
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/PawnKindDef[defName="DMS_Mech_BattleFrame" or
+				<xpath>Defs/PawnKindDef[
+					defName="DMS_Mech_BattleFrame" or
 					defName="DMS_Mech_FieldCommand" or
 					defName="DMS_Mech_Ape" or
-					defName="DMS_Mech_Reptile" or
+					defName="DMS_Mech_Iguana" or
 					defName="DMS_Mech_Tarbosaurus" or
 					defName="DMS_Mech_Caretta" or
 					defName="DMS_Mech_Geochelone" or
@@ -25,7 +26,8 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[defName="DMS_Mech_Reptile" or
+				<xpath>Defs/PawnKindDef[
+					defName="DMS_Mech_Iguana" or
 					defName="DMS_Mech_Tarbosaurus" or
 					defName="DMS_Mech_Caretta" or
 					defName="DMS_Mech_Geochelone" or
@@ -37,7 +39,7 @@
 			</li>
 
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Reptile" or defName="DMS_Mech_Tarbosaurus"]</xpath>
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Iguana" or defName="DMS_Mech_Tarbosaurus"]</xpath>
 				<value>
 					<li Class="CombatExtended.RacePropertiesExtensionCE">
 						<bodyShape>QuadrupedTall</bodyShape>
@@ -149,9 +151,9 @@
 				</value>
 			</li>
 
-			<!-- ======Reptile (nerf version of Tarbosarus)======-->
+			<!-- ======Iguana (nerf version of Tarbosarus)======-->
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Reptile"]/statBases</xpath>
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Iguana"]/statBases</xpath>
 				<value>
 					<CarryWeight>100</CarryWeight>
 					<CarryBulk>80</CarryBulk>
@@ -166,7 +168,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Reptile"]/statBases/ArmorRating_Blunt</xpath>
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Iguana"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
 					<ArmorRating_Blunt>45</ArmorRating_Blunt>
 				</value>
@@ -175,23 +177,23 @@
 			<!--only
 			torso (maybe also head since it's a bipedal mech)-->
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Reptile"]/statBases/ArmorRating_Sharp</xpath>
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Iguana"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
 					<ArmorRating_Sharp>24</ArmorRating_Sharp>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Reptile"]/statBases/ArmorRating_Heat</xpath>
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Iguana"]/statBases/ArmorRating_Heat</xpath>
 				<value>
 					<ArmorRating_Heat>0.35</ArmorRating_Heat>
 				</value>
 			</li>
 
 			<li Class="PatchOperationConditional">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Reptile"]/comps</xpath>
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Iguana"]/comps</xpath>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="DMS_Mech_Reptile"]</xpath>
+					<xpath>Defs/ThingDef[defName="DMS_Mech_Iguana"]</xpath>
 					<value>
 						<comps />
 					</value>
@@ -199,7 +201,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Reptile"]/comps</xpath>
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Iguana"]/comps</xpath>
 				<value>
 					<li Class="CombatExtended.CompProperties_ArmorDurability">
 						<Durability>2230</Durability>
@@ -225,7 +227,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Reptile"]/tools</xpath>
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Iguana"]/tools</xpath>
 				<value>
 					<tools Inherit="False">
 						<li Class="CombatExtended.ToolCE">

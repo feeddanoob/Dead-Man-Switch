@@ -134,7 +134,7 @@
   </ThingDef>
 
   <PawnKindDef Name="BaseAutomatroidKind" ParentName="BaseMechanoidKind" Abstract="True">
-    <defaultFactionType>Mechanoid</defaultFactionType>
+    <defaultFactionType>DMS_Army</defaultFactionType>
     <allowInMechClusters>false</allowInMechClusters>                             <!--是否出現在機械集群-->
     <destroyGearOnDrop>false</destroyGearOnDrop>
     <canStrip>false</canStrip>

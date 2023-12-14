@@ -82,7 +82,7 @@
           <DMS_Mech_Soldat>15</DMS_Mech_Soldat>
           <DMS_Mech_Kanonier>8</DMS_Mech_Kanonier>
           <DMS_Mech_Sergeant>2</DMS_Mech_Sergeant>
-          <DMS_Mech_Reptile>1</DMS_Mech_Reptile>
+          <DMS_Mech_Iguana>1</DMS_Mech_Iguana>
         </escorts>
         <bossApparel>
           <li><thing>Apparel_HeavyShield</thing></li>
@@ -95,7 +95,7 @@
           <DMS_Mech_Soldat>15</DMS_Mech_Soldat>
           <DMS_Mech_Kanonier>12</DMS_Mech_Kanonier>
           <DMS_Mech_Sergeant>2</DMS_Mech_Sergeant>
-          <DMS_Mech_Reptile>3</DMS_Mech_Reptile>
+          <DMS_Mech_Iguana>3</DMS_Mech_Iguana>
         </escorts>
         <bossApparel>
           <li><thing>Apparel_HeavyShield</thing></li>
@@ -136,7 +136,7 @@
         <escorts>
           <DMS_Mech_Soldat>7</DMS_Mech_Soldat>
           <DMS_Mech_Ronin>2</DMS_Mech_Ronin>
-          <DMS_Mech_Reptile>1</DMS_Mech_Reptile>
+          <DMS_Mech_Iguana>1</DMS_Mech_Iguana>
         </escorts>
         <bossApparel>
           <li><thing>Apparel_HeavyShield</thing></li>
@@ -147,7 +147,7 @@
         <escorts>
           <DMS_Mech_Soldat>10</DMS_Mech_Soldat>
           <DMS_Mech_Ronin>3</DMS_Mech_Ronin>
-          <DMS_Mech_Reptile>1</DMS_Mech_Reptile>
+          <DMS_Mech_Iguana>1</DMS_Mech_Iguana>
         </escorts>
         <bossApparel>
           <li><thing>Apparel_HeavyShield</thing></li>
@@ -158,7 +158,7 @@
         <escorts>
           <DMS_Mech_Soldat>10</DMS_Mech_Soldat>
           <DMS_Mech_Ronin>5</DMS_Mech_Ronin>
-          <DMS_Mech_Reptile>3</DMS_Mech_Reptile>
+          <DMS_Mech_Iguana>3</DMS_Mech_Iguana>
         </escorts>
         <bossApparel>
           <li><thing>Apparel_HeavyShield</thing></li>
@@ -169,7 +169,7 @@
         <escorts>
           <DMS_Mech_Soldat>15</DMS_Mech_Soldat>
           <DMS_Mech_Ronin>8</DMS_Mech_Ronin>
-          <DMS_Mech_Reptile>4</DMS_Mech_Reptile>
+          <DMS_Mech_Iguana>4</DMS_Mech_Iguana>
           <DMS_Mech_Sniper>1</DMS_Mech_Sniper>
         </escorts>
         <bossApparel>

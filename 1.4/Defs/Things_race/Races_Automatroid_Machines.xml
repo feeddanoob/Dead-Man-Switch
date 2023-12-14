@@ -21,6 +21,7 @@
 		<receivesSignals>true</receivesSignals>
     <tradeability>None</tradeability>
 		<race>
+      <mechWeightClass>Light</mechWeightClass>
       <intelligence>ToolUser</intelligence>
       <nameGenerator>DMS_AutomaticArmy</nameGenerator>
       <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
@@ -29,7 +30,7 @@
 			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
 			<foodType>None</foodType>
-			<lifeExpectancy>2500</lifeExpectancy>
+			<lifeExpectancy>15</lifeExpectancy>
 			<bloodDef>Filth_MachineBits</bloodDef>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
@@ -37,14 +38,13 @@
       <lifeStageAges>
         <li>
           <def>DMS_Automatroid_BrandNew</def>
-          <minAge>0</minAge>
           <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
           <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
           <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
         </li>
         <li>
           <def>DMS_Automatroid_Damaged</def>
-          <minAge>100</minAge>
+          <minAge>80</minAge>
           <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
           <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
           <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
@@ -133,7 +133,8 @@
     <label>trash bin</label>
     <race>DMS_Machine_TrashBin</race>
     <isFighter>false</isFighter>
-    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</maxGenerationAge>
+    <minGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</minGenerationAge>
+    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">10</maxGenerationAge>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -177,6 +178,7 @@
       <body>DMS_Chop</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>0.25</baseBodySize>
       <baseHealthScale>0.5</baseHealthScale>
+      <mechWeightClass>Light</mechWeightClass>
     </race>
     <comps>
       <li Class="AnimalBehaviours.CompProperties_Floating">
@@ -219,7 +221,8 @@
     <label>verling bird</label>
     <race>DMS_Machine_VerlingBird</race>
     <isFighter>true</isFighter>
-    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</maxGenerationAge>
+    <minGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</minGenerationAge>
+    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">10</maxGenerationAge>
     <combatPower>20</combatPower>
     <maxPerGroup>30</maxPerGroup>
     <lifeStages>
@@ -248,6 +251,7 @@
     <defName>DMS_Machine_VerlingBirdA</defName>
     <thingClass>DMS.WeaponUsableMech</thingClass>
     <race>
+      <mechWeightClass>Light</mechWeightClass>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>Mechanoid</thinkTreeMain>
       <thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>
@@ -319,7 +323,8 @@
     <label>hound</label>
     <race>DMS_Machine_Hound</race>
     <isFighter>true</isFighter>
-    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</maxGenerationAge>
+    <minGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</minGenerationAge>
+    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">10</maxGenerationAge>
     <combatPower>30</combatPower>
     <maxPerGroup>15</maxPerGroup>
     <lifeStages>
@@ -355,12 +360,14 @@
       </li>
     </comps>
   </ThingDef>
+
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Machine_Hound_RC</defName>
     <label>watchdog</label>
     <race>DMS_Machine_Hound_RC</race>
     <isFighter>true</isFighter>
-    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</maxGenerationAge>
+    <minGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</minGenerationAge>
+    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">10</maxGenerationAge>
     <combatPower>30</combatPower>
     <maxPerGroup>15</maxPerGroup>
     <lifeStages>
@@ -403,7 +410,8 @@
     <label>hetzen</label>
     <race>DMS_Machine_Hound_FS</race>
     <isFighter>true</isFighter>
-    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</maxGenerationAge>
+    <minGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</minGenerationAge>
+    <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">10</maxGenerationAge>
     <combatPower>50</combatPower>
     <maxPerGroup>15</maxPerGroup>
     <lifeStages>

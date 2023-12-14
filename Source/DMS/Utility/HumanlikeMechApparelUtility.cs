@@ -145,7 +145,7 @@ namespace DMS
 
         public static float ApparelScoreGain(Pawn pawn, Apparel ap, List<float> wornScoresCache)
         {
-            if (ap.def == ThingDefOf.Apparel_ShieldBelt && pawn.equipment.Primary != null && pawn.equipment.Primary.def.IsWeaponUsingProjectiles)
+            if (ap.def == RimWorld.ThingDefOf.Apparel_ShieldBelt && pawn.equipment.Primary != null && pawn.equipment.Primary.def.IsWeaponUsingProjectiles)
             {
                 return -1000f;
             }
@@ -229,7 +229,7 @@ namespace DMS
                 }
             }
 
-            if (ap.Stuff == ThingDefOf.Human.race.leatherDef)
+            if (ap.Stuff == RimWorld.ThingDefOf.Human.race.leatherDef)
             {
                 if (pawn.Ideo != null && pawn.Ideo.LikesHumanLeatherApparel)
                 {
