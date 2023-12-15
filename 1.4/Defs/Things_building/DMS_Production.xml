@@ -9,7 +9,7 @@
     <workType>Crafting</workType>
     <priorityInType>140</priorityInType>
     <fixedBillGiverDefs>
-      <li>DMS_TableAtrifuscle</li>
+      <li>DMS_TableArtifuscle</li>
       <li>DMS_TableMachinePrinter</li>
       <li>DMS_ReactionChamber</li>
       <li>DMS_Furnace</li>
@@ -174,12 +174,12 @@
   </ThingDef>
 
   <ThingDef ParentName="DMS_BenchBase">
-    <defName>DMS_TableAtrifuscle</defName>
-    <label>atrifuscle chamber</label>
+    <defName>DMS_TableArtifuscle</defName>
+    <label>artifuscle chamber</label>
     <!-- 用於培育人造肌肉束與人造肌肉仿生體的高端生產設備. -->
-    <description>High-end production equipment for cultivating atrifuscle and bionic.</description>
+    <description>High-end production equipment for cultivating artifuscle and bionic.</description>
     <graphicData>
-      <texPath>Things/Building/AtrifuscleTable</texPath>
+      <texPath>Things/Building/ArtifuscleTable</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(5,3)</drawSize>
       <damageData>
@@ -213,7 +213,7 @@
       </li>
     </comps>
     <researchPrerequisites>
-      <li>DMS_Atrifuscle</li>
+      <li>DMS_Artifuscle</li>
     </researchPrerequisites>
   </ThingDef>
 

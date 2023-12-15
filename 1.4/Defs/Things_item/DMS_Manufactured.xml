@@ -208,12 +208,12 @@
   </ThingDef>
   <!-- 人造肌肉 能拿來造仿生體的人工合成肌肉束，也同時是一些特種機兵的製造用料-->  
   <ThingDef ParentName="ResourceBase">
-    <defName>Atrifuscle</defName>
-    <label>atrifuscle</label>
+    <defName>Artifuscle</defName>
+    <label>artifuscle</label>
     <description>a type of prosthetic material made by genetically engineered sauromorph muscle bundles</description>
-    <descriptionHyperlinks><ThingDef>DMS_TableAtrifuscle</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks><ThingDef>DMS_TableArtifuscle</ThingDef></descriptionHyperlinks>
     <graphicData>
-      <texPath>Things/Resource/Atrifuscle</texPath>
+      <texPath>Things/Resource/Artifuscle</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -289,7 +289,7 @@
     <defName>Neurocomputer</defName>
     <label>wetware computer</label>
     <description>an organic computer also be known as an artificial organic brain or a neurocomputer, it's the perfect computer unit source for factions without access to rare metals and precision machining.</description>
-    <descriptionHyperlinks><ThingDef>DMS_TableAtrifuscle</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks><ThingDef>DMS_TableArtifuscle</ThingDef></descriptionHyperlinks>
     <possessionCount>2</possessionCount>
     <graphicData>
       <texPath>Things/Resource/ComponentBioCPU</texPath>

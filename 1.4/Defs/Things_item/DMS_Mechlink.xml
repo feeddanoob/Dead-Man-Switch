@@ -32,7 +32,7 @@
       </skillRequirements>
       <researchPrerequisite>DMS_Mechlink</researchPrerequisite>
       <recipeUsers>
-        <li>DMS_TableAtrifuscle</li>
+        <li>DMS_TableArtifuscle</li>
       </recipeUsers>
       <displayPriority>300</displayPriority>
     </recipeMaker>

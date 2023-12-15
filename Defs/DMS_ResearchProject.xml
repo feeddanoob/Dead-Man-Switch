@@ -84,9 +84,9 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
-    <defName>DMS_Atrifuscle</defName>
+    <defName>DMS_Artifuscle</defName>
     <label>artificial muscle</label>
-    <description>atrifuscle is a type of prosthetic material made by genetically engineered sauromorph muscle bundles, and soon... Arms dealers realized the future of mechanical-biological hybrid weapons.</description>
+    <description>artifuscle is a type of prosthetic material made by genetically engineered sauromorph muscle bundles, and soon... Arms dealers realized the future of mechanical-biological hybrid weapons.</description>
     <baseCost>1200</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -235,12 +235,12 @@
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_DeadMansSwitch</li>
-      <li>DMS_Atrifuscle</li>
+      <li>DMS_Artifuscle</li>
     </prerequisites>
     <researchViewX>4.00</researchViewX>
     <researchViewY>1.15</researchViewY>
     <requiredStudied>
-      <li>Atrifuscle</li>
+      <li>Artifuscle</li>
     </requiredStudied>
   </ResearchProjectDef>
 

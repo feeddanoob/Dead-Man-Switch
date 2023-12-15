@@ -74,6 +74,7 @@
 								defName="DMS_Mech_Jaeger" or 
 								defName="DMS_Mech_Pioneer" or 
 								defName="DMS_Mech_Sniper" or 
+								defName="DMS_Mech_Phalanx" or 
 								defName="DMS_Mech_Ronin" or 
 								defName="DMS_Mech_Protector" or
 								defName="DMS_AutomatroidKind_lady"
@@ -496,7 +497,77 @@
 			</li>
 		</value>
 	</li>
+	<!-- ======Phalanx======-->
+	<!-- 量產砲灰-->
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Phalanx"]/statBases</xpath>
+		<value>
+			<CarryWeight>50</CarryWeight>
+			<CarryBulk>20</CarryBulk>
+			<AimingAccuracy>1</AimingAccuracy>
+			<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+			<MeleeDodgeChance>0.28</MeleeDodgeChance>
+			<MeleeCritChance>0.21</MeleeCritChance>
+			<MeleeParryChance>0.16</MeleeParryChance>
+			<MaxHitPoints>200</MaxHitPoints>
+			<NightVisionEfficiency>0.8</NightVisionEfficiency>
+			<AimingDelayFactor>-0.2</AimingDelayFactor>
+			<ReloadSpeed>0.3</ReloadSpeed>
+		</value>
+	</li>
+    <!--placeholder for strongest torso armor, will add partial armor afterward-->
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Phalanx"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>10</ArmorRating_Blunt>
+		</value>
+	</li>
 
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Phalanx"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>6</ArmorRating_Sharp>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Phalanx"]/statBases/ArmorRating_Heat</xpath>
+		<value>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+		</value>
+	</li>
+
+	<li Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Phalanx"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DMS_Mech_Phalanx"]</xpath>
+			<value>
+				<comps />
+			</value>
+		</nomatch>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Phalanx"]/comps</xpath>
+		<value>
+			<li Class="CombatExtended.CompProperties_ArmorDurability">
+				<Durability>170</Durability>
+				<Regenerates>true</Regenerates>
+				<RegenInterval>750</RegenInterval>
+				<RegenValue>5</RegenValue>
+				<Repairable>true</Repairable>
+				<RepairIngredients>
+					<Steel>5</Steel>
+					<Tungsteel>5</Tungsteel>
+				</RepairIngredients>
+				<RepairTime>300</RepairTime>
+				<RepairValue>200</RepairValue>
+				<CanOverHeal>true</CanOverHeal>
+				<MaxOverHeal>104</MaxOverHeal>
+				<MinArmorPct>0.75</MinArmorPct>
+			</li>
+		</value>
+	</li>
 
 	<!-- ======Protector======-->
 	<!-- Protector is slow, with a huge shield almost cover its whole body, very capable armor to withstand heavy fire-->

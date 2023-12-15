@@ -285,15 +285,15 @@
 
   <!-- 合成肌肉培育槽 -->
   <RecipeDef>
-    <defName>DMS_Make_Atrifuscle</defName>
-    <label>grow atrifuscle</label>
+    <defName>DMS_Make_Artifuscle</defName>
+    <label>grow artifuscle</label>
     <description>grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood</description>
-    <jobString>growing atrifuscle.</jobString>
+    <jobString>growing artifuscle.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <recipeUsers>
-      <li>DMS_TableAtrifuscle</li>
+      <li>DMS_TableArtifuscle</li>
     </recipeUsers>
     <workAmount>5000</workAmount>
      <ingredients>
@@ -339,13 +339,13 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Atrifuscle>25</Atrifuscle>
+      <Artifuscle>25</Artifuscle>
     </products>
     <skillRequirements>
       <Medicine>8</Medicine>
     </skillRequirements>
     <workSkill>Medicine</workSkill>
-    <researchPrerequisite>DMS_Atrifuscle</researchPrerequisite>
+    <researchPrerequisite>DMS_Artifuscle</researchPrerequisite>
   </RecipeDef>
 
   <RecipeDef>
@@ -357,7 +357,7 @@
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <recipeUsers>
-      <li>DMS_TableAtrifuscle</li>
+      <li>DMS_TableArtifuscle</li>
     </recipeUsers>
     <workAmount>7500</workAmount>
      <ingredients>

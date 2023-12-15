@@ -26,6 +26,7 @@
     <li Class="DMS.MechWeaponExtension">
       <EnableWeaponFilter>true</EnableWeaponFilter>
       <UsableWeaponTags>
+        <li>GunHeavy</li>
         <li>DMS_MechWeaponLight</li>
         <li>DMS_MechWeaponMeduim</li>
         <li>DMS_MechWeaponHeavy</li>

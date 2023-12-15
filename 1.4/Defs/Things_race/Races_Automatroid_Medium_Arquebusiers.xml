@@ -244,6 +244,7 @@
     <weaponTags>
       <li>A_SR_GrenadeLauncher</li>
       <li>A_SR_LongRifle</li>
+      <li>A_SC_LongRifle</li>
     </weaponTags>
     <abilities>
       <li>DMS_SharpShooting</li>

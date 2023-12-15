@@ -8,13 +8,6 @@
 		<match Class="PatchOperationSequence">
 		<operations>		
 			<!--===== 2A38 30mm+ 9M311 =====-->
-            <li Class="PatchOperationReplace"><!--===== 將9M311的消耗彈藥與發射物改成CE的 =====-->
-                <xpath>Defs/ThingDef[defName="DMS_Tarbosaurus_Gun"]/verbs/li[label="LaunchSAM"]/</xpath>
-				<value>
-					<ToughnessRating>3</ToughnessRating>
-				</value>
-            </li>
-
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Tarbosaurus_Gun</defName>
                 <statBases>
@@ -53,87 +46,68 @@
                     <li>NoSwitch</li>
                 </weaponTags>    
             </li>
-            
-            <!-- <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="DMS_Tarbosaurus_Gun"]/comps</xpath>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="DMS_Tarbosaurus_Gun"]/comps/li[@Class="MVCF.Comps.CompProperties_VerbProps"]/verbProps</xpath>
                 <value>
-                    <li Class="CombatExtended.CompProperties_UnderBarrel">
-                        <propsUnderBarrel>
-                            <magazineSize>6</magazineSize>
-                            <reloadTime>15</reloadTime>
-                            <ammoSet>AmmoSet_9M311</ammoSet>
-                        </propsUnderBarrel>
-                        <verbPropsUnderBarrel>
-                            <recoilAmount>4.31</recoilAmount>
-                            <verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
-                            <hasStandardCommand>true</hasStandardCommand>
-                            <requireLineOfSight>true</requireLineOfSight>
-                            <defaultProjectile>Bullet_9M311_SAM</defaultProjectile>
-                            <warmupTime>3.5</warmupTime>
-                            <range>120</range>
-                            <minRange>40</minRange>
-                            <targetParams>
-                                <canTargetLocations>true</canTargetLocations>
-                            </targetParams>
-                            <soundCast>Shot_IncendiaryLauncher</soundCast>
-                            <soundCastTail>GunTail_Heavy</soundCastTail>
-                            <muzzleFlashScale>18</muzzleFlashScale>
-                        </verbPropsUnderBarrel>
-                        <propsFireModesUnderBarrel>
-                            <aiUseBurstMode>FALSE</aiUseBurstMode>
-                            <aiAimMode>AimedShot</aiAimMode>
-                            <aimedBurstShotCount>1</aimedBurstShotCount>
-                        </propsFireModesUnderBarrel>
-                    </li>
+                    <verbProps>
+                        <li>
+                            <label>LaunchSAM</label>						
+                            <visualLabel>launch SAM</visualLabel>
+                            <description>launch 9M311 missile</description>
+                            <canBeToggled>true</canBeToggled>
+                            <comps>
+                                <li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
+                                    <compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
+                                    <cooldownTime>15</cooldownTime>
+                                </li>
+                                <li Class="MVCF.Reloading.Comps.VerbCompProperties_Reloadable">
+                                    <compClass>MVCF.Reloading.Comps.VerbComp_Reloadable</compClass>
+                                    <AmmoFilter>
+                                        <thingDefs>
+                                            <li>Ammo_9M311_SAM</li>
+                                        </thingDefs>
+                                    </AmmoFilter>
+                                    <ItemsPerShot>1</ItemsPerShot>
+                                    <MaxShots>4</MaxShots>
+                                    <ReloadSound>Reload_Standard</ReloadSound>
+                                    <ReloadTimePerShot>10</ReloadTimePerShot>
+                                </li>
+                            </comps>
+                        </li>
+                    </verbProps>
                 </value>
-            </li> -->
-            
-            <!--
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="DMS_Tarbosaurus_Gun"]/comps</xpath>
+            </li>       
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="DMS_Tarbosaurus_Gun"]/verbs</xpath>
                 <value>
-                    <li Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
-                        <secondaryVerb>
-                            <verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
-                            <hasStandardCommand>true</hasStandardCommand>
-                            <requireLineOfSight>true</requireLineOfSight>
-                            <onlyManualCast>true</onlyManualCast>
-                            <defaultProjectile>Bullet_9M311_SAM</defaultProjectile>
-                            <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                    <verbs>      
+                        <li>
+                            <label>LaunchSAM</label>
+                            <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+                            <onlyManualCast>True</onlyManualCast>
+                            <range>89.9</range>
+                            <!-- <forcedMissRadius>0.6</forcedMissRadius> -->
+                            <commandIcon>Things/Icon/Test</commandIcon>
+                            <burstShotCount>1</burstShotCount>
                             <warmupTime>3.5</warmupTime>
-                            <range>120</range>
-                            <minRange>25</minRange>
+                            <noiseRadius>4</noiseRadius>
+                            <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                            <soundCast>Shot_IncendiaryLauncher</soundCast>
+                            <soundCastTail>GunTail_Medium</soundCastTail>
+                            <muzzleFlashScale>14</muzzleFlashScale>
                             <targetParams>
                                 <canTargetLocations>true</canTargetLocations>
                             </targetParams>
-                            <soundCast>Shot_IncendiaryLauncher</soundCast>
-                            <soundCastTail>GunTail_Heavy</soundCastTail>
-                            <muzzleFlashScale>18</muzzleFlashScale>
-                            <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
-                            <circularError>1</circularError>
-                            <indirectFirePenalty>0.2</indirectFirePenalty>
-                        </secondaryVerb>
-                        <secondaryAmmoProps>
-                            <magazineSize>6</magazineSize>
-                            <reloadTime>15</reloadTime>
-                            <ammoSet>AmmoSet_9M311</ammoSet>
-                        </secondaryAmmoProps>
-                        <mainWeaponLabel>2A38</mainWeaponLabel>
-                        <secondaryWeaponLabel>9M311</secondaryWeaponLabel>
-                        <description>Switching weapon system</description>
-                        <mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>              
-                        <secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
-                        <secondaryWeaponChargeSpeeds>
-                            <li>30</li>
-                            <li>50</li>
-                            <li>70</li>
-                            <li>90</li>
-                        </secondaryWeaponChargeSpeeds>
-                    </li>
+                            <defaultProjectile>Bullet_9M311_SAM</defaultProjectile>
+                            <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                            <hasStandardCommand>true</hasStandardCommand>
+                        </li>
+                    </verbs>
                 </value>
             </li>
-            -->
-
+            
             <!-- 駭蜥最弱武器:2A38 -->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Tarbosaurus_BossGun</defName>
@@ -150,7 +124,7 @@
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_30x165mm_AP</defaultProjectile>
-					<burstShotCount>30</burstShotCount>
+					<burstShotCount>15</burstShotCount>
 					<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
                     <warmupTime>1.35</warmupTime>
                     <range>75</range>
@@ -169,7 +143,7 @@
 					<aimedBurstShotCount>15</aimedBurstShotCount>
                 </FireModes>
                 <weaponTags>
-                    <li></li>
+                    <li>DMS_Tarbosaurus_Gun</li>
 					<li>CE_AI_Suppressive</li>
                     <li>NoSwitch</li>
                 </weaponTags>    

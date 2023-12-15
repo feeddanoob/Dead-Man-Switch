@@ -2,7 +2,7 @@
 <Defs>
 	<!-- M214 5.56mm 壁虎的次要武器，也可以被猿人與戰鬥框架裝備-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
-		<defName>DMS_MGatlinggun</defName>
+		<defName>DMS_M214Gatlinggun</defName>
 		<label>M214</label>
 		<description>a rapid-firing multiple-barrel firearm chambered in assault rifle rounds.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponTags>
@@ -11,7 +11,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_M214</texPath>
-			<drawSize>(1.5,1.5)</drawSize>
+			<drawSize>1.75</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>10</Mass>
@@ -57,11 +57,11 @@
 		<description>a rapid-firing multiple-barrel firearm chambered in heavy machinegun rounds.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponTags>
 			<li>DMS_MechWeaponHeavy</li>
-			<li>H_Gatling762mm</li>
+			<li>H_Gatling127mm</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_GAU19</texPath>
-			<drawSize>2</drawSize>
+			<drawSize>2.25</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>48</Mass>
@@ -104,8 +104,9 @@
 	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
 		<defName>DMS_GAU4Gatlinggun_Hold</defName>
 		<label>GAU-4 "Vulcan"</label>
-		<description>a rapid-firing multiple-barrel firearm chambered in autocannon rounds.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<description>a rapid-firing multiple-barrel firearm chambered in autocannon rounds.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>
 		<weaponTags>
+			<li>DMS_VehicleWeapon</li>
 			<li>H_Gatling20mm</li>
 		</weaponTags>
 		<graphicData>
@@ -154,7 +155,7 @@
 	<ThingDef ParentName="DMS_AutomatroidTurretGun">
 		<defName>DMS_GAU4Gatlinggun</defName>
 		<label>GAU-4 "Vulcan"</label>
-		<description>a rapid-firing multiple-barrel firearm chambered in autocannon rounds.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<description>a rapid-firing multiple-barrel weapon platfrom chambered in autocannon rounds.</description>
 		<weaponTags>
 			<li>DMS_VehicleWeapon</li>
 			<li>V_Gatling20mm</li>
@@ -193,7 +194,7 @@
 	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
 		<defName>DMS_GAU8Gatlinggun</defName>
 		<label>GAU-8 "Avenger"</label>
-		<description>a rapid-firing multiple-barrel firearm chambered in high-cailber autocannon rounds, deadly and destructive.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<description>a rapid-firing multiple-barrel firearm chambered in high-cailber autocannon rounds, deadly and destructive.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>
 		<weaponTags>
 			<li>DMS_VehicleWeapon</li>
 			<li>V_Gatling30mm</li>

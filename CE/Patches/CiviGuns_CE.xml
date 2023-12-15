@@ -17,7 +17,6 @@
                                      ]/equippedStatOffsets/MoveSpeed</xpath>
 			</li>
 
-
             <!--===== Pocket Pistol =====-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_KnuckledusterRevolver"]/tools</xpath>
@@ -58,8 +57,7 @@
 				        </li>
                     </tools>
                 </value>
-            </li>
-			
+            </li>			
 			
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_KnuckledusterRevolver</defName>
@@ -98,9 +96,7 @@
                     <li>CE_AI_BROOM</li>
                     <li>NoSwitch</li>
                 </weaponTags>
-            </li>
-		
-			
+            </li>		
 
 			<!--===== Riot Revolver =====-->
             <li Class="PatchOperationReplace">
@@ -130,8 +126,7 @@
                         </li>
                     </tools>
                 </value>
-            </li>
-			
+            </li>		
 			
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Revolver</defName>
@@ -169,8 +164,7 @@
                     <li>CE_OneHandedWeapon</li>
                     <li>CE_AI_AssaultWeapon</li>
                 </weaponTags>
-            </li>
-			
+            </li>		
 			
 			<!--===== Riot Shotgun =====-->
             <li Class="PatchOperationReplace">
@@ -212,8 +206,7 @@
                        </li>
                    </tools>
                 </value>
-            </li>
-			
+            </li>		
 			
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_RiotShotgun</defName>
@@ -250,12 +243,15 @@
                     <li>CE_AI_AssaultWeapon</li>
                 </weaponTags>
             </li>
-			
-			
+					
 			<!-- patch tools-->
             <li Class="PatchOperationReplace">
                 <xpath>
-				    Defs/ThingDef[defName="DMS_MiniMachineGun" or defName="DMS_SurvivalRifle" or defName="DMS_ElephantGun" or defName="DMS_SniperGrenadeLauncher"]/tools
+				    Defs/ThingDef[defName="
+                    DMS_MiniMachineGun" or 
+                    defName="DMS_SurvivalRifle" or 
+                    defName="DMS_ElephantGun" or 
+                    defName="DMS_SniperGrenadeLauncher"]/tools
                 </xpath>
                 <value>
                    <tools>
@@ -337,9 +333,7 @@
                     <li>CE_AI_LMG</li>
                     <li>Bipod_SAW</li>
                 </weaponTags>
-            </li>
-			
-			
+            </li>			
 			
 			<!--===== Survival Rifle =====-->
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -376,8 +370,7 @@
                     <li>CE_AI_SR</li>
                 </weaponTags>
             </li>
-			
-			
+				
 			<li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DMS_SurvivalRifle"]/comps</xpath>
                 <value>
@@ -438,8 +431,7 @@
                     <li>CE_AI_SR</li>
 					<li>Bipod_Rifle</li>
                 </weaponTags>
-            </li>
-			
+            </li>		
 			
 			<!--===== Sniper GL =====-->
 			
@@ -482,10 +474,7 @@
 					<li>CE_AI_AOE</li>
 					<li>Bipod_DMR</li>
                 </weaponTags>
-            </li>
-			
-			
-			
+            </li>		
 			</operations>
 		</match>
 	</Operation>

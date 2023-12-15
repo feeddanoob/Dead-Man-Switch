@@ -35,6 +35,7 @@
         <UsableWeaponTags>
           <li>DMS_Bipedal_HeavyGun</li>
           <li>DMS_MechWeaponHeavy</li>
+          <li>DMS_VehicleWeapon</li>
           <li>H_Gatling20mm</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>

@@ -14,14 +14,14 @@
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Machining</soundWorking>
 			<recipeUsers>
-				<li>DMS_TableAtrifuscle</li>
+				<li>DMS_TableArtifuscle</li>
 			</recipeUsers>
-			<researchPrerequisite>DMS_Atrifuscle</researchPrerequisite>
+			<researchPrerequisite>DMS_Artifuscle</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
 			<Plasfiber>40</Plasfiber>
-			<Atrifuscle>80</Atrifuscle>
+			<Artifuscle>80</Artifuscle>
 			<Chemfuel>20</Chemfuel>
 		</costList>
 		<tradeTags>
