@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- 即使穿著動力外骨骼也沒法操作的重型槍械-->
 	<ThingDef Name="DMS_AutomatroidHeavyGun" ParentName="DMS_AutomatroidGun" Abstract="True">
 		<statBases>
 		    <MaxHitPoints>300</MaxHitPoints>
@@ -37,11 +38,75 @@
 	</ThingDef>
 
 	
-<!--HMG-->
+	<!--MSC-->
+	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
+		<defName>DMS_SniperCannon</defName>
+		<label>mech sniper cannon</label>
+		<description>an ultra heavy rifle calibered with autocannon rounds, has proven the capability to snipe an exostrider in the distance. it is specially designed for long-range anti-mech sniping operation.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DMS_Mech_Sniper</ThingDef>
+		</descriptionHyperlinks>
+		<weaponClasses>
+		  <li>RangedHeavy</li>
+		  <li>LongShots</li>
+		  <li>Ranged</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>A_SC_LongRifle</li>
+		</weaponTags>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_AntiWalkerRifle</texPath>
+			<drawSize>2.25</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>80000</WorkToMake>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<Mass>20.00</Mass>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+		  <MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<recipeMaker>
+		    <researchPrerequisites>
+      			<li>PrecisionRifling</li>
+      			<li>DMS_EquipmentElite</li>
+    		</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Tungsteel>110</Tungsteel>
+			<ComponentStamped>5</ComponentStamped>		
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<range>69.9</range>
+				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<!--HMG-->
 	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
 		<defName>DMS_HeavyMachineGun</defName>
 		<label>mech HMG</label>
-		<description>heavy machine gun for mech soldier or infantry support platform.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<description>heavy machine gun for mech soldier or infantry support platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DMS_Mech_Ape</ThingDef>
+			<ThingDef>DMS_Mech_Iguana</ThingDef>
+			<ThingDef>DMS_Mech_Gecko</ThingDef>
+			<ThingDef>DMS_Mech_Tarbosaurus</ThingDef>
+		</descriptionHyperlinks>
 		<weaponClasses>
 			<li>RangedHeavy</li>
 			<li>LongShots</li>
@@ -108,110 +173,17 @@
 		</projectile>
 	</ThingDef>
 	
-	<!-- GAU-19A 12.7mm 雙足飛龍的主武器，也可以被猿人與戰鬥框架裝備-->
-	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
-		<defName>DMS_GAU19Gatlinggun</defName>
-		<label>GAU-19/A "Attacker"</label>
-		<description>a rapid-firing multiple-barrel firearm chambered in heavy machinegun rounds.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
-		<weaponTags>
-			<li>DMS_MechWeaponHeavy</li>
-			<li>H_Gatling762mm</li>
-		</weaponTags>
-		<graphicData>
-			<texPath>Things/Weapons/DMS_Weapon_GAU19</texPath>
-			<drawSize>2</drawSize>
-		</graphicData>
-		<statBases>
-			<Mass>48</Mass>
-			<MarketValue>8000</MarketValue>
-			<AccuracyTouch>0.2</AccuracyTouch>
-			<AccuracyShort>0.3</AccuracyShort>
-			<AccuracyMedium>0.25</AccuracyMedium>
-			<AccuracyLong>0.18</AccuracyLong>
-			<RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
-		</statBases>
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-			<researchPrerequisites>
-				<li>MultibarrelWeapons</li>
-			</researchPrerequisites>
-		</recipeMaker>
-		<costList>
-			<Tungsteel>120</Tungsteel>
-			<ComponentStamped>8</ComponentStamped>
-		</costList>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>DMS_Bullet_Kord</defaultProjectile>
-				<warmupTime>3</warmupTime>
-				<range>44.9</range>
-				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-				<burstShotCount>24</burstShotCount>
-				<soundCast>Shot_Autocannon</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-			</li>
-		</verbs>
-	</ThingDef>
-
-	<!-- GAU-4 20mm 雙足飛龍的主武器-->
-	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
-		<defName>DMS_GAU4Gatlinggun_Hold</defName>
-		<label>GAU-4 "Vulcan"</label>
-		<description>a rapid-firing multiple-barrel firearm chambered in autocannon rounds.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
-		<weaponTags>
-			<li>H_Gatling20mm</li>
-		</weaponTags>
-		<graphicData>
-			<texPath>Things/Weapons/DMS_Weapon_M61Vulcan_B</texPath>
-			<drawSize>2.75</drawSize>
-		</graphicData>
-		<statBases>
-			<Mass>92</Mass>
-			<MarketValue>8000</MarketValue>
-			<AccuracyTouch>0.28</AccuracyTouch>
-			<AccuracyShort>0.3</AccuracyShort>
-			<AccuracyMedium>0.5</AccuracyMedium>
-			<AccuracyLong>0.45</AccuracyLong>
-			<RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
-		</statBases>
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-			<researchPrerequisites>
-				<li>MultibarrelWeapons</li>
-			</researchPrerequisites>
-		</recipeMaker>
-		<costList>
-			<Tungsteel>225</Tungsteel>
-			<ComponentStamped>10</ComponentStamped>
-		</costList>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
-				<warmupTime>3.5</warmupTime>
-				<minRange>8</minRange>
-				<range>37.9</range>
-				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-				<burstShotCount>18</burstShotCount>
-				<soundCast>Shot_Autocannon</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-			</li>
-		</verbs>
-	</ThingDef>
-
+	<!-- 無後座力砲 基本上是給猿人用的-->
 	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
 		<defName>DMS_Gun_Recoilless</defName>
 		<label>recoilless cannon</label>
-		<description>A Recoilless cannon designed to snipe the heavy-armed target in range.</description>
+		<description>A Recoilless cannon designed to snipe the heavy-armed target in range.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>
+		<descriptionHyperlinks>	
+			<ThingDef>DMS_Mech_Ape</ThingDef>
+			<ThingDef>DMS_Mech_Iguana</ThingDef>
+			<ThingDef>DMS_Mech_Gecko</ThingDef>
+			<ThingDef>DMS_Mech_Tarbosaurus</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_RecoillessRifle</texPath>
 			<drawSize>2.5</drawSize>
@@ -284,6 +256,74 @@
 			<arcHeightFactor>0.5</arcHeightFactor>
 			<shadowSize>0.6</shadowSize>
 		</projectile>
+	</ThingDef>
+
+	<!--2A38M 給駭蜥Boss的武器-->
+	<ThingDef ParentName="DMS_AutomatroidTurretGun">
+		<defName>DMS_Tarbosaurus_BossGun</defName>
+		<label>2A38M</label>
+		<description>a dual-barrel heavy autocannon for infantry suppress / anti air platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>
+		<descriptionHyperlinks>	
+			<ThingDef>DMS_Mech_Iguana</ThingDef>
+			<ThingDef>DMS_Mech_Gecko</ThingDef>
+			<ThingDef>DMS_Mech_Tarbosaurus</ThingDef>
+		</descriptionHyperlinks>
+		<weaponTags>
+			<li>DMS_Bipedal_HeavyGun</li>
+		</weaponTags>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_Weapon_2A38M</texPath>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>200</Mass>
+			<MarketValue>1200</MarketValue>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<researchPrerequisites>
+				<li>DMS_EquipmentHeavy</li>
+				<li>HeavyTurrets</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Tungsteel>120</Tungsteel>
+			<ComponentStamped>8</ComponentStamped>
+		</costList>
+		<comps Inherit="False">
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<hasStandardCommand>true</hasStandardCommand>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>DMS_Bullet_CIWS</defaultProjectile>
+				<requireLineOfSight>true</requireLineOfSight>
+				<warmupTime>1.9</warmupTime>
+				<minRange>2.9</minRange>
+				<range>44.9</range>
+				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>15</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<forcedMissRadius>0.2</forcedMissRadius>
+			</li>
+		</verbs>
 	</ThingDef>
 
 

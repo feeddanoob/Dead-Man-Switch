@@ -121,22 +121,23 @@
       <li> <!-- 0 -->
         <bossCount>1</bossCount>
         <escorts>
-          <DMS_Mech_Soldat>3</DMS_Mech_Soldat>
+          <DMS_Mech_Iguana>2</DMS_Mech_Iguana>
+          <DMS_Mech_Ronin>3</DMS_Mech_Ronin>
         </escorts>
       </li>
       <li> <!-- 1 -->
         <bossCount>1</bossCount>
         <escorts>
-          <DMS_Mech_Soldat>4</DMS_Mech_Soldat>
-          <DMS_Mech_Ronin>2</DMS_Mech_Ronin>
+          <DMS_Mech_Iguana>3</DMS_Mech_Iguana>
+          <DMS_Mech_Ronin>5</DMS_Mech_Ronin>
         </escorts>
       </li>
       <li> <!-- 2 - Repeat starts here -->
         <bossCount>1</bossCount>
         <escorts>
-          <DMS_Mech_Soldat>7</DMS_Mech_Soldat>
-          <DMS_Mech_Ronin>2</DMS_Mech_Ronin>
-          <DMS_Mech_Iguana>1</DMS_Mech_Iguana>
+          <DMS_Mech_Iguana>4</DMS_Mech_Iguana>
+          <DMS_Mech_Soldat>10</DMS_Mech_Soldat>
+          <DMS_Mech_Ronin>7</DMS_Mech_Ronin>
         </escorts>
         <bossApparel>
           <li><thing>Apparel_HeavyShield</thing></li>
@@ -145,9 +146,9 @@
       <li> <!-- 3 -->
         <bossCount>2</bossCount>
         <escorts>
+          <DMS_Mech_Iguana>6</DMS_Mech_Iguana>
           <DMS_Mech_Soldat>10</DMS_Mech_Soldat>
-          <DMS_Mech_Ronin>3</DMS_Mech_Ronin>
-          <DMS_Mech_Iguana>1</DMS_Mech_Iguana>
+          <DMS_Mech_Ronin>10</DMS_Mech_Ronin>
         </escorts>
         <bossApparel>
           <li><thing>Apparel_HeavyShield</thing></li>
@@ -156,9 +157,9 @@
       <li> <!-- 4 -->
         <bossCount>2</bossCount>
         <escorts>
+          <DMS_Mech_Iguana>8</DMS_Mech_Iguana>
           <DMS_Mech_Soldat>10</DMS_Mech_Soldat>
           <DMS_Mech_Ronin>5</DMS_Mech_Ronin>
-          <DMS_Mech_Iguana>3</DMS_Mech_Iguana>
         </escorts>
         <bossApparel>
           <li><thing>Apparel_HeavyShield</thing></li>
@@ -167,9 +168,9 @@
       <li> <!-- 5 -->
         <bossCount>2</bossCount>
         <escorts>
+          <DMS_Mech_Iguana>8</DMS_Mech_Iguana>
           <DMS_Mech_Soldat>15</DMS_Mech_Soldat>
           <DMS_Mech_Ronin>8</DMS_Mech_Ronin>
-          <DMS_Mech_Iguana>4</DMS_Mech_Iguana>
           <DMS_Mech_Sniper>1</DMS_Mech_Sniper>
         </escorts>
         <bossApparel>

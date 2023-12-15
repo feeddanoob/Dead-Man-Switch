@@ -108,6 +108,9 @@
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>Mechanoid</thinkTreeMain>
       <baseBodySize>1.0</baseBodySize>
+      <mechEnabledWorkTypes>
+        <li>BasicWorker</li>
+      </mechEnabledWorkTypes>
     </race>
     <tools>
       <li>

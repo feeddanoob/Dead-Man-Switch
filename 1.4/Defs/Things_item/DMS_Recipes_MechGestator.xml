@@ -13,6 +13,12 @@
     <recipeUsers><li>DMS_MechGestatorSamll</li></recipeUsers>
   </RecipeDef>
 
+  <RecipeDef Name="DMS_LegionMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
+    <gestationCycles>2</gestationCycles>
+    <researchPrerequisite>DMS_Legion</researchPrerequisite>
+    <recipeUsers><li>DMS_MechGestatorSamll</li></recipeUsers>
+  </RecipeDef>
+
   <RecipeDef Name="DMS_HeavyMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
     <gestationCycles>2</gestationCycles>
     <researchPrerequisite>DMS_BattleFrame</researchPrerequisite>
@@ -22,6 +28,12 @@
   <RecipeDef Name="DMS_SuperHeavyMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
     <gestationCycles>10</gestationCycles>
     <researchPrerequisite>DMS_HeavyAutomatroid</researchPrerequisite>
+    <recipeUsers><li>DMS_MechGestatorSamll</li></recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef Name="DMS_RoninMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
+    <gestationCycles>3</gestationCycles>
+    <researchPrerequisite>DMS_Ronin</researchPrerequisite>
     <recipeUsers><li>DMS_MechGestatorSamll</li></recipeUsers>
   </RecipeDef>
 
@@ -73,7 +85,7 @@
   </RecipeDef>
 
   <!--士兵-->
-  <RecipeDef ParentName="DMS_MidiumMechanoidRecipe">
+  <RecipeDef ParentName="DMS_LegionMechanoidRecipe">
     <defName>DMS_Make_Soldat</defName>
     <label>gestate soldat</label>
     <description>Gestate a soldat mechanoid.</description>
@@ -111,9 +123,61 @@
       </li>
     </ingredients>
   </RecipeDef>
-
+  <!--擲彈手-->
+  <RecipeDef ParentName="DMS_LegionMechanoidRecipe">
+    <defName>DMS_Make_Grenadier</defName>
+    <label>gestate grenadier</label>
+    <description>Gestate a grenadier mechanoid.</description>
+    <products>
+      <DMS_Mech_Grenadier>1</DMS_Mech_Grenadier>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_Grenadier</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Synthread</li>
+            <li>Polyester</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentStamped</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Polyester</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
   <!--士官-->
-  <RecipeDef ParentName="DMS_MidiumMechanoidRecipe">
+  <RecipeDef ParentName="DMS_LegionMechanoidRecipe">
     <defName>DMS_Make_Sergeant</defName>
     <label>gestate sergeant</label>
     <description>Gestate a sergeant mechanoid.</description>
@@ -205,7 +269,7 @@
         </filter>
         <count>4</count>
       </li>
-    </ingredients>    
+    </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Synthread</li>
@@ -213,8 +277,6 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
-
-  
   <!--中繼指揮-->
   <RecipeDef ParentName="DMS_HeavyMechanoidRecipe">
     <defName>DMS_Make_FieldCommand</defName>
@@ -269,9 +331,13 @@
         <count>2</count>
       </li>
     </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Polyester</li>
+      </thingDefs>
+    </fixedIngredientFilter>
   </RecipeDef>
-
-  
   <!--貨運框架-->
   <RecipeDef ParentName="DMS_HeavyMechanoidRecipe">
     <defName>DMS_Make_EscortLifter</defName>
@@ -318,10 +384,16 @@
         <count>4</count>
       </li>
     </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Polyester</li>
+      </thingDefs>
+    </fixedIngredientFilter>
   </RecipeDef>
 
   <!--浪人-->
-  <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
+  <RecipeDef ParentName="DMS_RoninMechanoidRecipe">
     <defName>DMS_Make_Ronin</defName>
     <label>gestate ronin</label>
     <description>Gestate a ronin mechanoid.</description>
@@ -367,9 +439,185 @@
         <count>3</count>
       </li>
     </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Polyester</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  <!--破城者-->
+  <RecipeDef ParentName="DMS_RoninMechanoidRecipe">
+    <defName>DMS_Make_Siegebreaker</defName>
+    <label>gestate siegebreaker</label>
+    <description>Gestate a siegebreaker mechanoid.</description>
+    <products>
+      <DMS_Mech_Siegebreaker>1</DMS_Mech_Siegebreaker>
+    </products>
+    <gestationCycles>2</gestationCycles>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_Siegebreaker</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Tungsteel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Synthread</li>
+            <li>Polyester</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentStamped</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Polyester</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  <!--塔盾手-->
+  <RecipeDef ParentName="DMS_RoninMechanoidRecipe">
+    <defName>DMS_Make_Protector</defName>
+    <label>gestate protector</label>
+    <description>Gestate a protector mechanoid.</description>
+    <products>
+      <DMS_Mech_Protector>1</DMS_Mech_Protector>
+    </products>
+    <gestationCycles>2</gestationCycles>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_Protector</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Tungsteel</li>
+          </thingDefs>
+        </filter>
+        <count>90</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Synthread</li>
+            <li>Polyester</li>
+          </thingDefs>
+        </filter>
+        <count>35</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentStamped</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Polyester</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  <!--方陣步兵-->
+  <RecipeDef ParentName="DMS_RoninMechanoidRecipe">
+    <defName>DMS_Make_Phalanx</defName>
+    <label>gestate phalanx</label>
+    <description>Gestate a phalanx mechanoid.</description>
+    <products>
+      <DMS_Mech_Phalanx>1</DMS_Mech_Phalanx>
+    </products>
+    <gestationCycles>2</gestationCycles>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_Phalanx</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Tungsteel</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Synthread</li>
+            <li>Polyester</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentStamped</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Polyester</li>
+      </thingDefs>
+    </fixedIngredientFilter>
   </RecipeDef>
 
-  <!--DMS_Make_Arquebusier-->
+  <!--火槍手-->
   <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
     <defName>DMS_Make_Arquebusier</defName>
     <label>gestate arquebusier</label>
@@ -416,9 +664,14 @@
         <count>3</count>
       </li>
     </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Polyester</li>
+      </thingDefs>
+    </fixedIngredientFilter>
   </RecipeDef>
-
-  <!-- DMS_Mech_Pioneer -->
+  <!-- 先鋒 -->
   <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
     <defName>DMS_Make_Pioneer</defName>
     <label>gestate pioneer</label>
@@ -465,13 +718,18 @@
         <count>3</count>
       </li>
     </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Polyester</li>
+      </thingDefs>
+    </fixedIngredientFilter>
   </RecipeDef>
-
-  <!-- DMS_Mech_Pioneer -->
+  <!-- 狙擊手 -->
   <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
     <defName>DMS_Make_Sniper</defName>
-    <label>gestate sinper</label>
-    <description>Gestate a sinper mechanoid.</description>
+    <label>gestate sniper</label>
+    <description>Gestate a sniper mechanoid.</description>
     <products>
       <DMS_Mech_Sniper>1</DMS_Mech_Sniper>
     </products>
@@ -520,6 +778,67 @@
           </thingDefs>
         </filter>
         <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Polyester</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  <!-- 獵兵 -->
+  <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
+    <defName>DMS_Make_Jaeger</defName>
+    <label>gestate jaeger</label>
+    <description>Gestate a jaeger mechanoid.</description>
+    <products>
+      <DMS_Mech_Jaeger>1</DMS_Mech_Jaeger>
+    </products>
+    <gestationCycles>2</gestationCycles>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_Jaeger</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Tungsteel</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasfiber</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentStamped</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
       </li>
     </ingredients>
   </RecipeDef>
@@ -572,7 +891,6 @@
       </li>
     </ingredients>
   </RecipeDef>
-
   <!--DMS_Make_Gecko-->
   <RecipeDef ParentName="DMS_SuperHeavyMechanoidRecipe">
     <defName>DMS_Make_Gecko</defName>

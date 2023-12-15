@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-<!--
-	<MVCF.ModDef>
-		<defName>DMS_MVCF_Def1</defName>
-		<label>DMS PEW</label>
-		<description>nothing here</description>
-		<ActivateFeatures>
-			<li>ExtraEquipmentVerbs</li>
-			<li>IntegratedToggle</li>
-		</ActivateFeatures>
-	</MVCF.ModDef>
--->
 
     <!--NPC Tarbosaursus gun, with infinite ammo 9M311 but direct fire instead of curve fire-->
     <ThingDef ParentName="DMS_AutomatroidTurretGun">
@@ -107,7 +96,7 @@
 	</ThingDef>
 
     <!--9M311 Launcher turret-->
-	<ThingDef ParentName="BaseWeaponTurret">
+	<!-- <ThingDef ParentName="BaseWeaponTurret">
 		<defName>9M311_Launchers</defName>
 		<label>9M311 Launchers</label>
 		<description>Part of the Tarbosaurus firing systme, contain 6 9M311 missiles.</description>
@@ -146,6 +135,6 @@
                 <recoilPattern>Mounted</recoilPattern>
             </li>
 		</verbs>
-	</ThingDef>
+	</ThingDef> -->
 
 </Defs>

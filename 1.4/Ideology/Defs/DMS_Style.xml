@@ -148,7 +148,7 @@
 	<ThingStyleDef>
 		<defName>Gun_DMSSniperRifle</defName>
 		<graphicData>
-			<texPath>Things/Style/DMS_Weapons/SinperRifle</texPath>
+			<texPath>Things/Style/DMS_Weapons/SniperRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>

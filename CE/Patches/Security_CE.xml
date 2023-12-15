@@ -81,15 +81,6 @@
 					</FireModes>
 				</li>
 
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="DMS_Turret_Tunguska"]/comps</xpath>
-                    <value>
-                        <li>
-                            <compClass>BillDoorsFramework.CompTurretFix</compClass>
-                        </li>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="DMS_Gun_Tunguska"]/comps</xpath>
                     <nomatch Class="PatchOperationAdd">
@@ -99,51 +90,6 @@
                         </value>
                     </nomatch>
                 </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="DMS_Gun_Tunguska"]/comps</xpath>
-                    <value>
-                        <li Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
-                            <secondaryVerb>
-                                <verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
-                                <hasStandardCommand>true</hasStandardCommand>
-                                <requireLineOfSight>true</requireLineOfSight>
-                                <onlyManualCast>true</onlyManualCast>
-                                <defaultProjectile>Bullet_9M311_SAM</defaultProjectile>
-                                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-                                <warmupTime>3.5</warmupTime>
-                                <range>120</range>
-                                <minRange>25</minRange>
-                                <targetParams>
-                                    <canTargetLocations>true</canTargetLocations>
-                                </targetParams>
-                                <soundCast>Shot_IncendiaryLauncher</soundCast>
-                                <soundCastTail>GunTail_Heavy</soundCastTail>
-                                <muzzleFlashScale>18</muzzleFlashScale>
-                                <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
-                                <circularError>1</circularError>
-                            <!--    <indirectFirePenalty>0.2</indirectFirePenalty>-->
-                            </secondaryVerb>
-                            <secondaryAmmoProps>
-                                <magazineSize>8</magazineSize>
-                                <reloadTime>15</reloadTime>
-                                <ammoSet>AmmoSet_9M311</ammoSet>
-                            </secondaryAmmoProps>
-                            <mainWeaponLabel>2A38</mainWeaponLabel>
-                            <secondaryWeaponLabel>9M311</secondaryWeaponLabel>
-                            <description>Switching weapon system</description>
-                            <mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>              
-                            <secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
-                            <secondaryWeaponChargeSpeeds>
-                                <li>30</li>
-                                <li>50</li>
-                                <li>70</li>
-                                <li>90</li>
-                            </secondaryWeaponChargeSpeeds>
-                        </li>
-                    </value>
-                </li>
-           
 
                 <!-- GateKeeper -->
                 <li Class="CombatExtended.PatchOperationMakeGunCECompatible">

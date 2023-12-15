@@ -8,26 +8,29 @@
 	<packageId>Aoba.DeadManSwitch.Core</packageId>
     <modDependencies>
         <li>
+			<packageId>ludeon.rimworld.biotech</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+		</li>
+        <li>
+			<packageId>ludeon.rimworld.ideology</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+		</li>
+        <li>
+			<packageId>ludeon.rimworld.royalty</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+		</li>
+        <li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
 			<displayName>Vanilla Expanded Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
 		</li>
-		<li>
-			<packageId>Aoba.Fortress.Industrial</packageId>
-			<displayName>Fortifications - Industrial</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2561619583</steamWorkshopUrl>
-		</li>	   
-		<li>
-			<packageId>3HSTltd.Framework</packageId>
-			<displayName>Bill Door's Framework</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2897160312</steamWorkshopUrl>
-		</li>
 	</modDependencies>
 	<loadAfter>
-    	<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-		<li>ceteam.combatextended</li>
-		<li>Aoba.Fortress.Industrial</li>
 		<li>ludeon.rimworld.biotech</li>
+		<li>ludeon.rimworld.ideology</li>
+		<li>ludeon.rimworld.royalty</li>
+		<li>ceteam.combatextended</li>
+    	<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
   	</loadAfter>
 	<!-- 
 		自那些機械軍團,遠古戰爭機器,海盜與生物兵器對於殖民地的威脅日漸增長,早在數千年前,奈良重工開展了自動兵器的研製計畫,使用來自各個祕密項目的實戰數據打造一支輔助人類與那些遠古威脅戰鬥的機械軍團.

@@ -326,6 +326,42 @@
 			        <li>CE_AI_SR</li>
                 </weaponTags>
             </li>
+
+            <!--===== sniper cannon =====-->
+			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>DMS_SniperCannon</defName>
+                <statBases>
+                    <Mass>40</Mass>
+                    <Bulk>23.34</Bulk>
+                    <SwayFactor>2.24</SwayFactor>
+                    <ShotSpread>0.01</ShotSpread>
+                    <SightsEfficiency>2.85</SightsEfficiency>
+                    <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+                </statBases>
+                <Properties>
+				    <recoilAmount>2.73</recoilAmount>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_30x173mmNATO_AP</defaultProjectile>
+                    <warmupTime>3.55</warmupTime>
+                    <range>95</range>
+                    <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>20</muzzleFlashScale>
+                </Properties>
+                <AmmoUser>
+                    <magazineSize>5</magazineSize>
+                    <reloadTime>5</reloadTime>
+                    <ammoSet>AmmoSet_30x173mmNATO</ammoSet>
+                </AmmoUser>
+                <FireModes>
+                    <aiAimMode>AimedShot</aiAimMode>
+                </FireModes>
+                <weaponTags>
+                    <li>Bipod_AMR</li>
+			        <li>CE_AI_SR</li>
+                </weaponTags>
+            </li>
 			
 			
 			<!--===== Automatic GL =====-->

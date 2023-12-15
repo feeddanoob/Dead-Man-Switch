@@ -22,9 +22,10 @@
 		</statBases>
 	</AbilityDef>
 
-	<HediffDef ParentName="RoleStatBuff">
+	<HediffDef>
 		<defName>DMS_SharpShooting</defName>
 		<label>precise sniping mode</label>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<description>this unit is at an absolute standstill and uses its built-in ballistic computer to measure extremely detailed shooting data, allowing it to accurately hit the intended target.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
@@ -65,32 +66,35 @@
 		</comps>
 		<statBases>
 			<Ability_EffectRadius>3.9</Ability_EffectRadius>
+			<Ability_Duration>60</Ability_Duration>
 		</statBases>
 		<verbProperties>
 			<range>3.9</range>
 		</verbProperties>
 	</AbilityDef>
   
- <HediffDef ParentName="RoleStatBuff">
+ <HediffDef>
 	<defName>DMS_RangeFinder</defName>
 	<label>recon calibration</label>
 	<description>A large amount of fire control data is being shared with surrounding friendly forces through this unit, which will temporarily slow down the OS response speed.</description>
 	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 	<comps>
 	  <li Class="HediffCompProperties_Disappears">
 		<showRemainingTime>True</showRemainingTime>
-		<disappearsAfterTicks>1800~2000</disappearsAfterTicks>
 	  </li>
 	  <li Class="HediffCompProperties_DisappearsOnDeath"/>
 	  <li Class="HediffCompProperties_GiveHediffsInRange">
 		<range>3.9</range>
 		<mote>Mote_CombatCommand</mote>
 		<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+		<onlyPawnsInSameFaction>true</onlyPawnsInSameFaction>
 		<targetingParameters>
-		  <canTargetBuildings>false</canTargetBuildings>
-		  <canTargetAnimals>false</canTargetAnimals>
-		  <canTargetMechs>false</canTargetMechs>
-		  <onlyTargetColonists>true</onlyTargetColonists>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
 		</targetingParameters>
 		<hediff>DMS_RangeFinderBuff</hediff>
 	  </li>
@@ -99,7 +103,7 @@
 	<stages>
 		<li>
 			<statOffsets>
-			  	<ShootingAccuracyPawn>-0.5</ShootingAccuracyPawn>
+			  	<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
 			</statOffsets>
 			<capMods>
 				<li>
@@ -122,11 +126,6 @@
 		<showRemainingTime>false</showRemainingTime>
 	  </li>
 	  <li Class="HediffCompProperties_DisappearsOnDeath"/>
-	  <li Class="HediffCompProperties_Link">
-		<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
-		<maxDistance>5</maxDistance>
-		<customMote>Mote_CombatCommandLinkLine</customMote>
-	  </li>
 	</comps>
 	<isBad>false</isBad>
 	<stages>

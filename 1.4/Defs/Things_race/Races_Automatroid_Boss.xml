@@ -3,7 +3,6 @@
 
   <!-- T4 DMS_HeavyMachines-->
   <!-- 駭蜥 tarbosaurus-->
-
   <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_Tarbosaurus</defName>
     <label>tarbosaurus</label>
@@ -25,11 +24,28 @@
     </race>    
     <comps>
 		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <drawOffset>(0,0,0)</drawOffset>
+			  <drawOffset>(0.8,0,0.2)</drawOffset>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
         <rotationSmoothTime>0.12</rotationSmoothTime>
       </li>
     </comps>
+    <modExtensions>
+      <li Class="DMS.MechWeaponExtension">
+        <EnableWeaponFilter>true</EnableWeaponFilter>
+        <UsableWeaponTags>
+          <li>DMS_Bipedal_HeavyGun</li>
+          <li>DMS_MechWeaponHeavy</li>
+          <li>H_Gatling20mm</li>
+        </UsableWeaponTags>
+        <EnableTechLevelFilter>true</EnableTechLevelFilter>
+        <UsableTechLevels>
+          <li>Industrial</li>
+        </UsableTechLevels>
+        <BypassUsableWeapons>
+          <li>Gun_BinocularsRadio</li>
+        </BypassUsableWeapons>
+      </li>
+    </modExtensions>
     <tools Inherit="False">
       <li>
         <label>Mechanical Head</label>
@@ -127,7 +143,7 @@
       </li>
     </lifeStages>
     <weaponTags>
-      <li>V_Gatling30mm</li>
+      <li>DMS_Bipedal_HeavyGun</li>
     </weaponTags>
     <weaponMoney>9999~9999</weaponMoney>
     <abilities>
