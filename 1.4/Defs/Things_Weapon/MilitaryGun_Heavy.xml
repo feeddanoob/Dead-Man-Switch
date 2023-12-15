@@ -301,6 +301,8 @@
 			<li>
 				<compClass>CompEquippable</compClass>
 			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
 		</comps>
 		<verbs>
 			<li>

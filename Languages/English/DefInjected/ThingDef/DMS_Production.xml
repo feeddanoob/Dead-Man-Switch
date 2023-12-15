@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: sintering furnace -->
+  <DMS_Furnace.label>TODO</DMS_Furnace.label>
+  <!-- EN: A massive industrial equipment use to create an ultra-high temperature environment in a closed space to sinter alloy or ceramics. can also smelt metal. -->
+  <DMS_Furnace.description>TODO</DMS_Furnace.description>
+  
+  <!-- EN: Mote -->
+  <DMS_MechConstructorCycleComplete.label>TODO</DMS_MechConstructorCycleComplete.label>
+  
+  <!-- EN: Mote -->
+  <DMS_MechConstructorFormed.label>TODO</DMS_MechConstructorFormed.label>
+  
+  <!-- EN: Mote -->
+  <DMS_MechConstructorForming.label>TODO</DMS_MechConstructorForming.label>
+  
+  <!-- EN: automatroid constructor -->
+  <DMS_MechGestatorSamll.label>TODO</DMS_MechGestatorSamll.label>
+  <!-- EN: Todo. -->
+  <DMS_MechGestatorSamll.description>TODO</DMS_MechGestatorSamll.description>
+  
+  <!-- EN: pressure chamber -->
+  <DMS_ReactionChamber.label>TODO</DMS_ReactionChamber.label>
+  <!-- EN: A massive industrial equipment use to create a high-pressure environment to cause materials to react together. -->
+  <DMS_ReactionChamber.description>TODO</DMS_ReactionChamber.description>
+  
+  <!-- EN: artifuscle chamber -->
+  <DMS_TableArtifuscle.label>TODO</DMS_TableArtifuscle.label>
+  <!-- EN: High-end production equipment for cultivating artifuscle and bionic. -->
+  <DMS_TableArtifuscle.description>TODO</DMS_TableArtifuscle.description>
+  
+  <!-- EN: machinery printer -->
+  <DMS_TableMachinePrinter.label>TODO</DMS_TableMachinePrinter.label>
+  <!-- EN: 用於加工量產機械的複合金屬打印機,能以冷鍛方式快速製造與組裝金屬製品與武器. -->
+  <DMS_TableMachinePrinter.description>TODO</DMS_TableMachinePrinter.description>
+  
+</LanguageData>

@@ -11,7 +11,7 @@
 	</MVCF.ModDef>
 
 	<!--2A38 / TWS 30mm 駭蜥的主武器-->
-	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
+	<ThingDef ParentName="DMS_AutomatroidHeavyGun" Abstract="True">
 		<defName>DMS_Tarbosaurus_Gun</defName>
 		<label>2A38 / TWS</label>
 		<description>2A38 / Tarbosaurus Weapon System included heavy autocannon with anti air missile launcher for infantry suppress / anti air platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>	
@@ -49,8 +49,9 @@
 			<ComponentStamped>18</ComponentStamped>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
-		<comps>
+		<comps Inherit="False">
 			<li Class="MVCF.Comps.CompProperties_VerbProps">
+				<compClass>CompEquippable</compClass>
 				<verbProps>
 					<li>
 						<label>LaunchSAM</label>						
@@ -58,6 +59,9 @@
 						<description>launch 9M311 missile</description>
 						<canBeToggled>true</canBeToggled>
 						<comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Turret">
+							<compClass>MVCF.VerbComps.VerbComp_Turret</compClass>
+						  </li>
 							<li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
 								<compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
 								<cooldownTime>15</cooldownTime>
@@ -78,9 +82,12 @@
 					</li>
 				</verbProps>
 			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
 		</comps>
 		<verbs>
 			<li>
+				<label>2A38 / TWS</label>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_CIWS</defaultProjectile>
@@ -107,6 +114,7 @@
 				<range>89.9</range>
 				<forcedMissRadius>0.6</forcedMissRadius>
 				<commandIcon>Things/Icon/Test</commandIcon>
+				<hasStandardCommand>true</hasStandardCommand>
 				<burstShotCount>1</burstShotCount>
 				<warmupTime>3.5</warmupTime>
 				<noiseRadius>4</noiseRadius>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: xeno limb syndrome -->
+  <DMS_BionicShock.label>TODO</DMS_BionicShock.label>
+  <!-- EN: a psychological syndrome that is common to occur in pre-spacer world when having one or more neural machinery bionic prosthesis installed, Due to the lack of biological receptors, the body system will temporarily reject the connection after the nerve is connected.\n\nThe severity of these symptoms can be divided into five levels. -->
+  <DMS_BionicShock.description>TODO</DMS_BionicShock.description>
+  <!-- EN: initial -->
+  <DMS_BionicShock.stages.initial.label>TODO</DMS_BionicShock.stages.initial.label>
+  <!-- EN: LV.1 initial -->
+  <DMS_BionicShock.stages.LV1_initial.label>TODO</DMS_BionicShock.stages.LV1_initial.label>
+  <!-- EN: LV.2 minor -->
+  <DMS_BionicShock.stages.LV2_minor.label>TODO</DMS_BionicShock.stages.LV2_minor.label>
+  <!-- EN: LV.3 serious -->
+  <DMS_BionicShock.stages.LV3_serious.label>TODO</DMS_BionicShock.stages.LV3_serious.label>
+  <!-- EN: LV.4 catatonic -->
+  <DMS_BionicShock.stages.LV4_catatonic.label>TODO</DMS_BionicShock.stages.LV4_catatonic.label>
+  <!-- EN: LV.5 disabled -->
+  <DMS_BionicShock.stages.LV5_disabled.label>TODO</DMS_BionicShock.stages.LV5_disabled.label>
+  
+  <!-- EN: phantom limb syndrome -->
+  <DMS_BionicShockRemove.label>TODO</DMS_BionicShockRemove.label>
+  <!-- EN: a psychological syndrome that is common to occur in pre-spacer world when removed a neural machinery bionic Prosthesis. -->
+  <DMS_BionicShockRemove.description>TODO</DMS_BionicShockRemove.description>
+  <!-- EN: initial -->
+  <DMS_BionicShockRemove.stages.initial.label>TODO</DMS_BionicShockRemove.stages.initial.label>
+  <!-- EN: pain -->
+  <DMS_BionicShockRemove.stages.pain.label>TODO</DMS_BionicShockRemove.stages.pain.label>
+  
+  <!-- EN: emotional misalignment -->
+  <DMS_FilterShock.label>TODO</DMS_FilterShock.label>
+  <!-- EN: a psychological syndrome after removed the sensory filter, known as the "price of pawn", will have some mental break but it won't last long. -->
+  <DMS_FilterShock.description>TODO</DMS_FilterShock.description>
+  <!-- EN: catatonic -->
+  <DMS_FilterShock.stages.catatonic.label>TODO</DMS_FilterShock.stages.catatonic.label>
+  
+  <!-- EN: kill switch -->
+  <DMS_MechlinkKillSwitch.label>TODO</DMS_MechlinkKillSwitch.label>
+  <!-- EN: This device will destruct mechlink by overloading after the death of the user. -->
+  <DMS_MechlinkKillSwitch.description>TODO</DMS_MechlinkKillSwitch.description>
+  
+  <!-- EN: N.A.C.S. -->
+  <DMS_MechlinkOverload.label>TODO</DMS_MechlinkOverload.label>
+  <!-- EN: Neural-Auxiliary Compute and Control System, this system with it's unique protocol allow user to connect with not only existing mech techs, but also Automatroid tech. -->
+  <DMS_MechlinkOverload.description>TODO</DMS_MechlinkOverload.description>
+  <!-- EN: low -->
+  <DMS_MechlinkOverload.stages.low.label>TODO</DMS_MechlinkOverload.stages.low.label>
+  <!-- EN: medium -->
+  <DMS_MechlinkOverload.stages.medium.label>TODO</DMS_MechlinkOverload.stages.medium.label>
+  <!-- EN: high -->
+  <DMS_MechlinkOverload.stages.high.label>TODO</DMS_MechlinkOverload.stages.high.label>
+  <!-- EN: very high -->
+  <DMS_MechlinkOverload.stages.very_high.label>TODO</DMS_MechlinkOverload.stages.very_high.label>
+  <!-- EN: overloaded -->
+  <DMS_MechlinkOverload.stages.overloaded.label>TODO</DMS_MechlinkOverload.stages.overloaded.label>
+  <!-- EN: danger -->
+  <DMS_MechlinkOverload.stages.danger.label>TODO</DMS_MechlinkOverload.stages.danger.label>
+  
+  <!-- EN: mechlink rejection -->
+  <DMS_MechlinkRejection.label>TODO</DMS_MechlinkRejection.label>
+  <!-- EN: Due to the limited technology and lack of medical nanomachines, there is some side-effect after installing this mechlink, it will last of a while before implanter's nervous system adjusts to its presence. -->
+  <DMS_MechlinkRejection.description>TODO</DMS_MechlinkRejection.description>
+  <!-- EN: fever -->
+  <DMS_MechlinkRejection.stages.fever.label>TODO</DMS_MechlinkRejection.stages.fever.label>
+  
+  <!-- EN: synthetic rejection -->
+  <DMS_SyntheticRejection.label>TODO</DMS_SyntheticRejection.label>
+  <!-- EN: Due to access to the internal circulatory system, synthetic bionic sometimes produce rejection in the body, which usually does not last long but reduces immunity. -->
+  <DMS_SyntheticRejection.description>TODO</DMS_SyntheticRejection.description>
+  <!-- EN: fever -->
+  <DMS_SyntheticRejection.stages.fever.label>TODO</DMS_SyntheticRejection.stages.fever.label>
+  
+</LanguageData>

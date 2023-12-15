@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: heavy machine gun bullet -->
+  <Bullet_DMS_HeavyMachineGun.label>TODO</Bullet_DMS_HeavyMachineGun.label>
+  
+  <!-- EN: recoilless grenade round -->
+  <DMS_Bullet_RR.label>TODO</DMS_Bullet_RR.label>
+  
+  <!-- EN: recoilless cannon -->
+  <DMS_Gun_Recoilless.label>TODO</DMS_Gun_Recoilless.label>
+  <!-- EN: A Recoilless cannon designed to snipe the heavy-armed target in range.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
+  <DMS_Gun_Recoilless.description>TODO</DMS_Gun_Recoilless.description>
+  <!-- EN: stock -->
+  <DMS_Gun_Recoilless.tools.stock.label>TODO</DMS_Gun_Recoilless.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_Gun_Recoilless.tools.barrel-0.label>TODO</DMS_Gun_Recoilless.tools.barrel-0.label>
+  <!-- EN: muzzle -->
+  <DMS_Gun_Recoilless.tools.muzzle-0.label>TODO</DMS_Gun_Recoilless.tools.muzzle-0.label>
+  <!-- EN: barrel -->
+  <DMS_Gun_Recoilless.tools.barrel-1.label>TODO</DMS_Gun_Recoilless.tools.barrel-1.label>
+  <!-- EN: muzzle -->
+  <DMS_Gun_Recoilless.tools.muzzle-1.label>TODO</DMS_Gun_Recoilless.tools.muzzle-1.label>
+  <!-- EN: recoilless cannon -->
+  <DMS_Gun_Recoilless.verbs.Verb_Shoot.label>TODO</DMS_Gun_Recoilless.verbs.Verb_Shoot.label>
+  
+  <!-- EN: mech HMG -->
+  <DMS_HeavyMachineGun.label>TODO</DMS_HeavyMachineGun.label>
+  <!-- EN: heavy machine gun for mech soldier or infantry support platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
+  <DMS_HeavyMachineGun.description>TODO</DMS_HeavyMachineGun.description>
+  <!-- EN: stock -->
+  <DMS_HeavyMachineGun.tools.stock.label>TODO</DMS_HeavyMachineGun.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_HeavyMachineGun.tools.barrel-0.label>TODO</DMS_HeavyMachineGun.tools.barrel-0.label>
+  <!-- EN: muzzle -->
+  <DMS_HeavyMachineGun.tools.muzzle-0.label>TODO</DMS_HeavyMachineGun.tools.muzzle-0.label>
+  <!-- EN: barrel -->
+  <DMS_HeavyMachineGun.tools.barrel-1.label>TODO</DMS_HeavyMachineGun.tools.barrel-1.label>
+  <!-- EN: muzzle -->
+  <DMS_HeavyMachineGun.tools.muzzle-1.label>TODO</DMS_HeavyMachineGun.tools.muzzle-1.label>
+  <!-- EN: mech HMG -->
+  <DMS_HeavyMachineGun.verbs.Verb_ShootCE.label>TODO</DMS_HeavyMachineGun.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: mech sniper cannon -->
+  <DMS_SniperCannon.label>TODO</DMS_SniperCannon.label>
+  <!-- EN: an ultra heavy rifle calibered with autocannon rounds, has proven the capability to snipe an exostrider in the distance. it is specially designed for long-range anti-mech sniping operation.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
+  <DMS_SniperCannon.description>TODO</DMS_SniperCannon.description>
+  <!-- EN: stock -->
+  <DMS_SniperCannon.tools.stock.label>TODO</DMS_SniperCannon.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_SniperCannon.tools.barrel-0.label>TODO</DMS_SniperCannon.tools.barrel-0.label>
+  <!-- EN: muzzle -->
+  <DMS_SniperCannon.tools.muzzle-0.label>TODO</DMS_SniperCannon.tools.muzzle-0.label>
+  <!-- EN: barrel -->
+  <DMS_SniperCannon.tools.barrel-1.label>TODO</DMS_SniperCannon.tools.barrel-1.label>
+  <!-- EN: muzzle -->
+  <DMS_SniperCannon.tools.muzzle-1.label>TODO</DMS_SniperCannon.tools.muzzle-1.label>
+  <!-- EN: mech sniper cannon -->
+  <DMS_SniperCannon.verbs.Verb_ShootCE.label>TODO</DMS_SniperCannon.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: 2A38M -->
+  <DMS_Tarbosaurus_BossGun.label>TODO</DMS_Tarbosaurus_BossGun.label>
+  <!-- EN: a dual-barrel heavy autocannon for infantry suppress / anti air platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
+  <DMS_Tarbosaurus_BossGun.description>TODO</DMS_Tarbosaurus_BossGun.description>
+  <!-- EN: barrel -->
+  <DMS_Tarbosaurus_BossGun.tools.barrel.label>TODO</DMS_Tarbosaurus_BossGun.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <DMS_Tarbosaurus_BossGun.tools.muzzle.label>TODO</DMS_Tarbosaurus_BossGun.tools.muzzle.label>
+  <!-- EN: 2A38M -->
+  <DMS_Tarbosaurus_BossGun.verbs.Verb_ShootCE.label>TODO</DMS_Tarbosaurus_BossGun.verbs.Verb_ShootCE.label>
+  
+</LanguageData>

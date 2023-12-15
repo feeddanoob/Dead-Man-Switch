@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: phalanx -->
+  <DMS_Mech_Phalanx.label>TODO</DMS_Mech_Phalanx.label>
+  <!-- EN: A cost-saving mass-produced variant specialized for urban combat scenarios, packed with assault armor and high mobility, makes it a fierce unit in close quarters. -->
+  <DMS_Mech_Phalanx.description>TODO</DMS_Mech_Phalanx.description>
+  <!-- EN: head -->
+  <DMS_Mech_Phalanx.tools.head.label>TODO</DMS_Mech_Phalanx.tools.head.label>
+  <!-- EN: left fist -->
+  <DMS_Mech_Phalanx.tools.left_fist.label>TODO</DMS_Mech_Phalanx.tools.left_fist.label>
+  <!-- EN: right fist -->
+  <DMS_Mech_Phalanx.tools.right_fist.label>TODO</DMS_Mech_Phalanx.tools.right_fist.label>
+  
+  <!-- EN: protector -->
+  <DMS_Mech_Protector.label>TODO</DMS_Mech_Protector.label>
+  <!-- EN: Designed for peacekeeping operations and riot control need, Protector has overall strong armor around the frame, equip with a huge flash shield and close quater weapons like batons or shotguns. -->
+  <DMS_Mech_Protector.description>TODO</DMS_Mech_Protector.description>
+  <!-- EN: head -->
+  <DMS_Mech_Protector.tools.head.label>TODO</DMS_Mech_Protector.tools.head.label>
+  <!-- EN: left fist -->
+  <DMS_Mech_Protector.tools.left_fist.label>TODO</DMS_Mech_Protector.tools.left_fist.label>
+  <!-- EN: right fist -->
+  <DMS_Mech_Protector.tools.right_fist-0.label>TODO</DMS_Mech_Protector.tools.right_fist-0.label>
+  <!-- EN: ballistic shield -->
+  <DMS_Mech_Protector.tools.ballistic_shield.label>TODO</DMS_Mech_Protector.tools.ballistic_shield.label>
+  <!-- EN: right fist -->
+  <DMS_Mech_Protector.tools.right_fist-1.label>TODO</DMS_Mech_Protector.tools.right_fist-1.label>
+  
+  <!-- EN: ronin -->
+  <DMS_Mech_Ronin.label>TODO</DMS_Mech_Ronin.label>
+  <!-- EN: Humanoid mech model specialized for urban combat scenarios, packed with assault armor and high mobility, makes it a fierce unit in close quater. -->
+  <DMS_Mech_Ronin.description>TODO</DMS_Mech_Ronin.description>
+  <!-- EN: head -->
+  <DMS_Mech_Ronin.tools.head.label>TODO</DMS_Mech_Ronin.tools.head.label>
+  <!-- EN: left fist -->
+  <DMS_Mech_Ronin.tools.left_fist.label>TODO</DMS_Mech_Ronin.tools.left_fist.label>
+  <!-- EN: right fist -->
+  <DMS_Mech_Ronin.tools.right_fist.label>TODO</DMS_Mech_Ronin.tools.right_fist.label>
+  
+  <!-- EN: siegebreaker -->
+  <DMS_Mech_Siegebreaker.label>TODO</DMS_Mech_Siegebreaker.label>
+  <!-- EN: With better armor protection, siegebreaker stands in the most front of the line for sapping and breaching jobs, breaking through enemy defenses. -->
+  <DMS_Mech_Siegebreaker.description>TODO</DMS_Mech_Siegebreaker.description>
+  <!-- EN: head -->
+  <DMS_Mech_Siegebreaker.tools.head.label>TODO</DMS_Mech_Siegebreaker.tools.head.label>
+  <!-- EN: left fist -->
+  <DMS_Mech_Siegebreaker.tools.left_fist.label>TODO</DMS_Mech_Siegebreaker.tools.left_fist.label>
+  <!-- EN: right fist -->
+  <DMS_Mech_Siegebreaker.tools.right_fist.label>TODO</DMS_Mech_Siegebreaker.tools.right_fist.label>
+  
+</LanguageData>

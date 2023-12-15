@@ -33,6 +33,7 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>DMS_Tarbosaurus_Gun</li>
           <li>DMS_Bipedal_HeavyGun</li>
           <li>DMS_MechWeaponHeavy</li>
           <li>DMS_VehicleWeapon</li>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: grow artifuscle -->
+  <DMS_Make_Artifuscle.label>TODO</DMS_Make_Artifuscle.label>
+  <!-- EN: grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood -->
+  <DMS_Make_Artifuscle.description>TODO</DMS_Make_Artifuscle.description>
+  <!-- EN: growing artifuscle. -->
+  <DMS_Make_Artifuscle.jobString>TODO</DMS_Make_Artifuscle.jobString>
+  
+  <!-- EN: make ceramics -->
+  <DMS_Make_Ceramics.label>TODO</DMS_Make_Ceramics.label>
+  <!-- EN: making ceramics. -->
+  <DMS_Make_Ceramics.description>TODO</DMS_Make_Ceramics.description>
+  <!-- EN: making. -->
+  <DMS_Make_Ceramics.jobString>TODO</DMS_Make_Ceramics.jobString>
+  
+  <!-- EN: make component -->
+  <DMS_Make_ComponentIndustrial.label>TODO</DMS_Make_ComponentIndustrial.label>
+  <!-- EN: Make a component from machinery printer, take longer time and resources. -->
+  <DMS_Make_ComponentIndustrial.description>TODO</DMS_Make_ComponentIndustrial.description>
+  <!-- EN: Making component. -->
+  <DMS_Make_ComponentIndustrial.jobString>TODO</DMS_Make_ComponentIndustrial.jobString>
+  
+  <!-- EN: make stamponent -->
+  <DMS_Make_ComponentStamped.label>TODO</DMS_Make_ComponentStamped.label>
+  <!-- EN: todo -->
+  <DMS_Make_ComponentStamped.description>TODO</DMS_Make_ComponentStamped.description>
+  <!-- EN: stamping compoments. -->
+  <DMS_Make_ComponentStamped.jobString>TODO</DMS_Make_ComponentStamped.jobString>
+  
+  <!-- EN: make plasfiber -->
+  <DMS_Make_Plasfiber.label>TODO</DMS_Make_Plasfiber.label>
+  <!-- EN: Synthetic plasfiber. -->
+  <DMS_Make_Plasfiber.description>TODO</DMS_Make_Plasfiber.description>
+  <!-- EN: Synthesising. -->
+  <DMS_Make_Plasfiber.jobString>TODO</DMS_Make_Plasfiber.jobString>
+  
+  <!-- EN: make polyester -->
+  <DMS_Make_Polyester.label>TODO</DMS_Make_Polyester.label>
+  <!-- EN: Synthetic polyester fibers using chemfuel. -->
+  <DMS_Make_Polyester.description>TODO</DMS_Make_Polyester.description>
+  <!-- EN: Synthesising. -->
+  <DMS_Make_Polyester.jobString>TODO</DMS_Make_Polyester.jobString>
+  
+  <!-- EN: make tungsteel -->
+  <DMS_Make_Tungsteel.label>TODO</DMS_Make_Tungsteel.label>
+  <!-- EN: sintering tungsteel. -->
+  <DMS_Make_Tungsteel.description>TODO</DMS_Make_Tungsteel.description>
+  <!-- EN: sintering. -->
+  <DMS_Make_Tungsteel.jobString>TODO</DMS_Make_Tungsteel.jobString>
+  
+  <!-- EN: grow wetware computer -->
+  <DMS_Make_WetWare.label>TODO</DMS_Make_WetWare.label>
+  <!-- EN: grow wetware computer, A high-precision computer that can be produced and used on a large scale. -->
+  <DMS_Make_WetWare.description>TODO</DMS_Make_WetWare.description>
+  <!-- EN: wetware computer. -->
+  <DMS_Make_WetWare.jobString>TODO</DMS_Make_WetWare.jobString>
+  
+</LanguageData>

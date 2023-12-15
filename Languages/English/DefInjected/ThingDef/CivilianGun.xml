@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: heavy rifle bullet -->
+  <Bullet_DMS_AMR.label>TODO</Bullet_DMS_AMR.label>
+  
+  <!-- EN: 20 gauge beanbag -->
+  <DMS_Bullet_RiotRevolver.label>TODO</DMS_Bullet_RiotRevolver.label>
+  
+  <!-- EN: 4 gauge bean bag -->
+  <DMS_Bullet_RiotShotgun.label>TODO</DMS_Bullet_RiotShotgun.label>
+  
+  <!-- EN: elephant rifle -->
+  <DMS_ElephantGun.label>TODO</DMS_ElephantGun.label>
+  <!-- EN: Single-shot high caliber heavy hunting rifle. While made to hunt giant games or stop large hostile lifeform with sheer kinetic energy, it is also used by early industrial colonies against mechanoids thanks to its simple manufacture requirements. -->
+  <DMS_ElephantGun.description>TODO</DMS_ElephantGun.description>
+  <!-- EN: stock -->
+  <DMS_ElephantGun.tools.stock.label>TODO</DMS_ElephantGun.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_ElephantGun.tools.barrel.label>TODO</DMS_ElephantGun.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <DMS_ElephantGun.tools.muzzle.label>TODO</DMS_ElephantGun.tools.muzzle.label>
+  <!-- EN: elephant rifle -->
+  <DMS_ElephantGun.verbs.Verb_ShootCE.label>TODO</DMS_ElephantGun.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: knuckleduster Revolver -->
+  <DMS_KnuckledusterRevolver.label>TODO</DMS_KnuckledusterRevolver.label>
+  <!-- EN: Minature self-defense weapon commonly found on midworlds, barely takes up any space when folded. Accepts multiple calibers and may also used as a knuckle in a pinch. -->
+  <DMS_KnuckledusterRevolver.description>TODO</DMS_KnuckledusterRevolver.description>
+  <!-- EN: grip -->
+  <DMS_KnuckledusterRevolver.tools.grip.label>TODO</DMS_KnuckledusterRevolver.tools.grip.label>
+  <!-- EN: blade -->
+  <DMS_KnuckledusterRevolver.tools.blade.label>TODO</DMS_KnuckledusterRevolver.tools.blade.label>
+  <!-- EN: point -->
+  <DMS_KnuckledusterRevolver.tools.point.label>TODO</DMS_KnuckledusterRevolver.tools.point.label>
+  <!-- EN: knuckleduster Revolver -->
+  <DMS_KnuckledusterRevolver.verbs.Verb_ShootCE.label>TODO</DMS_KnuckledusterRevolver.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: Riot LMG -->
+  <DMS_MiniMachineGun.label>TODO</DMS_MiniMachineGun.label>
+  <!-- EN: Pistol caliber machinegun designed for colony defense. can chop down unarmored enemy hords and prisoner riots with ease. -->
+  <DMS_MiniMachineGun.description>TODO</DMS_MiniMachineGun.description>
+  <!-- EN: Riot LMG -->
+  <DMS_MiniMachineGun.verbs.Verb_ShootCE.label>TODO</DMS_MiniMachineGun.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: Riot Revolver -->
+  <DMS_Revolver.label>TODO</DMS_Revolver.label>
+  <!-- EN: a double-action revolver designed to load shotgun ammo. it was designed for personal defence purpose but soon became an optional weapon for mech solders because it can be used against most of enemy types at the same time. -->
+  <DMS_Revolver.description>TODO</DMS_Revolver.description>
+  <!-- EN: grip -->
+  <DMS_Revolver.tools.grip.label>TODO</DMS_Revolver.tools.grip.label>
+  <!-- EN: muzzle -->
+  <DMS_Revolver.tools.muzzle.label>TODO</DMS_Revolver.tools.muzzle.label>
+  <!-- EN: Riot Revolver -->
+  <DMS_Revolver.verbs.Verb_ShootCE.label>TODO</DMS_Revolver.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: slug gun -->
+  <DMS_RiotShotgun.label>TODO</DMS_RiotShotgun.label>
+  <!-- EN: a high caliber rifled shotgun manufactured with stamped component,design for riot operation and disable hostile mech unit. -->
+  <DMS_RiotShotgun.description>TODO</DMS_RiotShotgun.description>
+  <!-- EN: stock -->
+  <DMS_RiotShotgun.tools.stock.label>TODO</DMS_RiotShotgun.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_RiotShotgun.tools.barrel.label>TODO</DMS_RiotShotgun.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <DMS_RiotShotgun.tools.muzzle.label>TODO</DMS_RiotShotgun.tools.muzzle.label>
+  <!-- EN: slug gun -->
+  <DMS_RiotShotgun.verbs.Verb_ShootCE.label>TODO</DMS_RiotShotgun.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: sniper grenade launcher -->
+  <DMS_SniperGrenadeLauncher.label>TODO</DMS_SniperGrenadeLauncher.label>
+  <!-- EN: precise grenade launcher designed to fit in anti-sniper role.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong. -->
+  <DMS_SniperGrenadeLauncher.description>TODO</DMS_SniperGrenadeLauncher.description>
+  <!-- EN: sniper grenade launcher -->
+  <DMS_SniperGrenadeLauncher.verbs.Verb_ShootCE.label>TODO</DMS_SniperGrenadeLauncher.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: survival rifle -->
+  <DMS_SurvivalRifle.label>TODO</DMS_SurvivalRifle.label>
+  <!-- EN: Foldable rifle issued to war machine crew members for survival need. Accepts multiple common calibers. -->
+  <DMS_SurvivalRifle.description>TODO</DMS_SurvivalRifle.description>
+  <!-- EN: stock -->
+  <DMS_SurvivalRifle.tools.stock.label>TODO</DMS_SurvivalRifle.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_SurvivalRifle.tools.barrel.label>TODO</DMS_SurvivalRifle.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <DMS_SurvivalRifle.tools.muzzle.label>TODO</DMS_SurvivalRifle.tools.muzzle.label>
+  <!-- EN: survival rifle -->
+  <DMS_SurvivalRifle.verbs.Verb_ShootCE.label>TODO</DMS_SurvivalRifle.verbs.Verb_ShootCE.label>
+  
+</LanguageData>

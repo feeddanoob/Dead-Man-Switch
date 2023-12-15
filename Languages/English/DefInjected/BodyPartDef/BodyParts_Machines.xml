@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: armour plate -->
+  <DMS_ArmourPlate.label>TODO</DMS_ArmourPlate.label>
+  
+  <!-- EN: ballistic shield -->
+  <DMS_BallisticShield.label>TODO</DMS_BallisticShield.label>
+  
+  <!-- EN: Battery -->
+  <DMS_Battery.label>TODO</DMS_Battery.label>
+  
+  <!-- EN: Bin -->
+  <DMS_BodyBin.label>TODO</DMS_BodyBin.label>
+  
+  <!-- EN: chassis -->
+  <DMS_Chassis.label>TODO</DMS_Chassis.label>
+  
+  <!-- EN: integrated processor -->
+  <DMS_ChestBrain.label>TODO</DMS_ChestBrain.label>
+  
+  <!-- EN: integrated senser -->
+  <DMS_CompactSenser.label>TODO</DMS_CompactSenser.label>
+  
+  <!-- EN: dozer blade -->
+  <DMS_DozerBlade.label>TODO</DMS_DozerBlade.label>
+  
+  <!-- EN: phased scanning sensor -->
+  <DMS_HeadRadar.label>TODO</DMS_HeadRadar.label>
+  
+  <!-- EN: chassis -->
+  <DMS_HeavyChassis.label>TODO</DMS_HeavyChassis.label>
+  
+  <!-- EN: hover rotor -->
+  <DMS_HoverRotor.label>TODO</DMS_HoverRotor.label>
+  
+  <!-- EN: combined aiming sensor -->
+  <DMS_SniperHead.label>TODO</DMS_SniperHead.label>
+  
+</LanguageData>
