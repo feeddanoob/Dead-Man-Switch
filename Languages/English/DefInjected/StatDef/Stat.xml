@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<LanguageData>
-  
-  <!-- EN: supported weapons -->
-  <DMS_UsableWeapons.label>TODO</DMS_UsableWeapons.label>
-  <!-- EN: useable weapons that supported by OS of this model. -->
-  <DMS_UsableWeapons.description>TODO</DMS_UsableWeapons.description>
-  
-</LanguageData>

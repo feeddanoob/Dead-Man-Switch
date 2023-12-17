@@ -193,7 +193,7 @@
       <li>A_AR_LongRifle</li>
     </weaponTags>
     <abilities>
-      <li>PioneerSpotter</li>
+      <li>DMS_PioneerSpotter</li>
     </abilities>
   </PawnKindDef>
 

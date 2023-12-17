@@ -8,7 +8,7 @@
   <DMS_Bullet_Kord.label>鈾芯穿甲示蹤彈</DMS_Bullet_Kord.label>
   
   <!-- EN: GateKeeper -->
-  <DMS_Gun_GateKeeper.label>守門人</DMS_Gun_GateKeeper.label>
+  <DMS_Gun_GateKeeper.label>GAU8 "復仇者"</DMS_Gun_GateKeeper.label>
   <!-- EN: GateKeeper -->
   <DMS_Gun_GateKeeper.description>TODO</DMS_Gun_GateKeeper.description>
   <!-- EN: GateKeeper -->
@@ -29,7 +29,7 @@
   <DMS_Gun_Tunguska.verbs.Verb_ShootCE.label>TODO</DMS_Gun_Tunguska.verbs.Verb_ShootCE.label>
   
   <!-- EN: GateKeeper -->
-  <DMS_Turret_GateKeeper.label>TODO</DMS_Turret_GateKeeper.label>
+  <DMS_Turret_GateKeeper.label>守門人</DMS_Turret_GateKeeper.label>
   <!-- EN: GateKeeper -->
   <DMS_Turret_GateKeeper.description>TODO</DMS_Turret_GateKeeper.description>
   

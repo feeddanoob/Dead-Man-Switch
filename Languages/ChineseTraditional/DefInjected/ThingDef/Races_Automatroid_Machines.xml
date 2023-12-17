@@ -9,7 +9,7 @@
   <DMS_Machine_Hound.tools.head.label>頭部</DMS_Machine_Hound.tools.head.label>
   
   <!-- EN: hetzen -->
-  <DMS_Machine_Hound_FS.label>TODO</DMS_Machine_Hound_FS.label>
+  <DMS_Machine_Hound_FS.label>警犬</DMS_Machine_Hound_FS.label>
   <!-- EN: a sub-variant of hound, designed for urban combat fire support. -->
   <DMS_Machine_Hound_FS.description>獵犬的一種變種，專為城市戰鬥火力支援而設計。</DMS_Machine_Hound_FS.description>
   <!-- EN: head -->

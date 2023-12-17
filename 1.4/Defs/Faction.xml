@@ -53,6 +53,12 @@
     <backstoryFilters>
       <li>
         <categories>
+          <li>Pioneer</li>
+          <li>FleetChild</li>
+          <li>Researcher</li>
+          <li>Mili_Standard</li>
+          <li>Mili_Expert</li>
+          <li>Civil_Expert</li>
           <li>DMSCommon</li>
         </categories>
       </li>
@@ -85,7 +91,7 @@
     </caravanTraderKinds>
     <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
     <royalTitleInheritanceRelations>
-      <li>Spouse</li>
+      <li>Child</li>
     </royalTitleInheritanceRelations>
     <raidCommonalityFromPointsCurve>
       <points>

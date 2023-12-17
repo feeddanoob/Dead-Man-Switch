@@ -61,7 +61,7 @@
   </BackstoryDef>
 
   <BackstoryDef>
-    <defName>DMS_Military03</defName>
+    <defName>DMS_Military04</defName>
     <title>Voluntary militia</title>
     <titleShort>militia</titleShort>
     <baseDesc>Out of seeing the vastness of this planet, [PAWN_nameDef] became a voluntary militia in the colonial group, moved to various colonial strongholds with the pace of stronghold development, and used the gun on hand to protect himself and [PAWN_pronoun] companions when necessary.</baseDesc>
@@ -81,7 +81,7 @@
   </BackstoryDef>
 
   <BackstoryDef>
-    <defName>DMS_Military03</defName>
+    <defName>DMS_Military05</defName>
     <title>Reserved colonist</title>
     <titleShort>colonist</titleShort>
     <baseDesc>Since the physical examination was passed by rounded off, [PAWN_nameDef], who had no special skills, followed the enlistment order of the colonial fleet and after receiving simple training, became a substitute and was sent to the ground to assist in the colonization work.</baseDesc>
@@ -107,7 +107,7 @@
   </BackstoryDef>
 
   <BackstoryDef>
-    <defName>DMS_Military03</defName>
+    <defName>DMS_Military06</defName>
     <title>Riot commando</title>
     <titleShort>commando</titleShort>
     <baseDesc>Due to the chaotic distribution of the faction-controlled areas in the rimworld, [PAWN_nameDef] job is to accompany the special police to use limited violence to uproot the bandit sites that spread like weeds one by one.</baseDesc>
@@ -126,7 +126,7 @@
   </BackstoryDef>
 
   <BackstoryDef>
-    <defName>DMS_Military03</defName>
+    <defName>DMS_Military07</defName>
     <title>Shuttle pilot</title>
     <titleShort>pilot</titleShort>
     <baseDesc>During [PAWN_pronoun] long life as a pilot, [PAWN_nameDef] was responsible for transporting people and materials over a large sector, and also learned to solve annoying mechanical and human problems along the way.</baseDesc>
@@ -146,7 +146,7 @@
   </BackstoryDef>
 
   <BackstoryDef>
-    <defName>DMS_Military03</defName>
+    <defName>DMS_Military08</defName>
     <title>Armed escort</title>
     <titleShort>escort</titleShort>
     <baseDesc>[PAWN_nameDef] is from a professional pioneering group. To deal with the existential threats during the pioneering period, [PAWN_pronoun] job is to use guns to drive away those things that are harmful to the colonists...if guns can still be used to solve them.</baseDesc>

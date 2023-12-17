@@ -6,6 +6,10 @@
     <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_PreSergeant</minTitleRequired>
     <label>logistic handler</label>
     <labelPlural>logistic handlers</labelPlural>
+    <backstoryCategories>
+      <li>DMS_Officer</li>
+      <li>Mili_Expert</li>
+    </backstoryCategories>
     <skills>
       <li>
         <skill>Shooting</skill>

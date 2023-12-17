@@ -147,8 +147,8 @@
     <baseDesc>As we all know, most of the planets in rimworld are in a state of disorganized social organization, but the job of [PAWN_nameDef] is to establish good relations with these local indigenous people as much as possible on behalf of the colonial fleet, to facilitate future colonization work can go more smoothly.</baseDesc>
     <slot>Adulthood</slot>
     <spawnCategories>
-      <li>Mili_Standard</li>
       <li>Pioneer</li>
+      <li>DMS_Officer</li>
     </spawnCategories>
     <skillGains>
       <li><key>Shooting</key><value>12</value></li>

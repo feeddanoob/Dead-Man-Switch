@@ -16,18 +16,18 @@
   <DMS_Make_Ceramics.jobString>制作陶瓷中</DMS_Make_Ceramics.jobString>
   
   <!-- EN: make component -->
-  <DMS_Make_ComponentIndustrial.label>制作组件</DMS_Make_ComponentIndustrial.label>
+  <DMS_Make_ComponentIndustrial.label>制作零件</DMS_Make_ComponentIndustrial.label>
   <!-- EN: Make a component from machinery printer, take longer time and resources. -->
-  <DMS_Make_ComponentIndustrial.description>用机器打印机制作组件，需要很长的时间和资源。</DMS_Make_ComponentIndustrial.description>
+  <DMS_Make_ComponentIndustrial.description>用机器打印机制作零件，需要很长的时间和资源。</DMS_Make_ComponentIndustrial.description>
   <!-- EN: Making component. -->
-  <DMS_Make_ComponentIndustrial.jobString>制作组件中</DMS_Make_ComponentIndustrial.jobString>
+  <DMS_Make_ComponentIndustrial.jobString>制造零件中</DMS_Make_ComponentIndustrial.jobString>
   
   <!-- EN: make stamponent -->
-  <DMS_Make_ComponentStamped.label>TODO</DMS_Make_ComponentStamped.label>
+  <DMS_Make_ComponentStamped.label>制作冲压零件</DMS_Make_ComponentStamped.label>
   <!-- EN: todo -->
-  <DMS_Make_ComponentStamped.description>TODO</DMS_Make_ComponentStamped.description>
+  <DMS_Make_ComponentStamped.description>制作冲压零件</DMS_Make_ComponentStamped.description>
   <!-- EN: stamping compoments. -->
-  <DMS_Make_ComponentStamped.jobString>TODO</DMS_Make_ComponentStamped.jobString>
+  <DMS_Make_ComponentStamped.jobString>制造零件中</DMS_Make_ComponentStamped.jobString>
   
   <!-- EN: make plasfiber -->
   <DMS_Make_Plasfiber.label>制造塑料纤维</DMS_Make_Plasfiber.label>

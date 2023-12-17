@@ -65,9 +65,9 @@
   <DMS_Make_Iguana.jobString>孕育机械体中</DMS_Make_Iguana.jobString>
   
   <!-- EN: gestate jaeger -->
-  <DMS_Make_Jaeger.label>孕育TODO</DMS_Make_Jaeger.label>
+  <DMS_Make_Jaeger.label>孕育猎兵</DMS_Make_Jaeger.label>
   <!-- EN: Gestate a jaeger mechanoid. -->
-  <DMS_Make_Jaeger.description>孕育TODO机械体</DMS_Make_Jaeger.description>
+  <DMS_Make_Jaeger.description>孕育猎兵机械体</DMS_Make_Jaeger.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_Jaeger.jobString>孕育机械体中</DMS_Make_Jaeger.jobString>
   
@@ -86,7 +86,7 @@
   <DMS_Make_Pioneer.jobString>孕育机械体中</DMS_Make_Pioneer.jobString>
   
   <!-- EN: gestate protector -->
-  <DMS_Make_Protector.label>孕育守护者</DMS_Make_Protector.label>
+  <DMS_Make_Protector.label>孕育塔盾手</DMS_Make_Protector.label>
   <!-- EN: Gestate a protector mechanoid. -->
   <DMS_Make_Protector.description>孕育守护者机械体</DMS_Make_Protector.description>
   <!-- EN: Gestating mech. -->
@@ -100,16 +100,16 @@
   <DMS_Make_Ronin.jobString>孕育机械体中</DMS_Make_Ronin.jobString>
   
   <!-- EN: gestate sergeant -->
-  <DMS_Make_Sergeant.label>孕育中士</DMS_Make_Sergeant.label>
+  <DMS_Make_Sergeant.label>孕育军士</DMS_Make_Sergeant.label>
   <!-- EN: Gestate a sergeant mechanoid. -->
-  <DMS_Make_Sergeant.description>孕育中士机械体</DMS_Make_Sergeant.description>
+  <DMS_Make_Sergeant.description>孕育军士机械体</DMS_Make_Sergeant.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_Sergeant.jobString>孕育机械体中</DMS_Make_Sergeant.jobString>
   
   <!-- EN: gestate siegebreaker -->
-  <DMS_Make_Siegebreaker.label>孕育攻城者</DMS_Make_Siegebreaker.label>
+  <DMS_Make_Siegebreaker.label>孕育破城者</DMS_Make_Siegebreaker.label>
   <!-- EN: Gestate a siegebreaker mechanoid. -->
-  <DMS_Make_Siegebreaker.description>孕育攻城者机械体</DMS_Make_Siegebreaker.description>
+  <DMS_Make_Siegebreaker.description>孕育破城者机械体</DMS_Make_Siegebreaker.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_Siegebreaker.jobString>孕育机械体中</DMS_Make_Siegebreaker.jobString>
   
@@ -128,9 +128,9 @@
   <DMS_Make_Soldat.jobString>孕育机械体中</DMS_Make_Soldat.jobString>
   
   <!-- EN: gestate tarbosaurus -->
-  <DMS_Make_Tarbosaurus.label>孕育焦龙</DMS_Make_Tarbosaurus.label>
+  <DMS_Make_Tarbosaurus.label>孕育骇蜥</DMS_Make_Tarbosaurus.label>
   <!-- EN: Gestate a tarbosaurus mechanoid. -->
-  <DMS_Make_Tarbosaurus.description>孕育焦龙机械体</DMS_Make_Tarbosaurus.description>
+  <DMS_Make_Tarbosaurus.description>孕育骇蜥机械体</DMS_Make_Tarbosaurus.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_Tarbosaurus.jobString>孕育机械体中</DMS_Make_Tarbosaurus.jobString>
   

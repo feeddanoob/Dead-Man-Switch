@@ -434,7 +434,6 @@
     <defName>DMS_ProstheticSpine</defName>
     <label>bio-mechanical neurochord</label>
     <description>An advanced bio-mechanical spine which also work as a sub-brain to compatible with other prostheses by sharing reflex nerves.</description>
-    <descriptionHyperlinks><RecipeDef>DMS_InstallProstheticSpine</RecipeDef></descriptionHyperlinks>
     <costList>
       <Tungsteel>20</Tungsteel>
       <Plasfiber>10</Plasfiber>

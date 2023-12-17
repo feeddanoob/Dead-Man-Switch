@@ -46,7 +46,7 @@
   <!-- EN: Riot Revolver -->
   <DMS_Revolver.label>镇暴左轮</DMS_Revolver.label>
   <!-- EN: a double-action revolver designed to load shotgun ammo. it was designed for personal defence purpose but soon became an optional weapon for mech solders because it can be used against most of enemy types at the same time. -->
-  <DMS_Revolver.description>这是一把双动左轮手枪，可装填霰弹。它是为个人防卫目的而设计的，但很快就成为机械士兵的可选武器，因为它可以同时对付大多数类型的敌人。</DMS_Revolver.description>
+  <DMS_Revolver.description>这是一把双动左轮手枪，可装填霰弹。它是为个人防卫目的而设计的，但很快就成为机兵的可选武器，因为它可以同时对付大多数类型的敌人。</DMS_Revolver.description>
   <!-- EN: grip -->
   <DMS_Revolver.tools.grip.label>握把</DMS_Revolver.tools.grip.label>
   <!-- EN: muzzle -->
@@ -70,7 +70,7 @@
   <!-- EN: sniper grenade launcher -->
   <DMS_SniperGrenadeLauncher.label>狙击榴弹发射器</DMS_SniperGrenadeLauncher.label>
   <!-- EN: precise grenade launcher designed to fit in anti-sniper role.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong. -->
-  <DMS_SniperGrenadeLauncher.description>专为反狙击角色而设计的精确榴弹发射器。\n\n该武器是专为自动机器人使用而设计的，因此普通人在没有外部辅助设备或超强力量的情况下可能无法正常使用它们。</DMS_SniperGrenadeLauncher.description>
+  <DMS_SniperGrenadeLauncher.description>专为反狙击角色而设计的精确榴弹发射器。\n\n该武器是专为机兵使用而设计的，因此普通人在没有外部辅助设备或超强力量的情况下可能无法正常使用它们。</DMS_SniperGrenadeLauncher.description>
   <!-- EN: sniper grenade launcher -->
   <DMS_SniperGrenadeLauncher.verbs.Verb_ShootCE.label>狙击榴弹发射器</DMS_SniperGrenadeLauncher.verbs.Verb_ShootCE.label>
   

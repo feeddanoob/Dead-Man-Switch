@@ -35,14 +35,17 @@
   <DMS_AutomaticArmy.rulePack.rulesStrings>TODO</DMS_AutomaticArmy.rulePack.rulesStrings>
   
   <!-- EN:
-    <li>r_name-> [Type]-[Number][Number]</li>
-    <li>Type->Logistic</li>
-    <li>Type->Recon</li>
-    <li>Type->Relay</li>
-    <li>Type->Forward</li>
-    <li>Type->Frontier</li>
-    <li>Type->Colonial</li>
-    <li>Type->Outpost</li>
+    
+  -->
+  <DMS_VanguardBase.rulePack.rulesStrings>
+    <li>r_name-> [Type]-[Number][Number]號</li>
+    <li>Type->後勤</li>
+    <li>Type->偵查</li>
+    <li>Type->中繼</li>
+    <li>Type->前沿</li>
+    <li>Type->先鋒</li>
+    <li>Type->殖民</li>
+    <li>Type->定居</li>
     <li>Number->0</li>
     <li>Number->1</li>
     <li>Number->2</li>
@@ -51,9 +54,8 @@
     <li>Number->5</li>
     <li>Number->6</li>
     <li>Number->7</li>
-    <li>Number->8</li>
-  -->
-  <DMS_VanguardBase.rulePack.rulesStrings>TODO</DMS_VanguardBase.rulePack.rulesStrings>
+    <li>Number->9</li>
+  </DMS_VanguardBase.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_name->[BrigadeNum0][BrigadeNum1][BrigadeNum2] [BrigadeType] Division</li>
@@ -92,7 +94,43 @@
     <li>BrigadeNum2->8th</li>
     <li>BrigadeNum2->9th</li>
   -->
-  <DMS_VanguardFaction.rulePack.rulesStrings>TODO</DMS_VanguardFaction.rulePack.rulesStrings>
+  <DMS_VanguardFaction.rulePack.rulesStrings>
+    <li>r_name->第[BrigadeNum0][BrigadeNum1][BrigadeNum2][BrigadeType]師</li>
+    <li>BrigadeType->先遣</li>
+    <li>BrigadeType->殖民</li>
+    <li>BrigadeType->偵查</li>
+    <li>BrigadeType->近衛</li>
+    <li>BrigadeType->後勤</li>
+    <li>BrigadeNum0->1</li>
+    <li>BrigadeNum0->2</li>
+    <li>BrigadeNum0->3</li>
+    <li>BrigadeNum0->4</li>
+    <li>BrigadeNum0->5</li>
+    <li>BrigadeNum0->6</li>
+    <li>BrigadeNum0->7</li>
+    <li>BrigadeNum0->8</li>
+    <li>BrigadeNum0->9</li>
+    <li>BrigadeNum1->0</li>
+    <li>BrigadeNum1->1</li>
+    <li>BrigadeNum1->2</li>
+    <li>BrigadeNum1->3</li>
+    <li>BrigadeNum1->4</li>
+    <li>BrigadeNum1->5</li>
+    <li>BrigadeNum1->6</li>
+    <li>BrigadeNum1->7</li>
+    <li>BrigadeNum1->8</li>
+    <li>BrigadeNum1->9</li>
+    <li>BrigadeNum2->0</li>
+    <li>BrigadeNum2->1</li>
+    <li>BrigadeNum2->2</li>
+    <li>BrigadeNum2->3</li>
+    <li>BrigadeNum2->4</li>
+    <li>BrigadeNum2->5</li>
+    <li>BrigadeNum2->6</li>
+    <li>BrigadeNum2->7</li>
+    <li>BrigadeNum2->8</li>
+    <li>BrigadeNum2->9</li>
+  </DMS_VanguardFaction.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_name->[MechType] [BrigadeNum0]-[BrigadeNum1] "[Callsign]"</li>
@@ -142,7 +180,54 @@
     <li>Callsign->Enigma</li>
     <li>Callsign->Automata</li>
   -->
-  <DMS_VanguardMechHeavy.rulePack.rulesStrings>TODO</DMS_VanguardMechHeavy.rulePack.rulesStrings>
+  <DMS_VanguardMechHeavy.rulePack.rulesStrings>
+    <li>r_name->[MechType] [BrigadeNum0][BrigadeNum1] "[Callsign]"</li>
+    <li>MechType->樞軸</li>
+    <li>MechType->重型</li>
+    <li>MechType->裝甲</li>
+    <li>MechType->支點</li>
+    <li>MechType->要塞</li>
+    <li>BrigadeNum0->一</li>
+    <li>BrigadeNum0->二</li>
+    <li>BrigadeNum0->三</li>
+    <li>BrigadeNum0->四</li>
+    <li>BrigadeNum0->五</li>
+    <li>BrigadeNum0->六</li>
+    <li>BrigadeNum0->七</li>
+    <li>BrigadeNum0->八</li>
+    <li>BrigadeNum0->九</li>
+    <li>BrigadeNum1->零</li>
+    <li>BrigadeNum1->一</li>
+    <li>BrigadeNum1->二</li>
+    <li>BrigadeNum1->三</li>
+    <li>BrigadeNum1->四</li>
+    <li>BrigadeNum1->五</li>
+    <li>BrigadeNum1->六</li>
+    <li>BrigadeNum1->七</li>
+    <li>BrigadeNum1->八</li>
+    <li>BrigadeNum1->九</li>
+    <li>Callsign->阿爾法</li>
+    <li>Callsign->貝塔</li>
+    <li>Callsign->德爾塔</li>
+    <li>Callsign->枷馬</li>
+    <li>Callsign->矛頭</li>
+    <li>Callsign->重錘</li>
+    <li>Callsign->鎢鋼</li>
+    <li>Callsign->不朽</li>
+    <li>Callsign->白銀</li>
+    <li>Callsign->鐵路</li>
+    <li>Callsign->攻城錘</li>
+    <li>Callsign->要塞</li>
+    <li>Callsign->城塞</li>
+    <li>Callsign->稜堡</li>
+    <li>Callsign->龍</li>
+    <li>Callsign->蝸牛</li>
+    <li>Callsign->犀牛</li>
+    <li>Callsign->虎</li>
+    <li>Callsign->伊尼亞克</li>
+    <li>Callsign->恩尼格</li>
+    <li>Callsign->機關</li>
+  </DMS_VanguardMechHeavy.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_name->[MechType] [BrigadeNum0]-[BrigadeNum1] "[Callsign][Code]"</li>

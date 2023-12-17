@@ -39,7 +39,7 @@
   <!-- EN: food supply drop -->
   <DMS_FoodDrop.label>空投糧食</DMS_FoodDrop.label>
   <!-- EN: Call for a drop of 20 packaged survival meals. -->
-  <DMS_FoodDrop.description>>呼叫空投 20 份生存食品包。</DMS_FoodDrop.description>
+  <DMS_FoodDrop.description>呼叫空投 20 份生存食品包。</DMS_FoodDrop.description>
   
   <!-- EN: combat equipment drop -->
   <DMS_GearDrop.label>空投戰鬥裝備</DMS_GearDrop.label>

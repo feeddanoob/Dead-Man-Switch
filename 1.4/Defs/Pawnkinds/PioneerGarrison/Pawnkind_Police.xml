@@ -7,6 +7,10 @@
     <combatPower>60</combatPower>
     <isFighter>true</isFighter>
     <gearHealthRange>0.6~2</gearHealthRange>
+    <backstoryCategories>
+      <li>Mili_Standard</li>
+      <li>FleetChild</li>
+    </backstoryCategories>
     <apparelTags>
       <li>IndustrialMilitaryBasic</li>
       <li>BeltDefensePop</li>

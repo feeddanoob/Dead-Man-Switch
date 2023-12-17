@@ -318,7 +318,7 @@
   <ThingDef ParentName="MechGestatorBase" MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_MechGestatorSamll</defName>
     <label>automatroid constructor</label>
-    <description>Todo.</description>
+    <description>A massive industrial equipment use to assemble automatroid.</description>
 		<designationCategory>DMS_Category</designationCategory>
     <graphicData>
       <texPath>Things/Building/MechBuilder_Base</texPath>

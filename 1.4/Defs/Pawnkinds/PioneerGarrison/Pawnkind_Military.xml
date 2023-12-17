@@ -13,6 +13,11 @@
     <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
     <techHediffsChance>0.04</techHediffsChance>
     <techHediffsMoney>200~700</techHediffsMoney>
+    <backstoryCategories>
+      <li>FleetChild</li>
+      <li>Mili_Standard</li>
+      <li>Mili_Expert</li>
+    </backstoryCategories>
     <apparelTags>
       <li>DMS_Garrision</li>
     </apparelTags>
