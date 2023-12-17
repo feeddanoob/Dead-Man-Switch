@@ -222,7 +222,7 @@
   <ThingDef ParentName="DMS_BenchBase">
     <defName>DMS_TableMachinePrinter</defName>
     <label>machinery printer</label>
-    <description>用於加工量產機械的複合金屬打印機,能以冷鍛方式快速製造與組裝金屬製品與武器.</description>
+    <description>a composite metal printer, which can manufacture and assemble metal products and weapons through cold forging to mass-produce machinery.</description>
     <graphicData>
       <texPath>Things/Building/StampTable</texPath>
       <graphicClass>Graphic_Multi</graphicClass>

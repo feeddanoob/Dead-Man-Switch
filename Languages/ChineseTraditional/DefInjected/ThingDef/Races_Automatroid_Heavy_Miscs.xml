@@ -2,31 +2,31 @@
 <LanguageData>
   
   <!-- EN: ape -->
-  <DMS_Mech_Ape.label>TODO</DMS_Mech_Ape.label>
+  <DMS_Mech_Ape.label>ape</DMS_Mech_Ape.label>
   <!-- EN: An prototype design on testing the feasibility of humanoid automatroid, it's designed to equip with heavy weapon. -->
-  <DMS_Mech_Ape.description>TODO</DMS_Mech_Ape.description>
+  <DMS_Mech_Ape.description>這是一個測試類人自動機器人可行性的原型設計，可配備重型武器。</DMS_Mech_Ape.description>
   <!-- EN: head -->
-  <DMS_Mech_Ape.tools.head.label>TODO</DMS_Mech_Ape.tools.head.label>
+  <DMS_Mech_Ape.tools.head.label>頭部</DMS_Mech_Ape.tools.head.label>
   
   <!-- EN: caretta -->
   <DMS_Mech_Caretta.label>TODO</DMS_Mech_Caretta.label>
   <!-- EN: a mobile anti-air support platform variant of geochelone. -->
-  <DMS_Mech_Caretta.description>TODO</DMS_Mech_Caretta.description>
+  <DMS_Mech_Caretta.description>一種移動式對空支援平台，是 geochelone 的變體。</DMS_Mech_Caretta.description>
   <!-- EN: head -->
-  <DMS_Mech_Caretta.tools.head.label>TODO</DMS_Mech_Caretta.tools.head.label>
+  <DMS_Mech_Caretta.tools.head.label>頭部</DMS_Mech_Caretta.tools.head.label>
   
   <!-- EN: geochelone -->
   <DMS_Mech_Geochelone.label>TODO</DMS_Mech_Geochelone.label>
   <!-- EN: an unmanned all-terrain tracked pluse shield support platform with various of production model and variant. -->
-  <DMS_Mech_Geochelone.description>TODO</DMS_Mech_Geochelone.description>
+  <DMS_Mech_Geochelone.description>一種無人全地形履帶式脈衝防護盾支援平台，有多種生產型號和變型。</DMS_Mech_Geochelone.description>
   <!-- EN: head -->
-  <DMS_Mech_Geochelone.tools.head.label>TODO</DMS_Mech_Geochelone.tools.head.label>
+  <DMS_Mech_Geochelone.tools.head.label>頭部</DMS_Mech_Geochelone.tools.head.label>
   
   <!-- EN: killdozer -->
-  <DMS_Mech_Killdozer.label>TODO</DMS_Mech_Killdozer.label>
+  <DMS_Mech_Killdozer.label>殺戮推土機</DMS_Mech_Killdozer.label>
   <!-- EN: 一輛無人的小型突擊破障車，前方帶有突破用的推土鏟，車身各處的裝甲也獲得了強化 -->
-  <DMS_Mech_Killdozer.description>TODO</DMS_Mech_Killdozer.description>
+  <DMS_Mech_Killdozer.description>一輛無人的小型突擊破障車，前方帶有突破用的推土鏟，車身各處的裝甲也獲得了強化。</DMS_Mech_Killdozer.description>
   <!-- EN: dozer blade -->
-  <DMS_Mech_Killdozer.tools.dozer_blade.label>TODO</DMS_Mech_Killdozer.tools.dozer_blade.label>
+  <DMS_Mech_Killdozer.tools.dozer_blade.label>推土鏟</DMS_Mech_Killdozer.tools.dozer_blade.label>
   
 </LanguageData>

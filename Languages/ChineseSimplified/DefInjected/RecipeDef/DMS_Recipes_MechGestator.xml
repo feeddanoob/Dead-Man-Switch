@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: gestate ape -->
+  <DMS_Make_Ape.label>孕育类人猿机械体。</DMS_Make_Ape.label>
+  <!-- EN: Gestate an ape mechanoid. -->
+  <DMS_Make_Ape.description>孕育一个类人猿机械体。</DMS_Make_Ape.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Ape.jobString>孕育机械体中</DMS_Make_Ape.jobString>
+  
+  <!-- EN: gestate arquebusier -->
+  <DMS_Make_Arquebusier.label>孕育铳手</DMS_Make_Arquebusier.label>
+  <!-- EN: Gestate a arquebusier mechanoid, it is a standard version of mechanized Soldier,having the ability to operate most of common weapons -->
+  <DMS_Make_Arquebusier.description>孕育一个铳手机械人，它是标准版的机械化士兵，能够操作大多数常见武器</DMS_Make_Arquebusier.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Arquebusier.jobString>孕育机械体中</DMS_Make_Arquebusier.jobString>
+  
+  <!-- EN: gestate battle friend -->
+  <DMS_Make_BattleFrame.label>孕育战友</DMS_Make_BattleFrame.label>
+  <!-- EN: Gestate a battle friend mechanoid. -->
+  <DMS_Make_BattleFrame.description>孕育一个机械战友</DMS_Make_BattleFrame.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_BattleFrame.jobString>孕育机械体中</DMS_Make_BattleFrame.jobString>
+  
+  <!-- EN: gestate escort lifter -->
+  <DMS_Make_EscortLifter.label>孕育保镖</DMS_Make_EscortLifter.label>
+  <!-- EN: Gestate a escort lifter mechanoid. -->
+  <DMS_Make_EscortLifter.description>孕育保镖机械体。</DMS_Make_EscortLifter.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_EscortLifter.jobString>孕育机械体中</DMS_Make_EscortLifter.jobString>
+  
+  <!-- EN: gestate field command -->
+  <DMS_Make_FieldCommand.label>孕育战场指挥</DMS_Make_FieldCommand.label>
+  <!-- EN: Gestate a field command mechanoid. -->
+  <DMS_Make_FieldCommand.description>孕育战场指挥机械体</DMS_Make_FieldCommand.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_FieldCommand.jobString>孕育机械体中</DMS_Make_FieldCommand.jobString>
+  
+  <!-- EN: gestate Gecko -->
+  <DMS_Make_Gecko.label>孕育壁虎</DMS_Make_Gecko.label>
+  <!-- EN: Gestate a gecko mechanoid. -->
+  <DMS_Make_Gecko.description>孕育壁虎机械体</DMS_Make_Gecko.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Gecko.jobString>孕育机械体中</DMS_Make_Gecko.jobString>
+  
+  <!-- EN: gestate geochelone -->
+  <DMS_Make_Geochelone.label>孕育土龟</DMS_Make_Geochelone.label>
+  <!-- EN: Gestate a geochelone mechanoid. -->
+  <DMS_Make_Geochelone.description>孕育土龟机械体</DMS_Make_Geochelone.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Geochelone.jobString>孕育机械体中</DMS_Make_Geochelone.jobString>
+  
+  <!-- EN: gestate grenadier -->
+  <DMS_Make_Grenadier.label>孕育榴弹兵</DMS_Make_Grenadier.label>
+  <!-- EN: Gestate a grenadier mechanoid. -->
+  <DMS_Make_Grenadier.description>孕育榴弹兵机械体</DMS_Make_Grenadier.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Grenadier.jobString>孕育机械体中</DMS_Make_Grenadier.jobString>
+  
+  <!-- EN: gestate Iguana -->
+  <DMS_Make_Iguana.label>孕育鬣蜥</DMS_Make_Iguana.label>
+  <!-- EN: Gestate a Iguana mechanoid. -->
+  <DMS_Make_Iguana.description>孕育鬣蜥机械体</DMS_Make_Iguana.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Iguana.jobString>孕育机械体中</DMS_Make_Iguana.jobString>
+  
+  <!-- EN: gestate jaeger -->
+  <DMS_Make_Jaeger.label>孕育TODO</DMS_Make_Jaeger.label>
+  <!-- EN: Gestate a jaeger mechanoid. -->
+  <DMS_Make_Jaeger.description>孕育TODO机械体</DMS_Make_Jaeger.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Jaeger.jobString>孕育机械体中</DMS_Make_Jaeger.jobString>
+  
+  <!-- EN: gestate phalanx -->
+  <DMS_Make_Phalanx.label>孕育方阵</DMS_Make_Phalanx.label>
+  <!-- EN: Gestate a phalanx mechanoid. -->
+  <DMS_Make_Phalanx.description>孕育方阵机械体</DMS_Make_Phalanx.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Phalanx.jobString>孕育机械体中</DMS_Make_Phalanx.jobString>
+  
+  <!-- EN: gestate pioneer -->
+  <DMS_Make_Pioneer.label>孕育开拓者</DMS_Make_Pioneer.label>
+  <!-- EN: Gestate a pioneer mechanoid. -->
+  <DMS_Make_Pioneer.description>孕育开拓者机械体</DMS_Make_Pioneer.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Pioneer.jobString>孕育机械体中</DMS_Make_Pioneer.jobString>
+  
+  <!-- EN: gestate protector -->
+  <DMS_Make_Protector.label>孕育守护者</DMS_Make_Protector.label>
+  <!-- EN: Gestate a protector mechanoid. -->
+  <DMS_Make_Protector.description>孕育守护者机械体</DMS_Make_Protector.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Protector.jobString>孕育机械体中</DMS_Make_Protector.jobString>
+  
+  <!-- EN: gestate ronin -->
+  <DMS_Make_Ronin.label>孕育浪人</DMS_Make_Ronin.label>
+  <!-- EN: Gestate a ronin mechanoid. -->
+  <DMS_Make_Ronin.description>孕育浪人机械体</DMS_Make_Ronin.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Ronin.jobString>孕育机械体中</DMS_Make_Ronin.jobString>
+  
+  <!-- EN: gestate sergeant -->
+  <DMS_Make_Sergeant.label>孕育中士</DMS_Make_Sergeant.label>
+  <!-- EN: Gestate a sergeant mechanoid. -->
+  <DMS_Make_Sergeant.description>孕育中士机械体</DMS_Make_Sergeant.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Sergeant.jobString>孕育机械体中</DMS_Make_Sergeant.jobString>
+  
+  <!-- EN: gestate siegebreaker -->
+  <DMS_Make_Siegebreaker.label>孕育攻城者</DMS_Make_Siegebreaker.label>
+  <!-- EN: Gestate a siegebreaker mechanoid. -->
+  <DMS_Make_Siegebreaker.description>孕育攻城者机械体</DMS_Make_Siegebreaker.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Siegebreaker.jobString>孕育机械体中</DMS_Make_Siegebreaker.jobString>
+  
+  <!-- EN: gestate sniper -->
+  <DMS_Make_Sniper.label>孕育狙击手</DMS_Make_Sniper.label>
+  <!-- EN: Gestate a sniper mechanoid. -->
+  <DMS_Make_Sniper.description>孕育狙击手机械体</DMS_Make_Sniper.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Sniper.jobString>孕育机械体中</DMS_Make_Sniper.jobString>
+  
+  <!-- EN: gestate soldat -->
+  <DMS_Make_Soldat.label>孕育士兵</DMS_Make_Soldat.label>
+  <!-- EN: Gestate a soldat mechanoid. -->
+  <DMS_Make_Soldat.description>孕育士兵机械体</DMS_Make_Soldat.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Soldat.jobString>孕育机械体中</DMS_Make_Soldat.jobString>
+  
+  <!-- EN: gestate tarbosaurus -->
+  <DMS_Make_Tarbosaurus.label>孕育焦龙</DMS_Make_Tarbosaurus.label>
+  <!-- EN: Gestate a tarbosaurus mechanoid. -->
+  <DMS_Make_Tarbosaurus.description>孕育焦龙机械体</DMS_Make_Tarbosaurus.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Tarbosaurus.jobString>孕育机械体中</DMS_Make_Tarbosaurus.jobString>
+  
+</LanguageData>

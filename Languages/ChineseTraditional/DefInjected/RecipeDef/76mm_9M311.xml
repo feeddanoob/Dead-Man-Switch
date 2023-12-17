@@ -2,10 +2,10 @@
 <LanguageData>
   
   <!-- EN: make 9M311 SAM Missile -->
-  <MakeAmmo_9M311_SAM.label>TODO</MakeAmmo_9M311_SAM.label>
+  <MakeAmmo_9M311_SAM.label>製造9M311 SAM導彈</MakeAmmo_9M311_SAM.label>
   <!-- EN: Craft 1 9M311 SAM Missiles. -->
-  <MakeAmmo_9M311_SAM.description>TODO</MakeAmmo_9M311_SAM.description>
+  <MakeAmmo_9M311_SAM.description>製造9M311 SAM導彈</MakeAmmo_9M311_SAM.description>
   <!-- EN: Making 9M311 SAM Missiles. -->
-  <MakeAmmo_9M311_SAM.jobString>TODO</MakeAmmo_9M311_SAM.jobString>
+  <MakeAmmo_9M311_SAM.jobString>製造9M311 SAM導彈中</MakeAmmo_9M311_SAM.jobString>
   
 </LanguageData>

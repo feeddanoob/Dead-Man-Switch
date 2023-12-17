@@ -2,17 +2,17 @@
 <LanguageData>
   
   <!-- EN: make things at automatroid constructor -->
-  <DMS_DoBillsMechConstructor.label>TODO</DMS_DoBillsMechConstructor.label>
+  <DMS_DoBillsMechConstructor.label>在自動機械人構造器進行工作</DMS_DoBillsMechConstructor.label>
   <!-- EN: working at -->
-  <DMS_DoBillsMechConstructor.gerund>TODO</DMS_DoBillsMechConstructor.gerund>
+  <DMS_DoBillsMechConstructor.gerund>工作中</DMS_DoBillsMechConstructor.gerund>
   <!-- EN: work at -->
-  <DMS_DoBillsMechConstructor.verb>TODO</DMS_DoBillsMechConstructor.verb>
+  <DMS_DoBillsMechConstructor.verb>工作</DMS_DoBillsMechConstructor.verb>
   
   <!-- EN: Operate Machine -->
-  <DMS_Operate.label>TODO</DMS_Operate.label>
+  <DMS_Operate.label>操作機器</DMS_Operate.label>
   <!-- EN: Operating at -->
-  <DMS_Operate.gerund>TODO</DMS_Operate.gerund>
+  <DMS_Operate.gerund>操作中</DMS_Operate.gerund>
   <!-- EN: Operate -->
-  <DMS_Operate.verb>TODO</DMS_Operate.verb>
+  <DMS_Operate.verb>操作</DMS_Operate.verb>
   
 </LanguageData>

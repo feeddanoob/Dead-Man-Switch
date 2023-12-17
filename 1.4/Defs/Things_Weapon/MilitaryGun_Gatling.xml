@@ -11,7 +11,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_M214</texPath>
-			<drawSize>1.75</drawSize>
+			<drawSize>1.25</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>10</Mass>
@@ -43,7 +43,7 @@
 				<range>25.9</range>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<burstShotCount>30</burstShotCount>
-				<soundCast>Shot_MachinePistol</soundCast>
+				<soundCast>Shot_Minigun</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>

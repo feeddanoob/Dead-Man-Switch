@@ -2,13 +2,13 @@
 <LanguageData>
   
   <!-- EN: infrasound barrage -->
-  <DMS_InfrasoundWave.label>TODO</DMS_InfrasoundWave.label>
+  <DMS_InfrasoundWave.label>次聲波屏障</DMS_InfrasoundWave.label>
   <!-- EN: This unit is casting a powerful infrasound waves to interfere with the sensory systems of all creatures within the range. -->
-  <DMS_InfrasoundWave.description>TODO</DMS_InfrasoundWave.description>
+  <DMS_InfrasoundWave.description>這個裝置會發出強大的次聲波，干擾範圍內所有生物的感官系統。</DMS_InfrasoundWave.description>
   
   <!-- EN: Infrasound -->
-  <DMS_InfrasoundWaveBuff.label>TODO</DMS_InfrasoundWaveBuff.label>
+  <DMS_InfrasoundWaveBuff.label>次聲波</DMS_InfrasoundWaveBuff.label>
   <!-- EN: Low-frequency sound waves that make living bodies uncomfortable and may cause vomiting and confusion -->
-  <DMS_InfrasoundWaveBuff.description>TODO</DMS_InfrasoundWaveBuff.description>
+  <DMS_InfrasoundWaveBuff.description>低頻聲波會使生物體感到不適，並可能導致嘔吐和意識模糊</DMS_InfrasoundWaveBuff.description>
   
 </LanguageData>

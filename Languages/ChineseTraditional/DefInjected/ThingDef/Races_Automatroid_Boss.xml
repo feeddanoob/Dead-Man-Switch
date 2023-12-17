@@ -4,12 +4,12 @@
   <!-- EN: tarbosaurus -->
   <DMS_Mech_Tarbosaurus.label>TODO</DMS_Mech_Tarbosaurus.label>
   <!-- EN: bipedal ultra heavy automatoid nickname "Armored Rex" for their distinctive body structure vaguely resembling carnotaurus. Once seen as the nextgen war-changer in the hayday of arm race back in the early spacer era, it sports numerous cutting-edge technology, the artificial muscle fibre that drove its oversized legs-first of its kind for automatoids in service. \n\nWhile it failed to eventually change the modern warfare as expected: it is oversized, its artificial muscle fibre is hard to upkeep, and, on top of that, railguns and beam weaponry aren't a reliable thing back in its days; \n\nAfter all those milenina, there still have been numerous manufacturers replicating such automatroids and adding their own improvements to its design. As such, traces of technology adopted in this automatroid can be seen in a great number of weaponry nowadays. -->
-  <DMS_Mech_Tarbosaurus.description>TODO</DMS_Mech_Tarbosaurus.description>
+  <DMS_Mech_Tarbosaurus.description>雙足超重型機器人，因其獨特的身體結構隱約類似於食肉恐龍而被暱稱為“裝甲霸王龍”。 它曾被視為太空人時代早期軍備競賽鼎盛時期的下一代戰爭改變者，它擁有眾多尖端技術，即驅動其超大腿部的人造肌肉纖維，這在使用中的自動機器人中尚屬首次。 \n\n雖然它最終沒能如預期那樣改變現代戰爭：它體型過大，人造肌肉纖維難以維護，而且軌道炮和光束武器在當時也不是可靠的東西； \n\n經過這麼多年的發展，仍然有許多製造商複製此類自動機器人，並在其設計中添加自己的改進。 因此，如今在許多武器裝備中都可以看到這種機器人所採用的技術痕跡。</DMS_Mech_Tarbosaurus.description>
   <!-- EN: left leg -->
-  <DMS_Mech_Tarbosaurus.tools.left_leg.label>TODO</DMS_Mech_Tarbosaurus.tools.left_leg.label>
+  <DMS_Mech_Tarbosaurus.tools.left_leg.label>左腿</DMS_Mech_Tarbosaurus.tools.left_leg.label>
   <!-- EN: right leg -->
-  <DMS_Mech_Tarbosaurus.tools.right_leg.label>TODO</DMS_Mech_Tarbosaurus.tools.right_leg.label>
+  <DMS_Mech_Tarbosaurus.tools.right_leg.label>右腿</DMS_Mech_Tarbosaurus.tools.right_leg.label>
   <!-- EN: head -->
-  <DMS_Mech_Tarbosaurus.tools.head.label>TODO</DMS_Mech_Tarbosaurus.tools.head.label>
+  <DMS_Mech_Tarbosaurus.tools.head.label>頭部</DMS_Mech_Tarbosaurus.tools.head.label>
   
 </LanguageData>

@@ -2,11 +2,11 @@
 <LanguageData>
   
   <!-- EN: 9M311 Treugol'nik Missile (SAM) -->
-  <Ammo_9M311_SAM.label>TODO</Ammo_9M311_SAM.label>
+  <Ammo_9M311_SAM.label>9M311 Treugol'nik 導彈 (SAM)</Ammo_9M311_SAM.label>
   <!-- EN: The 9M311 "Treugol'nik" is a Russian surface to air missile (SAM), is designed to engage in the visual visibility of aircraft and helicopters at speed up to 500m/s. -->
-  <Ammo_9M311_SAM.description>TODO</Ammo_9M311_SAM.description>
+  <Ammo_9M311_SAM.description>9M311 "Treugol'nik "是一種俄羅斯地對空導彈（SAM），設計用於以 500 米/秒的速度攻擊飛機和直升機。</Ammo_9M311_SAM.description>
   
   <!-- EN: 9M311 Treugol'nik Missile (SAM) -->
-  <Bullet_9M311_SAM.label>TODO</Bullet_9M311_SAM.label>
+  <Bullet_9M311_SAM.label>9M311 Treugol'nik 導彈 (SAM)</Bullet_9M311_SAM.label>
   
 </LanguageData>

@@ -2,25 +2,25 @@
 <LanguageData>
   
   <!-- EN: grow artifuscle -->
-  <DMS_Make_Artifuscle.label>TODO</DMS_Make_Artifuscle.label>
+  <DMS_Make_Artifuscle.label>栽培肌肉</DMS_Make_Artifuscle.label>
   <!-- EN: grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood -->
-  <DMS_Make_Artifuscle.description>TODO</DMS_Make_Artifuscle.description>
+  <DMS_Make_Artifuscle.description>栽培人造肌肉，用塑膠纖維做皮膚，用鎢鋼做骨骼，用金做神經絲，用中性胺做血液</DMS_Make_Artifuscle.description>
   <!-- EN: growing artifuscle. -->
-  <DMS_Make_Artifuscle.jobString>TODO</DMS_Make_Artifuscle.jobString>
+  <DMS_Make_Artifuscle.jobString>栽培肌肉中</DMS_Make_Artifuscle.jobString>
   
   <!-- EN: make ceramics -->
-  <DMS_Make_Ceramics.label>TODO</DMS_Make_Ceramics.label>
+  <DMS_Make_Ceramics.label>製作陶瓷</DMS_Make_Ceramics.label>
   <!-- EN: making ceramics. -->
-  <DMS_Make_Ceramics.description>TODO</DMS_Make_Ceramics.description>
+  <DMS_Make_Ceramics.description>製作陶瓷</DMS_Make_Ceramics.description>
   <!-- EN: making. -->
-  <DMS_Make_Ceramics.jobString>TODO</DMS_Make_Ceramics.jobString>
+  <DMS_Make_Ceramics.jobString>製作陶瓷中</DMS_Make_Ceramics.jobString>
   
   <!-- EN: make component -->
-  <DMS_Make_ComponentIndustrial.label>TODO</DMS_Make_ComponentIndustrial.label>
+  <DMS_Make_ComponentIndustrial.label>製作組件</DMS_Make_ComponentIndustrial.label>
   <!-- EN: Make a component from machinery printer, take longer time and resources. -->
-  <DMS_Make_ComponentIndustrial.description>TODO</DMS_Make_ComponentIndustrial.description>
+  <DMS_Make_ComponentIndustrial.description>用機器印表機製作組件，需要很長的時間和資源。</DMS_Make_ComponentIndustrial.description>
   <!-- EN: Making component. -->
-  <DMS_Make_ComponentIndustrial.jobString>TODO</DMS_Make_ComponentIndustrial.jobString>
+  <DMS_Make_ComponentIndustrial.jobString>製作組件中</DMS_Make_ComponentIndustrial.jobString>
   
   <!-- EN: make stamponent -->
   <DMS_Make_ComponentStamped.label>TODO</DMS_Make_ComponentStamped.label>
@@ -30,31 +30,31 @@
   <DMS_Make_ComponentStamped.jobString>TODO</DMS_Make_ComponentStamped.jobString>
   
   <!-- EN: make plasfiber -->
-  <DMS_Make_Plasfiber.label>TODO</DMS_Make_Plasfiber.label>
+  <DMS_Make_Plasfiber.label>製造塑膠纖維</DMS_Make_Plasfiber.label>
   <!-- EN: Synthetic plasfiber. -->
-  <DMS_Make_Plasfiber.description>TODO</DMS_Make_Plasfiber.description>
+  <DMS_Make_Plasfiber.description>合成塑膠纖維。</DMS_Make_Plasfiber.description>
   <!-- EN: Synthesising. -->
-  <DMS_Make_Plasfiber.jobString>TODO</DMS_Make_Plasfiber.jobString>
+  <DMS_Make_Plasfiber.jobString>合成中</DMS_Make_Plasfiber.jobString>
   
   <!-- EN: make polyester -->
-  <DMS_Make_Polyester.label>TODO</DMS_Make_Polyester.label>
+  <DMS_Make_Polyester.label>製造聚酯纖維</DMS_Make_Polyester.label>
   <!-- EN: Synthetic polyester fibers using chemfuel. -->
-  <DMS_Make_Polyester.description>TODO</DMS_Make_Polyester.description>
+  <DMS_Make_Polyester.description>使用化學燃料合成聚酯纖維。</DMS_Make_Polyester.description>
   <!-- EN: Synthesising. -->
-  <DMS_Make_Polyester.jobString>TODO</DMS_Make_Polyester.jobString>
+  <DMS_Make_Polyester.jobString>合成中</DMS_Make_Polyester.jobString>
   
   <!-- EN: make tungsteel -->
-  <DMS_Make_Tungsteel.label>TODO</DMS_Make_Tungsteel.label>
+  <DMS_Make_Tungsteel.label>製造鎢鋼</DMS_Make_Tungsteel.label>
   <!-- EN: sintering tungsteel. -->
-  <DMS_Make_Tungsteel.description>TODO</DMS_Make_Tungsteel.description>
+  <DMS_Make_Tungsteel.description>燒結鎢鋼。</DMS_Make_Tungsteel.description>
   <!-- EN: sintering. -->
-  <DMS_Make_Tungsteel.jobString>TODO</DMS_Make_Tungsteel.jobString>
+  <DMS_Make_Tungsteel.jobString>燒結中</DMS_Make_Tungsteel.jobString>
   
   <!-- EN: grow wetware computer -->
-  <DMS_Make_WetWare.label>TODO</DMS_Make_WetWare.label>
+  <DMS_Make_WetWare.label>栽培濕件計算機</DMS_Make_WetWare.label>
   <!-- EN: grow wetware computer, A high-precision computer that can be produced and used on a large scale. -->
-  <DMS_Make_WetWare.description>TODO</DMS_Make_WetWare.description>
+  <DMS_Make_WetWare.description>栽培濕件計算機，一種可以大規模生產和使用的高精度計算機。</DMS_Make_WetWare.description>
   <!-- EN: wetware computer. -->
-  <DMS_Make_WetWare.jobString>TODO</DMS_Make_WetWare.jobString>
+  <DMS_Make_WetWare.jobString>栽培濕件計算機中</DMS_Make_WetWare.jobString>
   
 </LanguageData>

@@ -322,20 +322,97 @@
     <description>An installed bionic spine.</description>
     <descriptionHyperlinks><ThingDef>DMS_ProstheticSpine</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>DMS_ProstheticSpine</spawnThingOnRemoved>
-    <hediffGivers>
-      <li Class="HediffGiver_Random">
-        <mtbDays>15</mtbDays>
-        <hediff>DMS_BionicShock</hediff>
-        <partsToAffect>
-          <li>Torso</li>
-        </partsToAffect>
-      </li>
-    </hediffGivers>
+    <levelIsQuantity>true</levelIsQuantity>
     <stages>
       <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+          <RestFallRateFactor>-0.15</RestFallRateFactor>
+        </statOffsets>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <mtbDays>60</mtbDays>
+            <hediff>DMS_BionicShock</hediff>
+            <partsToAffect>
+              <li>Torso</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <statOffsets>
+          <RestFallRateFactor>-0.25</RestFallRateFactor>
+        </statOffsets>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <mtbDays>50</mtbDays>
+            <hediff>DMS_BionicShock</hediff>
+            <partsToAffect>
+              <li>Torso</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <minSeverity>3</minSeverity>
+        <statOffsets>
+          <RestFallRateFactor>-0.35</RestFallRateFactor>
+        </statOffsets>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <mtbDays>40</mtbDays>
+            <hediff>DMS_BionicShock</hediff>
+            <partsToAffect>
+              <li>Torso</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <minSeverity>4</minSeverity>
+        <statOffsets>
+          <RestFallRateFactor>-0.45</RestFallRateFactor>
+        </statOffsets>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <mtbDays>35</mtbDays>
+            <hediff>DMS_BionicShock</hediff>
+            <partsToAffect>
+              <li>Torso</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <minSeverity>5</minSeverity>
         <statOffsets>
           <RestFallRateFactor>-0.5</RestFallRateFactor>
         </statOffsets>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <mtbDays>25</mtbDays>
+            <hediff>DMS_BionicShock</hediff>
+            <partsToAffect>
+              <li>Torso</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <minSeverity>6</minSeverity>
+        <statOffsets>
+          <RestFallRateFactor>-0.6</RestFallRateFactor>
+        </statOffsets>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <mtbDays>15</mtbDays>
+            <hediff>DMS_BionicShock</hediff>
+            <partsToAffect>
+              <li>Torso</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
       </li>
     </stages>
     <addedPartProps>
@@ -365,41 +442,24 @@
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <statBases>
+      <MaxInstallCount>6</MaxInstallCount>
       <Mass>2</Mass>
     </statBases>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>DMS_ProstheticSpine</hediffDef>
+        <bodyPart>Spine</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-    <defName>DMS_InstallProstheticSpine</defName>
-    <label>install bio-mechanical neurochord</label>
-    <description>Install a bio-mechanical neurochord.</description>
-    <descriptionHyperlinks>
-      <ThingDef>DMS_ProstheticSpine</ThingDef>
-      <HediffDef>DMS_ProstheticSpine</HediffDef>
-    </descriptionHyperlinks>
-    <jobString>Installing bio-mechanical neurochord.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>DMS_ProstheticSpine</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>DMS_ProstheticSpine</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Spine</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>DMS_ProstheticSpine</addsHediff>
-  </RecipeDef>
-
-<!-- 感官過濾芯片 -->
+  <!-- 感官過濾芯片 -->
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>DMS_SensoryFilter</defName>
@@ -444,7 +504,7 @@
     <comps>
       <li Class="HediffCompProperties_ReactOnDamage">
         <damageDefIncoming>EMP</damageDefIncoming>
-        <createHediff>BrainShock</createHediff>
+        <createHediff>DMS_FilterShock</createHediff>
       </li>
 		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">            <!-- 部件血量加多少% -->
 			<scaleAdjustment>0.20</scaleAdjustment>
@@ -510,7 +570,7 @@
     <addsHediff>DMS_FilterShock</addsHediff>
   </RecipeDef>
 
-<!-- 營養泵送接口 -->
+  <!-- 營養泵送接口 -->
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DMS_NutrientPort</defName>
@@ -525,6 +585,13 @@
           <MaxNutrition>2</MaxNutrition>   
         </statOffsets>
         <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+        <hungerRateFactor>-0.5</hungerRateFactor>
+        <capMods>
+          <li>
+            <capacity>Eating</capacity>
+            <postFactor>0.25</postFactor>
+          </li>
+        </capMods>
       </li>
     </stages>
     <addedPartProps>
@@ -532,11 +599,11 @@
       <partEfficiency>0.2</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
-	<comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
-		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">
-			<scaleAdjustment>0.5</scaleAdjustment>
-		</li>
-	</comps>
+	  <comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
+      <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">
+        <scaleAdjustment>0.5</scaleAdjustment>
+      </li>
+	  </comps>
   </HediffDef>
 
   <ThingDef ParentName="DMS_BioMechBionicBase">

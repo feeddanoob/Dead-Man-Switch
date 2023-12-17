@@ -2,30 +2,30 @@
 <LanguageData>
   
   <!-- EN: 由於在軍校中優異的表現 [PAWN_nameDef] 從小就接受訓練成為了一名預備役軍官. -->
-  <DMS_OfficerChild01.baseDesc>由於在軍校中優異的表現 [PAWN_nameDef] 從小就接受訓練成為了一名預備役軍官</DMS_OfficerChild01.baseDesc>
+  <DMS_OfficerChild01.baseDesc>由於在軍校中優異的表現 [PAWN_nameDef] 從小就接受訓練成為了一名預備役軍官。</DMS_OfficerChild01.baseDesc>
   <!-- EN: 預備役軍官 -->
-  <DMS_OfficerChild01.title>TODO</DMS_OfficerChild01.title>
+  <DMS_OfficerChild01.title>預備役軍官</DMS_OfficerChild01.title>
   <!-- EN: 預備役軍官 -->
-  <DMS_OfficerChild01.titleFemale>TODO</DMS_OfficerChild01.titleFemale>
+  <DMS_OfficerChild01.titleFemale>預備役軍官</DMS_OfficerChild01.titleFemale>
   <!-- EN: 預備役 -->
-  <DMS_OfficerChild01.titleShort>TODO</DMS_OfficerChild01.titleShort>
+  <DMS_OfficerChild01.titleShort>預備役</DMS_OfficerChild01.titleShort>
   <!-- EN: 預備役 -->
-  <DMS_OfficerChild01.titleShortFemale>TODO</DMS_OfficerChild01.titleShortFemale>
+  <DMS_OfficerChild01.titleShortFemale>預備役</DMS_OfficerChild01.titleShortFemale>
   
   <!-- EN: [PAWN_nameDef]在一個充滿動亂的殖民星球上長大，而他自小就頻藉著靈活的身手穿梭於充滿電磁干擾的戰場前線成為一名傳令兵.在他與其他無數傳令兵們的犧牲與奉獻下戰爭最終得以結束,而他也得以在之後的日子裡接受正常教育. -->
-  <DMS_OfficerChild02.baseDesc>[PAWN_nameDef]在一個充滿動亂的殖民星球上長大，而他自小就頻藉著靈活的身手穿梭於充滿電磁干擾的戰場前線成為一名傳令兵.在他與其他無數傳令兵們的犧牲與奉獻下戰爭最終得以結束,而他也得以在之後的日子裡接受正常教育.</DMS_OfficerChild02.baseDesc>
+  <DMS_OfficerChild02.baseDesc>[PAWN_nameDef]在一個充滿動亂的殖民星球上長大，而他自小就頻藉著靈活的身手穿梭於充滿電磁干擾的戰場前線成為一名傳令兵.在他與其他無數傳令兵們的犧牲與奉獻下戰爭最終得以結束,而他也得以在之後的日子裡接受正常教育。</DMS_OfficerChild02.baseDesc>
   <!-- EN: honored orderly -->
-  <DMS_OfficerChild02.title>TODO</DMS_OfficerChild02.title>
+  <DMS_OfficerChild02.title>受尊敬的傳令兵</DMS_OfficerChild02.title>
   <!-- EN: orderly -->
-  <DMS_OfficerChild02.titleShort>TODO</DMS_OfficerChild02.titleShort>
+  <DMS_OfficerChild02.titleShort>傳令兵</DMS_OfficerChild02.titleShort>
   
   <!-- EN: [PAWN_nameDef]的雙親在他還有記憶之時便在一場宏大的軍事行動中失蹤,而他們此前的貢獻令[PAWN_nameDef]能夠接受全款支持的高級教育. -->
-  <DMS_OfficerChild03.baseDesc>[PAWN_nameDef]的雙親在他還有記憶之時便在一場宏大的軍事行動中失蹤,而他們此前的貢獻令[PAWN_nameDef]能夠接受全款支持的高級教育.</DMS_OfficerChild03.baseDesc>
+  <DMS_OfficerChild03.baseDesc>[PAWN_nameDef]的雙親在他還有記憶之時便在一場宏大的軍事行動中失蹤,而他們此前的貢獻令[PAWN_nameDef]能夠接受全款支持的高級教育。</DMS_OfficerChild03.baseDesc>
   <!-- EN: son of martyrs -->
-  <DMS_OfficerChild03.title>TODO</DMS_OfficerChild03.title>
+  <DMS_OfficerChild03.title>烈士之子</DMS_OfficerChild03.title>
   <!-- EN: daughter of martyrs -->
-  <DMS_OfficerChild03.titleFemale>TODO</DMS_OfficerChild03.titleFemale>
+  <DMS_OfficerChild03.titleFemale>烈士之女</DMS_OfficerChild03.titleFemale>
   <!-- EN: martyrs child -->
-  <DMS_OfficerChild03.titleShort>TODO</DMS_OfficerChild03.titleShort>
+  <DMS_OfficerChild03.titleShort>烈士子女</DMS_OfficerChild03.titleShort>
   
 </LanguageData>

@@ -31,9 +31,11 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>DMS_MechWeaponLight</li>
           <li>A_MG_Light</li>
           <li>ElephantGun</li>
           <li>A_DMR_LongRifle</li>
+          <li>SniperRifle</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -130,6 +132,9 @@
     <weaponTags>
       <li>A_SR_LongRifle</li>
     </weaponTags>
+    <abilities>
+      <li>DMS_Camouflage</li>
+    </abilities>
   </PawnKindDef>
 
   <!-- DMS_Mech_Pioneer 火槍手先鋒型，可以用於狩獵 -->
@@ -187,6 +192,9 @@
     <weaponTags>
       <li>A_AR_LongRifle</li>
     </weaponTags>
+    <abilities>
+      <li>PioneerSpotter</li>
+    </abilities>
   </PawnKindDef>
 
   <!-- DMS_Mech_Sniper 火槍手狙擊型 -->

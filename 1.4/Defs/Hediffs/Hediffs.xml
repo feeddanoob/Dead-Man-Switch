@@ -320,7 +320,7 @@
     <defName>DMS_FilterShock</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>emotional misalignment</label>
-    <description>a psychological syndrome after removed the sensory filter, known as the "price of pawn", will have some mental break but it won't last long.</description>
+    <description>a psychological syndrome caused by sensory filter shutdown, known as the "price of pawn", will have some mental break but it won't last long.</description>
     <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
     <minSeverity>0.001</minSeverity>
     <isBad>true</isBad>

@@ -4,120 +4,120 @@
   <!-- EN: artificial muscle -->
   <DMS_Artifuscle.label>人工肌腱</DMS_Artifuscle.label>
   <!-- EN: artifuscle is a type of prosthetic material made by genetically engineered sauromorph muscle bundles, and soon... Arms dealers realized the future of mechanical-biological hybrid weapons. -->
-  <DMS_Artifuscle.description>TODO</DMS_Artifuscle.description>
+  <DMS_Artifuscle.description>人工肌腱是一種由基因工程改造的紅腹肌肌肉束製成的義肢材料，很快... 軍火商們意識到了機械生物混合武器的未來。</DMS_Artifuscle.description>
   
   <!-- EN: automatroid basis -->
   <DMS_Automatroid.label>機兵基礎</DMS_Automatroid.label>
   <!-- EN: because they are not just a weapon but weapon that is capable to eliminate target by themselves, these robots was such a topic and own a name to them "automatroid" \n\n Such a morally outrageous weapon should never acceptable at normal, but since it is widely used by nations during ww3 so it has become a mundane part of the battlefield.. -->
-  <DMS_Automatroid.description>TODO</DMS_Automatroid.description>
+  <DMS_Automatroid.description>因為它們不僅僅是一種武器，而且是一種能夠自己消滅目標的武器，所以這些機器人就是這樣一個話題，並被稱為“機器人”\n\n這種道德上令人髮指的武器在正常情況下是不應該被接受的，但由於它在第三次世界大戰期間被各國廣泛使用，因此它已成為戰場上的一個普通組成部分..</DMS_Automatroid.description>
   
   <!-- EN: battle friends -->
   <DMS_BattleFrame.label>戰鬥夥伴</DMS_BattleFrame.label>
   <!-- EN: Due to the ages, we have been unable to know the correct name supposed to be "battle frames" or "battle friends", but anyway these are type of automatic exoskeleton that can be a frame of equipment or friend in combat. -->
-  <DMS_BattleFrame.description>TODO</DMS_BattleFrame.description>
+  <DMS_BattleFrame.description>由於年代久遠，我們一直無法知道正確的名稱，應該是 "戰鬥框架 "或 "戰鬥夥伴"，但無論如何，這些都是一種自動外骨骼，可以作為裝備框架或戰鬥中的夥伴。</DMS_BattleFrame.description>
   
   <!-- EN: Biosynthetic -->
   <DMS_Bionics.label>生物機械學</DMS_Bionics.label>
   <!-- EN: with the advance of robotic and bionic engineering, making bionic with biological-mechanical hybrid technology has became possible. -->
-  <DMS_Bionics.description>TODO</DMS_Bionics.description>
+  <DMS_Bionics.description>隨著機器人和仿生工程技術的發展，利用生物-機械混合技術製造仿生機器人已成為可能。</DMS_Bionics.description>
   
   <!-- EN: Dead Man's Switch -->
   <DMS_DeadMansSwitch.label>失能機關</DMS_DeadMansSwitch.label>
   <!-- EN: The Dead Man's Switch is a mechanical safety mechanism intended to self-terminate device active when the operator becomes incapacitated. \n\n Before human seek into space, they discovered this machanism will eventually made artificial intelligence understand...the meaning of death...\n this discover lead humanity to new era of history....\n\n an era of those fifth level ai. -->
-  <DMS_DeadMansSwitch.description>TODO</DMS_DeadMansSwitch.description>
+  <DMS_DeadMansSwitch.description>失能機關是一種機械安全機制，旨在在操作員喪失工作能力時自動終止處於活動狀態的設備。\n\n在人類探索太空之前，他們發現這種機制最終會讓人工智慧理解...死亡的意義...\n 這一發現帶領人類進入歷史的新紀元...\n\n 一個五級人工智慧的時代。</DMS_DeadMansSwitch.description>
   <!-- EN: Some of the advanced automatroid required specific part which is not manufactured in gravity environment.\n\n But the colonial fleet told us that we can feel free to attract and destroy their out of command automatroids to obtain those parts. -->
-  <DMS_DeadMansSwitch.discoveredLetterText>TODO</DMS_DeadMansSwitch.discoveredLetterText>
+  <DMS_DeadMansSwitch.discoveredLetterText>有些先進的自動機器人需要特定的部件 而這些部件在重力環境下是無法製造的。\n\n 但殖民艦隊告訴我們，可以隨意吸引並摧毀失控的自動機器人，以獲取這些部件。</DMS_DeadMansSwitch.discoveredLetterText>
   <!-- EN: About: Advanced parts -->
   <DMS_DeadMansSwitch.discoveredLetterTitle>關於特殊零件</DMS_DeadMansSwitch.discoveredLetterTitle>
   
   <!-- EN: defence equipment -->
   <DMS_EquipmentAdvanced.label>開拓裝備</DMS_EquipmentAdvanced.label>
   <!-- EN: equipment designed for human and automatroid, mainly for colony defence and riot purpose. -->
-  <DMS_EquipmentAdvanced.description>TODO</DMS_EquipmentAdvanced.description>
+  <DMS_EquipmentAdvanced.description>為人類和自動機器人設計的裝備，主要用於殖民地防禦和防暴。</DMS_EquipmentAdvanced.description>
   
   <!-- EN: pioneer equipment -->
   <DMS_EquipmentBasis.label>警用裝備</DMS_EquipmentBasis.label>
   <!-- EN: uniform and equipment designed for human, mainly for colonization purpose include for survival specialist, dropcraft crew and Biotoxicity Handling Squad. -->
-  <DMS_EquipmentBasis.description>TODO</DMS_EquipmentBasis.description>
+  <DMS_EquipmentBasis.description>為人類設計的制服和裝備，主要用於殖民目的，包括生存專家、空投機組人員和生物毒性處理小隊。</DMS_EquipmentBasis.description>
   
   <!-- EN: military equipment -->
   <DMS_EquipmentElite.label>軍用裝備</DMS_EquipmentElite.label>
   <!-- EN: equipment designed for automatroid which too heavy to operated by humankind, mainly for military purpose. -->
-  <DMS_EquipmentElite.description>TODO</DMS_EquipmentElite.description>
+  <DMS_EquipmentElite.description>為機器人設計的設備，這種設備太重，人類無法操作，主要用於軍事目的。</DMS_EquipmentElite.description>
   
   <!-- EN: heavy weaponry -->
   <DMS_EquipmentHeavy.label>重型裝備</DMS_EquipmentHeavy.label>
   <!-- EN: heavy equipment designed for automatroid which even too heavy to be operated by some small automatroid, mainly for military purpose. -->
-  <DMS_EquipmentHeavy.description>TODO</DMS_EquipmentHeavy.description>
+  <DMS_EquipmentHeavy.description>為自動機設計的重型設備，這種設備甚至太重，一些小型自動機器人無法操作，主要用於軍事目的。</DMS_EquipmentHeavy.description>
   
   <!-- EN: heavy automatroid -->
   <DMS_HeavyAutomatroid.label>重型機兵</DMS_HeavyAutomatroid.label>
   <!-- EN: These heavy machines were prepared for a full-scale war among mankind, but forturnatelly these scale of war doesn't often. -->
-  <DMS_HeavyAutomatroid.description>TODO</DMS_HeavyAutomatroid.description>
+  <DMS_HeavyAutomatroid.description>這些重型機器為人類之間的全面戰爭做好了準備，但幸運的是，這種規模的戰爭並不經常發生。</DMS_HeavyAutomatroid.description>
   
   <!-- EN: humanoid engineering -->
   <DMS_HumanoidEngineering.label>人機工程學</DMS_HumanoidEngineering.label>
   <!-- EN: during war, automatroid with human shapes are proven to be a good design where the ergonomics and psychological suggestion are work on them. -->
-  <DMS_HumanoidEngineering.description>TODO</DMS_HumanoidEngineering.description>
+  <DMS_HumanoidEngineering.description>在戰爭期間，具有人類外形的自動機器人被證明是一種很好的設計，它符合人體工學和心理暗示。</DMS_HumanoidEngineering.description>
   
   <!-- EN: Hybird Engineering -->
   <DMS_Hybird.label>混合機械工程</DMS_Hybird.label>
   <!-- EN: The establishment of biological-mechanical hybrid technology was during World War three, where mercenary who was soldiers in countries whrere involved in the war established an armed state with military personnel,using drone and hybrid prosthetic helping the retired wounded return to battle. \n\n And soon, countries military realized the influence of bio-mechanical hybrids on modern warfare and rushed to armed in their armies. -->
-  <DMS_Hybird.description>TODO</DMS_Hybird.description>
+  <DMS_Hybird.description>生物機械混合技術的建立是在第三次世界大戰期間，參戰國家的傭兵建立了一個由軍事人員組成的武裝國家，使用無人機和合成義肢幫助退役傷員重返戰場。 \n\n很快，各國軍方意識到生物機械混合體對現代戰爭的影響，並紛紛在軍隊中武裝起來。</DMS_Hybird.description>
   
   <!-- EN: in short hypothesis -->
   <DMS_Hypothesis.label>簡言之假說</DMS_Hypothesis.label>
   <!-- EN: after the discover of The Dead man's switch, yánzhī Jiǎn an AI algorithm engineer proposed a hypothetical solution to the halting problem...\n\n And around this conjecture, we seem to be getting closer to the so-called omnipotent machinery. -->
-  <DMS_Hypothesis.description>TODO</DMS_Hypothesis.description>
+  <DMS_Hypothesis.description>在發現失能機關之後，AI算法工程師yánzhi jiang提出了一個針對停機問題的假設解決方案...\n\n而圍繞這個猜想，我們似乎離所謂的萬能機器越來越近了。</DMS_Hypothesis.description>
   
   <!-- EN: Legion -->
   <DMS_Legion.label>軍團機兵</DMS_Legion.label>
   <!-- EN: Series of automatroid designed for large-scale warfare. Most of them have only simple weapon operating systems, but their clear division of labor and cheap production costs make them the most impressive combat weapons in terms of service scale. -->
-  <DMS_Legion.description>TODO</DMS_Legion.description>
+  <DMS_Legion.description>為大規模戰爭而設計的一系列自動機器人。它們大多只有簡單的武器操作系統，但其明確的分工和低廉的生產成本使其成為服役規模方面最令人印象深刻的作戰武器。</DMS_Legion.description>
   
   <!-- EN: material engineering -->
   <DMS_Material.label>先進材料學</DMS_Material.label>
   <!-- EN: "A perfect material can be calculate through scientific methods" this is one of the breakthough mankind are ever achived. -->
-  <DMS_Material.description>TODO</DMS_Material.description>
+  <DMS_Material.description>"透過科學方法可以計算出完美的材料"，這是人類有史以來取得的重大突破之一。</DMS_Material.description>
   
   <!-- EN: mecha gear -->
   <DMS_MechBasis.label>機兵齒輪</DMS_MechBasis.label>
   <!-- EN: "mecha gear"is a tern that cover those near future machining design pattern, was originally satirize exaggerated designs that do not correspond to reality. \n\n However, advanced materials that have been invented and improved over millennia have become the basis for bringing these designs to life. -->
-  <DMS_MechBasis.description>TODO</DMS_MechBasis.description>
+  <DMS_MechBasis.description>“機兵齒輪”是一個涵蓋近期機械加工設計模式的術語，最初是諷刺不符合現實的誇張設計。\n\n 然而，經過數千年的發明和改進，先進的材料已經成為將這些設計付諸實踐的基礎。</DMS_MechBasis.description>
   
   <!-- EN: cluster transceiver -->
   <DMS_Mechlink.label>集群收發</DMS_Mechlink.label>
   <!-- EN: Cluster transceivers are a way humans have developed to control robots in war, and of course it's not very comfortable for robots that generate self-awareness through DMS. -->
-  <DMS_Mechlink.description>TODO</DMS_Mechlink.description>
+  <DMS_Mechlink.description>集群收發器是人類開發的一種在戰爭中控制機器人的方式，當然，對於通過 DMS 產生自我意識的機器人來說，這種方式並不是很舒服。</DMS_Mechlink.description>
   
   <!-- EN: organ surgery -->
   <DMS_OrganSurgery.label>器官手術</DMS_OrganSurgery.label>
   <!-- EN: Humanity gave up a lot in that long war... even if it can be made up later, there is something lost forever. -->
-  <DMS_OrganSurgery.description>TODO</DMS_OrganSurgery.description>
+  <DMS_OrganSurgery.description>人類在那場漫長的戰爭中放棄了很多...即使以後可以彌補，也有一些東西永遠失去了。</DMS_OrganSurgery.description>
   
   <!-- EN: artificial fiber -->
   <DMS_Plasfiber.label>人工纖維</DMS_Plasfiber.label>
   <!-- EN: unlock the production of artificial fabrics,these man-made fabric has their pros and cons. -->
-  <DMS_Plasfiber.description>TODO</DMS_Plasfiber.description>
+  <DMS_Plasfiber.description>解鎖人工纖維的生產，這些人造織物各有利弊。</DMS_Plasfiber.description>
   
   <!-- EN: neural prosthetic -->
   <DMS_Prosthetic.label>神經機械仿生</DMS_Prosthetic.label>
   <!-- EN: Neural prosthetic are designed for disabled soldiers. It is durable and the need for adaptation training is almost negligible. However, due to the consideration of durability and mass production, its work efficiency is not as good as the original one. -->
-  <DMS_Prosthetic.description>TODO</DMS_Prosthetic.description>
+  <DMS_Prosthetic.description>神經義肢是專為傷殘軍人設計的。它經久耐用，對適應訓練的需求幾乎可以忽略不計。不過，出於耐用性和大規模生產的考慮，它的工作效率不如原來的肢體。</DMS_Prosthetic.description>
   
   <!-- EN: Peacekeepers -->
   <DMS_Ronin.label>和平維護者</DMS_Ronin.label>
   <!-- EN: Series of automatroid designed for urban warfare, characterized by its disk-shaped sensor head and heavy armor. Often used in security warfare, riot control and peacekeeping operation. -->
-  <DMS_Ronin.description>TODO</DMS_Ronin.description>
+  <DMS_Ronin.description>專為城市戰設計的自動機器人系列，其特點是具有圓盤形感測器頭和重型裝甲。常用於安保戰、防暴和維和行動。</DMS_Ronin.description>
   
   <!-- EN: Next-Gen weaponry(WIP) -->
   <DMS_Synthroid.label>次世代兵器</DMS_Synthroid.label>
   <!-- EN: the weapon development around mechanical-biological hybrid continued until the Fourth World War, and it reach to the height a man can thought before ...synthetic humanoid. -->
-  <DMS_Synthroid.description>TODO</DMS_Synthroid.description>
+  <DMS_Synthroid.description>圍繞機械-生物混合的武器開發一直持續到第四次世界大戰，它達到了人類以前難以想像的高度...合成人形機器人。</DMS_Synthroid.description>
   
   <!-- EN: drone basis -->
   <DMS_UAVBasis.label>無人機基礎</DMS_UAVBasis.label>
   <!-- EN: Use simple control logic and signal transceivers to unlock the construction of simple mechanical units. -->
-  <DMS_UAVBasis.description>TODO</DMS_UAVBasis.description>
+  <DMS_UAVBasis.description>使用簡單的控制邏輯和信號收發器來解鎖簡易機械裝置的單元。</DMS_UAVBasis.description>
   
 </LanguageData>

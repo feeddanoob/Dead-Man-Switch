@@ -272,7 +272,7 @@
     </weaponTags>   
     <weaponMoney>3000~9999</weaponMoney>
     <abilities>
-        <li>Smokepop</li>
+        <li>SmokepopMech</li>
     </abilities>
   </PawnKindDef>
 </Defs>
