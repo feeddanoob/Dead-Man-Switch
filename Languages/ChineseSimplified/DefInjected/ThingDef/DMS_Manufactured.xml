@@ -2,7 +2,7 @@
 <LanguageData>
   
   <!-- EN: artifuscle -->
-  <Artifuscle.label>TODO</Artifuscle.label>
+  <Artifuscle.label>人工肌肉</Artifuscle.label>
   <!-- EN: a type of prosthetic material made by genetically engineered sauromorph muscle bundles -->
   <Artifuscle.description>一种由基因工程蜥形肌束制成的假体材料</Artifuscle.description>
   <!-- EN: By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology. -->
@@ -29,7 +29,7 @@
   <ComponentFireControl.comps.CompStudiable.completedLetterTitle>已研究 {PARENT_label} ： {RESEARCH} 已解锁</ComponentFireControl.comps.CompStudiable.completedLetterTitle>
   
   <!-- EN: stamponent -->
-  <ComponentStamped.label>TODO</ComponentStamped.label>
+  <ComponentStamped.label>冲压机件</ComponentStamped.label>
   <!-- EN: Hydraulic integrally formed component. Used in products that require mass production on the assembly line. -->
   <ComponentStamped.description>液压一体成型部件。用于需要在装配线上大规模生产的产品。</ComponentStamped.description>
   

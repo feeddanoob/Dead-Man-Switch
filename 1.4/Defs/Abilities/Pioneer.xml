@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
  <!-- CE報點(待修復) -->
- <AbilityDef>
+ <AbilityDef MayRequire="ceteam.combatextended">
     <defName>DMS_PioneerSpotter</defName>
     <label>artillery spotter</label>
     <description>directing artillery and mortar fire support onto a target.</description>
@@ -18,11 +18,11 @@
 		<canTargetLocations>true</canTargetLocations>
 	  </targetParams>
     </verbProperties>
-    <comps>
+    <!-- <comps>
       <li Class="CompProperties_AbilityLaunchProjectile">
         <projectileDef>Bullet_Dummy</projectileDef>
       </li>
-    </comps>
+    </comps> -->
   </AbilityDef>
 
  <!-- 隱身 -->

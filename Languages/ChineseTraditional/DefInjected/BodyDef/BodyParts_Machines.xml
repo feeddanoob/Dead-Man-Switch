@@ -69,7 +69,7 @@
   <DMS_Bipedal.corePart.parts.secondary_battery_array.customLabel>副電池組</DMS_Bipedal.corePart.parts.secondary_battery_array.customLabel>
   
   <!-- EN: caterpillar -->
-  <DMS_Caterpillar.label>履帶</DMS_Caterpillar.label>
+  <DMS_Caterpillar.label>履帶平台</DMS_Caterpillar.label>
   <!-- EN: chassis -->
   <DMS_Caterpillar.corePart.customLabel>車架</DMS_Caterpillar.corePart.customLabel>
   <!-- EN: wetware computer core -->
@@ -102,7 +102,7 @@
   <DMS_Caterpillar.corePart.parts.right_leg.parts.right_wheel.customLabel>右輪</DMS_Caterpillar.corePart.parts.right_leg.parts.right_wheel.customLabel>
   
   <!-- EN: vertidrone -->
-  <DMS_Chop.label>垂直無人機</DMS_Chop.label>
+  <DMS_Chop.label>四軸飛行機體</DMS_Chop.label>
   <!-- EN: hover system -->
   <DMS_Chop.corePart.parts.hover_system-0.customLabel>懸浮系統</DMS_Chop.corePart.parts.hover_system-0.customLabel>
   <!-- EN: hover system -->
@@ -117,7 +117,7 @@
   <DMS_Chop.corePart.parts.main_battery.customLabel>主電池</DMS_Chop.corePart.parts.main_battery.customLabel>
   
   <!-- EN: quadruped -->
-  <DMS_Hound.label>四足</DMS_Hound.label>
+  <DMS_Hound.label>四足機體</DMS_Hound.label>
   <!-- EN: central sight sensor -->
   <DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>視覺感測器</DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
   <!-- EN: infrared sensor -->
@@ -158,7 +158,7 @@
   <DMS_Hound.corePart.parts.right_back_leg.parts.right_back_foot.customLabel>右後腳</DMS_Hound.corePart.parts.right_back_leg.parts.right_back_foot.customLabel>
   
   <!-- EN: erectus soldat -->
-  <DMS_Humanoid_Soldat.label>TODO</DMS_Humanoid_Soldat.label>
+  <DMS_Humanoid_Soldat.label>士兵型機體</DMS_Humanoid_Soldat.label>
   <!-- EN: central sight sensor -->
   <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>視線感測器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
   <!-- EN: left sight sensor -->
@@ -215,7 +215,7 @@
   <DMS_Humanoid_Soldat.corePart.parts.secondary_battery.customLabel>副電池</DMS_Humanoid_Soldat.corePart.parts.secondary_battery.customLabel>
   
   <!-- EN: erectus arquebusier -->
-  <DMS_Humanoid_TypeA.label>TODO</DMS_Humanoid_TypeA.label>
+  <DMS_Humanoid_TypeA.label>火槍手機體</DMS_Humanoid_TypeA.label>
   <!-- EN: central sight sensor -->
   <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.central_sight_sensor.customLabel>視覺感測器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.central_sight_sensor.customLabel>
   <!-- EN: left infrared sensor -->
@@ -276,7 +276,7 @@
   <DMS_Humanoid_TypeA.corePart.parts.secondary_battery.customLabel>副電池</DMS_Humanoid_TypeA.corePart.parts.secondary_battery.customLabel>
   
   <!-- EN: erectus ronin -->
-  <DMS_Humanoid_TypeB.label>TODO</DMS_Humanoid_TypeB.label>
+  <DMS_Humanoid_TypeB.label>浪人機體</DMS_Humanoid_TypeB.label>
   <!-- EN: left shoulder -->
   <DMS_Humanoid_TypeB.corePart.parts.left_shoulder.customLabel>左肩</DMS_Humanoid_TypeB.corePart.parts.left_shoulder.customLabel>
   <!-- EN: left arm -->

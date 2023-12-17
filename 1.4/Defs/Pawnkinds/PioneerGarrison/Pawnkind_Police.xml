@@ -22,14 +22,15 @@
     </weaponTags>
     <weaponMoney>250~400</weaponMoney>
     <techHediffsChance>0.04</techHediffsChance>
-    <techHediffsMoney>200~700</techHediffsMoney>
+    <techHediffsMoney>1200~1700</techHediffsMoney>
     <techHediffsTags>
-      <li>Poor</li>
+      <li>DMS_BM_Bionic</li>
       <li>Simple</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
     <initialWillRange>1~3</initialWillRange>
     <initialResistanceRange>15~24</initialResistanceRange>
+    <minTitleRequired MayRequire="Royalty">DMS_Reservist</minTitleRequired>
   </PawnKindDef>
 
 <!-- 配槍巡警-->

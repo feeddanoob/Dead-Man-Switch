@@ -202,7 +202,7 @@
   <RecipeDef>
     <defName>DMS_Make_ComponentStamped</defName>
     <label>make stamponent</label>
-    <description>todo</description>
+    <description>make stamponent</description>
     <jobString>stamping compoments.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>

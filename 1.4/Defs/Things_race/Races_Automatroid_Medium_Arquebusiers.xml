@@ -193,7 +193,7 @@
       <li>A_AR_LongRifle</li>
     </weaponTags>
     <abilities>
-      <li>DMS_PioneerSpotter</li>
+      <li MayRequire="ceteam.combatextended">DMS_PioneerSpotter</li>
     </abilities>
   </PawnKindDef>
 

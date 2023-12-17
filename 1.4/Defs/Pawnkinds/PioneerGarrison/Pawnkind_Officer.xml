@@ -33,7 +33,7 @@
     <gearHealthRange>1~2</gearHealthRange>
     <apparelMoney>400~600</apparelMoney>
     <weaponMoney>250~400</weaponMoney>
-    <techHediffsChance>0.4</techHediffsChance>
+    <techHediffsChance>0.8</techHediffsChance>
     <techHediffsMoney>2000~7000</techHediffsMoney>
     <weaponTags Inherit="False">
 			<li>A_RC_Pistol</li>
