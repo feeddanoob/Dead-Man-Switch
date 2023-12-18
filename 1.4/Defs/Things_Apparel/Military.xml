@@ -192,6 +192,7 @@
 			<wornGraphicPath>Things/Apparel/SoftKepi/headgear</wornGraphicPath>
 			<tags>
 				<li>DMS_Tactical</li>
+				<li>DMS_Kepi</li>
 			</tags>
 		</apparel>
 	</ThingDef>
@@ -222,7 +223,7 @@
 		</equippedStatOffsets>
 		<apparel>
 			<tags>
-				<li>Beret</li>
+				<li>DMS_Beret</li>
 			</tags>
 			<wornGraphicPath>Things/Apparel/Beret/headgear</wornGraphicPath>
 		</apparel>

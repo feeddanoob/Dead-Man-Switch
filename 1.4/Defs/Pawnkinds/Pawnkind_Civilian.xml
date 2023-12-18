@@ -33,7 +33,7 @@
     <weaponMoney>65~250</weaponMoney>
     <apparelMoney>200~400</apparelMoney>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-    <techHediffsChance>0.06</techHediffsChance>
+    <techHediffsChance>0.06</techHediffsChance> 
     <techHediffsMoney>50~600</techHediffsMoney>
     <techHediffsTags>
       <li>Poor</li>
@@ -41,7 +41,15 @@
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
     <initialWillRange>10~15</initialWillRange>
-    <initialResistanceRange>10~17</initialResistanceRange>
+    <initialResistanceRange>10~17</initialResistanceRange>   
+    <requiredWorkTags> <!-- Must be capable of labor, as this pawn kind is used in laborer quests. -->
+      <li>ManualDumb</li>
+      <li>ManualSkilled</li>
+      <li>Cleaning</li>
+      <li>Hauling</li>
+      <li>Mining</li>
+      <li>Firefighting</li>
+    </requiredWorkTags>
     <specificApparelRequirements>
       <li>
         <colorGenerator Class="ColorGenerator_Options">

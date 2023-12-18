@@ -149,6 +149,22 @@
         <buildingTags><li>Biotech</li></buildingTags>
       </li>
     </bedroomRequirements>
+    <requiredApparel Inherit="False">
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>DMS_Kepi</li>
+        </requiredTags>
+        <allowedTags>
+          <li>IndustrialMilitaryBasic</li>
+          <li>IndustrialAdvanced</li>
+          <li>DMS_Soldier</li>
+        </allowedTags>
+      </li>
+    </requiredApparel>
   </RoyalTitleDef>
 
   <RoyalTitleDef ParentName="BaseDMSTitlePlusWithRoomReq">
@@ -158,6 +174,9 @@
     <seniority>200</seniority>
     <favorCost>14</favorCost>
     <permitPointsAwarded>1</permitPointsAwarded>
+    <rewards>
+      <Neurocomputer>2</Neurocomputer>
+    </rewards>
   </RoyalTitleDef>
 
 
@@ -186,8 +205,6 @@
         <li>RawBerries</li>
       </allowedDefs>
     </foodRequirement>
-    <requiredApparel Inherit="False">
-    </requiredApparel>
   </RoyalTitleDef>
 
   <RoyalTitleDef ParentName="BaseDMSTitlePlusWithDisabledWorkTag">
@@ -200,6 +217,9 @@
     <disabledWorkTags>
       <li>Cleaning</li>
     </disabledWorkTags>
+    <rewards>
+      <ComponentTransmitter>1</ComponentTransmitter>
+    </rewards>
   </RoyalTitleDef>
 
   <RoyalTitleDef ParentName="BaseDMSTitlePlusWithDisabledWorkTag">
@@ -212,6 +232,22 @@
     <disabledWorkTags>
       <li>Cleaning</li>
     </disabledWorkTags>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>DMS_Beret</li>
+        </requiredTags>
+        <allowedTags>
+          <li>IndustrialMilitaryBasic</li>
+          <li>IndustrialAdvanced</li>
+          <li>DMS_Soldier</li>
+        </allowedTags>
+      </li>
+    </requiredApparel>
   </RoyalTitleDef>
 
   <RoyalTitleDef ParentName="BaseDMSTitlePlusWithDisabledWorkTag">
@@ -221,6 +257,9 @@
     <seniority>500</seniority>
     <favorCost>18</favorCost>
     <permitPointsAwarded>2</permitPointsAwarded>
+    <rewards>
+      <ComponentFireControl>1</ComponentFireControl>
+    </rewards>
   </RoyalTitleDef>
 
   <RoyalTitleDef ParentName="BaseDMSTitlePlusWithDisabledWorkTag">

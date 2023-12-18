@@ -132,6 +132,9 @@
       <pawnKindDef>Empire_Common_Laborer</pawnKindDef><!-- WIP -->
       <pawnCount>4</pawnCount>
       <aidDurationDays>4</aidDurationDays>
+      <itemsToDrop>
+        <MealSurvivalPack>25</MealSurvivalPack>        
+      </itemsToDrop>
     </royalAid>
     <cooldownDays>60</cooldownDays>
   </RoyalTitlePermitDef>
@@ -148,9 +151,12 @@
     <uiPosition>(7,0)</uiPosition>
     <royalAid>
       <favorCost>8</favorCost>
-      <pawnKindDef>Empire_Common_Laborer</pawnKindDef><!-- WIP -->
+      <pawnKindDef>DMS_Civilian</pawnKindDef><!-- WIP -->
       <pawnCount>8</pawnCount>
       <aidDurationDays>4</aidDurationDays>
+      <itemsToDrop>
+        <MealSurvivalPack>50</MealSurvivalPack>        
+      </itemsToDrop>
     </royalAid>
     <cooldownDays>60</cooldownDays>
   </RoyalTitlePermitDef>
@@ -185,7 +191,7 @@
     <prerequisite>DMS_CargoMech</prerequisite>
     <royalAid>
       <favorCost>8</favorCost>
-      <pawnKindDef>Empire_Common_Laborer</pawnKindDef>
+      <pawnKindDef>DMS_Civilian</pawnKindDef>
       <pawnCount>1</pawnCount>
     </royalAid>
     <cooldownDays>60</cooldownDays>
@@ -221,7 +227,7 @@
     <prerequisite>DMS_CombatMech</prerequisite>
     <royalAid>
       <favorCost>8</favorCost>
-      <pawnKindDef>Empire_Common_Laborer</pawnKindDef><!-- WIP -->
+      <pawnKindDef>DMS_Squad_ServiceMan</pawnKindDef><!-- WIP -->
       <pawnCount>1</pawnCount>
     </royalAid>
     <cooldownDays>60</cooldownDays>
@@ -240,7 +246,7 @@
     <uiPosition>(3,1)</uiPosition>
     <royalAid>
       <favorCost>4</favorCost>
-      <pawnKindDef>Empire_Fighter_Trooper</pawnKindDef>
+      <pawnKindDef>DMS_Mech_Protector</pawnKindDef>
       <pawnCount>4</pawnCount>
       <targetingRange>39.9</targetingRange>
     </royalAid>
@@ -258,7 +264,7 @@
     <uiPosition>(3,2)</uiPosition>
     <royalAid>
       <favorCost>4</favorCost>
-      <pawnKindDef>Empire_Fighter_Trooper</pawnKindDef>
+      <pawnKindDef>DMS_Mech_Phalanx</pawnKindDef>
       <pawnCount>4</pawnCount>
       <targetingRange>39.9</targetingRange>
     </royalAid>
@@ -286,8 +292,8 @@
   
   <RoyalTitlePermitDef>
     <defName>DMS_Platoon_AC</defName>
-    <label>call platoon support</label>
-    <description>Call a platoon of soldiers to aid you in battle.</description>
+    <label>call heavy unit support</label>
+    <description>Call 4 heavy Automatroid to aid you in battle.</description>
     <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
     <minTitle>DMS_Brigadier</minTitle>
     <faction>DMS_Army</faction>
@@ -296,8 +302,8 @@
     <uiPosition>(1,7)</uiPosition>
     <royalAid>
       <favorCost>8</favorCost>
-      <pawnKindDef>DMS_Soldier</pawnKindDef>
-      <pawnCount>25</pawnCount>
+      <pawnKindDef>DMS_Mech_Gecko</pawnKindDef>
+      <pawnCount>4</pawnCount>
       <targetingRange>39.9</targetingRange>
     </royalAid>
     <cooldownDays>60</cooldownDays>
