@@ -12,6 +12,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_ReactionChamber</li>
     </recipeUsers>
@@ -49,6 +50,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_ReactionChamber</li>
     </recipeUsers>
@@ -86,6 +88,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_ReactionChamber</li>
     </recipeUsers>
@@ -125,6 +128,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_ReactionChamber</li>
     </recipeUsers>
@@ -166,6 +170,7 @@
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>ConstructMetal</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_Furnace</li>
     </recipeUsers>
@@ -228,6 +233,7 @@
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>ConstructMetal</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_Furnace</li>
     </recipeUsers>
@@ -290,6 +296,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_Furnace</li>
     </recipeUsers>
@@ -343,6 +350,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_Furnace</li>
     </recipeUsers>
@@ -398,6 +406,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_TableMachinePrinter</li>
     </recipeUsers>
@@ -444,6 +453,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_TableMachinePrinter</li>
     </recipeUsers>
@@ -527,6 +537,7 @@
     <description>grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood</description>
     <jobString>growing artifuscle.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <descriptionHyperlinks>
       <ThingDef>Artifuscle</ThingDef>
     </descriptionHyperlinks>
@@ -594,6 +605,7 @@
     <description>grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood</description>
     <jobString>growing artifuscle.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <descriptionHyperlinks>
       <ThingDef>Artifuscle</ThingDef>
     </descriptionHyperlinks>
@@ -663,6 +675,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_TableArtifuscle</li>
     </recipeUsers>
