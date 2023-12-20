@@ -72,6 +72,38 @@
     </weaponTags>
   </PawnKindDef>
 
+
+  <PawnKindDef ParentName="BaseAutomatroidKind"><!--海盜特供型-->
+    <defName>DMS_Mech_Raider</defName>
+    <label>raider</label>
+    <race>DMS_Mech_Soldat</race>
+    <isFighter>true</isFighter>
+    <combatPower>80</combatPower>                                               
+    <maxPerGroup>20</maxPerGroup>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/Pirate/soldat</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/Pirate/soldat</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags><!--武器-->
+      <li>SimpleGun</li>
+      <li>ShortShots</li>
+    </weaponTags>
+  </PawnKindDef>
+
   <!-- DMS_Mech_Grenadier 士兵擲彈型 : 能夠使用各類發射器與手榴彈 -->
   <ThingDef ParentName="BaseMechRace_Soldat">
     <defName>DMS_Mech_Grenadier</defName>

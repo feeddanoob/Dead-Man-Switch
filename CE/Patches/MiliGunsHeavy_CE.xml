@@ -148,6 +148,44 @@
                     <li>NoSwitch</li>
                 </weaponTags>    
             </li>
+
+            <!-- 無後座力砲 -->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>DMS_Gun_Recoilless</defName>
+                <statBases>
+                    <Mass>540</Mass>
+                    <Bulk>185</Bulk>
+                    <SightsEfficiency>2.00</SightsEfficiency>
+                    <ShotSpread>0.01</ShotSpread>
+                    <SwayFactor>1.55</SwayFactor>
+                    <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+                </statBases>
+                <Properties>
+				    <recoilAmount>1.49</recoilAmount>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+					<burstShotCount>1</burstShotCount>
+					<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+                    <defaultProjectile>Bullet_SPG9Rocket_HEAT</defaultProjectile>
+                    <warmupTime>2</warmupTime>
+                    <minRange>6.9</minRange>
+                    <range>80</range>
+                    <soundCast>Shot_Autocannon</soundCast>
+                    <muzzleFlashScale>20</muzzleFlashScale>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                    </targetParams>
+                    <recoilPattern>Mounted</recoilPattern>
+                </Properties>
+                <AmmoUser>
+                    <magazineSize>1</magazineSize>
+                    <reloadTime>3.5</reloadTime>
+                    <ammoSet>AmmoSet_SPG9Rocket</ammoSet>
+                </AmmoUser>
+                <FireModes>
+				    <aiAimMode>AimedShot</aiAimMode>
+                </FireModes>
+            </li>
 			</operations>
 		</match>
 	</Operation>

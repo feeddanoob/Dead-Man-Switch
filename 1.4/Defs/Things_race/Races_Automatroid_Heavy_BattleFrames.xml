@@ -34,7 +34,9 @@
           <li>DMS_MechWeaponLongRifle</li>
           <li>DMS_MechWeaponLight</li>
           <li>GrenadeSmoke</li>
+          <li>A_MG_Heavy</li>
           <li>Gun</li>
+          <li>A_SuppressWeapon</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -235,6 +237,8 @@
     </lifeStages>
     <weaponTags><!--武器-->
       <li>IndustrialGun</li>
+      <li>A_MG_Heavy</li>
+      <li>A_SuppressWeapon</li>
     </weaponTags>
   </PawnKindDef>
 </Defs>

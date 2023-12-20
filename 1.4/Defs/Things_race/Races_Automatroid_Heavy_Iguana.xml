@@ -271,8 +271,5 @@
       <li>DMS_2A38</li>
     </weaponTags>   
     <weaponMoney>3000~9999</weaponMoney>
-    <abilities>
-        <li>SmokepopMech</li>
-    </abilities>
   </PawnKindDef>
 </Defs>

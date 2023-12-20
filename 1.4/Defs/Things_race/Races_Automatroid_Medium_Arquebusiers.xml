@@ -33,6 +33,7 @@
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
           <li>A_MG_Light</li>
+          <li>A_MG_Heavy</li>
           <li>ElephantGun</li>
           <li>A_DMR_LongRifle</li>
           <li>SniperRifle</li>

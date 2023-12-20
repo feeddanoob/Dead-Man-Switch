@@ -6,7 +6,7 @@
 
   <RecipeDef>
     <defName>DMS_Make_Polyester</defName>
-    <label>make polyester</label>
+    <label>make polyester x50</label>
     <description>Synthetic polyester fibers using chemfuel.</description>
     <jobString>Synthesising.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -42,8 +42,45 @@
   </RecipeDef>
 
   <RecipeDef>
+    <defName>DMS_Make_PolyesterMass</defName>
+    <label>make polyester x200</label>
+    <description>Synthetic polyester fibers using chemfuel.</description>
+    <jobString>Synthesising.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <recipeUsers>
+      <li>DMS_ReactionChamber</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>DMS_Plasfiber</researchPrerequisite>
+    <workAmount>12000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Polyester>200</Polyester>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
     <defName>DMS_Make_Plasfiber</defName>
-    <label>make plasfiber</label>
+    <label>make plasfiber x20</label>
     <description>Synthetic plasfiber.</description>
     <jobString>Synthesising.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -80,11 +117,50 @@
     </products>
   </RecipeDef>
 
+  <RecipeDef>
+    <defName>DMS_Make_PlasfiberMass</defName>
+    <label>make plasfiber x80</label>
+    <description>Synthetic plasfiber.</description>
+    <jobString>Synthesising.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <recipeUsers>
+      <li>DMS_ReactionChamber</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>DMS_Plasfiber</researchPrerequisite>
+    <workAmount>32000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Polyester</li>
+            <li>Synthread</li>
+          </thingDefs>
+        </filter>
+        <count>250</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Polyester</li>
+        <li>Synthread</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Plasfiber>80</Plasfiber>
+    </products>
+  </RecipeDef>
+
   <!-- 燒結爐 -->
 
  <RecipeDef>
     <defName>DMS_Make_Tungsteel</defName>
-    <label>make tungsteel</label>
+    <label>make tungsteel X20</label>
     <description>sintering tungsteel.</description>
     <jobString>sintering.</jobString>
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
@@ -145,8 +221,70 @@
   </RecipeDef>
 
   <RecipeDef>
+    <defName>DMS_Make_TungsteelMass</defName>
+    <label>make tungsteel x 80</label>
+    <description>sintering tungsteel.</description>
+    <jobString>sintering.</jobString>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <recipeUsers>
+      <li>DMS_Furnace</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>DMS_Material</researchPrerequisite>
+    <workAmount>16000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+        </filter>
+        <count>80</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneBlocks</li>
+      </categories>
+      <disallowedThingDefs>
+        <li MayRequire="aoba.fortress.industrial">FT_BlocksConcrete</li>
+        <li MayRequire="aoba.fortress.industrial">FT_WoodConcrete</li>
+		    <li MayRequire="aoba.fortress.industrial">FT_ReinforcedConcreteBag</li>
+      </disallowedThingDefs>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Tungsteel>80</Tungsteel>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
     <defName>DMS_Make_Ceramics</defName>
-    <label>make ceramics</label>
+    <label>make ceramics x20</label>
     <description>making ceramics.</description>
     <jobString>making.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -194,6 +332,59 @@
     </fixedIngredientFilter>
     <products>
       <DMS_Ceramics>20</DMS_Ceramics>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>DMS_Make_CeramicsMass</defName>
+    <label>make ceramics x80</label>
+    <description>making ceramics.</description>
+    <jobString>making.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <recipeUsers>
+      <li>DMS_Furnace</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>DMS_Material</researchPrerequisite>
+    <workAmount>20000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+        </filter>
+        <count>80</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneBlocks</li>
+      </categories>
+      <disallowedThingDefs>
+        <!-- <li MayRequire="aoba.fortress.industrial">FT_BlocksConcrete</li>
+        <li MayRequire="aoba.fortress.industrial">FT_WoodConcrete</li> -->
+		    <li MayRequire="aoba.fortress.industrial">FT_ReinforcedConcreteBag</li>
+      </disallowedThingDefs>
+      <thingDefs>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <DMS_Ceramics>80</DMS_Ceramics>
     </products>
   </RecipeDef>
 
@@ -246,6 +437,52 @@
   </RecipeDef>
 
   <RecipeDef>
+    <defName>DMS_Make_ComponentStampedMass</defName>
+    <label>make stamponent x4</label>
+    <description>make stamponent</description>
+    <jobString>stamping compoments.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <recipeUsers>
+      <li>DMS_TableMachinePrinter</li>
+    </recipeUsers>
+    <workAmount>16000</workAmount>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>DMS_MechBasis</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Tungsteel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Tungsteel</li>     
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentStamped>4</ComponentStamped>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
     <defName>DMS_Make_ComponentIndustrial</defName>
     <label>make component</label>
     <description>Make a component from machinery printer, take longer time and resources.</description>
@@ -286,10 +523,13 @@
   <!-- 合成肌肉培育槽 -->
   <RecipeDef>
     <defName>DMS_Make_Artifuscle</defName>
-    <label>grow artifuscle</label>
+    <label>grow artifuscle x20</label>
     <description>grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood</description>
     <jobString>growing artifuscle.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <descriptionHyperlinks>
+      <ThingDef>Artifuscle</ThingDef>
+    </descriptionHyperlinks>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <recipeUsers>
@@ -343,6 +583,73 @@
     </products>
     <skillRequirements>
       <Medicine>8</Medicine>
+    </skillRequirements>
+    <workSkill>Medicine</workSkill>
+    <researchPrerequisite>DMS_Artifuscle</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>DMS_Make_ArtifuscleMass</defName>
+    <label>grow artifuscle x80</label>
+    <description>grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood</description>
+    <jobString>growing artifuscle.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <descriptionHyperlinks>
+      <ThingDef>Artifuscle</ThingDef>
+    </descriptionHyperlinks>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <recipeUsers>
+      <li>DMS_TableArtifuscle</li>
+    </recipeUsers>
+    <workAmount>20000</workAmount>
+     <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Tungsteel</li>
+          </thingDefs>
+        </filter>
+        <count>32</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasfiber</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Gold</li>
+        <li>Tungsteel</li>
+        <li>Plasfiber</li>
+        <li>Neutroamine</li>        
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Artifuscle>100</Artifuscle>
+    </products>
+    <skillRequirements>
+      <Medicine>12</Medicine>
     </skillRequirements>
     <workSkill>Medicine</workSkill>
     <researchPrerequisite>DMS_Artifuscle</researchPrerequisite>

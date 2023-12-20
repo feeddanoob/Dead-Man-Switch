@@ -83,7 +83,6 @@
       </li>
     </ingredients>
   </RecipeDef>
-
   <!--士兵-->
   <RecipeDef ParentName="DMS_LegionMechanoidRecipe">
     <defName>DMS_Make_Soldat</defName>
@@ -994,7 +993,6 @@
       </li>
     </ingredients>
   </RecipeDef>
-
   <!--DMS_Mech_Tarbosaurus-->
   <RecipeDef ParentName="DMS_SuperHeavyMechanoidRecipe">
     <defName>DMS_Make_Tarbosaurus</defName>
@@ -1048,6 +1046,115 @@
         <count>1</count>
       </li>
     </ingredients>
+  </RecipeDef>
+
+  <RecipeDef ParentName="BaseMechanoidResurrectionRecipe">
+    <defName>DMS_ResurrectMediumMech</defName>
+    <label>resurrect medium automatroid</label>
+    <description>Resurrect a friendly automatroid of the medium weight class. So long as the automatroid's body is not completely destroyed, it can be resurrected.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_DMS_Mech_Soldat</li>
+        <li>Corpse_DMS_Mech_Sergeant</li>
+        <li>Corpse_DMS_Mech_Kanonier</li>
+        <li>Corpse_DMS_Mech_Grenadier</li>
+
+        <li>Corpse_DMS_Mech_Arquebusier</li>
+        <li>Corpse_DMS_Mech_Jaeger</li>
+        <li>Corpse_DMS_Mech_Sniper</li>
+        <li>Corpse_DMS_Mech_Pioneer</li>
+
+        <li>Corpse_DMS_Mech_Ronin</li>
+        <li>Corpse_DMS_Mech_Protector</li>
+        <li>Corpse_DMS_Mech_Phalanx</li>
+        <li>Corpse_DMS_Mech_Siegebreaker</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef ParentName="BaseMechanoidResurrectionRecipe">
+    <defName>ResurrectHeavyMech</defName>
+    <label>resurrect heavy automatroid</label>
+    <description>Resurrect a friendly automatroid of the heavy weight class. So long as the automatroid's body is not completely destroyed, it can be resurrected.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_DMS_Mech_BattleFrame</li>
+        <li>Corpse_DMS_Mech_EscortLifter</li>
+        <li>Corpse_DMS_Mech_FieldCommand</li>
+
+        <li>Corpse_DMS_Mech_Ape</li>
+        
+        <li>Corpse_DMS_Mech_Iguana</li>
+        <li>Corpse_DMS_Mech_Gecko</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef ParentName="BaseMechanoidResurrectionRecipe">
+    <defName>ResurrectUltraheavyMech</defName>
+    <label>resurrect ultraheavy automatroid</label>
+    <description>Resurrect a friendly automatroid of the ultraheavy weight class. So long as the automatroid's body is not completely destroyed, it can be resurrected.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_DMS_Mech_Tarbosaurus</li>
+        <li>Corpse_DMS_Mech_Geochelone</li>
+        <li>Corpse_DMS_Mech_Caretta</li>
+      </thingDefs>
+    </fixedIngredientFilter>
   </RecipeDef>
 
 </Defs>
