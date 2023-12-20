@@ -185,6 +185,7 @@
     </products>
     <gestationCycles>1</gestationCycles>
     <descriptionHyperlinks>
+      <ThingDef>ComponentTransmitter</ThingDef>
       <ThingDef>DMS_Mech_Sergeant</ThingDef>
     </descriptionHyperlinks>
     <ingredients Inherit="False">
@@ -285,6 +286,7 @@
       <DMS_Mech_FieldCommand>1</DMS_Mech_FieldCommand>
     </products>
     <descriptionHyperlinks>
+      <ThingDef>ComponentTransmitter</ThingDef>
       <ThingDef>DMS_Mech_FieldCommand</ThingDef>
     </descriptionHyperlinks>
     <ingredients Inherit="False">
@@ -327,7 +329,7 @@
             <li>ComponentTransmitter</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>1</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -347,6 +349,60 @@
     </products>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_EscortLifter</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Synthread</li>
+            <li>Polyester</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentStamped</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Polyester</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  
+  <!--礦井工人-->
+  <RecipeDef ParentName="DMS_HeavyMechanoidRecipe">
+    <defName>DMS_Make_ShaftWorker</defName>
+    <label>gestate shaft worker</label>
+    <description>Gestate a shaft worker mechanoid.</description>
+    <products>
+      <DMS_Mech_ShaftWorker>1</DMS_Mech_ShaftWorker>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_ShaftWorker</ThingDef>
     </descriptionHyperlinks>
     <ingredients Inherit="False">
       <li>
@@ -734,6 +790,7 @@
     </products>
     <gestationCycles>2</gestationCycles>
     <descriptionHyperlinks>
+      <ThingDef>ComponentFireControl</ThingDef>
       <ThingDef>DMS_Mech_Sniper</ThingDef>
     </descriptionHyperlinks>
     <ingredients Inherit="False">
@@ -853,6 +910,7 @@
     <researchPrerequisite>DMS_Hypothesis</researchPrerequisite>
     <gestationCycles>5</gestationCycles>
     <descriptionHyperlinks>
+      <ThingDef>Neurocomputer</ThingDef>
       <ThingDef>DMS_Mech_Iguana</ThingDef>
     </descriptionHyperlinks>
     <ingredients Inherit="False">
@@ -901,6 +959,7 @@
     <researchPrerequisite>DMS_Hypothesis</researchPrerequisite>
     <gestationCycles>5</gestationCycles>
     <descriptionHyperlinks>
+      <ThingDef>Neurocomputer</ThingDef>
       <ThingDef>DMS_Mech_Gecko</ThingDef>
     </descriptionHyperlinks>
     <ingredients Inherit="False">
@@ -956,6 +1015,7 @@
       <DMS_Mech_Geochelone>1</DMS_Mech_Geochelone>
     </products>
     <descriptionHyperlinks>
+      <ThingDef>Neurocomputer</ThingDef>
       <ThingDef>DMS_Mech_Geochelone</ThingDef>
     </descriptionHyperlinks>
     <ingredients Inherit="False">
@@ -1002,6 +1062,7 @@
       <DMS_Mech_Tarbosaurus>1</DMS_Mech_Tarbosaurus>
     </products>
     <descriptionHyperlinks>
+      <ThingDef>Neurocomputer</ThingDef>
       <ThingDef>DMS_Mech_Tarbosaurus</ThingDef>
     </descriptionHyperlinks>
     <ingredients Inherit="False">
@@ -1091,7 +1152,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="BaseMechanoidResurrectionRecipe">
-    <defName>ResurrectHeavyMech</defName>
+    <defName>DMS_ResurrectHeavyMech</defName>
     <label>resurrect heavy automatroid</label>
     <description>Resurrect a friendly automatroid of the heavy weight class. So long as the automatroid's body is not completely destroyed, it can be resurrected.</description>
     <ingredients>
@@ -1127,7 +1188,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="BaseMechanoidResurrectionRecipe">
-    <defName>ResurrectUltraheavyMech</defName>
+    <defName>DMS_ResurrectUltraheavyMech</defName>
     <label>resurrect ultraheavy automatroid</label>
     <description>Resurrect a friendly automatroid of the ultraheavy weight class. So long as the automatroid's body is not completely destroyed, it can be resurrected.</description>
     <ingredients>

@@ -409,8 +409,9 @@
     </building>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <recipes>
-      <li>ResurrectMediumMech</li>
-      <li>ResurrectHeavyMech</li>
+      <li>DMS_ResurrectMediumMech</li>
+      <li>DMS_ResurrectHeavyMech</li>
+      <li>DMS_ResurrectUltraheavyMech</li>
     </recipes>
     <comps>
       <li Class="CompProperties_Power">

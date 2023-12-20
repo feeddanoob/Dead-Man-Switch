@@ -319,9 +319,9 @@
         <completedLetterDef>PositiveEvent</completedLetterDef>
       </li>
     </comps>
-    <!-- <tradeTags>
+    <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags> -->
+    </tradeTags>
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
