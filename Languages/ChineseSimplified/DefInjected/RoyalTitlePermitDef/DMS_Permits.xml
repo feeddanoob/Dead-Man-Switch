@@ -2,9 +2,9 @@
 <LanguageData>
   
   <!-- EN: call aerodrone salvo -->
-  <DMS_CallOrbitalSalvo.label>呼叫无人机齐射</DMS_CallOrbitalSalvo.label>
+  <DMS_CallOrbitalSalvo.label>呼叫机群打击</DMS_CallOrbitalSalvo.label>
   <!-- EN: Call a salvo of aerodrone strikes around a target position. -->
-  <DMS_CallOrbitalSalvo.description>呼叫无人机对目标位置周围进行一次齐射。</DMS_CallOrbitalSalvo.description>
+  <DMS_CallOrbitalSalvo.description>呼叫无人机对目标位置周围进行一次低烈度打击。</DMS_CallOrbitalSalvo.description>
   
   <!-- EN: call aerodrone strike -->
   <DMS_CallOrbitalStrike.label>呼叫无人机打击</DMS_CallOrbitalStrike.label>
@@ -12,9 +12,9 @@
   <DMS_CallOrbitalStrike.description>呼叫对目标位置进行单次空中打击。</DMS_CallOrbitalStrike.description>
   
   <!-- EN: call transport shuttle -->
-  <DMS_CallTransportShuttle.label>呼叫航天飞机</DMS_CallTransportShuttle.label>
+  <DMS_CallTransportShuttle.label>呼叫太空梭</DMS_CallTransportShuttle.label>
   <!-- EN: Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles. -->
-  <DMS_CallTransportShuttle.description>召唤一艘航天飞机供自己使用。它可以将殖民者、物品和动物运送到 70 个世界方格内的任何地方。</DMS_CallTransportShuttle.description>
+  <DMS_CallTransportShuttle.description>召唤一艘太空梭供自己使用。它可以将殖民者、物品和动物运送到 70 个世界方格内的任何地方。</DMS_CallTransportShuttle.description>
   
   <!-- EN: supply cargo mech -->
   <DMS_CargoMech.label>货运补给机械</DMS_CargoMech.label>
@@ -39,7 +39,7 @@
   <!-- EN: food supply drop -->
   <DMS_FoodDrop.label>空投粮食</DMS_FoodDrop.label>
   <!-- EN: Call for a drop of 20 packaged survival meals. -->
-  <DMS_FoodDrop.description>>呼叫空投 20 份生存食品包。</DMS_FoodDrop.description>
+  <DMS_FoodDrop.description>呼叫空投 20 份生存食品包。</DMS_FoodDrop.description>
   
   <!-- EN: combat equipment drop -->
   <DMS_GearDrop.label>空投战斗装备</DMS_GearDrop.label>
@@ -66,9 +66,9 @@
   <!-- EN: Call for a drop of 500 silver. -->
   <DMS_MaterialDrop.description>呼叫空投 500 白银。</DMS_MaterialDrop.description>
   
-  <!-- EN: call platoon support -->
+  <!-- EN: call heavy unit support -->
   <DMS_Platoon_AC.label>呼叫排组支援</DMS_Platoon_AC.label>
-  <!-- EN: Call a platoon of soldiers to aid you in battle. -->
+  <!-- EN: Call 4 heavy Automatroid to aid you in battle. -->
   <DMS_Platoon_AC.description>呼叫排组士兵协助你作战。</DMS_Platoon_AC.description>
   
   <!-- EN: call squad support -->

@@ -227,70 +227,44 @@
     <li>Callsign->恩尼格</li>
     <li>Callsign->機關</li>
   </DMS_VanguardMechHeavy.rulePack.rulesStrings>
-  
-  <!-- EN:
-    <li>r_name->[MechType] [BrigadeNum0]-[BrigadeNum1] "[Callsign][Code]"</li>
-    <li>MechType->Standard</li>
-    <li>MechType->Army</li>
-    <li>MechType->Combat</li>
-    <li>MechType->Unit</li>
-    <li>BrigadeNum0->One</li>
-    <li>BrigadeNum0->Two</li>
-    <li>BrigadeNum0->Three</li>
-    <li>BrigadeNum0->Four</li>
-    <li>BrigadeNum0->Five</li>
-    <li>BrigadeNum0->Six</li>
-    <li>BrigadeNum0->Seven</li>
-    <li>BrigadeNum0->Eight</li>
-    <li>BrigadeNum0->Niner</li>
-    <li>BrigadeNum1->O</li>
-    <li>BrigadeNum1->One</li>
-    <li>BrigadeNum1->Two</li>
-    <li>BrigadeNum1->Three</li>
-    <li>BrigadeNum1->Four</li>
-    <li>BrigadeNum1->Five</li>
-    <li>BrigadeNum1->Six</li>
-    <li>BrigadeNum1->Seven</li>
-    <li>BrigadeNum1->Eight</li>
-    <li>BrigadeNum1->Nine</li>
-    <li>Callsign->Skull</li>
-    <li>Callsign->Shield</li>
-    <li>Callsign->Iron</li>
-    <li>Callsign->Stone</li>
-    <li>Callsign->Helmet</li>
-    <li>Callsign->Bulk</li>
-    <li>Callsign->Wolf</li>
-    <li>Callsign->Fox</li>
-    <li>Callsign->Hound</li>
-    <li>Callsign->Lynx</li>
-    <li>Callsign->Skelton</li>
-    <li>Code->Alfa</li>
-    <li>Code->Bravo</li>
-    <li>Code->Charlie</li>
-    <li>Code->Delta</li>
-    <li>Code->Echo</li>
-    <li>Code->Foxtrot</li>
-    <li>Code->Golf</li>
-    <li>Code->Hotel</li>
-    <li>Code->India</li>
-    <li>Code->Juliett</li>
-    <li>Code->Kilo</li>
-    <li>Code->Lima</li>
-    <li>Code->Mike</li>
-    <li>Code->November</li>
-    <li>Code->Oscar</li>
-    <li>Code->Papa</li>
-    <li>Code->Quebec</li>
-    <li>Code->Romeo</li>
-    <li>Code->Sierra</li>
-    <li>Code->Tango</li>
-    <li>Code->Uniform</li>
-    <li>Code->Victor</li>
-    <li>Code->Whiskey</li>
-    <li>Code->X-ray</li>
-    <li>Code->Yankee</li>
-    <li>Code->Zulu</li>
-  -->
-  <DMS_VanguardMechStandard.rulePack.rulesStrings>TODO</DMS_VanguardMechStandard.rulePack.rulesStrings>
+
+  <DMS_VanguardMechStandard.rulePack.rulesStrings>
+    <li>r_name->[MechType] [BrigadeNum0]-[BrigadeNum1] "[Callsign]"</li>
+    <li>MechType->常規</li>
+    <li>MechType->陣地</li>
+    <li>MechType->作戰</li>
+    <li>MechType->戰鬥</li>
+    <li>MechType->單元</li>
+    <li>BrigadeNum0->一</li>
+    <li>BrigadeNum0->二</li>
+    <li>BrigadeNum0->三</li>
+    <li>BrigadeNum0->四</li>
+    <li>BrigadeNum0->五</li>
+    <li>BrigadeNum0->六</li>
+    <li>BrigadeNum0->七</li>
+    <li>BrigadeNum0->八</li>
+    <li>BrigadeNum0->九</li>
+    <li>BrigadeNum1->零</li>
+    <li>BrigadeNum1->一</li>
+    <li>BrigadeNum1->二</li>
+    <li>BrigadeNum1->三</li>
+    <li>BrigadeNum1->四</li>
+    <li>BrigadeNum1->五</li>
+    <li>BrigadeNum1->六</li>
+    <li>BrigadeNum1->七</li>
+    <li>BrigadeNum1->八</li>
+    <li>BrigadeNum1->九</li>
+    <li>Callsign->骷髏</li>
+    <li>Callsign->鐵盾</li>
+    <li>Callsign->鋼鐵</li>
+    <li>Callsign->岩石</li>
+    <li>Callsign->鋼盔</li>
+    <li>Callsign->壯漢</li>
+    <li>Callsign->野狼</li>
+    <li>Callsign->狐狸</li>
+    <li>Callsign->獵犬</li>
+    <li>Callsign->豹貓</li>
+    <li>Callsign->骨架</li>
+  </DMS_VanguardMechStandard.rulePack.rulesStrings>
   
 </LanguageData>

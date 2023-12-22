@@ -2,11 +2,11 @@
 <LanguageData>
   
   <!-- EN: install nutrition port -->
-  <DMS_InstallNutrientPort.label>安装营养接口</DMS_InstallNutrientPort.label>
+  <DMS_InstallNutrientPort.label>安装营养埠</DMS_InstallNutrientPort.label>
   <!-- EN: Install a nutrition port. -->
-  <DMS_InstallNutrientPort.description>安装营养接口</DMS_InstallNutrientPort.description>
+  <DMS_InstallNutrientPort.description>安装营养埠</DMS_InstallNutrientPort.description>
   <!-- EN: Installing nutrition port. -->
-  <DMS_InstallNutrientPort.jobString>安装营养接口中</DMS_InstallNutrientPort.jobString>
+  <DMS_InstallNutrientPort.jobString>安装营养埠中</DMS_InstallNutrientPort.jobString>
   
   <!-- EN: install mechaneural arm -->
   <DMS_InstallProstheticArm.label>安装机械臂</DMS_InstallProstheticArm.label>
@@ -16,11 +16,11 @@
   <DMS_InstallProstheticArm.jobString>安装机械臂中</DMS_InstallProstheticArm.jobString>
   
   <!-- EN: install mechaneural visual senser -->
-  <DMS_InstallProstheticEye.label>安装机械视觉传感器</DMS_InstallProstheticEye.label>
+  <DMS_InstallProstheticEye.label>安装机械视觉感测器</DMS_InstallProstheticEye.label>
   <!-- EN: Install a neural-mechanical visual senser. -->
-  <DMS_InstallProstheticEye.description>安装机械视觉传感器</DMS_InstallProstheticEye.description>
+  <DMS_InstallProstheticEye.description>安装机械视觉感测器</DMS_InstallProstheticEye.description>
   <!-- EN: Installing bionic eye. -->
-  <DMS_InstallProstheticEye.jobString>安装机械视觉传感器中</DMS_InstallProstheticEye.jobString>
+  <DMS_InstallProstheticEye.jobString>安装机械视觉感测器中</DMS_InstallProstheticEye.jobString>
   
   <!-- EN: install mechaneural leg -->
   <DMS_InstallProstheticLeg.label>安装机械腿</DMS_InstallProstheticLeg.label>
@@ -28,13 +28,6 @@
   <DMS_InstallProstheticLeg.description>安装机械腿</DMS_InstallProstheticLeg.description>
   <!-- EN: Installing neural-mechanical leg. -->
   <DMS_InstallProstheticLeg.jobString>安装机械腿中</DMS_InstallProstheticLeg.jobString>
-  
-  <!-- EN: install bio-mechanical neurochord -->
-  <DMS_InstallProstheticSpine.label>安装生物机械神经线</DMS_InstallProstheticSpine.label>
-  <!-- EN: Install a bio-mechanical neurochord. -->
-  <DMS_InstallProstheticSpine.description>安装生物机械神经线</DMS_InstallProstheticSpine.description>
-  <!-- EN: Installing bio-mechanical neurochord. -->
-  <DMS_InstallProstheticSpine.jobString>安装生物机械神经线中</DMS_InstallProstheticSpine.jobString>
   
   <!-- EN: install sensory filter -->
   <DMS_InstallSensoryFilter.label>安装感官过滤器</DMS_InstallSensoryFilter.label>

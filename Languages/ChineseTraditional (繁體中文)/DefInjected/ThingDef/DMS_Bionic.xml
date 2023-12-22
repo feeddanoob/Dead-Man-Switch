@@ -26,7 +26,7 @@
   <!-- EN: An advanced bio-mechanical spine which also work as a sub-brain to compatible with other prostheses by sharing reflex nerves. -->
   <DMS_ProstheticSpine.description>先進的生物力學脊柱，還可作為副大腦，通過共享反射神經與其他假體相容。</DMS_ProstheticSpine.description>
   <!-- EN: Implant {0_label} -->
-  <DMS_ProstheticSpine.comps.CompUsableImplant.useLabel>TODO</DMS_ProstheticSpine.comps.CompUsableImplant.useLabel>
+  <DMS_ProstheticSpine.comps.CompUsableImplant.useLabel>安裝神經索</DMS_ProstheticSpine.comps.CompUsableImplant.useLabel>
   
   <!-- EN: sensory filter -->
   <DMS_SensoryFilter.label>感官過濾器</DMS_SensoryFilter.label>

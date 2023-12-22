@@ -2,23 +2,23 @@
 <LanguageData>
   
   <!-- EN: bipedal -->
-  <DMS_Bipedal.label>双足機兵</DMS_Bipedal.label>
+  <DMS_Bipedal.label>双足机体</DMS_Bipedal.label>
   <!-- EN: top searching sensor -->
-  <DMS_Bipedal.corePart.parts.top_searching_sensor.customLabel>顶部搜索传感器</DMS_Bipedal.corePart.parts.top_searching_sensor.customLabel>
+  <DMS_Bipedal.corePart.parts.top_searching_sensor.customLabel>顶部搜索感测器</DMS_Bipedal.corePart.parts.top_searching_sensor.customLabel>
   <!-- EN: central sight sensor -->
-  <DMS_Bipedal.corePart.parts.top_searching_sensor.parts.central_sight_sensor.customLabel>视觉传感器</DMS_Bipedal.corePart.parts.top_searching_sensor.parts.central_sight_sensor.customLabel>
+  <DMS_Bipedal.corePart.parts.top_searching_sensor.parts.central_sight_sensor.customLabel>视觉感测器</DMS_Bipedal.corePart.parts.top_searching_sensor.parts.central_sight_sensor.customLabel>
   <!-- EN: central hearing sensor -->
-  <DMS_Bipedal.corePart.parts.top_searching_sensor.parts.central_hearing_sensor.customLabel>听觉传感器</DMS_Bipedal.corePart.parts.top_searching_sensor.parts.central_hearing_sensor.customLabel>
+  <DMS_Bipedal.corePart.parts.top_searching_sensor.parts.central_hearing_sensor.customLabel>听觉感测器</DMS_Bipedal.corePart.parts.top_searching_sensor.parts.central_hearing_sensor.customLabel>
   <!-- EN: main searching sensor -->
-  <DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.customLabel>主搜索传感器</DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.customLabel>
+  <DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.customLabel>主搜索感测器</DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.customLabel>
   <!-- EN: central sight sensor -->
-  <DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.parts.central_sight_sensor.customLabel>视觉传感器</DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.parts.central_sight_sensor.customLabel>
+  <DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.parts.central_sight_sensor.customLabel>视觉感测器</DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.parts.central_sight_sensor.customLabel>
   <!-- EN: phased array radar -->
   <DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.parts.phased_array_radar.customLabel>相控阵雷达</DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.parts.phased_array_radar.customLabel>
   <!-- EN: left hearing sensor -->
-  <DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.parts.left_hearing_sensor.customLabel>左听觉传感器</DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.parts.left_hearing_sensor.customLabel>
+  <DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.parts.left_hearing_sensor.customLabel>左听觉感测器</DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.parts.left_hearing_sensor.customLabel>
   <!-- EN: right hearing sensor -->
-  <DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.parts.right_hearing_sensor.customLabel>右听觉传感器</DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.parts.right_hearing_sensor.customLabel>
+  <DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.parts.right_hearing_sensor.customLabel>右听觉感测器</DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.main_searching_sensor.parts.right_hearing_sensor.customLabel>
   <!-- EN: left weapon mount -->
   <DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.left_weapon_mount.customLabel>左武器挂架</DMS_Bipedal.corePart.parts.DMS_HeadRadar.parts.left_weapon_mount.customLabel>
   <!-- EN: horizontal rotor -->
@@ -79,7 +79,7 @@
   <!-- EN: elevator -->
   <DMS_Caterpillar.corePart.parts.turret_seat.parts.elevator.customLabel>升降机</DMS_Caterpillar.corePart.parts.turret_seat.parts.elevator.customLabel>
   <!-- EN: integrated sensor system -->
-  <DMS_Caterpillar.corePart.parts.integrated_sensor_system.customLabel>综合传感器系统</DMS_Caterpillar.corePart.parts.integrated_sensor_system.customLabel>
+  <DMS_Caterpillar.corePart.parts.integrated_sensor_system.customLabel>综合感测器系统</DMS_Caterpillar.corePart.parts.integrated_sensor_system.customLabel>
   <!-- EN: armored casing -->
   <DMS_Caterpillar.corePart.parts.integrated_sensor_system.parts.armored_casing.customLabel>装甲外壳</DMS_Caterpillar.corePart.parts.integrated_sensor_system.parts.armored_casing.customLabel>
   <!-- EN: main generator -->
@@ -102,7 +102,7 @@
   <DMS_Caterpillar.corePart.parts.right_leg.parts.right_wheel.customLabel>右轮</DMS_Caterpillar.corePart.parts.right_leg.parts.right_wheel.customLabel>
   
   <!-- EN: vertidrone -->
-  <DMS_Chop.label>四軸無人機</DMS_Chop.label>
+  <DMS_Chop.label>四轴飞行机体</DMS_Chop.label>
   <!-- EN: hover system -->
   <DMS_Chop.corePart.parts.hover_system-0.customLabel>悬浮系统</DMS_Chop.corePart.parts.hover_system-0.customLabel>
   <!-- EN: hover system -->
@@ -117,15 +117,15 @@
   <DMS_Chop.corePart.parts.main_battery.customLabel>主电池</DMS_Chop.corePart.parts.main_battery.customLabel>
   
   <!-- EN: quadruped -->
-  <DMS_Hound.label>四足機兵</DMS_Hound.label>
+  <DMS_Hound.label>四足机体</DMS_Hound.label>
   <!-- EN: central sight sensor -->
-  <DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>视觉传感器</DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
+  <DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>视觉感测器</DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
   <!-- EN: infrared sensor -->
-  <DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.infrared_sensor.customLabel>红外线传感器</DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.infrared_sensor.customLabel>
+  <DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.infrared_sensor.customLabel>红外线感测器</DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.infrared_sensor.customLabel>
   <!-- EN: left hearing sensor -->
-  <DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>左听觉传感器</DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>左听觉感测器</DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
   <!-- EN: right hearing sensor -->
-  <DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>右听觉传感器</DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>右听觉感测器</DMS_Hound.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
   <!-- EN: robotic arm -->
   <DMS_Hound.corePart.parts.robotic_arm.customLabel>机械手臂</DMS_Hound.corePart.parts.robotic_arm.customLabel>
   <!-- EN: robotic hand -->
@@ -158,17 +158,17 @@
   <DMS_Hound.corePart.parts.right_back_leg.parts.right_back_foot.customLabel>右后脚</DMS_Hound.corePart.parts.right_back_leg.parts.right_back_foot.customLabel>
   
   <!-- EN: erectus soldat -->
-  <DMS_Humanoid_Soldat.label>士兵型機兵</DMS_Humanoid_Soldat.label>
+  <DMS_Humanoid_Soldat.label>士兵型机体</DMS_Humanoid_Soldat.label>
   <!-- EN: central sight sensor -->
-  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>视线传感器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
+  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>视线感测器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
   <!-- EN: left sight sensor -->
-  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>左视线传感器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>左视线感测器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
   <!-- EN: right sight sensor -->
-  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>右视线传感器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>右视线感测器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
   <!-- EN: left hearing sensor -->
-  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>左听觉传感器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>左听觉感测器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
   <!-- EN: right hearing sensor -->
-  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>右听觉传感器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>右听觉感测器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
   <!-- EN: left shoulder -->
   <DMS_Humanoid_Soldat.corePart.parts.left_shoulder.customLabel>左肩</DMS_Humanoid_Soldat.corePart.parts.left_shoulder.customLabel>
   <!-- EN: left arm -->
@@ -215,21 +215,21 @@
   <DMS_Humanoid_Soldat.corePart.parts.secondary_battery.customLabel>副电池</DMS_Humanoid_Soldat.corePart.parts.secondary_battery.customLabel>
   
   <!-- EN: erectus arquebusier -->
-  <DMS_Humanoid_TypeA.label>火槍手機兵</DMS_Humanoid_TypeA.label>
+  <DMS_Humanoid_TypeA.label>火枪手机体</DMS_Humanoid_TypeA.label>
   <!-- EN: central sight sensor -->
-  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.central_sight_sensor.customLabel>视觉传感器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.central_sight_sensor.customLabel>
+  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.central_sight_sensor.customLabel>视觉感测器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.central_sight_sensor.customLabel>
   <!-- EN: left infrared sensor -->
-  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_infrared_sensor.customLabel>左红外传感器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_infrared_sensor.customLabel>
+  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_infrared_sensor.customLabel>左红外感测器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_infrared_sensor.customLabel>
   <!-- EN: right infrared sensor -->
-  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_infrared_sensor.customLabel>右红外传感器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_infrared_sensor.customLabel>
+  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_infrared_sensor.customLabel>右红外感测器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_infrared_sensor.customLabel>
   <!-- EN: left sight sensor -->
-  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_sight_sensor.customLabel>左视线传感器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_sight_sensor.customLabel>
+  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_sight_sensor.customLabel>左视线感测器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_sight_sensor.customLabel>
   <!-- EN: right sight sensor -->
-  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_sight_sensor.customLabel>右视线传感器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_sight_sensor.customLabel>
+  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_sight_sensor.customLabel>右视线感测器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_sight_sensor.customLabel>
   <!-- EN: left hearing sensor -->
-  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_hearing_sensor.customLabel>左听觉传感器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_hearing_sensor.customLabel>
+  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_hearing_sensor.customLabel>左听觉感测器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_hearing_sensor.customLabel>
   <!-- EN: right hearing sensor -->
-  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_hearing_sensor.customLabel>右听觉传感器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_hearing_sensor.customLabel>
+  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_hearing_sensor.customLabel>右听觉感测器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_hearing_sensor.customLabel>
   <!-- EN: left shoulder -->
   <DMS_Humanoid_TypeA.corePart.parts.left_shoulder.customLabel>左肩</DMS_Humanoid_TypeA.corePart.parts.left_shoulder.customLabel>
   <!-- EN: left arm -->
@@ -276,7 +276,7 @@
   <DMS_Humanoid_TypeA.corePart.parts.secondary_battery.customLabel>副电池</DMS_Humanoid_TypeA.corePart.parts.secondary_battery.customLabel>
   
   <!-- EN: erectus ronin -->
-  <DMS_Humanoid_TypeB.label>浪人機兵</DMS_Humanoid_TypeB.label>
+  <DMS_Humanoid_TypeB.label>浪人机体</DMS_Humanoid_TypeB.label>
   <!-- EN: left shoulder -->
   <DMS_Humanoid_TypeB.corePart.parts.left_shoulder.customLabel>左肩</DMS_Humanoid_TypeB.corePart.parts.left_shoulder.customLabel>
   <!-- EN: left arm -->
@@ -378,7 +378,7 @@
   <!-- EN: wetware computer core -->
   <DMS_KillDozer.corePart.parts.wetware_computer_core.customLabel>湿件计算核心</DMS_KillDozer.corePart.parts.wetware_computer_core.customLabel>
   <!-- EN: turret seat -->
-  <DMS_KillDozer.corePart.parts.turret_seat.customLabel>炮塔座圈</DMS_KillDozer.corePart.parts.turret_seat.customLabel>
+  <DMS_KillDozer.corePart.parts.turret_seat.customLabel>砲塔座圈</DMS_KillDozer.corePart.parts.turret_seat.customLabel>
   <!-- EN: elevator -->
   <DMS_KillDozer.corePart.parts.turret_seat.parts.elevator.customLabel>俯仰机构</DMS_KillDozer.corePart.parts.turret_seat.parts.elevator.customLabel>
   <!-- EN: integrated sensor system -->
@@ -411,14 +411,14 @@
   <!-- EN: main battery -->
   <DMS_TrashBin.corePart.parts.main_battery.customLabel>主电池</DMS_TrashBin.corePart.parts.main_battery.customLabel>
   <!-- EN: visual sensor -->
-  <DMS_TrashBin.corePart.parts.visual_sensor.customLabel>视觉传感器</DMS_TrashBin.corePart.parts.visual_sensor.customLabel>
+  <DMS_TrashBin.corePart.parts.visual_sensor.customLabel>视觉感测器</DMS_TrashBin.corePart.parts.visual_sensor.customLabel>
   <!-- EN: infrared sensor -->
-  <DMS_TrashBin.corePart.parts.infrared_sensor.customLabel>红外传感器</DMS_TrashBin.corePart.parts.infrared_sensor.customLabel>
+  <DMS_TrashBin.corePart.parts.infrared_sensor.customLabel>红外感测器</DMS_TrashBin.corePart.parts.infrared_sensor.customLabel>
   <!-- EN: hover system -->
   <DMS_TrashBin.corePart.parts.hover_system.customLabel>悬浮系统</DMS_TrashBin.corePart.parts.hover_system.customLabel>
   <!-- EN: grabbing arm -->
   <DMS_TrashBin.corePart.parts.grabbing_arm.customLabel>辅助机械臂</DMS_TrashBin.corePart.parts.grabbing_arm.customLabel>
   <!-- EN: hearing sensor -->
-  <DMS_TrashBin.corePart.parts.hearing_sensor.customLabel>听觉传感器</DMS_TrashBin.corePart.parts.hearing_sensor.customLabel>
+  <DMS_TrashBin.corePart.parts.hearing_sensor.customLabel>听觉感测器</DMS_TrashBin.corePart.parts.hearing_sensor.customLabel>
   
 </LanguageData>

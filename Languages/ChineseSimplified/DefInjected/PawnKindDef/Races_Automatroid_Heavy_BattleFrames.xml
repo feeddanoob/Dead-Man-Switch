@@ -10,6 +10,9 @@
   <!-- EN: field command -->
   <DMS_Mech_FieldCommand.label>中继指挥</DMS_Mech_FieldCommand.label>
   
+  <!-- EN: shaft worker -->
+  <DMS_Mech_ShaftWorker.label>工程驳机</DMS_Mech_ShaftWorker.label>
+  
   <!-- EN: tachanka -->
   <DMS_Mech_Tachanka.label>机枪马车</DMS_Mech_Tachanka.label>
   

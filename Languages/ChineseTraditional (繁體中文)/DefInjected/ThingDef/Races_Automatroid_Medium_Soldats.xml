@@ -24,7 +24,7 @@
   <DMS_Mech_Kanonier.tools.right_fist.label>右拳</DMS_Mech_Kanonier.tools.right_fist.label>
   
   <!-- EN: sergeant -->
-  <DMS_Mech_Sergeant.label>士官</DMS_Mech_Sergeant.label>
+  <DMS_Mech_Sergeant.label>軍士</DMS_Mech_Sergeant.label>
   <!-- EN: As a relay command variant of a mech soldat, it has a very recognizable disc-shaped omnidirectional radar and transceiver antenna. it can be the mechnitor command relay but due to its weight with reduced fire control system, which can only equip a light weapon for self defense. -->
   <DMS_Mech_Sergeant.description>作為士兵系列的中繼指揮變體，它擁有非常容易辨認的圓盤形全向雷達和收發天線。它可以作為機械體的指揮中繼，但由於其重量和火控系統的削減，只能裝備輕武器用於自衛。</DMS_Mech_Sergeant.description>
   <!-- EN: head -->

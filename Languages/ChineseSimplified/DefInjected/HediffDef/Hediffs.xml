@@ -2,9 +2,9 @@
 <LanguageData>
   
   <!-- EN: xeno limb syndrome -->
-  <DMS_BionicShock.label>异肢综合征</DMS_BionicShock.label>
+  <DMS_BionicShock.label>异肢症候群</DMS_BionicShock.label>
   <!-- EN: a psychological syndrome that is common to occur in pre-spacer world when having one or more neural machinery bionic prosthesis installed, Due to the lack of biological receptors, the body system will temporarily reject the connection after the nerve is connected.\n\nThe severity of these symptoms can be divided into five levels. -->
-  <DMS_BionicShock.description>由于缺乏生物受体，患者会强烈排斥安装的神经机械仿生假体，这是一种在前太空世界中常见的一种心理综合征。\n\n这些症状的严重程度可分为五个等级。</DMS_BionicShock.description>
+  <DMS_BionicShock.description>由于缺乏生物受体，患者会强烈排斥安装的神经机械仿生假体，这是一种在前太空世界中常见的一种心理症候群。\n\n这些症状的严重程度可分为五个等级。</DMS_BionicShock.description>
   <!-- EN: initial -->
   <DMS_BionicShock.stages.initial.label>初始</DMS_BionicShock.stages.initial.label>
   <!-- EN: LV.1 initial -->
@@ -19,17 +19,17 @@
   <DMS_BionicShock.stages.LV5_disabled.label>失能</DMS_BionicShock.stages.LV5_disabled.label>
   
   <!-- EN: phantom limb syndrome -->
-  <DMS_BionicShockRemove.label>幻肢综合征</DMS_BionicShockRemove.label>
+  <DMS_BionicShockRemove.label>幻肢症候群</DMS_BionicShockRemove.label>
   <!-- EN: a psychological syndrome that is common to occur in pre-spacer world when removed a neural machinery bionic Prosthesis. -->
-  <DMS_BionicShockRemove.description>患者会觉得被移除神经机械仿生假体依然能够被感觉到。这是一种在前太空世界中常见的一种心理综合征。</DMS_BionicShockRemove.description>
+  <DMS_BionicShockRemove.description>患者会觉得被移除神经机械仿生假体依然能够被感觉到。这是一种在前太空世界中常见的一种心理症候群。</DMS_BionicShockRemove.description>
   <!-- EN: initial -->
   <DMS_BionicShockRemove.stages.initial.label>轻微</DMS_BionicShockRemove.stages.initial.label>
   <!-- EN: pain -->
   <DMS_BionicShockRemove.stages.pain.label>痛苦</DMS_BionicShockRemove.stages.pain.label>
   
   <!-- EN: emotional misalignment -->
-  <DMS_FilterShock.label>情感错位综合征</DMS_FilterShock.label>
-  <!-- EN: a psychological syndrome after removed the sensory filter, known as the "price of pawn", will have some mental break but it won't last long. -->
+  <DMS_FilterShock.label>情感错位症候群</DMS_FilterShock.label>
+  <!-- EN: a psychological syndrome caused by sensory filter shutdown, known as the "price of pawn", will have some mental break but it won't last long. -->
   <DMS_FilterShock.description>去掉感官过滤器后的一种心理综合症，俗称“成为棋子的代价”，会有一些精神上的崩溃但一般不会持续太久。</DMS_FilterShock.description>
   <!-- EN: catatonic -->
   <DMS_FilterShock.stages.catatonic.label>应激反应</DMS_FilterShock.stages.catatonic.label>

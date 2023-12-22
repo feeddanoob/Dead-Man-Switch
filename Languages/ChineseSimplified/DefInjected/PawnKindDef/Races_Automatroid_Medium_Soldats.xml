@@ -5,10 +5,13 @@
   <DMS_Mech_Grenadier.label>掷弹兵</DMS_Mech_Grenadier.label>
   
   <!-- EN: kanonier -->
-  <DMS_Mech_Kanonier.label>炮兵</DMS_Mech_Kanonier.label>
+  <DMS_Mech_Kanonier.label>砲兵</DMS_Mech_Kanonier.label>
+  
+  <!-- EN: raider -->
+  <DMS_Mech_Raider.label>猎匪</DMS_Mech_Raider.label>
   
   <!-- EN: sergeant -->
-  <DMS_Mech_Sergeant.label>军官</DMS_Mech_Sergeant.label>
+  <DMS_Mech_Sergeant.label>军士</DMS_Mech_Sergeant.label>
   
   <!-- EN: soldat -->
   <DMS_Mech_Soldat.label>士兵</DMS_Mech_Soldat.label>

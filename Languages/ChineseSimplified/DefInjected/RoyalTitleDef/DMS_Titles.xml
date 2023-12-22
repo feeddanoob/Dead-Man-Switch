@@ -3,18 +3,18 @@
   
   <!-- EN: brigadier -->
   <DMS_Brigadier.label>准将</DMS_Brigadier.label>
-  <!-- EN: The warrant officer is the first title of military officer duty,. -->
-  <DMS_Brigadier.description>TODO</DMS_Brigadier.description>
+  <!-- EN: A senior rank above colonel, equivalent to a brigadier general or commodore, typically commanding a brigade of several thousand soldiers.. -->
+  <DMS_Brigadier.description>上校以上的高级军衔，通常指挥一个由数千名士兵组成的旅。</DMS_Brigadier.description>
   
   <!-- EN: captain -->
   <DMS_Captain.label>上尉</DMS_Captain.label>
-  <!-- EN: The warrant officer is the first title of military officer duty,. -->
-  <DMS_Captain.description>TODO</DMS_Captain.description>
+  <!-- EN: A commissioned officer rank historically corresponding to the command of a company of soldiers. -->
+  <DMS_Captain.description>具有指挥一个连指挥权的军官军衔。</DMS_Captain.description>
   
   <!-- EN: colonel -->
   <DMS_Colonel.label>上校</DMS_Colonel.label>
-  <!-- EN: The warrant officer is the first title of military officer duty,. -->
-  <DMS_Colonel.description>TODO</DMS_Colonel.description>
+  <!-- EN: A colonel was typically in charge of a regiment in an army. -->
+  <DMS_Colonel.description>上校通常负责军队中的一个团。</DMS_Colonel.description>
   
   <!-- EN: corporal -->
   <DMS_Corporal.label>下士</DMS_Corporal.label>
@@ -23,13 +23,13 @@
   
   <!-- EN: lieutenant -->
   <DMS_Lieutenant.label>中尉</DMS_Lieutenant.label>
-  <!-- EN: The warrant officer is the first title of military officer duty,. -->
-  <DMS_Lieutenant.description>TODO</DMS_Lieutenant.description>
+  <!-- EN: A commissioned officer rank, which is typically the most senior of junior officer ranks. -->
+  <DMS_Lieutenant.description>委任军官军衔，通常是初级军官军阶中的最高级别。</DMS_Lieutenant.description>
   
   <!-- EN: major -->
   <DMS_Major.label>少校</DMS_Major.label>
-  <!-- EN: The warrant officer is the first title of military officer duty,. -->
-  <DMS_Major.description>TODO</DMS_Major.description>
+  <!-- EN: A senior military officer rank, major is one rank above captain in armies and air forces, and one rank below colonel. -->
+  <DMS_Major.description>高级军官军衔，陆军和空军少校是上尉以上一级，上校以下一级。</DMS_Major.description>
   
   <!-- EN: pre-sergeant -->
   <DMS_PreSergeant.label>准军士</DMS_PreSergeant.label>
@@ -48,12 +48,12 @@
   
   <!-- EN: sergeant -->
   <DMS_Sergeant.label>军士</DMS_Sergeant.label>
-  <!-- EN: sergeant has. -->
-  <DMS_Sergeant.description>TODO</DMS_Sergeant.description>
+  <!-- EN: a non-commissioned officer placed above the rank of a corporal. -->
+  <DMS_Sergeant.description>下士以上的非委任军官。</DMS_Sergeant.description>
   
   <!-- EN: warrant officer -->
   <DMS_WarrantOfficer.label>准尉</DMS_WarrantOfficer.label>
-  <!-- EN: The warrant officer is the first title of military officer duty,. -->
+  <!-- EN: The warrant officer is the first title of military officer duty. -->
   <DMS_WarrantOfficer.description>准尉是军官职务的第一个头衔。</DMS_WarrantOfficer.description>
   
 </LanguageData>

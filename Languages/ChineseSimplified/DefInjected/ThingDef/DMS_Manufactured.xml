@@ -11,9 +11,9 @@
   <Artifuscle.comps.CompStudiable.completedLetterTitle>已研究 {PARENT_label} ： {RESEARCH} 已解锁</Artifuscle.comps.CompStudiable.completedLetterTitle>
   
   <!-- EN: cluster control chipsets -->
-  <ComponentControlChip.label>集群控制芯片组</ComponentControlChip.label>
+  <ComponentControlChip.label>集群控制晶片组</ComponentControlChip.label>
   <!-- EN: a chipsets for remote machine controller and the core of industrial machines. -->
-  <ComponentControlChip.description>一种用于远程机器控制器的芯片组，是工业机器的核心。</ComponentControlChip.description>
+  <ComponentControlChip.description>一种用于远程机器控制器的晶片组，是工业机器的核心。</ComponentControlChip.description>
   <!-- EN: By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology. -->
   <ComponentControlChip.comps.CompStudiable.completedLetterText>通过研究 {PARENT_label} ， {STUDIER_labelShort} 获得了研究项目 {RESEARCH} 所需的见解。\n\n您的研究人员现在可以使用研究平台开始研究如何实际使用该技术。</ComponentControlChip.comps.CompStudiable.completedLetterText>
   <!-- EN: {PARENT_label} studied: {RESEARCH} unlocked -->
@@ -22,14 +22,14 @@
   <!-- EN: fire control system -->
   <ComponentFireControl.label>火控系统</ComponentFireControl.label>
   <!-- EN: a chipsets designed for weapon control assist and trajectory tracking. -->
-  <ComponentFireControl.description>设计用于武器控制辅助和轨迹跟踪的芯片组。</ComponentFireControl.description>
+  <ComponentFireControl.description>设计用于武器控制辅助和轨迹跟踪的晶片组。</ComponentFireControl.description>
   <!-- EN: By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology. -->
   <ComponentFireControl.comps.CompStudiable.completedLetterText>通过研究 {PARENT_label} ， {STUDIER_labelShort} 获得了研究项目 {RESEARCH} 所需的见解。\n\n您的研究人员现在可以使用研究平台开始研究如何实际使用该技术。</ComponentFireControl.comps.CompStudiable.completedLetterText>
   <!-- EN: {PARENT_label} studied: {RESEARCH} unlocked -->
   <ComponentFireControl.comps.CompStudiable.completedLetterTitle>已研究 {PARENT_label} ： {RESEARCH} 已解锁</ComponentFireControl.comps.CompStudiable.completedLetterTitle>
   
   <!-- EN: stamponent -->
-  <ComponentStamped.label>冲压机件</ComponentStamped.label>
+  <ComponentStamped.label>冲压零件</ComponentStamped.label>
   <!-- EN: Hydraulic integrally formed component. Used in products that require mass production on the assembly line. -->
   <ComponentStamped.description>液压一体成型部件。用于需要在装配线上大规模生产的产品。</ComponentStamped.description>
   
@@ -57,9 +57,9 @@
   <Neurocomputer.comps.CompStudiable.completedLetterTitle>已研究 {PARENT_label} ： {RESEARCH} 已解锁</Neurocomputer.comps.CompStudiable.completedLetterTitle>
   
   <!-- EN: plastic fiber -->
-  <Plasfiber.label>塑料纤维</Plasfiber.label>
+  <Plasfiber.label>塑胶纤维</Plasfiber.label>
   <!-- EN: A type of synthetic fiber made by plasteel, which is airtight and certain degree of sharp-proof performance. However, it does not have much resistance to blunt impact.\n\n Plastic fiber has a importance in the medical field. As a biomimetic surface material, it does not produce rejection reactions from the immune system. -->
-  <Plasfiber.description>一种由塑钢制成的合成纤维，具有气密性和一定的防穿刺性能。然而，它对钝性冲击的抵抗力并不强。\n\n 塑料纤维在医疗领域具有重要意义。作为仿生表面材料，它不会产生免疫系统的排斥反应。</Plasfiber.description>
+  <Plasfiber.description>一种由塑钢制成的合成纤维，具有气密性和一定的防穿刺性能。然而，它对钝性冲击的抵抗力并不强。\n\n 塑胶纤维在医疗领域具有重要意义。作为仿生表面材料，它不会产生免疫系统的排斥反应。</Plasfiber.description>
   
   <!-- EN: polyester -->
   <Polyester.label>聚酯纤维</Polyester.label>

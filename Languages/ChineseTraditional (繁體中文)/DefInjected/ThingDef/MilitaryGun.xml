@@ -16,11 +16,11 @@
   <!-- EN: barrel -->
   <DMS_AntiMaterialRifle.tools.barrel.label>槍管</DMS_AntiMaterialRifle.tools.barrel.label>
   <!-- EN: mech AMR -->
-  <DMS_AntiMaterialRifle.verbs.Verb_Shoot.label>TODO</DMS_AntiMaterialRifle.verbs.Verb_Shoot.label>
+  <DMS_AntiMaterialRifle.verbs.Verb_Shoot.label>機兵反器材步槍</DMS_AntiMaterialRifle.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
   <DMS_AntiMaterialRifle.tools.muzzle.label>槍口</DMS_AntiMaterialRifle.tools.muzzle.label>
-  <DMS_AntiMaterialRifle.verbs.Verb_ShootCE.label>機械 AMR</DMS_AntiMaterialRifle.verbs.Verb_ShootCE.label>
+  <DMS_AntiMaterialRifle.verbs.Verb_ShootCE.label>機兵反器材步槍</DMS_AntiMaterialRifle.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech assault rifle -->
   <DMS_AssaultRifle.label>機兵突擊步槍</DMS_AssaultRifle.label>
@@ -31,11 +31,11 @@
   <!-- EN: barrel -->
   <DMS_AssaultRifle.tools.barrel.label>槍管</DMS_AssaultRifle.tools.barrel.label>
   <!-- EN: mech assault rifle -->
-  <DMS_AssaultRifle.verbs.Verb_Shoot.label>TODO</DMS_AssaultRifle.verbs.Verb_Shoot.label>
+  <DMS_AssaultRifle.verbs.Verb_Shoot.label>機兵突擊步槍</DMS_AssaultRifle.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
   <DMS_AssaultRifle.tools.muzzle.label>槍口</DMS_AssaultRifle.tools.muzzle.label>
-  <DMS_AssaultRifle.verbs.Verb_ShootCE.label>機甲突擊步槍</DMS_AssaultRifle.verbs.Verb_ShootCE.label>
+  <DMS_AssaultRifle.verbs.Verb_ShootCE.label>機兵突擊步槍</DMS_AssaultRifle.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech assault shotgun -->
   <DMS_AssaultShotgun.label>機兵突擊霰彈槍</DMS_AssaultShotgun.label>
@@ -46,11 +46,11 @@
   <!-- EN: barrel -->
   <DMS_AssaultShotgun.tools.barrel.label>槍管</DMS_AssaultShotgun.tools.barrel.label>
   <!-- EN: mech assault shotgun -->
-  <DMS_AssaultShotgun.verbs.Verb_Shoot.label>TODO</DMS_AssaultShotgun.verbs.Verb_Shoot.label>
+  <DMS_AssaultShotgun.verbs.Verb_Shoot.label>機兵突擊霰彈槍</DMS_AssaultShotgun.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
   <DMS_AssaultShotgun.tools.muzzle.label>槍口</DMS_AssaultShotgun.tools.muzzle.label>
-  <DMS_AssaultShotgun.verbs.Verb_ShootCE.label>機械突擊霰彈槍</DMS_AssaultShotgun.verbs.Verb_ShootCE.label>
+  <DMS_AssaultShotgun.verbs.Verb_ShootCE.label>機兵突擊霰彈槍</DMS_AssaultShotgun.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech grenade launcher -->
   <DMS_AutomaticGrenadeLauncher.label>機兵榴彈發射器</DMS_AutomaticGrenadeLauncher.label>
@@ -61,28 +61,28 @@
   <!-- EN: barrel -->
   <DMS_AutomaticGrenadeLauncher.tools.barrel.label>槍管</DMS_AutomaticGrenadeLauncher.tools.barrel.label>
   <!-- EN: mech grenade launcher -->
-  <DMS_AutomaticGrenadeLauncher.verbs.Verb_Shoot.label>TODO</DMS_AutomaticGrenadeLauncher.verbs.Verb_Shoot.label>
+  <DMS_AutomaticGrenadeLauncher.verbs.Verb_Shoot.label>機兵榴彈發射器</DMS_AutomaticGrenadeLauncher.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
   <DMS_AutomaticGrenadeLauncher.tools.muzzle.label>槍口</DMS_AutomaticGrenadeLauncher.tools.muzzle.label>
-  <DMS_AutomaticGrenadeLauncher.verbs.Verb_ShootCE.label>機械榴彈發射器</DMS_AutomaticGrenadeLauncher.verbs.Verb_ShootCE.label>
+  <DMS_AutomaticGrenadeLauncher.verbs.Verb_ShootCE.label>機兵榴彈發射器</DMS_AutomaticGrenadeLauncher.verbs.Verb_ShootCE.label>
   
   <!-- EN: tactical autopistol bullet -->
-  <DMS_Bullet_Pistol.label>戰術自動手槍子彈</DMS_Bullet_Pistol.label>
+  <DMS_Bullet_Pistol.label>自動手槍彈</DMS_Bullet_Pistol.label>
   
   <!-- EN: Door Breaker -->
-  <DMS_DoorBreaker.label>破門器</DMS_DoorBreaker.label>
+  <DMS_DoorBreaker.label>破門錘</DMS_DoorBreaker.label>
   <!-- EN: A special design battering ram for mech breacher which has a built-in launcher, and an explosive ramming head. -->
-  <DMS_DoorBreaker.description>這是一種特殊設計的機甲衝撞器，帶有內建發射器和爆炸衝撞頭。</DMS_DoorBreaker.description>
+  <DMS_DoorBreaker.description>這是一種特殊設計的機兵破門錘，具有短距裝藥發射器與成形裝藥彈頭。</DMS_DoorBreaker.description>
   <!-- EN: head -->
-  <DMS_DoorBreaker.tools.head.label>衝撞頭</DMS_DoorBreaker.tools.head.label>
+  <DMS_DoorBreaker.tools.head.label>錘頭</DMS_DoorBreaker.tools.head.label>
   <!-- EN: barrel -->
-  <DMS_DoorBreaker.tools.barrel.label>槍管</DMS_DoorBreaker.tools.barrel.label>
+  <DMS_DoorBreaker.tools.barrel.label>錘身</DMS_DoorBreaker.tools.barrel.label>
   <!-- EN: Door Breaker -->
-  <DMS_DoorBreaker.verbs.Verb_Shoot.label>TODO</DMS_DoorBreaker.verbs.Verb_Shoot.label>
+  <DMS_DoorBreaker.verbs.Verb_Shoot.label>破門錘</DMS_DoorBreaker.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_DoorBreaker.verbs.Verb_ShootCE.label>破門器</DMS_DoorBreaker.verbs.Verb_ShootCE.label>
+  <DMS_DoorBreaker.verbs.Verb_ShootCE.label>破門錘</DMS_DoorBreaker.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech LMG -->
   <DMS_LightMachineGun.label>機兵輕機槍</DMS_LightMachineGun.label>
@@ -93,11 +93,11 @@
   <!-- EN: barrel -->
   <DMS_LightMachineGun.tools.barrel.label>槍管</DMS_LightMachineGun.tools.barrel.label>
   <!-- EN: mech LMG -->
-  <DMS_LightMachineGun.verbs.Verb_Shoot.label>TODO</DMS_LightMachineGun.verbs.Verb_Shoot.label>
+  <DMS_LightMachineGun.verbs.Verb_Shoot.label>機兵輕機槍</DMS_LightMachineGun.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
   <DMS_LightMachineGun.tools.muzzle.label>槍口</DMS_LightMachineGun.tools.muzzle.label>
-  <DMS_LightMachineGun.verbs.Verb_ShootCE.label>機械LMG</DMS_LightMachineGun.verbs.Verb_ShootCE.label>
+  <DMS_LightMachineGun.verbs.Verb_ShootCE.label>機兵輕機槍</DMS_LightMachineGun.verbs.Verb_ShootCE.label>
   
   <!-- EN: machete -->
   <DMS_Machete.label>砍刀</DMS_Machete.label>
@@ -119,11 +119,11 @@
   <!-- EN: barrel -->
   <DMS_MarksmanRifle.tools.barrel.label>槍管</DMS_MarksmanRifle.tools.barrel.label>
   <!-- EN: mech marksman rifle -->
-  <DMS_MarksmanRifle.verbs.Verb_Shoot.label>TODO</DMS_MarksmanRifle.verbs.Verb_Shoot.label>
+  <DMS_MarksmanRifle.verbs.Verb_Shoot.label>機兵射手步槍</DMS_MarksmanRifle.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
   <DMS_MarksmanRifle.tools.muzzle.label>槍口</DMS_MarksmanRifle.tools.muzzle.label>
-  <DMS_MarksmanRifle.verbs.Verb_ShootCE.label>機械射手步槍</DMS_MarksmanRifle.verbs.Verb_ShootCE.label>
+  <DMS_MarksmanRifle.verbs.Verb_ShootCE.label>機兵射手步槍</DMS_MarksmanRifle.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech SemiAutoRifle -->
   <DMS_SemiAutoRifle.label>機兵半自動步槍</DMS_SemiAutoRifle.label>
@@ -134,11 +134,11 @@
   <!-- EN: barrel -->
   <DMS_SemiAutoRifle.tools.barrel.label>槍管</DMS_SemiAutoRifle.tools.barrel.label>
   <!-- EN: mech SemiAutoRifle -->
-  <DMS_SemiAutoRifle.verbs.Verb_Shoot.label>TODO</DMS_SemiAutoRifle.verbs.Verb_Shoot.label>
+  <DMS_SemiAutoRifle.verbs.Verb_Shoot.label>機兵半自動步槍</DMS_SemiAutoRifle.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
   <DMS_SemiAutoRifle.tools.muzzle.label>槍口</DMS_SemiAutoRifle.tools.muzzle.label>
-  <DMS_SemiAutoRifle.verbs.Verb_ShootCE.label>機械半自動步槍</DMS_SemiAutoRifle.verbs.Verb_ShootCE.label>
+  <DMS_SemiAutoRifle.verbs.Verb_ShootCE.label>機兵半自動步槍</DMS_SemiAutoRifle.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech pistol -->
   <DMS_TaticalPistol.label>機兵手槍</DMS_TaticalPistol.label>
@@ -147,12 +147,12 @@
   <!-- EN: grip -->
   <DMS_TaticalPistol.tools.grip.label>握把</DMS_TaticalPistol.tools.grip.label>
   <!-- EN: barrel -->
-  <DMS_TaticalPistol.tools.barrel.label>TODO</DMS_TaticalPistol.tools.barrel.label>
+  <DMS_TaticalPistol.tools.barrel.label>槍管</DMS_TaticalPistol.tools.barrel.label>
   <!-- EN: mech pistol -->
-  <DMS_TaticalPistol.verbs.Verb_Shoot.label>TODO</DMS_TaticalPistol.verbs.Verb_Shoot.label>
+  <DMS_TaticalPistol.verbs.Verb_Shoot.label>機兵手槍</DMS_TaticalPistol.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
   <DMS_TaticalPistol.tools.muzzle.label>槍口</DMS_TaticalPistol.tools.muzzle.label>
-  <DMS_TaticalPistol.verbs.Verb_ShootCE.label>機械手槍</DMS_TaticalPistol.verbs.Verb_ShootCE.label>
+  <DMS_TaticalPistol.verbs.Verb_ShootCE.label>機兵手槍</DMS_TaticalPistol.verbs.Verb_ShootCE.label>
   
 </LanguageData>

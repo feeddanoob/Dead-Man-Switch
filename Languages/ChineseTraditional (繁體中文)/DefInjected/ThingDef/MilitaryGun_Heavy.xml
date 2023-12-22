@@ -32,7 +32,7 @@
   <!-- EN: barrel -->
   <DMS_HeavyMachineGun.tools.barrel.label>槍管</DMS_HeavyMachineGun.tools.barrel.label>
   <!-- EN: mech HMG -->
-  <DMS_HeavyMachineGun.verbs.Verb_Shoot.label>TODO</DMS_HeavyMachineGun.verbs.Verb_Shoot.label>
+  <DMS_HeavyMachineGun.verbs.Verb_Shoot.label>機兵重機槍</DMS_HeavyMachineGun.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
   <DMS_HeavyMachineGun.tools.muzzle-0.label>槍口</DMS_HeavyMachineGun.tools.muzzle-0.label>
@@ -49,7 +49,7 @@
   <!-- EN: barrel -->
   <DMS_SniperCannon.tools.barrel.label>槍管</DMS_SniperCannon.tools.barrel.label>
   <!-- EN: mech sniper cannon -->
-  <DMS_SniperCannon.verbs.Verb_Shoot.label>TODO</DMS_SniperCannon.verbs.Verb_Shoot.label>
+  <DMS_SniperCannon.verbs.Verb_Shoot.label>機兵狙擊炮</DMS_SniperCannon.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
   <DMS_SniperCannon.tools.muzzle-0.label>槍口</DMS_SniperCannon.tools.muzzle-0.label>
@@ -64,7 +64,7 @@
   <!-- EN: barrel -->
   <DMS_Tarbosaurus_BossGun.tools.barrel.label>槍管</DMS_Tarbosaurus_BossGun.tools.barrel.label>
   <!-- EN: 2A38M -->
-  <DMS_Tarbosaurus_BossGun.verbs.Verb_Shoot.label>TODO</DMS_Tarbosaurus_BossGun.verbs.Verb_Shoot.label>
+  <DMS_Tarbosaurus_BossGun.verbs.Verb_Shoot.label>2A38M</DMS_Tarbosaurus_BossGun.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
   <DMS_Tarbosaurus_BossGun.tools.muzzle.label>槍口</DMS_Tarbosaurus_BossGun.tools.muzzle.label>

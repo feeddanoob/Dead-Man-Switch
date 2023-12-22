@@ -4,7 +4,7 @@
   <!-- EN: gestate ape -->
   <DMS_Make_Ape.label>組裝猿式機兵</DMS_Make_Ape.label>
   <!-- EN: Gestate an ape mechanoid. -->
-  <DMS_Make_Ape.description>組裝一架猿式機兵</DMS_Make_Ape.description>
+  <DMS_Make_Ape.description>組裝一架猿式機兵，作為一種技術驗證機體。能夠很好的同時操控中型與重型的機兵武器</DMS_Make_Ape.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_Ape.jobString>組裝機械體中</DMS_Make_Ape.jobString>
   
@@ -32,7 +32,7 @@
   <!-- EN: gestate field command -->
   <DMS_Make_FieldCommand.label>組裝中繼指揮</DMS_Make_FieldCommand.label>
   <!-- EN: Gestate a field command mechanoid. -->
-  <DMS_Make_FieldCommand.description>組裝中繼指揮，一種安裝了全向天線的機械師中繼控制指揮機體。</DMS_Make_FieldCommand.description>
+  <DMS_Make_FieldCommand.description>組裝中繼指揮，一種安裝了全向天線的機械師中繼指揮型號。</DMS_Make_FieldCommand.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_FieldCommand.jobString>組裝機械體中</DMS_Make_FieldCommand.jobString>
   
@@ -79,9 +79,9 @@
   <DMS_Make_Phalanx.jobString>組裝機械體中</DMS_Make_Phalanx.jobString>
   
   <!-- EN: gestate pioneer -->
-  <DMS_Make_Pioneer.label>組裝開拓者</DMS_Make_Pioneer.label>
+  <DMS_Make_Pioneer.label>組裝先鋒</DMS_Make_Pioneer.label>
   <!-- EN: Gestate a pioneer mechanoid. -->
-  <DMS_Make_Pioneer.description>組裝開拓者機械體</DMS_Make_Pioneer.description>
+  <DMS_Make_Pioneer.description>組裝先鋒機兵，一種用於輔助狙擊手的支援機體。</DMS_Make_Pioneer.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_Pioneer.jobString>組裝機械體中</DMS_Make_Pioneer.jobString>
   
@@ -102,7 +102,7 @@
   <!-- EN: gestate sergeant -->
   <DMS_Make_Sergeant.label>組裝軍士</DMS_Make_Sergeant.label>
   <!-- EN: Gestate a sergeant mechanoid. -->
-  <DMS_Make_Sergeant.description>組裝軍士機兵，一種中繼控制士兵型用以組成機械化戰鬥集群的指揮特化型機兵。</DMS_Make_Sergeant.description>
+  <DMS_Make_Sergeant.description>組裝軍士機兵，一種中繼控制士兵型用以組織混成機兵戰鬥集群(CAB)的指揮特化型機兵。</DMS_Make_Sergeant.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_Sergeant.jobString>組裝機械體中</DMS_Make_Sergeant.jobString>
   
@@ -114,9 +114,9 @@
   <DMS_Make_ShaftWorker.jobString>組裝機械體中</DMS_Make_ShaftWorker.jobString>
   
   <!-- EN: gestate siegebreaker -->
-  <DMS_Make_Siegebreaker.label>組裝破城者</DMS_Make_Siegebreaker.label>
+  <DMS_Make_Siegebreaker.label>組裝襲城者</DMS_Make_Siegebreaker.label>
   <!-- EN: Gestate a siegebreaker mechanoid. -->
-  <DMS_Make_Siegebreaker.description>組裝攻城者機兵，一種安裝了火箭發動機用以短距突擊的重裝甲機兵。</DMS_Make_Siegebreaker.description>
+  <DMS_Make_Siegebreaker.description>組裝襲城者機兵，一種安裝了火箭發動機用以短距突擊的重裝甲機兵。</DMS_Make_Siegebreaker.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_Siegebreaker.jobString>組裝機械體中</DMS_Make_Siegebreaker.jobString>
   

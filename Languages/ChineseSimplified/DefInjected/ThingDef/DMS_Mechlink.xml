@@ -4,7 +4,7 @@
   <!-- EN: cluster transceiver -->
   <DMS_MechLink.label>集群收发器</DMS_MechLink.label>
   <!-- EN: A man-made bionic implant that allows direct control of mechanoids. No one know if it is the early model of Mechlink or it's reverse engineered product by later generations. anyway it is mechlink in all degree but humans in rimworld can understand and imitate.\n\nDue to processing precision issues, these imitations from rimworld often have some installation side effects... -->
-  <DMS_MechLink.description>一种人造仿生植入物，可以直接控制机械体。没人知道它是机甲链接的早期型号，还是后人逆向工程的产物。反正都是机甲链接，但是边缘世界的人类可以理解和模仿。\n\n由于加工精度问题，边缘世界的这些模仿品往往会产生一些安装副作用……</DMS_MechLink.description>
+  <DMS_MechLink.description>一种人造仿生植入物，可以直接控制机械体。没人知道它是机甲连结的早期型号，还是后人逆向工程的产物。反正都是机甲连结，但是边缘世界的人类可以理解和模仿。\n\n由于加工精度问题，边缘世界的这些模仿品往往会产生一些安装副作用……</DMS_MechLink.description>
   <!-- EN: Install {0_label} to become mechanitor -->
   <DMS_MechLink.comps.CompUsableImplant.useLabel>安装 {0_label} 以成为机械师</DMS_MechLink.comps.CompUsableImplant.useLabel>
   

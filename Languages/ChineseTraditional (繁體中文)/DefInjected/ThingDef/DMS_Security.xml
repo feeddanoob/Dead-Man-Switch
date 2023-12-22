@@ -10,30 +10,30 @@
   <!-- EN: GateKeeper -->
   <DMS_Gun_GateKeeper.label>守門人</DMS_Gun_GateKeeper.label>
   <!-- EN: GateKeeper -->
-  <DMS_Gun_GateKeeper.description>TODO</DMS_Gun_GateKeeper.description>
+  <DMS_Gun_GateKeeper.description>三十毫米多管旋轉機槍，具有極高的射速</DMS_Gun_GateKeeper.description>
   <!-- EN: GateKeeper -->
-  <DMS_Gun_GateKeeper.verbs.Verb_Shoot.label>TODO</DMS_Gun_GateKeeper.verbs.Verb_Shoot.label>
+  <DMS_Gun_GateKeeper.verbs.Verb_Shoot.label>守門人</DMS_Gun_GateKeeper.verbs.Verb_Shoot.label>
   
   <!-- EN: kord -->
   <DMS_Gun_Kord.label>Kord</DMS_Gun_Kord.label>
   <!-- EN: kord -->
-  <DMS_Gun_Kord.description>TODO</DMS_Gun_Kord.description>
+  <DMS_Gun_Kord.description>現代化重型機槍，具有相當的可靠性</DMS_Gun_Kord.description>
   <!-- EN: kord -->
-  <DMS_Gun_Kord.verbs.Verb_Shoot.label>TODO</DMS_Gun_Kord.verbs.Verb_Shoot.label>
+  <DMS_Gun_Kord.verbs.Verb_Shoot.label>Kord</DMS_Gun_Kord.verbs.Verb_Shoot.label>
   
   <!-- EN: Tunguska -->
   <DMS_Gun_Tunguska.label>通古斯卡</DMS_Gun_Tunguska.label>
   <!-- EN: Tunguska -->
-  <DMS_Gun_Tunguska.description>TODO</DMS_Gun_Tunguska.description>
+  <DMS_Gun_Tunguska.description>四聯裝彈炮一體防空炮塔</DMS_Gun_Tunguska.description>
   <!-- EN: Tunguska -->
-  <DMS_Gun_Tunguska.verbs.Verb_Shoot.label>TODO</DMS_Gun_Tunguska.verbs.Verb_Shoot.label>
+  <DMS_Gun_Tunguska.verbs.Verb_Shoot.label>通古斯卡</DMS_Gun_Tunguska.verbs.Verb_Shoot.label>
   
   <!-- EN: GateKeeper -->
   <DMS_Turret_GateKeeper.label>守門人</DMS_Turret_GateKeeper.label>
   <!-- EN: GateKeeper -->
-  <DMS_Turret_GateKeeper.description>TODO</DMS_Turret_GateKeeper.description>
+  <DMS_Turret_GateKeeper.description>三十毫米多管旋轉機槍，具有極高的射速</DMS_Turret_GateKeeper.description>
   <!-- EN: Barrel durability -->
-  <DMS_Turret_GateKeeper.comps.CompRefuelable.fuelGizmoLabel>TO炮管耐久度DO</DMS_Turret_GateKeeper.comps.CompRefuelable.fuelGizmoLabel>
+  <DMS_Turret_GateKeeper.comps.CompRefuelable.fuelGizmoLabel>炮管耐久度</DMS_Turret_GateKeeper.comps.CompRefuelable.fuelGizmoLabel>
   <!-- EN: Shots until barrel change -->
   <DMS_Turret_GateKeeper.comps.CompRefuelable.fuelLabel>剩餘耐久度</DMS_Turret_GateKeeper.comps.CompRefuelable.fuelLabel>
   <!-- EN: Cannot shoot: Needs new reinforced barrel -->
@@ -53,7 +53,7 @@
   <!-- EN: Tunguska -->
   <DMS_Turret_Tunguska.label>通古斯卡</DMS_Turret_Tunguska.label>
   <!-- EN: Tunguska -->
-  <DMS_Turret_Tunguska.description>四管防空機砲，具有良好的</DMS_Turret_Tunguska.description>
+  <DMS_Turret_Tunguska.description>四聯裝彈炮一體防空炮塔</DMS_Turret_Tunguska.description>
   <!-- EN: Barrel durability -->
   <DMS_Turret_Tunguska.comps.CompRefuelable.fuelGizmoLabel>炮管耐久度</DMS_Turret_Tunguska.comps.CompRefuelable.fuelGizmoLabel>
   <!-- EN: Shots until barrel change -->
