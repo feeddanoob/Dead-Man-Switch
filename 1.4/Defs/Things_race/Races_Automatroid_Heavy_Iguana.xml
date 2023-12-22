@@ -33,6 +33,8 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>A_MG_GrenadeLauncher</li>
+          <li>A_SR_GrenadeLauncher</li>
           <li>DMS_MechWeaponHeavy</li>
           <li>H_Gatling20mm</li>
           <li>DMS_Bipedal_HeavyGun</li>
@@ -136,6 +138,7 @@
     <weaponTags>
       <li>DMS_MechWeaponHeavy</li>                                                                     <!--武器-->
       <li>H_Gatling20mm</li>
+      <li>DMS_VehicleWeapon</li>
     </weaponTags>   
     <weaponMoney>3000~9999</weaponMoney>
   </PawnKindDef>
@@ -170,13 +173,19 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>A_MG_GrenadeLauncher</li>
+          <li>A_SR_GrenadeLauncher</li>
           <li>DMS_MechWeaponHeavy</li>
+          <li>H_Gatling20mm</li>
           <li>DMS_Bipedal_HeavyGun</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons>
+          <li>Gun_BinocularsRadio</li>
+        </BypassUsableWeapons>
       </li>
     </modExtensions>
     <!--need new melee tools based on their legs, not arms(those "arms" are supporting mechnical arms)-->
@@ -269,6 +278,8 @@
     <weaponTags>
       <li>DMS_MechWeaponHeavy</li>                                                                     <!--武器-->
       <li>DMS_2A38</li>
+      <li>A_MG_GrenadeLauncher</li>
+      <li>DMS_VehicleWeapon</li>
     </weaponTags>   
     <weaponMoney>3000~9999</weaponMoney>
   </PawnKindDef>

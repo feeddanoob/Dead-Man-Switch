@@ -37,6 +37,10 @@
       <PsychicSensitivity>0</PsychicSensitivity>
     </statBases>
     <race>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>Mechanoid</thinkTreeMain>
       <nameGenerator>DMS_VanguardMechStandard</nameGenerator>

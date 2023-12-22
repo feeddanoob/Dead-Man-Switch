@@ -29,6 +29,7 @@
         <li>GunHeavy</li>
         <li>DMS_MechWeaponLight</li>
         <li>DMS_MechWeaponMeduim</li>
+        <li>A_SuppressWeapon</li>
         <li>DMS_MechWeaponHeavy</li>
       </UsableWeaponTags>
       <EnableTechLevelFilter>true</EnableTechLevelFilter>

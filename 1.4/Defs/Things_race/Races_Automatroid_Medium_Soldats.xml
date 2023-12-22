@@ -80,6 +80,8 @@
     <isFighter>true</isFighter>
     <combatPower>80</combatPower>                                               
     <maxPerGroup>20</maxPerGroup>
+    <canBeSapper>false</canBeSapper>
+    <aiAvoidCover>true</aiAvoidCover>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -116,7 +118,8 @@
           <li>SimpleGun</li>
           <li>Autopistol</li>
           <li>DMS_MechWeaponLight</li>
-          <li>A_MG_GrenadeLauncher</li> 
+          <li>A_MG_GrenadeLauncher</li>
+          <li>A_SR_GrenadeLauncher</li>
           <li>GrenadeDestructive</li>
           <li>GrenadeEMP</li>
           <li>GrenadeSmoke</li>

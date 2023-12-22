@@ -229,7 +229,9 @@
       <baseBodySize>1.5</baseBodySize>
       <baseHealthScale>2</baseHealthScale>
       <mechEnabledWorkTypes>
+        <li>PlantCutting</li>
         <li>Construction</li>
+        <li>Hauling</li>
         <li>Mining</li>
       </mechEnabledWorkTypes>
       <mechFixedSkillLevel>12</mechFixedSkillLevel>

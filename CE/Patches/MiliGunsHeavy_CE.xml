@@ -153,7 +153,7 @@
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Gun_Recoilless</defName>
                 <statBases>
-                    <Mass>540</Mass>
+                    <Mass>80</Mass>
                     <Bulk>185</Bulk>
                     <SightsEfficiency>2.00</SightsEfficiency>
                     <ShotSpread>0.01</ShotSpread>

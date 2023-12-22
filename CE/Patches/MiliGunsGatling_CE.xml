@@ -176,7 +176,6 @@
                 <weaponTags>
 					<li>CE_AI_Suppressive</li>
                     <li>NoSwitch</li>
-                    <li>DMS_MechWeaponHeavy</li>
                     <li>H_Gatling127mm</li>
                 </weaponTags>    
             </li>

@@ -105,7 +105,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[@Name="BaseAutomatroidRace"]</xpath>
 			<value>
-				<comps />
+				<comps/>
 			</value>
 		</nomatch>
 	</li>
@@ -113,10 +113,6 @@
 	<li Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="BaseAutomatroidRace"]/comps</xpath>
 		<value>
-			<!--
-			<li>
-				<compClass>CombatExtended.CompPawnGizmo</compClass>
-			</li>-->
 			<li>
 				<compClass>CombatExtended.CompAmmoGiver</compClass>
 			</li>
