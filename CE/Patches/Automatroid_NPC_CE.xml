@@ -9,49 +9,6 @@
 			<operations>
 
 
-	<!-- ========== PawnKind Patches ========== -->
-    <li Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="DMS_Mech_EscortLifter" or defName="DMS_Mech_Tachanka"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>4</min>
-					<max>6</max>
-				</primaryMagazineCount>
-			</li>
-		</value>
-	</li>
-
-	<!-- ======Escort Lifter (outlander carrier modified battle frame)======-->
-		<li Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="DMS_Mech_EscortLifter"]/statBases</xpath>
-			<value>
-				<CarryWeight>120</CarryWeight>
-				<CarryBulk>70</CarryBulk>
-			</value>
-		</li>
-	
-		<li Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="DMS_Mech_EscortLifter"]/statBases/ArmorRating_Blunt</xpath>
-			<value>
-				<ArmorRating_Blunt>4.5</ArmorRating_Blunt>
-			</value>
-		</li>
-		
-		<!--only torso-->
-		<li Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="DMS_Mech_EscortLifter"]/statBases/ArmorRating_Sharp</xpath>
-			<value>
-				<ArmorRating_Sharp>5</ArmorRating_Sharp>
-			</value>
-		</li>
-	
-		<li Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="DMS_Mech_EscortLifter"]/statBases/ArmorRating_Heat</xpath>
-			<value>
-				<ArmorRating_Heat>0.05</ArmorRating_Heat>
-			</value>
-		</li>
 
 			</operations>
 		</match>

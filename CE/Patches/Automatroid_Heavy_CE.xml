@@ -17,8 +17,8 @@
 				<value>
 					<li Class="CombatExtended.LoadoutPropertiesExtension">
 						<primaryMagazineCount>
-							<min>3</min>
-							<max>5</max>
+							<min>5</min>
+							<max>8</max>
 						</primaryMagazineCount>
 					</li>
 				</value>
@@ -68,7 +68,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Iguana"]/statBases</xpath>
 				<value>
-					<CarryWeight>100</CarryWeight>
+					<CarryWeight>175</CarryWeight>
 					<CarryBulk>80</CarryBulk>
 					<AimingAccuracy>1</AimingAccuracy>
 					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
@@ -195,7 +195,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Gecko"]/statBases</xpath>
 				<value>
-					<CarryWeight>80</CarryWeight>
+					<CarryWeight>135</CarryWeight>
 					<CarryBulk>80</CarryBulk>
 					<AimingAccuracy>1</AimingAccuracy>
 					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
@@ -332,6 +332,7 @@
 					<MeleeParryChance>0.08</MeleeParryChance>
 					<MaxHitPoints>200</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
+					<ReloadSpeed>0.35</ReloadSpeed>
 				</value>
 			</li>
 
@@ -528,7 +529,7 @@
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or
 					defName="DMS_Mech_Geochelone"]/statBases</xpath>
 				<value>
-					<CarryWeight>300</CarryWeight>
+					<CarryWeight>200</CarryWeight>
 					<CarryBulk>200</CarryBulk>
 					<AimingAccuracy>1</AimingAccuracy>
 					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>

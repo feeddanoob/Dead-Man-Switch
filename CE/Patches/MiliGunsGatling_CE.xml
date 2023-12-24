@@ -46,7 +46,6 @@
                 <weaponTags>
 					<li>CE_AI_Suppressive</li>
                     <li>NoSwitch</li>
-                    <li>DMS_VehicleWeapon</li>
                     <li>V_Gatling30mm</li>
                 </weaponTags>    
             </li>

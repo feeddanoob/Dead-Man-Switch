@@ -87,6 +87,7 @@
     <description>an arquebusier variant focuses on stealth action and guerilla deployment for sabotage behind enemy lines. has higher mobility and invisibility.</description>
     <statBases>
       <MoveSpeed>5.6</MoveSpeed>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost> 
     </statBases>
     <modExtensions  Inherit="False">
       <li Class="DMS.MechWeaponExtension">
@@ -143,6 +144,9 @@
     <defName>DMS_Mech_Pioneer</defName>
     <label>pioneer</label>
     <description>forward reconnaissance variant of Arquebusier. with improved sight sensor equipped, it has better capability in field operations, capable to hunting if needed.</description>
+    <statBases>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost> 
+    </statBases>
     <modExtensions  Inherit="False">
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
@@ -203,6 +207,9 @@
     <defName>DMS_Mech_Sniper</defName>
     <label>sniper</label>
     <description>Having the improved sight sensor and fire control system, this Arquebusier variant has the best long range fire precision among all other variants.</description>
+    <statBases>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost> 
+    </statBases>
     <modExtensions  Inherit="False">
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>

@@ -18,7 +18,7 @@
     <race>
       <body>DMS_Bipedal</body>
       <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
-      <baseBodySize>4.5</baseBodySize>
+      <baseBodySize>3.5</baseBodySize>
       <baseHealthScale>5</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
     </race>    
@@ -38,6 +38,7 @@
           <li>DMS_MechWeaponHeavy</li>
           <li>DMS_VehicleWeapon</li>
           <li>H_Gatling20mm</li>
+          <li>V_Gatling30mm</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -132,7 +133,7 @@
           <texPath>Things/Automatroid/tarbosaurus</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>3.75</drawSize>
+          <drawSize>4</drawSize>
         </bodyGraphicData>
       </li>
       <li>
@@ -140,7 +141,7 @@
           <texPath>Things/Automatroid/OldTexture/tarbosaurus</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>3.75</drawSize>
+          <drawSize>4</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>

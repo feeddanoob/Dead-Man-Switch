@@ -47,8 +47,8 @@
 		<value>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
-					<min>1</min>
-					<max>2</max>
+					<min>3</min>
+					<max>6</max>
 				</primaryMagazineCount>
 				<forcedSidearm>
 					<sidearmMoney>
@@ -221,25 +221,23 @@
 		<value>
 			<CarryWeight>50</CarryWeight>
 			<CarryBulk>20</CarryBulk>
-			<AimingAccuracy>1.0</AimingAccuracy>
+			<AimingAccuracy>0.9</AimingAccuracy>
 			<ShootingAccuracyPawn>1.15</ShootingAccuracyPawn>
 			<MeleeDodgeChance>0.11</MeleeDodgeChance>
 			<MeleeCritChance>0.07</MeleeCritChance>
 			<MeleeParryChance>0.06</MeleeParryChance>
 			<MaxHitPoints>200</MaxHitPoints>
 			<NightVisionEfficiency>0.6</NightVisionEfficiency>
+			<ReloadSpeed>1.2</ReloadSpeed>
 		</value>
 	</li>
-
     <!--a bit better aim for grenadier to make sure it can land its shot, also extra bulk due to grenades' and weapon's high bulk-->
 	<li Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_Grenadier"]</xpath>
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Grenadier"]/statBases</xpath>
 		<value>
-			<statBases>
-			    <AimingAccuracy>1.2</AimingAccuracy>
-			    <ShootingAccuracyPawn>1.25</ShootingAccuracyPawn>
-			    <CarryBulk>45</CarryBulk>
-			</statBases>
+			<AimingAccuracy>1.2</AimingAccuracy>
+			<ShootingAccuracyPawn>1.25</ShootingAccuracyPawn>
+			<CarryBulk>45</CarryBulk>
 		</value>
 	</li>
 
@@ -332,31 +330,26 @@
 		<xpath>Defs/ThingDef[defName="DMS_Mech_Jaeger"]/statBases</xpath>
 		<value>
 			<AimingDelayFactor>-0.2</AimingDelayFactor>
-			<ReloadSpeed>0.2</ReloadSpeed>
+			<ReloadSpeed>0.5</ReloadSpeed>
 			<HuntingStealth>0.5</HuntingStealth>
 		</value>
 	</li>
 
     <!--Pioneer with better nv capability-->
 	<li Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_Pioneer"]</xpath>
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Pioneer"]/statBases</xpath>
 		<value>
-			<statBases>
-				
-			    <NightVisionEfficiency>0.95</NightVisionEfficiency>
-		    </statBases>
+			<NightVisionEfficiency>0.95</NightVisionEfficiency>
 		</value>
 	</li>
 
 	<!--Sniper with the most precision aim, also better optics-->
 	<li Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_Sniper"]</xpath>
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Sniper"]/statBases</xpath>
 		<value>
-			<statBases>
-				<AimingAccuracy>1.35</AimingAccuracy>
-			    <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
-			    <NightVisionEfficiency>0.85</NightVisionEfficiency>
-		    </statBases>
+			<AimingAccuracy>1.35</AimingAccuracy>
+			<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+			<NightVisionEfficiency>0.85</NightVisionEfficiency>
 		</value>
 	</li>
 
@@ -538,7 +531,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[defName="DMS_Mech_Phalanx"]</xpath>
 			<value>
-				<comps />
+				<comps/>
 			</value>
 		</nomatch>
 	</li>
@@ -679,8 +672,6 @@
 		</value>
 	</li>
 
-
-
 	<!-- ======Siegerbreaker======-->
 	<li Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="DMS_Mech_Siegebreaker"]/statBases</xpath>
@@ -746,10 +737,6 @@
 				<CanOverHeal>true</CanOverHeal>
 				<MaxOverHeal>116</MaxOverHeal>
 				<MinArmorPct>0.75</MinArmorPct>
-				<!-- <MinArmorValueSharp>10</MinArmorValueSharp>
-				<MinArmorValueBlunt>22</MinArmorValueBlunt>
-				<MinArmorValueHeat>0.2</MinArmorValueHeat>
-				<MinArmorValueElectric>0.1</MinArmorValueElectric> -->
 			</li>
 		</value>
 	</li>
@@ -757,8 +744,6 @@
 
 
 	<!-- ======Lady======-->
-	<!-- weaker version of sniper type, tweak for domestic purpose-->
-
 	<!--patch tools-->
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="DMS_Automatroid_lady"]/tools</xpath>
@@ -820,8 +805,6 @@
 			<NightVisionEfficiency>0.85</NightVisionEfficiency>
 		</value>
 	</li>
-    <!--placeholder for strongest torso armor, will add partial armor afterward-->
-	<!--almost no armor other thean the vest at torso, mostly replaced by bio synthetic skin cover-->
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="DMS_Automatroid_lady"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
@@ -841,7 +824,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[defName="DMS_Automatroid_lady"]</xpath>
 			<value>
-				<comps />
+				<comps/>
 			</value>
 		</nomatch>
 	</li>
@@ -864,10 +847,6 @@
 				<CanOverHeal>true</CanOverHeal>
 				<MaxOverHeal>73</MaxOverHeal>
 				<MinArmorPct>0.75</MinArmorPct>
-				<!-- <MinArmorValueSharp>10</MinArmorValueSharp>
-				<MinArmorValueBlunt>22</MinArmorValueBlunt>
-				<MinArmorValueHeat>0.2</MinArmorValueHeat>
-				<MinArmorValueElectric>0.1</MinArmorValueElectric> -->
 			</li>
 		</value>
 	</li>

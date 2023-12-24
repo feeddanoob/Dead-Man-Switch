@@ -30,7 +30,7 @@
   <!-- EN: emotional misalignment -->
   <DMS_FilterShock.label>情感错位症候群</DMS_FilterShock.label>
   <!-- EN: a psychological syndrome caused by sensory filter shutdown, known as the "price of pawn", will have some mental break but it won't last long. -->
-  <DMS_FilterShock.description>去掉感官过滤器后的一种心理综合症，俗称“成为棋子的代价”，会有一些精神上的崩溃但一般不会持续太久。</DMS_FilterShock.description>
+  <DMS_FilterShock.description>感官过滤器短暂失效时产生的一种心理综合症，俗称“棋子的代价”，会有一些精神上的崩溃但一般不会持续太久。</DMS_FilterShock.description>
   <!-- EN: catatonic -->
   <DMS_FilterShock.stages.catatonic.label>应激反应</DMS_FilterShock.stages.catatonic.label>
   

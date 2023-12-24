@@ -34,10 +34,11 @@
     <apparelMoney>200~400</apparelMoney>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
     <techHediffsChance>0.06</techHediffsChance> 
-    <techHediffsMoney>50~600</techHediffsMoney>
+    <techHediffsMoney>500~600</techHediffsMoney>
     <techHediffsTags>
-      <li>Poor</li>
+      <li>DMS_BM_Bionic</li>
       <li>Simple</li>
+      <li>Poor</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
     <initialWillRange>10~15</initialWillRange>
@@ -142,6 +143,7 @@
       <li>Poor</li>
       <li>Simple</li>
       <li>Advanced</li>
+      <li>DMS_BM_Bionic</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
     <initialWillRange>2~4</initialWillRange>

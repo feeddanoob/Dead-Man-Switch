@@ -69,12 +69,12 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>200</basePowerConsumption>
+        <basePowerConsumption>50</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
         <pawnToSpawn>DMS_Machine_TrashBin</pawnToSpawn>
-        <extraChargingPower>1400</extraChargingPower>
-        <hoursToRecharge>24</hoursToRecharge>
+        <extraChargingPower>200</extraChargingPower>
+        <hoursToRecharge>12</hoursToRecharge>
       </li>
     </comps>
   </ThingDef>
@@ -97,12 +97,12 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>200</basePowerConsumption>
+        <basePowerConsumption>50</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
         <pawnToSpawn>DMS_Machine_VerlingBird</pawnToSpawn>
-        <extraChargingPower>1400</extraChargingPower>
-        <hoursToRecharge>24</hoursToRecharge>
+        <extraChargingPower>100</extraChargingPower>
+        <hoursToRecharge>8</hoursToRecharge>
       </li>
     </comps>
   </ThingDef>
@@ -126,11 +126,11 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>200</basePowerConsumption>
+        <basePowerConsumption>50</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
         <pawnToSpawn>DMS_Machine_Hound</pawnToSpawn>
-        <extraChargingPower>1400</extraChargingPower>
+        <extraChargingPower>200</extraChargingPower>
         <hoursToRecharge>24</hoursToRecharge>
       </li>
     </comps>
@@ -155,11 +155,11 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>200</basePowerConsumption>
+        <basePowerConsumption>50</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
         <pawnToSpawn>DMS_Machine_Hound_RC</pawnToSpawn>
-        <extraChargingPower>1400</extraChargingPower>
+        <extraChargingPower>200</extraChargingPower>
         <hoursToRecharge>24</hoursToRecharge>
       </li>
     </comps>
@@ -187,17 +187,90 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>200</basePowerConsumption>
+        <basePowerConsumption>50</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
         <pawnToSpawn>DMS_Machine_Hound_FS</pawnToSpawn>
-        <extraChargingPower>1400</extraChargingPower>
+        <extraChargingPower>200</extraChargingPower>
         <hoursToRecharge>24</hoursToRecharge>
       </li>
     </comps>
     <researchPrerequisites>
       <li>DMS_EquipmentAdvanced</li>
     </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMechCharger">
+    <defName>DMS_Recharger</defName>
+    <label>automatroid recharger</label>
+    <description>Automatroids can recharge here. During recharge, this recharger produces toxic wastepacks and stores them internally. Haulers must remove the wastepacks from time to time.</description>
+    <graphicData>
+      <texPath>Things/Building/MechCharger</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
+    <designationCategory>DMS_Category</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>10000</WorkToBuild>
+      <Mass>40</Mass>
+      <Flammability>0.25</Flammability>
+    </statBases>
+    <size>(3,1)</size>
+    <building>
+      <requiredMechWeightClasses>
+        <li>Light</li>
+        <li>Medium</li>
+        <li>Heavy</li>
+        <li>UltraHeavy</li>
+      </requiredMechWeightClasses>
+      <barDrawData>
+        <north>
+          <preRotationOffset>(-0.01598358,0.0255661)</preRotationOffset>
+          <size>(0.5505219,0.1139069)</size>
+        </north>
+        <south>
+          <preRotationOffset>(0.006927488,-0.02323151)</preRotationOffset>
+          <size>(0.5479813,0.1345978)</size>
+        </south>
+        <east>
+          <preRotationOffset>(0.1157379,-0.006530767)</preRotationOffset>
+          <size>(0.4481201,0.1160278)</size>
+        </east>
+        <west>
+          <preRotationOffset>(-0.1114426,-0.005119322)</preRotationOffset>
+          <size>(0.4646759,0.1281815)</size>
+        </west>
+      </barDrawData>
+    </building>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentStamped>1</ComponentStamped>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>DMS_Automatroid</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_ThingContainer">
+        <compClass>CompThingContainer</compClass>
+        <stackLimit>100</stackLimit>
+        <drawContainedThing>false</drawContainedThing>
+        <dropEffecterDef>MechChargerWasteRemoved</dropEffecterDef>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+    </comps>
   </ThingDef>
 
 </Defs>

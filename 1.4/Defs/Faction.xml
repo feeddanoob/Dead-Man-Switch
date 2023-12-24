@@ -88,6 +88,8 @@
     </baseTraderKinds>
     <caravanTraderKinds>
       <li>Empire_Caravan_TraderGeneral</li>      <!-- WIP -->
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_BulkGoods</li>
     </caravanTraderKinds>
     <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
     <royalTitleInheritanceRelations>
@@ -116,9 +118,6 @@
         </traders>
         <carriers>
           <DMS_Mech_EscortLifter>10</DMS_Mech_EscortLifter>
-          <Muffalo>6</Muffalo>
-          <Dromedary>5</Dromedary>
-          <Alpaca>2</Alpaca>
         </carriers>
         <guards>
           <DMS_Civilian>3</DMS_Civilian>
@@ -176,6 +175,7 @@
     <disallowedRaidAgeRestrictions>
       <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
     </disallowedRaidAgeRestrictions>
+    <dialogFactionGreetingHostileAppreciative></dialogFactionGreetingHostileAppreciative>
   </FactionDef>
 
   <ThingSetMakerDef>

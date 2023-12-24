@@ -359,12 +359,12 @@
         <completedLetterDef>PositiveEvent</completedLetterDef>
       </li>
     </comps>
-    <!-- <thingSetMakerTags>
+    <thingSetMakerTags>
       <li>RewardStandardCore</li>
-    </thingSetMakerTags> -->
-    <!-- <tradeTags>
+    </thingSetMakerTags>
+    <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags> -->
+    </tradeTags>
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
@@ -402,12 +402,12 @@
         <completedLetterDef>PositiveEvent</completedLetterDef>
       </li>
     </comps>
-    <!-- <thingSetMakerTags>
+    <thingSetMakerTags>
       <li>RewardStandardCore</li>
-    </thingSetMakerTags> -->
-    <!-- <tradeTags>
+    </thingSetMakerTags>
+    <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags> -->
+    </tradeTags>
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
@@ -444,12 +444,12 @@
         <completedLetterDef>PositiveEvent</completedLetterDef>
       </li>
     </comps>
-    <!-- <thingSetMakerTags>
+    <thingSetMakerTags>
       <li>RewardStandardCore</li>
-    </thingSetMakerTags> -->
-    <!-- <tradeTags>
+    </thingSetMakerTags>
+    <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags> -->
+    </tradeTags>
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>

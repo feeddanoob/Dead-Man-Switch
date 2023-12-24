@@ -396,6 +396,7 @@
       <ComponentStamped>15</ComponentStamped>
       <ComponentIndustrial>9</ComponentIndustrial>
       <ReinforcedBarrel>7</ReinforcedBarrel>
+      <ComponentFireControl>1</ComponentFireControl>
     </costList>
     <researchPrerequisites>
       <li>DMS_EquipmentElite</li>

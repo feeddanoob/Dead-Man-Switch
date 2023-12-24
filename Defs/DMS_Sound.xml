@@ -68,7 +68,7 @@
   <SoundDef>
     <defName>DMS_MachineGunHeavy_Shot</defName>
     <context>MapOnly</context>
-    <maxSimultaneous>5</maxSimultaneous>
+    <maxSimultaneous>10</maxSimultaneous>
     <subSounds>
       <li>
         <grains>
@@ -100,7 +100,7 @@
   <SoundDef>
     <defName>DMS_MachinePistol_Shot</defName>
     <context>MapOnly</context>
-    <maxSimultaneous>5</maxSimultaneous>
+    <maxSimultaneous>10</maxSimultaneous>
     <subSounds>
       <li>
         <grains>

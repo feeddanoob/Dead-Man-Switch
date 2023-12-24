@@ -56,7 +56,6 @@
 		<label>GAU-19/A "Attacker"</label>
 		<description>a rapid-firing multiple-barrel firearm chambered in heavy machinegun rounds.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
 		<weaponTags>
-			<li>DMS_MechWeaponHeavy</li>
 			<li>H_Gatling127mm</li>
 		</weaponTags>
 		<graphicData>
@@ -196,7 +195,6 @@
 		<label>GAU-8 "Avenger"</label>
 		<description>a rapid-firing multiple-barrel firearm chambered in high-cailber autocannon rounds, deadly and destructive.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>
 		<weaponTags>
-			<li>DMS_VehicleWeapon</li>
 			<li>V_Gatling30mm</li>
 		</weaponTags>
 		<graphicData>

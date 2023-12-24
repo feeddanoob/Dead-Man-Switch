@@ -12,7 +12,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_ReactionChamber</li>
     </recipeUsers>
@@ -50,7 +50,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_ReactionChamber</li>
     </recipeUsers>
@@ -88,7 +88,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_ReactionChamber</li>
     </recipeUsers>
@@ -128,7 +128,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_ReactionChamber</li>
     </recipeUsers>
@@ -170,7 +170,7 @@
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>ConstructMetal</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_Furnace</li>
     </recipeUsers>
@@ -233,7 +233,7 @@
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>ConstructMetal</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_Furnace</li>
     </recipeUsers>
@@ -296,7 +296,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_Furnace</li>
     </recipeUsers>
@@ -350,7 +350,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
       <li>DMS_Furnace</li>
     </recipeUsers>

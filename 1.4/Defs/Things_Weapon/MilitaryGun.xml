@@ -415,6 +415,7 @@
 		</weaponClasses>
 		<weaponTags>
 			<li>DMS_MechWeaponMeduim</li>
+			<li>A_SR_LongRifle</li>
 			<li>A_SAR_LongRifle</li>
 			<li>A_DMR_LongRifle</li>
 		</weaponTags>	
@@ -562,7 +563,7 @@
 				<warmupTime>3.0</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<range>49.9</range>
-				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
+				<soundCast>Shot_TurretSniper</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -696,7 +697,7 @@
 				<defaultProjectile>Bullet_DMS_LightMachineGun</defaultProjectile>
 				<warmupTime>2.3</warmupTime>
 				<range>29.9</range>
-				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>7</burstShotCount>
 				<soundCast>DMS_MachineGunLight_Shot</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>

@@ -84,7 +84,7 @@
     </stages>
     <addedPartProps>
       <solid>true</solid>
-      <partEfficiency>1.25</partEfficiency>
+      <partEfficiency>1.15</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
     <eyeGraphicSouth>
@@ -179,7 +179,7 @@
     <spawnThingOnRemoved>DMS_ProstheticArm</spawnThingOnRemoved>
     <addedPartProps>
       <solid>true</solid>
-      <partEfficiency>1.25</partEfficiency>
+      <partEfficiency>1.15</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
   </HediffDef>
@@ -257,7 +257,7 @@
     </stages>
     <addedPartProps>
       <solid>true</solid>
-      <partEfficiency>1.25</partEfficiency>
+      <partEfficiency>1.15</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
     <comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
@@ -315,14 +315,18 @@
 
   <!-- 輔助神經索 -->
 
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef>
     <defName>DMS_ProstheticSpine</defName>
+    <hediffClass>Hediff_Level</hediffClass>
     <label>mechaneural neurochord</label>
     <labelNoun>An advanced neural-mechanical spine work as a sub-brain \n\n It can take over the user's reflex nerves and thereby reduce the operator's brain burden, but has some side effects.</labelNoun>
     <description>An installed bionic spine.</description>
     <descriptionHyperlinks><ThingDef>DMS_ProstheticSpine</ThingDef></descriptionHyperlinks>
-    <spawnThingOnRemoved>DMS_ProstheticSpine</spawnThingOnRemoved>
     <levelIsQuantity>true</levelIsQuantity>
+    <isBad>false</isBad>
+    <minSeverity>0</minSeverity>
+    <maxSeverity>6</maxSeverity>
+    <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
     <stages>
       <li>
         <minSeverity>1</minSeverity>
@@ -424,9 +428,9 @@
         <damageDefIncoming>EMP</damageDefIncoming>
         <createHediff>BrainShock</createHediff>
       </li>
-		<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">            <!-- 部件血量加多少% -->
-			<scaleAdjustment>0.5</scaleAdjustment>
-		</li>
+      <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">            <!-- 部件血量加多少% -->
+        <scaleAdjustment>0.5</scaleAdjustment>
+      </li>
     </comps>
   </HediffDef>
 
@@ -442,7 +446,7 @@
     </costList>
     <statBases>
       <MaxInstallCount>6</MaxInstallCount>
-      <Mass>2</Mass>
+      <Mass>1</Mass>
     </statBases>
     <comps>
       <li Class="CompProperties_Usable">
@@ -454,6 +458,11 @@
         <hediffDef>DMS_ProstheticSpine</hediffDef>
         <bodyPart>Spine</bodyPart>
         <canUpgrade>true</canUpgrade>
+        <maxSeverity>6</maxSeverity>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechlinkInstalled</soundOnUsed>
       </li>
     </comps>
   </ThingDef>
@@ -468,7 +477,6 @@
     <descriptionHyperlinks><ThingDef>DMS_SensoryFilter</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>DMS_SensoryFilter</spawnThingOnRemoved>
     <disablesNeeds>
-      <li>Rest</li>
       <li>Joy</li>
       <li>Beauty</li>
       <li>Comfort</li>
@@ -478,8 +486,8 @@
     </disablesNeeds>
     <hediffGivers>
       <li Class="HediffGiver_Random">
-        <mtbDays>10</mtbDays>
-        <hediff>DMS_BionicShock</hediff>
+        <mtbDays>30</mtbDays>
+        <hediff>DMS_FilterShock</hediff>
         <partsToAffect>
           <li>Torso</li>
         </partsToAffect>

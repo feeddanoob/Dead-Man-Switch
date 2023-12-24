@@ -25,6 +25,7 @@
     <tickerType>Normal</tickerType>
     <filthLeaving>Filth_MachineBits</filthLeaving>
   </ThingDef>
+
   <ThingDef ParentName="DMS_BossCallerBase">
     <defName>DMS_DecoyRadio</defName>
     <label>decoy antenna</label>

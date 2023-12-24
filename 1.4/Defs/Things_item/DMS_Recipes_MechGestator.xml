@@ -51,7 +51,7 @@
     <products>
       <DMS_Mech_Ape>1</DMS_Mech_Ape>
     </products>
-    <researchPrerequisite>DMS_DeadMansSwitch</researchPrerequisite>
+    <researchPrerequisite>DMS_Automatroid</researchPrerequisite>
     <gestationCycles>3</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Ape</ThingDef>
