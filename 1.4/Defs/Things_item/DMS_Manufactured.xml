@@ -371,7 +371,6 @@
     <allowedArchonexusCount>10</allowedArchonexusCount>
   </ThingDef>
 
-  <!-- 數控芯片 造精密打印機的關鍵零件，可以透過擊敗DMS戰艦(WIP)從殘骸中獲取 -->
   <ThingDef ParentName="ResourceBase">
     <defName>ComponentControlChip</defName>
     <label>cluster control chipsets</label>
@@ -413,6 +412,7 @@
     </thingCategories>
     <allowedArchonexusCount>10</allowedArchonexusCount>
   </ThingDef>  
+  
   <!-- 火控芯片 可以透過擊殺長程曲射攻擊的機兵有一定機率獲取，可以用來造戰鬥輔助用仿生體-->
   <ThingDef ParentName="ResourceBase">
     <defName>ComponentFireControl</defName>

@@ -18,7 +18,7 @@
     <costList>
       <Plasfiber>20</Plasfiber>
       <ComponentSpacer>5</ComponentSpacer>
-      <ComponentControlChip>1</ComponentControlChip>
+      <ComponentTransmitter>1</ComponentTransmitter>
       <MedicineUltratech>5</MedicineUltratech>
     </costList>
     <recipeMaker>

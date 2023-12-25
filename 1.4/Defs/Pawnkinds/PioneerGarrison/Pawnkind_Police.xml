@@ -30,13 +30,15 @@
     </techHediffsTags>
     <initialWillRange>1~3</initialWillRange>
     <initialResistanceRange>15~24</initialResistanceRange>
-    <minTitleRequired MayRequire="Royalty">DMS_Reservist</minTitleRequired>
   </PawnKindDef>
 
 <!-- 配槍巡警-->
   <PawnKindDef ParentName="DMS_PoliceBase">
     <defName>DMS_Police_Pistol</defName>
     <label>police</label>
+    <titleSelectOne>
+      <li>DMS_Private</li>
+    </titleSelectOne>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
       <li>Apparel_FlakVest</li>
@@ -85,6 +87,9 @@
       <li>DMS_Apparel_ArmyCap</li>
       <li>DMS_Apparel_TacticalVest</li>
     </apparelRequired>
+    <titleSelectOne>
+      <li>DMS_Reservist</li>
+    </titleSelectOne>
     <specificApparelRequirements>
       <li>
         <bodyPartGroup>Torso</bodyPartGroup>
@@ -124,7 +129,10 @@
   <PawnKindDef ParentName="DMS_PoliceBase">
     <defName>DMS_Police_Leader</defName>
     <label>police leader</label>
-    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Sergeant</minTitleRequired>
+    <titleSelectOne>
+      <li>DMS_PreSergeant</li>
+      <li>DMS_Sergeant</li>
+    </titleSelectOne>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
       <li>Apparel_FlakVest</li>
@@ -173,7 +181,10 @@
     <defName>DMS_Police_Assault</defName>
     <label>police assaulter</label>
     <combatPower>70</combatPower>
-    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Corporal</minTitleRequired>
+    <titleSelectOne>
+      <li>DMS_PreSergeant</li>
+      <li>DMS_Corporal</li>
+    </titleSelectOne>
     <apparelRequired>
       <li>DMS_Apparel_TacticalHelmet</li>
       <li>DMS_Apparel_TacticalVest</li>
@@ -226,7 +237,10 @@
     <defName>DMS_Police_Ranged</defName>
     <label>police sniper</label>
     <combatPower>100</combatPower>
-    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Corporal</minTitleRequired>
+    <titleSelectOne>
+      <li>DMS_PreSergeant</li>
+      <li>DMS_Corporal</li>
+    </titleSelectOne>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
       <li>Apparel_FlakVest</li>

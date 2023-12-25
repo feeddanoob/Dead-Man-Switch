@@ -13,7 +13,7 @@
   <!-- EN: cluster control chipsets -->
   <ComponentControlChip.label>集群控制晶片组</ComponentControlChip.label>
   <!-- EN: a chipsets for remote machine controller and the core of industrial machines. -->
-  <ComponentControlChip.description>一种用于远程机器控制器的晶片组，是工业机器的核心。</ComponentControlChip.description>
+  <ComponentControlChip.description>一种用于控制机器的晶片组，是工业机器的核心。</ComponentControlChip.description>
   <!-- EN: By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology. -->
   <ComponentControlChip.comps.CompStudiable.completedLetterText>通过研究 {PARENT_label} ， {STUDIER_labelShort} 获得了研究项目 {RESEARCH} 所需的见解。\n\n您的研究人员现在可以使用研究平台开始研究如何实际使用该技术。</ComponentControlChip.comps.CompStudiable.completedLetterText>
   <!-- EN: {PARENT_label} studied: {RESEARCH} unlocked -->

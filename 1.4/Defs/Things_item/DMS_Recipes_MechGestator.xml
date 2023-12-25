@@ -1183,6 +1183,7 @@
         
         <li>Corpse_DMS_Mech_Iguana</li>
         <li>Corpse_DMS_Mech_Gecko</li>
+        <li>Corpse_DMS_Mech_ShaftWorker</li>
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
@@ -1214,6 +1215,7 @@
         <li>Corpse_DMS_Mech_Tarbosaurus</li>
         <li>Corpse_DMS_Mech_Geochelone</li>
         <li>Corpse_DMS_Mech_Caretta</li>
+        <li>Corpse_DMS_Mech_Killdozer</li>
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>

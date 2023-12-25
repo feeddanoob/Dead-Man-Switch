@@ -37,7 +37,10 @@
   <PawnKindDef ParentName="DMS_SoldierBase">
     <defName>DMS_Squad_ServiceMan</defName>
     <label>service man</label>
-    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Reservist</minTitleRequired>
+    <titleSelectOne>
+      <li>DMS_Reservist</li>
+      <li>DMS_Private</li>
+    </titleSelectOne>
     <combatPower>50</combatPower>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
@@ -97,7 +100,11 @@
   <PawnKindDef ParentName="DMS_SoldierBase">
     <defName>DMS_Squad_Sniper</defName>
     <label>marksman</label>
-    <minTitleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Private</minTitleRequired>
+    <titleSelectOne>
+      <li>DMS_Private</li>
+      <li>DMS_Corporal</li>
+      <li>DMS_PreSergeant</li>
+    </titleSelectOne>
     <combatPower>80</combatPower>
     <apparelRequired Inherit="false">
       <li>Apparel_ArmorHelmetRecon</li>
@@ -153,12 +160,13 @@
       <li>DMS_Apparel_TacticalVest</li>
     </apparelRequired>
     <weaponMoney>2500~5000</weaponMoney>
+    <titleRequired>DMS_Private</titleRequired>
     <weaponTags>
-      <li>Gun</li>
       <li>A_AR_LongRifle</li>
       <li>A_SAR_LongRifle</li>
       <li>A_SG_LongRifle</li>
-      <li>AssaultRifle</li>
+      <li>V_Gatling556mm</li>
+      <li>IndustrialGunAdvanced</li>
     </weaponTags>
     <skills>
       <li>

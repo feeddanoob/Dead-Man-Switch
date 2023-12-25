@@ -15,7 +15,6 @@
     <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge> <!--充電/培養時產出廢料-->
     <ShootingAccuracyPawn>1.1</ShootingAccuracyPawn>                                      <!---->
     <AimingDelayFactor>1.1</AimingDelayFactor>                                            <!--瞄準延遲-->
-    <AimingAccuracy>1</AimingAccuracy>
   </statBases>
   <race>
     <body>DMS_Humanoid_TypeB</body>                                                       <!--身體(另外的def)-->

@@ -331,6 +331,7 @@
 					<MaxHitPoints>200</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
 					<ReloadSpeed>0.75</ReloadSpeed>
+					<AimingAccuracy>1</AimingAccuracy>
 				</value>
 			</li>
 

@@ -63,6 +63,10 @@
 
   <!-- 需求戰術套裝-->
   <RoyalTitleDef Abstract="True" Name="BaseDMSTitlePlus" ParentName="BaseDMSTitle" >
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+    </permits>
     <requiredApparel>
       <li>
         <bodyPartGroupsMatchAny>
