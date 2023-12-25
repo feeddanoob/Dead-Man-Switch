@@ -9,7 +9,7 @@
     </tags>
     <awardThought>DMS_GainedTitle</awardThought>
     <lostThought>DMS_LostTitle</lostThought>
-    <canBeInherited>true</canBeInherited>
+    <canBeInherited>false</canBeInherited>
     <requiredApparel>
       <li>
         <bodyPartGroupsMatchAny>
@@ -101,7 +101,7 @@
     <seniority>75</seniority>
     <favorCost>9</favorCost>
     <changeHeirQuestPoints>1000</changeHeirQuestPoints>
-    <commonality>0</commonality>
+    <commonality>0.8</commonality>
   </RoyalTitleDef>
 
   <!-- ============== 軍官階級 ============================= -->
@@ -113,7 +113,7 @@
     <seniority>100</seniority>
     <favorCost>12</favorCost>
     <changeHeirQuestPoints>1000</changeHeirQuestPoints>
-    <commonality>0</commonality>
+    <commonality>0.7</commonality>
   </RoyalTitleDef>
 
     <!-- 需求獨立房間-->

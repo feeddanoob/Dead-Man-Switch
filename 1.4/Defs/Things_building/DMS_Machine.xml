@@ -257,7 +257,7 @@
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <researchPrerequisites>
-      <li>DMS_Automatroid</li>
+      <li>DMS_DeadMansSwitch</li>
     </researchPrerequisites>
     <comps>
       <li Class="CompProperties_ThingContainer">

@@ -130,14 +130,14 @@
 				<stats>
 					<li>
 						<useStatic>false</useStatic>
-						<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+						<ArmorRating_Sharp>2</ArmorRating_Sharp>
 						<parts>
 							<li>SightSensor</li>
 						</parts>
 					</li>
 					<li>
 						<useStatic>false</useStatic>
-						<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+						<ArmorRating_Blunt>2</ArmorRating_Blunt>
 						<parts>
 							<li>SightSensor</li>
 						</parts>
@@ -433,14 +433,14 @@
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="DMS_Mech_Ronin"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
-			<ArmorRating_Blunt>12</ArmorRating_Blunt>
+			<ArmorRating_Blunt>20</ArmorRating_Blunt>
 		</value>
 	</li>
 
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="DMS_Mech_Ronin"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
-			<ArmorRating_Sharp>8</ArmorRating_Sharp>
+			<ArmorRating_Sharp>14</ArmorRating_Sharp>
 		</value>
 	</li>
 
@@ -486,6 +486,36 @@
 			</li>
 		</value>
 	</li>
+	<li Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Ronin" or defName="DMS_Mech_Protector" or defName="DMS_Mech_Siegebreaker"]</xpath>
+		<value>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<useStatic>false</useStatic>
+						<ArmorRating_Sharp>30</ArmorRating_Sharp>
+						<parts>
+							<li>DMS_HeadRadar</li>
+						</parts>
+					</li>
+					<li>
+						<useStatic>false</useStatic>
+						<ArmorRating_Sharp>2</ArmorRating_Sharp>
+						<parts>
+							<li>SightSensor</li>
+						</parts>
+					</li>
+					<li>
+						<useStatic>false</useStatic>
+						<ArmorRating_Blunt>2</ArmorRating_Blunt>
+						<parts>
+							<li>SightSensor</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</value>
+	</li>
 	<!-- ======Phalanx======-->
 	<!-- 量產砲灰-->
 	<li Class="PatchOperationAdd">
@@ -508,14 +538,14 @@
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="DMS_Mech_Phalanx"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
-			<ArmorRating_Blunt>10</ArmorRating_Blunt>
+			<ArmorRating_Blunt>15</ArmorRating_Blunt>
 		</value>
 	</li>
 
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="DMS_Mech_Phalanx"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
-			<ArmorRating_Sharp>6</ArmorRating_Sharp>
+			<ArmorRating_Sharp>10</ArmorRating_Sharp>
 		</value>
 	</li>
 
@@ -698,7 +728,7 @@
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="DMS_Mech_Siegebreaker"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
-			<ArmorRating_Sharp>10</ArmorRating_Sharp>
+			<ArmorRating_Sharp>12</ArmorRating_Sharp>
 		</value>
 	</li>
 

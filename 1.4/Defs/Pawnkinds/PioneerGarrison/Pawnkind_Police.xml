@@ -84,7 +84,6 @@
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
       <li>DMS_Apparel_TacticalVest</li>
-      <li MayRequire="vanillaexpanded.vappe">VAE_Apparel_MilitaryUniform</li>
     </apparelRequired>
     <specificApparelRequirements>
       <li>
@@ -178,7 +177,6 @@
     <apparelRequired>
       <li>DMS_Apparel_TacticalHelmet</li>
       <li>DMS_Apparel_TacticalVest</li>
-      <li MayRequire="vanillaexpanded.vappe">VAE_Apparel_MilitaryUniform</li>
     </apparelRequired>
     <specificApparelRequirements>
       <li>
@@ -232,7 +230,6 @@
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
       <li>Apparel_FlakVest</li>
-      <li MayRequire="vanillaexpanded.vappe">VAE_Apparel_MilitaryUniform</li>
     </apparelRequired>
     <specificApparelRequirements>
       <li>

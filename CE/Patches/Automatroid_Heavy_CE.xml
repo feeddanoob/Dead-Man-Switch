@@ -325,14 +325,12 @@
 				<value>
 					<CarryWeight>70</CarryWeight>
 					<CarryBulk>55</CarryBulk>
-					<AimingAccuracy>1</AimingAccuracy>
-					<ShootingAccuracyPawn>1.35</ShootingAccuracyPawn>
 					<MeleeDodgeChance>0.09</MeleeDodgeChance>
 					<MeleeCritChance>0.11</MeleeCritChance>
 					<MeleeParryChance>0.08</MeleeParryChance>
 					<MaxHitPoints>200</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
-					<ReloadSpeed>0.35</ReloadSpeed>
+					<ReloadSpeed>0.75</ReloadSpeed>
 				</value>
 			</li>
 

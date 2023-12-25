@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>The Dead Man's Switch</name>
-  	<author>AobaKuma ,Bill Doors</author>
+  	<author>AobaKuma ,Bill Doors, KV4EX</author>
     <supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
@@ -9,15 +9,15 @@
     <modDependencies>
         <li>
 			<packageId>ludeon.rimworld.biotech</packageId>
-			<displayName>Vanilla Expanded Framework</displayName>
+			<displayName>Biotech</displayName>
 		</li>
         <li>
 			<packageId>ludeon.rimworld.ideology</packageId>
-			<displayName>Vanilla Expanded Framework</displayName>
+			<displayName>Ideology</displayName>
 		</li>
         <li>
 			<packageId>ludeon.rimworld.royalty</packageId>
-			<displayName>Vanilla Expanded Framework</displayName>
+			<displayName>Royalty</displayName>
 		</li>
         <li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
@@ -42,6 +42,6 @@
 	它們沒有失控,只不過是失去了控制者,假如你並不被軍團系統識別為敵人那麼它們也並不會視你為敵人,但如果你認為它們就會任人宰割那你就大錯特錯了.
 	-->
 	<description>
-    Millennia earlier, as the threat of archotech war machines ,pirates and awry bio-organic weapons arise, Interstellar Industries Complex Nara initiated the project of semi-automated war-machines, which aimed at creating a legion of war-machines with low technology and maintenance requirements to aid humans in all galaxy to the war against all those threats.
+    Millennia earlier, as the threat of archotech war machines ,pirates and awry bio-organic weapons arise. Nara an Interstellar Industries Complex initiated the project of semi-automated war-machines, which aimed at creating a legion of war-machines with low technology and maintenance requirements to aid humans in all galaxy to the war against all those threats.
 	</description>
 </ModMetaData>

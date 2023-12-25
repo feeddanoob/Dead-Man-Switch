@@ -5,8 +5,8 @@
       <ArmorRating_Sharp>0.4</ArmorRating_Sharp><!--銳抗-->
       <ArmorRating_Blunt>0.2</ArmorRating_Blunt><!--鈍抗-->
       <ArmorRating_Heat>1.3</ArmorRating_Heat>  <!--能抗-->
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>        <!--帶寬消耗-->
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">10</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>        <!--帶寬消耗-->
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
     <race>
       <body>DMS_Humanoid_Soldat</body>
@@ -87,6 +87,7 @@
     <statBases>
       <MoveSpeed>3.8</MoveSpeed>
       <AimingDelayFactor>0.85</AimingDelayFactor>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5</BandwidthCost>
     </statBases>
     <comps>
@@ -156,7 +157,7 @@
       <ArmorRating_Heat>1.0</ArmorRating_Heat>  <!--能抗-->
       <AimingDelayFactor>0.5</AimingDelayFactor>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">8</WastepacksPerRecharge>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">4</WastepacksPerRecharge>
     </statBases>
     <race>
       <mechEnabledWorkTypes>
@@ -224,7 +225,8 @@
       <ArmorRating_Heat>1.0</ArmorRating_Heat>  <!--能抗-->
       <AimingDelayFactor>0.5</AimingDelayFactor>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">8</WastepacksPerRecharge>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge>
+      <WorkSpeedGlobal MayRequire="Ludeon.Rimworld.Biotech">1.00</WorkSpeedGlobal>
     </statBases>
     <race>
       <baseBodySize>2.25</baseBodySize>

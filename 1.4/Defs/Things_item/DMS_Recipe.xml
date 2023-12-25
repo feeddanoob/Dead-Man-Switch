@@ -3,7 +3,6 @@
 <Defs>
 
   <!-- 反應釜 -->
-
   <RecipeDef>
     <defName>DMS_Make_Polyester</defName>
     <label>make polyester x50</label>

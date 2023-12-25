@@ -17,7 +17,7 @@
 				<li>DMS_TableArtifuscle</li>
 			</recipeUsers>
 			<researchPrerequisite>DMS_Artifuscle</researchPrerequisite>
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
 			<Plasfiber>40</Plasfiber>

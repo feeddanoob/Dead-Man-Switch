@@ -202,7 +202,7 @@
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 			<researchPrerequisite>DMS_Plasfiber</researchPrerequisite>
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
 			<Plasfiber>80</Plasfiber>
@@ -273,7 +273,7 @@
 			<recipeUsers>
 			  <li>DMS_TableMachinePrinter</li>
 			</recipeUsers>
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
 			<Tungsteel>75</Tungsteel>

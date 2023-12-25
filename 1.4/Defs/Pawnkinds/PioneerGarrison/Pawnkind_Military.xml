@@ -41,7 +41,6 @@
     <combatPower>50</combatPower>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
-      <li MayRequire="vanillaexpanded.vappe">VAE_Apparel_MilitaryUniform</li>
     </apparelRequired>
     <apparelTags>
       <li>IndustrialMilitaryBasic</li>

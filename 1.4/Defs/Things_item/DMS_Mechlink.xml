@@ -17,7 +17,7 @@
     </statBases>
     <costList>
       <Plasfiber>20</Plasfiber>
-      <ComponentSpacer>15</ComponentSpacer>
+      <ComponentSpacer>5</ComponentSpacer>
       <ComponentControlChip>1</ComponentControlChip>
       <MedicineUltratech>5</MedicineUltratech>
     </costList>

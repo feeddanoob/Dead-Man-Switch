@@ -259,7 +259,7 @@
 	</ThingDef>
 
 	<!--2A38M 給駭蜥Boss的武器-->
-	<ThingDef ParentName="DMS_AutomatroidTurretGun">
+	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
 		<defName>DMS_Tarbosaurus_BossGun</defName>
 		<label>2A38M</label>
 		<description>a dual-barrel heavy autocannon for infantry suppress / anti air platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>

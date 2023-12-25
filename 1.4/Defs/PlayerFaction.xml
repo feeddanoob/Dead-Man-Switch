@@ -41,7 +41,6 @@
     <techHediffsRequired>
       <li>DMS_ProstheticEye</li>
       <li>DMS_SyntheticLeg</li>
-      <li>DMS_MechLink</li>
     </techHediffsRequired>
     <biocodeWeaponChance>1</biocodeWeaponChance>
     <combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
@@ -95,7 +94,12 @@ and until recently, a strange yet familiar broadcast ended the long and anxious 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>MealSurvivalPack</thingDef>
-					<count>30</count>
+					<count>40</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentStamped</thingDef>
+					<count>25</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
@@ -107,9 +111,19 @@ and until recently, a strange yet familiar broadcast ended the long and anxious 
 					<thingDef>ComponentIndustrial</thingDef>
 					<count>20</count>
 				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>DMS_MechLink</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentSpacer</thingDef>
+					<count>4</count>
+				</li>
         <li Class="ScenPart_StartingMech">
           <def>StartingMech</def>
-          <mechKind>DMS_Mech_Phalanx</mechKind>
+          <mechKind>DMS_Mech_ShaftWorker</mechKind>
           <overseenByPlayerPawnChance>0.6</overseenByPlayerPawnChance>
         </li>
         <li Class="ScenPart_StartingMech">
@@ -127,10 +141,6 @@ and until recently, a strange yet familiar broadcast ended the long and anxious 
         </li>
         <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
-          <project>BasicMechtech</project>
-        </li>
-        <li Class="ScenPart_StartingResearch">
-          <def>StartingResearch</def>
           <project>DMS_EquipmentAdvanced</project>
         </li>
         <li Class="ScenPart_StartingResearch">
@@ -139,7 +149,7 @@ and until recently, a strange yet familiar broadcast ended the long and anxious 
         </li>
         <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
-          <project>DMS_DeadMansSwitch</project>
+          <project>DMS_Automatroid</project>
         </li>
         <li Class="KCSG.ScenPart_AddStartingStructure">
           <def>VFEC_AddStartingStructure</def>

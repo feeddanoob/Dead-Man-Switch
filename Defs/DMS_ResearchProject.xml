@@ -114,9 +114,9 @@
     <defName>DMS_EquipmentBasis</defName>
     <label>pioneer equipment</label>
     <description>uniform and equipment designed for human, mainly for colonization purpose include for survival specialist, dropcraft crew and Biotoxicity Handling Squad.</description>
-    <baseCost>500</baseCost>
-    <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+    <baseCost>200</baseCost>
     <techLevel>Industrial</techLevel>
+    <requiredResearchBuilding/>
     <prerequisites>
       <li>ComplexClothing</li>
       <li>Gunsmithing</li>
@@ -131,7 +131,7 @@
     <defName>DMS_Mechlink</defName>
     <label>cluster transceiver</label>
     <description>Cluster transceivers are a way humans have developed to control robots in war, and of course it's not very comfortable for robots that generate self-awareness through DMS.</description>
-    <baseCost>1500</baseCost>
+    <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_Hypothesis</li>
@@ -149,7 +149,7 @@
     <defName>DMS_Automatroid</defName>
     <label>automatroid basis</label>
     <description>because they are not just a weapon but weapon that is capable to eliminate target by themselves, these robots was such a topic and own a name to them "automatroid" \n\n Such a morally outrageous weapon should never acceptable at normal, but since it is widely used by nations during ww3 so it has become a mundane part of the battlefield..</description>
-    <baseCost>800</baseCost>
+    <baseCost>400</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_DeadMansSwitch</li>
@@ -176,7 +176,7 @@
     <defName>DMS_EquipmentElite</defName>
     <label>military equipment</label>
     <description>equipment designed for automatroid which too heavy to operated by humankind, mainly for military purpose.</description>
-    <baseCost>1200</baseCost>
+    <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>ComplexClothing</li>

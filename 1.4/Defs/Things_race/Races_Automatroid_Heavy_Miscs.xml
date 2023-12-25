@@ -7,15 +7,18 @@
   <label>ape</label>
   <description>An prototype design on testing the feasibility of humanoid automatroid, it's designed to equip with heavy weapon.</description>
   <statBases>
-    <MoveSpeed>3</MoveSpeed>                                                    <!--移動速度-->
-    <ArmorRating_Blunt>0.3</ArmorRating_Blunt>                                     <!--護甲-->
+    <MoveSpeed>3</MoveSpeed>                                                              <!--移動速度-->
+    <ArmorRating_Blunt>0.3</ArmorRating_Blunt>                                            <!--護甲-->
     <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
     <ArmorRating_Heat>1.2</ArmorRating_Heat> 
-    <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>        <!--帶寬消耗-->
-    <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">10</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+    <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>                 <!--帶寬消耗-->
+    <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge> <!--充電/培養時產出廢料-->
+    <ShootingAccuracyPawn>1.1</ShootingAccuracyPawn>                                      <!---->
+    <AimingDelayFactor>1.1</AimingDelayFactor>                                            <!--瞄準延遲-->
+    <AimingAccuracy>1</AimingAccuracy>
   </statBases>
   <race>
-    <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
+    <body>DMS_Humanoid_TypeB</body>                                                       <!--身體(另外的def)-->
     <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
     <baseBodySize>1.75</baseBodySize>
     <baseHealthScale>1.5</baseHealthScale>
@@ -89,7 +92,7 @@
       <ArmorRating_Blunt>1.3</ArmorRating_Blunt><!--鈍抗-->
       <ArmorRating_Heat>1.2</ArmorRating_Heat>  <!--能抗-->
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5</BandwidthCost>        <!--帶寬消耗-->
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">10</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">3</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
     <race>
       <body>DMS_Caterpillar</body>
@@ -185,7 +188,7 @@
       <ArmorRating_Blunt>1.3</ArmorRating_Blunt><!--鈍抗-->
       <ArmorRating_Heat>1.2</ArmorRating_Heat>  <!--能抗-->
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5</BandwidthCost>        <!--帶寬消耗-->
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">10</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
     <race>
       <body>DMS_Caterpillar</body>
@@ -262,7 +265,7 @@
       <ArmorRating_Sharp>2.0</ArmorRating_Sharp>
 	    <ArmorRating_Heat>1.5</ArmorRating_Heat>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">7</BandwidthCost>        <!--帶寬消耗-->
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">15</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
       <!--<EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
       <EnergyShieldEnergyMax>3</EnergyShieldEnergyMax>-->
     </statBases>
