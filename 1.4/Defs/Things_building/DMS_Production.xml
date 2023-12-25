@@ -343,7 +343,7 @@
       <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <researchPrerequisites>
-      <li>DMS_DeadMansSwitch</li>
+      <li>DMS_Automatroid</li>
     </researchPrerequisites>
     <building>
       <barDrawData>

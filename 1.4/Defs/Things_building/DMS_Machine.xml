@@ -253,11 +253,10 @@
     </building>
     <costList>
       <Steel>100</Steel>
-      <ComponentStamped>1</ComponentStamped>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <researchPrerequisites>
-      <li>DMS_DeadMansSwitch</li>
+      <li>DMS_Automatroid</li>
     </researchPrerequisites>
     <comps>
       <li Class="CompProperties_ThingContainer">
