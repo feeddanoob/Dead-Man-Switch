@@ -493,21 +493,28 @@
 				<stats>
 					<li>
 						<useStatic>false</useStatic>
-						<ArmorRating_Sharp>30</ArmorRating_Sharp>
+						<ArmorRating_Blunt>2</ArmorRating_Blunt>
 						<parts>
 							<li>DMS_HeadRadar</li>
 						</parts>
 					</li>
 					<li>
 						<useStatic>false</useStatic>
-						<ArmorRating_Sharp>2</ArmorRating_Sharp>
+						<ArmorRating_Sharp>3</ArmorRating_Sharp>
+						<parts>
+							<li>DMS_HeadRadar</li>
+						</parts>
+					</li>
+					<li>
+						<useStatic>false</useStatic>
+						<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
 						<parts>
 							<li>SightSensor</li>
 						</parts>
 					</li>
 					<li>
 						<useStatic>false</useStatic>
-						<ArmorRating_Blunt>2</ArmorRating_Blunt>
+						<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
 						<parts>
 							<li>SightSensor</li>
 						</parts>
