@@ -28,11 +28,12 @@
 		</verbProperties>
 	</AbilityDef>
   
- <HediffDef ParentName="RoleStatBuff">
+ <HediffDef>
 	<defName>DMS_InfrasoundWave</defName>
 	<label>infrasound barrage</label>
 	<description>This unit is casting a powerful infrasound waves to interfere with the sensory systems of all creatures within the range.</description>
 	<hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 	<comps>
 	  <li Class="HediffCompProperties_Disappears">
 		<showRemainingTime>True</showRemainingTime>
@@ -70,7 +71,7 @@
   </HediffDef>
 
 <!-- 施加的Buff -->
-  <HediffDef ParentName="RoleStatBuff">
+  <HediffDef>
 	<defName>DMS_InfrasoundWaveBuff</defName>
 	<label>Infrasound</label>
 	<description>Low-frequency sound waves that make living bodies uncomfortable and may cause vomiting and confusion</description>

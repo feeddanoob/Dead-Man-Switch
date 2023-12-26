@@ -33,6 +33,9 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>HeavyGun</li><!--重型武器拓展-->
+          <li>WarcasketBasic</li><!--戰棺海盜拓展-->
+          <li>WarcasketVeteran</li><!--戰棺海盜拓展-->
           <li>A_MG_GrenadeLauncher</li>
           <li>A_SR_GrenadeLauncher</li>
           <li>DMS_MechWeaponHeavy</li>
@@ -174,6 +177,9 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>HeavyGun</li><!--重型武器拓展-->
+          <li>WarcasketBasic</li><!--戰棺海盜拓展-->
+          <li>WarcasketVeteran</li><!--戰棺海盜拓展-->
           <li>A_MG_GrenadeLauncher</li>
           <li>A_SR_GrenadeLauncher</li>
           <li>DMS_MechWeaponHeavy</li>

@@ -298,7 +298,6 @@
     <minTitle>DMS_Brigadier</minTitle>
     <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
-    <prerequisite>CallMilitaryAidLarge</prerequisite>
     <uiPosition>(1,7)</uiPosition>
     <royalAid>
       <favorCost>8</favorCost>

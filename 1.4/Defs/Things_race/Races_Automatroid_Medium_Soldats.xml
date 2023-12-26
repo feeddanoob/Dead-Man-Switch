@@ -32,7 +32,8 @@
         <UsableWeaponTags>
           <li>SimpleGun</li>
           <li>ShortShots</li>
-          <li>Autopistol</li>
+          <li>CE_SMG</li>
+          <li>CE_OneHandedWeapon</li>
           <li>DMS_MechWeaponLight</li>
           <li>IndustrialGun</li>
         </UsableWeaponTags>
@@ -40,6 +41,9 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons>
+          <li>FT_GPMG_Minified</li>
+        </BypassUsableWeapons>
       </li>
     </modExtensions>
   </ThingDef>
@@ -106,6 +110,7 @@
     <weaponTags><!--武器-->
       <li>SimpleGun</li>
       <li>ShortShots</li>
+      <li>WarcasketBasic</li>
     </weaponTags>
   </PawnKindDef>
 

@@ -88,7 +88,6 @@
 	  <li Class="HediffCompProperties_DisappearsOnDeath"/>
 	  <li Class="HediffCompProperties_GiveHediffsInRange">
 		<range>3.9</range>
-		<mote>Mote_CombatCommand</mote>
 		<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
 		<onlyPawnsInSameFaction>true</onlyPawnsInSameFaction>
 		<targetingParameters>
@@ -118,11 +117,12 @@
   </HediffDef>
 
 <!-- 施加在友軍上的Buff -->
-  <HediffDef ParentName="RoleStatBuff">
+  <HediffDef>
 	<defName>DMS_RangeFinderBuff</defName>
 	<label>received calibration</label>
 	<description>The missile knows where it is at all times. It knows this because it knows where it isn't. By subtracting where it is from where it isn't, or where it isn't from where it is...</description>
-	<hediffClass>HediffWithComps</hediffClass>
+	<hediffClass>HediffWithComps</hediffClass>    
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 	<comps>
 	  <li Class="HediffCompProperties_Disappears">
 		<showRemainingTime>false</showRemainingTime>

@@ -31,11 +31,15 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>HeavyGun</li><!--重型武器拓展-->
+          <li>WarcasketBasic</li><!--戰棺海盜拓展-->
+          <li>WarcasketVeteran</li><!--戰棺海盜拓展-->
+          <li>CE_OneHandedWeapon</li>
           <li>DMS_MechWeaponLongRifle</li>
           <li>DMS_MechWeaponLight</li>
           <li>GrenadeSmoke</li>
           <li>A_MG_Heavy</li>
-          <li>Gun</li>
+          <li>WarcasketBasic</li>
           <li>A_SuppressWeapon</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
@@ -102,7 +106,8 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
-          <li>Autopistol</li>     
+          <li>Autopistol</li>
+          <li>CE_SMG</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -170,7 +175,7 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
-          <li>Autopistol</li>     
+          <li>CE_OneHandedWeapon</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -244,7 +249,6 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
-          <li>Autopistol</li>     
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>

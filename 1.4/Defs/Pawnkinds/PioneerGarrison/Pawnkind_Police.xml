@@ -37,7 +37,7 @@
     <defName>DMS_Police_Pistol</defName>
     <label>police</label>
     <titleSelectOne>
-      <li>DMS_Private</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_Private</li>
     </titleSelectOne>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
@@ -88,7 +88,7 @@
       <li>DMS_Apparel_TacticalVest</li>
     </apparelRequired>
     <titleSelectOne>
-      <li>DMS_Reservist</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_Reservist</li>
     </titleSelectOne>
     <specificApparelRequirements>
       <li>
@@ -130,8 +130,8 @@
     <defName>DMS_Police_Leader</defName>
     <label>police leader</label>
     <titleSelectOne>
-      <li>DMS_PreSergeant</li>
-      <li>DMS_Sergeant</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_PreSergeant</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_Sergeant</li>
     </titleSelectOne>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
@@ -182,8 +182,8 @@
     <label>police assaulter</label>
     <combatPower>70</combatPower>
     <titleSelectOne>
-      <li>DMS_PreSergeant</li>
-      <li>DMS_Corporal</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_PreSergeant</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_Corporal</li>
     </titleSelectOne>
     <apparelRequired>
       <li>DMS_Apparel_TacticalHelmet</li>
@@ -238,8 +238,8 @@
     <label>police sniper</label>
     <combatPower>100</combatPower>
     <titleSelectOne>
-      <li>DMS_PreSergeant</li>
-      <li>DMS_Corporal</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_PreSergeant</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_Corporal</li>
     </titleSelectOne>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>

@@ -14,7 +14,7 @@
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<groupDef>DMS_AutomatroidAbility</groupDef>
-		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+		<warmupStartSound>FlickSwitch</warmupStartSound>
 		<statBases>
 		  <Ability_Duration>1000</Ability_Duration>
 		</statBases>

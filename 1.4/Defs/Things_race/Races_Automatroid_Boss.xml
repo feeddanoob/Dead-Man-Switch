@@ -33,10 +33,12 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>HeavyGun</li><!--重型武器拓展-->
+          <li>WarcasketBasic</li><!--戰棺海盜拓展-->
+          <li>WarcasketVeteran</li><!--戰棺海盜拓展-->
           <li>DMS_Tarbosaurus_Gun</li>
           <li>DMS_Bipedal_HeavyGun</li>
           <li>DMS_MechWeaponHeavy</li>
-          <li>DMS_VehicleWeapon</li>
           <li>H_Gatling20mm</li>
           <li>V_Gatling30mm</li>
         </UsableWeaponTags>

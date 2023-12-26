@@ -44,6 +44,8 @@
         </UsableTechLevels>
         <BypassUsableWeapons>
           <li>Gun_BinocularsRadio</li>
+          <li>VWE_Gun_UraniumSlugRifle</li><!-- 重武器拓展鈾彈槍 -->
+          <li>VFEP_WarcasketGun_UraniumSlugRifle</li><!-- 戰棺拓展鈾彈槍 -->
         </BypassUsableWeapons>
       </li>
     </modExtensions>
@@ -135,7 +137,7 @@
       <li>A_SR_LongRifle</li>
     </weaponTags>
     <abilities>
-      <li>DMS_Camouflage</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_Camouflage</li>
     </abilities>
   </PawnKindDef>
 
@@ -226,7 +228,9 @@
           <li>Industrial</li>
         </UsableTechLevels>
         <BypassUsableWeapons>
-          <li>Gun_BinocularsRadio</li>
+          <li>VWE_Gun_UraniumSlugRifle</li><!-- 重武器拓展鈾彈槍 -->
+          <li>VFEP_WarcasketGun_UraniumSlugRifle</li><!-- 戰棺拓展鈾彈槍 -->
+          <li>VFEP_WarcasketGun_ChargeLance</li><!-- 戰棺拓展電荷標槍 -->
         </BypassUsableWeapons>
       </li>
     </modExtensions>

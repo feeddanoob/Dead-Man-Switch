@@ -138,7 +138,7 @@
 	        <li Class="PatchOperationReplace">
 		        <xpath>Defs/ThingDef[defName="DMS_Ceramics"]/statBases/StuffPower_Armor_Blunt</xpath>
 		            <value>
-			            <StuffPower_Armor_Blunt>3</StuffPower_Armor_Blunt>
+			            <StuffPower_Armor_Blunt>2</StuffPower_Armor_Blunt>
 		            </value>
 	        </li>
 

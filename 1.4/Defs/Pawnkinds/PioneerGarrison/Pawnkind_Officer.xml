@@ -4,8 +4,8 @@
   <PawnKindDef ParentName="DMS_OutlanderBase" Name="DMS_OfficerBase">
     <defName>DMS_Officer</defName>
     <titleSelectOne>
-      <li>DMS_PreSergeant</li>
-      <li>DMS_Sergeant</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_PreSergeant</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_Sergeant</li>
     </titleSelectOne>
     <label>logistic handler</label>
     <labelPlural>logistic handlers</labelPlural>
@@ -55,8 +55,8 @@
   <PawnKindDef ParentName="DMS_OfficerBase">
     <defName>DMS_Officer_A</defName>
     <titleSelectOne>
-      <li>DMS_Sergeant</li>
-      <li>DMS_WarrantOfficer</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_Sergeant</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_WarrantOfficer</li>
     </titleSelectOne>
     <label>platoon guide</label>
     <labelPlural>platoon guides</labelPlural>
@@ -72,8 +72,8 @@
   <PawnKindDef ParentName="DMS_OfficerBase">
     <defName>DMS_Officer_B</defName>
     <titleSelectOne>
-      <li>DMS_Lieutenant</li>
-      <li>DMS_Captain</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_Lieutenant</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_Captain</li>
     </titleSelectOne>
     <label>platoon leader</label>
     <labelPlural>platoon leaders</labelPlural>
@@ -90,8 +90,8 @@
   <PawnKindDef ParentName="DMS_OfficerBase">
     <defName>DMS_Officer_C</defName>
     <titleSelectOne>
-      <li>DMS_Major</li>
-      <li>DMS_Colonel</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_Major</li>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_Colonel</li>
     </titleSelectOne>
     <label>forward commander</label>
     <labelPlural>forward commanders</labelPlural>
@@ -107,7 +107,9 @@
   <!-- T5官員,作戰領導 -->
   <PawnKindDef ParentName="DMS_OfficerBase">
     <defName>DMS_Officer_Leader</defName>
-    <titleRequired>DMS_Brigadier</titleRequired>
+    <titleSelectOne>
+      <li MayRequire="ludeon.rimworld.royalty">DMS_Brigadier</li>
+    </titleSelectOne>
     <label>sector commander</label>
     <labelPlural>sector commanders</labelPlural>
     <factionLeader>true</factionLeader>

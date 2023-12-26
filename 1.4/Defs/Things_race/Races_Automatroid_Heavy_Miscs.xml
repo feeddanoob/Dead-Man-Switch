@@ -28,7 +28,8 @@
     <li Class="DMS.MechWeaponExtension">
       <EnableWeaponFilter>true</EnableWeaponFilter>
       <UsableWeaponTags>
-        <li>GunHeavy</li>
+        <li>HeavyGun</li><!--重型武器拓展-->
+        <li>WarcasketBasic</li><!--戰棺海盜拓展-->
         <li>DMS_MechWeaponLight</li>
         <li>DMS_MechWeaponMeduim</li>
         <li>A_SuppressWeapon</li>
@@ -38,9 +39,6 @@
       <UsableTechLevels>
         <li>Industrial</li>
       </UsableTechLevels>
-      <BypassUsableWeapons>
-        <li>Gun_BinocularsRadio</li>
-      </BypassUsableWeapons>
     </li>
   </modExtensions>
 </ThingDef>

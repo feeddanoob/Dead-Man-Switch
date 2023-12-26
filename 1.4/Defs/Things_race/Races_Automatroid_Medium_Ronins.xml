@@ -24,6 +24,7 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>ShortShots</li>
+          <li>WarcasketBasic</li>
           <li>DMS_MechWeaponShotgun</li>
           <li>DMS_MechWeaponLight</li>
           <li>A_AR_LongRifle</li>
@@ -102,6 +103,7 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>WarcasketBasic</li><!--海盜拓展的戰棺武器-->
           <li>DMS_MechWeaponBreach</li>
           <li>DMS_MechWeaponLight</li>
           <li>MedievalMeleeBasic</li>
@@ -165,7 +167,7 @@
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">3</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
     <race>
-      <body>DMS_Humanoid_TypeB_ShieldL</body>                                                      <!--身體(另外的def)-->
+      <body>DMS_Humanoid_TypeB_ShieldL</body>
       <baseBodySize>1.1</baseBodySize>
       <baseHealthScale>1.85</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
@@ -177,11 +179,12 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
-          <li>DMS_MechWeaponShotgun</li>
+          <li>CE_OneHandedWeapon</li><!--CE單手武器-->
+          <li>DMS_MechWeaponShotgun</li><!--霰彈槍-->
           <li>DMS_MechWeaponLight</li>
-          <li>DMS_MeleeWeapon</li>
-          <li>MedievalMeleeBasic</li>
-          <li>MedievalMeleeAdvanced</li>
+          <li>DMS_MeleeWeapon</li><!--砍刀和WIP的電棍-->
+          <li>MedievalMeleeBasic</li><!--槌子-->
+          <li>MedievalMeleeAdvanced</li><!--長劍-->
           <li>ShortShots</li>        
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
@@ -288,6 +291,7 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>ShortShots</li>
+          <li>WarcasketBasic</li>
           <li>DMS_MechWeaponShotgun</li>
           <li>DMS_MechWeaponLight</li>
           <li>A_AR_LongRifle</li>

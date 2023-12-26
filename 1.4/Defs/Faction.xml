@@ -44,9 +44,9 @@
     </structureMemeWeights>
     <xenotypeSet>
       <xenotypeChances>
-        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.05</Neanderthal>
         <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.15</Hussar>
         <Genie MayRequire="Ludeon.RimWorld.Biotech">0.10</Genie>
+        <VREA_AndroidBasic MayRequire="vanillaracesexpanded.android">0.5</VREA_AndroidBasic>
       </xenotypeChances>
     </xenotypeSet>
     <techLevel>Spacer</techLevel>
@@ -80,14 +80,14 @@
     <fixedLeaderKinds>
       <li>DMS_Officer_Leader</li>
     </fixedLeaderKinds>
-    <royalTitleTags>
+    <royalTitleTags MayRequire="Ludeon.RimWorld.Royalty" Inherit="False">
       <li>DMS_Title</li>
     </royalTitleTags>
     <baseTraderKinds>
-      <li>Base_Empire_Standard</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">Base_Empire_Standard</li>
     </baseTraderKinds>
     <caravanTraderKinds>
-      <li>Empire_Caravan_TraderGeneral</li>      <!-- WIP -->
+      <li MayRequire="Ludeon.RimWorld.Royalty">Empire_Caravan_TraderGeneral</li>      <!-- WIP -->
       <li>Caravan_Outlander_CombatSupplier</li>
       <li>Caravan_Outlander_BulkGoods</li>
     </caravanTraderKinds>
