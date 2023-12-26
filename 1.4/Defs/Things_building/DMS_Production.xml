@@ -176,7 +176,7 @@
   <ThingDef ParentName="DMS_BenchBase">
     <defName>DMS_TableArtifuscle</defName>
     <label>artifuscle chamber</label>
-    <!-- 用於培育人造肌肉束與人造肌肉仿生體的高端生產設備. -->
+    <!-- 用於培育人工肌肉束與人工肌肉仿生體的高端生產設備. -->
     <description>High-end production equipment for cultivating artifuscle and bionic.</description>
     <graphicData>
       <texPath>Things/Building/ArtifuscleTable</texPath>

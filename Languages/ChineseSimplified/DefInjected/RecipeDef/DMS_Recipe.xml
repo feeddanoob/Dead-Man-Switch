@@ -2,16 +2,16 @@
 <LanguageData>
   
   <!-- EN: grow artifuscle x20 -->
-  <DMS_Make_Artifuscle.label>栽培人造肌肉 x20</DMS_Make_Artifuscle.label>
+  <DMS_Make_Artifuscle.label>栽培人工肌肉 x20</DMS_Make_Artifuscle.label>
   <!-- EN: grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood -->
-  <DMS_Make_Artifuscle.description>栽培人造肌肉，以塑化纤维作为表皮，用钨钢做骨骼，用金做神经丝，用中性胺做血液。</DMS_Make_Artifuscle.description>
+  <DMS_Make_Artifuscle.description>栽培人工肌肉，以塑化纤维作为表皮，用钨钢做骨骼，用金做神经丝，用中性胺做血液。</DMS_Make_Artifuscle.description>
   <!-- EN: growing artifuscle. -->
   <DMS_Make_Artifuscle.jobString>栽培人工肌肉中</DMS_Make_Artifuscle.jobString>
   
   <!-- EN: grow artifuscle x80 -->
   <DMS_Make_ArtifuscleMass.label>栽培人工肌肉 x80</DMS_Make_ArtifuscleMass.label>
   <!-- EN: grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood -->
-  <DMS_Make_ArtifuscleMass.description>栽培人造肌肉，以塑化纤维作为表皮，用钨钢做骨骼，用金做神经丝，用中性胺做血液。</DMS_Make_ArtifuscleMass.description>
+  <DMS_Make_ArtifuscleMass.description>栽培人工肌肉，以塑化纤维作为表皮，用钨钢做骨骼，用金做神经丝，用中性胺做血液。</DMS_Make_ArtifuscleMass.description>
   <!-- EN: growing artifuscle. -->
   <DMS_Make_ArtifuscleMass.jobString>栽培人工肌肉中</DMS_Make_ArtifuscleMass.jobString>
   

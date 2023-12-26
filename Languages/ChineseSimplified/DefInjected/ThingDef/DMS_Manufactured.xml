@@ -57,9 +57,9 @@
   <Neurocomputer.comps.CompStudiable.completedLetterTitle>已研究 {PARENT_label} ： {RESEARCH} 已解锁</Neurocomputer.comps.CompStudiable.completedLetterTitle>
   
   <!-- EN: plastic fiber -->
-  <Plasfiber.label>塑胶纤维</Plasfiber.label>
+  <Plasfiber.label>塑钢纤维</Plasfiber.label>
   <!-- EN: A type of synthetic fiber made by plasteel, which is airtight and certain degree of sharp-proof performance. However, it does not have much resistance to blunt impact.\n\n Plastic fiber has a importance in the medical field. As a biomimetic surface material, it does not produce rejection reactions from the immune system. -->
-  <Plasfiber.description>一种由塑钢制成的合成纤维，具有气密性和一定的防穿刺性能。然而，它对钝性冲击的抵抗力并不强。\n\n 塑胶纤维在医疗领域具有重要意义。作为仿生表面材料，它不会产生免疫系统的排斥反应。</Plasfiber.description>
+  <Plasfiber.description>一种由塑钢制成的合成纤维，具有气密性和一定的防穿刺性能。然而，它对钝性冲击的抵抗力并不强。\n\n 塑钢纤维在医疗领域具有重要意义。作为仿生表面材料，它不会产生免疫系统的排斥反应。</Plasfiber.description>
   
   <!-- EN: polyester -->
   <Polyester.label>聚酯纤维</Polyester.label>

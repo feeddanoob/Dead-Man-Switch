@@ -131,14 +131,14 @@
 	        <li Class="PatchOperationReplace">
 		        <xpath>Defs/ThingDef[defName="DMS_Ceramics"]/statBases/StuffPower_Armor_Sharp</xpath>
 		            <value>
-			            <StuffPower_Armor_Sharp>1.7</StuffPower_Armor_Sharp>
+			            <StuffPower_Armor_Sharp>7</StuffPower_Armor_Sharp>
 		            </value>
 			</li>
 
 	        <li Class="PatchOperationReplace">
 		        <xpath>Defs/ThingDef[defName="DMS_Ceramics"]/statBases/StuffPower_Armor_Blunt</xpath>
 		            <value>
-			            <StuffPower_Armor_Blunt>0.3</StuffPower_Armor_Blunt>
+			            <StuffPower_Armor_Blunt>3</StuffPower_Armor_Blunt>
 		            </value>
 	        </li>
 

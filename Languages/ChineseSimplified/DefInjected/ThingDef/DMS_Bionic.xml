@@ -24,19 +24,19 @@
   <!-- EN: bio-mechanical neurochord -->
   <DMS_ProstheticSpine.label>生物机械神经索</DMS_ProstheticSpine.label>
   <!-- EN: An advanced bio-mechanical spine which also work as a sub-brain to compatible with other prostheses by sharing reflex nerves. -->
-  <DMS_ProstheticSpine.description>先进的生物力学脊柱，还可作为副大脑，通过共享反射神经与其他假体相容。</DMS_ProstheticSpine.description>
+  <DMS_ProstheticSpine.description>先进的生物力学脊柱，还可作为副脑，通过共享反射神经与其他假体相容。</DMS_ProstheticSpine.description>
   <!-- EN: Implant {0_label} -->
   <DMS_ProstheticSpine.comps.CompUsableImplant.useLabel>安装神经索</DMS_ProstheticSpine.comps.CompUsableImplant.useLabel>
   
   <!-- EN: sensory filter -->
   <DMS_SensoryFilter.label>感官过滤器</DMS_SensoryFilter.label>
   <!-- EN: A signal filter which filtered the specific emotional feedback but will still have some need of moods in order to communicate with other normally, allowing user become a perfect soldier during war. However it is still regarded as an inhuman surgery nowaday and classified as a serious crime. -->
-  <DMS_SensoryFilter.description>它是一种信号过滤器，可以过滤特定的情绪回馈，但仍会有一些情绪需求，以便与其他人正常交流，让使用者在战争中成为一名完美的士兵。不过，这种手术如今仍被视为不人道的手术，并被列为严重犯罪。</DMS_SensoryFilter.description>
+  <DMS_SensoryFilter.description>一种脑分泌过滤器，能够过滤特定的情绪回馈来使安装者不受某些本能需求的影响。但仍会保留一些情绪需求以便与其他人正常交流，其设计目的是让使用者在战争中成为一名完美的士兵。不过实施这种手术如今仍被视为一种不人道的重罪。</DMS_SensoryFilter.description>
   
   <!-- EN: biosynthetic arm -->
   <DMS_SyntheticArm.label>生物合成臂</DMS_SyntheticArm.label>
   <!-- EN: An advanced artificial arm. Composed of synthetic muscles and plasfiber skin grown on bone made by tungsteel. -->
-  <DMS_SyntheticArm.description>先进的人造手臂。由合成肌肉和生长在钨钢骨骼上的塑胶纤维皮肤组成。</DMS_SyntheticArm.description>
+  <DMS_SyntheticArm.description>先进的人造手臂。由生长在钨钢骨骼上的人工肌肉和塑钢纤维皮肤组成。</DMS_SyntheticArm.description>
   
   <!-- EN: biosynthetic leg -->
   <DMS_SyntheticLeg.label>生物合成腿</DMS_SyntheticLeg.label>
