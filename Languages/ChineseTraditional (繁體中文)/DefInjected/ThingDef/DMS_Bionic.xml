@@ -31,7 +31,7 @@
   <!-- EN: sensory filter -->
   <DMS_SensoryFilter.label>感官過濾器</DMS_SensoryFilter.label>
   <!-- EN: A signal filter which filtered the specific emotional feedback but will still have some need of moods in order to communicate with other normally, allowing user become a perfect soldier during war. However it is still regarded as an inhuman surgery nowaday and classified as a serious crime. -->
-  <DMS_SensoryFilter.description>一種腦分泌過濾器，能夠過濾特定的情緒回饋來使安裝者不受某些本能需求的影響。但仍會保留一些情緒需求以便與其他人正常交流，其設計目的是讓使用者在戰爭中成為一名完美的士兵。不過這種手術如今仍被視為不人道並被列為嚴重犯罪。</DMS_SensoryFilter.description>
+  <DMS_SensoryFilter.description>一種腦分泌過濾器，能夠過濾特定的情緒回饋來使安裝者不受某些本能需求的影響。但仍會保留一些情緒需求以便與其他人正常交流，其設計目的是讓使用者在戰爭中成為一名完美的士兵。不過實施這種手術如今仍被視為一種不人道的重罪。</DMS_SensoryFilter.description>
   
   <!-- EN: biosynthetic arm -->
   <DMS_SyntheticArm.label>生物合成臂</DMS_SyntheticArm.label>

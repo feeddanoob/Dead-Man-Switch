@@ -394,7 +394,7 @@
     		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<Tungsteel>15</Tungsteel>
+			<Steel>30</Steel>
 			<ComponentStamped>2</ComponentStamped>
 		</costList>
 		<tools>
