@@ -45,6 +45,7 @@
 		</graphicData>
 		<statBases>
 		    <MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>40000</WorkToMake>
 	    </statBases>
 		<tools>
 			<li>

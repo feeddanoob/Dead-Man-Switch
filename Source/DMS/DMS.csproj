@@ -66,6 +66,8 @@
     <Compile Include="Component\CompMechOnlyWeapon.cs" />
     <Compile Include="Component\CompVehicleWeapon.cs" />
     <Compile Include="Component\CompComputeArray.cs" />
+    <Compile Include="Hediff\HediffComp_RemoveHediffsOnDisappear.cs" />
+    <Compile Include="Hediff\HediffsExtension.cs" />
     <Compile Include="Patch\Patch_Biocode.cs" />
     <Compile Include="Patch\Patch_Building_MechGestator.cs" />
     <Compile Include="Patch\Patch_IsMissingWeapon.cs" />

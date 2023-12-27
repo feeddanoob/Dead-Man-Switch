@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: cluster transceiver -->
-  <DMS_MechLink.label>集群收发器</DMS_MechLink.label>
-  <!-- EN: A man-made bionic implant that allows direct control of mechanoids. No one know if it is the early model of Mechlink or it's reverse engineered product by later generations. anyway it is mechlink in all degree but humans in rimworld can understand and imitate.\n\nDue to processing precision issues, these imitations from rimworld often have some installation side effects... -->
-  <DMS_MechLink.description>一种人造仿生植入物，可以直接控制机械体。没人知道它是机甲连结的早期型号，还是后人逆向工程的产物。反正都是机甲连结，但是边缘世界的人类可以理解和模仿。\n\n由于加工精度问题，边缘世界的这些模仿品往往会产生一些安装副作用……</DMS_MechLink.description>
-  <!-- EN: Install {0_label} to become mechanitor -->
-  <DMS_MechLink.comps.CompUsableImplant.useLabel>安装 {0_label} 以成为机械师</DMS_MechLink.comps.CompUsableImplant.useLabel>
-  
+  <DMS_MechLink.label>集群收發器</DMS_MechLink.label>
+  <DMS_MechLink.description>沒人知道它是機控中樞的早期型號還是後世逆向工程的產物。反正整體而言它都能夠以邊緣世界人類可以理解和模仿的技術水平勝任機控中樞的作用。\n\n由於加工精度與安裝條件問題，安裝這些仿制品往往會產生一些副作用。</DMS_MechLink.description>
+  <DMS_MechLink.comps.CompUsableImplant.useLabel>安裝 {0_label} 以成為機械師</DMS_MechLink.comps.CompUsableImplant.useLabel>
+
+  <DMS_MechLink_Nerfed.label>單兵控制裝置</DMS_MechLink_Nerfed.label>
+  <DMS_MechLink_Nerfed.description>一種低技術水平的臨時機控中樞，通常被用於非應徵士兵與那些前線的臨時機械師使用，安裝後能夠使安裝者在安全協議期限內勝任一位機械師的職責。\n\n由於加工精度與安裝條件問題，安裝這些仿制品往往會產生一些副作用。</DMS_MechLink_Nerfed.description>
+  <DMS_MechLink_Nerfed.comps.CompUsableImplant.useLabel>安裝 {0_label} 以成為臨時機械師</DMS_MechLink_Nerfed.comps.CompUsableImplant.useLabel>  
+
 </LanguageData>

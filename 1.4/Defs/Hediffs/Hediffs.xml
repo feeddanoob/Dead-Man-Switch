@@ -1,16 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- <HediffDef MayRequire="Ludeon.Rimworld.Biotech">
+  <HediffDef MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_MechlinkKillSwitch</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>kill switch</label>
     <description>This device will destruct mechlink by overloading after the death of the user.</description>
     <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
-    <initialSeverity>1</initialSeverity><!-- Severity is bound to level of implant -->
+    <initialSeverity>1</initialSeverity>
     <isBad>false</isBad>
     <comps>
-      <li Class="DMS.HediffCompProperties_RemoveHediffsOnDeath">
+      <li>
+        <compClass>DMS.HediffComp_RemoveHediffsOnDeath</compClass>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="DMS.HediffsExtension">
         <hediffs>
           <li>
             <hediffDef>MechlinkImplant</hediffDef>
@@ -20,7 +25,47 @@
           </li>
         </hediffs>
       </li>
+    </modExtensions>
+  </HediffDef>
+
+  <HediffDef MayRequire="Ludeon.Rimworld.Biotech">
+    <defName>DMS_MechlinkFatalTrigger</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>fatal trigger</label>
+    <description>Due to the instability of this device, this safty protocol will automatically eject and destroy the disabled mechlink before it causes damage to the user's brain.</description>
+    <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <compClass>DMS.HediffComp_RemoveHediffsOnDisappear</compClass>
+        <disappearsAfterTicks>900000~1200000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
     </comps>
+    <modExtensions>
+      <li Class="DMS.HediffsExtension">
+        <hediffs>
+          <li>
+            <hediffDef>MechlinkImplant</hediffDef>
+          </li>
+          <li>
+            <hediffDef>DMS_MechlinkFatalTrigger</hediffDef>
+          </li>
+          <li>
+            <hediffDef>DMS_MechlinkOverload</hediffDef>
+          </li>
+        </hediffs>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <statOffsets>
+          <MechBandwidth>-2</MechBandwidth>
+          <MechControlGroups>-1</MechControlGroups>
+        </statOffsets>
+      </li>
+    </stages>
   </HediffDef>
 
   <!-- 安裝DMS機控中樞後的永久副作用Hediff，會在安裝者死亡後銷毀機控中樞 -->
@@ -30,7 +75,7 @@
     <label>mechlink rejection</label>
     <description>Due to the limited technology and lack of medical nanomachines, there is some side-effect after installing this mechlink, it will last of a while before implanter's nervous system adjusts to its presence.</description>
     <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
-    <initialSeverity>1</initialSeverity><!-- Severity is bound to level of implant -->
+    <initialSeverity>1</initialSeverity>
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_Disappears">

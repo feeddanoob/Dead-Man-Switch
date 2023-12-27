@@ -532,7 +532,7 @@
   <!-- 合成肌肉培育槽 -->
   <RecipeDef>
     <defName>DMS_Make_Artifuscle</defName>
-    <label>grow artifuscle x20</label>
+    <label>grow artifuscle x25</label>
     <description>grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood</description>
     <jobString>growing artifuscle.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -600,7 +600,7 @@
 
   <RecipeDef>
     <defName>DMS_Make_ArtifuscleMass</defName>
-    <label>grow artifuscle x80</label>
+    <label>grow artifuscle x100</label>
     <description>grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood</description>
     <jobString>growing artifuscle.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

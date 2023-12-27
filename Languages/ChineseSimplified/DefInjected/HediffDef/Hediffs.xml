@@ -37,8 +37,11 @@
   <!-- EN: kill switch -->
   <DMS_MechlinkKillSwitch.label>自毁开关</DMS_MechlinkKillSwitch.label>
   <!-- EN: This device will destruct mechlink by overloading after the death of the user. -->
-  <DMS_MechlinkKillSwitch.description>这个装置会在使用者死亡后自动超载烧毁机绊</DMS_MechlinkKillSwitch.description>
-  
+  <DMS_MechlinkKillSwitch.description>本安全协议将会在使用者死亡后自动超载烧毁机控中枢</DMS_MechlinkKillSwitch.description>
+
+  <DMS_MechlinkFatalTrigger.label>失能板机</DMS_MechlinkFatalTrigger.label>
+  <DMS_MechlinkFatalTrigger.description>由于装置的不稳定性，本安全协议将会在对用户的大脑造成损害前自动弹出并烧毁失效的机控中枢。</DMS_MechlinkFatalTrigger.description>
+
   <!-- EN: N.A.C.S. -->
   <DMS_MechlinkOverload.label>辅助控制系统</DMS_MechlinkOverload.label>
   <!-- EN: Neural-Auxiliary Compute and Control System, this system with it's unique protocol allow user to connect with not only existing mech techs, but also Automatroid tech. -->

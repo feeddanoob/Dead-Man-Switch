@@ -12,10 +12,6 @@
 			<displayName>Biotech</displayName>
 		</li>
         <li>
-			<packageId>ludeon.rimworld.royalty</packageId>
-			<displayName>Royalty</displayName>
-		</li>
-        <li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
 			<displayName>Vanilla Expanded Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>

@@ -4,6 +4,7 @@
 	<ThingDef Name="DMS_AutomatroidHeavyGun" ParentName="DMS_AutomatroidGun" Abstract="True">
 		<statBases>
 		    <MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>80000</WorkToMake>
 	    </statBases>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -277,6 +278,7 @@
 		</graphicData>
 		<statBases>
 			<Mass>200</Mass>
+			<WorkToMake>80000</WorkToMake>
 			<MarketValue>1200</MarketValue>
 			<AccuracyTouch>0.75</AccuracyTouch>
 			<AccuracyShort>0.85</AccuracyShort>

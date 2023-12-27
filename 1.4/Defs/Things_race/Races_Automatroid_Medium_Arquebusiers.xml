@@ -32,10 +32,11 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
+          <li>A_AR_LongRifle</li>
+          <li>A_SAR_LongRifle</li>
           <li>A_MG_Light</li>
           <li>A_MG_Heavy</li>
           <li>ElephantGun</li>
-          <li>A_DMR_LongRifle</li>
           <li>SniperRifle</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
@@ -98,6 +99,7 @@
           <li>DMS_MechWeaponLight</li>
           <li>A_SR_LongRifle</li>
           <li>A_DMR_LongRifle</li>
+          <li>A_AR_LongRifle</li>
           <li>SniperRifle</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>false</EnableTechLevelFilter>

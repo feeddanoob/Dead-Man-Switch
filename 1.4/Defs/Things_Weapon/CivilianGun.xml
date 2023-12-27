@@ -52,6 +52,7 @@
 			<li>SimpleGun</li>
 			<li>Revolver</li>
 			<li>DMS_MechWeaponUltraLight</li>
+			<li>CivilianGun</li>
 		</weaponTags>
 		<uiIconScale>1.8</uiIconScale>
 		<graphicData>
@@ -135,6 +136,7 @@
 			<li>A_RC_Pistol</li>
 			<li>A_SG_Pistol</li>
 			<li>DMS_MechWeaponLight</li>
+			<li>CivilianGun</li>
 		</weaponTags>
 		<weaponClasses>
 			<li>RangedLight</li>
@@ -363,6 +365,7 @@
 		  <li>LongShots</li>
 		</weaponClasses>
 		<weaponTags>
+			<li>CivilianGun</li>
 			<li>Simple_LongRange</li>
 			<li>IndustrialGun</li>
 			<li>SurvivalRifle</li>

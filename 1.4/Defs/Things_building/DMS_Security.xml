@@ -344,7 +344,7 @@
     <statBases>   <!--================血量與重量工作量================-->
       <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0.5</Flammability>
-      <WorkToBuild>3000</WorkToBuild>
+      <WorkToBuild>7500</WorkToBuild>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>1.00</ShootingAccuracyTurret>
       <Mass>10000</Mass>

@@ -84,10 +84,14 @@
       <li>DMS_Title</li>
     </royalTitleTags>
     <baseTraderKinds>
-      <li MayRequire="Ludeon.RimWorld.Royalty">Base_Empire_Standard</li>
+      <li>DMS_Base_Army_Standard</li>
     </baseTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
     <caravanTraderKinds>
-      <li MayRequire="Ludeon.RimWorld.Royalty">Empire_Caravan_TraderGeneral</li>      <!-- WIP -->
+      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Caravan_TraderGeneral</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Caravan_TributeCollector</li>
       <li>Caravan_Outlander_CombatSupplier</li>
       <li>Caravan_Outlander_BulkGoods</li>
     </caravanTraderKinds>
@@ -113,18 +117,56 @@
       <!-- Traders -->
       <li>
         <kindDef>Trader</kindDef>
+        <commonality>1</commonality>
+        <traders>
+          <DMS_Trader>1</DMS_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <DMS_Mech_EscortLifter>3</DMS_Mech_EscortLifter>
+        </carriers>
+        <guards>
+          <DMS_Civilian>1</DMS_Civilian>
+          <DMS_Mech_Phalanx>5</DMS_Mech_Phalanx>
+          <DMS_Mech_BattleFrame>1</DMS_Mech_BattleFrame>
+          <DMS_Mech_Soldat>10</DMS_Mech_Soldat>
+          <DMS_MinuteMan_Heavy>2.5</DMS_MinuteMan_Heavy>
+          <DMS_MinuteMan>3</DMS_MinuteMan>
+          <DMS_Security>2</DMS_Security>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <commonality>1</commonality>
         <traders>
           <DMS_Trader>1</DMS_Trader>
         </traders>
         <carriers>
           <DMS_Mech_EscortLifter>10</DMS_Mech_EscortLifter>
+          <Muffalo>6</Muffalo>
         </carriers>
         <guards>
           <DMS_Civilian>3</DMS_Civilian>
           <DMS_Mech_Soldat>10</DMS_Mech_Soldat>
-          <DMS_MinuteMan_Heavy>1.5</DMS_MinuteMan_Heavy>
-          <DMS_MinuteMan>7</DMS_MinuteMan>
-          <DMS_Security>10</DMS_Security>
+          <DMS_Mech_Phalanx>2</DMS_Mech_Phalanx>
+          <DMS_Mech_BattleFrame>5</DMS_Mech_BattleFrame>
+          <DMS_Security>3</DMS_Security>
+        </guards>
+      </li>
+      <li>
+        <!-- Normal fights -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <DMS_Machine_VerlingBirdA>10</DMS_Machine_VerlingBirdA>
+          <DMS_Soldier>3</DMS_Soldier>
+          <DMS_Mech_Iguana>1</DMS_Mech_Iguana>
+        </options>
+        <guards>
+          <DMS_Mech_Pioneer>8</DMS_Mech_Pioneer>
+          <DMS_Mech_Jaeger>3.5</DMS_Mech_Jaeger>
+          <DMS_Mech_Protector>3</DMS_Mech_Protector>
+          <DMS_Mech_Arquebusier>4</DMS_Mech_Arquebusier>
         </guards>
       </li>
       <li>
@@ -169,13 +211,48 @@
           <DMS_Soldier>2</DMS_Soldier>
       </options>
       </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <DMS_Civilian>2</DMS_Civilian>
+          <DMS_MinuteMan_Heavy>0.5</DMS_MinuteMan_Heavy>
+          <DMS_MinuteMan>1</DMS_MinuteMan>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <DMS_Civilian>2</DMS_Civilian>
+          <DMS_MinuteMan_Heavy>0.5</DMS_MinuteMan_Heavy>
+          <DMS_MinuteMan>1</DMS_MinuteMan>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <DMS_Civilian>2</DMS_Civilian>
+          <DMS_MinuteMan_Heavy>0.5</DMS_MinuteMan_Heavy>
+          <DMS_MinuteMan>1</DMS_MinuteMan>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <DMS_Civilian>2</DMS_Civilian>
+          <DMS_MinuteMan_Heavy>0.5</DMS_MinuteMan_Heavy>
+          <DMS_MinuteMan>1</DMS_MinuteMan>
+        </options>
+      </li>
     </pawnGroupMakers>
     <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>70</configurationListOrderPriority>
     <disallowedRaidAgeRestrictions>
       <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
     </disallowedRaidAgeRestrictions>
-    <dialogFactionGreetingHostileAppreciative></dialogFactionGreetingHostileAppreciative>
   </FactionDef>
 
   <ThingSetMakerDef>
