@@ -19,7 +19,7 @@
 	</modDependencies>
 	<loadAfter>
 		<li>ludeon.rimworld.biotech</li>
-		<li>ludeon.rimworld.ideology</li>
+		<li>Ludeon.RimWorld.Ideology</li>
 		<li>ludeon.rimworld.royalty</li>
 		<li>ceteam.combatextended</li>
     	<li>OskarPotocki.VanillaFactionsExpanded.Core</li>

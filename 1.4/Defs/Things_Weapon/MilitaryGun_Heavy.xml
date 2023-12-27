@@ -277,7 +277,7 @@
 			<drawSize>3</drawSize>
 		</graphicData>
 		<statBases>
-			<Mass>200</Mass>
+			<Mass>92</Mass>
 			<WorkToMake>80000</WorkToMake>
 			<MarketValue>1200</MarketValue>
 			<AccuracyTouch>0.75</AccuracyTouch>

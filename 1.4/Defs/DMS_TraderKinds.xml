@@ -4,7 +4,7 @@
   <TraderKindDef>
     <defName>DMS_Base_Army_Standard</defName>
     <faction>DMS_Army</faction>
-    <permitRequiredForTrading MayRequire="ludeon.rimworld.royalty">TradeSettlement</permitRequiredForTrading>
+    <permitRequiredForTrading MayRequire="Ludeon.RimWorld.Royalty">TradeSettlement</permitRequiredForTrading>
     <stockGenerators>
 
       <!-- Resources -->
@@ -256,7 +256,7 @@
     <label>logistic agent</label>
     <commonality>1</commonality>
     <faction>DMS_Army</faction>
-    <permitRequiredForTrading MayRequire="ludeon.rimworld.royalty">TradeCaravan</permitRequiredForTrading>
+    <permitRequiredForTrading MayRequire="Ludeon.RimWorld.Royalty">TradeCaravan</permitRequiredForTrading>
     <stockGenerators>
 
       <!-- Resources -->

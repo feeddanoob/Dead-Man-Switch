@@ -139,7 +139,7 @@
       <li>A_SR_LongRifle</li>
     </weaponTags>
     <abilities>
-      <li MayRequire="ludeon.rimworld.royalty">DMS_Camouflage</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Camouflage</li>
     </abilities>
   </PawnKindDef>
 

@@ -569,7 +569,7 @@
       <li>DMS_LightTower</li>
     </tags>
     <modRequirements>
-      <li>ludeon.rimworld.ideology</li>
+      <li>Ludeon.RimWorld.Ideology</li>
     </modRequirements>
   </KCSG.StructureLayoutDef>
 

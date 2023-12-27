@@ -38,8 +38,8 @@
     <defName>DMS_Squad_ServiceMan</defName>
     <label>service man</label>
     <titleSelectOne>
-      <li MayRequire="ludeon.rimworld.royalty">DMS_Reservist</li>
-      <li MayRequire="ludeon.rimworld.royalty">DMS_Private</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Reservist</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Private</li>
     </titleSelectOne>
     <combatPower>50</combatPower>
     <apparelRequired>
@@ -101,9 +101,9 @@
     <defName>DMS_Squad_Sniper</defName>
     <label>marksman</label>
     <titleSelectOne>
-      <li MayRequire="ludeon.rimworld.royalty">DMS_Private</li>
-      <li MayRequire="ludeon.rimworld.royalty">DMS_Corporal</li>
-      <li MayRequire="ludeon.rimworld.royalty">DMS_PreSergeant</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Private</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Corporal</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_PreSergeant</li>
     </titleSelectOne>
     <combatPower>80</combatPower>
     <apparelRequired Inherit="false">
@@ -161,7 +161,7 @@
     </apparelRequired>
     <weaponMoney>2500~5000</weaponMoney>
     <titleSelectOne>
-      <li MayRequire="ludeon.rimworld.royalty">DMS_Private</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Private</li>
     </titleSelectOne>
     <weaponTags>
       <li>A_AR_LongRifle</li>

@@ -15,8 +15,8 @@
       <li>IndustrialBasic</li>
     </apparelTags>
     <titleSelectOne>
-      <li MayRequire="ludeon.rimworld.royalty">DMS_Reservist</li>
-      <li MayRequire="ludeon.rimworld.royalty">DMS_Private</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Reservist</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Private</li>
     </titleSelectOne>
   </PawnKindDef>
 
