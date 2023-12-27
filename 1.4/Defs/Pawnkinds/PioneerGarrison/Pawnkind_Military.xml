@@ -37,10 +37,7 @@
   <PawnKindDef ParentName="DMS_SoldierBase">
     <defName>DMS_Squad_ServiceMan</defName>
     <label>service man</label>
-    <titleSelectOne>
-      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Reservist</li>
-      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Private</li>
-    </titleSelectOne>
+    <titleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Private</titleRequired>
     <combatPower>50</combatPower>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
@@ -100,11 +97,7 @@
   <PawnKindDef ParentName="DMS_SoldierBase">
     <defName>DMS_Squad_Sniper</defName>
     <label>marksman</label>
-    <titleSelectOne>
-      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Private</li>
-      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Corporal</li>
-      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_PreSergeant</li>
-    </titleSelectOne>
+    <titleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Corporal</titleRequired>
     <combatPower>80</combatPower>
     <apparelRequired Inherit="false">
       <li>Apparel_ArmorHelmetRecon</li>
@@ -160,9 +153,7 @@
       <li>DMS_Apparel_TacticalVest</li>
     </apparelRequired>
     <weaponMoney>2500~5000</weaponMoney>
-    <titleSelectOne>
-      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Private</li>
-    </titleSelectOne>
+    <titleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Private</titleRequired>
     <weaponTags>
       <li>A_AR_LongRifle</li>
       <li>A_SAR_LongRifle</li>

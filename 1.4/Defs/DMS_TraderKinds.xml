@@ -229,13 +229,6 @@
         </createMatingPair>
       </li>
 
-      <!-- Psytrainers -->
-      <li Class="StockGenerator_Category">
-        <categoryDef>NeurotrainersPsycast</categoryDef>
-        <thingDefCountRange>2~2</thingDefCountRange>
-        <countRange>0~2</countRange>
-      </li>
-
       <!-- Archite capsules -->
       <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
         <thingDef>ArchiteCapsule</thingDef>

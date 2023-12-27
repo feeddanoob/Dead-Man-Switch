@@ -36,9 +36,7 @@
   <PawnKindDef ParentName="DMS_PoliceBase">
     <defName>DMS_Police_Pistol</defName>
     <label>police</label>
-    <titleSelectOne>
-      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Private</li>
-    </titleSelectOne>
+    <titleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Private</titleRequired>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
       <li>Apparel_FlakVest</li>
@@ -87,9 +85,7 @@
       <li>DMS_Apparel_ArmyCap</li>
       <li>DMS_Apparel_TacticalVest</li>
     </apparelRequired>
-    <titleSelectOne>
-      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Reservist</li>
-    </titleSelectOne>
+    <titleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Reservist</titleRequired>
     <specificApparelRequirements>
       <li>
         <bodyPartGroup>Torso</bodyPartGroup>
@@ -129,10 +125,7 @@
   <PawnKindDef ParentName="DMS_PoliceBase">
     <defName>DMS_Police_Leader</defName>
     <label>police leader</label>
-    <titleSelectOne>
-      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_PreSergeant</li>
-      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Sergeant</li>
-    </titleSelectOne>
+    <titleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_PreSergeant</titleRequired>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
       <li>Apparel_FlakVest</li>
@@ -181,10 +174,7 @@
     <defName>DMS_Police_Assault</defName>
     <label>police assaulter</label>
     <combatPower>70</combatPower>
-    <titleSelectOne>
-      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_PreSergeant</li>
-      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Corporal</li>
-    </titleSelectOne>
+    <titleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Corporal</titleRequired>
     <apparelRequired>
       <li>DMS_Apparel_TacticalHelmet</li>
       <li>DMS_Apparel_TacticalVest</li>
@@ -237,10 +227,7 @@
     <defName>DMS_Police_Ranged</defName>
     <label>police sniper</label>
     <combatPower>100</combatPower>
-    <titleSelectOne>
-      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_PreSergeant</li>
-      <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Corporal</li>
-    </titleSelectOne>
+    <titleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Corporal</titleRequired>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
       <li>Apparel_FlakVest</li>

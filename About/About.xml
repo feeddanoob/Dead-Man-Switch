@@ -18,9 +18,9 @@
 		</li>
 	</modDependencies>
 	<loadAfter>
-		<li>ludeon.rimworld.biotech</li>
+		<li>Ludeon.Rimworld.Biotech</li>
 		<li>Ludeon.RimWorld.Ideology</li>
-		<li>ludeon.rimworld.royalty</li>
+		<li>Ludeon.RimWorld.Royalty</li>
 		<li>ceteam.combatextended</li>
     	<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
   	</loadAfter>
