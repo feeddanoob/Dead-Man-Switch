@@ -223,6 +223,7 @@
           <li>A_SC_LongRifle</li>
           <li>A_SR_LongRifle</li>
           <li>A_DMR_LongRifle</li>
+          <li>IndustrialGunAdvanced</li>
           <li>A_SR_GrenadeLauncher</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>

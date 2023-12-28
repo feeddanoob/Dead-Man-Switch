@@ -103,15 +103,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>50</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentStamped</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
+        <count>75</count>
       </li>
       <li>
         <filter>
@@ -119,7 +111,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>6</count>
       </li>
     </ingredients>
   </RecipeDef>
@@ -141,7 +133,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>50</count>
+        <count>75</count>
       </li>
       <li>
         <filter>
@@ -196,7 +188,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>50</count>
+        <count>75</count>
       </li>
       <li>
         <filter>

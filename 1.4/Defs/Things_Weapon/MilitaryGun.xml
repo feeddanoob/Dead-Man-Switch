@@ -117,7 +117,7 @@
 		</recipeMaker>
 		<costList>
 			<Tungsteel>30</Tungsteel>
-			<ComponentStamped>2</ComponentStamped>
+			<ComponentStamped>1</ComponentStamped>
 		</costList>
 		<tools Inherit="False">
 			<li>

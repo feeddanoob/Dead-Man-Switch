@@ -19,6 +19,7 @@
     <defName>DMS_CombatDrop</defName>
     <label>combat supply drop</label>
     <description>Call for a drop of standard combat supply.</description>
+    <faction>DMS_Army</faction>
     <uiPosition>(0,1)</uiPosition>
     <minTitle>DMS_Private</minTitle>
     <permitPointCost>1</permitPointCost>
@@ -36,6 +37,7 @@
     <defName>DMS_LogiDrop</defName>
     <label>logistic supply drop</label>
     <description>Call for a drop of 20 survival pack, 8 medicine and 4 compoment.</description>
+    <faction>DMS_Army</faction>
     <uiPosition>(1,3)</uiPosition> 
     <minTitle>DMS_Corporal</minTitle>
     <permitPointCost>1</permitPointCost>
@@ -53,6 +55,7 @@
     <defName>DMS_FoodDrop</defName>
     <label>food supply drop</label>
     <description>Call for a drop of 20 packaged survival meals.</description>
+    <faction>DMS_Army</faction>
     <minTitle>DMS_Corporal</minTitle>
     <uiPosition>(1,1)</uiPosition>
     <permitPointCost>1</permitPointCost>
@@ -70,6 +73,7 @@
     <defName>DMS_MaterialDrop</defName>
     <label>construct material drop</label>
     <description>Call for a drop of 500 silver.</description>
+    <faction>DMS_Army</faction>
     <minTitle>DMS_PreSergeant</minTitle>
     <uiPosition>(2,1)</uiPosition>
     <permitPointCost>1</permitPointCost>
@@ -87,6 +91,7 @@
     <defName>DMS_GearDrop</defName>
     <label>combat equipment drop</label>
     <description>Call for a combat supply for a combatant, include a set of tactical gears, and an assault rifle.</description>
+    <faction>DMS_Army</faction>
     <minTitle>DMS_WarrantOfficer</minTitle>
     <uiPosition>(4,1)</uiPosition>
     <permitPointCost>1</permitPointCost>
@@ -103,6 +108,7 @@
     <defName>DMS_CompDrop</defName>
     <label>componments drop</label>
     <description>Call for a drop of componments.</description>
+    <faction>DMS_Army</faction>
     <minTitle>DMS_Lieutenant</minTitle>
     <uiPosition>(5,3)</uiPosition>
     <permitPointCost>1</permitPointCost>

@@ -79,8 +79,7 @@
     		</researchPrerequisites>
 		</recipeMaker>	
 		<costList>
-			<Steel>15</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>20</Steel>
 		</costList>
 		<verbs>
 			<li>
@@ -254,7 +253,7 @@
 		</recipeMaker>
 		<costList>
 			<Steel>75</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentStamped>1</ComponentStamped>
 		</costList>
 		<verbs>
 			<li>
@@ -397,8 +396,8 @@
     		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<Steel>30</Steel>
-			<ComponentStamped>2</ComponentStamped>
+			<Steel>50</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<tools>
 			<li>
