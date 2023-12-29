@@ -81,8 +81,8 @@
 		</thingCategories>
 		<statBases>
 			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
 			<MaxHitPoints>50</MaxHitPoints>
 			<WorkToMake>2500</WorkToMake>
 			<Mass>0.05</Mass>

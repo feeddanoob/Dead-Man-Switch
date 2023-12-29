@@ -38,8 +38,8 @@
 			<WorkToMake>5000</WorkToMake>
 			<Mass>0.5</Mass>
 			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -55,7 +55,6 @@
 				<li>Shoulders</li>
 				<li>Arms</li>
 				<li>Legs</li>
-				<li>Feet</li>
 			</bodyPartGroups>
 			<layers>
 				<li>OnSkin</li>
@@ -130,9 +129,9 @@
 		  <MaxHitPoints>160</MaxHitPoints>
 		  <WorkToMake>7000</WorkToMake>
 		  <Mass>1.5</Mass>
-		  <StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
-		  <StuffEffectMultiplierInsulation_Cold>0.80</StuffEffectMultiplierInsulation_Cold>
-		  <StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+		  <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
 		  <EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<apparel>
@@ -303,7 +302,7 @@
 			<EquipDelay>30</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-1</MoveSpeed>
+			<MoveSpeed>-0.5</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>

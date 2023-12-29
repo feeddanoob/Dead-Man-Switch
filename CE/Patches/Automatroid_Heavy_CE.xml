@@ -69,7 +69,7 @@
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Iguana"]/statBases</xpath>
 				<value>
 					<CarryWeight>175</CarryWeight>
-					<CarryBulk>80</CarryBulk>
+					<CarryBulk>150</CarryBulk>
 					<AimingAccuracy>1</AimingAccuracy>
 					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
 					<MeleeDodgeChance>0.08</MeleeDodgeChance>
@@ -196,7 +196,7 @@
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Gecko"]/statBases</xpath>
 				<value>
 					<CarryWeight>135</CarryWeight>
-					<CarryBulk>80</CarryBulk>
+					<CarryBulk>150</CarryBulk>
 					<AimingAccuracy>1</AimingAccuracy>
 					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
 					<MeleeDodgeChance>0.08</MeleeDodgeChance>

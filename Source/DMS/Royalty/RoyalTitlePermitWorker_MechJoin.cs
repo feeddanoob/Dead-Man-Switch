@@ -48,12 +48,12 @@ namespace DMS
         }
         bool MechanitorCheck(Map map)
         {
-            return map.PlayerPawnsForStoryteller.Where(p => p.mechanitor.TotalBandwidth > 0).FirstOrDefault() != null;
+            return map.PlayerPawnsForStoryteller.Where(p => p.mechanitor?.TotalBandwidth > 0).FirstOrDefault() != null;
         }
 
         bool MechanitorCheckCaravan(Caravan caravan)
         {
-            return caravan.PlayerPawnsForStoryteller.Where(p => p.mechanitor.TotalBandwidth > 0).FirstOrDefault() != null;
+            return caravan.PlayerPawnsForStoryteller.Where(p => p.mechanitor?.TotalBandwidth > 0).FirstOrDefault() != null;
         }
 
         public override IEnumerable<Gizmo> GetCaravanGizmos(Pawn pawn, Faction faction)

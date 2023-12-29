@@ -90,7 +90,7 @@
   <RoyalTitlePermitDef ParentName="DropResourcesBase">
     <defName>DMS_GearDrop</defName>
     <label>combat equipment drop</label>
-    <description>Call for a combat supply for a combatant, include a set of tactical gears, and an assault rifle.</description>
+    <description>Call for a combat supply for a combatant, include a set of tactical gears, and a emergency rifle.</description>
     <faction>DMS_Army</faction>
     <minTitle>DMS_WarrantOfficer</minTitle>
     <uiPosition>(4,1)</uiPosition>
@@ -98,7 +98,10 @@
     <cooldownDays>30</cooldownDays>
     <royalAid>
       <itemsToDrop>
-        <MealSurvivalPack>20</MealSurvivalPack>
+        <DMS_Apparel_TacticalHelmet>1</DMS_Apparel_TacticalHelmet>
+        <DMS_Apparel_TacticalVest>1</DMS_Apparel_TacticalVest>
+        <DMS_KnuckledusterRevolver MayRequire="ceteam.combatextended">1</DMS_KnuckledusterRevolver>
+        <DMS_SurvivalRifle>1</DMS_SurvivalRifle>
       </itemsToDrop>
       <favorCost>4</favorCost>
     </royalAid>
