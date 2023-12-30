@@ -24,7 +24,7 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_30x173mmNATO_AP</defaultProjectile>
 					<burstShotCount>40</burstShotCount>
-					<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+					<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
                     <warmupTime>1.35</warmupTime>
                     <range>75</range>
                     <soundCast>Shot_Autocannon</soundCast>
@@ -65,7 +65,7 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_20x102mmNATO_AP</defaultProjectile>
 					<burstShotCount>40</burstShotCount>
-					<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+					<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
                     <warmupTime>0.8</warmupTime>
                     <range>62</range>
                     <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
@@ -75,7 +75,7 @@
                 </Properties>
                 <AmmoUser>
                     <magazineSize>200</magazineSize>
-                    <reloadTime>15</reloadTime>
+                    <reloadTime>12</reloadTime>
                     <ammoSet>AmmoSet_20x102mmNATO</ammoSet>
                 </AmmoUser>
                 <FireModes>
@@ -109,7 +109,7 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_20x102mmNATO_AP</defaultProjectile>
 					<burstShotCount>40</burstShotCount>
-					<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+					<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
                     <warmupTime>0.8</warmupTime>
                     <range>62</range>
                     <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
@@ -119,7 +119,7 @@
                 </Properties>
                 <AmmoUser>
                     <magazineSize>300</magazineSize>
-                    <reloadTime>15</reloadTime>
+                    <reloadTime>12</reloadTime>
                     <ammoSet>AmmoSet_20x102mmNATO</ammoSet>
                 </AmmoUser>
                 <FireModes>
@@ -153,7 +153,7 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
 					<burstShotCount>50</burstShotCount>
-					<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+					<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
                     <warmupTime>1</warmupTime>
                     <range>75</range>
                     <soundCast>Shot_Autocannon</soundCast>
@@ -163,7 +163,7 @@
                 </Properties>
                 <AmmoUser>
                     <magazineSize>300</magazineSize>
-                    <reloadTime>12</reloadTime>
+                    <reloadTime>8</reloadTime>
                     <ammoSet>AmmoSet_50BMG</ammoSet>
                 </AmmoUser>
                 <FireModes>
@@ -196,7 +196,7 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
 					<burstShotCount>40</burstShotCount>
-					<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+					<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                     <warmupTime>1.2</warmupTime>
                     <range>75</range>
                     <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
@@ -206,7 +206,7 @@
                 </Properties>
                 <AmmoUser>
                     <magazineSize>500</magazineSize>
-                    <reloadTime>12</reloadTime>
+                    <reloadTime>6</reloadTime>
                     <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
                 </AmmoUser>
                 <FireModes>

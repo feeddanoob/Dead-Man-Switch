@@ -214,7 +214,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Apparel_GarrisionCoat"]/statBases/StuffEffectMultiplierArmor</xpath>
 				<value>
-					<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+					<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
 				</value>
 			</li>
 
@@ -226,9 +226,11 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="DMS_Apparel_GarrisionCoat"]/equippedStatOffsets</xpath>
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_GarrisionCoat"]</xpath>
 				<value>
-					<CarryBulk>20</CarryBulk>
+					<equippedStatOffsets>
+						<CarryBulk>20</CarryBulk>
+					</equippedStatOffsets>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">

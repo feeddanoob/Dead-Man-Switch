@@ -298,6 +298,7 @@
           <li>MedievalMeleeBasic</li>
           <li>MedievalMeleeAdvanced</li>
           <li>DMS_MeleeWeapon</li>
+          <li>V_Gatling556mm</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>

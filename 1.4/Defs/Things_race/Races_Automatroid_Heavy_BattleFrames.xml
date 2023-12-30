@@ -317,6 +317,7 @@
       <li>IndustrialGun</li>
       <li>A_MG_Heavy</li>
       <li>A_SuppressWeapon</li>
+      <li>V_Gatling556mm</li>
     </weaponTags>
   </PawnKindDef>
 </Defs>

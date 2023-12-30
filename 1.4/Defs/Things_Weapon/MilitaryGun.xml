@@ -587,7 +587,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_AutomaticGrenadeLauncher</texPath>
-			<drawSize>(1.25,1.25)</drawSize>
+			<drawSize>(1.75,1.75)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>

@@ -72,7 +72,7 @@
   <RoyalTitlePermitDef ParentName="DropResourcesBase">
     <defName>DMS_MaterialDrop</defName>
     <label>construct material drop</label>
-    <description>Call for a drop of 500 silver.</description>
+    <description>Call for a drop of 500 silver and 250 steel.</description>
     <faction>DMS_Army</faction>
     <minTitle>DMS_PreSergeant</minTitle>
     <uiPosition>(2,1)</uiPosition>
@@ -119,7 +119,8 @@
     <prerequisite>DMS_LogiDrop</prerequisite>
     <royalAid>
       <itemsToDrop>
-        <MedicineUltratech>5</MedicineUltratech>
+        <ComponentStamped>15</ComponentStamped>
+        <Neurocomputer>3</Neurocomputer>
       </itemsToDrop>
       <favorCost>8</favorCost>
     </royalAid>
@@ -138,9 +139,9 @@
     <uiPosition>(2,0)</uiPosition>
     <royalAid>
       <favorCost>4</favorCost>
-      <pawnKindDef>Empire_Common_Laborer</pawnKindDef><!-- WIP -->
+      <pawnKindDef>DMS_Civilian</pawnKindDef><!-- WIP -->
       <pawnCount>4</pawnCount>
-      <aidDurationDays>4</aidDurationDays>
+      <aidDurationDays>6</aidDurationDays>
       <itemsToDrop>
         <MealSurvivalPack>25</MealSurvivalPack>        
       </itemsToDrop>
@@ -162,7 +163,7 @@
       <favorCost>8</favorCost>
       <pawnKindDef>DMS_Civilian</pawnKindDef><!-- WIP -->
       <pawnCount>8</pawnCount>
-      <aidDurationDays>4</aidDurationDays>
+      <aidDurationDays>6</aidDurationDays>
       <itemsToDrop>
         <MealSurvivalPack>50</MealSurvivalPack>        
       </itemsToDrop>
