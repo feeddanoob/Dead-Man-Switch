@@ -6,6 +6,7 @@ public static partial class CheckUtility
 {
     public static bool IsMechUseable(MechWeaponExtension extension, ThingWithComps tmp)
     {
+        if (BypassedUseable(extension, tmp.def.defName)) return true;
         //開了Tag過濾的話先看是否通過Tag過濾，然後InTechLevel包含了對於EnableTechLevelFilter的判斷
         if (extension.EnableWeaponFilter)
         {
@@ -42,6 +43,6 @@ public static partial class CheckUtility
 
     public static bool BypassedUseable(MechWeaponExtension extension, string defName)//白名單直接可用
     {
-        return (extension.UsableWeaponTags.Where(p => p == defName).FirstOrDefault() != null);
+        return (extension.BypassUsableWeapons.Where(p => p == defName).FirstOrDefault() != null);
     }
 }

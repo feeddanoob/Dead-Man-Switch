@@ -316,6 +316,7 @@
 		<weaponTags>
 			<li>A_RC_LongRifle</li>
 			<li>IndustrialGun</li>
+			<li>RiotLMG</li>
 	  	</weaponTags>
 		<soundInteract>Interact_Rifle</soundInteract>	
 		<statBases>

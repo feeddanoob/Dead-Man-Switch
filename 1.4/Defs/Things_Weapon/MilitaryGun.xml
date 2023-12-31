@@ -649,7 +649,7 @@
 		</projectile>
 	</ThingDef>
 
-<!--LMG-->
+	<!--LMG-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_LightMachineGun</defName>
 		<label>mech LMG</label>
@@ -767,9 +767,9 @@
 			</li>
 		</tools>
 		<costList>
-			<Tungsteel>115</Tungsteel>
-			<Plasteel>30</Plasteel>
-			<ComponentStamped>7</ComponentStamped>
+			<Tungsteel>45</Tungsteel>
+			<Plasteel>15</Plasteel>
+			<ComponentStamped>2</ComponentStamped>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>

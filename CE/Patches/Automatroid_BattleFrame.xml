@@ -54,13 +54,13 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[@Name="BaseBattleFrame"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
-					<ArmorRating_Blunt>5</ArmorRating_Blunt>
+					<ArmorRating_Blunt>15</ArmorRating_Blunt>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[@Name="BaseBattleFrame"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
-					<ArmorRating_Sharp>6</ArmorRating_Sharp>
+					<ArmorRating_Sharp>10</ArmorRating_Sharp>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
@@ -106,38 +106,29 @@
 				<xpath>Defs/ThingDef[defName="DMS_Mech_FieldCommand"]/statBases</xpath>
 				<value>
 					<CarryWeight>25</CarryWeight>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_FieldCommand"]/statBases</xpath>
-				<value>
-					<CarryBulk>18</CarryBulk>
+					<CarryBulk>10</CarryBulk>
 				</value>
 			</li>
 			<!-- 工程駁機 -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_ShaftWorker"]/statBases</xpath>
 				<value>
-					<CarryWeight>100</CarryWeight>
+					<CarryWeight>125</CarryWeight>
 					<CarryBulk>70</CarryBulk>
 				</value>
 			</li>
-
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_ShaftWorker"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
-					<ArmorRating_Blunt>4.5</ArmorRating_Blunt>
+					<ArmorRating_Blunt>24</ArmorRating_Blunt>
 				</value>
 			</li>
-			
-			<!--only torso-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_ShaftWorker"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
-					<ArmorRating_Sharp>5</ArmorRating_Sharp>
+					<ArmorRating_Sharp>12</ArmorRating_Sharp>
 				</value>
 			</li>
-
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_ShaftWorker"]/statBases/ArmorRating_Heat</xpath>
 				<value>
@@ -152,22 +143,18 @@
 					<CarryBulk>200</CarryBulk>
 				</value>
 			</li>
-
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_EscortLifter"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
-					<ArmorRating_Blunt>2</ArmorRating_Blunt>
+					<ArmorRating_Blunt>20</ArmorRating_Blunt>
 				</value>
 			</li>
-			
-			<!--only torso-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_EscortLifter"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
-					<ArmorRating_Sharp>3</ArmorRating_Sharp>
+					<ArmorRating_Sharp>10</ArmorRating_Sharp>
 				</value>
 			</li>
-
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_EscortLifter"]/statBases/ArmorRating_Heat</xpath>
 				<value>

@@ -11,6 +11,7 @@ using UnityEngine;
 namespace DMS
 {
 
+    [StaticConstructorOnStartup]
     public class CompMechApparel:ThingComp
     {
         public static readonly int REFRESH_INTERVAL = 6000;

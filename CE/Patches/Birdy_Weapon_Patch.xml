@@ -2,12 +2,6 @@
 <Patch>
     
     <!--give CE grenades to birdy-->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="DMS_Machine_VerlingBird"]/modExtensions/li[@Class="DMS.MechWeaponExtension"]/UsableWeaponTags</xpath>
-            <value>
-                <li>CE_AI_Grenade</li>
-            </value>
-    </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[defName="DMS_Machine_VerlingBirdA"]/weaponTags</xpath>

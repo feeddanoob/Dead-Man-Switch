@@ -43,6 +43,78 @@
     <recipeUsers><li>DMS_MechGestatorSamll</li></recipeUsers>
   </RecipeDef>
 
+  <!--遊隼-->
+  <RecipeDef ParentName="DMS_LegionMechanoidRecipe">
+    <defName>DMS_Make_Falcon</defName>
+    <label>gestate falcon</label>
+    <researchPrerequisite>DMS_Automatroid</researchPrerequisite>
+    <description>Gestate a falcon mechanoid.</description>
+    <products>
+      <DMS_Mech_Falcon>1</DMS_Mech_Falcon>
+    </products>
+    <gestationCycles>2</gestationCycles>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_Falcon</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+  <!--夜蝠-->
+  <RecipeDef ParentName="DMS_LegionMechanoidRecipe">
+    <defName>DMS_Make_Noctula</defName>
+    <label>gestate noctula</label>
+    <researchPrerequisite>DMS_Automatroid</researchPrerequisite>
+    <description>Gestate a noctula mechanoid.</description>
+    <products>
+      <DMS_Mech_Noctula>1</DMS_Mech_Noctula>
+    </products>
+    <gestationCycles>3</gestationCycles>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_Noctula</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentTransmitter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
   <!-- DMS_Mech_Ape -->
   <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
     <defName>DMS_Make_Ape</defName>
@@ -385,7 +457,6 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
-  
   <!--礦井工人-->
   <RecipeDef ParentName="DMS_HeavyMechanoidRecipe">
     <defName>DMS_Make_ShaftWorker</defName>
@@ -1126,6 +1197,9 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
+        <li>Corpse_DMS_Mech_Falcon</li>
+        <li>Corpse_DMS_Mech_Sergeant</li>
+
         <li>Corpse_DMS_Mech_Soldat</li>
         <li>Corpse_DMS_Mech_Sergeant</li>
         <li>Corpse_DMS_Mech_Kanonier</li>
@@ -1143,7 +1217,6 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
-
   <RecipeDef ParentName="BaseMechanoidResurrectionRecipe">
     <defName>DMS_ResurrectHeavyMech</defName>
     <label>resurrect heavy automatroid</label>
@@ -1180,7 +1253,6 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
-
   <RecipeDef ParentName="BaseMechanoidResurrectionRecipe">
     <defName>DMS_ResurrectUltraheavyMech</defName>
     <label>resurrect ultraheavy automatroid</label>

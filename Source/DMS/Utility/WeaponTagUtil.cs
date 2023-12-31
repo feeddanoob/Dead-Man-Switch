@@ -32,7 +32,7 @@ namespace DMS
             }
         }
 
-        public static IEnumerable<ThingDef> getWeapons(List<string> tags)
+        public static IEnumerable<ThingDef> GetWeapons(List<string> tags)
         {
             List<ThingDef> thingDefs = new List<ThingDef>();
             foreach (string s in tags)
@@ -44,6 +44,19 @@ namespace DMS
             }
             thingDefs.RemoveDuplicates();
             return thingDefs;
+        }
+        public static bool WeaponExists(string defname ,out ThingDef thing)
+        {
+            thing = null;
+            foreach (var item in DefDatabase<ThingDef>.AllDefs.Where((ThingDef def) => def.IsWeapon))
+            {
+                if (item.defName == defname)
+                {
+                    thing = item;
+                    return true;
+                } 
+            }
+            return false;
         }
     }
 
@@ -61,14 +74,25 @@ namespace DMS
             if (ext != null)
             {
                 var users = ext.UsableWeaponTags;
+                List<ThingDef> list = WeaponTagUtil.GetWeapons(users).ToList();
+                list.SortBy(v => v.BaseMarketValue);
 
                 if (!users.NullOrEmpty())
                 {
-                    List<ThingDef> list = WeaponTagUtil.getWeapons(users).ToList();
-                    list.SortBy(v => v.BaseMarketValue);
                     foreach (var def in list)
                     {
                         if (!ext.EnableTechLevelFilter || ext.UsableTechLevels.Contains(def.techLevel.ToString()))
+                        {
+                            yield return new Dialog_InfoCard.Hyperlink(def);
+                        }
+
+                    }
+                }
+                if (ext.BypassUsableWeapons.Count > 0)
+                {
+                    foreach (var item in ext.BypassUsableWeapons)
+                    {
+                        if (WeaponTagUtil.WeaponExists(item, out var def))
                         {
                             yield return new Dialog_InfoCard.Hyperlink(def);
                         }

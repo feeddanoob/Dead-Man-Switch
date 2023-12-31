@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <!-- 北約武器 -->
   <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>DMS_Industrial</defName>
     <label>Nara Industrial</label>
-    <iconPath>Things/NaraIcon</iconPath>
+    <iconPath>UI/StyleCategories/NaraIcon</iconPath>
     <soundOngoingRitual>RitualSustainer_Techist</soundOngoingRitual>
     <ritualVisualEffectDef>Techist</ritualVisualEffectDef>
     <thingDefStyles>
@@ -104,4 +105,34 @@
     </thingDefStyles>
   </StyleCategoryDef>
 
+  <!-- 華約武器 -->
+  <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>DMS_Facility</defName>
+    <label>OKB.BM</label>
+    <iconPath>UI/StyleCategories/OKBIcon</iconPath>
+    <soundOngoingRitual>RitualSustainer_Techist</soundOngoingRitual>
+    <ritualVisualEffectDef>Techist</ritualVisualEffectDef>
+    <thingDefStyles>
+      <li>
+        <thingDef>DMS_AssaultRifle</thingDef>
+        <styleDef>DMS_PECA_AssaultRifle</styleDef>
+      </li>
+      <li>
+        <thingDef>DMS_HeavyMachineGun</thingDef>
+        <styleDef>DMS_PECA_HeavyMachineGun</styleDef>
+      </li>
+      <li>
+        <thingDef>DMS_LightMachineGun</thingDef>
+        <styleDef>DMS_PECA_LightMachineGun</styleDef>
+      </li>
+      <li>
+        <thingDef>DMS_MiniMachineGun</thingDef>
+        <styleDef>DMS_PECA_MiniMachineGun</styleDef>
+      </li>
+      <li>
+        <thingDef>DMS_SemiAutoRifle</thingDef>
+        <styleDef>DMS_PECA_SemiAutoRifle</styleDef>
+      </li>
+    </thingDefStyles>
+  </StyleCategoryDef>
 </Defs>

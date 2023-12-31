@@ -6,8 +6,6 @@ using Verse.AI;
 
 namespace DMS
 {
-
-    //一般情況的
     public class WeaponUsableMech : Pawn , WeaponUsable
     {
         public MechWeaponExtension MechWeapon { get; private set; }

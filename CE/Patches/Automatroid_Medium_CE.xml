@@ -150,7 +150,7 @@
 	<li Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="BaseAutomatroidRace"]/statBases</xpath>
 		<value>
-			<PartialArmorBody>0</PartialArmorBody>
+			<PartialArmorBody>4</PartialArmorBody>
 		</value>
 	</li>
 
@@ -211,9 +211,6 @@
 			</tools>
 		</value>
 	</li>
-
-
-    <!--tweak partial armor after the patch is finalized-->
 
 	<!-- ======Soldat======-->
 	<li Class="PatchOperationAdd">

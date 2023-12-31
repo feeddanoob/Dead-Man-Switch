@@ -210,7 +210,7 @@
         <li>StoneBlocks</li>
       </categories>
       <disallowedThingDefs>
-        <li MayRequire="aoba.fortress.industrial">FT_BlocksConcrete</li>
+        <!-- <li MayRequire="aoba.fortress.industrial">FT_BlocksConcrete</li> -->
         <li MayRequire="aoba.fortress.industrial">FT_WoodConcrete</li>
 		    <li MayRequire="aoba.fortress.industrial">FT_ReinforcedConcreteBag</li>
       </disallowedThingDefs>
@@ -273,7 +273,7 @@
         <li>StoneBlocks</li>
       </categories>
       <disallowedThingDefs>
-        <li MayRequire="aoba.fortress.industrial">FT_BlocksConcrete</li>
+        <!-- <li MayRequire="aoba.fortress.industrial">FT_BlocksConcrete</li> -->
         <li MayRequire="aoba.fortress.industrial">FT_WoodConcrete</li>
 		    <li MayRequire="aoba.fortress.industrial">FT_ReinforcedConcreteBag</li>
       </disallowedThingDefs>
@@ -328,8 +328,8 @@
         <li>StoneBlocks</li>
       </categories>
       <disallowedThingDefs>
-        <!-- <li MayRequire="aoba.fortress.industrial">FT_BlocksConcrete</li>
-        <li MayRequire="aoba.fortress.industrial">FT_WoodConcrete</li> -->
+        <!-- <li MayRequire="aoba.fortress.industrial">FT_BlocksConcrete</li> -->
+        <li MayRequire="aoba.fortress.industrial">FT_WoodConcrete</li>
 		    <li MayRequire="aoba.fortress.industrial">FT_ReinforcedConcreteBag</li>
       </disallowedThingDefs>
       <thingDefs>
@@ -382,8 +382,8 @@
         <li>StoneBlocks</li>
       </categories>
       <disallowedThingDefs>
-        <!-- <li MayRequire="aoba.fortress.industrial">FT_BlocksConcrete</li>
-        <li MayRequire="aoba.fortress.industrial">FT_WoodConcrete</li> -->
+        <!-- <li MayRequire="aoba.fortress.industrial">FT_BlocksConcrete</li> -->
+        <li MayRequire="aoba.fortress.industrial">FT_WoodConcrete</li>
 		    <li MayRequire="aoba.fortress.industrial">FT_ReinforcedConcreteBag</li>
       </disallowedThingDefs>
       <thingDefs>

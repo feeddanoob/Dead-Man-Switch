@@ -19,7 +19,7 @@
       <baseHealthScale>1.32</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
-    <modExtensions  Inherit="False">
+    <modExtensions Inherit="False">
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
@@ -286,7 +286,7 @@
       <baseHealthScale>1.32</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
-    <modExtensions  Inherit="False">
+    <modExtensions Inherit="False">
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>

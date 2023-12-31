@@ -9,8 +9,6 @@
 			<operations>
 
 	<!-- ========== PawnKind Patches ========== -->
-
-
 	<li Class="PatchOperationAddModExtension">
 		<xpath>Defs/PawnKindDef[defName="DMS_Machine_VerlingBirdA"]</xpath>
 		<value>
@@ -252,7 +250,21 @@
 				<ArmorRating_Sharp>1</ArmorRating_Sharp>
 			</value>
 		</li>
-	
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[@Name="BaseMechRace_Falcon"]/statBases</xpath>
+			<value>
+				<CarryWeight>60</CarryWeight>
+				<CarryBulk>20</CarryBulk>
+				<AimingAccuracy>0.8</AimingAccuracy>
+				<ShootingAccuracyPawn>0.90</ShootingAccuracyPawn>
+				<MeleeDodgeChance>0.5</MeleeDodgeChance>
+				<MeleeCritChance>0.07</MeleeCritChance>
+				<MeleeParryChance>0.06</MeleeParryChance>
+				<MaxHitPoints>200</MaxHitPoints>
+				<NightVisionEfficiency>0.8</NightVisionEfficiency>
+				<ReloadSpeed>0.8</ReloadSpeed>
+			</value>
+		</li>
 		<li Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[@Name="DMS_MechHoundBase"]/comps</xpath>
 			<value>
@@ -274,6 +286,39 @@
 			</value>
 		</li>
 
+		<li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[@Name="BaseMechRace_Falcon"]</xpath>
+			<value>
+				<li Class="CombatExtended.RacePropertiesExtensionCE">
+					<bodyShape>QuadrupedLow</bodyShape>
+				</li>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name="BaseMechRace_Falcon"]/statBases/ArmorRating_Blunt</xpath>
+			<value>
+				<ArmorRating_Blunt>8</ArmorRating_Blunt>
+			</value>
+		</li>
+	
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name="BaseMechRace_Falcon"]/statBases/ArmorRating_Sharp</xpath>
+			<value>
+				<ArmorRating_Sharp>4</ArmorRating_Sharp>
+			</value>
+		</li>
+		
+		<li Class="PatchOperationAddModExtension">
+			<xpath>Defs/PawnKindDef[defName="DMS_Mech_Falcon"]</xpath>
+			<value>
+				<li Class="CombatExtended.LoadoutPropertiesExtension">
+					<primaryMagazineCount>
+						<min>4</min>
+						<max>8</max>
+					</primaryMagazineCount>
+				</li>
+			</value>
+		</li>
 </operations>
 </match>
 </Operation>
