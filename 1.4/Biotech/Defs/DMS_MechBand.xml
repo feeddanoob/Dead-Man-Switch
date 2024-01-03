@@ -44,6 +44,7 @@
       <li>DMS_Mechlink</li>
     </researchPrerequisites>
     <comps>
+      <li MayRequire="VanillaExpanded.VFEA" Class="VFEAncients.CompProperties_SolarPowerUp"/>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>500</basePowerConsumption>

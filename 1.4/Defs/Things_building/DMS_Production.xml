@@ -50,6 +50,7 @@
 					<li MayRequire="Aoba.Fortress.Industrial.Citadel">FT_transformer</li>
 				</linkableFacilities>
 			</li>
+      <li MayRequire="VanillaExpanded.VFEA" Class="VFEAncients.CompProperties_SolarPowerUp"/>
 		</comps>
     <placeWorkers>
       <li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -147,7 +148,7 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <shortCircuitInRain>false</shortCircuitInRain>
+        <shortCircuitInRain>true</shortCircuitInRain>
         <basePowerConsumption>2000</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>

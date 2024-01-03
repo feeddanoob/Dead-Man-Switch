@@ -6,31 +6,6 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Combat Extended</li>
-                    </mods>
-                    <match Class="PatchOperationSequence">
-                        <operations>
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="DMS_Turret_GateKeeper"]/thingClass</xpath>
-                                <value>
-                                    <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                    <nomatch Class="PatchOperationSequence">
-                        <operations>
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="DMS_Turret_GateKeeper"]/thingClass</xpath>
-                                <value>
-                                    <thingClass>VFEAncients.Building_TurretPD</thingClass>
-                                </value>
-                            </li>
-                        </operations>
-                    </nomatch>
-                </li>
             </operations>
         </match>
     </Operation>

@@ -31,9 +31,15 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>SimpleGun</li>
+          <li>PLA_AssaultRifle</li>
+          <li>PLA_SimpleGun</li>
+          <li>PLA_RifleForTrade</li>
+          <li>PLA_SemiAutoRifle</li>
           <li>ShortShots</li>
           <li>CE_SMG</li>
-          <li>CE_OneHandedWeapon</li>
+          <li>PLA_Shotgun</li>
+          <li>PLA_SMG</li>
+          <li>PLA_Pistol</li>
           <li>DMS_MechWeaponLight</li>
           <li>IndustrialGun</li>
         </UsableWeaponTags>
@@ -128,6 +134,7 @@
         <UsableWeaponTags>
           <li>SimpleGun</li>
           <li>Autopistol</li>
+          <li>PLA_Pistol</li>
           <li>DMS_MechWeaponLight</li>
           <li>A_MG_GrenadeLauncher</li>
           <li>A_SR_GrenadeLauncher</li>
@@ -187,6 +194,7 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>SimpleGun</li>
+          <li>PLA_Pistol</li>
           <li>Autopistol</li>
           <li>DMS_MechWeaponLight</li>
           <li>GunSingleUse</li>
@@ -255,6 +263,7 @@
         <UsableWeaponTags>
           <li>CE_OneHandedWeapon</li>
           <li>CE_AI_Pistol</li>
+          <li>PLA_Pistol</li>
           <li>DMS_MechWeaponLight</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>

@@ -11,8 +11,8 @@
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Tarbosaurus_Gun</defName>
                 <statBases>
-                    <Mass>240</Mass>
-                    <Bulk>185</Bulk>
+                    <Mass>186</Mass>
+                    <Bulk>100</Bulk>
                     <SwayFactor>1.94</SwayFactor>
                     <ShotSpread>0.07</ShotSpread>
                     <SightsEfficiency>1.5</SightsEfficiency>
@@ -112,8 +112,8 @@
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Tarbosaurus_BossGun</defName>
                 <statBases>
-                    <Mass>240</Mass>
-                    <Bulk>185</Bulk>
+                    <Mass>58</Mass>
+                    <Bulk>40</Bulk>
                     <SwayFactor>1.94</SwayFactor>
                     <ShotSpread>0.07</ShotSpread>
                     <SightsEfficiency>1.5</SightsEfficiency>

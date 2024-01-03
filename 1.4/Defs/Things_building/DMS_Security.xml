@@ -26,8 +26,9 @@
     <designationCategory>DMS_Category</designationCategory>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <comps>
-      <li Class="CompProperties_Forbiddable" />
-      <li Class="CompProperties_Flickable" />
+      <li MayRequire="VanillaExpanded.VFEA" Class="VFEAncients.CompProperties_SolarPowerUp"/>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Flickable"/>
       <li>
         <compClass>DMS.CompForceTargetable</compClass>
       </li>
@@ -267,7 +268,7 @@
     </comps>
     <building>
       <turretGunDef>DMS_Gun_Tunguska</turretGunDef>
-      <turretTopDrawSize>5</turretTopDrawSize>
+      <turretTopDrawSize>4</turretTopDrawSize>
       <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
     </building>

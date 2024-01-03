@@ -11,8 +11,8 @@
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_GAU8Gatlinggun</defName>
                 <statBases>
-                    <Mass>281</Mass>
-                    <Bulk>107</Bulk>
+                    <Mass>180</Mass>
+                    <Bulk>93</Bulk>
                     <SwayFactor>1.86</SwayFactor>
                     <ShotSpread>0.05</ShotSpread>
                     <SightsEfficiency>1.2</SightsEfficiency>
@@ -183,7 +183,7 @@
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_M214Gatlinggun</defName>
                 <statBases>
-                    <Mass>38.5</Mass>
+                    <Mass>16.5</Mass>
                     <Bulk>31</Bulk>
                     <SwayFactor>1.26</SwayFactor>
                     <ShotSpread>0.05</ShotSpread>
