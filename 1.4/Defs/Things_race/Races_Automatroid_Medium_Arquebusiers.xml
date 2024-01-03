@@ -38,6 +38,11 @@
           <li>A_MG_Heavy</li>
           <li>ElephantGun</li>
           <li>SniperRifle</li>
+          <li>PLA_AssaultRifle</li>
+          <li>PLA_Sniper</li>
+          <li>PLA_DMR</li>
+          <li>PLA_Pistol</li>
+          <li>PLA_LMG</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -101,6 +106,9 @@
           <li>A_DMR_LongRifle</li>
           <li>A_AR_LongRifle</li>
           <li>SniperRifle</li>
+          <li>PLA_AssaultRifle</li>
+          <li>PLA_DMR</li>
+          <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>false</EnableTechLevelFilter>
         <BypassUsableWeapons>
@@ -161,6 +169,11 @@
           <li>Simple_LongRange</li>
           <li>A_DMR_LongRifle</li>
           <li>ElephantGun</li>
+          <li>PLA_AssaultRifle</li>
+          <li>PLA_Shotgun</li>
+          <li>PLA_SMG</li>
+          <li>PLA_Pistol</li>
+          <li>PLA_RocketLauncher</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -225,6 +238,10 @@
           <li>A_DMR_LongRifle</li>
           <li>IndustrialGunAdvanced</li>
           <li>A_SR_GrenadeLauncher</li>
+          <li>PLA_AssaultRifle</li>
+          <li>PLA_GrenadeLauncher</li>
+          <li>PLA_Sniper</li>
+          <li>PLA_AMR</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>

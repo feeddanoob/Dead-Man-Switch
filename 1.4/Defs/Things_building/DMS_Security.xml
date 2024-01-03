@@ -27,8 +27,8 @@
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <comps>
       <li MayRequire="VanillaExpanded.VFEA" Class="VFEAncients.CompProperties_SolarPowerUp"/>
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Flickable" />
       <li>
         <compClass>DMS.CompForceTargetable</compClass>
       </li>
@@ -208,7 +208,6 @@
       <li>HeavyTurrets</li>
     </researchPrerequisites>
   </ThingDef>
-
   <!--通古斯卡--><!--文本缺失-->
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_Tunguska</defName>
@@ -322,7 +321,6 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		<forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>
@@ -445,7 +443,6 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		    <forcedMissRadius>1.5</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>
@@ -453,22 +450,19 @@
   <ThingDef ParentName="BaseBullet">
     <defName>DMS_Bullet_CIWS</defName>
     <label>APT shell</label>
-    <thingClass>Projectile_Explosive</thingClass>
+    <thingClass>Projectile</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.3</drawSize>
     </graphicData>
     <projectile>
-      <speed>80</speed>
-      <damageDef>Bomb</damageDef>
-      <screenShakeFactor>0</screenShakeFactor>
-      <damageAmountBase>22</damageAmountBase>
-      <armorPenetrationBase>1.75</armorPenetrationBase>
-      <stoppingPower>8</stoppingPower>
-      <explosionRadius>1.4</explosionRadius>
-      <ai_IsIncendiary>false</ai_IsIncendiary>
-      <arcHeightFactor>0.5</arcHeightFactor>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <armorPenetrationBase>0.40</armorPenetrationBase>
+      <stoppingPower>4</stoppingPower>
+      <speed>98</speed>
+      <arcHeightFactor>0.3</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>

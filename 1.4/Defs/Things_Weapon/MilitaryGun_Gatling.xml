@@ -237,9 +237,8 @@
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>15</muzzleFlashScale>
 				<targetParams>
-				<canTargetLocations>true</canTargetLocations>
+					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<forcedMissRadius>0.1</forcedMissRadius>
 			</li>
 		</verbs>
   	</ThingDef>

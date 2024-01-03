@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <DMS_Make_Falcon.label>组装游隼</DMS_Make_Falcon.label>
+  <DMS_Make_Falcon.description>组装一架重型三旋翼无人机，用于空中武装侦察和反坦克打击。</DMS_Make_Falcon.description>
+  <DMS_Make_Falcon.jobString>组装机械体中</DMS_Make_Falcon.jobString>
+
+  <DMS_Make_Noctula.label>组装夜蝠</DMS_Make_Noctula.label>
+  <DMS_Make_Noctula.description>组装一架匿踪中继无人机，代号“夜蝠”，是游隼的指令中继改装型，用于为猎兵行动时提供指挥链支持。</DMS_Make_Noctula.description>
+  <DMS_Make_Noctula.jobString>组装机械体中</DMS_Make_Noctula.jobString>
+
   <!-- EN: gestate ape -->
   <DMS_Make_Ape.label>组装猿人</DMS_Make_Ape.label>
   <!-- EN: Gestate an ape mechanoid. -->

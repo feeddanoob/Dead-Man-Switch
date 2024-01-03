@@ -325,7 +325,6 @@
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<forcedMissRadius>0.2</forcedMissRadius>
 			</li>
 		</verbs>
 	</ThingDef>

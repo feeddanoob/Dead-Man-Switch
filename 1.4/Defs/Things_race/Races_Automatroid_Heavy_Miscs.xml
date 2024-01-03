@@ -34,6 +34,11 @@
         <li>DMS_MechWeaponMeduim</li>
         <li>A_SuppressWeapon</li>
         <li>DMS_MechWeaponHeavy</li>
+        <li>PLA_AssaultRifle</li>
+        <li>PLA_Shotgun</li>
+        <li>PLA_SMG</li>
+        <li>PLA_Pistol</li>
+        <li>PLA_HMG</li>
       </UsableWeaponTags>
       <EnableTechLevelFilter>true</EnableTechLevelFilter>
       <UsableTechLevels>

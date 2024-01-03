@@ -17,25 +17,6 @@
 		</recipeMaker>
         <soundInteract>Interact_Rifle</soundInteract>
     	<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
-		<!--<tools>
-			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>-->
 	</ThingDef>
 
 	<!-- 口袋手槍 -->
@@ -59,6 +40,15 @@
 			<texPath>Things/Weapons/HumanWeapon/KnuckledusterRevolver</texPath>
 			<drawSize>(0.7,0.7)</drawSize>
 		</graphicData>
+		<modExtensions>
+			<li MayRequire="IssacZhuang.MuzzleFlash" Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>0.5</drawSize>
+				<offsets>
+				  <li>(0.5,0)</li>
+				</offsets>
+			</li>
+		</modExtensions>
 		<soundInteract>Interact_Revolver</soundInteract>		
 		<statBases>
 			<Mass>0.5</Mass>

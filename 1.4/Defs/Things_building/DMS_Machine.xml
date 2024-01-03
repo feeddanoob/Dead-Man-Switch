@@ -35,6 +35,7 @@
       <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
     </building>
     <comps>
+      <li MayRequire="VanillaExpanded.VFEA" Class="VFEAncients.CompProperties_SolarPowerUp" />
       <li Class="CompProperties_Flickable" />
     </comps>
     <altitudeLayer>FloorEmplacement</altitudeLayer>

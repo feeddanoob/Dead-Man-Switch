@@ -31,11 +31,9 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>SimpleGun</li>
-          <li>PLA_AssaultRifle</li>
-          <li>PLA_SimpleGun</li>
-          <li>PLA_RifleForTrade</li>
-          <li>PLA_SemiAutoRifle</li>
           <li>ShortShots</li>
+          <li>PLA_SimpleGun</li>
+          <li>PLA_SemiAutoRifle</li>
           <li>CE_SMG</li>
           <li>PLA_Shotgun</li>
           <li>PLA_SMG</li>

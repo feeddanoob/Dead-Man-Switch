@@ -32,6 +32,9 @@
           <li>MedievalMeleeAdvanced</li>
           <li>DMS_MeleeWeapon</li>
           <li>UltratechMelee</li>
+          <li>PLA_Shotgun</li>
+          <li>PLA_SMG</li>
+          <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -109,6 +112,9 @@
           <li>MedievalMeleeBasic</li>
           <li>MedievalMeleeAdvanced</li>
           <li>DMS_MeleeWeapon</li>
+          <li>PLA_Shotgun</li>
+          <li>PLA_SMG</li>
+          <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -185,7 +191,10 @@
           <li>DMS_MeleeWeapon</li><!--砍刀和WIP的電棍-->
           <li>MedievalMeleeBasic</li><!--槌子-->
           <li>MedievalMeleeAdvanced</li><!--長劍-->
-          <li>ShortShots</li>        
+          <li>ShortShots</li>
+          <li>PLA_Shotgun</li>
+          <li>PLA_SMG</li>
+          <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -299,6 +308,11 @@
           <li>MedievalMeleeAdvanced</li>
           <li>DMS_MeleeWeapon</li>
           <li>V_Gatling556mm</li>
+          <li>PLA_SimpleGun</li>
+          <li>PLA_SemiAutoRifle</li>
+          <li>PLA_Shotgun</li>
+          <li>PLA_SMG</li>
+          <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>

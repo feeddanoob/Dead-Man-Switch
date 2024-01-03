@@ -42,6 +42,7 @@
           <li>H_Gatling20mm</li>
           <li>V_Gatling556mm</li>
           <li>DMS_Bipedal_HeavyGun</li>
+          <li>PLA_HMG</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -188,6 +189,7 @@
           <li>H_Gatling20mm</li>
           <li>V_Gatling556mm</li>
           <li>DMS_Bipedal_HeavyGun</li>
+          <li>PLA_HMG</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>

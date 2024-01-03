@@ -41,6 +41,11 @@
           <li>A_MG_Heavy</li>
           <li>WarcasketBasic</li>
           <li>A_SuppressWeapon</li>
+          <li>PLA_HMG</li>
+          <li>PLA_LMG</li>
+          <li>PLA_Shotgun</li>
+          <li>PLA_SMG</li>
+          <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -108,6 +113,9 @@
           <li>DMS_MechWeaponLight</li>
           <li>Autopistol</li>
           <li>CE_SMG</li>
+          <li>PLA_Shotgun</li>
+          <li>PLA_SMG</li>
+          <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -176,6 +184,9 @@
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
           <li>CE_OneHandedWeapon</li>
+          <li>PLA_Shotgun</li>
+          <li>PLA_SMG</li>
+          <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -249,6 +260,7 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
+          <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -286,7 +298,6 @@
     <weaponTags/>
   </PawnKindDef>
 
-
   <!-- 海盜型 -->
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Mech_Tachanka</defName>
@@ -318,6 +329,7 @@
       <li>A_MG_Heavy</li>
       <li>A_SuppressWeapon</li>
       <li>V_Gatling556mm</li>
+      <li>PLA_HMG</li>
     </weaponTags>
   </PawnKindDef>
 </Defs>

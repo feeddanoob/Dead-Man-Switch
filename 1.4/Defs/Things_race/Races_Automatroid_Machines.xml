@@ -202,6 +202,7 @@
         <UsableWeaponTags>
           <li>VerlingBird_Weapon</li>
           <li>DMS_MechWeaponUltraLight</li>
+          <li>PLA_RocketLauncherSingleUse</li>
           <li>CE_AI_Grenade</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
@@ -283,6 +284,7 @@
     <weaponTags>
       <li>VerlingBird_Weapon</li>
       <li>DMS_MechWeaponUltraLight</li>
+      <li>PLA_RocketLauncherSingleUse</li>
     </weaponTags>
   </PawnKindDef>
 

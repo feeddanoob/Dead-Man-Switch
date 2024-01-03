@@ -193,22 +193,18 @@
 					<ArmorRating_Blunt>40</ArmorRating_Blunt>
 				</value>
 			</li>
-
-			<!--only torso (maybe also head since it's a bipedal mech)-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Gecko"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
 					<ArmorRating_Sharp>20</ArmorRating_Sharp>
 				</value>
 			</li>
-
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Gecko"]/statBases/ArmorRating_Heat</xpath>
 				<value>
 					<ArmorRating_Heat>0.5</ArmorRating_Heat>
 				</value>
 			</li>
-
 			<li Class="PatchOperationConditional">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Gecko"]/comps</xpath>
 				<nomatch Class="PatchOperationAdd">

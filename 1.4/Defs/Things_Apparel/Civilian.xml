@@ -328,11 +328,11 @@
 				<pawnCapacityMinLevels>
 					<li>
 						<capacity>Moving</capacity>
-						<minLevel>0.5</minLevel>
+						<minLevel>0.25</minLevel>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<minLevel>0.5</minLevel>
+						<minLevel>0.25</minLevel>
 					</li>
 				</pawnCapacityMinLevels>
 			</li>

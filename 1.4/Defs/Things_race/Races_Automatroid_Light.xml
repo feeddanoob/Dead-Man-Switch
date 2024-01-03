@@ -46,6 +46,9 @@
           <li>CE_AI_Grenade</li>
           <li>CE_AI_SMG</li>
           <li>CE_AI_Pistol</li>
+          <li>PLA_SMG</li>
+          <li>PLA_Pistol</li>
+          <li>PLA_RocketLauncher</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -112,6 +115,7 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>DMS_MechWeaponUltraLight</li>
+          <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <BypassUsableWeapons>
           <li>Gun_BinocularsRadio</li>
