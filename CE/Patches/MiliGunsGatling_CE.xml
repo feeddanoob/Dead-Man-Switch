@@ -31,6 +31,9 @@
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>14</muzzleFlashScale>
                     <recoilPattern>Mounted</recoilPattern>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                    </targetParams>
                 </Properties>
                 <AmmoUser>
                     <magazineSize>400</magazineSize>
@@ -72,6 +75,9 @@
                     <soundCastTail>GunTail_Medium</soundCastTail>
                     <muzzleFlashScale>14</muzzleFlashScale>
                     <recoilPattern>Mounted</recoilPattern>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                    </targetParams>
                 </Properties>
                 <AmmoUser>
                     <magazineSize>200</magazineSize>
@@ -116,6 +122,9 @@
                     <soundCastTail>GunTail_Medium</soundCastTail>
                     <muzzleFlashScale>14</muzzleFlashScale>
                     <recoilPattern>Mounted</recoilPattern>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                    </targetParams>
                 </Properties>
                 <AmmoUser>
                     <magazineSize>300</magazineSize>
@@ -160,6 +169,9 @@
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>12</muzzleFlashScale>
                     <recoilPattern>Mounted</recoilPattern>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                    </targetParams>
                 </Properties>
                 <AmmoUser>
                     <magazineSize>300</magazineSize>
@@ -203,6 +215,9 @@
                     <soundCastTail>GunTail_Medium</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                     <recoilPattern>Mounted</recoilPattern>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                    </targetParams>
                 </Properties>
                 <AmmoUser>
                     <magazineSize>500</magazineSize>

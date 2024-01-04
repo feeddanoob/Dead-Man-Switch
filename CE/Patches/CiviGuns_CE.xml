@@ -142,7 +142,7 @@
                 <Properties>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>Bullet_20Gauge_Beanbag</defaultProjectile>
+                    <defaultProjectile>Bullet_12Gauge_Beanbag</defaultProjectile>
                     <warmupTime>0.6</warmupTime>
                     <range>14</range>
                     <soundCast>Shot_Shotgun</soundCast>
@@ -153,8 +153,8 @@
                 <AmmoUser>
                     <magazineSize>5</magazineSize>
 					<reloadOneAtATime>true</reloadOneAtATime>
-                    <reloadTime>0.85</reloadTime>
-                    <ammoSet>AmmoSet_20Gauge</ammoSet>
+                    <reloadTime>0.75</reloadTime>
+                    <ammoSet>AmmoSet_12Gauge</ammoSet>
                 </AmmoUser>
                 <FireModes>
                     <aiAimMode>Snapshot</aiAimMode>
@@ -232,7 +232,7 @@
                 <AmmoUser>
                     <magazineSize>6</magazineSize>
                     <reloadOneAtATime>True</reloadOneAtATime>
-                    <reloadTime>0.65</reloadTime>
+                    <reloadTime>0.5</reloadTime>
                     <ammoSet>AmmoSet_10Gauge</ammoSet>
                 </AmmoUser>
                 <FireModes>
@@ -461,6 +461,9 @@
                     <soundCast>DMS_SniperRifle_Shot</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                    </targetParams>
                 </Properties>
                 <AmmoUser>
                     <magazineSize>6</magazineSize>
