@@ -11,7 +11,7 @@
   <!-- EN: An advanced artificial arm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way. -->
   <DMS_ProstheticArm.description>先进的人造手臂。消音微型伺服器提供了强大的力量，而生物凝胶神经链路则提供了精妙的控制能力。晶格微尘愈合系统使其能够从损伤中恢复。它几乎在所有方面都优于生物手臂。</DMS_ProstheticArm.description>
   
-  <!-- EN: mechaneural visual senser -->
+  <!-- EN: mechaneural visual sensor -->
   <DMS_ProstheticEye.label>机械视觉感测器</DMS_ProstheticEye.label>
   <!-- EN: An artificial light receiver with nerve-link, with night vision and aim assist it might be better than the original one...maybe ? -->
   <DMS_ProstheticEye.description>带神经链路的人造光接收器，具有夜视和瞄准辅助功能，可能比原来的更好...也许吧？</DMS_ProstheticEye.description>

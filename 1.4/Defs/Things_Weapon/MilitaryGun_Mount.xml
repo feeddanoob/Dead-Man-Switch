@@ -32,6 +32,7 @@
 		<weaponTags>
 			<li>DMS_VehicleWeaponLight</li>
 			<li>V_SMG</li>
+			<li>NoSwitch</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Vehicle_SMG</texPath>
@@ -68,6 +69,7 @@
 		<description>Supressive weapon chambered in full power rifle round.\n\nThis weapon is designed specially for mounted use, so only specific unit can equip it.</description>
 		<weaponTags>
 			<li>DMS_VehicleWeapon</li>
+			<li>NoSwitch</li>
 			<li>V_LMG</li>
 		</weaponTags>
 		<graphicData>
@@ -105,6 +107,7 @@
 		<description>heavy machine gun for mech soldier or infantry support platform.\n\nThis weapon is designed specially for mounted use, so only specific unit can equip it.</description>
 		<weaponTags>
 			<li>DMS_VehicleWeapon</li>
+			<li>NoSwitch</li>
 			<li>V_HMG</li>
 		</weaponTags>
 		<graphicData>
@@ -155,6 +158,7 @@
 		</statBases>
 		<weaponTags>
 			<li>Geochelone_Weapon</li>
+			<li>NoSwitch</li>
 		</weaponTags>
 		<verbs>
 			<li>

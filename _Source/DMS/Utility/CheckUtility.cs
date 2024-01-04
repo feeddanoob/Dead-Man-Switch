@@ -1,9 +1,32 @@
 ﻿using Verse;
 using DMS;
 using System.Linq;
+using System.Collections.Generic;
+using RimWorld;
 
 public static partial class CheckUtility
 {
+    public static bool IsMech(Pawn pawn)
+    {
+        bool flag1 = pawn.GetComp<CompOverseerSubject>() != null;
+        bool flag2 = pawn.Faction == Faction.OfPlayer;
+        return flag1 && flag2;
+    }
+    public static bool MechanitorCheck(Map map, out Pawn mechanitor)
+    {
+        mechanitor = null;
+        if (map == null) return false;
+        List<Pawn> colonists = map.mapPawns.FreeColonists;
+        for (int i = 0; i < colonists.Count; i++)
+        {
+            if (MechanitorUtility.IsMechanitor(colonists[i]))
+            {
+                mechanitor = colonists[i];
+                return true;
+            }
+        }
+        return false;
+    }
     public static bool IsMechUseable(MechWeaponExtension extension, ThingWithComps tmp)
     {
         if (BypassedUseable(extension, tmp.def.defName)) return true;

@@ -201,6 +201,7 @@
 		<weaponTags>
 			<li>DMS_MechWeaponHeavy</li>
 			<li>Gun_Recoilless</li>
+			<li>NoSwitch</li>
 		</weaponTags>
 		<recipeMaker>
 			<skillRequirements>

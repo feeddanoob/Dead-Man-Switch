@@ -305,6 +305,9 @@
     <weaponTags>
       <li>DMS_MechWeaponLight</li>                                                                     <!--武器-->
     </weaponTags>
+    <abilities>
+      <li>DMS_CallDrop</li>
+    </abilities>
   </PawnKindDef>
 
 </Defs>

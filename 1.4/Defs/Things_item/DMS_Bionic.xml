@@ -42,7 +42,7 @@
   <!-- DMS_ProstheticEye -->
   <ThingDef ParentName="DMS_BioMechBionicBase">
     <defName>DMS_ProstheticEye</defName>
-    <label>mechaneural visual senser</label>
+    <label>mechaneural visual sensor</label>
     <description>An artificial light receiver with nerve-link, with night vision and aim assist it might be better than the original one...maybe ?</description>
     <descriptionHyperlinks><RecipeDef>DMS_InstallProstheticEye</RecipeDef></descriptionHyperlinks>
     <costList>
@@ -58,8 +58,8 @@
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DMS_ProstheticEye</defName>
-    <label>visual senser</label>
-    <labelNoun>a bionic senser</labelNoun>
+    <label>visual sensor</label>
+    <labelNoun>a bionic sensor</labelNoun>
     <description>An installed visual sensor, as a replacement of eye.</description>
     <descriptionHyperlinks><ThingDef>DMS_ProstheticEye</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>DMS_ProstheticEye</spawnThingOnRemoved>
@@ -105,8 +105,8 @@
 
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
     <defName>DMS_InstallProstheticEye</defName>
-    <label>install mechaneural visual senser</label>
-    <description>Install a neural-mechanical visual senser.</description>
+    <label>install mechaneural visual sensor</label>
+    <description>Install a neural-mechanical visual sensor.</description>
     <descriptionHyperlinks>
       <ThingDef>DMS_ProstheticEye</ThingDef>
       <HediffDef>DMS_ProstheticEye</HediffDef>

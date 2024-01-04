@@ -443,6 +443,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
+        <forcedMissRadius>1.5</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>
@@ -450,19 +451,22 @@
   <ThingDef ParentName="BaseBullet">
     <defName>DMS_Bullet_CIWS</defName>
     <label>APT shell</label>
-    <thingClass>Projectile</thingClass>
+    <thingClass>Projectile_Explosive</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.3</drawSize>
     </graphicData>
     <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>20</damageAmountBase>
-      <armorPenetrationBase>0.40</armorPenetrationBase>
-      <stoppingPower>4</stoppingPower>
-      <speed>98</speed>
-      <arcHeightFactor>0.3</arcHeightFactor>
+      <speed>80</speed>
+      <damageDef>Bomb</damageDef>
+      <screenShakeFactor>0</screenShakeFactor>
+      <damageAmountBase>22</damageAmountBase>
+      <armorPenetrationBase>1.75</armorPenetrationBase>
+      <stoppingPower>8</stoppingPower>
+      <explosionRadius>1.4</explosionRadius>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+      <arcHeightFactor>0.5</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
@@ -581,6 +585,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
+        <forcedMissRadius>1.5</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>

@@ -15,9 +15,9 @@
   <!-- EN: Installing neural-mechanical arm. -->
   <DMS_InstallProstheticArm.jobString>安裝機械臂中</DMS_InstallProstheticArm.jobString>
   
-  <!-- EN: install mechaneural visual senser -->
+  <!-- EN: install mechaneural visual sensor -->
   <DMS_InstallProstheticEye.label>安裝機械視覺感測器</DMS_InstallProstheticEye.label>
-  <!-- EN: Install a neural-mechanical visual senser. -->
+  <!-- EN: Install a neural-mechanical visual sensor. -->
   <DMS_InstallProstheticEye.description>安裝機械視覺感測器</DMS_InstallProstheticEye.description>
   <!-- EN: Installing bionic eye. -->
   <DMS_InstallProstheticEye.jobString>安裝機械視覺感測器中</DMS_InstallProstheticEye.jobString>

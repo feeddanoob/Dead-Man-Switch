@@ -178,7 +178,7 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <DMS_Machine_VerlingBirdA>3</DMS_Machine_VerlingBirdA>
+          <DMS_Mech_Falcon>3</DMS_Mech_Falcon>
           <DMS_Mech_Pioneer>5</DMS_Mech_Pioneer>
           <DMS_Mech_Jaeger>3.5</DMS_Mech_Jaeger>
           <DMS_Soldier>3</DMS_Soldier>
@@ -192,7 +192,7 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>       
-          <DMS_Machine_VerlingBirdA>3</DMS_Machine_VerlingBirdA>
+          <DMS_Mech_Falcon>3</DMS_Mech_Falcon>
           <DMS_Mech_Grenadier>6</DMS_Mech_Grenadier>
           <DMS_Squad_Sniper>2</DMS_Squad_Sniper>
           <DMS_Mech_Ronin>6</DMS_Mech_Ronin>
@@ -200,6 +200,19 @@
           <DMS_Mech_Siegebreaker>3</DMS_Mech_Siegebreaker>
           <DMS_Mech_Kanonier>1</DMS_Mech_Kanonier>
         </options>
+      </li>
+      <li>
+        <!-- Base defense, mainly ranged with melee mix-ins -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <DMS_Squad_ServiceMan>5</DMS_Squad_ServiceMan>
+          <DMS_Police_Melee>5</DMS_Police_Melee>         
+          <DMS_MinuteMan>4</DMS_MinuteMan>
+          <DMS_Police_Pistol>4</DMS_Police_Pistol>
+          <DMS_Police_Ranged>3.5</DMS_Police_Ranged>
+          <DMS_MinuteMan_Heavy>3</DMS_MinuteMan_Heavy>
+          <DMS_Soldier>2</DMS_Soldier>
+      </options>
       </li>
       <li>
         <!-- Base defense, mainly ranged with melee mix-ins -->

@@ -109,7 +109,6 @@
     <description>Neural-Auxiliary Compute and Control System, this system with it's unique protocol allow user to connect with not only existing mech techs, but also Automatroid tech.</description>
     <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
     <initialSeverity>0.1</initialSeverity><!-- Severity is bound to level of implant -->
-    <lethalSeverity>2</lethalSeverity>
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_DisappearsOnDeath"/>
@@ -188,7 +187,7 @@
           </li>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.5</offset>
+            <offset>-0.3</offset>
           </li>
         </capMods>
       </li>

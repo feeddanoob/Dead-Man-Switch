@@ -347,7 +347,7 @@
     <minTitle>DMS_Brigadier</minTitle>
     <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
-    <prerequisite>CallOrbitalStrike</prerequisite>
+    <prerequisite>DMS_CallOrbitalStrike</prerequisite>
     <cooldownDays>15</cooldownDays>
     <uiPosition>(1,5)</uiPosition>
     <royalAid>

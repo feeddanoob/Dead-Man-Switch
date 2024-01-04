@@ -85,7 +85,7 @@
 
   <BodyPartDef>
     <defName>DMS_CompactSenser</defName>
-    <label>integrated senser</label>
+    <label>integrated sensor</label>
     <hitPoints>20</hitPoints>
     <frostbiteVulnerability>1</frostbiteVulnerability>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>

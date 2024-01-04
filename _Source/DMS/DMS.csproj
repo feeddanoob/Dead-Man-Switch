@@ -72,6 +72,7 @@
     <Compile Include="Patch\Patch_Building_MechGestator.cs" />
     <Compile Include="Patch\Patch_IsMissingWeapon.cs" />
     <Compile Include="Patch\Patch_Pawn.cs" />
+    <Compile Include="Royalty\CompAbilityEffect_DropMech.cs" />
     <Compile Include="Royalty\RoyalTitlePermitWorker_MechJoin.cs" />
     <Compile Include="Royalty\RoyalTitlePermitWorker_PawnJoin.cs" />
     <Compile Include="Hediff\CompMechanitorRange.cs" />
@@ -100,6 +101,8 @@
     <Compile Include="Utility\HumnalikeMechRenderingUtility.cs" />
     <Compile Include="Utility\WeaponTagUtil.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Ability\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,6 +5,7 @@ using System;
 using UnityEngine;
 using Verse;
 using System.Linq;
+using VFECore.Abilities;
 
 namespace DMS
 {
@@ -27,8 +28,12 @@ namespace DMS
                 yield return new FloatMenuOption("CommandCallRoyalAidFactionHostile".Translate(faction.Named("FACTION")), null);
                 yield break;
             }
-
-            if (MechanitorCheck(map))//如果地圖中沒有機械師
+            
+            if (CheckUtility.MechanitorCheck(map, out Pawn p))
+            {
+                mechanitor = pawn;
+            }
+            else//如果地圖中沒有機械師
             {
                 yield return new FloatMenuOption("CommandCallRoyalAid_NoMechanitorAvaliable".Translate(), null);
                 yield break;
@@ -46,14 +51,11 @@ namespace DMS
 
             yield return new FloatMenuOption(description, action, faction.def.FactionIcon, faction.Color);
         }
-        bool MechanitorCheck(Map map)
-        {
-            return map.PlayerPawnsForStoryteller.Where(p => p.mechanitor?.TotalBandwidth > 0).FirstOrDefault() != null;
-        }
+        private Pawn mechanitor;
 
         bool MechanitorCheckCaravan(Caravan caravan)
         {
-            return caravan.PlayerPawnsForStoryteller.Where(p => p.mechanitor?.TotalBandwidth > 0).FirstOrDefault() != null;
+            return caravan.PlayerPawnsForStoryteller.Where(p => MechanitorUtility.IsMechanitor(p)).FirstOrDefault() != null;
         }
 
         public override IEnumerable<Gizmo> GetCaravanGizmos(Pawn pawn, Faction faction)
@@ -124,6 +126,7 @@ namespace DMS
             for (int i = 0; i < def.royalAid.pawnCount; i++)
             {
                 Thing thing = PawnGenerator.GeneratePawn(def.royalAid.pawnKindDef, Faction.OfPlayer);
+                (thing as Pawn).relations.AddDirectRelation(PawnRelationDefOf.Overseer, mechanitor);
                 list.Add(thing);
             }
 
@@ -158,4 +161,5 @@ namespace DMS
             }
         }
     }
+
 }

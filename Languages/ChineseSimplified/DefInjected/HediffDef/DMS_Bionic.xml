@@ -17,11 +17,11 @@
   <!-- EN: a neural-mechanical arm -->
   <DMS_ProstheticArm.labelNoun>一条神经机械仿生臂</DMS_ProstheticArm.labelNoun>
   
-  <!-- EN: visual senser -->
+  <!-- EN: visual sensor -->
   <DMS_ProstheticEye.label>机械传感器</DMS_ProstheticEye.label>
   <!-- EN: An installed visual sensor, as a replacement of eye. -->
   <DMS_ProstheticEye.description>一颗安装的视觉感应器，作为眼睛的替代品。</DMS_ProstheticEye.description>
-  <!-- EN: a bionic senser -->
+  <!-- EN: a bionic sensor -->
   <DMS_ProstheticEye.labelNoun>一颗义体传感器</DMS_ProstheticEye.labelNoun>
   
   <!-- EN: mechaneural leg -->

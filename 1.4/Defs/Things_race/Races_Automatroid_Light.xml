@@ -98,7 +98,7 @@
   <ThingDef ParentName="BaseMechRace_Falcon">
     <defName>DMS_Mech_Noctula</defName>
     <label>noctula</label>
-    <description>Noctula stealth operaton command relay nicknamed-"Night bat" is a cammand relay variant of tri-rotor drone falcon.</description>
+    <description>Stealth operaton command-relay Noctula nicknamed "Night bat" is a command-relay variant of tri-rotor drone falcon.</description>
     <statBases>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge>
