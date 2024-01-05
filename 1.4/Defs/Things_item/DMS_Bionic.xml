@@ -77,7 +77,7 @@
     <stages>
       <li>
         <statOffsets>
-          <RestFallRateFactor>0.1</RestFallRateFactor>
+          <RestFallRateFactor>0.05</RestFallRateFactor>
 					<AimingDelayFactor>-0.25</AimingDelayFactor>
         </statOffsets>
       </li>
@@ -172,7 +172,7 @@
     <stages>
       <li>
         <statOffsets>
-          <RestFallRateFactor>0.1</RestFallRateFactor>
+          <RestFallRateFactor>0.05</RestFallRateFactor>
         </statOffsets>
       </li>
     </stages>
@@ -251,7 +251,7 @@
     <stages>
       <li>
         <statOffsets>
-          <RestFallRateFactor>0.1</RestFallRateFactor>
+          <RestFallRateFactor>0.05</RestFallRateFactor>
         </statOffsets>
       </li>
     </stages>
@@ -592,7 +592,7 @@
           <MaxNutrition>2</MaxNutrition>   
         </statOffsets>
         <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
-        <hungerRateFactor>-0.5</hungerRateFactor>
+        <hungerRateFactor>0.5</hungerRateFactor>
         <capMods>
           <li>
             <capacity>Eating</capacity>
@@ -736,7 +736,7 @@
     <stages>
       <li>
         <statOffsets>
-          <RestFallRateFactor>0.1</RestFallRateFactor>
+          <RestFallRateFactor>0.05</RestFallRateFactor>
         </statOffsets>
       </li>
     </stages>
@@ -815,7 +815,7 @@
     <stages>
       <li>
         <statOffsets>
-          <RestFallRateFactor>0.1</RestFallRateFactor>
+          <RestFallRateFactor>0.05</RestFallRateFactor>
         </statOffsets>
       </li>
     </stages>
