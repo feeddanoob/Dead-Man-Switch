@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-  <!-- T4 DMS_HeavyMachines-->
-  <!-- 駭蜥 tarbosaurus-->
+  
   <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_Tarbosaurus</defName>
     <label>tarbosaurus</label>

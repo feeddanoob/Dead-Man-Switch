@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<!-- 猿人 ape--><!--部分數據缺失-->
+<!-- 猿人 ape-->
 <ThingDef ParentName="BaseAutomatroidRace">
   <defName>DMS_Mech_Ape</defName>
   <label>ape</label>
