@@ -20,6 +20,10 @@
         <li>Hunting</li>
       </mechEnabledWorkTypes>
     </race>
+    <modExtensions>
+      <li Class="DMS.TurretMannableExtension">
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- DMS_Mech_Arquebusier 火槍手常規型 -->

@@ -202,6 +202,12 @@
           <li>Industrial</li>
         </UsableTechLevels>
       </li>
+      <li Class="DMS.TurretMannableExtension">
+        <filterByTechLevel>true</filterByTechLevel>
+        <techLevels>
+          <li>Industrial</li>
+        </techLevels>
+      </li>
     </modExtensions>
   </ThingDef>
   <PawnKindDef ParentName="BaseAutomatroidKind">

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace DMS
@@ -10,10 +11,10 @@ namespace DMS
         public List<string> UsableWeaponTags = new List<string>();
 
         public bool EnableTechLevelFilter = false; //根據科技等級
-        public List<string> UsableTechLevels = new List<string>();
+        public List<TechLevel> UsableTechLevels = new List<TechLevel>();
 
         public bool EnableClassFilter = false; //根據文化分類
-        public List<string> UsableWeaponClasses = new List<string>();
+        public List<WeaponClassDef> UsableWeaponClasses = new List<WeaponClassDef>();
 
         public List<string> BypassUsableWeapons = new List<string>();//特例可以直接用的
     }

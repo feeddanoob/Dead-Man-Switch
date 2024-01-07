@@ -5,6 +5,8 @@
   <DMS_BionicShock.label>異肢症候群</DMS_BionicShock.label>
   <!-- EN: a psychological syndrome that is common to occur in pre-spacer world when having one or more neural machinery bionic prosthesis installed, Due to the lack of biological receptors, the body system will temporarily reject the connection after the nerve is connected.\n\nThe severity of these symptoms can be divided into five levels. -->
   <DMS_BionicShock.description>由於缺乏生物受體，患者會強烈排斥安裝的神經機械仿生假體，這是一種在前太空世界中常見的一種心理症候群。\n\n這些症狀的嚴重程度可分為五個等級。</DMS_BionicShock.description>
+  <!-- EN: bionic syndrome has been cured -->
+  <DMS_BionicShock.comps.HediffComp_RemoveIfOtherHediff.message>異肢症候群已被治愈</DMS_BionicShock.comps.HediffComp_RemoveIfOtherHediff.message>
   <!-- EN: initial -->
   <DMS_BionicShock.stages.initial.label>初始</DMS_BionicShock.stages.initial.label>
   <!-- EN: LV.1 initial -->
@@ -22,6 +24,8 @@
   <DMS_BionicShockRemove.label>幻肢症候群</DMS_BionicShockRemove.label>
   <!-- EN: a psychological syndrome that is common to occur in pre-spacer world when removed a neural machinery bionic Prosthesis. -->
   <DMS_BionicShockRemove.description>患者會覺得被移除神經機械仿生假體依然能夠被感覺到。這是一種在前太空世界中常見的一種心理症候群。</DMS_BionicShockRemove.description>
+  <!-- EN: bionic syndrome has been cured -->
+  <DMS_BionicShockRemove.comps.HediffComp_RemoveIfOtherHediff.message>幻肢症候群已被治愈</DMS_BionicShockRemove.comps.HediffComp_RemoveIfOtherHediff.message>
   <!-- EN: initial -->
   <DMS_BionicShockRemove.stages.initial.label>輕微</DMS_BionicShockRemove.stages.initial.label>
   <!-- EN: pain -->
@@ -34,14 +38,16 @@
   <!-- EN: catatonic -->
   <DMS_FilterShock.stages.catatonic.label>應激反應</DMS_FilterShock.stages.catatonic.label>
   
+  <!-- EN: fatal trigger -->
+  <DMS_MechlinkFatalTrigger.label>失能板機</DMS_MechlinkFatalTrigger.label>
+  <!-- EN: Due to the instability of this device, this safty protocol will automatically eject and destroy the disabled mechlink before it causes damage to the user's brain. -->
+  <DMS_MechlinkFatalTrigger.description>由於裝置的不穩定性，本安全協議將會在對用戶的大腦造成損害前自動彈出並燒毀失效的機絆。</DMS_MechlinkFatalTrigger.description>
+  
   <!-- EN: kill switch -->
   <DMS_MechlinkKillSwitch.label>自毀開關</DMS_MechlinkKillSwitch.label>
   <!-- EN: This device will destruct mechlink by overloading after the death of the user. -->
   <DMS_MechlinkKillSwitch.description>這個裝置會在使用者死亡後自動超載燒毀機絆</DMS_MechlinkKillSwitch.description>
-
-  <DMS_MechlinkFatalTrigger.label>失能板機</DMS_MechlinkFatalTrigger.label>
-  <DMS_MechlinkFatalTrigger.description>由於裝置的不穩定性，本安全協議將會在對用戶的大腦造成損害前自動彈出並燒毀失效的機絆。</DMS_MechlinkFatalTrigger.description>
-
+  
   <!-- EN: N.A.C.S. -->
   <DMS_MechlinkOverload.label>輔助控制系統</DMS_MechlinkOverload.label>
   <!-- EN: Neural-Auxiliary Compute and Control System, this system with it's unique protocol allow user to connect with not only existing mech techs, but also Automatroid tech. -->
@@ -70,6 +76,8 @@
   <DMS_SyntheticRejection.label>仿生排異反應</DMS_SyntheticRejection.label>
   <!-- EN: Due to access to the internal circulatory system, synthetic bionic sometimes produce rejection in the body, which usually does not last long but reduces immunity. -->
   <DMS_SyntheticRejection.description>由於進入內循環系統，合成仿生有時會在體內產生排斥反應，這種排斥反應通常不會持續很長時間，但會明顯降低免疫力。</DMS_SyntheticRejection.description>
+  <!-- EN: bionic syndrome has been cured -->
+  <DMS_SyntheticRejection.comps.HediffComp_RemoveIfOtherHediff.message>仿生排異反應已被治愈</DMS_SyntheticRejection.comps.HediffComp_RemoveIfOtherHediff.message>
   <!-- EN: fever -->
   <DMS_SyntheticRejection.stages.fever.label>免疫反應</DMS_SyntheticRejection.stages.fever.label>
   

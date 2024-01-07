@@ -150,6 +150,16 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.25,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
@@ -299,6 +309,16 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.75,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 <!--DMS_AssaultPiercer 突擊射釘槍,專門用於近距離擊穿裝甲單位的短托大口徑槍械，超高穿甲射擊CD很短但傷害不高
@@ -404,6 +424,16 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.55,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<!--SAR-->
@@ -462,6 +492,16 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.75,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>  
 
 	<!--DMR-->
@@ -516,6 +556,16 @@
 				<muzzleFlashScale>7</muzzleFlashScale>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.75,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<!--AMR-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
@@ -571,6 +621,16 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(1,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 
@@ -628,6 +688,16 @@
 				</targetParams>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.75,0.75)</drawSize>
+				<offsets>
+					<li>(0.75,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_DMS_GrenadeLauncher</defName>
@@ -707,6 +777,16 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.75,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_DMS_LightMachineGun</defName>

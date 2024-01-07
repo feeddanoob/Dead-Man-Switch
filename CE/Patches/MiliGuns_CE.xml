@@ -484,7 +484,7 @@
                 </weaponTags>
             </li>
 
-            <!--====Progressive Machete====-->
+            <!--====Machete====-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_Machete"]/tools</xpath>
                 <value>
@@ -557,7 +557,108 @@
                     <li>CE_OneHandedWeapon</li>
                 </value>
             </li>
-			
+
+			<!--====DMS_StunBaton====-->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="DMS_StunBaton"]/tools</xpath>
+                <value>
+                    <tools>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>handle</label>
+                            <capacities>
+                                <li>Blunt</li>
+                            </capacities>
+                            <power>2</power>
+                            <chanceFactor>0.1</chanceFactor>
+                            <cooldownTime>1.5</cooldownTime>
+                            <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+                            <extraMeleeDamages>
+                                <li>
+                                    <def>Stun</def>
+                                    <amount>5</amount>
+                                </li>
+                            </extraMeleeDamages>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>edge</label>
+                            <capacities>
+                                <li>Blunt</li>
+                            </capacities>
+                            <power>10</power>
+                            <cooldownTime>0.83</cooldownTime>
+                            <armorPenetrationBlunt>2.88</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+                            <extraMeleeDamages>
+                                <li>
+                                    <def>EMP</def>
+                                    <amount>9</amount>
+                                </li>
+                                <li>
+                                    <def>Stun</def>
+                                    <amount>9</amount>
+                                </li>
+                            </extraMeleeDamages>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>point</label>
+                            <capacities>
+                                <li>Blunt</li>
+                            </capacities>
+                            <power>14</power>
+                            <cooldownTime>0.94</cooldownTime>
+                            <armorPenetrationBlunt>1.28</armorPenetrationBlunt>
+                            <extraMeleeDamages>
+                                <li>
+                                    <def>EMP</def>
+                                    <amount>18</amount>
+                                </li>
+                                <li>
+                                    <def>Burn</def>
+                                    <amount>5</amount>
+                                </li>
+                                <li>
+                                    <def>Stun</def>
+                                    <amount>5</amount>
+                                </li>
+                            </extraMeleeDamages>
+                        </li>
+                    </tools>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="DMS_StunBaton"]/statBases/Mass</xpath>
+                <value>
+                    <Mass>2.3</Mass>
+                </value>
+            </li>
+        
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DMS_StunBaton"]/statBases</xpath>
+                <value>
+                    <Bulk>1.4</Bulk>
+                    <MeleeCounterParryBonus>0.43</MeleeCounterParryBonus>
+                </value>
+            </li>
+        
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DMS_StunBaton"]</xpath>
+                <value>
+                    <equippedStatOffsets>
+                        <MeleeCritChance>0.73</MeleeCritChance>
+                        <MeleeParryChance>0.5</MeleeParryChance>
+                        <MeleeDodgeChance>0.34</MeleeDodgeChance>
+                    </equippedStatOffsets>
+                </value>
+            </li>
+        
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DMS_StunBaton"]/weaponTags</xpath>
+                <value>
+                    <li>CE_OneHandedWeapon</li>
+                </value>
+            </li>
             <!--===== Door Breaker =====-->
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_DoorBreaker</defName>

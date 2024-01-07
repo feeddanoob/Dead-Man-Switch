@@ -8,7 +8,7 @@
   <!-- EN: barrel -->
   <DMS_Gun_Kord_Vehicle.tools.barrel.label>槍管</DMS_Gun_Kord_Vehicle.tools.barrel.label>
   <!-- EN: kord -->
-  <DMS_Gun_Kord_Vehicle.verbs.Verb_Shoot.label>TODO</DMS_Gun_Kord_Vehicle.verbs.Verb_Shoot.label>
+  <DMS_Gun_Kord_Vehicle.verbs.Verb_Shoot.label>Kord</DMS_Gun_Kord_Vehicle.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
   <DMS_Gun_Kord_Vehicle.tools.muzzle.label>槍口</DMS_Gun_Kord_Vehicle.tools.muzzle.label>
@@ -21,7 +21,7 @@
   <!-- EN: barrel -->
   <DMS_HeavyMachineGunMounted.tools.barrel.label>槍管</DMS_HeavyMachineGunMounted.tools.barrel.label>
   <!-- EN: mounted HMG -->
-  <DMS_HeavyMachineGunMounted.verbs.Verb_Shoot.label>TODO</DMS_HeavyMachineGunMounted.verbs.Verb_Shoot.label>
+  <DMS_HeavyMachineGunMounted.verbs.Verb_Shoot.label>機載重機槍</DMS_HeavyMachineGunMounted.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
   <DMS_HeavyMachineGunMounted.tools.muzzle.label>槍口</DMS_HeavyMachineGunMounted.tools.muzzle.label>
@@ -33,7 +33,7 @@
   <!-- EN: barrel -->
   <DMS_LightMachineGunMounted.tools.barrel.label>槍管</DMS_LightMachineGunMounted.tools.barrel.label>
   <!-- EN: mounted LMG -->
-  <DMS_LightMachineGunMounted.verbs.Verb_Shoot.label>TODO</DMS_LightMachineGunMounted.verbs.Verb_Shoot.label>
+  <DMS_LightMachineGunMounted.verbs.Verb_Shoot.label>機載輕機槍</DMS_LightMachineGunMounted.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
   <DMS_LightMachineGunMounted.tools.muzzle.label>槍口</DMS_LightMachineGunMounted.tools.muzzle.label>
@@ -45,7 +45,7 @@
   <!-- EN: barrel -->
   <DMS_SubMachineGunMounted.tools.barrel.label>槍管</DMS_SubMachineGunMounted.tools.barrel.label>
   <!-- EN: mounted SMG -->
-  <DMS_SubMachineGunMounted.verbs.Verb_Shoot.label>TODO</DMS_SubMachineGunMounted.verbs.Verb_Shoot.label>
+  <DMS_SubMachineGunMounted.verbs.Verb_Shoot.label>機載衝鋒槍</DMS_SubMachineGunMounted.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
   <DMS_SubMachineGunMounted.tools.muzzle.label>槍口</DMS_SubMachineGunMounted.tools.muzzle.label>

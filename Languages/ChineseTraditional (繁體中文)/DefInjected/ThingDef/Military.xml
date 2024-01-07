@@ -6,6 +6,11 @@
   <!-- EN: a soft cap for service man when combat helmet is not required. -->
   <DMS_Apparel_ArmyCap.description>在不需要穿戴戰鬥頭盔時，為軍人提供的軟帽。</DMS_Apparel_ArmyCap.description>
   
+  <!-- EN: operator helmet -->
+  <DMS_Apparel_ArrayHelmet.label>機控頭顯</DMS_Apparel_ArrayHelmet.label>
+  <!-- EN: A full-covered helmet designed for field drone operators, Features built-in head-mounted display and neural-connected operating system. can not only increase the control bandwidth but also give full protection. -->
+  <DMS_Apparel_ArrayHelmet.description>專為前線機兵操作員設計的全覆式頭盔，內建頭戴式顯示器和接入式控制系統。不僅可以增加控制帶寬還可以給予充分的保護。</DMS_Apparel_ArrayHelmet.description>
+  
   <!-- EN: beret -->
   <DMS_Apparel_Beret.label>貝雷帽</DMS_Apparel_Beret.label>
   <!-- EN: a soft cap for military man when combat helmet is not required. -->
@@ -13,7 +18,7 @@
   
   <!-- EN: bionic suit -->
   <DMS_Apparel_BionicSuit.label>仿生戰鬥服</DMS_Apparel_BionicSuit.label>
-  <!-- EN: Physical enhancement equipment sewn from artificial muscle fibers. Can\n			effectively increase the wearer's muscle strength and mobility. -->
+  <!-- EN: Physical enhancement equipment sewn from artificial muscle fibers. Can effectively increase the wearer's muscle strength and mobility. -->
   <DMS_Apparel_BionicSuit.description>由人工肌肉纖維縫製而成的體能增強設備。\n可以有效增加佩戴者的肌肉力量和活動能力。</DMS_Apparel_BionicSuit.description>
   
   <!-- EN: soft kepi -->
@@ -24,7 +29,7 @@
   <!-- EN: tactical helmet -->
   <DMS_Apparel_TacticalHelmet.label>戰術頭盔</DMS_Apparel_TacticalHelmet.label>
   <!-- EN: A lightweight combat helmet with a complex design, reinforced with plasteel. Not effective against blunt weapons. -->
-  <DMS_Apparel_TacticalHelmet.description>一款設計複雜的輕型戰鬥頭盔，採用塑鋼強化。對鈍器無效。</DMS_Apparel_TacticalHelmet.description>
+  <DMS_Apparel_TacticalHelmet.description>一款設計複雜的輕型戰鬥頭盔，採用特種材料強化。</DMS_Apparel_TacticalHelmet.description>
   
   <!-- EN: tactical vest -->
   <DMS_Apparel_TacticalVest.label>戰術裝具</DMS_Apparel_TacticalVest.label>

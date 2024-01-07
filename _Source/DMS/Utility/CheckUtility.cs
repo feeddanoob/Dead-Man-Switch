@@ -52,7 +52,7 @@ public static partial class CheckUtility
         {
             foreach (var item in extension.UsableWeaponClasses)
             {
-                return tmp.def.weaponClasses?.Where(p => p.defName == item).FirstOrDefault() != null;
+                return tmp.def.weaponClasses?.Where(p => p == item).FirstOrDefault() != null;
             }
             return false;
         }
@@ -61,9 +61,23 @@ public static partial class CheckUtility
     public static bool InTechLevel(MechWeaponExtension extension, ThingWithComps tmp)//為可用的科技等級。
     {
         if (!extension.EnableTechLevelFilter) return true;
-        else return extension.UsableTechLevels.NotNullAndContains(tmp.def.techLevel.ToString());
+        else return extension.UsableTechLevels.NotNullAndContains(tmp.def.techLevel);
     }
 
+    public static bool IsMannable(TurretMannableExtension extension, ThingWithComps tmp)//為可用的科技等級。
+    {
+        if (extension == null) return false;
+        Log.Message(tmp.def.defName.ToString() + " " + tmp.def.thingClass.ToString());
+        if ((tmp as Building_TurretGun).TryGetComp<CompMannable>() == null) return false;
+
+        if (extension.filterByTechLevel)
+        {
+            return extension.techLevels.NotNullAndContains(tmp.def.techLevel);
+        }
+        if (extension.mannableByDefault) return true;
+
+        return extension.BypassMannable.NotNullAndContains(tmp.def.defName);
+    }
     public static bool BypassedUseable(MechWeaponExtension extension, string defName)//白名單直接可用
     {
         return (extension.BypassUsableWeapons.Where(p => p == defName).FirstOrDefault() != null);

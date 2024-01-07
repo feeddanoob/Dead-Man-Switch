@@ -40,15 +40,6 @@
 			<texPath>Things/Weapons/HumanWeapon/KnuckledusterRevolver</texPath>
 			<drawSize>(0.7,0.7)</drawSize>
 		</graphicData>
-		<modExtensions>
-			<li MayRequire="IssacZhuang.MuzzleFlash" Class="MuzzleFlash.MuzzleFlashProps">
-				<def>MF_StandardMuzzleFalsh</def>
-				<drawSize>0.5</drawSize>
-				<offsets>
-				  <li>(0.5,0)</li>
-				</offsets>
-			</li>
-		</modExtensions>
 		<soundInteract>Interact_Revolver</soundInteract>		
 		<statBases>
 			<Mass>0.5</Mass>
@@ -109,6 +100,15 @@
 				<cooldownTime>2</cooldownTime>
 			  </li>
 		</tools>
+		<modExtensions>
+			<li MayRequire="IssacZhuang.MuzzleFlash" Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>0.5</drawSize>
+				<offsets>
+				  <li>(0.1,0)</li>
+				</offsets>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<!-- 鎮暴手槍 -->
@@ -188,6 +188,16 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.25,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>DMS_Bullet_RiotRevolver</defName>
@@ -279,6 +289,16 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.75,0.75)</drawSize>
+				<offsets>
+					<li>(0.6,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>DMS_Bullet_RiotShotgun</defName>
@@ -328,7 +348,7 @@
 				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
 				<warmupTime>1.5</warmupTime>
 				<range>30.9</range>
-				<burstShotCount>15</burstShotCount>
+				<burstShotCount>10</burstShotCount>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<soundCast>DMS_Pistol_Shot</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
@@ -348,6 +368,16 @@
 			<Steel>70</Steel>
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.4,0.4)</drawSize>
+				<offsets>
+					<li>(0.4,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<!-- 生存步槍 -->
 	<ThingDef ParentName="DMS_BaseMakeableGun">
@@ -424,6 +454,16 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.5,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<!-- 獵象槍 -->
 	<ThingDef ParentName="DMS_BaseMakeableGun">
@@ -502,7 +542,17 @@
 			<power>11</power>
 			<cooldownTime>2.6</cooldownTime>
 		  </li>
-		</tools>		
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.75,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_DMS_AMR</defName>
@@ -572,5 +622,15 @@
 				</targetParams>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.75,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 </Defs>

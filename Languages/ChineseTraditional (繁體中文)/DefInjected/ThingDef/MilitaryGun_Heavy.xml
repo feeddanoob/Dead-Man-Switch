@@ -61,6 +61,8 @@
   <DMS_Tarbosaurus_BossGun.label>2A38M</DMS_Tarbosaurus_BossGun.label>
   <!-- EN: a dual-barrel heavy autocannon for infantry suppress / anti air platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
   <DMS_Tarbosaurus_BossGun.description>用於步兵壓制/防空平台的雙管重型機炮。\n\n這種武器是專門為機兵設計的，因為太重，所以只有特定的機兵才能操作。</DMS_Tarbosaurus_BossGun.description>
+  <!-- EN: stock -->
+  <DMS_Tarbosaurus_BossGun.tools.stock.label>槍托</DMS_Tarbosaurus_BossGun.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_Tarbosaurus_BossGun.tools.barrel.label>槍管</DMS_Tarbosaurus_BossGun.tools.barrel.label>
   <!-- EN: 2A38M -->

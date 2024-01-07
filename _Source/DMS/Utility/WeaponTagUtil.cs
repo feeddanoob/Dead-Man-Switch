@@ -35,12 +35,9 @@ namespace DMS
         public static IEnumerable<ThingDef> GetWeapons(List<string> tags)
         {
             List<ThingDef> thingDefs = new List<ThingDef>();
-            foreach (string s in tags)
+            foreach (KeyValuePair<string, List<ThingDef>> s in dict)
             {
-                if (dict.ContainsKey(s))
-                {
-                    thingDefs = thingDefs.ConcatIfNotNull(dict[s]).ToList();
-                }
+                thingDefs = thingDefs.ConcatIfNotNull(s.Value).ToList();
             }
             thingDefs.RemoveDuplicates();
             return thingDefs;
@@ -70,7 +67,6 @@ namespace DMS
         public override IEnumerable<Dialog_InfoCard.Hyperlink> GetInfoCardHyperlinks(StatRequest statRequest)
         {
             MechWeaponExtension ext = statRequest.Def.GetModExtension<MechWeaponExtension>();
-
             if (ext != null)
             {
                 var users = ext.UsableWeaponTags;
@@ -81,7 +77,7 @@ namespace DMS
                 {
                     foreach (var def in list)
                     {
-                        if (!ext.EnableTechLevelFilter || ext.UsableTechLevels.Contains(def.techLevel.ToString()))
+                        if (!ext.EnableTechLevelFilter || ext.UsableTechLevels.Contains(def.techLevel))
                         {
                             yield return new Dialog_InfoCard.Hyperlink(def);
                         }

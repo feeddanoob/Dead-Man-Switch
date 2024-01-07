@@ -20,9 +20,10 @@
       <li>DMS_Garrision</li>
     </apparelTags>
     <apparelRequired>
-      <li>Apparel_FlakVest</li>
+      <li>DMS_Apparel_TacticalVest</li>
+      <li>DMS_Apparel_PowerSkelton</li>
       <li>DMS_Apparel_BionicSuit</li>
-      <li>Apparel_AirwireHeadset</li>
+      <li>DMS_Apparel_ArrayHelmet</li>
     </apparelRequired>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>

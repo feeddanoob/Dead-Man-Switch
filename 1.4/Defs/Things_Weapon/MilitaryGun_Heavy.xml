@@ -95,6 +95,16 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1.5,1.5)</drawSize>
+				<offsets>
+					<li>(0.9,0.05)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 	<!--HMG-->
@@ -158,6 +168,16 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.75,0.75)</drawSize>
+				<offsets>
+					<li>(0.75,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_DMS_HeavyMachineGun</defName>
@@ -236,6 +256,16 @@
 				<forcedMissRadius>1.5</forcedMissRadius>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1.5,1.5)</drawSize>
+				<offsets>
+					<li>(1,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
@@ -329,7 +359,16 @@
 				<forcedMissRadius>0.1</forcedMissRadius>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1.5,1.5)</drawSize>
+				<offsets>
+					<li>(1.0,0)</li>
+					<li>(1.1,-0.1)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
-
-
 </Defs>

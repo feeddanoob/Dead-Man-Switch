@@ -70,17 +70,6 @@
   <!-- EN: tactical autopistol bullet -->
   <DMS_Bullet_Pistol.label>自動手槍彈</DMS_Bullet_Pistol.label>
   
-  <!-- EN: Door Breaker -->
-  <DMS_DoorBreaker.label>破門錘</DMS_DoorBreaker.label>
-  <!-- EN: A special design battering ram for mech breacher which has a built-in launcher, and an explosive ramming head. -->
-  <DMS_DoorBreaker.description>這是一種特殊設計的機兵破門錘，具有短距裝藥發射器與成形裝藥彈頭。</DMS_DoorBreaker.description>
-  <!-- EN: head -->
-  <DMS_DoorBreaker.tools.head.label>錘頭</DMS_DoorBreaker.tools.head.label>
-  <!-- EN: barrel -->
-  <DMS_DoorBreaker.tools.barrel.label>錘身</DMS_DoorBreaker.tools.barrel.label>
-  <!-- EN: Door Breaker -->
-  <DMS_DoorBreaker.verbs.Verb_Shoot.label>破門錘</DMS_DoorBreaker.verbs.Verb_Shoot.label>
-  
   <!-- UNUSED -->
   <DMS_DoorBreaker.verbs.Verb_ShootCE.label>破門錘</DMS_DoorBreaker.verbs.Verb_ShootCE.label>
   
@@ -98,17 +87,6 @@
   <!-- UNUSED -->
   <DMS_LightMachineGun.tools.muzzle.label>槍口</DMS_LightMachineGun.tools.muzzle.label>
   <DMS_LightMachineGun.verbs.Verb_ShootCE.label>機兵輕機槍</DMS_LightMachineGun.verbs.Verb_ShootCE.label>
-  
-  <!-- EN: machete -->
-  <DMS_Machete.label>砍刀</DMS_Machete.label>
-  <!-- EN: May look like a normal machete, but it's a weapon with unique design which specify for mech's melee combat capability.\n\nWith its high frequency vibrating edge, it can cut through most things with ease. -->
-  <DMS_Machete.description>看似普通的砍刀，但它是一把設計獨特的武器，專門給近戰機兵使用。\n\n憑藉其刀刃可以輕鬆砍斷大多數東西。</DMS_Machete.description>
-  <!-- EN: handle -->
-  <DMS_Machete.tools.handle.label>手把</DMS_Machete.tools.handle.label>
-  <!-- EN: point -->
-  <DMS_Machete.tools.point.label>刀尖</DMS_Machete.tools.point.label>
-  <!-- EN: edge -->
-  <DMS_Machete.tools.edge.label>刀刃</DMS_Machete.tools.edge.label>
   
   <!-- EN: mech marksman rifle -->
   <DMS_MarksmanRifle.label>機兵射手步槍</DMS_MarksmanRifle.label>

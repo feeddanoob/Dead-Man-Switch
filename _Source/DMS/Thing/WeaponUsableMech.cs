@@ -43,7 +43,16 @@ namespace DMS
                         else
                         {
                             yield return new FloatMenuOption("CannotEquip".Translate(tmp) + "DMS_WeaponNotSupported".Translate(), null);
-                        }                 
+                        }
+                    }
+                    //操作砲塔相關
+                    if (CheckUtility.IsMannable(def.GetModExtension<TurretMannableExtension>(), tmp))
+                    {
+                        yield return new FloatMenuOption("OrderManThing".Translate(tmp.LabelShort, tmp), delegate
+                        {
+                            Job job = JobMaker.MakeJob(JobDefOf.ManTurret, tmp as Building);
+                            jobs.TryTakeOrderedJob(job, JobTag.DraftedOrder);
+                        });
                     }
                 }
             }

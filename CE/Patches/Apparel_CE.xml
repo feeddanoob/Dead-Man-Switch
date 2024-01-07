@@ -128,6 +128,24 @@
 				</value>
 			</li>
 
+			<!--PASGT Array-->
+			<li Class="PatchOperationReplace">
+				<xpath>
+					Defs/ThingDef[defName="DMS_Apparel_ArrayHelmet"]/statBases/StuffEffectMultiplierArmor</xpath>
+				<value>
+					<StuffEffectMultiplierArmor>5</StuffEffectMultiplierArmor>
+					<Bulk>5</Bulk>
+					<WornBulk>2</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>
+					Defs/ThingDef[defName="DMS_Apparel_ArrayHelmet"]/stuffCategories/li[.="Metallic"]</xpath>
+				<value>
+					<li>Steeled</li>
+				</value>
+			</li>			
+
 
 			<!--Tactical Vest-->
 			<li Class="PatchOperationReplace">

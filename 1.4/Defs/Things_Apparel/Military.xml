@@ -242,6 +242,12 @@
 				<Crafting>5</Crafting>
 			</skillRequirements>
 			<displayPriority>205</displayPriority>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				  <li>Silver</li>
+				  <li>Gold</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Apparel/PASGT/Icon</texPath>
@@ -329,6 +335,12 @@
 				<Crafting>5</Crafting>
 			</skillRequirements>
 			<displayPriority>205</displayPriority>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				  <li>Silver</li>
+				  <li>Gold</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Apparel/PASGT_Array/Icon</texPath>
@@ -356,7 +368,7 @@
 		<equippedStatOffsets>	
 			<MechBandwidth>4</MechBandwidth>
 			<AimingAccuracy MayRequire="ceteam.combatextended">-0.1</AimingAccuracy>
-			<AimingDelayFactor>1.1</AimingDelayFactor>
+			<AimingDelayFactor>0.1</AimingDelayFactor>
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -420,6 +432,12 @@
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<displayPriority>220</displayPriority>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				  <li>Silver</li>
+				  <li>Gold</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Apparel/TacticalVest/Apparel</texPath>

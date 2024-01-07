@@ -11,7 +11,7 @@
     <graphicData>
       <texPath>Things/Building/Facility_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2,2)</drawSize>
+      <drawSize>(2.9,2.9)</drawSize>
       <shadowData>
         <volume>(0.5,0.3,0.7)</volume>
         <offset>(0,0,-0.15)</offset>

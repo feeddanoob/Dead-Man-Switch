@@ -59,9 +59,10 @@
 				<wakeUpSound>MechanoidsWakeUp</wakeUpSound>
 			</li>
 		</comps>
-    <butcherProducts>
-      <Steel>10</Steel>
-    </butcherProducts>
+		<butcherProducts>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Steel>15</Steel>
+		</butcherProducts>
     <tools>
       <li>
         <label>head</label>
@@ -124,6 +125,7 @@
     <comps>
 			<li Class="VFE.Mechanoids.CompProperties_Machine">
 				<hoursActive>72</hoursActive>
+        <violent>true</violent>
 			</li>
 		</comps>
   </ThingDef>
@@ -234,7 +236,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/OldTexture/chad</texPath>
+          <texPath>Things/Automatroid/chad</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.5</drawSize>
@@ -288,9 +290,6 @@
     </weaponTags>
   </PawnKindDef>
 
-  <!-- 馱馬 -->
-
-  <!-- T1 DMS_DeadMansSwitch-->
   <!-- 獵犬 -->
   <ThingDef Name="DMS_MechHoundBase" ParentName="BaseDMSMachine" Abstract="True">  <!-- DMS_Machine_Hound 獵犬常規型 -->
     <statBases>
@@ -310,6 +309,10 @@
 				<hoursActive>36</hoursActive>
 			</li>
 		</comps>
+		<butcherProducts>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>30</Steel>
+		</butcherProducts>
   </ThingDef>
 
   <ThingDef ParentName="DMS_MechHoundBase">  <!-- DMS_Machine_Hound_RC 獵犬常規型 -->
@@ -356,6 +359,11 @@
         <rotationSmoothTime>0.12</rotationSmoothTime>
       </li>
     </comps>
+		<butcherProducts>
+      <DMS_Revolver>1</DMS_Revolver>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Steel>30</Steel>
+		</butcherProducts>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">
@@ -399,6 +407,11 @@
         <rotationSmoothTime>0.12</rotationSmoothTime>
       </li>
     </comps>
+		<butcherProducts>
+      <DMS_MiniMachineGun>1</DMS_MiniMachineGun>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Steel>30</Steel>
+		</butcherProducts>
   </ThingDef>
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Machine_Hound_FS</defName>

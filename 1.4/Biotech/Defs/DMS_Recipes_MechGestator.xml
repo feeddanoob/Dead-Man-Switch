@@ -239,7 +239,7 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
-  <!--士官-->
+  <!--军士-->
   <RecipeDef ParentName="DMS_LegionMechanoidRecipe">
     <defName>DMS_Make_Sergeant</defName>
     <label>gestate sergeant</label>

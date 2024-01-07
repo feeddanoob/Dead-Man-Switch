@@ -86,6 +86,7 @@
       </li>
     </comps>
     <modExtensions>
+      <li Class="DMS.TurretMannableExtension"/>
       <li Class="DMS.HumanlikeMechExtension">
         <bodyTypeOverride>Female</bodyTypeOverride>
         <headGraphic>

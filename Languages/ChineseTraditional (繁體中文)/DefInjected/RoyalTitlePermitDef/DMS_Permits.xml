@@ -43,7 +43,7 @@
   
   <!-- EN: combat equipment drop -->
   <DMS_GearDrop.label>空投戰鬥裝備</DMS_GearDrop.label>
-  <!-- EN: Call for a combat supply for a combatant, include a set of tactical gears, and an assault rifle. -->
+  <!-- EN: Call for a combat supply for a combatant, include a set of tactical gears, and a emergency rifle. -->
   <DMS_GearDrop.description>呼叫空投為戰鬥人員提供戰鬥物資，包括一套戰術裝備和一支突擊步槍。</DMS_GearDrop.description>
   
   <!-- EN: call combatant recruit -->
@@ -63,7 +63,7 @@
   
   <!-- EN: construct material drop -->
   <DMS_MaterialDrop.label>空投白銀</DMS_MaterialDrop.label>
-  <!-- EN: Call for a drop of 500 silver. -->
+  <!-- EN: Call for a drop of 500 silver and 250 steel. -->
   <DMS_MaterialDrop.description>呼叫空投 500 白銀。</DMS_MaterialDrop.description>
   
   <!-- EN: call heavy unit support -->

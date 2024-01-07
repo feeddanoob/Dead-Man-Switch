@@ -1,15 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  <DMS_Make_Falcon.label>組裝遊隼</DMS_Make_Falcon.label>
-  <DMS_Make_Falcon.description>組裝一架重型三旋翼無人機，用於空中武裝偵察和反坦克打擊。</DMS_Make_Falcon.description>
-  <DMS_Make_Falcon.jobString>組裝機械體中</DMS_Make_Falcon.jobString>
-
-  <DMS_Make_Noctula.label>組裝夜蝠</DMS_Make_Noctula.label>
-  <DMS_Make_Noctula.description>組裝一架匿蹤中繼無人機，代號“夜蝠”，是遊隼的指令中繼改裝型，用於為獵兵行動時提供指揮鏈支持。</DMS_Make_Noctula.description>
-  <DMS_Make_Noctula.jobString>組裝機械體中</DMS_Make_Noctula.jobString>
-
+  
+  <!-- EN: gestate ape -->
   <DMS_Make_Ape.label>組裝猿人</DMS_Make_Ape.label>
+  <!-- EN: Gestate an ape mechanoid. -->
   <DMS_Make_Ape.description>組裝一架猿人機兵，作為一種技術驗證機體。能夠很好的同時操控中型與重型的機兵武器</DMS_Make_Ape.description>
+  <!-- EN: Gestating mech. -->
   <DMS_Make_Ape.jobString>組裝機械體中</DMS_Make_Ape.jobString>
   
   <!-- EN: gestate arquebusier -->
@@ -33,6 +29,13 @@
   <!-- EN: Gestating mech. -->
   <DMS_Make_EscortLifter.jobString>組裝機械體中</DMS_Make_EscortLifter.jobString>
   
+  <!-- EN: gestate falcon -->
+  <DMS_Make_Falcon.label>組裝遊隼</DMS_Make_Falcon.label>
+  <!-- EN: Gestate a falcon mechanoid. -->
+  <DMS_Make_Falcon.description>組裝一架重型三旋翼無人機，用於空中武裝偵察和反坦克打擊。</DMS_Make_Falcon.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Falcon.jobString>組裝機械體中</DMS_Make_Falcon.jobString>
+  
   <!-- EN: gestate field command -->
   <DMS_Make_FieldCommand.label>組裝中繼指揮</DMS_Make_FieldCommand.label>
   <!-- EN: Gestate a field command mechanoid. -->
@@ -40,13 +43,6 @@
   <!-- EN: Gestating mech. -->
   <DMS_Make_FieldCommand.jobString>組裝機械體中</DMS_Make_FieldCommand.jobString>
   
-  <!-- EN: gestate Iguana -->
-  <DMS_Make_Iguana.label>組裝鬣蜥</DMS_Make_Iguana.label>
-  <!-- EN: Gestate a Iguana mechanoid. -->
-  <DMS_Make_Iguana.description>組裝鬣蜥，一種脫胎自駭蜥設計的重型IFV機兵。</DMS_Make_Iguana.description>
-  <!-- EN: Gestating mech. -->
-  <DMS_Make_Iguana.jobString>組裝機械體中</DMS_Make_Iguana.jobString>
-
   <!-- EN: gestate Gecko -->
   <DMS_Make_Gecko.label>組裝壁虎</DMS_Make_Gecko.label>
   <!-- EN: Gestate a gecko mechanoid. -->
@@ -68,12 +64,26 @@
   <!-- EN: Gestating mech. -->
   <DMS_Make_Grenadier.jobString>組裝機械體中</DMS_Make_Grenadier.jobString>
   
+  <!-- EN: gestate Iguana -->
+  <DMS_Make_Iguana.label>組裝鬣蜥</DMS_Make_Iguana.label>
+  <!-- EN: Gestate a Iguana mechanoid. -->
+  <DMS_Make_Iguana.description>組裝鬣蜥，一種脫胎自駭蜥設計的重型IFV機兵。</DMS_Make_Iguana.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Iguana.jobString>組裝機械體中</DMS_Make_Iguana.jobString>
+  
   <!-- EN: gestate jaeger -->
   <DMS_Make_Jaeger.label>組裝獵兵</DMS_Make_Jaeger.label>
   <!-- EN: Gestate a jaeger mechanoid. -->
   <DMS_Make_Jaeger.description>組裝獵兵，一種火槍手的匿蹤作戰特化型號</DMS_Make_Jaeger.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_Jaeger.jobString>組裝機械體中</DMS_Make_Jaeger.jobString>
+  
+  <!-- EN: gestate noctula -->
+  <DMS_Make_Noctula.label>組裝夜蝠</DMS_Make_Noctula.label>
+  <!-- EN: Gestate a noctula mechanoid. -->
+  <DMS_Make_Noctula.description>組裝一架匿蹤中繼無人機，代號“夜蝠”，是遊隼的指令中繼改裝型，用於為獵兵行動時提供指揮鏈支持。</DMS_Make_Noctula.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Noctula.jobString>組裝機械體中</DMS_Make_Noctula.jobString>
   
   <!-- EN: gestate phalanx -->
   <DMS_Make_Phalanx.label>組裝方陣步兵</DMS_Make_Phalanx.label>

@@ -36,4 +36,23 @@
 		</operations>
         </match>
     </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Fortification Industrial - Frontier</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[@Name="FT_MinifiedTurretEquippable"]</xpath>
+                <value>
+                    <weaponTags>
+                        <li>DMS_MechWeaponMeduim</li>
+                        <li>A_SuppressWeapon</li>
+                    </weaponTags>
+                </value>
+			</li>
+		</operations>
+        </match>
+    </Operation>
 </Patch>
