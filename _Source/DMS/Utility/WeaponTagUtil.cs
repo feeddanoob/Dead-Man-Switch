@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
+using System.Security.Cryptography;
 
 namespace DMS
 {
@@ -9,10 +10,12 @@ namespace DMS
     public static class WeaponTagUtil
     {
         static Dictionary<string, List<ThingDef>> dict = new Dictionary<string, List<ThingDef>>();
+        static List<ThingDef> turrets = new List<ThingDef>();
 
+        public static List<ThingDef> Turrets => turrets;
         static WeaponTagUtil()
         {
-            foreach (var def in DefDatabase<ThingDef>.AllDefs.Where((ThingDef def) => def.IsWeapon))
+            foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs.Where((ThingDef def) => def.IsWeapon))
             {
                 if (def.weaponTags.NullOrEmpty())
                 {
@@ -30,14 +33,25 @@ namespace DMS
                     }
                 }
             }
+            foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs.Where((ThingDef a) => a.building?.turretGunDef != null))
+            {
+                if (def.GetCompProperties<CompProperties_Mannable>() != null)
+                {
+                    turrets.Add(def);
+                    turrets.SortBy(v => v.BaseMarketValue);
+                }
+            }
         }
 
         public static IEnumerable<ThingDef> GetWeapons(List<string> tags)
         {
             List<ThingDef> thingDefs = new List<ThingDef>();
-            foreach (KeyValuePair<string, List<ThingDef>> s in dict)
+            foreach (string s in tags)
             {
-                thingDefs = thingDefs.ConcatIfNotNull(s.Value).ToList();
+                if (dict.ContainsKey(s))
+                {
+                    thingDefs = thingDefs.ConcatIfNotNull(dict[s]).ToList();
+                }
             }
             thingDefs.RemoveDuplicates();
             return thingDefs;
@@ -52,6 +66,19 @@ namespace DMS
                     thing = item;
                     return true;
                 } 
+            }
+            return false;
+        }
+        public static bool WeaponExistsInTurretDict(string defname, out ThingDef thing)
+        {
+            thing = null;
+            foreach (ThingDef item in turrets)
+            {
+                if (item.defName == defname)
+                {
+                    thing = item;
+                    return true;
+                }
             }
             return false;
         }
@@ -89,6 +116,27 @@ namespace DMS
                     foreach (var item in ext.BypassUsableWeapons)
                     {
                         if (WeaponTagUtil.WeaponExists(item, out var def))
+                        {
+                            yield return new Dialog_InfoCard.Hyperlink(def);
+                        }
+                    }
+                }
+            }
+            TurretMannableExtension ext2 = statRequest.Def.GetModExtension<TurretMannableExtension>();
+            if (ext2 != null)
+            {
+                if (ext2.mannableByDefault)
+                {
+                    foreach (ThingDef item in WeaponTagUtil.Turrets)
+                    {
+                        yield return new Dialog_InfoCard.Hyperlink(item);
+                    }
+                }
+                else if (ext2.BypassMannable.Count > 0)
+                {
+                    foreach (string item in ext2.BypassMannable)
+                    {
+                        if (WeaponTagUtil.WeaponExistsInTurretDict(item, out ThingDef def))
                         {
                             yield return new Dialog_InfoCard.Hyperlink(def);
                         }

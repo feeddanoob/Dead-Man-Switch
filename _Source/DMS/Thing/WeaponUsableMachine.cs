@@ -51,11 +51,12 @@ namespace DMS
                         }
                     }
                     //操作砲塔相關
-                    if (CheckUtility.IsMannable(def.GetModExtension<TurretMannableExtension>(), tmp))
+                    else if (CheckUtility.IsMannable(def.GetModExtension<TurretMannableExtension>(), tmp as Building_Turret))
                     {
-                        yield return new FloatMenuOption("OrderManThing".Translate(tmp.LabelShort, tmp), delegate
+                        var turret = tmp as Building_Turret;
+                        yield return new FloatMenuOption("OrderManThing".Translate(turret.LabelShort, turret), delegate
                         {
-                            Job job = JobMaker.MakeJob(JobDefOf.ManTurret, tmp as Building);
+                            Job job = JobMaker.MakeJob(JobDefOf.ManTurret, turret);
                             jobs.TryTakeOrderedJob(job, JobTag.DraftedOrder);
                         });
                     }

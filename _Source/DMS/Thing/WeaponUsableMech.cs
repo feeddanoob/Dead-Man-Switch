@@ -17,46 +17,53 @@ namespace DMS
 
         public override IEnumerable<FloatMenuOption> GetExtraFloatMenuOptionsFor(IntVec3 sq)
         {
-            foreach (var item in base.GetExtraFloatMenuOptionsFor(sq))
+            if (IsColonyMechPlayerControlled)
             {
-                yield return item;
-            }
-            if (Map == null)
-            {
-                Log.Error("Error");
-                yield break;
-            } 
-            List<Thing> things = sq.GetThingList(Map);
-
-            for (int i = 0; i < things.Count; i++)
-            {
-                if (things[i] is ThingWithComps tmp)
+                foreach (var item in base.GetExtraFloatMenuOptionsFor(sq))
                 {
-                    if (tmp == null) continue;
-                    //沒有開啟武器過濾的情況下任意武器都應該能裝備//如果該裝備是可以使用的
-                    if (tmp.TryGetComp<CompEquippable>() != null)
+                    yield return item;
+                }
+                if (Map == null)
+                {
+                    Log.Error("Error");
+                    yield break;
+                }
+                List<Thing> things = sq.GetThingList(Map);
+
+                for (int i = 0; i < things.Count; i++)
+                {
+                    if (things[i] is ThingWithComps tmp)
                     {
-                        if (CheckUtility.IsMechUseable(MechWeapon, tmp))
+                        if (tmp == null) continue;
+                        //沒有開啟武器過濾的情況下任意武器都應該能裝備//如果該裝備是可以使用的
+                        if (tmp.TryGetComp<CompEquippable>() != null)
                         {
-                            yield return this.TryMakeFloatMenuForWeapon(tmp);
+                            if (CheckUtility.IsMechUseable(MechWeapon, tmp))
+                            {
+                                yield return this.TryMakeFloatMenuForWeapon(tmp);
+                            }
+                            else
+                            {
+                                yield return new FloatMenuOption("CannotEquip".Translate(tmp) + "DMS_WeaponNotSupported".Translate(), null);
+                            }
                         }
-                        else
+                        //操作砲塔相關
+                        if (tmp.def.building?.turretGunDef != null)
                         {
-                            yield return new FloatMenuOption("CannotEquip".Translate(tmp) + "DMS_WeaponNotSupported".Translate(), null);
+                            if (CheckUtility.IsMannable(def.GetModExtension<TurretMannableExtension>(), tmp as Building_Turret))
+                            {
+                                var turret = tmp as Building_Turret;
+                                yield return new FloatMenuOption("OrderManThing".Translate(turret.LabelShort, turret), delegate
+                                {
+                                    Job job = JobMaker.MakeJob(JobDefOf.ManTurret, turret);
+                                    jobs.TryTakeOrderedJob(job, JobTag.DraftedOrder);
+                                });
+                            }
                         }
-                    }
-                    //操作砲塔相關
-                    if (CheckUtility.IsMannable(def.GetModExtension<TurretMannableExtension>(), tmp))
-                    {
-                        yield return new FloatMenuOption("OrderManThing".Translate(tmp.LabelShort, tmp), delegate
-                        {
-                            Job job = JobMaker.MakeJob(JobDefOf.ManTurret, tmp as Building);
-                            jobs.TryTakeOrderedJob(job, JobTag.DraftedOrder);
-                        });
                     }
                 }
+                yield break;
             }
-            yield break;
         }
         public override void ExposeData()
         {

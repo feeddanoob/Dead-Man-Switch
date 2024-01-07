@@ -20,10 +20,6 @@
         <li>Hunting</li>
       </mechEnabledWorkTypes>
     </race>
-    <modExtensions>
-      <li Class="DMS.TurretMannableExtension">
-      </li>
-    </modExtensions>
   </ThingDef>
 
   <!-- DMS_Mech_Arquebusier 火槍手常規型 -->
@@ -53,11 +49,12 @@
           <li>Industrial</li>
         </UsableTechLevels>
         <BypassUsableWeapons>
-          <li>Gun_BinocularsRadio</li>
-          <li>VWE_Gun_UraniumSlugRifle</li><!-- 重武器拓展鈾彈槍 -->
-          <li>VFEP_WarcasketGun_UraniumSlugRifle</li><!-- 戰棺拓展鈾彈槍 -->
+          <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
+          <li MayRequire="vanillaexpanded.vwehw">VWE_Gun_UraniumSlugRifle</li><!-- 重武器拓展鈾彈槍 -->
+          <li MayRequire="oskarpotocki.vfe.pirates">VFEP_WarcasketGun_UraniumSlugRifle</li><!-- 戰棺拓展鈾彈槍 -->
         </BypassUsableWeapons>
       </li>
+      <li Class="DMS.TurretMannableExtension"/>
     </modExtensions>
   </ThingDef>
 
@@ -101,7 +98,7 @@
       <MoveSpeed>5.6</MoveSpeed>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost> 
     </statBases>
-    <modExtensions  Inherit="False">
+    <modExtensions Inherit="False">
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
@@ -116,9 +113,10 @@
         </UsableWeaponTags>
         <EnableTechLevelFilter>false</EnableTechLevelFilter>
         <BypassUsableWeapons>
-          <li>Gun_BinocularsRadio</li>
+          <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
         </BypassUsableWeapons>
       </li>
+      <li Class="DMS.TurretMannableExtension"/>
     </modExtensions>
   </ThingDef>
   
@@ -184,9 +182,10 @@
           <li>Industrial</li>
         </UsableTechLevels>
         <BypassUsableWeapons>
-          <li>Gun_BinocularsRadio</li>
+          <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
         </BypassUsableWeapons>
       </li>
+      <li Class="DMS.TurretMannableExtension"/>
     </modExtensions>
   </ThingDef>
   
@@ -252,11 +251,12 @@
           <li>Industrial</li>
         </UsableTechLevels>
         <BypassUsableWeapons>
-          <li>VWE_Gun_UraniumSlugRifle</li><!-- 重武器拓展鈾彈槍 -->
-          <li>VFEP_WarcasketGun_UraniumSlugRifle</li><!-- 戰棺拓展鈾彈槍 -->
-          <li>VFEP_WarcasketGun_ChargeLance</li><!-- 戰棺拓展電荷標槍 -->
+          <li MayRequire="vanillaexpanded.vwehw">VWE_Gun_UraniumSlugRifle</li><!-- 重武器拓展鈾彈槍 -->
+          <li MayRequire="oskarpotocki.vfe.pirates">VFEP_WarcasketGun_UraniumSlugRifle</li><!-- 戰棺拓展鈾彈槍 -->
+          <li MayRequire="oskarpotocki.vfe.pirates">VFEP_WarcasketGun_ChargeLance</li><!-- 戰棺拓展電荷標槍 -->
         </BypassUsableWeapons>
       </li>
+      <li Class="DMS.TurretMannableExtension"/>
     </modExtensions>
   </ThingDef>
   

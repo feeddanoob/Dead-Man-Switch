@@ -6,7 +6,6 @@ namespace DMS
 {
     public class MechWeaponExtension : DefModExtension
     {
-
         public bool EnableWeaponFilter = true;  //根據WeaponTag
         public List<string> UsableWeaponTags = new List<string>();
 

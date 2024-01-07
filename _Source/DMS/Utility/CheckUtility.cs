@@ -64,18 +64,11 @@ public static partial class CheckUtility
         else return extension.UsableTechLevels.NotNullAndContains(tmp.def.techLevel);
     }
 
-    public static bool IsMannable(TurretMannableExtension extension, ThingWithComps tmp)//為可用的科技等級。
+    public static bool IsMannable(TurretMannableExtension extension, Building_Turret tmp)
     {
         if (extension == null) return false;
-        Log.Message(tmp.def.defName.ToString() + " " + tmp.def.thingClass.ToString());
-        if ((tmp as Building_TurretGun).TryGetComp<CompMannable>() == null) return false;
-
-        if (extension.filterByTechLevel)
-        {
-            return extension.techLevels.NotNullAndContains(tmp.def.techLevel);
-        }
+        if (tmp is Building_Turret && tmp.GetComp<CompMannable>() == null) return false;
         if (extension.mannableByDefault) return true;
-
         return extension.BypassMannable.NotNullAndContains(tmp.def.defName);
     }
     public static bool BypassedUseable(MechWeaponExtension extension, string defName)//白名單直接可用

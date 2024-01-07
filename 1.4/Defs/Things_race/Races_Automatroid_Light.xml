@@ -55,7 +55,7 @@
           <li>Industrial</li>
         </UsableTechLevels>
         <BypassUsableWeapons>
-          <li>Gun_BinocularsRadio</li>
+          <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
         </BypassUsableWeapons>
       </li>
     </modExtensions>
@@ -118,7 +118,7 @@
           <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <BypassUsableWeapons>
-          <li>Gun_BinocularsRadio</li>
+          <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
         </BypassUsableWeapons>
       </li>
     </modExtensions>
