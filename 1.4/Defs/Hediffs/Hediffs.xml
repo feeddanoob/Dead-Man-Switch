@@ -204,6 +204,11 @@
     <initialSeverity>1</initialSeverity><!-- Severity is bound to level of implant -->
     <isBad>true</isBad>
     <comps>
+      <li Class="HediffCompProperties_RemoveIfOtherHediff">
+        <otherHediff>NeuroglueHigh</otherHediff>
+        <message>bionic syndrome has been cured</message>
+        <messageType>PositiveEvent</messageType>
+      </li>
       <li Class="HediffCompProperties_DisappearsOnDeath"/>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>300000</disappearsAfterTicks>
@@ -237,6 +242,11 @@
     <initialSeverity>1</initialSeverity><!-- Severity is bound to level of implant -->
     <isBad>true</isBad>
     <comps>
+      <li Class="HediffCompProperties_RemoveIfOtherHediff">
+        <otherHediff>NeuroglueHigh</otherHediff>
+        <message>bionic syndrome has been cured</message>
+        <messageType>PositiveEvent</messageType>
+      </li>
       <li Class="HediffCompProperties_DisappearsOnDeath"/>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1</severityPerDay>
@@ -273,6 +283,11 @@
     <lethalSeverity>5</lethalSeverity>
     <isBad>true</isBad>
     <comps>
+      <li Class="HediffCompProperties_RemoveIfOtherHediff">
+        <otherHediff>NeuroglueHigh</otherHediff>
+        <message>bionic syndrome has been cured</message>
+        <messageType>PositiveEvent</messageType>
+      </li>
       <li Class="HediffCompProperties_DisappearsOnDeath"/>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1</severityPerDay>

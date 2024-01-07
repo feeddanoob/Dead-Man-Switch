@@ -130,7 +130,7 @@
 				<defaultProjectile>Bullet_DMS_HeavyMachineGun</defaultProjectile>
 				<warmupTime>2.3</warmupTime>
 				<range>80.9</range>
-				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<burstShotCount>5</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>

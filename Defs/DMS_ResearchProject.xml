@@ -228,7 +228,7 @@
   <ResearchProjectDef ParentName="DMS_BaseTech">
     <defName>DMS_Hybird</defName>
     <label>Hybird Engineering</label>
-    <description>The establishment of biological-mechanical hybrid technology was during World War three, where mercenary who was soldiers in countries whrere involved in the war established an armed state with military personnel,using drone and hybrid prosthetic helping the retired wounded return to battle. \n\n And soon, countries military realized the influence of bio-mechanical hybrids on modern warfare and rushed to armed in their armies.</description>
+    <description>The establishment of biological-mechanical hybrid technology was during WW3, where mercenary who was soldiers in countries whrere involved in the war established an armed state with military personnel,using drone and hybrid prosthetic helping the retired wounded return to battle. \n\n And soon, countries military realized the influence of bio-mechanical hybrids on modern warfare and rushed to armed in their armies.</description>
     <baseCost>2000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>

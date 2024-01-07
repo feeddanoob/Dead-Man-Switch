@@ -121,8 +121,9 @@
 		</graphicData>
 		<uiIconScale>1.5</uiIconScale>
 		<weaponTags>
-			<li>A_Pistol</li>
+			<li>A_RC</li>
 			<li>A_RC_Pistol</li>
+			<li>A_Pistol</li>
 			<li>A_SG_Pistol</li>
 			<li>DMS_MechWeaponLight</li>
 			<li>CivilianGun</li>
@@ -214,6 +215,7 @@
 			<drawSize>(1.3,1.3)</drawSize>
 		</graphicData>
 		<weaponTags>
+			<li>A_RC</li>
 			<li>A_RC_LongRifle</li>
 			<li>A_SG_LongRifle</li>
 			<li>DMS_MechWeaponShotgun</li>
@@ -304,6 +306,7 @@
 			<drawSize>(1.3,1.3)</drawSize>
 		</graphicData>
 		<weaponTags>
+			<li>A_RC</li>
 			<li>A_RC_LongRifle</li>
 			<li>IndustrialGun</li>
 			<li>RiotLMG</li>
@@ -516,7 +519,6 @@
 		  <speed>100</speed>
 		</projectile>
 	</ThingDef>
-
 	<!--狙擊榴彈發射器-->
 	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_SniperGrenadeLauncher</defName>
@@ -571,249 +573,4 @@
 			</li>
 		</verbs>
 	</ThingDef>
-
-	<!-- 因為屬性重複所以移除的槍械
-	<ThingDef ParentName="DMS_BaseMakeableGun">
-		<defName>DMS_MassProduct_Pistiol</defName>
-		<label>Defensive pistol</label>
-		<description>Small caliber firearm used by non-combatants. While it lacks in armor penetration, it is made up with being able to fire the first shot faster than your enemy.</description>
-		<weaponClasses>
-			<li>RangedLight</li>
-			<li>ShortShots</li>
-		</weaponClasses>
-		<weaponTags>
-			<li>SimpleGun</li>
-			<li>DMS_IndustrialGun</li>
-		</weaponTags>
-		
-		<graphicData>
-			<texPath>Things/Weapons/HumanWeapon/MassProduct_Pistiol</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(0.8,0.8)</drawSize>
-		</graphicData>
-		<soundInteract>Interact_Autopistol</soundInteract>
-		<statBases>
-			<Mass>1.35</Mass>
-			<AccuracyTouch>0.80</AccuracyTouch>
-			<AccuracyShort>0.70</AccuracyShort>
-			<AccuracyMedium>0.40</AccuracyMedium>
-			<AccuracyLong>0.30</AccuracyLong>
-			<WorkToMake>5000</WorkToMake>
-			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
-		</statBases>
-		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
-			<WoodLog>5</WoodLog>
-		</costList>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
-				<warmupTime>0.3</warmupTime>
-				<range>25.9</range>
-				<soundCast>Shot_Autopistol</soundCast>
-				<soundCastTail>GunTail_Light</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-			</li>
-		</verbs>
-		<recipeMaker>
-		    <researchPrerequisites>
-      			<li>BlowbackOperation</li>
-      			<li>DMS_EquipmentAdvanced</li>
-    		</researchPrerequisites>
-		</recipeMaker>
-		<tools>
-			<li>
-				<label>grip</label>
-				<capacities>
-				  <li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-				  <li>Blunt</li>
-				  <li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-	</ThingDef>
-
-	<ThingDef ParentName="DMS_BaseMakeableGun">
-		<defName>DMS_MassProduct_SMG</defName>
-		<label>Defensive SMG</label>
-		<description>A mass produced submachinegun nicknamed by many as "Sweeper". With simple and robust design, it is often issued to secondary security personnels for fire suppression.</description>
-		<weaponClasses>
-			<li>RangedLight</li>
-			<li>ShortShots</li>
-		</weaponClasses>
-		<weaponTags>
-		  <li>DMS_IndustrialGun</li>
-		</weaponTags>
-		
-		<graphicData>
-			<texPath>Things/Weapons/HumanWeapon/MassProduct_SMG</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.3,1.3)</drawSize>
-		</graphicData>
-		<soundInteract>Interact_Rifle</soundInteract>
-		
-		<statBases>
-			<Mass>2.80</Mass>
-			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
-			<AccuracyTouch>0.55</AccuracyTouch>
-			<AccuracyShort>0.85</AccuracyShort>
-			<AccuracyMedium>0.6</AccuracyMedium>
-			<AccuracyLong>0.5</AccuracyLong>
-			<WorkToMake>18500</WorkToMake>
-		</statBases>
-		<recipeMaker>
-		    <researchPrerequisites>
-      			<li>BlowbackOperation</li>			
-      			<li>DMS_EquipmentAdvanced</li>
-    		</researchPrerequisites>
-		</recipeMaker>
-		<costList>
-			<Steel>45</Steel>
-			<ComponentIndustrial>5</ComponentIndustrial>
-			<WoodLog>15</WoodLog>
-		</costList>
-
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_MachinePistol</defaultProjectile>
-				<warmupTime>0.5</warmupTime>
-				<range>19.9</range>
-				<burstShotCount>3</burstShotCount>
-				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-				<soundCast>Shot_MachinePistol</soundCast>
-				<soundCastTail>GunTail_Light</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>grip</label>
-				<capacities>
-				  <li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-				  <li>Blunt</li>
-				  <li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-	</ThingDef>
-
-	<ThingDef ParentName="DMS_BaseMakeableGun">
-		<defName>DMS_MassProduct_GrenadeLauncher</defName>
-		<label>firefoam launcher</label>
-		<description>Single shot light grenade launcher meant to throw firefoam grenades. Totally capable of launching military grade grenades.</description>
-		<weaponTags>
-			<li>DMS_FireFoam</li>
-		</weaponTags>
-		
-		<graphicData>
-			<texPath>Things/Weapons/HumanWeapon/MassProduct_GrenadeLauncher</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.5,1.5)</drawSize>
-		</graphicData>
-		<soundInteract>Interact_Rifle</soundInteract>	
-		<statBases>
-			<WorkToMake>8400</WorkToMake>
-			<Mass>1.40</Mass>
-			<RangedWeapon_Cooldown>1.04</RangedWeapon_Cooldown>
-		</statBases>
-		<recipeMaker>
-		    <researchPrerequisites>
-      			<li>Gunsmithing</li>
-				<li>Firefoam</li>
-      			<li>DMS_EquipmentBasis</li>
-    		</researchPrerequisites>
-		</recipeMaker>
-		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-		</costList>
-		
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_DMS_Firefoam</defaultProjectile>
-				<warmupTime>3.5</warmupTime>
-				<range>23.9</range>
-				<forcedMissRadius>1.9</forcedMissRadius>
-				<burstShotCount>1</burstShotCount>
-				<soundCast>Shot_IncendiaryLauncher</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>14</muzzleFlashScale>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
-			</li>
-		</verbs>
-		<tools>
-		  <li>
-			<label>grip</label>
-			<capacities>
-			  <li>Blunt</li>
-			</capacities>
-			<power>8</power>
-			<cooldownTime>2.6</cooldownTime>
-		  </li>
-		  <li>
-			<label>barrel</label>
-			<capacities>
-			  <li>Blunt</li>
-			  <li>Poke</li>
-			</capacities>
-			<power>8</power>
-			<cooldownTime>2.6</cooldownTime>
-		  </li>
-		</tools>
-		
-	</ThingDef>
-	
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_DMS_Firefoam</defName>
-		<label>firefoam shell</label>
-		<graphicData>
-		<texPath>Things/Projectile/LauncherShot</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>TransparentPostLight</shaderType>
-		<color>(140,135,156)</color>
-		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
-		<projectile>
-		<speed>40</speed>
-		<damageDef>Extinguish</damageDef>
-		<explosionRadius>2.4</explosionRadius>
-		<postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
-		<postExplosionSpawnChance>1</postExplosionSpawnChance>
-		<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
-		<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-		<ai_IsIncendiary>false</ai_IsIncendiary>
-		<arcHeightFactor>0.2</arcHeightFactor>
-		<shadowSize>0.6</shadowSize>
-		</projectile>
-	</ThingDef>
-	-->
-
-  
 </Defs>

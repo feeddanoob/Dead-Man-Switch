@@ -307,6 +307,7 @@
     </weaponTags>
     <abilities>
       <li>DMS_CallDrop</li>
+      <li>DMS_CallDrop_Falcon</li>
     </abilities>
   </PawnKindDef>
 

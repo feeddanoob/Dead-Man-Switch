@@ -94,9 +94,6 @@
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">3</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
     <race>
-      <!--<mechEnabledWorkTypes>-->
-      <!--  <li></li>-->                                                  <!--允許的工作類型-->
-      <!--</mechEnabledWorkTypes>-->
       <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>1.1</baseBodySize>
       <baseHealthScale>1.54</baseHealthScale>
@@ -186,7 +183,7 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>CE_OneHandedWeapon</li><!--CE單手武器-->
-          <li>DMS_MechWeaponShotgun</li><!--霰彈槍-->
+          <li>A_RC</li>
           <li>DMS_MechWeaponLight</li>
           <li>DMS_MeleeWeapon</li><!--砍刀和WIP的電棍-->
           <li>MedievalMeleeBasic</li><!--槌子-->
@@ -250,9 +247,6 @@
     <label>protector</label>
     <race>DMS_Mech_Protector</race>
     <isFighter>true</isFighter>
-    <!--<combatPower></combatPower>-->                                               <!--威脅點數-->
-    <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
-    <!--<allowInMechClusters>false</allowInMechClusters>-->                             <!--是否出現在機械集群-->
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -272,8 +266,11 @@
       </li>
     </lifeStages>
     <weaponTags>
-      <li>A_SG_LongRifle</li>
+      <li>A_RC</li>
     </weaponTags>
+    <abilities>
+      <li>DMS_FlashShock</li>
+    </abilities>
   </PawnKindDef>
   
   <!-- 方陣 phalanx-->

@@ -519,7 +519,47 @@
     </comps>
   </HediffDef>
 
-  <ThingDef ParentName="DMS_BioMechBionicBase">
+
+  <ThingDef Name="DMS_SynthicBionicBase" ParentName="BodyPartBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(189,169,118)</color>
+    </graphicData>
+    <tradeTags>
+      <li>Bionic</li>
+    </tradeTags>
+    <techHediffsTags>
+      <li>DMS_Synth_Bionic</li>
+    </techHediffsTags>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+        <Medicine>5</Medicine>
+      </skillRequirements>
+      <researchPrerequisite>DMS_Bionics</researchPrerequisite>
+      <recipeUsers>
+        <li>DMS_TableArtifuscle</li>
+      </recipeUsers>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="DMS_SynthicBionicBase">
     <defName>DMS_SensoryFilter</defName>
     <label>sensory filter</label>
     <description>A signal filter which filtered the specific emotional feedback but will still have some need of moods in order to communicate with other normally, allowing user become a perfect soldier during war. However it is still regarded as an inhuman surgery nowaday and classified as a serious crime.</description>
@@ -613,7 +653,7 @@
 	  </comps>
   </HediffDef>
 
-  <ThingDef ParentName="DMS_BioMechBionicBase">
+  <ThingDef ParentName="DMS_SynthicBionicBase">
     <defName>DMS_NutrientPort</defName>
     <label>nutrition port</label>
     <description>A total overhaul of the patient's digestive system, replacing it with a fueling port and nutrient storage.</description>
@@ -658,45 +698,6 @@
     </appliedOnFixedBodyParts>
     <addsHediff>DMS_NutrientPort</addsHediff>
   </RecipeDef>
-
-  <ThingDef Name="DMS_SynthicBionicBase" ParentName="BodyPartBase" Abstract="True">
-    <techLevel>Spacer</techLevel>
-    <thingCategories>
-      <li>BodyPartsBionic</li>
-    </thingCategories>
-    <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(189,169,118)</color>
-    </graphicData>
-    <tradeTags>
-      <li>Bionic</li>
-    </tradeTags>
-    <techHediffsTags>
-      <li>DMS_Synth_Bionic</li>
-    </techHediffsTags>
-    <statBases>
-      <WorkToMake>26000</WorkToMake>
-    </statBases>
-    <recipeMaker>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <effectWorking>Smith</effectWorking>
-      <soundWorking>Recipe_Smith</soundWorking>
-      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>10</Crafting>
-        <Medicine>5</Medicine>
-      </skillRequirements>
-      <researchPrerequisite>DMS_Bionics</researchPrerequisite>
-      <recipeUsers>
-        <li>DMS_TableArtifuscle</li>
-      </recipeUsers>
-      <displayPriority>300</displayPriority>
-    </recipeMaker>
-  </ThingDef>
-
  <!-- DMS_SyntheticArm-->
 
   <HediffDef ParentName="AddedBodyPartBase">

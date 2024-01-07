@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
-using static RimWorld.MechClusterSketch;
 
 namespace DMS
 {
+
     public class CompAbilityEffect_DropMech : CompAbilityEffect
     {
         public new CompProperties_DropMech Props => (CompProperties_DropMech)props;

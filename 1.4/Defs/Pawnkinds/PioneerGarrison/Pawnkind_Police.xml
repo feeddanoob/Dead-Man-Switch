@@ -117,7 +117,7 @@
       <li>IndustrialBasic</li>
     </apparelTags>
     <weaponTags Inherit="False">
-			<li>DMS_RC_Melee</li>
+			<li>A_RC_Melee</li>
     </weaponTags>
   </PawnKindDef>
 

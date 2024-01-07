@@ -5,8 +5,7 @@
 	<ThingDef ParentName="ApparelBase">
 		<defName>DMS_Apparel_BionicSuit</defName>
 		<label>bionic suit</label>
-		<description>Physical enhancement equipment sewn from artificial muscle fibers. Can
-			effectively increase the wearer's muscle strength and mobility.</description>
+		<description>Physical enhancement equipment sewn from artificial muscle fibers. Can effectively increase the wearer's muscle strength and mobility.</description>
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -254,8 +253,8 @@
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>1.5</Mass>
 			<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1.75</EquipDelay>
 		</statBases>
 		<stuffCategories>
@@ -278,6 +277,101 @@
 			<tags>
 				<li>DMS_Tactical</li>
 				<li>IndustrialMilitaryAdvanced</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+			  <li>
+				<weight>10</weight>
+				<only>(0.33,0.33,0.33)</only>
+			  </li>
+			  <li>
+				<weight>10</weight>
+				<only>(0.65,0.65,0.65)</only>
+			  </li>
+			  <li>
+				<weight>10</weight>
+				<only>(0.4,0.3,0.15)</only>
+			  </li>
+			  <li>
+				<weight>15</weight>
+				<min>(0.3,0.3,0.3)</min>
+				<max>(0.5,0.5,0.5)</max>
+			  </li>
+			  <li>
+				<weight>6</weight>
+				<min>(0.5,0.5,0.5)</min>
+				<max>(1,1,1)</max>
+			  </li>
+			</options>
+		  </colorGenerator>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- 全覆天線頭盔 -->
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>DMS_Apparel_ArrayHelmet</defName>
+		<label>operator helmet</label>
+		<description>A full-covered helmet designed for field drone operators, Features built-in head-mounted display and neural-connected operating system. can not only increase the control bandwidth but also give full protection.</description>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>FlakArmor</li>
+				<li>DMS_EquipmentElite</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<displayPriority>205</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/PASGT_Array/Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1</uiIconScale>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<StuffEffectMultiplierArmor>1.0</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<costList>
+			<ComponentStamped>1</ComponentStamped>			
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Polyester>20</Polyester>
+		</costList>
+		<equippedStatOffsets>	
+			<MechBandwidth>4</MechBandwidth>
+			<AimingAccuracy MayRequire="ceteam.combatextended">-0.1</AimingAccuracy>
+			<AimingDelayFactor>1.1</AimingDelayFactor>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+				<li>HeadClaw</li>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/PASGT_Array/Apparel</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>DMS_TacticalArray</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

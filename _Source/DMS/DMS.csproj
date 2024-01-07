@@ -60,22 +60,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ability\CompAbilityEffect_DirectionalExplosion.cs" />
     <Compile Include="Component\CompCommandRelay.cs" />
     <Compile Include="Component\CompDeadManSwitch.cs" />
     <Compile Include="Component\CompMechApparel.cs" />
     <Compile Include="Component\CompMechOnlyWeapon.cs" />
     <Compile Include="Component\CompVehicleWeapon.cs" />
     <Compile Include="Component\CompComputeArray.cs" />
+    <Compile Include="Hediff\Hediff_BandNode.cs" />
     <Compile Include="Hediff\HediffComp_RemoveHediffsOnDisappear.cs" />
     <Compile Include="Hediff\HediffsExtension.cs" />
     <Compile Include="Patch\Patch_Biocode.cs" />
     <Compile Include="Patch\Patch_Building_MechGestator.cs" />
     <Compile Include="Patch\Patch_IsMissingWeapon.cs" />
     <Compile Include="Patch\Patch_Pawn.cs" />
-    <Compile Include="Royalty\CompAbilityEffect_DropMech.cs" />
+    <Compile Include="Ability\CompAbilityEffect_DropMech.cs" />
     <Compile Include="Royalty\RoyalTitlePermitWorker_MechJoin.cs" />
     <Compile Include="Royalty\RoyalTitlePermitWorker_PawnJoin.cs" />
-    <Compile Include="Hediff\CompMechanitorRange.cs" />
+    <Compile Include="Component\CompMechanitorRange.cs" />
     <Compile Include="Hediff\HediffComp_GiveHediffWtihSeverity.cs" />
     <Compile Include="Hediff\HediffComp_RemoveHediffsOnDeath.cs" />
     <Compile Include="Hediff\Hediff_SeverityByBandwidth.cs" />
@@ -101,8 +103,6 @@
     <Compile Include="Utility\HumnalikeMechRenderingUtility.cs" />
     <Compile Include="Utility\WeaponTagUtil.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Ability\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

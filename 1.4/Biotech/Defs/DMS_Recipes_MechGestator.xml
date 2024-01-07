@@ -159,7 +159,6 @@
   <RecipeDef ParentName="DMS_LegionMechanoidRecipe">
     <defName>DMS_Make_Soldat</defName>
     <label>gestate soldat</label>
-    <researchPrerequisite>DMS_Automatroid</researchPrerequisite>
     <description>Gestate a soldat mechanoid.</description>
     <products>
       <DMS_Mech_Soldat>1</DMS_Mech_Soldat>
