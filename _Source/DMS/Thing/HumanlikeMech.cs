@@ -11,7 +11,7 @@ using Verse.AI;
 
 namespace DMS
 {
-    public class HumanlikeMech : Pawn , IWeaponUsable
+    public class HumanlikeMech : Pawn, IWeaponUsable
     {
         private PawnDownedWiggler _wiggler;
         public HumanlikeMechExtension Extension { get; private set; }
@@ -26,12 +26,12 @@ namespace DMS
                 return _wiggler;
             }
         }
-        
+
         public Graphic_Multi HeadGraphic
         {
             get
             {
-                if(cachedHeadGraphic == null)
+                if (cachedHeadGraphic == null)
                 {
                     cachedHeadGraphic = this.Extension.headGraphic.Graphic as Graphic_Multi;
                 }
@@ -70,7 +70,7 @@ namespace DMS
         public override void ExposeData()
         {
             base.ExposeData();
-            if(Scribe.mode == LoadSaveMode.PostLoadInit)
+            if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 this.Drawer?.renderer?.graphics.SetAllGraphicsDirty();
             }

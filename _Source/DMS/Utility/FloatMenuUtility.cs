@@ -8,96 +8,95 @@ using Verse;
 using Verse.AI;
 using RimWorld;
 using UnityEngine;
+using System.Security.Cryptography;
 
 namespace DMS
 {
     public static class FloatMenuUtility
     {
-        public static FloatMenuOption TryMakeFloatMenuForWeapon(this WeaponUsableMech pawn, ThingWithComps equipment)
+        public static IEnumerable<FloatMenuOption> GetExtraFloatMenuOptionsFor(Pawn pawn, IntVec3 sq, MechWeaponExtension MechWeapon)
         {
-            string labelShort = equipment.LabelShort;
-            if (!pawn.CanReach(equipment, PathEndMode.ClosestTouch, Danger.Deadly, false, false, TraverseMode.ByPawn))
+            IWeaponUsable weaponUsable = pawn as IWeaponUsable;
+            if (pawn.Map == null)
             {
-                return new FloatMenuOption("CannotEquip".Translate(labelShort) + ": " + "NoPath".Translate().CapitalizeFirst(), null);
+                Log.Error("Error");
+                yield break;
             }
+            List<Thing> things = sq.GetThingList(pawn.Map);
 
-            return new FloatMenuOption("Equip".Translate(labelShort), () =>
+            for (int i = 0; i < things.Count; i++)
             {
-                pawn.Equip(equipment);
-            });
+                if (things[i] is ThingWithComps tmp)
+                {
+                    if (tmp == null) continue;
+                    //沒有開啟武器過濾的情況下任意武器都應該能裝備//如果該裝備是可以使用的
+                    if (tmp.TryGetComp<CompEquippable>() != null)
+                    {
+                        if (CheckUtility.IsMechUseable(MechWeapon, tmp))
+                        {
+                            yield return TryMakeFloatMenuForWeapon(pawn, tmp);
+                        }
+                        else
+                        {
+                            yield return new FloatMenuOption("CannotEquip".Translate(tmp) + "DMS_WeaponNotSupported".Translate(), null);
+                        }
+                    }
+                    if (tmp.def?.apparel != null && MechWeapon.acceptedLayers?.Count > 0)
+                    {
+                        if (CheckUtility.Wearable(MechWeapon, tmp))
+                        {
+                            yield return TryMakeFloatMenuForApparel(pawn, tmp);
+                        }
+                        else
+                        {
+                            yield return new FloatMenuOption("CannotEquip".Translate(tmp) + "DMS_FrameNotSupported".Translate(), null);
+                        }
+                    }
+                    //操作砲塔相關
+                    if (tmp.def.building?.turretGunDef != null)
+                    {
+                        if (CheckUtility.IsMannable(pawn.def.GetModExtension<TurretMannableExtension>(), tmp as Building_Turret))
+                        {
+                            var turret = tmp as Building_Turret;
+                            yield return new FloatMenuOption("OrderManThing".Translate(turret.LabelShort, turret), delegate
+                            {
+                                Job job = JobMaker.MakeJob(JobDefOf.ManTurret, turret);
+                                pawn.jobs.TryTakeOrderedJob(job, JobTag.DraftedOrder);
+                            });
+                        }
+                    }
+                }
+            }
+            yield break;
         }
-        public static FloatMenuOption TryMakeFloatMenuForApparel(this WeaponUsableMech pawn, ThingWithComps equipment)
+
+        public static FloatMenuOption TryMakeFloatMenu(Pawn pawn, ThingWithComps equipment, string key = "Equip")
         {
+            IWeaponUsable weaponUsable = pawn as IWeaponUsable;
+
             string labelShort = equipment.LabelShort;
             if (!pawn.CanReach(equipment, PathEndMode.ClosestTouch, Danger.Deadly, false, false, TraverseMode.ByPawn))
             {
                 return new FloatMenuOption("CannotEquip".Translate(labelShort) + ": " + "NoPath".Translate().CapitalizeFirst(), null);
             }
 
+            if (weaponUsable != null)
+            {
+                return new FloatMenuOption(key.Translate(labelShort, equipment), () =>
+                {
+                    weaponUsable.Equip(equipment);
+                });
+            }
+            return null;
+        }
+        public static FloatMenuOption TryMakeFloatMenuForWeapon(this Pawn pawn, ThingWithComps equipment)
+        {
+            return TryMakeFloatMenu(pawn, equipment);
+        }
+        public static FloatMenuOption TryMakeFloatMenuForApparel(this Pawn pawn, ThingWithComps equipment)
+        {
             string key = equipment.def.apparel.LastLayer.IsUtilityLayer ? "ForceWear" : "ForceEquipApparel";
-
-            return new FloatMenuOption(key.Translate(labelShort, equipment), () =>
-            {
-                pawn.Wear(equipment);
-            });
-        }
-        public static FloatMenuOption TryMakeFloatMenuForWeapon(this WeaponUsableMachine pawn, ThingWithComps equipment)
-        {
-            string labelShort = equipment.LabelShort;
-            if (!pawn.CanReach(equipment, PathEndMode.ClosestTouch, Danger.Deadly, false, false, TraverseMode.ByPawn))
-            {
-                return new FloatMenuOption("CannotEquip".Translate(labelShort) + ": " + "NoPath".Translate().CapitalizeFirst(), null);
-            }
-
-            return new FloatMenuOption("Equip".Translate(labelShort), () =>
-            {
-                pawn.Equip(equipment);
-            });
-        }
-        public static FloatMenuOption TryMakeFloatMenuForApparel(this WeaponUsableMachine pawn, ThingWithComps equipment)
-        {
-            string labelShort = equipment.LabelShort;
-            if (!pawn.CanReach(equipment, PathEndMode.ClosestTouch, Danger.Deadly, false, false, TraverseMode.ByPawn))
-            {
-                return new FloatMenuOption("CannotEquip".Translate(labelShort) + ": " + "NoPath".Translate().CapitalizeFirst(), null);
-            }
-
-            string key = equipment.def.apparel.LastLayer.IsUtilityLayer ? "ForceWear" : "ForceEquipApparel";
-
-            return new FloatMenuOption(key.Translate(labelShort, equipment), () =>
-            {
-                pawn.Wear(equipment);
-            });
-        }
-
-        public static FloatMenuOption TryMakeFloatMenuForWeapon(this HumanlikeMech pawn, ThingWithComps equipment)
-        {
-            string labelShort = equipment.LabelShort;
-            if (!pawn.CanReach(equipment, PathEndMode.ClosestTouch, Danger.Deadly, false, false, TraverseMode.ByPawn))
-            {
-                return new FloatMenuOption("CannotEquip".Translate(labelShort) + ": " + "NoPath".Translate().CapitalizeFirst(), null);
-            }
-
-            return new FloatMenuOption("Equip".Translate(labelShort), () =>
-            {
-                pawn.Equip(equipment);
-            });
-        }
-
-        public static FloatMenuOption TryMakeFloatMenuForApparel(this HumanlikeMech pawn, ThingWithComps equipment)
-        {
-            string labelShort = equipment.LabelShort;
-            if (!pawn.CanReach(equipment, PathEndMode.ClosestTouch, Danger.Deadly, false, false, TraverseMode.ByPawn))
-            {
-                return new FloatMenuOption("CannotEquip".Translate(labelShort) + ": " + "NoPath".Translate().CapitalizeFirst(), null);
-            }
-
-            string key = equipment.def.apparel.LastLayer.IsUtilityLayer ? "ForceWear" : "ForceEquipApparel";
-
-            return new FloatMenuOption(key.Translate(labelShort, equipment), () =>
-            {
-                pawn.Wear(equipment);
-            });
+            return TryMakeFloatMenu(pawn, equipment, key);
         }
     }
 }
