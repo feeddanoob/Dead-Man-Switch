@@ -47,6 +47,7 @@ namespace DMS
         {
             apparel.SetForbidden(false);
             this.jobs.TryTakeOrderedJob(JobMaker.MakeJob(JobDefOf.Wear, apparel), JobTag.Misc);
+            this.equipment.AddEquipment(apparel);
         }
     }
 }

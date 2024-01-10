@@ -1,24 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-	<ThingDef Name="DMS_BaseMakeableGun" ParentName="BaseHumanMakeableGun" Abstract="True">
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<recipeMaker>
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Smith</soundWorking>
-			<recipeUsers  Inherit="False">
-				<li>DMS_TableMachinePrinter</li>
-			</recipeUsers>
-			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-		</recipeMaker>
-        <soundInteract>Interact_Rifle</soundInteract>
-    	<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
-	</ThingDef>
-
 	<!-- 口袋手槍 -->
 	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_KnuckledusterRevolver</defName>
@@ -210,7 +191,7 @@
 			<damageDef>Blunt</damageDef>
 			<damageAmountBase>18</damageAmountBase>
 			<stoppingPower>3</stoppingPower>
-			<armorPenetrationBase>0.14</armorPenetrationBase>
+			<armorPenetrationBase>0.4</armorPenetrationBase>
 			<speed>55</speed>
 		</projectile>
 	</ThingDef>
@@ -312,6 +293,7 @@
 			<damageAmountBase>25</damageAmountBase>
 			<stoppingPower>4</stoppingPower>
 			<speed>55</speed>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
 		</projectile>
 	</ThingDef>
 
@@ -465,6 +447,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+
 	<!-- 獵象槍 -->
 	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_ElephantGun</defName>
@@ -554,6 +537,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_DMS_AMR</defName>
 		<label>heavy rifle bullet</label>
@@ -564,11 +548,12 @@
 		<projectile>
 		  <damageDef>Bullet</damageDef>
 		  <stoppingPower>3</stoppingPower>
-		  <armorPenetrationBase>0.2</armorPenetrationBase>
+		  <armorPenetrationBase>1.2</armorPenetrationBase>
 		  <damageAmountBase>30</damageAmountBase>
 		  <speed>100</speed>
 		</projectile>
 	</ThingDef>
+
 	<!--狙擊榴彈發射器-->
 	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_SniperGrenadeLauncher</defName>

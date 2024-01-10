@@ -42,6 +42,9 @@
           <li>Spacer</li>
           <li>Ultra</li>
         </UsableTechLevels>
+        <acceptedLayers>
+          <li>Belt</li>
+        </acceptedLayers>
       </li>
     </modExtensions>
   </ThingDef>

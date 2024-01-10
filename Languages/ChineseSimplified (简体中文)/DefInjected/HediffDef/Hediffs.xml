@@ -68,7 +68,7 @@
   <!-- EN: mechlink rejection -->
   <DMS_MechlinkRejection.label>机控排异反应</DMS_MechlinkRejection.label>
   <!-- EN: Due to the limited technology and lack of medical nanomachines, there is some side-effect after installing this mechlink, it will last of a while before implanter's nervous system adjusts to its presence. -->
-  <DMS_MechlinkRejection.description>由于技术有限以及有限的医疗环境，安装这个机绊后会有一些副作用，在植入者的神经系统适应它的存在之前会持续一段时间。</DMS_MechlinkRejection.description>
+  <DMS_MechlinkRejection.description>由于有限的技术与医疗环境，安装这个机控中枢后会有一些副作用，在植入者的神经系统适应它的存在之前会持续一段时间。</DMS_MechlinkRejection.description>
   <!-- EN: fever -->
   <DMS_MechlinkRejection.stages.fever.label>免疫反应</DMS_MechlinkRejection.stages.fever.label>
   

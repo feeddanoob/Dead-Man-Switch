@@ -68,7 +68,7 @@
     </stages>
   </HediffDef>
 
-  <!-- 安裝DMS機控中樞後的永久副作用Hediff，會在安裝者死亡後銷毀機控中樞 -->
+  <!-- 安裝DMS機絆後的永久副作用Hediff，會在安裝者死亡後銷毀機絆 -->
   <HediffDef MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_MechlinkRejection</defName>
     <hediffClass>HediffWithComps</hediffClass>
@@ -87,7 +87,6 @@
     <stages>
       <li>
         <label>fever</label>
-        <painOffset>0.20</painOffset>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
@@ -129,7 +128,7 @@
       </li>
       <li>
         <label>medium</label>
-        <minSeverity>0.25</minSeverity>
+        <minSeverity>0.5</minSeverity>
         <capMods>
           <li>
             <capacity>Moving</capacity>
@@ -143,13 +142,13 @@
       </li>
       <li>
         <label>high</label>
-        <minSeverity>0.50</minSeverity>
+        <minSeverity>0.90</minSeverity>
         <painOffset>0.1</painOffset>
       </li>
       <li>
         <label>very high</label>
-        <minSeverity>0.75</minSeverity>
-        <painOffset>0.4</painOffset>
+        <minSeverity>1.2</minSeverity>
+        <painOffset>0.2</painOffset>
         <capMods>
           <li>
             <capacity>Moving</capacity>
@@ -163,7 +162,7 @@
       </li>
       <li>
         <label>overloaded</label>
-        <minSeverity>1.00</minSeverity>
+        <minSeverity>1.4</minSeverity>
         <painOffset>0.3</painOffset>
         <capMods>
           <li>
@@ -178,7 +177,7 @@
       </li>
       <li>
         <label>danger</label>
-        <minSeverity>1.25</minSeverity>
+        <minSeverity>1.5</minSeverity>
         <painOffset>0.5</painOffset>
         <capMods>
           <li>
