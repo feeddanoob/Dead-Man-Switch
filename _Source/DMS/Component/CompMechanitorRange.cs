@@ -22,7 +22,7 @@ namespace DMS
             {
                 if (SameMap)
                 {
-                    float mr = mechanitorRange;
+                    float mr = MechanitorRange;
                     severity =
                                mr < Props.minMaxRange.min ? Props.minMaxSeverity.min ://如果低於最小值，用最小值
                                mr > Props.minMaxRange.max ? Props.minMaxSeverity.max ://如果高於最大值,用最大值
@@ -40,7 +40,7 @@ namespace DMS
         }
         bool SameMap => Pawn.Map == Pawn.GetOverseer().Map;
         Pawn Pawn => this.parent as Pawn;
-        float mechanitorRange => Vector2.Distance(this.parent.Position.ToVector3(), this.Pawn.GetOverseer().Position.ToVector3());
+        float MechanitorRange => Vector2.Distance(this.parent.Position.ToVector3(), this.Pawn.GetOverseer().Position.ToVector3());
     }
     public class HediffCompProperties_MechanitorRange : CompProperties
     {

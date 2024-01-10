@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using Verse;
 
@@ -14,19 +15,57 @@ namespace DMS
         {
             base.Apply(target, dest);
 
-            for (int i = 0; i < Props.spawnCount; i++)
+            if (parent.def.GetModExtension<PawnKindExtension>() != null)
             {
-                List<Thing> list = new List<Thing>();
-                Pawn thing = PawnGenerator.GeneratePawn(Props.KindDef, this.parent.pawn.Faction);
-                if (CheckUtility.IsMech(thing) && CheckUtility.MechanitorCheck(this.parent.pawn.Map, out mechanitor))
+                foreach (Member m in parent.def.GetModExtension<PawnKindExtension>().members)
                 {
-                    thing.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mechanitor);
+                    List<Thing> list = new List<Thing>();
+                    Pawn pawn = PawnGenerator.GeneratePawn(m.pawnKind, Faction.OfPlayer);
+                    if (m.fixedWeapon != null)
+                    {
+                        pawn.equipment.Remove(pawn.equipment.Primary);
+                        Thing weapon = ThingMaker.MakeThing(m.fixedWeapon);
+                        pawn.equipment.AddEquipment(weapon as ThingWithComps);
+                    }
+                    if (!m.additionalThings.NullOrEmpty()) 
+                    {
+                        foreach (var thing in m.additionalThings)
+                        {
+                            Thing item = ThingMaker.MakeThing(thing.ThingDef);
+                            item.stackCount = thing.Count;
+                            pawn.inventory.TryAddItemNotForSale(item);
+                        }
+                    }
+                    if (CheckUtility.IsMech(pawn) && CheckUtility.MechanitorCheck(parent.pawn.Map, out mechanitor))
+                    {
+                        pawn.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mechanitor);
+                    }
+                    list.Add(pawn);
+                    ActiveDropPodInfo activeDropPodInfo = new ActiveDropPodInfo();
+                    activeDropPodInfo.innerContainer.TryAddRangeOrTransfer(list,false);
+                    DropPodUtility.MakeDropPodAt(target.Cell + Rand(3), parent.pawn.Map, activeDropPodInfo);
                 }
-                list.Add(thing);
-                ActiveDropPodInfo activeDropPodInfo = new ActiveDropPodInfo();
-                activeDropPodInfo.innerContainer.TryAddRangeOrTransfer(list);
-                DropPodUtility.MakeDropPodAt(target.Cell + Rand(3), parent.pawn.Map, activeDropPodInfo);
             }
+            else
+            {
+                for (int i = 0; i < Props.spawnCount; i++)
+                {
+                    List<Thing> list = new List<Thing>();
+                    {
+                        Pawn thing = PawnGenerator.GeneratePawn(Props.KindDef, this.parent.pawn.Faction);
+                        if (CheckUtility.IsMech(thing) && CheckUtility.MechanitorCheck(this.parent.pawn.Map, out mechanitor))
+                        {
+                            thing.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mechanitor);
+                        }
+                        list.Add(thing);
+                    }
+
+                    ActiveDropPodInfo activeDropPodInfo = new ActiveDropPodInfo();
+                    activeDropPodInfo.innerContainer.TryAddRangeOrTransfer(list);
+                    DropPodUtility.MakeDropPodAt(target.Cell + Rand(3), parent.pawn.Map, activeDropPodInfo);
+                }
+            }
+            
             if (Props.sendSkipSignal)
             {
                 CompAbilityEffect_Teleport.SendSkipUsedSignal(target, parent.pawn);

@@ -15,11 +15,29 @@
 		<warmupStartSound>FlickSwitch</warmupStartSound>
 		<comps>
 			<li Class="DMS.CompProperties_DropMech">
-				<compClass>DMS.CompAbilityEffect_DropMech</compClass>
+				<compClass>DMS.CompAbilityEffect_DropMech</compClass>				
 				<KindDef>DMS_Mech_Soldat</KindDef>
 				<spawnCount>3</spawnCount>
 			</li>
-		</comps>		
+		</comps>
+		<modExtensions>
+			<li Class="DMS.PawnKindExtension">
+				<members>
+					<li>
+						<pawnKind>DMS_Mech_Soldat</pawnKind>
+						<fixedWeapon>DMS_SurvivalRifle</fixedWeapon>
+					</li>
+					<li>
+						<pawnKind>DMS_Mech_Soldat</pawnKind>
+						<fixedWeapon>DMS_AssaultPiercer</fixedWeapon>
+					</li>
+					<li>
+						<pawnKind>DMS_Mech_Soldat</pawnKind>
+						<fixedWeapon>DMS_SurvivalRifle</fixedWeapon>
+					</li>
+				</members>
+			</li>	
+		</modExtensions>
 		<verbProperties>
 			<onlyManualCast>false</onlyManualCast>
 			<range>0</range>

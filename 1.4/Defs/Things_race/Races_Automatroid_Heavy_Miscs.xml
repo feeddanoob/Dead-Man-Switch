@@ -151,6 +151,7 @@
     <isFighter>true</isFighter>
     <combatPower>500</combatPower>
     <maxPerGroup>10</maxPerGroup>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
     <lifeStages>                                                                 <!--身體圖片-->
       <li>
         <bodyGraphicData>
@@ -250,6 +251,7 @@
       <li>V_Gatling20mm</li>
     </weaponTags>
     <weaponMoney>5000~9999</weaponMoney>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
   </PawnKindDef>
 
   <!-- Killdozer -->
@@ -331,6 +333,7 @@
 			<li>Geochelone_Weapon</li>
 		</weaponTags>
     <weaponMoney>9999~9999</weaponMoney>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
   </PawnKindDef>
 
 </Defs>

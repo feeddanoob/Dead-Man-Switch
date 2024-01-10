@@ -28,9 +28,10 @@ namespace DMS
         private void TryTriggerDMS()
         {
             var a = parent.GetComp<CompOverseerSubject>();
-            if (((Pawn)a.parent).relations.GetFirstDirectRelationPawn(PawnRelationDefOf.Overseer) != null)
+            var p = a.parent as Pawn;
+            if (p.IsColonyMech && p.relations?.GetFirstDirectRelationPawn(PawnRelationDefOf.Overseer) != null)
             {
-                if (a?.State != OverseerSubjectState.Overseen)
+                if (a?.State == OverseerSubjectState.RequiresBandwidth)
                 {
                     ((Pawn)a.parent).relations.RemoveDirectRelation(PawnRelationDefOf.Overseer, ((Pawn)parent)?.relations?.GetFirstDirectRelationPawn(PawnRelationDefOf.Overseer));
                     Messages.Message("DMS_AutomatroidDisconnected".Translate(), new LookTargets(parent), MessageTypeDefOf.TaskCompletion);
@@ -43,25 +44,11 @@ namespace DMS
             {
                 yield return item;
             }
-            if (!DebugSettings.ShowDevGizmos)
-            {
-                yield break;
-            }
-            Command_Action command_Action2 = new Command_Action();
-            command_Action2.defaultLabel = "DEV: TriggerDMS";
-            command_Action2.action = delegate
-            {
-                TryTriggerDMS();
-            };
-            yield return command_Action2;
         }
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            if (!respawningAfterLoad)
-            {
-                delayCheck = Props.minDelayUntilDMS;
-            }
+            delayCheck = Props.minDelayUntilDMS;
         }
         public override string CompInspectStringExtra()
         {  

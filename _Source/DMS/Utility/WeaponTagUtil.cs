@@ -111,7 +111,7 @@ namespace DMS
 
                     }
                 }
-                if (ext.BypassUsableWeapons.Count > 0)
+                if (!ext.BypassUsableWeapons.NullOrEmpty())
                 {
                     foreach (var item in ext.BypassUsableWeapons)
                     {
@@ -132,7 +132,7 @@ namespace DMS
                         yield return new Dialog_InfoCard.Hyperlink(item);
                     }
                 }
-                else if (ext2.BypassMannable.Count > 0)
+                else if (!ext2.BypassMannable.NullOrEmpty())
                 {
                     foreach (string item in ext2.BypassMannable)
                     {

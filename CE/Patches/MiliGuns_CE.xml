@@ -95,8 +95,7 @@
 			            </li>
                     </tools>
                 </value>
-            </li>
-			
+            </li>	
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_TaticalPistol</defName>
                 <statBases>
@@ -112,7 +111,7 @@
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_50AE_FMJ</defaultProjectile>
-                    <warmupTime>0.6</warmupTime>
+                    <warmupTime>0.35</warmupTime>
                     <range>15</range>
                     <soundCast>DMS_Pistol_Shot</soundCast>
                     <soundCastTail>GunTail_Light</soundCastTail>
@@ -121,7 +120,7 @@
                 </Properties>
                 <AmmoUser>
                     <magazineSize>12</magazineSize>
-                    <reloadTime>4</reloadTime>
+                    <reloadTime>2</reloadTime>
                     <ammoSet>AmmoSet_50AE</ammoSet>
                 </AmmoUser>
                 <FireModes>
@@ -131,7 +130,80 @@
                     <li>CE_OneHandedWeapon</li>
 					<li>CE_AI_Pistol</li>
                 </weaponTags>
-            </li>		
+            </li>
+            <!--===== PDW =====-->	
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>DMS_PDW</defName>
+                <statBases>
+                    <WorkToMake>20000</WorkToMake>
+                    <Mass>5.9</Mass>
+                    <Bulk>5</Bulk>
+                    <SwayFactor>1.00</SwayFactor>
+                    <ShotSpread>0.3</ShotSpread>
+                    <SightsEfficiency>0.5</SightsEfficiency>
+                    <RangedWeapon_Cooldown>0.41</RangedWeapon_Cooldown>
+                </statBases>
+                <Properties>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_50AE_FMJ</defaultProjectile>
+                    <warmupTime>0.35</warmupTime>
+                    <range>15</range>
+					<burstShotCount>3</burstShotCount>
+					<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                    <soundCast>DMS_Pistol_Shot</soundCast>
+                    <soundCastTail>GunTail_Light</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                    <recoilAmount>3.1</recoilAmount>
+                </Properties>
+                <AmmoUser>
+                    <magazineSize>21</magazineSize>
+                    <reloadTime>1.5</reloadTime>
+                    <ammoSet>AmmoSet_50AE</ammoSet>
+                </AmmoUser>
+                <FireModes>
+                    <aiAimMode>Snapshot</aiAimMode>
+					<aimedBurstShotCount>3</aimedBurstShotCount>
+                </FireModes>
+                <weaponTags>
+                    <li>CE_OneHandedWeapon</li>
+					<li>CE_AI_Pistol</li>
+                </weaponTags>
+            </li>
+
+            <!--===== AssaultPiercer =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>DMS_AssaultPiercer</defName>
+                <statBases>
+                    <WorkToMake>45000</WorkToMake>
+                    <Mass>6.8</Mass>
+                    <Bulk>6.7</Bulk>
+                    <SwayFactor>1.39</SwayFactor>
+                    <ShotSpread>0.18</ShotSpread>
+                    <SightsEfficiency>0.75</SightsEfficiency>
+                    <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+                </statBases>
+                <Properties>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+                    <warmupTime>0.5</warmupTime>
+                    <range>19.9</range>
+                    <burstShotCount>3</burstShotCount>
+                    <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                    <soundCast>Shot_Autocannon</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                </Properties>
+                <AmmoUser>
+                    <magazineSize>12</magazineSize>
+                    <reloadTime>3</reloadTime>
+                    <ammoSet>AmmoSet_50BMG</ammoSet>
+                </AmmoUser>
+                <FireModes>
+                    <aiAimMode>Snapshot</aiAimMode>
+                </FireModes>
+            </li>
 
 			<!--===== AssaultShotgun =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -354,8 +426,7 @@
 			        <li>CE_AI_SR</li>
                 </weaponTags>
             </li>
-			
-			
+					
 			<!--===== Automatic GL =====-->
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_AutomaticGrenadeLauncher</defName>
@@ -438,8 +509,7 @@
 					<li>CE_AI_LMG</li>
 			        <li>Bipod_SAW</li>
                 </weaponTags>
-            </li>
-					
+            </li>				
 			<!--===== Heavy MG =====-->
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_HeavyMachineGun</defName>
@@ -483,7 +553,6 @@
 			        <li>Bipod_LMG</li>
                 </weaponTags>
             </li>
-
             <!--====Machete====-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_Machete"]/tools</xpath>
@@ -524,22 +593,19 @@
                     </tools>
                 </value>
             </li>
-
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_Machete"]/statBases/Mass</xpath>
                 <value>
                     <Mass>6.3</Mass>
                 </value>
             </li>
-        
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DMS_Machete"]/statBases</xpath>
                 <value>
                     <Bulk>5.4</Bulk>
                     <MeleeCounterParryBonus>0.33</MeleeCounterParryBonus>
                 </value>
-            </li>
-        
+            </li>  
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DMS_Machete"]</xpath>
                 <value>
@@ -549,8 +615,7 @@
                         <MeleeDodgeChance>0.34</MeleeDodgeChance>
                     </equippedStatOffsets>
                 </value>
-            </li>
-        
+            </li>       
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DMS_Machete"]/weaponTags</xpath>
                 <value>
@@ -626,14 +691,12 @@
                     </tools>
                 </value>
             </li>
-
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_StunBaton"]/statBases/Mass</xpath>
                 <value>
                     <Mass>2.3</Mass>
                 </value>
-            </li>
-        
+            </li> 
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DMS_StunBaton"]/statBases</xpath>
                 <value>
@@ -641,7 +704,6 @@
                     <MeleeCounterParryBonus>0.43</MeleeCounterParryBonus>
                 </value>
             </li>
-        
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DMS_StunBaton"]</xpath>
                 <value>
@@ -652,7 +714,6 @@
                     </equippedStatOffsets>
                 </value>
             </li>
-        
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DMS_StunBaton"]/weaponTags</xpath>
                 <value>
@@ -700,7 +761,6 @@
                     <li>NoSwitch</li>
                 </weaponTags>
             </li>
-
             <!--custom demolish tool for door breaker-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_DoorBreaker"]/tools</xpath>
