@@ -119,6 +119,11 @@ and until recently, a strange yet familiar broadcast ended the long and anxious 
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
+					<thingDef>Neuroglue</thingDef>
+					<count>24</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
 					<thingDef>ComponentSpacer</thingDef>
 					<count>4</count>
 				</li>

@@ -5,10 +5,20 @@ using System;
 using UnityEngine;
 using Verse;
 using System.Linq;
-using VFECore.Abilities;
 
 namespace DMS
 {
+    public class Member
+    {
+        public PawnKindDef pawnKind = null;
+        public ThingDef fixedWeapon;
+        public List<ThingDefCount> additionalThings;
+    }
+    public class PawnKindExtension : DefModExtension
+    {
+        public List<Member> members = new List<Member>();
+    }
+
     [StaticConstructorOnStartup]
     public class RoyalTitlePermitWorker_MechJoin : RoyalTitlePermitWorker_Targeted
     {
@@ -28,7 +38,7 @@ namespace DMS
                 yield return new FloatMenuOption("CommandCallRoyalAidFactionHostile".Translate(faction.Named("FACTION")), null);
                 yield break;
             }
-            
+
             if (CheckUtility.MechanitorCheck(map, out Pawn p))
             {
                 mechanitor = pawn;
@@ -123,11 +133,35 @@ namespace DMS
         private void CallPawn(IntVec3 cell) //改成叫人的
         {
             List<Thing> list = new List<Thing>();
-            for (int i = 0; i < def.royalAid.pawnCount; i++)
+            if (def.GetModExtension<PawnKindExtension>() != null)
             {
-                Thing thing = PawnGenerator.GeneratePawn(def.royalAid.pawnKindDef, Faction.OfPlayer);
-                (thing as Pawn).relations.AddDirectRelation(PawnRelationDefOf.Overseer, mechanitor);
-                list.Add(thing);
+                foreach (Member m in def.GetModExtension<PawnKindExtension>().members)
+                {
+                    Pawn thing = PawnGenerator.GeneratePawn(m.pawnKind, Faction.OfPlayer);
+                    (thing as Pawn).relations.AddDirectRelation(PawnRelationDefOf.Overseer, mechanitor);
+                    if (m.fixedWeapon != null)
+                    {
+                        thing.equipment.Remove(thing.equipment.Primary);
+                        Thing weapon = ThingMaker.MakeThing(m.fixedWeapon);
+                        thing.equipment.AddEquipment(weapon as ThingWithComps);
+                    }
+                    foreach (var item in m.additionalThings)
+                    {
+                        Thing i = ThingMaker.MakeThing(item.ThingDef);
+                        i.stackCount = item.Count;
+                        thing.inventory.TryAddItemNotForSale(i);
+                    }
+                    list.Add(thing);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < def.royalAid.pawnCount; i++)
+                {
+                    Thing thing = PawnGenerator.GeneratePawn(def.royalAid.pawnKindDef, Faction.OfPlayer);
+                    (thing as Pawn).relations.AddDirectRelation(PawnRelationDefOf.Overseer, mechanitor);
+                    list.Add(thing);
+                }
             }
 
             if (list.Any())
@@ -147,12 +181,34 @@ namespace DMS
         private void CallPawnToCaravan(Pawn caller, Faction faction, bool free)
         {
             Caravan caravan = caller.GetCaravan();
-            for (int i = 0; i < def.royalAid.pawnCount; i++)
+            if (def.GetModExtension<PawnKindExtension>() != null)
             {
-                Pawn pawn = PawnGenerator.GeneratePawn(def.royalAid.pawnKindDef, Faction.OfPlayer);
-                caravan.AddPawn(pawn,false);
+                foreach (Member m in def.GetModExtension<PawnKindExtension>().members)
+                {
+                    Pawn pawn = PawnGenerator.GeneratePawn(m.pawnKind, Faction.OfPlayer);
+                    if (m.fixedWeapon != null)
+                    {
+                        pawn.equipment.Remove(pawn.equipment.Primary);
+                        Thing weapon = ThingMaker.MakeThing(m.fixedWeapon);
+                        pawn.equipment.AddEquipment(weapon as ThingWithComps);
+                    }
+                    foreach (var item in m.additionalThings)
+                    {
+                        Thing i = ThingMaker.MakeThing(item.ThingDef);
+                        i.stackCount = item.Count;
+                        pawn.inventory.TryAddItemNotForSale(i);
+                    }
+                    caravan.AddPawn(pawn, false);
+                }
             }
-
+            else
+            {
+                for (int i = 0; i < def.royalAid.pawnCount; i++)
+                {
+                    Pawn pawn = PawnGenerator.GeneratePawn(def.royalAid.pawnKindDef, Faction.OfPlayer);
+                    caravan.AddPawn(pawn, false);
+                }
+            }
             Messages.Message("MessagePermitTransportDropCaravan".Translate(faction.Named("FACTION"), caller.Named("PAWN")), caravan, MessageTypeDefOf.NeutralEvent);
             caller.royalty.GetPermit(def, faction).Notify_Used();
             if (!free)
@@ -161,5 +217,4 @@ namespace DMS
             }
         }
     }
-
 }

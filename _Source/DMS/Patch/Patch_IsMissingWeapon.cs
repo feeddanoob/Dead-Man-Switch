@@ -9,7 +9,7 @@ namespace DMS
     {
         public static void Postfix(ref bool __result, Pawn mech)
         {
-            if (mech is WeaponUsable)
+            if (mech is IWeaponUsable)
             {
                 __result = false;
             }

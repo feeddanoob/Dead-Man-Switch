@@ -3,10 +3,11 @@ using Verse;
 using RimWorld;
 using UnityEngine;
 using Verse.AI;
+using System;
 
 namespace DMS
 {
-    public class WeaponUsableMech : Pawn , WeaponUsable
+    public class WeaponUsableMech : Pawn , IWeaponUsable
     {
         public MechWeaponExtension MechWeapon { get; private set; }
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
@@ -47,6 +48,17 @@ namespace DMS
                                 yield return new FloatMenuOption("CannotEquip".Translate(tmp) + "DMS_WeaponNotSupported".Translate(), null);
                             }
                         }
+                        if (tmp.def?.apparel != null && MechWeapon.acceptedLayers?.Count > 0)
+                        {
+                            if (CheckUtility.Wearable(MechWeapon, tmp))
+                            {
+                                yield return this.TryMakeFloatMenuForApparel(tmp);
+                            }
+                            else
+                            {
+                                yield return new FloatMenuOption("CannotEquip".Translate(tmp) + "DMS_FrameNotSupported".Translate(), null);
+                            }
+                        }
                         //操作砲塔相關
                         if (tmp.def.building?.turretGunDef != null)
                         {
@@ -77,6 +89,11 @@ namespace DMS
         {
             equipment.SetForbidden(false);
             jobs.TryTakeOrderedJob(JobMaker.MakeJob(JobDefOf.Equip, equipment), JobTag.Misc);
+        }
+        public void Wear(ThingWithComps apparel)
+        {
+            apparel.SetForbidden(false);
+            this.jobs.TryTakeOrderedJob(JobMaker.MakeJob(JobDefOf.Wear, apparel), JobTag.Misc);
         }
     }
 }

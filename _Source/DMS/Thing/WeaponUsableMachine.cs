@@ -3,16 +3,11 @@ using RimWorld;
 using Verse.AI;
 using VFEMech;
 using System.Collections.Generic;
-using static UnityEngine.GraphicsBuffer;
 
 namespace DMS
 {
-    public interface WeaponUsable
-    {
-        void Equip(ThingWithComps equipment);
-    }
     //給VFEM機械使用的
-    public class WeaponUsableMachine : Machine , WeaponUsable
+    public class WeaponUsableMachine : Machine , IWeaponUsable
     {
         public MechWeaponExtension MechWeapon { get; private set; }
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
@@ -50,6 +45,17 @@ namespace DMS
                             yield return new FloatMenuOption("CannotEquip".Translate(tmp) + "DMS_WeaponNotSupported".Translate(), null);
                         }
                     }
+                    if (tmp.def?.apparel != null && MechWeapon.acceptedLayers?.Count > 0)
+                    {
+                        if (CheckUtility.Wearable(MechWeapon, tmp))
+                        {
+                            yield return this.TryMakeFloatMenuForApparel(tmp);
+                        }
+                        else
+                        {
+                            yield return new FloatMenuOption("CannotEquip".Translate(tmp) + "DMS_FrameNotSupported".Translate(), null);
+                        }
+                    }
                     //操作砲塔相關
                     else if (CheckUtility.IsMannable(def.GetModExtension<TurretMannableExtension>(), tmp as Building_Turret))
                     {
@@ -76,6 +82,11 @@ namespace DMS
         {
             equipment.SetForbidden(false);
             jobs.TryTakeOrderedJob(JobMaker.MakeJob(JobDefOf.Equip, equipment), JobTag.Misc);
+        }
+        public void Wear(ThingWithComps apparel)
+        {
+            apparel.SetForbidden(false);
+            this.jobs.TryTakeOrderedJob(JobMaker.MakeJob(JobDefOf.Wear, apparel), JobTag.Misc);
         }
     }
 }

@@ -58,6 +58,17 @@ public static partial class CheckUtility
         }
         return true;
     }
+    public static bool Wearable(MechWeaponExtension extension, ThingWithComps tmp)//為可用的科技等級。
+    {
+        foreach (ApparelLayerDef item in extension.acceptedLayers)
+        {
+            if (tmp.def.apparel.layers.Contains(item))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
     public static bool InTechLevel(MechWeaponExtension extension, ThingWithComps tmp)//為可用的科技等級。
     {
         if (!extension.EnableTechLevelFilter) return true;
@@ -73,6 +84,6 @@ public static partial class CheckUtility
     }
     public static bool BypassedUseable(MechWeaponExtension extension, string defName)//白名單直接可用
     {
-        return (extension.BypassUsableWeapons.Where(p => p == defName).FirstOrDefault() != null);
+        return extension.BypassUsableWeapons?.FirstOrDefault(p => p == defName) != null;
     }
 }

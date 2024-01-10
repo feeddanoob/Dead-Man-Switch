@@ -11,7 +11,7 @@ using Verse.AI;
 
 namespace DMS
 {
-    public class HumanlikeMech : Pawn , WeaponUsable
+    public class HumanlikeMech : Pawn , IWeaponUsable
     {
         private PawnDownedWiggler _wiggler;
         public HumanlikeMechExtension Extension { get; private set; }
@@ -60,10 +60,8 @@ namespace DMS
                 {
                     yield return this.TryMakeFloatMenuForWeapon(tmp);
                 }
-
-                if(tmp.def?.apparel != null)
+                if (tmp.def?.apparel != null && tmp.def.apparel.layers.Contains(ApparelLayerDefOf.Belt))
                 {
-                    
                     yield return this.TryMakeFloatMenuForApparel(tmp);
                 }
             }
@@ -95,7 +93,5 @@ namespace DMS
             apparel.SetForbidden(false);
             this.jobs.TryTakeOrderedJob(JobMaker.MakeJob(JobDefOf.Wear, apparel), JobTag.Misc);
         }
-
-        
     }
 }
