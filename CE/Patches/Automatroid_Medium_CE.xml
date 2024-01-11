@@ -96,49 +96,38 @@
 			<NightVisionEfficiency>0.6</NightVisionEfficiency>
 			<ReloadSpeed>1.2</ReloadSpeed>
 		</value>
-	</li>
-    <!--a bit better aim for grenadier to make sure it can land its shot, also extra bulk due to grenades' and weapon's high bulk-->
-	<li Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_Grenadier"]/statBases</xpath>
-		<value>
-			<AimingAccuracy>1.2</AimingAccuracy>
-			<ShootingAccuracyPawn>1.25</ShootingAccuracyPawn>
-			<CarryBulk>45</CarryBulk>
-		</value>
-	</li>
-
-    <!--higher capacity for at least 3 single use launchers-->
-	<li Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="DMS_Mech_Kanonier"]</xpath>
-		<value>
-			<statBases>
-			    <CarryWeight>60</CarryWeight>
-			    <CarryBulk>40</CarryBulk>
-		    </statBases>
-		</value>
-	</li>
-
+	</li>	
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="BaseMechRace_Soldat"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
 			<ArmorRating_Blunt>8</ArmorRating_Blunt>
 		</value>
 	</li>
-
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="BaseMechRace_Soldat"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
 			<ArmorRating_Sharp>6</ArmorRating_Sharp>
 		</value>
 	</li>
-
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="BaseMechRace_Soldat"]/statBases/ArmorRating_Heat</xpath>
 		<value>
 			<ArmorRating_Heat>0.1</ArmorRating_Heat>
 		</value>
 	</li>
-
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Sergeant"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>8</ArmorRating_Blunt>
+		</value>
+	</li>
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Sergeant"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>6</ArmorRating_Sharp>
+		</value>
+	</li>
+	
 	<li Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@Name="BaseMechRace_Soldat"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -167,6 +156,27 @@
 				<MaxOverHeal>82</MaxOverHeal>
 				<MinArmorPct>0.75</MinArmorPct>
 			</li>
+		</value>
+	</li>
+
+    <!--a bit better aim for grenadier to make sure it can land its shot, also extra bulk due to grenades' and weapon's high bulk-->
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Grenadier"]/statBases</xpath>
+		<value>
+			<AimingAccuracy>1.2</AimingAccuracy>
+			<ShootingAccuracyPawn>1.25</ShootingAccuracyPawn>
+			<CarryBulk>45</CarryBulk>
+		</value>
+	</li>
+
+    <!--higher capacity for at least 3 single use launchers-->
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Kanonier"]</xpath>
+		<value>
+			<statBases>
+			    <CarryWeight>60</CarryWeight>
+			    <CarryBulk>40</CarryBulk>
+		    </statBases>
 		</value>
 	</li>
 

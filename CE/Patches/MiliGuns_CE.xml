@@ -158,12 +158,13 @@
                 </Properties>
                 <AmmoUser>
                     <magazineSize>21</magazineSize>
-                    <reloadTime>1.5</reloadTime>
+                    <reloadTime>3</reloadTime>
                     <ammoSet>AmmoSet_50AE</ammoSet>
                 </AmmoUser>
                 <FireModes>
+                    <aiUseBurstMode>true</aiUseBurstMode>
                     <aiAimMode>Snapshot</aiAimMode>
-					<aimedBurstShotCount>3</aimedBurstShotCount>
+					<aimedBurstShotCount>2</aimedBurstShotCount>
                 </FireModes>
                 <weaponTags>
                     <li>CE_OneHandedWeapon</li>
@@ -187,21 +188,23 @@
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-                    <warmupTime>0.5</warmupTime>
+                    <warmupTime>0.75</warmupTime>
                     <range>19.9</range>
-                    <burstShotCount>3</burstShotCount>
-                    <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                    <burstShotCount>6</burstShotCount>
+                    <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
                     <soundCast>Shot_Autocannon</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                 </Properties>
                 <AmmoUser>
                     <magazineSize>12</magazineSize>
-                    <reloadTime>3</reloadTime>
+                    <reloadTime>4</reloadTime>
                     <ammoSet>AmmoSet_50BMG</ammoSet>
                 </AmmoUser>
                 <FireModes>
+                    <aiUseBurstMode>true</aiUseBurstMode>
                     <aiAimMode>Snapshot</aiAimMode>
+					<aimedBurstShotCount>3</aimedBurstShotCount>
                 </FireModes>
             </li>
 
@@ -258,7 +261,7 @@
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
-                    <warmupTime>0.3</warmupTime>
+                    <warmupTime>1.1</warmupTime>
                     <range>55</range>
 					<burstShotCount>6</burstShotCount>
 				    <ticksBetweenBurstShots>8</ticksBetweenBurstShots>

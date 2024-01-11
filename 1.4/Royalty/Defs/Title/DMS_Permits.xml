@@ -98,8 +98,8 @@
     <cooldownDays>30</cooldownDays>
     <royalAid>
       <itemsToDrop>
-        <Steel_DMS_Apparel_TacticalHelmet>1</Steel_DMS_Apparel_TacticalHelmet>
-        <Steel_DMS_Apparel_TacticalVest>1</Steel_DMS_Apparel_TacticalVest>
+        <DMS_Apparel_TacticalHelmet>1</DMS_Apparel_TacticalHelmet>
+        <DMS_Apparel_TacticalVest>1</DMS_Apparel_TacticalVest>
         <DMS_KnuckledusterRevolver MayRequire="ceteam.combatextended">1</DMS_KnuckledusterRevolver>
         <DMS_SurvivalRifle>1</DMS_SurvivalRifle>
       </itemsToDrop>

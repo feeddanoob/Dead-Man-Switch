@@ -297,9 +297,6 @@
         <BypassUsableWeapons>
           <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
         </BypassUsableWeapons>
-        <acceptedLayers>
-          <li>Belt</li>
-        </acceptedLayers>
       </li>
     </modExtensions>
     <killedLeavingsPlayerHostile>

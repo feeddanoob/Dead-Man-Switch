@@ -43,7 +43,7 @@
       <blockWind>false</blockWind>
       <rotatable>false</rotatable>
       <fillPercent>0.1</fillPercent>
-      <uiIconScale>1.2</uiIconScale>
+      <uiIconScale>0.8</uiIconScale>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>DMS_Category</designationCategory>
     <researchPrerequisites>

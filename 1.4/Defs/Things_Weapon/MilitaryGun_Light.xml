@@ -98,7 +98,7 @@
 		</projectile>
 	</ThingDef>
 
-	<!--DMS_SMG .50AE衝鋒槍.-->
+	<!--DMS_PDW .50AE衝鋒槍.-->
 	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_PDW</defName>
 		<label>PDW</label>
@@ -111,6 +111,7 @@
 			<li>DMS_IndustrialGun</li>
 			<li>DMS_MechWeaponLight</li>
 			<li>A_Pistol</li>
+			<li>A_PDW</li>
 		</weaponTags>
 
 		<graphicData>
@@ -217,7 +218,7 @@
 		<modExtensions>
 			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
 				<def>MF_StandardMuzzleFalsh</def>
-				<drawSize>(0.85,0.85)</drawSize>
+				<drawSize>(1.25,1.25)</drawSize>
 				<offsets>
 					<li>(0.25,0)</li>
 				</offsets>

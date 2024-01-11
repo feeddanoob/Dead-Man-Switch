@@ -44,9 +44,6 @@
       <UsableTechLevels>
         <li>Industrial</li>
       </UsableTechLevels>
-      <acceptedLayers>
-        <li>Belt</li>
-      </acceptedLayers>
     </li>
   </modExtensions>
 </ThingDef>

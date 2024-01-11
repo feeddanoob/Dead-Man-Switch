@@ -361,12 +361,13 @@
 		</stuffCategories>
 		<costStuffCount>75</costStuffCount>
 		<costList>
-			<ComponentStamped>1</ComponentStamped>			
+			<ComponentTransmitter>1</ComponentTransmitter>
+			<ComponentStamped>2</ComponentStamped>	
 			<ComponentIndustrial>4</ComponentIndustrial>
 			<Polyester>20</Polyester>
 		</costList>
 		<equippedStatOffsets>	
-			<MechBandwidth>4</MechBandwidth>
+			<MechBandwidth>9</MechBandwidth>
 			<AimingAccuracy MayRequire="ceteam.combatextended">-0.1</AimingAccuracy>
 			<AimingDelayFactor>0.1</AimingDelayFactor>
 		</equippedStatOffsets>

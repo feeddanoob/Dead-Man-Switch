@@ -59,6 +59,7 @@
 			<texPath>Things/Weapons/DMS_AntiWalkerRifle</texPath>
 			<drawSize>2.25</drawSize>
 		</graphicData>
+		<equippedDistanceOffset>0.5</equippedDistanceOffset>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
 			<WorkToMake>80000</WorkToMake>

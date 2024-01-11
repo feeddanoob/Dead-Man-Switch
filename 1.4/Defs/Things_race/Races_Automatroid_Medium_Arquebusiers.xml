@@ -53,9 +53,6 @@
           <li MayRequire="vanillaexpanded.vwehw">VWE_Gun_UraniumSlugRifle</li><!-- 重武器拓展鈾彈槍 -->
           <li MayRequire="oskarpotocki.vfe.pirates">VFEP_WarcasketGun_UraniumSlugRifle</li><!-- 戰棺拓展鈾彈槍 -->
         </BypassUsableWeapons>
-        <acceptedLayers>
-          <li>Belt</li>
-        </acceptedLayers>
       </li>
       <li Class="DMS.TurretMannableExtension"/>
     </modExtensions>
@@ -118,9 +115,6 @@
         <BypassUsableWeapons>
           <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
         </BypassUsableWeapons>
-        <acceptedLayers>
-          <li>Belt</li>
-        </acceptedLayers>
       </li>
       <li Class="DMS.TurretMannableExtension"/>
     </modExtensions>
@@ -190,9 +184,6 @@
         <BypassUsableWeapons>
           <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
         </BypassUsableWeapons>
-        <acceptedLayers>
-          <li>Belt</li>
-        </acceptedLayers>
       </li>
       <li Class="DMS.TurretMannableExtension"/>
     </modExtensions>
@@ -227,7 +218,7 @@
       <li>A_AR_LongRifle</li>
     </weaponTags>
     <abilities>
-      <li MayRequire="ceteam.combatextended">DMS_PioneerSpotter</li>
+      <!-- <li MayRequire="ceteam.combatextended">DMS_PioneerSpotter</li> -->
     </abilities>
   </PawnKindDef>
 
@@ -264,9 +255,6 @@
           <li MayRequire="oskarpotocki.vfe.pirates">VFEP_WarcasketGun_UraniumSlugRifle</li><!-- 戰棺拓展鈾彈槍 -->
           <li MayRequire="oskarpotocki.vfe.pirates">VFEP_WarcasketGun_ChargeLance</li><!-- 戰棺拓展電荷標槍 -->
         </BypassUsableWeapons>
-        <acceptedLayers>
-          <li>Belt</li>
-        </acceptedLayers>
       </li>
       <li Class="DMS.TurretMannableExtension"/>
     </modExtensions>

@@ -28,9 +28,9 @@
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-    <weaponMoney>300~900</weaponMoney>
+    <weaponMoney>900~1200</weaponMoney>
     <weaponTags>
-      <li>A_SG_Pistol</li>
+      <li>A_PDW</li>
     </weaponTags>
     <forceWeaponQuality>Masterwork</forceWeaponQuality>
     <techHediffsMoney>9999~9999</techHediffsMoney>
@@ -40,6 +40,7 @@
       <li>AdvancedWeapon</li>
     </techHediffsTags>
     <techHediffsRequired>
+      <li>Painstopper</li>
       <li>DMS_ProstheticEye</li>
       <li>DMS_SyntheticLeg</li>
     </techHediffsRequired>
@@ -50,6 +51,8 @@
     <initialResistanceRange>0~1</initialResistanceRange>
     <requiredWorkTags>
       <li>Intellectual</li>
+      <li>Crafting</li>
+      <li>Shooting</li>
     </requiredWorkTags>
     <disallowedTraits>
       <li>BodyPurist</li>

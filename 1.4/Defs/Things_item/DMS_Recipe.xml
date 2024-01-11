@@ -422,7 +422,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>20</count>
+        <count>10</count>
       </li>
       <li>
         <filter>
@@ -469,7 +469,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>80</count>
+        <count>40</count>
       </li>
       <li>
         <filter>
@@ -526,7 +526,44 @@
     <products>
       <ComponentIndustrial>1</ComponentIndustrial>
     </products>
+  </RecipeDef>
 
+  <RecipeDef>
+    <defName>DMS_Make_ComponentIndustrial</defName>
+    <label>convert component</label>
+    <description>Convert stamponent into more commonly used standard.</description>
+    <jobString>Making component.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <recipeUsers>
+      <li>DMS_TableMachinePrinter</li>
+    </recipeUsers>
+    <researchPrerequisite>Fabrication</researchPrerequisite>
+    <workAmount>5000</workAmount>
+    <skillRequirements>
+      <Crafting>3</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentStamped</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentStamped</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </products>
   </RecipeDef>
 
   <!-- 合成肌肉培育槽 -->

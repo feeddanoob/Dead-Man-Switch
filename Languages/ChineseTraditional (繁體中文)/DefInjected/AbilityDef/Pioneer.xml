@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: artillery spotter -->
+  <DMS_PioneerSpotter.label>目標鎖定</DMS_PioneerSpotter.label>
+  <!-- EN: directing artillery and mortar fire support onto a target. -->
+  <DMS_PioneerSpotter.description>指揮火砲和迫擊砲火力打擊目標。</DMS_PioneerSpotter.description>
+  
+</LanguageData>

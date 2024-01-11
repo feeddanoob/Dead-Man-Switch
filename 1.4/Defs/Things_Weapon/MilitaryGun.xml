@@ -170,6 +170,7 @@
 			<texPath>Things/Weapons/DMS_SemiAutoRifle</texPath>
 			<drawSize>(1.75,1.75)</drawSize>
 		</graphicData>
+		<equippedDistanceOffset>0.5</equippedDistanceOffset>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
 			<WorkToMake>30000</WorkToMake>

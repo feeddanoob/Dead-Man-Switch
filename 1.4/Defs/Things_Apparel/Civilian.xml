@@ -117,7 +117,7 @@
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <drawSize>0.85</drawSize>
 		</graphicData>
-		<costStuffCount>70</costStuffCount>
+		<costStuffCount>80</costStuffCount>
 		<stuffCategories>
 		  <li>Fabric</li>
 		  <li>Leathery</li>
