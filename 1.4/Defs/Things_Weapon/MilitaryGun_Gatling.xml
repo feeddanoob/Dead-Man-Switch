@@ -101,7 +101,7 @@
 				<warmupTime>3</warmupTime>
 				<range>44.9</range>
 				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-				<burstShotCount>24</burstShotCount>
+				<burstShotCount>15</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -162,7 +162,7 @@
 				<minRange>8</minRange>
 				<range>37.9</range>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-				<burstShotCount>18</burstShotCount>
+				<burstShotCount>12</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -214,7 +214,7 @@
 				<range>25.9</range>
 				<minRange>1.9</minRange>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-				<burstShotCount>18</burstShotCount>
+				<burstShotCount>12</burstShotCount>
 				<soundCast>Shot_Minigun</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>12</muzzleFlashScale>
@@ -277,8 +277,8 @@
 				<warmupTime>4</warmupTime>
 				<minRange>5.9</minRange>
 				<range>49.9</range>
-				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-				<burstShotCount>24</burstShotCount>
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<burstShotCount>12</burstShotCount>
 				<soundCast>Shot_TurretSniper</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>15</muzzleFlashScale>

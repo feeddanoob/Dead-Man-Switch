@@ -171,6 +171,34 @@
 					<li>CE_AI_Pistol</li>
                 </weaponTags>
             </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="DMS_PDW"]/tools</xpath>
+                <value>
+                    <tools Inherit="False"> 
+			            <li Class="CombatExtended.ToolCE">
+				            <label>grip</label>
+				            <capacities>
+					           <li>Blunt</li>
+				            </capacities>
+				            <power>3</power>
+				            <cooldownTime>1.54</cooldownTime>
+				            <chanceFactor>1.5</chanceFactor>
+				            <armorPenetrationBlunt>0.755</armorPenetrationBlunt>
+				            <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+			            </li>
+			            <li Class="CombatExtended.ToolCE">
+				            <label>muzzle</label>
+				            <capacities>
+				         	<li>Poke</li>
+				            </capacities>
+				            <power>3</power>
+				            <cooldownTime>1.54</cooldownTime>
+				            <armorPenetrationBlunt>0.755</armorPenetrationBlunt>
+				            <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			            </li>
+                    </tools>
+                </value>
+            </li>
 
             <!--===== AssaultPiercer =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -206,6 +234,34 @@
                     <aiAimMode>Snapshot</aiAimMode>
 					<aimedBurstShotCount>3</aimedBurstShotCount>
                 </FireModes>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="DMS_AssaultPiercer"]/tools</xpath>
+                <value>
+                    <tools Inherit="False"> 
+			            <li Class="CombatExtended.ToolCE">
+				            <label>grip</label>
+				            <capacities>
+					           <li>Blunt</li>
+				            </capacities>
+				            <power>3</power>
+				            <cooldownTime>1.54</cooldownTime>
+				            <chanceFactor>1.5</chanceFactor>
+				            <armorPenetrationBlunt>0.755</armorPenetrationBlunt>
+				            <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+			            </li>
+			            <li Class="CombatExtended.ToolCE">
+				            <label>muzzle</label>
+				            <capacities>
+				         	<li>Poke</li>
+				            </capacities>
+				            <power>3</power>
+				            <cooldownTime>1.54</cooldownTime>
+				            <armorPenetrationBlunt>0.755</armorPenetrationBlunt>
+				            <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			            </li>
+                    </tools>
+                </value>
             </li>
 
 			<!--===== AssaultShotgun =====-->

@@ -128,7 +128,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+				<defaultProjectile>Bullet_DMS_LightMachineGun</defaultProjectile>
 				<warmupTime>1</warmupTime>
 				<range>34.9</range>
 				<burstShotCount>3</burstShotCount>
@@ -261,7 +261,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+				<defaultProjectile>Bullet_DMS_AMR</defaultProjectile>
 				<warmupTime>3</warmupTime>
 				<range>39.9</range>
 				<burstShotCount>2</burstShotCount>
@@ -483,7 +483,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_LightMachineGun</defaultProjectile>
-				<warmupTime>2.3</warmupTime>
+				<warmupTime>1.7</warmupTime>
 				<range>29.9</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>7</burstShotCount>
@@ -508,7 +508,8 @@
 		<label>full-power rifle bullet</label>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>15</damageAmountBase>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationBase>0.18</armorPenetrationBase>	
 			<stoppingPower>2</stoppingPower>
 			<speed>80</speed>
 		</projectile>

@@ -474,7 +474,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>100</count>
+        <count>150</count>
       </li>
       <li>
         <filter>
@@ -483,7 +483,7 @@
             <li>Polyester</li>
           </thingDefs>
         </filter>
-        <count>15</count>
+        <count>50</count>
       </li>
       <li>
         <filter>
@@ -491,7 +491,7 @@
             <li>ComponentStamped</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>4</count>
       </li>
       <li>
         <filter>
@@ -499,7 +499,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>5</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>

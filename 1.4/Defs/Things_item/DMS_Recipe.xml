@@ -529,7 +529,7 @@
   </RecipeDef>
 
   <RecipeDef>
-    <defName>DMS_Make_ComponentIndustrial</defName>
+    <defName>DMS_Convert_ComponentIndustrial</defName>
     <label>convert component</label>
     <description>Convert stamponent into more commonly used standard.</description>
     <jobString>Making component.</jobString>
@@ -537,7 +537,7 @@
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <recipeUsers>
-      <li>DMS_TableMachinePrinter</li>
+      <li>FabricationBench</li>
     </recipeUsers>
     <researchPrerequisite>Fabrication</researchPrerequisite>
     <workAmount>5000</workAmount>

@@ -89,7 +89,8 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
 				<warmupTime>2.0</warmupTime>
-				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
 				<range>69.9</range>
 				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -163,7 +164,7 @@
 				<warmupTime>3</warmupTime>
 				<range>49.9</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
+				<burstShotCount>4</burstShotCount>
 				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

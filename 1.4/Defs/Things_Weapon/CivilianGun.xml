@@ -132,7 +132,7 @@
 			<AccuracyShort>0.65</AccuracyShort>
 			<AccuracyMedium>0.35</AccuracyMedium>
 			<AccuracyLong>0.15</AccuracyLong>
-			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>45</Steel>
@@ -189,7 +189,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Blunt</damageDef>
-			<damageAmountBase>18</damageAmountBase>
+			<damageAmountBase>16</damageAmountBase>
 			<stoppingPower>3</stoppingPower>
 			<armorPenetrationBase>0.4</armorPenetrationBase>
 			<speed>55</speed>
@@ -327,11 +327,11 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
+				<defaultProjectile>DMS_Bullet_MiniMachineGun</defaultProjectile>
 				<warmupTime>1.5</warmupTime>
 				<range>30.9</range>
 				<burstShotCount>10</burstShotCount>
-				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<soundCast>DMS_Pistol_Shot</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -361,6 +361,23 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>DMS_Bullet_MiniMachineGun</defName>
+		<label>riot machinegun bullet</label>
+		<graphicData>
+		  <texPath>Things/Projectile/Bullet_Small</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		  <damageDef>Bullet</damageDef>
+		  <damageAmountBase>4</damageAmountBase>
+		  <armorPenetrationBase>0.04</armorPenetrationBase>	
+		  <stoppingPower>1.0</stoppingPower>
+		  <speed>55</speed>
+		</projectile>
+	  </ThingDef>
+
 	<!-- 生存步槍 -->
 	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_SurvivalRifle</defName>
@@ -548,9 +565,9 @@
 		<projectile>
 		  <damageDef>Bullet</damageDef>
 		  <stoppingPower>3</stoppingPower>
-		  <armorPenetrationBase>1.2</armorPenetrationBase>
-		  <damageAmountBase>30</damageAmountBase>
-		  <speed>100</speed>
+		  <armorPenetrationBase>0.4</armorPenetrationBase>
+		  <damageAmountBase>25</damageAmountBase>
+		  <speed>90</speed>
 		</projectile>
 	</ThingDef>
 

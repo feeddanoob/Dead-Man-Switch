@@ -72,11 +72,11 @@
       </li>
       <li>
         <damageDef>Bomb</damageDef>
-        <multiplier>0.25</multiplier>
+        <multiplier>0.01</multiplier>
       </li>
       <li>
         <damageDef>BombSuper</damageDef>
-        <multiplier>0.25</multiplier>
+        <multiplier>0.01</multiplier>
       </li>
       <li>
         <damageDef>Demolish</damageDef>
@@ -168,7 +168,7 @@
       </li>
       <li MayRequire="CETeam.CombatExtended">
         <damageDef>Bomb_Secondary</damageDef>
-        <multiplier>0.25</multiplier>
+        <multiplier>0.01</multiplier>
       </li>
       <li MayRequire="CETeam.CombatExtended">
         <damageDef>Flame_Secondary</damageDef>
@@ -268,17 +268,17 @@
     <building>
       <turretGunDef>DMS_Gun_Tunguska</turretGunDef>
       <turretTopDrawSize>4</turretTopDrawSize>
-      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
-      <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+      <turretBurstWarmupTime>0.5</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+      <turretBurstCooldownTime>4.0</turretBurstCooldownTime>
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
-      <Steel>150</Steel>
-      <Tungsteel>300</Tungsteel>
-      <ComponentStamped>10</ComponentStamped>
-      <ComponentIndustrial>7</ComponentIndustrial>
+      <Steel>500</Steel>
+      <Tungsteel>250</Tungsteel>
+      <ComponentStamped>20</ComponentStamped>
+      <ComponentIndustrial>15</ComponentIndustrial>
       <ReinforcedBarrel>4</ReinforcedBarrel>
-      <ComponentFireControl>1</ComponentFireControl>
+      <ComponentFireControl>2</ComponentFireControl>
     </costList>
     <researchPrerequisites>
       <li>DMS_EquipmentHeavy</li>
@@ -301,19 +301,19 @@
       <AccuracyShort>0.85</AccuracyShort>
       <AccuracyMedium>0.80</AccuracyMedium>
       <AccuracyLong>0.75</AccuracyLong>
-      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <defaultProjectile>DMS_Bullet_CIWS</defaultProjectile>
         <requireLineOfSight>true</requireLineOfSight>
-        <warmupTime>1</warmupTime>
+        <warmupTime>0.5</warmupTime>
         <minRange>5.9</minRange>
         <range>45</range>
         <ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
-        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-        <burstShotCount>100</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <burstShotCount>20</burstShotCount>
         <soundCast>Shot_Autocannon</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>15</muzzleFlashScale>
@@ -342,7 +342,7 @@
     <rotatable>true</rotatable>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <statBases>   <!--================血量與重量工作量================-->
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>2000</MaxHitPoints>
       <Flammability>0.5</Flammability>
       <WorkToBuild>7500</WorkToBuild>
       <Beauty>-2</Beauty>
@@ -387,16 +387,16 @@
       <turretGunDef>DMS_Gun_GateKeeper</turretGunDef>
       <turretTopDrawSize>7</turretTopDrawSize>
       <turretBurstWarmupTime>2.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
-      <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+      <turretBurstCooldownTime>3.2</turretBurstCooldownTime>
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
-      <Steel>150</Steel>
-      <Tungsteel>150</Tungsteel>
+      <Steel>450</Steel>
+      <Tungsteel>300</Tungsteel>
       <ComponentStamped>15</ComponentStamped>
-      <ComponentIndustrial>9</ComponentIndustrial>
+      <ComponentIndustrial>10</ComponentIndustrial>
       <ReinforcedBarrel>7</ReinforcedBarrel>
-      <ComponentFireControl>1</ComponentFireControl>
+      <ComponentFireControl>3</ComponentFireControl>
     </costList>
     <researchPrerequisites>
       <li>DMS_EquipmentElite</li>
@@ -424,19 +424,19 @@
 			<AccuracyShort>0.6</AccuracyShort>
 			<AccuracyMedium>0.78</AccuracyMedium>
 			<AccuracyLong>0.90</AccuracyLong>
-      <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <defaultProjectile>DMS_Bullet_CIWS</defaultProjectile>
         <requireLineOfSight>true</requireLineOfSight>
-        <warmupTime>0.25</warmupTime>
+        <warmupTime>2.0</warmupTime>
         <minRange>3.9</minRange>
 				<range>59.9</range>
         <ai_AvoidFriendlyFireRadius>4.9</ai_AvoidFriendlyFireRadius>
-        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-        <burstShotCount>16</burstShotCount>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <burstShotCount>18</burstShotCount>
         <soundCast>Shot_TurretSniper</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>15</muzzleFlashScale>
@@ -459,11 +459,11 @@
       <drawSize>1.3</drawSize>
     </graphicData>
     <projectile>
-      <speed>80</speed>
+      <speed>110</speed>
       <damageDef>Bomb</damageDef>
       <screenShakeFactor>0</screenShakeFactor>
-      <damageAmountBase>22</damageAmountBase>
-      <armorPenetrationBase>1.75</armorPenetrationBase>
+      <damageAmountBase>27</damageAmountBase>
+      <armorPenetrationBase>0.71</armorPenetrationBase>
       <stoppingPower>8</stoppingPower>
       <explosionRadius>1.4</explosionRadius>
       <ai_IsIncendiary>false</ai_IsIncendiary>
@@ -475,7 +475,7 @@
   </ThingDef>
 
 
-  <!--遙控砲塔--><!--文本缺失-->
+  <!--遙控砲塔-->
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_Okhotnik</defName>
     <label>Okhotnik</label>
@@ -492,7 +492,7 @@
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <fillPercent>0.6</fillPercent>
     <statBases>   <!--================血量與重量工作量================-->
-      <MaxHitPoints>750</MaxHitPoints>
+      <MaxHitPoints>350</MaxHitPoints>
       <Flammability>0.5</Flammability>
       <WorkToBuild>1500</WorkToBuild>
       <Beauty>-2</Beauty>
@@ -534,10 +534,10 @@
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
-      <Steel>30</Steel>
-      <Tungsteel>75</Tungsteel>
-      <ComponentStamped>4</ComponentStamped>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <Steel>250</Steel>
+      <Tungsteel>100</Tungsteel>
+      <ComponentStamped>5</ComponentStamped>
+      <ComponentIndustrial>5</ComponentIndustrial>
       <ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
     <researchPrerequisites>
