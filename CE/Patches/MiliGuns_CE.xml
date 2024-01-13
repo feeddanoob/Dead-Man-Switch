@@ -171,8 +171,8 @@
 					<li>CE_AI_Pistol</li>
                 </weaponTags>
             </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="DMS_PDW"]/tools</xpath>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DMS_PDW"]</xpath>
                 <value>
                     <tools Inherit="False"> 
 			            <li Class="CombatExtended.ToolCE">
@@ -235,8 +235,8 @@
 					<aimedBurstShotCount>3</aimedBurstShotCount>
                 </FireModes>
             </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="DMS_AssaultPiercer"]/tools</xpath>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DMS_AssaultPiercer"]</xpath>
                 <value>
                     <tools Inherit="False"> 
 			            <li Class="CombatExtended.ToolCE">
