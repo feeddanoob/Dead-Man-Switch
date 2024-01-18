@@ -10,6 +10,7 @@
 		<weaponClasses>
 			<li>RangedLight</li>
 			<li>ShortShots</li>
+			<li>Ranged</li>
 		</weaponClasses>
 		<weaponTags>
 			<li>DMS_MechWeaponLight</li>
@@ -106,6 +107,7 @@
 		<weaponClasses>
 			<li>RangedLight</li>
 			<li>ShortShots</li>
+			<li>Ranged</li>
 		</weaponClasses>
 		<weaponTags>
 			<li>DMS_IndustrialGun</li>
@@ -173,10 +175,12 @@
 		<weaponClasses>
 			<li>RangedLight</li>
 			<li>ShortShots</li>
+			<li>Ranged</li>
 		</weaponClasses>		
 		<weaponTags>
 			<li>DMS_MechWeaponMeduim</li>
-		</weaponTags>		
+			<li>A_AP</li>
+		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_AssaultPiercer</texPath>
 			<drawSize>(1.5,1.5)</drawSize>

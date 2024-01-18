@@ -67,9 +67,11 @@
       <stuffCategoriesToAllow>
         <li>Metallic</li>
         <li>Fabric</li>
+        <li>Stony</li>
       </stuffCategoriesToAllow>
       <disallowedThingDefs>
-        <li>DevilstrandCloth</li>
+        <li>Jade</li>
+        <li>Gold</li>
       </disallowedThingDefs>
     </apparelStuffFilter>
     <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>

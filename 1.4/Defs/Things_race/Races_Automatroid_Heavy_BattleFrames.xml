@@ -57,10 +57,6 @@
         <BypassMannable>
           <li>Turret_Mortar</li>
           <li MayRequire="Aoba.Fortress.Industrial">FT_Turret_Mortar</li>
-     <!-- <li MayRequire="Aoba.Fortress.Industrial">FT_TurretHexMortar</li>
-          <li MayRequire="Aoba.Fortress.Industrial">FT_TurretPrince</li>
-          <li MayRequire="Aoba.Fortress.Industrial">FT_TurretEmpero</li>
-          <li MayRequire="Aoba.Fortress.Industrial.Citadel">FTC_Katyusha_Turret</li> -->
           <li MayRequire="Aoba.Fortress.Frontier">FT_GPMG</li>
           <li MayRequire="Aoba.Fortress.Frontier">FT_HeavyMachinegun</li>
           <li MayRequire="Aoba.Fortress.Frontier">FT_InfantryAutoCannon</li>

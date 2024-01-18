@@ -17,7 +17,7 @@ namespace DMS
                     __result = true;
                     return;
                 }
-                List<Pawn> overseenPawns = MechanitorUtility.GetOverseer(mech).mechanitor.OverseenPawns;
+                List<Pawn> overseenPawns = MechanitorUtility.GetOverseer(mech)?.mechanitor?.OverseenPawns;
                 foreach (Pawn item in overseenPawns)
                 {
                     if (item.GetComp<CompCommandRelay>() != null && item.Drafted && item.Map == mech.Map)

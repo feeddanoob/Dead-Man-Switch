@@ -230,7 +230,7 @@
     <statBases>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost> 
     </statBases>
-    <modExtensions  Inherit="False">
+    <modExtensions Inherit="False">
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>

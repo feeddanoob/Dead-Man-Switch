@@ -1,6 +1,5 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 using Verse;
 
@@ -20,7 +19,7 @@ namespace DMS
                 foreach (Member m in parent.def.GetModExtension<PawnKindExtension>().members)
                 {
                     List<Thing> list = new List<Thing>();
-                    Pawn pawn = PawnGenerator.GeneratePawn(m.pawnKind, Faction.OfPlayer);
+                    Pawn pawn = PawnGenerator.GeneratePawn(m.pawnKind, this.parent.pawn.Faction);
                     if (m.fixedWeapon != null)
                     {
                         pawn.equipment.Remove(pawn.equipment.Primary);
@@ -36,9 +35,9 @@ namespace DMS
                             pawn.inventory.TryAddItemNotForSale(item);
                         }
                     }
-                    if (CheckUtility.IsMech(pawn) && CheckUtility.MechanitorCheck(parent.pawn.Map, out mechanitor))
+                    if (CheckUtility.IsMech(pawn) && pawn.Faction.IsPlayer)
                     {
-                        pawn.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mechanitor);
+                        pawn.relations.AddDirectRelation(PawnRelationDefOf.Overseer, this.parent.pawn.GetOverseer().mechanitor.Pawn);
                     }
                     list.Add(pawn);
                     ActiveDropPodInfo activeDropPodInfo = new ActiveDropPodInfo();
@@ -52,12 +51,12 @@ namespace DMS
                 {
                     List<Thing> list = new List<Thing>();
                     {
-                        Pawn thing = PawnGenerator.GeneratePawn(Props.KindDef, this.parent.pawn.Faction);
-                        if (CheckUtility.IsMech(thing) && CheckUtility.MechanitorCheck(this.parent.pawn.Map, out mechanitor))
+                        Pawn pawn = PawnGenerator.GeneratePawn(Props.KindDef, this.parent.pawn.Faction);
+                        if (CheckUtility.IsMech(pawn) && CheckUtility.MechanitorCheck(this.parent.pawn.Map, out mechanitor))
                         {
-                            thing.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mechanitor);
+                            pawn.relations.AddDirectRelation(PawnRelationDefOf.Overseer, this.parent.pawn.GetOverseer().mechanitor.Pawn);
                         }
-                        list.Add(thing);
+                        list.Add(pawn);
                     }
 
                     ActiveDropPodInfo activeDropPodInfo = new ActiveDropPodInfo();

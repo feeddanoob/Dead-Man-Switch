@@ -559,15 +559,10 @@
                     <ammoSet>AmmoSet_338Lapua</ammoSet>
                 </AmmoUser>
                 <FireModes>
-				    <!--<aiUseBurstMode>FALSE</aiUseBurstMode>-->
 				    <aiAimMode>SuppressFire</aiAimMode>
 					<aimedBurstShotCount>5</aimedBurstShotCount>
                     <noSingleShot>true</noSingleShot>
                 </FireModes>
-                <weaponTags>
-					<li>CE_AI_LMG</li>
-			        <li>Bipod_SAW</li>
-                </weaponTags>
             </li>				
 			<!--===== Heavy MG =====-->
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">

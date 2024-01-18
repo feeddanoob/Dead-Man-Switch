@@ -35,6 +35,7 @@
           <li>PLA_Shotgun</li>
           <li>PLA_SMG</li>
           <li>PLA_Pistol</li>
+          <li>A_AP</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -310,6 +311,7 @@
           <li>PLA_Shotgun</li>
           <li>PLA_SMG</li>
           <li>PLA_Pistol</li>
+          <li>A_AP</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -345,6 +347,7 @@
     <weaponTags>
       <li>A_SG_LongRifle</li>                                                                     <!--武器-->
       <li>MedievalMeleeAdvanced</li>
+      <li>A_AP</li>
       <li>DMS_MeleeWeapon</li>
     </weaponTags>
   </PawnKindDef>

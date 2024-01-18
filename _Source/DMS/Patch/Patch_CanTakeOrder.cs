@@ -1,8 +1,4 @@
-﻿using System;
-using System.Text;
-using System.Threading.Tasks;
-
-using Verse;
+﻿using Verse;
 using RimWorld;
 
 using HarmonyLib;
@@ -13,7 +9,7 @@ namespace DMS
     public static class Patch_CanTakeOrder
     {
         [HarmonyPostfix]
-        public static void AllowTakeOrder(Pawn pawn,ref bool __result)
+        public static void AllowTakeOrder(Pawn pawn, ref bool __result)
         {
             if (pawn is IWeaponUsable)
             {

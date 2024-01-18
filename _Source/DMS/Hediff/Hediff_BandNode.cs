@@ -8,17 +8,14 @@ namespace DMS
     public static class ThingDefOf
     {
         public static ThingDef DMS_BandNode;
-
     }
-    public class Hediff_BandNode : Hediff
+    public class Hediff_BandNode : Verse.Hediff_BandNode
     {
-        private const int BandNodeCheckInterval = 60;
-
         private int cachedTunedBandNodesCount;
 
         private HediffStage curStage;
 
-        public int AdditionalBandwidth => cachedTunedBandNodesCount * 4;
+        public new int AdditionalBandwidth => cachedTunedBandNodesCount * 4;
 
         public override bool ShouldRemove => cachedTunedBandNodesCount == 0;
 
@@ -54,7 +51,7 @@ namespace DMS
             RecacheBandNodes();
         }
 
-        public void RecacheBandNodes()
+        public new void RecacheBandNodes()
         {
             int num = cachedTunedBandNodesCount;
             cachedTunedBandNodesCount = 0;

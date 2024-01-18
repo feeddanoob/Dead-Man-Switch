@@ -16,11 +16,18 @@ namespace DMS
             {
                 if (SameMap)
                 {
-                    currentRadius = Props.maxRelayRadius;           
+                    currentRadius = Props.maxRelayRadius; 
+                    Log.Message("SameMap");
+                }
+                else if (!Pawn.GetOverseer().Spawned)
+                {
+                    currentRadius = Props.minRelayRadius;
+                    Log.Message("Overseer not spawned");
                 }
                 else
                 {
-                    int num = Find.WorldGrid.TraversalDistanceBetween(Pawn.Map.Tile, Pawn.GetOverseer().Map.Tile);
+                    int num = Find.WorldGrid.TraversalDistanceBetween(Pawn.MapHeld.Tile, Pawn.GetOverseer().MapHeld.Tile);
+                    Log.Message("Overseer at:" + num);
                     if (num > Props.maxWorldMapRadius)
                     {
                         currentRadius = Props.minRelayRadius;
@@ -35,7 +42,8 @@ namespace DMS
         }
         
         Pawn Pawn => this.parent as Pawn;
-        private bool SameMap => Pawn.Map == Pawn.GetOverseer().Map;
+
+        private bool SameMap => Pawn.GetOverseer().Spawned && Pawn.GetOverseer().MapHeld != null && Pawn.MapHeld == Pawn.GetOverseer().MapHeld;
     }
     public class CompProperties_CommandRelay : CompProperties
     {

@@ -43,7 +43,9 @@
           <li>DMS_MechWeaponUltraLight</li>
           <li>RiotLMG</li>
           <li>SurvivalRifle</li>
+          <li>CE_AI_AOE</li>
           <li>CE_AI_Grenade</li>
+          <li>CE_SMG</li>
           <li>CE_AI_SMG</li>
           <li>CE_AI_Pistol</li>
           <li>PLA_SMG</li>
@@ -56,6 +58,8 @@
         </UsableTechLevels>
         <BypassUsableWeapons>
           <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
+          <li MayRequire="ceteam.combatextendedarmory">CE_ATFour</li>
+          <li MayRequire="ceteam.combatextendedarmory">Gun_BinocularsRadio</li>
         </BypassUsableWeapons>
       </li>
     </modExtensions>
@@ -88,10 +92,9 @@
     </lifeStages>
     <weaponTags>
         <li>RiotLMG</li>
-        <li>SurvivalRifle</li>
-        <li>CE_AI_Grenade</li>
         <li>CE_AI_SMG</li>
-        <li>CE_AI_Pistol</li>
+        <li>CE_AI_AOE</li>
+        <li>PLA_RocketLauncher</li>
     </weaponTags>
   </PawnKindDef>
   
