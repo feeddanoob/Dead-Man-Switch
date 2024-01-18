@@ -67,11 +67,11 @@
       <stuffCategoriesToAllow>
         <li>Metallic</li>
         <li>Fabric</li>
-        <li>Stony</li>
       </stuffCategoriesToAllow>
       <disallowedThingDefs>
         <li>Jade</li>
         <li>Gold</li>
+        <li>Silver</li>
       </disallowedThingDefs>
     </apparelStuffFilter>
     <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
@@ -164,7 +164,7 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <DMS_Machine_VerlingBirdA>10</DMS_Machine_VerlingBirdA>
+          <DMS_Machine_VerlingBirdA>3</DMS_Machine_VerlingBirdA>
           <DMS_Soldier>3</DMS_Soldier>
           <DMS_Mech_Iguana>1</DMS_Mech_Iguana>
         </options>

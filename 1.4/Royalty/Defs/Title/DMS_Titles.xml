@@ -49,6 +49,7 @@
     <changeHeirQuestPoints>1000</changeHeirQuestPoints>
     <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
     <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+    <permitPointsAwarded>1</permitPointsAwarded>
   </RoyalTitleDef>
 
   <RoyalTitleDef ParentName="BaseDMSTitle">
@@ -58,6 +59,7 @@
     <seniority>50</seniority>
     <favorCost>10</favorCost>
     <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <permitPointsAwarded>1</permitPointsAwarded>
     <commonality>1</commonality>
   </RoyalTitleDef>
 
@@ -104,6 +106,7 @@
     <description>pre-sergeant is a rank specially for outsider enlistment with no formal training, Served as the representative of outsider military forces in the military system.</description>
     <seniority>75</seniority>
     <favorCost>9</favorCost>
+    <permitPointsAwarded>1</permitPointsAwarded>
     <changeHeirQuestPoints>1000</changeHeirQuestPoints>
     <commonality>0.8</commonality>
   </RoyalTitleDef>
@@ -116,6 +119,7 @@
     <description>a non-commissioned officer placed above the rank of a corporal.</description>
     <seniority>100</seniority>
     <favorCost>12</favorCost>
+    <permitPointsAwarded>1</permitPointsAwarded>
     <changeHeirQuestPoints>1000</changeHeirQuestPoints>
     <commonality>0.7</commonality>
   </RoyalTitleDef>
@@ -134,16 +138,6 @@
           <li>FineFloor</li>
         </tags>
       </li>
-      <li Class="RoomRequirement_ThingAnyOf">
-        <disablingPrecepts>
-          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-        </disablingPrecepts>
-        <things>
-          <li>Bed</li>
-          <li>DoubleBed</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
-        </things>
-      </li>
       <li Class="RoomRequirement_ForbiddenBuildings">
         <labelKey>RoomRequirementNoProductionFacilities</labelKey>
         <buildingTags><li>Production</li></buildingTags>
@@ -161,6 +155,7 @@
         </bodyPartGroupsMatchAny>
         <requiredTags>
           <li>DMS_Kepi</li>
+          <li>DMS_Officer</li>
         </requiredTags>
         <allowedTags>
           <li>IndustrialMilitaryBasic</li>
@@ -244,6 +239,7 @@
         </bodyPartGroupsMatchAny>
         <requiredTags>
           <li>DMS_Beret</li>
+          <li>DMS_Officer</li>
         </requiredTags>
         <allowedTags>
           <li>IndustrialMilitaryBasic</li>

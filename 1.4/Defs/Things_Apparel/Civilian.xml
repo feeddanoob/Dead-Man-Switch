@@ -61,6 +61,7 @@
 			</layers>
 			<tags>
 				<li>DMS_Uniform</li>
+				<li>DMS_Officer</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -149,6 +150,7 @@
 		  <tags>
 			<li>IndustrialAdvanced</li>
 			<li>DMS_Garrision</li>
+			<li>DMS_Officer</li>
 		  </tags>
 		  <defaultOutfitTags>
 			<li>Soldier</li>

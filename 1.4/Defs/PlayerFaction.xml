@@ -12,28 +12,38 @@
       <li>Mili_Standard</li>
       <li>Mili_Expert</li>
     </backstoryCategories>
-    <defaultFactionType>PlayerColony</defaultFactionType>
     <chemicalAddictionChance>0</chemicalAddictionChance>
-    <apparelMoney>0~2500</apparelMoney>
+    <apparelMoney>1000~4000</apparelMoney>
     <titleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_WarrantOfficer</titleRequired>
+    <defaultFactionType>DMS_Army</defaultFactionType>
     <apparelTags>
-      <li>DMS_Garrision</li>
+      <li>DMS_Tactical</li>
+      <li>DMS_TacticalArray</li>
     </apparelTags>
     <apparelRequired>
       <li>DMS_Apparel_TacticalVest</li>
       <li>DMS_Apparel_PowerSkelton</li>
       <li>DMS_Apparel_BionicSuit</li>
-      <li>DMS_Apparel_ArrayHelmet</li>
     </apparelRequired>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
-    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <weaponMoney>900~1200</weaponMoney>
     <weaponTags>
       <li>A_PDW</li>
     </weaponTags>
     <forceWeaponQuality>Masterwork</forceWeaponQuality>
     <techHediffsMoney>9999~9999</techHediffsMoney>
+    <skills>
+      <li>
+        <skill>Intellectual</skill>
+        <range>8~15</range>
+      </li>
+	    <li>
+        <skill>Crafting</skill>
+        <range>8~15</range>
+      </li>	    	     
+	  </skills>
     <techHediffsTags>
       <li>DMS_BM_Bionic</li>
       <li>Advanced</li>
@@ -81,7 +91,7 @@ and until recently, a strange yet familiar broadcast ended the long and anxious 
 			<parts>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
           <def>ConfigurePawnsKindDefs</def>
-          <pawnChoiceCount>8</pawnChoiceCount>
+          <pawnChoiceCount>2</pawnChoiceCount>
           <leftBehindPawnKind>DMS_Mechanitor</leftBehindPawnKind>
           <kindCounts>
             <li>
@@ -129,6 +139,12 @@ and until recently, a strange yet familiar broadcast ended the long and anxious 
 					<def>StartingThing_Defined</def>
 					<thingDef>ComponentSpacer</thingDef>
 					<count>4</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>DMS_Apparel_ArrayHelmet</thingDef>
+          <stuff>Plasteel</stuff>
+					<count>1</count>
 				</li>
         <li Class="ScenPart_StartingMech">
           <def>StartingMech</def>

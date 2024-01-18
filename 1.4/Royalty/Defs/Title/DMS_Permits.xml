@@ -90,7 +90,7 @@
   <RoyalTitlePermitDef ParentName="DropResourcesBase">
     <defName>DMS_GearDrop</defName>
     <label>combat equipment drop</label>
-    <description>Call for a combat supply for a combatant, include a set of tactical gears, and a emergency rifle.</description>
+    <description>Call for a combat supply for a combatant, include a set of tactical armor and emergency gears.</description>
     <faction>DMS_Army</faction>
     <minTitle>DMS_WarrantOfficer</minTitle>
     <uiPosition>(4,1)</uiPosition>

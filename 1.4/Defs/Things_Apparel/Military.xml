@@ -98,6 +98,9 @@
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
+			<tags>
+				<li>DMS_Officer</li>
+			</tags>
 			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 		</apparel>
 		<tradeTags>
@@ -385,6 +388,7 @@
 			</layers>
 			<tags>
 				<li>DMS_TacticalArray</li>
+				<li>DMS_Officer</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
