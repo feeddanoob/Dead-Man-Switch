@@ -302,6 +302,7 @@
     <stackLimit>25</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
+      <RoyalFavorValue>1</RoyalFavorValue>
       <MaxHitPoints>20</MaxHitPoints>
       <MarketValue>600</MarketValue>
       <Mass>3</Mass>
@@ -345,6 +346,7 @@
     <stackLimit>25</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
       <MaxHitPoints>5</MaxHitPoints>
       <MarketValue>500</MarketValue>
       <Mass>0.05</Mass>
@@ -387,6 +389,7 @@
     <stackLimit>25</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
+      <RoyalFavorValue>2</RoyalFavorValue>
       <MaxHitPoints>8</MaxHitPoints>
       <MarketValue>1200</MarketValue>
       <Mass>0.01</Mass>
@@ -430,6 +433,7 @@
     <stackLimit>25</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
+      <RoyalFavorValue>2</RoyalFavorValue>
       <MaxHitPoints>8</MaxHitPoints>
       <MarketValue>500</MarketValue>
       <Mass>0.01</Mass>
@@ -458,5 +462,56 @@
     <allowedArchonexusCount>10</allowedArchonexusCount>
   </ThingDef>  
 
+  <!-- Boss召喚器 -->
+  <ThingDef ParentName="ResourceBase"> 
+    <defName>DMS_EncryptedTransmitter</defName>
+    <label>encrypted transmitter</label>
+    <description>todo</description>
+    <graphicData>
+      <texPath>Things/Resource/EncryptedTransmitter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>ThingWithComps</thingClass>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+      <MarketValue>1300</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>Sellable</tradeability>
+    <comps>  
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Attract legion threat</useLabel>
+        <useDuration>900</useDuration>
+        <floatMenuFactionIcon>Mechanoid</floatMenuFactionIcon>
+      </li>
+      <li Class="CompProperties_Useable_CallBossgroup">
+        <bossgroupDef>DMS_Sergeant</bossgroupDef>
+        <effecterDef>BurnoutMechlinkBoosterUsed</effecterDef>
+        <prepareEffecterDef>MechBandAntennaPrepared</prepareEffecterDef>
+        <unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
+        <unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
+        <delayTicks>120</delayTicks>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechSerumUsed</soundOnUsed>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf"/>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
   
 </Defs>

@@ -6,7 +6,7 @@ using HarmonyLib;
 namespace DMS
 {
     [HarmonyPatch(typeof(PawnRenderer), "DrawEquipment")]
-	public class Patch_DrawVehicleTurret
+    internal static class Patch_DrawVehicleTurret
 	{
 		[HarmonyPriority(600)]
 		public static bool Prefix(PawnRenderer __instance, Vector3 rootLoc, Rot4 pawnRotation, PawnRenderFlags flags)

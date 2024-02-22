@@ -6,7 +6,7 @@ namespace DMS
 {
     [StaticConstructorOnStartup]
     [HarmonyPatch(typeof(Pawn), "DropAndForbidEverything")]
-    static class Patch_Pawn
+    internal static class Patch_Pawn
     {
         [HarmonyPrefix]
         static bool PreFix(Pawn __instance)

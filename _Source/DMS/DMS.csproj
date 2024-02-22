@@ -66,6 +66,7 @@
     <Compile Include="Component\CompMechApparel.cs" />
     <Compile Include="Component\CompMechBillWroker.cs" />
     <Compile Include="Component\CompMechOnlyWeapon.cs" />
+    <Compile Include="Component\CompUseEffect_CallBossgroupByItem.cs" />
     <Compile Include="Component\CompVehicleWeapon.cs" />
     <Compile Include="Hediff\Hediff_BandNode.cs" />
     <Compile Include="Hediff\HediffComp_RemoveHediffsOnDisappear.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Patch\Patch_Biocode.cs" />
     <Compile Include="Patch\Patch_Building_MechGestator.cs" />
     <Compile Include="Patch\Patch_CanControlMechs.cs" />
+    <Compile Include="Patch\Patch_GeneratePawnTitle.cs" />
     <Compile Include="Patch\Patch_IsMissingWeapon.cs" />
     <Compile Include="Patch\Patch_Pawn.cs" />
     <Compile Include="Ability\CompAbilityEffect_DropMech.cs" />
@@ -86,6 +88,7 @@
     <Compile Include="Patch\Patch_CommandRelay.cs" />
     <Compile Include="Patch\Patch_DrawVehicleTurret.cs" />
     <Compile Include="Patch\Patch_ForceTarget.cs" />
+    <Compile Include="Thing\DefaultTilteFactionExtension.cs" />
     <Compile Include="Thing\IWeaponUsable.cs" />
     <Compile Include="Thing\MechWeaponExtension.cs" />
     <Compile Include="Thing\TurretMannableExtension.cs" />

@@ -23,6 +23,7 @@ namespace DMS
         static void Postfix(Pawn mech, ref AcceptanceReport __result)
         {
             if (__result == true || !mech.IsColonyMech) return;
+
             if (mech.kindDef.race.HasComp(typeof(CompCommandRelay)))
             {
                 //Log.Message("IsCommandRelay");

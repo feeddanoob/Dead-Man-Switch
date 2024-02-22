@@ -42,7 +42,7 @@
         <offset>(0,0,-0.3)</offset>
       </specialShadowData>
       <intelligence>ToolUser</intelligence>
-      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <thinkTreeMain>DMS_Mechanoid</thinkTreeMain>
       <nameGenerator>DMS_VanguardMechStandard</nameGenerator>
       <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
       <soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>

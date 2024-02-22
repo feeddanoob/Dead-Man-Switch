@@ -71,6 +71,11 @@
       <PsychicSensitivity>-1</PsychicSensitivity>
       <PsychicSensitivity>-2</PsychicSensitivity>
     </disallowedTraitsWithDegree>
+    <modExtensions>
+      <li Class="DMS.DefaultTilteFactionExtension">
+        <faction>DMS_Army</faction>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <ScenarioDef>

@@ -422,6 +422,9 @@
         <thingDef>Gold</thingDef>
       </li>
       <li Class="StockGenerator_BuySingleDef">
+        <thingDef>Neurocomputer</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
         <thingDef>ComponentTransmitter</thingDef>
       </li>
       <li Class="StockGenerator_BuySingleDef">

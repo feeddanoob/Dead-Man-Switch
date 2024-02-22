@@ -135,6 +135,7 @@
     <label>trash bin</label>
     <race>DMS_Machine_TrashBin</race>
     <isFighter>false</isFighter>
+    <defaultFactionType>Mechanoid</defaultFactionType>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -225,6 +226,7 @@
     <isFighter>true</isFighter>
     <combatPower>20</combatPower>
     <maxPerGroup>30</maxPerGroup>
+    <defaultFactionType>Mechanoid</defaultFactionType>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -265,6 +267,7 @@
     <isFighter>true</isFighter>
     <combatPower>20</combatPower>
     <maxPerGroup>30</maxPerGroup>
+    <defaultFactionType>Mechanoid</defaultFactionType>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -327,6 +330,7 @@
     <isFighter>true</isFighter>
     <combatPower>30</combatPower>
     <maxPerGroup>15</maxPerGroup>
+    <defaultFactionType>Mechanoid</defaultFactionType>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -420,6 +424,7 @@
     <isFighter>true</isFighter>
     <combatPower>50</combatPower>
     <maxPerGroup>15</maxPerGroup>
+    <defaultFactionType>Mechanoid</defaultFactionType>
     <lifeStages>
       <li>
         <bodyGraphicData>
