@@ -30,9 +30,9 @@
   <!-- EN: About: Advanced parts -->
   <DMS_DeadMansSwitch.discoveredLetterTitle>关于特殊零件</DMS_DeadMansSwitch.discoveredLetterTitle>
   
-  <!-- EN: defence equipment -->
+  <!-- EN: Defense equipment -->
   <DMS_EquipmentAdvanced.label>开拓装备</DMS_EquipmentAdvanced.label>
-  <!-- EN: equipment designed for human and automatroid, mainly for colony defence and riot purpose. -->
+  <!-- EN: equipment designed for human and automatroid, mainly for colony Defense and riot purpose. -->
   <DMS_EquipmentAdvanced.description>用于殖民地防御和防暴的装备。</DMS_EquipmentAdvanced.description>
   
   <!-- EN: pioneer equipment -->

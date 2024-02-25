@@ -172,8 +172,8 @@
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
     <defName>DMS_EquipmentAdvanced</defName>
-    <label>defence equipment</label>
-    <description>equipment designed for human and automatroid, mainly for colony defence and riot purpose.</description>
+    <label>Defense equipment</label>
+    <description>equipment designed for human and automatroid, mainly for colony Defense and riot purpose.</description>
     <baseCost>750</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>

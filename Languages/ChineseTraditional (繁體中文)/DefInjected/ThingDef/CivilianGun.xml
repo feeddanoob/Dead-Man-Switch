@@ -57,7 +57,7 @@
   
   <!-- EN: Riot Revolver -->
   <DMS_Revolver.label>鎮暴左輪</DMS_Revolver.label>
-  <!-- EN: a double-action revolver designed to load shotgun ammo. it was designed for personal defence purpose but soon became an optional weapon for mech solders because it can be used against most of enemy types at the same time. -->
+  <!-- EN: a double-action revolver designed to load shotgun ammo. it was designed for personal Defense purpose but soon became an optional weapon for mech solders because it can be used against most of enemy types at the same time. -->
   <DMS_Revolver.description>這是一把雙動左輪手槍，可裝填霰彈。它是為個人防衛目的而設計的，但很快就成為機兵的可選武器，因為它可以同時對付大多數類型的敵人。</DMS_Revolver.description>
   <!-- EN: grip -->
   <DMS_Revolver.tools.grip.label>握把</DMS_Revolver.tools.grip.label>
