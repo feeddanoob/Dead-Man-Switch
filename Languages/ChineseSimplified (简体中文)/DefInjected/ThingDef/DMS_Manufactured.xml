@@ -47,6 +47,13 @@
   <!-- EN: a military standard composite ceramic plate widely used as Defensive Additions for war machines.\n\n As a military standard material, it's durability is somewhat poor, but it is superior in its protection and light weight. -->
   <DMS_Ceramics.description>一种军用标准复合陶瓷板，广泛用作战争机器的防御附件。\n\n 作为军用标准材料，其耐用性稍差，但在防护性和重量轻方面具有优势。</DMS_Ceramics.description>
   
+  <!-- EN: encrypted transmitter -->
+  <DMS_EncryptedTransmitter.label>加密通讯器</DMS_EncryptedTransmitter.label>
+  
+  <DMS_EncryptedTransmitter.description>殖民地用于紧急呼叫支援的大功率通讯器。当然的这套救援协议的识别码早已废弃，因此只有那些脱离指挥的机兵部队会因此上钩。</DMS_EncryptedTransmitter.description>
+  <!-- EN: Attract legion threat -->
+  <DMS_EncryptedTransmitter.comps.CompUsable.useLabel>吸引军士袭击</DMS_EncryptedTransmitter.comps.CompUsable.useLabel>
+  
   <!-- EN: wetware computer -->
   <Neurocomputer.label>湿件计算机</Neurocomputer.label>
   <!-- EN: an organic computer also be known as an artificial organic brain or a neurocomputer, it's the perfect computer unit source for factions without access to rare metals and precision machining. -->
@@ -56,9 +63,9 @@
   <!-- EN: {PARENT_label} studied: {RESEARCH} unlocked -->
   <Neurocomputer.comps.CompStudiable.completedLetterTitle>已研究 {PARENT_label} ： {RESEARCH} 已解锁</Neurocomputer.comps.CompStudiable.completedLetterTitle>
   
-  <!-- EN: plastic fiber -->
+  <!-- EN: plasticfiber -->
   <Plasfiber.label>塑钢纤维</Plasfiber.label>
-  <!-- EN: A type of synthetic fiber made by plasteel, which is airtight and certain degree of sharp-proof performance. However, it does not have much resistance to blunt impact.\n\n Plastic fiber has a importance in the medical field. As a biomimetic surface material, it does not produce rejection reactions from the immune system. -->
+  <!-- EN: A type of synthetic fiber made of plasteel, which is air-tight and certain degree of sharp-proof performance. However, it does not have much resistance to blunt impact.\n\n Plasticfiber has a importance in the medical field. As a biomimetic surface material, it does not produce rejection reactions from the immune system. -->
   <Plasfiber.description>一种由塑钢制成的合成纤维，具有气密性和一定的防穿刺性能。然而，它对钝性冲击的抵抗力并不强。\n\n 塑钢纤维在医疗领域具有重要意义。作为仿生表面材料，它不会产生免疫系统的排斥反应。</Plasfiber.description>
   
   <!-- EN: polyester -->

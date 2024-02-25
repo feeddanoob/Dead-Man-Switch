@@ -281,7 +281,25 @@
         <thingDef>Tungsteel</thingDef>
         <countRange>150~200</countRange>
       </li>      
-      
+
+      <li Class="StockGenerator_Tag" MayRequire="vanillaracesexpanded.android">
+        <tradeTag>VREA_BodyPartsAndroid</tradeTag>
+        <thingDefCountRange>6~10</thingDefCountRange>
+        <countRange>6~10</countRange>
+        <price>Expensive</price>
+      </li>
+
+      <li Class="StockGenerator_SingleDef" MayRequire="vanillaracesexpanded.android">
+        <thingDef>VREA_Reactor</thingDef>
+        <countRange>2~6</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>DMS_EncryptedTransmitter</thingDef>
+        <countRange>1~5</countRange>
+        <price>Expensive</price>
+      </li>
+
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentStamped</thingDef>
         <countRange>5~14</countRange>

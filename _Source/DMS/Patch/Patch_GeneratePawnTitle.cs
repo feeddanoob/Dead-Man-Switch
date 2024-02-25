@@ -10,7 +10,7 @@ namespace DMS
     [HarmonyPatch(typeof(PawnGenerator))]
     [HarmonyPatch(nameof(PawnGenerator.GeneratePawn))]
 
-    internal static class Patch_GeneratePawnTitle
+    internal static class Patch_GeneratePawnTitle //確保生成的NPC具有正確的官銜陣營
     {
         public static void Postfix(ref Pawn __result)
         {

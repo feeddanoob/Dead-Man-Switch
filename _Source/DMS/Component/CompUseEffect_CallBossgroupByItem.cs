@@ -92,13 +92,6 @@ namespace DMS
                 failReason = "AlreadyUsed".Translate();
                 return false;
             }
-
-            if (!MechanitorUtility.IsMechanitor(p))
-            {
-                failReason = "RequiresMechanitor".Translate();
-                return false;
-            }
-
             AcceptanceReport acceptanceReport = Props.bossgroupDef.Worker.CanResolve(p);
             if (!acceptanceReport)
             {

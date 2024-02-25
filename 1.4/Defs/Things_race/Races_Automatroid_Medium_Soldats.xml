@@ -91,6 +91,43 @@
     </weaponTags>
   </PawnKindDef>
 
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_Soldat_B</defName>
+    <label>vanguard</label>
+    <race>DMS_Mech_Soldat</race>
+    <isFighter>true</isFighter>
+    <combatPower>40</combatPower>
+    <maxPerGroup>20</maxPerGroup>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>18~20</range>
+      </li>
+    </skills>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/vanguard</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/OldTexture/vanguard</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags><!--武器-->
+      <li>A_SAR_LongRifle</li>
+      <li>A_PDW</li>
+    </weaponTags>
+  </PawnKindDef>
+
 
   <PawnKindDef ParentName="BaseAutomatroidKind"><!--海盜特供型-->
     <defName>DMS_Mech_Raider</defName>

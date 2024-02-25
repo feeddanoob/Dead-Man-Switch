@@ -9,9 +9,11 @@
   <DMS_AssaultPiercer.tools.stock.label>槍托</DMS_AssaultPiercer.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_AssaultPiercer.tools.barrel.label>槍管</DMS_AssaultPiercer.tools.barrel.label>
-  <!-- EN: muzzle -->
-  <DMS_AssaultPiercer.tools.muzzle.label>握把</DMS_AssaultPiercer.tools.muzzle.label>
   <!-- EN: assault piercer -->
+  <DMS_AssaultPiercer.verbs.Verb_Shoot.label>突擊衝鋒槍</DMS_AssaultPiercer.verbs.Verb_Shoot.label>
+  
+  <!-- UNUSED -->
+  <DMS_AssaultPiercer.tools.muzzle.label>握把</DMS_AssaultPiercer.tools.muzzle.label>
   <DMS_AssaultPiercer.verbs.Verb_ShootCE.label>突擊衝鋒槍</DMS_AssaultPiercer.verbs.Verb_ShootCE.label>
   
   <!-- EN: tactical autopistol bullet -->
@@ -22,6 +24,9 @@
   <!-- EN: A mass-produced submachine gun, which was designed only capable of hip-fire so it's inaccurate in range but its caliber and ability to draw quick make it the perfect weapon for urban combat against milltor. -->
   <DMS_PDW.description>量產衝鋒槍，被設計為只能腰射因此並不準確，但其使用的大威力手槍彈口徑和快速射擊能力使其成為城市戰鬥中對抗機械體獵殺的完美武器。</DMS_PDW.description>
   <!-- EN: PDW -->
+  <DMS_PDW.verbs.Verb_Shoot.label>個人防衛武器</DMS_PDW.verbs.Verb_Shoot.label>
+  
+  <!-- UNUSED -->
   <DMS_PDW.verbs.Verb_ShootCE.label>個人防衛武器</DMS_PDW.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech pistol -->
@@ -30,9 +35,13 @@
   <DMS_TaticalPistol.description>具有精良的製造工藝和額外的戰術附件，對人類來說過於沉重，但適合機兵使用。\n\n這種武器是專門為機兵設計的，因此如果沒有外部輔助設備或超強的力量，普通人可能無法正常使用。</DMS_TaticalPistol.description>
   <!-- EN: grip -->
   <DMS_TaticalPistol.tools.grip.label>握把</DMS_TaticalPistol.tools.grip.label>
-  <!-- EN: muzzle -->
-  <DMS_TaticalPistol.tools.muzzle.label>槍口</DMS_TaticalPistol.tools.muzzle.label>
+  <!-- EN: barrel -->
+  <DMS_TaticalPistol.tools.barrel.label>槍管</DMS_TaticalPistol.tools.barrel.label>
   <!-- EN: mech pistol -->
+  <DMS_TaticalPistol.verbs.Verb_Shoot.label>機兵手槍</DMS_TaticalPistol.verbs.Verb_Shoot.label>
+  
+  <!-- UNUSED -->
+  <DMS_TaticalPistol.tools.muzzle.label>槍口</DMS_TaticalPistol.tools.muzzle.label>
   <DMS_TaticalPistol.verbs.Verb_ShootCE.label>機兵手槍</DMS_TaticalPistol.verbs.Verb_ShootCE.label>
   
 </LanguageData>

@@ -25,7 +25,7 @@
   <DMS_CombatDrop.label>空投戰鬥補給</DMS_CombatDrop.label>
   <!-- EN: Call for a drop of standard combat supply. -->
   <DMS_CombatDrop.description>呼叫空投標準戰鬥補給。</DMS_CombatDrop.description>
-
+  
   <!-- EN: supply combat mech -->
   <DMS_CombatMech.label>擴編戰鬥機兵</DMS_CombatMech.label>
   <!-- EN: Apply a battle friend mech belong to your side. -->
@@ -40,10 +40,10 @@
   <DMS_FoodDrop.label>空投糧食</DMS_FoodDrop.label>
   <!-- EN: Call for a drop of 20 packaged survival meals. -->
   <DMS_FoodDrop.description>呼叫空投 20 份生存食品包。</DMS_FoodDrop.description>
-
+  
   <!-- EN: combat equipment drop -->
   <DMS_GearDrop.label>空投戰鬥裝備</DMS_GearDrop.label>
-  <!-- EN: Call for a combat supply for a combatant, include a set of tactical gears, and a emergency rifle. -->
+  <!-- EN: Call for a combat supply for a combatant, include a set of tactical armor and emergency gears. -->
   <DMS_GearDrop.description>呼叫為戰鬥人員提供的物資空投，包括一套戰術護甲和部分應急裝備。</DMS_GearDrop.description>
   
   <!-- EN: call combatant recruit -->

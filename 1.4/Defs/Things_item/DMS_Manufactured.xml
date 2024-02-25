@@ -53,8 +53,8 @@
   <!-- 塑化纖維 玩家能生產的進階纖維，性質接近魔鬼布。製造需要塑鋼。-->  
   <ThingDef ParentName="ResourceBase">
     <defName>Plasfiber</defName>
-    <label>plastic fiber</label>
-    <description>A type of synthetic fiber made by plasteel, which is airtight and certain degree of sharp-proof performance. However, it does not have much resistance to blunt impact.\n\n Plastic fiber has a importance in the medical field. As a biomimetic surface material, it does not produce rejection reactions from the immune system.</description>
+    <label>plasticfiber</label>
+    <description>A type of synthetic fiber made of plasteel, which is air-tight and certain degree of sharp-proof performance. However, it does not have much resistance to blunt impact.\n\n Plasticfiber has a importance in the medical field. As a biomimetic surface material, it does not produce rejection reactions from the immune system.</description>
     <descriptionHyperlinks><ThingDef>DMS_ReactionChamber</ThingDef></descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Resource/Plasfiber</texPath>
@@ -466,7 +466,8 @@
   <ThingDef ParentName="ResourceBase"> 
     <defName>DMS_EncryptedTransmitter</defName>
     <label>encrypted transmitter</label>
-    <description>todo</description>
+    <description>A high-power communicator used in the colony for emergency call support. Of course, the identification code of this rescue protocol has long been abandoned, so only those mechanized units that are out of command will take the bait.</description>
+    <tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Resource/EncryptedTransmitter</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -474,7 +475,7 @@
     <thingClass>ThingWithComps</thingClass>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <useHitPoints>true</useHitPoints>
-    <stackLimit>10</stackLimit>
+    <stackLimit>1</stackLimit>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <Mass>0.2</Mass>
@@ -488,7 +489,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
-    <tradeability>Sellable</tradeability>
+    <tradeability>Buyable</tradeability>
     <comps>  
       <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>
@@ -505,9 +506,13 @@
         <delayTicks>120</delayTicks>
       </li>
       <li Class="CompProperties_UseEffectPlaySound">
-        <soundOnUsed>MechSerumUsed</soundOnUsed>
+        <soundOnUsed>MechanoidsWakeUp</soundOnUsed>
       </li>
-      <li Class="CompProperties_UseEffectDestroySelf"/>
+      <li Class="CompProperties_UseEffectDestroySelf">
+        <delayTicks>120</delayTicks>
+        <spawnLeavings>false</spawnLeavings>
+        <effecterDef>MechbandBuildingDestroyed</effecterDef>
+      </li>
     </comps>
     <thingSetMakerTags>
       <li>RewardStandardCore</li>

@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>DMS_GestaltEngine</defName>
 		<label>central command core</label>
-		<description>todo</description>
+		<description>Ultra-large computing core for large-scale command of mechs, It is a technology introduced by the colonial fleet while passing through a Glittering World.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/CentralCommandCore</texPath>

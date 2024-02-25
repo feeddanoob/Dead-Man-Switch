@@ -45,7 +45,7 @@
                 </li>
               </subNodes>
             </li>
-            <li Class="JobGiver_ExitMap">
+            <li Class="JobGiver_ExitMapBest">
               <defaultLocomotion>Jog</defaultLocomotion>
             </li>
             <li Class="JobGiver_AIFightEnemies">

@@ -4,6 +4,9 @@
   <!-- EN: heavy rifle bullet -->
   <Bullet_DMS_AMR.label>重型步枪弹</Bullet_DMS_AMR.label>
   
+  <!-- EN: riot machinegun bullet -->
+  <DMS_Bullet_MiniMachineGun.label>小口径手枪弹</DMS_Bullet_MiniMachineGun.label>
+  
   <!-- EN: 20 gauge beanbag -->
   <DMS_Bullet_RiotRevolver.label>轻型镇暴霰弹</DMS_Bullet_RiotRevolver.label>
   

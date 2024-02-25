@@ -16,15 +16,14 @@
   <DMS_Mech_Protector.label>塔盾手</DMS_Mech_Protector.label>
   <!-- EN: Designed for peacekeeping operations and riot control need, Protector has overall strong armor around the frame, equip with a huge flash shield and close quater weapons like batons or shotguns. -->
   <DMS_Mech_Protector.description>塔盾手專為維和行動和防暴需求而設計，框架周圍有整體堅固的盔甲，配有巨大的閃光盾牌和警棍或霰彈槍等近身武器。</DMS_Mech_Protector.description>
-  <!-- EN: head -->
-  <DMS_Mech_Protector.tools.head.label>頭部</DMS_Mech_Protector.tools.head.label>
-  <!-- EN: left fist -->
-  <DMS_Mech_Protector.tools.left_fist.label>左拳</DMS_Mech_Protector.tools.left_fist.label>
-  <!-- EN: right fist -->
-  <DMS_Mech_Protector.tools.right_fist-0.label>右拳</DMS_Mech_Protector.tools.right_fist-0.label>
   <!-- EN: ballistic shield -->
   <DMS_Mech_Protector.tools.ballistic_shield.label>防彈盾</DMS_Mech_Protector.tools.ballistic_shield.label>
   <!-- EN: right fist -->
+  <DMS_Mech_Protector.tools.right_fist.label>右拳</DMS_Mech_Protector.tools.right_fist.label>
+  
+  <!-- UNUSED -->
+  <DMS_Mech_Protector.tools.head.label>頭部</DMS_Mech_Protector.tools.head.label>
+  <DMS_Mech_Protector.tools.left_fist.label>左拳</DMS_Mech_Protector.tools.left_fist.label>
   <DMS_Mech_Protector.tools.right_fist-1.label>右拳</DMS_Mech_Protector.tools.right_fist-1.label>
   
   <!-- EN: ronin -->

@@ -55,14 +55,22 @@
 
 	<VREAndroids.AndroidGeneDef MayRequire="vanillaracesexpanded.android" ParentName="VREA_HardwareBase">
 		<defName>DMS_SyntheticSkin</defName>
-		<label>plasfiber skin</label>
-		<description>A plasfiber synthetic skin that military android common to have, it has a nice protection to it's inner parts without affecting mobility, but looks terror for people.</description>
+		<label>plasticfiber skin</label>
+		<description>A plasticfiber synthetic skin that military android common to have, it has a nice protection to it's inner parts without affecting mobility, but looks terror for people.</description>
 		<iconPath>UI/Gene/Gene_PlasfiberSkin</iconPath>
 		<displayOrderInCategory>22</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
-		<labelShortAdj>syntheticskinned</labelShortAdj>
+		<labelShortAdj>military</labelShortAdj>
 		<isCoreComponent>false</isCoreComponent>
 		<skinColorOverride>(255, 255, 255)</skinColorOverride>
+		<statOffsets>
+			<SocialImpact>0.25</SocialImpact>
+			<BondAnimalChanceFactor>0</BondAnimalChanceFactor>
+			<ArrestSuccessChance>1</ArrestSuccessChance>
+		</statOffsets>
+		<statFactors>
+			<IncomingDamageFactor>0.8</IncomingDamageFactor>
+		  </statFactors>
 		<exclusionTags>
 			<li>SkinColorOverride</li>
 			<li>EyeColor</li>
@@ -95,4 +103,35 @@
 			</li>
 		</modExtensions>
 	</VREAndroids.AndroidGeneDef>
+
+	<XenotypeDef>
+		<defName>DMS_AndroidSynth</defName>
+		<label>synth</label>
+		<description>Synths are biological hybrid omnics produced by integrating Android and robot technologies.</description>
+		<descriptionShort>Synths are biological hybrid omnics produced by integrating Android and robot technologies.</descriptionShort>
+		<iconPath>UI/XenotypeIcons/Androidtype_AmIRobot</iconPath>
+		<genes>
+			<li>VREA_MentalBreaksDisabled</li>
+			<li>VREA_JoyDisabled</li>
+			<li>VREA_BeautyDisabled</li>
+			<li>VREA_ComfortDisabled</li>
+			<li>VREA_OutdoorsDisabled</li>
+			<li>VREA_DrugDesireDisabled</li>
+			<li>VREA_RoomSizeDisabled</li>
+			<li>VREA_PainDisabled</li>
+
+			<li>DMS_SyntheticSkin</li>
+
+			<li>VREA_Power</li>
+			<li>VREA_SyntheticBody</li>
+			<li>VREA_NeutroCirculation</li>
+			<li>VREA_SyntheticImmunity</li>
+			<li>VREA_ComponentFreezing</li>
+			<li>VREA_ComponentOverheating</li>
+			<li>VREA_ColdTolerant</li>
+			<li>VREA_HeatTolerant</li>
+			<li>VREA_PsychicallyDeaf</li>
+		</genes>
+	</XenotypeDef>
+
 </Defs>

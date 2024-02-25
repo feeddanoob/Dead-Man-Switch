@@ -23,17 +23,8 @@
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>ceteam.combatextended</li>
     	<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-		<li>VanillaExpanded.VFEA</li>
+		<li>vanillaracesexpanded.android</li>
   	</loadAfter>
-	<!-- 
-		自那些機械軍團,遠古戰爭機器,海盜與生物兵器對於殖民地的威脅日漸增長,早在數千年前,奈良重工開展了自動兵器的研製計畫,使用來自各個祕密項目的實戰數據打造一支輔助人類與那些遠古威脅戰鬥的機械軍團.
-	計畫很成功,基於生物識別碼的去中心化指揮鏈系統確保了整個軍團系統的控制權與受其控制的機械軍團不會被少數人的惡意所扭曲,數百萬計各類型號的自動兵器與其軍團系統隨著星艦被送往了整個銀河系,數以萬計的使用者與戰鬥紀錄使得奈良重工也隨著時間過去不斷的優化其設計,
-	然而隨著技術的傳播與時代的變遷,許多軍團系統隨著邊緣世界的混亂與時間的流逝失去了所有人類控制者.
-	那些失去人類控制者的軍團系統將繼續嚴格的堅守自己最後被下達的指令.
-	
-	在這片邊緣世界,你幾乎能在每個有人煙的星球上找到那些來源各地的自動兵器,它們依然在執行自己指揮官健在時下達的最後指令,去尋找那些可能已經在數千年前就消逝的敵人,或者守衛已經不存在的國境線.
-	它們沒有失控,只不過是失去了控制者,假如你並不被軍團系統識別為敵人那麼它們也並不會視你為敵人,但如果你認為它們就會任人宰割那你就大錯特錯了.
-	-->
 	<description>
     Millennia earlier, as the threat of archotech war machines ,pirates and awry bio-organic weapons arise. Nara an Interstellar Industries Complex initiated the project of semi-automated war-machines, which aimed at creating a legion of war-machines with low technology and maintenance requirements to aid humans in all galaxy to the war against all those threats.
 	</description>
