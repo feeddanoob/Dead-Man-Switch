@@ -6,8 +6,11 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<li Class="PatchOperationRemove">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/StyleCategoryDef[defName="DMS_Industrial"]/thingDefStyles/li[styleDef="Gun_DMSSmokeLauncher"or styleDef="Gun_DMSEMPLauncher"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/StyleCategoryDef[defName="DMS_Industrial"]/thingDefStyles/li[styleDef="Gun_DMSSmokeLauncher"or styleDef="Gun_DMSEMPLauncher"]</xpath>
+					</match>
 				</li>
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingStyleDef[defName="Gun_DMSEMPLauncher"]</xpath>
