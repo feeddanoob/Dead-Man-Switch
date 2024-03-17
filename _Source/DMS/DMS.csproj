@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ability\CompAbilityEffect_DirectionalExplosion.cs" />
+    <Compile Include="Component\CompAntiBlasterSmoke.cs" />
     <Compile Include="Component\CompCommandRelay.cs" />
     <Compile Include="Component\CompDeadManSwitch.cs" />
     <Compile Include="Component\CompMechApparel.cs" />
