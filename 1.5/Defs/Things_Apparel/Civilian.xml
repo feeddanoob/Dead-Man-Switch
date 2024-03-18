@@ -247,8 +247,16 @@
 				<li>Arms</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/HazardSuit/Apparel</wornGraphicPath>
-			<shellCoversHead>true</shellCoversHead>
 			<blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+			<parentTagDef>ApparelBody</parentTagDef>
+			<renderSkipFlags>
+			  <li>Head</li>
+			</renderSkipFlags>
+			<drawData>
+			  <defaultData>
+				<layer>83</layer>
+			  </defaultData>
+			</drawData>
 			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 			<layers>
 				<li>Shell</li>

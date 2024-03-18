@@ -304,7 +304,7 @@ namespace DMS
             Text.WordWrap = true;
             if (Mouse.IsOver(rect))
             {
-                string text2 = thing.LabelNoParenthesisCap.AsTipTitle() + GenLabel.LabelExtras(thing, 1, includeHp: true, includeQuality: true) + "\n\n" + thing.DescriptionDetailed;
+                string text2 = thing.LabelNoParenthesisCap.AsTipTitle() + GenLabel.LabelExtras(thing, includeHp: true, includeQuality: true) + "\n\n" + thing.DescriptionDetailed;
                 if (thing.def.useHitPoints)
                 {
                     text2 = text2 + "\n" + thing.HitPoints + " / " + thing.MaxHitPoints;

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>The Dead Man's Switch</name>
+	<name>The Dead Man's Switch</name>	
+	<modIconPath IgnoreIfNoMatchingField="True">UI/NaraLogo</modIconPath>
   	<author>AobaKuma ,Bill Doors, KV4EX</author>
     <supportedVersions>
 		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<packageId>Aoba.DeadManSwitch.Core</packageId>
     <modDependencies>

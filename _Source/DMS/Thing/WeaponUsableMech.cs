@@ -35,7 +35,7 @@ namespace DMS
             base.ExposeData();
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
-                Drawer?.renderer?.graphics.SetAllGraphicsDirty();
+                Drawer?.renderer?.SetAllGraphicsDirty();
             }
         }
         public void Equip(ThingWithComps equipment)

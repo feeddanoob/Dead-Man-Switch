@@ -19,11 +19,11 @@ namespace DMS
         private IEnumerable<FloatMenuOption> GetFloatMenu()
         {
             if (outfitSource == null) yield break;
-            List<Outfit> outfis = Current.Game.outfitDatabase.AllOutfits;
+            List<ApparelPolicy> outfis = Current.Game.outfitDatabase.AllOutfits;
             foreach (var outfit in outfis) {
                 yield return new FloatMenuOption(outfit.label, () =>
                 {
-                    outfitSource.CurrentOutfit = outfit;
+                    outfitSource.CurrentApparelPolicy = outfit;
                     outfitSource.pawn.TryOptimizeApparel();
                 });
             }

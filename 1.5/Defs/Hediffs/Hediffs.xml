@@ -204,7 +204,9 @@
     <isBad>true</isBad>
     <comps>
       <li Class="HediffCompProperties_RemoveIfOtherHediff">
-        <otherHediff>NeuroglueHigh</otherHediff>
+        <hediffs>
+          <li>NeuroglueHigh</li>
+        </hediffs>
         <message>bionic syndrome has been cured</message>
         <messageType>PositiveEvent</messageType>
       </li>
@@ -242,7 +244,9 @@
     <isBad>true</isBad>
     <comps>
       <li Class="HediffCompProperties_RemoveIfOtherHediff">
-        <otherHediff>NeuroglueHigh</otherHediff>
+        <hediffs>
+          <li>NeuroglueHigh</li>
+        </hediffs>
         <message>bionic syndrome has been cured</message>
         <messageType>PositiveEvent</messageType>
       </li>
@@ -283,7 +287,9 @@
     <isBad>true</isBad>
     <comps>
       <li Class="HediffCompProperties_RemoveIfOtherHediff">
-        <otherHediff>NeuroglueHigh</otherHediff>
+        <hediffs>
+          <li>NeuroglueHigh</li>
+        </hediffs>
         <message>bionic syndrome has been cured</message>
         <messageType>PositiveEvent</messageType>
       </li>

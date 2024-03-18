@@ -81,7 +81,7 @@ namespace DMS
 			Pawn_CarryTracker pawn_CarryTracker;
 			if (pawn.RaceProps.Humanlike && pawn.DevelopmentalStage.Baby() && (pawn_CarryTracker = (pawn.ParentHolder as Pawn_CarryTracker)) != null)
 			{
-				return ((pawn_CarryTracker.pawn.Rotation == Rot4.West) ? 290f : 70f) + pawn_CarryTracker.pawn.Drawer.renderer.BodyAngle();
+				return ((pawn_CarryTracker.pawn.Rotation == Rot4.West) ? 290f : 70f) + pawn_CarryTracker.pawn.Drawer.renderer.BodyAngle(PawnRenderFlags.None);
 			}
 			if (pawn.Downed || pawn.Dead)
 			{

@@ -71,7 +71,7 @@ namespace DMS
 
             yield return new Command_SelectApparelOutfit
             {
-                defaultLabel = OutfitSource.CurrentOutfit.label,
+                defaultLabel = OutfitSource.CurrentApparelPolicy.label,
                 outfitSource = OutfitSource
             };
         }

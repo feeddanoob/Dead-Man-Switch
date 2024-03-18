@@ -65,7 +65,7 @@
       </li>
       <li Class="CompProperties_UseEffectDestroySelf">
         <delayTicks>120</delayTicks>
-        <spawnLeavings>true</spawnLeavings>
+        <spawnKilledLeavings>true</spawnKilledLeavings>
         <effecterDef>MechbandBuildingDestroyed</effecterDef>
       </li>
     </comps>
@@ -110,7 +110,7 @@
       </li>
       <li Class="CompProperties_UseEffectDestroySelf">
         <delayTicks>120</delayTicks>
-        <spawnLeavings>true</spawnLeavings>
+        <spawnKilledLeavings>true</spawnKilledLeavings>
         <effecterDef>MechbandBuildingDestroyed</effecterDef>
       </li>
     </comps>

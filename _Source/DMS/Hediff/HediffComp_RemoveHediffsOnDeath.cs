@@ -5,9 +5,9 @@ namespace DMS
     //在死亡後添加或移除Hediff
     public class HediffComp_RemoveHediffsOnDeath : HediffComp
     {
-        public override void Notify_PawnDied()
+        public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)
         {
-            base.Notify_PawnDied();
+            base.Notify_PawnDied(dinfo, culprit);
             OnDeathHediffOperation();
         }
         private void OnDeathHediffOperation()

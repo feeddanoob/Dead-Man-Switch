@@ -85,22 +85,14 @@ namespace DMS
             prepareEffecter?.EffectTick(parent, TargetInfo.Invalid);
         }
 
-        public override bool CanBeUsedBy(Pawn p, out string failReason)
+        public override AcceptanceReport CanBeUsedBy(Pawn p)
         {
             if (delayTicks >= 0)
             {
-                failReason = "AlreadyUsed".Translate();
-                return false;
+                return new AcceptanceReport("AlreadyUsed".Translate());
             }
             AcceptanceReport acceptanceReport = Props.bossgroupDef.Worker.CanResolve(p);
-            if (!acceptanceReport)
-            {
-                failReason = acceptanceReport.Reason;
-                return false;
-            }
-
-            failReason = null;
-            return true;
+            return acceptanceReport;
         }
 
         public override void PostSpawnSetup(bool respawningAfterLoad)

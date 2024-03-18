@@ -71,7 +71,7 @@ namespace DMS
                 debugSb.AppendLine(string.Concat("Scanning for ", pawn, " at ", pawn.Position));
             }
 
-            Outfit currentOutfit = pawn.outfits.CurrentOutfit;
+            ApparelPolicy currentOutfit = pawn.outfits.CurrentApparelPolicy;
             List<Apparel> wornApparel = pawn.apparel.WornApparel;
             for (int i = wornApparel.Count - 1; i >= 0; i--)
             {

@@ -67,6 +67,7 @@
     <Compile Include="Component\CompMechApparel.cs" />
     <Compile Include="Component\CompMechBillWroker.cs" />
     <Compile Include="Component\CompMechOnlyWeapon.cs" />
+    <Compile Include="Component\CompMultipleTurretGun.cs" />
     <Compile Include="Component\CompUseEffect_CallBossgroupByItem.cs" />
     <Compile Include="Component\CompVehicleWeapon.cs" />
     <Compile Include="Hediff\Hediff_BandNode.cs" />

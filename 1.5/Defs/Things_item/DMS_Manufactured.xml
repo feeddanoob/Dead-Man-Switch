@@ -140,7 +140,7 @@
       <commonality>0</commonality>
       <constructEffect>ConstructMetal</constructEffect>
       <color>(80,80,80)</color>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
       <statFactors>
@@ -190,6 +190,9 @@
       <appearance>Metal</appearance>
       <commonality>0.05</commonality>
       <color>(63,63,63)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
       <statFactors>
         <Flammability>0</Flammability>
         <MaxHitPoints>0.20</MaxHitPoints>
@@ -242,11 +245,34 @@
       <li Class="CompProperties_Rottable">
         <daysToRotStart>10</daysToRotStart>
       </li>
-      <li Class="CompProperties_Studiable">
-        <cost>100</cost>
-        <completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
-        <completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetterText>
+      <li Class="CompProperties_CompAnalyzableUnlockResearch">
+        <analysisID>123417699</analysisID>
+        <requiresMechanitor>false</requiresMechanitor>
+
+        <!-- Analyzable -->
+
+        <analysisDurationHours>0.5</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <completedLetterLabel>Artificial muscle studied: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
         <completedLetterDef>PositiveEvent</completedLetterDef>
+
+        <!-- Interactable -->
+
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the artificial muscle</activateDescString>
+        <jobString>Analyze the artificial muscle</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
       </li>
     </comps>
     <isTechHediff>true</isTechHediff>
@@ -315,11 +341,34 @@
     </thingSetMakerTags>
     <isTechHediff>true</isTechHediff>
     <comps>
-      <li Class="CompProperties_Studiable">
-        <cost>5</cost>
-        <completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
-        <completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetterText>
+      <li Class="CompProperties_CompAnalyzableUnlockResearch">
+        <analysisID>123417700</analysisID>
+        <requiresMechanitor>false</requiresMechanitor>
+
+        <!-- Analyzable -->
+
+        <analysisDurationHours>0.5</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <completedLetterLabel>Wetware computer studied: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
         <completedLetterDef>PositiveEvent</completedLetterDef>
+
+        <!-- Interactable -->
+
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the wetware computer</activateDescString>
+        <jobString>Analyze the wetware computer</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
       </li>
     </comps>
     <tradeTags>
@@ -356,11 +405,34 @@
     <intricate>true</intricate>
     <isTechHediff>true</isTechHediff>
     <comps>
-      <li Class="CompProperties_Studiable">
-        <cost>5</cost>
-        <completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
-        <completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetterText>
+      <li Class="CompProperties_CompAnalyzableUnlockResearch">
+        <analysisID>123417701</analysisID>
+        <requiresMechanitor>false</requiresMechanitor>
+
+        <!-- Analyzable -->
+
+        <analysisDurationHours>0.5</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <completedLetterLabel>T/R Component studied: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
         <completedLetterDef>PositiveEvent</completedLetterDef>
+
+        <!-- Interactable -->
+
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the T/R Component</activateDescString>
+        <jobString>Analyze the T/R Component</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
       </li>
     </comps>
     <thingSetMakerTags>
@@ -399,11 +471,34 @@
     <intricate>true</intricate>
     <isTechHediff>true</isTechHediff>
     <comps>
-      <li Class="CompProperties_Studiable">
-        <cost>5</cost>
-        <completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
-        <completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetterText>
+      <li Class="CompProperties_CompAnalyzableUnlockResearch">
+        <analysisID>123417702</analysisID>
+        <requiresMechanitor>false</requiresMechanitor>
+
+        <!-- Analyzable -->
+
+        <analysisDurationHours>0.5</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <completedLetterLabel>Cluster control chipsets studied: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
         <completedLetterDef>PositiveEvent</completedLetterDef>
+
+        <!-- Interactable -->
+
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the cluster control chipsets</activateDescString>
+        <jobString>Analyze the cluster control chipsets</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
       </li>
     </comps>
     <thingSetMakerTags>
@@ -443,11 +538,34 @@
     <intricate>true</intricate>
     <isTechHediff>true</isTechHediff>
     <comps>
-      <li Class="CompProperties_Studiable">
-        <cost>5</cost>
-        <completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
-        <completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetterText>
+      <li Class="CompProperties_CompAnalyzableUnlockResearch">
+        <analysisID>123417703</analysisID>
+        <requiresMechanitor>false</requiresMechanitor>
+
+        <!-- Analyzable -->
+
+        <analysisDurationHours>0.5</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <completedLetterLabel>Fire control system studied: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
         <completedLetterDef>PositiveEvent</completedLetterDef>
+
+        <!-- Interactable -->
+
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the fire control system</activateDescString>
+        <jobString>Analyze the fire control system</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
       </li>
     </comps>
     <thingSetMakerTags>
@@ -510,7 +628,7 @@
       </li>
       <li Class="CompProperties_UseEffectDestroySelf">
         <delayTicks>120</delayTicks>
-        <spawnLeavings>false</spawnLeavings>
+        <spawnKilledLeavings>false</spawnKilledLeavings>
         <effecterDef>MechbandBuildingDestroyed</effecterDef>
       </li>
     </comps>

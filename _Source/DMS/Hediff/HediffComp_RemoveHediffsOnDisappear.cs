@@ -4,9 +4,9 @@ namespace DMS
 {
     public class HediffComp_RemoveHediffsOnDisappear : HediffComp_Disappears
     {
-        public override void Notify_PawnDied()
+        public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)
         {
-            base.Notify_PawnDied();
+            base.Notify_PawnDied(dinfo, culprit);
             OnDeathHediffOperation();
         }
         private void OnDeathHediffOperation()
