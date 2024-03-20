@@ -2,14 +2,15 @@
 using UnityEngine;
 
 using HarmonyLib;
+using RimWorld;
 
 namespace DMS
 {
-    [HarmonyPatch(typeof(PawnRenderer), "DrawEquipment")]
+    [HarmonyPatch(typeof(PawnRenderUtility), nameof(PawnRenderUtility.DrawEquipmentAndApparelExtras))]
     internal static class Patch_DrawVehicleTurret
 	{
 		[HarmonyPriority(600)]
-		public static bool Prefix(PawnRenderer __instance, Vector3 rootLoc, Rot4 pawnRotation, PawnRenderFlags flags)
+		public static bool Prefix(PawnRenderer __instance,Pawn pawn, Vector3 drawPos, Rot4 facing, PawnRenderFlags flags)
 		{
 			CompVehicleWeapon compWeapon = CompVehicleWeapon.cachedVehicles.TryGetValue(__instance);
 

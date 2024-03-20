@@ -29,11 +29,11 @@
 		<apparel>
 		  <wornGraphicPath>Things/Apparel/NightVisionGoggles/headgear</wornGraphicPath>
 		  <renderSkipFlags>
-			<li>None</li>
+			<li>Eyes</li>
 		  </renderSkipFlags>
 		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 		  <bodyPartGroups Inherit="False">
-			<li>UpperHead</li>
+			<li>Eyes</li>
 		  </bodyPartGroups>
 		  <tags Inherit="False">
 			<li>DMS_NVG</li>
@@ -78,13 +78,19 @@
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
-				<li>FullHead</li>
+				<li>Mouth</li>
+				<li>Neck</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/StealthMask/headgear</wornGraphicPath>
 			<renderSkipFlags>
 				<li>None</li>
+				<li>Hair</li>
+				<li>Beard</li>
 			</renderSkipFlags>
 			<drawData>
+				<defaultData>
+					<layer>51</layer>
+				</defaultData>
 				<dataNorth>
 					<layer>-3</layer>
 				</dataNorth>

@@ -7,7 +7,6 @@ namespace DMS
     {
         public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)
         {
-            base.Notify_PawnDied(dinfo, culprit);
             OnDeathHediffOperation();
         }
         private void OnDeathHediffOperation()
