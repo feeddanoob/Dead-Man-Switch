@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>The Dead Man's Switch</name>	
+	<name>The Dead Man's Switch</name>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/NaraLogo</modIconPath>
   	<author>AobaKuma ,Bill Doors, KV4EX</author>
     <supportedVersions>

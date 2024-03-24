@@ -20,7 +20,10 @@
 		  <Insulation_Heat>0</Insulation_Heat>
 		</statBases>
 		<recipeMaker>
-		  <researchPrerequisite>Gunlink</researchPrerequisite>
+		  <researchPrerequisites>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Gunlink</li>
+			<li>MicroelectronicsBasics</li>
+		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 		  <ComponentSpacer>1</ComponentSpacer>
