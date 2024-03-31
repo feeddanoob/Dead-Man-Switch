@@ -1,6 +1,5 @@
 ﻿using Verse;
 using UnityEngine;
-
 using HarmonyLib;
 using RimWorld;
 
@@ -10,7 +9,7 @@ namespace DMS
     internal static class Patch_DrawVehicleTurret
 	{
 		[HarmonyPriority(600)]
-		public static bool Prefix(PawnRenderer __instance,Pawn pawn, Vector3 drawPos, Rot4 facing, PawnRenderFlags flags)
+		public static void Prefix(PawnRenderer __instance, Pawn pawn, Vector3 drawPos, Rot4 facing, PawnRenderFlags flags)
 		{
 			CompVehicleWeapon compWeapon = CompVehicleWeapon.cachedVehicles.TryGetValue(__instance);
 
@@ -21,10 +20,7 @@ namespace DMS
 				{
 					DrawTuret(vehicle, compWeapon, vehicle.equipment.Primary);
 				}
-
-				return false;
 			}
-			return true;
 		}
 
 		public static void DrawTuret(Pawn pawn, CompVehicleWeapon compWeapon, Thing equipment)

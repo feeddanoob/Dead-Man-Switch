@@ -3,26 +3,25 @@ using Verse;
 
 namespace DMS
 {
-    public class CompMechOnlyWeapon : ThingComp
+    //重型武器的物品形式，由Pawn右鍵後判斷是否能夠裝備，然後
+    public class HeavyThing : Thing
     {
-        public CompProperties_MechOnlyWeapon Props
+        public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn selPawn)
         {
-            get
-            {
-                return (CompProperties_MechOnlyWeapon)props;
-            }
-        }
-        public bool IsAllowedRaces(string race)
-        {
-            return Props.allowedRaces.NotNullAndContains(race);
+            return base.GetFloatMenuOptions(selPawn);
         }
     }
-    public class CompProperties_MechOnlyWeapon : CompProperties
+    //用於被裝備的重型武器掉落時變為特定Thing。
+    public class CompHeavyOnDrop : ThingComp
     {
-        public CompProperties_MechOnlyWeapon()
+        public override void CompTick()
         {
-            this.compClass = typeof(CompMechOnlyWeapon);
+            base.CompTick();
         }
-        public List<string> allowedRaces = new List<string>();
+    }
+    public class HeavyEquippableExtension : DefModExtension
+    {
+        public ThingDef weaponDef;
+        public ThingDef equippableRaceDef;
     }
 }

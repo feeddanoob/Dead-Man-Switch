@@ -138,9 +138,9 @@
                     <WorkToMake>20000</WorkToMake>
                     <Mass>5.9</Mass>
                     <Bulk>5</Bulk>
-                    <SwayFactor>1.00</SwayFactor>
+                    <SwayFactor>1.2</SwayFactor>
                     <ShotSpread>0.3</ShotSpread>
-                    <SightsEfficiency>0.5</SightsEfficiency>
+                    <SightsEfficiency>0.25</SightsEfficiency>
                     <RangedWeapon_Cooldown>0.41</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
@@ -148,9 +148,9 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_50AE_FMJ</defaultProjectile>
                     <warmupTime>0.35</warmupTime>
-                    <range>15</range>
+                    <range>7</range>
 					<burstShotCount>3</burstShotCount>
-					<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+					<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                     <soundCast>DMS_Pistol_Shot</soundCast>
                     <soundCastTail>GunTail_Light</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
@@ -207,9 +207,9 @@
                     <WorkToMake>45000</WorkToMake>
                     <Mass>6.8</Mass>
                     <Bulk>6.7</Bulk>
-                    <SwayFactor>1.39</SwayFactor>
-                    <ShotSpread>0.18</ShotSpread>
-                    <SightsEfficiency>0.75</SightsEfficiency>
+                    <SwayFactor>1.5</SwayFactor>
+                    <ShotSpread>0.3</ShotSpread>
+                    <SightsEfficiency>0.5</SightsEfficiency>
                     <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
@@ -217,9 +217,9 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
                     <warmupTime>0.75</warmupTime>
-                    <range>19.9</range>
+                    <range>14.9</range>
                     <burstShotCount>6</burstShotCount>
-                    <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                    <ticksBetweenBurstShots>14</ticksBetweenBurstShots>
                     <soundCast>Shot_Autocannon</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>

@@ -16,7 +16,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\Assemblies</OutputPath>
+    <OutputPath>..\..\1.5\Assemblies</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -61,20 +61,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ability\CompAbilityEffect_DirectionalExplosion.cs" />
+    <Compile Include="CircleConst.cs" />
     <Compile Include="Component\CompAntiBlasterSmoke.cs" />
     <Compile Include="Component\CompCommandRelay.cs" />
     <Compile Include="Component\CompDeadManSwitch.cs" />
+    <Compile Include="Component\CompFlyingFleckThrower.cs" />
     <Compile Include="Component\CompMechApparel.cs" />
-    <Compile Include="Component\CompMechBillWroker.cs" />
     <Compile Include="Component\CompMechOnlyWeapon.cs" />
     <Compile Include="Component\CompMultipleTurretGun.cs" />
     <Compile Include="Component\CompUseEffect_CallBossgroupByItem.cs" />
     <Compile Include="Component\CompVehicleWeapon.cs" />
+    <Compile Include="Hediff\HediffComp_AddHediffOnSpecificPart.cs" />
     <Compile Include="Hediff\Hediff_BandNode.cs" />
     <Compile Include="Hediff\HediffComp_RemoveHediffsOnDisappear.cs" />
     <Compile Include="Hediff\HediffsExtension.cs" />
     <Compile Include="Patch\Patch_Biocode.cs" />
     <Compile Include="Patch\Patch_Building_MechGestator.cs" />
+    <Compile Include="Patch\Patch_CanDropWeapon.cs" />
     <Compile Include="Patch\Patch_CanControlMechs.cs" />
     <Compile Include="Patch\Patch_GeneratePawnTitle.cs" />
     <Compile Include="Patch\Patch_IsMissingWeapon.cs" />

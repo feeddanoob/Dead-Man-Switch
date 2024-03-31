@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using Verse;
 namespace DMS
 {
+    /// <summary>
+    /// NACS動態調整，占用帶寬越多越嚴重
+    /// </summary>
     public class Hediff_SeverityByBandwidth : HediffWithComps
     {
         public override void PostTick()

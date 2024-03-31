@@ -13,7 +13,6 @@ namespace DMS
         {
             if (__result == true) return;
             if (__instance.OverseenPawns?.Where(p => p.TryGetComp<CompCommandRelay>() != null)?.Count() > 0) __result = true;
-
         }
     }
 
@@ -22,7 +21,7 @@ namespace DMS
     {
         static void Postfix(Pawn mech, ref AcceptanceReport __result)
         {
-            if (__result == true || !mech.IsColonyMech) return;
+            if (__result == true || !mech.IsColonyMech || mech.DeadOrDowned) return;
 
             if (mech.kindDef.race.HasComp(typeof(CompCommandRelay)))
             {
@@ -32,14 +31,13 @@ namespace DMS
             }
             List<Pawn> overseenPawns = MechanitorUtility.GetOverseer(mech)?.mechanitor?.OverseenPawns;
             List<Pawn> commandRelay = overseenPawns.Where(temp => temp.TryGetComp<CompCommandRelay>() != null).ToList();
-
             if (commandRelay.Count != 0)
             {
-                foreach (Pawn pawn in overseenPawns.Where(p=>p.MapHeld == mech.MapHeld))
+                foreach (Pawn pawn in overseenPawns.Where(p => p.MapHeld == mech.MapHeld))
                 {
                     if (commandRelay.Contains(pawn))
                     {
-                       // Log.Message("SameMapAsCommandRelay");
+                        // Log.Message("SameMapAsCommandRelay");
                         __result = true;
                         return;
                     }

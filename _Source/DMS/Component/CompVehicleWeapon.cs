@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Verse;
 using UnityEngine;
+using RimWorld;
 
 namespace DMS
 {
@@ -76,26 +77,26 @@ namespace DMS
                 pawn.equipment.AddEquipment((ThingWithComps)weapon);
             }
 
-            CompVehicleWeapon.cachedVehicles.Add(((Pawn)parent).Drawer.renderer, this);
-            CompVehicleWeapon.cachedPawns.Add(this, (Pawn)parent);
-            CompVehicleWeapon.cachedVehicldesPawns.Add((Pawn)parent, this);
+            cachedVehicles.Add(((Pawn)parent).Drawer.renderer, this);
+            cachedPawns.Add(this, (Pawn)parent);
+            cachedVehicldesPawns.Add((Pawn)parent, this);
         }
 
         public override void PostDeSpawn(Map map)
         {
             base.PostDeSpawn(map);
-            CompVehicleWeapon.cachedVehicles.Remove(((Pawn)parent).Drawer.renderer);
-            CompVehicleWeapon.cachedPawns.Remove(this);
-            CompVehicleWeapon.cachedVehicldesPawns.Remove((Pawn)parent);
+            cachedVehicles.Remove(((Pawn)parent).Drawer.renderer);
+            cachedPawns.Remove(this);
+            cachedVehicldesPawns.Remove((Pawn)parent);
         }
 
 
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
             base.PostDestroy(mode, previousMap);
-            CompVehicleWeapon.cachedVehicles.Remove(((Pawn)parent).Drawer.renderer);
-            CompVehicleWeapon.cachedPawns.Remove(this);
-            CompVehicleWeapon.cachedVehicldesPawns.Remove((Pawn)parent);
+            cachedVehicles.Remove(((Pawn)parent).Drawer.renderer);
+            cachedPawns.Remove(this);
+            cachedVehicldesPawns.Remove((Pawn)parent);
         }
 
         public override void CompTick()

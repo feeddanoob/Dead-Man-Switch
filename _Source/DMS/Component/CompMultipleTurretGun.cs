@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
@@ -6,84 +7,43 @@ using Verse.AI;
 
 namespace DMS
 {
-    public class CompMultipleTurretGun : ThingComp, IAttackTargetSearcher
+    public class CompTurretGun : ThingComp, IAttackTargetSearcher
     {
         private const int StartShootIntervalTicks = 10;
-
         private static readonly CachedTexture ToggleTurretIcon = new CachedTexture("UI/Gizmos/ToggleTurret");
-
         public Thing gun;
-
         protected int burstCooldownTicksLeft;
-
         protected int burstWarmupTicksLeft;
-
         protected LocalTargetInfo currentTarget = LocalTargetInfo.Invalid;
-
         private bool fireAtWill = true;
-
         private LocalTargetInfo lastAttackedTarget = LocalTargetInfo.Invalid;
-
         private int lastAttackTargetTick;
-
-        private float curRotation;
-
-        [Unsaved(false)]
-        public Material turretMat;
-
+        public float curRotation;
         public Thing Thing => parent;
-
-        private CompProperties_MultipleTurretGun Props => (CompProperties_MultipleTurretGun)props;
-
+        public CompProperties_TurretGun Props => (CompProperties_TurretGun)props;
         public Verb CurrentEffectiveVerb => AttackVerb;
-
         public LocalTargetInfo LastAttackedTarget => lastAttackedTarget;
-
         public int LastAttackTargetTick => lastAttackTargetTick;
-
         public CompEquippable GunCompEq => gun.TryGetComp<CompEquippable>();
-
         public Verb AttackVerb => GunCompEq.PrimaryVerb;
-
         private bool WarmingUp => burstWarmupTicksLeft > 0;
-
         private bool CanShoot
         {
             get
             {
                 if (parent is Pawn pawn)
                 {
-                    if (!pawn.Spawned || pawn.Downed || pawn.Dead || !pawn.Awake())
-                    {
-                        return false;
-                    }
-
-                    if (pawn.stances.stunner.Stunned)
-                    {
-                        return false;
-                    }
-
-                    if (TurretDestroyed)
-                    {
-                        return false;
-                    }
-
-                    if (pawn.IsColonyMechPlayerControlled && !fireAtWill)
-                    {
-                        return false;
-                    }
+                    if (!pawn.Spawned || pawn.Downed || pawn.Dead || !pawn.Awake()) return false;
+                    if (pawn.stances.stunner.Stunned) return false;
+                    if (TurretDestroyed) return false;
+                    if (pawn.IsColonyMechPlayerControlled && !fireAtWill) return false;
                 }
 
                 CompCanBeDormant compCanBeDormant = parent.TryGetComp<CompCanBeDormant>();
-                if (compCanBeDormant != null && !compCanBeDormant.Awake)
-                {
-                    return false;
-                }
-
+                if (compCanBeDormant != null && !compCanBeDormant.Awake) return false;
                 return true;
             }
         }
-
         public bool TurretDestroyed
         {
             get
@@ -92,24 +52,9 @@ namespace DMS
                 {
                     return true;
                 }
-
                 return false;
             }
         }
-
-        private Material TurretMat
-        {
-            get
-            {
-                if (turretMat == null)
-                {
-                    turretMat = MaterialPool.MatFrom(Props.turretDef.graphicData.texPath);
-                }
-
-                return turretMat;
-            }
-        }
-
         public bool AutoAttack => Props.autoAttack;
 
         public override void PostPostMake()
@@ -148,7 +93,7 @@ namespace DMS
 
             if (currentTarget.IsValid)
             {
-                curRotation = (currentTarget.Cell.ToVector3Shifted() - parent.DrawPos).AngleFlat() + Props.angleOffset;
+                curRotation = (currentTarget.Cell.ToVector3Shifted() - (parent.DrawPos)).AngleFlat() + Props.angleOffset;
             }
 
             AttackVerb.VerbTick();
@@ -216,15 +161,32 @@ namespace DMS
                 yield return command_Toggle;
             }
         }
-
-        public override void PostDraw()
+        public override List<PawnRenderNode> CompRenderNodes()
         {
-            base.PostDraw();
-            Rot4 rotation = parent.Rotation;
-            Vector3 vector = new Vector3(0f, (rotation == Rot4.North) ? (3f / 74f) : (-3f / 74f), 0f);
-            Matrix4x4 matrix = default(Matrix4x4);
-            matrix.SetTRS(parent.DrawPos + vector, curRotation.ToQuat(), Vector3.one);
-            Graphics.DrawMesh(MeshPool.plane10, matrix, TurretMat, 0);
+            if (!Props.renderNodeProperties.NullOrEmpty() && parent is Pawn pawn)
+            {
+                List<PawnRenderNode> list = new List<PawnRenderNode>();
+                {
+                    foreach (PawnRenderNodeProperties renderNodeProperty in Props.renderNodeProperties)
+                    {
+                        PawnRenderNode_TurretGun pawnRenderNode_TurretGun = (PawnRenderNode_TurretGun)Activator.CreateInstance(renderNodeProperty.nodeClass, pawn, renderNodeProperty, pawn.Drawer.renderer.renderTree);
+                        pawnRenderNode_TurretGun.turretComp = this;
+                        list.Add(pawnRenderNode_TurretGun);
+                    }
+
+                    return list;
+                }
+            }
+
+            return base.CompRenderNodes();
+        }
+
+        public override IEnumerable<StatDrawEntry> SpecialDisplayStats()
+        {
+            if (Props.turretDef != null)
+            {
+                yield return new StatDrawEntry(StatCategoryDefOf.PawnCombat, "Turret".Translate(), Props.turretDef.LabelCap, "Stat_Thing_TurretDesc".Translate(), 5600, null, Gen.YieldSingle(new Dialog_InfoCard.Hyperlink(Props.turretDef)));
+            }
         }
 
         public override void PostExposeData()
@@ -249,22 +211,51 @@ namespace DMS
             }
         }
     }
-    public class CompProperties_MultipleTurretGun : CompProperties
+    public class PawnRenderNode_TurretGun : PawnRenderNode
+    {
+        public CompTurretGun turretComp;
+
+        public PawnRenderNode_TurretGun(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree)
+            : base(pawn, props, tree)
+        {
+        }
+        public override Graphic GraphicFor(Pawn pawn)
+        {
+            return GraphicDatabase.Get<Graphic_Single>(turretComp.Props.turretDef.graphicData.texPath, ShaderDatabase.Cutout);
+        }
+    }
+    public class CompProperties_TurretGun : CompProperties
     {
         public ThingDef turretDef;
         public float angleOffset;
         public bool autoAttack = true;
-
-        public CompProperties_MultipleTurretGun()
+        public List<PawnRenderNodeProperties> renderNodeProperties;
+        public CompProperties_TurretGun()
         {
-            compClass = typeof(CompMultipleTurretGun);
+            compClass = typeof(CompTurretGun);
+        }
+        public override IEnumerable<string> ConfigErrors(ThingDef parentDef)
+        {
+            if (renderNodeProperties.NullOrEmpty())
+            {
+                yield break;
+            }
+
+            foreach (PawnRenderNodeProperties renderNodeProperty in renderNodeProperties)
+            {
+                if (!typeof(PawnRenderNode_TurretGun).IsAssignableFrom(renderNodeProperty.nodeClass))
+                {
+                    yield return "contains nodeClass which is not PawnRenderNode_TurretGun or subclass thereof.";
+                }
+            }
         }
     }
-    public class DirectionDraw
+
+    public class SubTurret
     {
-        public Vector3 east;
-        public Vector3 west;
-        public Vector3 south;
-        public Vector3 north;
+        public ThingDef turret;
+        public float IdleAngleOffset;
+        public bool autoAttack = true;
+        public List<PawnRenderNodeProperties> renderNodeProperties;
     }
 }

@@ -26,6 +26,38 @@
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
         <rotationSmoothTime>0.12</rotationSmoothTime>
       </li>
+		  <li Class="DMS.CompProperties_TurretGun">
+        <turretDef>DMS_HeavyMachineGunMounted</turretDef>
+        <angleOffset>-90</angleOffset>
+        <renderNodeProperties>
+          <li>
+            <nodeClass>DMS.PawnRenderNode_TurretGun</nodeClass>
+            <workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
+            <parentTagDef>Body</parentTagDef>
+            <drawSize>1.2</drawSize>
+            <baseLayer>-21</baseLayer>
+            <pawnType>Any</pawnType>
+            <drawData>
+              <dataEast>
+                  <offset>(1.15,0,-0.7)</offset>
+                  <pivot>(0.25,0.5)</pivot>
+              </dataEast>
+              <dataWest>
+                  <offset>(-1.15,0,-0.7)</offset>
+                  <pivot>(0.25,0.5)</pivot>
+              </dataWest>
+              <dataSouth>
+                  <offset>(0,0,-1.2)</offset>
+                  <pivot>(0.5,0.5)</pivot>
+              </dataSouth>
+              <dataNorth>
+                  <offset>(0,0,0)</offset>
+                  <pivot>(0.5,0.5)</pivot>
+              </dataNorth>
+            </drawData>
+          </li>
+        </renderNodeProperties>
+      </li>
     </comps>
     <modExtensions>
       <li Class="DMS.MechWeaponExtension">

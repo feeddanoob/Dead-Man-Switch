@@ -1,27 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using Verse;
 
 namespace DMS
 {
-    public class HediffDefWtihSeverity
-	{
-		public HediffDef hediffDef;
-		public float severity = 0;
-		public bool isAdd = true;
-	}
-    public class HediffCompProperties_GiveHediffWtihSeverity : HediffCompProperties
-	{
-		public HediffCompProperties_GiveHediffWtihSeverity()
-		{
-			this.compClass = typeof(HediffComp_GiveHediffWtihSeverity);
-		}
-		public List<HediffDefWtihSeverity> hediffDefAddSeverity;
-		public bool skipIfAlreadyExists = true;
-	}
-
-
     public class HediffComp_GiveHediffWtihSeverity : HediffComp
 	{
 		private HediffCompProperties_GiveHediffWtihSeverity Props
@@ -31,10 +12,6 @@ namespace DMS
 				return (HediffCompProperties_GiveHediffWtihSeverity)this.props;
 			}
 		}
-		//public override void CompPostPostRemoved()
-		//{
-		//	HediffOperation(this.parent.pawn);
-		//}
         public override void CompPostMake()
         {
             HediffOperation(this.parent.pawn);
@@ -60,5 +37,20 @@ namespace DMS
                 }
             }
 		}
-	}
+    }
+    public class HediffDefWtihSeverity
+    {
+        public HediffDef hediffDef;
+        public float severity = 0;
+        public bool isAdd = true;
+    }
+    public class HediffCompProperties_GiveHediffWtihSeverity : HediffCompProperties
+    {
+        public HediffCompProperties_GiveHediffWtihSeverity()
+        {
+            this.compClass = typeof(HediffComp_GiveHediffWtihSeverity);
+        }
+        public List<HediffDefWtihSeverity> hediffDefAddSeverity;
+        public bool skipIfAlreadyExists = true;
+    }
 }

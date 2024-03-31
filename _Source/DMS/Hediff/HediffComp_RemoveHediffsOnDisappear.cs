@@ -2,6 +2,9 @@
 
 namespace DMS
 {
+    /// <summary>
+    /// 用來銷毀NACS的機控中樞
+    /// </summary>
     public class HediffComp_RemoveHediffsOnDisappear : HediffComp_Disappears
     {
         public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)

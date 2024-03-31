@@ -2,7 +2,9 @@
 
 namespace DMS
 {
-    //在死亡後添加或移除Hediff
+    /// <summary>
+    /// 在死亡後添加或移除Hediff
+    /// </summary>
     public class HediffComp_RemoveHediffsOnDeath : HediffComp
     {
         public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)

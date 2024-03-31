@@ -24,8 +24,44 @@
     <comps>
       <li Class="AnimalBehaviours.CompProperties_Floating">
       </li>
+      <li Class="DMS.CompProperties_FlyingFleckThrower">
+        <burstOffsetRange>(1,1.5)</burstOffsetRange>
+        <fleckOnSoil>DustPuff</fleckOnSoil>
+        <fleckOnSnow>AirPuff</fleckOnSnow>
+        <activeAnimation>DMS_Hover</activeAnimation>
+        <sizeRange>(1,1.2)</sizeRange>
+        <speedRange>(0.75,1)</speedRange>
+        <throwRate>1</throwRate>
+      </li>
 	</comps>
   </ThingDef>
+
+  <AnimationDef>
+    <defName>DMS_Hover</defName>
+    <durationTicks>60</durationTicks>
+    <animationParts>
+      <li>
+        <key>Root</key>
+        <value>
+          <keyframes>
+            <li>
+              <tick>0</tick>
+              <offset>(0,0,0)</offset>
+            </li>
+            <li>
+              <tick>30</tick>
+              <offset>(0,0,0.1)</offset>
+            </li>
+            <li>
+              <tick>60</tick>
+              <offset>(0,0,0)</offset>
+            </li>
+          </keyframes>
+          <workerClass>AnimationWorker_Keyframes</workerClass>
+        </value>
+      </li>
+    </animationParts>
+  </AnimationDef>
 
   <ThingDef ParentName="BaseMechRace_Falcon">
     <defName>DMS_Mech_Falcon</defName>

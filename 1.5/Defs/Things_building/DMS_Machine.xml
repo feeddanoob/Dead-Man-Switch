@@ -70,7 +70,7 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>50</basePowerConsumption>
+        <basePowerConsumption>250</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
         <pawnToSpawn>DMS_Machine_TrashBin</pawnToSpawn>
@@ -98,7 +98,7 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>50</basePowerConsumption>
+        <basePowerConsumption>150</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
         <pawnToSpawn>DMS_Machine_VerlingBird</pawnToSpawn>
@@ -127,7 +127,7 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>50</basePowerConsumption>
+        <basePowerConsumption>150</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
         <pawnToSpawn>DMS_Machine_Hound</pawnToSpawn>
@@ -156,7 +156,7 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>50</basePowerConsumption>
+        <basePowerConsumption>250</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
         <pawnToSpawn>DMS_Machine_Hound_RC</pawnToSpawn>
@@ -188,7 +188,7 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>50</basePowerConsumption>
+        <basePowerConsumption>250</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
         <pawnToSpawn>DMS_Machine_Hound_FS</pawnToSpawn>
@@ -197,7 +197,7 @@
       </li>
     </comps>
     <researchPrerequisites>
-      <li>DMS_EquipmentAdvanced</li>
+      <li>DMS_EquipmentElite</li>
     </researchPrerequisites>
   </ThingDef>
 

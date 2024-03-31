@@ -145,7 +145,8 @@
       <li>ITab_Pawn_Health</li>
       <li>ITab_Pawn_Needs</li>
       <li>ITab_Pawn_FormingCaravan</li>
-      <li>DMS.ITab_Mech_Gear</li><!--主要是為了防止裝備脫不掉-->
+      <li>ITab_Pawn_Gear</li>
+      <!-- <li>DMS.ITab_Mech_Gear</li>主要是為了防止裝備脫不掉 -->
       <li>ITab_Pawn_Log</li>
     </inspectorTabs>
   </ThingDef>
