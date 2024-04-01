@@ -277,7 +277,6 @@
       <Tungsteel>250</Tungsteel>
       <ComponentStamped>20</ComponentStamped>
       <ComponentIndustrial>15</ComponentIndustrial>
-      <ReinforcedBarrel>4</ReinforcedBarrel>
       <ComponentFireControl>2</ComponentFireControl>
     </costList>
     <researchPrerequisites>
@@ -395,7 +394,6 @@
       <Tungsteel>300</Tungsteel>
       <ComponentStamped>15</ComponentStamped>
       <ComponentIndustrial>10</ComponentIndustrial>
-      <ReinforcedBarrel>7</ReinforcedBarrel>
       <ComponentFireControl>3</ComponentFireControl>
     </costList>
     <researchPrerequisites>
@@ -538,7 +536,6 @@
       <Tungsteel>100</Tungsteel>
       <ComponentStamped>5</ComponentStamped>
       <ComponentIndustrial>5</ComponentIndustrial>
-      <ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
     <researchPrerequisites>
       <li>DMS_EquipmentElite</li>

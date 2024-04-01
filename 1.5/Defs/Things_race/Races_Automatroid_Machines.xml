@@ -102,7 +102,7 @@
     <description>Cylindrical service robots used in Midworld cities provide road cleaning, express and food delivery services, and to be the first to assist in evacuation and maintain order when emergencies occur.</description>
     <statBases>
       <CleaningSpeed>0.85</CleaningSpeed>
-      <MoveSpeed>4.7</MoveSpeed>
+      <MoveSpeed>3.7</MoveSpeed>
       <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
     </statBases>
@@ -112,6 +112,12 @@
       <baseHealthScale>1</baseHealthScale>
       <!--<mechWeightClass>Light</mechWeightClass>-->
       <thinkTreeMain>DMS_Machine</thinkTreeMain>
+      <makesFootprints>true</makesFootprints>
+      <mechWorkTypePriorities>
+        <Cleaning>1</Cleaning>
+        <Hauling>2</Hauling>
+        <PlantCutting>3</PlantCutting>
+      </mechWorkTypePriorities>
       <mechEnabledWorkTypes>
         <li>PlantCutting</li>
         <li>Hauling</li>
@@ -156,13 +162,13 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <weaponTags></weaponTags>
+    <weaponTags/>
   </PawnKindDef>
 
   <!-- 武裝四軸 -->
   <ThingDef Name="VerlingBirdBase" ParentName="BaseDMSMachine" Abstract="True">
     <label>verling bird</label>
-    <description>A quad-drone for reconnaissance. It is quite fragile for combat but moves extremely fast. can equipped with a small-caliber gun or grenade to provide certain containment capabilities.</description>
+    <description>A quad-drone for reconnaissance. It is quite fragile for combat but moves extremely fast. can equipped with small-caliber gun or grenade to provide certain containment capabilities.</description>
     <statBases>
       <MoveSpeed>10</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0</ArmorRating_Blunt>                                     <!--護甲-->
@@ -172,7 +178,7 @@
       <li>ITab_Pawn_Health</li>
       <li>ITab_Pawn_Needs</li>
       <li>ITab_Pawn_FormingCaravan</li>
-      <li>DMS.ITab_Mech_Gear</li>
+      <li>ITab_Pawn_Gear</li>
       <li>ITab_Pawn_Log</li>
     </inspectorTabs>
     <race>
@@ -207,6 +213,7 @@
           <li>DMS_MechWeaponUltraLight</li>
           <li>PLA_RocketLauncherSingleUse</li>
           <li>CE_AI_Grenade</li>
+          <li>DMS_Flameblaster</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -268,6 +275,11 @@
     <combatPower>20</combatPower>
     <maxPerGroup>30</maxPerGroup>
     <defaultFactionType>Mechanoid</defaultFactionType>
+    <factionHostileOnKill>false</factionHostileOnKill>
+    <factionHostileOnDeath>false</factionHostileOnDeath>
+    <aiAvoidCover>true</aiAvoidCover>
+    <overrideDeathOnDownedChance>1</overrideDeathOnDownedChance>
+    <collidesWithPawns>false</collidesWithPawns>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -294,7 +306,10 @@
   </PawnKindDef>
 
   <!-- 獵犬 -->
-  <ThingDef Name="DMS_MechHoundBase" ParentName="BaseDMSMachine" Abstract="True">  <!-- DMS_Machine_Hound 獵犬常規型 -->
+  <ThingDef Name="DMS_MechHoundBase" ParentName="BaseDMSMachine">  <!-- DMS_Machine_Hound 獵犬常規型 -->    
+    <defName>DMS_Machine_Hound</defName>
+    <label>hound</label>
+    <description>A four-legged robot dog provide forward reconnaissance and urban combat support during armed operations, can equipped with small-caliber firearms or flamethrowers to provide certain containment capabilities.</description>
     <statBases>
       <MoveSpeed>5</MoveSpeed>
       <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
@@ -302,8 +317,8 @@
     </statBases>
     <race>
       <body>DMS_Hound</body>
-      <baseBodySize>0.65</baseBodySize>
-      <baseHealthScale>0.8</baseHealthScale>
+      <baseBodySize>0.75</baseBodySize>
+      <baseHealthScale>0.75</baseHealthScale>
       <thinkTreeMain>VFE_Mechanoids_ViolentMachine</thinkTreeMain>
     </race>
     <comps>
@@ -316,13 +331,26 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<Steel>30</Steel>
 		</butcherProducts>
+    <modExtensions>
+      <li Class="DMS.MechWeaponExtension">
+        <EnableWeaponFilter>true</EnableWeaponFilter>
+        <UsableWeaponTags>
+          <li>VerlingBird_Weapon</li>
+          <li>DMS_MechWeaponUltraLight</li>
+          <li>DMS_MechWeaponLight</li>
+          <li>DMS_Flameblaster</li>
+        </UsableWeaponTags>
+        <EnableTechLevelFilter>true</EnableTechLevelFilter>
+        <UsableTechLevels>
+          <li>Industrial</li>
+        </UsableTechLevels>
+        <BypassUsableWeapons>
+          <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
+        </BypassUsableWeapons>
+      </li>
+    </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="DMS_MechHoundBase">  <!-- DMS_Machine_Hound_RC 獵犬常規型 -->
-    <defName>DMS_Machine_Hound</defName>
-    <label>hound</label>
-    <description>A four-legged robot dog, can provide vanguard Scouting and early warning detect during armed operations.</description>
-  </ThingDef>
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Machine_Hound</defName>
     <label>hound</label>
@@ -351,101 +379,4 @@
     </lifeStages>
     <weaponTags/>
   </PawnKindDef>
-
-  <ThingDef ParentName="DMS_MechHoundBase">  <!-- DMS_Machine_Hound_RC 獵犬鎮暴型 -->
-    <defName>DMS_Machine_Hound_RC</defName>
-    <label>watchdog</label>
-    <description>a sub-variant of hound, designed for riot control and prison patrol.</description>
-    <comps>
-		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <drawOffset>(0,0,0)</drawOffset>
-			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
-        <rotationSmoothTime>0.12</rotationSmoothTime>
-      </li>
-    </comps>
-		<butcherProducts>
-      <DMS_Revolver>1</DMS_Revolver>
-			<ComponentIndustrial>3</ComponentIndustrial>
-			<Steel>30</Steel>
-		</butcherProducts>
-  </ThingDef>
-
-  <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Machine_Hound_RC</defName>
-    <label>watchdog</label>
-    <race>DMS_Machine_Hound_RC</race>
-    <isFighter>true</isFighter>
-    <combatPower>30</combatPower>
-    <maxPerGroup>15</maxPerGroup>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/hound</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.1</drawSize>
-        </bodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/OldTexture/hound</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.1</drawSize>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-    <weaponTags>
-      <li>A_SG_Pistol</li>
-    </weaponTags>
-  </PawnKindDef>
-
-  <ThingDef ParentName="DMS_MechHoundBase"><!-- DMS_Machine_Hound_SMG 獵犬壓制型 -->
-    <defName>DMS_Machine_Hound_FS</defName>
-    <label>hetzen</label>
-    <description>a sub-variant of hound, designed for urban combat fire support.</description>
-    <comps>
-		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <drawOffset>(0,0,0)</drawOffset>
-			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
-        <rotationSmoothTime>0.12</rotationSmoothTime>
-      </li>
-    </comps>
-		<butcherProducts>
-      <DMS_MiniMachineGun>1</DMS_MiniMachineGun>
-			<ComponentIndustrial>3</ComponentIndustrial>
-			<Steel>30</Steel>
-		</butcherProducts>
-  </ThingDef>
-  <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_Machine_Hound_FS</defName>
-    <label>hetzen</label>
-    <race>DMS_Machine_Hound_FS</race>
-    <isFighter>true</isFighter>
-    <combatPower>50</combatPower>
-    <maxPerGroup>15</maxPerGroup>
-    <defaultFactionType>Mechanoid</defaultFactionType>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/hound</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.1</drawSize>
-        </bodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automatroid/OldTexture/hound</texPath>
-          <shaderType>CutoutComplex</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.1</drawSize>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-    <weaponTags>
-      <li>V_SMG</li>
-    </weaponTags>
-  </PawnKindDef>
-
 </Defs>

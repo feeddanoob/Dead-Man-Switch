@@ -29,7 +29,7 @@
 					</li>
 					<li>
 						<pawnKind>DMS_Mech_Soldat</pawnKind>
-						<fixedWeapon>DMS_AssaultPiercer</fixedWeapon>
+						<fixedWeapon>DMS_SurvivalRifle</fixedWeapon>
 					</li>
 					<li>
 						<pawnKind>DMS_Mech_Soldat</pawnKind>

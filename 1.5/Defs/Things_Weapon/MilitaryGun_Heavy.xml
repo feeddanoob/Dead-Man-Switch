@@ -38,7 +38,6 @@
 		</modExtensions>
 	</ThingDef>
 
-	
 	<!--MSC-->
 	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
 		<defName>DMS_SniperCannon</defName>

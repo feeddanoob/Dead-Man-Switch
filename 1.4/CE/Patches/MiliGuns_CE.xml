@@ -148,7 +148,7 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_50AE_FMJ</defaultProjectile>
                     <warmupTime>0.35</warmupTime>
-                    <range>7</range>
+                    <range>9</range>
 					<burstShotCount>3</burstShotCount>
 					<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                     <soundCast>DMS_Pistol_Shot</soundCast>
@@ -215,9 +215,9 @@
                 <Properties>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+                    <defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
                     <warmupTime>0.75</warmupTime>
-                    <range>14.9</range>
+                    <range>6.9</range>
                     <burstShotCount>6</burstShotCount>
                     <ticksBetweenBurstShots>14</ticksBetweenBurstShots>
                     <soundCast>Shot_Autocannon</soundCast>
@@ -225,9 +225,9 @@
                     <muzzleFlashScale>9</muzzleFlashScale>
                 </Properties>
                 <AmmoUser>
-                    <magazineSize>12</magazineSize>
+                    <magazineSize>18</magazineSize>
                     <reloadTime>4</reloadTime>
-                    <ammoSet>AmmoSet_50BMG</ammoSet>
+                    <ammoSet>AmmoSet_338Lapua</ammoSet>
                 </AmmoUser>
                 <FireModes>
                     <aiUseBurstMode>true</aiUseBurstMode>

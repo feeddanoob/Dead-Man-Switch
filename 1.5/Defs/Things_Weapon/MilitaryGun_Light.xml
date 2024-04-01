@@ -211,7 +211,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_AMR</defaultProjectile>
 				<warmupTime>0.35</warmupTime>
-				<range>19.9</range>
+				<range>9.9</range>
 				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<soundCast>Shot_Autocannon</soundCast>
@@ -230,4 +230,54 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+
+	<ThingDef ParentName="LightMechanoidGunRanged">
+		<defName>DMS_Flameblaster</defName>
+		<label>flameblaster</label>
+		<description>A flame launcher used by mechs that can effectively ignite flammable materials within a range</description>
+		<graphicData>
+		  <texPath>Things/Weapons/DMS_Flameblaster</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.65</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1000</MarketValue>
+		  <Mass>1.5</Mass>
+		  <AccuracyTouch>0.40</AccuracyTouch>
+		  <AccuracyShort>0.48</AccuracyShort>
+		  <AccuracyMedium>0.35</AccuracyMedium>
+		  <AccuracyLong>0.26</AccuracyLong>
+		  <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>      
+		</statBases>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<equippedDistanceOffset >-0.14</equippedDistanceOffset >
+		<tools>
+		  <li>
+			<label>barrel</label>
+			<capacities>
+			  <li>Blunt</li>
+			  <li>Poke</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2.6</cooldownTime>
+		  </li>
+		</tools>
+		<weaponTags>
+		  <li>DMS_Flameblaster</li>
+		</weaponTags>
+		<verbs>
+		  <li>
+			<verbClass>Verb_SpewFire</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<warmupTime>0</warmupTime>
+			<range>4.9</range>
+			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+			<burstShotCount>10</burstShotCount>
+			<soundCast>Shot_MiniFlameblaster</soundCast>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		  </li>
+		</verbs>
+	  </ThingDef>
 </Defs>

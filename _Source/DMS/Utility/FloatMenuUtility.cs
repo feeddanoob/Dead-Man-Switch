@@ -66,15 +66,13 @@ namespace DMS
 
         public static FloatMenuOption TryMakeFloatMenu(Pawn pawn, ThingWithComps equipment, string key = "Equip")
         {
-            IWeaponUsable weaponUsable = pawn as IWeaponUsable;
-
             string labelShort = equipment.LabelShort;
             if (!pawn.CanReach(equipment, PathEndMode.ClosestTouch, Danger.Deadly, false, false, TraverseMode.ByPawn))
             {
                 return new FloatMenuOption("CannotEquip".Translate(labelShort) + ": " + "NoPath".Translate().CapitalizeFirst(), null);
             }
 
-            if (weaponUsable != null)
+            if (pawn is IWeaponUsable weaponUsable)
             {
                 return new FloatMenuOption(key.Translate(labelShort, equipment), () =>
                 {

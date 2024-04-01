@@ -10,7 +10,6 @@ using UnityEngine;
 
 namespace DMS
 {
-
     [StaticConstructorOnStartup]
     public class CompMechApparel:ThingComp
     {

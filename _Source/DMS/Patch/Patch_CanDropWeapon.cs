@@ -9,7 +9,7 @@ namespace DMS
     public static class Patch_CanDropWeapon
     {
         [HarmonyPrefix]
-        public static bool CanControl(ITab_Pawn_Gear __instance, ref bool __result)
+        public static bool CanControl(ref bool __result)
         {
             if (__result) return true;
             if (Find.Selector.SingleSelectedThing is Pawn selectedPawn)

@@ -67,7 +67,8 @@
     <Compile Include="Component\CompDeadManSwitch.cs" />
     <Compile Include="Component\CompFlyingFleckThrower.cs" />
     <Compile Include="Component\CompMechApparel.cs" />
-    <Compile Include="Component\CompMechOnlyWeapon.cs" />
+    <Compile Include="Patch\Patch_EquipmentUtility_CanEquip.cs" />
+    <Compile Include="Thing\HeavyThing.cs" />
     <Compile Include="Component\CompMultipleTurretGun.cs" />
     <Compile Include="Component\CompUseEffect_CallBossgroupByItem.cs" />
     <Compile Include="Component\CompVehicleWeapon.cs" />

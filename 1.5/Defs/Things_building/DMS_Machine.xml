@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <!-- okay so why VE team not just added it into framework ? -->
+  <WorkGiverDef>
+    <defName>DMS_Mechanoids_RepairMachine</defName>
+    <label>repair machine</label>
+    <giverClass>VFE.Mechanoids.AI.WorkGivers.WorkGiver_RepairMachine</giverClass>
+    <workType>Hauling</workType>
+    <verb>repair</verb>
+    <gerund>repairing</gerund>
+    <priorityInType>140</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>false</prioritizeSustains>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>DMS_Mechanoids_AttachTurret</defName>
+    <label>attach turret</label>
+    <giverClass>VFE.Mechanoids.AI.WorkGivers.WorkGiver_AttachTurret</giverClass>
+    <workType>Hauling</workType>
+    <verb>attach turret to</verb>
+    <gerund>attaching turret to</gerund>
+    <priorityInType>141</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>false</prioritizeSustains>
+  </WorkGiverDef>
+
   <DesignatorDropdownGroupDef>
     <defName>DMS_MachineHound</defName>
     <label>hound variants</label>
@@ -127,7 +156,7 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>150</basePowerConsumption>
+        <basePowerConsumption>250</basePowerConsumption>
       </li>
       <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
         <pawnToSpawn>DMS_Machine_Hound</pawnToSpawn>
@@ -135,70 +164,6 @@
         <hoursToRecharge>24</hoursToRecharge>
       </li>
     </comps>
-  </ThingDef>
-
-  <!-- Hound(RC) charge station -->
-  <ThingDef ParentName="DMS_BaseChargeStation">
-    <defName>DMS_Hound_RC_Base</defName>
-    <label>Hound(Riot Control) charging station</label>
-    <description>A station for assembling and recharging Riot Control Hound.</description>
-    <designatorDropdown>DMS_MachineHound</designatorDropdown>
-    <statBases>
-      <WorkToBuild>1000</WorkToBuild>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Mass>6</Mass>
-      <Flammability>0.5</Flammability>
-    </statBases>
-    <costList>
-      <Steel>75</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-    </costList>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>250</basePowerConsumption>
-      </li>
-      <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
-        <pawnToSpawn>DMS_Machine_Hound_RC</pawnToSpawn>
-        <extraChargingPower>200</extraChargingPower>
-        <hoursToRecharge>24</hoursToRecharge>
-      </li>
-    </comps>
-    <researchPrerequisites>
-      <li>DMS_EquipmentAdvanced</li>
-    </researchPrerequisites>
-  </ThingDef>
-
-  <!-- Hound(FS) charge station -->
-  <ThingDef ParentName="DMS_BaseChargeStation">
-    <defName>DMS_Hound_FS_Base</defName>
-    <label>Hound(Fire Suppress) charging station</label>
-    <description>A station for assembling and recharging Fire Hound.</description>
-    <designatorDropdown>DMS_MachineHound</designatorDropdown>
-    <statBases>
-      <WorkToBuild>1000</WorkToBuild>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Mass>6</Mass>
-      <Flammability>0.5</Flammability>
-    </statBases>
-    <costList>
-      <Steel>75</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-    </costList>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>250</basePowerConsumption>
-      </li>
-      <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
-        <pawnToSpawn>DMS_Machine_Hound_FS</pawnToSpawn>
-        <extraChargingPower>200</extraChargingPower>
-        <hoursToRecharge>24</hoursToRecharge>
-      </li>
-    </comps>
-    <researchPrerequisites>
-      <li>DMS_EquipmentElite</li>
-    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="BaseMechCharger">

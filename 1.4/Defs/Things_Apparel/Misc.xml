@@ -20,7 +20,10 @@
 		  <Insulation_Heat>0</Insulation_Heat>
 		</statBases>
 		<recipeMaker>
-		  <researchPrerequisite>Gunlink</researchPrerequisite>
+			<researchPrerequisites>
+			  <li MayRequire="Ludeon.RimWorld.Royalty">Gunlink</li>
+			  <li>MicroelectronicsBasics</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 		  <ComponentSpacer>1</ComponentSpacer>
@@ -28,9 +31,6 @@
 		</costList>
 		<apparel>
 		  <wornGraphicPath>Things/Apparel/NightVisionGoggles/headgear</wornGraphicPath>
-		  <renderSkipFlags>
-			<li>None</li>
-		  </renderSkipFlags>
 		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 		  <bodyPartGroups Inherit="False">
 			<li>UpperHead</li>
@@ -81,14 +81,6 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/StealthMask/headgear</wornGraphicPath>
-			<renderSkipFlags>
-				<li>None</li>
-			</renderSkipFlags>
-			<drawData>
-				<dataNorth>
-					<layer>-3</layer>
-				</dataNorth>
-			</drawData>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
