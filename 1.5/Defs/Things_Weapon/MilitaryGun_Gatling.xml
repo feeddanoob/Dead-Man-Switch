@@ -116,6 +116,9 @@
 				</offsets>
 				<isAlternately>true</isAlternately>
 			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>StandardAutomatroid</EquippableDef>
+			</li>
 		</modExtensions>
 	</ThingDef>
 
@@ -180,6 +183,9 @@
 				</offsets>
 				<isAlternately>true</isAlternately>
 			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>HeavyAutomatroid</EquippableDef>
+			</li>
 		</modExtensions>
 	</ThingDef>	
 
@@ -231,6 +237,9 @@
 					<li>(1.3,0)</li>
 				</offsets>
 				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>UltraHeavyAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
   	</ThingDef>
@@ -296,6 +305,9 @@
 					<li>(1.7,0)</li>
 				</offsets>
 				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>UltraHeavyAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
   	</ThingDef>

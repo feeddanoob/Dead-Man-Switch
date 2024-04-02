@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <DMS.HeavyEquippableDef> <!-- this type of weapon is only for mech that have support of it. -->
+		<defName>MountedWeapon</defName>
+		<EquippableBaseBodySize>-1</EquippableBaseBodySize>
+		<EquippableByRaces/>
+		<EquippableWithHediff/>
+		<EquippableWithApparel/>
+	</DMS.HeavyEquippableDef>
+
+	<DMS.HeavyEquippableDef>
+		<defName>AverageHumanCanUse</defName><!-- for non-adult and gene-caused smaller xeno pawn. -->
+		<EquippableBaseBodySize>1</EquippableBaseBodySize>
+		<EquippableByRaces/>
+		<EquippableWithHediff>
+            <li>BionicArm</li>
+            <li>DMS_SyntheticArm</li>
+            <li>DMS_ProstheticArm</li>
+        </EquippableWithHediff>
+		<EquippableWithApparel>
+            <li>Apparel_PowerArmor</li>
+			<li>DMS_Apparel_BionicSuit</li>
+			<li>DMS_Apparel_PowerSkelton</li>
+		</EquippableWithApparel>
+	</DMS.HeavyEquippableDef>
+    
+	<DMS.HeavyEquippableDef>
+		<defName>LightAutomatroid</defName>
+		<EquippableBaseBodySize>1.05</EquippableBaseBodySize>
+		<EquippableByRaces/>
+		<EquippableWithHediff>
+            <li>BionicArm</li>
+            <li>DMS_SyntheticArm</li>
+            <li>DMS_ProstheticArm</li>
+        </EquippableWithHediff>
+		<EquippableWithApparel>
+			<li>DMS_Apparel_BionicSuit</li>
+			<li>DMS_Apparel_PowerSkelton</li>
+            <li>Apparel_PowerArmor</li>
+		</EquippableWithApparel>
+	</DMS.HeavyEquippableDef>
+
+	<DMS.HeavyEquippableDef>
+		<defName>StandardAutomatroid</defName>
+		<EquippableBaseBodySize>1.2</EquippableBaseBodySize>
+		<EquippableByRaces/>
+		<EquippableWithHediff>
+            <li>DMS_SyntheticArm</li>
+            <li>DMS_ProstheticArm</li>
+        </EquippableWithHediff>
+		<EquippableWithApparel>
+			<li>DMS_Apparel_BionicSuit</li>
+			<li>DMS_Apparel_PowerSkelton</li>
+            <li>Apparel_PowerArmor</li>
+		</EquippableWithApparel>
+	</DMS.HeavyEquippableDef>
+    
+	<DMS.HeavyEquippableDef>
+		<defName>HeavyAutomatroid</defName>
+		<EquippableBaseBodySize>1.4</EquippableBaseBodySize>
+		<EquippableByRaces/>
+		<EquippableWithHediff/>
+		<EquippableWithApparel>
+			<li>DMS_Apparel_PowerSkelton</li>
+		</EquippableWithApparel>
+	</DMS.HeavyEquippableDef>
+
+	<DMS.HeavyEquippableDef>
+		<defName>UltraHeavyAutomatroid</defName>
+		<EquippableBaseBodySize>2</EquippableBaseBodySize>
+		<EquippableByRaces/>
+		<EquippableWithHediff/>
+		<EquippableWithApparel>
+			<!-- TODO <li>DMS_Apparel_MobileDragoonCore</li> -->
+		</EquippableWithApparel>
+	</DMS.HeavyEquippableDef>
+
+</Defs>

@@ -19,44 +19,49 @@
       <baseBodySize>3.5</baseBodySize>
       <baseHealthScale>5</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
-    </race>    
+    </race>
     <comps>
 		  <li Class="DMS.CompProperties_VehicleWeapon">
 			  <drawOffset>(0.8,0,0.2)</drawOffset>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
         <rotationSmoothTime>0.12</rotationSmoothTime>
       </li>
-		  <li Class="DMS.CompProperties_TurretGun">
-        <turretDef>DMS_HeavyMachineGunMounted</turretDef>
-        <angleOffset>-90</angleOffset>
-        <renderNodeProperties>
-          <li>
-            <nodeClass>DMS.PawnRenderNode_TurretGun</nodeClass>
-            <workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
-            <parentTagDef>Body</parentTagDef>
-            <drawSize>1.2</drawSize>
-            <baseLayer>-21</baseLayer>
-            <pawnType>Any</pawnType>
-            <drawData>
-              <dataEast>
-                  <offset>(1.15,0,-0.7)</offset>
-                  <pivot>(0.25,0.5)</pivot>
-              </dataEast>
-              <dataWest>
-                  <offset>(-1.15,0,-0.7)</offset>
-                  <pivot>(0.25,0.5)</pivot>
-              </dataWest>
-              <dataSouth>
-                  <offset>(0,0,-1.2)</offset>
-                  <pivot>(0.5,0.5)</pivot>
-              </dataSouth>
-              <dataNorth>
-                  <offset>(0,0,0)</offset>
-                  <pivot>(0.5,0.5)</pivot>
-              </dataNorth>
-            </drawData>
-          </li>
-        </renderNodeProperties>
+		  <li Class="DMS.CompPropertiesMultipleTurretGun">
+          <subTurrets>
+            <li>
+              <ID>headingTurret</ID>
+              <autoAttack>true</autoAttack>
+              <turret>DMS_HeavyMachineGunMounted</turret>
+              <renderNodeProperties>
+                <li>
+                  <nodeClass>DMS.PawnRenderNode_SubTurretGun</nodeClass>
+                  <workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
+                  <parentTagDef>Body</parentTagDef>
+                  <drawSize>1.2</drawSize>
+                  <baseLayer>-21</baseLayer>
+                  <pawnType>Any</pawnType>
+                  <drawData>
+                    <dataEast>
+                        <offset>(1.15,0,-0.7)</offset>
+                        <pivot>(0.25,0.5)</pivot>
+                    </dataEast>
+                    <dataWest>
+                        <offset>(-1.15,0,-0.7)</offset>
+                        <pivot>(0.25,0.5)</pivot>
+                    </dataWest>
+                    <dataSouth>
+                        <offset>(0,0,-1.2)</offset>
+                        <pivot>(0.5,0.5)</pivot>
+                    </dataSouth>
+                    <dataNorth>
+                        <offset>(0,0,0)</offset>
+                        <pivot>(0.5,0.5)</pivot>
+                    </dataNorth>
+                  </drawData>
+                </li>
+              </renderNodeProperties>
+            </li>
+          </subTurrets>
       </li>
     </comps>
     <modExtensions>

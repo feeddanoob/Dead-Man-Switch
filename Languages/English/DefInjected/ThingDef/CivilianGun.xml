@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: heavy rifle bullet -->
+  <Bullet_DMS_AMR.label>heavy rifle bullet</Bullet_DMS_AMR.label>
+  
+  <!-- EN: riot machinegun bullet -->
+  <DMS_Bullet_MiniMachineGun.label>riot machinegun bullet</DMS_Bullet_MiniMachineGun.label>
+  
+  <!-- EN: 20 gauge beanbag -->
+  <DMS_Bullet_RiotRevolver.label>20 gauge beanbag</DMS_Bullet_RiotRevolver.label>
+  
+  <!-- EN: 4 gauge bean bag -->
+  <DMS_Bullet_RiotShotgun.label>4 gauge bean bag</DMS_Bullet_RiotShotgun.label>
+  
+  <!-- EN: elephant rifle -->
+  <DMS_ElephantGun.label>elephant rifle</DMS_ElephantGun.label>
+  <!-- EN: Single-shot high caliber heavy hunting rifle. While made to hunt giant games or stop large hostile lifeform with sheer kinetic energy, it is also used by early industrial colonies against mechanoids thanks to its simple manufacture requirements. -->
+  <DMS_ElephantGun.description>Single-shot high caliber heavy hunting rifle. While made to hunt giant games or stop large hostile lifeform with sheer kinetic energy, it is also used by early industrial colonies against mechanoids thanks to its simple manufacture requirements.</DMS_ElephantGun.description>
+  <!-- EN: grip -->
+  <DMS_ElephantGun.tools.grip.label>grip</DMS_ElephantGun.tools.grip.label>
+  <!-- EN: barrel -->
+  <DMS_ElephantGun.tools.barrel.label>barrel</DMS_ElephantGun.tools.barrel.label>
+  <!-- EN: elephant rifle -->
+  <DMS_ElephantGun.verbs.Verb_Shoot.label>elephant rifle</DMS_ElephantGun.verbs.Verb_Shoot.label>
+  
+  <!-- EN: knuckleduster Revolver -->
+  <DMS_KnuckledusterRevolver.label>knuckleduster Revolver</DMS_KnuckledusterRevolver.label>
+  <!-- EN: Minature self-defense weapon commonly found on midworlds, barely takes up any space when folded. Accepts multiple calibers and may also used as a knuckle in a pinch. -->
+  <DMS_KnuckledusterRevolver.description>Minature self-defense weapon commonly found on midworlds, barely takes up any space when folded. Accepts multiple calibers and may also used as a knuckle in a pinch.</DMS_KnuckledusterRevolver.description>
+  <!-- EN: grip -->
+  <DMS_KnuckledusterRevolver.tools.grip.label>grip</DMS_KnuckledusterRevolver.tools.grip.label>
+  <!-- EN: blade -->
+  <DMS_KnuckledusterRevolver.tools.blade.label>blade</DMS_KnuckledusterRevolver.tools.blade.label>
+  <!-- EN: point -->
+  <DMS_KnuckledusterRevolver.tools.point.label>point</DMS_KnuckledusterRevolver.tools.point.label>
+  <!-- EN: knuckleduster Revolver -->
+  <DMS_KnuckledusterRevolver.verbs.Verb_Shoot.label>knuckleduster Revolver</DMS_KnuckledusterRevolver.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Riot LMG -->
+  <DMS_MiniMachineGun.label>Riot LMG</DMS_MiniMachineGun.label>
+  <!-- EN: Pistol caliber machinegun designed for colony defense. can chop down unarmored enemy hords and prisoner riots with ease. -->
+  <DMS_MiniMachineGun.description>Pistol caliber machinegun designed for colony defense. can chop down unarmored enemy hords and prisoner riots with ease.</DMS_MiniMachineGun.description>
+  <!-- EN: Riot LMG -->
+  <DMS_MiniMachineGun.verbs.Verb_Shoot.label>Riot LMG</DMS_MiniMachineGun.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Riot Revolver -->
+  <DMS_Revolver.label>Riot Revolver</DMS_Revolver.label>
+  <!-- EN: a double-action revolver designed to load shotgun ammo. it was designed for personal Defense purpose but soon became an optional weapon for mech solders because it can be used against most of enemy types at the same time. -->
+  <DMS_Revolver.description>a double-action revolver designed to load shotgun ammo. it was designed for personal Defense purpose but soon became an optional weapon for mech solders because it can be used against most of enemy types at the same time.</DMS_Revolver.description>
+  <!-- EN: grip -->
+  <DMS_Revolver.tools.grip.label>grip</DMS_Revolver.tools.grip.label>
+  <!-- EN: barrel -->
+  <DMS_Revolver.tools.barrel.label>barrel</DMS_Revolver.tools.barrel.label>
+  <!-- EN: Riot Revolver -->
+  <DMS_Revolver.verbs.Verb_Shoot.label>Riot Revolver</DMS_Revolver.verbs.Verb_Shoot.label>
+  
+  <!-- EN: slug gun -->
+  <DMS_RiotShotgun.label>slug gun</DMS_RiotShotgun.label>
+  <!-- EN: a high caliber rifled shotgun manufactured with stamped component,design for riot operation and disable hostile mech unit. -->
+  <DMS_RiotShotgun.description>a high caliber rifled shotgun manufactured with stamped component,design for riot operation and disable hostile mech unit.</DMS_RiotShotgun.description>
+  <!-- EN: stock -->
+  <DMS_RiotShotgun.tools.stock.label>stock</DMS_RiotShotgun.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_RiotShotgun.tools.barrel.label>barrel</DMS_RiotShotgun.tools.barrel.label>
+  <!-- EN: slug gun -->
+  <DMS_RiotShotgun.verbs.Verb_Shoot.label>slug gun</DMS_RiotShotgun.verbs.Verb_Shoot.label>
+  
+  <!-- EN: sniper grenade launcher -->
+  <DMS_SniperGrenadeLauncher.label>sniper grenade launcher</DMS_SniperGrenadeLauncher.label>
+  <!-- EN: precise grenade launcher designed to fit in anti-sniper role.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong. -->
+  <DMS_SniperGrenadeLauncher.description>precise grenade launcher designed to fit in anti-sniper role.
+
+This weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</DMS_SniperGrenadeLauncher.description>
+  <!-- EN: sniper grenade launcher -->
+  <DMS_SniperGrenadeLauncher.verbs.Verb_Shoot.label>sniper grenade launcher</DMS_SniperGrenadeLauncher.verbs.Verb_Shoot.label>
+  
+  <!-- EN: survival rifle -->
+  <DMS_SurvivalRifle.label>survival rifle</DMS_SurvivalRifle.label>
+  <!-- EN: Foldable rifle issued to war machine crew members for survival need. Accepts multiple common calibers. -->
+  <DMS_SurvivalRifle.description>Foldable rifle issued to war machine crew members for survival need. Accepts multiple common calibers.</DMS_SurvivalRifle.description>
+  <!-- EN: stock -->
+  <DMS_SurvivalRifle.tools.stock.label>stock</DMS_SurvivalRifle.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_SurvivalRifle.tools.barrel.label>barrel</DMS_SurvivalRifle.tools.barrel.label>
+  <!-- EN: survival rifle -->
+  <DMS_SurvivalRifle.verbs.Verb_Shoot.label>survival rifle</DMS_SurvivalRifle.verbs.Verb_Shoot.label>
+  
+</LanguageData>

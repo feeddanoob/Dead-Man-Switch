@@ -23,7 +23,7 @@
 		  <researchPrerequisites>
 			<li MayRequire="Ludeon.RimWorld.Royalty">Gunlink</li>
 			<li>MicroelectronicsBasics</li>
-		</researchPrerequisites>
+		  </researchPrerequisites>
 		</recipeMaker>
 		<costList>
 		  <ComponentSpacer>1</ComponentSpacer>

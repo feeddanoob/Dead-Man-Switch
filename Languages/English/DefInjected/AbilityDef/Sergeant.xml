@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: backup support -->
+  <DMS_CallDrop.label>backup support</DMS_CallDrop.label>
+  <!-- EN: Send a reinforcement request to an automated industrial facility located in orbit, and the central command will automatically deduct the reinforcement quota based on the identification code on the transceiver. -->
+  <DMS_CallDrop.description>Send a reinforcement request to an automated industrial facility located in orbit, and the central command will automatically deduct the reinforcement quota based on the identification code on the transceiver.</DMS_CallDrop.description>
+  
+  <!-- EN: backup support -->
+  <DMS_CallDrop_Falcon.label>backup support</DMS_CallDrop_Falcon.label>
+  <!-- EN: Send a reinforcement request to an automated industrial facility located in orbit, and the central command will automatically deduct the reinforcement quota based on the identification code on the transceiver. -->
+  <DMS_CallDrop_Falcon.description>Send a reinforcement request to an automated industrial facility located in orbit, and the central command will automatically deduct the reinforcement quota based on the identification code on the transceiver.</DMS_CallDrop_Falcon.description>
+  
+</LanguageData>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: convert component -->
+  <DMS_Convert_ComponentIndustrial.label>convert component</DMS_Convert_ComponentIndustrial.label>
+  <!-- EN: Convert stamponent into more commonly used standard. -->
+  <DMS_Convert_ComponentIndustrial.description>Convert stamponent into more commonly used standard.</DMS_Convert_ComponentIndustrial.description>
+  <!-- EN: Making component. -->
+  <DMS_Convert_ComponentIndustrial.jobString>Making component.</DMS_Convert_ComponentIndustrial.jobString>
+  
+  <!-- EN: grow artifuscle x25 -->
+  <DMS_Make_Artifuscle.label>grow artifuscle x25</DMS_Make_Artifuscle.label>
+  <!-- EN: grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood -->
+  <DMS_Make_Artifuscle.description>grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood</DMS_Make_Artifuscle.description>
+  <!-- EN: growing artifuscle. -->
+  <DMS_Make_Artifuscle.jobString>growing artifuscle.</DMS_Make_Artifuscle.jobString>
+  
+  <!-- EN: grow artifuscle x100 -->
+  <DMS_Make_ArtifuscleMass.label>grow artifuscle x100</DMS_Make_ArtifuscleMass.label>
+  <!-- EN: grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood -->
+  <DMS_Make_ArtifuscleMass.description>grow artificial muscle,uses plasfiber as skin tungsteel as bone, gold as neurofilament and neutroamine as blood</DMS_Make_ArtifuscleMass.description>
+  <!-- EN: growing artifuscle. -->
+  <DMS_Make_ArtifuscleMass.jobString>growing artifuscle.</DMS_Make_ArtifuscleMass.jobString>
+  
+  <!-- EN: make ceramics x20 -->
+  <DMS_Make_Ceramics.label>make ceramics x20</DMS_Make_Ceramics.label>
+  <!-- EN: making ceramics. -->
+  <DMS_Make_Ceramics.description>making ceramics.</DMS_Make_Ceramics.description>
+  <!-- EN: making. -->
+  <DMS_Make_Ceramics.jobString>making.</DMS_Make_Ceramics.jobString>
+  
+  <!-- EN: make ceramics x80 -->
+  <DMS_Make_CeramicsMass.label>make ceramics x80</DMS_Make_CeramicsMass.label>
+  <!-- EN: making ceramics. -->
+  <DMS_Make_CeramicsMass.description>making ceramics.</DMS_Make_CeramicsMass.description>
+  <!-- EN: making. -->
+  <DMS_Make_CeramicsMass.jobString>making.</DMS_Make_CeramicsMass.jobString>
+  
+  <!-- EN: make component -->
+  <DMS_Make_ComponentIndustrial.label>make component</DMS_Make_ComponentIndustrial.label>
+  <!-- EN: Make a component from machinery printer, take longer time and resources. -->
+  <DMS_Make_ComponentIndustrial.description>Make a component from machinery printer, take longer time and resources.</DMS_Make_ComponentIndustrial.description>
+  <!-- EN: Making component. -->
+  <DMS_Make_ComponentIndustrial.jobString>Making component.</DMS_Make_ComponentIndustrial.jobString>
+  
+  <!-- EN: make stamponent -->
+  <DMS_Make_ComponentStamped.label>make stamponent</DMS_Make_ComponentStamped.label>
+  <!-- EN: make stamponent -->
+  <DMS_Make_ComponentStamped.description>make stamponent</DMS_Make_ComponentStamped.description>
+  <!-- EN: stamping compoments. -->
+  <DMS_Make_ComponentStamped.jobString>stamping compoments.</DMS_Make_ComponentStamped.jobString>
+  
+  <!-- EN: make stamponent x4 -->
+  <DMS_Make_ComponentStampedMass.label>make stamponent x4</DMS_Make_ComponentStampedMass.label>
+  <!-- EN: make stamponent -->
+  <DMS_Make_ComponentStampedMass.description>make stamponent</DMS_Make_ComponentStampedMass.description>
+  <!-- EN: stamping compoments. -->
+  <DMS_Make_ComponentStampedMass.jobString>stamping compoments.</DMS_Make_ComponentStampedMass.jobString>
+  
+  <!-- EN: make plasfiber x20 -->
+  <DMS_Make_Plasfiber.label>make plasfiber x20</DMS_Make_Plasfiber.label>
+  <!-- EN: Synthetic plasfiber. -->
+  <DMS_Make_Plasfiber.description>Synthetic plasfiber.</DMS_Make_Plasfiber.description>
+  <!-- EN: Synthesising. -->
+  <DMS_Make_Plasfiber.jobString>Synthesising.</DMS_Make_Plasfiber.jobString>
+  
+  <!-- EN: make plasfiber x80 -->
+  <DMS_Make_PlasfiberMass.label>make plasfiber x80</DMS_Make_PlasfiberMass.label>
+  <!-- EN: Synthetic plasfiber. -->
+  <DMS_Make_PlasfiberMass.description>Synthetic plasfiber.</DMS_Make_PlasfiberMass.description>
+  <!-- EN: Synthesising. -->
+  <DMS_Make_PlasfiberMass.jobString>Synthesising.</DMS_Make_PlasfiberMass.jobString>
+  
+  <!-- EN: make polyester x50 -->
+  <DMS_Make_Polyester.label>make polyester x50</DMS_Make_Polyester.label>
+  <!-- EN: Synthetic polyester fibers using chemfuel. -->
+  <DMS_Make_Polyester.description>Synthetic polyester fibers using chemfuel.</DMS_Make_Polyester.description>
+  <!-- EN: Synthesising. -->
+  <DMS_Make_Polyester.jobString>Synthesising.</DMS_Make_Polyester.jobString>
+  
+  <!-- EN: make polyester x200 -->
+  <DMS_Make_PolyesterMass.label>make polyester x200</DMS_Make_PolyesterMass.label>
+  <!-- EN: Synthetic polyester fibers using chemfuel. -->
+  <DMS_Make_PolyesterMass.description>Synthetic polyester fibers using chemfuel.</DMS_Make_PolyesterMass.description>
+  <!-- EN: Synthesising. -->
+  <DMS_Make_PolyesterMass.jobString>Synthesising.</DMS_Make_PolyesterMass.jobString>
+  
+  <!-- EN: make tungsteel X20 -->
+  <DMS_Make_Tungsteel.label>make tungsteel X20</DMS_Make_Tungsteel.label>
+  <!-- EN: sintering tungsteel. -->
+  <DMS_Make_Tungsteel.description>sintering tungsteel.</DMS_Make_Tungsteel.description>
+  <!-- EN: sintering. -->
+  <DMS_Make_Tungsteel.jobString>sintering.</DMS_Make_Tungsteel.jobString>
+  
+  <!-- EN: make tungsteel x 80 -->
+  <DMS_Make_TungsteelMass.label>make tungsteel x 80</DMS_Make_TungsteelMass.label>
+  <!-- EN: sintering tungsteel. -->
+  <DMS_Make_TungsteelMass.description>sintering tungsteel.</DMS_Make_TungsteelMass.description>
+  <!-- EN: sintering. -->
+  <DMS_Make_TungsteelMass.jobString>sintering.</DMS_Make_TungsteelMass.jobString>
+  
+  <!-- EN: grow wetware computer -->
+  <DMS_Make_WetWare.label>grow wetware computer</DMS_Make_WetWare.label>
+  <!-- EN: grow wetware computer, A high-precision computer that can be produced and used on a large scale. -->
+  <DMS_Make_WetWare.description>grow wetware computer, A high-precision computer that can be produced and used on a large scale.</DMS_Make_WetWare.description>
+  <!-- EN: wetware computer. -->
+  <DMS_Make_WetWare.jobString>wetware computer.</DMS_Make_WetWare.jobString>
+  
+</LanguageData>

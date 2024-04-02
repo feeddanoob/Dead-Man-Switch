@@ -18,7 +18,7 @@
 <!-- 重型機兵用武器 DMS_MechWeaponHeavy //猿人使用的槍型重武器裝備-->
 <!-- 載具型機兵用重型武器 DMS_VehicleWeapon //象龜使用的砲塔型重武器裝備，復仇者機砲與無後座力炮，2A38M等-->
 
-<!-- DMS_AssaultShotgun -->
+	<!-- DMS_AssaultShotgun -->
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_AssaultShotgun</defName>
 		<label>mech assault shotgun</label>
@@ -82,11 +82,14 @@
 				</offsets>
 				<isAlternately>true</isAlternately>
 			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>StandardAutomatroid</EquippableDef>
+			</li>
 		</modExtensions>
 	</ThingDef>
 
 	<!-- 中距離槍族 -->
-<!-- DMS_AssaultRifle -->
+	<!-- DMS_AssaultRifle -->
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_AssaultRifle</defName>
 		<label>mech assault rifle</label>
@@ -130,7 +133,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_LightMachineGun</defaultProjectile>
 				<warmupTime>1</warmupTime>
-				<range>34.9</range>
+				<range>29.9</range>
 				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>Shot_AssaultRifle</soundCast>
@@ -147,11 +150,14 @@
 				</offsets>
 				<isAlternately>true</isAlternately>
 			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>StandardAutomatroid</EquippableDef>
+			</li>
 		</modExtensions>
 	</ThingDef>
 
 	<!--SAR-->
-	<ThingDef ParentName="DMS_AutomatroidGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_SemiAutoRifle</defName>
 		<label>mech SemiAutoRifle</label>
 		<description>a gas action semi-auto rifle used by mech soldier, reliable but too heavy for human.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
@@ -201,7 +207,7 @@
 				<defaultProjectile>Bullet_DMS_AMR</defaultProjectile>
 				<warmupTime>0.8</warmupTime>
 				<burstShotCount>1</burstShotCount>
-				<range>39.9</range>
+				<range>34.9</range>
 				<soundCast>Shot_TurretSniper</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -216,8 +222,78 @@
 				</offsets>
 				<isAlternately>true</isAlternately>
 			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>StandardAutomatroid</EquippableDef>
+			</li>
 		</modExtensions>
 	</ThingDef>  
+
+	<!-- DMS_BattleRifle -->
+	<ThingDef ParentName="DMS_AutomatroidGun">
+		<defName>DMS_BattleRifle</defName>
+		<label>mech battle rifle</label>
+		<description>a full metal battle rifle designed for mech soldiers, it's designed for dangerous mech to mech combat.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<weaponClasses>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
+			<li>Ranged</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>DMS_MechWeaponMeduim</li>
+			<li>A_AR_LongRifle</li>
+		</weaponTags>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_BattleRifle</texPath>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>5.25</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>		
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>DMS_EquipmentElite</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Tungsteel>60</Tungsteel>
+			<ComponentStamped>4</ComponentStamped>	
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_DMS_AMR</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>29.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>Shot_AssaultRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.55,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>StandardAutomatroid</EquippableDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
 
 	<!--DMR-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
@@ -280,6 +356,9 @@
 				</offsets>
 				<isAlternately>true</isAlternately>
 			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>StandardAutomatroid</EquippableDef>
+			</li>
 		</modExtensions>
 	</ThingDef>
 	<!--AMR-->
@@ -330,7 +409,7 @@
 				<defaultProjectile>Bullet_DMS_AMR</defaultProjectile>
 				<warmupTime>3.0</warmupTime>
 				<burstShotCount>1</burstShotCount>
-				<range>49.9</range>
+				<range>39.9</range>
 				<soundCast>Shot_TurretSniper</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -345,9 +424,79 @@
 				</offsets>
 				<isAlternately>true</isAlternately>
 			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>StandardAutomatroid</EquippableDef>
+			</li>
 		</modExtensions>
 	</ThingDef>
 
+	<!--狙擊榴彈發射器-->
+	<ThingDef ParentName="DMS_AutomatroidGun">
+		<defName>DMS_SniperGrenadeLauncher</defName>
+		<label>sniper grenade launcher</label>
+		<description>precise grenade launcher designed to fit in anti-sniper role.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>DMS_MechWeaponAntiTank</li>
+			<li>A_SR_GrenadeLauncher</li>
+		</weaponTags>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_SniperGrenadeLauncher</texPath>
+			<drawSize>(1.4,1.4)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>	
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>10.70</Mass>
+			<RangedWeapon_Cooldown>1.93</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+		<MoveSpeed>-0.15</MoveSpeed>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>DMS_EquipmentElite</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Tungsteel>75</Tungsteel>
+			<ComponentStamped>4</ComponentStamped>	
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_DMS_GrenadeLauncher</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<range>44.9</range>
+				<forcedMissRadius>1.5</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.75,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>StandardAutomatroid</EquippableDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
 
 	<!--AGL-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
@@ -391,7 +540,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_GrenadeLauncher</defaultProjectile>
 				<warmupTime>3.0</warmupTime>
-				<range>39.9</range>
+				<range>34.9</range>
 				<forcedMissRadius>1.5</forcedMissRadius>
 				<burstShotCount>5</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
@@ -411,6 +560,9 @@
 					<li>(0.75,0)</li>
 				</offsets>
 				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>StandardAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -502,6 +654,9 @@
 					<li>(0.75,0)</li>
 				</offsets>
 				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>StandardAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
 	</ThingDef>

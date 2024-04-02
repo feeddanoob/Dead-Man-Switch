@@ -1,25 +1,24 @@
 ﻿using Verse;
 using RimWorld;
-
 using HarmonyLib;
 
 namespace DMS
 {
-    [HarmonyPatch(typeof(ITab_Pawn_Gear), "CanControl", MethodType.Getter)]
+    [HarmonyPatch(typeof(ITab_Pawn_Gear), "CanControlColonist", MethodType.Getter)]
     public static class Patch_CanDropWeapon
     {
-        [HarmonyPrefix]
-        public static bool CanControl(ref bool __result)
+        [HarmonyPostfix]
+        public static void CanControl(ref bool __result)
         {
-            if (__result) return true;
-            if (Find.Selector.SingleSelectedThing is Pawn selectedPawn)
+            if (__result) return;
+            Pawn pawn = Find.Selector.SingleSelectedThing as Pawn;
+            if (pawn != null)
             {
-                if (selectedPawn is IWeaponUsable && selectedPawn.Faction.IsPlayer)
+                if (pawn is IWeaponUsable && pawn.Faction.IsPlayer)
                 {
-                    return true;
+                    __result = true;
                 }
             }
-            return __result;
         }
     }
 }

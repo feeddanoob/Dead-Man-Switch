@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: heavy transport lifter (incoming) -->
+  <DMS_Ship_TransportShuttleIncoming.label>heavy transport lifter (incoming)</DMS_Ship_TransportShuttleIncoming.label>
+  
+  <!-- EN: heavy transport lifter (leaving) -->
+  <DMS_Ship_TransportShuttleLeaving.label>heavy transport lifter (leaving)</DMS_Ship_TransportShuttleLeaving.label>
+  
+</LanguageData>

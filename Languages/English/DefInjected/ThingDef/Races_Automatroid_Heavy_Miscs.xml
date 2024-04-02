@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ape -->
+  <DMS_Mech_Ape.label>ape</DMS_Mech_Ape.label>
+  <!-- EN: An prototype design on testing the feasibility of humanoid automatroid, it's designed to equip with heavy weapon. -->
+  <DMS_Mech_Ape.description>An prototype design on testing the feasibility of humanoid automatroid, it's designed to equip with heavy weapon.</DMS_Mech_Ape.description>
+  <!-- EN: head -->
+  <DMS_Mech_Ape.tools.head.label>head</DMS_Mech_Ape.tools.head.label>
+  
+  <!-- EN: caretta -->
+  <DMS_Mech_Caretta.label>caretta</DMS_Mech_Caretta.label>
+  <!-- EN: a mobile anti-air support platform variant of geochelone. -->
+  <DMS_Mech_Caretta.description>a mobile anti-air support platform variant of geochelone.</DMS_Mech_Caretta.description>
+  <!-- EN: head -->
+  <DMS_Mech_Caretta.tools.head.label>head</DMS_Mech_Caretta.tools.head.label>
+  
+  <!-- EN: geochelone -->
+  <DMS_Mech_Geochelone.label>geochelone</DMS_Mech_Geochelone.label>
+  <!-- EN: an unmanned all-terrain tracked pluse shield support platform with various of production model and variant. -->
+  <DMS_Mech_Geochelone.description>an unmanned all-terrain tracked pluse shield support platform with various of production model and variant.</DMS_Mech_Geochelone.description>
+  <!-- EN: head -->
+  <DMS_Mech_Geochelone.tools.head.label>head</DMS_Mech_Geochelone.tools.head.label>
+  
+  <!-- EN: killdozer -->
+  <DMS_Mech_Killdozer.label>killdozer</DMS_Mech_Killdozer.label>
+  <!-- EN: 一輛無人的小型突擊破障車，前方帶有突破用的推土鏟，車身各處的裝甲也獲得了強化 -->
+  <DMS_Mech_Killdozer.description>一輛無人的小型突擊破障車，前方帶有突破用的推土鏟，車身各處的裝甲也獲得了強化</DMS_Mech_Killdozer.description>
+  <!-- EN: dozer blade -->
+  <DMS_Mech_Killdozer.tools.dozer_blade.label>dozer blade</DMS_Mech_Killdozer.tools.dozer_blade.label>
+  
+</LanguageData>

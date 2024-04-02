@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
+using System.Collections.ObjectModel;
 
 namespace DMS
 {
     [StaticConstructorOnStartup]
     public static class WeaponTagUtil
     {
-        static Dictionary<string, List<ThingDef>> dict = new Dictionary<string, List<ThingDef>>();
-        static List<ThingDef> turrets = new List<ThingDef>();
+        static readonly Dictionary<string, List<ThingDef>> dict = new Dictionary<string, List<ThingDef>>();
+        static readonly List<ThingDef> turrets = new List<ThingDef>();
+        static readonly List<ThingDef> weaponUseableMechs = new List<ThingDef>();
 
         public static List<ThingDef> Turrets => turrets;
         static WeaponTagUtil()
@@ -39,6 +41,11 @@ namespace DMS
                     turrets.Add(def);
                     turrets.SortBy(v => v.BaseMarketValue);
                 }
+            }
+            foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs.Where((ThingDef a) => a.thingClass is IWeaponUsable))
+            {
+                weaponUseableMechs.Add(def);
+                weaponUseableMechs.SortBy(v => v.label);
             }
         }
 
@@ -82,7 +89,40 @@ namespace DMS
             return false;
         }
     }
-
+    public class StatWorker_HeavyGear : StatWorker
+    {
+        public override bool ShouldShowFor(StatRequest req)
+        {
+            return base.ShouldShowFor(req) && req.Def.HasModExtension<HeavyEquippableExtension>();
+        }
+        public override IEnumerable<Dialog_InfoCard.Hyperlink> GetInfoCardHyperlinks(StatRequest statRequest)
+        {
+            HeavyEquippableExtension ext = statRequest.Def.GetModExtension<HeavyEquippableExtension>();
+            if (ext != null)
+            {
+                foreach (ThingDef item in ext.EquippableDef.EquippableWithApparel)
+                {
+                    yield return new Dialog_InfoCard.Hyperlink(item);
+                }
+                foreach (ThingDef item in ext.EquippableDef.EquippableByRaces)
+                {
+                    yield return new Dialog_InfoCard.Hyperlink(item);
+                }
+            }
+        }
+        public override string GetExplanationUnfinalized(StatRequest req, ToStringNumberSense numberSense)
+        {
+            return "";
+        }
+        public override string GetExplanationFinalizePart(StatRequest req, ToStringNumberSense numberSense, float finalVal)
+        {
+            return "DMS_weaponCanBeEquippedBySpecificApparelOrRaces".Translate();
+        }
+        public override string GetStatDrawEntryLabel(StatDef stat, float value, ToStringNumberSense numberSense, StatRequest optionalReq, bool finalized = true)
+        {
+            return optionalReq.Def.GetModExtension<HeavyEquippableExtension>().EquippableDef.EquippableBaseBodySize.ToString("0.##");
+        }
+    }
     public class StatWorker_MechWeapon : StatWorker
     {
         public override bool ShouldShowFor(StatRequest req)

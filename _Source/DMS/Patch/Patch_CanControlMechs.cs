@@ -9,7 +9,7 @@ namespace DMS
     [HarmonyPatch(typeof(Pawn_MechanitorTracker), nameof(Pawn_MechanitorTracker.CanControlMechs),MethodType.Getter)]
     internal static class Patch_CanControlMechs
     {
-        static void Postfix(Pawn_MechanitorTracker __instance, ref AcceptanceReport __result)
+        internal static void Postfix(Pawn_MechanitorTracker __instance, ref AcceptanceReport __result)
         {
             if (__result == true) return;
             if (__instance.OverseenPawns?.Where(p => p.TryGetComp<CompCommandRelay>() != null)?.Count() > 0) __result = true;

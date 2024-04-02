@@ -30,12 +30,6 @@
 				<cooldownTime>3</cooldownTime>
 			</li>
 		</tools>
-		<modExtensions Inherit="False">
-			<li Class="HeavyWeapons.HeavyWeapon">
-				<isHeavy>true</isHeavy>
-				<disableOptionLabelKey>DMS.CannotEquipHeavy</disableOptionLabelKey>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<!--MSC-->
@@ -104,6 +98,9 @@
 					<li>(0.9,0.05)</li>
 				</offsets>
 				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>HeavyAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -177,6 +174,9 @@
 					<li>(0.75,0)</li>
 				</offsets>
 				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>HeavyAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -265,6 +265,9 @@
 					<li>(1,0)</li>
 				</offsets>
 				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>UltraHeavyAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -369,6 +372,9 @@
 					<li>(1.1,-0.1)</li>
 				</offsets>
 				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>UltraHeavyAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
 	</ThingDef>

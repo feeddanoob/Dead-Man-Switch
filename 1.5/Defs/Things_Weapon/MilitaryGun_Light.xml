@@ -3,7 +3,7 @@
 
 
 	<!-- DMS_TaticalPistol -->
-	<ThingDef ParentName="DMS_AutomatroidGun">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_TaticalPistol</defName>
 		<label>mech pistol</label>
 		<description>Defensive firearm with refined manufacture process and additional tactical attachments, it's too heavy for human but suitable to mech soldier. offers better stop power than comparable weapons.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong.</description>
@@ -80,6 +80,9 @@
 				</offsets>
 				<isAlternately>true</isAlternately>
 			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>AverageHumanCanUse</EquippableDef>
+			</li>
 		</modExtensions>
 	</ThingDef>
 
@@ -126,7 +129,7 @@
 			<WorkToMake>26000</WorkToMake>
 			<Mass>4.0</Mass>
 			<AccuracyTouch>0.65</AccuracyTouch>
-			<AccuracyShort>0.45</AccuracyShort>
+			<AccuracyShort>0.35</AccuracyShort>
 			<AccuracyMedium>0.25</AccuracyMedium>
 			<AccuracyLong>0.15</AccuracyLong>
 			<RangedWeapon_Cooldown>1.15</RangedWeapon_Cooldown>
@@ -147,7 +150,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_Pistol</defaultProjectile>
 				<warmupTime>0.55</warmupTime>
-				<range>14.9</range>
+				<range>13.9</range>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<burstShotCount>6</burstShotCount>
 				<soundCast>Shot_Minigun</soundCast>
@@ -163,6 +166,9 @@
 					<li>(0.25,0)</li>
 				</offsets>
 				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>AverageHumanCanUse</EquippableDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -187,10 +193,10 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<Mass>7.56</Mass>
+			<Mass>6.56</Mass>
 			<RangedWeapon_Cooldown>0.96</RangedWeapon_Cooldown>
-			<AccuracyTouch>0.95</AccuracyTouch>
-			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyTouch>0.5</AccuracyTouch>
+			<AccuracyShort>0.35</AccuracyShort>
 			<AccuracyMedium>0.15</AccuracyMedium>
 			<AccuracyLong>0.05</AccuracyLong>
 			<WorkToMake>45000</WorkToMake>
@@ -209,12 +215,12 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_DMS_AMR</defaultProjectile>
-				<warmupTime>0.35</warmupTime>
-				<range>9.9</range>
+				<defaultProjectile>Bullet_DMS_LightMachineGun</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>13.9</range>
 				<burstShotCount>3</burstShotCount>
-				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-				<soundCast>Shot_Autocannon</soundCast>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<soundCast>DMS_MachineGunLight_Shot</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -228,17 +234,20 @@
 				</offsets>
 				<isAlternately>true</isAlternately>
 			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>StandardAutomatroid</EquippableDef>
+			</li>
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="LightMechanoidGunRanged">
+	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_Flameblaster</defName>
 		<label>flameblaster</label>
 		<description>A flame launcher used by mechs that can effectively ignite flammable materials within a range</description>
 		<graphicData>
 		  <texPath>Things/Weapons/DMS_Flameblaster</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <drawSize>0.65</drawSize>
+		  <drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 		  <MarketValue>1000</MarketValue>
@@ -279,5 +288,10 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		  </li>
 		</verbs>
-	  </ThingDef>
+		<modExtensions>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>MountedWeapon</EquippableDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
 </Defs>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: falcon -->
+  <DMS_Mech_Falcon.label>falcon</DMS_Mech_Falcon.label>
+  <!-- EN: A heavy-duty tri-rotor drone for cooperating in field recon and anti-tank strikes. -->
+  <DMS_Mech_Falcon.description>A heavy-duty tri-rotor drone for cooperating in field recon and anti-tank strikes.</DMS_Mech_Falcon.description>
+  <!-- EN: head -->
+  <DMS_Mech_Falcon.tools.head.label>head</DMS_Mech_Falcon.tools.head.label>
+  
+  <!-- EN: noctula -->
+  <DMS_Mech_Noctula.label>noctula</DMS_Mech_Noctula.label>
+  <!-- EN: Stealth operaton command-relay Noctula nicknamed "Night bat" is a command-relay variant of tri-rotor drone falcon. -->
+  <DMS_Mech_Noctula.description>Stealth operaton command-relay Noctula nicknamed "Night bat" is a command-relay variant of tri-rotor drone falcon.</DMS_Mech_Noctula.description>
+  <!-- EN: head -->
+  <DMS_Mech_Noctula.tools.head.label>head</DMS_Mech_Noctula.tools.head.label>
+  
+</LanguageData>

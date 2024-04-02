@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: sintering furnace -->
+  <DMS_Furnace.label>sintering furnace</DMS_Furnace.label>
+  <!-- EN: A massive industrial equipment use to create an ultra-high temperature environment in a closed space to sinter alloy or ceramics. can also smelt metal. -->
+  <DMS_Furnace.description>A massive industrial equipment use to create an ultra-high temperature environment in a closed space to sinter alloy or ceramics. can also smelt metal.</DMS_Furnace.description>
+  
+  <!-- EN: Mote -->
+  <DMS_MechConstructorCycleComplete.label>Mote</DMS_MechConstructorCycleComplete.label>
+  
+  <!-- EN: Mote -->
+  <DMS_MechConstructorFormed.label>Mote</DMS_MechConstructorFormed.label>
+  
+  <!-- EN: Mote -->
+  <DMS_MechConstructorForming.label>Mote</DMS_MechConstructorForming.label>
+  
+  <!-- EN: automatroid constructor -->
+  <DMS_MechGestatorSamll.label>automatroid constructor</DMS_MechGestatorSamll.label>
+  <!-- EN: A massive industrial equipment use to assemble automatroid. -->
+  <DMS_MechGestatorSamll.description>A massive industrial equipment use to assemble automatroid.</DMS_MechGestatorSamll.description>
+  
+  <!-- EN: pressure chamber -->
+  <DMS_ReactionChamber.label>pressure chamber</DMS_ReactionChamber.label>
+  <!-- EN: A massive industrial equipment use to create a high-pressure environment to cause materials to react together. -->
+  <DMS_ReactionChamber.description>A massive industrial equipment use to create a high-pressure environment to cause materials to react together.</DMS_ReactionChamber.description>
+  
+  <!-- EN: artifuscle chamber -->
+  <DMS_TableArtifuscle.label>artifuscle chamber</DMS_TableArtifuscle.label>
+  <!-- EN: High-end production equipment for cultivating artifuscle and bionic. -->
+  <DMS_TableArtifuscle.description>High-end production equipment for cultivating artifuscle and bionic.</DMS_TableArtifuscle.description>
+  
+  <!-- EN: machinery printer -->
+  <DMS_TableMachinePrinter.label>machinery printer</DMS_TableMachinePrinter.label>
+  <!-- EN: a composite metal printer, which can manufacture and assemble metal products and weapons through cold forging to mass-produce machinery. -->
+  <DMS_TableMachinePrinter.description>a composite metal printer, which can manufacture and assemble metal products and weapons through cold forging to mass-produce machinery.</DMS_TableMachinePrinter.description>
+  
+</LanguageData>

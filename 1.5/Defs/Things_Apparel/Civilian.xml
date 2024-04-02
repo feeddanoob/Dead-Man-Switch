@@ -313,6 +313,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.5</MoveSpeed>
+			<CarryingCapacity>100</CarryingCapacity>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -333,19 +334,6 @@
 			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
 		</apparel>
 		<modExtensions>
-			<li Class="VFECore.ApparelExtension">
-				<carryingCapacity>100</carryingCapacity>
-				<pawnCapacityMinLevels>
-					<li>
-						<capacity>Moving</capacity>
-						<minLevel>0.25</minLevel>
-					</li>
-					<li>
-						<capacity>Manipulation</capacity>
-						<minLevel>0.25</minLevel>
-					</li>
-				</pawnCapacityMinLevels>
-			</li>
 		</modExtensions>
 	</ThingDef>
 

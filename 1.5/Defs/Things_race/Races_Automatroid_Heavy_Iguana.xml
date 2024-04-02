@@ -173,7 +173,49 @@
 			  <drawOffset>(0.2,0,0.5)</drawOffset>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>
         <rotationSmoothTime>0.1</rotationSmoothTime>
-      </li>
+      </li><li Class="DMS.CompPropertiesMultipleTurretGun">
+        <subTurrets>
+          <li>
+            <ID>headingTurret</ID>
+            <autoAttack>false</autoAttack>
+            <turret>DMS_Flameblaster</turret>      
+            <command_ToggleFire>切换自动开火</command_ToggleFire>
+            <commandDesc_ToggleFire>切换自动开火描述</commandDesc_ToggleFire>
+            <command_Target>瞄准目标</command_Target>
+            <commandDesc_Target>瞄准目标描述</commandDesc_Target>
+            <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>  
+            <renderNodeProperties>
+              <li>
+                <nodeClass>DMS.PawnRenderNode_SubTurretGun</nodeClass>
+                <workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
+                <parentTagDef>Body</parentTagDef>
+                <drawSize>1.2</drawSize>
+                <baseLayer>-21</baseLayer>
+                <pawnType>Any</pawnType>
+                <drawData>
+                  <dataEast>
+                      <offset>(0.85,0,-0.15)</offset>
+                      <pivot>(0.25,0.5)</pivot>
+                  </dataEast>
+                  <dataWest>
+                      <offset>(-0.85,0,-0.15)</offset>
+                      <pivot>(0.25,0.5)</pivot>
+                  </dataWest>
+                  <dataSouth>
+                      <offset>(0.25,0,-0.8)</offset>
+                      <pivot>(0.5,0.5)</pivot>
+                      <rotation>90</rotation>
+                  </dataSouth>
+                  <dataNorth>
+                      <offset>(0,0,0)</offset>
+                      <pivot>(0.5,0.5)</pivot>
+                  </dataNorth>
+                </drawData>
+              </li>
+            </renderNodeProperties>
+          </li>
+        </subTurrets>
+    </li>
     </comps>
     <modExtensions>
       <li Class="DMS.MechWeaponExtension">

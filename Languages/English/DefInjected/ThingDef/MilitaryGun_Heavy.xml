@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: heavy machine gun bullet -->
+  <Bullet_DMS_HeavyMachineGun.label>heavy machine gun bullet</Bullet_DMS_HeavyMachineGun.label>
+  
+  <!-- EN: recoilless grenade round -->
+  <DMS_Bullet_RR.label>recoilless grenade round</DMS_Bullet_RR.label>
+  
+  <!-- EN: recoilless cannon -->
+  <DMS_Gun_Recoilless.label>recoilless cannon</DMS_Gun_Recoilless.label>
+  <!-- EN: A Recoilless cannon designed to snipe the heavy-armed target in range.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
+  <DMS_Gun_Recoilless.description>A Recoilless cannon designed to snipe the heavy-armed target in range.
+
+This weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</DMS_Gun_Recoilless.description>
+  <!-- EN: stock -->
+  <DMS_Gun_Recoilless.tools.stock.label>stock</DMS_Gun_Recoilless.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_Gun_Recoilless.tools.barrel.label>barrel</DMS_Gun_Recoilless.tools.barrel.label>
+  <!-- EN: recoilless cannon -->
+  <DMS_Gun_Recoilless.verbs.Verb_Shoot.label>recoilless cannon</DMS_Gun_Recoilless.verbs.Verb_Shoot.label>
+  
+  <!-- EN: mech HMG -->
+  <DMS_HeavyMachineGun.label>mech HMG</DMS_HeavyMachineGun.label>
+  <!-- EN: heavy machine gun for mech soldier or infantry support platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
+  <DMS_HeavyMachineGun.description>heavy machine gun for mech soldier or infantry support platform.
+
+This weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</DMS_HeavyMachineGun.description>
+  <!-- EN: stock -->
+  <DMS_HeavyMachineGun.tools.stock.label>stock</DMS_HeavyMachineGun.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_HeavyMachineGun.tools.barrel.label>barrel</DMS_HeavyMachineGun.tools.barrel.label>
+  <!-- EN: mech HMG -->
+  <DMS_HeavyMachineGun.verbs.Verb_Shoot.label>mech HMG</DMS_HeavyMachineGun.verbs.Verb_Shoot.label>
+  
+  <!-- EN: mech sniper cannon -->
+  <DMS_SniperCannon.label>mech sniper cannon</DMS_SniperCannon.label>
+  <!-- EN: an ultra heavy rifle calibered with autocannon rounds, has proven the capability to snipe an exostrider in the distance. it is specially designed for long-range anti-mech sniping operation.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
+  <DMS_SniperCannon.description>an ultra heavy rifle calibered with autocannon rounds, has proven the capability to snipe an exostrider in the distance. it is specially designed for long-range anti-mech sniping operation.
+
+This weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</DMS_SniperCannon.description>
+  <!-- EN: stock -->
+  <DMS_SniperCannon.tools.stock.label>stock</DMS_SniperCannon.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_SniperCannon.tools.barrel.label>barrel</DMS_SniperCannon.tools.barrel.label>
+  <!-- EN: mech sniper cannon -->
+  <DMS_SniperCannon.verbs.Verb_Shoot.label>mech sniper cannon</DMS_SniperCannon.verbs.Verb_Shoot.label>
+  
+  <!-- EN: 2A38M -->
+  <DMS_Tarbosaurus_BossGun.label>2A38M</DMS_Tarbosaurus_BossGun.label>
+  <!-- EN: a dual-barrel heavy autocannon for infantry suppress / anti air platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
+  <DMS_Tarbosaurus_BossGun.description>a dual-barrel heavy autocannon for infantry suppress / anti air platform.
+
+This weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</DMS_Tarbosaurus_BossGun.description>
+  <!-- EN: stock -->
+  <DMS_Tarbosaurus_BossGun.tools.stock.label>stock</DMS_Tarbosaurus_BossGun.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_Tarbosaurus_BossGun.tools.barrel.label>barrel</DMS_Tarbosaurus_BossGun.tools.barrel.label>
+  <!-- EN: 2A38M -->
+  <DMS_Tarbosaurus_BossGun.verbs.Verb_Shoot.label>2A38M</DMS_Tarbosaurus_BossGun.verbs.Verb_Shoot.label>
+  
+</LanguageData>
