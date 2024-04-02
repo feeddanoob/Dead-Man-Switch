@@ -42,8 +42,9 @@ namespace DMS
                     turrets.SortBy(v => v.BaseMarketValue);
                 }
             }
-            foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs.Where((ThingDef a) => a.thingClass is IWeaponUsable))
+            foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs.Where((ThingDef a) => a.GetModExtension<MechWeaponExtension>()!=null))
             {
+                Log.Message(def.defName);
                 weaponUseableMechs.Add(def);
                 weaponUseableMechs.SortBy(v => v.label);
             }
@@ -88,6 +89,21 @@ namespace DMS
             }
             return false;
         }
+        public static ThingDef[] UseableByListsOfMechs(ThingWithComps weapon)
+        {
+            List<ThingDef> list = new List<ThingDef>();
+            ;
+            foreach (ThingDef mech in weaponUseableMechs)
+            {
+                Log.Message(mech.defName);
+                MechWeaponExtension ext = mech.GetModExtension<MechWeaponExtension>();
+                if (ext != null && CheckUtility.IsMechUseable(ext, weapon))
+                {
+                    list.Add(mech);
+                }
+            }
+            return list.ToArray();
+        }
     }
     public class StatWorker_HeavyGear : StatWorker
     {
@@ -100,13 +116,21 @@ namespace DMS
             HeavyEquippableExtension ext = statRequest.Def.GetModExtension<HeavyEquippableExtension>();
             if (ext != null)
             {
-                foreach (ThingDef item in ext.EquippableDef.EquippableWithApparel)
+                foreach (HediffDef hediff in ext.EquippableDef.EquippableWithHediff)
                 {
-                    yield return new Dialog_InfoCard.Hyperlink(item);
+                    yield return new Dialog_InfoCard.Hyperlink(hediff);
                 }
-                foreach (ThingDef item in ext.EquippableDef.EquippableByRaces)
+                foreach (ThingDef apparel in ext.EquippableDef.EquippableWithApparel)
                 {
-                    yield return new Dialog_InfoCard.Hyperlink(item);
+                    yield return new Dialog_InfoCard.Hyperlink(apparel);
+                }
+                foreach (ThingDef race in ext.EquippableDef.EquippableByRaces)
+                {
+                    yield return new Dialog_InfoCard.Hyperlink(race);
+                }
+                foreach (ThingDef race in WeaponTagUtil.UseableByListsOfMechs(statRequest.Thing as ThingWithComps))
+                {
+                    yield return new Dialog_InfoCard.Hyperlink(race);
                 }
             }
         }

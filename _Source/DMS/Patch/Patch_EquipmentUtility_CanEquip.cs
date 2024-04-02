@@ -47,11 +47,15 @@ namespace DMS
                 if (ext != null && CheckUtility.IsMechUseable(ext, pawn)) return true;
             }
             if (extension.EquippableDef.EquippableByRaces.Contains(pawn.def)) return true;//種族上可用
-
+            foreach (HediffDef hediff in extension.EquippableDef.EquippableWithHediff)//仿生上可用
+            {
+                if (pawn.health.hediffSet.GetFirstHediffOfDef(hediff) != null) return true;
+            }
             foreach (ThingDef apparel in extension.EquippableDef.EquippableWithApparel)//裝備上可用
             {
                 if (pawn.WearsApparel(apparel)) return true;
             }
+            
             return false;
         }
     }

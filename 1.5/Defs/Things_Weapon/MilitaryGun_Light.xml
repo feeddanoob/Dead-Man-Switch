@@ -173,7 +173,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<!--DMS_AssaultPiercer 突擊衝鋒槍,專門用於近距離擊穿裝甲單位的短托大口徑槍械，超高穿甲射擊CD很短但傷害不高-->
+	<!--DMS_AssaultPiercer 突擊衝鋒槍-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_AssaultPiercer</defName>
 		<label>assault piercer</label>
@@ -239,7 +239,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
+	<!--DMS_Flameblaster 火焰發射器.-->
 	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_Flameblaster</defName>
 		<label>flameblaster</label>
