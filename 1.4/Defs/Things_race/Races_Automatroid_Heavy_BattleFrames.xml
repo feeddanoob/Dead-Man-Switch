@@ -186,6 +186,11 @@
     <race>
       <mechEnabledWorkTypes>
         <li>Hauling</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFDeliver</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFCremating</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFLoading</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFRefueling</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFRearming</li>
       </mechEnabledWorkTypes>
       <packAnimal>true</packAnimal>
     </race>
@@ -263,6 +268,15 @@
         <li>Construction</li>
         <li>Hauling</li>
         <li>Mining</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFHarvesting</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFDeconstruct</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFRepair</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFDeliver</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFCremating</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFLoading</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFRefueling</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFRearming</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFDrilling</li>
       </mechEnabledWorkTypes>
       <mechFixedSkillLevel>12</mechFixedSkillLevel>
     </race>

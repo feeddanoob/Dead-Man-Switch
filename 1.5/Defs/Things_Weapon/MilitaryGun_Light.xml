@@ -247,8 +247,13 @@
 		<graphicData>
 		  <texPath>Things/Weapons/DMS_Flameblaster</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <drawSize>1</drawSize>
+		  <drawSize>1.4</drawSize>
 		</graphicData>
+		<costList>
+			<Chemfuel>30</Chemfuel>
+			<Tungsteel>30</Tungsteel>
+			<ComponentStamped>1</ComponentStamped>
+		</costList>
 		<statBases>
 		  <MarketValue>1000</MarketValue>
 		  <Mass>1.5</Mass>
@@ -288,6 +293,11 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		  </li>
 		</verbs>
+		<comps>
+			<li>
+				
+			</li>
+		</comps>
 		<modExtensions>
 			<li Class="DMS.HeavyEquippableExtension">
 				<EquippableDef>MountedWeapon</EquippableDef>

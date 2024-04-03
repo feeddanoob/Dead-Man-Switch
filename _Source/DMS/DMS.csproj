@@ -71,7 +71,9 @@
     <Compile Include="MultiTurrets\CompPropertiesMultipleTurretGun.cs" />
     <Compile Include="MultiTurrets\PawnRenderNodeWorker_SubTurretGun.cs" />
     <Compile Include="MultiTurrets\PawnRenderNode_SubTurretGun.cs" />
+    <Compile Include="Patch\Patch_CanDraftMech.cs" />
     <Compile Include="Patch\Patch_EquipmentUtility_CanEquip.cs" />
+    <Compile Include="Patch\Patch_IsColonyMechPlayerControlled.cs" />
     <Compile Include="Thing\HeavyEquippableDef.cs" />
     <Compile Include="Thing\HeavyEquippableExtension.cs" />
     <Compile Include="Component\CompUseEffect_CallBossgroupByItem.cs" />

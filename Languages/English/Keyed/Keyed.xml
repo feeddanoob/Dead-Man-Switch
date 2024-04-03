@@ -2,11 +2,12 @@
 <LanguageData>
   
   <!-- EN: active camouflage -->
-  <DMS_weaponCanBeEquippedBySpecificApparelOrRaces>this weapon can also be equipped by specific races or wearing equipment/implant with bionic, lists down below.</DMS_weaponCanBeEquippedBySpecificApparelOrRaces>
-  <!-- EN: fully blend into the environment by activating an active morphic camouflage based on nanomechanical coatings. -->
+  <DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>If the pawn's bodysize is lower than this number, then it must have at least one of the following hediffs or genes, or have at least one piece of equipment below worn. Races exempt from this restriction are also listed here.</DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>
+  <DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>this weapon is designed with specific interfaces or weapon mounts, so it may only be equipped by pawn with having specific race / equipment / bionic or gene. \n\n listed below.</DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>
   <DMS_WeaponNotSupported>weapon not supported</DMS_WeaponNotSupported>
   <DMS_FrameNotSupported>frame not supported</DMS_FrameNotSupported>
   <DMS_AutomatroidDisconnected>automatroid disconnected</DMS_AutomatroidDisconnected>
   <DMS_WillTerminateTheBetrayedUnit>will be terminate if betrayed</DMS_WillTerminateTheBetrayedUnit>
+  <DMS_MountedWeapon>mounted weapon</DMS_MountedWeapon>
   
 </LanguageData>

@@ -17,17 +17,17 @@ namespace DMS
                 if (SameMap)
                 {
                     currentRadius = Props.maxRelayRadius; 
-                    Log.Message("SameMap");
+                    //Log.Message("SameMap");
                 }
                 else if (!Pawn.GetOverseer().Spawned)
                 {
                     currentRadius = Props.minRelayRadius;
-                    Log.Message("Overseer not spawned");
+                    //Log.Message("Overseer not spawned");
                 }
                 else
                 {
                     int num = Find.WorldGrid.TraversalDistanceBetween(Pawn.MapHeld.Tile, Pawn.GetOverseer().MapHeld.Tile);
-                    Log.Message("Overseer at:" + num);
+                    //Log.Message("Overseer at:" + num);
                     if (num > Props.maxWorldMapRadius)
                     {
                         currentRadius = Props.minRelayRadius;

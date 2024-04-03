@@ -46,7 +46,14 @@ namespace DMS
                 var ext = pawn.def.GetModExtension<MechWeaponExtension>();
                 if (ext != null && CheckUtility.IsMechUseable(ext, pawn)) return true;
             }
-            if (extension.EquippableDef.EquippableByRaces.Contains(pawn.def)) return true;//種族上可用
+            if (extension.EquippableDef.EquippableByRace.Contains(pawn.def)) return true;//種族上可用
+            if (ModsConfig.BiotechActive)
+            {
+                foreach (GeneDef gene in extension.EquippableDef.EquippableWithGene)//基因上可用
+                {
+                    if (pawn.genes.GenesListForReading.Contains(GeneMaker.MakeGene(gene,pawn))) return true;
+                }
+            }       
             foreach (HediffDef hediff in extension.EquippableDef.EquippableWithHediff)//仿生上可用
             {
                 if (pawn.health.hediffSet.GetFirstHediffOfDef(hediff) != null) return true;

@@ -112,11 +112,23 @@
       <baseHealthScale>1</baseHealthScale>
       <!--<mechWeightClass>Light</mechWeightClass>-->
       <thinkTreeMain>DMS_Machine</thinkTreeMain>
+      <mechWorkTypePriorities>
+        <Cleaning>3</Cleaning>
+        <Hauling>2</Hauling>
+        <PlantCutting>1</PlantCutting>
+      </mechWorkTypePriorities>
       <mechEnabledWorkTypes>
         <li>PlantCutting</li>
         <li>Hauling</li>
         <li>Cleaning</li>
         <li>Firefighter</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFRearming</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFRefueling</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFHarvesting</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFLoading</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFCremating</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFDeliver</li>
+        <li MayRequire="frozensnowfox.complexjobs">FSFLoading</li>
       </mechEnabledWorkTypes>
     </race>
     <butcherProducts>

@@ -3,7 +3,7 @@
     <DMS.HeavyEquippableDef> <!-- this type of weapon is only for mech that have support of it. -->
 		<defName>MountedWeapon</defName>
 		<EquippableBaseBodySize>-1</EquippableBaseBodySize>
-		<EquippableByRaces/>
+		<EquippableByRace/>
 		<EquippableWithHediff/>
 		<EquippableWithApparel/>
 	</DMS.HeavyEquippableDef>
@@ -11,7 +11,7 @@
 	<DMS.HeavyEquippableDef>
 		<defName>AverageHumanCanUse</defName><!-- for non-adult and gene-caused smaller xeno pawn. -->
 		<EquippableBaseBodySize>1</EquippableBaseBodySize>
-		<EquippableByRaces/>
+		<EquippableByRace/>
 		<EquippableWithHediff>
             <li>BionicArm</li>
             <li>DMS_SyntheticArm</li>
@@ -27,7 +27,7 @@
 	<DMS.HeavyEquippableDef>
 		<defName>LightAutomatroid</defName>
 		<EquippableBaseBodySize>1.05</EquippableBaseBodySize>
-		<EquippableByRaces/>
+		<EquippableByRace/>
 		<EquippableWithHediff>
             <li>BionicArm</li>
             <li>DMS_SyntheticArm</li>
@@ -43,7 +43,8 @@
 	<DMS.HeavyEquippableDef>
 		<defName>StandardAutomatroid</defName>
 		<EquippableBaseBodySize>1.2</EquippableBaseBodySize>
-		<EquippableByRaces/>
+		<EquippableByRace/>
+		<EquippableWithGene/>
 		<EquippableWithHediff>
             <li>DMS_SyntheticArm</li>
             <li>DMS_ProstheticArm</li>
@@ -58,7 +59,7 @@
 	<DMS.HeavyEquippableDef>
 		<defName>HeavyAutomatroid</defName>
 		<EquippableBaseBodySize>1.4</EquippableBaseBodySize>
-		<EquippableByRaces/>
+		<EquippableByRace/>
 		<EquippableWithHediff/>
 		<EquippableWithApparel>
 			<li>DMS_Apparel_PowerSkelton</li>
@@ -68,7 +69,7 @@
 	<DMS.HeavyEquippableDef>
 		<defName>UltraHeavyAutomatroid</defName>
 		<EquippableBaseBodySize>2</EquippableBaseBodySize>
-		<EquippableByRaces/>
+		<EquippableByRace/>
 		<EquippableWithHediff/>
 		<EquippableWithApparel>
 			<!-- TODO <li>DMS_Apparel_MobileDragoonCore</li> -->

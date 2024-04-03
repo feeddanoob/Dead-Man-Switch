@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
-using System.Collections.ObjectModel;
 
 namespace DMS
 {
@@ -44,7 +43,6 @@ namespace DMS
             }
             foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs.Where((ThingDef a) => a.GetModExtension<MechWeaponExtension>()!=null))
             {
-                Log.Message(def.defName);
                 weaponUseableMechs.Add(def);
                 weaponUseableMechs.SortBy(v => v.label);
             }
@@ -95,7 +93,6 @@ namespace DMS
             ;
             foreach (ThingDef mech in weaponUseableMechs)
             {
-                Log.Message(mech.defName);
                 MechWeaponExtension ext = mech.GetModExtension<MechWeaponExtension>();
                 if (ext != null && CheckUtility.IsMechUseable(ext, weapon))
                 {
@@ -124,7 +121,14 @@ namespace DMS
                 {
                     yield return new Dialog_InfoCard.Hyperlink(apparel);
                 }
-                foreach (ThingDef race in ext.EquippableDef.EquippableByRaces)
+                if (ModsConfig.BiotechActive)
+                {
+                    foreach (GeneDef gene in ext.EquippableDef.EquippableWithGene)
+                    {
+                        yield return new Dialog_InfoCard.Hyperlink(gene);
+                    }
+                }
+                foreach (ThingDef race in ext.EquippableDef.EquippableByRace)
                 {
                     yield return new Dialog_InfoCard.Hyperlink(race);
                 }
@@ -140,10 +144,18 @@ namespace DMS
         }
         public override string GetExplanationFinalizePart(StatRequest req, ToStringNumberSense numberSense, float finalVal)
         {
-            return "DMS_weaponCanBeEquippedBySpecificApparelOrRaces".Translate();
+            if (req.Def.GetModExtension<HeavyEquippableExtension>().EquippableDef.EquippableBaseBodySize == -1)
+            {
+                return "DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces".Translate();
+            }
+            return "DMS_WeaponCanBeEquippedBySpecificApparelOrRaces".Translate();
         }
         public override string GetStatDrawEntryLabel(StatDef stat, float value, ToStringNumberSense numberSense, StatRequest optionalReq, bool finalized = true)
         {
+            if (optionalReq.Def.GetModExtension<HeavyEquippableExtension>().EquippableDef.EquippableBaseBodySize == -1)
+            {
+                return "DMS_MountedWeapon".Translate();
+            }
             return optionalReq.Def.GetModExtension<HeavyEquippableExtension>().EquippableDef.EquippableBaseBodySize.ToString("0.##");
         }
     }
@@ -208,6 +220,10 @@ namespace DMS
             }
         }
 
+        public override string GetExplanationFinalizePart(StatRequest req, ToStringNumberSense numberSense, float finalVal)
+        {
+            return "";
+        }
         public override string GetExplanationUnfinalized(StatRequest req, ToStringNumberSense numberSense)
         {
             return "";
