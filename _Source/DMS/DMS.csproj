@@ -74,6 +74,7 @@
     <Compile Include="Patch\Patch_CanDraftMech.cs" />
     <Compile Include="Patch\Patch_EquipmentUtility_CanEquip.cs" />
     <Compile Include="Patch\Patch_IsColonyMechPlayerControlled.cs" />
+    <Compile Include="Patch\vfepatch.cs" />
     <Compile Include="Thing\HeavyEquippableDef.cs" />
     <Compile Include="Thing\HeavyEquippableExtension.cs" />
     <Compile Include="Component\CompUseEffect_CallBossgroupByItem.cs" />
@@ -117,6 +118,8 @@
     <Compile Include="Patch\Patch_CanTakeOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\HumnalikeMechRenderingUtility.cs" />
+    <Compile Include="Utility\StatWorker_HeavyGear.cs" />
+    <Compile Include="Utility\StatWorker_MechWeapon.cs" />
     <Compile Include="Utility\WeaponTagUtil.cs" />
   </ItemGroup>
   <ItemGroup />

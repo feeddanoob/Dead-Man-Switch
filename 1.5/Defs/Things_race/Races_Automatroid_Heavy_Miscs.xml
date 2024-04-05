@@ -13,8 +13,8 @@
     <ArmorRating_Heat>1.2</ArmorRating_Heat> 
     <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>                 <!--帶寬消耗-->
     <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge> <!--充電/培養時產出廢料-->
-    <ShootingAccuracyPawn>1.1</ShootingAccuracyPawn>                                      <!---->
-    <AimingDelayFactor>1.1</AimingDelayFactor>                                            <!--瞄準延遲-->
+    <ShootingAccuracyPawn>0.8</ShootingAccuracyPawn>                                      <!---->
+    <AimingDelayFactor>1.2</AimingDelayFactor>                                            <!--瞄準延遲-->
   </statBases>
   <race>
     <body>DMS_Humanoid_TypeB</body>                                                       <!--身體(另外的def)-->
@@ -46,66 +46,6 @@
       </UsableTechLevels>
     </li>
   </modExtensions>
-  <comps>
-    <li Class="DMS.CompPropertiesMultipleTurretGun">
-      <subTurrets>
-          <li>
-              <ID>1</ID>                        <!-- Id，不能重复 -->
-              <turret>DMS_SubMachineGunMounted</turret>
-              <IdleAngleOffset>-90</IdleAngleOffset>
-              <command_ToggleFire>切换自动开火</command_ToggleFire>
-              <commandDesc_ToggleFire>切换自动开火描述</commandDesc_ToggleFire>
-              <command_Target>瞄准目标</command_Target>
-              <commandDesc_Target>瞄准目标描述</commandDesc_Target>
-              <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>                        <!-- 瞄准目标按钮贴图路径 -->
-              <renderNodeProperties>
-                  <li>
-                      <nodeClass>DMS.PawnRenderNode_SubTurretGun</nodeClass>
-                      <workerClass>DMS.PawnRenderNodeWorker_SubTurretGun</workerClass>
-                      <parentTagDef>Body</parentTagDef>
-                      <overrideMeshSize>(1, 1)</overrideMeshSize>
-                      <baseLayer>20</baseLayer>
-                      <pawnType>Any</pawnType>
-                      <drawData>
-                          <dataWest>
-                              <rotationOffset>180</rotationOffset>
-                          </dataWest>
-                      </drawData>
-                  </li>
-              </renderNodeProperties>
-          </li>
-          <li>
-              <ID>2</ID>
-              <turret>DMS_SubMachineGunMounted</turret>
-              <IdleAngleOffset>-90</IdleAngleOffset>
-              <command_ToggleFire>切换自动开火</command_ToggleFire>
-              <commandDesc_ToggleFire>切换自动开火描述</commandDesc_ToggleFire>
-              <command_Target>瞄准目标</command_Target>
-              <commandDesc_Target>瞄准目标描述</commandDesc_Target>
-              <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>                        <!-- 瞄准目标按钮贴图路径 -->
-              <autoAttack>false</autoAttack>
-              <renderNodeProperties>
-                  <li>
-                      <nodeClass>DMS.PawnRenderNode_SubTurretGun</nodeClass>
-                      <workerClass>DMS.PawnRenderNodeWorker_SubTurretGun</workerClass>
-                      <parentTagDef>Body</parentTagDef>
-                      <overrideMeshSize>(1, 1)</overrideMeshSize>
-                      <baseLayer>20</baseLayer>
-                      <pawnType>Any</pawnType>
-                      <drawData>
-                          <dataWest>
-                              <rotationOffset>180</rotationOffset>
-                          </dataWest>
-                          <defaultData>
-                              <offset>(1,0,0)</offset>
-                          </defaultData>
-                      </drawData>
-                  </li>
-              </renderNodeProperties>
-          </li>
-      </subTurrets>
-    </li>
-  </comps>
 </ThingDef>
 
 <PawnKindDef ParentName="BaseAutomatroidKind">
@@ -158,11 +98,6 @@
       <mechWeightClass>UltraHeavy</mechWeightClass>
     </race>
     <comps>
-		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <drawOffset>(0,0,0)</drawOffset>
-			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
-        <rotationSmoothTime>0.12</rotationSmoothTime>
-      </li>
       <li Class="CompProperties_ProjectileInterceptor">
         <radius>5</radius>
         <interceptGroundProjectiles>true</interceptGroundProjectiles>
@@ -177,6 +112,50 @@
         <drawWithNoSelection>True</drawWithNoSelection>
         <disarmedByEmpForTicks>3000</disarmedByEmpForTicks>
         <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+      <li Class="DMS.CompPropertiesMultipleTurretGun">
+        <subTurrets>
+          <li>
+            <ID>1</ID>                        <!-- Id，不能重复 -->
+            <turret>DMS_SubMachineGunMounted</turret>
+            <autoAttack>true</autoAttack>
+            <command_ToggleFire>切换自动开火</command_ToggleFire>
+            <commandDesc_ToggleFire>切换自动开火描述</commandDesc_ToggleFire>
+            <command_Target>瞄准目标</command_Target>
+            <commandDesc_Target>瞄准目标描述</commandDesc_Target>
+            <warmingTime>5</warmingTime>
+            <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>                        <!-- 瞄准目标按钮贴图路径 -->
+            <angleOffset>-90</angleOffset>
+            <renderNodeProperties>
+              <li>
+                <nodeClass>DMS.PawnRenderNode_SubTurretGun</nodeClass>
+                <workerClass>DMS.PawnRenderNodeWorker_SubTurretGun</workerClass>
+                <parentTagDef>Body</parentTagDef>
+                <overrideMeshSize>1.25</overrideMeshSize>
+                <baseLayer>20</baseLayer>
+                <pawnType>Any</pawnType>
+                <drawData>
+                  <defaultData>
+                    <pivot>(0.5,0.5)</pivot>
+                  </defaultData>
+                  <dataNorth>
+                    <offset>(0.6,0,0.9)</offset>
+                  </dataNorth>
+                  <dataSouth>
+                    <offset>(-0.6,0,-0.5)</offset>
+                  </dataSouth>
+                  <dataEast>
+                    <offset>(0.5,0,-0.5)</offset>
+                  </dataEast>
+                  <dataWest>
+                    <offset>(-0.75,0,0.6)</offset>
+                    <rotationOffset>180</rotationOffset>
+                  </dataWest>
+                </drawData>
+              </li>
+            </renderNodeProperties>
+           </li>
+        </subTurrets>
       </li>
     </comps>
     <tools Inherit="False">
@@ -195,6 +174,10 @@
       <li>
         <damageDef>Blunt</damageDef>
         <multiplier>0.6</multiplier>
+      </li>
+      <li>
+        <damageDef>Stab</damageDef>
+        <multiplier>0.5</multiplier>
       </li>
     </damageMultipliers>
     <killedLeavingsPlayerHostile>
@@ -215,7 +198,7 @@
           <texPath>Things/Automatroid/geochelone</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>3</drawSize>
+          <drawSize>2.9</drawSize>
         </bodyGraphicData>
       </li>
       <li>
@@ -223,14 +206,12 @@
           <texPath>Things/Automatroid/geochelone</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>3</drawSize>
+          <drawSize>2.9</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
-		<weaponTags>
-			<li>V_SMG</li>
-		</weaponTags>
-    <weaponMoney>9999~9999</weaponMoney>
+		<weaponTags/>
+    <!-- <weaponMoney>9999~9999</weaponMoney> -->
   </PawnKindDef>
 
   <!-- 蠵龜Caretta  -->
@@ -276,6 +257,10 @@
       <li>
         <damageDef>Blunt</damageDef>
         <multiplier>0.6</multiplier>
+      </li>
+      <li>
+        <damageDef>Stab</damageDef>
+        <multiplier>0.5</multiplier>
       </li>
     </damageMultipliers>
   </ThingDef>
@@ -358,6 +343,10 @@
         <damageDef>Blunt</damageDef>
         <multiplier>0.4</multiplier>
       </li>
+      <li>
+        <damageDef>Stab</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
     </damageMultipliers>
   </ThingDef>
   <PawnKindDef ParentName="BaseAutomatroidKind">
@@ -393,6 +382,139 @@
 		</weaponTags>
     <weaponMoney>9999~9999</weaponMoney>
     <destroyGearOnDrop>true</destroyGearOnDrop>
+  </PawnKindDef>
+
+  <ThingDef ParentName="BaseAutomatroidRace">
+    <defName>DMS_Mech_HermitCrab</defName>
+    <label>hermit crab</label>
+    <description>These large, expensive, heavy mobile industrial machines are designed and manufactured by worlds that intend to colonize space. Their large and expensive magnetic stabilizer shells integrate many complex-axis CNC tools and precision machinery. its high precision allows it to perform surgical procedures, but only if the patient overcomes their fear of a machine weighing several tons acting as their surgeon.</description>
+    <statBases>
+      <MoveSpeed>2.5</MoveSpeed>
+      <ArmorRating_Sharp>1.0</ArmorRating_Sharp><!--銳抗-->
+      <ArmorRating_Blunt>1.3</ArmorRating_Blunt><!--鈍抗-->
+      <ArmorRating_Heat>1.2</ArmorRating_Heat>  <!--能抗-->
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5</BandwidthCost>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">3</WastepacksPerRecharge>
+      <FoodPoisonChance>0</FoodPoisonChance>
+    </statBases>
+    <race>
+      <body>DMS_Caterpillar</body>
+      <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
+      <baseBodySize>3</baseBodySize>
+      <baseHealthScale>5</baseHealthScale>
+      <mechWeightClass>UltraHeavy</mechWeightClass>      
+      <mechWorkTypePriorities>
+        <Art>4</Art>
+        <Crafting>4</Crafting>
+        <Tailoring>3</Tailoring>
+        <Smithing>2</Smithing>
+        <Doctor>1</Doctor>
+      </mechWorkTypePriorities>
+      <mechEnabledWorkTypes>
+        <li>Crafting</li>
+        <li>Art</li>
+        <li>Smithing</li>
+        <li>Tailoring</li>
+        <li>Doctor</li>
+      </mechEnabledWorkTypes>
+    </race>
+    <comps>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>2</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.4, 0.4, 0.6)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>300</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>1800</chargeDurationTicks><!-- 30s -->
+        <rechargeHitPointsIntervalTicks>120</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.5</minIdleAlpha>
+        <drawWithNoSelection>false</drawWithNoSelection>
+        <disarmedByEmpForTicks>3000</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+    </comps>
+    <tools Inherit="False">
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>5.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+      <li>
+        <label>laser cutter</label>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+      <li>
+        <label>surgical drill</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <damageMultipliers>
+      <li>
+        <damageDef>Blunt</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>Stab</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+    </damageMultipliers>
+    <killedLeavingsPlayerHostile>
+      <Neurocomputer>1</Neurocomputer>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_HermitCrab</defName>
+    <label>hermit Crab</label>
+    <race>DMS_Mech_HermitCrab</race>
+    <combatPower>500</combatPower>
+    <maxPerGroup>10</maxPerGroup>
+    <isFighter>false</isFighter>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
+    <lifeStages>                                                                 <!--身體圖片-->
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/hermitCrab</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+          <shadowData>
+            <volume>(2,2,2)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/hermitCrab</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+          <shadowData>
+            <volume>(2,2,2)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+		<weaponTags/>
+    <weaponMoney>0~100</weaponMoney>
   </PawnKindDef>
 
 </Defs>

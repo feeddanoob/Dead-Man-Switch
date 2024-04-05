@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-
 	<!-- DMS_TaticalPistol -->
 	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_TaticalPistol</defName>
@@ -294,9 +293,7 @@
 		  </li>
 		</verbs>
 		<comps>
-			<li>
-				
-			</li>
+			<li></li>
 		</comps>
 		<modExtensions>
 			<li Class="DMS.HeavyEquippableExtension">

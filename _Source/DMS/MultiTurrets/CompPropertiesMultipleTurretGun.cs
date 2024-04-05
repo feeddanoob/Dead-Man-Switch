@@ -22,7 +22,9 @@ namespace DMS
 		public string ID;
 		public ThingDef turret;
 		public float IdleAngleOffset;
+		public float angleOffset;
 		public bool autoAttack = true;
+		public float warmingTime = 3f;
 
 		public string command_ToggleFire = "ToggleFire";
 		public string commandDesc_ToggleFire = "ToggleFireDesc";

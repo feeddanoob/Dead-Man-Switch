@@ -194,4 +194,118 @@
     </abilities>
   </PawnKindDef>
 
+  <!-- 獒犬 -->
+  <ThingDef Name="DMS_MechDoggeBase" ParentName="BaseAutomatroidRace">  <!-- DMS_Machine_Hound 獵犬常規型 -->
+    <defName>DMS_Mech_Dogge</defName>
+    <label>dogge</label>
+    <description>A four-legged robot dog provide forward reconnaissance and urban combat support during armed operations, can equipped with small-caliber firearms or flamethrowers to provide certain containment capabilities.</description>
+    <statBases>
+      <MoveSpeed>6</MoveSpeed>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <ArmorRating_Heat>1</ArmorRating_Heat>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+    </statBases>
+    <race>
+      <body>DMS_Hound</body>
+      <baseBodySize>1.1</baseBodySize>
+      <baseHealthScale>1.2</baseHealthScale>
+    </race>
+    <comps>
+      <li Class="DMS.CompPropertiesMultipleTurretGun">
+        <subTurrets>
+          <li>
+            <ID>1</ID>                        <!-- Id，不能重复 -->
+            <turret>DMS_SubMachineGunMounted</turret>
+            <autoAttack>true</autoAttack>
+            <command_ToggleFire>切换自动开火</command_ToggleFire>
+            <commandDesc_ToggleFire>切换自动开火描述</commandDesc_ToggleFire>
+            <command_Target>瞄准目标</command_Target>
+            <commandDesc_Target>瞄准目标描述</commandDesc_Target>
+            <warmingTime>5</warmingTime>
+            <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>                        <!-- 瞄准目标按钮贴图路径 -->
+            <angleOffset>-90</angleOffset>
+            <renderNodeProperties>
+              <li>
+                <nodeClass>DMS.PawnRenderNode_SubTurretGun</nodeClass>
+                <workerClass>DMS.PawnRenderNodeWorker_SubTurretGun</workerClass>
+                <parentTagDef>Body</parentTagDef>
+                <overrideMeshSize>1.25</overrideMeshSize>
+                <baseLayer>20</baseLayer>
+                <pawnType>Any</pawnType>
+                <drawData>
+                  <defaultData>
+                    <pivot>(0.5,0.5)</pivot>
+                  </defaultData>
+                  <dataNorth>
+                    <offset>(0.15,0,0.25)</offset>
+                  </dataNorth>
+                  <dataSouth>
+                    <offset>(-0.15,0,0)</offset>
+                  </dataSouth>
+                  <dataWest>
+                    <offset>(-0.1,0,0.1)</offset>
+                    <rotationOffset>180</rotationOffset>
+                  </dataWest>
+                </drawData>
+              </li>
+            </renderNodeProperties>
+           </li>
+        </subTurrets>
+      </li>
+		</comps>
+		<butcherProducts>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>30</Steel>
+		</butcherProducts>
+    <modExtensions>
+      <li Class="DMS.MechWeaponExtension">
+        <EnableWeaponFilter>true</EnableWeaponFilter>
+        <UsableWeaponTags>
+          <li>DMS_MechWeaponLight</li>
+          <li>PLA_Pistol</li>
+        </UsableWeaponTags>
+        <EnableTechLevelFilter>true</EnableTechLevelFilter>
+        <UsableTechLevels>
+          <li>Industrial</li>
+        </UsableTechLevels>
+        <BypassUsableWeapons>
+          <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
+          <li MayRequire="vanillaexpanded.vwehw">VWE_Gun_UraniumSlugRifle</li><!-- 重武器拓展鈾彈槍 -->
+          <li MayRequire="oskarpotocki.vfe.pirates">VFEP_WarcasketGun_UraniumSlugRifle</li><!-- 戰棺拓展鈾彈槍 -->
+        </BypassUsableWeapons>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_Dogge</defName>
+    <label>dogge</label>
+    <race>DMS_Mech_Dogge</race>
+    <isFighter>true</isFighter>
+    <combatPower>30</combatPower>
+    <maxPerGroup>15</maxPerGroup>
+    <defaultFactionType>Mechanoid</defaultFactionType>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/Dogge</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/OldTexture/Dogge</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags/>
+  </PawnKindDef>
+
 </Defs>

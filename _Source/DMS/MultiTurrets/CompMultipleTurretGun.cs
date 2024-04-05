@@ -94,7 +94,7 @@ namespace DMS
         public List<SubTurret> turrets = new List<SubTurret>(); 
     }
     [StaticConstructorOnStartup]
-    public class SubTurret : IAttackTargetSearcher,IExposable
+    public class SubTurret : IAttackTargetSearcher, IExposable
     {
         public Thing Thing => this.parent;
 
@@ -109,7 +109,7 @@ namespace DMS
 
         public LocalTargetInfo LastAttackedTarget => this.lastAttackedTarget;
 
-        public int LastAttackTargetTick => this.lastAttackTargetTick; 
+        public int LastAttackTargetTick => this.lastAttackTargetTick;
         private bool CanShoot
         {
             get
@@ -154,7 +154,7 @@ namespace DMS
             }
         }
         public void Init(SubTurretProperties prop)
-        {   
+        {
             this.turretProp = prop;
             if (this.turret == null)
             {
@@ -169,6 +169,7 @@ namespace DMS
             {
                 Verb verb = allVerbs[i];
                 verb.caster = this.parent;
+                verb.verbProps.warmupTime = 0;
                 verb.castCompleteCallback = delegate ()
                 {
                     this.burstCooldownTicksLeft = this.CurrentEffectiveVerb.verbProps.defaultCooldownTime.SecondsToTicks();
@@ -183,7 +184,11 @@ namespace DMS
             }
             if (this.currentTarget.IsValid)
             {
-                this.curRotation = (this.currentTarget.Cell.ToVector3Shifted() - this.parent.DrawPos).AngleFlat() + this.turretProp.IdleAngleOffset;
+                this.curRotation = (this.currentTarget.Cell.ToVector3Shifted() - this.parent.DrawPos).AngleFlat() + this.turretProp.angleOffset;
+            }
+            else 
+            {
+                this.curRotation = this.turretProp.IdleAngleOffset + parent.Rotation.AsAngle - 90;
             }
             this.CurrentEffectiveVerb.VerbTick();
             if (this.CurrentEffectiveVerb.state != VerbState.Bursting)
@@ -193,7 +198,7 @@ namespace DMS
                     this.burstWarmupTicksLeft--;
                     if (this.burstWarmupTicksLeft == 0)
                     {
-                        this.CurrentEffectiveVerb.TryStartCastOn(this.currentTarget, false, true, false, true);
+                        this.CurrentEffectiveVerb.TryStartCastOn(this.currentTarget,this.currentTarget, false, true, false, true);
                         this.lastAttackTargetTick = Find.TickManager.TicksGame;
                         this.lastAttackedTarget = this.currentTarget;
                         return;
@@ -213,7 +218,7 @@ namespace DMS
                         }
                         if (this.currentTarget.IsValid)
                         {
-                            this.burstWarmupTicksLeft = 1;
+                            this.burstWarmupTicksLeft = this.turretProp.warmingTime.SecondsToTicks();
                             return;
                         }
                         this.ResetCurrentTarget();
@@ -226,10 +231,10 @@ namespace DMS
             this.currentTarget = LocalTargetInfo.Invalid;
             this.burstWarmupTicksLeft = 0;
         }
-        public List<PawnRenderNode> RenderNodes(Pawn pawn) 
+        public List<PawnRenderNode> RenderNodes(Pawn pawn)
         {
             List<PawnRenderNode> result = new List<PawnRenderNode>();
-            this.turretProp.renderNodeProperties.ForEach(p => 
+            this.turretProp.renderNodeProperties.ForEach(p =>
             {
                 PawnRenderNode_SubTurretGun pawnRenderNode_TurretGun = (PawnRenderNode_SubTurretGun)Activator.CreateInstance(p.nodeClass, new object[]
 {

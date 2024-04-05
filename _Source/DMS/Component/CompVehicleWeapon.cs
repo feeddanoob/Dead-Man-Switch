@@ -147,6 +147,6 @@ namespace DMS
         public bool horizontalFlip = false;
         public float rotationSmoothTime = 0.12f;
         public ThingDef defaultWeapon;
-        public float drawSize = 2f;
+        public float drawSize = 0f;
     }
 }

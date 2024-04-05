@@ -16,7 +16,6 @@ namespace DMS
 		{
 			return GraphicDatabase.Get<Graphic_Single>(this.subturret.turretProp.turret.graphicData.texPath, ShaderDatabase.Cutout);
 		}
-
 		public SubTurret subturret;
 	}
 }

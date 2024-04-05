@@ -14,6 +14,7 @@
 		<EquippableByRace/>
 		<EquippableWithHediff>
             <li>BionicArm</li>
+            <li>ArchotechArm</li>
             <li>DMS_SyntheticArm</li>
             <li>DMS_ProstheticArm</li>
         </EquippableWithHediff>
@@ -30,6 +31,7 @@
 		<EquippableByRace/>
 		<EquippableWithHediff>
             <li>BionicArm</li>
+            <li>ArchotechArm</li>
             <li>DMS_SyntheticArm</li>
             <li>DMS_ProstheticArm</li>
         </EquippableWithHediff>
@@ -47,7 +49,7 @@
 		<EquippableWithGene/>
 		<EquippableWithHediff>
             <li>DMS_SyntheticArm</li>
-            <li>DMS_ProstheticArm</li>
+            <li>ArchotechArm</li>
         </EquippableWithHediff>
 		<EquippableWithApparel>
 			<li>DMS_Apparel_BionicSuit</li>

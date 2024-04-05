@@ -239,7 +239,7 @@
 				<isAlternately>true</isAlternately>
 			</li>
 			<li Class="DMS.HeavyEquippableExtension">
-				<EquippableDef>UltraHeavyAutomatroid</EquippableDef>
+				<EquippableDef>MountedWeapon</EquippableDef>
 			</li>
 		</modExtensions>
   	</ThingDef>

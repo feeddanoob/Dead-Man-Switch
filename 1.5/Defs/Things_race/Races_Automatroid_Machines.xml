@@ -351,6 +351,8 @@
         </UsableTechLevels>
         <BypassUsableWeapons>
           <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
+          <li>Gun_Autopistol</li>
+          <li>Gun_MachinePistol</li>
         </BypassUsableWeapons>
       </li>
     </modExtensions>
