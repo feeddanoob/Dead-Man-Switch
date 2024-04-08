@@ -22,16 +22,37 @@
     </race>
     <comps>
 		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <drawOffset>(0.8,0,0.2)</drawOffset>
+        <drawData>
+          <dataEast>
+              <offset>(-0.2,0,0.7)</offset>
+              <layer>-20</layer>
+          </dataEast>
+          <dataWest>
+              <offset>(0.2,0,-0.6)</offset>
+          </dataWest>
+          <dataSouth>
+              <offset>(0.8,0,0)</offset>
+          </dataSouth>
+          <dataNorth>
+              <offset>(-0.8,0,0)</offset>
+          </dataNorth>
+        </drawData>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
         <rotationSmoothTime>0.12</rotationSmoothTime>
       </li>
 		  <li Class="DMS.CompPropertiesMultipleTurretGun">
           <subTurrets>
             <li>
-              <ID>headingTurret</ID>
-              <autoAttack>true</autoAttack>
+              <ID>0</ID>
               <turret>DMS_HeavyMachineGunMounted</turret>
+              <autoAttack>true</autoAttack>
+              <command_ToggleFire>切换自动开火</command_ToggleFire>
+              <commandDesc_ToggleFire>切换自动开火描述</commandDesc_ToggleFire>
+              <command_Target>瞄准目标</command_Target>
+              <commandDesc_Target>瞄准目标描述</commandDesc_Target>
+              <warmingTime>5</warmingTime>
+              <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>
+              <angleOffset>-90</angleOffset>
               <renderNodeProperties>
                 <li>
                   <nodeClass>DMS.PawnRenderNode_SubTurretGun</nodeClass>

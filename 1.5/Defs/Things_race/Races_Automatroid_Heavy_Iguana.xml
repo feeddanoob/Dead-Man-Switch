@@ -24,7 +24,20 @@
     </race>
     <comps>  
 		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <drawOffset>(0.2,0,0.5)</drawOffset>
+        <drawData>
+          <dataEast>
+              <offset>(0.8,0,0.2)</offset>
+          </dataEast>
+          <dataWest>
+              <offset>(-0.8,0,-0.2)</offset>
+          </dataWest>
+          <dataSouth>
+              <offset>(0.2,0,-0.8)</offset>
+          </dataSouth>
+          <dataNorth>
+              <offset>(-0.2,0,0.8)</offset>
+          </dataNorth>
+        </drawData>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>
         <rotationSmoothTime>0.1</rotationSmoothTime>
       </li>
@@ -170,7 +183,20 @@
     </race>
     <comps>  
 		  <li Class="DMS.CompProperties_VehicleWeapon">
-			  <drawOffset>(0.2,0,0.5)</drawOffset>
+        <drawData>
+          <dataEast>
+              <offset>(0.8,0,0.2)</offset>
+          </dataEast>
+          <dataWest>
+              <offset>(-0.8,0,-0.2)</offset>
+          </dataWest>
+          <dataSouth>
+              <offset>(0.2,0,-0.8)</offset>
+          </dataSouth>
+          <dataNorth>
+              <offset>(-0.2,0,0.8)</offset>
+          </dataNorth>
+        </drawData>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>
         <rotationSmoothTime>0.1</rotationSmoothTime>
       </li><li Class="DMS.CompPropertiesMultipleTurretGun">
@@ -204,7 +230,6 @@
                   <dataSouth>
                       <offset>(0.25,0,-0.8)</offset>
                       <pivot>(0.5,0.5)</pivot>
-                      <rotation>90</rotation>
                   </dataSouth>
                   <dataNorth>
                       <offset>(0,0,0)</offset>

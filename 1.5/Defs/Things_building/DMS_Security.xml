@@ -606,4 +606,129 @@
     </projectile>
   </ThingDef>
 
+  <ThingDef ParentName="DMS_BaseCannonBuilding">
+    <defName>DMS_Turret_Vasilek</defName>
+    <label>Vasilek</label>
+    <description>an ancient design of rapid fire indirect artillery suppression, can fire 4 mortar rounds in one burst.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Turrets/Bipod_Base</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>3</drawSize>
+      <drawOffset>(0,0,0)</drawOffset>
+    </graphicData>
+    <size>(3,3)</size>
+    <rotatable>false</rotatable>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <fillPercent>0.6</fillPercent>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkToBuild>1500</WorkToBuild>
+      <Beauty>-2</Beauty>
+      <ShootingAccuracyTurret>0.9</ShootingAccuracyTurret>
+    </statBases>
+    <comps Inherit="false">
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>240</wickTicks>
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+        <explosiveExpandPerFuel>0.05</explosiveExpandPerFuel>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <outOfFuelMessage>Cannot shoot: Needs new reinforced barrel</outOfFuelMessage>
+        <fuelFilter>
+          <thingDefs>
+            <li>ReinforcedBarrel</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
+        <fuelCapacity>100</fuelCapacity>    <!-- 30 burst -->
+        <fuelMultiplier>20</fuelMultiplier><!-- 1 Barrel=20 ammo -->
+        <initialFuelPercent>1</initialFuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+        <initialConfigurableTargetFuelLevel>60</initialConfigurableTargetFuelLevel>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
+        <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>DMS_Gun_Vasilek</turretGunDef>
+      <turretTopDrawSize>3</turretTopDrawSize>
+      <turretBurstWarmupTime>5</turretBurstWarmupTime>
+      <turretBurstCooldownTime>10</turretBurstCooldownTime>
+      <turretTopOffset>(0,0.25)</turretTopOffset>
+    </building>
+    <interactionCellOffset>(1,0,-1)</interactionCellOffset>
+    <recoilPower>5</recoilPower>
+    <recoilRelaxation>3</recoilRelaxation>
+    <hasInteractionCell>true</hasInteractionCell>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <costList>
+      <Steel>150</Steel>
+      <Tungsteel>120</Tungsteel>
+      <ComponentStamped>5</ComponentStamped>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>DMS_EquipmentElite</li>
+    </researchPrerequisites>
+    <uiIconPath>Things/Turrets/DMS_Vasilek_Icon</uiIconPath>
+    <uiIconScale>1.2</uiIconScale>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>DMS_Gun_Vasilek</defName>
+    <label>vasilek</label>
+    <description>kord</description>
+    <graphicData>
+      <texPath>Things/Turrets/DMS_Vasilek</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>3</drawSize>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_Shell_HighExplosive</defaultProjectile>
+        <requireLineOfSight>false</requireLineOfSight>
+        <isMortar>true</isMortar>
+        <warmupTime>1.5</warmupTime>
+        <forcedMissRadius>8</forcedMissRadius>
+        <minRange>19.9</minRange>
+        <range>89.9</range>
+        <ai_AvoidFriendlyFireRadius>7.9</ai_AvoidFriendlyFireRadius>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>4</burstShotCount>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+
 </Defs>	

@@ -59,7 +59,6 @@ namespace DMS
                 return (CompProperties_VehicleWeapon)props;
             }
         }
-
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
@@ -135,6 +134,15 @@ namespace DMS
             base.CompTickRare();
             _turretAnglePerFrame = Rand.Range(-0.5f, 0.5f);
         }
+
+        public Vector3 GetOffsetByRot()
+        {
+            if (Props.drawData != null)
+            {
+                return Props.drawData.OffsetForRot(pawn.Rotation);
+            }
+            return Vector3.zero;
+        }
     }
     public class CompProperties_VehicleWeapon : CompProperties
     {
@@ -142,7 +150,7 @@ namespace DMS
         {
             this.compClass = typeof(CompVehicleWeapon);
         }
-        public Vector3 drawOffset = Vector3.zero;
+        public DrawData drawData;
         public bool turretRotationFollowPawn = false;
         public bool horizontalFlip = false;
         public float rotationSmoothTime = 0.12f;

@@ -37,9 +37,6 @@
 		<defName>DMS_SniperCannon</defName>
 		<label>mech sniper cannon</label>
 		<description>an ultra heavy rifle calibered with autocannon rounds, has proven the capability to snipe an exostrider in the distance. it is specially designed for long-range anti-mech sniping operation.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>
-		<descriptionHyperlinks>
-			<ThingDef>DMS_Mech_Sniper</ThingDef>
-		</descriptionHyperlinks>
 		<weaponClasses>
 		  <li>RangedHeavy</li>
 		  <li>LongShots</li>
@@ -110,12 +107,6 @@
 		<defName>DMS_HeavyMachineGun</defName>
 		<label>mech HMG</label>
 		<description>heavy machine gun for mech soldier or infantry support platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>
-		<descriptionHyperlinks>
-			<ThingDef>DMS_Mech_Ape</ThingDef>
-			<ThingDef>DMS_Mech_Iguana</ThingDef>
-			<ThingDef>DMS_Mech_Gecko</ThingDef>
-			<ThingDef>DMS_Mech_Tarbosaurus</ThingDef>
-		</descriptionHyperlinks>
 		<weaponClasses>
 			<li>RangedHeavy</li>
 			<li>LongShots</li>
@@ -200,12 +191,6 @@
 		<defName>DMS_Gun_Recoilless</defName>
 		<label>recoilless cannon</label>
 		<description>A Recoilless cannon designed to snipe the heavy-armed target in range.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>
-		<descriptionHyperlinks>	
-			<ThingDef>DMS_Mech_Ape</ThingDef>
-			<ThingDef>DMS_Mech_Iguana</ThingDef>
-			<ThingDef>DMS_Mech_Gecko</ThingDef>
-			<ThingDef>DMS_Mech_Tarbosaurus</ThingDef>
-		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_RecoillessRifle</texPath>
 			<drawSize>2.5</drawSize>

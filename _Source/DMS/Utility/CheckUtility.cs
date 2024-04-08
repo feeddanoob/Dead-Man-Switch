@@ -29,6 +29,14 @@ public static partial class CheckUtility
     }
     public static bool IsMechUseable(MechWeaponExtension extension, ThingWithComps tmp)
     {
+        if (extension == null)
+        {
+            return false;
+        }
+        if (tmp == null)
+        {
+            return false;
+        }
         if (BypassedUseable(extension, tmp.def.defName)) return true;
         //開了Tag過濾的話先看是否通過Tag過濾，然後InTechLevel包含了對於EnableTechLevelFilter的判斷
         if (extension.EnableWeaponFilter)
@@ -84,6 +92,7 @@ public static partial class CheckUtility
     }
     public static bool BypassedUseable(MechWeaponExtension extension, string defName)//白名單直接可用
     {
+        if(extension.BypassUsableWeapons.NullOrEmpty())return false;
         return extension.BypassUsableWeapons?.FirstOrDefault(p => p == defName) != null;
     }
 }

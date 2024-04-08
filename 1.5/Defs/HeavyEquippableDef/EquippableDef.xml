@@ -27,7 +27,7 @@
     
 	<DMS.HeavyEquippableDef>
 		<defName>LightAutomatroid</defName>
-		<EquippableBaseBodySize>1.05</EquippableBaseBodySize>
+		<EquippableBaseBodySize>1.2</EquippableBaseBodySize>
 		<EquippableByRace/>
 		<EquippableWithHediff>
             <li>BionicArm</li>
@@ -44,7 +44,7 @@
 
 	<DMS.HeavyEquippableDef>
 		<defName>StandardAutomatroid</defName>
-		<EquippableBaseBodySize>1.2</EquippableBaseBodySize>
+		<EquippableBaseBodySize>1.4</EquippableBaseBodySize>
 		<EquippableByRace/>
 		<EquippableWithGene/>
 		<EquippableWithHediff>
@@ -60,7 +60,7 @@
     
 	<DMS.HeavyEquippableDef>
 		<defName>HeavyAutomatroid</defName>
-		<EquippableBaseBodySize>1.4</EquippableBaseBodySize>
+		<EquippableBaseBodySize>2</EquippableBaseBodySize>
 		<EquippableByRace/>
 		<EquippableWithHediff/>
 		<EquippableWithApparel>
@@ -70,7 +70,7 @@
 
 	<DMS.HeavyEquippableDef>
 		<defName>UltraHeavyAutomatroid</defName>
-		<EquippableBaseBodySize>2</EquippableBaseBodySize>
+		<EquippableBaseBodySize>3</EquippableBaseBodySize>
 		<EquippableByRace/>
 		<EquippableWithHediff/>
 		<EquippableWithApparel>

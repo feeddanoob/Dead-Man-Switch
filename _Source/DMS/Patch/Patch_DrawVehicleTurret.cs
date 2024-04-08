@@ -3,6 +3,7 @@ using UnityEngine;
 using HarmonyLib;
 using RimWorld;
 using System;
+using static HarmonyLib.Code;
 
 namespace DMS
 {
@@ -30,19 +31,20 @@ namespace DMS
         public static void DrawTuret(Pawn pawn, CompVehicleWeapon compWeapon, Thing equipment)
         {
             float aimAngle = compWeapon.CurrentAngle;
-            Vector3 drawLoc = pawn.DrawPos;
-            drawLoc.y += Altitudes.AltInc;
+            Vector3 drawLoc = pawn.DrawPos + compWeapon.GetOffsetByRot();
+            drawLoc.y += Altitudes.AltInc * compWeapon.Props.drawData.LayerForRot(pawn.Rotation, 1);
             float num = aimAngle - 90f;
             Mesh mesh;
-            if (aimAngle > 180f && aimAngle < 360f)
-            {
-                mesh = MeshPool.plane10Flip;
-                num -= 180f;
-            }
-            else
-            {
-                mesh = MeshPool.plane10;
-            }
+            mesh = MeshPool.plane10;
+            //if (aimAngle > 180f && aimAngle < 360f)
+            //{
+            //    mesh = MeshPool.plane10;
+            //    num -= 180f;
+            //}
+            //else
+            //{
+            //    mesh = MeshPool.plane10;
+            //}
             num %= 360f;
 
             Vector3 drawSize = compWeapon.Props.drawSize != 0 ? Vector3.one * compWeapon.Props.drawSize : (Vector3)equipment.Graphic.drawSize;

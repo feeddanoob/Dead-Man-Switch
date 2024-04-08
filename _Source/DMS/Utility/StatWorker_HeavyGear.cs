@@ -34,7 +34,7 @@ namespace DMS
                 {
                     yield return new Dialog_InfoCard.Hyperlink(race);
                 }
-                foreach (ThingDef race in WeaponTagUtil.UseableByListsOfMechs(statRequest.Thing as ThingWithComps))
+                foreach (ThingDef race in WeaponTagUtil.UseableByListsOfMechs(ThingMaker.MakeThing(statRequest.Def as ThingDef) as ThingWithComps))
                 {
                     yield return new Dialog_InfoCard.Hyperlink(race);
                 }

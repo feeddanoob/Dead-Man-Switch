@@ -216,7 +216,7 @@
       <li Class="DMS.CompPropertiesMultipleTurretGun">
         <subTurrets>
           <li>
-            <ID>1</ID>                        <!-- Id，不能重复 -->
+            <ID>0</ID>                        <!-- Id，不能重复 -->
             <turret>DMS_SubMachineGunMounted</turret>
             <autoAttack>true</autoAttack>
             <command_ToggleFire>切换自动开火</command_ToggleFire>
@@ -224,7 +224,7 @@
             <command_Target>瞄准目标</command_Target>
             <commandDesc_Target>瞄准目标描述</commandDesc_Target>
             <warmingTime>5</warmingTime>
-            <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>                        <!-- 瞄准目标按钮贴图路径 -->
+            <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>
             <angleOffset>-90</angleOffset>
             <renderNodeProperties>
               <li>
@@ -286,7 +286,6 @@
     <isFighter>true</isFighter>
     <combatPower>30</combatPower>
     <maxPerGroup>15</maxPerGroup>
-    <defaultFactionType>Mechanoid</defaultFactionType>
     <lifeStages>
       <li>
         <bodyGraphicData>
