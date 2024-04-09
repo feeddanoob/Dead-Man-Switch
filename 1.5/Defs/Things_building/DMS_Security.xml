@@ -666,12 +666,12 @@
       <turretGunDef>DMS_Gun_Vasilek</turretGunDef>
       <turretTopDrawSize>3</turretTopDrawSize>
       <turretBurstWarmupTime>5</turretBurstWarmupTime>
-      <turretBurstCooldownTime>10</turretBurstCooldownTime>
+      <turretBurstCooldownTime>20</turretBurstCooldownTime>
       <turretTopOffset>(0,0.25)</turretTopOffset>
     </building>
     <interactionCellOffset>(1,0,-1)</interactionCellOffset>
-    <recoilPower>5</recoilPower>
-    <recoilRelaxation>3</recoilRelaxation>
+    <recoilPower>10</recoilPower>
+    <recoilRelaxation>0</recoilRelaxation>
     <hasInteractionCell>true</hasInteractionCell>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>

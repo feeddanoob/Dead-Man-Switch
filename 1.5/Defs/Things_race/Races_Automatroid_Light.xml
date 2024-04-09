@@ -219,11 +219,11 @@
             <ID>0</ID>                        <!-- Id，不能重复 -->
             <turret>DMS_SubMachineGunMounted</turret>
             <autoAttack>true</autoAttack>
-            <command_ToggleFire>切换自动开火</command_ToggleFire>
-            <commandDesc_ToggleFire>切换自动开火描述</commandDesc_ToggleFire>
-            <command_Target>瞄准目标</command_Target>
-            <commandDesc_Target>瞄准目标描述</commandDesc_Target>
-            <warmingTime>5</warmingTime>
+            <command_ToggleFire>fire at will</command_ToggleFire>
+            <commandDesc_ToggleFire>toggle turret to manually control mode to prevent unnecessary shooting.</commandDesc_ToggleFire>
+            <command_Target>aim target</command_Target>
+            <commandDesc_Target>aim at desinated target</commandDesc_Target>
+            <warmingTime>3.2</warmingTime>
             <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>
             <angleOffset>-90</angleOffset>
             <renderNodeProperties>

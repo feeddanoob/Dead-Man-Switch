@@ -4,9 +4,11 @@
     <defName>DMS_Squad_ServiceSynth</defName>
     <label>service synth</label>
     <combatPower>50</combatPower>
-    <xenotypeChances>
-      <DMS_AndroidSynth>999</DMS_AndroidSynth>
-    </xenotypeChances>
+    <xenotypeSet>
+      <xenotypeChances>
+        <DMS_AndroidSynth>999</DMS_AndroidSynth>
+      </xenotypeChances>
+    </xenotypeSet>
     <apparelRequired>
       <li>DMS_Apparel_ArmyCap</li>
     </apparelRequired>
@@ -48,7 +50,7 @@
       </li>
     </specificApparelRequirements>
   </PawnKindDef>
-  <RoyalTitlePermitDef>
+  <RoyalTitlePermitDef MayRequire="ludeon.rimworld.royalty">
     <defName>DMS_Join_Android</defName>
     <label>call combatant synth</label>
     <description>Apply a squad of combatant synth.</description>

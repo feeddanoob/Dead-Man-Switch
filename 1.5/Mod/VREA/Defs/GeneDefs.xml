@@ -79,16 +79,15 @@
 			<li>Body</li>
 			<li>Fur</li>
 		</exclusionTags>
+		<fur>DMS_robotSkin</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>
 		<hairTagFilter>
 			<whitelist>true</whitelist>
 			<tags>
 				<li>Bald</li>
 			</tags>
     	</hairTagFilter>
-		<graphicData>
-			<fur>DMS_robotSkin</fur>
-			<tattoosVisible>false</tattoosVisible>
-		</graphicData>
 		<forcedHeadTypes>
 			<li>DMS_robotHeadMale</li>
 			<li>DMS_robotHeadFemale</li>
