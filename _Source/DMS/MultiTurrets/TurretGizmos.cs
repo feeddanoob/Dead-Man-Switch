@@ -1,11 +1,9 @@
-﻿using HarmonyLib;
-using RimWorld;
+﻿using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Verse;
-using static HarmonyLib.Code;
 
 namespace DMS
 {
@@ -16,7 +14,7 @@ namespace DMS
         {
             this.comp = comp;
             this.subTurrets = comp.turrets;
-            this.subTurret = comp.turret;
+            this.subTurret = comp.turrets.Find(t=>t.ID ==comp.currentTurret);
             this.Order = -80f;
         }
         
@@ -56,16 +54,14 @@ namespace DMS
             turretNameRect.height = vector.y;
             
             Widgets.Label(turretNameRect, taggedString);
-            bool onTurretName = false;
             if (Mouse.IsOver(turretNameRect))
             {
-                onTurretName = true;
                 Widgets.DrawHighlight(turretNameRect);
 
             }
             if (Widgets.ButtonInvisible(turretNameRect, false))
             {
-                onTurretName = true;
+                Find.WindowStack.Add(new FloatMenu(GetTurretOptions().ToList<FloatMenuOption>()));
             }
 
             //好丑，不会设计UI呜呜呜
@@ -73,7 +69,7 @@ namespace DMS
             float weaponSize = inner.height - turretNameRect.height;
             Rect weaponRect = new Rect(inner.x, inner.y +turretNameRect.height,40f,40f);
             Texture2D icon= this.subTurret.turret.def.uiIcon;
-            Widgets.DrawBoxSolidWithOutline(weaponRect,Color.clear,Color.grey,1);
+            
             Widgets.DrawTextureFitted(weaponRect, icon, 1f);
 
             if (Mouse.IsOver(weaponRect))
@@ -130,14 +126,6 @@ namespace DMS
             }
 
             //
-            if (onTurretName && Find.WindowStack.FloatMenu == null)
-            {
-                if (Event.current.button == 1)
-                {
-                    //Log.Message($"2 command name {Event.current.commandName} button {Event.current.button}");
-                    return new GizmoResult(GizmoState.OpenedFloatMenu, Event.current);
-                }
-            }
             return new GizmoResult(onGizmo ? GizmoState.Mouseover : GizmoState.Clear);
         }
 
@@ -168,14 +156,6 @@ namespace DMS
             return 140f;
         }
 
-        public override IEnumerable<FloatMenuOption> RightClickFloatMenuOptions
-        {
-            get
-            { 
-                return this.GetTurretOptions();
-            }
-        }
-
         private IEnumerable<FloatMenuOption> GetTurretOptions()
         {
             if (subTurrets == null) yield break;
@@ -184,7 +164,7 @@ namespace DMS
                 string text = turret.ID;
                 yield return new FloatMenuOption(text, delegate ()
                 {
-                    comp.turret = turret;
+                    comp.currentTurret = turret.ID;
                 });
             }
             yield break;

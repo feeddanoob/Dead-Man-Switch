@@ -2,9 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
 using Verse;
 using Verse.AI;
 
@@ -22,7 +19,7 @@ namespace DMS
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            if (!respawningAfterLoad )
+            if (!respawningAfterLoad)
             {
                 this.Props.subTurrets.ForEach(t =>
                 {
@@ -30,9 +27,22 @@ namespace DMS
                     turret.Init(t);
                     this.turrets.Add(turret);
                 });
+                
+            }
+            else
+            {
+                this.Props.subTurrets.ForEach(t =>
+                {
+                    SubTurret turret = turrets.Find(r=>r.ID == t.ID);
+                    turret.Init(t);
+                });
             }
             
-            this.turret = turrets.First();
+            if (currentTurret == null)
+            {
+                currentTurret = turrets.First<SubTurret>().ID;
+            }
+            
         }
         public override void CompTick()
         {
@@ -66,14 +76,8 @@ namespace DMS
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Collections.Look(ref this.turrets, "turrets",LookMode.Deep);
-            if (Scribe.mode == LoadSaveMode.PostLoadInit)
-            {
-                this.turrets.ForEach(t =>
-                {
-                    t.Init(this.Props.subTurrets.Find(t2 => t2.ID == t.ID));
-                });
-            }
+            Scribe_Collections.Look(ref this.turrets, "turrets", LookMode.Deep);
+            Scribe_Values.Look(ref this.currentTurret,"currentTurrent");
         }
 
         public override List<PawnRenderNode> CompRenderNodes()
@@ -92,7 +96,7 @@ namespace DMS
         }
 
         public List<SubTurret> turrets = new List<SubTurret>(); 
-        public SubTurret turret;
+        public string currentTurret;
     }
     [StaticConstructorOnStartup]
     public class SubTurret : IAttackTargetSearcher, IExposable
@@ -275,7 +279,10 @@ namespace DMS
 
         public void targetting()
         {
-            Find.Targeter.BeginTargeting(this.CurrentEffectiveVerb.targetParams, t => { this.forcedTarget = t; this.currentTarget = t; });
+            
+            var tar = Find.Targeter;
+            
+            tar.BeginTargeting(this.CurrentEffectiveVerb.targetParams,(t) => { this.forcedTarget = t; this.currentTarget = t; });
         }
 
         public void clearTarget()
@@ -288,12 +295,17 @@ namespace DMS
         public void ExposeData()
         {
             Scribe_Values.Look(ref this.ID, "ID");
-            Scribe_Values.Look<int>(ref this.burstCooldownTicksLeft, "burstCooldownTicksLeft", 0, false);
-            Scribe_Values.Look<int>(ref this.burstWarmupTicksLeft, "burstWarmupTicksLeft", 0, false);
-            Scribe_TargetInfo.Look(ref this.currentTarget, "currentTarget");
-            Scribe_Values.Look<bool>(ref this.fireAtWill, "fireAtWill", true, false);
+
             Scribe_References.Look(ref this.parent, "parent");
             Scribe_Deep.Look(ref this.turret, "turret");
+
+            Scribe_Values.Look<int>(ref this.burstCooldownTicksLeft, "burstCooldownTicksLeft", 0, false);
+            Scribe_Values.Look<int>(ref this.burstWarmupTicksLeft, "burstWarmupTicksLeft", 0, false);
+            Scribe_TargetInfo.Look(ref this.forcedTarget, "forcedTarget");
+            Scribe_TargetInfo.Look(ref this.currentTarget, "currentTarget");
+
+            Scribe_Values.Look<bool>(ref this.fireAtWill, "fireAtWill", true, false);
+            
         }
 
         public string ID = "null";
@@ -301,7 +313,6 @@ namespace DMS
         public Thing parent;
         public Thing turret;
 
-        private static readonly CachedTexture ToggleTurretIcon = new CachedTexture("UI/Gizmos/ToggleTurret");
 
         protected int burstCooldownTicksLeft;
         protected int burstWarmupTicksLeft;
