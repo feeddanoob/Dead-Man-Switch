@@ -186,7 +186,6 @@ namespace DMS
             
             if (CheckTarget())
             {
-                Log.Message(this.currentTarget.IsValid?((Thing)this.currentTarget).LabelShort + this.currentTarget.ThingDestroyed.ToString():"null");
                 this.curRotation = (this.currentTarget.Cell.ToVector3Shifted() - this.parent.DrawPos).AngleFlat() + this.turretProp.angleOffset;
             }
             else
