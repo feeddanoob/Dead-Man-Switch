@@ -22,12 +22,17 @@ namespace DMS
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            this.Props.subTurrets.ForEach(t =>
+            if (!respawningAfterLoad )
             {
-                SubTurret turret = new SubTurret() { ID = t.ID, parent = this.parent };
-                turret.Init(t);
-                this.turrets.Add(turret);
-            });
+                this.Props.subTurrets.ForEach(t =>
+                {
+                    SubTurret turret = new SubTurret() { ID = t.ID, parent = this.parent };
+                    turret.Init(t);
+                    this.turrets.Add(turret);
+                });
+            }
+            
+            this.turret = turrets.First();
         }
         public override void CompTick()
         {
@@ -42,14 +47,9 @@ namespace DMS
             }
             if (this.parent is Pawn pawn && pawn.Faction != null && pawn.Faction.IsPlayer)
             {
-                foreach (SubTurret t in this.turrets)
-                {
-                    foreach (Gizmo g in t.GetGizmo())
-                    {
-                        yield return g;
-                    }
-                }
+                yield return new SubturretGizmo(this);
             }
+            
             yield break;
         }
         public override IEnumerable<StatDrawEntry> SpecialDisplayStats()
@@ -92,6 +92,7 @@ namespace DMS
         }
 
         public List<SubTurret> turrets = new List<SubTurret>(); 
+        public SubTurret turret;
     }
     [StaticConstructorOnStartup]
     public class SubTurret : IAttackTargetSearcher, IExposable
@@ -182,11 +183,12 @@ namespace DMS
             {
                 return;
             }
-            if (this.currentTarget.IsValid)
+            
+            if (CheckTarget())
             {
                 this.curRotation = (this.currentTarget.Cell.ToVector3Shifted() - this.parent.DrawPos).AngleFlat() + this.turretProp.angleOffset;
             }
-            else 
+            else
             {
                 this.curRotation = this.turretProp.IdleAngleOffset + parent.Rotation.AsAngle - 90;
             }
@@ -198,7 +200,7 @@ namespace DMS
                     this.burstWarmupTicksLeft--;
                     if (this.burstWarmupTicksLeft == 0)
                     {
-                        this.CurrentEffectiveVerb.TryStartCastOn(this.currentTarget,this.currentTarget, false, true, false, true);
+                        this.CurrentEffectiveVerb.TryStartCastOn(this.currentTarget, this.currentTarget, false, true, false, true);
                         this.lastAttackTargetTick = Find.TickManager.TicksGame;
                         this.lastAttackedTarget = this.currentTarget;
                         return;
@@ -212,7 +214,8 @@ namespace DMS
                     }
                     if (this.burstCooldownTicksLeft <= 0 && this.parent.IsHashIntervalTick(10))
                     {
-                        if (this.turretProp.autoAttack)
+                        
+                        if (this.turretProp.autoAttack && !this.forcedTarget.IsValid)
                         {
                             this.currentTarget = (Thing)AttackTargetFinder.BestShootTargetFromCurrentPosition(this, TargetScanFlags.NeedThreat | TargetScanFlags.NeedAutoTargetable, null, 0f, 9999f);
                         }
@@ -221,11 +224,28 @@ namespace DMS
                             this.burstWarmupTicksLeft = this.turretProp.warmingTime.SecondsToTicks();
                             return;
                         }
+                        
                         this.ResetCurrentTarget();
                     }
                 }
             }
         }
+
+        private bool CheckTarget()
+        {
+            if (!this.currentTarget.IsValid) { 
+                this.forcedTarget = LocalTargetInfo.Invalid;
+                return false; 
+            }
+            if (this.currentTarget.ThingDestroyed)
+            {
+                this.currentTarget = LocalTargetInfo.Invalid;
+                return false;
+            }
+
+            return true;
+        }
+
         private void ResetCurrentTarget()
         {
             this.currentTarget = LocalTargetInfo.Invalid;
@@ -247,34 +267,23 @@ namespace DMS
             });
             return result;
         }
-        public IEnumerable<Gizmo> GetGizmo()
-        {
-            yield return new Command_Toggle
-            {
-                defaultLabel = this.turretProp.command_ToggleFire.Translate(this.turret.def.label),
-                defaultDesc = this.turretProp.commandDesc_ToggleFire.Translate(),
-                isActive = (() => this.fireAtWill),
-                icon = SubTurret.ToggleTurretIcon.Texture,
-                toggleAction = delegate ()
-                {
-                    this.fireAtWill = !this.fireAtWill;
-                }
-            };
-            if (!this.turretProp.autoAttack)
-            {
-                yield return new Command_Action
-                {
-                    defaultLabel = this.turretProp.command_Target.Translate(this.turret.def.label),
-                    defaultDesc = this.turretProp.commandDesc_Target.Translate(),
-                    icon = ContentFinder<Texture2D>.Get(this.turretProp.targetCommandIconPath),
-                    action = delegate ()
-                    {
-                        Find.Targeter.BeginTargeting(this.CurrentEffectiveVerb.targetParams, t => this.currentTarget = t);
-                    }
-                };
-            }
-            yield break;
+
+        //
+        public void switchAutoFire() {
+            this.fireAtWill = !this.fireAtWill;
         }
+
+        public void targetting()
+        {
+            Find.Targeter.BeginTargeting(this.CurrentEffectiveVerb.targetParams, t => { this.forcedTarget = t; this.currentTarget = t; });
+        }
+
+        public void clearTarget()
+        {
+            this.forcedTarget = LocalTargetInfo.Invalid;
+            this.currentTarget = LocalTargetInfo.Invalid;
+        }
+        //
 
         public void ExposeData()
         {
@@ -296,9 +305,10 @@ namespace DMS
 
         protected int burstCooldownTicksLeft;
         protected int burstWarmupTicksLeft;
+        public LocalTargetInfo forcedTarget = LocalTargetInfo.Invalid;
         protected LocalTargetInfo currentTarget = LocalTargetInfo.Invalid;
 
-        private bool fireAtWill = true;
+        public bool fireAtWill = true;
         private LocalTargetInfo lastAttackedTarget = LocalTargetInfo.Invalid;
         private int lastAttackTargetTick;
         public SubTurretProperties turretProp;
