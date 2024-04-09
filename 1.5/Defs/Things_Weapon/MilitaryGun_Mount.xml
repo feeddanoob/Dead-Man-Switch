@@ -8,11 +8,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<relicChance>0</relicChance>
-		<comps>
-			<li>
-				<compClass>CompEquippable</compClass>
-			</li>
-		</comps>
 		<modExtensions>
 			<li Class="DMS.HeavyEquippableExtension">
 				<EquippableDef>MountedWeapon</EquippableDef>
