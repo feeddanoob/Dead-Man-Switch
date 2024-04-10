@@ -100,7 +100,7 @@ namespace DMS
                 
                 if (autofire)
                 {
-                    subTurret.switchAutoFire();
+                    subTurret.SwitchAutoFire();
                 }
             }
             else
@@ -118,11 +118,11 @@ namespace DMS
             targetRect.x += autofireRect.width + 5f;
             if (subTurret.forcedTarget == LocalTargetInfo.Invalid)
             {
-                DrawSubGizmo(targetRect, ForceAttack.Texture, delegate () { subTurret.targetting(); });
+                DrawSubGizmo(targetRect, ForceAttack.Texture, delegate () { subTurret.Targetting(); });
             }
             else
             {
-                DrawSubGizmo(targetRect, TexCommand.ClearPrioritizedWork, delegate () { subTurret.clearTarget();});
+                DrawSubGizmo(targetRect, TexCommand.ClearPrioritizedWork, delegate () { subTurret.ClearTarget();});
             }
 
             //

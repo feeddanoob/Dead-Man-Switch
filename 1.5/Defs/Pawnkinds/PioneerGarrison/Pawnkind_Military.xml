@@ -156,9 +156,7 @@
     <titleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Private</titleRequired>
     <weaponTags>
       <li>A_AR_LongRifle</li>
-      <li>A_SAR_LongRifle</li>
       <li>A_SG_LongRifle</li>
-      <li>V_Gatling556mm</li>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
     <skills>

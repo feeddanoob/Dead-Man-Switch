@@ -71,6 +71,7 @@
     <Compile Include="MultiTurrets\CompPropertiesMultipleTurretGun.cs" />
     <Compile Include="MultiTurrets\PawnRenderNodeWorker_SubTurretGun.cs" />
     <Compile Include="MultiTurrets\PawnRenderNode_SubTurretGun.cs" />
+    <Compile Include="MultiTurrets\TurretGizmos.cs" />
     <Compile Include="Patch\Patch_CanDraftMech.cs" />
     <Compile Include="Patch\Patch_EquipmentUtility_CanEquip.cs" />
     <Compile Include="Patch\Patch_IsColonyMechPlayerControlled.cs" />
@@ -122,6 +123,8 @@
     <Compile Include="Utility\StatWorker_MechWeapon.cs" />
     <Compile Include="Utility\WeaponTagUtil.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="MultiTurrets\Todo.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

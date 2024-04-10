@@ -75,6 +75,7 @@
     </weaponTags>
   </PawnKindDef>
 
+  <!-- 寄居蟹 -->
   <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_HermitCrab</defName>
     <label>hermit crab</label>
@@ -94,6 +95,7 @@
       <baseBodySize>3</baseBodySize>
       <baseHealthScale>5</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
+      <mechFixedSkillLevel>18</mechFixedSkillLevel>
       <mechWorkTypePriorities>
         <Art>4</Art>
         <Crafting>4</Crafting>
@@ -161,7 +163,7 @@
     <damageMultipliers>
       <li>
         <damageDef>Blunt</damageDef>
-        <multiplier>0.5</multiplier>
+        <multiplier>0.75</multiplier>
       </li>
       <li>
         <damageDef>Stab</damageDef>
@@ -187,7 +189,7 @@
           <texPath>Things/Automatroid/hermitCrab</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.75</drawSize>
+          <drawSize>2.5</drawSize>
           <shadowData>
             <volume>(2,2,2)</volume>
           </shadowData>
@@ -198,7 +200,7 @@
           <texPath>Things/Automatroid/hermitCrab</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.75</drawSize>
+          <drawSize>2.5</drawSize>
           <shadowData>
             <volume>(2,2,2)</volume>
           </shadowData>

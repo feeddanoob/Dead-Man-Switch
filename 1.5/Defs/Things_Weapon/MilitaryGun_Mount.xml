@@ -1,92 +1,85 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
+	<!--原則上這些武器是完全固定在上面也拆不下來的，所以大多數數值都相同-->
 	<ThingDef Name="DMS_AutomatroidTurretGun" ParentName="BaseGun" Abstract="True">
     	<tradeability>None</tradeability>
     	<destroyOnDrop>true</destroyOnDrop>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<weaponTags>
+			<li>NoSwitch</li>
+		</weaponTags>
+		<statBases>		
+			<Mass>0</Mass>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+		</statBases>
 		<relicChance>0</relicChance>
 		<modExtensions>
 			<li Class="DMS.HeavyEquippableExtension">
 				<EquippableDef>MountedWeapon</EquippableDef>
 			</li>
 		</modExtensions>
-		<statBases>
-		    <MaxHitPoints>150</MaxHitPoints>
-	    </statBases>
+		<useHitPoints>false</useHitPoints>
 	</ThingDef>
 
-<!--SMG	這個是固定在不可替換武器類型機兵上的版本。-->
-<ThingDef ParentName="DMS_AutomatroidTurretGun">
-	<defName>DMS_ShotgunGunMounted</defName>
-	<label>close inbound defense system</label>
-	<description>a multi-barrel shotgun turret designed to suppress enemies in close-range.</description>
-	<weaponTags>
-		<li>NoSwitch</li>
-	</weaponTags>
-	<graphicData>
-		<texPath>Things/Turrets/DMS_Gun_CIDS</texPath>
-		<drawSize>(1.2,1.2)</drawSize>
-	</graphicData>
-	<statBases>
-		<Mass>3</Mass>
-		<MarketValue>800</MarketValue>
-		<AccuracyTouch>0.80</AccuracyTouch>
-		<AccuracyShort>0.4</AccuracyShort>
-		<AccuracyMedium>0.3</AccuracyMedium>
-		<AccuracyLong>0.2</AccuracyLong>
-		<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
-	</statBases>
-	<verbs>
-		<li>
-			<verbClass>Verb_Shoot</verbClass>
-			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_Shotgun</defaultProjectile>
-			<warmupTime>0.5</warmupTime>
-			<range>9.9</range>
-			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-			<burstShotCount>3</burstShotCount>
-			<soundCast>Shot_Shotgun</soundCast>
-			<soundCastTail>GunTail_Heavy</soundCastTail>
-			<muzzleFlashScale>9</muzzleFlashScale>
-		</li>
-	</verbs>
-	<modExtensions>
-		<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
-			<def>MF_StandardMuzzleFalsh</def>
-			<drawSize>(0.5,0.5)</drawSize>
-			<offsets>
-				<li>(0.5,0)</li>
-			</offsets>
-			<isAlternately>true</isAlternately>
-		</li>
-	</modExtensions>
-  </ThingDef>	
+	<!--霰彈槍。-->
+	<ThingDef ParentName="DMS_AutomatroidTurretGun">
+		<defName>DMS_ShotgunGunMounted</defName>
+		<label>close inbound defense system</label>
+		<description>a multi-barrel turret designed to suppress enemies in close-range.</description>
+		<graphicData>
+			<texPath>Things/Turrets/DMS_Gun_CIDS</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.4</AccuracyShort>
+			<AccuracyMedium>0.3</AccuracyMedium>
+			<AccuracyLong>0.2</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Shotgun</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>12.9</range>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>Shot_Shotgun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.5,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
+	</ThingDef>	
 	
 	<!--SMG	這個是固定在不可替換武器類型機兵上的版本。-->
 	<ThingDef ParentName="DMS_AutomatroidTurretGun">
 		<defName>DMS_SubMachineGunMounted</defName>
 		<label>mounted SMG</label>
 		<description>Supressive weapon chambered in pistol caliber round.\n\nThis weapon is designed specially for mounted use, so only specific unit can equip it.</description>
-		<weaponTags>
-			<li>DMS_VehicleWeaponLight</li>
-			<li>V_SMG</li>
-			<li>NoSwitch</li>
-		</weaponTags>
 		<graphicData>
 			<texPath>Things/Turrets/DMS_Gun_LMG</texPath>
-			<drawSize>(1.3,1.3)</drawSize>
+			<drawSize>1.3</drawSize>
 		</graphicData>
 		<statBases>
-			<Mass>3</Mass>
-			<MarketValue>800</MarketValue>
 			<AccuracyTouch>0.80</AccuracyTouch>
 			<AccuracyShort>0.6</AccuracyShort>
 			<AccuracyMedium>0.3</AccuracyMedium>
 			<AccuracyLong>0.2</AccuracyLong>
-			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
@@ -94,7 +87,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
-				<range>19.9</range>
+				<range>15.9</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>4</burstShotCount>
 				<soundCast>Shot_MachinePistol</soundCast>
@@ -118,23 +111,15 @@
 		<defName>DMS_LightMachineGunMounted</defName>
 		<label>mounted LMG</label>
 		<description>Supressive weapon chambered in full power rifle round.\n\nThis weapon is designed specially for mounted use, so only specific unit can equip it.</description>
-		<weaponTags>
-			<li>DMS_VehicleWeapon</li>
-			<li>NoSwitch</li>
-			<li>V_LMG</li>
-		</weaponTags>
 		<graphicData>
 			<texPath>Things/Turrets/DMS_Gun_LMG</texPath>
-			<drawSize>(1.5,1.5)</drawSize>
+			<drawSize>1.5</drawSize>
 		</graphicData>
 		<statBases>
-			<Mass>11.5</Mass>
-			<MarketValue>1000</MarketValue>
 			<AccuracyTouch>0.50</AccuracyTouch>
 			<AccuracyShort>0.58</AccuracyShort>
 			<AccuracyMedium>0.45</AccuracyMedium>
 			<AccuracyLong>0.36</AccuracyLong>
-			<!-- <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown> -->
 		</statBases>
 		<verbs>
 			<li>
@@ -142,7 +127,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_LightMachineGun</defaultProjectile>
 				<warmupTime>2.3</warmupTime>
-				<range>25.9</range>
+				<range>19.9</range>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<burstShotCount>12</burstShotCount>
 				<soundCast>DMS_MachineGunLight_Shot</soundCast>
@@ -166,23 +151,15 @@
 		<defName>DMS_HeavyMachineGunMounted</defName>
 		<label>mounted HMG</label>
 		<description>heavy machine gun for mech soldier or infantry support platform.\n\nThis weapon is designed specially for mounted use, so only specific unit can equip it.</description>
-		<weaponTags>
-			<li>DMS_VehicleWeapon</li>
-			<li>NoSwitch</li>
-			<li>V_HMG</li>
-		</weaponTags>
 		<graphicData>
 			<texPath>Things/Turrets/DMS_Gun_HMG</texPath>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>2</drawSize>
 		</graphicData>
 		<statBases>
 			<AccuracyTouch>0.50</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.86</AccuracyMedium>
 			<AccuracyLong>0.88</AccuracyLong>
-			<MarketValue>1500</MarketValue>
-			<Mass>14.50</Mass>
-			<RangedWeapon_Cooldown>3.56</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
@@ -190,7 +167,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_HeavyMachineGun</defaultProjectile>
 				<warmupTime>2.3</warmupTime>
-				<range>80.9</range>
+				<range>31.9</range>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<burstShotCount>4</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
@@ -216,21 +193,16 @@
 		<label>kord</label>
 		<description>kord</description>
 		<graphicData>
-		<texPath>Things/Turrets/DMS_Gun_Kord</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>2</drawSize>
+			<texPath>Things/Turrets/DMS_Gun_Kord</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
 		</graphicData>
 		<statBases>
 			<AccuracyTouch>0.95</AccuracyTouch>
 			<AccuracyShort>0.90</AccuracyShort>
 			<AccuracyMedium>0.85</AccuracyMedium>
 			<AccuracyLong>0.80</AccuracyLong>
-			<!-- <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown> -->
 		</statBases>
-		<weaponTags>
-			<li>Geochelone_Weapon</li>
-			<li>NoSwitch</li>
-		</weaponTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -249,6 +221,50 @@
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
 			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.75,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DMS_AutomatroidTurretGun">
+		<defName>DMS_Gun_Vasilek_B</defName>
+		<label>2B9A vasilek</label>
+		<description>an ancient design of rapid fire indirect artillery suppression, can fire 4 mortar rounds in one burst.</description>
+		<graphicData>
+		  <texPath>Things/Turrets/DMS_Vasilek_B</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>4.5</drawSize>
+		</graphicData>
+		<statBases>
+			<RangedWeapon_Cooldown>25.0</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+		  <li>
+			<verbClass>Verb_Shoot</verbClass>
+			<defaultProjectile>Bullet_Shell_HighExplosive</defaultProjectile>
+			<requireLineOfSight>false</requireLineOfSight>
+			<warmupTime>5</warmupTime>
+			<forcedMissRadius>10</forcedMissRadius>
+			<minRange>19.9</minRange>
+			<range>89.9</range>
+			<ai_AvoidFriendlyFireRadius>9.9</ai_AvoidFriendlyFireRadius>
+			<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+			<burstShotCount>5</burstShotCount>
+			<soundCast>Shot_Autocannon</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>10</muzzleFlashScale>
+			<targetParams>
+			  <canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		  </li>
 		</verbs>
 		<modExtensions>
 			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">

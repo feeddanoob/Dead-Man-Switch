@@ -23,7 +23,6 @@
     </costListForDifficulty>
     <recipeMaker>
       <researchPrerequisite>DMS_Hybird</researchPrerequisite>
-      <displayPriority>120</displayPriority>
     </recipeMaker>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -33,11 +32,11 @@
         <wickTicks>30~60</wickTicks>
       </li>
     </comps>
-    <projectileWhenLoaded>DMS_Bullet_Shell_BlasterSmoke</projectileWhenLoaded>
+    <projectileWhenLoaded>DMS_Bullet_BlasterSmoke</projectileWhenLoaded>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
-    <defName>DMS_Bullet_Shell_BlasterSmoke</defName>
+    <defName>DMS_Bullet_BlasterSmoke</defName>
     <label>blaster screen shell</label>
     <graphicData>
       <texPath>Things/Projectile/ShellTox</texPath>

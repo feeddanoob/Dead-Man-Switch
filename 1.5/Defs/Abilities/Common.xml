@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- 通用的技能，比如各種發射物 -->
+
+	<AbilityDef>
+		<defName>DMS_SmokeLauncher</defName>
+		<label>particle smoke barrage</label>
+		<description>launch an anti-charged weapon particle smoke emitter to interfere with incoming charged ammunition.</description>
+		<iconPath>UI/Ability/Infrasound</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<cooldownTicksRange>2400~3000</cooldownTicksRange>
+		<verbProperties>
+			<defaultCooldownTime>5</defaultCooldownTime>
+			<verbClass>Verb_CastAbility</verbClass>
+			<onlyManualCast>false</onlyManualCast>
+			<range>19.9</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>Mortar_LaunchA</soundCast>
+			<requireLineOfSight>false</requireLineOfSight>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		  </verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>DMS_Bullet_BlasterSmoke</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>

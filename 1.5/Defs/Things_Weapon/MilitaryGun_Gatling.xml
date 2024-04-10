@@ -39,7 +39,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
-				<warmupTime>2</warmupTime>
+				<warmupTime>1.8</warmupTime>
 				<range>25.9</range>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<burstShotCount>30</burstShotCount>
@@ -98,9 +98,9 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_Kord</defaultProjectile>
-				<warmupTime>3</warmupTime>
+				<warmupTime>2</warmupTime>
 				<range>44.9</range>
-				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<burstShotCount>15</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -161,10 +161,10 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
-				<warmupTime>3.5</warmupTime>
+				<warmupTime>2.5</warmupTime>
 				<minRange>8</minRange>
 				<range>37.9</range>
-				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>12</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -216,10 +216,10 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
-				<warmupTime>3.5</warmupTime>
+				<warmupTime>2.5</warmupTime>
 				<range>25.9</range>
 				<minRange>1.9</minRange>
-				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>12</burstShotCount>
 				<soundCast>Shot_Minigun</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
@@ -283,10 +283,10 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_CIWS</defaultProjectile>
-				<warmupTime>4</warmupTime>
+				<warmupTime>3</warmupTime>
 				<minRange>5.9</minRange>
 				<range>49.9</range>
-				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 				<burstShotCount>12</burstShotCount>
 				<soundCast>Shot_TurretSniper</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>

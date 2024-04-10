@@ -305,7 +305,6 @@
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>3.5</drawSize>
-          <allowFlip>false</allowFlip>
         </bodyGraphicData>
       </li>
       <li>
@@ -314,7 +313,6 @@
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>3.5</drawSize>
-          <allowFlip>false</allowFlip>
         </bodyGraphicData>
       </li>
     </lifeStages>

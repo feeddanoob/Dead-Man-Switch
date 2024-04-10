@@ -26,20 +26,65 @@
 		  <li Class="DMS.CompProperties_VehicleWeapon">
         <drawData>
           <dataEast>
-              <offset>(0.8,0,0.2)</offset>
+            <offset>(0,0,0.85)</offset>
+            <layer>-21</layer>
           </dataEast>
           <dataWest>
-              <offset>(-0.8,0,-0.2)</offset>
+            <offset>(0,0,-0.15)</offset>
           </dataWest>
           <dataSouth>
-              <offset>(0.2,0,-0.8)</offset>
+            <offset>(0.8,0,0)</offset>
           </dataSouth>
           <dataNorth>
-              <offset>(-0.2,0,0.8)</offset>
+            <offset>(-0.8,0,0.5)</offset>
           </dataNorth>
         </drawData>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>
         <rotationSmoothTime>0.1</rotationSmoothTime>
+      </li>
+      <li Class="DMS.CompPropertiesMultipleTurretGun">
+        <subTurrets>
+          <li>
+            <ID>machine gun</ID>
+            <turret>DMS_SubMachineGunMounted</turret>
+            <autoAttack>true</autoAttack>
+            <command_ToggleFire>fire at will</command_ToggleFire>
+            <commandDesc_ToggleFire>toggle turret to manually control mode to prevent unnecessary shooting.</commandDesc_ToggleFire>
+            <command_Target>aim target</command_Target>
+            <commandDesc_Target>aim at desinated target</commandDesc_Target>
+            <warmingTime>3.2</warmingTime>
+            <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>
+            <angleOffset>-90</angleOffset>
+            <renderNodeProperties>
+              <li>
+                <nodeClass>DMS.PawnRenderNode_SubTurretGun</nodeClass>
+                <workerClass>DMS.PawnRenderNodeWorker_SubTurretGun</workerClass>
+                <parentTagDef>Body</parentTagDef>
+                <drawSize>0.75</drawSize>
+                <baseLayer>-21</baseLayer>
+                <pawnType>Any</pawnType>
+                <drawData>
+                  <defaultData>
+                    <pivot>(0.4,0.5)</pivot>
+                  </defaultData>
+                  <dataEast>
+                      <offset>(0.85,0,-0.15)</offset>
+                  </dataEast>
+                  <dataWest>
+                      <offset>(-0.85,0,-0.15)</offset>
+                      <rotationOffset>180</rotationOffset>
+                  </dataWest>
+                  <dataSouth>
+                      <offset>(0,0,-0.8)</offset>
+                  </dataSouth>
+                  <dataNorth>
+                      <offset>(0,0,0)</offset>
+                  </dataNorth>
+                </drawData>
+              </li>
+            </renderNodeProperties>
+           </li>
+        </subTurrets>
       </li>
     </comps>
     <modExtensions>
@@ -142,6 +187,10 @@
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2.75</drawSize>
+          <shadowData>
+            <volume>(1,1,1)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
       <li>
@@ -150,6 +199,10 @@
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2.75</drawSize>
+          <shadowData>
+            <volume>(1,1,1)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -185,16 +238,17 @@
 		  <li Class="DMS.CompProperties_VehicleWeapon">
         <drawData>
           <dataEast>
-              <offset>(0.8,0,0.2)</offset>
+            <offset>(0,0,0.85)</offset>
+            <layer>-21</layer>
           </dataEast>
           <dataWest>
-              <offset>(-0.8,0,-0.2)</offset>
+            <offset>(0,0,-0.15)</offset>
           </dataWest>
           <dataSouth>
-              <offset>(0.2,0,-0.8)</offset>
+            <offset>(0.8,0,0)</offset>
           </dataSouth>
           <dataNorth>
-              <offset>(-0.2,0,0.8)</offset>
+            <offset>(-0.8,0,0.5)</offset>
           </dataNorth>
         </drawData>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>
@@ -202,38 +256,39 @@
       </li><li Class="DMS.CompPropertiesMultipleTurretGun">
         <subTurrets>
           <li>
-            <ID>headingTurret</ID>
-            <autoAttack>false</autoAttack>
+            <ID>flame thrower</ID>
+            <autoAttack>true</autoAttack>
             <turret>DMS_Flameblaster</turret>      
-            <command_ToggleFire>切换自动开火</command_ToggleFire>
-            <commandDesc_ToggleFire>切换自动开火描述</commandDesc_ToggleFire>
-            <command_Target>瞄准目标</command_Target>
-            <commandDesc_Target>瞄准目标描述</commandDesc_Target>
-            <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>  
+            <command_ToggleFire>fire at will</command_ToggleFire>
+            <commandDesc_ToggleFire>toggle turret to manually control mode to prevent unnecessary shooting.</commandDesc_ToggleFire>
+            <command_Target>aim target</command_Target>
+            <commandDesc_Target>aim at desinated target</commandDesc_Target>
+            <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>
+            <angleOffset>-90</angleOffset>
             <renderNodeProperties>
               <li>
                 <nodeClass>DMS.PawnRenderNode_SubTurretGun</nodeClass>
-                <workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
+                <workerClass>DMS.PawnRenderNodeWorker_SubTurretGun</workerClass>
                 <parentTagDef>Body</parentTagDef>
                 <drawSize>1.2</drawSize>
                 <baseLayer>-21</baseLayer>
                 <pawnType>Any</pawnType>
                 <drawData>
+                  <defaultData>
+                    <pivot>(0.4,0.5)</pivot>
+                  </defaultData>
                   <dataEast>
                       <offset>(0.85,0,-0.15)</offset>
-                      <pivot>(0.25,0.5)</pivot>
                   </dataEast>
                   <dataWest>
                       <offset>(-0.85,0,-0.15)</offset>
-                      <pivot>(0.25,0.5)</pivot>
+                      <rotationOffset>180</rotationOffset>
                   </dataWest>
                   <dataSouth>
-                      <offset>(0.25,0,-0.8)</offset>
-                      <pivot>(0.5,0.5)</pivot>
+                      <offset>(0,0,-0.8)</offset>
                   </dataSouth>
                   <dataNorth>
                       <offset>(0,0,0)</offset>
-                      <pivot>(0.5,0.5)</pivot>
                   </dataNorth>
                 </drawData>
               </li>
@@ -343,6 +398,10 @@
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2.75</drawSize>
+          <shadowData>
+            <volume>(1,1,1)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
       <li>
@@ -351,14 +410,17 @@
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2.75</drawSize>
+          <shadowData>
+            <volume>(1,1,1)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
     </lifeStages>
     <weaponTags>
       <li>DMS_MechWeaponHeavy</li>                                                                     <!--武器-->
-      <li>DMS_2A38</li>
+      <li>DMS_Bipedal_HeavyGun</li>
       <li>A_MG_GrenadeLauncher</li>
-      <li>DMS_VehicleWeapon</li>
     </weaponTags>   
     <weaponMoney>3000~9999</weaponMoney>
   </PawnKindDef>

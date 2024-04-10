@@ -11,6 +11,8 @@ namespace DMS
         Pawn Pawn => parent as Pawn;
         public bool CanThrow => Pawn.Spawned && !Pawn.DeadOrDowned && Pawn.CarriedBy == null && IsActive;
         private bool IsActive => Pawn.GetMechWorkMode() != MechWorkModeDefOf.SelfShutdown && Pawn.GetMechWorkMode() != MechWorkModeDefOf.Recharge;
+
+        private int interrival;
         public override void CompTick()
         {
             base.CompTick();
@@ -20,6 +22,14 @@ namespace DMS
                 return;
             }
             if (!Pawn.Drawer.renderer.HasAnimation) Pawn.Drawer.renderer.SetAnimation(Props.activeAnimation);
+
+            if (interrival < Props.throwTick)
+            {
+                interrival++;
+                return;
+            }
+            interrival = 0;
+
             for (int i = 0; i < Props.throwRate; i++)
             {
                 if (ShouldSpawnFleck(out var fleck))
@@ -59,7 +69,7 @@ namespace DMS
         }
         float GetAngle()
         {
-            return Rand.Range(0, 350);
+            return Rand.Range(0, 360);
         }
         Vector3 DrawPos(float angle)
         {
@@ -89,5 +99,6 @@ namespace DMS
         public Vector2 speedRange = Vector2.one;
         public Vector2 sizeRange = Vector2.one;
         public int throwRate = 5;
+        public int throwTick = 5;
     }
 }

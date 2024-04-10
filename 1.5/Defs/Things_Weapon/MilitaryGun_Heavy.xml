@@ -35,7 +35,7 @@
 	<!--MSC-->
 	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
 		<defName>DMS_SniperCannon</defName>
-		<label>mech sniper cannon</label>
+		<label>sniper cannon</label>
 		<description>an ultra heavy rifle calibered with autocannon rounds, has proven the capability to snipe an exostrider in the distance. it is specially designed for long-range anti-mech sniping operation.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>
 		<weaponClasses>
 		  <li>RangedHeavy</li>
@@ -81,7 +81,7 @@
 				<warmupTime>2.0</warmupTime>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<burstShotCount>2</burstShotCount>
-				<range>69.9</range>
+				<range>49.9</range>
 				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -149,7 +149,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_HeavyMachineGun</defaultProjectile>
 				<warmupTime>3</warmupTime>
-				<range>49.9</range>
+				<range>39.9</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>4</burstShotCount>
 				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
@@ -186,7 +186,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<!-- 無後座力砲 基本上是給猿人用的-->
+	<!-- 無後座力砲 基本上是給龍騎兵用的-->
 	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
 		<defName>DMS_Gun_Recoilless</defName>
 		<label>recoilless cannon</label>
@@ -205,7 +205,7 @@
 			<Mass>80</Mass>
 		</statBases>
 		<weaponTags>
-			<li>DMS_MechWeaponHeavy</li>
+			<li>DMS_MechWeaponUltraHeavy</li>
 			<li>Gun_Recoilless</li>
 			<li>NoSwitch</li>
 		</weaponTags>
@@ -256,7 +256,6 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
 	<ThingDef ParentName="BaseBullet">
 		<defName>DMS_Bullet_RR</defName>
 		<label>recoilless grenade round</label>
@@ -281,7 +280,7 @@
 
 	<!--2A38M 給駭蜥Boss的武器-->
 	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
-		<defName>DMS_Tarbosaurus_BossGun</defName>
+		<defName>DMS_Gun_2A38M</defName>
 		<label>2A38M</label>
 		<description>a dual-barrel heavy autocannon for infantry suppress / anti air platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>
 		<descriptionHyperlinks>	
@@ -290,6 +289,8 @@
 			<ThingDef>DMS_Mech_Tarbosaurus</ThingDef>
 		</descriptionHyperlinks>
 		<weaponTags>
+			<li>2A38M</li>
+			<li>NoSwitch</li>
 			<li>DMS_Bipedal_HeavyGun</li>
 		</weaponTags>
 		<graphicData>
@@ -336,7 +337,7 @@
 				<minRange>2.9</minRange>
 				<range>44.9</range>
 				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
-				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<burstShotCount>5</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -345,7 +346,7 @@
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<forcedMissRadius>0.1</forcedMissRadius>
+				<forcedMissRadius>1</forcedMissRadius>
 			</li>
 		</verbs>
 		<modExtensions>

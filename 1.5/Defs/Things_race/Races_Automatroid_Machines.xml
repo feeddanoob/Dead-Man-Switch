@@ -99,7 +99,7 @@
   <ThingDef ParentName="BaseDMSMachine">
     <defName>DMS_Machine_TrashBin</defName>
     <label>trash bin</label>
-    <description>Cylindrical service robots used in Midworld cities provide road cleaning, express and food delivery services, and to be the first to assist in evacuation and maintain order when emergencies occur.</description>
+    <description>cylindrical service robots used in Midworld cities provide road cleaning, express and food delivery services, and to be the first to assist in evacuation and maintain order when emergencies occur.</description>
     <statBases>
       <CleaningSpeed>0.85</CleaningSpeed>
       <MoveSpeed>3.7</MoveSpeed>
@@ -110,7 +110,6 @@
       <body>DMS_TrashBin</body>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1</baseHealthScale>
-      <!--<mechWeightClass>Light</mechWeightClass>-->
       <thinkTreeMain>DMS_Machine</thinkTreeMain>
       <makesFootprints>true</makesFootprints>
       <mechWorkTypePriorities>
@@ -123,6 +122,7 @@
         <li>Hauling</li>
         <li>Cleaning</li>
         <li>Firefighter</li>
+        <li MayRequire="orion.hospitality">Diplomat</li>
         <li MayRequire="frozensnowfox.complexjobs">FSFRearming</li>
         <li MayRequire="frozensnowfox.complexjobs">FSFHarvesting</li>
         <li MayRequire="frozensnowfox.complexjobs">FSFCremating</li>

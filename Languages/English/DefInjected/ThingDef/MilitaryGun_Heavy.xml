@@ -47,16 +47,16 @@ This weapon is designed specially for automatroid use, and it's too heavy so onl
   <DMS_SniperCannon.verbs.Verb_Shoot.label>mech sniper cannon</DMS_SniperCannon.verbs.Verb_Shoot.label>
   
   <!-- EN: 2A38M -->
-  <DMS_Tarbosaurus_BossGun.label>2A38M</DMS_Tarbosaurus_BossGun.label>
+  <DMS_Gun_2A38M.label>2A38M</DMS_Gun_2A38M.label>
   <!-- EN: a dual-barrel heavy autocannon for infantry suppress / anti air platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
-  <DMS_Tarbosaurus_BossGun.description>a dual-barrel heavy autocannon for infantry suppress / anti air platform.
+  <DMS_Gun_2A38M.description>a dual-barrel heavy autocannon for infantry suppress / anti air platform.
 
-This weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</DMS_Tarbosaurus_BossGun.description>
+This weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</DMS_Gun_2A38M.description>
   <!-- EN: stock -->
-  <DMS_Tarbosaurus_BossGun.tools.stock.label>stock</DMS_Tarbosaurus_BossGun.tools.stock.label>
+  <DMS_Gun_2A38M.tools.stock.label>stock</DMS_Gun_2A38M.tools.stock.label>
   <!-- EN: barrel -->
-  <DMS_Tarbosaurus_BossGun.tools.barrel.label>barrel</DMS_Tarbosaurus_BossGun.tools.barrel.label>
+  <DMS_Gun_2A38M.tools.barrel.label>barrel</DMS_Gun_2A38M.tools.barrel.label>
   <!-- EN: 2A38M -->
-  <DMS_Tarbosaurus_BossGun.verbs.Verb_Shoot.label>2A38M</DMS_Tarbosaurus_BossGun.verbs.Verb_Shoot.label>
+  <DMS_Gun_2A38M.verbs.Verb_Shoot.label>2A38M</DMS_Gun_2A38M.verbs.Verb_Shoot.label>
   
 </LanguageData>

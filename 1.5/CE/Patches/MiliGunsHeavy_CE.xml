@@ -110,7 +110,7 @@
             
             <!-- 駭蜥最弱武器:2A38 -->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                <defName>DMS_Tarbosaurus_BossGun</defName>
+                <defName>DMS_Gun_2A38M</defName>
                 <statBases>
                     <Mass>58</Mass>
                     <Bulk>40</Bulk>

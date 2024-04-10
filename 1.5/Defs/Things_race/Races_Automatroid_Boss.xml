@@ -56,7 +56,7 @@
               <renderNodeProperties>
                 <li>
                   <nodeClass>DMS.PawnRenderNode_SubTurretGun</nodeClass>
-                  <workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
+                  <workerClass>DMS.PawnRenderNodeWorker_SubTurretGun</workerClass>
                   <parentTagDef>Body</parentTagDef>
                   <drawSize>1.75</drawSize>
                   <baseLayer>-21</baseLayer>
@@ -64,21 +64,16 @@
                   <drawData>
                     <dataEast>
                         <offset>(1.0,0,-0.6)</offset>
-                        <pivot>(0.25,0.5)</pivot>
                     </dataEast>
                     <dataWest>
                         <offset>(-1.0,0,-0.6)</offset>
-                        <pivot>(0.25,0.5)</pivot>
+                        <rotationOffset>180</rotationOffset>
                     </dataWest>
                     <dataSouth>
-                        <rotationOffset>90</rotationOffset>
                         <offset>(0,0,-1.2)</offset>
-                        <pivot>(0.5,0.5)</pivot>
                     </dataSouth>
                     <dataNorth>
-                        <rotationOffset>-90</rotationOffset>
                         <offset>(0,0,0)</offset>
-                        <pivot>(0.5,0.5)</pivot>
                     </dataNorth>
                   </drawData>
                 </li>
@@ -98,7 +93,7 @@
               <renderNodeProperties>
                 <li>
                   <nodeClass>DMS.PawnRenderNode_SubTurretGun</nodeClass>
-                  <workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
+                  <workerClass>DMS.PawnRenderNodeWorker_SubTurretGun</workerClass>
                   <parentTagDef>Body</parentTagDef>
                   <drawSize>0.5</drawSize>
                   <baseLayer>20</baseLayer>
@@ -110,14 +105,15 @@
                     <dataWest>
                         <offset>(0.15,0,0.25)</offset>
                         <layer>-22</layer>
+                        <rotationOffset>180</rotationOffset>
                     </dataWest>
                     <dataSouth>
                         <offset>(-0.9,0,-0.3)</offset>
-                        <rotationOffset>110</rotationOffset>
+                        <rotationOffset>10</rotationOffset>
                     </dataSouth>
                     <dataNorth>
                         <offset>(1,0,-1)</offset>
-                        <rotationOffset>-80</rotationOffset>
+                        <rotationOffset>-10</rotationOffset>
                     </dataNorth>
                   </drawData>
                 </li>
@@ -216,6 +212,8 @@
     <killedLeavingsPlayerHostile>
       <ComponentFireControl>1</ComponentFireControl>
     </killedLeavingsPlayerHostile>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">
@@ -233,6 +231,10 @@
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>4</drawSize>
+          <shadowData>
+            <volume>(1.25,1,1.25)</volume>
+            <offset>(0,0,-0.5)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
       <li>
@@ -241,6 +243,10 @@
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>4</drawSize>
+          <shadowData>
+            <volume>(1.25,1,1.25)</volume>
+            <offset>(0,0,-0.5)</offset>
+          </shadowData>
         </bodyGraphicData>
       </li>
     </lifeStages>

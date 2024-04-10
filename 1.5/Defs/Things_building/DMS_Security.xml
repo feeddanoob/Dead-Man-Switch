@@ -569,7 +569,6 @@
         <verbClass>Verb_Shoot</verbClass>
         <defaultProjectile>DMS_Bullet_Kord</defaultProjectile>
         <requireLineOfSight>true</requireLineOfSight>
-        <!--<isMortar>false</isMortar>-->
         <warmupTime>1.5</warmupTime>
         <minRange>1.9</minRange>
         <range>39.9</range>
@@ -605,7 +604,7 @@
       <shadowSize>0.6</shadowSize>
     </projectile>
   </ThingDef>
-
+  <!-- 矢車菊  -->
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_Vasilek</defName>
     <label>Vasilek</label>
@@ -690,11 +689,10 @@
       <li>BuildingsSecurity</li>
     </thingCategories>
   </ThingDef>
-
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>DMS_Gun_Vasilek</defName>
-    <label>vasilek</label>
-    <description>kord</description>
+    <label>2B9M vasilek</label>
+    <description>an ancient design of rapid fire indirect artillery suppression, can fire 4 mortar rounds in one burst.</description>
     <graphicData>
       <texPath>Things/Turrets/DMS_Vasilek</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -712,9 +710,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <defaultProjectile>Bullet_Shell_HighExplosive</defaultProjectile>
         <requireLineOfSight>false</requireLineOfSight>
-        <isMortar>true</isMortar>
         <warmupTime>1.5</warmupTime>
-        <forcedMissRadius>8</forcedMissRadius>
+        <forcedMissRadius>15</forcedMissRadius>
         <minRange>19.9</minRange>
         <range>89.9</range>
         <ai_AvoidFriendlyFireRadius>7.9</ai_AvoidFriendlyFireRadius>

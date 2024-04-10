@@ -194,7 +194,7 @@ namespace DMS
             }
             else
             {
-                this.curRotation = this.turretProp.IdleAngleOffset + parent.Rotation.AsAngle - 90;
+                this.curRotation = this.turretProp.IdleAngleOffset + parent.Rotation.AsAngle + this.turretProp.angleOffset;
             }
             this.CurrentEffectiveVerb.VerbTick();
             if (this.CurrentEffectiveVerb.state != VerbState.Bursting)
@@ -234,14 +234,14 @@ namespace DMS
                 }
             }
         }
-
         private bool CheckTarget()
         {
-            if (!this.currentTarget.IsValid) { 
+            if (!currentTarget.IsValid )
+            {
                 this.forcedTarget = LocalTargetInfo.Invalid;
-                return false; 
+                return false;
             }
-            if (this.currentTarget.ThingDestroyed)
+            if (this.currentTarget.ThingDestroyed || (currentTarget.TryGetPawn(out var p) && p.DeadOrDowned))
             {
                 this.currentTarget = LocalTargetInfo.Invalid;
                 return false;
@@ -261,23 +261,22 @@ namespace DMS
             this.turretProp.renderNodeProperties.ForEach(p =>
             {
                 PawnRenderNode_SubTurretGun pawnRenderNode_TurretGun = (PawnRenderNode_SubTurretGun)Activator.CreateInstance(p.nodeClass, new object[]
-{
+                {
                         pawn,
                         p,
                         pawn.Drawer.renderer.renderTree
-});
+                });
                 pawnRenderNode_TurretGun.subturret = this;
                 result.Add(pawnRenderNode_TurretGun);
             });
             return result;
         }
-
-        //
-        public void switchAutoFire() {
+        public void SwitchAutoFire()
+        {
             this.fireAtWill = !this.fireAtWill;
         }
 
-        public void targetting()
+        public void Targetting()
         {
             
             var tar = Find.Targeter;
@@ -285,7 +284,7 @@ namespace DMS
             tar.BeginTargeting(this.CurrentEffectiveVerb.targetParams,(t) => { this.forcedTarget = t; this.currentTarget = t; });
         }
 
-        public void clearTarget()
+        public void ClearTarget()
         {
             this.forcedTarget = LocalTargetInfo.Invalid;
             this.currentTarget = LocalTargetInfo.Invalid;

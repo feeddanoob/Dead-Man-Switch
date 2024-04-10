@@ -274,7 +274,7 @@
 			  <li>Poke</li>
 			</capacities>
 			<power>9</power>
-			<cooldownTime>2.6</cooldownTime>
+			<cooldownTime>3.5</cooldownTime>
 		  </li>
 		</tools>
 		<weaponTags>
@@ -284,9 +284,9 @@
 		  <li>
 			<verbClass>Verb_SpewFire</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<warmupTime>0</warmupTime>
-			<range>4.9</range>
-			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+			<warmupTime>0.5</warmupTime>
+			<range>7.9</range>
+			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 			<burstShotCount>10</burstShotCount>
 			<soundCast>Shot_MiniFlameblaster</soundCast>
 			<muzzleFlashScale>9</muzzleFlashScale>

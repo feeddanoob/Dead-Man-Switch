@@ -36,15 +36,6 @@ namespace DMS
             float num = aimAngle - 90f;
             Mesh mesh;
             mesh = MeshPool.plane10;
-            //if (aimAngle > 180f && aimAngle < 360f)
-            //{
-            //    mesh = MeshPool.plane10;
-            //    num -= 180f;
-            //}
-            //else
-            //{
-            //    mesh = MeshPool.plane10;
-            //}
             num %= 360f;
 
             Vector3 drawSize = compWeapon.Props.drawSize != 0 ? Vector3.one * compWeapon.Props.drawSize : (Vector3)equipment.Graphic.drawSize;

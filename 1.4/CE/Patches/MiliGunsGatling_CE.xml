@@ -23,7 +23,7 @@
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_30x173mmNATO_AP</defaultProjectile>
-					<burstShotCount>40</burstShotCount>
+					<burstShotCount>12</burstShotCount>
 					<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
                     <warmupTime>1.35</warmupTime>
                     <range>75</range>
@@ -44,7 +44,7 @@
                     <aiUseBurstMode>FALSE</aiUseBurstMode>
                     <noSingleShot>true</noSingleShot>
 				    <aiAimMode>Snapshot</aiAimMode>
-					<aimedBurstShotCount>20</aimedBurstShotCount>
+					<aimedBurstShotCount>8</aimedBurstShotCount>
                 </FireModes>
             </li>
 
@@ -62,7 +62,7 @@
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_20x102mmNATO_AP</defaultProjectile>
-					<burstShotCount>40</burstShotCount>
+					<burstShotCount>10</burstShotCount>
 					<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
                     <warmupTime>0.8</warmupTime>
                     <range>62</range>
@@ -83,7 +83,7 @@
                     <aiUseBurstMode>FALSE</aiUseBurstMode>
                     <noSingleShot>true</noSingleShot>
 				    <aiAimMode>Snapshot</aiAimMode>
-					<aimedBurstShotCount>20</aimedBurstShotCount>
+					<aimedBurstShotCount>5</aimedBurstShotCount>
                 </FireModes>
                 <weaponTags>
 					<li>CE_AI_Suppressive</li>
@@ -109,7 +109,7 @@
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_20x102mmNATO_AP</defaultProjectile>
-					<burstShotCount>40</burstShotCount>
+					<burstShotCount>10</burstShotCount>
 					<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
                     <warmupTime>0.8</warmupTime>
                     <range>62</range>
@@ -130,7 +130,7 @@
                     <aiUseBurstMode>FALSE</aiUseBurstMode>
                     <noSingleShot>true</noSingleShot>
 				    <aiAimMode>Snapshot</aiAimMode>
-					<aimedBurstShotCount>20</aimedBurstShotCount>
+					<aimedBurstShotCount>5</aimedBurstShotCount>
                 </FireModes>
                 <weaponTags>
 					<li>CE_AI_Suppressive</li>
@@ -156,7 +156,7 @@
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-					<burstShotCount>50</burstShotCount>
+					<burstShotCount>8</burstShotCount>
 					<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
                     <warmupTime>1</warmupTime>
                     <range>75</range>
@@ -177,7 +177,7 @@
                     <aiUseBurstMode>FALSE</aiUseBurstMode>
                     <noSingleShot>true</noSingleShot>
 				    <aiAimMode>Snapshot</aiAimMode>
-					<aimedBurstShotCount>25</aimedBurstShotCount>
+					<aimedBurstShotCount>3</aimedBurstShotCount>
                 </FireModes>
                 <weaponTags>
 					<li>CE_AI_Suppressive</li>
@@ -202,8 +202,8 @@
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
-					<burstShotCount>40</burstShotCount>
-					<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+					<burstShotCount>20</burstShotCount>
+					<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
                     <warmupTime>1.2</warmupTime>
                     <range>75</range>
                     <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
@@ -223,7 +223,7 @@
                     <aiUseBurstMode>FALSE</aiUseBurstMode>
                     <noSingleShot>true</noSingleShot>
 				    <aiAimMode>Snapshot</aiAimMode>
-					<aimedBurstShotCount>25</aimedBurstShotCount>
+					<aimedBurstShotCount>10</aimedBurstShotCount>
                 </FireModes>
                 <weaponTags>
 					<li>CE_AI_Suppressive</li>
