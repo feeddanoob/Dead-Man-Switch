@@ -4,5 +4,6 @@ namespace DMS
 {
     public class CompForceTargetable : ThingComp
     {
+
     }
 }

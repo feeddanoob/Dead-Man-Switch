@@ -7,9 +7,9 @@
 		<defName>DMS_SmokeLauncher</defName>
 		<label>particle smoke barrage</label>
 		<description>launch an anti-charged weapon particle smoke emitter to interfere with incoming charged ammunition.</description>
-		<iconPath>UI/Ability/Infrasound</iconPath>
+		<iconPath>UI/Ability/Smoke</iconPath>
 		<aiCanUse>true</aiCanUse>
-		<cooldownTicksRange>2400~3000</cooldownTicksRange>
+		<cooldownTicksRange>3000~3600</cooldownTicksRange>
 		<verbProperties>
 			<defaultCooldownTime>5</defaultCooldownTime>
 			<verbClass>Verb_CastAbility</verbClass>
@@ -29,4 +29,25 @@
 			</li>
 		</comps>
 	</AbilityDef>
+
+
+	
+	<HediffDef>
+		<defName>DMS_SelfRepair</defName>
+		<label>maintenance mode</label>
+		<hediffClass>Hediff_RapidRegeneration</hediffClass>
+		<description>This creature has stored an incredible amount of healing energy. While not unlimited, it will rapidly regenerate until its energy has been exhausted.</description>
+		<isBad>false</isBad>
+		<preventsDeath>true</preventsDeath>
+		<stages>
+		  <li>
+			<minSeverity>0</minSeverity>
+			<regeneration>30000</regeneration>
+			<showRegenerationStat>false</showRegenerationStat>
+			<statOffsets>
+			  <PainShockThreshold>10</PainShockThreshold>
+			</statOffsets>
+		  </li>
+		</stages>
+	  </HediffDef>
 </Defs>

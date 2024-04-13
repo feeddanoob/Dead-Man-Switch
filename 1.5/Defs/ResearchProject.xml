@@ -19,7 +19,7 @@
     <label>material engineering</label>
     <description>"A perfect material can be calculate through a set of scientific methods" this is one of the breakthough mankind are ever achived.</description>
     <baseCost>1000</baseCost>
-    <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+    <requiredResearchBuilding/>
     <prerequisites>
       <li>Electricity</li>
     </prerequisites>
@@ -44,7 +44,7 @@
     <label>artificial fiber</label>
     <description>unlock the production of artificial fabrics,these man-made fabric has their pros and cons.</description>
     <baseCost>500</baseCost>
-    <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+    <requiredResearchBuilding/>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_Material</li>
@@ -58,7 +58,7 @@
     <label>drone basis</label>
     <description>Use simple control logic and signal transceivers to unlock the construction of simple mechanical units.</description>
     <baseCost>200</baseCost>
-    <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+    <requiredResearchBuilding/>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>Electricity</li>
@@ -73,7 +73,7 @@
     <label>automatroid basis</label>
     <description>because they are not just a weapon but weapon that is capable to eliminate target by themselves, these robots was such a topic and own a name to them "automatroid" \n\n Such a morally outrageous weapon should never acceptable at normal, but since it is widely used by nations during ww3 so it has become a mundane part of the battlefield..</description>
     <baseCost>300</baseCost>
-    <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+    <requiredResearchBuilding/>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_UAVBasis</li>
@@ -87,7 +87,7 @@
     <label>mecha gear</label>
     <description>"mecha gear"is a tern that cover those near future machining design pattern, was originally satirize exaggerated designs that do not correspond to reality. \n\n However, advanced materials that have been invented and improved over millennia have become the basis for bringing these designs to life.</description>
     <baseCost>500</baseCost>
-    <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+    <requiredResearchBuilding/>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_Material</li>
@@ -104,7 +104,7 @@
     <label>Legion</label>
     <description>Series of automatroid designed for large-scale warfare. Most of them have only simple weapon operating systems, but their clear division of labor and cheap production costs make them the most impressive combat weapons in terms of service scale.</description>
     <baseCost>500</baseCost>
-    <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+    <requiredResearchBuilding/>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_Automatroid</li>
@@ -134,7 +134,7 @@
     <defName>DMS_Artifuscle</defName>
     <label>artificial muscle</label>
     <description>artifuscle is a type of prosthetic material made by genetically engineered sauromorph muscle bundles, and soon... Arms dealers realized the future of mechanical-biological hybrid weapons.</description>
-    <baseCost>1200</baseCost>
+    <baseCost>750</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>SterileMaterials</li>
@@ -148,13 +148,13 @@
     <defName>DMS_Prosthetic</defName>
     <label>neural prosthetic</label>
     <description>Neural prosthetic are designed for disabled soldiers. It is durable and the need for adaptation training is almost negligible. However, due to the consideration of durability and mass production, its work efficiency is not as good as the original one.</description>
-    <baseCost>1250</baseCost>
+    <baseCost>750</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_DeadMansSwitch</li>
     </prerequisites>
     <researchViewX>4.00</researchViewX>
-    <researchViewY>2.85</researchViewY>
+    <researchViewY>2.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
@@ -184,8 +184,8 @@
       <li>DMS_Hypothesis</li>
       <li>SterileMaterials</li>
     </prerequisites>
-    <researchViewX>8.00</researchViewX>
-    <researchViewY>2.70</researchViewY>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
     <requiredAnalyzed>
       <li>ComponentTransmitter</li>
     </requiredAnalyzed>
@@ -243,7 +243,7 @@
       <li>DMS_DeadMansSwitch</li>
     </prerequisites>
     <researchViewX>4.00</researchViewX>
-    <researchViewY>4.15</researchViewY>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef ParentName="DMS_BaseTech">
@@ -272,8 +272,8 @@
     <prerequisites>
       <li>DMS_Hybird</li>
     </prerequisites>
-    <researchViewX>6.00</researchViewX>
-    <researchViewY>1.75</researchViewY>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>0.50</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
@@ -286,8 +286,8 @@
       <li>DMS_Bionics</li>
       <li>SterileMaterials</li>
     </prerequisites>
-    <researchViewX>7.00</researchViewX>
-    <researchViewY>1.75</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>0.50</researchViewY>
   </ResearchProjectDef>
 
   <!-- T3 -->
@@ -296,7 +296,7 @@
     <defName>DMS_Hypothesis</defName>
     <label>in short hypothesis</label>
     <description>after the discover of The Dead man's switch, yánzhī Jiǎn an AI algorithm engineer proposed a hypothetical solution to the halting problem...\n\n And around this conjecture, we seem to be getting closer to the so-called omnipotent machinery.</description>
-    <baseCost>1500</baseCost>
+    <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_DeadMansSwitch</li>
@@ -313,14 +313,14 @@
     <defName>DMS_HeavyAutomatroid</defName>
     <label>heavy automatroid</label>
     <description>These heavy machines were prepared for a full-scale war among mankind, but forturnatelly these scale of war doesn't often.</description>
-    <baseCost>1200</baseCost>
+    <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_Hypothesis</li>
       <li>DMS_BattleFrame</li>
     </prerequisites>
     <researchViewX>7.00</researchViewX>
-    <researchViewY>4.15</researchViewY>
+    <researchViewY>2.80</researchViewY>
     <requiredAnalyzed>
       <li>ComponentFireControl</li>
     </requiredAnalyzed>
@@ -330,13 +330,13 @@
     <defName>DMS_HumanoidEngineering</defName>
     <label>humanoid engineering</label>
     <description>during war, automatroid with human shapes are proven to be a good design where the ergonomics and psychological suggestion are work on them.</description>
-    <baseCost>1500</baseCost>
+    <baseCost>750</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_Hypothesis</li>
     </prerequisites>
-    <researchViewX>8.00</researchViewX>
-    <researchViewY>3.45</researchViewY>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>4.40</researchViewY>
   </ResearchProjectDef>
 
   <!-- 浪人是用於都市巷戰的戰鬥機械體系列，特徵是那盤狀的傳感器頭部與重型裝甲。經常被用於治安戰，鎮暴與維安行動。-->
@@ -344,13 +344,13 @@
     <defName>DMS_Ronin</defName>
     <label>Peacekeepers</label>
     <description>Series of automatroid designed for urban warfare, characterized by its disk-shaped sensor head and heavy armor. Often used in security warfare, riot control and peacekeeping operation.</description>
-    <baseCost>1500</baseCost>
+    <baseCost>750</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
-      <li>DMS_HumanoidEngineering</li>
+      <li>DMS_Hypothesis</li>
     </prerequisites>
-    <researchViewX>9.00</researchViewX>
-    <researchViewY>4.75</researchViewY>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>5.50</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
@@ -361,10 +361,12 @@
     <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>DMS_Hybird</li>
-      <li>DMS_HumanoidEngineering</li>
+      <li>DMS_HeavyAutomatroid</li>
     </prerequisites>
     <researchViewX>10.00</researchViewX>
-    <researchViewY>1.15</researchViewY>
+    <researchViewY>1.10</researchViewY>
   </ResearchProjectDef>
+
+
 
 </Defs>

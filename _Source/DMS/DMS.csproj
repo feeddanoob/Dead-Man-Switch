@@ -61,12 +61,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ability\CompAbilityEffect_DirectionalExplosion.cs" />
-    <Compile Include="CircleConst.cs" />
+    <Compile Include="Utility\CircleConst.cs" />
     <Compile Include="Component\CompAntiBlasterSmoke.cs" />
     <Compile Include="Component\CompCommandRelay.cs" />
     <Compile Include="Component\CompDeadManSwitch.cs" />
     <Compile Include="Component\CompFlyingFleckThrower.cs" />
     <Compile Include="Component\CompMechApparel.cs" />
+    <Compile Include="Hediff\JobDriver_SelfHealing.cs" />
     <Compile Include="MultiTurrets\CompMultipleTurretGun.cs" />
     <Compile Include="MultiTurrets\CompPropertiesMultipleTurretGun.cs" />
     <Compile Include="MultiTurrets\PawnRenderNodeWorker_SubTurretGun.cs" />
@@ -80,7 +81,7 @@
     <Compile Include="Thing\HeavyEquippableExtension.cs" />
     <Compile Include="Component\CompUseEffect_CallBossgroupByItem.cs" />
     <Compile Include="Component\CompVehicleWeapon.cs" />
-    <Compile Include="Hediff\HediffComp_AddHediffOnSpecificPart.cs" />
+    <Compile Include="Hediff\HediffComp_GiveHediffsInRange.cs" />
     <Compile Include="Hediff\Hediff_BandNode.cs" />
     <Compile Include="Hediff\HediffComp_RemoveHediffsOnDisappear.cs" />
     <Compile Include="Hediff\HediffsExtension.cs" />

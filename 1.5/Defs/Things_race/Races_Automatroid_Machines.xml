@@ -112,10 +112,11 @@
       <baseHealthScale>1</baseHealthScale>
       <thinkTreeMain>DMS_Machine</thinkTreeMain>
       <makesFootprints>true</makesFootprints>
+      <mechFixedSkillLevel>3</mechFixedSkillLevel>
       <mechWorkTypePriorities>
-        <Cleaning>3</Cleaning>
+        <Cleaning>1</Cleaning>
         <Hauling>2</Hauling>
-        <PlantCutting>1</PlantCutting>
+        <PlantCutting>3</PlantCutting>
       </mechWorkTypePriorities>
       <mechEnabledWorkTypes>
         <li>PlantCutting</li>

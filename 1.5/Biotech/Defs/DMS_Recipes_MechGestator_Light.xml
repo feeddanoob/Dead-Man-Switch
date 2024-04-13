@@ -100,7 +100,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>6</count>
+        <count>5</count>
       </li>
     </ingredients>
   </RecipeDef>
@@ -131,7 +131,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>6</count>
+        <count>5</count>
       </li>
     </ingredients>
   </RecipeDef>
@@ -167,10 +167,10 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ComponentStamped</li>
+            <li>Tungsteel</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>15</count>
       </li>
       <li>
         <filter>
@@ -178,7 +178,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>5</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -213,18 +213,10 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ComponentStamped</li>
-          </thingDefs>
-        </filter>
-        <count>3</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>5</count>
       </li>
       <li>
         <filter>

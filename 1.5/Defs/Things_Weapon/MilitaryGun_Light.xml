@@ -249,8 +249,8 @@
 		  <drawSize>1.4</drawSize>
 		</graphicData>
 		<costList>
-			<Chemfuel>30</Chemfuel>
-			<Tungsteel>30</Tungsteel>
+			<Chemfuel>75</Chemfuel>
+			<Tungsteel>10</Tungsteel>
 			<ComponentStamped>1</ComponentStamped>
 		</costList>
 		<statBases>

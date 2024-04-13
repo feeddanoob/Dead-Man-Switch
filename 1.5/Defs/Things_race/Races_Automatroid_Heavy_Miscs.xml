@@ -97,11 +97,11 @@
       <mechWeightClass>UltraHeavy</mechWeightClass>
       <mechFixedSkillLevel>18</mechFixedSkillLevel>
       <mechWorkTypePriorities>
-        <Art>4</Art>
-        <Crafting>4</Crafting>
-        <Tailoring>3</Tailoring>
-        <Smithing>2</Smithing>
-        <Doctor>1</Doctor>
+        <Art>1</Art>
+        <Crafting>1</Crafting>
+        <Tailoring>2</Tailoring>
+        <Smithing>3</Smithing>
+        <Doctor>4</Doctor>
       </mechWorkTypePriorities>
       <mechEnabledWorkTypes>
         <li>Crafting</li>

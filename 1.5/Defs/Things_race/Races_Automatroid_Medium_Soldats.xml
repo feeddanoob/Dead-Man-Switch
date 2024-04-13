@@ -186,6 +186,9 @@
           <li>GrenadeSmoke</li>
           <li>GrenadeFlame</li>
         </UsableWeaponTags>
+        <BypassUsableWeapons>
+          <li>Gun_IncendiaryLauncher</li>
+        </BypassUsableWeapons>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
           <li>Industrial</li>

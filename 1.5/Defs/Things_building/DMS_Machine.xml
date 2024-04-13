@@ -32,7 +32,7 @@
 
   <DesignatorDropdownGroupDef>
     <defName>DMS_MachineHound</defName>
-    <label>hound variants</label>
+    <label>machine platforms</label>
   </DesignatorDropdownGroupDef>
 
   <ThingDef Name="DMS_BaseChargeStation" ParentName="BuildingBase" Abstract="True">
@@ -86,6 +86,7 @@
     <defName>DMS_TrashBin_Base</defName>
     <label>trashbin charging station</label>
     <description>A station for assembling and recharging trashbin.</description>
+    <designatorDropdown>DMS_MachineHound</designatorDropdown>
     <statBases>
       <WorkToBuild>1000</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
@@ -114,6 +115,7 @@
     <defName>DMS_VerlingBird_Base</defName>
     <label>verlingbird charging station</label>
     <description>A station for assembling and recharging verlingbird.</description>
+    <designatorDropdown>DMS_MachineHound</designatorDropdown>
     <statBases>
       <WorkToBuild>1000</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>

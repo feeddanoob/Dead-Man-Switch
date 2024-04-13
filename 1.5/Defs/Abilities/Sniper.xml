@@ -87,6 +87,7 @@
 	  </li>
 	  <li Class="HediffCompProperties_DisappearsOnDeath"/>
 	  <li Class="HediffCompProperties_GiveHediffsInRange">
+		<compClass>DMS.HediffComp_GiveHediffsInRangeMech</compClass>
 		<range>3.9</range>
 		<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
 		<onlyPawnsInSameFaction>true</onlyPawnsInSameFaction>
