@@ -61,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ability\CompAbilityEffect_DirectionalExplosion.cs" />
+    <Compile Include="Ability\CompAbilityEffect_SelfRepairMode.cs" />
+    <Compile Include="Hediff\HediffComp_SelfHeal.cs" />
     <Compile Include="Utility\CircleConst.cs" />
     <Compile Include="Component\CompAntiBlasterSmoke.cs" />
     <Compile Include="Component\CompCommandRelay.cs" />

@@ -147,6 +147,9 @@
     <race>DMS_Machine_TrashBin</race>
     <isFighter>false</isFighter>
     <defaultFactionType>Mechanoid</defaultFactionType>
+    <abilities>
+      <li>DMS_RepairMode</li>
+    </abilities>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -238,6 +241,9 @@
     <isFighter>true</isFighter>
     <combatPower>20</combatPower>
     <maxPerGroup>30</maxPerGroup>
+    <abilities>
+      <li>DMS_RepairMode</li>
+    </abilities>
     <defaultFactionType>Mechanoid</defaultFactionType>
     <lifeStages>
       <li>
@@ -365,7 +371,10 @@
     <race>DMS_Machine_Hound</race>
     <isFighter>true</isFighter>
     <combatPower>30</combatPower>
-    <maxPerGroup>15</maxPerGroup>
+    <maxPerGroup>10</maxPerGroup>
+    <abilities>
+      <li>DMS_RepairMode</li>
+    </abilities>
     <defaultFactionType>Mechanoid</defaultFactionType>
     <lifeStages>
       <li>

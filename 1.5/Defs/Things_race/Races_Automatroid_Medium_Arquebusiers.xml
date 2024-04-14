@@ -87,6 +87,9 @@
       <li>A_MG_Light</li>
       <li>A_DMR_LongRifle</li>
     </weaponTags>
+    <abilities>
+      <li>DMS_RepairMode</li>
+    </abilities>
   </PawnKindDef>
 
   <!-- DMS_Mech_Jaeger 火槍手獵兵型 速度較快且可以隱身-->

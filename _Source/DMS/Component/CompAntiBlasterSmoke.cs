@@ -5,6 +5,7 @@ using Verse;
 using System.Reflection;
 using UnityEngine;
 using System;
+using AnimalBehaviours;
 
 namespace DMS
 {

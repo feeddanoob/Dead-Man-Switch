@@ -37,7 +37,7 @@ namespace DMS
                     turret.Init(t);
                 });
             }
-            
+            turrets.RemoveDuplicates((a, b) => a.ID == b.ID);
             if (currentTurret == null)
             {
                 currentTurret = turrets.First<SubTurret>().ID;

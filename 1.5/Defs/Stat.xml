@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <StatDef>
+	<StatDef>
 		<defName>DMS_UsableWeapons</defName>
 		<label>supported weapons</label>
 		<workerClass>DMS.StatWorker_MechWeapon</workerClass>
@@ -10,12 +10,12 @@
 		<minValue>0</minValue>
 	</StatDef>
 	<StatDef>
-		  <defName>DMS_HeavyGears</defName>
-		  <label>supported bodysize</label>
-		  <workerClass>DMS.StatWorker_HeavyGear</workerClass>
-		  <description>required pawn body size to be equipped with this weapon.</description>
-		  <category>Weapon</category>
-		  <defaultBaseValue>1.0</defaultBaseValue>
-		  <minValue>-1</minValue>
-	  </StatDef>
+		<defName>DMS_HeavyGears</defName>
+		<label>supported bodysize</label>
+		<workerClass>DMS.StatWorker_HeavyGear</workerClass>
+		<description>required pawn body size to be equipped with this weapon.</description>
+		<category>Weapon</category>
+		<defaultBaseValue>1.0</defaultBaseValue>
+		<minValue>-1</minValue>
+	</StatDef>
 </Defs>

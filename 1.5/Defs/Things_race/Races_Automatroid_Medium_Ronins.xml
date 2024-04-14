@@ -52,7 +52,6 @@
     <race>DMS_Mech_Ronin</race>
     <isFighter>true</isFighter>
     <combatPower>150</combatPower>
-    <!--<maxPerGroup></maxPerGroup>-->                                                 <!--單個集群內的數量-->
     <lifeStages>      
     <li>
       <bodyGraphicData>
@@ -78,6 +77,7 @@
     </weaponTags>
     <abilities>
       <li>DMS_Infrasound</li>
+      <li>DMS_RepairMode</li>
     </abilities>
   </PawnKindDef>
 
@@ -271,6 +271,7 @@
     </weaponTags>
     <abilities>
       <li>DMS_FlashShock</li>
+      <li>DMS_RepairMode</li>
     </abilities>
   </PawnKindDef>
   

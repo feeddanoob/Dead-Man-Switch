@@ -178,8 +178,12 @@
     <label>Iguana</label>
     <race>DMS_Mech_Iguana</race>
     <isFighter>true</isFighter>
-    <combatPower>250</combatPower>                                               <!--威脅點數-->
-    <maxPerGroup>7</maxPerGroup>                                                 <!--單個集群內的數量-->
+    <combatPower>250</combatPower>
+    <maxPerGroup>7</maxPerGroup>
+    <abilities>
+      <li>DMS_SmokeLauncher</li>
+      <li>DMS_RepairMode</li>
+    </abilities>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -389,8 +393,11 @@
     <label>Gecko</label>
     <race>DMS_Mech_Gecko</race>
     <isFighter>true</isFighter>
-    <combatPower>300</combatPower>                                               <!--威脅點數-->
-    <maxPerGroup>7</maxPerGroup>                                                 <!--單個集群內的數量-->
+    <combatPower>300</combatPower>
+    <maxPerGroup>7</maxPerGroup>
+    <abilities>
+      <li>DMS_RepairMode</li>
+    </abilities>
     <lifeStages>
       <li>
         <bodyGraphicData>

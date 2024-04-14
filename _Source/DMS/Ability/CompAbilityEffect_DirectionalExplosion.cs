@@ -5,6 +5,7 @@ using Verse;
 
 namespace DMS
 {
+    [StaticConstructorOnStartup]
     public class CompProperties_AbilityDirectionalExplosion : CompProperties_AbilityEffect
     {
         public float range;
@@ -121,5 +122,6 @@ namespace DMS
                 return GenSight.LineOfSight(Pawn.Position, c, Pawn.Map, skipFirstCell: true);
             }
         }
+        
     }
 }

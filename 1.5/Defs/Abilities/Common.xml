@@ -10,6 +10,8 @@
 		<iconPath>UI/Ability/Smoke</iconPath>
 		<aiCanUse>true</aiCanUse>
 		<cooldownTicksRange>3000~3600</cooldownTicksRange>
+		<charges>4</charges>
+		<cooldownPerCharge>true</cooldownPerCharge>
 		<verbProperties>
 			<defaultCooldownTime>5</defaultCooldownTime>
 			<verbClass>Verb_CastAbility</verbClass>
@@ -19,10 +21,11 @@
 			<soundCast>Mortar_LaunchA</soundCast>
 			<requireLineOfSight>false</requireLineOfSight>
 			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
 				<canTargetLocations>true</canTargetLocations>
 				<canTargetBuildings>false</canTargetBuildings>
 			</targetParams>
-		  </verbProperties>
+		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityLaunchProjectile">
 				<projectileDef>DMS_Bullet_BlasterSmoke</projectileDef>
@@ -30,24 +33,93 @@
 		</comps>
 	</AbilityDef>
 
+	<AbilityDef>
+		<defName>DMS_RepairMode</defName>
+		<label>self-repair</label>
+		<description>initial self-repair mode to rebuild missing parts by electroactive memory metal, thus all sensors will temporarily work disabled to prevent electrical damage.</description>
+		<iconPath>UI/Ability/SelfRepair</iconPath>
+		<cooldownTicksRange>120000</cooldownTicksRange> <!-- 2 day -->
+		<showPsycastEffects>false</showPsycastEffects>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<aiCanUse>true</aiCanUse>
+		<targetRequired>false</targetRequired>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<label>initialize self-repair mode</label>
+			<drawAimPie>true</drawAimPie>
+			<warmupTime>5</warmupTime>
+			<violent>false</violent>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="DMS.CompProperties_AbilitySelfRepairMode">
+				<applicableToMechs>true</applicableToMechs>
+				<availableWhenTargetIsWounded>true</availableWhenTargetIsWounded>
+			</li>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>DMS_SelfRepair</hediffDef>
+				<applicableToMechs>true</applicableToMechs>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+				<durationSecondsOverride>600~1200</durationSecondsOverride>
+			</li>
+		</comps>
+	</AbilityDef>
 
-	
 	<HediffDef>
 		<defName>DMS_SelfRepair</defName>
-		<label>maintenance mode</label>
-		<hediffClass>Hediff_RapidRegeneration</hediffClass>
-		<description>This creature has stored an incredible amount of healing energy. While not unlimited, it will rapidly regenerate until its energy has been exhausted.</description>
+		<label>system maintenance</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>This mech has entered self-maintenance mode and is checking missing parts reconstructed by electroactive memory metal. All sensors are disabled to activate self-testing systems, which will last at least a day to restart the system fully.</description>
 		<isBad>false</isBad>
 		<preventsDeath>true</preventsDeath>
+		<forceRemoveOnResurrection>true</forceRemoveOnResurrection>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>DMS_Sustainer_EMP</stateEffecter>
+			</li>
+			<li Class="DMS.HediffCompProperties_MechHeal">
+				<healAmount>2</healAmount>
+				<healIntervalTicksStanding>100</healIntervalTicksStanding>
+			</li>
+		</comps>
 		<stages>
-		  <li>
-			<minSeverity>0</minSeverity>
-			<regeneration>30000</regeneration>
-			<showRegenerationStat>false</showRegenerationStat>
-			<statOffsets>
-			  <PainShockThreshold>10</PainShockThreshold>
-			</statOffsets>
-		  </li>
+			<li>
+				<becomeVisible>true</becomeVisible>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.5</setMax>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0</setMax>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<setMax>0.2</setMax>
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<setMax>0</setMax>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<setMax>0</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.2</setMax>
+					</li>
+				</capMods>
+			</li>
 		</stages>
-	  </HediffDef>
+	</HediffDef>
 </Defs>

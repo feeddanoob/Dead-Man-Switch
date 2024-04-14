@@ -192,4 +192,52 @@
     </specificApparelRequirements>
   </PawnKindDef>
 
+  <PawnKindDef ParentName="DMS_SoldierBase">
+    <defName>DMS_HeavyGunner</defName>
+    <label>gunner</label>
+    <apparelRequired>
+      <li>DMS_Apparel_TacticalHelmet</li>
+      <li>DMS_Apparel_PowerSkelton</li>
+      <li MayRequire="ceteam.combatextended">CE_Apparel_Backpack</li>
+      <li>DMS_Apparel_TacticalVest</li>
+    </apparelRequired>
+    <weaponMoney>2500~5000</weaponMoney>
+    <titleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_WarrantOfficer</titleRequired>
+    <weaponTags>
+      <li>A_AR_LongRifle</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>8~16</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>8~10</range>
+      </li>
+    </skills>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(90, 100, 90)</only>
+            </li>
+          </options>
+        </colorGenerator>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Middle</apparelLayer>
+        <stuff>DMS_Ceramics</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <apparelLayer>Overhead</apparelLayer>
+        <stuff>Plasteel</stuff>
+        <color>(100,100,100)</color>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
 </Defs>

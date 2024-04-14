@@ -118,6 +118,7 @@
     <destroyGearOnDrop>true</destroyGearOnDrop>
     <abilities>
       <li>DMS_SmokeLauncher</li>
+      <li>DMS_RepairMode</li>
     </abilities>
     <lifeStages>
       <li>
@@ -203,7 +204,10 @@
     <isFighter>true</isFighter>
     <combatPower>250</combatPower>
     <maxPerGroup>4</maxPerGroup>
-    <lifeStages>                                                                 <!--身體圖片-->
+    <abilities>
+      <li>DMS_RepairMode</li>
+    </abilities>
+    <lifeStages>
       <li>
         <bodyGraphicData>
           <texPath>Things/Automatroid/caterpillar</texPath>
@@ -290,6 +294,9 @@
     <combatPower>250</combatPower>
     <maxPerGroup>4</maxPerGroup>
     <allowInMechClusters>false</allowInMechClusters>
+    <abilities>
+      <li>DMS_RepairMode</li>
+    </abilities>
     <lifeStages>
       <li>
         <bodyGraphicData>
