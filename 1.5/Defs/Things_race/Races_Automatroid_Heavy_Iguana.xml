@@ -6,6 +6,7 @@
   <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_Iguana</defName>
     <label>Iguana</label>
+    <size>(2,2)</size>
     <description>the moderize-redesigned bipedal walking tank based on Tarbosaurus, it's rather small and cost-friendly for mass production. but the experimental electromagnetic armor been removed to maintain it's mobility.</description>
     <statBases>
       <MoveSpeed>3.5</MoveSpeed>                                                    <!--移動速度-->
@@ -223,6 +224,7 @@
     <defName>DMS_Mech_Gecko</defName>
     <label>gecko</label>
     <description>an urban combat variant of Bipedal walker Iguana, additional armor are applied to protect against shaped charge rounds.</description>
+    <size>(2,2)</size>
     <statBases>
       <MoveSpeed>4</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>1.0</ArmorRating_Blunt>                                     <!--護甲-->
