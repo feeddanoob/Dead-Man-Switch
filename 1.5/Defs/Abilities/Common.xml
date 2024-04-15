@@ -34,6 +34,36 @@
 	</AbilityDef>
 
 	<AbilityDef>
+		<defName>DMS_MissileLauncher</defName>
+		<label>launch missile</label>
+		<description>launch a guided missile to destroy enemies in long range.</description>
+		<iconPath>UI/Ability/Missile</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<cooldownTicksRange>120000~120000</cooldownTicksRange>
+		<charges>4</charges>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<verbProperties>
+			<defaultCooldownTime>5</defaultCooldownTime>
+			<verbClass>Verb_CastAbility</verbClass>
+			<onlyManualCast>false</onlyManualCast>
+			<range>99.9</range>
+			<warmupTime>5</warmupTime>
+			<soundCast>RocketswarmLauncher_Fire</soundCast>
+			<requireLineOfSight>false</requireLineOfSight>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetBuildings>true</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>Bullet_9M311V</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
 		<defName>DMS_RepairMode</defName>
 		<label>self-repair</label>
 		<description>initial self-repair mode to rebuild missing parts by electroactive memory metal, thus all sensors will temporarily work disabled to prevent electrical damage.</description>
@@ -65,7 +95,7 @@
 				<applicableToMechs>true</applicableToMechs>
 				<onlyApplyToSelf>True</onlyApplyToSelf>
 				<replaceExisting>true</replaceExisting>
-				<durationSecondsOverride>600~1200</durationSecondsOverride>
+				<durationSecondsOverride>300~600</durationSecondsOverride>
 			</li>
 		</comps>
 	</AbilityDef>
@@ -86,7 +116,7 @@
 				<stateEffecter>DMS_Sustainer_EMP</stateEffecter>
 			</li>
 			<li Class="DMS.HediffCompProperties_MechHeal">
-				<healAmount>2</healAmount>
+				<healAmount>1</healAmount>
 				<healIntervalTicksStanding>100</healIntervalTicksStanding>
 			</li>
 		</comps>

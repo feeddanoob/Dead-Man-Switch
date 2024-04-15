@@ -6,7 +6,7 @@
     <defName>DMS_Mech_Geochelone</defName>
     <label>geochelone</label>
     <description>an unmanned all-terrain tracked pulse shield support platform, featuring a diverse range of production models and variants.</description>
-    <size>(2,3)</size>
+    <!-- <size>(2,3)</size> -->
     <statBases>
       <MoveSpeed>2.5</MoveSpeed>
       <ArmorRating_Sharp>1.0</ArmorRating_Sharp><!--銳抗-->
@@ -147,7 +147,6 @@
     <defName>DMS_Mech_Caretta</defName>
     <label>caretta</label>
     <description>mobile anti-air support platform equipped with a formidable heavy Gatling turret, designed to neutralize enemy aircraft and ground forces.</description>
-    <size>(2,3)</size>
     <statBases>
       <MoveSpeed>2.5</MoveSpeed><!--移動速度-->
       <ArmorRating_Sharp>1.0</ArmorRating_Sharp><!--銳抗-->
@@ -236,7 +235,6 @@
   <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_Killdozer</defName>
     <label>killdozer</label>
-    <size>(2,3)</size>
     <description>An unmanned assault sapper with a dozer blade for fortification breakthrough in the frontline, and the armor on various parts of the body has also been strengthened.</description>
     <statBases>
       <MoveSpeed>2.2</MoveSpeed>                                                    <!--移動速度-->

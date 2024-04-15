@@ -156,14 +156,16 @@
     <allowInMechClusters>false</allowInMechClusters>                             <!--是否出現在機械集群-->
     <destroyGearOnDrop>false</destroyGearOnDrop>
     <canStrip>false</canStrip>
+    <factionHostileOnDeath>false</factionHostileOnDeath>
+    <factionHostileOnKill>false</factionHostileOnKill>
     <minGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</minGenerationAge>
     <maxGenerationAge MayRequire="Ludeon.Rimworld.Biotech">98</maxGenerationAge>
     <forceNormalGearQuality>true</forceNormalGearQuality>
     <weaponMoney>1300~4000</weaponMoney>
     <combatPower>100</combatPower>
     <techHediffsChance>1</techHediffsChance>
-    <techHediffsMoney>9999~4000</techHediffsMoney>
-    <controlGroupPortraitZoom>1.8</controlGroupPortraitZoom>
+    <techHediffsMoney>3000~4000</techHediffsMoney>
+    <controlGroupPortraitZoom>1.5</controlGroupPortraitZoom>
   </PawnKindDef>
 
 

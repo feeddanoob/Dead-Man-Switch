@@ -5,7 +5,7 @@
     <defName>DMS_Mech_Tarbosaurus</defName>
     <label>tarbosaurus</label>
     <description>bipedal ultra heavy automatoid nickname "Armored Rex" for their distinctive body structure vaguely resembling carnotaurus. Once seen as the nextgen war-changer in the hayday of arm race back in the early spacer era, it sports numerous cutting-edge technology, the artificial muscle fibre that drove its oversized legs-first of its kind for automatoids in service. \n\nWhile it failed to eventually change the modern warfare as expected: it is oversized, its artificial muscle fibre is hard to upkeep, and, on top of that, railguns and beam weaponry aren't a reliable thing back in its days; \n\nAfter all those milenina, there still have been numerous manufacturers replicating such automatroids and adding their own improvements to its design. As such, traces of technology adopted in this automatroid can be seen in a great number of weaponry nowadays.</description>
-    <size>(2,2)</size>
+    <!-- <size>(2,2)</size> -->
     <statBases>
       <MoveSpeed>4</MoveSpeed>
       <ArmorRating_Sharp>0.9</ArmorRating_Sharp><!--銳抗-->

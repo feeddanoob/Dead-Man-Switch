@@ -52,6 +52,8 @@
     </royalAid>
   </RoyalTitlePermitDef>
 
+
+
   <RoyalTitlePermitDef ParentName="DropResourcesBase">
     <defName>DMS_FoodDrop</defName>
     <label>food supply drop</label>
@@ -68,6 +70,65 @@
       </itemsToDrop>
       <favorCost>3</favorCost>
     </royalAid>
+  </RoyalTitlePermitDef>
+
+  <!-- 帶寬支援 -->
+  <RoyalTitlePermitDef>
+    <defName>DMS_Bandwidth</defName>
+    <label>bandwidth support</label>
+    <description>Apply the access of orbital bandwidth support, the amount of bandwidth is depend on applicant's title. This support will be valid unless death or defection occurs on applicant.</description>
+    <workerClass>DMS.RoyalTitlePermitWorker_Bandwidth</workerClass>
+    <minTitle>DMS_Corporal</minTitle>
+    <faction>DMS_Army</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,2)</uiPosition>
+    <cooldownDays>30</cooldownDays>
+    <royalAid>
+      <favorCost>1</favorCost>
+    </royalAid>
+    <modExtensions>
+      <li Class="DMS.BandwidthSupportExtension">
+        <hediff>DMS_OrbitalService</hediff>
+        <titles>
+          <li>
+            <title>DMS_Corporal</title>
+            <level>1</level>
+          </li>
+          <li>
+            <title>DMS_PreSergeant</title>
+            <level>2</level>
+          </li>
+          <li>
+            <title>DMS_Sergeant</title>
+            <level>3</level>
+          </li>
+          <li>
+            <title>DMS_WarrantOfficer</title>
+            <level>4</level>
+          </li>
+          <li>
+            <title>DMS_Lieutenant</title>
+            <level>5</level>
+          </li>
+          <li>
+            <title>DMS_Captain</title>
+            <level>6</level>
+          </li>
+          <li>
+            <title>DMS_Major</title>
+            <level>7</level>
+          </li>
+          <li>
+            <title>DMS_Colonel</title>
+            <level>8</level>
+          </li>
+          <li>
+            <title>DMS_Brigadier</title>
+            <level>9</level>
+          </li>
+        </titles>
+      </li>
+    </modExtensions>
   </RoyalTitlePermitDef>
 
   <RoyalTitlePermitDef ParentName="DropResourcesBase">

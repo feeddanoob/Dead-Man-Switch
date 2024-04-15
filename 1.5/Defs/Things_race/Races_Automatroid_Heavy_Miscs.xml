@@ -80,7 +80,7 @@
     <defName>DMS_Mech_HermitCrab</defName>
     <label>hermit crab</label>
     <description>These large, expensive, heavy mobile industrial machines are designed and manufactured by worlds that intend to colonize space. Their large and expensive magnetic stabilizer shells integrate many complex-axis CNC tools and precision machinery. its high precision allows it to perform surgical procedures, but only if the patient overcomes their fear of a machine weighing several tons acting as their surgeon.</description>
-    <size>(2,2)</size>
+    <!-- <size>(2,2)</size> -->
     <statBases>
       <MoveSpeed>2.5</MoveSpeed>
       <ArmorRating_Sharp>1.0</ArmorRating_Sharp><!--銳抗-->

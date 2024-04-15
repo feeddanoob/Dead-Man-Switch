@@ -152,7 +152,9 @@
 
   <PawnKindDef Name="BaseAutomatroidKind" ParentName="BaseMechanoidKind" Abstract="True">
     <defaultFactionType>DMS_Army</defaultFactionType>
-    <allowInMechClusters>false</allowInMechClusters>                             <!--是否出現在機械集群-->
+    <allowInMechClusters>false</allowInMechClusters>
+    <factionHostileOnDeath>false</factionHostileOnDeath>
+    <factionHostileOnKill>false</factionHostileOnKill>
     <destroyGearOnDrop>false</destroyGearOnDrop>
     <canStrip>false</canStrip>
     <minGenerationAge MayRequire="Ludeon.Rimworld.Biotech">0</minGenerationAge>
@@ -161,7 +163,7 @@
     <weaponMoney>1300~4000</weaponMoney>
     <combatPower>100</combatPower>
     <techHediffsChance>1</techHediffsChance>
-    <techHediffsMoney>9999~4000</techHediffsMoney>
+    <techHediffsMoney>3000~4000</techHediffsMoney>
     <controlGroupPortraitZoom>1.8</controlGroupPortraitZoom>
   </PawnKindDef>
 

@@ -250,7 +250,9 @@
 			<blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
 			<parentTagDef>ApparelBody</parentTagDef>
 			<renderSkipFlags>
-			  <li>Head</li>
+			  <li>Hair</li>
+			  <li>Beard</li>
+			  <li>Eyes</li>
 			</renderSkipFlags>
 			<drawData>
 			  <defaultData>
@@ -267,6 +269,9 @@
 			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 			<canBeGeneratedToSatisfyToxicEnvironmentResistance>true</canBeGeneratedToSatisfyToxicEnvironmentResistance>
 		</apparel>
+		<modExtensions>
+			<li Class="DMS.BiochemicalProtectionExtension"></li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelBase">
@@ -333,8 +338,6 @@
 			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
 		</apparel>
-		<modExtensions>
-		</modExtensions>
 	</ThingDef>
 
 </Defs>

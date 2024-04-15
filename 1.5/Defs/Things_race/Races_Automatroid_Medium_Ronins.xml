@@ -23,6 +23,7 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>SimpleGun</li>
           <li>ShortShots</li>
           <li>WarcasketBasic</li>
           <li>DMS_MechWeaponShotgun</li>
@@ -104,6 +105,7 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>SimpleGun</li>
           <li>WarcasketBasic</li><!--海盜拓展的戰棺武器-->
           <li>DMS_MechWeaponBreach</li>
           <li>DMS_MechWeaponLight</li>
@@ -298,6 +300,7 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>SimpleGun</li>
           <li>ShortShots</li>
           <li>WarcasketBasic</li>
           <li>DMS_MechWeaponShotgun</li>

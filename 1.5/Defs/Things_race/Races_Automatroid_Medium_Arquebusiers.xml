@@ -31,6 +31,7 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>SimpleGun</li>
           <li>DMS_MechWeaponLight</li>
           <li>A_AR_LongRifle</li>
           <li>A_SAR_LongRifle</li>
@@ -105,6 +106,7 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>SimpleGun</li>
           <li>DMS_MechWeaponLight</li>
           <li>A_SR_LongRifle</li>
           <li>A_DMR_LongRifle</li>
@@ -168,6 +170,7 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>SimpleGun</li>
           <li>DMS_MechWeaponLight</li>
           <li>A_AR_LongRifle</li>
           <li>IndustrialGunAdvanced</li>
@@ -237,6 +240,7 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
+          <li>SimpleGun</li>
           <li>DMS_MechWeaponLight</li>
           <li>SniperRifle</li>
           <li>A_SC_LongRifle</li>

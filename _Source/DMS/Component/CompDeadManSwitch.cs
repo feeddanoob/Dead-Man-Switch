@@ -20,7 +20,7 @@ namespace DMS
             }
             if (delayCheck <= 0)
             {
-                TryTriggerDMS();
+                //TryTriggerDMS();
 
                 delayCheck = Props.minDelayUntilDMS;
             }

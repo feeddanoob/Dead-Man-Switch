@@ -141,14 +141,36 @@
 		</graphicData>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
-		  <damageDef>Bomb</damageDef>
+		  <damageDef>Demolish</damageDef>
+		  <soundExplode>Explosion_Rocket</soundExplode>
 		  <damageAmountBase>150</damageAmountBase>
 		  <armorPenetrationBase>1.75</armorPenetrationBase>
           <stoppingPower>5</stoppingPower>
-          <arcHeightFactor>1</arcHeightFactor>
+          <arcHeightFactor>3</arcHeightFactor>
           <shadowSize>1</shadowSize>
-		  <explosionRadius>3.9</explosionRadius>
+		  <explosionRadius>1.9</explosionRadius>
 		  <speed>75</speed>
 		</projectile>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.5</explosiveRadius>
+				<explosiveDamageType>Stun</explosiveDamageType>
+				<armorPenetrationBase>0.3</armorPenetrationBase>
+				<damageAmountBase>50</damageAmountBase>
+				<explodeOnDestroyed>true</explodeOnDestroyed>
+				<explosionEffect>GiantExplosion</explosionEffect>
+				<explodeOnKilled>true</explodeOnKilled>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.5</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<armorPenetrationBase>0.3</armorPenetrationBase>
+				<damageAmountBase>50</damageAmountBase>
+				<explodeOnDestroyed>true</explodeOnDestroyed>
+				<explodeOnKilled>true</explodeOnKilled>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>

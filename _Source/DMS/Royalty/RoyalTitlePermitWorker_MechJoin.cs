@@ -18,7 +18,6 @@ namespace DMS
     {
         public List<Member> members = new List<Member>();
     }
-
     [StaticConstructorOnStartup]
     public class RoyalTitlePermitWorker_MechJoin : RoyalTitlePermitWorker_Targeted
     {
