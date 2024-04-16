@@ -12,9 +12,9 @@ namespace DMS
         {
             if (__result)
             {
-                if (pawn.equipment.HasAnything())
+                if (pawn.apparel.AnyApparel)
                 {
-                    foreach (ThingWithComps apparel in pawn.equipment.AllEquipmentListForReading)
+                    foreach (ThingWithComps apparel in pawn.apparel.WornApparel)
                     {
                         if (apparel.def.GetModExtension<BiochemicalProtectionExtension>() != null) __result = false;
                     }

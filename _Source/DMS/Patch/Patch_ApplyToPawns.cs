@@ -12,17 +12,14 @@ namespace DMS
         new ArgumentType[] { ArgumentType.Normal, ArgumentType.Out, ArgumentType.Normal })]
     internal static class DiseaseContractChanceFactor
     {
-        public static void Postfix(ImmunityHandler __instance, float __result)
+        public static void Postfix(ImmunityHandler __instance, ref float __result)
         {
-            Log.Message(__instance.pawn.Name.ToString());
-            if (__instance.pawn != null && __instance.pawn.equipment != null && __instance.pawn.equipment.HasAnything())
+            if (__result == 0f) return;
+            if (__instance.pawn != null && __instance.pawn.apparel != null && __instance.pawn.apparel.AnyApparel)
             {
-                foreach (var item in __instance.pawn.equipment.AllEquipmentListForReading)
+                foreach (var item in __instance.pawn.apparel.WornApparel)
                 {
-                    if (item.def.HasModExtension<BiochemicalProtectionExtension>())
-                    {
-                        __result = 0f;
-                    }
+                    if (item.def.HasModExtension<BiochemicalProtectionExtension>()) __result = 0f;
                 }
             }
         }

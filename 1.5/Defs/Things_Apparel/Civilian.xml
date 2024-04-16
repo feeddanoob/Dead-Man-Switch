@@ -193,7 +193,7 @@
 	<ThingDef ParentName="ApparelBase">
 		<defName>DMS_Apparel_HazardSuit</defName>
 		<label>hazard suit</label>
-		<description>A large garment that conceals the wearer's entire head and body. worn as protection against hazardous materials.</description>
+		<description>A large garment that conceals the wearer's entire head and body. worn as reliable protection against hazardous materials such as disease or parasitic infection entities.</description>
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>

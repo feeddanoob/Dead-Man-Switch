@@ -421,7 +421,7 @@
 		  </colorGenerator>
 	</ThingDef>
 
-	<ThingDef ParentName="DMS_ArmorMakeableBase">
+	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>DMS_Apparel_TacticalVest</defName>
 		<label>tactical vest</label>
 		<description>A vest with armor plates inserted on the chest and back. While quite effective at deflecting gunshots and stabbing attacks against the chest, it does nothing to protect the limbs.</description>
