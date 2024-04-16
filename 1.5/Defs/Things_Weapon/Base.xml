@@ -30,7 +30,7 @@
 			<WorkToMake>40000</WorkToMake>
 		</statBases>
 		<tradeTags>
-			<li>WeaponRanged</li>
+			<li>DMS_WeaponRanged</li>
 		</tradeTags>
 		<tools>
 			<li>

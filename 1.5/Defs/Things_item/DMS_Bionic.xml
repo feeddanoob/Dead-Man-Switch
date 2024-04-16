@@ -15,6 +15,7 @@
     </graphicData>
     <tradeTags>
       <li>Bionic</li>
+      <li>DMS_Bionic</li>
     </tradeTags>
     <techHediffsTags>
       <li>DMS_BM_Bionic</li>
@@ -541,6 +542,7 @@
     </graphicData>
     <tradeTags>
       <li>Bionic</li>
+      <li>DMS_Bionic</li>
     </tradeTags>
     <techHediffsTags>
       <li>DMS_Synth_Bionic</li>

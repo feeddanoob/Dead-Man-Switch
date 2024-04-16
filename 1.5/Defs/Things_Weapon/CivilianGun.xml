@@ -16,6 +16,9 @@
 			<li>DMS_MechWeaponUltraLight</li>
 			<li>CivilianGun</li>
 		</weaponTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
 		<uiIconScale>1.8</uiIconScale>
 		<graphicData>
 			<texPath>Things/Weapons/HumanWeapon/KnuckledusterRevolver</texPath>
@@ -187,6 +190,9 @@
 			<li>IndustrialGun</li>
 			<li>SurvivalRifle</li>
 		</weaponTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
 		<graphicData>
 			<texPath>Things/Weapons/HumanWeapon/SurvivalRifle</texPath>
 			<drawSize>(1.3,1.3)</drawSize>
@@ -483,7 +489,10 @@
 		<weaponTags>
 			<li>ElephantGun</li>
 			<li>IndustrialGun</li>
-		</weaponTags>	
+		</weaponTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
 		<graphicData>
 			<texPath>Things/Weapons/HumanWeapon/ElephantGun</texPath>
 			<drawSize>(1.5,1.5)</drawSize>

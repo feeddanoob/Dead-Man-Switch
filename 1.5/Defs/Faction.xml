@@ -10,7 +10,7 @@
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <maxCountAtGameStart>1</maxCountAtGameStart>
-    <canSiege>true</canSiege>
+    <canSiege>false</canSiege>
     <canStageAttacks>true</canStageAttacks>
     <leaderTitle>sector commander</leaderTitle>
     <royalFavorLabel>honor</royalFavorLabel>
@@ -92,7 +92,8 @@
     <caravanTraderKinds>
       <li>DMS_Caravan_TraderGeneral</li>
       <li MayRequire="Ludeon.RimWorld.Royalty">DMS_Caravan_TributeCollector</li>
-      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>DMS_Caravan_Weapon</li>
+      <li>DMS_Caravan_Tech</li>
       <li>Caravan_Outlander_BulkGoods</li>
     </caravanTraderKinds>
 		<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>

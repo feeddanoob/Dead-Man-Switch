@@ -23,7 +23,7 @@
 			<Chemfuel>20</Chemfuel>
 		</costList>
 		<tradeTags>
-			<li>Clothing</li>
+			<li>DMS_Armor</li>
 		</tradeTags>
 		<graphicData>
 			<texPath>Things/Apparel/BionicSuit/Apparel</texPath>
@@ -104,6 +104,7 @@
 		</apparel>
 		<tradeTags>
 			<li>Clothing</li>
+			<li>DMS_Clothing</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
@@ -230,20 +231,11 @@
 		</apparel>
 	</ThingDef>
 
-	<!-- 戰術裝備 -->
 
-	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>DMS_Apparel_TacticalHelmet</defName>
-		<label>tactical helmet</label>
-		<description>A lightweight combat helmet with a complex design, reinforced with plasteel. Not effective against blunt weapons.</description>
+	<ThingDef ParentName="ArmorHelmetMakeableBase" Name="DMS_ArmorHelmetMakeableBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
-			<researchPrerequisite>FlakArmor</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
-			<skillRequirements>
-				<Crafting>5</Crafting>
-			</skillRequirements>
-			<displayPriority>205</displayPriority>
 			<defaultIngredientFilter>
 				<disallowedThingDefs>
 				  <li>Silver</li>
@@ -252,8 +244,40 @@
 			</defaultIngredientFilter>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Apparel/PASGT/Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<apparel>
+			<tags>
+				<li>DMS_Tactical</li>
+				<li>IndustrialMilitaryAdvanced</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>Armor</li>
+			<li>DMS_Armor</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- 戰術裝備 -->
+
+	<ThingDef ParentName="DMS_ArmorHelmetMakeableBase">
+		<defName>DMS_Apparel_TacticalHelmet</defName>
+		<label>tactical helmet</label>
+		<description>A lightweight combat helmet with a complex design, reinforced with plasteel. Not effective against blunt weapons.</description>
+		<recipeMaker>
+			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<displayPriority>205</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/PASGT/Icon</texPath>
 		</graphicData>
 		<uiIconScale>1</uiIconScale>
 		<statBases>
@@ -265,9 +289,6 @@
 			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1.75</EquipDelay>
 		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<costList>
 			<ComponentStamped>1</ComponentStamped>
@@ -286,9 +307,6 @@
 				<li>DMS_Tactical</li>
 				<li>IndustrialMilitaryAdvanced</li>
 			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
@@ -316,37 +334,25 @@
 			  </li>
 			</options>
 		  </colorGenerator>
-		<tradeTags>
-			<li>Armor</li>
-		</tradeTags>
 	</ThingDef>
 
 	<!-- 全覆天線頭盔 -->
-	<ThingDef ParentName="ArmorHelmetMakeableBase">
+	<ThingDef ParentName="DMS_ArmorHelmetMakeableBase">
 		<defName>DMS_Apparel_ArrayHelmet</defName>
 		<label>operator helmet</label>
 		<description>A full-covered helmet designed for field drone operators, Features built-in head-mounted display and neural-connected operating system. can not only increase the control bandwidth but also give full protection.</description>
-		<techLevel>Industrial</techLevel>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>FlakArmor</li>
 				<li>DMS_EquipmentElite</li>
 			</researchPrerequisites>
-			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
 			<displayPriority>205</displayPriority>
-			<defaultIngredientFilter>
-				<disallowedThingDefs>
-				  <li>Silver</li>
-				  <li>Gold</li>
-				</disallowedThingDefs>
-			</defaultIngredientFilter>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Apparel/PASGT_Array/Icon</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1</uiIconScale>
 		<statBases>
@@ -358,9 +364,6 @@
 			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>3</EquipDelay>
 		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>75</costStuffCount>
 		<costList>
 			<ComponentTransmitter>1</ComponentTransmitter>
@@ -389,9 +392,6 @@
 				<li>DMS_TacticalArray</li>
 				<li>DMS_Officer</li>
 			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
@@ -419,12 +419,9 @@
 			  </li>
 			</options>
 		  </colorGenerator>
-		<tradeTags>
-			<li>Armor</li>
-		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="ArmorMachineableBase">
+	<ThingDef ParentName="DMS_ArmorMakeableBase">
 		<defName>DMS_Apparel_TacticalVest</defName>
 		<label>tactical vest</label>
 		<description>A vest with armor plates inserted on the chest and back. While quite effective at deflecting gunshots and stabbing attacks against the chest, it does nothing to protect the limbs.</description>
@@ -519,6 +516,7 @@
 		  </colorGenerator>
 		<tradeTags>
 			<li>Armor</li>
+			<li>DMS_Armor</li>
 		</tradeTags>
 	</ThingDef>
 

@@ -25,6 +25,7 @@
 		</stuffCategories>
 		<tradeTags>
 			<li>Clothing</li>
+			<li>DMS_Clothing</li>
 		</tradeTags>
 		<graphicData>
 			<texPath>Things/Apparel/UnitSuit/Apparel</texPath>
@@ -185,6 +186,7 @@
 		</colorGenerator>
 		<tradeTags>
 		  <li>BasicClothing</li>
+		  <li>DMS_Clothing</li>
 		</tradeTags>
 	  </ThingDef>
 
@@ -213,6 +215,7 @@
 		</costList>
 		<tradeTags>
 			<li>Clothing</li>
+			<li>DMS_Clothing</li>
 		</tradeTags>
 		<graphicData>
 			<texPath>Things/Apparel/HazardSuit/Apparel</texPath>
@@ -296,7 +299,7 @@
 			<ComponentStamped>7</ComponentStamped>
 		</costList>
 		<tradeTags>
-			<li>Clothing</li>
+			<li>DMS_Armor</li>
 		</tradeTags>
 		<graphicData>
 			<texPath>Things/Apparel/ExoSkelton/Apparel</texPath>
