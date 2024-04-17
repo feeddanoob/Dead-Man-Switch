@@ -263,9 +263,9 @@
 		  <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>      
 		</statBases>
 		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
+		<destroyOnDrop>false</destroyOnDrop>
 		<relicChance>0</relicChance>
-		<equippedDistanceOffset >-0.14</equippedDistanceOffset >
+		<equippedDistanceOffset>-0.14</equippedDistanceOffset>
 		<tools>
 		  <li>
 			<label>barrel</label>

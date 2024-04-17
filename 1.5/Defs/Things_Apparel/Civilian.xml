@@ -259,7 +259,7 @@
 			</renderSkipFlags>
 			<drawData>
 			  <defaultData>
-				<layer>83</layer>
+				<layer>75</layer>
 			  </defaultData>
 			</drawData>
 			<immuneToToxGasExposure>true</immuneToToxGasExposure>
