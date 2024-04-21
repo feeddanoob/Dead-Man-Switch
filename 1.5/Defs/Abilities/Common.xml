@@ -64,6 +64,36 @@
 	</AbilityDef>
 
 	<AbilityDef>
+		<defName>DMS_LongJump</defName>
+		<label>bionic longjump</label>
+		<description>Jump to a distant location using bionic muscles.</description>
+		<iconPath>UI/Abilities/MechLongJump</iconPath>
+		<cooldownTicksRange>600</cooldownTicksRange>
+		<charges>2</charges>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+		  <verbClass>Verb_CastAbilityJump</verbClass>
+		  <label>jump</label>
+		  <violent>false</violent>
+		  <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+		  <warmupTime>0.5</warmupTime>
+		  <minRange>5.9</minRange>
+		  <range>9.9</range>
+		  <requireLineOfSight>true</requireLineOfSight>
+		  <soundCast>Longjump_Jump</soundCast>
+		  <soundLanding>Longjump_Land</soundLanding>
+		  <flyWithCarriedThing>true</flyWithCarriedThing>
+		  <targetParams>
+			<canTargetLocations>true</canTargetLocations>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+		  </targetParams>
+		</verbProperties>
+	</AbilityDef>
+
+	<AbilityDef>
 		<defName>DMS_RepairMode</defName>
 		<label>self-repair</label>
 		<description>initial self-repair mode to rebuild missing parts by electroactive memory metal, thus all sensors will temporarily work disabled to prevent electrical damage.</description>

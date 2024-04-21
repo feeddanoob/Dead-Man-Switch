@@ -265,6 +265,7 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
+          <li>DMS_Flameblaster</li>
           <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>

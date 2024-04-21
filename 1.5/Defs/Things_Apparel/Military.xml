@@ -19,7 +19,7 @@
 		</recipeMaker>
 		<costList>
 			<Plasfiber>40</Plasfiber>
-			<Artifuscle>80</Artifuscle>
+			<Artifuscle>75</Artifuscle>
 			<Chemfuel>20</Chemfuel>
 		</costList>
 		<tradeTags>
@@ -44,7 +44,7 @@
 			<EquipDelay>15</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>1.2</MoveSpeed>
+			<MoveSpeed>1.5</MoveSpeed>
 			<ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<apparel>

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 using Verse;
 using RimWorld;
@@ -60,7 +56,7 @@ namespace DMS
                 {
                     yield return this.TryMakeFloatMenuForWeapon(tmp);
                 }
-                if (tmp.def?.apparel != null && tmp.def.apparel.layers.Contains(ApparelLayerDefOf.Belt))
+                if (tmp.def?.apparel != null)
                 {
                     yield return this.TryMakeFloatMenuForApparel(tmp);
                 }

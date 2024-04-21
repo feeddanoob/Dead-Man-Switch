@@ -62,7 +62,6 @@
   <ItemGroup>
     <Compile Include="Ability\CompAbilityEffect_DirectionalExplosion.cs" />
     <Compile Include="Ability\CompAbilityEffect_SelfRepairMode.cs" />
-    <Compile Include="Component\CompBuildingAbility.cs" />
     <Compile Include="Hediff\HediffComp_SelfHeal.cs" />
     <Compile Include="Patch\Patch_ApplyToPawns.cs" />
     <Compile Include="Patch\Patch_CanBeInfected.cs" />

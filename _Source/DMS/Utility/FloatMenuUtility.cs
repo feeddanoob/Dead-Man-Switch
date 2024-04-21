@@ -74,10 +74,20 @@ namespace DMS
 
             if (pawn is IWeaponUsable weaponUsable)
             {
-                return new FloatMenuOption(key.Translate(labelShort, equipment), () =>
+                if (equipment is Apparel)
                 {
-                    weaponUsable.Equip(equipment);
-                });
+                    return new FloatMenuOption(key.Translate(labelShort, equipment), () =>
+                    {
+                        weaponUsable.Wear(equipment);
+                    });
+                }
+                else
+                {
+                    return new FloatMenuOption(key.Translate(labelShort, equipment), () =>
+                    {
+                        weaponUsable.Equip(equipment);
+                    });
+                }
             }
             return null;
         }

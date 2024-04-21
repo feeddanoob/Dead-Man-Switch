@@ -29,7 +29,7 @@ namespace DMS
             {
                 action = delegate
                 {
-                    DoEffect(pawn, faction,free);
+                    DoEffect(pawn, faction, free);
                 };
             }
             yield return new FloatMenuOption(description, action, faction.def.FactionIcon, faction.Color);
@@ -37,16 +37,17 @@ namespace DMS
         private void DoEffect(Pawn caller, Faction faction, bool free)
         {
             var ext = def.GetModExtension<BandwidthSupportExtension>();
-            if (ext != null)
+            if (ext != null && caller.GetCurrentTitleIn(faction) != null)
             {
                 Hediff h = caller.health.GetOrAddHediff(ext.hediff);
                 h.Severity = ext.GetLevel(caller.GetCurrentTitleIn(faction));
-            }
-            Messages.Message("DMS_BandwidthSupported".Translate(faction.Named("FACTION")), new LookTargets(caller.PositionHeld, caller.MapHeld), MessageTypeDefOf.NeutralEvent);
-            caller.royalty.GetPermit(def, faction).Notify_Used();
-            if (!free)
-            {
-                caller.royalty.TryRemoveFavor(faction, def.royalAid.favorCost);
+
+                Messages.Message("DMS_BandwidthSupported".Translate(faction.Named("FACTION")), new LookTargets(caller.PositionHeld, caller.MapHeld), MessageTypeDefOf.NeutralEvent);
+                caller.royalty.GetPermit(def, faction).Notify_Used();
+                if (!free)
+                {
+                    caller.royalty.TryRemoveFavor(faction, def.royalAid.favorCost);
+                }
             }
         }
     }
