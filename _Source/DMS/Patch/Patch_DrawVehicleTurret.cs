@@ -1,9 +1,6 @@
 ﻿using Verse;
 using UnityEngine;
 using HarmonyLib;
-using RimWorld;
-using System;
-using static HarmonyLib.Code;
 
 namespace DMS
 {

@@ -10,14 +10,14 @@ using VFECore;
 namespace tete
 {
 
-    [StaticConstructorOnStartup]
-    static class HarmonyInit
-    {
+    //[StaticConstructorOnStartup]
+    //static class HarmonyInit
+    //{
 
-        static HarmonyInit() {
-            new Harmony("vefpatch").PatchAll();
-        }
-    }
+    //    static HarmonyInit() {
+    //        new Harmony("vefpatch").PatchAll();
+    //    }
+    //}
 
 
     [HarmonyPatch(typeof(CompMachineChargingStation))]
