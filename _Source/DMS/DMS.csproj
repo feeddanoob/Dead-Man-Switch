@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Ability\CompAbilityEffect_DirectionalExplosion.cs" />
     <Compile Include="Ability\CompAbilityEffect_SelfRepairMode.cs" />
+    <Compile Include="Hediff\HediffComp_ProtectiveShield.cs" />
     <Compile Include="Hediff\HediffComp_SelfHeal.cs" />
     <Compile Include="Patch\Patch_ApplyToPawns.cs" />
     <Compile Include="Patch\Patch_CanBeInfected.cs" />
@@ -73,7 +74,6 @@
     <Compile Include="Component\CompDeadManSwitch.cs" />
     <Compile Include="Component\CompFlyingFleckThrower.cs" />
     <Compile Include="Component\CompMechApparel.cs" />
-    <Compile Include="Hediff\JobDriver_SelfHealing.cs" />
     <Compile Include="MultiTurrets\CompMultipleTurretGun.cs" />
     <Compile Include="MultiTurrets\CompPropertiesMultipleTurretGun.cs" />
     <Compile Include="MultiTurrets\PawnRenderNodeWorker_SubTurretGun.cs" />

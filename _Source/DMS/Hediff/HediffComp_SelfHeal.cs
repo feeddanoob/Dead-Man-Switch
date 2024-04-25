@@ -4,6 +4,7 @@ using Verse;
 
 namespace DMS
 {
+    //Self Repair Effect
     public class HediffComp_MechHeal : HediffComp
     {
         public int ticksSinceHeal;
