@@ -84,7 +84,7 @@
           <li>Bullet_ChargeLance</li>
         </interceptThings>
         <ignoreThings>
-          <li>DMS_Bullet_Shell_BlasterSmoke</li> 
+          <li>DMS_Bullet_BlasterSmoke</li> 
         </ignoreThings>
       </li>
     </comps>
