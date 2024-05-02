@@ -21,6 +21,8 @@ This weapon is designed specially for automatroid use, thus normal human may be 
   <DMS_Flameblaster.label>flameblaster</DMS_Flameblaster.label>
   <!-- EN: A flame launcher used by mechs that can effectively ignite flammable materials within a range -->
   <DMS_Flameblaster.description>A flame launcher used by mechs that can effectively ignite flammable materials within a range</DMS_Flameblaster.description>
+  <!-- EN: stock -->
+  <DMS_Flameblaster.tools.stock.label>stock</DMS_Flameblaster.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_Flameblaster.tools.barrel-0.label>barrel</DMS_Flameblaster.tools.barrel-0.label>
   <!-- EN: barrel -->
@@ -32,6 +34,10 @@ This weapon is designed specially for automatroid use, thus normal human may be 
   <DMS_PDW.label>PDW</DMS_PDW.label>
   <!-- EN: A mass-produced submachine gun, which was designed only capable of hip-fire so it's inaccurate in range but its caliber and ability to draw quick make it the perfect weapon for urban combat against milltor. -->
   <DMS_PDW.description>A mass-produced submachine gun, which was designed only capable of hip-fire so it's inaccurate in range but its caliber and ability to draw quick make it the perfect weapon for urban combat against milltor.</DMS_PDW.description>
+  <!-- EN: stock -->
+  <DMS_PDW.tools.stock.label>stock</DMS_PDW.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_PDW.tools.barrel.label>barrel</DMS_PDW.tools.barrel.label>
   <!-- EN: PDW -->
   <DMS_PDW.verbs.Verb_Shoot.label>PDW</DMS_PDW.verbs.Verb_Shoot.label>
   

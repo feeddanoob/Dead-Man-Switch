@@ -19,6 +19,7 @@ namespace DMS
 
 	public class SubTurretProperties
 	{
+		[NoTranslate]
 		public string ID;
 		public ThingDef turret;
 		public float IdleAngleOffset;

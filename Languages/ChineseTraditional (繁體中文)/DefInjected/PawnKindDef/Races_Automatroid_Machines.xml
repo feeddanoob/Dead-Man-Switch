@@ -4,12 +4,6 @@
   <!-- EN: hound -->
   <DMS_Machine_Hound.label>獵犬</DMS_Machine_Hound.label>
   
-  <!-- EN: hetzen -->
-  <DMS_Machine_Hound_FS.label>追緝犬</DMS_Machine_Hound_FS.label>
-  
-  <!-- EN: watchdog -->
-  <DMS_Machine_Hound_RC.label>看門犬</DMS_Machine_Hound_RC.label>
-  
   <!-- EN: trash bin -->
   <DMS_Machine_TrashBin.label>垃圾桶</DMS_Machine_TrashBin.label>
   

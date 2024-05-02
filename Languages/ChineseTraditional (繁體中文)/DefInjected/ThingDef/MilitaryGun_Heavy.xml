@@ -7,6 +7,23 @@
   <!-- EN: recoilless grenade round -->
   <DMS_Bullet_RR.label>無後坐力榴彈</DMS_Bullet_RR.label>
   
+  <!-- EN: 2A38M -->
+  <DMS_Gun_2A38M.label>2A38M</DMS_Gun_2A38M.label>
+  <!-- EN: a dual-barrel heavy autocannon for infantry suppress / anti air platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
+  <DMS_Gun_2A38M.description>用於步兵壓制/防空平台的雙管重型機炮。\n\n這種武器是專門為機兵設計的，因為太重，所以只有特定的機兵才能操作。</DMS_Gun_2A38M.description>
+  <!-- EN: stock -->
+  <DMS_Gun_2A38M.tools.stock.label>槍托</DMS_Gun_2A38M.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_Gun_2A38M.tools.barrel.label>槍管</DMS_Gun_2A38M.tools.barrel.label>
+  <!-- EN: 2A38M -->
+  <DMS_Gun_2A38M.verbs.Verb_Shoot.label>2A38M</DMS_Gun_2A38M.verbs.Verb_Shoot.label>
+  
+  <!-- UNUSED -->
+  <DMS_Gun_2A38M.tools.muzzle-0.label>槍口</DMS_Gun_2A38M.tools.muzzle-0.label>
+  <DMS_Gun_2A38M.tools.barrel-1.label>槍管</DMS_Gun_2A38M.tools.barrel-1.label>
+  <DMS_Gun_2A38M.tools.muzzle-1.label>槍口</DMS_Gun_2A38M.tools.muzzle-1.label>
+  <DMS_Gun_2A38M.verbs.Verb_ShootCE.label>2A38M</DMS_Gun_2A38M.verbs.Verb_ShootCE.label>
+  
   <!-- EN: recoilless cannon -->
   <DMS_Gun_Recoilless.label>無後坐力炮</DMS_Gun_Recoilless.label>
   <!-- EN: A Recoilless cannon designed to snipe the heavy-armed target in range.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
@@ -41,7 +58,7 @@
   <DMS_HeavyMachineGun.tools.muzzle-1.label>槍口</DMS_HeavyMachineGun.tools.muzzle-1.label>
   <DMS_HeavyMachineGun.verbs.Verb_ShootCE.label>機械HMG</DMS_HeavyMachineGun.verbs.Verb_ShootCE.label>
   
-  <!-- EN: mech sniper cannon -->
+  <!-- EN: sniper cannon -->
   <DMS_SniperCannon.label>機兵狙擊炮</DMS_SniperCannon.label>
   <!-- EN: an ultra heavy rifle calibered with autocannon rounds, has proven the capability to snipe an exostrider in the distance. it is specially designed for long-range anti-mech sniping operation.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
   <DMS_SniperCannon.description>一種配備自動加農炮彈的超重型步槍，已證明能夠在遠處狙擊巨黽。它專為遠距離反機甲狙擊作戰而設計。\n\n這種武器是專門為機兵設計的，因為太重，所以只有特定的機兵才能操作。</DMS_SniperCannon.description>
@@ -49,7 +66,7 @@
   <DMS_SniperCannon.tools.stock.label>槍托</DMS_SniperCannon.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_SniperCannon.tools.barrel.label>槍管</DMS_SniperCannon.tools.barrel.label>
-  <!-- EN: mech sniper cannon -->
+  <!-- EN: sniper cannon -->
   <DMS_SniperCannon.verbs.Verb_Shoot.label>機兵狙擊炮</DMS_SniperCannon.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
@@ -57,22 +74,5 @@
   <DMS_SniperCannon.tools.barrel-1.label>槍管</DMS_SniperCannon.tools.barrel-1.label>
   <DMS_SniperCannon.tools.muzzle-1.label>槍口</DMS_SniperCannon.tools.muzzle-1.label>
   <DMS_SniperCannon.verbs.Verb_ShootCE.label>機械狙擊炮</DMS_SniperCannon.verbs.Verb_ShootCE.label>
-  
-  <!-- EN: 2A38M -->
-  <DMS_Gun_2A38M.label>2A38M</DMS_Gun_2A38M.label>
-  <!-- EN: a dual-barrel heavy autocannon for infantry suppress / anti air platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
-  <DMS_Gun_2A38M.description>用於步兵壓制/防空平台的雙管重型機炮。\n\n這種武器是專門為機兵設計的，因為太重，所以只有特定的機兵才能操作。</DMS_Gun_2A38M.description>
-  <!-- EN: stock -->
-  <DMS_Gun_2A38M.tools.stock.label>槍托</DMS_Gun_2A38M.tools.stock.label>
-  <!-- EN: barrel -->
-  <DMS_Gun_2A38M.tools.barrel.label>槍管</DMS_Gun_2A38M.tools.barrel.label>
-  <!-- EN: 2A38M -->
-  <DMS_Gun_2A38M.verbs.Verb_Shoot.label>2A38M</DMS_Gun_2A38M.verbs.Verb_Shoot.label>
-  
-  <!-- UNUSED -->
-  <DMS_Gun_2A38M.tools.muzzle-0.label>槍口</DMS_Gun_2A38M.tools.muzzle-0.label>
-  <DMS_Gun_2A38M.tools.barrel-1.label>槍管</DMS_Gun_2A38M.tools.barrel-1.label>
-  <DMS_Gun_2A38M.tools.muzzle-1.label>槍口</DMS_Gun_2A38M.tools.muzzle-1.label>
-  <DMS_Gun_2A38M.verbs.Verb_ShootCE.label>2A38M</DMS_Gun_2A38M.verbs.Verb_ShootCE.label>
   
 </LanguageData>

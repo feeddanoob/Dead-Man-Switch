@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: bandwidth support -->
+  <DMS_Bandwidth.label>帶寬支援</DMS_Bandwidth.label>
+  <!-- EN: Apply the access of orbital bandwidth support, the amount of bandwidth is depend on applicant's title. This support will be valid unless death or defection occurs on applicant. -->
+  <DMS_Bandwidth.description>向殖民艦隊申請軌道帶寬支援接入，提供的帶寬大小取決於申請者的官階。除非申請人死亡或叛逃，否則該支持將長期有效。</DMS_Bandwidth.description>
+  
   <!-- EN: call aerodrone salvo -->
   <DMS_CallOrbitalSalvo.label>呼叫無人機齊射</DMS_CallOrbitalSalvo.label>
   <!-- EN: Call a salvo of aerodrone strikes around a target position. -->
@@ -33,7 +38,7 @@
   
   <!-- EN: componments drop -->
   <DMS_CompDrop.label>空投組件</DMS_CompDrop.label>
-  <!-- EN: Call for a drop of componments. -->
+  <!-- EN: Call for a drop of stamp componments and wetware computer. -->
   <DMS_CompDrop.description>呼叫空投組件。</DMS_CompDrop.description>
   
   <!-- EN: food supply drop -->

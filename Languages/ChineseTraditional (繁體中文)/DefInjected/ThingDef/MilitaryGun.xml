@@ -67,6 +67,17 @@
   <DMS_AutomaticGrenadeLauncher.tools.muzzle.label>槍口</DMS_AutomaticGrenadeLauncher.tools.muzzle.label>
   <DMS_AutomaticGrenadeLauncher.verbs.Verb_ShootCE.label>機兵榴彈發射器</DMS_AutomaticGrenadeLauncher.verbs.Verb_ShootCE.label>
   
+  <!-- EN: mech battle rifle -->
+  <DMS_BattleRifle.label>機兵戰鬥步槍</DMS_BattleRifle.label>
+  <!-- EN: a full metal battle rifle designed for mech soldiers, it's designed for dangerous mech to mech combat.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong. -->
+  <DMS_BattleRifle.description>一種用於機兵的全金屬戰鬥步槍，被用於危險的機兵對機兵戰鬥中。\n\n這種武器是專門為機兵設計的，因此如果沒有外部輔助設備或超強的力量，普通人可能無法正常使用。</DMS_BattleRifle.description>
+  <!-- EN: stock -->
+  <DMS_BattleRifle.tools.stock.label>槍托</DMS_BattleRifle.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_BattleRifle.tools.barrel.label>槍管</DMS_BattleRifle.tools.barrel.label>
+  <!-- EN: mech battle rifle -->
+  <DMS_BattleRifle.verbs.Verb_Shoot.label>機兵戰鬥步槍</DMS_BattleRifle.verbs.Verb_Shoot.label>
+  
   <!-- EN: mech LMG -->
   <DMS_LightMachineGun.label>機兵輕機槍</DMS_LightMachineGun.label>
   <!-- EN: Supressive weapon chambered in full power rifle round.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong. -->
@@ -111,5 +122,16 @@
   <!-- UNUSED -->
   <DMS_SemiAutoRifle.tools.muzzle.label>槍口</DMS_SemiAutoRifle.tools.muzzle.label>
   <DMS_SemiAutoRifle.verbs.Verb_ShootCE.label>機兵半自動步槍</DMS_SemiAutoRifle.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: sniper grenade launcher -->
+  <DMS_SniperGrenadeLauncher.label>狙擊榴彈發射器</DMS_SniperGrenadeLauncher.label>
+  <!-- EN: precise grenade launcher designed to fit in anti-sniper role.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong. -->
+  <DMS_SniperGrenadeLauncher.description>專為反狙擊而設計的精確榴彈發射器。\n\n該武器是專為機兵使用而設計的，因此普通人在沒有外部輔助設備或超強力量的情況下可能無法正常使用它們。</DMS_SniperGrenadeLauncher.description>
+  <!-- EN: stock -->
+  <DMS_SniperGrenadeLauncher.tools.stock.label>槍托</DMS_SniperGrenadeLauncher.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_SniperGrenadeLauncher.tools.barrel.label>槍管</DMS_SniperGrenadeLauncher.tools.barrel.label>
+  <!-- EN: sniper grenade launcher -->
+  <DMS_SniperGrenadeLauncher.verbs.Verb_Shoot.label>狙擊榴彈發射器</DMS_SniperGrenadeLauncher.verbs.Verb_Shoot.label>
   
 </LanguageData>

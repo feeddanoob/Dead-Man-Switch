@@ -1,6 +1,21 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: dogge -->
+  <DMS_Mech_Dogge.label>獒犬</DMS_Mech_Dogge.label>
+  <!-- EN: A four-legged robot dog provide forward reconnaissance and urban combat support during armed operations, can equipped with small-caliber firearms or flamethrowers to provide certain containment capabilities. -->
+  <DMS_Mech_Dogge.description>一種中型四足機槍平台，其優越的機動性來自於四肢採用的合成人工肌肉束，其高度較低因此適合在開闊平地上提供機動火力支援。</DMS_Mech_Dogge.description>
+  <!-- EN: aim target -->
+  <DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.command_Target>瞄準目標</DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.command_Target>
+  <!-- EN: fire at will -->
+  <DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>自由開火</DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>
+  <!-- EN: aim at desinated target -->
+  <DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>瞄準指定目標</DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>
+  <!-- EN: toggle turret to manually control mode to prevent unnecessary shooting. -->
+  <DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>切換砲塔至手動模式來避免非必要的開火</DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
+ <!-- EN: head -->
+  <DMS_Mech_Dogge.tools.head.label>頭部</DMS_Mech_Dogge.tools.head.label>
+  
   <!-- EN: falcon -->
   <DMS_Mech_Falcon.label>遊隼</DMS_Mech_Falcon.label>
   <!-- EN: A heavy-duty tri-rotor drone for cooperating in field recon and anti-tank strikes. -->

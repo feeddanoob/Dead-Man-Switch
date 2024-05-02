@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: brigadier -->
+  <DMS_Brigadier.label>brigadier</DMS_Brigadier.label>
+  <!-- EN: A senior rank above colonel, equivalent to a brigadier general or commodore, typically commanding a brigade of several thousand soldiers.. -->
+  <DMS_Brigadier.description>A senior rank above colonel, equivalent to a brigadier general or commodore, typically commanding a brigade of several thousand soldiers..</DMS_Brigadier.description>
+  
+  <!-- EN: captain -->
+  <DMS_Captain.label>captain</DMS_Captain.label>
+  <!-- EN: A commissioned officer rank historically corresponding to the command of a company of soldiers. -->
+  <DMS_Captain.description>A commissioned officer rank historically corresponding to the command of a company of soldiers.</DMS_Captain.description>
+  
+  <!-- EN: colonel -->
+  <DMS_Colonel.label>colonel</DMS_Colonel.label>
+  <!-- EN: A colonel was typically in charge of a regiment in an army. -->
+  <DMS_Colonel.description>A colonel was typically in charge of a regiment in an army.</DMS_Colonel.description>
+  
+  <!-- EN: corporal -->
+  <DMS_Corporal.label>corporal</DMS_Corporal.label>
+  <!-- EN: corporal is the lowest officer rank in the military system, leading a squad or a task forces. -->
+  <DMS_Corporal.description>corporal is the lowest officer rank in the military system, leading a squad or a task forces.</DMS_Corporal.description>
+  
+  <!-- EN: lieutenant -->
+  <DMS_Lieutenant.label>lieutenant</DMS_Lieutenant.label>
+  <!-- EN: A commissioned officer rank, which is typically the most senior of junior officer ranks. -->
+  <DMS_Lieutenant.description>A commissioned officer rank, which is typically the most senior of junior officer ranks.</DMS_Lieutenant.description>
+  
+  <!-- EN: major -->
+  <DMS_Major.label>major</DMS_Major.label>
+  <!-- EN: A senior military officer rank, major is one rank above captain in armies and air forces, and one rank below colonel. -->
+  <DMS_Major.description>A senior military officer rank, major is one rank above captain in armies and air forces, and one rank below colonel.</DMS_Major.description>
+  
+  <!-- EN: pre-sergeant -->
+  <DMS_PreSergeant.label>pre-sergeant</DMS_PreSergeant.label>
+  <!-- EN: pre-sergeant is a rank specially for outsider enlistment with no formal training, Served as the representative of outsider military forces in the military system. -->
+  <DMS_PreSergeant.description>pre-sergeant is a rank specially for outsider enlistment with no formal training, Served as the representative of outsider military forces in the military system.</DMS_PreSergeant.description>
+  
+  <!-- EN: private -->
+  <DMS_Private.label>private</DMS_Private.label>
+  <!-- EN: A private is a soldier, usually with the lowest rank in many armies. Soldiers with the rank of private may be conscripts or they may be professional (career) soldiers.. -->
+  <DMS_Private.description>A private is a soldier, usually with the lowest rank in many armies. Soldiers with the rank of private may be conscripts or they may be professional (career) soldiers..</DMS_Private.description>
+  
+  <!-- EN: Reservist -->
+  <DMS_Reservist.label>Reservist</DMS_Reservist.label>
+  <!-- EN: All citizens are reservist. it's not only a duty which also reconize you as a fully-respected individual. Most  citizens earn it while training for military service. The title is also offered to outsiders who act with honor in the eyes of the Armies. -->
+  <DMS_Reservist.description>All citizens are reservist. it's not only a duty which also reconize you as a fully-respected individual. Most  citizens earn it while training for military service. The title is also offered to outsiders who act with honor in the eyes of the Armies.</DMS_Reservist.description>
+  
+  <!-- EN: sergeant -->
+  <DMS_Sergeant.label>sergeant</DMS_Sergeant.label>
+  <!-- EN: a non-commissioned officer placed above the rank of a corporal. -->
+  <DMS_Sergeant.description>a non-commissioned officer placed above the rank of a corporal.</DMS_Sergeant.description>
+  
+  <!-- EN: warrant officer -->
+  <DMS_WarrantOfficer.label>warrant officer</DMS_WarrantOfficer.label>
+  <!-- EN: The warrant officer is the first title of military officer duty. -->
+  <DMS_WarrantOfficer.description>The warrant officer is the first title of military officer duty.</DMS_WarrantOfficer.description>
+  
+</LanguageData>

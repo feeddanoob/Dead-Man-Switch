@@ -9,7 +9,23 @@
 While it failed to eventually change the modern warfare as expected: it is oversized, its artificial muscle fibre is hard to upkeep, and, on top of that, railguns and beam weaponry aren't a reliable thing back in its days; 
 
 After all those milenina, there still have been numerous manufacturers replicating such automatroids and adding their own improvements to its design. As such, traces of technology adopted in this automatroid can be seen in a great number of weaponry nowadays.</DMS_Mech_Tarbosaurus.description>
-  <!-- EN: Mechanical Head -->
+  <!-- EN: aim target -->
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.command_Target>aim target</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.command_Target>
+  <!-- EN: fire at will -->
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>fire at will</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>
+  <!-- EN: aim at desinated target -->
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>aim at desinated target</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>
+  <!-- EN: toggle turret to manually control mode to prevent unnecessary shooting. -->
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>toggle turret to manually control mode to prevent unnecessary shooting.</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
+  <!-- EN: aim target -->
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.command_Target>aim target</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.command_Target>
+  <!-- EN: fire at will -->
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.command_ToggleFire>fire at will</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.command_ToggleFire>
+  <!-- EN: aim at desinated target -->
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_Target>aim at desinated target</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_Target>
+  <!-- EN: toggle turret to manually control mode to prevent unnecessary shooting. -->
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_ToggleFire>toggle turret to manually control mode to prevent unnecessary shooting.</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_ToggleFire>
+<!-- EN: Mechanical Head -->
   <DMS_Mech_Tarbosaurus.tools.Mechanical_Head.label>Mechanical Head</DMS_Mech_Tarbosaurus.tools.Mechanical_Head.label>
   <!-- EN: Left Leg -->
   <DMS_Mech_Tarbosaurus.tools.Left_Leg.label>Left Leg</DMS_Mech_Tarbosaurus.tools.Left_Leg.label>

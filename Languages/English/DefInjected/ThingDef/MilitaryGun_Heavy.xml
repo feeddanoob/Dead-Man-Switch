@@ -7,6 +7,19 @@
   <!-- EN: recoilless grenade round -->
   <DMS_Bullet_RR.label>recoilless grenade round</DMS_Bullet_RR.label>
   
+  <!-- EN: 2A38M -->
+  <DMS_Gun_2A38M.label>2A38M</DMS_Gun_2A38M.label>
+  <!-- EN: a dual-barrel heavy autocannon for infantry suppress / anti air platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
+  <DMS_Gun_2A38M.description>a dual-barrel heavy autocannon for infantry suppress / anti air platform.
+
+This weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</DMS_Gun_2A38M.description>
+  <!-- EN: stock -->
+  <DMS_Gun_2A38M.tools.stock.label>stock</DMS_Gun_2A38M.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_Gun_2A38M.tools.barrel.label>barrel</DMS_Gun_2A38M.tools.barrel.label>
+  <!-- EN: 2A38M -->
+  <DMS_Gun_2A38M.verbs.Verb_Shoot.label>2A38M</DMS_Gun_2A38M.verbs.Verb_Shoot.label>
+  
   <!-- EN: recoilless cannon -->
   <DMS_Gun_Recoilless.label>recoilless cannon</DMS_Gun_Recoilless.label>
   <!-- EN: A Recoilless cannon designed to snipe the heavy-armed target in range.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
@@ -33,8 +46,8 @@ This weapon is designed specially for automatroid use, and it's too heavy so onl
   <!-- EN: mech HMG -->
   <DMS_HeavyMachineGun.verbs.Verb_Shoot.label>mech HMG</DMS_HeavyMachineGun.verbs.Verb_Shoot.label>
   
-  <!-- EN: mech sniper cannon -->
-  <DMS_SniperCannon.label>mech sniper cannon</DMS_SniperCannon.label>
+  <!-- EN: sniper cannon -->
+  <DMS_SniperCannon.label>sniper cannon</DMS_SniperCannon.label>
   <!-- EN: an ultra heavy rifle calibered with autocannon rounds, has proven the capability to snipe an exostrider in the distance. it is specially designed for long-range anti-mech sniping operation.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
   <DMS_SniperCannon.description>an ultra heavy rifle calibered with autocannon rounds, has proven the capability to snipe an exostrider in the distance. it is specially designed for long-range anti-mech sniping operation.
 
@@ -43,20 +56,7 @@ This weapon is designed specially for automatroid use, and it's too heavy so onl
   <DMS_SniperCannon.tools.stock.label>stock</DMS_SniperCannon.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_SniperCannon.tools.barrel.label>barrel</DMS_SniperCannon.tools.barrel.label>
-  <!-- EN: mech sniper cannon -->
-  <DMS_SniperCannon.verbs.Verb_Shoot.label>mech sniper cannon</DMS_SniperCannon.verbs.Verb_Shoot.label>
-  
-  <!-- EN: 2A38M -->
-  <DMS_Gun_2A38M.label>2A38M</DMS_Gun_2A38M.label>
-  <!-- EN: a dual-barrel heavy autocannon for infantry suppress / anti air platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
-  <DMS_Gun_2A38M.description>a dual-barrel heavy autocannon for infantry suppress / anti air platform.
-
-This weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</DMS_Gun_2A38M.description>
-  <!-- EN: stock -->
-  <DMS_Gun_2A38M.tools.stock.label>stock</DMS_Gun_2A38M.tools.stock.label>
-  <!-- EN: barrel -->
-  <DMS_Gun_2A38M.tools.barrel.label>barrel</DMS_Gun_2A38M.tools.barrel.label>
-  <!-- EN: 2A38M -->
-  <DMS_Gun_2A38M.verbs.Verb_Shoot.label>2A38M</DMS_Gun_2A38M.verbs.Verb_Shoot.label>
+  <!-- EN: sniper cannon -->
+  <DMS_SniperCannon.verbs.Verb_Shoot.label>sniper cannon</DMS_SniperCannon.verbs.Verb_Shoot.label>
   
 </LanguageData>

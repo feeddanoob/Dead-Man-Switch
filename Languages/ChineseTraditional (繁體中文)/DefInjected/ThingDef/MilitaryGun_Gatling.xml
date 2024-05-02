@@ -22,12 +22,11 @@
   <DMS_GAU4Gatlinggun.label>GAU-4 "火山"</DMS_GAU4Gatlinggun.label>
   <!-- EN: a rapid-firing multiple-barrel weapon platfrom chambered in autocannon rounds. -->
   <DMS_GAU4Gatlinggun.description>一種裝有自動加農炮彈的快速多管武器平台。</DMS_GAU4Gatlinggun.description>
-  <!-- EN: barrel -->
-  <DMS_GAU4Gatlinggun.tools.barrel.label>槍管</DMS_GAU4Gatlinggun.tools.barrel.label>
   <!-- EN: GAU-4 "Vulcan" -->
   <DMS_GAU4Gatlinggun.verbs.Verb_Shoot.label>GAU-4 "火山"</DMS_GAU4Gatlinggun.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
+  <DMS_GAU4Gatlinggun.tools.barrel.label>槍管</DMS_GAU4Gatlinggun.tools.barrel.label>
   <DMS_GAU4Gatlinggun.tools.muzzle.label>槍口</DMS_GAU4Gatlinggun.tools.muzzle.label>
   <DMS_GAU4Gatlinggun.verbs.Verb_ShootCE.label>GAU-4 "火山"</DMS_GAU4Gatlinggun.verbs.Verb_ShootCE.label>
   

@@ -77,8 +77,17 @@
   
   <!-- EN: material engineering -->
   <DMS_Material.label>先進材料學</DMS_Material.label>
-  <!-- EN: "A perfect material can be calculate through scientific methods" this is one of the breakthough mankind are ever achived. -->
+  <!-- EN: "A perfect material can be calculate through a set of scientific methods" this is one of the breakthough mankind are ever achived. -->
   <DMS_Material.description>"透過科學方法可以計算出完美的材料"，這是人類有史以來取得的重大突破之一。</DMS_Material.description>
+  <!-- EN:
+    <li>subject->advanced material</li>
+    <li>subject_story->acquired a signal chip in shady circumstances</li>
+    <li>subject_story->found an intact signal chip in a diabolus wreck</li>
+    <li>subject_story->survived a mechanoid hive assault</li>
+    <li>subject_story->collated reports of mechanoid attacks, looking for commonalities</li>
+    <li>subject_gerund->calculating perfect material ratio</li>
+  -->
+  <DMS_Material.generalRules.rulesStrings>TODO</DMS_Material.generalRules.rulesStrings>
   
   <!-- EN: mecha gear -->
   <DMS_MechBasis.label>機甲齒輪</DMS_MechBasis.label>

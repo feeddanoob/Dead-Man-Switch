@@ -10,8 +10,8 @@
   
   <!-- EN: trash bin -->
   <DMS_Machine_TrashBin.label>trash bin</DMS_Machine_TrashBin.label>
-  <!-- EN: Cylindrical service robots used in Midworld cities provide road cleaning, express and food delivery services, and to be the first to assist in evacuation and maintain order when emergencies occur. -->
-  <DMS_Machine_TrashBin.description>Cylindrical service robots used in Midworld cities provide road cleaning, express and food delivery services, and to be the first to assist in evacuation and maintain order when emergencies occur.</DMS_Machine_TrashBin.description>
+  <!-- EN: cylindrical service robots used in Midworld cities provide road cleaning, express and food delivery services, and to be the first to assist in evacuation and maintain order when emergencies occur. -->
+  <DMS_Machine_TrashBin.description>cylindrical service robots used in Midworld cities provide road cleaning, express and food delivery services, and to be the first to assist in evacuation and maintain order when emergencies occur.</DMS_Machine_TrashBin.description>
   <!-- EN: head -->
   <DMS_Machine_TrashBin.tools.head.label>head</DMS_Machine_TrashBin.tools.head.label>
   

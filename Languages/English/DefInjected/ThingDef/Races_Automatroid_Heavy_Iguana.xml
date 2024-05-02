@@ -5,6 +5,16 @@
   <DMS_Mech_Gecko.label>gecko</DMS_Mech_Gecko.label>
   <!-- EN: an urban combat variant of Bipedal walker Iguana, additional armor are applied to protect against shaped charge rounds. -->
   <DMS_Mech_Gecko.description>an urban combat variant of Bipedal walker Iguana, additional armor are applied to protect against shaped charge rounds.</DMS_Mech_Gecko.description>
+  <!-- EN: aim target -->
+  <DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.command_Target>aim target</DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.command_Target>
+  <!-- EN: fire at will -->
+  <DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>fire at will</DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>
+  <!-- EN: aim at desinated target -->
+  <DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>aim at desinated target</DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>
+  <!-- EN: toggle turret to manually control mode to prevent unnecessary shooting. -->
+  <DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>toggle turret to manually control mode to prevent unnecessary shooting.</DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
+  <!-- EN: flame thrower -->
+  <DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.ID>flame thrower</DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.ID>
   <!-- EN: Mechanical Head -->
   <DMS_Mech_Gecko.tools.Mechanical_Head.label>Mechanical Head</DMS_Mech_Gecko.tools.Mechanical_Head.label>
   <!-- EN: Left Leg -->
@@ -16,6 +26,16 @@
   <DMS_Mech_Iguana.label>Iguana</DMS_Mech_Iguana.label>
   <!-- EN: the moderize-redesigned bipedal walking tank based on Tarbosaurus, it's rather small and cost-friendly for mass production. but the experimental electromagnetic armor been removed to maintain it's mobility. -->
   <DMS_Mech_Iguana.description>the moderize-redesigned bipedal walking tank based on Tarbosaurus, it's rather small and cost-friendly for mass production. but the experimental electromagnetic armor been removed to maintain it's mobility.</DMS_Mech_Iguana.description>
+  <!-- EN: aim target -->
+  <DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.command_Target>aim target</DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.command_Target>
+  <!-- EN: fire at will -->
+  <DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>fire at will</DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>
+  <!-- EN: aim at desinated target -->
+  <DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>aim at desinated target</DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>
+  <!-- EN: toggle turret to manually control mode to prevent unnecessary shooting. -->
+  <DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>toggle turret to manually control mode to prevent unnecessary shooting.</DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
+  <!-- EN: machine gun -->
+  <DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.ID>machine gun</DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.ID>
   <!-- EN: Mechanical Head -->
   <DMS_Mech_Iguana.tools.Mechanical_Head.label>Mechanical Head</DMS_Mech_Iguana.tools.Mechanical_Head.label>
   <!-- EN: Left Leg -->

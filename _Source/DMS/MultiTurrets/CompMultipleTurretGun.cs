@@ -21,7 +21,7 @@ namespace DMS
             base.PostSpawnSetup(respawningAfterLoad);
             if (!respawningAfterLoad)
             {
-                this.Props.subTurrets.ForEach(t =>
+                Props.subTurrets.ForEach(t =>
                 {
                     SubTurret turret = new SubTurret() { ID = t.ID, parent = this.parent };
                     turret.Init(t);
@@ -31,7 +31,7 @@ namespace DMS
             }
             else
             {
-                this.Props.subTurrets.ForEach(t =>
+                Props.subTurrets.ForEach(t =>
                 {
                     SubTurret turret = turrets.Find(r=>r.ID == t.ID);
                     turret.Init(t);
@@ -40,14 +40,14 @@ namespace DMS
             turrets.RemoveDuplicates((a, b) => a.ID == b.ID);
             if (currentTurret == null)
             {
-                currentTurret = turrets.First<SubTurret>().ID;
+                currentTurret = turrets.First().ID;
             }
             
         }
         public override void CompTick()
         {
             base.CompTick();
-            this.turrets.ForEach(t => t.Tick());
+            turrets.ForEach(t => t.Tick());
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
@@ -258,7 +258,7 @@ namespace DMS
         public List<PawnRenderNode> RenderNodes(Pawn pawn)
         {
             List<PawnRenderNode> result = new List<PawnRenderNode>();
-            this.turretProp.renderNodeProperties.ForEach(p =>
+            turretProp.renderNodeProperties.ForEach(p =>
             {
                 PawnRenderNode_SubTurretGun pawnRenderNode_TurretGun = (PawnRenderNode_SubTurretGun)Activator.CreateInstance(p.nodeClass, new object[]
                 {
@@ -306,7 +306,7 @@ namespace DMS
             Scribe_Values.Look<bool>(ref this.fireAtWill, "fireAtWill", true, false);
             
         }
-
+        [NoTranslate]
         public string ID = "null";
 
         public Thing parent;

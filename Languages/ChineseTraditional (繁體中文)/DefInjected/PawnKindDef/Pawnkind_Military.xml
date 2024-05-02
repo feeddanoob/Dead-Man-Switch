@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: gunner -->
+  <DMS_HeavyGunner.label>槍手</DMS_HeavyGunner.label>
+  
   <!-- EN: scout -->
   <DMS_Soldier.label>偵查兵</DMS_Soldier.label>
   
