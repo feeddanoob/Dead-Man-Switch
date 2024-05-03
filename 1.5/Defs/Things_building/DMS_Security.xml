@@ -665,7 +665,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>20</damageAmountBase>
+      <damageAmountBase>18</damageAmountBase>
       <armorPenetrationBase>0.40</armorPenetrationBase>
       <stoppingPower>4</stoppingPower>
       <speed>98</speed>
@@ -673,6 +673,7 @@
       <shadowSize>0.6</shadowSize>
     </projectile>
   </ThingDef>
+  
   <!-- 矢車菊  -->
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_Vasilek</defName>

@@ -90,6 +90,7 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
+
 	<!--高周波開山刀-->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>DMS_Machete</defName>
@@ -148,6 +149,7 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
+	
 	<!-- Door Breaker, breach weapon for siegebreaker-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_DoorBreaker</defName>

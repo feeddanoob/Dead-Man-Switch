@@ -11,8 +11,7 @@
   <!-- EN: hermit crab -->
   <DMS_Mech_HermitCrab.label>寄居蟹</DMS_Mech_HermitCrab.label>
   <!-- EN: These large, expensive, heavy mobile industrial machines are designed and manufactured by worlds that intend to colonize solar systems. Their large and expensive magnetic stabilizer shells integrate many complex-axis CNC tools and precision machinery. its high precision allows it to perform surgical procedures, but only if the patient overcomes their fear of a machine weighing several tons acting as their surgeon. -->
-  <DMS_Mech_HermitCrab.description>
-    體型龐大、昂貴且笨重的移動式工業母機，大多是由那些意圖開展太空殖民的世界所設計與製造，在其龐大且昂貴的磁穩筒殼內集成了數量繁雜的複軸數控刀具與微型機械臂，其精密程度能執行外科手術，但前提是患者能克服恐懼接受由一台重達數噸的機械作為主刀醫生。</DMS_Mech_HermitCrab.description>
+  <DMS_Mech_HermitCrab.description>體型龐大、昂貴且笨重的移動式工業母機，大多是由那些意圖開展太空殖民的世界所設計與製造，在其龐大且昂貴的磁穩筒殼內集成了數量繁雜的複軸數控刀具與微型機械臂，其精密程度能執行外科手術，但前提是患者能克服恐懼接受由一台重達數噸的機械作為主刀醫生。</DMS_Mech_HermitCrab.description>
   <!-- EN: head -->
   <DMS_Mech_HermitCrab.tools.head.label>保護殼</DMS_Mech_HermitCrab.tools.head.label>
   <!-- EN: laser cutter -->

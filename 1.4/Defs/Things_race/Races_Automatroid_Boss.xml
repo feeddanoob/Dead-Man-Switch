@@ -35,7 +35,7 @@
           <li>WarcasketBasic</li><!--戰棺海盜拓展-->
           <li>WarcasketVeteran</li><!--戰棺海盜拓展-->
           <li>DMS_Tarbosaurus_Gun</li>
-          <li>DMS_Bipedal_HeavyGun</li>
+          <li>DMS_MechWeaponUltraHeavy</li>
           <li>DMS_MechWeaponHeavy</li>
           <li>H_Gatling20mm</li>
           <li>V_Gatling30mm</li>
@@ -146,7 +146,7 @@
       </li>
     </lifeStages>
     <weaponTags>
-      <li>DMS_Bipedal_HeavyGun</li>
+      <li>DMS_MechWeaponUltraHeavy</li>
     </weaponTags>
     <weaponMoney>9999~9999</weaponMoney>
     <abilities>

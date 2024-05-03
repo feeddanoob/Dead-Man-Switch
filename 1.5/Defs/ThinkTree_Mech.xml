@@ -34,11 +34,11 @@
                 <li Class="JobGiver_WanderAnywhere">
                   <maxDanger>Deadly</maxDanger>
                 </li>
-                </subNodes>
+              </subNodes>
             </li>
           </subNodes>
         </li>
-        
+
         <!-- Do a queued job -->
         <li Class="ThinkNode_QueuedJob" />
 
@@ -64,74 +64,74 @@
         <li Class="ThinkNode_ConditionalPlayerControlledMech">
           <subNodes>
             <li Class="ThinkNode_ConditionalNotFormingCaravan">
-            <subNodes>
-              
-              <!-- Keep charging if we're already charging -->
-              <li Class="ThinkNode_ConditionalRecharging">
-                <subNodes>
-                  <li Class="JobGiver_GetEnergy_Charger" />
-                </subNodes>
-              </li>
-              
-              <!-- Work modes -->
-              <li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
-                <workMode>Work</workMode>
-                <subNodes>
-                  <li Class="JobGiver_SeekAllowedArea" />
-                  <li Class="JobGiver_GetEnergy_Charger" />
-                  <li Class="JobGiver_Work">
-                    <emergency>true</emergency>
-                  </li>
-                  <li Class="JobGiver_Work" />
-                  <li Class="ThinkNode_ConditionalWorkMech"><!-- Combat mechs do patrolling -->
-                    <invert>true</invert>
-                    <subNodes>
-                      <li Class="JobGiver_AIFightEnemies">
-                        <targetAcquireRadius>65</targetAcquireRadius>
-                        <targetKeepRadius>72</targetKeepRadius>
-                      </li>
-                      <li Class="ThinkNode_Tagger">
-                        <tagToGive>MiscWork</tagToGive>
-                        <subNodes>
-                          <li Class="JobGiver_WanderColony">
-                            <maxDanger>Deadly</maxDanger>
-                            <reportStringOverride TKey="ReportStringPatrolling">Patrolling.</reportStringOverride>
-                          </li>
-                        </subNodes>
-                      </li>
-                    </subNodes>
-                  </li>
-                </subNodes>
-              </li>
-              <li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
-                <workMode>SelfShutdown</workMode>
-                <subNodes>
-                  <li Class="JobGiver_SeekAllowedArea" />
-                  <li Class="JobGiver_SelfShutdown" />
-                </subNodes>
-              </li>
-              <li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
-                <workMode>Recharge</workMode>
-                <subNodes>
-                  <li Class="JobGiver_SeekAllowedArea" />
-                  <li Class="JobGiver_GetEnergy_Charger" />
-                  <li Class="JobGiver_GetEnergy_SelfShutdown">
-                    <forced>true</forced>
-                  </li>
-                </subNodes>
-              </li>
-              <li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
-                <workMode>Escort</workMode>
-                <subNodes>
-                  <li Class="JobGiver_ExitMapFollowOverseer" />
-                  <li Class="JobGiver_AIDefendOverseer" />
-                  <li Class="JobGiver_AIFollowOverseer"/>
-                  <li Class="JobGiver_AIWaitWithOverseer" />
-                  <li Class="JobGiver_WanderOverseer" />
-                </subNodes>
-              </li>
+              <subNodes>
 
-            </subNodes>
+                <!-- Keep charging if we're already charging -->
+                <li Class="ThinkNode_ConditionalRecharging">
+                  <subNodes>
+                    <li Class="JobGiver_GetEnergy_Charger" />
+                  </subNodes>
+                </li>
+
+                <!-- Work modes -->
+                <li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
+                  <workMode>Work</workMode>
+                  <subNodes>
+                    <li Class="JobGiver_SeekAllowedArea" />
+                    <li Class="JobGiver_GetEnergy_Charger" />
+                    <li Class="JobGiver_Work">
+                      <emergency>true</emergency>
+                    </li>
+                    <li Class="JobGiver_Work" />
+                    <li Class="ThinkNode_ConditionalWorkMech"><!-- Combat mechs do patrolling -->
+                      <invert>true</invert>
+                      <subNodes>
+                        <li Class="JobGiver_AIFightEnemies">
+                          <targetAcquireRadius>65</targetAcquireRadius>
+                          <targetKeepRadius>72</targetKeepRadius>
+                        </li>
+                        <li Class="ThinkNode_Tagger">
+                          <tagToGive>MiscWork</tagToGive>
+                          <subNodes>
+                            <li Class="JobGiver_WanderColony">
+                              <maxDanger>Deadly</maxDanger>
+                              <reportStringOverride TKey="ReportStringPatrolling">Patrolling.</reportStringOverride>
+                            </li>
+                          </subNodes>
+                        </li>
+                      </subNodes>
+                    </li>
+                  </subNodes>
+                </li>
+                <li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
+                  <workMode>SelfShutdown</workMode>
+                  <subNodes>
+                    <li Class="JobGiver_SeekAllowedArea" />
+                    <li Class="JobGiver_SelfShutdown" />
+                  </subNodes>
+                </li>
+                <li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
+                  <workMode>Recharge</workMode>
+                  <subNodes>
+                    <li Class="JobGiver_SeekAllowedArea" />
+                    <li Class="JobGiver_GetEnergy_Charger" />
+                    <li Class="JobGiver_GetEnergy_SelfShutdown">
+                      <forced>true</forced>
+                    </li>
+                  </subNodes>
+                </li>
+                <li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
+                  <workMode>Escort</workMode>
+                  <subNodes>
+                    <li Class="JobGiver_ExitMapFollowOverseer" />
+                    <li Class="JobGiver_AIDefendOverseer" />
+                    <li Class="JobGiver_AIFollowOverseer" />
+                    <li Class="JobGiver_AIWaitWithOverseer" />
+                    <li Class="JobGiver_WanderOverseer" />
+                  </subNodes>
+                </li>
+
+              </subNodes>
             </li>
           </subNodes>
         </li>
@@ -159,63 +159,63 @@
             </li>
           </subNodes>
         </li>
-        
+
         <!-- Idle error -->
-        <li Class="JobGiver_IdleError"/>
+        <li Class="JobGiver_IdleError" />
       </subNodes>
     </thinkRoot>
   </ThinkTreeDef>
 
-<!-- 垃圾筒的 -->
-<ThinkTreeDef>
-  <defName>DMS_Machine</defName>
-  <thinkRoot Class="ThinkNode_Priority">
-    <subNodes>
-      <li Class="ThinkNode_Subtree">
-        <treeDef>Downed</treeDef>
-      </li>
-      <li Class="VFEMech.ThinkNode_ConditionalHasPower">
-        <subNodes>
-          <!-- Main colonist behavior core -->
-          <li Class="ThinkNode_Priority">
-            <subNodes>
-              <li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_Recharge"/>
-              <li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_ReturnToStation"/>
-              <li Class="ThinkNode_QueuedJob"/>
-              <li Class="ThinkNode_Priority">
-                <subNodes>
-                  <li Class="ThinkNode_Tagger">
-                    <tagToGive>DraftedOrder</tagToGive>
-                    <subNodes>
-                      <li Class="JobGiver_Orders"/>
-                    </subNodes>
-                  </li>
-                </subNodes>
-              </li>
-              <li Class="JobGiver_Work"/>
-              <li Class="ThinkNode_Tagger">
-                <tagToGive>Idle</tagToGive>
-                <subNodes>
-                  <!-- Wander -->
-                  <li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_ReturnToStationIdle"/>
-                </subNodes>
-              </li>
+  <!-- 垃圾筒的 -->
+  <ThinkTreeDef>
+    <defName>DMS_Machine</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+        <li Class="VFEMech.ThinkNode_ConditionalHasPower">
+          <subNodes>
+            <!-- Main colonist behavior core -->
+            <li Class="ThinkNode_Priority">
+              <subNodes>
+                <li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_Recharge" />
+                <li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_ReturnToStation" />
+                <li Class="ThinkNode_QueuedJob" />
+                <li Class="ThinkNode_Priority">
+                  <subNodes>
+                    <li Class="ThinkNode_Tagger">
+                      <tagToGive>DraftedOrder</tagToGive>
+                      <subNodes>
+                        <li Class="JobGiver_Orders" />
+                      </subNodes>
+                    </li>
+                  </subNodes>
+                </li>
+                <li Class="JobGiver_Work" />
+                <li Class="ThinkNode_Tagger">
+                  <tagToGive>Idle</tagToGive>
+                  <subNodes>
+                    <!-- Wander -->
+                    <li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_ReturnToStationIdle" />
+                  </subNodes>
+                </li>
 
-              <li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_StandIdle"/>
-            </subNodes>
-          </li>
-        </subNodes>
-      </li>
-      <li Class="VFEMech.ThinkNode_ConditionalHasPower">
-        <invert>true</invert>
-        <subNodes>
-          <li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_Recharge"/>
-          <li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_ReturnToStation"/>
-        </subNodes>
-      </li>
-      <li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_StandIdle"/>
-    </subNodes>
-  </thinkRoot>
-</ThinkTreeDef>
+                <li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_StandIdle" />
+              </subNodes>
+            </li>
+          </subNodes>
+        </li>
+        <li Class="VFEMech.ThinkNode_ConditionalHasPower">
+          <invert>true</invert>
+          <subNodes>
+            <li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_Recharge" />
+            <li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_ReturnToStation" />
+          </subNodes>
+        </li>
+        <li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_StandIdle" />
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
 
 </Defs>

@@ -1,36 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- 即使穿著動力外骨骼也沒法操作的重型槍械-->
-	<ThingDef Name="DMS_AutomatroidHeavyGun" ParentName="DMS_AutomatroidGun" Abstract="True">
-		<statBases>
-		    <MaxHitPoints>300</MaxHitPoints>
-			<WorkToMake>80000</WorkToMake>
-	    </statBases>
-		<recipeMaker>
-			<researchPrerequisites>
-				<li>DMS_EquipmentHeavy</li>
-		  	</researchPrerequisites>
-		</recipeMaker>
-		<tools Inherit="False">
-			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>24</power>
-				<cooldownTime>3</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>24</power>
-				<cooldownTime>3</cooldownTime>
-			</li>
-		</tools>
-	</ThingDef>
+	
 
 	<!--MSC-->
 	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
@@ -119,7 +89,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_HeavyMachineGun</texPath>
-			<drawSize>(1.75,1.75)</drawSize>
+			<drawSize>1.75</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
@@ -180,12 +150,81 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>28</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<stoppingPower>3</stoppingPower>
 			<speed>80</speed>
 		</projectile>
 	</ThingDef>
-	
+
+	<!--HAC-->
+	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
+		<defName>DMS_Autocannon</defName>
+		<label>mech autocannon</label>
+		<description>an autocannon mech soldier and infantry support platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
+			<li>Ranged</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>DMS_MechWeaponHeavy</li>
+			<li>A_SuppressWeaponHeavy</li>
+		</weaponTags>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_Autocannon</texPath>
+			<drawSize>2.25</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.7</AccuracyLong>
+			<Mass>18.50</Mass>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>DMS_EquipmentHeavy</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Tungsteel>110</Tungsteel>
+			<ComponentStamped>5</ComponentStamped>		
+		</costList>	
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<range>39.9</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.75,0.75)</drawSize>
+				<offsets>
+					<li>(0.75,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>HeavyAutomatroid</EquippableDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
 	<!-- 無後座力砲 基本上是給龍騎兵用的-->
 	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
 		<defName>DMS_Gun_Recoilless</defName>
@@ -291,11 +330,11 @@
 		<weaponTags>
 			<li>2A38M</li>
 			<li>NoSwitch</li>
-			<li>DMS_Bipedal_HeavyGun</li>
+			<li>DMS_MechWeaponUltraHeavy</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_2A38M</texPath>
-			<drawSize>3</drawSize>
+			<drawSize>4</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>92</Mass>

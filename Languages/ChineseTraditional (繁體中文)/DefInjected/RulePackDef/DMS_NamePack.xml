@@ -84,7 +84,7 @@
     <li>Number->8</li>
   -->
   <DMS_VanguardBase.rulePack.rulesStrings>
-    <li>r_name-> [Type]-[Number][Number]號</li>
+    <li>r_name-> [Type]-[Number][Number]</li>
     <li>Type->後勤</li>
     <li>Type->偵查</li>
     <li>Type->中繼</li>
@@ -227,31 +227,31 @@
     <li>Callsign->Automata</li>
   -->
   <DMS_VanguardMechHeavy.rulePack.rulesStrings>
-    <li>r_name->[MechType] [BrigadeNum0][BrigadeNum1] "[Callsign]"</li>
+    <li>r_name->[MechType]-[BrigadeNum0][BrigadeNum1] "[Callsign]"</li>
     <li>MechType->樞軸</li>
     <li>MechType->重型</li>
     <li>MechType->裝甲</li>
     <li>MechType->支點</li>
     <li>MechType->要塞</li>
-    <li>BrigadeNum0->一</li>
-    <li>BrigadeNum0->二</li>
-    <li>BrigadeNum0->三</li>
-    <li>BrigadeNum0->四</li>
-    <li>BrigadeNum0->五</li>
-    <li>BrigadeNum0->六</li>
-    <li>BrigadeNum0->七</li>
-    <li>BrigadeNum0->八</li>
-    <li>BrigadeNum0->九</li>
-    <li>BrigadeNum1->零</li>
-    <li>BrigadeNum1->一</li>
-    <li>BrigadeNum1->二</li>
-    <li>BrigadeNum1->三</li>
-    <li>BrigadeNum1->四</li>
-    <li>BrigadeNum1->五</li>
-    <li>BrigadeNum1->六</li>
-    <li>BrigadeNum1->七</li>
-    <li>BrigadeNum1->八</li>
-    <li>BrigadeNum1->九</li>
+    <li>BrigadeNum0->1</li>
+    <li>BrigadeNum0->2</li>
+    <li>BrigadeNum0->3</li>
+    <li>BrigadeNum0->4</li>
+    <li>BrigadeNum0->5</li>
+    <li>BrigadeNum0->6</li>
+    <li>BrigadeNum0->7</li>
+    <li>BrigadeNum0->8</li>
+    <li>BrigadeNum0->9</li>
+    <li>BrigadeNum1->0</li>
+    <li>BrigadeNum1->1</li>
+    <li>BrigadeNum1->2</li>
+    <li>BrigadeNum1->3</li>
+    <li>BrigadeNum1->4</li>
+    <li>BrigadeNum1->5</li>
+    <li>BrigadeNum1->6</li>
+    <li>BrigadeNum1->7</li>
+    <li>BrigadeNum1->8</li>
+    <li>BrigadeNum1->9</li>
     <li>Callsign->阿爾法</li>
     <li>Callsign->貝塔</li>
     <li>Callsign->德爾塔</li>
@@ -345,25 +345,25 @@
     <li>MechType->作戰</li>
     <li>MechType->戰鬥</li>
     <li>MechType->單元</li>
-    <li>BrigadeNum0->一</li>
-    <li>BrigadeNum0->二</li>
-    <li>BrigadeNum0->三</li>
-    <li>BrigadeNum0->四</li>
-    <li>BrigadeNum0->五</li>
-    <li>BrigadeNum0->六</li>
-    <li>BrigadeNum0->七</li>
-    <li>BrigadeNum0->八</li>
-    <li>BrigadeNum0->九</li>
-    <li>BrigadeNum1->零</li>
-    <li>BrigadeNum1->一</li>
-    <li>BrigadeNum1->二</li>
-    <li>BrigadeNum1->三</li>
-    <li>BrigadeNum1->四</li>
-    <li>BrigadeNum1->五</li>
-    <li>BrigadeNum1->六</li>
-    <li>BrigadeNum1->七</li>
-    <li>BrigadeNum1->八</li>
-    <li>BrigadeNum1->九</li>
+    <li>BrigadeNum0->1</li>
+    <li>BrigadeNum0->2</li>
+    <li>BrigadeNum0->3</li>
+    <li>BrigadeNum0->4</li>
+    <li>BrigadeNum0->5</li>
+    <li>BrigadeNum0->6</li>
+    <li>BrigadeNum0->7</li>
+    <li>BrigadeNum0->8</li>
+    <li>BrigadeNum0->9</li>
+    <li>BrigadeNum1->0</li>
+    <li>BrigadeNum1->1</li>
+    <li>BrigadeNum1->2</li>
+    <li>BrigadeNum1->3</li>
+    <li>BrigadeNum1->4</li>
+    <li>BrigadeNum1->5</li>
+    <li>BrigadeNum1->6</li>
+    <li>BrigadeNum1->7</li>
+    <li>BrigadeNum1->8</li>
+    <li>BrigadeNum1->9</li>
     <li>Callsign->骷髏</li>
     <li>Callsign->鐵盾</li>
     <li>Callsign->鋼鐵</li>

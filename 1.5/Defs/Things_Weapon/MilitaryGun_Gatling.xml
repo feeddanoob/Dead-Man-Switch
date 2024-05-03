@@ -251,6 +251,7 @@
 		<description>a rapid-firing multiple-barrel firearm chambered in high-cailber autocannon rounds, deadly and destructive.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>
 		<weaponTags>
 			<li>V_Gatling30mm</li>
+			<li>DMS_MechWeaponUltraHeavy</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_GAU8</texPath>

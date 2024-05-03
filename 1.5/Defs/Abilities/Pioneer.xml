@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- CE報點(待修復) -->
+	<!-- 衝刺 -->
 	<AbilityDef>
 		<defName>DMS_BurstSprint</defName>
 		<label>burst sprint</label>
 		<description>By releasing the mechanical energy accumulated in storage unit of the legs, Pioneer can maintain amazing sprint speeds in a short period of time</description>
-		<iconPath>UI/Abilities/GhoulFrenzy</iconPath>
+		<iconPath>UI/Ability/Burst</iconPath>
 		<cooldownTicksRange>1800</cooldownTicksRange> <!-- 30 seconds -->
 		<hostile>false</hostile>
 		<groupAbility>true</groupAbility>

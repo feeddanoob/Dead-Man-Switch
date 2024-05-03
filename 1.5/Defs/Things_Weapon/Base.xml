@@ -62,4 +62,36 @@
 			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
+
+	<!-- 即使穿著動力外骨骼也沒法操作的重型槍械-->
+	<ThingDef Name="DMS_AutomatroidHeavyGun" ParentName="DMS_AutomatroidGun" Abstract="True">
+		<statBases>
+		    <MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>80000</WorkToMake>
+	    </statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>DMS_EquipmentHeavy</li>
+		  	</researchPrerequisites>
+		</recipeMaker>
+		<tools Inherit="False">
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 </Defs>
