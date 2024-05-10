@@ -5,7 +5,7 @@
   <ThingDef Name="BaseMechRace_Arquebusier" ParentName="BaseAutomatroidHumanRace" Abstract="True">
     <statBases>
       <MoveSpeed>4.5</MoveSpeed>
-      <ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
       <ArmorRating_Heat>1.5</ArmorRating_Heat>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost> 

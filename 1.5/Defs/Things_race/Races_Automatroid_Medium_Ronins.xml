@@ -6,12 +6,12 @@
     <label>ronin</label>
     <description>Humanoid mech model specialized for urban combat scenarios, packed with assault armor and high mobility, makes it a fierce unit in close quater.</description>
     <statBases>
-      <MoveSpeed>5</MoveSpeed>                                                    <!--移動速度-->
-      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>                                     <!--護甲-->
+      <MoveSpeed>5</MoveSpeed>
+      <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
       <ArmorRating_Heat>1.5</ArmorRating_Heat>
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>        <!--帶寬消耗-->
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge>
     </statBases>
     <race>
       <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
@@ -89,7 +89,7 @@
     <description>With better armor protection, siegebreaker stands in the most front of the line for sapping and breaching jobs, breaking through enemy defenses.</description>
     <statBases>
       <MoveSpeed>4.3</MoveSpeed>                                                    <!--移動速度-->
-      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>                                     <!--護甲-->
+      <ArmorRating_Blunt>0.92</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
       <ArmorRating_Heat>1.5</ArmorRating_Heat>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>        <!--帶寬消耗-->
@@ -165,10 +165,10 @@
     <label>protector</label>
     <description>Designed for peacekeeping operations and riot control need, Protector has overall strong armor around the frame, equip with a huge flash shield and close quater weapons like batons or shotguns.</description>
     <statBases>
-      <MoveSpeed>3</MoveSpeed>                                                    <!--移動速度-->
-      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>                                     <!--護甲-->
+      <MoveSpeed>5</MoveSpeed>                                                    <!--移動速度-->
+      <ArmorRating_Blunt>0.80</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0.68</ArmorRating_Sharp>
-      <ArmorRating_Heat>1.5</ArmorRating_Heat>
+      <ArmorRating_Heat>1.0</ArmorRating_Heat>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>        <!--帶寬消耗-->
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">3</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -284,7 +284,7 @@
     <description>A cost-saving mass-produced variant specialized for urban combat scenarios, packed with assault armor and high mobility, makes it a fierce unit in close quarters.</description>
     <statBases>
       <MoveSpeed>5</MoveSpeed>                                                    <!--移動速度-->
-      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>                                     <!--護甲-->
+      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
       <ArmorRating_Heat>1.2</ArmorRating_Heat>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>        <!--帶寬消耗-->

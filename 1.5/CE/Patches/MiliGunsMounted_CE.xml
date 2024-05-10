@@ -6,10 +6,9 @@
 		<mods>
 			<li>Combat Extended</li>
 		</mods>
-		<match Class="PatchOperationSequence">
+		<match Class="PatchOperationTest">
 		<operations>
-
-			
+            <success>Always</success>
             <li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="DMS_AutomatroidTurretGun"]/statBases</xpath>
 				<value>

@@ -6,7 +6,6 @@
     <kindDef>DMS_Mech_Sergeant</kindDef>
     <appearAfterTicks>720000</appearAfterTicks><!-- 2 years -->
   </BossDef>
-
   <BossgroupDef ParentName="BaseBossgroup">
     <defName>DMS_Sergeant</defName>
     <boss>DMS_Boss_Sergeant</boss>

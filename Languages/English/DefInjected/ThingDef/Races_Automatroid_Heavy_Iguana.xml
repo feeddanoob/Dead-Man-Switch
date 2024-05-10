@@ -13,9 +13,7 @@
   <DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>aim at desinated target</DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>
   <!-- EN: toggle turret to manually control mode to prevent unnecessary shooting. -->
   <DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>toggle turret to manually control mode to prevent unnecessary shooting.</DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
-  <!-- EN: flame thrower -->
-  <DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.ID>flame thrower</DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.ID>
-  <!-- EN: Mechanical Head -->
+<!-- EN: Mechanical Head -->
   <DMS_Mech_Gecko.tools.Mechanical_Head.label>Mechanical Head</DMS_Mech_Gecko.tools.Mechanical_Head.label>
   <!-- EN: Left Leg -->
   <DMS_Mech_Gecko.tools.Left_Leg.label>Left Leg</DMS_Mech_Gecko.tools.Left_Leg.label>
@@ -34,9 +32,7 @@
   <DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>aim at desinated target</DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>
   <!-- EN: toggle turret to manually control mode to prevent unnecessary shooting. -->
   <DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>toggle turret to manually control mode to prevent unnecessary shooting.</DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
-  <!-- EN: machine gun -->
-  <DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.ID>machine gun</DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.ID>
-  <!-- EN: Mechanical Head -->
+<!-- EN: Mechanical Head -->
   <DMS_Mech_Iguana.tools.Mechanical_Head.label>Mechanical Head</DMS_Mech_Iguana.tools.Mechanical_Head.label>
   <!-- EN: Left Leg -->
   <DMS_Mech_Iguana.tools.Left_Leg.label>Left Leg</DMS_Mech_Iguana.tools.Left_Leg.label>

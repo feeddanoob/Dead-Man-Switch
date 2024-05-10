@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace DMS
@@ -16,7 +17,26 @@ namespace DMS
         }
         public override void Notify_PawnPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {
-            base.Notify_PawnPostApplyDamage(dinfo, totalDamageDealt);
+            if (hitpoints > 0)
+            {
+                hitpoints -= (int)totalDamageDealt;
+                if (hitpoints < 0)
+                {
+                    base.Notify_PawnPostApplyDamage(dinfo, hitpoints);
+                    hitpoints = 0;
+                    Messages.Message("DMS_AddonBroken".Translate(), new LookTargets(parent.pawn.PositionHeld, parent.pawn.MapHeld), MessageTypeDefOf.NeutralEvent);
+                    parent.pawn.health.RemoveHediff(parent);
+                }
+            }
+            else
+            {
+                base.Notify_PawnPostApplyDamage(dinfo, totalDamageDealt);
+            }
+        }
+        public override void CompExposeData()
+        {
+            base.CompExposeData();
+            Scribe_Values.Look(ref this.hitpoints, "hitpoints");
         }
     }
     public class HediffCompProperties_ProtectiveShield : HediffCompProperties

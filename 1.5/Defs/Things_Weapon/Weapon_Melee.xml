@@ -16,7 +16,7 @@
 			<li>DMS_MeleeWeapon</li>
 		</weaponTags>
 		<statBases>
-			<WorkToMake>30000</WorkToMake>
+			<WorkToMake>3000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>
@@ -105,7 +105,7 @@
 			<li>DMS_MeleeWeapon</li>
 		</weaponTags>
 		<statBases>
-			<WorkToMake>43000</WorkToMake>
+			<WorkToMake>3000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <DMS_WeaponNotSupported>机体系统不支持</DMS_WeaponNotSupported>
+  <DMS_FrameNotSupported>机体框架不支持</DMS_FrameNotSupported>
+  <DMS_WillTerminateTheBetrayedUnit>失能机关:待发状态</DMS_WillTerminateTheBetrayedUnit>
+  <DMS_AutomatroidDisconnected>为确保负载安全已自动断连</DMS_AutomatroidDisconnected>
+  <CommandCallRoyalAid_NoMechanitorAvaliable>需要机械师</CommandCallRoyalAid_NoMechanitorAvaliable>
+  <DMS_PawnIsNotMechanitor>必须是机械师</DMS_PawnIsNotMechanitor>
+  <DMS_BandwidthSupported>轨道下行带宽建立了与机械师的连接协议</DMS_BandwidthSupported>
+  <DMS_MountedWeapon>挂载型武器</DMS_MountedWeapon>
+  <DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>此挂载型武器只能由下列机械体或装备衣物与仿生后所使用</DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>
+  <DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>此武器也可以由下列机械体或装备衣物与仿生后所使用</DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>
+  
+</LanguageData>

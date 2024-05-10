@@ -256,7 +256,7 @@
 			</li>
 <!--==========-->
 <!--FT HESH-->
-			<li MayRequire="CETeam.CombatExtended">
+			<li MayRequire="CETeam.CombatExtended,Aoba.Fortress.Industrial">
 			<damageDef>HESH_ShockWave</damageDef>
 			<multiplier>0.25</multiplier>
 		  </li>

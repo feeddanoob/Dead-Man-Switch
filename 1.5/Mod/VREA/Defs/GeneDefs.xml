@@ -79,9 +79,20 @@
 			<li>Body</li>
 			<li>Fur</li>
 		</exclusionTags>
-		<fur>DMS_robotSkin</fur>
 		<skinIsHairColor>false</skinIsHairColor>
 		<tattoosVisible>false</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>Fur</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		<fur>DMS_robotSkin</fur>
 		<hairTagFilter>
 			<whitelist>true</whitelist>
 			<tags>

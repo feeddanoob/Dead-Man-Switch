@@ -2,11 +2,11 @@
 <LanguageData>
   
   <!-- EN: install nutrition port -->
-  <DMS_InstallNutrientPort.label>安装营养埠</DMS_InstallNutrientPort.label>
+  <DMS_InstallNutrientPort.label>安装营养接口</DMS_InstallNutrientPort.label>
   <!-- EN: Install a nutrition port. -->
-  <DMS_InstallNutrientPort.description>安装营养埠</DMS_InstallNutrientPort.description>
+  <DMS_InstallNutrientPort.description>安装营养接口</DMS_InstallNutrientPort.description>
   <!-- EN: Installing nutrition port. -->
-  <DMS_InstallNutrientPort.jobString>安装营养埠中</DMS_InstallNutrientPort.jobString>
+  <DMS_InstallNutrientPort.jobString>安装营养接口中</DMS_InstallNutrientPort.jobString>
   
   <!-- EN: install mechaneural arm -->
   <DMS_InstallProstheticArm.label>安装机械臂</DMS_InstallProstheticArm.label>

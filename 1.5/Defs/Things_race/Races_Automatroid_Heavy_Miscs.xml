@@ -8,7 +8,7 @@
     <description>An prototype design on testing the feasibility of humanoid automatroid, it's designed to equip with heavy weapon.</description>
     <statBases>
       <MoveSpeed>3</MoveSpeed>                                                              <!--移動速度-->
-      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>                                            <!--護甲-->
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>                                            <!--護甲-->
       <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
       <ArmorRating_Heat>1.2</ArmorRating_Heat>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>                 <!--帶寬消耗-->

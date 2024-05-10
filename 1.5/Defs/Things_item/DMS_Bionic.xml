@@ -19,6 +19,7 @@
     </tradeTags>
     <techHediffsTags>
       <li>DMS_BM_Bionic</li>
+      <li>Ghoul</li>
     </techHediffsTags>
     <statBases>
       <WorkToMake>20000</WorkToMake>
@@ -39,6 +40,11 @@
       <displayPriority>300</displayPriority>
     </recipeMaker>
   </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase" Name="DMS_SurgeryInstallBase" Abstract="True">
+    <surgeryOutcomeEffect IsNull="True" /> <!-- Always succeeds -->
+  </RecipeDef>
 
   <!-- DMS_ProstheticEye -->
   <ThingDef ParentName="DMS_BioMechBionicBase">
@@ -112,7 +118,7 @@
     </comps>
   </HediffDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="DMS_SurgeryInstallBase">
     <defName>DMS_InstallProstheticEye</defName>
     <label>install mechaneural visual sensor</label>
     <description>Install a neural-mechanical visual sensor.</description>
@@ -209,7 +215,7 @@
     </statBases>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="DMS_SurgeryInstallBase">
     <defName>DMS_InstallProstheticArm</defName>
     <label>install mechaneural arm</label>
     <description>Install a neural-mechanical arm.</description>
@@ -292,7 +298,7 @@
     </statBases>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="DMS_SurgeryInstallBase">
     <defName>DMS_InstallProstheticLeg</defName>
     <label>install mechaneural leg</label>
     <description>Install a neural-mechanical leg.</description>
@@ -679,7 +685,7 @@
     </recipeMaker>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="DMS_SurgeryInstallBase">
     <defName>DMS_InstallNutrientPort</defName>
     <label>install nutrition port</label>
     <description>Install a nutrition port.</description>
@@ -775,7 +781,7 @@
     </statBases>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="DMS_SurgeryInstallBase">
     <defName>DMS_InstallSyntheticArm</defName>
     <label>install biosynthetic arm</label>
     <description>Install a biosynthetic arm.</description>
@@ -858,7 +864,7 @@
     </statBases>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="DMS_SurgeryInstallBase">
     <defName>DMS_InstallSyntheticLeg</defName>
     <label>install biosynthetic leg</label>
     <description>Install a biosynthetic leg.</description>

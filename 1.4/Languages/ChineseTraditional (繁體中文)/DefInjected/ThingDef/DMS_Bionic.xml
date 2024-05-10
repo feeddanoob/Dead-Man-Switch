@@ -2,7 +2,7 @@
 <LanguageData>
   
   <!-- EN: nutrition port -->
-  <DMS_NutrientPort.label>營養埠</DMS_NutrientPort.label>
+  <DMS_NutrientPort.label>營養接口</DMS_NutrientPort.label>
   <!-- EN: A total overhaul of the patient's digestive system, replacing it with a fueling port and nutrient storage. -->
   <DMS_NutrientPort.description>對患者的消化系統進行徹底檢修，用加油口和營養儲存器取而代之。</DMS_NutrientPort.description>
   

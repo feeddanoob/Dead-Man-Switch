@@ -75,7 +75,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingCategories>
-			<li>Apparel</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<statBases>
 			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
@@ -263,8 +263,8 @@
 			<li>DMS_Armor</li>
 		</tradeTags>
 	</ThingDef>
+	
 	<!-- 戰術裝備 -->
-
 	<ThingDef ParentName="DMS_ArmorHelmetMakeableBase">
 		<defName>DMS_Apparel_TacticalHelmet</defName>
 		<label>tactical helmet</label>

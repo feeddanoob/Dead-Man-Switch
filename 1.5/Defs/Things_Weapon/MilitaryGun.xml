@@ -665,7 +665,7 @@
 		<label>full-power rifle bullet</label>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>12</damageAmountBase>
+			<damageAmountBase>16</damageAmountBase>
 			<armorPenetrationBase>0.18</armorPenetrationBase>	
 			<stoppingPower>2</stoppingPower>
 			<speed>80</speed>

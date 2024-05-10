@@ -8,8 +8,8 @@
     <!-- <size>(2,2)</size> -->
     <statBases>
       <MoveSpeed>4</MoveSpeed>
-      <ArmorRating_Sharp>0.9</ArmorRating_Sharp><!--銳抗-->
-      <ArmorRating_Blunt>0.75</ArmorRating_Blunt><!--鈍抗-->
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp><!--銳抗-->
+      <ArmorRating_Blunt>0.85</ArmorRating_Blunt><!--鈍抗-->
       <ArmorRating_Heat>2</ArmorRating_Heat>  <!--能抗-->
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">10</BandwidthCost>        <!--帶寬消耗-->
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->

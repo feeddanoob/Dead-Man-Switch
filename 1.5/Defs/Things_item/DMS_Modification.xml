@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>DMS_CeramicsPlating</defName>
+    <label>ceramic plates</label>
+    <description>A set of ceramic plates that can mount on mechs external shell to provide additional protection, But once damaged, it can only be replaced with a new one.</description>
+    <graphicData>
+      <texPath>Things/Item/Serum/SerumGhoulResurrection</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <thingClass>ThingWithComps</thingClass>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>60</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <tradeTags>
+      <li>Serum</li>
+    </tradeTags>
+    <tradeability>Sellable</tradeability>
+    <stackLimit>10</stackLimit>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <costList>
+      <DMS_Ceramics>40</DMS_Ceramics>
+    </costList>
+    <recipeMaker>
+      <workAmount>840</workAmount>
+      <researchPrerequisite>DMS_Material</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>DMS_TableMachinePrinter</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>DMS.CompTargetable_TargetOnMech</compClass>
+        <warmupEffecter>Repair</warmupEffecter>
+      </li>
+      <li Class="CompProperties_UseEffectAddHediff">
+        <hediffDef>MindNumbSerum</hediffDef>
+        <allowRepeatedUse>true</allowRepeatedUse>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>	
