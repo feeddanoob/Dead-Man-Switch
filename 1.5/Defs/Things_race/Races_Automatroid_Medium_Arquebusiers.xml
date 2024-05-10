@@ -90,6 +90,7 @@
     </weaponTags>
     <abilities>
       <li>DMS_RepairMode</li>
+      <li>DMS_BurstSprint</li>
     </abilities>
   </PawnKindDef>
 
@@ -224,7 +225,6 @@
       <li>A_AR_LongRifle</li>
     </weaponTags>
     <abilities>
-      <!-- <li MayRequire="ceteam.combatextended">DMS_PioneerSpotter</li> -->
     </abilities>
   </PawnKindDef>
 

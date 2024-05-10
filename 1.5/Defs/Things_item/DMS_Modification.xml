@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-  <ThingDef ParentName="ResourceBase">
+  <!-- 開發中 -->
+  <ThingDef ParentName="ResourceBase" Abstract="True">
     <defName>DMS_CeramicsPlating</defName>
     <label>ceramic plates</label>
     <description>A set of ceramic plates that can mount on mechs external shell to provide additional protection, But once damaged, it can only be replaced with a new one.</description>
     <graphicData>
-      <texPath>Things/Item/Serum/SerumGhoulResurrection</texPath>
+      <texPath>Things/Item/DMS_CeramicsPlating</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.8</drawSize>
     </graphicData>
@@ -55,4 +56,46 @@
       </li>
     </comps>
   </ThingDef>
+
+  <HediffDef Abstract="True">
+    <defName>DMS_CeramicsPlating</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>ceramic plates</label>
+    <description>todo.</description>
+    <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+    <minSeverity>0.001</minSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="DMS.HediffCompProperties_ProtectiveShield">
+        <hitpoints>120</hitpoints>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>fall off</label>
+        <minSeverity>0.2</minSeverity>
+      </li>
+      <li>
+        <label>damaged</label>
+        <minSeverity>0.5</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>intact</label>
+        <minSeverity>0.9</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
 </Defs>	

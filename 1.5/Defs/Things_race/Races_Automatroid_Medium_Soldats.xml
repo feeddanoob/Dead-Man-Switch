@@ -235,6 +235,9 @@
       <li>GrenadeFlame</li>                                                                 
     </weaponTags>
     <weaponMoney>570~3000</weaponMoney>
+    <abilities>
+      <li>DMS_FlashLauncher</li>
+    </abilities>
   </PawnKindDef>
 
   <!-- DMS_Mech_Kanonier 士兵砲兵型 : 能夠使用末日火箭等各式大威力武器 -->

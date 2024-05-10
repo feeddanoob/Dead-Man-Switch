@@ -4,7 +4,7 @@
 	<AbilityDef>
 		<defName>DMS_BurstSprint</defName>
 		<label>burst sprint</label>
-		<description>By releasing the mechanical energy accumulated in storage unit of the legs, Pioneer can maintain amazing sprint speeds in a short period of time</description>
+		<description>By releasing the mechanical energy accumulated in storage unit of the legs, Pioneer can maintain amazing sprint speeds in a short period of time.</description>
 		<iconPath>UI/Ability/Burst</iconPath>
 		<cooldownTicksRange>1800</cooldownTicksRange> <!-- 30 seconds -->
 		<hostile>false</hostile>
@@ -22,7 +22,6 @@
 		  <drawAimPie>false</drawAimPie>
 		  <requireLineOfSight>false</requireLineOfSight>
 		  <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-		  <soundCast>Pawn_Ghoul_Frenzy</soundCast>
 		  <targetable>false</targetable>
 		  <targetParams>
 			<canTargetSelf>true</canTargetSelf>
@@ -42,7 +41,7 @@
 		<defName>DMS_BurstSprint</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>burst sprint</label>
-		<description>.</description>
+		<description>By releasing the mechanical energy accumulated in storage unit of the legs, Pioneer can maintain amazing sprint speeds in a short period of time.</description>
 		<everCurableByItem>false</everCurableByItem>
 		<stages>
 		  <li>
@@ -57,9 +56,6 @@
 		<comps>
 		  <li Class="HediffCompProperties_Disappears">
 			<showRemainingTime>true</showRemainingTime>
-		  </li>
-		  <li Class="HediffCompProperties_Effecter">
-			<stateEffecter>GhoulFrenzy</stateEffecter>
 		  </li>
 		</comps>
 	  </HediffDef>

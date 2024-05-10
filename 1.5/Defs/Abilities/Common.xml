@@ -4,6 +4,59 @@
 	<!-- 通用的技能，比如各種發射物 -->
 
 	<AbilityDef>
+		<defName>DMS_FlashLauncher</defName>
+		<label>flashbang barrage</label>
+		<description>launch an in-direct flashbang grenade strike to shock incoming enemies so the caster can safely retreat or let the ally take out the stunned enemies.</description>
+		<iconPath>UI/Ability/Grenade</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<cooldownTicksRange>6000~7200</cooldownTicksRange>
+		<charges>4</charges>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<verbProperties>
+			<defaultCooldownTime>5</defaultCooldownTime>
+			<verbClass>Verb_CastAbility</verbClass>
+			<onlyManualCast>false</onlyManualCast>
+			<range>24.9</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>Mortar_LaunchA</soundCast>
+			<requireLineOfSight>false</requireLineOfSight>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>DMS_Bullet_FlashBang</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>DMS_Bullet_FlashBang</defName>
+		<label>flashbang grenade</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>40</speed>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<explosionRadius>3.1</explosionRadius>
+			<ai_IsIncendiary>false</ai_IsIncendiary>
+			<arcHeightFactor>0.8</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+	</ThingDef>
+
+	<AbilityDef>
 		<defName>DMS_SmokeLauncher</defName>
 		<label>particle smoke barrage</label>
 		<description>launch an anti-charged weapon particle smoke emitter to interfere with incoming charged ammunition.</description>
@@ -106,7 +159,7 @@
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<label>initialize self-repair mode</label>
-			<drawAimPie>true</drawAimPie>
+			<drawAimPie>false</drawAimPie>
 			<warmupTime>5</warmupTime>
 			<violent>false</violent>
 			<targetable>false</targetable>

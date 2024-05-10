@@ -2,7 +2,6 @@
 <Patch>
   <Operation Class="PatchOperationFindMod">
     <mods>
-      <li>The Dead Man's Switch</li>
       <li>WVC - Work Modes</li>
     </mods>
     <match Class="PatchOperationSequence">
@@ -11,8 +10,7 @@
           <settingName>WVC_FindAndDestroy</settingName>
           <active Class="PatchOperationAdd">
             <xpath>
-              Defs/ThinkTreeDef[defName =
-              "DMS_Mechanoid"]/thinkRoot/subNodes/li[@Class="ThinkNode_ConditionalPlayerControlledMech"]/subNodes/li[@Class="ThinkNode_ConditionalNotFormingCaravan"]/subNodes</xpath>
+              Defs/ThinkTreeDef[defName ="DMS_Mechanoid"]/thinkRoot/subNodes/li[@Class="ThinkNode_ConditionalPlayerControlledMech"]/subNodes/li[@Class="ThinkNode_ConditionalNotFormingCaravan"]/subNodes</xpath>
             <value>
               <li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
                 <workMode>WVC_FindAndDestroy</workMode>
