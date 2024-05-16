@@ -2,7 +2,7 @@
 
 <Defs>
   <!-- 開發中 -->
-  <ThingDef ParentName="ResourceBase" Abstract="True">
+  <ThingDef ParentName="ResourceBase">
     <defName>DMS_CeramicsPlating</defName>
     <label>ceramic plates</label>
     <description>A set of ceramic plates that can mount on mechs external shell to provide additional protection, But once damaged, it can only be replaced with a new one.</description>
@@ -51,13 +51,13 @@
         <warmupEffecter>Repair</warmupEffecter>
       </li>
       <li Class="CompProperties_UseEffectAddHediff">
-        <hediffDef>MindNumbSerum</hediffDef>
+        <hediffDef>DMS_CeramicsPlating</hediffDef>
         <allowRepeatedUse>true</allowRepeatedUse>
       </li>
     </comps>
   </ThingDef>
 
-  <HediffDef Abstract="True">
+  <HediffDef>
     <defName>DMS_CeramicsPlating</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>ceramic plates</label>

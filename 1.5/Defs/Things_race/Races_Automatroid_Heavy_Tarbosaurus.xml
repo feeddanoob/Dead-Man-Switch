@@ -8,7 +8,7 @@
     <!-- <size>(2,2)</size> -->
     <statBases>
       <MoveSpeed>4</MoveSpeed>
-      <ArmorRating_Sharp>1.2</ArmorRating_Sharp><!--銳抗-->
+      <ArmorRating_Sharp>1.4</ArmorRating_Sharp><!--銳抗-->
       <ArmorRating_Blunt>0.85</ArmorRating_Blunt><!--鈍抗-->
       <ArmorRating_Heat>2</ArmorRating_Heat>  <!--能抗-->
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">10</BandwidthCost>        <!--帶寬消耗-->

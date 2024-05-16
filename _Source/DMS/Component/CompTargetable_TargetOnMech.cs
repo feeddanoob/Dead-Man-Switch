@@ -18,12 +18,8 @@ namespace DMS
             return new TargetingParameters
             {
                 canTargetPawns = true,
-                canTargetHumans = false,
-                canTargetAnimals = false,
-                onlyTargetControlledPawns = true,
                 canTargetMechs = true,
-                canTargetMutants = false,
-                canTargetBuildings = false
+                onlyRepairableMechs = true,
             };
         }
     }
