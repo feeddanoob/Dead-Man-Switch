@@ -62,8 +62,11 @@
   <ItemGroup>
     <Compile Include="Ability\CompAbilityEffect_DirectionalExplosion.cs" />
     <Compile Include="Ability\CompAbilityEffect_SelfRepairMode.cs" />
-    <Compile Include="Component\CompTargetable_TargetOnMech.cs" />
-    <Compile Include="Hediff\HediffComp_ProtectiveShield.cs" />
+    <Compile Include="Modification\CompTargetable_AddHediffOnTarget.cs" />
+    <Compile Include="Modification\DMS_JobDefOf.cs" />
+    <Compile Include="Modification\Gizmo_AttachmentShieldStatus.cs" />
+    <Compile Include="Modification\JobDriver_ApplyModification.cs" />
+    <Compile Include="Modification\HediffComp_ProtectiveShield.cs" />
     <Compile Include="Hediff\HediffComp_SelfHeal.cs" />
     <Compile Include="Patch\Patch_ApplyToPawns.cs" />
     <Compile Include="Patch\Patch_CanBeInfected.cs" />
@@ -132,7 +135,16 @@
     <Compile Include="Utility\WeaponTagUtil.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Modification\Todo.txt" />
     <Content Include="MultiTurrets\Todo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Krafs.Publicizer">
+      <Version>2.2.1</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <Publicize Include="Assembly-CSharp:RimWorld.CompTargetable.selectedTarget" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

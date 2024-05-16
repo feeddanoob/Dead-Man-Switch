@@ -5,10 +5,10 @@ using Verse;
 
 namespace DMS
 {
+    
     public class HediffComp_GiveHediffsInRangeMech : HediffComp
     {
         private Mote mote;
-
         public HediffCompProperties_GiveHediffsInRange Props => (HediffCompProperties_GiveHediffsInRange)props;
 
         public override void CompPostTick(ref float severityAdjustment)

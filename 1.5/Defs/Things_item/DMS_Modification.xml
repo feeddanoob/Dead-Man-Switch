@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
+
+  <JobDef>
+    <defName>DMS_Modification</defName>
+    <driverClass>DMS.JobDriver_ApplyModification</driverClass>
+    <reportString>modifing TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
   <!-- 開發中 -->
   <ThingDef ParentName="ResourceBase">
     <defName>DMS_CeramicsPlating</defName>
@@ -43,16 +51,12 @@
       <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>
         <useLabel>Use {0_label}</useLabel>
-        <useDuration>0</useDuration>
+        <useDuration>100</useDuration>
         <showUseGizmo>true</showUseGizmo>
       </li>
-      <li Class="CompProperties_Targetable">
-        <compClass>DMS.CompTargetable_TargetOnMech</compClass>
-        <warmupEffecter>Repair</warmupEffecter>
-      </li>
-      <li Class="CompProperties_UseEffectAddHediff">
+      <li Class="DMS.CompProperties_AddHediffOnTarget">
+        <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
         <hediffDef>DMS_CeramicsPlating</hediffDef>
-        <allowRepeatedUse>true</allowRepeatedUse>
       </li>
     </comps>
   </ThingDef>
@@ -68,15 +72,15 @@
     <comps>
       <li Class="DMS.HediffCompProperties_ProtectiveShield">
         <hitpoints>120</hitpoints>
+        <filthOnDamaged>Filth_Ash</filthOnDamaged>
+        <effectOnDamaged>BulletShieldGenerator_Reactivate</effectOnDamaged>
       </li>
     </comps>
     <stages>
       <li>
-        <label>fall off</label>
         <minSeverity>0.2</minSeverity>
       </li>
       <li>
-        <label>damaged</label>
         <minSeverity>0.5</minSeverity>
         <capMods>
           <li>
@@ -86,7 +90,6 @@
         </capMods>
       </li>
       <li>
-        <label>intact</label>
         <minSeverity>0.9</minSeverity>
         <capMods>
           <li>
