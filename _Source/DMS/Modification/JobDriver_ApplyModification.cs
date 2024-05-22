@@ -23,7 +23,6 @@ namespace DMS
             }
             return false;
         }
-        private Effecter effecter;
         protected override IEnumerable<Toil> MakeNewToils()
         {
             yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.Touch).FailOnDespawnedOrNull(TargetIndex.B).FailOnDespawnedOrNull(TargetIndex.A);
@@ -32,14 +31,7 @@ namespace DMS
             Toil toil = Toils_General.WaitWith(TargetIndex.A, DurationTicks,true,true);
             toil.FailOnDespawnedOrNull(TargetIndex.A);
             toil.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
-            toil.tickAction = delegate
-            {
-                if (effecter == null)
-                {
-                    effecter = (EffecterDefOf.MechRepairing).Spawn(Item, Item.Map);
-                }
-                effecter?.EffectTick(Item, Item);
-            };
+            toil.WithEffect(EffecterDefOf.MechRepairing, TargetIndex.A);
             yield return toil;
             yield return Toils_General.Do(ApplyModification);
         }

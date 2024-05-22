@@ -147,6 +147,7 @@
     </lifeStages>
     <weaponTags>
       <li>DMS_MechWeaponUltraHeavy</li>
+      <li>DMS_Bipedal_HeavyGun</li>
     </weaponTags>
     <weaponMoney>9999~9999</weaponMoney>
     <abilities>
