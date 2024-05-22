@@ -78,9 +78,11 @@
     </comps>
     <stages>
       <li>
+        <label>fall off</label>
         <minSeverity>0.2</minSeverity>
       </li>
       <li>
+        <label>damaged</label>
         <minSeverity>0.5</minSeverity>
         <capMods>
           <li>
@@ -90,6 +92,7 @@
         </capMods>
       </li>
       <li>
+        <label>intact</label>
         <minSeverity>0.9</minSeverity>
         <capMods>
           <li>
