@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using Verse;
 using Verse.AI;
 
@@ -37,9 +38,18 @@ namespace DMS
     public class HediffComp_ProtectiveShield : HediffComp_PreApplyDamage
     {
         public float DurablePercent => Hitpoints / MaxHitpoints;
-        public int MaxHitpoints => (int)(Props.hitpoints * parent.pawn.BodySize);
-        public float Hitpoints => hitpoints;
-        private int hitpoints;
+        public float MaxHitpoints => maxHitpoints==0?maxHitpoints = (int)(Props.hitpoints * parent.pawn.BodySize):maxHitpoints;
+        public float Hitpoints
+        {
+            get { return hitpoints; }
+            set {
+                if(value>MaxHitpoints) value = MaxHitpoints;
+                parent.Severity = DurablePercent;
+                hitpoints = value;
+            }
+        }
+        private int maxHitpoints;
+        private float hitpoints;
         public HediffCompProperties_ProtectiveShield Props
         {
             get
@@ -50,29 +60,29 @@ namespace DMS
         public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {
             base.PreApplyDamage(ref dinfo, out absorbed);
-            if (hitpoints > 0)
+            if (Hitpoints > 0)
             {
                 var dmg = dinfo.Amount;
-                var dmgReduced = dmg - hitpoints;
+                var dmgReduced = dmg - Hitpoints;
                 if (dmgReduced <= 0)
                 {
                     absorbed = true;
                     dmgReduced = 0;
                 }
                 dinfo.SetAmount(dmgReduced);
-                Props.effectOnDamaged?.SpawnMaintained(parent.pawn.Position, parent.pawn.MapHeld);
-                hitpoints -= (int)dmg;
-                if (hitpoints < 0)
-                {
-                    hitpoints = 0;
-                    Messages.Message("DMS_AddonBroken".Translate(), new LookTargets(parent.pawn.PositionHeld, parent.pawn.MapHeld), MessageTypeDefOf.NeutralEvent);
-                    parent.pawn.health.RemoveHediff(parent);
-                }
+                Hitpoints -= dmg;
+                Props.effectOnDamaged?.SpawnMaintained(parent.pawn.Position, parent.pawn.MapHeld,0.2f);
+                FilthMaker.TryMakeFilth(parent.pawn.Position, parent.pawn.MapHeld, Props.filthOnDamaged);
+
             }
-            else
+            
+            if (Hitpoints <=0)
             {
+                Hitpoints = 0;
+                Messages.Message("DMS_AddonBroken".Translate(), new LookTargets(parent.pawn.PositionHeld, parent.pawn.MapHeld), MessageTypeDefOf.NeutralEvent);
                 parent.pawn.health.RemoveHediff(parent);
             }
+
         }
         public override IEnumerable<Gizmo> CompGetGizmos()
         {
@@ -103,21 +113,18 @@ namespace DMS
         public override void CompExposeData()
         {
             base.CompExposeData();
-            Scribe_Values.Look(ref this.hitpoints, "hitpoints");
+            Scribe_Values.Look(ref hitpoints, "hitpoints");
         }
-        public void AddHitpoints(int amount)
+        public override void CompPostMake()
         {
-            this.hitpoints += amount;
-        }
-        public override void CompPostPostAdd(DamageInfo? dinfo)
-        {
-            base.CompPostPostAdd(dinfo);
+            base.CompPostMake();
             hitpoints = Props.hitpoints;
         }
+
         public override void CompPostMerged(Hediff other)
         {
             base.CompPostMerged(other);
-            this.hitpoints += other.TryGetComp<HediffComp_ProtectiveShield>().hitpoints;
+            Hitpoints += other.TryGetComp<HediffComp_ProtectiveShield>().Hitpoints;
         }
     }
     public class HediffCompProperties_ProtectiveShield : HediffCompProperties
@@ -127,7 +134,7 @@ namespace DMS
         public int hitpoints;
         public HediffCompProperties_ProtectiveShield()
         {
-            this.compClass = typeof(HediffComp_ProtectiveShield);
+            compClass = typeof(HediffComp_ProtectiveShield);
         }
     }
 
@@ -145,9 +152,9 @@ namespace DMS
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Collections.Look(ref hediffs, "hediffs", LookMode.Reference);
+            //Scribe_Collections.Look(ref hediffs, "hediffs", LookMode.Reference);
             
         }
-        public List<HediffComp_PreApplyDamage> hediffs;
+        //public List<HediffComp_PreApplyDamage> hediffs;
     }
 }

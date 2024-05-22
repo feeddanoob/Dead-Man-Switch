@@ -33,7 +33,7 @@ namespace DMS
             Widgets.Label(rect3, shield.parent.LabelCap);
             Rect rect4 = rect2;
             rect4.yMin = rect2.y + rect2.height / 2f;
-            float fillPercent = Mathf.Max(1f, shield.Hitpoints / shield.MaxHitpoints);
+            float fillPercent = Mathf.Min(1f, shield.DurablePercent);
             Widgets.FillableBar(rect4, fillPercent, FullShieldBarTex, EmptyShieldBarTex, doBorder: false);
             Text.Font = GameFont.Small;
             Text.Anchor = TextAnchor.MiddleCenter;
