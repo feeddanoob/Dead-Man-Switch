@@ -104,7 +104,6 @@
     <label>lady</label>
     <race>DMS_Automatroid_lady</race>
     <combatPower>150</combatPower>
-    <allowInMechClusters>false</allowInMechClusters>
     <lifeStages>
       <li>
         <bodyGraphicData>

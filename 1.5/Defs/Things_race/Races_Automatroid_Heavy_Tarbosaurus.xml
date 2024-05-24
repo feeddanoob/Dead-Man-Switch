@@ -221,7 +221,7 @@
     <isFighter>true</isFighter>
     <combatPower>300</combatPower>                                               <!--威脅點數-->
     <maxPerGroup>2</maxPerGroup>                                                 <!--單個集群內的數量-->
-    <allowInMechClusters>false</allowInMechClusters>                             <!--是否出現在機械集群-->
+    <isBoss>true</isBoss>
     <lifeStages>                                                                 <!--身體圖片-->
       <li>
         <bodyGraphicData>

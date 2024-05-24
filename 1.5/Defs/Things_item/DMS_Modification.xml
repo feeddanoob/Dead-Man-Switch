@@ -72,8 +72,8 @@
     <comps>
       <li Class="DMS.HediffCompProperties_ProtectiveShield">
         <hitpoints>120</hitpoints>
-        <filthOnDamaged>Filth_Ash</filthOnDamaged>
-        <effectOnDamaged>BulletShieldGenerator_Reactivate</effectOnDamaged>
+        <filthOnDamaged>DMS_BrokenCeramics</filthOnDamaged>
+        <effectOnDamaged>Deflect_Metal</effectOnDamaged>
       </li>
     </comps>
     <stages>
@@ -103,5 +103,24 @@
       </li>
     </stages>
   </HediffDef>
+
+  <ThingDef ParentName="BaseFilth">
+    <defName>DMS_BrokenCeramics</defName>
+    <label>broken ceramics</label>
+    <graphicData>
+      <texPath>Things/Filth/Trash</texPath>
+      <graphicClass>Graphic_Cluster</graphicClass>
+    </graphicData>
+    <filth>
+      <placementMask>
+        <li>Terrain</li>
+        <li>Unnatural</li>
+      </placementMask>
+      <disappearsInDays>45~50</disappearsInDays>
+      <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Scattered</cleaningSound>
+    </filth>
+  </ThingDef>
 
 </Defs>	

@@ -113,10 +113,10 @@
     <defName>DMS_Mech_Geochelone</defName>
     <label>geochelone</label>
     <race>DMS_Mech_Geochelone</race>
-    <isFighter>true</isFighter>
     <combatPower>500</combatPower>
     <maxPerGroup>2</maxPerGroup>
     <destroyGearOnDrop>true</destroyGearOnDrop>
+    <isBoss>true</isBoss>
     <abilities>
       <li>DMS_SmokeLauncher</li>
       <li>DMS_RepairMode</li>
@@ -202,9 +202,10 @@
     <defName>DMS_Mech_Caretta</defName>
     <label>caretta</label>
     <race>DMS_Mech_Caretta</race>
-    <isFighter>true</isFighter>
     <combatPower>250</combatPower>
     <maxPerGroup>4</maxPerGroup>
+    <isBoss>true</isBoss>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
     <abilities>
       <li>DMS_RepairMode</li>
     </abilities>
@@ -228,7 +229,6 @@
     </lifeStages>
     <weaponTags/>
     <weaponMoney>5000~9999</weaponMoney>
-    <destroyGearOnDrop>true</destroyGearOnDrop>
   </PawnKindDef>
 
   <!-- Killdozer -->
@@ -291,10 +291,10 @@
     <defName>DMS_Mech_Killdozer</defName>
     <label>killdozer</label>
     <race>DMS_Mech_Killdozer</race>
-    <isFighter>true</isFighter>
+    <isBoss>true</isBoss>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
     <combatPower>250</combatPower>
     <maxPerGroup>4</maxPerGroup>
-    <allowInMechClusters>false</allowInMechClusters>
     <abilities>
       <li>DMS_RepairMode</li>
     </abilities>
@@ -320,6 +320,5 @@
     </lifeStages>
     <weaponTags/>
     <weaponMoney>9999~9999</weaponMoney>
-    <destroyGearOnDrop>true</destroyGearOnDrop>
   </PawnKindDef>
 </Defs>

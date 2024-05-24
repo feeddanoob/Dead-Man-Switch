@@ -49,6 +49,7 @@
 			<canTargetPawns>true</canTargetPawns>
 			<canTargetAnimals>true</canTargetAnimals>
 			<canTargetHumans>true</canTargetHumans>
+			<canTargetMutants>true</canTargetMutants>
 			<canTargetMechs>false</canTargetMechs>
 		</targetingParameters>
 		<hediff>DMS_InfrasoundWaveBuff</hediff>

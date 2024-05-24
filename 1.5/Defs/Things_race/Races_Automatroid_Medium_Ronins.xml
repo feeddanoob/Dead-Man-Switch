@@ -115,6 +115,7 @@
           <li>PLA_Shotgun</li>
           <li>PLA_SMG</li>
           <li>PLA_Pistol</li>
+          <li>Flamethrower</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -127,10 +128,8 @@
     <defName>DMS_Mech_Siegebreaker</defName>
     <label>siegebreaker</label>
     <race>DMS_Mech_Siegebreaker</race>
-    <isFighter>true</isFighter>
     <combatPower>200</combatPower>
     <maxPerGroup>10</maxPerGroup>
-    <allowInMechClusters>false</allowInMechClusters>
     <lifeStages>                                                                 <!--身體圖片-->
       <li>
         <bodyGraphicData>
@@ -195,6 +194,7 @@
           <li>PLA_Shotgun</li>
           <li>PLA_SMG</li>
           <li>PLA_Pistol</li>
+          <li>Flamethrower</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>

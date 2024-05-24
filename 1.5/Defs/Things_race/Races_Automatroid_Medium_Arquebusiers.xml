@@ -6,7 +6,7 @@
     <statBases>
       <MoveSpeed>4.5</MoveSpeed>
       <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
-      <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+      <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
       <ArmorRating_Heat>1.5</ArmorRating_Heat>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost> 
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
@@ -39,6 +39,7 @@
           <li>A_MG_Heavy</li>
           <li>ElephantGun</li>
           <li>SniperRifle</li>
+          <li>AssaultRifle</li>
           <li>PLA_AssaultRifle</li>
           <li>PLA_Sniper</li>
           <li>PLA_DMR</li>
@@ -113,6 +114,7 @@
           <li>A_DMR_LongRifle</li>
           <li>A_AR_LongRifle</li>
           <li>SniperRifle</li>
+          <li>AssaultRifle</li>
           <li>PLA_AssaultRifle</li>
           <li>PLA_DMR</li>
           <li>PLA_Pistol</li>
@@ -172,12 +174,13 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>SimpleGun</li>
+          <li>IndustrialGunAdvanced</li>
           <li>DMS_MechWeaponLight</li>
           <li>A_AR_LongRifle</li>
-          <li>IndustrialGunAdvanced</li>
           <li>Simple_LongRange</li>
           <li>A_DMR_LongRifle</li>
           <li>ElephantGun</li>
+          <li>AssaultRifle</li>
           <li>PLA_AssaultRifle</li>
           <li>PLA_Shotgun</li>
           <li>PLA_SMG</li>
@@ -241,12 +244,13 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>SimpleGun</li>
+          <li>IndustrialGunAdvanced</li>
           <li>DMS_MechWeaponLight</li>
           <li>SniperRifle</li>
           <li>A_SC_LongRifle</li>
           <li>A_SR_LongRifle</li>
           <li>A_DMR_LongRifle</li>
-          <li>IndustrialGunAdvanced</li>
+          <li>AssaultRifle</li>
           <li>A_SR_GrenadeLauncher</li>
           <li>PLA_AssaultRifle</li>
           <li>PLA_GrenadeLauncher</li>

@@ -266,17 +266,15 @@
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
           <li>DMS_Flameblaster</li>
+          <li>Revolver</li>
+          <li>Autopistol</li>
           <li>PLA_Pistol</li>
+          <li>Flamethrower</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
-        <BypassUsableWeapons>
-          <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
-          <li MayRequire="vanillaexpanded.vwehw">VWE_Gun_UraniumSlugRifle</li><!-- 重武器拓展鈾彈槍 -->
-          <li MayRequire="oskarpotocki.vfe.pirates">VFEP_WarcasketGun_UraniumSlugRifle</li><!-- 戰棺拓展鈾彈槍 -->
-        </BypassUsableWeapons>
       </li>
     </modExtensions>
   </ThingDef>

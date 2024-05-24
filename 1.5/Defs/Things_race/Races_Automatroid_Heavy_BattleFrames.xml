@@ -110,7 +110,7 @@
       <MoveSpeed>3.8</MoveSpeed>
       <AimingDelayFactor>0.85</AimingDelayFactor>
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5</BandwidthCost>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>
     </statBases>
     <comps>
       <li Class="DMS.CompProperties_CommandRelay">
@@ -125,6 +125,7 @@
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
           <li>Autopistol</li>
+          <li>Revolver</li>
           <li>CE_SMG</li>
           <li>PLA_Shotgun</li>
           <li>PLA_SMG</li>
@@ -200,6 +201,8 @@
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
           <li>CE_OneHandedWeapon</li>
+          <li>Autopistol</li>
+          <li>Revolver</li>
           <li>PLA_Shotgun</li>
           <li>PLA_SMG</li>
           <li>PLA_Pistol</li>
@@ -284,6 +287,8 @@
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
           <li>PLA_Pistol</li>
+          <li>Autopistol</li>
+          <li>Revolver</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
