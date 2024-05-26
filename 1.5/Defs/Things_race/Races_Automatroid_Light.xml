@@ -97,7 +97,6 @@
         <BypassUsableWeapons>
           <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
           <li MayRequire="ceteam.combatextendedarmory">CE_ATFour</li>
-          <li MayRequire="ceteam.combatextendedarmory">Gun_BinocularsRadio</li>
         </BypassUsableWeapons>
       </li>
     </modExtensions>
@@ -272,6 +271,11 @@
           <li>Flamethrower</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
+        <BypassUsableWeapons>
+          <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
+          <li MayRequire="vanillaexpanded.vwehw">VWE_Gun_UraniumSlugRifle</li><!-- 重武器拓展鈾彈槍 -->
+          <li MayRequire="oskarpotocki.vfe.pirates">VFEP_WarcasketGun_UraniumSlugRifle</li><!-- 戰棺拓展鈾彈槍 -->
+        </BypassUsableWeapons>
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
