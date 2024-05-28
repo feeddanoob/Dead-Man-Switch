@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <AbilityDef>
+		<defName>DMS_TarbosaurusJump</defName>
+		<label>Tarbo jump</label>
+		<description>Tarbosaurus Long Jump</description>
+		<iconPath>UI/Abilities/MechLongJump</iconPath>
+		<cooldownTicksRange>600</cooldownTicksRange>
+		<charges>2</charges>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+		  <verbClass>DMS.Verb_CastAbilitySpecialJump</verbClass>
+		  <label>jump</label>
+		  <violent>false</violent>
+		  <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+		  <warmupTime>0.5</warmupTime>
+		  <minRange>5.9</minRange>
+		  <range>9.9</range>
+		  <requireLineOfSight>true</requireLineOfSight>
+		  <soundCast>Longjump_Jump</soundCast>
+		  <soundLanding>Longjump_Land</soundLanding>
+		  <flyWithCarriedThing>true</flyWithCarriedThing>
+		  <targetParams>
+			<canTargetLocations>true</canTargetLocations>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+		  </targetParams>
+		</verbProperties>
+        <modExtensions>
+            <li Class="DMS.ModExtensionJumper">
+                <pawnFlyer>TaborFlyer</pawnFlyer>
+            </li>
+        </modExtensions>
+	</AbilityDef>
+    <ThingDef ParentName="PawnFlyerBase">
+        <defName>TaborFlyer</defName>
+        <thingClass>DMS.PawnFlyerWithEffect</thingClass>
+        <modExtensions>
+            <li Class="DMS.ModExtensionJumper">
+                <compExplosive>
+                    <explosiveRadius>14.9</explosiveRadius>
+                    <explosiveDamageType>BombSuper</explosiveDamageType>
+                    <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+                    <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+                    <chanceToStartFire>0.22</chanceToStartFire>
+                    <damageFalloff>true</damageFalloff>
+                    <explosionEffect>GiantExplosion</explosionEffect>
+                    <explosionSound>Explosion_GiantBomb</explosionSound>
+                </compExplosive>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+</Defs>
