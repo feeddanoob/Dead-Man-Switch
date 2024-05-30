@@ -15,9 +15,9 @@
     <label>ceramic plates</label>
     <description>A set of ceramic plates that can mount on mechs external shell to provide additional protection, But once damaged, it can only be replaced with a new one.</description>
     <graphicData>
-      <texPath>Things/Item/DMS_CeramicsPlating</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.8</drawSize>
+      <texPath>Things/Resource/CeramicPlate</texPath>
+      <graphicClass>Graphic_Stackcount</graphicClass>
+      <drawSize>1</drawSize>
     </graphicData>
     <thingClass>ThingWithComps</thingClass>
     <useHitPoints>true</useHitPoints>

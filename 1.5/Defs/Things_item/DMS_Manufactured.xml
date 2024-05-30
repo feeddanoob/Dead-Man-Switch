@@ -387,7 +387,7 @@
     <description>Precision electronic components for radar and communication devices.</description>
     <possessionCount>2</possessionCount>
     <graphicData>
-      <texPath>Things/Resource/ComponentBioCPU</texPath>
+      <texPath>Things/Resource/ComponentTR</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -396,7 +396,7 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <RoyalFavorValue>1.0</RoyalFavorValue>
-      <MaxHitPoints>5</MaxHitPoints>
+      <MaxHitPoints>20</MaxHitPoints>
       <MarketValue>500</MarketValue>
       <Mass>0.05</Mass>
       <Flammability>0</Flammability>
@@ -453,7 +453,7 @@
     <description>a chipsets for remote machine controller and the core of industrial machines.</description>
     <possessionCount>2</possessionCount>
     <graphicData>
-      <texPath>Things/Resource/ComponentBioCPU</texPath>
+      <texPath>Things/Resource/ComponentCCC</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -462,7 +462,7 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <RoyalFavorValue>2</RoyalFavorValue>
-      <MaxHitPoints>8</MaxHitPoints>
+      <MaxHitPoints>15</MaxHitPoints>
       <MarketValue>1200</MarketValue>
       <Mass>0.01</Mass>
       <Flammability>0</Flammability>
@@ -520,7 +520,7 @@
     <description>a chipsets designed for weapon control assist and trajectory tracking.</description>
     <possessionCount>2</possessionCount>
     <graphicData>
-      <texPath>Things/Resource/ComponentBioCPU</texPath>
+      <texPath>Things/Resource/ComponentFCS</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -529,7 +529,7 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <RoyalFavorValue>2</RoyalFavorValue>
-      <MaxHitPoints>8</MaxHitPoints>
+      <MaxHitPoints>75</MaxHitPoints>
       <MarketValue>500</MarketValue>
       <Mass>0.01</Mass>
       <Flammability>0</Flammability>
