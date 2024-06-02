@@ -6,18 +6,17 @@ using Verse;
 namespace DMS
 {
     [StaticConstructorOnStartup]
-    [HarmonyPatch(typeof(GenRecipe), "PostProcessProduct")]
-    static class Patch_PostProcessProduct
+    [HarmonyPatch(typeof(Bill_ProductionMech), nameof(Bill_ProductionMech.CreateProducts))]
+    static class Patch_Bill_ProductionMech_CreateProducts
     {
-        [HarmonyPrefix]
-        static bool PreFix(Thing product)
+        static void Postfix(ref Thing __result)
         {
-            if (product is WeaponUsableMech pawn)
+            if (__result is WeaponUsableMech pawn)
             {
                 pawn.inventory.DestroyAll();
                 pawn.equipment.DestroyAllEquipment();
             }
-            return true;
         }
     }
+
 }

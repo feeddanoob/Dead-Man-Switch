@@ -62,6 +62,8 @@
   <ItemGroup>
     <Compile Include="Ability\CompAbilityEffect_DirectionalExplosion.cs" />
     <Compile Include="Ability\CompAbilityEffect_SelfRepairMode.cs" />
+    <Compile Include="MechMaintainBench.cs" />
+    <Compile Include="TarbosaurusJump\ModExtensionJumper.cs" />
     <Compile Include="Modification\CompTargetable_AddHediffOnTarget.cs" />
     <Compile Include="Modification\DMS_JobDefOf.cs" />
     <Compile Include="Modification\Gizmo_AttachmentShieldStatus.cs" />
@@ -70,6 +72,7 @@
     <Compile Include="Hediff\HediffComp_SelfHeal.cs" />
     <Compile Include="Patch\Patch_ApplyToPawns.cs" />
     <Compile Include="Patch\Patch_CanBeInfected.cs" />
+    <Compile Include="TarbosaurusJump\PawnFlyerWithEffect.cs" />
     <Compile Include="Royalty\RoyalTitlePermitWorker_Bandwidth.cs" />
     <Compile Include="Thing\BiochemicalProtectionExtension.cs" />
     <Compile Include="Utility\CircleConst.cs" />
@@ -133,6 +136,7 @@
     <Compile Include="Utility\StatWorker_HeavyGear.cs" />
     <Compile Include="Utility\StatWorker_MechWeapon.cs" />
     <Compile Include="Utility\WeaponTagUtil.cs" />
+    <Compile Include="TarbosaurusJump\Verb_CastAbilitySpecialJump.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Modification\Todo.txt" />
