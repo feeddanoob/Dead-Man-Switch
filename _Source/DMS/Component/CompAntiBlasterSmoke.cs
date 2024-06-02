@@ -65,9 +65,9 @@ namespace DMS
                 effecter.EffectTick(EffecterSourceThing, TargetInfo.Invalid);
             }
 
-            foreach (IntVec3 item in GenAdj.OccupiedRect(parent).ExpandedBy(Props.Size))
+            foreach (IntVec3 cell in GenAdj.OccupiedRect(parent).ExpandedBy(Props.Size))
             {
-                List<Thing> list = parent.MapHeld.thingGrid.ThingsListAt(item).Where((v) => v is Projectile).ToList();
+                List<Thing> list = parent.MapHeld.thingGrid.ThingsListAt(cell).Where((v) => v is Projectile).ToList();
                 for (int i = 0; i < list.Count; i++)
                 {
                     Thing thing2 = list[i];

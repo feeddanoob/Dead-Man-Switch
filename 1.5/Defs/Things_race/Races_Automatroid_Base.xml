@@ -27,6 +27,7 @@
       <MoveSpeed>4.7</MoveSpeed>
       <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+      <StaggerDurationFactor>0.5</StaggerDurationFactor>
       <MarketValue>800</MarketValue>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
       <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">5</ControlTakingTime>

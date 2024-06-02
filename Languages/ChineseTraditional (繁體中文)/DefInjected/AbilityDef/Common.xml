@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: flashbang barrage -->
+  <DMS_FlashLauncher.label>曲射閃光彈</DMS_FlashLauncher.label>
+  <!-- EN: launch an in-direct flashbang grenade strike to shock incoming enemies so the caster can safely retreat or let the ally take out the stunned enemies. -->
+  <DMS_FlashLauncher.description>透過腰間的曲射榴彈筒來拋射閃光彈使敵人短暫致盲，以便安全撤退或讓隊友進行突擊。</DMS_FlashLauncher.description>
+  
   <!-- EN: bionic longjump -->
   <DMS_LongJump.label>爆發跳躍</DMS_LongJump.label>
   <!-- EN: Jump to a distant location using bionic muscles. -->
@@ -12,6 +17,15 @@
   <DMS_MissileLauncher.label>攻頂導彈</DMS_MissileLauncher.label>
   <!-- EN: launch a guided missile to destroy enemies in long range. -->
   <DMS_MissileLauncher.description>發射一枚制導導彈從上而下的遠程曲射打擊目標，這種導彈十分致命但需要一定的時間來復裝。</DMS_MissileLauncher.description>
+  
+  <!-- EN: fission overload -->
+  <DMS_NuclearOverload.label>臨界超載</DMS_NuclearOverload.label>
+  <!-- EN: In order to avoid environmental pollution caused by nuclear battery leakage after the body is severely damaged, the fission battery can be manually overloaded to react the nuclear fuel in an instant, and the external manifestation is a nuclear explosion. \n\nSuch explosion is enough to clean up the unreacted nuclear material, including the surrounding areas. everything of... -->
+  <DMS_NuclearOverload.description>為避免機體重創後核電池洩漏導致的環境汙染，裂變電池能夠手動過載來在瞬間將核燃料反應，而外在表現來說就是核爆，這樣的爆炸足以將尚未反應的核物質連帶周圍的一切清理一空。</DMS_NuclearOverload.description>
+  <!-- EN: overload the fission battery will result in explosion and unit loss. \n\nare you sure to do this? -->
+  <DMS_NuclearOverload.confirmationDialogText>將裂變電池超載將產生一場規模十足的爆炸並導致該單位徹底損失。\n\n你確定要這麼做嗎?</DMS_NuclearOverload.confirmationDialogText>
+  <!-- EN: fission overload -->
+  <DMS_NuclearOverload.verbProperties.label>臨界超載</DMS_NuclearOverload.verbProperties.label>
   
   <!-- EN: self-repair -->
   <DMS_RepairMode.label>維修模式</DMS_RepairMode.label>

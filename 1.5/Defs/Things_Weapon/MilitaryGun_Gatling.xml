@@ -255,7 +255,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_GAU8</texPath>
-			<drawSize>4</drawSize>
+			<drawSize>3.5</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>281</Mass>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Tarbo jump -->
+  <DMS_TarbosaurusJump.label>重裝跳躍</DMS_TarbosaurusJump.label>
+  <!-- EN: Tarbosaurus Long Jump -->
+  <DMS_TarbosaurusJump.description>讓緻密的人工肌肉爆發出強大的力量使這頭重達40噸的金屬暴龍進行十分有力的短程跳躍，並碾碎著地點上的一切。</DMS_TarbosaurusJump.description>
+  <!-- EN: jump -->
+  <DMS_TarbosaurusJump.verbProperties.label>重裝跳躍</DMS_TarbosaurusJump.verbProperties.label>
+  
+</LanguageData>

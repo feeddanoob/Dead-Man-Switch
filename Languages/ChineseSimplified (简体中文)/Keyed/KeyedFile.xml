@@ -1,9 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: system not supported -->
+  <DMS_AddonBroken>安装于机械体上的附加组件已完全损坏</DMS_AddonBroken>
+  <DMS_PlatingTooltip>能够抵御大多数伤害的一次性防护片，其上限值与机械体体型正相关，无法自然恢复耐久。</DMS_PlatingTooltip>
+  <DMS_HasAppliedModification>机械体的附加模块已完成安装</DMS_HasAppliedModification>
   <DMS_WeaponNotSupported>机体系统不支持</DMS_WeaponNotSupported>
   <DMS_FrameNotSupported>机体框架不支持</DMS_FrameNotSupported>
-  <DMS_WillTerminateTheBetrayedUnit>失能机关:待发状态</DMS_WillTerminateTheBetrayedUnit>
+  <DMS_WillTerminateTheBetrayedUnit>失能机关: 待发状态</DMS_WillTerminateTheBetrayedUnit>
   <DMS_AutomatroidDisconnected>为确保负载安全已自动断连</DMS_AutomatroidDisconnected>
   <CommandCallRoyalAid_NoMechanitorAvaliable>需要机械师</CommandCallRoyalAid_NoMechanitorAvaliable>
   <DMS_PawnIsNotMechanitor>必须是机械师</DMS_PawnIsNotMechanitor>
@@ -11,5 +15,5 @@
   <DMS_MountedWeapon>挂载型武器</DMS_MountedWeapon>
   <DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>此挂载型武器只能由下列机械体或装备衣物与仿生后所使用</DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>
   <DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>此武器也可以由下列机械体或装备衣物与仿生后所使用</DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>
-  
+    
 </LanguageData>

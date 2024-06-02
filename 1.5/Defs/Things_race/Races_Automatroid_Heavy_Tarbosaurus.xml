@@ -11,6 +11,7 @@
       <ArmorRating_Sharp>1.4</ArmorRating_Sharp><!--銳抗-->
       <ArmorRating_Blunt>0.85</ArmorRating_Blunt><!--鈍抗-->
       <ArmorRating_Heat>2</ArmorRating_Heat>  <!--能抗-->
+      <StaggerDurationFactor>0</StaggerDurationFactor>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">10</BandwidthCost>        <!--帶寬消耗-->
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -253,7 +254,7 @@
     </weaponTags>
     <weaponMoney>9999~9999</weaponMoney>
     <abilities>
-      <li>LongjumpMech</li>
+      <li>DMS_TarbosaurusJump</li>
       <li>DMS_RepairMode</li>
     </abilities>
   </PawnKindDef>

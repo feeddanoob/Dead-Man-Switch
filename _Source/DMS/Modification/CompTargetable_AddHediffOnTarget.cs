@@ -13,6 +13,9 @@ namespace DMS
             return new TargetingParameters
             {
                 canTargetPawns = true,
+                canTargetHumans = false,
+                canTargetMutants = false,
+                canTargetAnimals = false,
                 canTargetMechs = true,
                 canTargetBuildings = false,
                 canTargetLocations = false
@@ -47,5 +50,6 @@ namespace DMS
     public class CompProperties_AddHediffOnTarget : CompProperties_Targetable
     {
         public HediffDef hediffDef;
+        public SoundDef soundDef;
     }
 }

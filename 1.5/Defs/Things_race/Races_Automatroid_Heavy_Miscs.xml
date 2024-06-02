@@ -212,6 +212,7 @@
     <weaponMoney>0~100</weaponMoney>
     <abilities>
       <li>DMS_RepairMode</li>
+      <li>DMS_RangeRepair</li>
     </abilities>
   </PawnKindDef>
 

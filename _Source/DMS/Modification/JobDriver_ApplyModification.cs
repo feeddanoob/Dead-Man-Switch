@@ -32,6 +32,7 @@ namespace DMS
             toil.FailOnDespawnedOrNull(TargetIndex.A);
             toil.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
             toil.WithEffect(EffecterDefOf.MechRepairing, TargetIndex.A);
+            toil.handlingFacing = true;
             yield return toil;
             yield return Toils_General.Do(ApplyModification);
         }
@@ -40,7 +41,7 @@ namespace DMS
         {
             Pawn p = Target;
             CompTargetable_AddHediffOnTarget comp = Item.TryGetComp<CompTargetable_AddHediffOnTarget>();
-            SoundDefOf.MechSerumUsed.PlayOneShot(SoundInfo.InMap(p));
+            comp.Props.soundDef.PlayOneShot(SoundInfo.InMap(p));
             Messages.Message("DMS_HasAppliedModification".Translate(p), p, MessageTypeDefOf.PositiveEvent);
 
             if (Target.health.hediffSet.TryGetHediff(comp.Props.hediffDef,out var h))

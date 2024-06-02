@@ -79,15 +79,15 @@
   <DMS_Material.label>先進材料學</DMS_Material.label>
   <!-- EN: "A perfect material can be calculate through a set of scientific methods" this is one of the breakthough mankind are ever achived. -->
   <DMS_Material.description>"透過科學方法可以計算出完美的材料"，這是人類有史以來取得的重大突破之一。</DMS_Material.description>
-  <!-- EN:
-    <li>subject->advanced material</li>
-    <li>subject_story->acquired a signal chip in shady circumstances</li>
-    <li>subject_story->found an intact signal chip in a diabolus wreck</li>
-    <li>subject_story->survived a mechanoid hive assault</li>
-    <li>subject_story->collated reports of mechanoid attacks, looking for commonalities</li>
-    <li>subject_gerund->calculating perfect material ratio</li>
-  -->
-  <DMS_Material.generalRules.rulesStrings>TODO</DMS_Material.generalRules.rulesStrings>
+
+  <DMS_Material.generalRules.rulesStrings>    
+    <li>subject->先進材料</li>
+    <li>subject_story->總結了如何透過科學方法來提純自然界中的絕大部分元素</li>
+    <li>subject_story->透過科學方法可以計算出完美的材料</li>
+    <li>subject_story->展示了如何透過重力晶化反應來凝結出屈服強度高達2400兆帕的星艦合金</li>
+    <li>subject_story->歸納了透過需求導向總結的完美配方比</li>
+    <li>subject_gerund->計算工業生產用的合金配方</li>
+  </DMS_Material.generalRules.rulesStrings>
   
   <!-- EN: mecha gear -->
   <DMS_MechBasis.label>機甲齒輪</DMS_MechBasis.label>

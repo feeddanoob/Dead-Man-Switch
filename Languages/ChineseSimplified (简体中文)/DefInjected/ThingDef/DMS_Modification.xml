@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: broken ceramics -->
+  <DMS_BrokenCeramics.label>破碎陶瓷</DMS_BrokenCeramics.label>
+  
+  <!-- EN: ceramic plates -->
+  <DMS_CeramicsPlating.label>抛弃式陶瓷装甲</DMS_CeramicsPlating.label>
+  <!-- EN: A set of ceramic plates can be mounted on the mech's external shell to provide additional protection, but once damaged it can only be replaced with a new one. \n\nThe maximum amount of the plating on mech can apply depends on its body size. -->
+  <DMS_CeramicsPlating.description>一组抛弃式陶瓷装甲板与安装用的支架和工具组等，陶瓷装甲板可以安装在机兵的机体上以提供额外的防护，但一经损坏就只能更换新的。 \n\n最大可安装数量取决于安装机体的体型。</DMS_CeramicsPlating.description>
+  <!-- EN: Use {0_label} -->
+  <DMS_CeramicsPlating.comps.CompUsable.useLabel>安装{0}</DMS_CeramicsPlating.comps.CompUsable.useLabel>
+  
+  <!-- EN: nuclear battery -->
+  <DMS_NuclearBattery.label>裂变电池</DMS_NuclearBattery.label>
+  <!-- EN: A nuclear fission battery with a simple structure, commonly found in many unmanned signal stations and defense robots, consists of six high-density uranium-235 columns near critical mass and thermocouples integrated and wrapped in a high-strength shell. Its energy is enough to make most models of automatroid operate for decades. -->
+  <DMS_NuclearBattery.description>一种结构简单的核裂变电池，常见于许多无人职守的讯号站与驻防用的机兵上，由六根接近临界质量的柱状高密度铀235与热电偶集成并包裹在一个高强度壳体中。其输出的能量足够让绝大部分型号的机兵运转长达数百年，并且在紧急情况下也可以变为一次性核弹使用。</DMS_NuclearBattery.description>
+  <!-- EN: Use {0_label} -->
+  <DMS_NuclearBattery.comps.CompUsable.useLabel>安装{0}</DMS_NuclearBattery.comps.CompUsable.useLabel>
+  
+  <!-- EN: reinforced frame -->
+  <DMS_ReinforcedFrame.label>强化骨架</DMS_ReinforcedFrame.label>
+  <!-- EN: A set of ceramic plates can be mounted on the mech's external shell to provide additional protection, but once damaged it can only be replaced with a new one. \n\nThe maximum amount of the plating on mech can apply depends on its body size. -->
+  <DMS_ReinforcedFrame.description>使用钨钢合金来替换机兵骨架中较易磨损的部位，这可以有效提高在高强度战斗时的耐用性并且能在火力压制下也不受干扰的行动。但作为代价会显著提高机兵的重量并影响速度。</DMS_ReinforcedFrame.description>
+  <!-- EN: Use {0_label} -->
+  <DMS_ReinforcedFrame.comps.CompUsable.useLabel>安装{0}</DMS_ReinforcedFrame.comps.CompUsable.useLabel>
+  
+</LanguageData>

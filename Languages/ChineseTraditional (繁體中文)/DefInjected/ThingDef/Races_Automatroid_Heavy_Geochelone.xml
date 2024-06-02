@@ -12,6 +12,14 @@
   <DMS_Mech_Geochelone.label>象龜</DMS_Mech_Geochelone.label>
   <!-- EN: an unmanned all-terrain tracked pulse shield support platform, featuring a diverse range of production models and variants. -->
   <DMS_Mech_Geochelone.description>一種無人全地形履帶式脈衝防護盾支援平台，有多種生產型號和變型。</DMS_Mech_Geochelone.description>
+  <!-- EN: aim target -->
+  <DMS_Mech_Geochelone.comps.CompMultipleTurretGun.subTurrets.0.command_Target>瞄準目標</DMS_Mech_Geochelone.comps.CompMultipleTurretGun.subTurrets.0.command_Target>
+  <!-- EN: fire at will -->
+  <DMS_Mech_Geochelone.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>自由開火</DMS_Mech_Geochelone.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>
+  <!-- EN: aim at desinated target -->
+  <DMS_Mech_Geochelone.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>瞄準指定目標</DMS_Mech_Geochelone.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>
+  <!-- EN: toggle turret to manually control mode to prevent unnecessary shooting. -->
+  <DMS_Mech_Geochelone.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>切換砲塔至手動模式來避免非必要的開火</DMS_Mech_Geochelone.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
   <!-- EN: head -->
   <DMS_Mech_Geochelone.tools.head.label>頭部</DMS_Mech_Geochelone.tools.head.label>
   

@@ -71,11 +71,10 @@ namespace DMS
                 }
                 dinfo.SetAmount(dmgReduced);
                 Hitpoints -= dmg;
-                Props.effectOnDamaged?.SpawnMaintained(parent.pawn.Position, parent.pawn.MapHeld,0.2f);
-                FilthMaker.TryMakeFilth(parent.pawn.Position, parent.pawn.MapHeld, Props.filthOnDamaged);
+                Props.effectOnDamaged?.SpawnMaintained(parent.pawn.Position, parent.pawn.MapHeld, 0.2f);
+                FilthMaker.TryMakeFilth(GenAdjFast.AdjacentCells8Way(parent.pawn.Position).RandomElement().ClampInsideMap(parent.pawn.MapHeld), parent.pawn.MapHeld, Props.filthOnDamaged);
 
             }
-            
             if (Hitpoints <=0)
             {
                 Hitpoints = 0;

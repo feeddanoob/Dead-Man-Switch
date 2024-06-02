@@ -235,4 +235,43 @@
 			</li>
 		</stages>
 	</HediffDef>
+
+	<AbilityDef>
+		<defName>DMS_NuclearOverload</defName>
+		<label>fission overload</label>
+
+		<description>In order to avoid environmental pollution caused by nuclear battery leakage after the body is severely damaged, the fission battery can be manually overloaded to react the nuclear fuel in an instant, and the external manifestation is a nuclear explosion. \n\nSuch explosion is enough to clean up the unreacted nuclear material, including the surrounding areas. everything of...</description>
+		<iconPath>UI/Ability/FissonOverload</iconPath>
+		<cooldownTicksRange>60</cooldownTicksRange> <!-- 2 day -->
+		<showPsycastEffects>false</showPsycastEffects>
+		<aiCanUse>true</aiCanUse>
+		<targetRequired>false</targetRequired>
+		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+		<confirmationDialogText>overload the fission battery will result in explosion and unit loss. \n\nare you sure to do this?</confirmationDialogText>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<label>fission overload</label>
+			<drawAimPie>false</drawAimPie>
+			<warmupTime>0.25</warmupTime>
+			<violent>false</violent>
+			<warmupEffecter>Vaporize_Heatwave</warmupEffecter>
+			<targetable>false</targetable>
+			<range>7.9</range>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+			<ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+		</verbProperties>
+		<comps>
+			<li Class="DMS.CompProperties_AbilitySelfExplosion">
+				<explosionDamage>Demolish</explosionDamage>
+				<explosionSound>Explosion_GiantBomb</explosionSound>
+                <explosionEffect>GiantExplosion</explosionEffect>
+				<damageAmount>150</damageAmount>
+				<armorPenetration>2</armorPenetration>
+				<range>7.9</range>
+			</li>
+		</comps>
+	</AbilityDef>
+
 </Defs>

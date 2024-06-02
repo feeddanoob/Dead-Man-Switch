@@ -16,8 +16,8 @@
 		  <violent>false</violent>
 		  <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 		  <warmupTime>0.5</warmupTime>
-		  <minRange>5.9</minRange>
-		  <range>9.9</range>
+		  <minRange>7.9</minRange>
+		  <range>19.9</range>
 		  <requireLineOfSight>true</requireLineOfSight>
 		  <soundCast>Longjump_Jump</soundCast>
 		  <soundLanding>Longjump_Land</soundLanding>
@@ -40,14 +40,14 @@
         <modExtensions>
             <li Class="DMS.ModExtensionJumper">
                 <compExplosive>
-                    <explosiveRadius>14.9</explosiveRadius>
-                    <explosiveDamageType>BombSuper</explosiveDamageType>
+                    <explosiveRadius>5.9</explosiveRadius>
+                    <explosiveDamageType>Bomb</explosiveDamageType>
                     <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
                     <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
                     <chanceToStartFire>0.22</chanceToStartFire>
                     <damageFalloff>true</damageFalloff>
-                    <explosionEffect>GiantExplosion</explosionEffect>
-                    <explosionSound>Explosion_GiantBomb</explosionSound>
+                    <explosionEffect>ExtinguisherExplosion</explosionEffect>
+                    <explosionSound>Explosion_Bomb</explosionSound>
                 </compExplosive>
             </li>
         </modExtensions>

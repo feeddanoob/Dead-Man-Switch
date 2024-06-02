@@ -98,11 +98,11 @@
     </thingSetMakerTags>
     <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
+  
   <!-- 鎢鋼合金 強度介於塑鋼與鋼鐵之間的材料，是大多數DMS機兵的製造用料-->  
   <ThingDef ParentName="ResourceBase">
     <defName>Tungsteel</defName>
     <label>tungsteel</label>
-    <!-- 高強度高延展性且耐磨耐熱的軍工級合金,經過表面碳處理後通常被用於製造高性能武器,裝甲與特種機械零件,雖然性能優異但其原料在自然界的稀缺使得其需要從大量的岩質材料中提純. -->
     <description>a military standard alloy, Usually used to manufacture high-performance weapons, armor and special mechanical parts.</description>
     <descriptionHyperlinks><ThingDef>DMS_Furnace</ThingDef></descriptionHyperlinks>
     <graphicData>

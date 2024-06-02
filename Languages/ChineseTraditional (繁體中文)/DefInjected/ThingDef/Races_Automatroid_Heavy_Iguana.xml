@@ -13,7 +13,7 @@
   <DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>瞄準指定目標</DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>
   <!-- EN: toggle turret to manually control mode to prevent unnecessary shooting. -->
   <DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>切換砲塔至手動模式來避免非必要的開火</DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
-<!-- EN: Mechanical Head -->
+  <!-- EN: Mechanical Head -->
   <DMS_Mech_Gecko.tools.Mechanical_Head.label>頭部</DMS_Mech_Gecko.tools.Mechanical_Head.label>
   <!-- EN: Left Leg -->
   <DMS_Mech_Gecko.tools.Left_Leg.label>左腿</DMS_Mech_Gecko.tools.Left_Leg.label>

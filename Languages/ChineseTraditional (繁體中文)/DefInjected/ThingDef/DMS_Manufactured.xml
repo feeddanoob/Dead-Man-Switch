@@ -39,7 +39,6 @@
   <!-- EN: Analyze the cluster control chipsets -->
   <ComponentControlChip.comps.CompAnalyzableUnlockResearch.jobString>分析集群控制晶片組</ComponentControlChip.comps.CompAnalyzableUnlockResearch.jobString>
   
-
   <!-- EN: fire control system -->
   <ComponentFireControl.label>火控系統</ComponentFireControl.label>
   <!-- EN: a chipsets designed for weapon control assist and trajectory tracking. -->
@@ -58,7 +57,6 @@
   <ComponentFireControl.comps.CompAnalyzableUnlockResearch.inspectString>可以由殖民者進行分析。</ComponentFireControl.comps.CompAnalyzableUnlockResearch.inspectString>
   <!-- EN: Analyze the fire control system -->
   <ComponentFireControl.comps.CompAnalyzableUnlockResearch.jobString>分析火控系統</ComponentFireControl.comps.CompAnalyzableUnlockResearch.jobString>
-  
   
   <!-- EN: stamponent -->
   <ComponentStamped.label>沖壓零件</ComponentStamped.label>
@@ -83,7 +81,7 @@
   <ComponentTransmitter.comps.CompAnalyzableUnlockResearch.inspectString>可以由殖民者進行分析。</ComponentTransmitter.comps.CompAnalyzableUnlockResearch.inspectString>
   <!-- EN: Analyze the T/R Component -->
   <ComponentTransmitter.comps.CompAnalyzableUnlockResearch.jobString>分析T/R組件</ComponentTransmitter.comps.CompAnalyzableUnlockResearch.jobString>
-
+  
   <!-- EN: Ceramics -->
   <DMS_Ceramics.label>陶瓷</DMS_Ceramics.label>
   <!-- EN: a military standard composite ceramic plate widely used as Defensive Additions for war machines.\n\n As a military standard material, it's durability is somewhat poor, but it is superior in its protection and light weight. -->

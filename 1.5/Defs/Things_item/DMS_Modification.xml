@@ -9,11 +9,11 @@
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
 
-  <!-- 開發中 -->
+  <!-- 陶瓷裝甲板 -->
   <ThingDef ParentName="ResourceBase">
     <defName>DMS_CeramicsPlating</defName>
     <label>ceramic plates</label>
-    <description>A set of ceramic plates that can mount on mechs external shell to provide additional protection, But once damaged, it can only be replaced with a new one.</description>
+    <description>A set of ceramic plates can be mounted on the mech's external shell to provide additional protection, but once damaged it can only be replaced with a new one. \n\nThe maximum amount of the plating on mech can apply depends on its body size.</description>
     <graphicData>
       <texPath>Things/Resource/CeramicPlate</texPath>
       <graphicClass>Graphic_Stackcount</graphicClass>
@@ -57,6 +57,7 @@
       <li Class="DMS.CompProperties_AddHediffOnTarget">
         <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
         <hediffDef>DMS_CeramicsPlating</hediffDef>
+        <soundDef>DMS_EquipGear</soundDef>
       </li>
     </comps>
   </ThingDef>
@@ -65,9 +66,8 @@
     <defName>DMS_CeramicsPlating</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>ceramic plates</label>
-    <description>todo.</description>
+    <description>deposable ceramic armorplate that effectively inhibits thermal erosion of bullets or shaped charges. \n\nAlthough it is an excellent protective armor, it is still essentially a disposable defensive plate and must be completely replaced once damaged.</description>
     <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
-    <minSeverity>0.001</minSeverity>
     <isBad>false</isBad>
     <comps>
       <li Class="DMS.HediffCompProperties_ProtectiveShield">
@@ -78,28 +78,15 @@
     </comps>
     <stages>
       <li>
-        <label>fall off</label>
-        <minSeverity>0.2</minSeverity>
-      </li>
-      <li>
-        <label>damaged</label>
-        <minSeverity>0.5</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>-0.1</offset>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <label>intact</label>
-        <minSeverity>0.9</minSeverity>
         <capMods>
           <li>
             <capacity>Moving</capacity>
             <offset>-0.15</offset>
           </li>
         </capMods>
+        <statOffsets>
+          <ArmorRating_Heat>0.5</ArmorRating_Heat>
+        </statOffsets>
       </li>
     </stages>
   </HediffDef>
@@ -108,19 +95,166 @@
     <defName>DMS_BrokenCeramics</defName>
     <label>broken ceramics</label>
     <graphicData>
-      <texPath>Things/Filth/Trash</texPath>
+      <texPath>Things/Filth/BrokenCeramics</texPath>
       <graphicClass>Graphic_Cluster</graphicClass>
     </graphicData>
     <filth>
-      <placementMask>
-        <li>Terrain</li>
-        <li>Unnatural</li>
-      </placementMask>
       <disappearsInDays>45~50</disappearsInDays>
       <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
-      <canFilthAttach>true</canFilthAttach>
+      <canFilthAttach>false</canFilthAttach>
       <cleaningSound>Interact_CleanFilth_Scattered</cleaningSound>
     </filth>
   </ThingDef>
+
+  <!-- 強化框架 -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>DMS_ReinforcedFrame</defName>
+    <label>reinforced frame</label>
+    <description>A set of ceramic plates can be mounted on the mech's external shell to provide additional protection, but once damaged it can only be replaced with a new one. \n\nThe maximum amount of the plating on mech can apply depends on its body size.</description>
+    <graphicData>
+      <texPath>Things/Resource/ReinforcedFrame</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <thingClass>ThingWithComps</thingClass>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <MarketValue>300</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <tradeTags>
+      <li>Serum</li>
+    </tradeTags>
+    <tradeability>Sellable</tradeability>
+    <stackLimit>10</stackLimit>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <costList>
+      <ComponentStamped>1</ComponentStamped>
+      <Tungsteel>20</Tungsteel>
+    </costList>
+    <recipeMaker>
+      <workAmount>2000</workAmount>
+      <researchPrerequisite>DMS_Material</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>DMS_TableMachinePrinter</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>200</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="DMS.CompProperties_AddHediffOnTarget">
+        <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
+        <hediffDef>DMS_ReinforcedFrame</hediffDef>
+        <soundDef>DMS_EquipGear</soundDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>DMS_ReinforcedFrame</defName>
+    <hediffClass>Hediff</hediffClass>
+    <label>reinforced frame</label>
+    <description>Using tungsten steel to replace parts of the robot's frame that are prone to wear can effectively improve the durability during high-intensity combat and reduce the time spent on maintenance. But in exchange it will significantly increase the weight of the mech and affect its speed.</description>
+    <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.9</postFactor>
+          </li>
+        </capMods>
+        <statFactors>
+          <AimingDelayFactor>0.9</AimingDelayFactor>
+          <IncomingDamageFactor>0.9</IncomingDamageFactor>
+          <PawnTrapSpringChance>1.1</PawnTrapSpringChance>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- 裂變電池 -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>DMS_NuclearBattery</defName>
+    <label>nuclear battery</label>
+    <description>A nuclear fission battery with a simple structure, commonly found in many unmanned signal stations and defense robots, consists of six high-density uranium-235 columns near critical mass and thermocouples integrated and wrapped in a high-strength shell. Its energy is enough to make most models of automatroid operate for decades.</description>
+    <graphicData>
+      <texPath>Things/Resource/NuclearBattery</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <thingClass>ThingWithComps</thingClass>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>8.5</Mass>
+    </statBases>
+    <tradeTags>
+      <li>Serum</li>
+    </tradeTags>
+    <tradeability>Sellable</tradeability>
+    <stackLimit>10</stackLimit>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <costList>
+      <ComponentStamped>1</ComponentStamped>
+      <Tungsteel>20</Tungsteel>
+    </costList>
+    <recipeMaker>
+      <workAmount>2000</workAmount>
+      <researchPrerequisite>DMS_Material</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>DMS_TableMachinePrinter</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>600</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="DMS.CompProperties_AddHediffOnTarget">
+        <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
+        <hediffDef>DMS_NuclearBattery</hediffDef>
+        <soundDef>DMS_EquipGear</soundDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>DMS_NuclearBattery</defName>
+    <hediffClass>Hediff</hediffClass>
+    <label>nuclear battery</label>
+    <description>The abundant output of installed nuclear fission battery eliminates the need for recharge. it can also be overloaded to produce a nuclear explosion comparable to an anti-gram weapon to destroy the enemy together.</description>
+    <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <defaultInstallPart>DMS_Battery</defaultInstallPart>
+    <stages>
+      <li>
+        <statFactors>
+          <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+        </statFactors>
+      </li>
+    </stages>
+    <abilities>
+      <li>DMS_NuclearOverload</li>
+    </abilities>
+  </HediffDef>
 
 </Defs>	
