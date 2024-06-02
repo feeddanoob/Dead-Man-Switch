@@ -29,14 +29,6 @@ namespace DMS
                 });
                 
             }
-            else
-            {
-                Props.subTurrets.ForEach(t =>
-                {
-                    SubTurret turret = turrets.Find(r=>r.ID == t.ID);
-                    turret.Init(t);
-                });
-            }
             turrets.RemoveDuplicates((a, b) => a.ID == b.ID);
             if (currentTurret == null)
             {
@@ -78,6 +70,13 @@ namespace DMS
             base.PostExposeData();
             Scribe_Collections.Look(ref this.turrets, "turrets", LookMode.Deep);
             Scribe_Values.Look(ref this.currentTurret,"currentTurrent");
+            if (Scribe.mode==LoadSaveMode.PostLoadInit)
+            {
+                foreach (var t in turrets)
+                {
+                    t.Init(Props.subTurrets.Find(p => p.ID == t.ID));
+                }
+            }
         }
 
         public override List<PawnRenderNode> CompRenderNodes()
