@@ -2,7 +2,7 @@
 <Defs>
     
   <!-- lady -->
-  <ThingDef ParentName="BaseAutomatroidRace" Abstract="True">
+  <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Automatroid_lady</defName>
     <label>lady</label>
     <description>lady</description>
@@ -53,6 +53,7 @@
       </li>
     </tools>
     <race>
+      <renderTree>Humanlike</renderTree>
       <makesFootprints>true</makesFootprints>
       <body>DMS_Humanoid_TypeB</body>
       <mechEnabledWorkTypes>
@@ -99,7 +100,7 @@
     </modExtensions>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseAutomatroidKind" Abstract="True">
+  <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_AutomatroidKind_lady</defName>
     <label>lady</label>
     <race>DMS_Automatroid_lady</race>

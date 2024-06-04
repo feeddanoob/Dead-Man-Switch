@@ -59,7 +59,26 @@
     <weaponMoney>250~400</weaponMoney>
     <apparelRequired Inherit="false">
       <li>DMS_Apparel_ArmyCap</li>
+      <li>DMS_Apparel_TacticalVest</li>
+      <li>DMS_Apparel_UnitSuit</li>
     </apparelRequired>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <apparelLayer>Overhead</apparelLayer>
+        <color>(70, 70, 70)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Shell</apparelLayer>
+        <color>(90, 100, 90)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>OnSkin</apparelLayer>
+        <color>(90, 100, 90)</color>
+      </li>
+    </specificApparelRequirements>
   </PawnKindDef>
 
   <!-- T3官員,排長 -->
@@ -74,7 +93,25 @@
     <apparelRequired Inherit="false">
       <li>DMS_Apparel_SoftKepi</li>
       <li>DMS_Apparel_TacticalVest</li>
+      <li>DMS_Apparel_UnitSuit</li>
     </apparelRequired>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <apparelLayer>Overhead</apparelLayer>
+        <color>(70, 70, 70)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Shell</apparelLayer>
+        <color>(70, 70, 70)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>OnSkin</apparelLayer>
+        <color>(90, 100, 90)</color>
+      </li>
+    </specificApparelRequirements>
   </PawnKindDef>
 
   <!-- T4官員,前線指揮官 -->
@@ -87,10 +124,62 @@
     <apparelMoney>400~600</apparelMoney>
     <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     <apparelRequired Inherit="false">
-      <li>DMS_Apparel_GarrisionCap</li>
+      <li>DMS_Apparel_Beret</li>
       <li>DMS_Apparel_TacticalVest</li>
+      <li>DMS_Apparel_TacticalCloak</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ShirtRuffle</li>
     </apparelRequired>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <apparelLayer>Overhead</apparelLayer>
+        <stuff>Cloth</stuff>
+        <color>(70, 70, 100)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Shell</apparelLayer>
+        <stuff>Hyperweave</stuff>
+        <color>(90, 100, 90)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>OnSkin</apparelLayer>
+        <stuff>Cloth</stuff>
+        <color>(50, 50, 50)</color>
+      </li>
+    </specificApparelRequirements>
   </PawnKindDef>
+
+    <!-- T4官員,司儀 -->
+    <PawnKindDef ParentName="DMS_OfficerBase">
+      <defName>DMS_Officer_Ceremonist</defName>
+      <titleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Colonel</titleRequired>
+      <label>Ceremonist</label>
+      <labelPlural>ceremonists</labelPlural>
+      <combatPower>40</combatPower>
+      <apparelMoney>0</apparelMoney>
+      <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+      <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+      <apparelRequired Inherit="false">
+        <li>DMS_Apparel_GarrisionCap</li>
+        <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ShirtRuffle</li>
+      </apparelRequired>
+      <specificApparelRequirements>
+        <li>
+          <bodyPartGroup>UpperHead</bodyPartGroup>
+          <apparelLayer>Overhead</apparelLayer>
+          <stuff>Cloth</stuff>
+          <color>(50, 50, 70)</color>
+        </li>
+        <li>
+          <bodyPartGroup>Torso</bodyPartGroup>
+          <apparelLayer>OnSkin</apparelLayer>
+          <stuff>Cloth</stuff>
+          <color>(50, 50, 70)</color>
+        </li>
+      </specificApparelRequirements>
+    </PawnKindDef>
 
   <!-- T5官員,作戰領導 -->
   <PawnKindDef ParentName="DMS_OfficerBase">
@@ -105,7 +194,36 @@
     <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     <apparelRequired Inherit="false">
       <li>DMS_Apparel_Beret</li>
+      <li>DMS_Apparel_TacticalVest</li>
+      <li>DMS_Apparel_TacticalCloak</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ShirtRuffle</li>
     </apparelRequired>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <apparelLayer>Overhead</apparelLayer>
+        <stuff>Hyperweave</stuff>
+        <color>(100, 70, 70)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Shell</apparelLayer>
+        <stuff>Hyperweave</stuff>
+        <color>(70, 70, 70)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Middle</apparelLayer>
+        <stuff>DMS_Ceramics</stuff>
+        <color>(50, 50, 50)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>OnSkin</apparelLayer>
+        <stuff>Cloth</stuff>
+        <color>(70, 70, 70)</color>
+      </li>
+    </specificApparelRequirements>
   </PawnKindDef>
 
 </Defs>

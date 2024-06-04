@@ -9,33 +9,8 @@ namespace DMS
 {
     public class HumanlikeMech : Pawn, IWeaponUsable
     {
-        private PawnDownedWiggler _wiggler;
         public HumanlikeMechExtension Extension { get; private set; }
-        public PawnDownedWiggler Wiggler
-        {
-            get
-            {
-                if (_wiggler == null)
-                {
-                    _wiggler = new PawnDownedWiggler(this);
-                }
-                return _wiggler;
-            }
-        }
 
-        public Graphic_Multi HeadGraphic
-        {
-            get
-            {
-                if (cachedHeadGraphic == null)
-                {
-                    cachedHeadGraphic = this.Extension.headGraphic.Graphic as Graphic_Multi;
-                }
-                return cachedHeadGraphic;
-            }
-        }
-
-        public Graphic_Multi cachedHeadGraphic;
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
@@ -61,20 +36,6 @@ namespace DMS
                     yield return this.TryMakeFloatMenuForApparel(tmp);
                 }
             }
-        }
-
-        public override void ExposeData()
-        {
-            base.ExposeData();
-            if (Scribe.mode == LoadSaveMode.PostLoadInit)
-            {
-                this.Drawer?.renderer?.SetAllGraphicsDirty();
-            }
-        }
-        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
-        {
-            base.DrawAt(drawLoc, flip);
-            this.DrawHeadOverride();
         }
 
         public void Equip(ThingWithComps equipment)

@@ -4,7 +4,8 @@
 	<ThingDef ParentName="ApparelBase">
 		<defName>DMS_Apparel_BionicSuit</defName>
 		<label>bionic suit</label>
-		<description>Physical enhancement equipment sewn from artificial muscle fibers. Can effectively increase the wearer's muscle strength and mobility.</description>
+		<description>Physical enhancement equipment sewn from artificial muscle fibers. Can
+			effectively increase the wearer's muscle strength and mobility.</description>
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -108,30 +109,30 @@
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
-			  <li>
-				<weight>10</weight>
-				<only>(0.33,0.33,0.33)</only>
-			  </li>
-			  <li>
-				<weight>10</weight>
-				<only>(0.65,0.65,0.65)</only>
-			  </li>
-			  <li>
-				<weight>10</weight>
-				<only>(0.4,0.3,0.15)</only>
-			  </li>
-			  <li>
-				<weight>15</weight>
-				<min>(0.3,0.3,0.3)</min>
-				<max>(0.5,0.5,0.5)</max>
-			  </li>
-			  <li>
-				<weight>6</weight>
-				<min>(0.5,0.5,0.5)</min>
-				<max>(1,1,1)</max>
-			  </li>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.4,0.3,0.15)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.5,0.5,0.5)</min>
+					<max>(1,1,1)</max>
+				</li>
 			</options>
-		  </colorGenerator>
+		</colorGenerator>
 	</ThingDef>
 
 	<ThingDef ParentName="DMS_CapBase"><!-- ArmyCap -->
@@ -232,14 +233,15 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="ArmorHelmetMakeableBase" Name="DMS_ArmorHelmetMakeableBase" Abstract="True">
+	<ThingDef ParentName="ArmorHelmetMakeableBase" Name="DMS_ArmorHelmetMakeableBase"
+		Abstract="True">
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<defaultIngredientFilter>
 				<disallowedThingDefs>
-				  <li>Silver</li>
-				  <li>Gold</li>
+					<li>Silver</li>
+					<li>Gold</li>
 				</disallowedThingDefs>
 			</defaultIngredientFilter>
 		</recipeMaker>
@@ -263,12 +265,13 @@
 			<li>DMS_Armor</li>
 		</tradeTags>
 	</ThingDef>
-	
+
 	<!-- 戰術裝備 -->
 	<ThingDef ParentName="DMS_ArmorHelmetMakeableBase">
 		<defName>DMS_Apparel_TacticalHelmet</defName>
 		<label>tactical helmet</label>
-		<description>A lightweight combat helmet with a complex design, reinforced with plasteel. Not effective against blunt weapons.</description>
+		<description>A lightweight combat helmet with a complex design, reinforced with plasteel.
+			Not effective against blunt weapons.</description>
 		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
 			<skillRequirements>
@@ -310,37 +313,39 @@
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
-			  <li>
-				<weight>10</weight>
-				<only>(0.33,0.33,0.33)</only>
-			  </li>
-			  <li>
-				<weight>10</weight>
-				<only>(0.65,0.65,0.65)</only>
-			  </li>
-			  <li>
-				<weight>10</weight>
-				<only>(0.4,0.3,0.15)</only>
-			  </li>
-			  <li>
-				<weight>15</weight>
-				<min>(0.3,0.3,0.3)</min>
-				<max>(0.5,0.5,0.5)</max>
-			  </li>
-			  <li>
-				<weight>6</weight>
-				<min>(0.5,0.5,0.5)</min>
-				<max>(1,1,1)</max>
-			  </li>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.4,0.3,0.15)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.5,0.5,0.5)</min>
+					<max>(1,1,1)</max>
+				</li>
 			</options>
-		  </colorGenerator>
+		</colorGenerator>
 	</ThingDef>
 
 	<!-- 全覆天線頭盔 -->
 	<ThingDef ParentName="DMS_ArmorHelmetMakeableBase">
 		<defName>DMS_Apparel_ArrayHelmet</defName>
 		<label>operator helmet</label>
-		<description>A full-covered helmet designed for field drone operators, Features built-in head-mounted display and neural-connected operating system. can not only increase the control bandwidth but also give full protection.</description>
+		<description>A full-covered helmet designed for field drone operators, Features built-in
+			head-mounted display and neural-connected operating system. can not only increase the
+			control bandwidth but also give full protection.</description>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>FlakArmor</li>
@@ -367,11 +372,11 @@
 		<costStuffCount>75</costStuffCount>
 		<costList>
 			<ComponentTransmitter>1</ComponentTransmitter>
-			<ComponentStamped>2</ComponentStamped>	
+			<ComponentStamped>2</ComponentStamped>
 			<ComponentIndustrial>4</ComponentIndustrial>
 			<Polyester>20</Polyester>
 		</costList>
-		<equippedStatOffsets>	
+		<equippedStatOffsets>
 			<MechBandwidth>9</MechBandwidth>
 			<AimingAccuracy MayRequire="ceteam.combatextended">-0.1</AimingAccuracy>
 			<AimingDelayFactor>0.1</AimingDelayFactor>
@@ -395,36 +400,38 @@
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
-			  <li>
-				<weight>10</weight>
-				<only>(0.33,0.33,0.33)</only>
-			  </li>
-			  <li>
-				<weight>10</weight>
-				<only>(0.65,0.65,0.65)</only>
-			  </li>
-			  <li>
-				<weight>10</weight>
-				<only>(0.4,0.3,0.15)</only>
-			  </li>
-			  <li>
-				<weight>15</weight>
-				<min>(0.3,0.3,0.3)</min>
-				<max>(0.5,0.5,0.5)</max>
-			  </li>
-			  <li>
-				<weight>6</weight>
-				<min>(0.5,0.5,0.5)</min>
-				<max>(1,1,1)</max>
-			  </li>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.4,0.3,0.15)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.5,0.5,0.5)</min>
+					<max>(1,1,1)</max>
+				</li>
 			</options>
-		  </colorGenerator>
+		</colorGenerator>
 	</ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>DMS_Apparel_TacticalVest</defName>
 		<label>tactical vest</label>
-		<description>A vest with armor plates inserted on the chest and back. While quite effective at deflecting gunshots and stabbing attacks against the chest, it does nothing to protect the limbs.</description>
+		<description>A vest with armor plates inserted on the chest and back. While quite effective
+			at deflecting gunshots and stabbing attacks against the chest, it does nothing to
+			protect the limbs.</description>
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
@@ -435,8 +442,8 @@
 			<displayPriority>220</displayPriority>
 			<defaultIngredientFilter>
 				<disallowedThingDefs>
-				  <li>Silver</li>
-				  <li>Gold</li>
+					<li>Silver</li>
+					<li>Gold</li>
 				</disallowedThingDefs>
 			</defaultIngredientFilter>
 		</recipeMaker>
@@ -490,33 +497,101 @@
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
-			  <li>
-				<weight>10</weight>
-				<only>(0.33,0.33,0.33)</only>
-			  </li>
-			  <li>
-				<weight>10</weight>
-				<only>(0.65,0.65,0.65)</only>
-			  </li>
-			  <li>
-				<weight>10</weight>
-				<only>(0.4,0.3,0.15)</only>
-			  </li>
-			  <li>
-				<weight>15</weight>
-				<min>(0.3,0.3,0.3)</min>
-				<max>(0.5,0.5,0.5)</max>
-			  </li>
-			  <li>
-				<weight>6</weight>
-				<min>(0.5,0.5,0.5)</min>
-				<max>(1,1,1)</max>
-			  </li>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.4,0.3,0.15)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.5,0.5,0.5)</min>
+					<max>(1,1,1)</max>
+				</li>
 			</options>
-		  </colorGenerator>
+		</colorGenerator>
 		<tradeTags>
 			<li>Armor</li>
 			<li>DMS_Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- 戰術斗篷，給戰術女巫和狙擊手用的 -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>DMS_Apparel_TacticalCloak</defName>
+		<label>tactical cloak</label>
+		<description>An tactical camouflage cloak equipped by magiers and special forces in colonial fleet.</description>
+		<!-- 暫時不給造 -->
+		<recipeMaker />
+		<graphicData>
+			<texPath>Things/Apparel/GarrisionCoat/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.3</Flammability>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<costStuffCount>100</costStuffCount>
+		<equippedStatOffsets>
+			<PsychicSensitivityOffset>0.10</PsychicSensitivityOffset>
+			<PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+			<PsychicEntropyMax>0.75</PsychicEntropyMax>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<costList>
+			<Polyester>30</Polyester>
+			<!-- <VPE_Eltex>4</VPE_Eltex> -->
+		</costList>
+		<apparel>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/MagierCloak/apparel</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+			<tags>
+				<li>DMS_TacticalMage</li>
+				<li>DMS_Officer</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>BasicClothing</li>
+			<li>DMS_Clothing</li>
 		</tradeTags>
 	</ThingDef>
 

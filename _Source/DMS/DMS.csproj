@@ -64,6 +64,8 @@
     <Compile Include="Ability\CompAbilityEffect_DirectionalExplosion.cs" />
     <Compile Include="Ability\CompAbilityEffect_SelfRepairMode.cs" />
     <Compile Include="MechMaintainBench.cs" />
+    <Compile Include="Patch\Patch_GenerateBestowingCeremonyQuest.cs" />
+    <Compile Include="Quest\QuestNode_Root_PromotionCeremony.cs" />
     <Compile Include="TarbosaurusJump\ModExtensionJumper.cs" />
     <Compile Include="Modification\CompTargetable_AddHediffOnTarget.cs" />
     <Compile Include="Modification\DMS_JobDefOf.cs" />
@@ -151,5 +153,6 @@
     </PackageReference>
     <Publicize Include="Assembly-CSharp:RimWorld.CompTargetable.selectedTarget" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
