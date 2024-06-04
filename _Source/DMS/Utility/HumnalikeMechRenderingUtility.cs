@@ -83,10 +83,6 @@ namespace DMS
 			{
 				return ((pawn_CarryTracker.pawn.Rotation == Rot4.West) ? 290f : 70f) + pawn_CarryTracker.pawn.Drawer.renderer.BodyAngle(PawnRenderFlags.None);
 			}
-			if (pawn.Downed || pawn.Dead)
-			{
-				return pawn.Wiggler.downedAngle;
-			}
 			if (pawn.RaceProps.Humanlike)
 			{
 				return LayingFacing(pawn).AsAngle;

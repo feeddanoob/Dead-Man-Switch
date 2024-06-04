@@ -11,11 +11,36 @@ namespace DMS
     {
         public HumanlikeMechExtension Extension { get; private set; }
 
+        public Graphic_Multi HeadGraphic
+        {
+            get
+            {
+                if (cachedHeadGraphic == null)
+                {
+                    cachedHeadGraphic = this.Extension.headGraphic.Graphic as Graphic_Multi;
+                }
+                return cachedHeadGraphic; 
+            }
+        }
+
+        public Graphic_Multi cachedHeadGraphic;
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
             this.Extension = this.def.GetModExtension<HumanlikeMechExtension>();
+            if (Extension != null)
+            {
+                if (this.story != null)
+                {
+                    this.story.bodyType = Extension.bodyTypeOverride;
+                }
+                else
+                {
+                    this.story = new Pawn_StoryTracker(this);
+                    this.story.bodyType = Extension.bodyTypeOverride;
+                }
+            }
         }
         public override IEnumerable<FloatMenuOption> GetExtraFloatMenuOptionsFor(IntVec3 sq)
         {
@@ -36,6 +61,24 @@ namespace DMS
                     yield return this.TryMakeFloatMenuForApparel(tmp);
                 }
             }
+        }
+        public override void DynamicDrawPhaseAt(DrawPhase phase, Vector3 drawLoc, bool flip = false)
+        {
+            base.DynamicDrawPhaseAt(phase, drawLoc, flip);
+            this.DrawHeadOverride();
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            {
+                this.Drawer?.renderer?.SetAllGraphicsDirty();
+            }
+        }
+        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
+        {
+            base.DrawAt(drawLoc, flip);
         }
 
         public void Equip(ThingWithComps equipment)

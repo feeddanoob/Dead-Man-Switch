@@ -9,5 +9,6 @@ namespace DMS
         public BodyTypeDef bodyTypeOverride;
         public Vector3 headOffset;
         public GraphicData headGraphic;
+        public PawnRenderNode headRenderNode;
     }
 }
