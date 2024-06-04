@@ -34,11 +34,13 @@ namespace DMS
                 if (this.story != null)
                 {
                     this.story.bodyType = Extension.bodyTypeOverride;
+                    this.story.SkinColorBase = Color.white;
                 }
                 else
                 {
                     this.story = new Pawn_StoryTracker(this);
                     this.story.bodyType = Extension.bodyTypeOverride;
+                    this.story.SkinColorBase = Color.white;
                 }
             }
         }

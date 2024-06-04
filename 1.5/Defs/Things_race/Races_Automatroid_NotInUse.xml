@@ -2,7 +2,7 @@
 <Defs>
     
   <!-- lady -->
-  <ThingDef ParentName="BaseAutomatroidRace">
+  <ThingDef ParentName="BaseAutomatroidHumanRace">
     <defName>DMS_Automatroid_lady</defName>
     <label>lady</label>
     <description>lady</description>
@@ -95,7 +95,7 @@
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.4</drawSize>
         </headGraphic>
-        <headOffset>(0,0,0.22)</headOffset>
+        <headOffset>(0,0,0.4)</headOffset>
       </li>
     </modExtensions>
   </ThingDef>
