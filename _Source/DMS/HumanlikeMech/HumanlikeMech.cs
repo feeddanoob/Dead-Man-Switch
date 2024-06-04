@@ -10,6 +10,7 @@ namespace DMS
     public class HumanlikeMech : Pawn, IWeaponUsable
     {
         public HumanlikeMechExtension Extension { get; private set; }
+        public Pawn_OutfitTracker OutfitTracker { get; private set; }
 
         public Graphic_Multi HeadGraphic
         {
@@ -28,6 +29,7 @@ namespace DMS
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
+            if (outfits == null) outfits = new Pawn_OutfitTracker(this);
             this.Extension = this.def.GetModExtension<HumanlikeMechExtension>();
             if (Extension != null)
             {
@@ -67,7 +69,6 @@ namespace DMS
         public override void DynamicDrawPhaseAt(DrawPhase phase, Vector3 drawLoc, bool flip = false)
         {
             base.DynamicDrawPhaseAt(phase, drawLoc, flip);
-            this.DrawHeadOverride();
         }
 
         public override void ExposeData()
@@ -81,6 +82,7 @@ namespace DMS
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
             base.DrawAt(drawLoc, flip);
+            this.DrawHeadOverride();
         }
 
         public void Equip(ThingWithComps equipment)

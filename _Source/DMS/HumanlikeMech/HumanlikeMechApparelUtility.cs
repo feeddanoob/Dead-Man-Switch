@@ -49,7 +49,7 @@ namespace DMS
 
             if (pawn.Faction != Faction.OfPlayer)
             {
-                Log.ErrorOnce(string.Concat("Non-colonist ", pawn, " tried to optimize apparel."), 764323);
+                //Log.ErrorOnce(string.Concat("Non-colonist ", pawn, " tried to optimize apparel."), 764323);
                 return null;
             }
 

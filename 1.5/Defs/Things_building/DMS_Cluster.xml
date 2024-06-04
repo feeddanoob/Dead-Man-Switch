@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
+  <DesignationCategoryDef>
+    <defName>DMS_Cluster</defName>
+    <label>dms cluster</label>
+    <order>13</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <preferredColumn>1</preferredColumn>
+  </DesignationCategoryDef>
+
   <ThingDef Name="DMS_BaseClusterBuilding" ParentName="DMS_BaseCannonBuilding" Abstract="True">
+    <designationCategory>DMS_Cluster</designationCategory>
     <thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
@@ -22,7 +34,6 @@
     <pathCost>50</pathCost>
     <fillPercent>0.8</fillPercent>
     <tickerType>Normal</tickerType>
-    <designationCategory>DMS_Category</designationCategory>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <comps>

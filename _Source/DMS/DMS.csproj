@@ -135,10 +135,10 @@
     <Compile Include="Patch\HarmonyEntry.cs" />
     <Compile Include="HumanlikeMech\HumanlikeMech.cs" />
     <Compile Include="HumanlikeMech\HumanlikeMechExtension.cs" />
-    <Compile Include="Utility\HumanlikeMechApparelUtility.cs" />
+    <Compile Include="HumanlikeMech\HumanlikeMechApparelUtility.cs" />
     <Compile Include="Patch\Patch_CanTakeOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utility\HumnalikeMechRenderingUtility.cs" />
+    <Compile Include="HumanlikeMech\HumnalikeMechRenderingUtility.cs" />
     <Compile Include="Utility\StatWorker_HeavyGear.cs" />
     <Compile Include="Utility\StatWorker_MechWeapon.cs" />
     <Compile Include="Utility\WeaponTagUtil.cs" />
