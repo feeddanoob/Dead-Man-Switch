@@ -1,19 +1,35 @@
 ﻿using Verse;
 using HarmonyLib;
-using System;
+using System.Collections.Generic;
+using System.Reflection.Emit;
+using System.Reflection;
+using System.Linq;
 
 namespace DMS
 {
     [HarmonyPatch(typeof(PawnRenderTree), "SetupDynamicNodes")]
     public class PawnRenderTree_SetupDynamicNodes_Patch
     {
-        private static void Postfix(PawnRenderTree __instance)
+        private static void Prefix(PawnRenderTree __instance, Pawn ___pawn)
         {
-            Pawn pawn = __instance.pawn;
-            if (pawn is HumanlikeMech)
+            if (___pawn is HumanlikeMech)
             {
-                Traverse.Create((object)__instance).Method("SetupApparelNodes", Array.Empty<object>()).GetValue();
+                __instance.SetupApparelNodes();
             }
         }
     }
+    [HarmonyPatch(typeof(PawnRenderTree), "ShouldAddNodeToTree")]
+    static class PawnRenderTree_ShouldAddNodeToTree_Patch
+    {
+        private static void Postfix(ref bool __result, PawnRenderNodeProperties props, Pawn ___pawn)
+        {
+            if (__result == true) return;
+            if (___pawn is HumanlikeMech && (props.workerClass== typeof(PawnRenderNodeWorker_Apparel_Body) || props.workerClass ==  typeof(PawnRenderNodeWorker_Apparel_Head)))
+            {
+                __result = true;
+                return;
+            }
+        }
+    }
+    
 }

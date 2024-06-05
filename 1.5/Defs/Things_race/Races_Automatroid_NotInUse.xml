@@ -53,7 +53,8 @@
       </li>
     </tools>
     <race>
-      <renderTree>Humanlike</renderTree>
+      <renderTree>HumanlikeMech</renderTree>
+      <thinkTreeMain>DMS_HumanlikeMech</thinkTreeMain>
       <makesFootprints>true</makesFootprints>
       <body>DMS_Humanoid_TypeB</body>
       <mechEnabledWorkTypes>
@@ -90,12 +91,13 @@
       <li Class="DMS.TurretMannableExtension"/>
       <li Class="DMS.HumanlikeMechExtension">
         <bodyTypeOverride>Female</bodyTypeOverride>
+        <headTypeOverride>Female_AveragePointy</headTypeOverride>
         <headGraphic>
           <texPath>Things/Automatroid/seperated/ladyHead</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.4</drawSize>
         </headGraphic>
-        <headOffset>(0,0,0.3)</headOffset>
+        <headOffset>(0,0,0.4)</headOffset>
       </li>
     </modExtensions>
   </ThingDef>
