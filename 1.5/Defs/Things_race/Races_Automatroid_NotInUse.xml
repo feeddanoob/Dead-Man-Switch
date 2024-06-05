@@ -3,7 +3,7 @@
     
   <!-- lady -->
   <ThingDef ParentName="BaseAutomatroidHumanRace">
-    <defName>DMS_Automatroid_lady</defName>
+    <defName>DMS_Mech_Lady</defName>
     <label>lady</label>
     <description>lady</description>
     <thingClass>DMS.HumanlikeMech</thingClass>
@@ -56,7 +56,7 @@
       <renderTree>HumanlikeMech</renderTree>
       <thinkTreeMain>DMS_HumanlikeMech</thinkTreeMain>
       <makesFootprints>true</makesFootprints>
-      <body>DMS_Humanoid_TypeB</body>
+      <body>DMS_Synthroid</body>
       <mechEnabledWorkTypes>
         <li>Hauling</li>
         <li>Construction</li>
@@ -97,20 +97,20 @@
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.4</drawSize>
         </headGraphic>
-        <headOffset>(0,0,0.4)</headOffset>
+        <headOffset>(0,0,-0.05)</headOffset>
       </li>
     </modExtensions>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_AutomatroidKind_lady</defName>
+    <defName>DMS_Mech_Lady</defName>
     <label>lady</label>
-    <race>DMS_Automatroid_lady</race>
+    <race>DMS_Mech_Lady</race>
     <combatPower>150</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/seperated/lady</texPath>
+          <texPath>Things/Automatroid/seperated/Synthroid_Female</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.4</drawSize>
           <shadowData>
@@ -120,7 +120,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/seperated/lady</texPath>
+          <texPath>Things/Automatroid/seperated/Synthroid_Female</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.4</drawSize>
           <shadowData>

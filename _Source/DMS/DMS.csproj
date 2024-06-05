@@ -65,7 +65,10 @@
     <Compile Include="Ability\CompAbilityEffect_SelfRepairMode.cs" />
     <Compile Include="HumanlikeMech\Patch_PawnRenderNodeWorker_Apparel_Body_CanDrawNow.cs" />
     <Compile Include="HumanlikeMech\Patch_PawnRenderNodeWorker_Apparel_Head_CanDrawNow.cs" />
+    <Compile Include="HumanlikeMech\Patch_Pawn_IsColonistPlayerControlled.cs" />
+    <Compile Include="HumanlikeMech\PawnRenderNode.cs" />
     <Compile Include="HumanlikeMech\PawnRenderTree_SetupDynamicNodes_Patch.cs" />
+    <Compile Include="HumanlikeMech\StatWorker_Patch.cs" />
     <Compile Include="MechMaintainBench.cs" />
     <Compile Include="Royalty\Patch_GenerateBestowingCeremonyQuest.cs" />
     <Compile Include="Royalty\QuestNode_Root_PromotionCeremony.cs" />

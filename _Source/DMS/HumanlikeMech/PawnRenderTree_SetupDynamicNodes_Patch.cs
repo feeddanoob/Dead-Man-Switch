@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Reflection.Emit;
 using System.Reflection;
 using System.Linq;
+using System;
 
 namespace DMS
 {
@@ -14,7 +15,8 @@ namespace DMS
         {
             if (___pawn is HumanlikeMech)
             {
-                __instance.SetupApparelNodes();
+                Traverse.Create((object)__instance).Method("SetupApparelNodes", Array.Empty<object>()).GetValue();
+                //__instance.SetupApparelNodes(); 嗚，我是笨蛋，學不會用UnsafeAccesser
             }
         }
     }

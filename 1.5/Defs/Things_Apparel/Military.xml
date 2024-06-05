@@ -535,7 +535,7 @@
 		<!-- 暫時不給造 -->
 		<recipeMaker />
 		<graphicData>
-			<texPath>Things/Apparel/GarrisionCoat/Apparel</texPath>
+			<texPath>Things/Apparel/MagierCloak/icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.9</drawSize>
 		</graphicData>

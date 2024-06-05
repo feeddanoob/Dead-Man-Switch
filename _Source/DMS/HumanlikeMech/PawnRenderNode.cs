@@ -38,7 +38,8 @@ namespace DMS
         }
         public override Vector3 OffsetFor(PawnRenderNode node, PawnDrawParms parms, out Vector3 pivot)
         {
-            Vector3 vector = base.OffsetFor(node, parms, out pivot) + parms.pawn.Drawer.renderer.BaseHeadOffsetAt(parms.facing);
+            Vector3 offset = parms.pawn.def.GetModExtension<HumanlikeMechExtension>().headOffset;
+            Vector3 vector = base.OffsetFor(node, parms, out pivot) + parms.pawn.Drawer.renderer.BaseHeadOffsetAt(parms.facing)+ offset;
             if (node.Props.narrowCrownHorizontalOffset != 0f && parms.facing.IsHorizontal)
             {
                 if (parms.facing == Rot4.East)

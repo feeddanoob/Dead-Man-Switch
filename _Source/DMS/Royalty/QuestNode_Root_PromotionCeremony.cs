@@ -12,6 +12,8 @@ namespace DMS
     {
         public static PawnKindDef DMS_Officer_Ceremonist;
         public static PawnKindDef DMS_Escort;
+        public static ThingDef DMS_Shuttle;
+        public static TransportShipDef DMS_Ship_TransportShuttle;
     }
     public class QuestNode_Root_PromotionCeremony : QuestNode
     {
@@ -77,7 +79,7 @@ namespace DMS
             string inSignal3 = QuestGenUtility.QuestTagSignal(text, "BeingAttacked");
             string inSignal4 = QuestGenUtility.QuestTagSignal(text, "Fleeing");
             string inSignal5 = QuestGenUtility.QuestTagSignal(text, "TitleAwardedWhenUpdatingChanged");
-            Thing thing = QuestGen_Shuttle.GenerateShuttle(bestowingFaction);
+            Thing thing = QuestGen_Shuttle.GenerateShuttle(bestowingFaction,shuttleDef:QuestKindDefOf.DMS_Shuttle);
             Pawn pawn2 = quest.GetPawn(new QuestGen_Pawns.GetPawnParms
             {
                 mustBeOfKind = QuestKindDefOf.DMS_Officer_Ceremonist,
@@ -89,6 +91,23 @@ namespace DMS
             });
             QuestUtility.AddQuestTag(ref thing.questTags, text);
             QuestUtility.AddQuestTag(ref pawn.questTags, text);
+
+            ThingOwner<Thing> innerContainer = pawn2.inventory.innerContainer;
+            for (int num = innerContainer.Count - 1; num >= 0; num--)
+            {
+                if (innerContainer[num].def == RimWorld.ThingDefOf.PsychicAmplifier)
+                {
+                    Thing thing2 = innerContainer[num];
+                    innerContainer.RemoveAt(num);
+                    thing2.Destroy();
+                }
+            }
+
+            for (int i = 0; i < 1; i++)
+            {
+                innerContainer.TryAdd(ThingMaker.MakeThing(RimWorld.ThingDefOf.PsychicAmplifier), 1);
+            }
+
 
             List<Pawn> list = new List<Pawn>();
             list.Add(pawn2);
@@ -108,7 +127,7 @@ namespace DMS
             quest.EnsureNotDowned(list);
             slate.Set("defenders", list2);
             thing.TryGetComp<CompShuttle>().requiredPawns = list;
-            TransportShip transportShip = quest.GenerateTransportShip(TransportShipDefOf.Ship_Shuttle, list, thing).transportShip;
+            TransportShip transportShip = quest.GenerateTransportShip(QuestKindDefOf.DMS_Ship_TransportShuttle, list, thing).transportShip;
             quest.AddShipJob_Arrive(transportShip, null, pawn, null, ShipJobStartMode.Instant, Faction.OfEmpire);
             quest.AddShipJob(transportShip, ShipJobDefOf.Unload);
             quest.AddShipJob_WaitForever(transportShip, leaveImmediatelyWhenSatisfied: true, showGizmos: false, list.Cast<Thing>().ToList()).sendAwayIfAnyDespawnedDownedOrDead = new List<Thing> { pawn2 };

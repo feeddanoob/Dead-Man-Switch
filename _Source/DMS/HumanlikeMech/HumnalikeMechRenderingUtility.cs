@@ -12,7 +12,7 @@ using HarmonyLib;
 
 namespace DMS
 {
-    public static class HumnalikeMechRenderingUtility
+    public static class HumnalikeMechRenderingUtility //不使用
     {
 		public const float headAltOffset = 0.0289575271f;
 
