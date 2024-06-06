@@ -20,7 +20,7 @@ namespace DMS
 
             foreach (var item in hediffs)
             {
-                float dmg = Rand.Range(item.Part.def.GetMaxHealth(target.Pawn) / 2, item.Part.def.GetMaxHealth(target.Pawn) - 1);
+                float dmg = Rand.Range(10, 18);
                 target.Pawn.health.RemoveHediff(item);
                 DamageInfo damage = new DamageInfo(DamageDefOf.ElectricalBurn, dmg, 999, -1, null, item.Part);
                 target.Pawn.TakeDamage(damage);

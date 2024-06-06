@@ -20,6 +20,7 @@
 		<li IfModActive="CETeam.CombatExtended,CETeam.CombatExtended_steam">1.5/CE</li>
 		<li IfModActive="hlx.gestaltengine">1.5/Mod/GestaltEngine</li>
 		<li IfModActive="vanillaracesexpanded.android">1.5/Mod/VREA</li>
-		<li IfModActive="wvc.sergkart.biotech.moremechanoidsworkmodes">1.5/Mod/WVC</li>
+		<li IfModActive="wvc.sergkart.biotech.moremechanoidsworkmodes">1.5/Mod/WVC</li>		
+		<li IfModActive="kentington.saveourship2">1.5/Mod/SaveOurShip2</li>
 	</v1.5>
 </loadFolders>
