@@ -6,7 +6,7 @@
 	<AbilityDef>
 		<defName>DMS_FlashLauncher</defName>
 		<label>flashbang barrage</label>
-		<description>launch an in-direct flashbang grenade strike to shock incoming enemies so the caster can safely retreat or let the ally take out the stunned enemies.</description>
+		<description>launch an indirect-fired flashbang grenade to stun the enemy to cover the retreat or assault.</description>
 		<iconPath>UI/Ability/Grenade</iconPath>
 		<aiCanUse>true</aiCanUse>
 		<cooldownTicksRange>6000~7200</cooldownTicksRange>
@@ -59,7 +59,7 @@
 	<AbilityDef>
 		<defName>DMS_SmokeLauncher</defName>
 		<label>particle smoke barrage</label>
-		<description>launch an anti-charged weapon particle smoke emitter to interfere with incoming charged ammunition.</description>
+		<description>launch an anti-charged weapon particle smole emitter to nullify incoming charged ammunition in short time.</description>
 		<iconPath>UI/Ability/Smoke</iconPath>
 		<aiCanUse>true</aiCanUse>
 		<cooldownTicksRange>3000~3600</cooldownTicksRange>
@@ -89,7 +89,7 @@
 	<AbilityDef>
 		<defName>DMS_MissileLauncher</defName>
 		<label>launch missile</label>
-		<description>launch a guided missile to destroy enemies in long range.</description>
+		<description>launch a long range top-down attack missile to destory enemies, the missile takes long time to reload.</description>
 		<iconPath>UI/Ability/Missile</iconPath>
 		<aiCanUse>true</aiCanUse>
 		<cooldownTicksRange>120000~120000</cooldownTicksRange>
@@ -247,7 +247,7 @@
 		<aiCanUse>true</aiCanUse>
 		<targetRequired>false</targetRequired>
 		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
-		<confirmationDialogText>overload the fission battery will result in explosion and unit loss. \n\nare you sure to do this?</confirmationDialogText>
+		<confirmationDialogText>overload the fission battery will result a large scale explosion and destroy this unit. \n\nare you sure to do this?</confirmationDialogText>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<label>fission overload</label>

@@ -6,7 +6,7 @@
 	<AbilityDef ParentName="DMS_AddHediffSelfBase">
 		<defName>DMS_Infrasound</defName>
 		<label>infrasound barrage</label>
-		<description>Cast powerful infrasound waves to interfere with the sensory systems of all creatures within the range.</description>
+		<description>emit powerful infrasound waves that disrupt the sensory organs of all creatures within the range.</description>
 		<iconPath>UI/Ability/Infrasound</iconPath>
 		<aiCanUse>true</aiCanUse>
 		<comps>
