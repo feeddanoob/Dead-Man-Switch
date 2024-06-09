@@ -1,23 +1,18 @@
 ﻿using HarmonyLib;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
 using Verse;
+using Verse.AI;
 using VFE.Mechanoids;
+using VFE.Mechanoids.AI.JobGivers;
+using VFE.Mechanoids.Needs;
 using VFECore;
 
 namespace tete
 {
-
-    //[StaticConstructorOnStartup]
-    //static class HarmonyInit
-    //{
-
-    //    static HarmonyInit() {
-    //        new Harmony("vefpatch").PatchAll();
-    //    }
-    //}
 
 
     [HarmonyPatch(typeof(CompMachineChargingStation))]
@@ -59,36 +54,6 @@ namespace tete
     [HarmonyPatch(typeof(CompMachine))]
     [HarmonyPatch(nameof(CompMachine.OnBuildingDestroyed))]
     static class CompMachine_Patch {
-
-        
-/*        [HarmonyTranspiler]
-        static IEnumerable<CodeInstruction> CompMachine_OnBuildingDestroyed(IEnumerable<CodeInstruction> instructions)
-        {
-            var li = instructions.ToList();
-            var ret = new Label();
-            var ctn = new Label();
-            li.Last().labels.Add(ret);
-            li[5].labels.Add(ctn);
-
-            bool found = false;
-
-            foreach (var i in li)
-            {   
-                yield return i;
-                if (!found && i.opcode == OpCodes.Nop)
-                {
-                    found = true;
-                    yield return new CodeInstruction(OpCodes.Ldarg_1);
-                    yield return new CodeInstruction(OpCodes.Callvirt,AccessTools.Method(typeof(CompPawnDependsOn), "get_MyPawnIsAlive"));
-                    yield return new CodeInstruction(OpCodes.Ldc_I4_0);
-                    yield return new CodeInstruction(OpCodes.Ceq);
-                    yield return new CodeInstruction(OpCodes.Brfalse_S, ctn);
-                    yield return new CodeInstruction(OpCodes.Br_S, ret);
-                }
-                
-            }
-        }*/
-
         [HarmonyPrefix]
         static bool NoDeadKill(CompPawnDependsOn compPawnDependsOn)
         {
@@ -96,6 +61,39 @@ namespace tete
         }
 
     }
+    [HarmonyPatch(typeof(JobGiver_ReturnToStationIdle),"TryGiveJob")]
+    static class JobGiver_ReturnToStationIdle_TryGiveJob
+    {
+        [HarmonyPrefix]
+        static bool Prefix(Pawn pawn,ref Job __result)
+        {
+            Building myBuilding = CompMachine.cachedMachinesPawns[pawn].myBuilding;
+            Need_Power need_Power = pawn.needs.TryGetNeed<Need_Power>();
 
+            if (need_Power != null && need_Power.CurLevelPercentage <= maxLevelPercentage && myBuilding != null && myBuilding.Spawned)
+            {
+
+                if (myBuilding.Map == pawn.Map && pawn.CanReserveAndReach(myBuilding, PathEndMode.OnCell, Danger.Deadly))
+                {
+                    if (pawn.Position != myBuilding.Position)
+                    {
+                        __result = JobMaker.MakeJob(JobDefOf.Goto, myBuilding.Position);
+                        return true;
+                    }
+                    pawn.Rotation = Rot4.South;
+                    if (myBuilding.TryGetComp<CompPowerTrader>().PowerOn)
+                    {
+                        __result = JobMaker.MakeJob(VFEDefOf.VFE_Mechanoids_Recharge, myBuilding);
+                        return true;
+                    }
+                }
+
+
+            }
+            __result = JobMaker.MakeJob(JobDefOf.Wait, 300, false);
+            return true;
+        }
+        private const float maxLevelPercentage = 0.99f;
+    }
 
 }
