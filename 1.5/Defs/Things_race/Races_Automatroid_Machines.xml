@@ -123,7 +123,7 @@
         <li>Hauling</li>
         <li>Cleaning</li>
         <li>Firefighter</li>
-        <li>Warden</li>
+        <!-- <li>Warden</li> -->
         <li MayRequire="orion.hospitality">Diplomat</li>
         <li MayRequire="frozensnowfox.complexjobs">FSFRearming</li>
         <li MayRequire="frozensnowfox.complexjobs">FSFHarvesting</li>
