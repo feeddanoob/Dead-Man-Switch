@@ -10,6 +10,7 @@ using VFE.Mechanoids;
 using VFE.Mechanoids.AI.JobGivers;
 using VFE.Mechanoids.Needs;
 using VFECore;
+using VFEMech;
 
 namespace tete
 {
@@ -90,10 +91,28 @@ namespace tete
 
 
             }
-            __result = JobMaker.MakeJob(JobDefOf.Wait, 300, false);
-            return true;
+            __result = JobMaker.MakeJob(JobDefOf.Wait, 600, false);
+            return false;
         }
         private const float maxLevelPercentage = 0.99f;
+    }
+    [HarmonyPatch(typeof(ThinkNode_ConditionalHasPower), "Satisfied")]
+    static class ThinkNode_ConditionalHasPower_Satisfied
+    {
+        static Dictionary<Pawn, Need_Power> cachedPawnPowerNeed = new Dictionary<Pawn, Need_Power>();
+        static bool Prefix(Pawn pawn,ref bool __result)
+        {
+            if (cachedPawnPowerNeed.TryGetValue(pawn,out var n))
+            {
+                __result = n.CurLevel > 0f;
+            }
+            else
+            {
+                cachedPawnPowerNeed[pawn] = pawn.needs.TryGetNeed<Need_Power>();
+                __result= cachedPawnPowerNeed[pawn].CurLevel > 0f;
+            }
+            return false;
+        }
     }
 
 }
