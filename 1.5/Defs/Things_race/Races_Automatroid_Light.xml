@@ -33,7 +33,7 @@
         <speedRange>(0.75,1)</speedRange>
         <throwRate>1</throwRate>
         <throwTick>5</throwTick>
-      </li>
+      </li> 
 	</comps>
   </ThingDef>
 

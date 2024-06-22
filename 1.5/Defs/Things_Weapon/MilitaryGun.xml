@@ -105,7 +105,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_AssaultRifle</texPath>
-			<drawSize>(1.2,1.2)</drawSize>
+			<drawSize>1.5</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
@@ -174,7 +174,7 @@
 		</weaponTags>	
 		<graphicData>
 			<texPath>Things/Weapons/DMS_SemiAutoRifle</texPath>
-			<drawSize>(1.75,1.75)</drawSize>
+			<drawSize>1.5</drawSize>
 		</graphicData>
 		<equippedDistanceOffset>0.5</equippedDistanceOffset>
 		<soundInteract>Interact_Rifle</soundInteract>
@@ -244,7 +244,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_BattleRifle</texPath>
-			<drawSize>(1.75,1.75)</drawSize>
+			<drawSize>1.5</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
@@ -311,7 +311,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_MarksmanRifle</texPath>
-			<drawSize>(1.75,1.75)</drawSize>
+			<drawSize>1.5</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
@@ -377,7 +377,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_AntiMaterialRifle</texPath>
-			<drawSize>(1.75,1.75)</drawSize>
+			<drawSize>1.5</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>

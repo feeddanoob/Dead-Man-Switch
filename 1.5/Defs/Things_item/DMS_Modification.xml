@@ -242,6 +242,7 @@
         <hediffDef>DMS_NuclearBattery</hediffDef>
         <soundDef>DMS_EquipGear</soundDef>
       </li>
+      <li complass="HediffCompProperties_DisappearsOnDeath"/>
     </comps>
   </ThingDef>
 
