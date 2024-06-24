@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make nuclear battery -->
+  <DMS_Make_NuclearBattery.label>製作裂變電池</DMS_Make_NuclearBattery.label>
+  <!-- EN: make nuclear battery -->
+  <DMS_Make_NuclearBattery.description>製作裂變電池</DMS_Make_NuclearBattery.description>
+  <!-- EN: making nuclear battery. -->
+  <DMS_Make_NuclearBattery.jobString>正在製作裂變電池</DMS_Make_NuclearBattery.jobString>
+  
+</LanguageData>

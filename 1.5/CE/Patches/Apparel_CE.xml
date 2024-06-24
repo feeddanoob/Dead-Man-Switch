@@ -43,7 +43,8 @@
 					<li>StrappedHead</li>
 				</value>
 			</li>
-			<!--power skelton-->
+			<!--power
+			skelton-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Apparel_PowerSkelton"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
@@ -71,7 +72,8 @@
 				</value>
 			</li>
 
-			<!--Bionic suit-->
+			<!--Bionic
+			suit-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Apparel_BionicSuit"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
@@ -100,7 +102,8 @@
 			</li>
 
 
-			<!--Army cap-->
+			<!--Army
+			cap-->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="DMS_CapBase"]/statBases/StuffEffectMultiplierArmor</xpath>
 				<value>
@@ -110,7 +113,7 @@
 				</value>
 			</li>
 
-			
+
 			<!--DMS_ArmorHelmetMakeableBase-->
 			<li Class="PatchOperationAdd">
 				<xpath>
@@ -129,7 +132,8 @@
 					<WornBulk>1</WornBulk>
 				</value>
 			</li>
-			<!--PASGT Array-->
+			<!--PASGT
+			Array-->
 			<li Class="PatchOperationReplace">
 				<xpath>
 					Defs/ThingDef[defName="DMS_Apparel_ArrayHelmet"]/statBases/StuffEffectMultiplierArmor</xpath>
@@ -138,10 +142,11 @@
 					<Bulk>5</Bulk>
 					<WornBulk>2</WornBulk>
 				</value>
-			</li>		
+			</li>
 
 
-			<!--Tactical Vest-->
+			<!--Tactical
+			Vest-->
 			<li Class="PatchOperationReplace">
 				<xpath>
 					Defs/ThingDef[defName="DMS_Apparel_TacticalVest"]/statBases/StuffEffectMultiplierArmor</xpath>
@@ -160,14 +165,15 @@
 			<li Class="PatchOperationReplace">
 				<xpath>
 					Defs/ThingDef[defName="DMS_Apparel_TacticalVest"]/stuffCategories</xpath>
-					<value>
-						<stuffCategories>
-							<li>Steeled</li>
-						</stuffCategories>
-					</value>
+				<value>
+					<stuffCategories>
+						<li>Steeled</li>
+					</stuffCategories>
+				</value>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalVest"]/equippedStatOffsets/MoveSpeed</xpath>
+				<xpath>
+					Defs/ThingDef[defName="DMS_Apparel_TacticalVest"]/equippedStatOffsets/MoveSpeed</xpath>
 			</li>
 
 			<li Class="PatchOperationAddModExtension">
@@ -195,9 +201,11 @@
 			</li>
 
 
-			<!--unit suit-->
+			<!--unit
+			suit-->
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="DMS_Apparel_UnitSuit"]/statBases/StuffEffectMultiplierArmor</xpath>
+				<xpath>
+					Defs/ThingDef[defName="DMS_Apparel_UnitSuit"]/statBases/StuffEffectMultiplierArmor</xpath>
 				<value>
 					<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
 				</value>
@@ -226,7 +234,8 @@
 
 			<!--DMS_Apparel_GarrisionCoat-->
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="DMS_Apparel_GarrisionCoat"]/statBases/StuffEffectMultiplierArmor</xpath>
+				<xpath>
+					Defs/ThingDef[defName="DMS_Apparel_GarrisionCoat"]/statBases/StuffEffectMultiplierArmor</xpath>
 				<value>
 					<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
 				</value>

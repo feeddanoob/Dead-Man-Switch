@@ -7,8 +7,8 @@
     <texPath>UI/Faction/VanguardIcon</texPath>
     <color>(0.5, 0.65, 0.5)</color>
     <pawnKinds>
-        <li>DMS_Security</li>
-        <li>DMS_Squad_ServiceMan</li>
+        <li>DMS_MinuteMan</li>
+        <li>DMS_Police_Pistol</li>
         <li>DMS_Soldier</li>
     </pawnKinds>
     <referencedFaction>DMS_Army</referencedFaction>

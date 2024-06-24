@@ -6,7 +6,7 @@
   
   <!-- EN: mech autocannon -->
   <DMS_Autocannon.label>機兵輕機砲</DMS_Autocannon.label>
-  <!-- EN: a light autocannon for mech soldier and infantry support platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
+  <!-- EN: an autocannon mech soldier and infantry support platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
   <DMS_Autocannon.description>適用於機兵與步兵支援平台的輕型機砲。\n\n這種武器是專門為機兵設計的，因為太重，所以只有特定的機兵才能操作。</DMS_Autocannon.description>
   <!-- EN: stock -->
   <DMS_Autocannon.tools.stock.label>槍托</DMS_Autocannon.tools.stock.label>

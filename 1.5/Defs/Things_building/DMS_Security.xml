@@ -281,7 +281,7 @@
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_Tunguska</defName>
     <label>Tunguska</label>
-    <description>Tunguska</description>
+    <description>A remote-controlled turret composed of two 2A38 autoaconnon and eight missile launchers. Due to its cheap maintenance and modification costs, it is commonly seen in colonial fleet outposts in rimworlds.</description>
     <techLevel>Industrial</techLevel>
     <graphicData>
       <texPath>Things/Turrets/DMS_Base_Tunguska_GateKeeper</texPath>
@@ -343,7 +343,7 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
       <Steel>500</Steel>
-      <Tungsteel>250</Tungsteel>
+      <Tungsteel>200</Tungsteel>
       <ComponentStamped>20</ComponentStamped>
       <ComponentIndustrial>15</ComponentIndustrial>
       <ComponentFireControl>2</ComponentFireControl>
@@ -359,7 +359,7 @@
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>DMS_Gun_Tunguska</defName>
     <label>Tunguska</label>
-    <description>Tunguska</description>
+    <description>A weapon system that include two 2A38 autoaconnon and eight missile launchers.</description>
     <graphicData>
       <texPath>Things/Turrets/DMS_Gun_Tunguska</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -398,7 +398,7 @@
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_GateKeeper</defName>
     <label>GateKeeper</label>
-    <description>GateKeeper</description>
+    <description>A live-fire large-caliber multi-barreled machine gun turret used on spacecraft and maritime ships, with extremely high rates of fire and devastating suppression capabilities.</description>
     <techLevel>Industrial</techLevel>
     <graphicData>
       <texPath>Things/Turrets/DMS_Base_Tunguska_GateKeeper</texPath>
@@ -480,7 +480,7 @@
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>DMS_Gun_GateKeeper</defName>
     <label>GateKeeper</label>
-    <description>GateKeeper</description>
+    <description>A large-caliber multi-barreled autocannon, more known as GAU-8 "Avanger". It is an old and practical design with extremely high rates of fire and devastating suppression capabilities.</description>
     <graphicData>
       <texPath>Things/Turrets/DMS_Gun_GateKeeper</texPath>
       <drawSize>4</drawSize>

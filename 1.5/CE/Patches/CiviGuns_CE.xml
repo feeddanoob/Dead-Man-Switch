@@ -2,26 +2,24 @@
 
 
 <Patch>
-    <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-		<operations>
+    <Operation Class="PatchOperationSequence">
+        <operations>
 
-            
-            <!--Remove speed penalty-->
+
+            <!--Remove
+            speed penalty-->
             <li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="DMS_SniperGrenadeLauncher" or
-                                     defName="DMS_ElephantGun"
-                                     ]/equippedStatOffsets/MoveSpeed</xpath>
-			</li>
+                <xpath>Defs/ThingDef[defName="DMS_SniperGrenadeLauncher" or
+                    defName="DMS_ElephantGun"
+                    ]/equippedStatOffsets/MoveSpeed</xpath>
+            </li>
 
-            <!--===== Pocket Pistol =====-->
+            <!--=====
+            Pocket Pistol =====-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_KnuckledusterRevolver"]/tools</xpath>
                 <value>
-                    <tools> 
+                    <tools>
                         <li Class="CombatExtended.ToolCE">
                             <label>grip</label>
                             <capacities>
@@ -29,10 +27,10 @@
                             </capacities>
                             <power>2</power>
                             <cooldownTime>1.44</cooldownTime>
-							<chanceFactor>0.33</chanceFactor>
+                            <chanceFactor>0.33</chanceFactor>
                             <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
                             <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
-                        </li>					
+                        </li>
                         <li Class="CombatExtended.ToolCE">
                             <label>blade</label>
                             <capacities>
@@ -41,24 +39,24 @@
                             <power>10</power>
                             <cooldownTime>1.23</cooldownTime>
                             <armorPenetrationBlunt>0.36</armorPenetrationBlunt>
-					        <armorPenetrationSharp>0.30</armorPenetrationSharp>
+                            <armorPenetrationSharp>0.30</armorPenetrationSharp>
                             <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
                         </li>
                         <li Class="CombatExtended.ToolCE">
-					        <label>point</label>
-					        <capacities>
-						        <li>Stab</li>
-					        </capacities>
-					        <power>11</power>
-					        <cooldownTime>1.25</cooldownTime>
-					        <armorPenetrationBlunt>0.25</armorPenetrationBlunt>
-					        <armorPenetrationSharp>0.40</armorPenetrationSharp>
-					        <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-				        </li>
+                            <label>point</label>
+                            <capacities>
+                                <li>Stab</li>
+                            </capacities>
+                            <power>11</power>
+                            <cooldownTime>1.25</cooldownTime>
+                            <armorPenetrationBlunt>0.25</armorPenetrationBlunt>
+                            <armorPenetrationSharp>0.40</armorPenetrationSharp>
+                            <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+                        </li>
                     </tools>
                 </value>
-            </li>			
-			
+            </li>
+
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_KnuckledusterRevolver</defName>
                 <statBases>
@@ -84,7 +82,7 @@
                 <AmmoUser>
                     <magazineSize>5</magazineSize>
                     <reloadTime>0.85</reloadTime>
-					<reloadOneAtATime>true</reloadOneAtATime>
+                    <reloadOneAtATime>true</reloadOneAtATime>
                     <ammoSet>AmmoSet_45Colt410Bore_SB</ammoSet>
                 </AmmoUser>
                 <FireModes>
@@ -96,13 +94,14 @@
                     <li>CE_AI_BROOM</li>
                     <li>NoSwitch</li>
                 </weaponTags>
-            </li>		
+            </li>
 
-			<!--===== Riot Revolver =====-->
+            <!--=====
+            Riot Revolver =====-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_Revolver"]/tools</xpath>
                 <value>
-                    <tools> 
+                    <tools>
                         <li Class="CombatExtended.ToolCE">
                             <label>grip</label>
                             <capacities>
@@ -126,8 +125,8 @@
                         </li>
                     </tools>
                 </value>
-            </li>		
-			
+            </li>
+
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Revolver</defName>
                 <statBases>
@@ -152,7 +151,7 @@
                 </Properties>
                 <AmmoUser>
                     <magazineSize>5</magazineSize>
-					<reloadOneAtATime>true</reloadOneAtATime>
+                    <reloadOneAtATime>true</reloadOneAtATime>
                     <reloadTime>0.75</reloadTime>
                     <ammoSet>AmmoSet_12Gauge</ammoSet>
                 </AmmoUser>
@@ -164,50 +163,51 @@
                     <li>CE_OneHandedWeapon</li>
                     <li>CE_AI_AssaultWeapon</li>
                 </weaponTags>
-            </li>		
-			
-			<!--===== Riot Shotgun =====-->
+            </li>
+
+            <!--=====
+            Riot Shotgun =====-->
             <li Class="PatchOperationReplace">
                 <xpath>
-				    Defs/ThingDef[defName="DMS_RiotShotgun"]/tools
+                    Defs/ThingDef[defName="DMS_RiotShotgun"]/tools
                 </xpath>
                 <value>
-                   <tools>
-                       <li Class="CombatExtended.ToolCE">
-                           <label>stock</label>
-                           <capacities>
-                               <li>Blunt</li>
-                           </capacities>
-                           <power>8</power>
-                           <cooldownTime>1.55</cooldownTime>
-                           <chanceFactor>1.5</chanceFactor>
-                           <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
-                           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
-                       </li>
-                       <li Class="CombatExtended.ToolCE">
-                           <label>barrel</label>
-                           <capacities>
-                               <li>Blunt</li>
-                           </capacities>
-                           <power>5</power>
-                           <cooldownTime>2.02</cooldownTime>
-                           <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
-                           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
-                       </li>
-                       <li Class="CombatExtended.ToolCE">
-                           <label>muzzle</label>
-                           <capacities>
-                               <li>Poke</li>
-                           </capacities>
-                           <power>8</power>
-                           <cooldownTime>1.55</cooldownTime>
-                           <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
-                           <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
-                       </li>
-                   </tools>
+                    <tools>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>stock</label>
+                            <capacities>
+                                <li>Blunt</li>
+                            </capacities>
+                            <power>8</power>
+                            <cooldownTime>1.55</cooldownTime>
+                            <chanceFactor>1.5</chanceFactor>
+                            <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>barrel</label>
+                            <capacities>
+                                <li>Blunt</li>
+                            </capacities>
+                            <power>5</power>
+                            <cooldownTime>2.02</cooldownTime>
+                            <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>muzzle</label>
+                            <capacities>
+                                <li>Poke</li>
+                            </capacities>
+                            <power>8</power>
+                            <cooldownTime>1.55</cooldownTime>
+                            <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+                        </li>
+                    </tools>
                 </value>
-            </li>		
-			
+            </li>
+
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_RiotShotgun</defName>
                 <statBases>
@@ -243,54 +243,55 @@
                     <li>CE_AI_AssaultWeapon</li>
                 </weaponTags>
             </li>
-					
-			<!-- patch tools-->
+
+            <!-- patch tools-->
             <li Class="PatchOperationReplace">
                 <xpath>
-				    Defs/ThingDef[defName="
-                    DMS_MiniMachineGun" or 
-                    defName="DMS_SurvivalRifle" or 
-                    defName="DMS_ElephantGun" or 
+                    Defs/ThingDef[defName="
+                    DMS_MiniMachineGun" or
+                    defName="DMS_SurvivalRifle" or
+                    defName="DMS_ElephantGun" or
                     defName="DMS_SniperGrenadeLauncher"]/tools
                 </xpath>
                 <value>
-                   <tools>
-                       <li Class="CombatExtended.ToolCE">
-                           <label>stock</label>
-                           <capacities>
-                               <li>Blunt</li>
-                           </capacities>
-                           <power>8</power>
-                           <cooldownTime>1.55</cooldownTime>
-                           <chanceFactor>1.5</chanceFactor>
-                           <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
-                           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
-                       </li>
-                       <li Class="CombatExtended.ToolCE">
-                           <label>barrel</label>
-                           <capacities>
-                               <li>Blunt</li>
-                           </capacities>
-                           <power>5</power>
-                           <cooldownTime>2.02</cooldownTime>
-                           <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
-                           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
-                       </li>
-                       <li Class="CombatExtended.ToolCE">
-                           <label>muzzle</label>
-                           <capacities>
-                               <li>Poke</li>
-                           </capacities>
-                           <power>8</power>
-                           <cooldownTime>1.55</cooldownTime>
-                           <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
-                           <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
-                       </li>
-                   </tools>
+                    <tools>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>stock</label>
+                            <capacities>
+                                <li>Blunt</li>
+                            </capacities>
+                            <power>8</power>
+                            <cooldownTime>1.55</cooldownTime>
+                            <chanceFactor>1.5</chanceFactor>
+                            <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>barrel</label>
+                            <capacities>
+                                <li>Blunt</li>
+                            </capacities>
+                            <power>5</power>
+                            <cooldownTime>2.02</cooldownTime>
+                            <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>muzzle</label>
+                            <capacities>
+                                <li>Poke</li>
+                            </capacities>
+                            <power>8</power>
+                            <cooldownTime>1.55</cooldownTime>
+                            <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+                        </li>
+                    </tools>
                 </value>
             </li>
-			
-			<!--===== Mini Machinegun =====-->
+
+            <!--=====
+            Mini Machinegun =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_MiniMachineGun</defName>
                 <statBases>
@@ -307,13 +308,13 @@
                     <defaultProjectile>Bullet_22LR_FMJ</defaultProjectile>
                     <warmupTime>1.15</warmupTime>
                     <range>37</range>
-					<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                    <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
                     <burstShotCount>15</burstShotCount>
                     <soundCast>DMS_Pistol_Shot</soundCast>
                     <soundCastTail>GunTail_Light</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                     <recoilAmount>0.63</recoilAmount>
-					<targetParams>
+                    <targetParams>
                         <canTargetLocations>true</canTargetLocations>
                     </targetParams>
                 </Properties>
@@ -329,14 +330,15 @@
                 </FireModes>
                 <weaponTags>
                     <li>CE_OneHandedWeapon</li>
-					<li>CE_MachineGun</li>
+                    <li>CE_MachineGun</li>
                     <li>CE_AI_LMG</li>
                     <li>Bipod_SAW</li>
                 </weaponTags>
-            </li>			
-			
-			<!--===== Survival Rifle =====-->
-			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+            </li>
+
+            <!--=====
+            Survival Rifle =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_SurvivalRifle</defName>
                 <statBases>
                     <Mass>2</Mass>
@@ -370,36 +372,37 @@
                     <li>CE_AI_SR</li>
                 </weaponTags>
             </li>
-				
-			<li Class="PatchOperationAdd">
+
+            <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DMS_SurvivalRifle"]/comps</xpath>
                 <value>
-			    <li Class="CombatExtended.CompProperties_UnderBarrel">
-                    <propsUnderBarrel>
-                        <magazineSize>1</magazineSize>
-                        <reloadTime>1.5</reloadTime>
-                        <ammoSet>AmmoSet_SurvivalRifle_UB</ammoSet>
-                    </propsUnderBarrel>
-                    <verbPropsUnderBarrel>
-                        <recoilAmount>2.70</recoilAmount>
-                        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-                        <hasStandardCommand>true</hasStandardCommand>
-                        <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
-                        <warmupTime>1.08</warmupTime>
-                        <range>8</range>
-                        <soundCast>Shot_Shotgun_NoRack</soundCast>
-                        <soundCastTail>GunTail_Medium</soundCastTail>
-                        <muzzleFlashScale>5</muzzleFlashScale>
-                    </verbPropsUnderBarrel>
-                    <propsFireModesUnderBarrel>
-                        <aiAimMode>Snapshot</aiAimMode>
-                    </propsFireModesUnderBarrel>
-                </li>
-			    </value>
-			</li>
-			
-			<!--===== Elephant Gun =====-->
-			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                    <li Class="CombatExtended.CompProperties_UnderBarrel">
+                        <propsUnderBarrel>
+                            <magazineSize>1</magazineSize>
+                            <reloadTime>1.5</reloadTime>
+                            <ammoSet>AmmoSet_SurvivalRifle_UB</ammoSet>
+                        </propsUnderBarrel>
+                        <verbPropsUnderBarrel>
+                            <recoilAmount>2.70</recoilAmount>
+                            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                            <hasStandardCommand>true</hasStandardCommand>
+                            <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+                            <warmupTime>1.08</warmupTime>
+                            <range>8</range>
+                            <soundCast>Shot_Shotgun_NoRack</soundCast>
+                            <soundCastTail>GunTail_Medium</soundCastTail>
+                            <muzzleFlashScale>5</muzzleFlashScale>
+                        </verbPropsUnderBarrel>
+                        <propsFireModesUnderBarrel>
+                            <aiAimMode>Snapshot</aiAimMode>
+                        </propsFireModesUnderBarrel>
+                    </li>
+                </value>
+            </li>
+
+            <!--=====
+            Elephant Gun =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_ElephantGun</defName>
                 <statBases>
                     <Mass>10</Mass>
@@ -429,20 +432,21 @@
                 </FireModes>
                 <weaponTags>
                     <li>CE_AI_SR</li>
-					<li>Bipod_Rifle</li>
+                    <li>Bipod_Rifle</li>
                 </weaponTags>
-            </li>		
-			
-			<!--===== Sniper GL =====-->
-			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="DMS_SniperGrenadeLauncher"]/statBases</xpath>
-				<value>
-					<ToughnessRating>3</ToughnessRating>
-				</value>
-			</li>
-			
-			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+            </li>
+
+            <!--=====
+            Sniper GL =====-->
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DMS_SniperGrenadeLauncher"]/statBases</xpath>
+                <value>
+                    <ToughnessRating>3</ToughnessRating>
+                </value>
+            </li>
+
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_SniperGrenadeLauncher</defName>
                 <statBases>
                     <Mass>10.7</Mass>
@@ -474,11 +478,10 @@
                     <aiAimMode>AimedShot</aiAimMode>
                 </FireModes>
                 <weaponTags>
-					<li>CE_AI_AOE</li>
-					<li>Bipod_DMR</li>
+                    <li>CE_AI_AOE</li>
+                    <li>Bipod_DMR</li>
                 </weaponTags>
-            </li>		
-			</operations>
-		</match>
-	</Operation>
+            </li>
+        </operations>
+    </Operation>
 </Patch>

@@ -10,7 +10,7 @@
   <!-- EN: GateKeeper -->
   <DMS_Gun_GateKeeper.label>守門人</DMS_Gun_GateKeeper.label>
   <!-- EN: GateKeeper -->
-  <DMS_Gun_GateKeeper.description>三十毫米多管旋轉機槍，具有極高的射速</DMS_Gun_GateKeeper.description>
+  <DMS_Gun_GateKeeper.description>用於太空船與水面艦艇的大口徑多管機槍砲塔，具有極高的射速與毀滅性的壓制能力。</DMS_Gun_GateKeeper.description>
   <!-- EN: GateKeeper -->
   <DMS_Gun_GateKeeper.verbs.Verb_Shoot.label>守門人</DMS_Gun_GateKeeper.verbs.Verb_Shoot.label>
   
@@ -30,7 +30,7 @@
   <!-- EN: Tunguska -->
   <DMS_Gun_Tunguska.label>2K22通古斯卡</DMS_Gun_Tunguska.label>
   <!-- EN: Tunguska -->
-  <DMS_Gun_Tunguska.description>四聯裝彈炮一體防空系統，具有八具導彈發射器能夠在必要條件下發射威力十足的防禦導彈</DMS_Gun_Tunguska.description>
+  <DMS_Gun_Tunguska.description>四聯裝彈炮一體防空系統，具有八具導彈發射器能夠在必要條件下發射威力十足的防禦導彈。</DMS_Gun_Tunguska.description>
   <!-- EN: Tunguska -->
   <DMS_Gun_Tunguska.verbs.Verb_Shoot.label>通古斯卡</DMS_Gun_Tunguska.verbs.Verb_Shoot.label>
   

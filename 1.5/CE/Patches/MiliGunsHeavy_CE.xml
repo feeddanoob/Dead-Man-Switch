@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Patch>
-    <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-		<operations>		
-			<!--===== 2A38 30mm+ 9M311 =====-->
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <!--=====
+            2A38 30mm+ 9M311 =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Tarbosaurus_Gun</defName>
                 <statBases>
@@ -19,12 +16,12 @@
                     <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
-				    <recoilAmount>1.49</recoilAmount>
+                    <recoilAmount>1.49</recoilAmount>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_30x165mm_AP</defaultProjectile>
-					<burstShotCount>30</burstShotCount>
-					<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+                    <burstShotCount>30</burstShotCount>
+                    <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
                     <warmupTime>1.35</warmupTime>
                     <range>75</range>
                     <soundCast>Shot_Autocannon</soundCast>
@@ -38,21 +35,22 @@
                     <ammoSet>AmmoSet_30x165mm</ammoSet>
                 </AmmoUser>
                 <FireModes>
-				    <aiAimMode>Snapshot</aiAimMode>
-					<aimedBurstShotCount>15</aimedBurstShotCount>
+                    <aiAimMode>Snapshot</aiAimMode>
+                    <aimedBurstShotCount>15</aimedBurstShotCount>
                 </FireModes>
                 <weaponTags>
-					<li>CE_AI_Suppressive</li>
+                    <li>CE_AI_Suppressive</li>
                     <li>NoSwitch</li>
-                </weaponTags>    
+                </weaponTags>
             </li>
 
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="DMS_Tarbosaurus_Gun"]/comps/li[@Class="MVCF.Comps.CompProperties_VerbProps"]/verbProps</xpath>
+                <xpath>
+                    Defs/ThingDef[defName="DMS_Tarbosaurus_Gun"]/comps/li[@Class="MVCF.Comps.CompProperties_VerbProps"]/verbProps</xpath>
                 <value>
                     <verbProps>
                         <li>
-                            <label>LaunchSAM</label>						
+                            <label>LaunchSAM</label>
                             <visualLabel>launch SAM</visualLabel>
                             <description>launch 9M311 missile</description>
                             <canBeToggled>true</canBeToggled>
@@ -77,12 +75,12 @@
                         </li>
                     </verbProps>
                 </value>
-            </li>       
+            </li>
 
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_Tarbosaurus_Gun"]/verbs</xpath>
                 <value>
-                    <verbs>      
+                    <verbs>
                         <li>
                             <label>LaunchSAM</label>
                             <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
@@ -107,7 +105,7 @@
                     </verbs>
                 </value>
             </li>
-            
+
             <!-- 駭蜥最弱武器:2A38 -->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Gun_2A38M</defName>
@@ -120,12 +118,12 @@
                     <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
-				    <recoilAmount>1.49</recoilAmount>
+                    <recoilAmount>1.49</recoilAmount>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_30x165mm_AP</defaultProjectile>
-					<burstShotCount>15</burstShotCount>
-					<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+                    <burstShotCount>15</burstShotCount>
+                    <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
                     <warmupTime>1.35</warmupTime>
                     <range>75</range>
                     <soundCast>Shot_Autocannon</soundCast>
@@ -139,14 +137,14 @@
                     <ammoSet>AmmoSet_30x165mm</ammoSet>
                 </AmmoUser>
                 <FireModes>
-				    <aiAimMode>Snapshot</aiAimMode>
-					<aimedBurstShotCount>6</aimedBurstShotCount>
+                    <aiAimMode>Snapshot</aiAimMode>
+                    <aimedBurstShotCount>6</aimedBurstShotCount>
                 </FireModes>
                 <weaponTags>
                     <li>DMS_Tarbosaurus_Gun</li>
-					<li>CE_AI_Suppressive</li>
+                    <li>CE_AI_Suppressive</li>
                     <li>NoSwitch</li>
-                </weaponTags>    
+                </weaponTags>
             </li>
 
             <!-- 無後座力砲 -->
@@ -161,11 +159,11 @@
                     <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
-				    <recoilAmount>1.49</recoilAmount>
+                    <recoilAmount>1.49</recoilAmount>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-					<burstShotCount>1</burstShotCount>
-					<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+                    <burstShotCount>1</burstShotCount>
+                    <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
                     <defaultProjectile>Bullet_SPG9Rocket_HEAT</defaultProjectile>
                     <warmupTime>2</warmupTime>
                     <minRange>6.9</minRange>
@@ -183,10 +181,9 @@
                     <ammoSet>AmmoSet_SPG9Rocket</ammoSet>
                 </AmmoUser>
                 <FireModes>
-				    <aiAimMode>AimedShot</aiAimMode>
+                    <aiAimMode>AimedShot</aiAimMode>
                 </FireModes>
             </li>
-			</operations>
-		</match>
-	</Operation>
+        </operations>
+    </Operation>
 </Patch>

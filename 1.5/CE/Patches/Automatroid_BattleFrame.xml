@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-		<operations>	
+	<Operation Class="PatchOperationSequence">
+		<operations>
 			<!-- ========== PawnKind Patches ========== -->
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/PawnKindDef[defName="DMS_Mech_EscortLifter" or defName="DMS_Mech_Tachanka"]</xpath>
+				<xpath>Defs/PawnKindDef[defName="DMS_Mech_EscortLifter" or
+					defName="DMS_Mech_Tachanka"]</xpath>
 				<value>
 					<li Class="CombatExtended.LoadoutPropertiesExtension">
 						<primaryMagazineCount>
@@ -35,7 +32,8 @@
 				</value>
 			</li>
 			<!-- ======Battleframe (early stage of attempt on humanoid mech production)======-->
-			<!-- yet being a weapon platform compatible with all kinds of weapons, it has very bad combat capability, so mainly used for cargo transporting right now -->
+			<!-- yet being a weapon platform compatible with all kinds of weapons, it has very bad
+			combat capability, so mainly used for cargo transporting right now -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="BaseBattleFrame"]/statBases</xpath>
 				<value>
@@ -75,7 +73,7 @@
 				<nomatch Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[@Name="BaseBattleFrame"]</xpath>
 					<value>
-						<comps/>
+						<comps />
 					</value>
 				</nomatch>
 			</li>
@@ -101,7 +99,8 @@
 				</value>
 			</li>
 
-			<!--command version has its command devices take up all the capacity-->
+			<!--command
+			version has its command devices take up all the capacity-->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_FieldCommand"]/statBases</xpath>
 				<value>
@@ -162,6 +161,5 @@
 				</value>
 			</li>
 		</operations>
-</match>
-</Operation>
+	</Operation>
 </Patch>

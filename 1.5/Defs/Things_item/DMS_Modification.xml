@@ -141,7 +141,7 @@
     </costList>
     <recipeMaker>
       <workAmount>2000</workAmount>
-      <researchPrerequisite>DMS_Material</researchPrerequisite>
+      <researchPrerequisite>DMS_MechBasis</researchPrerequisite>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <recipeUsers>
@@ -216,20 +216,7 @@
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
-    <costList>
-      <FT_EnrichedUranium MayRequire="aoba.fortress.industrial.nucleardawn">1</FT_EnrichedUranium>
-      <ComponentStamped>1</ComponentStamped>
-      <Tungsteel>20</Tungsteel>
-    </costList>
-    <recipeMaker MayRequire="aoba.fortress.industrial.nucleardawn">
-      <workAmount>2000</workAmount>
-      <researchPrerequisite>DMS_Material</researchPrerequisite>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <recipeUsers>
-        <li>DMS_TableMachinePrinter</li>
-      </recipeUsers>
-    </recipeMaker>
+    <costList/>
     <comps>
       <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>

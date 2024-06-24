@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-				<li Class="PatchOperationAddModExtension">
-					<xpath>Defs/ThingDef[defName="
-						DMS_Mech_Caretta" or
-						defName="DMS_Mech_Geochelone" or
-						defName="DMS_Mech_Killdozer"
-						]</xpath>
-					<value>
-						<li Class="CombatExtended.RacePropertiesExtensionCE">
-							<bodyShape>Quadruped</bodyShape>
-						</li>
-					</value>
-				</li>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="
+					DMS_Mech_Caretta" or
+					defName="DMS_Mech_Geochelone" or
+					defName="DMS_Mech_Killdozer"
+					]</xpath>
+				<value>
+					<li Class="CombatExtended.RacePropertiesExtensionCE">
+						<bodyShape>Quadruped</bodyShape>
+					</li>
+				</value>
+			</li>
 			<!-- ====== Caretta and Geochelone(both are IFV but first one has 20mm cannon)======-->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or
@@ -43,7 +39,8 @@
 				</value>
 			</li>
 
-			<!--only torso-->
+			<!--only
+			torso-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or
 					defName="DMS_Mech_Geochelone"]/statBases/ArmorRating_Sharp</xpath>
@@ -119,13 +116,16 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Killdozer"]/statBases</xpath>
 				<value>
-					<CarryWeight>200</CarryWeight> <!--additional armor reduce capacity-->
+					<CarryWeight>200</CarryWeight> <!--additional
+					armor reduce capacity-->
 					<CarryBulk>140</CarryBulk>
 					<AimingAccuracy>1</AimingAccuracy>
-					<ShootingAccuracyPawn>1.2</ShootingAccuracyPawn> <!--dozer block shot and reduce gun handling(?)-->
+					<ShootingAccuracyPawn>1.2</ShootingAccuracyPawn> <!--dozer
+					block shot and reduce gun handling(?)-->
 					<MeleeDodgeChance>0.00</MeleeDodgeChance>
 					<MeleeCritChance>0.15</MeleeCritChance>
-					<MeleeParryChance>0.65</MeleeParryChance><!--big dozer big block-->
+					<MeleeParryChance>0.65</MeleeParryChance><!--big
+					dozer big block-->
 					<MaxHitPoints>500</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
 				</value>
@@ -202,7 +202,6 @@
 					</tools>
 				</value>
 			</li>
-			</operations>
-		</match>
+		</operations>
 	</Operation>
 </Patch>

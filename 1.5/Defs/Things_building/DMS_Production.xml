@@ -29,7 +29,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.8</fillPercent>
 		<useHitPoints>True</useHitPoints>
-		<designationCategory>DMS_Category</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<passability>PassThroughOnly</passability>
 		<pathCost>80</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
@@ -235,6 +235,7 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
+    <designationCategory>DMS_Category</designationCategory>
     <costList>
       <Steel>250</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
@@ -264,7 +265,6 @@
     <modExtensions>
       <li Class="RecipeInheritance.ThingDefExtension">
         <inheritRecipesFrom>
-          <!--<li>TableMachining</li>-->
           <li>ElectricSmithy</li>
         </inheritRecipesFrom>
       </li>

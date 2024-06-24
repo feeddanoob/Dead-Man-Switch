@@ -23,7 +23,7 @@
   <DMS_Machine_VerlingBird.tools.head.label>頭部</DMS_Machine_VerlingBird.tools.head.label>
   
   <!-- EN: verling bird -->
-  <DMS_Machine_VerlingBirdA.label>百靈鳥A</DMS_Machine_VerlingBirdA.label>
+  <DMS_Machine_VerlingBirdA.label>百靈鳥</DMS_Machine_VerlingBirdA.label>
   <!-- EN: A quad-drone for reconnaissance. It is quite fragile for combat but moves extremely fast. can equipped with small-caliber gun or grenade to provide certain containment capabilities. -->
   <DMS_Machine_VerlingBirdA.description>用於偵察的四旋翼無人機。它在戰鬥中相當脆弱，但移動速度極快。可以配備小口徑槍或手榴彈，提供一定的遏制能力。</DMS_Machine_VerlingBirdA.description>
   <!-- EN: head -->
