@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: ceramic plates -->
@@ -9,11 +9,11 @@
   <!-- EN: nuclear battery -->
   <DMS_NuclearBattery.label>裂变电池</DMS_NuclearBattery.label>
   <!-- EN: The abundant output of installed nuclear fission battery eliminates the need for recharge. it can also be overloaded to produce a nuclear explosion comparable to an anti-gram weapon to destroy the enemy together. -->
-  <DMS_NuclearBattery.description>一种结构简单的核裂变电池，常见于许多无人职守的讯号站与驻防用的机兵上，由六根接近临界质量的柱状高密度铀235与热电偶集成并包裹在一个高强度壳体中。其输出的能量足够让绝大部分型号的机兵运转长达数百年，并且在紧急情况下也可以变为一次性核弹使用。</DMS_NuclearBattery.description>
+  <DMS_NuclearBattery.description>一种结构简单的核裂变电池，常见於许多无人职守的讯号站与驻防用的机兵上，由六根接近临界质量的柱状高密度铀235与热电偶集成并包裹在一个高强度壳体中。其输出的能量足够让绝大部分型号的机兵运转长达数百年，并且在紧急情况下也可以变为一次性核弹使用。</DMS_NuclearBattery.description>
   
   <!-- EN: reinforced frame -->
   <DMS_ReinforcedFrame.label>强化骨架</DMS_ReinforcedFrame.label>
   <!-- EN: Using tungsten steel to replace parts of the robot's frame that are prone to wear can effectively improve the durability during high-intensity combat and reduce the time spent on maintenance. But in exchange it will significantly increase the weight of the mech and affect its speed. -->
-  <DMS_ReinforcedFrame.description>使用钨钢合金来替换机兵骨架中较易磨损的部位，这可以有效提高在高强度战斗时的耐用性并且能在火力压制下也不受干扰的行动。但作为代价会显著提高机兵的重量并影响速度。</DMS_ReinforcedFrame.description>
+  <DMS_ReinforcedFrame.description>使用钨钢合金来替换机兵骨架中较易磨损的部位，这可以有效提高在高强度战斗时的耐用性并且能在火力压制下也不受干扰的行动。但作为代价会显着提高机兵的重量并影响速度。</DMS_ReinforcedFrame.description>
   
 </LanguageData>

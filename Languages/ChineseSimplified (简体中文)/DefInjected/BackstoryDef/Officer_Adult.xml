@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: [PAWN_nameDef] was a weapons controller at a CIC. Before being temporarily laid off due to a lack of maintenance parts for the control system, [PAWN_pronoun] job was to control the weapons systems of the task force's autonomous robots at the weapons control station to avoid accidents. Senseless killing...and fixing some mechanical issues by the way. -->
@@ -9,14 +9,14 @@
   <DMS_Officer01.titleShort>管制官</DMS_Officer01.titleShort>
   
   <!-- EN: Although it has been more than 3,000 years since humans stepped out of the galaxy, due to the chronology of records and the unavoidable long time of interstellar travel, there are usually errors in everything on the target planet when they arrive. The job of [PAWN_nameDef] is to study everything on this planet, those ecosystems and organisms that change over time and various factors. -->
-  <DMS_Officer02.description>虽然自人类踏出星系已经3000年有余，但由于纪录的断代与星际旅行无法避免的悠长时间使得当来到目标星球之时上面的一切通常存在误差，[PAWN_nameDef]的工作就是负责研究星球上随著时间与各种因素下变异的生态圈与生物。</DMS_Officer02.description>
+  <DMS_Officer02.description>虽然自人类踏出星系已经3000年有余，但由於纪录的断代与星际旅行无法避免的悠长时间使得当来到目标星球之时上面的一切通常存在误差，[PAWN_nameDef]的工作就是负责研究星球上随着时间与各种因素下变异的生态圈与生物。</DMS_Officer02.description>
   <!-- EN: Xeno researcher -->
   <DMS_Officer02.title>异星研究员</DMS_Officer02.title>
   <!-- EN: researcher -->
   <DMS_Officer02.titleShort>研究员</DMS_Officer02.titleShort>
   
   <!-- EN: [PAWN_nameDef] works for the medical department of the colonial fleet. Due to some disputes caused during a free medical tour on the surface of the planet, he had to stay briefly on the surface until the problem was resolved. -->
-  <DMS_Officer03.description>[PAWN_nameDef]为殖民舰队的医疗部门工作，由于在星球表面巡回义诊的时候酿成了一些纠纷因此不得不在问题解决前短暂滞留在地面上。</DMS_Officer03.description>
+  <DMS_Officer03.description>[PAWN_nameDef]为殖民舰队的医疗部门工作，由於在星球表面巡回义诊的时候酿成了一些纠纷因此不得不在问题解决前短暂滞留在地面上。</DMS_Officer03.description>
   <!-- EN: Itinerant medic -->
   <DMS_Officer03.title>巡回义诊医官</DMS_Officer03.title>
   <!-- EN: medic -->

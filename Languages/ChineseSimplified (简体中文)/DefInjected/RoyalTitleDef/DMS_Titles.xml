@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: brigadier -->
@@ -39,7 +39,7 @@
   <!-- EN: private -->
   <DMS_Private.label>二等兵</DMS_Private.label>
   <!-- EN: A private is a soldier, usually with the lowest rank in many armies. Soldiers with the rank of private may be conscripts or they may be professional (career) soldiers.. -->
-  <DMS_Private.description>二等兵是一种士兵，通常是许多军队中军衔最低的士兵。拥有二等兵军衔的士兵可能是应征入伍者，也可能是专职（职业）士兵。</DMS_Private.description>
+  <DMS_Private.description>二等兵是一种士兵，通常是许多军队中军衔最低的士兵。拥有二等兵军衔的士兵可能是应徵入伍者，也可能是专职（职业）士兵。</DMS_Private.description>
   
   <!-- EN: Reservist -->
   <DMS_Reservist.label>预备役</DMS_Reservist.label>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: bipedal -->
@@ -145,17 +145,17 @@
   <!-- EN: left front foot -->
   <DMS_Hound.corePart.parts.left_front_leg.parts.left_front_foot.customLabel>左前脚</DMS_Hound.corePart.parts.left_front_leg.parts.left_front_foot.customLabel>
   <!-- EN: left back leg -->
-  <DMS_Hound.corePart.parts.left_back_leg.customLabel>左后腿</DMS_Hound.corePart.parts.left_back_leg.customLabel>
+  <DMS_Hound.corePart.parts.left_back_leg.customLabel>左後腿</DMS_Hound.corePart.parts.left_back_leg.customLabel>
   <!-- EN: left back foot -->
-  <DMS_Hound.corePart.parts.left_back_leg.parts.left_back_foot.customLabel>左后脚</DMS_Hound.corePart.parts.left_back_leg.parts.left_back_foot.customLabel>
+  <DMS_Hound.corePart.parts.left_back_leg.parts.left_back_foot.customLabel>左後脚</DMS_Hound.corePart.parts.left_back_leg.parts.left_back_foot.customLabel>
   <!-- EN: right front leg -->
   <DMS_Hound.corePart.parts.right_front_leg.customLabel>右前腿</DMS_Hound.corePart.parts.right_front_leg.customLabel>
   <!-- EN: right front foot -->
   <DMS_Hound.corePart.parts.right_front_leg.parts.right_front_foot.customLabel>右前脚</DMS_Hound.corePart.parts.right_front_leg.parts.right_front_foot.customLabel>
   <!-- EN: right back leg -->
-  <DMS_Hound.corePart.parts.right_back_leg.customLabel>右后腿</DMS_Hound.corePart.parts.right_back_leg.customLabel>
+  <DMS_Hound.corePart.parts.right_back_leg.customLabel>右後腿</DMS_Hound.corePart.parts.right_back_leg.customLabel>
   <!-- EN: right back foot -->
-  <DMS_Hound.corePart.parts.right_back_leg.parts.right_back_foot.customLabel>右后脚</DMS_Hound.corePart.parts.right_back_leg.parts.right_back_foot.customLabel>
+  <DMS_Hound.corePart.parts.right_back_leg.parts.right_back_foot.customLabel>右後脚</DMS_Hound.corePart.parts.right_back_leg.parts.right_back_foot.customLabel>
   
   <!-- EN: erectus soldat -->
   <DMS_Humanoid_Soldat.label>士兵型机体</DMS_Humanoid_Soldat.label>
@@ -378,7 +378,7 @@
   <!-- EN: wetware computer core -->
   <DMS_KillDozer.corePart.parts.wetware_computer_core.customLabel>湿件计算核心</DMS_KillDozer.corePart.parts.wetware_computer_core.customLabel>
   <!-- EN: turret seat -->
-  <DMS_KillDozer.corePart.parts.turret_seat.customLabel>砲塔座圈</DMS_KillDozer.corePart.parts.turret_seat.customLabel>
+  <DMS_KillDozer.corePart.parts.turret_seat.customLabel>炮塔座圈</DMS_KillDozer.corePart.parts.turret_seat.customLabel>
   <!-- EN: elevator -->
   <DMS_KillDozer.corePart.parts.turret_seat.parts.elevator.customLabel>俯仰机构</DMS_KillDozer.corePart.parts.turret_seat.parts.elevator.customLabel>
   <!-- EN: integrated sensor system -->

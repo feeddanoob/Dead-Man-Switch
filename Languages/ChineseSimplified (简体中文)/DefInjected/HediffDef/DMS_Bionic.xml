@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: nutrition port -->
@@ -22,7 +22,7 @@
   <!-- EN: An installed visual sensor, as a replacement of eye. -->
   <DMS_ProstheticEye.description>一颗安装的视觉感应器，作为眼睛的替代品。</DMS_ProstheticEye.description>
   <!-- EN: a bionic sensor -->
-  <DMS_ProstheticEye.labelNoun>一颗义体传感器</DMS_ProstheticEye.labelNoun>
+  <DMS_ProstheticEye.labelNoun>一颗机械传感器</DMS_ProstheticEye.labelNoun>
   
   <!-- EN: mechaneural leg -->
   <DMS_ProstheticLeg.label>机械仿生腿</DMS_ProstheticLeg.label>
@@ -41,7 +41,7 @@
   <!-- EN: sensory filter -->
   <DMS_SensoryFilter.label>情感过滤装置</DMS_SensoryFilter.label>
   <!-- EN: No will for fear,\nNo more to disgust,\nNo way to feel,\nNo tears to cry... \n\nAnd what else... \nWill this little pawn have to sacrifice? -->
-  <DMS_SensoryFilter.description>不再恐惧，不再反感，不再感受，不再悲痛。那么...还有什么东西能被省略呢?</DMS_SensoryFilter.description>
+  <DMS_SensoryFilter.description>不再恐惧，不再反感，不再感受，不再悲痛。那麽...还有什麽东西能被省略呢?</DMS_SensoryFilter.description>
   <!-- EN: a sensory filter -->
   <DMS_SensoryFilter.labelNoun>一个作用中的情感过滤装置，将一条鲜活的生命变成一枚随意操弄的棋子</DMS_SensoryFilter.labelNoun>
   

@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: logistic handler -->
-  <DMS_Officer.label>后勤管理员</DMS_Officer.label>
+  <DMS_Officer.label>後勤管理员</DMS_Officer.label>
   <!-- EN: logistic handlers -->
-  <DMS_Officer.labelPlural>后勤管理员</DMS_Officer.labelPlural>
+  <DMS_Officer.labelPlural>後勤管理员</DMS_Officer.labelPlural>
   
   <!-- EN: platoon guide -->
   <DMS_Officer_A.label>战区向导</DMS_Officer_A.label>

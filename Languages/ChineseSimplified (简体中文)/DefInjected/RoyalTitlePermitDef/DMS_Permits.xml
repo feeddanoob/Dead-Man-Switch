@@ -1,10 +1,15 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: bandwidth support -->
+  <DMS_Bandwidth.label>带宽支援</DMS_Bandwidth.label>
+  <!-- EN: Apply the access of orbital bandwidth support, the amount of bandwidth is depend on applicant's title. This support will be valid unless death or defection occurs on applicant. -->
+  <DMS_Bandwidth.description>向殖民舰队申请轨道带宽支援接入，提供的带宽大小取决於申请者的官阶。除非申请人死亡或叛逃，否则该支持将长期有效。</DMS_Bandwidth.description>
+  
   <!-- EN: call aerodrone salvo -->
-  <DMS_CallOrbitalSalvo.label>呼叫机群打击</DMS_CallOrbitalSalvo.label>
+  <DMS_CallOrbitalSalvo.label>呼叫无人机齐射</DMS_CallOrbitalSalvo.label>
   <!-- EN: Call a salvo of aerodrone strikes around a target position. -->
-  <DMS_CallOrbitalSalvo.description>呼叫无人机对目标位置周围进行一次低烈度打击。</DMS_CallOrbitalSalvo.description>
+  <DMS_CallOrbitalSalvo.description>呼叫无人机对目标位置周围进行一次齐射。</DMS_CallOrbitalSalvo.description>
   
   <!-- EN: call aerodrone strike -->
   <DMS_CallOrbitalStrike.label>呼叫无人机打击</DMS_CallOrbitalStrike.label>
@@ -17,9 +22,9 @@
   <DMS_CallTransportShuttle.description>召唤一艘太空梭供自己使用。它可以将殖民者、物品和动物运送到 70 个世界方格内的任何地方。</DMS_CallTransportShuttle.description>
   
   <!-- EN: supply cargo mech -->
-  <DMS_CargoMech.label>扩编后勤机兵</DMS_CargoMech.label>
+  <DMS_CargoMech.label>扩编後勤机兵</DMS_CargoMech.label>
   <!-- EN: Apply a cargo lifter mech belong to your side. -->
-  <DMS_CargoMech.description>申请支援一架后勤机兵编入你的部队。</DMS_CargoMech.description>
+  <DMS_CargoMech.description>申请支援一架後勤机兵编入你的部队。</DMS_CargoMech.description>
   
   <!-- EN: combat supply drop -->
   <DMS_CombatDrop.label>空投战斗补给</DMS_CombatDrop.label>
@@ -33,7 +38,7 @@
   
   <!-- EN: componments drop -->
   <DMS_CompDrop.label>空投组件</DMS_CompDrop.label>
-  <!-- EN: Call for a drop of componments. -->
+  <!-- EN: Call for a drop of stamp componments and wetware computer. -->
   <DMS_CompDrop.description>呼叫空投组件。</DMS_CompDrop.description>
   
   <!-- EN: food supply drop -->
@@ -43,7 +48,7 @@
   
   <!-- EN: combat equipment drop -->
   <DMS_GearDrop.label>空投战斗装备</DMS_GearDrop.label>
-  <!-- EN: Call for a combat supply for a combatant, include a set of tactical armor and emergency gears. -->
+  <!-- EN: Call for a  set of combat supply and emergency gears. -->
   <DMS_GearDrop.description>呼叫为战斗人员提供的物资空投，包括一套战术护甲和部分应急装备。</DMS_GearDrop.description>
   
   <!-- EN: call combatant recruit -->
@@ -52,14 +57,14 @@
   <DMS_Join_Combat.description>申请支援一名作战人员编入你的部队。</DMS_Join_Combat.description>
   
   <!-- EN: call logistic recruit -->
-  <DMS_Join_Logistic.label>扩编后勤新兵</DMS_Join_Logistic.label>
+  <DMS_Join_Logistic.label>扩编後勤新兵</DMS_Join_Logistic.label>
   <!-- EN: Apply a worker whose life is on yours. -->
-  <DMS_Join_Logistic.description>申请支援一名后勤新兵编入你的部队。</DMS_Join_Logistic.description>
+  <DMS_Join_Logistic.description>申请支援一名後勤新兵编入你的部队。</DMS_Join_Logistic.description>
   
   <!-- EN: logistic supply drop -->
-  <DMS_LogiDrop.label>空投后勤供应品</DMS_LogiDrop.label>
+  <DMS_LogiDrop.label>空投後勤供应品</DMS_LogiDrop.label>
   <!-- EN: Call for a drop of 20 survival pack, 8 medicine and 4 compoment. -->
-  <DMS_LogiDrop.description>呼叫空投 20 个救生包、8 种药品和 4 个组件。</DMS_LogiDrop.description>
+  <DMS_LogiDrop.description>呼叫空投20份生存食品包、8个医疗包和4个零件。</DMS_LogiDrop.description>
   
   <!-- EN: construct material drop -->
   <DMS_MaterialDrop.label>空投白银</DMS_MaterialDrop.label>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: sintering furnace -->
@@ -18,12 +18,12 @@
   <!-- EN: automatroid constructor -->
   <DMS_MechGestatorSamll.label>机械组装平台</DMS_MechGestatorSamll.label>
   <!-- EN: A massive industrial equipment use to assemble automatroid. -->
-  <DMS_MechGestatorSamll.description>用于组装机械体的大型工业设备。</DMS_MechGestatorSamll.description>
+  <DMS_MechGestatorSamll.description>用於组装机械体的大型工业设备。</DMS_MechGestatorSamll.description>
   
   <!-- EN: pressure chamber -->
   <DMS_ReactionChamber.label>高压反应釜</DMS_ReactionChamber.label>
   <!-- EN: A massive industrial equipment use to create a high-pressure environment to cause materials to react together. -->
-  <DMS_ReactionChamber.description>用于创造高压环境使材料发生反应的大型工业设备。</DMS_ReactionChamber.description>
+  <DMS_ReactionChamber.description>用於创造高压环境使材料发生反应的大型工业设备。</DMS_ReactionChamber.description>
   
   <!-- EN: artifuscle chamber -->
   <DMS_TableArtifuscle.label>生物培养装置</DMS_TableArtifuscle.label>
@@ -33,6 +33,6 @@
   <!-- EN: machinery printer -->
   <DMS_TableMachinePrinter.label>机械冲压机</DMS_TableMachinePrinter.label>
   <!-- EN: a composite metal printer, which can manufacture and assemble metal products and weapons through cold forging to mass-produce machinery. -->
-  <DMS_TableMachinePrinter.description>用于加工量产机械的复合金属打印机，能以冷锻方式快速制造与组装金属制品与武器。</DMS_TableMachinePrinter.description>
+  <DMS_TableMachinePrinter.description>用於加工量产机械的复合金属打印机，能以冷锻方式快速制造与组装金属制品与武器。</DMS_TableMachinePrinter.description>
   
 </LanguageData>

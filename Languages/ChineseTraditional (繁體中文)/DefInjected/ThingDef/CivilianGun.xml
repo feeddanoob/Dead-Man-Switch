@@ -18,19 +18,23 @@
   <!-- EN: Single-shot high caliber heavy hunting rifle. While made to hunt giant games or stop large hostile lifeform with sheer kinetic energy, it is also used by early industrial colonies against mechanoids thanks to its simple manufacture requirements. -->
   <DMS_ElephantGun.description>單發大口徑重型獵槍。雖然它是為了狩獵巨型獵物或用純粹的動能阻止大型敵對生命體而製造的，但由於其簡單的製造要求，它也被早期的工業殖民地用來對付機械類動物。</DMS_ElephantGun.description>
   <!-- EN: stock -->
-  <DMS_ElephantGun.tools.stock.label>槍托</DMS_ElephantGun.tools.stock.label>
+  <DMS_ElephantGun.tools.stock-0.label>槍托</DMS_ElephantGun.tools.stock-0.label>
   <!-- EN: barrel -->
   <DMS_ElephantGun.tools.barrel-0.label>槍管</DMS_ElephantGun.tools.barrel-0.label>
-  <!-- EN: grip -->
-  <DMS_ElephantGun.tools.grip.label>握把</DMS_ElephantGun.tools.grip.label>
+  <!-- EN: muzzle -->
+  <DMS_ElephantGun.tools.muzzle-0.label>槍口</DMS_ElephantGun.tools.muzzle-0.label>
+  <!-- EN: stock -->
+  <DMS_ElephantGun.tools.stock-1.label>槍托</DMS_ElephantGun.tools.stock-1.label>
   <!-- EN: barrel -->
   <DMS_ElephantGun.tools.barrel-1.label>槍管</DMS_ElephantGun.tools.barrel-1.label>
+  <!-- EN: muzzle -->
+  <DMS_ElephantGun.tools.muzzle-1.label>槍口</DMS_ElephantGun.tools.muzzle-1.label>
   <!-- EN: elephant rifle -->
-  <DMS_ElephantGun.verbs.Verb_Shoot.label>獵象槍</DMS_ElephantGun.verbs.Verb_Shoot.label>
+  <DMS_ElephantGun.verbs.Verb_ShootCE.label>獵象槍</DMS_ElephantGun.verbs.Verb_ShootCE.label>
   
   <!-- UNUSED -->
-  <DMS_ElephantGun.tools.muzzle.label>槍口</DMS_ElephantGun.tools.muzzle.label>
-  <DMS_ElephantGun.verbs.Verb_ShootCE.label>獵象槍</DMS_ElephantGun.verbs.Verb_ShootCE.label>
+  <DMS_ElephantGun.tools.grip.label>握把</DMS_ElephantGun.tools.grip.label>
+  <DMS_ElephantGun.verbs.Verb_Shoot.label>獵象槍</DMS_ElephantGun.verbs.Verb_Shoot.label>
   
   <!-- EN: knuckleduster Revolver -->
   <DMS_KnuckledusterRevolver.label>指虎左輪</DMS_KnuckledusterRevolver.label>
@@ -40,6 +44,8 @@
   <DMS_KnuckledusterRevolver.tools.stock.label>槍托</DMS_KnuckledusterRevolver.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_KnuckledusterRevolver.tools.barrel.label>槍管</DMS_KnuckledusterRevolver.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <DMS_KnuckledusterRevolver.tools.muzzle.label>槍口</DMS_KnuckledusterRevolver.tools.muzzle.label>
   <!-- EN: grip -->
   <DMS_KnuckledusterRevolver.tools.grip.label>握把</DMS_KnuckledusterRevolver.tools.grip.label>
   <!-- EN: blade -->
@@ -47,10 +53,10 @@
   <!-- EN: point -->
   <DMS_KnuckledusterRevolver.tools.point.label>刀尖</DMS_KnuckledusterRevolver.tools.point.label>
   <!-- EN: knuckleduster Revolver -->
-  <DMS_KnuckledusterRevolver.verbs.Verb_Shoot.label>指虎左輪</DMS_KnuckledusterRevolver.verbs.Verb_Shoot.label>
+  <DMS_KnuckledusterRevolver.verbs.Verb_ShootCE.label>指虎左輪</DMS_KnuckledusterRevolver.verbs.Verb_ShootCE.label>
   
   <!-- UNUSED -->
-  <DMS_KnuckledusterRevolver.verbs.Verb_ShootCE.label>指虎左輪</DMS_KnuckledusterRevolver.verbs.Verb_ShootCE.label>
+  <DMS_KnuckledusterRevolver.verbs.Verb_Shoot.label>指虎左輪</DMS_KnuckledusterRevolver.verbs.Verb_Shoot.label>
   
   <!-- EN: Riot LMG -->
   <DMS_MiniMachineGun.label>鎮暴輕機槍</DMS_MiniMachineGun.label>
@@ -60,11 +66,13 @@
   <DMS_MiniMachineGun.tools.stock.label>槍托</DMS_MiniMachineGun.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_MiniMachineGun.tools.barrel.label>槍管</DMS_MiniMachineGun.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <DMS_MiniMachineGun.tools.muzzle.label>槍口</DMS_MiniMachineGun.tools.muzzle.label>
   <!-- EN: Riot LMG -->
-  <DMS_MiniMachineGun.verbs.Verb_Shoot.label>鎮暴輕機槍</DMS_MiniMachineGun.verbs.Verb_Shoot.label>
+  <DMS_MiniMachineGun.verbs.Verb_ShootCE.label>鎮暴輕機槍</DMS_MiniMachineGun.verbs.Verb_ShootCE.label>
   
   <!-- UNUSED -->
-  <DMS_MiniMachineGun.verbs.Verb_ShootCE.label>鎮暴輕機槍</DMS_MiniMachineGun.verbs.Verb_ShootCE.label>
+  <DMS_MiniMachineGun.verbs.Verb_Shoot.label>鎮暴輕機槍</DMS_MiniMachineGun.verbs.Verb_Shoot.label>
   
   <!-- EN: Riot Revolver -->
   <DMS_Revolver.label>鎮暴左輪</DMS_Revolver.label>
@@ -73,17 +81,19 @@
   <!-- EN: stock -->
   <DMS_Revolver.tools.stock.label>槍托</DMS_Revolver.tools.stock.label>
   <!-- EN: barrel -->
-  <DMS_Revolver.tools.barrel-0.label>槍管</DMS_Revolver.tools.barrel-0.label>
+  <DMS_Revolver.tools.barrel.label>槍管</DMS_Revolver.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <DMS_Revolver.tools.muzzle-0.label>槍口</DMS_Revolver.tools.muzzle-0.label>
   <!-- EN: grip -->
   <DMS_Revolver.tools.grip.label>握把</DMS_Revolver.tools.grip.label>
-  <!-- EN: barrel -->
-  <DMS_Revolver.tools.barrel-1.label>槍管</DMS_Revolver.tools.barrel-1.label>
+  <!-- EN: muzzle -->
+  <DMS_Revolver.tools.muzzle-1.label>槍口</DMS_Revolver.tools.muzzle-1.label>
   <!-- EN: Riot Revolver -->
-  <DMS_Revolver.verbs.Verb_Shoot.label>鎮暴左輪</DMS_Revolver.verbs.Verb_Shoot.label>
+  <DMS_Revolver.verbs.Verb_ShootCE.label>鎮暴左輪</DMS_Revolver.verbs.Verb_ShootCE.label>
   
   <!-- UNUSED -->
-  <DMS_Revolver.tools.muzzle.label>槍口</DMS_Revolver.tools.muzzle.label>
-  <DMS_Revolver.verbs.Verb_ShootCE.label>鎮暴左輪</DMS_Revolver.verbs.Verb_ShootCE.label>
+  <DMS_Revolver.tools.barrel-1.label>槍管</DMS_Revolver.tools.barrel-1.label>
+  <DMS_Revolver.verbs.Verb_Shoot.label>鎮暴左輪</DMS_Revolver.verbs.Verb_Shoot.label>
   
   <!-- EN: slug gun -->
   <DMS_RiotShotgun.label>鎮暴霰彈槍</DMS_RiotShotgun.label>
@@ -93,19 +103,19 @@
   <DMS_RiotShotgun.tools.stock-0.label>槍托</DMS_RiotShotgun.tools.stock-0.label>
   <!-- EN: barrel -->
   <DMS_RiotShotgun.tools.barrel-0.label>槍管</DMS_RiotShotgun.tools.barrel-0.label>
+  <!-- EN: muzzle -->
+  <DMS_RiotShotgun.tools.muzzle-0.label>槍口</DMS_RiotShotgun.tools.muzzle-0.label>
   <!-- EN: stock -->
   <DMS_RiotShotgun.tools.stock-1.label>槍托</DMS_RiotShotgun.tools.stock-1.label>
   <!-- EN: barrel -->
   <DMS_RiotShotgun.tools.barrel-1.label>槍管</DMS_RiotShotgun.tools.barrel-1.label>
+  <!-- EN: muzzle -->
+  <DMS_RiotShotgun.tools.muzzle-1.label>槍口</DMS_RiotShotgun.tools.muzzle-1.label>
   <!-- EN: slug gun -->
-  <DMS_RiotShotgun.verbs.Verb_Shoot.label>鎮暴霰彈槍</DMS_RiotShotgun.verbs.Verb_Shoot.label>
-  
-  <!-- UNUSED -->
-  <DMS_RiotShotgun.tools.muzzle.label>槍口</DMS_RiotShotgun.tools.muzzle.label>
   <DMS_RiotShotgun.verbs.Verb_ShootCE.label>鎮暴霰彈槍</DMS_RiotShotgun.verbs.Verb_ShootCE.label>
   
   <!-- UNUSED -->
-  <DMS_SniperGrenadeLauncher.verbs.Verb_ShootCE.label>狙擊榴彈發射器</DMS_SniperGrenadeLauncher.verbs.Verb_ShootCE.label>
+  <DMS_RiotShotgun.verbs.Verb_Shoot.label>鎮暴霰彈槍</DMS_RiotShotgun.verbs.Verb_Shoot.label>
   
   <!-- EN: survival rifle -->
   <DMS_SurvivalRifle.label>生存步槍</DMS_SurvivalRifle.label>
@@ -115,15 +125,18 @@
   <DMS_SurvivalRifle.tools.stock-0.label>槍托</DMS_SurvivalRifle.tools.stock-0.label>
   <!-- EN: barrel -->
   <DMS_SurvivalRifle.tools.barrel-0.label>槍管</DMS_SurvivalRifle.tools.barrel-0.label>
+  <!-- EN: muzzle -->
+  <DMS_SurvivalRifle.tools.muzzle-0.label>槍口</DMS_SurvivalRifle.tools.muzzle-0.label>
   <!-- EN: stock -->
   <DMS_SurvivalRifle.tools.stock-1.label>槍托</DMS_SurvivalRifle.tools.stock-1.label>
   <!-- EN: barrel -->
   <DMS_SurvivalRifle.tools.barrel-1.label>槍管</DMS_SurvivalRifle.tools.barrel-1.label>
+  <!-- EN: muzzle -->
+  <DMS_SurvivalRifle.tools.muzzle-1.label>槍口</DMS_SurvivalRifle.tools.muzzle-1.label>
   <!-- EN: survival rifle -->
-  <DMS_SurvivalRifle.verbs.Verb_Shoot.label>生存步槍</DMS_SurvivalRifle.verbs.Verb_Shoot.label>
+  <DMS_SurvivalRifle.verbs.Verb_ShootCE.label>生存步槍</DMS_SurvivalRifle.verbs.Verb_ShootCE.label>
   
   <!-- UNUSED -->
-  <DMS_SurvivalRifle.tools.muzzle.label>槍口</DMS_SurvivalRifle.tools.muzzle.label>
-  <DMS_SurvivalRifle.verbs.Verb_ShootCE.label>生存步槍</DMS_SurvivalRifle.verbs.Verb_ShootCE.label>
+  <DMS_SurvivalRifle.verbs.Verb_Shoot.label>生存步槍</DMS_SurvivalRifle.verbs.Verb_Shoot.label>
   
 </LanguageData>

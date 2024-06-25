@@ -1,47 +1,69 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: assault piercer -->
   <DMS_AssaultPiercer.label>突击冲锋枪</DMS_AssaultPiercer.label>
   <!-- EN: a submachine gun chambered in the high-caliber round, capable of quick draw penetrating most of the armored targets in short range. Refered as piercer due to lack of comparable weapon in human arsenal.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong. -->
-  <DMS_AssaultPiercer.description>使用大口径机枪弹的重型冲锋枪，能够快速射击并在短距离内穿透大部分装甲目标。 由于人类武器库中缺乏类似的武器因而被归类为冲锋枪。\n\n这种武器是专门为机兵设计的，因此如果没有外部辅助设备或超强的力量，普通人可能无法正常使用。</DMS_AssaultPiercer.description>
-  <!-- EN: stock -->
-  <DMS_AssaultPiercer.tools.stock.label>枪托</DMS_AssaultPiercer.tools.stock.label>
-  <!-- EN: barrel -->
-  <DMS_AssaultPiercer.tools.barrel.label>枪管</DMS_AssaultPiercer.tools.barrel.label>
+  <DMS_AssaultPiercer.description>使用大口径机枪弹的重型冲锋枪，能够快速射击并在短距离内穿透大部分装甲目标。 由於人类武器库中缺乏类似的武器因而被归类为冲锋枪。\n\n这种武器是专门为机兵设计的，因此如果没有外部辅助设备或超强的力量，普通人可能无法正常使用。</DMS_AssaultPiercer.description>
+  <!-- EN: grip -->
+  <DMS_AssaultPiercer.tools.grip.label>握把</DMS_AssaultPiercer.tools.grip.label>
+  <!-- EN: muzzle -->
+  <DMS_AssaultPiercer.tools.muzzle.label>枪口</DMS_AssaultPiercer.tools.muzzle.label>
   <!-- EN: assault piercer -->
-  <DMS_AssaultPiercer.verbs.Verb_Shoot.label>突击冲锋枪</DMS_AssaultPiercer.verbs.Verb_Shoot.label>
+  <DMS_AssaultPiercer.verbs.Verb_ShootCE.label>突击冲锋枪</DMS_AssaultPiercer.verbs.Verb_ShootCE.label>
   
   <!-- UNUSED -->
-  <DMS_AssaultPiercer.tools.muzzle.label>握把</DMS_AssaultPiercer.tools.muzzle.label>
-  <DMS_AssaultPiercer.verbs.Verb_ShootCE.label>突击冲锋枪</DMS_AssaultPiercer.verbs.Verb_ShootCE.label>
+  <DMS_AssaultPiercer.tools.stock.label>枪托</DMS_AssaultPiercer.tools.stock.label>
+  <DMS_AssaultPiercer.tools.barrel.label>枪管</DMS_AssaultPiercer.tools.barrel.label>
+  <DMS_AssaultPiercer.verbs.Verb_Shoot.label>突击冲锋枪</DMS_AssaultPiercer.verbs.Verb_Shoot.label>
   
   <!-- EN: tactical autopistol bullet -->
   <DMS_Bullet_Pistol.label>自动手枪弹</DMS_Bullet_Pistol.label>
+  
+  <!-- EN: flameblaster -->
+  <DMS_Flameblaster.label>喷火器</DMS_Flameblaster.label>
+  <!-- EN: A flame launcher used by mechs that can effectively ignite flammable materials within a range -->
+  <DMS_Flameblaster.description>一种用於生物防治的短距喷火器</DMS_Flameblaster.description>
+  <!-- EN: stock -->
+  <DMS_Flameblaster.tools.stock.label>枪托</DMS_Flameblaster.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_Flameblaster.tools.barrel-0.label>枪管</DMS_Flameblaster.tools.barrel-0.label>
+  <!-- EN: muzzle -->
+  <DMS_Flameblaster.tools.muzzle.label>枪口</DMS_Flameblaster.tools.muzzle.label>
+  <!-- EN: barrel -->
+  <DMS_Flameblaster.tools.barrel-1.label>枪管</DMS_Flameblaster.tools.barrel-1.label>
+  <!-- EN: flameblaster -->
+  <DMS_Flameblaster.verbs.Verb_SpewFire.label>喷火器</DMS_Flameblaster.verbs.Verb_SpewFire.label>
   
   <!-- EN: PDW -->
   <DMS_PDW.label>个人防卫武器</DMS_PDW.label>
   <!-- EN: A mass-produced submachine gun, which was designed only capable of hip-fire so it's inaccurate in range but its caliber and ability to draw quick make it the perfect weapon for urban combat against milltor. -->
   <DMS_PDW.description>量产冲锋枪，被设计为只能腰射因此并不准确，但其使用的大威力手枪弹口径和快速射击能力使其成为城市战斗中对抗机械体猎杀的完美武器。</DMS_PDW.description>
+  <!-- EN: grip -->
+  <DMS_PDW.tools.grip.label>握把</DMS_PDW.tools.grip.label>
+  <!-- EN: muzzle -->
+  <DMS_PDW.tools.muzzle.label>枪口</DMS_PDW.tools.muzzle.label>
   <!-- EN: PDW -->
-  <DMS_PDW.verbs.Verb_Shoot.label>个人防卫武器</DMS_PDW.verbs.Verb_Shoot.label>
+  <DMS_PDW.verbs.Verb_ShootCE.label>个人防卫武器</DMS_PDW.verbs.Verb_ShootCE.label>
   
   <!-- UNUSED -->
-  <DMS_PDW.verbs.Verb_ShootCE.label>个人防卫武器</DMS_PDW.verbs.Verb_ShootCE.label>
+  <DMS_PDW.tools.stock.label>枪托</DMS_PDW.tools.stock.label>
+  <DMS_PDW.tools.barrel.label>枪管</DMS_PDW.tools.barrel.label>
+  <DMS_PDW.verbs.Verb_Shoot.label>个人防卫武器</DMS_PDW.verbs.Verb_Shoot.label>
   
   <!-- EN: mech pistol -->
   <DMS_TaticalPistol.label>机兵手枪</DMS_TaticalPistol.label>
   <!-- EN: Defensive firearm with refined manufacture process and additional tactical attachments, it's too heavy for human but suitable to mech soldier. offers better stop power than comparable weapons.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong. -->
-  <DMS_TaticalPistol.description>具有精良的制造工艺和额外的战术附件，对人类来说过于沉重，但适合机兵使用。\n\n这种武器是专门为机兵设计的，因此如果没有外部辅助设备或超强的力量，普通人可能无法正常使用。</DMS_TaticalPistol.description>
+  <DMS_TaticalPistol.description>具有精良的制造工艺和额外的战术附件，对人类来说过於沉重，但适合机兵使用。\n\n这种武器是专门为机兵设计的，因此如果没有外部辅助设备或超强的力量，普通人可能无法正常使用。</DMS_TaticalPistol.description>
   <!-- EN: grip -->
   <DMS_TaticalPistol.tools.grip.label>握把</DMS_TaticalPistol.tools.grip.label>
-  <!-- EN: barrel -->
-  <DMS_TaticalPistol.tools.barrel.label>枪管</DMS_TaticalPistol.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <DMS_TaticalPistol.tools.muzzle.label>枪口</DMS_TaticalPistol.tools.muzzle.label>
   <!-- EN: mech pistol -->
-  <DMS_TaticalPistol.verbs.Verb_Shoot.label>机兵手枪</DMS_TaticalPistol.verbs.Verb_Shoot.label>
+  <DMS_TaticalPistol.verbs.Verb_ShootCE.label>机兵手枪</DMS_TaticalPistol.verbs.Verb_ShootCE.label>
   
   <!-- UNUSED -->
-  <DMS_TaticalPistol.tools.muzzle.label>枪口</DMS_TaticalPistol.tools.muzzle.label>
-  <DMS_TaticalPistol.verbs.Verb_ShootCE.label>机兵手枪</DMS_TaticalPistol.verbs.Verb_ShootCE.label>
+  <DMS_TaticalPistol.tools.barrel.label>枪管</DMS_TaticalPistol.tools.barrel.label>
+  <DMS_TaticalPistol.verbs.Verb_Shoot.label>机兵手枪</DMS_TaticalPistol.verbs.Verb_Shoot.label>
   
 </LanguageData>

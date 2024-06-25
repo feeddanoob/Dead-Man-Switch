@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: ape -->
@@ -8,25 +8,15 @@
   <!-- EN: head -->
   <DMS_Mech_Ape.tools.head.label>头部</DMS_Mech_Ape.tools.head.label>
   
-  <!-- EN: caretta -->
-  <DMS_Mech_Caretta.label>蠵龟</DMS_Mech_Caretta.label>
-  <!-- EN: a mobile anti-air support platform variant of geochelone. -->
-  <DMS_Mech_Caretta.description>一种移动式对空支援平台，是象龟的变体。</DMS_Mech_Caretta.description>
+  <!-- EN: hermit crab -->
+  <DMS_Mech_HermitCrab.label>寄居蟹</DMS_Mech_HermitCrab.label>
+  <!-- EN: These large, expensive, heavy mobile industrial machines are designed and manufactured by worlds that intend to colonize solar systems. Their large and expensive magnetic stabilizer shells integrate many complex-axis CNC tools and precision machinery. its high precision allows it to perform surgical procedures, but only if the patient overcomes their fear of a machine weighing several tons acting as their surgeon. -->
+  <DMS_Mech_HermitCrab.description>体型庞大、昂贵且笨重的移动式工业母机，大多是由那些意图开展太空殖民的世界所设计与制造，在其庞大且昂贵的磁稳筒壳内集成了数量繁杂的复轴数控刀具与微型机械臂，其精密程度能执行外科手术，但前提是患者能克服恐惧接受由一台重达数吨的机械作为主刀医生。</DMS_Mech_HermitCrab.description>
   <!-- EN: head -->
-  <DMS_Mech_Caretta.tools.head.label>头部</DMS_Mech_Caretta.tools.head.label>
-  
-  <!-- EN: geochelone -->
-  <DMS_Mech_Geochelone.label>象龟</DMS_Mech_Geochelone.label>
-  <!-- EN: an unmanned all-terrain tracked pluse shield support platform with various of production model and variant. -->
-  <DMS_Mech_Geochelone.description>一种无人全地形履带式脉冲防护盾支援平台，有多种生产型号和变型。</DMS_Mech_Geochelone.description>
-  <!-- EN: head -->
-  <DMS_Mech_Geochelone.tools.head.label>头部</DMS_Mech_Geochelone.tools.head.label>
-  
-  <!-- EN: killdozer -->
-  <DMS_Mech_Killdozer.label>突击龟</DMS_Mech_Killdozer.label>
-  <!-- EN: 一輛無人的小型突擊破障車，前方帶有突破用的推土鏟，車身各處的裝甲也獲得了強化 -->
-  <DMS_Mech_Killdozer.description>一辆无人的小型突击破障车，前方带有突破用的推土铲，车身各处的装甲也获得了强化。</DMS_Mech_Killdozer.description>
-  <!-- EN: dozer blade -->
-  <DMS_Mech_Killdozer.tools.dozer_blade.label>推土铲</DMS_Mech_Killdozer.tools.dozer_blade.label>
+  <DMS_Mech_HermitCrab.tools.head.label>保护壳</DMS_Mech_HermitCrab.tools.head.label>
+  <!-- EN: laser cutter -->
+  <DMS_Mech_HermitCrab.tools.laser_cutter.label>雷射切割刀</DMS_Mech_HermitCrab.tools.laser_cutter.label>
+  <!-- EN: surgical drill -->
+  <DMS_Mech_HermitCrab.tools.surgical_drill.label>手术钻</DMS_Mech_HermitCrab.tools.surgical_drill.label>
   
 </LanguageData>

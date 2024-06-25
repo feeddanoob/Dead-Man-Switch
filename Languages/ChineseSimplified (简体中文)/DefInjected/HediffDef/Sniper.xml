@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: recon calibration -->
@@ -14,6 +14,6 @@
   <!-- EN: precise sniping mode -->
   <DMS_SharpShooting.label>精确狙击模式</DMS_SharpShooting.label>
   <!-- EN: this unit is at an absolute standstill and uses its built-in ballistic computer to measure extremely detailed shooting data, allowing it to accurately hit the intended target. -->
-  <DMS_SharpShooting.description>该装置处于绝对静止状态，利用内建弹道计算机测量极其详细的射击数据，从而准确击中预定目标。</DMS_SharpShooting.description>
+  <DMS_SharpShooting.description>该装置处於绝对静止状态，利用内建弹道计算机测量极其详细的射击数据，从而准确击中预定目标。</DMS_SharpShooting.description>
   
 </LanguageData>

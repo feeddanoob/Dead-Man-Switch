@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: arquebusier -->
@@ -15,7 +15,7 @@
   <!-- EN: jaeger -->
   <DMS_Mech_Jaeger.label>猎兵</DMS_Mech_Jaeger.label>
   <!-- EN: an arquebusier variant focuses on stealth action and guerilla deployment for sabotage behind enemy lines. has higher mobility and invisibility. -->
-  <DMS_Mech_Jaeger.description>匿踪作战型火枪手，侧重于隐蔽行动和游击部署，以在敌后进行破坏具有较高的机动性和隐蔽性。</DMS_Mech_Jaeger.description>
+  <DMS_Mech_Jaeger.description>匿踪作战型火枪手，侧重於隐蔽行动和游击部署，以在敌後进行破坏具有较高的机动性和隐蔽性。</DMS_Mech_Jaeger.description>
   <!-- EN: head -->
   <DMS_Mech_Jaeger.tools.head.label>头部</DMS_Mech_Jaeger.tools.head.label>
   <!-- EN: left fist -->
@@ -26,7 +26,7 @@
   <!-- EN: pioneer -->
   <DMS_Mech_Pioneer.label>先锋</DMS_Mech_Pioneer.label>
   <!-- EN: forward reconnaissance variant of Arquebusier. with improved sight sensor equipped, it has better capability in field operations, capable to hunting if needed. -->
-  <DMS_Mech_Pioneer.description>前沿侦察型火枪手。由于配备了改进的瞄准感测器，它在野外作战中具有更好的能力。</DMS_Mech_Pioneer.description>
+  <DMS_Mech_Pioneer.description>前沿侦察型火枪手。由於配备了改进的瞄准感测器，它在野外作战中具有更好的能力。</DMS_Mech_Pioneer.description>
   <!-- EN: head -->
   <DMS_Mech_Pioneer.tools.head.label>头部</DMS_Mech_Pioneer.tools.head.label>
   <!-- EN: left fist -->
