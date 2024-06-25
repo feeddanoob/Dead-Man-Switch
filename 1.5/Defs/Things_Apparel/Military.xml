@@ -4,8 +4,7 @@
 	<ThingDef ParentName="ApparelBase">
 		<defName>DMS_Apparel_BionicSuit</defName>
 		<label>bionic suit</label>
-		<description>Physical enhancement equipment sewn from artificial muscle fibers. Can
-			effectively increase the wearer's muscle strength and mobility.</description>
+		<description>Physical enhancement equipment sewn from artificial muscle fibers. Can effectively increase the wearer's muscle strength and mobility.</description>
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -270,8 +269,7 @@
 	<ThingDef ParentName="DMS_ArmorHelmetMakeableBase">
 		<defName>DMS_Apparel_TacticalHelmet</defName>
 		<label>tactical helmet</label>
-		<description>A lightweight combat helmet with a complex design, reinforced with plasteel.
-			Not effective against blunt weapons.</description>
+		<description>A lightweight combat helmet with a complex design, reinforced with plasteel. Not effective against blunt weapons.</description>
 		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
 			<skillRequirements>
@@ -343,9 +341,7 @@
 	<ThingDef ParentName="DMS_ArmorHelmetMakeableBase">
 		<defName>DMS_Apparel_ArrayHelmet</defName>
 		<label>operator helmet</label>
-		<description>A full-covered helmet designed for field drone operators, Features built-in
-			head-mounted display and neural-connected operating system. can not only increase the
-			control bandwidth but also give full protection.</description>
+		<description>A full-covered helmet designed for field drone operators, Features built-in head-mounted display and neural-connected operating system. can not only increase the control bandwidth but also give full protection.</description>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>FlakArmor</li>
@@ -429,9 +425,7 @@
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>DMS_Apparel_TacticalVest</defName>
 		<label>tactical vest</label>
-		<description>A vest with armor plates inserted on the chest and back. While quite effective
-			at deflecting gunshots and stabbing attacks against the chest, it does nothing to
-			protect the limbs.</description>
+		<description>A vest with armor plates inserted on the chest and back. While quite effective at deflecting gunshots and stabbing attacks against the chest, it does nothing to protect the limbs.</description>
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
