@@ -758,6 +758,11 @@
     <thingCategories>
       <li>BuildingsSecurity</li>
     </thingCategories>
+    <placeWorkers Inherit="false">
+      <li>PlaceWorker_NotUnderRoof</li>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
   </ThingDef>
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>DMS_Gun_Vasilek</defName>

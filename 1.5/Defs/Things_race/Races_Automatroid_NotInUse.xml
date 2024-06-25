@@ -2,17 +2,18 @@
 <Defs>
     
   <!-- lady -->
-  <ThingDef ParentName="BaseAutomatroidHumanRace">
+  <ThingDef ParentName="BaseAutomatroidHumanRace" Abstract="true">
     <defName>DMS_Mech_Lady</defName>
     <label>lady</label>
     <description>lady</description>
     <thingClass>DMS.HumanlikeMech</thingClass>
+    <uiIconPath>Things/Automatroid/Icon_Lady</uiIconPath>
     <statBases>
       <MarketValue>2000</MarketValue>
       <MoveSpeed>5</MoveSpeed>
       <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
-      <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>                                             <!--EMP抵抗力-->
+      <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">3</EMPResistance>                                             <!--EMP抵抗力-->
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
       <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">30</ControlTakingTime>
     </statBases>
@@ -111,7 +112,7 @@
     </modExtensions>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseAutomatroidKind">
+  <PawnKindDef ParentName="BaseAutomatroidKind" Abstract="true">
     <defName>DMS_Mech_Lady</defName>
     <label>lady</label>
     <race>DMS_Mech_Lady</race>
@@ -147,32 +148,40 @@
     <controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
   </PawnKindDef>
 
-  <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
+  <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe" Abstract="true">
     <defName>DMS_Make_Lady</defName>
     <label>gestate lady</label>
     <description>Gestate a lady mechanoid.</description>
     <products>
       <DMS_Mech_Lady>1</DMS_Mech_Lady>
     </products>
-    <researchPrerequisite>DMS_MechBasis</researchPrerequisite>
+    <researchPrerequisite>DMS_Hybird</researchPrerequisite>
     <gestationCycles>1</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Lady</ThingDef>
     </descriptionHyperlinks>
-    <!-- 之後預期造價: 120人工肌肉+30鎢鋼+2高零+1濕件 -->
+    <!-- 之後預期造價: 100人工肌肉+30鎢鋼+2高零+1濕件 -->
     <ingredients Inherit="False"> 
       <li>
         <filter>
           <thingDefs>
-            <li>Steel</li>
+            <li>Artifuscle</li>
           </thingDefs>
         </filter>
-        <count>50</count>
+        <count>80</count>
       </li>
       <li>
         <filter>
           <thingDefs>
-            <li>ComponentIndustrial</li>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neurocomputer</li>
           </thingDefs>
         </filter>
         <count>1</count>
