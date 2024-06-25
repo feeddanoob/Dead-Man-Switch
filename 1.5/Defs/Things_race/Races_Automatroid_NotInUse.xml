@@ -2,18 +2,18 @@
 <Defs>
     
   <!-- lady -->
-  <ThingDef ParentName="BaseAutomatroidRace" Abstract="True">
-    <defName>DMS_Automatroid_lady</defName>
+  <ThingDef ParentName="BaseAutomatroidHumanRace">
+    <defName>DMS_Mech_Lady</defName>
     <label>lady</label>
     <description>lady</description>
     <thingClass>DMS.HumanlikeMech</thingClass>
     <statBases>
       <MarketValue>2000</MarketValue>
       <MoveSpeed>5</MoveSpeed>
-      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
       <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">1</EMPResistance>                                             <!--EMP抵抗力-->
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
       <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">30</ControlTakingTime>
     </statBases>
     <tools>
@@ -53,8 +53,10 @@
       </li>
     </tools>
     <race>
+      <renderTree>HumanlikeMech</renderTree>
+      <thinkTreeMain>DMS_HumanlikeMech</thinkTreeMain>
       <makesFootprints>true</makesFootprints>
-      <body>DMS_Humanoid_TypeB</body>
+      <body>DMS_Synthroid</body>
       <mechEnabledWorkTypes>
         <li>Hauling</li>
         <li>Construction</li>
@@ -89,25 +91,35 @@
       <li Class="DMS.TurretMannableExtension"/>
       <li Class="DMS.HumanlikeMechExtension">
         <bodyTypeOverride>Female</bodyTypeOverride>
+        <headTypeOverride>Female_AveragePointy</headTypeOverride>
         <headGraphic>
           <texPath>Things/Automatroid/seperated/ladyHead</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.4</drawSize>
         </headGraphic>
-        <headOffset>(0,0,0.22)</headOffset>
+        <headOffset>(0,0,-0.05)</headOffset>
+      </li>
+      <li Class="DMS.MechWeaponExtension">
+        <EnableWeaponFilter>false</EnableWeaponFilter>
+        <UsableWeaponTags/>
+        <EnableTechLevelFilter>true</EnableTechLevelFilter>
+        <UsableTechLevels>
+          <li>Industrial</li>
+          <li>Spacer</li>
+        </UsableTechLevels>
       </li>
     </modExtensions>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseAutomatroidKind" Abstract="True">
-    <defName>DMS_AutomatroidKind_lady</defName>
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Mech_Lady</defName>
     <label>lady</label>
-    <race>DMS_Automatroid_lady</race>
+    <race>DMS_Mech_Lady</race>
     <combatPower>150</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/seperated/lady</texPath>
+          <texPath>Things/Automatroid/seperated/Synthroid_Female</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.4</drawSize>
           <shadowData>
@@ -117,7 +129,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/seperated/lady</texPath>
+          <texPath>Things/Automatroid/seperated/Synthroid_Female</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.4</drawSize>
           <shadowData>
@@ -134,4 +146,37 @@
     <techHediffsMoney>9999~9999</techHediffsMoney>
     <controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
   </PawnKindDef>
+
+  <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
+    <defName>DMS_Make_Lady</defName>
+    <label>gestate lady</label>
+    <description>Gestate a lady mechanoid.</description>
+    <products>
+      <DMS_Mech_Lady>1</DMS_Mech_Lady>
+    </products>
+    <researchPrerequisite>DMS_MechBasis</researchPrerequisite>
+    <gestationCycles>1</gestationCycles>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_Lady</ThingDef>
+    </descriptionHyperlinks>
+    <!-- 之後預期造價: 120人工肌肉+30鎢鋼+2高零+1濕件 -->
+    <ingredients Inherit="False"> 
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
 </Defs>

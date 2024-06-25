@@ -6,49 +6,50 @@
 		<label>Night Vision Goggles</label>
 		<description>An auxiliary aiming device for night combat, which can be worn with a helmet.</description>
 		<graphicData>
-		  <texPath>Things/Apparel/NightVisionGoggles/headgear_icon</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Apparel/NightVisionGoggles/headgear_icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<equippedStatOffsets>
-		  <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+			<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<statBases>
-		  <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
-		  <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-		  <ArmorRating_Heat>0.1</ArmorRating_Heat>
-		  <Insulation_Cold>0</Insulation_Cold>
-		  <Insulation_Heat>0</Insulation_Heat>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			<Insulation_Cold>0</Insulation_Cold>
+			<Insulation_Heat>0</Insulation_Heat>
 		</statBases>
 		<recipeMaker>
-		  <researchPrerequisites>
-			<li MayRequire="Ludeon.RimWorld.Royalty">Gunlink</li>
-			<li>MicroelectronicsBasics</li>
-		  </researchPrerequisites>
+			<researchPrerequisites>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Gunlink</li>
+				<li>DMS_EquipmentAdvanced</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-		  <ComponentSpacer>1</ComponentSpacer>
-		  <Plasteel>10</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>10</Plasteel>
 		</costList>
 		<apparel>
-		  <wornGraphicPath>Things/Apparel/NightVisionGoggles/headgear</wornGraphicPath>
-		  <renderSkipFlags>
-			<li>Eyes</li>
-		  </renderSkipFlags>
-		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
-		  <bodyPartGroups Inherit="False">
-			<li>Eyes</li>
-		  </bodyPartGroups>
-		  <tags Inherit="False">
-			<li>DMS_NVG</li>
-		  </tags>
+			<wornGraphicPath>Things/Apparel/NightVisionGoggles/headgear</wornGraphicPath>
+			<renderSkipFlags>
+				<li>Eyes</li>
+			</renderSkipFlags>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups Inherit="False">
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>DMS_NVG</li>
+			</tags>
 		</apparel>
 		<tradeTags>
-		  <li>Clothing</li>
+			<li>Clothing</li>
 		</tradeTags>
 		<thingSetMakerTags Inherit="False">
-		  <li>RewardStandardLowFreq</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
-	  </ThingDef>
+	</ThingDef>
+
 	<!-- 匿蹤面罩 -->
 	<ThingDef ParentName="HatMakeableBase">
 		<defName>DMS_Apparel_StealthMask</defName>
@@ -118,6 +119,7 @@
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
 			</recipeUsers>
+			<researchPrerequisite>DMS_EquipmentBasis</researchPrerequisite>
 		</recipeMaker>
 		<tradeTags>
 			<li>BasicClothing</li>

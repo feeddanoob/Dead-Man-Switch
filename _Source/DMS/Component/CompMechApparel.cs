@@ -11,7 +11,7 @@ using UnityEngine;
 namespace DMS
 {
     [StaticConstructorOnStartup]
-    public class CompMechApparel:ThingComp
+    public class CompMechApparel : ThingComp
     {
         public static readonly int REFRESH_INTERVAL = 6000;
         public Texture2D GizmoIcon
@@ -61,7 +61,7 @@ namespace DMS
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-   
+
         }
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()

@@ -87,6 +87,48 @@
     </specificApparelRequirements>
   </PawnKindDef>
 
+<!-- 保鑣:在晉升典禮期間負責護送軍官的輕裝步兵 -->
+<PawnKindDef ParentName="DMS_SoldierBase">
+  <defName>DMS_Escort</defName>
+  <label>escort</label>
+  <apparelRequired Inherit="False">
+    <li>DMS_Apparel_Beret</li>
+    <li>DMS_Apparel_TacticalVest</li>
+    <li>DMS_Apparel_BionicSuit</li>
+  </apparelRequired>
+  <weaponMoney>2500~5000</weaponMoney>
+  <titleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_Corporal</titleRequired>
+  <weaponTags>
+    <li>A_PDW</li>
+  </weaponTags>
+  <skills>
+    <li>
+      <skill>Shooting</skill>
+      <range>8~16</range>
+    </li>
+    <li>
+      <skill>Melee</skill>
+      <range>8~10</range>
+    </li>
+  </skills>
+  <apparelTags/>
+  <apparelMoney>0</apparelMoney>
+  <specificApparelRequirements>
+    <li>
+      <bodyPartGroup>Torso</bodyPartGroup>
+      <apparelLayer>Middle</apparelLayer>
+      <stuff>DMS_Ceramics</stuff>
+      <color>(90, 100, 90)</color>
+    </li>
+    <li>
+      <bodyPartGroup>UpperHead</bodyPartGroup>
+      <apparelLayer>Overhead</apparelLayer>
+      <stuff>Hyperweave</stuff>
+      <color>(40,40,40)</color>
+    </li>
+  </specificApparelRequirements>
+</PawnKindDef>
+
   <!-- 崗哨槍手:負責駐守據點與哨站的輕裝步兵，通常只會穿戴戰術防彈衣與頭盔來保證機動性，使用突擊步槍與衝鋒槍作為主要武裝 -->
 
   <!-- 機械化步兵機槍手:穿戴動力外骨骼的機槍手，使用機兵輕機槍作為主要武裝-->
@@ -101,9 +143,9 @@
     <combatPower>80</combatPower>
     <apparelRequired Inherit="false">
       <li>Apparel_ArmorHelmetRecon</li>
+      <li>DMS_Apparel_PowerSkelton</li>
       <li>DMS_Apparel_TacticalVest</li>
       <li MayRequire="ceteam.combatextended">CE_Apparel_Backpack</li>
-      <li>DMS_Apparel_PowerSkelton</li>
       <li>DMS_Apparel_BionicSuit</li>
     </apparelRequired>
     <weaponMoney>530~2000</weaponMoney>
@@ -125,19 +167,21 @@
     </skills>
     <specificApparelRequirements>
       <li>
-        <colorGenerator Class="ColorGenerator_Options">
-          <options>
-            <li>
-              <only>(90, 100, 90)</only>
-            </li>            
-            <li>
-              <only>(85, 100, 95)</only>
-            </li>
-            <li>
-              <only>(95, 100, 85)</only>
-            </li>
-          </options>
-        </colorGenerator>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Shell</apparelLayer>
+        <color>(90, 100, 90)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Middle</apparelLayer>
+        <stuff>DMS_Ceramics</stuff>
+        <color>(90, 100, 90)</color>
+      </li>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <apparelLayer>Overhead</apparelLayer>
+        <stuff>Hyperweave</stuff>
+        <color>(90,100,90)</color>
       </li>
     </specificApparelRequirements>
   </PawnKindDef>

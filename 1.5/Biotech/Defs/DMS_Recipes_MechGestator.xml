@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <!-- DMS_Mech_Ape -->
+  <!-- 猿人 -->
   <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
     <defName>DMS_Make_Ape</defName>
     <label>gestate ape</label>

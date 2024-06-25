@@ -63,7 +63,15 @@
     <Compile Include="Ability\CompAbilityEffect_AbilitySelfExplosion.cs" />
     <Compile Include="Ability\CompAbilityEffect_DirectionalExplosion.cs" />
     <Compile Include="Ability\CompAbilityEffect_SelfRepairMode.cs" />
+    <Compile Include="HumanlikeMech\Patch_PawnRenderNodeWorker_Apparel_Body_CanDrawNow.cs" />
+    <Compile Include="HumanlikeMech\Patch_PawnRenderNodeWorker_Apparel_Head_CanDrawNow.cs" />
+    <Compile Include="HumanlikeMech\Patch_Pawn_IsColonistPlayerControlled.cs" />
+    <Compile Include="HumanlikeMech\PawnRenderNode.cs" />
+    <Compile Include="HumanlikeMech\PawnRenderTree_SetupDynamicNodes_Patch.cs" />
+    <Compile Include="HumanlikeMech\StatWorker_Patch.cs" />
     <Compile Include="MechMaintainBench.cs" />
+    <Compile Include="Royalty\Patch_GenerateBestowingCeremonyQuest.cs" />
+    <Compile Include="Royalty\QuestNode_Root_PromotionCeremony.cs" />
     <Compile Include="TarbosaurusJump\ModExtensionJumper.cs" />
     <Compile Include="Modification\CompTargetable_AddHediffOnTarget.cs" />
     <Compile Include="Modification\DMS_JobDefOf.cs" />
@@ -103,7 +111,7 @@
     <Compile Include="Patch\Patch_Building_MechGestator.cs" />
     <Compile Include="Patch\Patch_CanDropWeapon.cs" />
     <Compile Include="Patch\Patch_CanControlMechs.cs" />
-    <Compile Include="Patch\Patch_GeneratePawnTitle.cs" />
+    <Compile Include="Royalty\Patch_GeneratePawnTitle.cs" />
     <Compile Include="Patch\Patch_IsMissingWeapon.cs" />
     <Compile Include="Patch\Patch_Pawn.cs" />
     <Compile Include="Ability\CompAbilityEffect_DropMech.cs" />
@@ -128,12 +136,12 @@
     <Compile Include="Utility\CheckUtility.cs" />
     <Compile Include="Utility\FloatMenuUtility.cs" />
     <Compile Include="Patch\HarmonyEntry.cs" />
-    <Compile Include="Thing\HumanlikeMech.cs" />
-    <Compile Include="Thing\HumanlikeMechExtension.cs" />
-    <Compile Include="Utility\HumanlikeMechApparelUtility.cs" />
+    <Compile Include="HumanlikeMech\HumanlikeMech.cs" />
+    <Compile Include="HumanlikeMech\HumanlikeMechExtension.cs" />
+    <Compile Include="HumanlikeMech\HumanlikeMechApparelUtility.cs" />
     <Compile Include="Patch\Patch_CanTakeOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utility\HumnalikeMechRenderingUtility.cs" />
+    <Compile Include="HumanlikeMech\HumnalikeMechRenderingUtility.cs" />
     <Compile Include="Utility\StatWorker_HeavyGear.cs" />
     <Compile Include="Utility\StatWorker_MechWeapon.cs" />
     <Compile Include="Utility\WeaponTagUtil.cs" />
@@ -150,6 +158,9 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <Publicize Include="Assembly-CSharp:RimWorld.CompTargetable.selectedTarget" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Quest\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

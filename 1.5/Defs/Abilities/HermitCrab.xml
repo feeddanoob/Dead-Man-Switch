@@ -4,7 +4,7 @@
 	<AbilityDef ParentName="DMS_AddHediffSelfBase">
 		<defName>DMS_RangeRepair</defName>
 		<label>Repair field</label>
-		<description>Release a cluster of nano repair machines to repair nearby mechs which will make them enter self-maintenance mode.</description>
+		<description>Release a cluster of nano repair machines to repair nearby friendly mechs, this will cause them to enter self-maintenance mode.</description>
 		<iconPath>UI/Ability/FieldRepair</iconPath>
 		<comps>
 		<li Class="CompProperties_AbilityGiveHediff">

@@ -9,60 +9,51 @@ namespace DMS
 {
     public class HumanlikeMech : Pawn, IWeaponUsable
     {
-        private PawnDownedWiggler _wiggler;
+        private Graphic headGraphic;
+
         public HumanlikeMechExtension Extension { get; private set; }
-        public PawnDownedWiggler Wiggler
-        {
-            get
-            {
-                if (_wiggler == null)
-                {
-                    _wiggler = new PawnDownedWiggler(this);
-                }
-                return _wiggler;
-            }
+        public Graphic HeadGraphic { get {
+                if (headGraphic == null)
+                    headGraphic = Extension.headGraphic.Graphic;
+                return headGraphic;
+            } 
         }
-
-        public Graphic_Multi HeadGraphic
-        {
-            get
-            {
-                if (cachedHeadGraphic == null)
-                {
-                    cachedHeadGraphic = this.Extension.headGraphic.Graphic as Graphic_Multi;
-                }
-                return cachedHeadGraphic;
-            }
-        }
-
-        public Graphic_Multi cachedHeadGraphic;
-
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            this.Extension = this.def.GetModExtension<HumanlikeMechExtension>();
+            Extension = def.GetModExtension<HumanlikeMechExtension>();
+            if (Extension != null)
+            {
+                if (outfits == null)
+                {
+                    outfits = new Pawn_OutfitTracker(this);
+                }
+                if (story==null)
+                story = new Pawn_StoryTracker(this);
+                story.bodyType = Extension.bodyTypeOverride;
+                story.headType = Extension.headTypeOverride;
+                story.SkinColorBase = Color.white;
+            }
         }
         public override IEnumerable<FloatMenuOption> GetExtraFloatMenuOptionsFor(IntVec3 sq)
         {
-            if (this.Map == null) yield break;
+            if (Map == null || !IsColonyMech) yield break;
             List<Thing> things = sq.GetThingList(this.Map);
 
             for (int i = 0; i < things.Count; i++)
             {
-                ThingWithComps tmp = things[i] as ThingWithComps;
-                if (tmp == null) continue;
+                if (!(things[i] is ThingWithComps tmp)) continue;
 
                 if (tmp.TryGetComp<CompEquippable>() != null)
                 {
                     yield return this.TryMakeFloatMenuForWeapon(tmp);
                 }
-                if (tmp.def?.apparel != null)
+                if (tmp.def.IsApparel)
                 {
                     yield return this.TryMakeFloatMenuForApparel(tmp);
                 }
             }
         }
-
         public override void ExposeData()
         {
             base.ExposeData();
@@ -71,12 +62,6 @@ namespace DMS
                 this.Drawer?.renderer?.SetAllGraphicsDirty();
             }
         }
-        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
-        {
-            base.DrawAt(drawLoc, flip);
-            this.DrawHeadOverride();
-        }
-
         public void Equip(ThingWithComps equipment)
         {
             equipment.SetForbidden(false);

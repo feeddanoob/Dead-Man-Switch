@@ -25,7 +25,7 @@
   <!-- EN: mech assault rifle -->
   <DMS_AssaultRifle.label>機兵突擊步槍</DMS_AssaultRifle.label>
   <!-- EN: a full metal assault rifle designed for mech soldiers, with a picatinny rail as long as the gun itself for all tacticool needs.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong. -->
-  <DMS_AssaultRifle.description>一種專為機甲士兵設計的全金屬突擊步槍，有一個與槍本身一樣長的皮卡汀尼導軌，可滿足所有戰術需要。\n\n這種武器是專門為機兵設計的，因此如果沒有外部輔助設備或超強的力量，普通人可能無法正常使用。</DMS_AssaultRifle.description>
+  <DMS_AssaultRifle.description>一種專為機兵設計的全金屬突擊步槍，有一個與槍本身一樣長的皮卡汀尼導軌，可滿足所有戰術需要。\n\n這種武器是專門為機兵設計的，因此如果沒有外部輔助設備或超強的力量，普通人可能無法正常使用。</DMS_AssaultRifle.description>
   <!-- EN: stock -->
   <DMS_AssaultRifle.tools.stock.label>槍托</DMS_AssaultRifle.tools.stock.label>
   <!-- EN: barrel -->

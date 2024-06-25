@@ -5,7 +5,7 @@
 	<AbilityDef ParentName="DMS_AddHediffSelfBase">
 		<defName>DMS_SharpShooting</defName>
 		<label>precise sniping</label>
-		<description>uses built-in ballistic computer to measure extremely detailed shooting data to highly improve shooting accuracy in short time.</description>
+		<description>Execute highly complex trajectory calculations by using the built-in ballistic computer, improving shooting accuracy in a short period.</description>
 		<iconPath>UI/Ability/PiercingSnipe</iconPath>
 		<aiCanUse>true</aiCanUse>
 		<comps>
@@ -26,7 +26,7 @@
 		<defName>DMS_SharpShooting</defName>
 		<label>precise sniping mode</label>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
-		<description>this unit is at an absolute standstill and uses its built-in ballistic computer to measure extremely detailed shooting data, allowing it to accurately hit the intended target.</description>
+		<description>this unit is at an absolute-standstill mode and uses its built-in ballistic computer to measure extremely detailed shooting data, allowing it to snipe intended target in accuracy.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
 		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
@@ -55,7 +55,7 @@
 	<AbilityDef ParentName="DMS_AddHediffSelfBase">
 		<defName>DMS_RangeFinder</defName>
 		<label>recon calibration</label>
-		<description>Share fire control data to friendly forces within range to improve squad shooting accuracy in short time.</description>
+		<description>Share fire control data with friendly forces within range to improve squad shooting accuracy in a short period.</description>
 		<iconPath>UI/Ability/RangeFinder</iconPath>
 		<comps>
 		<li Class="CompProperties_AbilityGiveHediff">

@@ -60,9 +60,8 @@
   <!-- EN: Okhotnik -->
   <DMS_Turret_Okhotnik.label>獵手</DMS_Turret_Okhotnik.label>
   <!-- EN: an ancient design of remote control turret, widely used on armored vehicle and mechs armor platforms. -->
-  <DMS_Turret_Okhotnik.description>一種古老的遙控炮塔設計，廣泛用於裝甲車和機甲裝甲平台。</DMS_Turret_Okhotnik.description>
-  
-  <!-- UNUSED -->
+  <DMS_Turret_Okhotnik.description>一種古老的遙控炮塔設計，廣泛用於裝甲車和機甲平台。</DMS_Turret_Okhotnik.description>
+  <!-- EN: Barrel durability -->
   <DMS_Turret_Okhotnik.comps.CompRefuelable.fuelGizmoLabel>炮管耐久度</DMS_Turret_Okhotnik.comps.CompRefuelable.fuelGizmoLabel>
   <DMS_Turret_Okhotnik.comps.CompRefuelable.fuelLabel>剩餘耐久度</DMS_Turret_Okhotnik.comps.CompRefuelable.fuelLabel>
   <DMS_Turret_Okhotnik.comps.CompRefuelable.outOfFuelMessage>無法射擊: 需要替換砲管</DMS_Turret_Okhotnik.comps.CompRefuelable.outOfFuelMessage>

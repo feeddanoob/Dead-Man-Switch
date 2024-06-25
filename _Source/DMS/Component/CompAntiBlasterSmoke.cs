@@ -110,7 +110,7 @@ namespace DMS
 
             if (target is Projectile)
             {
-                if (target.def.defName.Contains("Charge") || target.def.defName.Contains("Blaster"))
+                if (target.def.defName.Contains("Charge") || target.def.defName.Contains("Blaster") || target.def.defName.Contains("Blaster"))
                 {
                     if (Props.ignoreThings.Contains(target.def.defName)) return false;
                     return true;

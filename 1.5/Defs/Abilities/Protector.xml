@@ -3,7 +3,7 @@
 	<AbilityDef>
 		<defName>DMS_FlashShock</defName>
 		<label>assault flash</label>
-		<description>Activate assault flash array to temporarily blind the incoming enemy, is usually used when facing large crowds. A riot control team can release them one after another to fully incapacitate the threatening crowd. After use, it will slowly recharge through its battery.</description>
+		<description>Activate assault flash array to temporarily blind the incoming enemy, is usually used when facing large  A riot control team can activate them consecutively to fully incapacitate the threatening crowd. After use, it will slowly recharge through its battery.</description>
 		<iconPath>UI/Ability/FlashShock</iconPath>
 		<cooldownTicksRange>3000</cooldownTicksRange>
 		<aiCanUse>true</aiCanUse>

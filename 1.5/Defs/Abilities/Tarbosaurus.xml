@@ -2,8 +2,8 @@
 <Defs>
     <AbilityDef>
 		<defName>DMS_TarbosaurusJump</defName>
-		<label>Tarbo jump</label>
-		<description>Tarbosaurus Long Jump</description>
+		<label>heavy jump</label>
+		<description>highly dense bionic muscle allows this 40-ton metal monster to perform a powerful short-distance jump, it will crush everything where it landed.</description>
 		<iconPath>UI/Abilities/MechLongJump</iconPath>
 		<cooldownTicksRange>600</cooldownTicksRange>
 		<charges>2</charges>

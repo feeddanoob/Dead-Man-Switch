@@ -49,7 +49,9 @@ namespace DMS
         }
         public override void DrawEffectPreview(LocalTargetInfo target)
         {
-            GenDraw.DrawRadiusRing(Pawn.Position, Props.range);
+            GenDraw.DrawFieldEdges((from x in GenRadial.RadialCellsAround(parent.pawn.PositionHeld, Props.range, useCenter: true)
+                                    where x.InBounds(Find.CurrentMap)
+                                    select x).ToList(), Color.red);
         }
         public override bool AICanTargetNow(LocalTargetInfo target)
         {
