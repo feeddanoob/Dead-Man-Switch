@@ -2,7 +2,7 @@
 <Defs>
     
   <!-- lady -->
-  <ThingDef ParentName="BaseAutomatroidHumanRace" Abstract="true">
+  <ThingDef ParentName="BaseAutomatroidHumanRace">
     <defName>DMS_Mech_Lady</defName>
     <label>lady</label>
     <description>lady</description>
@@ -112,7 +112,7 @@
     </modExtensions>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseAutomatroidKind" Abstract="true">
+  <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Mech_Lady</defName>
     <label>lady</label>
     <race>DMS_Mech_Lady</race>
@@ -160,7 +160,6 @@
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Lady</ThingDef>
     </descriptionHyperlinks>
-    <!-- 之後預期造價: 100人工肌肉+30鎢鋼+2高零+1濕件 -->
     <ingredients Inherit="False"> 
       <li>
         <filter>
@@ -176,7 +175,7 @@
             <li>ComponentSpacer</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>3</count>
       </li>
       <li>
         <filter>
