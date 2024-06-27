@@ -12,8 +12,7 @@
                 </value>
             </li>
 
-            <!--=====
-            Patch tools =====-->
+            <!--===== Patch tools =====-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[@Name="DMS_AutomatroidTurretGun"]/tools</xpath>
                 <value>
@@ -68,8 +67,7 @@
                     </tools>
                 </value>
             </li>
-            <!--=====
-            Mounted SMG =====-->
+            <!--===== Mounted SMG =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_SubMachineGunMounted</defName>
                 <statBases>
@@ -112,8 +110,50 @@
                 </weaponTags>
             </li>
 
-            <!--=====
-            Mounted LMG =====-->
+            <!--===== Mounted SG =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>DMS_ShotgunGunMounted</defName>
+                <statBases>
+                    <Mass>3.25</Mass>
+                    <Bulk>4.16</Bulk>
+                    <SwayFactor>0.96</SwayFactor>
+                    <ShotSpread>0.15</ShotSpread>
+                    <SightsEfficiency>1.0</SightsEfficiency>
+                    <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+                </statBases>
+                <Properties>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_12Gauge_Beanbag</defaultProjectile>
+                    <warmupTime>0.6</warmupTime>
+                    <range>17</range>
+                    <soundCast>Shot_Shotgun</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                    <recoilAmount>3.21</recoilAmount>
+                    <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                    <burstShotCount>3</burstShotCount>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                    </targetParams>
+                    <recoilPattern>Mounted</recoilPattern>
+                </Properties>
+                <AmmoUser>
+                    <magazineSize>300</magazineSize>
+                    <reloadTime>6.5</reloadTime>
+                    <ammoSet>AmmoSet_12Gauge</ammoSet>
+                </AmmoUser>
+                <FireModes>
+                    <aiAimMode>Snapshot</aiAimMode>
+                    <aimedBurstShotCount>2</aimedBurstShotCount>
+                </FireModes>
+                <weaponTags>
+                    <li>CE_AI_BROOM</li>
+                    <li>NoSwitch</li>
+                </weaponTags>
+            </li>
+
+            <!--===== Mounted LMG =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_LightMachineGunMounted</defName>
                 <statBases>
@@ -154,8 +194,7 @@
                 </weaponTags>
             </li>
 
-            <!--=====
-            Mounted HMG =====-->
+            <!--===== Mounted HMG =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_HeavyMachineGunMounted</defName>
                 <statBases>

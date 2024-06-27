@@ -43,8 +43,7 @@
 					<li>StrappedHead</li>
 				</value>
 			</li>
-			<!--power
-			skelton-->
+			<!--power skelton-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Apparel_PowerSkelton"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
@@ -68,16 +67,15 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Apparel_PowerSkelton"]/equippedStatOffsets</xpath>
 				<value>
-					<CarryWeight>50</CarryWeight>
+					<CarryWeight>60</CarryWeight>
 				</value>
 			</li>
 
-			<!--Bionic
-			suit-->
+			<!--Bionic suit-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Apparel_BionicSuit"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
-					<ArmorRating_Sharp>4</ArmorRating_Sharp>
+					<ArmorRating_Sharp>2</ArmorRating_Sharp>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
@@ -97,13 +95,12 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Apparel_BionicSuit"]/equippedStatOffsets</xpath>
 				<value>
-					<CarryWeight>25</CarryWeight>
+					<CarryWeight>30</CarryWeight>
 				</value>
 			</li>
 
 
-			<!--Army
-			cap-->
+			<!--Army cap-->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="DMS_CapBase"]/statBases/StuffEffectMultiplierArmor</xpath>
 				<value>
@@ -127,13 +124,12 @@
 				<xpath>
 					Defs/ThingDef[defName="DMS_Apparel_TacticalHelmet"]/statBases/StuffEffectMultiplierArmor</xpath>
 				<value>
-					<StuffEffectMultiplierArmor>4.5</StuffEffectMultiplierArmor>
+					<StuffEffectMultiplierArmor>5</StuffEffectMultiplierArmor>
 					<Bulk>3</Bulk>
 					<WornBulk>1</WornBulk>
 				</value>
 			</li>
-			<!--PASGT
-			Array-->
+			<!--PASGT Array-->
 			<li Class="PatchOperationReplace">
 				<xpath>
 					Defs/ThingDef[defName="DMS_Apparel_ArrayHelmet"]/statBases/StuffEffectMultiplierArmor</xpath>
@@ -145,8 +141,7 @@
 			</li>
 
 
-			<!--Tactical
-			Vest-->
+			<!--Tactical Vest-->
 			<li Class="PatchOperationReplace">
 				<xpath>
 					Defs/ThingDef[defName="DMS_Apparel_TacticalVest"]/statBases/StuffEffectMultiplierArmor</xpath>
@@ -154,6 +149,12 @@
 					<StuffEffectMultiplierArmor>8.5</StuffEffectMultiplierArmor>
 					<Bulk>6</Bulk>
 					<WornBulk>3</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalVest"]/equippedStatOffsets</xpath>
+				<value>
+					<CarryBulk>20</CarryBulk>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
@@ -172,8 +173,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>
-					Defs/ThingDef[defName="DMS_Apparel_TacticalVest"]/equippedStatOffsets/MoveSpeed</xpath>
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalVest"]/equippedStatOffsets/MoveSpeed</xpath>
 			</li>
 
 			<li Class="PatchOperationAddModExtension">
@@ -201,13 +201,12 @@
 			</li>
 
 
-			<!--unit
-			suit-->
+			<!--unit suit-->
 			<li Class="PatchOperationReplace">
 				<xpath>
 					Defs/ThingDef[defName="DMS_Apparel_UnitSuit"]/statBases/StuffEffectMultiplierArmor</xpath>
 				<value>
-					<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+					<StuffEffectMultiplierArmor>1.1</StuffEffectMultiplierArmor>
 				</value>
 			</li>
 
@@ -221,7 +220,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Apparel_UnitSuit"]/equippedStatOffsets</xpath>
 				<value>
-					<CarryWeight>5</CarryWeight>
+					<CarryBulk>10</CarryBulk>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -232,12 +231,42 @@
 				</value>
 			</li>
 
-			<!--DMS_Apparel_GarrisionCoat-->
+			<!--DMS_Apparel_TacticalCloak-->
 			<li Class="PatchOperationReplace">
 				<xpath>
-					Defs/ThingDef[defName="DMS_Apparel_GarrisionCoat"]/statBases/StuffEffectMultiplierArmor</xpath>
+					Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]/statBases/StuffEffectMultiplierArmor</xpath>
 				<value>
-					<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+					<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]/statBases</xpath>
+				<value>
+					<Bulk>5</Bulk>
+					<WornBulk>0</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]/equippedStatOffsets</xpath>
+				<value>
+					<CarryBulk>30</CarryBulk>
+					<ReloadSpeed>1.1</ReloadSpeed>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]/apparel/bodyPartGroups</xpath>
+				<value>
+					<li>Hands</li>
+					<li>Feet</li>
+				</value>
+			</li>
+
+			<!--DMS_Apparel_GarrisionCoat-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_GarrisionCoat"]/statBases/StuffEffectMultiplierArmor</xpath>
+				<value>
+					<StuffEffectMultiplierArmor>1.8</StuffEffectMultiplierArmor>
 				</value>
 			</li>
 
@@ -261,6 +290,65 @@
 				<value>
 					<li>Hands</li>
 					<li>Feet</li>
+				</value>
+			</li>
+
+			<!--DMS_Apparel_Gunlink-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_Gunlink"]/statBases</xpath>
+				<value>
+					<Bulk>2</Bulk>
+					<WornBulk>2</WornBulk>
+					<NightVisionEfficiency_Apparel>0.75</NightVisionEfficiency_Apparel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_Gunlink"]/equippedStatOffsets</xpath>
+				<value>
+					<AimingAccuracy>0.6</AimingAccuracy>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_Gunlink"]/apparel/layers/li</xpath>
+				<value>
+					<li>StrappedHead</li>
+				</value>
+			</li>
+
+			<!--DMS_Apparel_StealthMask-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_StealthMask"]/statBases/StuffEffectMultiplierArmor</xpath>
+				<value>
+					<StuffEffectMultiplierArmor>1.2</StuffEffectMultiplierArmor>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_StealthMask"]/statBases</xpath>
+				<value>
+					<Bulk>2</Bulk>
+					<WornBulk>2</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_StealthMask"]/equippedStatOffsets</xpath>
+				<value>
+					<CarryBulk>20</CarryBulk>
+					<SmokeSensitivity>-0.75</SmokeSensitivity>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_StealthMask"]/apparel/layers/li</xpath>
+				<value>
+					<li>OnHead</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_StealthMask"]</xpath>
+				<value>
+					<li Class="CombatExtended.ApperalRenderingExtension">
+						<HideHair>false</HideHair>
+						<HideBeard>true</HideBeard>
+					</li>
 				</value>
 			</li>
 		</operations>

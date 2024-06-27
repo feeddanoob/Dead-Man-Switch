@@ -290,8 +290,7 @@
                 </value>
             </li>
 
-            <!--=====
-            Mini Machinegun =====-->
+            <!--===== Mini Machinegun =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_MiniMachineGun</defName>
                 <statBases>
@@ -336,8 +335,7 @@
                 </weaponTags>
             </li>
 
-            <!--=====
-            Survival Rifle =====-->
+            <!--===== Survival Rifle =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_SurvivalRifle</defName>
                 <statBases>
@@ -400,8 +398,7 @@
                 </value>
             </li>
 
-            <!--=====
-            Elephant Gun =====-->
+            <!--===== Elephant Gun =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_ElephantGun</defName>
                 <statBases>
@@ -436,8 +433,7 @@
                 </weaponTags>
             </li>
 
-            <!--=====
-            Sniper GL =====-->
+            <!--===== Sniper GL =====-->
 
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DMS_SniperGrenadeLauncher"]/statBases</xpath>

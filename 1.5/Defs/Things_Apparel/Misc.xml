@@ -41,6 +41,9 @@
 			<tags Inherit="False">
 				<li>DMS_NVG</li>
 			</tags>
+			<layers Inherit="False">
+				<li>EyeCover</li>
+			</layers>
 		</apparel>
 		<tradeTags>
 			<li>Clothing</li>
