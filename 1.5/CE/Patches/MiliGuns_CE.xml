@@ -4,7 +4,8 @@
     <Operation Class="PatchOperationSequence">
         <operations>
 
-            <!--give toughness to mech weapon (tungsteel stronk)-->
+            <!--give
+            toughness to mech weapon (tungsteel stronk)-->
 
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[@Name="DMS_AutomatroidGun"]/statBases</xpath>
@@ -13,7 +14,8 @@
                 </value>
             </li>
 
-            <!--Remove speed penalty-->
+            <!--Remove
+            speed penalty-->
             <li Class="PatchOperationRemove">
                 <xpath>Defs/ThingDef[defName="DMS_SemiAutoRifle" or
                     defName="DMS_AntiMaterialRifle" or
@@ -24,7 +26,8 @@
                     defName="DMS_DoorBreaker"
                     ]/equippedStatOffsets/MoveSpeed</xpath>
             </li>
-            <!--=====  Patch tools(except pistol) =====-->
+            <!--=====
+            Patch tools(except pistol) =====-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[@Name="DMS_AutomatroidGun"]/tools</xpath>
                 <value>
@@ -64,7 +67,8 @@
                 </value>
             </li>
 
-            <!--===== TaticalPistol =====-->
+            <!--=====
+            TaticalPistol =====-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_TaticalPistol"]/tools</xpath>
                 <value>
@@ -128,7 +132,8 @@
                     <li>CE_AI_Pistol</li>
                 </weaponTags>
             </li>
-            <!--===== PDW =====-->
+            <!--=====
+            PDW =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_PDW</defName>
                 <statBases>
@@ -197,7 +202,8 @@
                 </value>
             </li>
 
-            <!--===== AssaultPiercer =====-->
+            <!--=====
+            AssaultPiercer =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_AssaultPiercer</defName>
                 <statBases>
@@ -206,7 +212,7 @@
                     <Bulk>6.7</Bulk>
                     <SwayFactor>1.5</SwayFactor>
                     <ShotSpread>0.3</ShotSpread>
-                    <SightsEfficiency>0.7</SightsEfficiency>
+                    <SightsEfficiency>0.5</SightsEfficiency>
                     <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
@@ -219,8 +225,8 @@
                     <ticksBetweenBurstShots>14</ticksBetweenBurstShots>
                     <soundCast>Shot_Autocannon</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
+					<recoilAmount>1.48</recoilAmount>
                     <muzzleFlashScale>9</muzzleFlashScale>
-					<recoilAmount>0.5</recoilAmount>
                 </Properties>
                 <AmmoUser>
                     <magazineSize>18</magazineSize>
@@ -262,7 +268,8 @@
                 </value>
             </li>
 
-            <!--===== AssaultShotgun =====-->
+            <!--=====
+            AssaultShotgun =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_AssaultShotgun</defName>
                 <statBases>
@@ -300,7 +307,8 @@
                 </weaponTags>
             </li>
 
-            <!--=====  DMS_AssaultRifle =====-->
+            <!--=====
+            DMS_AssaultRifle =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_AssaultRifle</defName>
                 <statBases>
@@ -339,7 +347,8 @@
                 </weaponTags>
             </li>
 
-            <!--=====  Semi-auto Rifle =====-->
+            <!--=====
+            Semi-auto Rifle =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_SemiAutoRifle</defName>
                 <statBases>
@@ -375,7 +384,8 @@
                 </weaponTags>
             </li>
 
-            <!--====  Battle Rifle ====-->
+            <!--====
+            Battle Rifle ====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_BattleRifle</defName>
                 <statBases>
@@ -410,7 +420,8 @@
                 </weaponTags>
             </li>
 
-            <!--=====  Marksman Rifle =====-->
+            <!--=====
+            Marksman Rifle =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_MarksmanRifle</defName>
                 <statBases>
@@ -445,7 +456,8 @@
                 </weaponTags>
             </li>
 
-            <!--===== Anti-material rifle =====-->
+            <!--=====
+            Anti-material rifle =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_AntiMaterialRifle</defName>
                 <statBases>
@@ -482,7 +494,8 @@
                 </weaponTags>
             </li>
 
-            <!--===== sniper cannon =====-->
+            <!--=====
+            sniper cannon =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_SniperCannon</defName>
                 <statBases>
@@ -519,7 +532,8 @@
                 </weaponTags>
             </li>
 
-            <!--=====  Automatic GL =====-->
+            <!--=====
+            Automatic GL =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_AutomaticGrenadeLauncher</defName>
                 <statBases>
@@ -559,7 +573,8 @@
                 </weaponTags>
             </li>
 
-            <!--===== Light MG =====-->
+            <!--=====
+            Light MG =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_LightMachineGun</defName>
                 <statBases>
@@ -597,7 +612,8 @@
                     <noSingleShot>true</noSingleShot>
                 </FireModes>
             </li>
-            <!--===== Heavy MG =====-->
+            <!--=====
+            Heavy MG =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_HeavyMachineGun</defName>
                 <statBases>
@@ -640,7 +656,8 @@
                     <li>Bipod_LMG</li>
                 </weaponTags>
             </li>
-            <!--===== HAC/Autocannon =====-->
+            <!--=====
+            HAC/Autocannon =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Autocannon</defName>
                 <statBases>
@@ -847,7 +864,8 @@
                     <li>CE_OneHandedWeapon</li>
                 </value>
             </li>
-            <!--===== Door Breaker =====-->
+            <!--=====
+            Door Breaker =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_DoorBreaker</defName>
                 <statBases>
@@ -888,7 +906,8 @@
                     <li>NoSwitch</li>
                 </weaponTags>
             </li>
-            <!--custom demolish tool for door breaker-->
+            <!--custom
+            demolish tool for door breaker-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_DoorBreaker"]/tools</xpath>
                 <value>

@@ -276,28 +276,27 @@
                     <li>NoSwitch</li>
                 </weaponTags>
             </li>
-
-			<!-- 2B9A vasilek -->
+			<!-- Mounted Vasilek -->
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 				<defName>DMS_Gun_Vasilek_B</defName>
 				<statBases>
 					<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
-					<SightsEfficiency>0.7</SightsEfficiency>
+					<SightsEfficiency>0.5</SightsEfficiency>
 					<ShotSpread>1</ShotSpread>
 					<SwayFactor>2</SwayFactor>
-					<Mass>81</Mass>
-					<Bulk>5</Bulk>
+					<Bulk>101</Bulk>
+					<Mass>94</Mass>
 				</statBases>
 				<Properties>
 					<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
 					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Bullet_81mmMortarShell_HE</defaultProjectile>
-					<warmupTime>4.2</warmupTime>
-					<minRange>12</minRange>
-					<range>90</range>
-					<burstShotCount>5</burstShotCount>
-					<ticksBetweenBurstShots>55</ticksBetweenBurstShots>
+					<warmupTime>2.2</warmupTime>
+					<minRange>20</minRange>
+					<range>200</range>
+					<burstShotCount>4</burstShotCount>
+					<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 					<soundCast>Shot_Autocannon</soundCast>
 					<soundCastTail>GunTail_Heavy</soundCastTail>
 					<requireLineOfSight>false</requireLineOfSight>
@@ -309,24 +308,27 @@
 					<recoilAmount>1.21</recoilAmount>
 				</Properties>
 				<AmmoUser>
-					<magazineSize>5</magazineSize>
+					<magazineSize>4</magazineSize>
 					<reloadTime>7</reloadTime>
 					<ammoSet>AmmoSet_81mmMortarShell</ammoSet>
 				</AmmoUser>
+				<weaponTags>
+                    <li>CE_AI_AOE</li>
+                    <li>NoSwitch</li>
+                </weaponTags>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Gun_Vasilek_B"]/comps</xpath>
 				<value>
 					<li Class="CombatExtended.CompProperties_Charges">
 						<chargeSpeeds>
-							<li>15</li>
-							<li>20</li>
-							<li>25</li>
-							<li>30</li>
+							<li>50</li>
+							<li>60</li>
+							<li>70</li>
+							<li>90</li>
+							<li>110</li>
+							<li>130</li>
 						</chargeSpeeds>
-					</li>
-					<li Class="CombatExtended.CompProperties_FireModes">
-						<aiAimMode>AimedShot</aiAimMode>
 					</li>
 				</value>
 			</li>

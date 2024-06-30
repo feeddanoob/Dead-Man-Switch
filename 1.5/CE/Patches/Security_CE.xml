@@ -27,6 +27,14 @@
 					defName="DMS_Turret_Vasilek"
 					]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
 			</li>
+			
+			<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="DMS_Turret_Tunguska" or
+                        defName="DMS_Turret_GateKeeper" or
+                        defName="DMS_Turret_Okhotnik" or
+						defName="DMS_Turret_Vasilek"
+                        ]/comps/li[@Class="CompProperties_Explosive"]</xpath>
+			</li>
 
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="DMS_BaseCannonBuilding"]/statBases </xpath>
