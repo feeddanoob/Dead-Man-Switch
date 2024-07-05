@@ -38,6 +38,7 @@
           <li>CE_OneHandedWeapon</li>
           <li>DMS_MechWeaponLongRifle</li>
           <li>DMS_MechWeaponLight</li>
+		  <li>A_BR_LongRifle</li>
           <li>GrenadeSmoke</li>
           <li>A_MG_Heavy</li>
           <li>WarcasketBasic</li>
