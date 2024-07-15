@@ -558,7 +558,7 @@
 		</equippedStatOffsets>
 		<costList>
 			<Polyester>30</Polyester>
-			<!-- <VPE_Eltex>4</VPE_Eltex> -->
+			<VPE_Eltex MayRequire="vanillaexpanded.vpsycastse">4</VPE_Eltex>
 		</costList>
 		<apparel>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>

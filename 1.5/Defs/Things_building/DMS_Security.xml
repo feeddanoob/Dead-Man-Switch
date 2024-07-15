@@ -682,7 +682,7 @@
     <techLevel>Industrial</techLevel>
     <graphicData>
       <texPath>Things/Turrets/Bipod_Base</texPath>
-      <graphicClass>Graphic_Single</graphicClass><!--只有一面不要乱用多面显示啊!!!!!-->
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>3</drawSize>
       <drawOffset>(0,0,0)</drawOffset>
     </graphicData>

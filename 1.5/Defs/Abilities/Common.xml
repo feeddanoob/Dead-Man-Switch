@@ -239,12 +239,11 @@
 	<AbilityDef>
 		<defName>DMS_NuclearOverload</defName>
 		<label>fission overload</label>
-
 		<description>In order to avoid environmental pollution caused by nuclear battery leakage after the body is severely damaged, the fission battery can be manually overloaded to react the nuclear fuel in an instant, and the external manifestation is a nuclear explosion. \n\nSuch explosion is enough to clean up the unreacted nuclear material, including the surrounding areas. everything of...</description>
 		<iconPath>UI/Ability/FissonOverload</iconPath>
 		<cooldownTicksRange>60</cooldownTicksRange> <!-- 2 day -->
 		<showPsycastEffects>false</showPsycastEffects>
-		<aiCanUse>true</aiCanUse>
+		<aiCanUse>false</aiCanUse>
 		<targetRequired>false</targetRequired>
 		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
 		<confirmationDialogText>overload the fission battery will result a large scale explosion and destroy this unit. \n\nare you sure to do this?</confirmationDialogText>
