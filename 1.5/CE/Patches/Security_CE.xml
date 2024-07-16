@@ -7,7 +7,7 @@
 			<!-- All Patch-->
 
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[@Name="DMS_BaseCannonBuilding"]/thingClass </xpath>
+				<xpath>Defs/ThingDef[@Name="DMS_BaseCannonBuilding"]/thingClass</xpath>
 				<value>
 					<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
 				</value>
@@ -180,12 +180,22 @@
 			</li>
 
 			<!-- Vasilek -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Turret_Vasilek"]/building/turretBurstCooldownTime</xpath>
+				<value>
+					<turretBurstCooldownTime>0</turretBurstCooldownTime>
+				</value>
+			</li>
+			
+			
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 				<defName>DMS_Gun_Vasilek</defName>
 				<statBases>
-					<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+					<AimingAccuracy>1</AimingAccuracy>
+					<ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+					<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 					<SightsEfficiency>0.5</SightsEfficiency>
-					<ShotSpread>1</ShotSpread>
+					<ShotSpread>2</ShotSpread>
 					<SwayFactor>2</SwayFactor>
 					<Bulk>101</Bulk>
 				</statBases>
@@ -194,12 +204,12 @@
 					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Bullet_81mmMortarShell_HE</defaultProjectile>
-					<warmupTime>2.2</warmupTime>
+					<warmupTime>1.5</warmupTime>
 					<minRange>20</minRange>
 					<range>200</range>
 					<burstShotCount>4</burstShotCount>
 					<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
-					<soundCast>Shot_Autocannon</soundCast>
+					<soundCast>DMS_Shot_VasilekSound</soundCast>
 					<soundCastTail>GunTail_Heavy</soundCastTail>
 					<requireLineOfSight>false</requireLineOfSight>
 					<indirectFirePenalty>0.75</indirectFirePenalty>
@@ -207,13 +217,19 @@
 						<canTargetLocations>true</canTargetLocations>
 					</targetParams>
 					<recoilPattern>Mounted</recoilPattern>
-					<recoilAmount>1.21</recoilAmount>
+					<recoilAmount>1.5</recoilAmount>
 				</Properties>
 				<AmmoUser>
 					<magazineSize>4</magazineSize>
-					<reloadTime>7</reloadTime>
+					<reloadTime>4</reloadTime>
 					<ammoSet>AmmoSet_81mmMortarShell</ammoSet>
-				</AmmoUser>
+				</AmmoUser>			
+				<FireModes>
+					<noSingleShot>false</noSingleShot>
+					<aiUseBurstMode>true</aiUseBurstMode>
+					<aiAimMode>SuppressFire</aiAimMode>
+					<aimedBurstShotCount>2</aimedBurstShotCount>
+				</FireModes>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Gun_Vasilek"]/comps</xpath>

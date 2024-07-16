@@ -786,13 +786,13 @@
         <defaultProjectile>Bullet_Shell_HighExplosive</defaultProjectile>
         <requireLineOfSight>false</requireLineOfSight>
         <warmupTime>1.5</warmupTime>
-        <forcedMissRadius>10</forcedMissRadius><!--喷烟者才10格，原本写15格是要打三小-->
+        <forcedMissRadius>8</forcedMissRadius>
         <minRange>19.9</minRange>
         <range>89.9</range>
         <ai_AvoidFriendlyFireRadius>7.9</ai_AvoidFriendlyFireRadius>
         <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
         <burstShotCount>4</burstShotCount>
-        <soundCast>Shot_Autocannon</soundCast>
+        <soundCast>DMS_Shot_VasilekSound</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>

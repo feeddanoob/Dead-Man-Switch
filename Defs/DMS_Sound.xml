@@ -160,4 +160,22 @@
       </li>
     </subSounds>
   </SoundDef>
+
+  
+  <SoundDef>
+    <defName>DMS_Shot_VasilekSound</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_vasilek_oneshot</clipPath>
+          </li>
+        </grains>
+        <pitchRange>1.0~1.5</pitchRange>
+        <volumeRange>30~50</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
 </Defs>

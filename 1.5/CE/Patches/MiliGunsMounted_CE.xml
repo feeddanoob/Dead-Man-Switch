@@ -297,7 +297,7 @@
 					<range>200</range>
 					<burstShotCount>4</burstShotCount>
 					<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
-					<soundCast>Shot_Autocannon</soundCast>
+					<soundCast>DMS_Shot_VasilekSound</soundCast>
 					<soundCastTail>GunTail_Heavy</soundCastTail>
 					<requireLineOfSight>false</requireLineOfSight>
 					<indirectFirePenalty>0.75</indirectFirePenalty>
@@ -309,7 +309,7 @@
 				</Properties>
 				<AmmoUser>
 					<magazineSize>4</magazineSize>
-					<reloadTime>7</reloadTime>
+					<reloadTime>3</reloadTime>
 					<ammoSet>AmmoSet_81mmMortarShell</ammoSet>
 				</AmmoUser>
 				<weaponTags>
