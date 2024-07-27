@@ -37,6 +37,16 @@ namespace DMS
             {
                 return;
             }
+            if (!ModificationUtility.SupportedByRace((Pawn)selectedTarget, Props))
+            {
+                Messages.Message("DMS_Modification_RaceNotSupported", MessageTypeDefOf.NeutralEvent);
+                return;
+            }
+            if (!ModificationUtility.HasSpaceToAttach((Pawn)selectedTarget, Props, out var _b))
+            {
+                Messages.Message("DMS_Modification_NoValidPart",MessageTypeDefOf.NeutralEvent);
+                return;
+            }
             if (usedBy.IsColonistPlayerControlled)
             {
                 Job job = JobMaker.MakeJob(DMS_JobDefOf.DMS_Modification, (Pawn)selectedTarget, this.parent);
@@ -45,11 +55,12 @@ namespace DMS
                 usedBy.jobs.TryTakeOrderedJob(job, JobTag.Misc);
             }
         }
-
     }
     public class CompProperties_AddHediffOnTarget : CompProperties_Targetable
     {
         public HediffDef hediffDef;
         public SoundDef soundDef;
+        public List<BodyPartDef> targetBodyPartDefs = null;//如果為Null，那就是默認給全身，如果有值，那就是查找目標是否有這個部位。
+        public List<ThingDef>supportRaceDefs = null;//如果為null，那就是所有機械體都能裝。這個限制目前是給戰鬥框架的改造用的。
     }
 }

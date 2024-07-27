@@ -10,17 +10,21 @@ namespace DMS
     public class HumanlikeMech : Pawn, IWeaponUsable
     {
         private Graphic headGraphic;
-
+        public MechWeaponExtension MechWeapon { get; private set; }
         public HumanlikeMechExtension Extension { get; private set; }
-        public Graphic HeadGraphic { get {
+        public Graphic HeadGraphic
+        {
+            get
+            {
                 if (headGraphic == null)
                     headGraphic = Extension.headGraphic.Graphic;
                 return headGraphic;
-            } 
+            }
         }
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
+            MechWeapon = def.GetModExtension<MechWeaponExtension>();
             Extension = def.GetModExtension<HumanlikeMechExtension>();
             if (Extension != null)
             {
@@ -28,8 +32,8 @@ namespace DMS
                 {
                     outfits = new Pawn_OutfitTracker(this);
                 }
-                if (story==null)
-                story = new Pawn_StoryTracker(this);
+                if (story == null)
+                    story = new Pawn_StoryTracker(this);
                 story.bodyType = Extension.bodyTypeOverride;
                 story.headType = Extension.headTypeOverride;
                 story.SkinColorBase = Color.white;
@@ -37,20 +41,15 @@ namespace DMS
         }
         public override IEnumerable<FloatMenuOption> GetExtraFloatMenuOptionsFor(IntVec3 sq)
         {
-            if (Map == null || !IsColonyMech) yield break;
-            List<Thing> things = sq.GetThingList(this.Map);
-
-            for (int i = 0; i < things.Count; i++)
+            if (IsColonyMechPlayerControlled)
             {
-                if (!(things[i] is ThingWithComps tmp)) continue;
-
-                if (tmp.TryGetComp<CompEquippable>() != null)
+                foreach (var item in base.GetExtraFloatMenuOptionsFor(sq))
                 {
-                    yield return this.TryMakeFloatMenuForWeapon(tmp);
+                    yield return item;
                 }
-                if (tmp.def.IsApparel)
+                foreach (var item in FloatMenuUtility.GetExtraFloatMenuOptionsFor(this, sq, MechWeapon))
                 {
-                    yield return this.TryMakeFloatMenuForApparel(tmp);
+                    yield return item;
                 }
             }
         }

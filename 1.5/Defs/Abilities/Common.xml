@@ -245,6 +245,7 @@
 		<showPsycastEffects>false</showPsycastEffects>
 		<aiCanUse>false</aiCanUse>
 		<targetRequired>false</targetRequired>
+		<showWhenDrafted>true</showWhenDrafted>
 		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
 		<confirmationDialogText>overload the fission battery will result a large scale explosion and destroy this unit. \n\nare you sure to do this?</confirmationDialogText>
 		<verbProperties>

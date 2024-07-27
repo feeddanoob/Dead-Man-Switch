@@ -6,7 +6,6 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 using Verse.Noise;
-using VFECore.Abilities;
 
 namespace DMS
 {

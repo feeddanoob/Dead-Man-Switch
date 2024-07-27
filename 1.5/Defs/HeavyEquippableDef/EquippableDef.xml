@@ -72,7 +72,9 @@
 		<defName>UltraHeavyAutomatroid</defName>
 		<EquippableBaseBodySize>3</EquippableBaseBodySize>
 		<EquippableByRace/>
-		<EquippableWithHediff/>
+		<EquippableWithHediff>
+			<li>DMS_HeavyHydraulicFrame</li>
+		</EquippableWithHediff>
 		<EquippableWithApparel>
 			<!-- TODO <li>DMS_Apparel_MobileDragoonCore</li> -->
 		</EquippableWithApparel>

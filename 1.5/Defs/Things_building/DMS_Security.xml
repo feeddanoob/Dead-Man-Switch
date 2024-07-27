@@ -453,7 +453,7 @@
     </comps>
     <building>
       <turretGunDef>DMS_Gun_GateKeeper</turretGunDef>
-      <turretTopDrawSize>7</turretTopDrawSize>
+      <turretTopDrawSize>6</turretTopDrawSize>
       <turretBurstWarmupTime>2.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>3.2</turretBurstCooldownTime>
     </building>
@@ -483,7 +483,7 @@
     <description>A large-caliber multi-barreled autocannon, more known as GAU-8 "Avanger". It is an old and practical design with extremely high rates of fire and devastating suppression capabilities.</description>
     <graphicData>
       <texPath>Things/Turrets/DMS_Gun_GateKeeper</texPath>
-      <drawSize>4</drawSize>
+      <drawSize>6</drawSize>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -807,8 +807,8 @@
 
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_Dawnblade</defName>
-    <label>a normally ship mounted multi-role quick-firing gun system, it uses drum magazines and autoloaders to permit a high rate of fire. the removal of additional amror plating allows them to be deployed to provide heavy fire support for colonies.</label>
-    <description>MPQFS-85 "Dawnblade"</description>
+    <label>Dawnblade</label>
+    <description>MPQFS-85 "Dawnblade" is an onboard multi-role quick-firing cannon system, it uses drum magazines and automatic revolver loaders to permit a high rate of fire.\n\nthe armor plating is removed to allow them to be stational deployed to provide heavy fire support for colony defense.</description>
     <techLevel>Industrial</techLevel>
     <graphicData>
       <texPath>Things/Turrets/DMS_Base_Tunguska_GateKeeper</texPath>
@@ -863,9 +863,10 @@
     </comps>
     <building>
       <turretGunDef>DMS_Gun_Dawnblade</turretGunDef>
-      <turretTopDrawSize>7</turretTopDrawSize>
+      <turretTopDrawSize>6</turretTopDrawSize>
       <turretBurstWarmupTime>2.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>3.2</turretBurstCooldownTime>
+      <turretTopOffset>(0,0.4)</turretTopOffset>
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
@@ -889,18 +890,18 @@
 
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>DMS_Gun_Dawnblade</defName>
-    <label>Dawnblade</label>
-    <description>anti-tank cannon.</description>
+    <label>Type 85 Multi-Purposed Quick-Firing System</label>
+    <description>A highly automated artillery system widely used on small and medium-sized space ships in colonial fleets.</description>
     <graphicData>
       <texPath>Things/Turrets/DMS_Gun_DawnBlade</texPath>
-      <drawSize>4</drawSize>
+      <drawSize>6</drawSize>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-	<AccuracyTouch>0.45</AccuracyTouch>
-	<AccuracyShort>0.6</AccuracyShort>
-	<AccuracyMedium>0.78</AccuracyMedium>
-	<AccuracyLong>0.95</AccuracyLong>
+      <AccuracyTouch>0.45</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.78</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
       <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
@@ -910,7 +911,7 @@
         <requireLineOfSight>true</requireLineOfSight>
         <warmupTime>2.0</warmupTime>
         <minRange>3.9</minRange>
-	<range>59.9</range>
+	      <range>59.9</range>
         <ai_AvoidFriendlyFireRadius>2.9</ai_AvoidFriendlyFireRadius>
         <ticksBetweenBurstShots>60</ticksBetweenBurstShots>
         <burstShotCount>4</burstShotCount>

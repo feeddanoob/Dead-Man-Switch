@@ -70,6 +70,7 @@
     <Compile Include="HumanlikeMech\PawnRenderTree_SetupDynamicNodes_Patch.cs" />
     <Compile Include="HumanlikeMech\StatWorker_Patch.cs" />
     <Compile Include="MechMaintainBench.cs" />
+    <Compile Include="Modification\ModificationUtility.cs" />
     <Compile Include="Royalty\Patch_GenerateBestowingCeremonyQuest.cs" />
     <Compile Include="Royalty\QuestNode_Root_PromotionCeremony.cs" />
     <Compile Include="TarbosaurusJump\ModExtensionJumper.cs" />
@@ -161,6 +162,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Quest\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hediff\todo" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

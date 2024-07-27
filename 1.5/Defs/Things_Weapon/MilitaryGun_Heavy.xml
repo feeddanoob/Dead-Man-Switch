@@ -417,11 +417,12 @@
 		</weaponClasses>
 		<weaponTags>
 			<li>DMS_DragoonGun</li>
+			<li>DMS_Tarbosaurus_Gun</li>
 			<li>DMS_MechWeaponHeavy</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Dragoon_Rifle</texPath>
-			<drawSize>2.75</drawSize>
+			<drawSize>3</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
@@ -512,7 +513,7 @@
 		<description>A hand held gun-mortar designed for mech operation. A six round revolver action allows for quick successive shots.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate.</description>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Dragoon_GL</texPath>
-			<drawSize>2</drawSize>
+			<drawSize>2.5</drawSize>
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<statBases>
@@ -649,7 +650,8 @@
 				<minRange>2.9</minRange>
 				<range>50</range>
 				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
-				<burstShotCount>1</burstShotCount>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>Shot_TurretSniper</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>20</muzzleFlashScale>

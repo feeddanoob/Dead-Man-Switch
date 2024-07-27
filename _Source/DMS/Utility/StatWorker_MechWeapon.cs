@@ -19,7 +19,7 @@ namespace DMS
             {
                 var users = ext.UsableWeaponTags;
                 List<ThingDef> list = WeaponTagUtil.GetWeapons(users).ToList();
-                list.SortBy(v => v.BaseMarketValue);
+                list.SortBy(v => v.BaseMass);
 
                 if (!users.NullOrEmpty())
                 {

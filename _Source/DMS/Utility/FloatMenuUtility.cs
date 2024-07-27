@@ -23,10 +23,11 @@ namespace DMS
                 if (things[i] is ThingWithComps tmp)
                 {
                     if (tmp == null) continue;
-                    //沒有開啟武器過濾的情況下任意武器都應該能裝備//如果該裝備是可以使用的
+
+                    //武器相關
                     if (tmp.TryGetComp<CompEquippable>() != null)
                     {
-                        if (CheckUtility.IsMechUseable(MechWeapon, tmp))
+                        if (CheckUtility.IsMechUseable(pawn, tmp))
                         {
                             yield return TryMakeFloatMenuForWeapon(pawn, tmp);
                         }
@@ -35,6 +36,7 @@ namespace DMS
                             yield return new FloatMenuOption("CannotEquip".Translate(tmp) + "DMS_WeaponNotSupported".Translate(), null);
                         }
                     }
+                    //裝備相關
                     if (tmp.def?.apparel != null && MechWeapon.acceptedLayers?.Count > 0)
                     {
                         if (CheckUtility.Wearable(MechWeapon, tmp))

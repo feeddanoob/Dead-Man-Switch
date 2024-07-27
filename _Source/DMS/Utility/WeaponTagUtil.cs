@@ -63,29 +63,13 @@ namespace DMS
         }
         public static bool WeaponExists(string defname ,out ThingDef thing)
         {
-            thing = null;
-            foreach (var item in DefDatabase<ThingDef>.AllDefs.Where((ThingDef def) => def.IsWeapon))
-            {
-                if (item.defName == defname)
-                {
-                    thing = item;
-                    return true;
-                } 
-            }
-            return false;
+            thing = DefDatabase<ThingDef>.AllDefs.Where((ThingDef def) => def.IsWeapon && def.defName == defname).First();
+            return thing != null;
         }
         public static bool WeaponExistsInTurretDict(string defname, out ThingDef thing)
         {
-            thing = null;
-            foreach (ThingDef item in turrets)
-            {
-                if (item.defName == defname)
-                {
-                    thing = item;
-                    return true;
-                }
-            }
-            return false;
+            thing = turrets.Where(t => t.defName == defname).First();
+            return thing != null;
         }
         public static ThingDef[] UseableByListsOfMechs(ThingWithComps weapon)
         {

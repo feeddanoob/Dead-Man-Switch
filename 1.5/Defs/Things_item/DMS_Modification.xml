@@ -14,7 +14,9 @@
     <defName>DMS_CeramicsPlating</defName>
     <label>ceramic plates</label>
     <description>A set of ceramic plates can be mounted on the mech's external shell to provide additional protection, but once damaged it can only be replaced with a new one. \n\nThe maximum amount of the plating on mech can apply depends on its body size.</description>
-    <descriptionHyperlinks><HediffDef>DMS_CeramicsPlating</HediffDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <HediffDef>DMS_CeramicsPlating</HediffDef>
+    </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Resource/CeramicPlate</texPath>
       <graphicClass>Graphic_Stackcount</graphicClass>
@@ -52,7 +54,7 @@
       <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>
         <useLabel>Use {0_label}</useLabel>
-        <useDuration>100</useDuration>
+        <useDuration>40</useDuration>
         <showUseGizmo>true</showUseGizmo>
       </li>
       <li Class="DMS.CompProperties_AddHediffOnTarget">
@@ -68,7 +70,9 @@
     <hediffClass>HediffWithComps</hediffClass>
     <label>ceramic plates</label>
     <description>deposable ceramic armorplate that effectively inhibits thermal erosion of bullets or shaped charges. \n\nAlthough it is an excellent protective armor, it is still essentially a disposable defensive plate and must be completely replaced once damaged.</description>
-    <descriptionHyperlinks><ThingDef>DMS_CeramicsPlating</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_CeramicsPlating</ThingDef>
+    </descriptionHyperlinks>
     <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
     <isBad>false</isBad>
     <comps>
@@ -113,7 +117,9 @@
     <defName>DMS_ReinforcedFrame</defName>
     <label>reinforced frame</label>
     <description>A set of tungsteel frame to replace parts that are prone to wear can effectively improve the durability during high-intensity combat and reduce the time spent on maintenance. But in exchange it will significantly increase the weight of the mech and affect its speed</description>
-    <descriptionHyperlinks><HediffDef>DMS_ReinforcedFrame</HediffDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <HediffDef>DMS_ReinforcedFrame</HediffDef>
+    </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Resource/ReinforcedFrame</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -152,7 +158,7 @@
       <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>
         <useLabel>Use {0_label}</useLabel>
-        <useDuration>200</useDuration>
+        <useDuration>40</useDuration>
         <showUseGizmo>true</showUseGizmo>
       </li>
       <li Class="DMS.CompProperties_AddHediffOnTarget">
@@ -168,7 +174,9 @@
     <hediffClass>Hediff</hediffClass>
     <label>reinforced frame</label>
     <description>Using tungsten steel to replace parts of the robot's frame that are prone to wear can effectively improve the durability during high-intensity combat and reduce the time spent on maintenance. But in exchange it will significantly increase the weight of the mech and affect its speed.</description>
-    <descriptionHyperlinks><ThingDef>DMS_ReinforcedFrame</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_ReinforcedFrame</ThingDef>
+    </descriptionHyperlinks>
     <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
     <isBad>false</isBad>
     <defaultInstallPart>DMS_Chassis</defaultInstallPart>
@@ -195,7 +203,9 @@
     <defName>DMS_NuclearBattery</defName>
     <label>nuclear battery</label>
     <description>A nuclear fission battery with a simple structure, commonly found in many unmanned signal stations and defense robots, consists of six high-density uranium-235 columns near critical mass and thermocouples integrated and wrapped in a high-strength shell. Its energy is enough to make most models of automatroid operate for decades.</description>
-    <descriptionHyperlinks><HediffDef>DMS_NuclearBattery</HediffDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <HediffDef>DMS_NuclearBattery</HediffDef>
+    </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Resource/NuclearBattery</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -216,39 +226,49 @@
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
-    <costList/>
+    <costList />
     <comps>
       <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>
         <useLabel>Use {0_label}</useLabel>
-        <useDuration>600</useDuration>
+        <useDuration>40</useDuration>
         <showUseGizmo>true</showUseGizmo>
       </li>
       <li Class="DMS.CompProperties_AddHediffOnTarget">
         <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
         <hediffDef>DMS_NuclearBattery</hediffDef>
         <soundDef>DMS_EquipGear</soundDef>
+        <targetBodyPartDefs>
+          <li>DMS_Battery</li>
+          <li>Reactor</li>
+        </targetBodyPartDefs>
       </li>
-      <li complass="HediffCompProperties_DisappearsOnDeath"/>
     </comps>
   </ThingDef>
 
   <HediffDef>
     <defName>DMS_NuclearBattery</defName>
-    <hediffClass>Hediff</hediffClass>
+    <hediffClass>HediffWithComps</hediffClass>
     <label>nuclear battery</label>
     <description>The abundant output of installed nuclear fission battery eliminates the need for recharge. it can also be overloaded to produce a nuclear explosion comparable to an anti-gram weapon to destroy the enemy together.</description>
-    <descriptionHyperlinks><ThingDef>DMS_NuclearBattery</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_NuclearBattery</ThingDef>
+    </descriptionHyperlinks>
     <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
     <isBad>false</isBad>
     <defaultInstallPart>DMS_Battery</defaultInstallPart>
     <stages>
       <li>
         <statFactors>
-          <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+          <MechEnergyUsageFactor>0.25</MechEnergyUsageFactor>
         </statFactors>
       </li>
     </stages>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath">
+        <compClass>HediffComp_DisappearsOnDeath</compClass>
+      </li>
+    </comps>
     <abilities>
       <li>DMS_NuclearOverload</li>
     </abilities>
@@ -309,5 +329,161 @@
       <DMS_NuclearBattery>1</DMS_NuclearBattery>
     </products>
   </RecipeDef>
+
+  <!-- TODO合成肌腱 20人工肌腱，近戰迴避*1.15 移動速度*1.25，能源消耗*1.1 -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>DMS_SyntheticTendon</defName>
+    <label>synthetic tendon</label>
+    <description>A biosynthetic muscles attached on the outer layer of mechanical limbs. can effectively increase output but will bring additional energy consumption.</description>
+    <descriptionHyperlinks>
+      <HediffDef>DMS_SyntheticTendon</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Resource/NuclearBattery</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <thingClass>ThingWithComps</thingClass>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>8.5</Mass>
+    </statBases>
+    <tradeTags>
+      <li>Serum</li>
+    </tradeTags>
+    <tradeability>Sellable</tradeability>
+    <stackLimit>10</stackLimit>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <costList />
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>40</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="DMS.CompProperties_AddHediffOnTarget">
+        <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
+        <hediffDef>DMS_SyntheticTendon</hediffDef>
+        <soundDef>DMS_EquipGear</soundDef>
+        <targetBodyPartDefs>
+          <li>DMS_SynthicLeg</li>
+          <li>MechanicalLeg</li>
+        </targetBodyPartDefs>
+      </li>
+    </comps>
+  </ThingDef>
+  <HediffDef>
+    <defName>DMS_SyntheticTendon</defName>
+    <hediffClass>Hediff</hediffClass>
+    <label>synthetic tendon</label>
+    <description>A biosynthetic muscles attached on the outer layer of mechanical limbs. can effectively increase output but will bring additional energy consumption.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_SyntheticTendon</ThingDef>
+    </descriptionHyperlinks>
+    <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <defaultInstallPart>DMS_Battery</defaultInstallPart>
+    <stages>
+      <li>
+        <statFactors>
+          <MeleeDodgeChance>1.15</MeleeDodgeChance>
+          <MoveSpeed>1.25</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <MechEnergyUsageFactor>0.05</MechEnergyUsageFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>DMS_HeavyHydraulicFrame</defName>
+    <label>heavy hydraulic frame</label>
+    <description>Heavy add-on module for capability to mount heavy weapons on mech iguana and gecko.</description>
+    <descriptionHyperlinks>
+      <HediffDef>DMS_HeavyHydraulicFrame</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Resource/NuclearBattery</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <thingClass>ThingWithComps</thingClass>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>8.5</Mass>
+    </statBases>
+    <tradeTags>
+      <li>Serum</li>
+    </tradeTags>
+    <tradeability>Sellable</tradeability>
+    <stackLimit>10</stackLimit>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <costList />
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>40</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="DMS.CompProperties_AddHediffOnTarget">
+        <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
+        <hediffDef>DMS_HeavyHydraulicFrame</hediffDef>
+        <soundDef>DMS_EquipGear</soundDef>
+        <targetBodyPartDefs>
+          <li>DMS_HeavyChassis</li>
+        </targetBodyPartDefs>
+        <supportRaceDefs>
+          <li>DMS_Mech_Iguana</li>
+          <li>DMS_Mech_Gecko</li>
+        </supportRaceDefs>
+      </li>
+    </comps>
+  </ThingDef>
+  <HediffDef>
+    <defName>DMS_HeavyHydraulicFrame</defName>
+    <hediffClass>Hediff</hediffClass>
+    <label>heavy hydraulic frame</label>
+    <description>Heavy add-on module for capability to mount heavy weapons on mech iguana and gecko.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_HeavyHydraulicFrame</ThingDef>
+    </descriptionHyperlinks>
+    <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <defaultInstallPart>DMS_HeavyChassis</defaultInstallPart>
+    <stages>
+      <li>
+        <statFactors>
+          <MoveSpeed>0.9</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <MechEnergyUsageFactor>0.1</MechEnergyUsageFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  <!-- TODO夜戰傳感器(CE)，夜戰瞄準能力200% -->
+  <!-- TODO SS反步兵系統，一種安裝於機兵外殼上的反步兵地雷系統，能夠激活並對周圍的步兵造成可觀的殺傷效果。殖民艦隊軍方曾關於使用這類裝備是否有違倫理而曾有過一段時間的討論，最終基於對生物兵器威脅的有效性依然 -->
+  <!-- TODO重啟協議，死後1小時復活並有25%機率狂暴 -->
+
+  <!-- TODO戰鬥框架-擴容貨箱掛載 +200KG攜帶能力，移動速度*0.75，近戰迴避*0.8 -->
+
+  <!-- TODO戰鬥框架-機動防盾掛載 -->
+
+  <!-- TODO戰鬥框架-蜂窩火箭掛載 -->
+
+  <!-- TODO戰鬥框架-重型彈藥掛載(增加額外的加特林兼容) -->
+
+  <!-- TODO操作系統覆寫 給機兵增加Gun的支持，代價是SupportedWeapon不顯示-->
 
 </Defs>	

@@ -22,8 +22,11 @@ namespace DMS
             {
                 float dmg = Rand.Range(10, 18);
                 target.Pawn.health.RemoveHediff(item);
-                DamageInfo damage = new DamageInfo(DamageDefOf.ElectricalBurn, dmg, 999, -1, null, item.Part);
-                target.Pawn.TakeDamage(damage);
+                if (item.Part.def.hitPoints * pawn.HealthScale > dmg)//避免低血量部位永遠修不好
+                {
+                    DamageInfo damage = new DamageInfo(DamageDefOf.ElectricalBurn, dmg, 0, -1, null, item.Part);
+                    target.Pawn.TakeDamage(damage);
+                }        
             }
         }
         private bool IsInjuredAndAlive()
