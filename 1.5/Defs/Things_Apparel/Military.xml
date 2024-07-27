@@ -91,6 +91,9 @@
 			<bodyPartGroups Inherit="False">
 				<li>UpperHead</li>
 			</bodyPartGroups>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
 			<layers>
 				<li>Overhead</li>
 			</layers>
