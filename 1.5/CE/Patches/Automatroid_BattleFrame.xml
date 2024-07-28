@@ -46,6 +46,7 @@
 					<MeleeParryChance>0.05</MeleeParryChance>
 					<MaxHitPoints>200</MaxHitPoints>
 					<NightVisionEfficiency>0.25</NightVisionEfficiency>
+					<ReloadSpeed>1.5</ReloadSpeed>
 				</value>
 			</li>
 

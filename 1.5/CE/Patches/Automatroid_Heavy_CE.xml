@@ -65,6 +65,7 @@
 					<MeleeParryChance>0.28</MeleeParryChance>
 					<MaxHitPoints>350</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
+					<ReloadSpeed>2</ReloadSpeed>
 				</value>
 			</li>
 
@@ -187,6 +188,7 @@
 					<MeleeParryChance>0.28</MeleeParryChance>
 					<MaxHitPoints>350</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
+					<ReloadSpeed>2</ReloadSpeed>
 				</value>
 			</li>
 
@@ -487,6 +489,7 @@
 					<MeleeParryChance>0.34</MeleeParryChance>
 					<MaxHitPoints>500</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
+					<ReloadSpeed>2</ReloadSpeed>
 				</value>
 			</li>
 
@@ -566,7 +569,7 @@
 									</li>
 								</extraMeleeDamages>
 							</surpriseAttack>
-							<cooldownTime>3.65</cooldownTime>
+							<cooldownTime>1.65</cooldownTime>
 							<linkedBodyPartsGroup>LeftMechanicalLeg</linkedBodyPartsGroup>
 							<armorPenetrationBlunt>49</armorPenetrationBlunt>
 							<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -585,7 +588,7 @@
 									</li>
 								</extraMeleeDamages>
 							</surpriseAttack>
-							<cooldownTime>3.65</cooldownTime>
+							<cooldownTime>1.65</cooldownTime>
 							<linkedBodyPartsGroup>RightMechanicalLeg</linkedBodyPartsGroup>
 							<armorPenetrationBlunt>49</armorPenetrationBlunt>
 							<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -596,7 +599,7 @@
 								<li>Blunt</li>
 							</capacities>
 							<power>48</power>
-							<cooldownTime>5.53</cooldownTime>
+							<cooldownTime>2.53</cooldownTime>
 							<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 							<chanceFactor>0.08</chanceFactor>
 							<armorPenetrationBlunt>27.5</armorPenetrationBlunt>

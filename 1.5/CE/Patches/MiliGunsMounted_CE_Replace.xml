@@ -10,6 +10,20 @@
     </Operation>
 
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Geochelone"]/comps/li[@Class="DMS.CompPropertiesMultipleTurretGun"]/subTurrets/li[ID="defense machinegun"]/turret</xpath>
+		<value>
+			<turret>DMS_Iguana_SubMachineGun</turret>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DMS_Mech_Dogge"]/comps/li[@Class="DMS.CompPropertiesMultipleTurretGun"]/subTurrets/li[ID="machine gun"]/turret</xpath>
+		<value>
+			<turret>DMS_Iguana_SubMachineGun</turret>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="DMS_Mech_Iguana"]/comps/li[@Class="DMS.CompPropertiesMultipleTurretGun"]/subTurrets/li[ID="machine gun"]/turret</xpath>
 		<value>
 			<turret>DMS_Iguana_SubMachineGun</turret>

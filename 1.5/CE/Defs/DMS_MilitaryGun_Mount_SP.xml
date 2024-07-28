@@ -15,7 +15,7 @@
 			<SightsEfficiency>1</SightsEfficiency>
 			<ShotSpread>0.06</ShotSpread>
 			<SwayFactor>0.86</SwayFactor>
-			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
 			<Mass>10</Mass>
 		</statBases>
 		<verbs>
@@ -24,7 +24,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_Flamethrower_Napalm</defaultProjectile>
-				<warmupTime>0.41</warmupTime>
+				<warmupTime>0.75</warmupTime>
 				<range>16</range>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
@@ -49,7 +49,7 @@
 			<SightsEfficiency>1</SightsEfficiency>
 			<ShotSpread>0.06</ShotSpread>
 			<SwayFactor>0.86</SwayFactor>
-			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
 			<Mass>10</Mass>
 		</statBases>
 		<verbs>
@@ -58,7 +58,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
-				<warmupTime>0.37</warmupTime>
+				<warmupTime>0.7</warmupTime>
 				<range>20</range>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
@@ -83,7 +83,7 @@
 			<SightsEfficiency>1</SightsEfficiency>
 			<ShotSpread>0.06</ShotSpread>
 			<SwayFactor>0.86</SwayFactor>
-			<RangedWeapon_Cooldown>0.57</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
 			<Mass>10</Mass>
 		</statBases>
 		<verbs>
@@ -92,7 +92,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-				<warmupTime>0.75</warmupTime>
+				<warmupTime>2</warmupTime>
 				<range>75</range>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
@@ -117,7 +117,7 @@
 			<SightsEfficiency>0.7</SightsEfficiency>
 			<ShotSpread>0.06</ShotSpread>
 			<SwayFactor>0.86</SwayFactor>
-			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
 			<Mass>10</Mass>
 		</statBases>
 		<verbs>
@@ -126,9 +126,9 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
-				<warmupTime>0.37</warmupTime>
-				<range>9</range>
-				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<warmupTime>1.2</warmupTime>
+				<range>12</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
 				<soundCast>Shot_Shotgun_NoRack</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>

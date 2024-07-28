@@ -44,8 +44,8 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Jaeger"]/statBases</xpath>
 				<value>
-					<AimingDelayFactor>-0.2</AimingDelayFactor>
-					<ReloadSpeed>0.5</ReloadSpeed>
+					<AimingDelayFactor>0.5</AimingDelayFactor>
+					<ReloadSpeed>1.5</ReloadSpeed>
 					<HuntingStealth>0.5</HuntingStealth>
 				</value>
 			</li>
@@ -123,8 +123,8 @@
 					<MeleeParryChance>0.16</MeleeParryChance>
 					<MaxHitPoints>200</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
-					<AimingDelayFactor>-0.2</AimingDelayFactor>
-					<ReloadSpeed>0.3</ReloadSpeed>
+					<AimingDelayFactor>0.8</AimingDelayFactor>
+					<ReloadSpeed>0.8</ReloadSpeed>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
@@ -232,8 +232,8 @@
 					<MeleeParryChance>0.16</MeleeParryChance>
 					<MaxHitPoints>200</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
-					<AimingDelayFactor>-0.2</AimingDelayFactor>
-					<ReloadSpeed>0.3</ReloadSpeed>
+					<AimingDelayFactor>1</AimingDelayFactor>
+					<ReloadSpeed>0.7</ReloadSpeed>
 				</value>
 			</li>
 			<!--placeholder
@@ -307,7 +307,7 @@
 					<MeleeParryChance>0.78</MeleeParryChance>
 					<MaxHitPoints>350</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
-					<ReloadSpeed>-0.25</ReloadSpeed>
+					<ReloadSpeed>0.5</ReloadSpeed>
 				</value>
 			</li>
 			<!--placeholder
