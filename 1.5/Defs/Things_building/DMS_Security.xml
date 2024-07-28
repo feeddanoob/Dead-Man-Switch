@@ -915,7 +915,7 @@
         <ai_AvoidFriendlyFireRadius>2.9</ai_AvoidFriendlyFireRadius>
         <ticksBetweenBurstShots>60</ticksBetweenBurstShots>
         <burstShotCount>4</burstShotCount>
-        <soundCast>Shot_TurretSniper</soundCast>
+        <soundCast>Explosion_Bomb</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>15</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>

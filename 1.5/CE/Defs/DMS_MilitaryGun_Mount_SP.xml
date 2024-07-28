@@ -13,7 +13,7 @@
 		<description>A flame launcher used by mechs that can effectively ignite flammable materials within a range</description>
 		<statBases>
 			<SightsEfficiency>1</SightsEfficiency>
-			<ShotSpread>0.06</ShotSpread>
+			<ShotSpread>0.1</ShotSpread>
 			<SwayFactor>0.86</SwayFactor>
 			<RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
 			<Mass>10</Mass>
