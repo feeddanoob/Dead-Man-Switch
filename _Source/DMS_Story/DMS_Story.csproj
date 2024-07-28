@@ -50,6 +50,7 @@
     <ProjectReference Include="..\DMS\DMS.csproj">
       <Project>{8766cec8-d11a-432f-b683-4ca0b8395e9b}</Project>
       <Name>DMS</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
