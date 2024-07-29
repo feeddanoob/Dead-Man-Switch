@@ -81,11 +81,24 @@ public static partial class CheckUtility
     {
         HeavyEquippableExtension extension = weapon.def.GetModExtension<HeavyEquippableExtension>();
         if (extension == null) return true;
-
-        HeavyEquippableDef eDef = extension.EquippableDef;
-        Pawn pawn = mech as Pawn;
-        return HasAnyHediffOf(pawn, eDef.EquippableWithHediff)|| CheckUtility.HasAnyApparelOf(pawn, eDef.EquippableWithApparel);
+        return extension.CanEquippedBy(mech as Pawn);
     }
+    public static bool CanEquipHeavy(Pawn pawn, ThingWithComps thing)
+    {
+        HeavyEquippableExtension extension = thing.def.GetModExtension<HeavyEquippableExtension>();
+        if (extension == null) return true;//沒有的話讓他過吧   
+        if (pawn is IWeaponUsable && pawn.def.GetModExtension<MechWeaponExtension>().EnableWeaponFilter == true)
+        {   //pawn是機兵，並且在他的MechWeaponExtension裡就設置了可以用這把槍
+            var ext = pawn.def.GetModExtension<MechWeaponExtension>();
+            if (ext != null)
+            {
+                if (CheckUtility.IsMechUseable(pawn, thing)) return true;
+            }
+        }
+        else if (extension.CanEquippedBy(pawn)) return true;//非機兵與能夠使用所有武器的機兵則歸這個判斷
+        return false;
+    }
+
     public static bool HasAnyHediffOf(Pawn pawn, List<HediffDef> hediffDefs)
     {
         if (pawn is null)
@@ -147,38 +160,6 @@ public static partial class CheckUtility
         {
             return (pawn.apparel.WornApparel.Where(e => e.def == thingDef).FirstOrDefault() != null);
         }
-        return false;
-    }
-    public static bool CanEquipHeavy(Pawn pawn, ThingWithComps thing)
-    {
-        HeavyEquippableExtension extension = thing.def.GetModExtension<HeavyEquippableExtension>();
-        if (extension == null) return true;//沒有的話讓他過吧
-
-        HeavyEquippableDef eDef = extension.EquippableDef;
-
-        if (pawn.BodySize >= eDef.EquippableBaseBodySize && eDef.EquippableBaseBodySize != -1) return true;//體型上可用，如果為-1則關閉此判斷
-        if (pawn is IWeaponUsable)//pawn是機兵，並且在他的MechWeaponExtension裡可以用這把槍
-        {
-            var ext = pawn.def.GetModExtension<MechWeaponExtension>();
-            if (ext != null)
-            {
-                if (CheckUtility.IsMechUseable(pawn, thing)) return true;
-                //if (ext.EnableWeaponFilter && CheckUtility.IsMechUseable(pawn, thing)) return true;
-                //else if(pawn.BodySize>= eDef.EquippableBaseBodySize && eDef.EquippableBaseBodySize != -1) return true;//由於某些原因不限制時會需要再檢查一次。。
-            }
-        }
-        if (eDef.EquippableByRace.Contains(pawn.def)) return true;//種族上可用
-        if (ModsConfig.BiotechActive)
-        {
-            foreach (GeneDef gene in eDef.EquippableWithGene)//基因上可用
-            {
-                if (pawn.genes.GenesListForReading.Contains(GeneMaker.MakeGene(gene, pawn))) return true;
-            }
-        }
-        if (CheckUtility.HasAnyHediffOf(pawn, eDef.EquippableWithHediff)) return true;//狀態上可用
-
-        if (CheckUtility.HasAnyApparelOf(pawn, eDef.EquippableWithApparel)) return true;//裝備上可用
-
         return false;
     }
 }

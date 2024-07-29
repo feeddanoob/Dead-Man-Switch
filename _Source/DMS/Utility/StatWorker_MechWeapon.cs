@@ -48,7 +48,7 @@ namespace DMS
             {
                 if (ext2.mannableByDefault)
                 {
-                    foreach (ThingDef item in WeaponTagUtil.Turrets)
+                    foreach (ThingDef item in WeaponTagUtil.GetTurrets)
                     {
                         yield return new Dialog_InfoCard.Hyperlink(item);
                     }
