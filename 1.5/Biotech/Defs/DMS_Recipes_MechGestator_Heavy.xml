@@ -334,7 +334,7 @@
   </RecipeDef>
 
   <!--DMS_Mech_Tarbosaurus-->
-  <RecipeDef ParentName="DMS_SuperHeavyMechanoidRecipe">
+  <RecipeDef ParentName="DMS_NextGenMechanoidRecipe">
     <defName>DMS_Make_Tarbosaurus</defName>
     <label>gestate tarbosaurus</label>
     <description>Gestate a tarbosaurus mechanoid.</description>
@@ -352,7 +352,7 @@
             <li>Tungsteel</li>
           </thingDefs>
         </filter>
-        <count>200</count>
+        <count>250</count>
       </li>
       <li>
         <filter>
@@ -360,7 +360,7 @@
             <li>Artifuscle</li>
           </thingDefs>
         </filter>
-        <count>125</count>
+        <count>150</count>
       </li>
       <li>
         <filter>

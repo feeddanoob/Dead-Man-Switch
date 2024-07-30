@@ -26,17 +26,17 @@
 		  <li Class="DMS.CompProperties_VehicleWeapon">
         <drawData>
           <dataEast>
-              <offset>(-0.2,0,0.7)</offset>
+              <offset>(-0.2,0,0.9)</offset>
               <layer>-20</layer>
           </dataEast>
           <dataWest>
-              <offset>(0.2,0,-0.6)</offset>
+              <offset>(0.2,0,-0.4)</offset>
           </dataWest>
           <dataSouth>
-              <offset>(0.8,0,0)</offset>
+              <offset>(0.9,0,0)</offset>
           </dataSouth>
           <dataNorth>
-              <offset>(-0.8,0,0)</offset>
+              <offset>(-0.9,0,0)</offset>
           </dataNorth>
         </drawData>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>			  
@@ -65,17 +65,17 @@
                   <pawnType>Any</pawnType>
                   <drawData>
                     <dataEast>
-                        <offset>(1.0,0,-0.6)</offset>
+                        <offset>(1,0,-0.35)</offset>
                     </dataEast>
                     <dataWest>
-                        <offset>(-1.0,0,-0.6)</offset>
+                        <offset>(-1.0,0,-0.35)</offset>
                         <rotationOffset>180</rotationOffset>
                     </dataWest>
                     <dataSouth>
                         <offset>(0,0,-1.2)</offset>
                     </dataSouth>
                     <dataNorth>
-                        <offset>(0,0,0)</offset>
+                        <offset>(0,0,0.5)</offset>
                     </dataNorth>
                   </drawData>
                 </li>
@@ -102,20 +102,20 @@
                   <pawnType>Any</pawnType>
                   <drawData>
                     <dataEast>
-                        <offset>(-0.15,0,-1.0)</offset>
+                        <offset>(-0.15,0,-0.75)</offset>
                     </dataEast>
                     <dataWest>
-                        <offset>(0.15,0,0.25)</offset>
+                        <offset>(0.15,0,0.5)</offset>
                         <layer>-22</layer>
                         <rotationOffset>180</rotationOffset>
                     </dataWest>
                     <dataSouth>
-                        <offset>(-0.9,0,-0.3)</offset>
+                        <offset>(-0.9,0,-0.05)</offset>
                         <rotationOffset>10</rotationOffset>
                     </dataSouth>
                     <dataNorth>
-                        <offset>(1,0,-1)</offset>
-                        <rotationOffset>-10</rotationOffset>
+                        <offset>(1,0,-0.25)</offset>
+                        <rotationOffset>10</rotationOffset>
                     </dataNorth>
                   </drawData>
                 </li>

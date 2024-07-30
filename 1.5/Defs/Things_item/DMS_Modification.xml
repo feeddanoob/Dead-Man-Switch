@@ -248,7 +248,7 @@
 
   <HediffDef>
     <defName>DMS_NuclearBattery</defName>
-    <hediffClass>HediffWithComps</hediffClass>
+    <hediffClass>Hediff</hediffClass>
     <label>nuclear battery</label>
     <description>The abundant output of installed nuclear fission battery eliminates the need for recharge. it can also be overloaded to produce a nuclear explosion comparable to an anti-gram weapon to destroy the enemy together.</description>
     <descriptionHyperlinks>
@@ -264,11 +264,6 @@
         </statFactors>
       </li>
     </stages>
-    <comps>
-      <li Class="HediffCompProperties_DisappearsOnDeath">
-        <compClass>HediffComp_DisappearsOnDeath</compClass>
-      </li>
-    </comps>
     <abilities>
       <li>DMS_NuclearOverload</li>
     </abilities>
@@ -407,6 +402,9 @@
     <description>Heavy add-on module for capability to mount heavy weapons on mech iguana and gecko.</description>
     <descriptionHyperlinks>
       <HediffDef>DMS_HeavyHydraulicFrame</HediffDef>
+      <ThingDef>DMS_Mech_Iguana</ThingDef>
+      <ThingDef>DMS_Mech_Gecko</ThingDef>
+      <ThingDef>DMS_Mech_Tarbosaurus</ThingDef>
     </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Resource/NuclearBattery</texPath>
@@ -446,6 +444,7 @@
         <supportRaceDefs>
           <li>DMS_Mech_Iguana</li>
           <li>DMS_Mech_Gecko</li>
+          <li>DMS_Mech_Tarbosaurus</li>
         </supportRaceDefs>
       </li>
     </comps>
@@ -454,9 +453,12 @@
     <defName>DMS_HeavyHydraulicFrame</defName>
     <hediffClass>Hediff</hediffClass>
     <label>heavy hydraulic frame</label>
-    <description>Heavy add-on module for capability to mount heavy weapons on mech iguana and gecko.</description>
+    <description>a heavy hydraulic module and power pack for bipedal mechs, gain capability for heavier lifting and also mount heavy weapons.</description>
     <descriptionHyperlinks>
       <ThingDef>DMS_HeavyHydraulicFrame</ThingDef>
+      <ThingDef>DMS_Mech_Iguana</ThingDef>
+      <ThingDef>DMS_Mech_Gecko</ThingDef>
+      <ThingDef>DMS_Mech_Tarbosaurus</ThingDef>
     </descriptionHyperlinks>
     <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
     <isBad>false</isBad>
@@ -471,6 +473,37 @@
         </statOffsets>
       </li>
     </stages>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>hydraulic frame</debugLabel>
+        <nodeClass>PawnRenderNode</nodeClass>
+        <workerClass>PawnRenderNodeWorker</workerClass>
+        <parentTagDef>Body</parentTagDef>
+        <baseLayer>20</baseLayer>
+        <drawSize>1.75</drawSize>
+        <pawnType>Any</pawnType>
+        <useGraphic>true</useGraphic>
+        <texPath>Things/Modifications/HydraulicFrame/render</texPath>
+        <drawData>
+          <defaultData>
+            <layer>20</layer>
+          </defaultData>
+          <dataEast>
+            <offset>(-0.55,0,0.1)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.55,0,0.1)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(0,0,0)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0,0,0.1)</offset>
+            <layer>0</layer>
+          </dataSouth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
   </HediffDef>
   <!-- TODO夜戰傳感器(CE)，夜戰瞄準能力200% -->
   <!-- TODO SS反步兵系統，一種安裝於機兵外殼上的反步兵地雷系統，能夠激活並對周圍的步兵造成可觀的殺傷效果。殖民艦隊軍方曾關於使用這類裝備是否有違倫理而曾有過一段時間的討論，最終基於對生物兵器威脅的有效性依然 -->

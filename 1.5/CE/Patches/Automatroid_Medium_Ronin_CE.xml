@@ -4,113 +4,42 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 
-			<!-- ======Arquebusier======-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[@Name="BaseMechRace_Arquebusier"]/statBases</xpath>
-				<value>
-					<CarryWeight>50</CarryWeight>
-					<CarryBulk>30</CarryBulk>
-					<AimingAccuracy>1</AimingAccuracy>
-					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
-					<MeleeDodgeChance>0.15</MeleeDodgeChance>
-					<MeleeCritChance>0.10</MeleeCritChance>
-					<MeleeParryChance>0.09</MeleeParryChance>
-					<MaxHitPoints>200</MaxHitPoints>
-					<NightVisionEfficiency>0.8</NightVisionEfficiency>
-				</value>
-			</li>
+			<!-- ========== PawnKind Patches ========== -->
+			<!-- == 似乎是设定机兵作为敌人时携带的弹匣数量的 == -->
 
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[@Name="BaseMechRace_Arquebusier"]/statBases/ArmorRating_Blunt</xpath>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>
+					Defs/PawnKindDef[
+					defName="DMS_Mech_Phalanx" or
+					defName="DMS_Mech_Ronin" or
+					defName="DMS_Mech_Protector"
+					]
+				</xpath>
 				<value>
-					<ArmorRating_Blunt>30</ArmorRating_Blunt>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[@Name="BaseMechRace_Arquebusier"]/statBases/ArmorRating_Sharp</xpath>
-				<value>
-					<ArmorRating_Sharp>14</ArmorRating_Sharp>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[@Name="BaseMechRace_Arquebusier"]/statBases/ArmorRating_Heat</xpath>
-				<value>
-					<ArmorRating_Heat>0.2</ArmorRating_Heat>
-				</value>
-			</li>
-
-			<!--Jaeger
-			the fast sneaky hunter-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Jaeger"]/statBases</xpath>
-				<value>
-					<AimingDelayFactor>0.5</AimingDelayFactor>
-					<ReloadSpeed>1.5</ReloadSpeed>
-					<HuntingStealth>0.5</HuntingStealth>
-				</value>
-			</li>
-
-			<!--Pioneer
-			with better nv capability-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Pioneer"]/statBases</xpath>
-				<value>
-					<NightVisionEfficiency>0.95</NightVisionEfficiency>
-				</value>
-			</li>
-
-			<!--Sniper
-			with the most precision aim, also better optics-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Sniper"]/statBases</xpath>
-				<value>
-					<AimingAccuracy>1.35</AimingAccuracy>
-					<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
-					<NightVisionEfficiency>0.85</NightVisionEfficiency>
-				</value>
-			</li>
-
-
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/ThingDef[@Name="BaseMechRace_Arquebusier"]/comps</xpath>
-				<nomatch Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[@Name="BaseMechRace_Arquebusier"]</xpath>
-					<value>
-						<comps />
-					</value>
-				</nomatch>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[@Name="BaseMechRace_Arquebusier"]/comps</xpath>
-				<value>
-					<li Class="CombatExtended.CompProperties_ArmorDurability">
-						<Durability>890</Durability>
-						<Regenerates>true</Regenerates>
-						<RegenInterval>1250</RegenInterval>
-						<RegenValue>5</RegenValue>
-						<Repairable>true</Repairable>
-						<RepairIngredients>
-							<Steel>5</Steel>
-							<Tungsteel>5</Tungsteel>
-						</RepairIngredients>
-						<RepairTime>300</RepairTime>
-						<RepairValue>200</RepairValue>
-						<CanOverHeal>true</CanOverHeal>
-						<MaxOverHeal>89</MaxOverHeal>
-						<MinArmorPct>0.75</MinArmorPct>
-						<!-- <MinArmorValueSharp>10</MinArmorValueSharp>
-				<MinArmorValueBlunt>22</MinArmorValueBlunt>
-				<MinArmorValueHeat>0.2</MinArmorValueHeat>
-				<MinArmorValueElectric>0.1</MinArmorValueElectric> -->
+					<li Class="CombatExtended.LoadoutPropertiesExtension">
+						<primaryMagazineCount>
+							<min>4</min>
+							<max>6</max>
+						</primaryMagazineCount>
 					</li>
 				</value>
 			</li>
 
-
-			<!-- ======Ronin======-->
-			<!-- Ronin is fast, and can do a long jump, also specialized for close quater with
-			improved fire rate-->
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/PawnKindDef[defName="DMS_Mech_Siegebreaker"]</xpath>
+				<value>
+					<li Class="CombatExtended.LoadoutPropertiesExtension">
+						<primaryMagazineCount>
+							<min>3</min>
+							<max>4</max>
+						</primaryMagazineCount>
+						<forcedAmmoCategory>RocketThermobaric</forcedAmmoCategory>
+					</li>
+				</value>
+			</li>
+			
+			<!-- ====== 浪人型 ======-->
+			<!-- 浪人型机兵移动速度很快（仅限原版，CE里是重装甲缓速巷战型），并且瞄准速度极快-->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Ronin"]/statBases</xpath>
 				<value>
@@ -127,17 +56,25 @@
 					<ReloadSpeed>0.8</ReloadSpeed>
 				</value>
 			</li>
+			<!-- ====== 浪人移动速度降低至4.3 ======-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Ronin"]/statBases/MoveSpeed</xpath>
+				<value>
+					<MoveSpeed>4.3</MoveSpeed>
+				</value>
+			</li>
+				
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Ronin"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
-					<ArmorRating_Blunt>30</ArmorRating_Blunt>
+					<ArmorRating_Blunt>60</ArmorRating_Blunt>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Ronin"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
-					<ArmorRating_Sharp>14</ArmorRating_Sharp>
+					<ArmorRating_Sharp>20</ArmorRating_Sharp>
 				</value>
 			</li>
 
@@ -217,9 +154,9 @@
 					</li>
 				</value>
 			</li>
-
-			<!-- ======Phalanx======-->
-
+		
+			<!-- ======方阵步兵======-->
+			<!--方阵步兵是廉价版浪人，装甲薄弱但是速度快-->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Phalanx"]/statBases</xpath>
 				<value>
@@ -236,8 +173,7 @@
 					<ReloadSpeed>0.7</ReloadSpeed>
 				</value>
 			</li>
-			<!--placeholder
-			for strongest torso armor, will add partial armor afterward-->
+			
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Phalanx"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
@@ -258,7 +194,8 @@
 					<ArmorRating_Heat>0.2</ArmorRating_Heat>
 				</value>
 			</li>
-
+			
+			<!--占位符，之后会添加躯干部位的装甲系数-->
 			<li Class="PatchOperationConditional">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Phalanx"]/comps</xpath>
 				<nomatch Class="PatchOperationAdd">
@@ -291,10 +228,8 @@
 				</value>
 			</li>
 
-			<!-- ======Protector======-->
-
-			<!-- Protector is slow, with a huge shield almost cover its whole body, very capable
-			armor to withstand heavy fire-->
+			<!-- ======搭盾手======-->			
+			<!-- 巨大的盾牌几乎覆盖了全身，能抵御凶猛的火力-->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Protector"]/statBases</xpath>
 				<value>
@@ -310,22 +245,28 @@
 					<ReloadSpeed>0.5</ReloadSpeed>
 				</value>
 			</li>
-			<!--placeholder
-			for strongest torso armor and shield, will add partial armor afterward-->
-			<!--high
-			blunt resitance but only on shield (blunt force doesn't transmit from shield to the
-			body)-->
+			
+			<!-- ====== 搭盾手移动速度降低至4.3 ======-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Protector"]/statBases/MoveSpeed</xpath>
+				<value>
+					<MoveSpeed>4.3</MoveSpeed>
+				</value>
+			</li>
+			
+			<!--厚实的躯干装甲和盾牌的占位符，之后会给添加相应部位的装甲-->
+			<!--盾牌拥有高钝抗（钝器伤害不会从盾牌传递到身体）-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Protector"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
-					<ArmorRating_Blunt>32</ArmorRating_Blunt>
+					<ArmorRating_Blunt>60</ArmorRating_Blunt>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Protector"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
-					<ArmorRating_Sharp>18</ArmorRating_Sharp>
+					<ArmorRating_Sharp>20</ArmorRating_Sharp>
 				</value>
 			</li>
 
@@ -405,9 +346,9 @@
 					</tools>
 				</value>
 			</li>
+		
 
-			<!-- ======Siegerbreaker======-->
-
+			<!-- ======袭城者======-->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Siegebreaker"]/statBases</xpath>
 				<value>
@@ -425,14 +366,14 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Siegebreaker"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
-					<ArmorRating_Blunt>16</ArmorRating_Blunt>
+					<ArmorRating_Blunt>90</ArmorRating_Blunt>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Siegebreaker"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
-					<ArmorRating_Sharp>12</ArmorRating_Sharp>
+					<ArmorRating_Sharp>24</ArmorRating_Sharp>
 				</value>
 			</li>
 

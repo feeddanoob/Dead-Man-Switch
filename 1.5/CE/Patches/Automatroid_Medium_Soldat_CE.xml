@@ -18,19 +18,6 @@
 			</li>
 
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/PawnKindDef[defName="DMS_Mech_Siegebreaker"]</xpath>
-				<value>
-					<li Class="CombatExtended.LoadoutPropertiesExtension">
-						<primaryMagazineCount>
-							<min>3</min>
-							<max>4</max>
-						</primaryMagazineCount>
-						<forcedAmmoCategory>RocketThermobaric</forcedAmmoCategory>
-					</li>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAddModExtension">
 				<xpath>Defs/PawnKindDef[defName="DMS_Mech_Kanonier"]</xpath>
 				<value>
 					<li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -56,15 +43,9 @@
 			</li>
 
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/PawnKindDef[defName="DMS_Mech_Soldat" or
-					defName="DMS_Mech_Sergeant" or
-					defName="DMS_Mech_Arquebusier" or
-					defName="DMS_Mech_Jaeger" or
-					defName="DMS_Mech_Pioneer" or
-					defName="DMS_Mech_Sniper" or
-					defName="DMS_Mech_Phalanx" or
-					defName="DMS_Mech_Ronin" or
-					defName="DMS_Mech_Protector"
+				<xpath>Defs/PawnKindDef[
+				    defName="DMS_Mech_Soldat" or
+					defName="DMS_Mech_Sergeant"
 					]</xpath>
 				<value>
 					<li Class="CombatExtended.LoadoutPropertiesExtension">

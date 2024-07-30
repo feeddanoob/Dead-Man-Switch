@@ -34,6 +34,11 @@
 				<recoilPattern>Mounted</recoilPattern>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>MountedWeapon</EquippableDef>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<!-- ==鬣蜥下挂轻机枪== -->
@@ -68,6 +73,11 @@
 				<recoilPattern>Mounted</recoilPattern>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>MountedWeapon</EquippableDef>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<!-- ==骇蜥下挂重机枪== -->
@@ -102,6 +112,11 @@
 				<recoilPattern>Mounted</recoilPattern>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="DMS.HeavyEquippableExtension">				
+				<EquippableDef>MountedWeapon</EquippableDef>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<!-- ==骇蜥迫近防御系统== -->
@@ -136,6 +151,11 @@
 				<recoilPattern>Mounted</recoilPattern>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>MountedWeapon</EquippableDef>
+			</li>
+		</modExtensions>
 	</ThingDef>
   
 </Defs>

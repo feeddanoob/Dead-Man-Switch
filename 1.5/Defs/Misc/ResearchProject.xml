@@ -356,8 +356,8 @@
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
     <defName>DMS_Synthroid</defName>
-    <label>Next-Gen weaponry(WIP)</label>
-    <description>the weapon development around mechanical-biological hybrid continued until the Fourth World War, and it reach to the height a man can thought before ...synthetic humanoid.</description>
+    <label>Next-Gen weaponry</label>
+    <description>Weapons development around mechanical-biological hybrids continued until World War IV, which reached heights we couldn't imagine.\n\nAfter this is the beginning of the so-called next-generation weapons, and the next-generation war they bring about, a war that ends the earth.</description>
     <baseCost>6000</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>
@@ -367,18 +367,5 @@
     <researchViewX>10.00</researchViewX>
     <researchViewY>1.10</researchViewY>
   </ResearchProjectDef>
-
-  DMS_EquipmentBasis
-
-DMS_EquipmentAdvanced
-
-DMS_EquipmentElite
-
-DMS_EquipmentHeavy
-
-DMS_HumanoidEngineering
-DMS_Ronin
-
-
 
 </Defs>

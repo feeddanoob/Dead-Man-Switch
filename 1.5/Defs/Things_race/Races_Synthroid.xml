@@ -108,8 +108,8 @@
         <headOffset>(0,0,-0.05)</headOffset>
       </li>
       <li Class="DMS.MechWeaponExtension">
-        <EnableWeaponFilter>true</EnableWeaponFilter>
-        <UsableWeaponTags>
+        <EnableWeaponFilter>false</EnableWeaponFilter>
+        <!-- <UsableWeaponTags>
           <li>Gun</li>
           <li>DMS_MechWeaponLight</li>
           <li>A_AR_LongRifle</li>
@@ -128,7 +128,7 @@
           <li>PLA_DMR</li>
           <li>PLA_Pistol</li>
           <li>PLA_LMG</li>
-        </UsableWeaponTags>
+        </UsableWeaponTags> -->
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
           <li>Industrial</li>
