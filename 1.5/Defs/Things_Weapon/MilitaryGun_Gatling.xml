@@ -57,6 +57,10 @@
 				</offsets>
 				<isAlternately>true</isAlternately>
 			</li>
+			<li Class="CombatExtended.GunDrawExtension" MayRequire="ceteam.combatextended">
+				<CasingAngleOffset>110</CasingAngleOffset>
+				<CasingOffset>(-0.1,0)</CasingOffset>
+			</li>
 		</modExtensions>
 	</ThingDef>
 	
@@ -118,6 +122,10 @@
 			</li>
 			<li Class="DMS.HeavyEquippableExtension">
 				<EquippableDef>StandardAutomatroid</EquippableDef>
+			</li>
+			<li Class="CombatExtended.GunDrawExtension" MayRequire="ceteam.combatextended">
+				<CasingAngleOffset>110</CasingAngleOffset>
+				<CasingOffset>(-0.5,-0.5)</CasingOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -186,6 +194,10 @@
 			<li Class="DMS.HeavyEquippableExtension">
 				<EquippableDef>HeavyAutomatroid</EquippableDef>
 			</li>
+			<li Class="CombatExtended.GunDrawExtension" MayRequire="ceteam.combatextended">
+				<CasingAngleOffset>110</CasingAngleOffset>
+				<CasingOffset>(-0.5,-0.5)</CasingOffset>
+			</li>
 		</modExtensions>
 	</ThingDef>	
 
@@ -240,6 +252,10 @@
 			</li>
 			<li Class="DMS.HeavyEquippableExtension">
 				<EquippableDef>MountedWeapon</EquippableDef>
+			</li>
+			<li Class="CombatExtended.GunDrawExtension" MayRequire="ceteam.combatextended">
+				<CasingAngleOffset>110</CasingAngleOffset>
+				<CasingOffset>(-0.5,-0.5)</CasingOffset>
 			</li>
 		</modExtensions>
   	</ThingDef>
@@ -309,6 +325,10 @@
 			</li>
 			<li Class="DMS.HeavyEquippableExtension">
 				<EquippableDef>UltraHeavyAutomatroid</EquippableDef>
+			</li>
+			<li Class="CombatExtended.GunDrawExtension" MayRequire="ceteam.combatextended">
+				<CasingAngleOffset>110</CasingAngleOffset>
+				<CasingOffset>(-0.5,-0.5)</CasingOffset>
 			</li>
 		</modExtensions>
   	</ThingDef>

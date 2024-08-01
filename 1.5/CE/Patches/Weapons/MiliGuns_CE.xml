@@ -268,8 +268,7 @@
                 </value>
             </li>
 
-            <!--=====
-            AssaultShotgun =====-->
+            <!--===== AssaultShotgun =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_AssaultShotgun</defName>
                 <statBases>
@@ -307,8 +306,7 @@
                 </weaponTags>
             </li>
 
-            <!--=====
-            DMS_AssaultRifle =====-->
+            <!--===== DMS_AssaultRifle =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_AssaultRifle</defName>
                 <statBases>
@@ -384,8 +382,7 @@
                 </weaponTags>
             </li>
 
-            <!--====
-            Battle Rifle ====-->
+            <!--==== Battle Rifle ====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_BattleRifle</defName>
                 <statBases>
@@ -420,8 +417,7 @@
                 </weaponTags>
             </li>
 
-            <!--=====
-            Marksman Rifle =====-->
+            <!--===== Marksman Rifle =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_MarksmanRifle</defName>
                 <statBases>
@@ -456,8 +452,7 @@
                 </weaponTags>
             </li>
 
-            <!--=====
-            Anti-material rifle =====-->
+            <!--===== Anti-material rifle =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_AntiMaterialRifle</defName>
                 <statBases>
@@ -494,8 +489,7 @@
                 </weaponTags>
             </li>
 
-            <!--=====
-            sniper cannon =====-->
+            <!--===== sniper cannon =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_SniperCannon</defName>
                 <statBases>
@@ -532,8 +526,7 @@
                 </weaponTags>
             </li>
 
-            <!--=====
-            Automatic GL =====-->
+            <!--===== Automatic GL =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_AutomaticGrenadeLauncher</defName>
                 <statBases>
@@ -573,8 +566,7 @@
                 </weaponTags>
             </li>
 
-            <!--=====
-            Light MG =====-->
+            <!--===== Light MG =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_LightMachineGun</defName>
                 <statBases>
@@ -612,8 +604,7 @@
                     <noSingleShot>true</noSingleShot>
                 </FireModes>
             </li>
-            <!--=====
-            Heavy MG =====-->
+            <!--===== Heavy MG =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_HeavyMachineGun</defName>
                 <statBases>
@@ -656,8 +647,7 @@
                     <li>Bipod_LMG</li>
                 </weaponTags>
             </li>
-            <!--=====
-            HAC/Autocannon =====-->
+            <!--===== LAC/Autocannon =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Autocannon</defName>
                 <statBases>
@@ -693,10 +683,10 @@
                     <noSingleShot>false</noSingleShot>
                 </FireModes>
                 <weaponTags>
-                    <!-- <li>Bipod_AMR</li> -->
                     <li>CE_AI_Suppressive</li>
                 </weaponTags>
             </li>
+
             <!--====Machete====-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_Machete"]/tools</xpath>
@@ -864,8 +854,8 @@
                     <li>CE_OneHandedWeapon</li>
                 </value>
             </li>
-            <!--=====
-            Door Breaker =====-->
+
+            <!--===== Door Breaker =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_DoorBreaker</defName>
                 <statBases>
@@ -906,8 +896,7 @@
                     <li>NoSwitch</li>
                 </weaponTags>
             </li>
-            <!--custom
-            demolish tool for door breaker-->
+            <!--custom demolish tool for door breaker-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_DoorBreaker"]/tools</xpath>
                 <value>

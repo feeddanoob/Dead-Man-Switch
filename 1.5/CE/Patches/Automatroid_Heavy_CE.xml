@@ -5,9 +5,7 @@
 		<operations>
 			<!-- ========== PawnKind Patches ========== -->
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/PawnKindDef[
-					defName="DMS_Mech_Tarbosaurus"
-					]</xpath>
+				<xpath>Defs/PawnKindDef[defName="DMS_Mech_Tarbosaurus"]</xpath>
 				<value>
 					<li Class="CombatExtended.LoadoutPropertiesExtension">
 						<primaryMagazineCount>
@@ -19,18 +17,14 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[
-					defName="DMS_Mech_Tarbosaurus"
-					]</xpath>
+				<xpath>Defs/PawnKindDef[defName="DMS_Mech_Tarbosaurus"]</xpath>
 				<value>
 					<aiAvoidCover>true</aiAvoidCover>
 				</value>
 			</li>
 
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[
-					defName="DMS_Mech_Tarbosaurus"
-					]</xpath>
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus"]</xpath>
 				<value>
 					<li Class="CombatExtended.RacePropertiesExtensionCE">
 						<bodyShape>QuadrupedTall</bodyShape>
@@ -163,7 +157,7 @@
 								<li>Blunt</li>
 							</capacities>
 							<power>48</power>
-							<cooldownTime>2.53</cooldownTime>
+							<cooldownTime>1.53</cooldownTime>
 							<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 							<chanceFactor>0.08</chanceFactor>
 							<armorPenetrationBlunt>27.5</armorPenetrationBlunt>

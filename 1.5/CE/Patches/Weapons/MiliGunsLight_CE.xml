@@ -7,9 +7,7 @@
 			<!--DMS_Flameblaster 火焰發射器-->
 			<li Class="PatchOperationRemove">
 				<xpath>
-					Defs/ThingDef[
-					defName="DMS_Flameblaster"
-					]/verbs
+					Defs/ThingDef[defName="DMS_Flameblaster"]/verbs
 				</xpath>
 			</li>
 			
@@ -82,7 +80,6 @@
 					<li>CE_AI_Pistol</li>
 				</weaponTags>
 			</li>
-
 	    </operations>	
     </Operation>
 </Patch>			

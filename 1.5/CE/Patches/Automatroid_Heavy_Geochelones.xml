@@ -150,16 +150,13 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Killdozer"]/statBases</xpath>
 				<value>
-					<CarryWeight>200</CarryWeight> <!--additional
-					armor reduce capacity-->
+					<CarryWeight>200</CarryWeight> <!--additional armor reduce capacity-->
 					<CarryBulk>140</CarryBulk>
 					<AimingAccuracy>1</AimingAccuracy>
-					<ShootingAccuracyPawn>1.2</ShootingAccuracyPawn> <!--dozer
-					block shot and reduce gun handling(?)-->
+					<ShootingAccuracyPawn>1.2</ShootingAccuracyPawn> <!--dozer block shot and reduce gun handling(?)-->
 					<MeleeDodgeChance>0.00</MeleeDodgeChance>
 					<MeleeCritChance>0.15</MeleeCritChance>
-					<MeleeParryChance>0.65</MeleeParryChance><!--big
-					dozer big block-->
+					<MeleeParryChance>0.65</MeleeParryChance><!--big dozer big block-->
 					<MaxHitPoints>500</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
 				</value>
