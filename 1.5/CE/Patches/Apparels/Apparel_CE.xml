@@ -98,6 +98,38 @@
 					<CarryWeight>30</CarryWeight>
 				</value>
 			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_BionicSuit"]/apparel/bodyPartGroups</xpath>
+				<value>
+					<li>Hands</li>
+					<li>Feet</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_BionicSuit"]</xpath>
+				<value>
+					<li Class="CombatExtended.PartialArmorExt">
+						<stats>
+							<li>
+								<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+								<parts>
+									<li>Hand</li>
+									<li>Foot</li>
+								</parts>
+							</li>
+							<li>
+								<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+								<parts>
+									<li>Hand</li>
+									<li>Foot</li>
+								</parts>
+							</li>
+						</stats>
+					</li>
+				</value>
+			</li>
 
 
 			<!--Army cap-->
@@ -139,7 +171,22 @@
 					<WornBulk>2</WornBulk>
 				</value>
 			</li>
-
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_ArrayHelmet"]/apparel/layers</xpath>
+				<value>
+					<li>StrappedHead</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_ArrayHelmet"]</xpath>
+				<value>
+					<li Class="CombatExtended.ApparelDefExtension">
+						<isRadioPack>true</isRadioPack>
+					</li>
+				</value>
+			</li>
 
 			<!--Tactical Vest-->
 			<li Class="PatchOperationReplace">
@@ -206,7 +253,7 @@
 				<xpath>
 					Defs/ThingDef[defName="DMS_Apparel_UnitSuit"]/statBases/StuffEffectMultiplierArmor</xpath>
 				<value>
-					<StuffEffectMultiplierArmor>1.1</StuffEffectMultiplierArmor>
+					<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
 				</value>
 			</li>
 
@@ -236,7 +283,7 @@
 				<xpath>
 					Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]/statBases/StuffEffectMultiplierArmor</xpath>
 				<value>
-					<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+					<StuffEffectMultiplierArmor>6</StuffEffectMultiplierArmor>
 				</value>
 			</li>
 
@@ -251,7 +298,7 @@
 				<xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]/equippedStatOffsets</xpath>
 				<value>
 					<CarryBulk>30</CarryBulk>
-					<ReloadSpeed>1.1</ReloadSpeed>
+					<ReloadSpeed>0.1</ReloadSpeed>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -261,12 +308,34 @@
 					<li>Feet</li>
 				</value>
 			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]</xpath>
+				<value>
+					<li Class="CombatExtended.PartialArmorExt">
+						<stats>
+							<li>
+								<ArmorRating_Sharp>0.66</ArmorRating_Sharp>
+								<parts>
+									<li>Hand</li>
+								</parts>
+							</li>
+							<li>
+								<ArmorRating_Blunt>0.66</ArmorRating_Blunt>
+								<parts>
+									<li>Hand</li>
+								</parts>
+							</li>
+						</stats>
+					</li>
+				</value>
+			</li>
 
 			<!--DMS_Apparel_GarrisionCoat-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Apparel_GarrisionCoat"]/statBases/StuffEffectMultiplierArmor</xpath>
 				<value>
-					<StuffEffectMultiplierArmor>1.8</StuffEffectMultiplierArmor>
+					<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
 				</value>
 			</li>
 
@@ -290,6 +359,28 @@
 				<value>
 					<li>Hands</li>
 					<li>Feet</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="DMS_Apparel_GarrisionCoat"]</xpath>
+				<value>
+					<li Class="CombatExtended.PartialArmorExt">
+						<stats>
+							<li>
+								<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+								<parts>
+									<li>Hand</li>
+								</parts>
+							</li>
+							<li>
+								<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+								<parts>
+									<li>Hand</li>
+								</parts>
+							</li>
+						</stats>
+					</li>
 				</value>
 			</li>
 
