@@ -26,6 +26,11 @@
   <!-- EN: a soft cap for military man when combat helmet is not required. -->
   <DMS_Apparel_SoftKepi.description>在不需要穿戴戰鬥頭盔時，為軍人設計的軟帽。</DMS_Apparel_SoftKepi.description>
   
+  <!-- EN: tactical cloak -->
+  <DMS_Apparel_TacticalCloak.label>戰術斗篷</DMS_Apparel_TacticalCloak.label>
+  <!-- EN: An tactical camouflage cloak equipped by magiers and special forces in colonial fleet. -->
+  <DMS_Apparel_TacticalCloak.description>一種由殖民艦隊靈能者所配備的戰術迷彩斗篷，對於靈能者而言具有一定的幫助。</DMS_Apparel_TacticalCloak.description>
+  
   <!-- EN: tactical helmet -->
   <DMS_Apparel_TacticalHelmet.label>戰術頭盔</DMS_Apparel_TacticalHelmet.label>
   <!-- EN: A lightweight combat helmet with a complex design, reinforced with plasteel. Not effective against blunt weapons. -->

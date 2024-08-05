@@ -11,8 +11,7 @@ namespace DMS
         public static void CanControl(ref bool __result)
         {
             if (__result) return;
-            Pawn pawn = Find.Selector.SingleSelectedThing as Pawn;
-            if (pawn != null)
+            if (Find.Selector.SingleSelectedThing is Pawn pawn)
             {
                 if (pawn is IWeaponUsable && pawn.Faction.IsPlayer)
                 {

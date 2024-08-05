@@ -22,7 +22,7 @@
     <titleFemale>officer</titleFemale>
     <titleShort>officer</titleShort>
     <titleShortFemale>officer</titleShortFemale>
-    <baseDesc>Due to his outstanding performance in the military academy [PAWN_nameDef] was trained as a reserve officer since he was a child. and achieved the rank of warrant officer before reaching adulthood.</baseDesc>
+    <baseDesc>Due to [PAWN_possessive] outstanding performance in the military academy [PAWN_nameDef] was trained as a reserve officer since [PAWN_pronoun] was a child. and achieved the rank of warrant officer before reaching adulthood.</baseDesc>
     <slot>Childhood</slot>
     <spawnCategories>
       <li>DMS_Officer</li>
@@ -56,7 +56,7 @@
     <title>son of martyrs</title>
     <titleFemale>daughter of martyrs</titleFemale>
     <titleShort>martyrs child</titleShort>
-    <baseDesc>[PAWN_nameDef]'s parents disappeared in the line of duty while he could still remember it. Due to the military martyrdom clause of the colonial fleet, he received a series of compensations to support him in completing the officer academy course.</baseDesc>
+    <baseDesc>[PAWN_nameDef]'s parents disappeared in the line of duty while [PAWN_pronoun] could still remember it. Due to the military martyrdom clause of the colonial fleet, [PAWN_pronoun] received a series of compensations to support [PAWN_possessive] in completing the officer academy course.</baseDesc>
     <slot>Childhood</slot>
     <spawnCategories>
       <li>DMS_Officer</li>
@@ -76,7 +76,7 @@
     <defName>DMS_MilitaryChild01</defName>
     <title>Garrison child</title>
     <titleShort>child</titleShort>
-    <baseDesc>[PAWN_nameDef] was born in the colonial fleet stationed on the planet's surface, and his biological father is unknown. Fortunately, the soldiers stationed in the camp treated [PAWN_pronoun] as their children, allowing [PAWN_pronoun] to have a relatively complete childhood.</baseDesc>
+    <baseDesc>[PAWN_nameDef] was born in the colonial fleet stationed on the planet's surface, and [PAWN_possessive] biological father is unknown. Fortunately, the soldiers stationed in the camp treated [PAWN_possessive] as their children, allowing [PAWN_pronoun] to have a relatively complete childhood.</baseDesc>
     <slot>Childhood</slot>
     <spawnCategories>
       <li>DMS_Officer</li>

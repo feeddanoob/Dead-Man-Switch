@@ -27,7 +27,7 @@
     <defName>DMS_Civilian02</defName>
     <title>Survival expert</title>
     <titleShort>Survivalist</titleShort>
-    <baseDesc>[PAWN_nameDef] participated in a grand colonization plan and came to rimworld. [PAWN_pronoun] is one of the most experienced colonists in the colonization team and has participated in numerous successful and failed colonization projects throughout his life.</baseDesc>
+    <baseDesc>[PAWN_nameDef] participated in a grand colonization plan and came to rimworld. [PAWN_pronoun] is one of the most experienced colonists in the colonization team and has participated in numerous successful and failed colonization projects throughout [PAWN_possessive] life.</baseDesc>
     <slot>Adulthood</slot>
     <spawnCategories>
       <li>DMSCommon</li>

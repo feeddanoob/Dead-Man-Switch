@@ -2,11 +2,15 @@
 <LanguageData>
   
   <!-- EN: the modification durability on one of your mech has exhausted -->
-  <DMS_AddonBroken>安裝於機械體上的附加組件已完全損壞</DMS_AddonBroken>
+  <DMS_AddonBroken>安裝於機械體上的改裝模塊已完全損壞</DMS_AddonBroken>
   <!-- EN: Disposable ceramic armor, which protects the mecha from damage until its durability is exhausted. -->
   <DMS_PlatingTooltip>能夠抵禦大多數傷害的一次性防護片，其上限值與機械體體型正相關，無法自然恢復耐久。</DMS_PlatingTooltip>
   <!-- EN: modification applied -->
-  <DMS_HasAppliedModification>機械體的附加模塊已完成安裝</DMS_HasAppliedModification>
+  <DMS_HasAppliedModification>機械體已完成改裝模塊的安裝</DMS_HasAppliedModification>
+  <!-- EN: DMS_Modification_RaceNotSupported -->
+  <DMS_Modification_RaceNotSupported>機械體型號不支持安裝該改裝模塊</DMS_Modification_RaceNotSupported>
+  <!-- DMS_Modification_NoValidPart -->
+   <DMS_Modification_NoValidPart>機械體沒有供改裝模塊安裝的空餘部位</DMS_Modification_NoValidPart>
   <!-- EN: system not supported -->
   <DMS_WeaponNotSupported>機體系統不支持</DMS_WeaponNotSupported>
   <!-- EN: frame not supported -->

@@ -21,6 +21,11 @@
   <!-- EN: forward commanders -->
   <DMS_Officer_C.labelPlural>前線指揮官</DMS_Officer_C.labelPlural>
   
+  <!-- EN: Ceremonist -->
+  <DMS_Officer_Ceremonist.label>軍儀官</DMS_Officer_Ceremonist.label>
+  <!-- EN: ceremonists -->
+  <DMS_Officer_Ceremonist.labelPlural>軍儀官</DMS_Officer_Ceremonist.labelPlural>
+  
   <!-- EN: sector commander -->
   <DMS_Officer_Leader.label>區域指揮官</DMS_Officer_Leader.label>
   <!-- EN: sector commanders -->

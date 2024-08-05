@@ -24,6 +24,9 @@
   <!-- EN: muzzle -->
   <DMS_Gun_Vasilek_B.tools.muzzle.label>砲口</DMS_Gun_Vasilek_B.tools.muzzle.label>
   <!-- EN: 2B9A vasilek -->
+  <DMS_Gun_Vasilek_B.verbs.Verb_ShootMortarCE.label>2B9A矢車菊</DMS_Gun_Vasilek_B.verbs.Verb_ShootMortarCE.label>
+  
+  <!-- UNUSED -->
   <DMS_Gun_Vasilek_B.verbs.Verb_Shoot.label>2B9A矢車菊</DMS_Gun_Vasilek_B.verbs.Verb_Shoot.label>
   
   <!-- EN: mounted HMG -->
@@ -57,12 +60,15 @@
   <!-- EN: close inbound defense system -->
   <DMS_ShotgunGunMounted.label>迫近防禦系統</DMS_ShotgunGunMounted.label>
   <!-- EN: a multi-barrel turret designed to suppress enemies in close-range. -->
-  <DMS_ShotgunGunMounted.description>一種用於壓制近接敵方步兵的多管霰彈砲塔</DMS_ShotgunGunMounted.description>
+  <DMS_ShotgunGunMounted.description>一種用於壓制近接敵方步兵的多管霰彈砲塔，能在近距離快速反應並連續發射三枚霰彈。</DMS_ShotgunGunMounted.description>
   <!-- EN: barrel -->
   <DMS_ShotgunGunMounted.tools.barrel.label>槍管</DMS_ShotgunGunMounted.tools.barrel.label>
   <!-- EN: muzzle -->
   <DMS_ShotgunGunMounted.tools.muzzle.label>槍口</DMS_ShotgunGunMounted.tools.muzzle.label>
   <!-- EN: close inbound defense system -->
+  <DMS_ShotgunGunMounted.verbs.Verb_ShootCE.label>迫近防禦系統</DMS_ShotgunGunMounted.verbs.Verb_ShootCE.label>
+  
+  <!-- UNUSED -->
   <DMS_ShotgunGunMounted.verbs.Verb_Shoot.label>迫近防禦系統</DMS_ShotgunGunMounted.verbs.Verb_Shoot.label>
   
   <!-- EN: mounted SMG -->

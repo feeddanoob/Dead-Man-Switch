@@ -16,7 +16,7 @@
   <!-- EN: elephant rifle -->
   <DMS_ElephantGun.label>獵象槍</DMS_ElephantGun.label>
   <!-- EN: Single-shot high caliber heavy hunting rifle. While made to hunt giant games or stop large hostile lifeform with sheer kinetic energy, it is also used by early industrial colonies against mechanoids thanks to its simple manufacture requirements. -->
-  <DMS_ElephantGun.description>單發大口徑重型獵槍。雖然它是為了狩獵巨型獵物或用純粹的動能阻止大型敵對生命體而製造的，但由於其簡單的製造要求，它也被早期的工業殖民地用來對付機械類動物。</DMS_ElephantGun.description>
+  <DMS_ElephantGun.description>單發大口徑重型獵槍。雖然它是為了狩獵巨型獵物或用純粹的動能阻止大型敵對生命體而製造的，但由於其簡單的製造要求，它也被早期的工業殖民地用來對付機械體。</DMS_ElephantGun.description>
   <!-- EN: stock -->
   <DMS_ElephantGun.tools.stock-0.label>槍托</DMS_ElephantGun.tools.stock-0.label>
   <!-- EN: barrel -->
@@ -98,7 +98,7 @@
   <!-- EN: slug gun -->
   <DMS_RiotShotgun.label>鎮暴霰彈槍</DMS_RiotShotgun.label>
   <!-- EN: a high caliber rifled shotgun manufactured with stamped component,design for riot operation and disable hostile mech unit. -->
-  <DMS_RiotShotgun.description>採用衝壓件製造的大口徑膛線霰彈槍，設計用於鎮暴行動和摧毀敵方機械單位。</DMS_RiotShotgun.description>
+  <DMS_RiotShotgun.description>採用衝壓件製造的大口徑膛線霰彈槍，設計用於鎮暴行動和摧毀敵方機械體。</DMS_RiotShotgun.description>
   <!-- EN: stock -->
   <DMS_RiotShotgun.tools.stock-0.label>槍托</DMS_RiotShotgun.tools.stock-0.label>
   <!-- EN: barrel -->

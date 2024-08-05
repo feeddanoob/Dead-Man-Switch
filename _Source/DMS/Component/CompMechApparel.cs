@@ -71,7 +71,8 @@ namespace DMS
             yield return new Command_SelectApparelOutfit
             {
                 defaultLabel = OutfitSource.CurrentApparelPolicy.label,
-                outfitSource = OutfitSource
+                outfitSource = OutfitSource,icon = ContentFinder<Texture2D>.Get("UI/Dress")
+
             };
         }
 

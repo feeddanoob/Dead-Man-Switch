@@ -45,7 +45,7 @@
     <defName>DMS_Officer03</defName>
     <title>Itinerant medic</title>
     <titleShort>medic</titleShort>
-    <baseDesc>[PAWN_nameDef] works for the medical department of the colonial fleet. Due to some disputes caused during a free medical tour on the surface of the planet, he had to stay briefly on the surface until the problem was resolved.</baseDesc>
+    <baseDesc>[PAWN_nameDef] works for the medical department of the colonial fleet. Due to some disputes caused during a free medical tour on the surface of the planet, [PAWN_pronoun] had to stay briefly on the surface until the problem was resolved.</baseDesc>
     <slot>Adulthood</slot>
     <spawnCategories>
       <li>DMS_Officer</li>

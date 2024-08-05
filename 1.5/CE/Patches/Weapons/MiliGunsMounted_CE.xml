@@ -307,6 +307,11 @@
 					<recoilPattern>Mounted</recoilPattern>
 					<recoilAmount>1.21</recoilAmount>
 				</Properties>
+                <FireModes>
+                    <aiUseBurstMode>true</aiUseBurstMode>
+                    <aiAimMode>AimedShot</aiAimMode>
+                    <aimedBurstShotCount>2</aimedBurstShotCount>
+                </FireModes>
 				<AmmoUser>
 					<magazineSize>4</magazineSize>
 					<reloadTime>3</reloadTime>

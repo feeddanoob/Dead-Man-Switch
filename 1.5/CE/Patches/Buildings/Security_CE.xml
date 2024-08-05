@@ -21,21 +21,23 @@
 			</li>
 
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="DMS_Turret_Tunguska" or
-			                        defName="DMS_Turret_GateKeeper" or
-			                        defName="DMS_Turret_Okhotnik" or
-						defName="DMS_Turret_Vasilek" or
-						defName="DMS_Turret_Dawnblade"
+				<xpath>Defs/ThingDef[
+					defName="DMS_Turret_Tunguska" or
+			        defName="DMS_Turret_GateKeeper" or
+			        defName="DMS_Turret_Okhotnik" or
+					defName="DMS_Turret_Vasilek" or
+					defName="DMS_Turret_Dawnblade"
 					]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
 			</li>
 			
 			<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[defName="DMS_Turret_Tunguska" or
-	                        		defName="DMS_Turret_GateKeeper" or
-	                        		defName="DMS_Turret_Okhotnik" or
-						defName="DMS_Turret_Vasilek" or
-						defName="DMS_Turret_Dawnblade"
-                        ]/comps/li[@Class="CompProperties_Explosive"]</xpath>
+				<xpath>Defs/ThingDef[
+					defName="DMS_Turret_Tunguska" or
+	                defName="DMS_Turret_GateKeeper" or
+	                defName="DMS_Turret_Okhotnik" or
+					defName="DMS_Turret_Vasilek" or
+					defName="DMS_Turret_Dawnblade"
+                    ]/comps/li[@Class="CompProperties_Explosive"]</xpath>
 			</li>
 
 			<li Class="PatchOperationAdd">
@@ -151,32 +153,36 @@
 				    <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
 				</statBases>
 				<Properties>
-				    <recoilAmount>3.25</recoilAmount>
-				    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-				    <hasStandardCommand>true</hasStandardCommand>
-				    <defaultProjectile>Bullet_762x385mmRCannonShell_HEAT</defaultProjectile>
-				    <burstShotCount>1</burstShotCount>
-				    <warmupTime>2.1</warmupTime>
-				    <range>110</range>
-				    <targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				    </targetParams>
-				    <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
-				    <soundCastTail>GunTail_Heavy</soundCastTail>
-				    <muzzleFlashScale>24</muzzleFlashScale>
+                    <recoilAmount>3.25</recoilAmount>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_762x385mmRCannonShell_HEAT</defaultProjectile>
+                    <ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+                    <burstShotCount>4</burstShotCount>
+                    <warmupTime>2</warmupTime>
+                    <range>110</range>
+                    <minRange>6.9</minRange>
+                    <soundCast>Explosion_Bomb</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>24</muzzleFlashScale>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                    </targetParams>
 				</Properties>
-						<AmmoUser>
-							<magazineSize>16</magazineSize>
-							<reloadOneAtATime>false</reloadOneAtATime>
-							<reloadTime>25</reloadTime>
-							<ammoSet>AmmoSet_762x385mmRCannonShell</ammoSet>
-						</AmmoUser>
-						<FireModes>
-							<aiAimMode>AimedShot</aiAimMode>
-						</FireModes>
-						<weaponTags>
-						</weaponTags>
-			    </li>
+				<AmmoUser>
+					<magazineSize>16</magazineSize>
+					<reloadOneAtATime>false</reloadOneAtATime>
+					<reloadTime>10</reloadTime>
+					<ammoSet>AmmoSet_762x385mmRCannonShell</ammoSet>
+				</AmmoUser>
+				<FireModes>
+					<aiUseBurstMode>true</aiUseBurstMode>
+					<aiAimMode>AimedShot</aiAimMode>
+					<aimedBurstShotCount>2</aimedBurstShotCount>
+				</FireModes>
+				<weaponTags>
+				</weaponTags>
+			</li>
 
 
 			<!-- Kord Remote control Turret -->
@@ -228,7 +234,6 @@
 				</value>
 			</li>
 			
-			
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 				<defName>DMS_Gun_Vasilek</defName>
 				<statBases>
@@ -264,7 +269,7 @@
 					<magazineSize>4</magazineSize>
 					<reloadTime>4</reloadTime>
 					<ammoSet>AmmoSet_81mmMortarShell</ammoSet>
-				</AmmoUser>			
+				</AmmoUser>
 				<FireModes>
 					<noSingleShot>false</noSingleShot>
 					<aiUseBurstMode>true</aiUseBurstMode>

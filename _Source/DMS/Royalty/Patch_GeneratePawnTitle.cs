@@ -14,17 +14,20 @@ namespace DMS
     {
         public static void Postfix(ref Pawn __result)
         {
-            if (__result.kindDef.HasModExtension<DefaultTilteFactionExtension>())
+            if (ModsConfig.RoyaltyActive)
             {
-                Faction faction = Find.FactionManager?.FirstFactionOfDef(__result.kindDef.GetModExtension<DefaultTilteFactionExtension>().faction);
-                if (faction != null)
+                if (__result.kindDef.HasModExtension<DefaultTilteFactionExtension>())
                 {
-                    foreach (RoyalTitle item in __result.royalty.AllTitlesForReading)
+                    Faction faction = Find.FactionManager?.FirstFactionOfDef(__result.kindDef.GetModExtension<DefaultTilteFactionExtension>().faction);
+                    if (faction != null)
                     {
-                        item.faction = faction;
+                        foreach (RoyalTitle item in __result.royalty.AllTitlesForReading)
+                        {
+                            item.faction = faction;
+                        }
                     }
                 }
-            }
+            }       
         }
     }
 }

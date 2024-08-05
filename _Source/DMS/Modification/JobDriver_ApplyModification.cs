@@ -43,7 +43,7 @@ namespace DMS
             CompTargetable_AddHediffOnTarget comp = Item.TryGetComp<CompTargetable_AddHediffOnTarget>();
             comp.Props.soundDef.PlayOneShot(SoundInfo.InMap(p));
             Messages.Message("DMS_HasAppliedModification".Translate(p), p, MessageTypeDefOf.PositiveEvent);
-            if (comp.Props.hediffDef.defaultInstallPart != null)
+            if (comp.Props.targetBodyPartDefs.NullOrEmpty())
             {
                 BodyPartRecord partRecord = ModificationUtility.GetBodyPartRecord(p, comp.Props);
                 if (partRecord != null)
@@ -59,7 +59,6 @@ namespace DMS
                 }
                 else p.health.AddHediff(comp.Props.hediffDef);
             }
-           
             Item.SplitOff(1).Destroy();
         }
     }

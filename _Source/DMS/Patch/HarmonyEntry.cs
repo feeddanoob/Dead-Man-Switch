@@ -17,7 +17,7 @@ namespace DMS
     {
         static HarmonyEntry()
         {
-            Harmony entry = new Harmony("AOBA.TheDeadManSwtich");
+            Harmony entry = new Harmony("AOBA.TheDeadManSwitch");
             entry.PatchAll();
         }
 

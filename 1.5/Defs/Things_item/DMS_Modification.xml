@@ -61,6 +61,7 @@
         <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
         <hediffDef>DMS_CeramicsPlating</hediffDef>
         <soundDef>DMS_EquipGear</soundDef>
+        <targetBodyPartDefs></targetBodyPartDefs>
       </li>
     </comps>
   </ThingDef>
@@ -165,6 +166,8 @@
         <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
         <hediffDef>DMS_ReinforcedFrame</hediffDef>
         <soundDef>DMS_EquipGear</soundDef>
+        <targetBodyPartDefs>
+        </targetBodyPartDefs>
       </li>
     </comps>
   </ThingDef>

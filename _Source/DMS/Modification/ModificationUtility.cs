@@ -16,7 +16,7 @@ namespace DMS
         {
             if (HasSpaceToAttach(pawn, props, out BodyPartRecord b))
             {
-                if (b == null) Log.Error("BodyPartNotExists");
+                //if (b == null) Log.Error("BodyPartNotExists");
                 return b;
             }
             return null;

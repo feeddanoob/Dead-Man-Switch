@@ -5,7 +5,7 @@
   <ThingDef ParentName="BaseAutomatroidHumanRace">
     <defName>DMS_Mech_Lady</defName>
     <label>lady</label>
-    <description>lady</description>
+    <description>The MG-1 Lady is a mech that makes heavy use of synthetic mechanical technology. It was originally designed to reduce the cognitive bias syndrome caused by long-term cooperation with machines in the military. Therefore, most of its anatomical structures are similar to humans, and its internal organs can almost be directly transplanted into the human body. However, due to its overly human-like appearance, it is only limitedly equipped for sniper troops and officers as sniper observers or bodyguards.</description>
     <thingClass>DMS.HumanlikeMech</thingClass>
     <uiIconPath>Things/Automatroid/Icon_Lady</uiIconPath>
     <statBases>
@@ -108,8 +108,8 @@
         <headOffset>(0,0,-0.05)</headOffset>
       </li>
       <li Class="DMS.MechWeaponExtension">
-        <EnableWeaponFilter>false</EnableWeaponFilter>
-        <!-- <UsableWeaponTags>
+        <EnableWeaponFilter>true</EnableWeaponFilter>
+        <UsableWeaponTags>
           <li>Gun</li>
           <li>DMS_MechWeaponLight</li>
           <li>A_AR_LongRifle</li>
@@ -128,7 +128,7 @@
           <li>PLA_DMR</li>
           <li>PLA_Pistol</li>
           <li>PLA_LMG</li>
-        </UsableWeaponTags> -->
+        </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
           <li>Industrial</li>

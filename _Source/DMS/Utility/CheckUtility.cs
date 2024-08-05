@@ -4,6 +4,8 @@ using System.Linq;
 using System.Collections.Generic;
 using RimWorld;
 using System;
+using static RimWorld.MechClusterSketch;
+using static RimWorld.PsychicRitualRoleDef;
 
 public static partial class CheckUtility
 {
@@ -30,7 +32,7 @@ public static partial class CheckUtility
     }
     public static bool IsMechUseable(Thing mech, ThingWithComps weapon)
     {
-        if (IsMechUseable(mech.def.GetModExtension<MechWeaponExtension>(), weapon))//def定義上的可用
+        if (IsMechUseable(mech.def.GetModExtension<MechWeaponExtension>(), weapon))
         {
             return true;
         }
@@ -50,37 +52,27 @@ public static partial class CheckUtility
         {
             return false;
         }
-        if (BypassedUseable(extension, thing.def.defName)) return true;
-        //開了Tag過濾的話先看是否通過Tag過濾，然後InTechLevel包含了對於EnableTechLevelFilter的判斷
+        if (BypassedUseable(extension, thing.def.defName)) return true; //指定可用
+        if (!InTechLevel(extension, thing)) return false;//科技等級可用
+
         if (extension.EnableWeaponFilter)
         {
-            foreach (var item in extension.UsableWeaponTags)
+            if (!thing.def.weaponTags.ContainsAny(t => extension.UsableWeaponTags.Contains(t)))
             {
-                if (thing.def.weaponTags.NotNullAndContains(item) && InTechLevel(extension, thing))
-                {
-                    return true;
-                }
+                return false;
             }
-            return false;
-        }
-        else if (extension.EnableTechLevelFilter)
+        } 
+        else
         {
-            return InTechLevel(extension, thing);
-        }
-        else if (extension.EnableClassFilter)
-        {
-            foreach (var item in extension.UsableWeaponClasses)
-            {
-                return thing.def.weaponClasses?.Where(p => p == item).FirstOrDefault() != null;
-            }
-            return false;
+            HeavyEquippableExtension heavyEquippableExtension = thing.def.GetModExtension<HeavyEquippableExtension>();
+            if (extension == null && extension.EnableWeaponFilter) return false; 
         }
         return true;
     }
     public static bool UseableInRuntime(Thing mech, ThingWithComps weapon)//透過改造或別的因素所以可以用的狀況
     {
         HeavyEquippableExtension extension = weapon.def.GetModExtension<HeavyEquippableExtension>();
-        if (extension == null) return true;
+        if (extension == null && mech.def.GetModExtension<MechWeaponExtension>().EnableWeaponFilter) return false;
         return extension.CanEquippedBy(mech as Pawn);
     }
     public static bool CanEquipHeavy(Pawn pawn, ThingWithComps thing)
@@ -94,8 +86,8 @@ public static partial class CheckUtility
             {
                 if (CheckUtility.IsMechUseable(pawn, thing)) return true;
             }
+            else if (extension.CanEquippedBy(pawn)) return true;//非機兵與能夠使用所有武器的機兵則歸這個判斷
         }
-        else if (extension.CanEquippedBy(pawn)) return true;//非機兵與能夠使用所有武器的機兵則歸這個判斷
         return false;
     }
 
@@ -138,7 +130,7 @@ public static partial class CheckUtility
     }
     public static bool InTechLevel(MechWeaponExtension extension, ThingWithComps thing)//為可用的科技等級。
     {
-        if (!extension.EnableTechLevelFilter) return true;
+        if (!extension.EnableTechLevelFilter || (extension.EnableTechLevelFilter && extension.UsableTechLevels.NullOrEmpty())) return true;
         else return extension.UsableTechLevels.NotNullAndContains(thing.def.techLevel);
     }
 

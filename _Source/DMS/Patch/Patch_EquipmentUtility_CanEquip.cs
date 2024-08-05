@@ -18,19 +18,27 @@ namespace DMS
             if (!(__0 is Thing thing) || !(__1 is Pawn pawn)) return;
             if (thing.TryGetComp<CompEquippable>() != null)
             {
-                var extension = thing.def.GetModExtension<HeavyEquippableExtension>();
-                if (extension != null)
+                //var extension = thing.def.GetModExtension<HeavyEquippableExtension>();
+                //if (extension != null)
+                //{
+                //    if (CheckUtility.CanEquipHeavy(pawn, thing as ThingWithComps))
+                //    {
+                //        __result = true;
+                //    }
+                //    else
+                //    {
+                //        __2 = "CannotEquip_TooHeavy".Translate();
+                //        __result = false;
+                //    }
+                //}
+                if (CheckUtility.IsMechUseable(pawn, thing as ThingWithComps))
                 {
-                    if (CheckUtility.CanEquipHeavy(pawn, thing as ThingWithComps))
-                    {
-                        __result = true;
-                    }
-                    else
-                    {
-                        __2 = "CannotEquip_TooHeavy".Translate();
-                        __result = false;
-                    }
-
+                    __result = true;
+                }
+                else
+                {
+                    __2 = "CannotEquip_TooHeavy".Translate();
+                    __result = false;
                 }
             }
         }

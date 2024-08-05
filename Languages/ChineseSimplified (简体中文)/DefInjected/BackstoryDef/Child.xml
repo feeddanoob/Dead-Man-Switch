@@ -34,7 +34,7 @@
   <DMS_OfficerChild02.titleShort>童兵</DMS_OfficerChild02.titleShort>
   
   <!-- EN: [PAWN_nameDef]'s parents disappeared in the line of duty while he could still remember it. Due to the military martyrdom clause of the colonial fleet, he received a series of compensations to support him in completing the officer academy course. -->
-  <DMS_OfficerChild03.description>[PAWN_nameDef]的双亲在他还有记忆之时便在执行任务时失踪，出於殖民舰队的军烈条款他得到了一系列的补偿以支持他完成军官学院的课程。</DMS_OfficerChild03.description>
+  <DMS_OfficerChild03.description>[PAWN_nameDef]的双亲在[PAWN_pronoun]还有记忆之时便在执行任务时失踪，出於殖民舰队的军烈条款[PAWN_pronoun]得到了一系列的补偿以支持[PAWN_pronoun]完成军官学院的课程。</DMS_OfficerChild03.description>
   <!-- EN: son of martyrs -->
   <DMS_OfficerChild03.title>烈士後裔</DMS_OfficerChild03.title>
   <!-- EN: daughter of martyrs -->
