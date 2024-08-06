@@ -328,6 +328,175 @@
     <addsHediff>DMS_ProstheticLeg</addsHediff>
   </RecipeDef>
 
+  <!-- 人工肺 -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>DMS_ProstheticLung</defName>
+    <label>mechaneural lung</label>
+    <labelNoun>a neural-mechanical lung</labelNoun>
+    <description>An installed neural-mechanical lung.</description>
+    <descriptionHyperlinks><ThingDef>DMS_ProstheticLung</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>DMS_ProstheticLung</spawnThingOnRemoved>
+    <hediffGivers>
+      <li Class="HediffGiver_Random">
+        <mtbDays>32</mtbDays>
+        <hediff>DMS_BionicShock</hediff>
+        <partsToAffect>
+          <li>Torso</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
+    <stages>
+      <li>
+        <statOffsets>
+          <ToxicResistance>0.1</ToxicResistance>
+          <RestFallRateFactor>0.05</RestFallRateFactor>
+        </statOffsets>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.15</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
+      <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">
+        <scaleAdjustment>0.75</scaleAdjustment>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="DMS_BioMechBionicBase">
+    <defName>DMS_ProstheticLung</defName>
+    <label>mechaneural lung</label>
+    <description>A plastic fiber-based membrane oxygenation prosthesis. it works like an artificial lung or so-called ECMO. During World War III, due to the lack of protective equipment, most soldiers were exposed to high-intensity nuclear, biological, and chemical pollution environments, which caused massive ulceration and paralysis of respiratory organs. these types of prostheses were widely used in the military and gradually perfected in frontline surgery and resocialization treatment for disabled militaries.</description>
+    <descriptionHyperlinks><RecipeDef>DMS_InstallProstheticLung</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Tungsteel>15</Tungsteel>
+      <Plasfiber>50</Plasfiber>
+      <ComponentStamped>3</ComponentStamped>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="DMS_SurgeryInstallBase">
+    <defName>DMS_InstallProstheticLung</defName>
+    <label>install mechaneural lung</label>
+    <description>Install a neural-mechanical lung.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_ProstheticLung</ThingDef>
+      <HediffDef>DMS_ProstheticLung</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing neural-mechanical lung.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DMS_ProstheticLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DMS_ProstheticLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DMS_ProstheticLung</addsHediff>
+  </RecipeDef>
+
+  <!-- 人工腎  -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>DMS_ProstheticKidney</defName>
+    <label>mechaneural kidney</label>
+    <labelNoun>a neural-mechanical kidney</labelNoun>
+    <description>An installed neural-mechanical kidney.</description>
+    <descriptionHyperlinks><ThingDef>DMS_ProstheticKidney</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>DMS_ProstheticKidney</spawnThingOnRemoved>
+    <hediffGivers>
+      <li Class="HediffGiver_Random">
+        <mtbDays>32</mtbDays>
+        <hediff>DMS_BionicShock</hediff>
+        <partsToAffect>
+          <li>Torso</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
+    <stages>
+      <li>
+        <statOffsets>
+          <ToxicEnvironmentResistance>0.1</ToxicEnvironmentResistance>
+          <ImmunityGainSpeed>0.05</ImmunityGainSpeed>
+          <RestFallRateFactor>0.05</RestFallRateFactor>
+        </statOffsets>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.15</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <comps MayRequire="V1024.EBFramework">             <!-- 部件血量加多少% -->
+      <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust" MayRequire="V1024.EBFramework">
+        <scaleAdjustment>0.75</scaleAdjustment>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="DMS_BioMechBionicBase">
+    <defName>DMS_ProstheticKidney</defName>
+    <label>mechaneural kidney</label>
+    <description>A columnar liquid filter implant that filters impurities and waste products in the blood through osmotic pressure to ensure the acid-base balance of the implanter's internal circulatory system.</description>
+    <descriptionHyperlinks><RecipeDef>DMS_InstallProstheticKidney</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Tungsteel>15</Tungsteel>
+      <Plasfiber>50</Plasfiber>
+      <ComponentStamped>3</ComponentStamped>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="DMS_SurgeryInstallBase">
+    <defName>DMS_InstallProstheticKidney</defName>
+    <label>install mechaneural kidney</label>
+    <description>Install a neural-mechanical kidney.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_ProstheticKidney</ThingDef>
+      <HediffDef>DMS_ProstheticKidney</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing neural-mechanical kidney.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DMS_ProstheticKidney</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DMS_ProstheticKidney</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DMS_ProstheticKidney</addsHediff>
+  </RecipeDef>
+
   <!-- 輔助神經索 -->
 
   <HediffDef>
@@ -452,7 +621,13 @@
   <ThingDef ParentName="DMS_BioMechBionicBase">
     <defName>DMS_ProstheticSpine</defName>
     <label>bio-mechanical neurochord</label>
-    <description>An advanced bio-mechanical spine which also work as a sub-brain to compatible with other prostheses by sharing reflex nerves.</description>
+    <description>An advanced bio-mechanical spine which also work as a sub-brain to compatible with other prostheses by sharing reflex nerves.</description>  
+    <graphicData>
+      <texPath>Things/Misc/DMS_Neurochord</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+      <color>(255,255,255)</color>
+    </graphicData>
     <costList>
       <Tungsteel>20</Tungsteel>
       <Plasfiber>10</Plasfiber>
@@ -475,7 +650,7 @@
         <canUpgrade>true</canUpgrade>
         <maxSeverity>6</maxSeverity>
       </li>
-      <li Class="CompProperties_UseEffectDestroySelf" />
+      <li Class="CompProperties_UseEffectDestroySelf"/>
       <li Class="CompProperties_UseEffectPlaySound">
         <soundOnUsed>MechlinkInstalled</soundOnUsed>
       </li>
@@ -644,9 +819,9 @@
     <spawnThingOnRemoved>DMS_NutrientPort</spawnThingOnRemoved>
     <stages>
       <li>
-        <statOffsets>
-          <MaxNutrition>2</MaxNutrition>   
-        </statOffsets>
+        <statFactors>
+          <MaxNutrition>2</MaxNutrition>  
+        </statFactors>
         <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
         <hungerRateFactor>0.5</hungerRateFactor>
         <capMods>

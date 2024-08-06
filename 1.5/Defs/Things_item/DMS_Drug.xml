@@ -68,8 +68,79 @@
             <li>DMS_BionicShock</li>
             <li>DMS_SyntheticRejection</li>
             <li>DMS_BionicShockRemove</li>
+            <li>FibrousMechanites</li>
+            <li>SensoryMechanites</li>
           </makeImmuneTo>
         </li>
       </stages>
   </HediffDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>DMS_CombatRation</defName>
+    <label>C-Ration</label>
+    <description>A block high energy organic polymer ration, invented during World War III as a nutritional supplement for reinforced human troops during combat. For soldiers equipped with nutritional interfaces, it can provide just enough calories for internal organs to function for a long while. But for normal humans, it might cause some slight gastrointestinal discomfort.</description>
+    <possessionCount>10</possessionCount>
+    <descriptionHyperlinks><HediffDef>NeuroglueHigh</HediffDef></descriptionHyperlinks>
+    <graphicData> 
+      <texPath>Things/Resource/Ration</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <MarketValue>18</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>3</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="DMS.IngestionOutcomeDoer_GiveThoughtWhenNoBionic">
+          <BionicHediff>DMS_NutrientPort</BionicHediff>
+          <thoughtDef>DMS_OverEat</thoughtDef>
+          <severity>1.0</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Food</need>
+          <offset>2</offset>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>0.5</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>DMS_Bionics</researchPrerequisite>
+      <recipeUsers>
+        <li>DMS_TableArtifuscle</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <MealSurvivalPack>2</MealSurvivalPack>
+      <Neutroamine>1</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThoughtDef>
+    <defName>DMS_OverEat</defName>
+    <durationDays>1</durationDays>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <nullifyingTraits><li>Gourmand</li></nullifyingTraits>
+    <stages>
+      <li>
+        <label>overeat</label>
+        <description>the amount of this ration is too much that I think my stomach isn't paired with it.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 </Defs>	
