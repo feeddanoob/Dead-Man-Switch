@@ -111,7 +111,7 @@
   <!-- EN: neural prosthetic -->
   <DMS_Prosthetic.label>神經機械仿生</DMS_Prosthetic.label>
   <!-- EN: Neural prosthetic are designed for disabled soldiers. It is durable and the need for adaptation training is almost negligible. However, due to the consideration of durability and mass production, its work efficiency is not as good as the original one. -->
-  <DMS_Prosthetic.description>神經義肢是專為傷殘軍人設計的。它經久耐用，對適應訓練的需求幾乎可以忽略不計。不過，出於耐用性和大規模生產的考慮，它的工作效率不如原來的肢體。</DMS_Prosthetic.description>
+  <DMS_Prosthetic.description>神經義肢是專為傷殘軍人設計的一種半有機仿生義體。對適應訓練的需求幾乎可以忽略不計。不過出於耐用性和大規模生產的考慮，它的工作效率不如原來的肢體。</DMS_Prosthetic.description>
  
   <!-- EN: Peacekeepers -->
   <DMS_Ronin.label>維和機兵</DMS_Ronin.label>

@@ -24,13 +24,13 @@ namespace DMS
                 }
                 foreach (string tag in def.weaponTags.Distinct())
                 {
-                    if (AllTags.ContainsKey(tag))
+                    if (AllTags.ContainsKey(tag))//如果已經有了。
                     {
-                        AllTags[tag].Add(def);
+                        AllTags[tag].AddDistinct(def);
                     }
-                    else if (!string.IsNullOrEmpty(tag))
+                    else if (!string.IsNullOrEmpty(tag))//如果是新的，且Tag非Null或空值
                     {
-                        AllTags.Add(tag, new List<ThingDef>() { def });
+                        AllTags.AddDistinct(tag, new List<ThingDef>() { def });
                     }
                 }
             }
@@ -40,19 +40,17 @@ namespace DMS
             {
                 if (def.GetCompProperties<CompProperties_Mannable>() != null)
                 {
-                    _ts.Add(def);
+                    _ts.AddDistinct(def);
                 }
             }
-            _ts.RemoveDuplicates();
             _ts.SortBy(v => v.BaseMass);
             Turrets = _ts.ToArray();
             _ts = new List<ThingDef>();
 
             foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs.Where((ThingDef a) => a.GetModExtension<MechWeaponExtension>() != null))
             {
-                _ts.Add(def);
+                _ts.AddDistinct(def);
             }
-            _ts.RemoveDuplicates();
             _ts.SortBy(v => v.BaseMass);
             WeaponUseableMechs = _ts.ToArray();
         }
@@ -64,11 +62,11 @@ namespace DMS
             {
                 if (AllTags.ContainsKey(s))
                 {
-                    thingDefs = thingDefs.ConcatIfNotNull(AllTags[s]).ToList();
+                    thingDefs.AddRange(AllTags[s]);
                 }
             }
-            thingDefs.RemoveDuplicates();
-            return thingDefs;
+            
+            return thingDefs.Distinct();
         }
         public static bool WeaponExists(string defname, out ThingDef thing)
         {
@@ -88,7 +86,7 @@ namespace DMS
                 MechWeaponExtension ext = mech.GetModExtension<MechWeaponExtension>();
                 if (ext != null && CheckUtility.IsMechUseable(ext, weapon))
                 {
-                    list.Add(mech);
+                    list.AddDistinct(mech);
                 }
                 else if (!ext.EnableWeaponFilter)
                 {
@@ -97,12 +95,11 @@ namespace DMS
                     {
                         if (_ext.CanEquippedBy(ThingMaker.MakeThing(mech) as Pawn))
                         {
-                            list.Add(mech);
+                            list.AddDistinct(mech);
                         }
                     }
                 }
             }
-            list.RemoveDuplicates();
             return list.ToArray();
         }
     }

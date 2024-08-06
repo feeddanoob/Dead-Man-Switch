@@ -34,6 +34,7 @@ namespace DMS
                 Log.Error("comp is null");
                 return false;
             }
+            bodyPart = pawn.RaceProps.body.corePart;
             if (comp.targetBodyPartDefs.NullOrEmpty()) return true;//如果是空的那就是裝全身的
 
             //理論上可以安裝的部位

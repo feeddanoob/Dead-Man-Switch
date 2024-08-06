@@ -32,11 +32,11 @@
   <DMS_ProstheticLeg.labelNoun>一條神經機械仿生腿</DMS_ProstheticLeg.labelNoun>
   
   <!-- EN: mechaneural neurochord -->
-  <DMS_ProstheticSpine.label>機械仿生脊椎</DMS_ProstheticSpine.label>
+  <DMS_ProstheticSpine.label>生物機械神經索</DMS_ProstheticSpine.label>
   <!-- EN: An installed bionic spine. -->
-  <DMS_ProstheticSpine.description>一條安裝的機械仿生脊椎</DMS_ProstheticSpine.description>
+  <DMS_ProstheticSpine.description>一條安裝的生物機械神經索</DMS_ProstheticSpine.description>
   <!-- EN: An advanced neural-mechanical spine work as a sub-brain \n\n It can take over the user's reflex nerves and thereby reduce the operator's brain burden, but has some side effects. -->
-  <DMS_ProstheticSpine.labelNoun>一種先進的神經機械仿生脊椎\n\n它可以接管使用者的反射神經，從而減輕操作者的大腦負擔，但有一些副作用。</DMS_ProstheticSpine.labelNoun>
+  <DMS_ProstheticSpine.labelNoun>一種先進的生物機械神經索\n\n它可以接管使用者的反射神經，從而減輕操作者的大腦負擔，但有一些副作用。</DMS_ProstheticSpine.labelNoun>
   
   <!-- EN: sensory filter -->
   <DMS_SensoryFilter.label>情感過濾裝置</DMS_SensoryFilter.label>

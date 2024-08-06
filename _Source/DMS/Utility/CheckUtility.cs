@@ -72,25 +72,9 @@ public static partial class CheckUtility
     public static bool UseableInRuntime(Thing mech, ThingWithComps weapon)//透過改造或別的因素所以可以用的狀況
     {
         HeavyEquippableExtension extension = weapon.def.GetModExtension<HeavyEquippableExtension>();
-        if (extension == null && mech.def.GetModExtension<MechWeaponExtension>().EnableWeaponFilter) return false;
+        if (extension ==null ||mech.def.GetModExtension<MechWeaponExtension>().EnableWeaponFilter) return false;//使用過濾器的狀況下就不啟用這個了
         return extension.CanEquippedBy(mech as Pawn);
     }
-    public static bool CanEquipHeavy(Pawn pawn, ThingWithComps thing)
-    {
-        HeavyEquippableExtension extension = thing.def.GetModExtension<HeavyEquippableExtension>();
-        if (extension == null) return true;//沒有的話讓他過吧   
-        if (pawn is IWeaponUsable && pawn.def.GetModExtension<MechWeaponExtension>().EnableWeaponFilter == true)
-        {   //pawn是機兵，並且在他的MechWeaponExtension裡就設置了可以用這把槍
-            var ext = pawn.def.GetModExtension<MechWeaponExtension>();
-            if (ext != null)
-            {
-                if (CheckUtility.IsMechUseable(pawn, thing)) return true;
-            }
-            else if (extension.CanEquippedBy(pawn)) return true;//非機兵與能夠使用所有武器的機兵則歸這個判斷
-        }
-        return false;
-    }
-
     public static bool HasAnyHediffOf(Pawn pawn, List<HediffDef> hediffDefs)
     {
         if (pawn is null)

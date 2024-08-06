@@ -9,8 +9,32 @@
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
 
+  <ThingDef ParentName="ResourceBase" Name="BaseModificationItem" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <useHitPoints>true</useHitPoints>
+    <tradeTags>
+      <li>Serum</li>
+    </tradeTags>
+    <tradeability>Sellable</tradeability>
+    <stackLimit>10</stackLimit>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>40</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+    </comps>
+  </ThingDef>
   <!-- 陶瓷裝甲板 -->
-  <ThingDef ParentName="ResourceBase">
+  <ThingDef ParentName="BaseModificationItem">
     <defName>DMS_CeramicsPlating</defName>
     <label>ceramic plates</label>
     <description>A set of ceramic plates can be mounted on the mech's external shell to provide additional protection, but once damaged it can only be replaced with a new one. \n\nThe maximum amount of the plating on mech can apply depends on its body size.</description>
@@ -20,24 +44,13 @@
     <graphicData>
       <texPath>Things/Resource/CeramicPlate</texPath>
       <graphicClass>Graphic_Stackcount</graphicClass>
-      <drawSize>1</drawSize>
     </graphicData>
-    <thingClass>ThingWithComps</thingClass>
-    <useHitPoints>true</useHitPoints>
     <statBases>
       <MaxHitPoints>60</MaxHitPoints>
       <MarketValue>60</MarketValue>
       <Mass>0.5</Mass>
       <Flammability>0.7</Flammability>
     </statBases>
-    <tradeTags>
-      <li>Serum</li>
-    </tradeTags>
-    <tradeability>Sellable</tradeability>
-    <stackLimit>10</stackLimit>
-    <thingCategories>
-      <li>Manufactured</li>
-    </thingCategories>
     <costList>
       <DMS_Ceramics>40</DMS_Ceramics>
     </costList>
@@ -51,17 +64,11 @@
       </recipeUsers>
     </recipeMaker>
     <comps>
-      <li Class="CompProperties_Usable">
-        <useJob>UseItem</useJob>
-        <useLabel>Use {0_label}</useLabel>
-        <useDuration>40</useDuration>
-        <showUseGizmo>true</showUseGizmo>
-      </li>
       <li Class="DMS.CompProperties_AddHediffOnTarget">
         <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
         <hediffDef>DMS_CeramicsPlating</hediffDef>
         <soundDef>DMS_EquipGear</soundDef>
-        <targetBodyPartDefs></targetBodyPartDefs>
+        <targetBodyPartDefs/>
       </li>
     </comps>
   </ThingDef>
@@ -76,6 +83,7 @@
     </descriptionHyperlinks>
     <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
     <isBad>false</isBad>
+    <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
     <comps>
       <li Class="DMS.HediffCompProperties_ProtectiveShield">
         <hitpoints>120</hitpoints>
@@ -114,7 +122,7 @@
   </ThingDef>
 
   <!-- 強化框架 -->
-  <ThingDef ParentName="ResourceBase">
+  <ThingDef ParentName="BaseModificationItem">
     <defName>DMS_ReinforcedFrame</defName>
     <label>reinforced frame</label>
     <description>A set of tungsteel frame to replace parts that are prone to wear can effectively improve the durability during high-intensity combat and reduce the time spent on maintenance. But in exchange it will significantly increase the weight of the mech and affect its speed</description>
@@ -123,25 +131,13 @@
     </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Resource/ReinforcedFrame</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1</drawSize>
     </graphicData>
-    <thingClass>ThingWithComps</thingClass>
-    <useHitPoints>true</useHitPoints>
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>
       <MarketValue>300</MarketValue>
       <Mass>0.5</Mass>
       <Flammability>0.7</Flammability>
     </statBases>
-    <tradeTags>
-      <li>Serum</li>
-    </tradeTags>
-    <tradeability>Sellable</tradeability>
-    <stackLimit>10</stackLimit>
-    <thingCategories>
-      <li>Manufactured</li>
-    </thingCategories>
     <costList>
       <ComponentStamped>1</ComponentStamped>
       <Tungsteel>20</Tungsteel>
@@ -156,18 +152,11 @@
       </recipeUsers>
     </recipeMaker>
     <comps>
-      <li Class="CompProperties_Usable">
-        <useJob>UseItem</useJob>
-        <useLabel>Use {0_label}</useLabel>
-        <useDuration>40</useDuration>
-        <showUseGizmo>true</showUseGizmo>
-      </li>
       <li Class="DMS.CompProperties_AddHediffOnTarget">
         <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
         <hediffDef>DMS_ReinforcedFrame</hediffDef>
         <soundDef>DMS_EquipGear</soundDef>
-        <targetBodyPartDefs>
-        </targetBodyPartDefs>
+        <targetBodyPartDefs/>
       </li>
     </comps>
   </ThingDef>
@@ -183,6 +172,7 @@
     <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
     <isBad>false</isBad>
     <defaultInstallPart>DMS_Chassis</defaultInstallPart>
+    <spawnThingOnRemoved>DMS_ReinforcedFrame</spawnThingOnRemoved>
     <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
     <stages>
       <li>
@@ -197,12 +187,15 @@
           <IncomingDamageFactor>0.9</IncomingDamageFactor>
           <PawnTrapSpringChance>1.1</PawnTrapSpringChance>
         </statFactors>
+        <statOffsets>
+
+        </statOffsets>
       </li>
     </stages>
   </HediffDef>
 
   <!-- 裂變電池 -->
-  <ThingDef ParentName="ResourceBase">
+  <ThingDef ParentName="BaseModificationItem">
     <defName>DMS_NuclearBattery</defName>
     <label>nuclear battery</label>
     <description>A nuclear fission battery with a simple structure, commonly found in many unmanned signal stations and defense robots, consists of six high-density uranium-235 columns near critical mass and thermocouples integrated and wrapped in a high-strength shell. Its energy is enough to make most models of automatroid operate for decades.</description>
@@ -211,32 +204,14 @@
     </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Resource/NuclearBattery</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1</drawSize>
     </graphicData>
-    <thingClass>ThingWithComps</thingClass>
-    <useHitPoints>true</useHitPoints>
     <statBases>
       <MarketValue>2000</MarketValue>
       <MaxHitPoints>120</MaxHitPoints>
       <Mass>8.5</Mass>
     </statBases>
-    <tradeTags>
-      <li>Serum</li>
-    </tradeTags>
-    <tradeability>Sellable</tradeability>
-    <stackLimit>10</stackLimit>
-    <thingCategories>
-      <li>Manufactured</li>
-    </thingCategories>
-    <costList />
+    <costList/>
     <comps>
-      <li Class="CompProperties_Usable">
-        <useJob>UseItem</useJob>
-        <useLabel>Use {0_label}</useLabel>
-        <useDuration>40</useDuration>
-        <showUseGizmo>true</showUseGizmo>
-      </li>
       <li Class="DMS.CompProperties_AddHediffOnTarget">
         <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
         <hediffDef>DMS_NuclearBattery</hediffDef>
@@ -328,8 +303,8 @@
     </products>
   </RecipeDef>
 
-  <!-- TODO合成肌腱 20人工肌腱，近戰迴避*1.15 移動速度*1.25，能源消耗*1.1 -->
-  <ThingDef ParentName="ResourceBase">
+  <!-- 合成肌腱-->
+  <ThingDef ParentName="BaseModificationItem">
     <defName>DMS_SyntheticTendon</defName>
     <label>synthetic tendon</label>
     <description>A biosynthetic muscles attached on the outer layer of mechanical limbs. can effectively increase output but will bring additional energy consumption.</description>
@@ -337,33 +312,16 @@
       <HediffDef>DMS_SyntheticTendon</HediffDef>
     </descriptionHyperlinks>
     <graphicData>
-      <texPath>Things/Resource/NuclearBattery</texPath>
+      <texPath>Things/Resource/NuclearBattery</texPath> <!-- TODO-->
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1</drawSize>
     </graphicData>
-    <thingClass>ThingWithComps</thingClass>
-    <useHitPoints>true</useHitPoints>
     <statBases>
       <MarketValue>2000</MarketValue>
       <MaxHitPoints>120</MaxHitPoints>
       <Mass>8.5</Mass>
     </statBases>
-    <tradeTags>
-      <li>Serum</li>
-    </tradeTags>
-    <tradeability>Sellable</tradeability>
-    <stackLimit>10</stackLimit>
-    <thingCategories>
-      <li>Manufactured</li>
-    </thingCategories>
     <costList />
     <comps>
-      <li Class="CompProperties_Usable">
-        <useJob>UseItem</useJob>
-        <useLabel>Use {0_label}</useLabel>
-        <useDuration>40</useDuration>
-        <showUseGizmo>true</showUseGizmo>
-      </li>
       <li Class="DMS.CompProperties_AddHediffOnTarget">
         <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
         <hediffDef>DMS_SyntheticTendon</hediffDef>
@@ -371,6 +329,7 @@
         <targetBodyPartDefs>
           <li>DMS_SynthicLeg</li>
           <li>MechanicalLeg</li>
+          <li>Leg</li>
         </targetBodyPartDefs>
       </li>
     </comps>
@@ -385,7 +344,7 @@
     </descriptionHyperlinks>
     <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
     <isBad>false</isBad>
-    <defaultInstallPart>DMS_Battery</defaultInstallPart>
+    <defaultInstallPart>MechanicalLeg</defaultInstallPart>
     <stages>
       <li>
         <statFactors>
@@ -399,12 +358,12 @@
     </stages>
   </HediffDef>
 
-  <ThingDef ParentName="ResourceBase">
-    <defName>DMS_HeavyHydraulicFrame</defName>
+  <ThingDef ParentName="BaseModificationItem">
+    <defName>DMS_TB_HeavyHydraulicFrame</defName>
     <label>heavy hydraulic frame</label>
     <description>Heavy add-on module for capability to mount heavy weapons on mech iguana and gecko.</description>
     <descriptionHyperlinks>
-      <HediffDef>DMS_HeavyHydraulicFrame</HediffDef>
+      <HediffDef>DMS_TB_HeavyHydraulicFrame</HediffDef>
       <ThingDef>DMS_Mech_Iguana</ThingDef>
       <ThingDef>DMS_Mech_Gecko</ThingDef>
       <ThingDef>DMS_Mech_Tarbosaurus</ThingDef>
@@ -412,34 +371,17 @@
     <graphicData>
       <texPath>Things/Resource/NuclearBattery</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1</drawSize>
     </graphicData>
-    <thingClass>ThingWithComps</thingClass>
-    <useHitPoints>true</useHitPoints>
     <statBases>
       <MarketValue>2000</MarketValue>
       <MaxHitPoints>120</MaxHitPoints>
       <Mass>8.5</Mass>
     </statBases>
-    <tradeTags>
-      <li>Serum</li>
-    </tradeTags>
-    <tradeability>Sellable</tradeability>
-    <stackLimit>10</stackLimit>
-    <thingCategories>
-      <li>Manufactured</li>
-    </thingCategories>
     <costList />
     <comps>
-      <li Class="CompProperties_Usable">
-        <useJob>UseItem</useJob>
-        <useLabel>Use {0_label}</useLabel>
-        <useDuration>40</useDuration>
-        <showUseGizmo>true</showUseGizmo>
-      </li>
       <li Class="DMS.CompProperties_AddHediffOnTarget">
         <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
-        <hediffDef>DMS_HeavyHydraulicFrame</hediffDef>
+        <hediffDef>DMS_TB_HeavyHydraulicFrame</hediffDef>
         <soundDef>DMS_EquipGear</soundDef>
         <targetBodyPartDefs>
           <li>DMS_HeavyChassis</li>
@@ -453,12 +395,12 @@
     </comps>
   </ThingDef>
   <HediffDef>
-    <defName>DMS_HeavyHydraulicFrame</defName>
+    <defName>DMS_TB_HeavyHydraulicFrame</defName>
     <hediffClass>Hediff</hediffClass>
     <label>heavy hydraulic frame</label>
     <description>a heavy hydraulic module and power pack for bipedal mechs, gain capability for heavier lifting and also mount heavy weapons.</description>
     <descriptionHyperlinks>
-      <ThingDef>DMS_HeavyHydraulicFrame</ThingDef>
+      <ThingDef>DMS_TB_HeavyHydraulicFrame</ThingDef>
       <ThingDef>DMS_Mech_Iguana</ThingDef>
       <ThingDef>DMS_Mech_Gecko</ThingDef>
       <ThingDef>DMS_Mech_Tarbosaurus</ThingDef>
@@ -466,13 +408,15 @@
     <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
     <isBad>false</isBad>
     <defaultInstallPart>DMS_HeavyChassis</defaultInstallPart>
+    <spawnThingOnRemoved>DMS_TB_HeavyHydraulicFrame</spawnThingOnRemoved>
     <stages>
       <li>
         <statFactors>
           <MoveSpeed>0.9</MoveSpeed>
         </statFactors>
         <statOffsets>
-          <MechEnergyUsageFactor>0.1</MechEnergyUsageFactor>
+          <CarryingCapacity>200</CarryingCapacity>
+          <MechEnergyUsageFactor>0.15</MechEnergyUsageFactor>
         </statOffsets>
       </li>
     </stages>
@@ -512,10 +456,185 @@
   <!-- TODO SS反步兵系統，一種安裝於機兵外殼上的反步兵地雷系統，能夠激活並對周圍的步兵造成可觀的殺傷效果。殖民艦隊軍方曾關於使用這類裝備是否有違倫理而曾有過一段時間的討論，最終基於對生物兵器威脅的有效性依然 -->
   <!-- TODO重啟協議，死後1小時復活並有25%機率狂暴 -->
 
-  <!-- TODO戰鬥框架-擴容貨箱掛載 +200KG攜帶能力，移動速度*0.75，近戰迴避*0.8 -->
+  <!-- 戰鬥框架-擴容貨箱掛載 +100KG攜帶能力，移動速度*0.75，近戰迴避*0.8 -->
+  <ThingDef ParentName="BaseModificationItem">
+    <defName>DMS_BF_ExtendCargo</defName>
+    <label>extended cargo rack</label>
+    <description>Heavy add-on module for capability to mount heavy weapons on mech iguana and gecko.</description>
+    <descriptionHyperlinks>
+      <HediffDef>DMS_BF_ExtendCargo</HediffDef>
+      <ThingDef>DMS_Mech_BattleFrame</ThingDef>
+      <ThingDef>DMS_Mech_EscortLifter</ThingDef>
+      <ThingDef>DMS_Mech_FieldCommand</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Modifications/ExtendCargo/icon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>8.5</Mass>
+    </statBases>
+    <costList />
+    <comps>
+      <li Class="DMS.CompProperties_AddHediffOnTarget">
+        <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
+        <hediffDef>DMS_BF_ExtendCargo</hediffDef>
+        <soundDef>DMS_EquipGear</soundDef>
+        <supportRaceDefs>
+          <li>DMS_Mech_BattleFrame</li>
+          <li>DMS_Mech_EscortLifter</li>
+          <li>DMS_Mech_FieldCommand</li>
+        </supportRaceDefs>
+      </li>
+    </comps>
+  </ThingDef>
+  <HediffDef>
+    <defName>DMS_BF_ExtendCargo</defName>
+    <hediffClass>Hediff</hediffClass>
+    <label>extended cargo rack</label>
+    <description>a heavy hydraulic module and power pack for bipedal mechs, gain capability for heavier lifting and also mount heavy weapons.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_BF_ExtendCargo</ThingDef>
+      <ThingDef>DMS_Mech_BattleFrame</ThingDef>
+      <ThingDef>DMS_Mech_EscortLifter</ThingDef>
+      <ThingDef>DMS_Mech_FieldCommand</ThingDef>
+    </descriptionHyperlinks>
+    <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <spawnThingOnRemoved>DMS_BF_ExtendCargo</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statFactors>
+          <MoveSpeed>0.8</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <CarryingCapacity>150</CarryingCapacity>
+          <MechEnergyUsageFactor>0.1</MechEnergyUsageFactor>
+        </statOffsets>
+      </li>
+    </stages>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode</nodeClass>
+        <workerClass>PawnRenderNodeWorker</workerClass>
+        <parentTagDef>Body</parentTagDef>
+        <baseLayer>20</baseLayer>
+        <drawSize>1.75</drawSize>
+        <pawnType>Any</pawnType>
+        <useGraphic>true</useGraphic>
+        <texPath>Things/Modifications/ExtendCargo/render</texPath>
+        <drawData>
+          <defaultData>
+            <layer>20</layer>
+          </defaultData>
+          <dataEast>
+            <offset>(0,0,0)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0,0,0)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(0,0,0)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0,0,0)</offset>
+          </dataSouth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
 
-  <!-- TODO戰鬥框架-機動防盾掛載 -->
-
+  <!-- 戰鬥框架-附加裝甲掛載 -->
+  <ThingDef ParentName="BaseModificationItem">
+    <defName>DMS_BF_ExtendArmor</defName>
+    <label>extended armor plate</label>
+    <description>composite armor attachments that suitable for battle frame pylons, which can effectively resist direct hits to the chassis from various threats such as fragments and medium-caliber gunfire.</description>
+    <descriptionHyperlinks>
+      <HediffDef>DMS_BF_ExtendArmor</HediffDef>
+      <ThingDef>DMS_Mech_BattleFrame</ThingDef>
+      <ThingDef>DMS_Mech_EscortLifter</ThingDef>
+      <ThingDef>DMS_Mech_FieldCommand</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Modifications/ExtendArmor/icon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>8.5</Mass>
+    </statBases>
+    <costList />
+    <comps>
+      <li Class="DMS.CompProperties_AddHediffOnTarget">
+        <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
+        <hediffDef>DMS_BF_ExtendArmor</hediffDef>
+        <soundDef>DMS_EquipGear</soundDef>
+        <supportRaceDefs>
+          <li>DMS_Mech_BattleFrame</li>
+          <li>DMS_Mech_EscortLifter</li>
+          <li>DMS_Mech_FieldCommand</li>
+        </supportRaceDefs>
+      </li>
+    </comps>
+  </ThingDef>
+  <HediffDef>
+    <defName>DMS_BF_ExtendArmor</defName>
+    <hediffClass>Hediff</hediffClass>
+    <label>extended armor plate</label>
+    <description>composite armor attachments that suitable for battle frame pylons, which can effectively resist direct hits to the chassis from various threats such as fragments and medium-caliber gunfire.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_BF_ExtendArmor</ThingDef>
+      <ThingDef>DMS_Mech_BattleFrame</ThingDef>
+      <ThingDef>DMS_Mech_EscortLifter</ThingDef>
+      <ThingDef>DMS_Mech_FieldCommand</ThingDef>
+    </descriptionHyperlinks>
+    <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <spawnThingOnRemoved>DMS_BF_ExtendArmor</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statFactors>
+          <MoveSpeed>0.9</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <IncomingDamageFactor>-0.2</IncomingDamageFactor>
+          <CarryingCapacity>-50</CarryingCapacity>
+        </statOffsets>
+      </li>
+    </stages>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode</nodeClass>
+        <workerClass>PawnRenderNodeWorker</workerClass>
+        <parentTagDef>Body</parentTagDef>
+        <baseLayer>20</baseLayer>
+        <drawSize>1.75</drawSize>
+        <pawnType>Any</pawnType>
+        <useGraphic>true</useGraphic>
+        <texPath>Things/Modifications/ExtendArmor/render</texPath>
+        <drawData>
+          <defaultData>
+            <layer>20</layer>
+          </defaultData>
+          <dataEast>
+            <offset>(0,0,0)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0,0,0)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(0,0,0)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0,0,0)</offset>
+          </dataSouth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
   <!-- TODO戰鬥框架-蜂窩火箭掛載 -->
 
   <!-- TODO戰鬥框架-重型彈藥掛載(增加額外的加特林兼容) -->

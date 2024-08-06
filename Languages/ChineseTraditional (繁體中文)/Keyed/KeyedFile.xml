@@ -12,9 +12,9 @@
   <!-- DMS_Modification_NoValidPart -->
    <DMS_Modification_NoValidPart>機械體沒有供改裝模塊安裝的空餘部位</DMS_Modification_NoValidPart>
   <!-- EN: system not supported -->
-  <DMS_WeaponNotSupported>機體系統不支持</DMS_WeaponNotSupported>
+  <DMS_WeaponNotSupported>:機體系統不支持</DMS_WeaponNotSupported>
   <!-- EN: frame not supported -->
-  <DMS_FrameNotSupported>機體框架不支持</DMS_FrameNotSupported>
+  <DMS_FrameNotSupported>:機體框架不支持</DMS_FrameNotSupported>
   <!-- EN: DMS: Trigger Safe Actived -->
   <DMS_WillTerminateTheBetrayedUnit>失能機關: 待發狀態</DMS_WillTerminateTheBetrayedUnit>
   <!-- EN: automatroid has disconnected to protect mechanitor -->
@@ -22,7 +22,7 @@
   <!-- EN: need mechanitor in map -->
   <CommandCallRoyalAid_NoMechanitorAvaliable>需要機械師</CommandCallRoyalAid_NoMechanitorAvaliable>
   <!-- EN: must be Mechanitor -->
-  <DMS_PawnIsNotMechanitor>必須是機械師</DMS_PawnIsNotMechanitor>
+  <DMS_PawnIsNotMechanitor>:必須是機械師</DMS_PawnIsNotMechanitor>
   <!-- EN: Orbital downlink has established connection with mechanitor -->
   <DMS_BandwidthSupported>軌道下行帶寬建立了與機械師的連接協議</DMS_BandwidthSupported>
   <!-- EN: mounted wepaon -->

@@ -73,7 +73,7 @@
 		<EquippableBaseBodySize>3</EquippableBaseBodySize>
 		<EquippableByRace/>
 		<EquippableWithHediff>
-			<li>DMS_HeavyHydraulicFrame</li>
+			<li>DMS_TB_HeavyHydraulicFrame</li>
 		</EquippableWithHediff>
 		<EquippableWithApparel>
 			<!-- TODO <li>DMS_Apparel_MobileDragoonCore</li> -->
