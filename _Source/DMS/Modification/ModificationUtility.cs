@@ -28,7 +28,7 @@ namespace DMS
             {
                 Log.Error("pawn is null");
                 return false;
-            } 
+            }
             if (comp == null)
             {
                 Log.Error("comp is null");
@@ -37,18 +37,24 @@ namespace DMS
             bodyPart = pawn.RaceProps.body.corePart;
             if (comp.targetBodyPartDefs.NullOrEmpty()) return true;//如果是空的那就是裝全身的
 
-            //理論上可以安裝的部位
+            //理論上潛在可安裝部位
             List<BodyPartRecord> bodyParts = pawn.RaceProps.body.AllParts.Where(p => comp.targetBodyPartDefs.Contains(p.def)).ToList();
             if (bodyParts.NullOrEmpty()) return false;
 
-            foreach (Hediff hediff in pawn.health.hediffSet.hediffs.Where(h => comp.targetBodyPartDefs.Contains(h.Part.def)))
-            {//然後從所有零件位置中去除有安裝的部位,不確定有沒有更有效率的方式。
-                bodyParts.Remove(hediff.Part);
+            //被占用的潛在可安裝部位
+            List<Hediff> hs = pawn.health.hediffSet.hediffs.Where(h => h.Part !=null && comp.targetBodyPartDefs.Contains(h.Part.def)).ToList();
+            if (!hs.NullOrEmpty())
+            {
+                foreach (Hediff hediff in hs)
+                {//然後從所有零件位置中去除有安裝的部位,不確定有沒有更有效率的方式。
+                    bodyParts.Remove(hediff.Part);
+                }
             }
+            
             if (bodyParts.NullOrEmpty()) return false;
 
             //如果還有地方那就裝在這裡了。
-            bodyPart = bodyParts.FirstOrDefault();
+            bodyPart = bodyParts.First();
             return true;
         }
         public static bool HasAnyBodyPartOf(Pawn pawn, List<BodyPartDef> partDefs)

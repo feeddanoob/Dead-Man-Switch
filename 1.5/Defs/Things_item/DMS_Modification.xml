@@ -56,7 +56,7 @@
     </costList>
     <recipeMaker>
       <workAmount>840</workAmount>
-      <researchPrerequisite>DMS_Material</researchPrerequisite>
+      <researchPrerequisite>DMS_Automatroid</researchPrerequisite>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <recipeUsers>
@@ -312,15 +312,27 @@
       <HediffDef>DMS_SyntheticTendon</HediffDef>
     </descriptionHyperlinks>
     <graphicData>
-      <texPath>Things/Resource/NuclearBattery</texPath> <!-- TODO-->
+      <texPath>Things/Resource/SyntheticTendon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>2000</MarketValue>
+      <!-- <MarketValue>2000</MarketValue> -->
       <MaxHitPoints>120</MaxHitPoints>
       <Mass>8.5</Mass>
     </statBases>
-    <costList />
+    <recipeMaker>
+      <workAmount>6000</workAmount>
+      <researchPrerequisite>DMS_Artifuscle</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>DMS_TableArtifuscle</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <ComponentStamped>2</ComponentStamped>
+      <Artifuscle>40</Artifuscle>
+    </costList>
     <comps>
       <li Class="DMS.CompProperties_AddHediffOnTarget">
         <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
@@ -329,6 +341,7 @@
         <targetBodyPartDefs>
           <li>DMS_SynthicLeg</li>
           <li>MechanicalLeg</li>
+          <li>InsectLeg</li>
           <li>Leg</li>
         </targetBodyPartDefs>
       </li>
@@ -344,7 +357,6 @@
     </descriptionHyperlinks>
     <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
     <isBad>false</isBad>
-    <defaultInstallPart>MechanicalLeg</defaultInstallPart>
     <stages>
       <li>
         <statFactors>
@@ -369,15 +381,27 @@
       <ThingDef>DMS_Mech_Tarbosaurus</ThingDef>
     </descriptionHyperlinks>
     <graphicData>
-      <texPath>Things/Resource/NuclearBattery</texPath>
+      <texPath>Things/Modifications/HydraulicFrame/icon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>2000</MarketValue>
+      <!-- <MarketValue>2000</MarketValue> -->
       <MaxHitPoints>120</MaxHitPoints>
       <Mass>8.5</Mass>
-    </statBases>
-    <costList />
+    </statBases>    
+    <costList>
+      <ComponentStamped>5</ComponentStamped>
+      <Tungsteel>100</Tungsteel>
+    </costList>
+    <recipeMaker>
+      <workAmount>8000</workAmount>
+      <researchPrerequisite>DMS_HeavyAutomatroid</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>DMS_TableMachinePrinter</li>
+      </recipeUsers>
+    </recipeMaker>
     <comps>
       <li Class="DMS.CompProperties_AddHediffOnTarget">
         <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
@@ -456,11 +480,11 @@
   <!-- TODO SS反步兵系統，一種安裝於機兵外殼上的反步兵地雷系統，能夠激活並對周圍的步兵造成可觀的殺傷效果。殖民艦隊軍方曾關於使用這類裝備是否有違倫理而曾有過一段時間的討論，最終基於對生物兵器威脅的有效性依然 -->
   <!-- TODO重啟協議，死後1小時復活並有25%機率狂暴 -->
 
-  <!-- 戰鬥框架-擴容貨箱掛載 +100KG攜帶能力，移動速度*0.75，近戰迴避*0.8 -->
+  <!-- 戰鬥框架-擴容貨箱掛載-->
   <ThingDef ParentName="BaseModificationItem">
     <defName>DMS_BF_ExtendCargo</defName>
     <label>extended cargo rack</label>
-    <description>Heavy add-on module for capability to mount heavy weapons on mech iguana and gecko.</description>
+    <description>Side mounted cargo racks that suitable for battle frame pylons, which can effectively increase the carrying capacity of battle frame and its variants.</description>
     <descriptionHyperlinks>
       <HediffDef>DMS_BF_ExtendCargo</HediffDef>
       <ThingDef>DMS_Mech_BattleFrame</ThingDef>
@@ -472,11 +496,23 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>2000</MarketValue>
+      <!-- <MarketValue>500</MarketValue> -->
       <MaxHitPoints>120</MaxHitPoints>
       <Mass>8.5</Mass>
     </statBases>
-    <costList />
+    <costList>
+      <ComponentStamped>1</ComponentStamped>
+      <Steel>50</Steel>
+    </costList>
+    <recipeMaker>
+      <workAmount>4000</workAmount>
+      <researchPrerequisite>DMS_BattleFrame</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>DMS_TableMachinePrinter</li>
+      </recipeUsers>
+    </recipeMaker>
     <comps>
       <li Class="DMS.CompProperties_AddHediffOnTarget">
         <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
@@ -487,6 +523,9 @@
           <li>DMS_Mech_EscortLifter</li>
           <li>DMS_Mech_FieldCommand</li>
         </supportRaceDefs>
+        <targetBodyPartDefs>
+          <li>MechanicalThorax</li>
+        </targetBodyPartDefs>
       </li>
     </comps>
   </ThingDef>
@@ -494,7 +533,7 @@
     <defName>DMS_BF_ExtendCargo</defName>
     <hediffClass>Hediff</hediffClass>
     <label>extended cargo rack</label>
-    <description>a heavy hydraulic module and power pack for bipedal mechs, gain capability for heavier lifting and also mount heavy weapons.</description>
+    <description>Side mounted cargo racks that suitable for battle frame pylons, which can effectively increase the carrying capacity of battle frame and its variants.</description>
     <descriptionHyperlinks>
       <ThingDef>DMS_BF_ExtendCargo</ThingDef>
       <ThingDef>DMS_Mech_BattleFrame</ThingDef>
@@ -508,6 +547,7 @@
       <li>
         <statFactors>
           <MoveSpeed>0.8</MoveSpeed>
+          <MeleeDodgeChance>0.9</MeleeDodgeChance>
         </statFactors>
         <statOffsets>
           <CarryingCapacity>150</CarryingCapacity>
@@ -562,11 +602,25 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>500</MarketValue>
+      <!-- <MarketValue>500</MarketValue> -->
       <MaxHitPoints>120</MaxHitPoints>
-      <Mass>8.5</Mass>
-    </statBases>
-    <costList />
+      <Mass>10.5</Mass>
+    </statBases>    
+    <costList>
+      <ComponentStamped>2</ComponentStamped>
+      <Polyester>20</Polyester>
+      <DMS_Ceramics>20</DMS_Ceramics>
+      <Tungsteel>40</Tungsteel>
+    </costList>
+    <recipeMaker>
+      <workAmount>6000</workAmount>
+      <researchPrerequisite>DMS_BattleFrame</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>DMS_TableMachinePrinter</li>
+      </recipeUsers>
+    </recipeMaker>
     <comps>
       <li Class="DMS.CompProperties_AddHediffOnTarget">
         <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>
@@ -577,6 +631,9 @@
           <li>DMS_Mech_EscortLifter</li>
           <li>DMS_Mech_FieldCommand</li>
         </supportRaceDefs>
+        <targetBodyPartDefs>
+          <li>MechanicalThorax</li>
+        </targetBodyPartDefs>
       </li>
     </comps>
   </ThingDef>
@@ -598,6 +655,7 @@
       <li>
         <statFactors>
           <MoveSpeed>0.9</MoveSpeed>
+          <MeleeDodgeChance>0.9</MeleeDodgeChance>
         </statFactors>
         <statOffsets>
           <IncomingDamageFactor>-0.2</IncomingDamageFactor>

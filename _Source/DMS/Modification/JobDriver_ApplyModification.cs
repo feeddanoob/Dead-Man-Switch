@@ -28,7 +28,7 @@ namespace DMS
             yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.Touch).FailOnDespawnedOrNull(TargetIndex.B).FailOnDespawnedOrNull(TargetIndex.A);
             yield return Toils_Haul.StartCarryThing(TargetIndex.B);
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch).FailOnDespawnedOrNull(TargetIndex.A);
-            Toil toil = Toils_General.WaitWith(TargetIndex.A, DurationTicks,true,true);
+            Toil toil = Toils_General.WaitWith(TargetIndex.A, DurationTicks, true, true);
             toil.FailOnDespawnedOrNull(TargetIndex.A);
             toil.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
             toil.WithEffect(EffecterDefOf.MechRepairing, TargetIndex.A);
@@ -43,13 +43,11 @@ namespace DMS
             CompTargetable_AddHediffOnTarget comp = Item.TryGetComp<CompTargetable_AddHediffOnTarget>();
             comp.Props.soundDef.PlayOneShot(SoundInfo.InMap(p));
             Messages.Message("DMS_HasAppliedModification".Translate(p), p, MessageTypeDefOf.PositiveEvent);
-            if (comp.Props.targetBodyPartDefs.NullOrEmpty())
+
+            BodyPartRecord partRecord = ModificationUtility.GetBodyPartRecord(p, comp.Props);
+            if (partRecord != null)
             {
-                BodyPartRecord partRecord = ModificationUtility.GetBodyPartRecord(p, comp.Props);
-                if (partRecord != null)
-                {
-                    p.health.AddHediff(comp.Props.hediffDef, part: partRecord);
-                }
+                p.health.AddHediff(comp.Props.hediffDef, part: partRecord);
             }
             else
             {

@@ -113,7 +113,7 @@
       </outcomeDoers>
     </ingestible>
     <recipeMaker>
-      <researchPrerequisite>DMS_Bionics</researchPrerequisite>
+      <researchPrerequisite>DMS_Artifuscle</researchPrerequisite>
       <recipeUsers>
         <li>DMS_TableArtifuscle</li>
       </recipeUsers>
