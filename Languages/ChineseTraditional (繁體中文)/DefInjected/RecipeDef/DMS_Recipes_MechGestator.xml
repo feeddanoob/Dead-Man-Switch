@@ -88,7 +88,7 @@
   <!-- EN: gestate sniper -->
   <DMS_Make_Sniper.label>組裝狙擊手</DMS_Make_Sniper.label>
   <!-- EN: Gestate a sniper mechanoid. -->
-  <DMS_Make_Sniper.description>組裝火槍手狙擊特化型，一種能夠操縱重型狙擊砲的長程狙擊特化型機兵。</DMS_Make_Sniper.description>
+  <DMS_Make_Sniper.description>組裝火槍手狙擊特化型，一種能夠操縱重型狙擊炮的長程狙擊特化型機兵。</DMS_Make_Sniper.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_Sniper.jobString>組裝機械體中</DMS_Make_Sniper.jobString>
   

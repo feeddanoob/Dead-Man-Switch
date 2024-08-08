@@ -16,7 +16,7 @@
   <!-- EN: elephant rifle -->
   <DMS_ElephantGun.label>獵象槍</DMS_ElephantGun.label>
   <!-- EN: Single-shot high caliber heavy hunting rifle. While made to hunt giant games or stop large hostile lifeform with sheer kinetic energy, it is also used by early industrial colonies against mechanoids thanks to its simple manufacture requirements. -->
-  <DMS_ElephantGun.description>單發大口徑重型獵槍。雖然它是為了狩獵巨型獵物或用純粹的動能阻止大型敵對生命體而製造的，但由於其簡單的製造要求，它也被早期的工業殖民地用來對付機械體。</DMS_ElephantGun.description>
+  <DMS_ElephantGun.description>一種重型大口徑栓動獵槍。雖然它是為了狩獵巨型獵物或用純粹的動能阻止大型敵對生物而製造的。但由於其簡單的製造要求也被早期的工業殖民地用來對付機械體。</DMS_ElephantGun.description>
   <!-- EN: stock -->
   <DMS_ElephantGun.tools.stock-0.label>槍托</DMS_ElephantGun.tools.stock-0.label>
   <!-- EN: barrel -->
@@ -120,7 +120,7 @@
   <!-- EN: survival rifle -->
   <DMS_SurvivalRifle.label>生存步槍</DMS_SurvivalRifle.label>
   <!-- EN: Foldable rifle issued to war machine crew members for survival need. Accepts multiple common calibers. -->
-  <DMS_SurvivalRifle.description>為戰爭機器機組人員發放的摺疊式步槍，以滿足生存需要。可接受多種常見口徑彈藥。</DMS_SurvivalRifle.description>
+  <DMS_SurvivalRifle.description>為機組人員提供的摺疊式生存步槍。以滿足逃生後的生存與自保需要。可接受多種常見口徑彈藥。</DMS_SurvivalRifle.description>
   <!-- EN: stock -->
   <DMS_SurvivalRifle.tools.stock-0.label>槍托</DMS_SurvivalRifle.tools.stock-0.label>
   <!-- EN: barrel -->

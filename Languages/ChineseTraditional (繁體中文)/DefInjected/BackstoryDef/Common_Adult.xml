@@ -2,28 +2,28 @@
 <LanguageData>
   
   <!-- EN: [PAWN_nameDef] participated in a grand colonization plan and came to rimworld. [PAWN_pronoun] received a long period of survival training and physical exercise during the voyage. Compared to most people who live on this planet, [PAWN_pronoun] is fully prepared. -->
-  <DMS_Civilian01.description>[PAWN_nameDef]來自另一個星系，參與了一場宏大的殖民計畫而來到這片邊緣世界。[PAWN_pronoun]在航行的途中接受了長時間的求生訓練與體能鍛鍊。相對於大多數流落到這個星球的人來說[PAWN_pronoun]是做足了準備而來</DMS_Civilian01.description>
+  <DMS_Civilian01.description>[PAWN_nameDef]來自另一個星系，參與了一場宏大的殖民計劃而來到這片邊緣世界。[PAWN_pronoun]在航行的途中接受了長時間的求生訓練與體能鍛鍊。相對於大多數流落到這個星球的人來說[PAWN_pronoun]是做足了準備而來</DMS_Civilian01.description>
   <!-- EN: Colonial pioneer -->
   <DMS_Civilian01.title>先鋒殖民者</DMS_Civilian01.title>
   <!-- EN: pioneer -->
   <DMS_Civilian01.titleShort>殖民者</DMS_Civilian01.titleShort>
   
   <!-- EN: [PAWN_nameDef] participated in a grand colonization plan and came to rimworld. [PAWN_pronoun] is one of the most experienced colonists in the colonization team and has participated in numerous successful and failed colonization projects throughout his life. -->
-  <DMS_Civilian02.description>[PAWN_nameDef]來自另一個星系，參與了一場宏大的殖民計畫而來到這片邊緣世界。[PAWN_pronoun]是殖民團隊中最有經驗的殖民者之一，在一生當中參與了無數次成功或失敗的殖民計畫。</DMS_Civilian02.description>
+  <DMS_Civilian02.description>[PAWN_nameDef]來自另一個星系，參與了一場宏大的殖民計劃而來到這片邊緣世界。[PAWN_pronoun]是殖民團隊中最有經驗的殖民者之一，在一生當中參與了無數次成功或失敗的殖民計劃。</DMS_Civilian02.description>
   <!-- EN: Survival expert -->
   <DMS_Civilian02.title>生存專家</DMS_Civilian02.title>
   <!-- EN: Survivalist -->
   <DMS_Civilian02.titleShort>生存專家</DMS_Civilian02.titleShort>
   
   <!-- EN: [PAWN_nameDef] participated in a grand colonization plan and came to rimworld. [PAWN_pronoun]'s job is to establish an advance outpost well in advance of the arrival of the main force and send signals back to show the fleet that the planet is still worth the long voyage. -->
-  <DMS_Civilian03.description>[PAWN_nameDef]來自另一個星系，參與了一場宏大的殖民計畫而來到這片邊緣世界。[PAWN_pronoun]的職責是遠在大部隊到達前建立先遣哨站並不斷回傳訊號來向艦隊表示這顆星球依然值得度過漫長的遠航而來。</DMS_Civilian03.description>
+  <DMS_Civilian03.description>[PAWN_nameDef]來自另一個星系，參與了一場宏大的殖民計劃而來到這片邊緣世界。[PAWN_pronoun]的職責是遠在大部隊到達前建立先遣哨站並不斷回傳訊號來向艦隊表示這顆星球依然值得度過漫長的遠航而來。</DMS_Civilian03.description>
   <!-- EN: Colonial guard -->
   <DMS_Civilian03.title>先鋒隊員</DMS_Civilian03.title>
   <!-- EN: guard -->
   <DMS_Civilian03.titleShort>先鋒隊員</DMS_Civilian03.titleShort>
   
   <!-- EN: [PAWN_nameDef] participated in a grand colonization plan and came to rimworld. [PAWN_pronoun]'s duty is to conduct medical or chemical extermination of alien diseases and biological hazards at advance outposts long before large forces arrive. -->
-  <DMS_Civilian04.description>[PAWN_nameDef]來自另一個星系，參與了一場宏大的殖民計畫而來到這片邊緣世界。[PAWN_pronoun]的職責是遠在大部隊到達前在先遣哨站裡對外星疾病與生物災害進行醫學上或化學上的驅逐。</DMS_Civilian04.description>
+  <DMS_Civilian04.description>[PAWN_nameDef]來自另一個星系，參與了一場宏大的殖民計劃而來到這片邊緣世界。[PAWN_pronoun]的職責是遠在大部隊到達前在先遣哨站裡對外星疾病與生物災害進行醫學上或化學上的驅逐。</DMS_Civilian04.description>
   <!-- EN: Colonial medic -->
   <DMS_Civilian04.title>先鋒軍醫</DMS_Civilian04.title>
   <!-- EN: medic -->

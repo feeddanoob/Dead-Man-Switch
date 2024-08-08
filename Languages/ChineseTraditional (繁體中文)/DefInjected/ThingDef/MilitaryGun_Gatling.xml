@@ -38,7 +38,7 @@
   <!-- EN: GAU-4 "Vulcan" -->
   <DMS_GAU4Gatlinggun_Hold.label>GAU-4 "火山"</DMS_GAU4Gatlinggun_Hold.label>
   <!-- EN: a rapid-firing multiple-barrel firearm chambered in autocannon rounds.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
-  <DMS_GAU4Gatlinggun_Hold.description>一種使用機砲彈的快速多管機槍。\n\n這種武器是專門為機兵設計的，因為太重，所以只有特定的機兵才能操作。</DMS_GAU4Gatlinggun_Hold.description>
+  <DMS_GAU4Gatlinggun_Hold.description>一種使用機炮彈的快速多管機槍。\n\n這種武器是專門為機兵設計的，因為太重，所以只有特定的機兵才能操作。</DMS_GAU4Gatlinggun_Hold.description>
   <!-- EN: stock -->
   <DMS_GAU4Gatlinggun_Hold.tools.stock.label>槍托</DMS_GAU4Gatlinggun_Hold.tools.stock.label>
   <!-- EN: barrel -->
@@ -76,7 +76,7 @@
   <DMS_GAU8Gatlinggun.verbs.Verb_Shoot.label>GAU-8 "復仇者"</DMS_GAU8Gatlinggun.verbs.Verb_Shoot.label>
   
   <!-- EN: M214 -->
-  <DMS_M214Gatlinggun.label>M214 "微型砲"</DMS_M214Gatlinggun.label>
+  <DMS_M214Gatlinggun.label>M214 "微型炮"</DMS_M214Gatlinggun.label>
   <!-- EN: a rapid-firing multiple-barrel firearm chambered in assault rifle rounds.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong. -->
   <DMS_M214Gatlinggun.description>一種使用突擊步槍子彈的快速多管槍械。\n\n這種武器是專門為機兵設計的，因此如果沒有外部輔助設備或超強的力量，普通人可能無法正常使用。</DMS_M214Gatlinggun.description>
   <!-- EN: stock -->
@@ -86,9 +86,9 @@
   <!-- EN: muzzle -->
   <DMS_M214Gatlinggun.tools.muzzle.label>槍口</DMS_M214Gatlinggun.tools.muzzle.label>
   <!-- EN: M214 -->
-  <DMS_M214Gatlinggun.verbs.Verb_ShootCE.label>M214 "微型砲"</DMS_M214Gatlinggun.verbs.Verb_ShootCE.label>
+  <DMS_M214Gatlinggun.verbs.Verb_ShootCE.label>M214 "微型炮"</DMS_M214Gatlinggun.verbs.Verb_ShootCE.label>
   
   <!-- UNUSED -->
-  <DMS_M214Gatlinggun.verbs.Verb_Shoot.label>M214 "微型砲"</DMS_M214Gatlinggun.verbs.Verb_Shoot.label>
+  <DMS_M214Gatlinggun.verbs.Verb_Shoot.label>M214 "微型炮"</DMS_M214Gatlinggun.verbs.Verb_Shoot.label>
   
 </LanguageData>

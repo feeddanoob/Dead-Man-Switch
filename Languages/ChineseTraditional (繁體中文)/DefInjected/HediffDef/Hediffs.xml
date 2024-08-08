@@ -4,7 +4,7 @@
   <!-- EN: xeno limb syndrome -->
   <DMS_BionicShock.label>異肢症候群</DMS_BionicShock.label>
   <!-- EN: a psychological syndrome that is common to occur in pre-spacer world when having one or more neural machinery bionic prosthesis installed, Due to the lack of biological receptors, the body system will temporarily reject the connection after the nerve is connected.\n\nThe severity of these symptoms can be divided into five levels. -->
-  <DMS_BionicShock.description>由於缺乏生物受體，患者會強烈排斥安裝的神經機械仿生假體，這是一種在前太空世界中常見的一種心理症候群。\n\n這些症狀的嚴重程度可分為五個等級。</DMS_BionicShock.description>
+  <DMS_BionicShock.description>由於缺乏生物受體，患者會強烈排斥安裝的神經機械仿生義體，這是一種在前太空世界中常見的一種心理症候群。\n\n這些症狀的嚴重程度可分為五個等級。</DMS_BionicShock.description>
   <!-- EN: bionic syndrome has been cured -->
   <DMS_BionicShock.comps.HediffComp_RemoveIfOtherHediff.message>異肢症候群已被治愈</DMS_BionicShock.comps.HediffComp_RemoveIfOtherHediff.message>
   <!-- EN: initial -->
@@ -23,7 +23,7 @@
   <!-- EN: phantom limb syndrome -->
   <DMS_BionicShockRemove.label>幻肢症候群</DMS_BionicShockRemove.label>
   <!-- EN: a psychological syndrome that is common to occur in pre-spacer world when removed a neural machinery bionic Prosthesis. -->
-  <DMS_BionicShockRemove.description>患者會覺得被移除神經機械仿生假體依然能夠被感覺到。這是一種在前太空世界中常見的一種心理症候群。</DMS_BionicShockRemove.description>
+  <DMS_BionicShockRemove.description>患者會覺得被移除神經機械仿生義體依然能夠被感覺到。這是一種在前太空世界中常見的一種心理症候群。</DMS_BionicShockRemove.description>
   <!-- EN: bionic syndrome has been cured -->
   <DMS_BionicShockRemove.comps.HediffComp_RemoveIfOtherHediff.message>幻肢症候群已被治愈</DMS_BionicShockRemove.comps.HediffComp_RemoveIfOtherHediff.message>
   <!-- EN: initial -->

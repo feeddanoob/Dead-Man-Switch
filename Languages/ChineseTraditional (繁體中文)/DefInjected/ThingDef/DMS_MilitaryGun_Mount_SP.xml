@@ -18,7 +18,7 @@
   <!-- EN: close inbound defense system -->
   <DMS_Tarbosaurus_ShotgunGun.label>迫近防禦系統</DMS_Tarbosaurus_ShotgunGun.label>
   <!-- EN: a multi-barrel turret designed to suppress enemies in close-range. -->
-  <DMS_Tarbosaurus_ShotgunGun.description>一種用於壓制近接敵方步兵的多管霰彈砲塔，能在近距離快速反應並連續發射三枚霰彈。</DMS_Tarbosaurus_ShotgunGun.description>
+  <DMS_Tarbosaurus_ShotgunGun.description>一種用於壓制近接敵方步兵的多管霰彈炮塔，能在近距離快速反應並連續發射三枚霰彈。</DMS_Tarbosaurus_ShotgunGun.description>
   <!-- EN: close inbound defense system -->
   <DMS_Tarbosaurus_ShotgunGun.verbs.Verb_ShootCE.label>迫近防禦系統</DMS_Tarbosaurus_ShotgunGun.verbs.Verb_ShootCE.label>
   

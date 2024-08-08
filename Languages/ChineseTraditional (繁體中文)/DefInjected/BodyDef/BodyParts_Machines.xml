@@ -378,7 +378,7 @@
   <!-- EN: wetware computer core -->
   <DMS_KillDozer.corePart.parts.wetware_computer_core.customLabel>濕件計算核心</DMS_KillDozer.corePart.parts.wetware_computer_core.customLabel>
   <!-- EN: turret seat -->
-  <DMS_KillDozer.corePart.parts.turret_seat.customLabel>砲塔座圈</DMS_KillDozer.corePart.parts.turret_seat.customLabel>
+  <DMS_KillDozer.corePart.parts.turret_seat.customLabel>炮塔座圈</DMS_KillDozer.corePart.parts.turret_seat.customLabel>
   <!-- EN: elevator -->
   <DMS_KillDozer.corePart.parts.turret_seat.parts.elevator.customLabel>俯仰機構</DMS_KillDozer.corePart.parts.turret_seat.parts.elevator.customLabel>
   <!-- EN: integrated sensor system -->

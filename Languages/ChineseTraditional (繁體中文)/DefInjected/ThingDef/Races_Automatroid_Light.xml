@@ -12,14 +12,14 @@
   <!-- EN: aim at desinated target -->
   <DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>瞄準指定目標</DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>
   <!-- EN: toggle turret to manually control mode to prevent unnecessary shooting. -->
-  <DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>切換砲塔至手動模式來避免非必要的開火</DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
+  <DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>切換炮塔至手動模式來避免非必要的開火</DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
   <!-- EN: head -->
   <DMS_Mech_Dogge.tools.head.label>頭部</DMS_Mech_Dogge.tools.head.label>
   
   <!-- EN: falcon -->
   <DMS_Mech_Falcon.label>遊隼</DMS_Mech_Falcon.label>
   <!-- EN: A heavy-duty tri-rotor drone for cooperating in field recon and anti-tank strikes. -->
-  <DMS_Mech_Falcon.description>重型三旋翼無人機，用於空中武裝偵察和反坦克打擊。</DMS_Mech_Falcon.description>
+  <DMS_Mech_Falcon.description>重型三旋翼無人機，用於空中武裝偵察和反戰車打擊。</DMS_Mech_Falcon.description>
   <!-- EN: head -->
   <DMS_Mech_Falcon.tools.head.label>頭部</DMS_Mech_Falcon.tools.head.label>
   

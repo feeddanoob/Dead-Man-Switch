@@ -4,6 +4,6 @@
   <!-- EN: band node (N.A.C.S.) -->
   <DMS_BandNode.label>機控節點(N.A.C.S.)</DMS_BandNode.label>
   <!-- EN: Following the N.A.C.S. protocol, assisted computing array has increased this mechanitor's bandwidth. -->
-  <DMS_BandNode.description>遵循N.A.C.S.協議，輔助計算陣列增加了該機械師的頻寬。</DMS_BandNode.description>
+  <DMS_BandNode.description>遵循N.A.C.S.協議，輔助計算陣列為機械師的控制提供了額外的帶寬。</DMS_BandNode.description>
   
 </LanguageData>

@@ -2,11 +2,11 @@
 <LanguageData>
   
   <!-- EN: attach turret -->
-  <DMS_Mechanoids_AttachTurret.label>安裝砲塔</DMS_Mechanoids_AttachTurret.label>
+  <DMS_Mechanoids_AttachTurret.label>安裝炮塔</DMS_Mechanoids_AttachTurret.label>
   <!-- EN: attaching turret to -->
-  <DMS_Mechanoids_AttachTurret.gerund>安裝砲塔</DMS_Mechanoids_AttachTurret.gerund>
+  <DMS_Mechanoids_AttachTurret.gerund>安裝炮塔</DMS_Mechanoids_AttachTurret.gerund>
   <!-- EN: attach turret to -->
-  <DMS_Mechanoids_AttachTurret.verb>安裝砲塔</DMS_Mechanoids_AttachTurret.verb>
+  <DMS_Mechanoids_AttachTurret.verb>安裝炮塔</DMS_Mechanoids_AttachTurret.verb>
   
   <!-- EN: repair machine -->
   <DMS_Mechanoids_RepairMachine.label>修理機械</DMS_Mechanoids_RepairMachine.label>
