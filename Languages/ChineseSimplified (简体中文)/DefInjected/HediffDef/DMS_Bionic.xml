@@ -4,7 +4,7 @@
   <!-- EN: nutrition port -->
   <DMS_NutrientPort.label>营养接口</DMS_NutrientPort.label>
   <!-- EN: A total overhaul of the patient's digestive system, replacing it with a fueling port and nutrient storage. -->
-  <DMS_NutrientPort.description>对消化系统进行彻底移除，并用加注口和储存营养的容器取代。</DMS_NutrientPort.description>
+  <DMS_NutrientPort.description>对消化系统进行彻底的手术移除，并用加注口和储存营养的容器取代。</DMS_NutrientPort.description>
   <!-- EN: an nutrition port -->
   <DMS_NutrientPort.labelNoun>营养接口</DMS_NutrientPort.labelNoun>
   
@@ -24,6 +24,13 @@
   <!-- EN: a bionic sensor -->
   <DMS_ProstheticEye.labelNoun>一颗机械传感器</DMS_ProstheticEye.labelNoun>
   
+  <!-- EN: mechaneural kidney -->
+  <DMS_ProstheticKidney.label>机械透析肾</DMS_ProstheticKidney.label>
+  <!-- EN: An installed neural-mechanical kidney. -->
+  <DMS_ProstheticKidney.description>一颗安装的机械透析肾，作为肾脏的机械替代品。</DMS_ProstheticKidney.description>
+  <!-- EN: a neural-mechanical kidney -->
+  <DMS_ProstheticKidney.labelNoun>一颗机械透析肾</DMS_ProstheticKidney.labelNoun>
+  
   <!-- EN: mechaneural leg -->
   <DMS_ProstheticLeg.label>机械仿生腿</DMS_ProstheticLeg.label>
   <!-- EN: An installed neural-mechanical leg. -->
@@ -31,12 +38,19 @@
   <!-- EN: a neural-mechanical leg -->
   <DMS_ProstheticLeg.labelNoun>一条神经机械仿生腿</DMS_ProstheticLeg.labelNoun>
   
+  <!-- EN: mechaneural lung -->
+  <DMS_ProstheticLung.label>机械肺</DMS_ProstheticLung.label>
+  <!-- EN: An installed neural-mechanical lung. -->
+  <DMS_ProstheticLung.description>一颗安装的机械肺，作为肺的机械替代品。</DMS_ProstheticLung.description>
+  <!-- EN: a neural-mechanical lung -->
+  <DMS_ProstheticLung.labelNoun>一颗机械肺</DMS_ProstheticLung.labelNoun>
+  
   <!-- EN: mechaneural neurochord -->
-  <DMS_ProstheticSpine.label>机械仿生脊椎</DMS_ProstheticSpine.label>
+  <DMS_ProstheticSpine.label>生物机械神经索</DMS_ProstheticSpine.label>
   <!-- EN: An installed bionic spine. -->
-  <DMS_ProstheticSpine.description>一条安装的机械仿生脊椎</DMS_ProstheticSpine.description>
+  <DMS_ProstheticSpine.description>一条安装的生物机械神经索</DMS_ProstheticSpine.description>
   <!-- EN: An advanced neural-mechanical spine work as a sub-brain \n\n It can take over the user's reflex nerves and thereby reduce the operator's brain burden, but has some side effects. -->
-  <DMS_ProstheticSpine.labelNoun>一种先进的神经机械仿生脊椎\n\n它可以接管使用者的反射神经，从而减轻操作者的大脑负担，但有一些副作用。</DMS_ProstheticSpine.labelNoun>
+  <DMS_ProstheticSpine.labelNoun>一种先进的生物机械神经索\n\n它可以接管使用者的反射神经，从而减轻操作者的大脑负担，但有一些副作用。</DMS_ProstheticSpine.labelNoun>
   
   <!-- EN: sensory filter -->
   <DMS_SensoryFilter.label>情感过滤装置</DMS_SensoryFilter.label>

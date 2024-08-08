@@ -2,15 +2,15 @@
 <LanguageData>
   
   <!-- EN: the modification durability on one of your mech has exhausted -->
-  <DMS_AddonBroken>安装於机械体上的附加组件已完全损坏</DMS_AddonBroken>
+  <DMS_AddonBroken>安装於机械体上的改装模块已完全损坏</DMS_AddonBroken>
   <!-- EN: Disposable ceramic armor, which protects the mecha from damage until its durability is exhausted. -->
   <DMS_PlatingTooltip>能够抵御大多数伤害的一次性防护片，其上限值与机械体体型正相关，无法自然恢复耐久。</DMS_PlatingTooltip>
   <!-- EN: modification applied -->
-  <DMS_HasAppliedModification>机械体的附加模块已完成安装</DMS_HasAppliedModification>
+  <DMS_HasAppliedModification>机械体已完成改装模块的安装</DMS_HasAppliedModification>
   <!-- EN: system not supported -->
-  <DMS_WeaponNotSupported>机体系统不支持</DMS_WeaponNotSupported>
+  <DMS_WeaponNotSupported>:机体系统不支持</DMS_WeaponNotSupported>
   <!-- EN: frame not supported -->
-  <DMS_FrameNotSupported>机体框架不支持</DMS_FrameNotSupported>
+  <DMS_FrameNotSupported>:机体框架不支持</DMS_FrameNotSupported>
   <!-- EN: DMS: Trigger Safe Actived -->
   <DMS_WillTerminateTheBetrayedUnit>失能机关: 待发状态</DMS_WillTerminateTheBetrayedUnit>
   <!-- EN: automatroid has disconnected to protect mechanitor -->
@@ -18,7 +18,7 @@
   <!-- EN: need mechanitor in map -->
   <CommandCallRoyalAid_NoMechanitorAvaliable>需要机械师</CommandCallRoyalAid_NoMechanitorAvaliable>
   <!-- EN: must be Mechanitor -->
-  <DMS_PawnIsNotMechanitor>必须是机械师</DMS_PawnIsNotMechanitor>
+  <DMS_PawnIsNotMechanitor>:必须是机械师</DMS_PawnIsNotMechanitor>
   <!-- EN: Orbital downlink has established connection with mechanitor -->
   <DMS_BandwidthSupported>轨道下行带宽建立了与机械师的连接协议</DMS_BandwidthSupported>
   <!-- EN: mounted wepaon -->
@@ -28,4 +28,8 @@
   <!-- EN: this weapon can be equipped with listed specific apparel or bionics -->
   <DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>此武器也可以由下列机械体或装备衣物与仿生後所使用</DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>
   
+  <!-- UNUSED -->
+  <DMS_Modification_RaceNotSupported>机械体型号不支持安装该改装模块</DMS_Modification_RaceNotSupported>
+  <DMS_Modification_NoValidPart>机械体没有供改装模块安装的空余部位</DMS_Modification_NoValidPart>
+
 </LanguageData>

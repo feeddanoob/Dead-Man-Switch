@@ -4,13 +4,23 @@
   <!-- EN: APT shell -->
   <DMS_Bullet_CIWS.label>穿甲示踪弹</DMS_Bullet_CIWS.label>
   
+  <!-- EN: armor piercing shell -->
+  <DMS_Bullet_Dawnblade.label>穿甲弹</DMS_Bullet_Dawnblade.label>
+  
   <!-- EN: uranium APT shell -->
   <DMS_Bullet_Kord.label>铀芯穿甲示踪弹</DMS_Bullet_Kord.label>
+  
+  <!-- EN: Type 85 Multi-Purposed Quick-Firing System -->
+  <DMS_Gun_Dawnblade.label>黎明之刃</DMS_Gun_Dawnblade.label>
+  <!-- EN: A highly automated artillery system widely used on small and medium-sized space ships in colonial fleets. -->
+  <DMS_Gun_Dawnblade.description>全称为八五型多用途速射炮系统 "黎明之刃"，是一种高度自动化的转膛速射火炮系统，被广泛应用於殖民舰队的中小型舰船与殖民地陆基防御系统上。</DMS_Gun_Dawnblade.description>
+  <!-- EN: Type 85 Multi-Purposed Quick-Firing System -->
+  <DMS_Gun_Dawnblade.verbs.Verb_ShootCE.label>黎明之刃</DMS_Gun_Dawnblade.verbs.Verb_ShootCE.label>
   
   <!-- EN: GateKeeper -->
   <DMS_Gun_GateKeeper.label>守门人</DMS_Gun_GateKeeper.label>
   <!-- EN: A large-caliber multi-barreled autocannon, more known as GAU-8 "Avanger". It is an old and practical design with extremely high rates of fire and devastating suppression capabilities. -->
-  <DMS_Gun_GateKeeper.description>用於太空船与水面舰艇的大口径多管机枪炮塔，具有极高的射速与毁灭性的压制能力。</DMS_Gun_GateKeeper.description>
+  <DMS_Gun_GateKeeper.description>一种重型加特林机炮，具有极高的射速与毁灭性的压制能力而被殖民舰队作为太空船与水面舰艇的迫近防御系统，也经常随着殖民活动而安装在殖民地作为防御系统的一部分。</DMS_Gun_GateKeeper.description>
   <!-- EN: GateKeeper -->
   <DMS_Gun_GateKeeper.verbs.Verb_ShootCE.label>守门人</DMS_Gun_GateKeeper.verbs.Verb_ShootCE.label>
   
@@ -30,7 +40,7 @@
   <!-- EN: Tunguska -->
   <DMS_Gun_Tunguska.label>2K22通古斯卡</DMS_Gun_Tunguska.label>
   <!-- EN: A weapon system that include two 2A38 autoaconnon and eight missile launchers. -->
-  <DMS_Gun_Tunguska.description>四联装弹炮一体防空系统，具有八具导弹发射器能够在必要条件下发射威力十足的防御导弹。</DMS_Gun_Tunguska.description>
+  <DMS_Gun_Tunguska.description>一种四联装弹炮一体防空系统，通常是安装在地面载具平台上提供机动防空火力而存在的，具有八具导弹发射器能够在必要条件下发射威力十足的防御导弹。</DMS_Gun_Tunguska.description>
   <!-- EN: Tunguska -->
   <DMS_Gun_Tunguska.verbs.Verb_ShootCE.label>2K22通古斯卡</DMS_Gun_Tunguska.verbs.Verb_ShootCE.label>
   
@@ -47,6 +57,11 @@
   <!-- UNUSED -->
   <DMS_Gun_Vasilek.verbs.Verb_Shoot.label>2B9M矢车菊</DMS_Gun_Vasilek.verbs.Verb_Shoot.label>
   
+  <!-- EN: Dawnblade -->
+  <DMS_Turret_Dawnblade.label>黎明之刃</DMS_Turret_Dawnblade.label>
+  <!-- EN: MPQFS-85 "Dawnblade" is an onboard multi-role quick-firing cannon system, it uses drum magazines and automatic revolver loaders to permit a high rate of fire.\n\nthe armor plating is removed to allow them to be stational deployed to provide heavy fire support for colony defense. -->
+  <DMS_Turret_Dawnblade.description>黎明之刃是一种殖民舰队广泛装备的多用途速射炮系统，使用弹鼓与转轮装弹机来实现对中小型高速目标的拦截与打击。为殖民地防御提供猛烈的大口径直射火力支援。</DMS_Turret_Dawnblade.description>
+  
   <!-- EN: GateKeeper -->
   <DMS_Turret_GateKeeper.label>守门人</DMS_Turret_GateKeeper.label>
   <!-- EN: A live-fire large-caliber multi-barreled machine gun turret used on spacecraft and maritime ships, with extremely high rates of fire and devastating suppression capabilities. -->
@@ -60,7 +75,7 @@
   <!-- EN: Okhotnik -->
   <DMS_Turret_Okhotnik.label>猎手</DMS_Turret_Okhotnik.label>
   <!-- EN: an ancient design of remote control turret, widely used on armored vehicle and mechs armor platforms. -->
-  <DMS_Turret_Okhotnik.description>一种古老的遥控炮塔设计，广泛用於装甲车和机甲装甲平台。</DMS_Turret_Okhotnik.description>
+  <DMS_Turret_Okhotnik.description>一种古老的遥控炮塔设计，广泛用於装甲车和机甲平台。</DMS_Turret_Okhotnik.description>
   
   <!-- UNUSED -->
   <DMS_Turret_Okhotnik.comps.CompRefuelable.fuelGizmoLabel>炮管耐久度</DMS_Turret_Okhotnik.comps.CompRefuelable.fuelGizmoLabel>

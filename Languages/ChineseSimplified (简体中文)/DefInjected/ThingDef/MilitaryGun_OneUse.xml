@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: demolish rocket round -->
-  <DMS_Bullet_DR.label>反工事火箭弹</DMS_Bullet_DR.label>
-  
   <!-- EN: deposable launcher -->
-  <DMS_DeposableRocketLauncher.label>可抛式火箭筒</DMS_DeposableRocketLauncher.label>
+  <DMS_DeposableRocketLauncher.label>抛弃式火箭筒</DMS_DeposableRocketLauncher.label>
   <!-- EN: A counterweighted-recoilless rocket-propelled grenade launcher, light-weighted and effective againist bunker or heavy mechs. It has a long fire range, but requires line of sight. -->
   <DMS_DeposableRocketLauncher.description>一种配重式无後座力火箭推进榴弹发射器，是殖民舰队设计用於发配给游击队与机兵小队使用的反装甲装甲，相比於可填装型号其重量更轻，可有效对抗掩体或装甲载具。</DMS_DeposableRocketLauncher.description>
   <!-- EN: charge -->
@@ -13,6 +10,9 @@
   <!-- EN: on cooldown -->
   <DMS_DeposableRocketLauncher.comps.CompApparelReloadable.cooldownGerund>冷却中</DMS_DeposableRocketLauncher.comps.CompApparelReloadable.cooldownGerund>
   <!-- EN: deposable launcher -->
-  <DMS_DeposableRocketLauncher.verbs.Verb_Shoot.label>可抛式火箭筒</DMS_DeposableRocketLauncher.verbs.Verb_Shoot.label>
+  <DMS_DeposableRocketLauncher.verbs.Verb_LaunchProjectileStaticCE.label>抛弃式火箭筒</DMS_DeposableRocketLauncher.verbs.Verb_LaunchProjectileStaticCE.label>
+  
+  <!-- UNUSED -->
+  <DMS_DeposableRocketLauncher.verbs.Verb_Shoot.label>抛弃式火箭筒</DMS_DeposableRocketLauncher.verbs.Verb_Shoot.label>
   
 </LanguageData>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: escort -->
+  <DMS_Escort.label>护卫</DMS_Escort.label>
+  
   <!-- EN: gunner -->
   <DMS_HeavyGunner.label>枪手</DMS_HeavyGunner.label>
   

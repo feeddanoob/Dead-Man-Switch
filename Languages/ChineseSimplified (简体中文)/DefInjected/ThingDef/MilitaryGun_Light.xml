@@ -21,24 +21,26 @@
   <DMS_Bullet_Pistol.label>自动手枪弹</DMS_Bullet_Pistol.label>
   
   <!-- EN: flameblaster -->
-  <DMS_Flameblaster.label>喷火器</DMS_Flameblaster.label>
+  <DMS_Flameblaster.label>喷火枪</DMS_Flameblaster.label>
   <!-- EN: A flame launcher used by mechs that can effectively ignite flammable materials within a range -->
-  <DMS_Flameblaster.description>一种用於生物防治的短距喷火器</DMS_Flameblaster.description>
-  <!-- EN: stock -->
-  <DMS_Flameblaster.tools.stock.label>枪托</DMS_Flameblaster.tools.stock.label>
-  <!-- EN: barrel -->
-  <DMS_Flameblaster.tools.barrel-0.label>枪管</DMS_Flameblaster.tools.barrel-0.label>
+  <DMS_Flameblaster.description>一种机兵使用的火焰发射器，能够有效引燃射程内的可燃物。</DMS_Flameblaster.description>
+  <!-- EN: grip -->
+  <DMS_Flameblaster.tools.grip.label>握把</DMS_Flameblaster.tools.grip.label>
   <!-- EN: muzzle -->
   <DMS_Flameblaster.tools.muzzle.label>枪口</DMS_Flameblaster.tools.muzzle.label>
-  <!-- EN: barrel -->
-  <DMS_Flameblaster.tools.barrel-1.label>枪管</DMS_Flameblaster.tools.barrel-1.label>
   <!-- EN: flameblaster -->
-  <DMS_Flameblaster.verbs.Verb_SpewFire.label>喷火器</DMS_Flameblaster.verbs.Verb_SpewFire.label>
+  <DMS_Flameblaster.verbs.Verb_ShootCE.label>喷火枪</DMS_Flameblaster.verbs.Verb_ShootCE.label>
+  
+  <!-- UNUSED -->
+  <DMS_Flameblaster.tools.stock.label>枪托</DMS_Flameblaster.tools.stock.label>
+  <DMS_Flameblaster.tools.barrel-0.label>枪管</DMS_Flameblaster.tools.barrel-0.label>
+  <DMS_Flameblaster.tools.barrel-1.label>枪管</DMS_Flameblaster.tools.barrel-1.label>
+  <DMS_Flameblaster.verbs.Verb_SpewFire.label>喷火枪</DMS_Flameblaster.verbs.Verb_SpewFire.label>
   
   <!-- EN: PDW -->
   <DMS_PDW.label>个人防卫武器</DMS_PDW.label>
   <!-- EN: A mass-produced submachine gun, which was designed only capable of hip-fire so it's inaccurate in range but its caliber and ability to draw quick make it the perfect weapon for urban combat against milltor. -->
-  <DMS_PDW.description>量产冲锋枪，被设计为只能腰射因此并不准确，但其使用的大威力手枪弹口径和快速射击能力使其成为城市战斗中对抗机械体猎杀的完美武器。</DMS_PDW.description>
+  <DMS_PDW.description>一种量产型冲锋枪，其设计之初便只能腰射因此整体来说并不准确，但其使用的大威力手枪弹口径和快速射击能力使其成为城市战斗中对抗机械体猎杀的完美武器。</DMS_PDW.description>
   <!-- EN: grip -->
   <DMS_PDW.tools.grip.label>握把</DMS_PDW.tools.grip.label>
   <!-- EN: muzzle -->

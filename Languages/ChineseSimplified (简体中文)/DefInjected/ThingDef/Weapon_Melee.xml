@@ -29,7 +29,7 @@
   <!-- EN: stun baton -->
   <DMS_StunBaton.label>镇暴电棍</DMS_StunBaton.label>
   <!-- EN: An Electric Stun baton designed for non-lethal riot control and to Subdue out-of-control machines, it's commonly used by automatroid protectors to secure occupied areas safety without casualties. -->
-  <DMS_StunBaton.description>一种专为非致命性防暴控制和制服失控机兵而设计的电击棍，通常被执行治安任务的塔盾手使用来确保占领区域的安全而不造成人员伤亡。</DMS_StunBaton.description>
+  <DMS_StunBaton.description>一种专为非致命性防暴控制和制服失控机兵而设计的电击棍，也通常被执行治安任务的塔盾手使用来确保占领区域的安全而不造成人员伤亡。</DMS_StunBaton.description>
   <!-- EN: handle -->
   <DMS_StunBaton.tools.handle.label>握把</DMS_StunBaton.tools.handle.label>
   <!-- EN: edge -->

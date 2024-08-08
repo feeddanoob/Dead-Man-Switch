@@ -16,7 +16,7 @@
   <!-- EN: elephant rifle -->
   <DMS_ElephantGun.label>猎象枪</DMS_ElephantGun.label>
   <!-- EN: Single-shot high caliber heavy hunting rifle. While made to hunt giant games or stop large hostile lifeform with sheer kinetic energy, it is also used by early industrial colonies against mechanoids thanks to its simple manufacture requirements. -->
-  <DMS_ElephantGun.description>单发大口径重型猎枪。虽然它是为了狩猎巨型猎物或用纯粹的动能阻止大型敌对生命体而制造的，但由於其简单的制造要求，它也被早期的工业殖民地用来对付机械类动物。</DMS_ElephantGun.description>
+  <DMS_ElephantGun.description>一种重型大口径栓动猎枪。虽然它是为了狩猎巨型猎物或用纯粹的动能阻止大型敌对生物而制造的。但由於其简单的制造要求也被早期的工业殖民地用来对付机械体。</DMS_ElephantGun.description>
   <!-- EN: stock -->
   <DMS_ElephantGun.tools.stock-0.label>枪托</DMS_ElephantGun.tools.stock-0.label>
   <!-- EN: barrel -->
@@ -98,7 +98,7 @@
   <!-- EN: slug gun -->
   <DMS_RiotShotgun.label>镇暴霰弹枪</DMS_RiotShotgun.label>
   <!-- EN: a high caliber rifled shotgun manufactured with stamped component,design for riot operation and disable hostile mech unit. -->
-  <DMS_RiotShotgun.description>采用冲压件制造的大口径膛线霰弹枪，设计用於镇暴行动和摧毁敌方机械单位。</DMS_RiotShotgun.description>
+  <DMS_RiotShotgun.description>采用冲压件制造的大口径膛线霰弹枪，设计用於镇暴行动和摧毁敌方机械体。</DMS_RiotShotgun.description>
   <!-- EN: stock -->
   <DMS_RiotShotgun.tools.stock-0.label>枪托</DMS_RiotShotgun.tools.stock-0.label>
   <!-- EN: barrel -->
@@ -120,7 +120,7 @@
   <!-- EN: survival rifle -->
   <DMS_SurvivalRifle.label>生存步枪</DMS_SurvivalRifle.label>
   <!-- EN: Foldable rifle issued to war machine crew members for survival need. Accepts multiple common calibers. -->
-  <DMS_SurvivalRifle.description>为战争机器机组人员发放的摺叠式步枪，以满足生存需要。可接受多种常见口径弹药。</DMS_SurvivalRifle.description>
+  <DMS_SurvivalRifle.description>为机组人员提供的摺叠式生存步枪。以满足逃生後的生存与自保需要。可接受多种常见口径弹药。</DMS_SurvivalRifle.description>
   <!-- EN: stock -->
   <DMS_SurvivalRifle.tools.stock-0.label>枪托</DMS_SurvivalRifle.tools.stock-0.label>
   <!-- EN: barrel -->

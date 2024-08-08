@@ -97,7 +97,7 @@
   <!-- EN: wetware computer -->
   <Neurocomputer.label>湿件计算机</Neurocomputer.label>
   <!-- EN: an organic computer also be known as an artificial organic brain or a neurocomputer, it's the perfect computer unit source for factions without access to rare metals and precision machining. -->
-  <Neurocomputer.description>有机计算机也被称为人工有机大脑或神经计算机，对於无法获得稀有金属和精密机械加工的派别来说，它是完美的计算机单元源。</Neurocomputer.description>
+  <Neurocomputer.description>有机计算机，或称为人工有机大脑或神经计算机，对於无法获得稀有金属和精密机械加工的阵营来说，它是完美的计算机单元与算力来源。</Neurocomputer.description>
   <!-- EN: Analyze the wetware computer -->
   <Neurocomputer.comps.CompAnalyzableUnlockResearch.activateDescString>分析湿件计算机，解析其DNA组成与分子生物学溯源，以便後续的逆向工程与人工培育。</Neurocomputer.comps.CompAnalyzableUnlockResearch.activateDescString>
   <!-- EN: Analyze... -->
