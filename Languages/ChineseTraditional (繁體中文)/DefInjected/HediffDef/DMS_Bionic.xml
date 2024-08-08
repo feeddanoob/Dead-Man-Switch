@@ -4,7 +4,7 @@
   <!-- EN: nutrition port -->
   <DMS_NutrientPort.label>營養接口</DMS_NutrientPort.label>
   <!-- EN: A total overhaul of the patient's digestive system, replacing it with a fueling port and nutrient storage. -->
-  <DMS_NutrientPort.description>對消化系統進行徹底移除，並用加注口和儲存營養的容器取代。</DMS_NutrientPort.description>
+  <DMS_NutrientPort.description>對消化系統進行徹底的手術移除，並用加注口和儲存營養的容器取代。</DMS_NutrientPort.description>
   <!-- EN: an nutrition port -->
   <DMS_NutrientPort.labelNoun>營養接口</DMS_NutrientPort.labelNoun>
   
@@ -24,12 +24,26 @@
   <!-- EN: a bionic sensor -->
   <DMS_ProstheticEye.labelNoun>一顆機械傳感器</DMS_ProstheticEye.labelNoun>
   
+  <!-- EN: mechaneural kidney -->
+  <DMS_ProstheticKidney.label>機械透析腎</DMS_ProstheticKidney.label>
+  <!-- EN: An installed neural-mechanical kidney. -->
+  <DMS_ProstheticKidney.description>一顆安裝的機械透析腎，作為腎臟的機械替代品。</DMS_ProstheticKidney.description>
+  <!-- EN: a neural-mechanical kidney -->
+  <DMS_ProstheticKidney.labelNoun>一顆機械透析腎</DMS_ProstheticKidney.labelNoun>
+  
   <!-- EN: mechaneural leg -->
   <DMS_ProstheticLeg.label>機械仿生腿</DMS_ProstheticLeg.label>
   <!-- EN: An installed neural-mechanical leg. -->
   <DMS_ProstheticLeg.description>一條安裝的神經機械仿生腿</DMS_ProstheticLeg.description>
   <!-- EN: a neural-mechanical leg -->
   <DMS_ProstheticLeg.labelNoun>一條神經機械仿生腿</DMS_ProstheticLeg.labelNoun>
+  
+  <!-- EN: mechaneural lung -->
+  <DMS_ProstheticLung.label>機械肺</DMS_ProstheticLung.label>
+  <!-- EN: An installed neural-mechanical lung. -->
+  <DMS_ProstheticLung.description>一顆安裝的機械肺，作為肺的機械替代品。</DMS_ProstheticLung.description>
+  <!-- EN: a neural-mechanical lung -->
+  <DMS_ProstheticLung.labelNoun>一顆機械肺</DMS_ProstheticLung.labelNoun>
   
   <!-- EN: mechaneural neurochord -->
   <DMS_ProstheticSpine.label>生物機械神經索</DMS_ProstheticSpine.label>

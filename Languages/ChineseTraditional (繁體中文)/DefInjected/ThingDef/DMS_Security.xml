@@ -59,7 +59,7 @@
   
   <!-- EN: Dawnblade -->
   <DMS_Turret_Dawnblade.label>黎明之刃</DMS_Turret_Dawnblade.label>
-  <!-- EN:  -->
+  <!-- EN: MPQFS-85 "Dawnblade" is an onboard multi-role quick-firing cannon system, it uses drum magazines and automatic revolver loaders to permit a high rate of fire.\n\nthe armor plating is removed to allow them to be stational deployed to provide heavy fire support for colony defense. -->
   <DMS_Turret_Dawnblade.description>黎明之刃是一種殖民艦隊廣泛裝備的多用途速射砲系統，使用彈鼓與轉輪裝彈機來實現對中小型高速目標的攔截與打擊。為殖民地防禦提供猛烈的大口徑直射火力支援。</DMS_Turret_Dawnblade.description>
   
   <!-- EN: GateKeeper -->

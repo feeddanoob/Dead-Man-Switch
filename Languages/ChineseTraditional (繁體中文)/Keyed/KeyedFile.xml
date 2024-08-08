@@ -7,10 +7,6 @@
   <DMS_PlatingTooltip>能夠抵禦大多數傷害的一次性防護片，其上限值與機械體體型正相關，無法自然恢復耐久。</DMS_PlatingTooltip>
   <!-- EN: modification applied -->
   <DMS_HasAppliedModification>機械體已完成改裝模塊的安裝</DMS_HasAppliedModification>
-  <!-- EN: DMS_Modification_RaceNotSupported -->
-  <DMS_Modification_RaceNotSupported>機械體型號不支持安裝該改裝模塊</DMS_Modification_RaceNotSupported>
-  <!-- DMS_Modification_NoValidPart -->
-   <DMS_Modification_NoValidPart>機械體沒有供改裝模塊安裝的空餘部位</DMS_Modification_NoValidPart>
   <!-- EN: system not supported -->
   <DMS_WeaponNotSupported>:機體系統不支持</DMS_WeaponNotSupported>
   <!-- EN: frame not supported -->
@@ -32,4 +28,8 @@
   <!-- EN: this weapon can be equipped with listed specific apparel or bionics -->
   <DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>此武器也可以由下列機械體或裝備衣物與仿生後所使用</DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>
   
+  <!-- UNUSED -->
+  <DMS_Modification_RaceNotSupported>機械體型號不支持安裝該改裝模塊</DMS_Modification_RaceNotSupported>
+  <DMS_Modification_NoValidPart>機械體沒有供改裝模塊安裝的空餘部位</DMS_Modification_NoValidPart>
+
 </LanguageData>

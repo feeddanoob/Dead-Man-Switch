@@ -22,12 +22,26 @@
   <!-- EN: Installing bionic eye. -->
   <DMS_InstallProstheticEye.jobString>安裝機械視覺感測器中</DMS_InstallProstheticEye.jobString>
   
+  <!-- EN: install mechaneural kidney -->
+  <DMS_InstallProstheticKidney.label>安裝機械透析儀</DMS_InstallProstheticKidney.label>
+  <!-- EN: Install a neural-mechanical kidney. -->
+  <DMS_InstallProstheticKidney.description>安裝機械透析儀</DMS_InstallProstheticKidney.description>
+  <!-- EN: Installing neural-mechanical kidney. -->
+  <DMS_InstallProstheticKidney.jobString>安裝機械透析儀中</DMS_InstallProstheticKidney.jobString>
+  
   <!-- EN: install mechaneural leg -->
   <DMS_InstallProstheticLeg.label>安裝機械腿</DMS_InstallProstheticLeg.label>
   <!-- EN: Install a neural-mechanical leg. -->
   <DMS_InstallProstheticLeg.description>安裝機械腿</DMS_InstallProstheticLeg.description>
   <!-- EN: Installing neural-mechanical leg. -->
   <DMS_InstallProstheticLeg.jobString>安裝機械腿中</DMS_InstallProstheticLeg.jobString>
+  
+  <!-- EN: install mechaneural lung -->
+  <DMS_InstallProstheticLung.label>安裝機械肺</DMS_InstallProstheticLung.label>
+  <!-- EN: Install a neural-mechanical lung. -->
+  <DMS_InstallProstheticLung.description>安裝機械肺</DMS_InstallProstheticLung.description>
+  <!-- EN: Installing neural-mechanical lung. -->
+  <DMS_InstallProstheticLung.jobString>安裝機械肺中</DMS_InstallProstheticLung.jobString>
   
   <!-- EN: install sensory filter -->
   <DMS_InstallSensoryFilter.label>安裝感官過濾器</DMS_InstallSensoryFilter.label>

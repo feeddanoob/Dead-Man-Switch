@@ -16,10 +16,20 @@
   <!-- EN: An artificial light receiver with nerve-link, with night vision and aim assist it might be better than the original one...maybe ? -->
   <DMS_ProstheticEye.description>帶神經鏈路的人造光接收器，具有夜視和瞄準輔助功能，可能比原來的更好...也許吧？</DMS_ProstheticEye.description>
   
+  <!-- EN: mechaneural kidney -->
+  <DMS_ProstheticKidney.label>TODO</DMS_ProstheticKidney.label>
+  <!-- EN: A columnar liquid filter implant that filters impurities and waste products in the blood through osmotic pressure to ensure the acid-base balance of the implanter's internal circulatory system. -->
+  <DMS_ProstheticKidney.description>TODO</DMS_ProstheticKidney.description>
+  
   <!-- EN: mechaneural leg -->
   <DMS_ProstheticLeg.label>機械腿</DMS_ProstheticLeg.label>
   <!-- EN: An advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way. -->
   <DMS_ProstheticLeg.description>先進的人造腿。它擁有生物凝膠神經連接、功能強大的微型伺服器和晶格微塵癒合系統，幾乎在所有方面都優於生物腿。</DMS_ProstheticLeg.description>
+  
+  <!-- EN: mechaneural lung -->
+  <DMS_ProstheticLung.label>TODO</DMS_ProstheticLung.label>
+  <!-- EN: A plastic fiber-based membrane oxygenation prosthesis. it works like an artificial lung or so-called ECMO. During World War III, due to the lack of protective equipment, most soldiers were exposed to high-intensity nuclear, biological, and chemical pollution environments, which caused massive ulceration and paralysis of respiratory organs. these types of prostheses were widely used in the military and gradually perfected in frontline surgery and resocialization treatment for disabled militaries. -->
+  <DMS_ProstheticLung.description>TODO</DMS_ProstheticLung.description>
   
   <!-- EN: bio-mechanical neurochord -->
   <DMS_ProstheticSpine.label>生物機械神經索</DMS_ProstheticSpine.label>

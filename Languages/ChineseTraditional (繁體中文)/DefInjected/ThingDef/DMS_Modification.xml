@@ -1,6 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: extended armor plate -->
+  <DMS_BF_ExtendArmor.label>附加裝甲</DMS_BF_ExtendArmor.label>
+  <!-- EN: composite armor attachments that suitable for battle frame pylons, which can effectively resist direct hits to the chassis from various threats such as fragments and medium-caliber gunfire. -->
+  <DMS_BF_ExtendArmor.description>一種安裝在戰鬥框架側面掛架的複合裝甲板，可有效抵禦破片與中小口徑槍械的直接射擊並保護其動力部位不受損傷。</DMS_BF_ExtendArmor.description>
+  <!-- EN: Use {0_label} -->
+  <DMS_BF_ExtendArmor.comps.CompUsable.useLabel>安裝{0}</DMS_BF_ExtendArmor.comps.CompUsable.useLabel>
+  
+  <!-- EN: extended cargo rack -->
+  <DMS_BF_ExtendCargo.label>加掛貨箱</DMS_BF_ExtendCargo.label>
+  <!-- EN: Side mounted cargo racks that suitable for battle frame pylons, which can effectively increase the carrying capacity of battle frame and its variants. -->
+  <DMS_BF_ExtendCargo.description>一種安裝在戰鬥框架側面掛架的金屬箱，通常被用於山地區域的長途運輸與前線補給小隊用來提高運輸效率。</DMS_BF_ExtendCargo.description>
+  <!-- EN: Use {0_label} -->
+  <DMS_BF_ExtendCargo.comps.CompUsable.useLabel>安裝{0}</DMS_BF_ExtendCargo.comps.CompUsable.useLabel>
+  
   <!-- EN: broken ceramics -->
   <DMS_BrokenCeramics.label>破碎陶瓷</DMS_BrokenCeramics.label>
   
@@ -10,13 +24,6 @@
   <DMS_CeramicsPlating.description>一組拋棄式陶瓷裝甲板與安裝用的支架和工具組等，陶瓷裝甲板可以安裝在機兵的機體上以提供額外的防護，但一經損壞就只能更換新的。 \n\n最大可安裝數量取決於安裝機體的體型。</DMS_CeramicsPlating.description>
   <!-- EN: Use {0_label} -->
   <DMS_CeramicsPlating.comps.CompUsable.useLabel>安裝{0}</DMS_CeramicsPlating.comps.CompUsable.useLabel>
-  
-  <!-- EN: heavy hydraulic frame -->
-  <DMS_HeavyHydraulicFrame.label>重型液壓框架</DMS_HeavyHydraulicFrame.label>
-  <!-- EN: Heavy add-on module for capability to mount heavy weapons on mech iguana and gecko. -->
-  <DMS_HeavyHydraulicFrame.description>一種適用於重型雙足機兵的外置液壓骨架和動力包，可以簡單的理解為機兵專用的外骨骼系統，能使重型機兵獲得更大的戰鬥負載容量，還可以安裝超重型武器。但作為代價會顯著提高機兵的重量與移動速度。</DMS_HeavyHydraulicFrame.description>
-  <!-- EN: Use {0_label} -->
-  <DMS_HeavyHydraulicFrame.comps.CompUsable.useLabel>安裝{0}</DMS_HeavyHydraulicFrame.comps.CompUsable.useLabel>
   
   <!-- EN: nuclear battery -->
   <DMS_NuclearBattery.label>裂變電池</DMS_NuclearBattery.label>
@@ -38,5 +45,12 @@
   <DMS_SyntheticTendon.description>一種安裝在機體腿部出力位置的人工生物合成肌腱，透過外部接口接入機體能源來進行供能，能有效的增加關節出力但同時增加能源消耗。</DMS_SyntheticTendon.description>
   <!-- EN: Use {0_label} -->
   <DMS_SyntheticTendon.comps.CompUsable.useLabel>安裝{0}</DMS_SyntheticTendon.comps.CompUsable.useLabel>
+  
+  <!-- EN: heavy hydraulic frame -->
+  <DMS_TB_HeavyHydraulicFrame.label>重型液壓框架</DMS_TB_HeavyHydraulicFrame.label>
+  <!-- EN: Heavy add-on module for capability to mount heavy weapons on mech iguana and gecko. -->
+  <DMS_TB_HeavyHydraulicFrame.description>一種適用於重型雙足機兵的外置液壓骨架和動力包，可以簡單的理解為機兵專用的外骨骼系統，能使重型機兵獲得更大的戰鬥負載容量，還可以安裝超重型武器。但作為代價會顯著提高機兵的重量與移動速度。</DMS_TB_HeavyHydraulicFrame.description>
+  <!-- EN: Use {0_label} -->
+  <DMS_TB_HeavyHydraulicFrame.comps.CompUsable.useLabel>安裝{0}</DMS_TB_HeavyHydraulicFrame.comps.CompUsable.useLabel>
   
 </LanguageData>

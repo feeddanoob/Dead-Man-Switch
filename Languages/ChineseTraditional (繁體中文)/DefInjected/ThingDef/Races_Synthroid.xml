@@ -3,7 +3,7 @@
   
   <!-- EN: lady -->
   <DMS_Mech_Lady.label>女士</DMS_Mech_Lady.label>
-  <!-- EN: lady -->
+  <!-- EN: The MG-1 Lady is a mech that makes heavy use of synthetic mechanical technology. It was originally designed to reduce the cognitive bias syndrome caused by long-term cooperation with machines in the military. Therefore, most of its anatomical structures are similar to humans, and its internal organs can almost be directly transplanted into the human body. However, due to its overly human-like appearance, it is only limitedly equipped for sniper troops and officers as sniper observers or bodyguards. -->
   <DMS_Mech_Lady.description>MG-1 Lady 是一種高度使用合成技術的機兵。設計之初是為了降低軍隊中人類長期與機兵協同作戰所帶來的認知偏差症候群因此在大部分解剖學結構上都與人類相似，內部器官也幾乎能直接移植人體。但由於其樣貌的過度似人因此僅有限的配備給狙擊手部隊與軍官作為狙擊觀察員或保鑣。</DMS_Mech_Lady.description>
   <!-- EN: head -->
   <DMS_Mech_Lady.tools.head.label>頭部</DMS_Mech_Lady.tools.head.label>
