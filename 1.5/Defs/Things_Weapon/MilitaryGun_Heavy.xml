@@ -522,7 +522,6 @@
 		</statBases>
 		<weaponTags>
 			<li>DMS_DragoonGun</li>
-			<li>Gun_Recoilless</li>
 		</weaponTags>
 		<recipeMaker>
 			<skillRequirements>
