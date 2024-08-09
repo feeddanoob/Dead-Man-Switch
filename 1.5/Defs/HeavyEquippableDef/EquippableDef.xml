@@ -34,10 +34,8 @@
 		<EquippableBaseBodySize>1.2</EquippableBaseBodySize>
 		<EquippableByRace/>
 		<EquippableWithHediff>
-            <li>BionicArm</li>
             <li>ArchotechArm</li>
             <li>DMS_SyntheticArm</li>
-            <li>DMS_ProstheticArm</li>
         </EquippableWithHediff>
 		<EquippableWithApparel>
 			<li>DMS_Apparel_BionicSuit</li>

@@ -528,9 +528,6 @@
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
-			<researchPrerequisites>
-				<li>MultibarrelWeapons</li>
-			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Tungsteel>120</Tungsteel>
@@ -625,9 +622,6 @@
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
-			<researchPrerequisites>
-				<li>MultibarrelWeapons</li>
-			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Tungsteel>200</Tungsteel>

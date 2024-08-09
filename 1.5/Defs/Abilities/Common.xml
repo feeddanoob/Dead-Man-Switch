@@ -5,7 +5,7 @@
 
 	<AbilityDef>
 		<defName>DMS_FlashLauncher</defName>
-		<label>flashbang barrage</label>
+		<label>Flashbang barrage</label>
 		<description>launch an indirect-fired flashbang grenade to stun the enemy to cover the retreat or assault.</description>
 		<iconPath>UI/Ability/Grenade</iconPath>
 		<aiCanUse>true</aiCanUse>
@@ -36,7 +36,7 @@
 	
 	<ThingDef ParentName="BaseBullet">
 		<defName>DMS_Bullet_FlashBang</defName>
-		<label>flashbang grenade</label>
+		<label>Flashbang grenade</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -58,7 +58,7 @@
 
 	<AbilityDef>
 		<defName>DMS_SmokeLauncher</defName>
-		<label>particle smoke barrage</label>
+		<label>Particle smoke barrage</label>
 		<description>launch an anti-charged weapon particle smole emitter to nullify incoming charged ammunition in short time.</description>
 		<iconPath>UI/Ability/Smoke</iconPath>
 		<aiCanUse>true</aiCanUse>
@@ -88,8 +88,8 @@
 
 	<AbilityDef>
 		<defName>DMS_MissileLauncher</defName>
-		<label>launch missile</label>
-		<description>launch a long range top-down attack missile to destory enemies, the missile takes long time to reload.</description>
+		<label>Launch missile</label>
+		<description>Launch a guided missile to destroy enemies from long ranges.</description>
 		<iconPath>UI/Ability/Missile</iconPath>
 		<aiCanUse>true</aiCanUse>
 		<cooldownTicksRange>120000~120000</cooldownTicksRange>
@@ -118,7 +118,7 @@
 
 	<AbilityDef>
 		<defName>DMS_LongJump</defName>
-		<label>bionic longjump</label>
+		<label>Bionic Longjump</label>
 		<description>Jump to a distant location using bionic muscles.</description>
 		<iconPath>UI/Abilities/MechLongJump</iconPath>
 		<cooldownTicksRange>600</cooldownTicksRange>
@@ -148,8 +148,8 @@
 
 	<AbilityDef>
 		<defName>DMS_RepairMode</defName>
-		<label>self-repair</label>
-		<description>initial self-repair mode to rebuild missing parts by electroactive memory metal, thus all sensors will temporarily work disabled to prevent electrical damage.</description>
+		<label>Self-repair</label>
+		<description>Initialize self-repair mode to rebuild missing parts by electroactive memory metal, thus all sensors will temporarily be disabled to prevent electrical damage.</description>
 		<iconPath>UI/Ability/SelfRepair</iconPath>
 		<cooldownTicksRange>120000</cooldownTicksRange> <!-- 2 day -->
 		<showPsycastEffects>false</showPsycastEffects>

@@ -29,7 +29,7 @@
   <ThingDef ParentName="DMS_BossCallerBase">
     <defName>DMS_DecoyRadio</defName>
     <label>decoy antenna</label>
-    <description>A modified signaling transponder. When activated, it puts out a powerful decoy signal, which will attract an out-command automatroid forces to attack. If you can defeat it, you can collect special technologies from its corpse. The signal pulse burns out the transmitter, so this building can only be used once.</description>
+    <description>A modified signaling transponder. When activated, it puts out a powerful decoy signal, which will attract an out-of-command group of automatroid forces to attack. If you can defeat them, you can collect special technologies from their corpses. The signal pulse fully burns out the transmitter, so this building can only be used once.</description>
     <graphicData>
       <texPath>Things/Building/Facility_Decoy</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -74,7 +74,7 @@
   <ThingDef ParentName="DMS_BossCallerBase">
     <defName>DMS_DecoyRadar</defName>
     <label>decoy radar</label>
-    <description>A phased array radar. When activated, it puts out a powerful Millimeter wave radiation signal, which will attract an automatroid to attack with escorts. If you can defeat it, you can collect special technologies from its corpse. The signal pulse burns out the transmitter, so this building can only be used once.</description>
+    <description>A phased array radar. When activated, it puts out a powerful millimeter wave radiation signal, which will attract an automatroid to attack with escorts. If you can defeat it, you can collect special technologies from its corpse. The signal pulse fully burns out the transmitter, so this building can only be used once.</description>
     <graphicData>
       <texPath>Things/Building/Facility_Decoy_B</texPath>
       <graphicClass>Graphic_Multi</graphicClass>

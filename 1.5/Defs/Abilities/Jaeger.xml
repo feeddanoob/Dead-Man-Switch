@@ -3,7 +3,7 @@
 	<!-- 隱身 -->
 	<AbilityDef ParentName="DMS_AddHediffSelfBase">
 		<defName>DMS_Camouflage</defName>
-		<label>active camouflage</label>
+		<label>Active camouflage</label>
 		<description>ffully blend into the environment by using nanomechanical coating-based active camouflage.</description>
 		<iconPath>UI/Ability/Camouflage</iconPath>
 		<aiCanUse>true</aiCanUse>

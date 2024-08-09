@@ -3,7 +3,7 @@
 	<!-- 衝刺 -->
 	<AbilityDef>
 		<defName>DMS_BurstSprint</defName>
-		<label>burst sprint</label>
+		<label>Burst sprint</label>
 		<description>By releasing the mechanical energy accumulated in leg units, Pioneer can perform amazing sprint speeds in a short period.</description>
 		<iconPath>UI/Ability/Burst</iconPath>
 		<cooldownTicksRange>1800</cooldownTicksRange> <!-- 30 seconds -->

@@ -549,7 +549,8 @@
         </statFactors>
         <statOffsets>
           <CarryBulk MayRequire="ceteam.combatextended">75</CarryBulk>
-          <CarryingCapacity>150</CarryingCapacity>
+          <CarryWeight MayRequire="ceteam.combatextended">120</CarryWeight>
+          <CarryingCapacity>120</CarryingCapacity>
           <MechEnergyUsageFactor>0.1</MechEnergyUsageFactor>
         </statOffsets>
       </li>
