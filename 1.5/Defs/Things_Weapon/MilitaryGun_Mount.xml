@@ -1,5 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+<!--DMS_Flameblaster 火焰發射器.-->
+	<ThingDef ParentName="DMS_BaseMakeableGun">
+		<defName>DMS_Flameblaster</defName>
+		<label>flameblaster</label>
+		<description>A flame launcher used by mechs that can effectively ignite flammable materials within a range</description>
+		<graphicData>
+		  <texPath>Things/Weapons/DMS_Flameblaster</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>1.4</drawSize>
+		</graphicData>
+		<costList>
+			<Chemfuel>75</Chemfuel>
+			<Tungsteel>10</Tungsteel>
+			<ComponentStamped>1</ComponentStamped>
+		</costList>
+		<statBases>
+		  <MarketValue>1000</MarketValue>
+		  <Mass>1.5</Mass>
+		  <AccuracyTouch>0.40</AccuracyTouch>
+		  <AccuracyShort>0.48</AccuracyShort>
+		  <AccuracyMedium>0.35</AccuracyMedium>
+		  <AccuracyLong>0.26</AccuracyLong>
+		  <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>      
+		</statBases>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>false</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<equippedDistanceOffset>-0.14</equippedDistanceOffset>
+		<tools>
+		  <li>
+			<label>barrel</label>
+			<capacities>
+			  <li>Blunt</li>
+			  <li>Poke</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>3.5</cooldownTime>
+		  </li>
+		</tools>
+		<weaponTags>
+		  <li>DMS_Flameblaster</li>
+		</weaponTags>
+		<verbs>
+		  <li>
+			<verbClass>Verb_SpewFire</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<warmupTime>0.5</warmupTime>
+			<range>7.9</range>
+			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			<burstShotCount>10</burstShotCount>
+			<soundCast>Shot_MiniFlameblaster</soundCast>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		  </li>
+		</verbs>
+		<comps>
+		</comps>
+		<modExtensions>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>MountedWeapon</EquippableDef>
+			</li>
+		</modExtensions>
+	</ThingDef>	
 	<!--原則上這些武器是完全固定在上面也拆不下來的，所以大多數數值都相同-->
 	<ThingDef Name="DMS_AutomatroidTurretGun" ParentName="BaseGun" Abstract="True">
     	<tradeability>None</tradeability>
@@ -23,7 +86,68 @@
 		<useHitPoints>false</useHitPoints>
 		<tools/>
 	</ThingDef>
-
+<!--DMS_Flameblaster 火焰發射器.-->
+	<ThingDef ParentName="DMS_BaseMakeableGun">
+		<defName>DMS_Flameblaster</defName>
+		<label>flameblaster</label>
+		<description>A flame launcher used by mechs that can effectively ignite flammable materials within a range</description>
+		<graphicData>
+		  <texPath>Things/Weapons/DMS_Flameblaster</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>1.4</drawSize>
+		</graphicData>
+		<costList>
+			<Chemfuel>75</Chemfuel>
+			<Tungsteel>10</Tungsteel>
+			<ComponentStamped>1</ComponentStamped>
+		</costList>
+		<statBases>
+		  <MarketValue>1000</MarketValue>
+		  <Mass>1.5</Mass>
+		  <AccuracyTouch>0.40</AccuracyTouch>
+		  <AccuracyShort>0.48</AccuracyShort>
+		  <AccuracyMedium>0.35</AccuracyMedium>
+		  <AccuracyLong>0.26</AccuracyLong>
+		  <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>      
+		</statBases>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>false</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<equippedDistanceOffset>-0.14</equippedDistanceOffset>
+		<tools>
+		  <li>
+			<label>barrel</label>
+			<capacities>
+			  <li>Blunt</li>
+			  <li>Poke</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>3.5</cooldownTime>
+		  </li>
+		</tools>
+		<weaponTags>
+		  <li>DMS_Flameblaster</li>
+		</weaponTags>
+		<verbs>
+		  <li>
+			<verbClass>Verb_SpewFire</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<warmupTime>0.5</warmupTime>
+			<range>7.9</range>
+			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			<burstShotCount>10</burstShotCount>
+			<soundCast>Shot_MiniFlameblaster</soundCast>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		  </li>
+		</verbs>
+		<comps>
+		</comps>
+		<modExtensions>
+			<li Class="DMS.HeavyEquippableExtension">
+				<EquippableDef>MountedWeapon</EquippableDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
 	<!--霰彈槍。-->
 	<ThingDef ParentName="DMS_AutomatroidTurretGun">
 		<defName>DMS_ShotgunGunMounted</defName>

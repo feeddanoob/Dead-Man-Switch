@@ -83,7 +83,7 @@
 				<isAlternately>true</isAlternately>
 			</li>
 			<li Class="DMS.HeavyEquippableExtension">
-				<EquippableDef>StandardAutomatroid</EquippableDef>
+				<EquippableDef>LightAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -151,7 +151,7 @@
 				<isAlternately>true</isAlternately>
 			</li>
 			<li Class="DMS.HeavyEquippableExtension">
-				<EquippableDef>StandardAutomatroid</EquippableDef>
+				<EquippableDef>LightAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -357,7 +357,7 @@
 				<isAlternately>true</isAlternately>
 			</li>
 			<li Class="DMS.HeavyEquippableExtension">
-				<EquippableDef>StandardAutomatroid</EquippableDef>
+				<EquippableDef>LightAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -493,7 +493,7 @@
 				<isAlternately>true</isAlternately>
 			</li>
 			<li Class="DMS.HeavyEquippableExtension">
-				<EquippableDef>StandardAutomatroid</EquippableDef>
+				<EquippableDef>LightAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -656,7 +656,7 @@
 				<isAlternately>true</isAlternately>
 			</li>
 			<li Class="DMS.HeavyEquippableExtension">
-				<EquippableDef>StandardAutomatroid</EquippableDef>
+				<EquippableDef>LightAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
 	</ThingDef>

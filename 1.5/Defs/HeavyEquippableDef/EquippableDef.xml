@@ -19,9 +19,13 @@
             <li>DMS_ProstheticArm</li>
         </EquippableWithHediff>
 		<EquippableWithApparel>
-            <li>Apparel_PowerArmor</li>
 			<li>DMS_Apparel_BionicSuit</li>
 			<li>DMS_Apparel_PowerSkelton</li>
+            <li>Apparel_PowerArmor</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarinePrestige</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarineGrenadier</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphract</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphractPhoenix</li>
 		</EquippableWithApparel>
 	</DMS.HeavyEquippableDef>
     
@@ -39,6 +43,10 @@
 			<li>DMS_Apparel_BionicSuit</li>
 			<li>DMS_Apparel_PowerSkelton</li>
             <li>Apparel_PowerArmor</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarinePrestige</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarineGrenadier</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphract</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphractPhoenix</li>
 		</EquippableWithApparel>
 	</DMS.HeavyEquippableDef>
 
@@ -55,6 +63,10 @@
 			<li>DMS_Apparel_BionicSuit</li>
 			<li>DMS_Apparel_PowerSkelton</li>
             <li>Apparel_PowerArmor</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarinePrestige</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarineGrenadier</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphract</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphractPhoenix</li>
 		</EquippableWithApparel>
 	</DMS.HeavyEquippableDef>
     
