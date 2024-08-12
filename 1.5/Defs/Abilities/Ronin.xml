@@ -5,8 +5,8 @@
 
 	<AbilityDef ParentName="DMS_AddHediffSelfBase">
 		<defName>DMS_Infrasound</defName>
-		<label>infrasound barrage</label>
-		<description>emit powerful infrasound waves that disrupt the sensory organs of all creatures within the range.</description>
+		<label>Infrasound Barrage</label>
+		<description>Cast powerful infrasound waves to interfere with the sensory systems of all creatures within its range.</description>
 		<iconPath>UI/Ability/Infrasound</iconPath>
 		<aiCanUse>true</aiCanUse>
 		<comps>
@@ -30,7 +30,7 @@
   
  <HediffDef>
 	<defName>DMS_InfrasoundWave</defName>
-	<label>infrasound barrage</label>
+	<label>Infrasound barrage</label>
 	<description>This unit is casting a powerful infrasound waves to interfere with the sensory systems of all creatures within the range.</description>
 	<hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>

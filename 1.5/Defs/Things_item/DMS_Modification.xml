@@ -187,9 +187,6 @@
           <IncomingDamageFactor>0.9</IncomingDamageFactor>
           <PawnTrapSpringChance>1.1</PawnTrapSpringChance>
         </statFactors>
-        <statOffsets>
-
-        </statOffsets>
       </li>
     </stages>
   </HediffDef>
@@ -439,6 +436,7 @@
           <MoveSpeed>0.9</MoveSpeed>
         </statFactors>
         <statOffsets>
+          <CarryBulk MayRequire="ceteam.combatextended">50</CarryBulk>
           <CarryingCapacity>200</CarryingCapacity>
           <MechEnergyUsageFactor>0.15</MechEnergyUsageFactor>
         </statOffsets>
@@ -550,7 +548,9 @@
           <MeleeDodgeChance>0.9</MeleeDodgeChance>
         </statFactors>
         <statOffsets>
-          <CarryingCapacity>150</CarryingCapacity>
+          <CarryBulk MayRequire="ceteam.combatextended">75</CarryBulk>
+          <CarryWeight MayRequire="ceteam.combatextended">120</CarryWeight>
+          <CarryingCapacity>120</CarryingCapacity>
           <MechEnergyUsageFactor>0.1</MechEnergyUsageFactor>
         </statOffsets>
       </li>
@@ -658,6 +658,7 @@
           <MeleeDodgeChance>0.9</MeleeDodgeChance>
         </statFactors>
         <statOffsets>
+          <CarryBulk MayRequire="ceteam.combatextended">-10</CarryBulk>
           <IncomingDamageFactor>-0.2</IncomingDamageFactor>
           <CarryingCapacity>-50</CarryingCapacity>
         </statOffsets>

@@ -19,26 +19,32 @@
             <li>DMS_ProstheticArm</li>
         </EquippableWithHediff>
 		<EquippableWithApparel>
-            <li>Apparel_PowerArmor</li>
 			<li>DMS_Apparel_BionicSuit</li>
 			<li>DMS_Apparel_PowerSkelton</li>
+            <li>Apparel_PowerArmor</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarinePrestige</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarineGrenadier</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphract</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphractPhoenix</li>
 		</EquippableWithApparel>
 	</DMS.HeavyEquippableDef>
     
 	<DMS.HeavyEquippableDef>
 		<defName>LightAutomatroid</defName>
-		<EquippableBaseBodySize>1.2</EquippableBaseBodySize>
+		<EquippableBaseBodySize>1.1</EquippableBaseBodySize>
 		<EquippableByRace/>
 		<EquippableWithHediff>
-            <li>BionicArm</li>
             <li>ArchotechArm</li>
             <li>DMS_SyntheticArm</li>
-            <li>DMS_ProstheticArm</li>
         </EquippableWithHediff>
 		<EquippableWithApparel>
 			<li>DMS_Apparel_BionicSuit</li>
 			<li>DMS_Apparel_PowerSkelton</li>
             <li>Apparel_PowerArmor</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarinePrestige</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarineGrenadier</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphract</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphractPhoenix</li>
 		</EquippableWithApparel>
 	</DMS.HeavyEquippableDef>
 
@@ -55,6 +61,10 @@
 			<li>DMS_Apparel_BionicSuit</li>
 			<li>DMS_Apparel_PowerSkelton</li>
             <li>Apparel_PowerArmor</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarinePrestige</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarineGrenadier</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphract</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphractPhoenix</li>
 		</EquippableWithApparel>
 	</DMS.HeavyEquippableDef>
     

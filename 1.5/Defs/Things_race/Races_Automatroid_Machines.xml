@@ -99,7 +99,7 @@
   <ThingDef ParentName="BaseDMSMachine">
     <defName>DMS_Machine_TrashBin</defName>
     <label>trash bin</label>
-    <description>cylindrical service robots used in Midworld cities provide road cleaning, express and food delivery services, and to be the first to assist in evacuation and maintain order when emergencies occur.</description>
+    <description>Cylindrical service robots used in Midworld cities to provide road cleaning, express and food delivery services, and to be the first to assist in evacuation and maintain order when emergencies occur.</description>
     <statBases>
       <CleaningSpeed>0.85</CleaningSpeed>
       <MoveSpeed>3.7</MoveSpeed>
@@ -177,7 +177,7 @@
   <!-- 武裝四軸 -->
   <ThingDef Name="VerlingBirdBase" ParentName="BaseDMSMachine" Abstract="True">
     <label>verling bird</label>
-    <description>A quad-drone for reconnaissance. It is quite fragile for combat but moves extremely fast. can equipped with small-caliber gun or grenade to provide certain containment capabilities.</description>
+    <description>A quad-drone for reconnaissance. It is quite fragile for combat but moves extremely fast. It can be equipped with a small-caliber gun or grenade to provide certain containment capabilities.</description>
     <statBases>
       <MoveSpeed>10</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0</ArmorRating_Blunt>                                     <!--護甲-->

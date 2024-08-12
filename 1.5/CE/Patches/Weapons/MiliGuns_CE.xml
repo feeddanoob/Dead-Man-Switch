@@ -131,8 +131,7 @@
                     <li>CE_AI_Pistol</li>
                 </weaponTags>
             </li>
-
-            <!--=====PDW =====-->
+            <!--===== PDW =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_PDW</defName>
                 <statBases>
@@ -201,7 +200,7 @@
                 </value>
             </li>
 
-            <!--=====AssaultPiercer =====-->
+            <!--===== AssaultPiercer =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_AssaultPiercer</defName>
                 <statBases>
@@ -342,8 +341,52 @@
                     <li>CE_AI_AR</li>
                 </weaponTags>
             </li>
+            <!--===== Marksman Rifle =====-->
 
-            <!--=====Semi-auto Rifle =====-->
+            <!--===== Marksman Rifle =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>DMS_MarksmanRifle</defName>
+                <statBases>
+                    <Mass>12.54</Mass>
+                    <Bulk>14.65</Bulk>
+                    <SwayFactor>1.86</SwayFactor>
+                    <ShotSpread>0.02</ShotSpread>
+                    <SightsEfficiency>2.45</SightsEfficiency>
+                    <RangedWeapon_Cooldown>1.16</RangedWeapon_Cooldown>
+                </statBases>
+                <Properties>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+                    <warmupTime>2.5</warmupTime>
+                    <range>86</range>
+                    <soundCast>Shot_AssaultRifle</soundCast>
+                    <soundCastTail>GunTail_Medium</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                    <recoilAmount>2.36</recoilAmount>
+                </Properties>
+                <AmmoUser>
+                    <magazineSize>15</magazineSize>
+                    <reloadTime>5.3</reloadTime>
+                    <ammoSet>AmmoSet_50BMG</ammoSet>
+                </AmmoUser>
+                <FireModes>
+                    <aiAimMode>AimedShot</aiAimMode>
+                </FireModes>
+                <weaponTags>
+                    <li>CE_AI_SR</li>
+                </weaponTags>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="DMS_MarksmanRifle"]/modExtensions/li[@Class="DMS.HeavyEquippableExtension"]</xpath>
+                <value>
+                    <li Class="DMS.HeavyEquippableExtension">
+                        <EquippableDef>AverageHumanCanUse</EquippableDef>
+                    </li>
+                </value>
+            </li>
+
+            <!--===== Semi-auto Rifle =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_SemiAutoRifle</defName>
                 <statBases>
@@ -418,41 +461,6 @@
                 </weaponTags>
             </li>
 
-            <!--===== Marksman Rifle =====-->
-            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                <defName>DMS_MarksmanRifle</defName>
-                <statBases>
-                    <Mass>12.54</Mass>
-                    <Bulk>14.65</Bulk>
-                    <SwayFactor>1.86</SwayFactor>
-                    <ShotSpread>0.02</ShotSpread>
-                    <SightsEfficiency>2.45</SightsEfficiency>
-                    <RangedWeapon_Cooldown>1.16</RangedWeapon_Cooldown>
-                </statBases>
-                <Properties>
-                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-                    <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-                    <warmupTime>2.5</warmupTime>
-                    <range>86</range>
-                    <soundCast>Shot_AssaultRifle</soundCast>
-                    <soundCastTail>GunTail_Medium</soundCastTail>
-                    <muzzleFlashScale>9</muzzleFlashScale>
-                    <recoilAmount>2.36</recoilAmount>
-                </Properties>
-                <AmmoUser>
-                    <magazineSize>15</magazineSize>
-                    <reloadTime>5.3</reloadTime>
-                    <ammoSet>AmmoSet_50BMG</ammoSet>
-                </AmmoUser>
-                <FireModes>
-                    <aiAimMode>AimedShot</aiAimMode>
-                </FireModes>
-                <weaponTags>
-                    <li>CE_AI_SR</li>
-                </weaponTags>
-            </li>
-
             <!--===== Anti-material rifle =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_AntiMaterialRifle</defName>
@@ -487,6 +495,14 @@
                     <li>Bipod_AMR</li>
                     <li>CE_AI_SR</li>
                 </weaponTags>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="DMS_AntiMaterialRifle"]/modExtensions/li[@Class="DMS.HeavyEquippableExtension"]</xpath>
+                <value>
+                    <li Class="DMS.HeavyEquippableExtension">
+                        <EquippableDef>AverageHumanCanUse</EquippableDef>
+                    </li>
+                </value>
             </li>
 
             <!--===== sniper cannon =====-->

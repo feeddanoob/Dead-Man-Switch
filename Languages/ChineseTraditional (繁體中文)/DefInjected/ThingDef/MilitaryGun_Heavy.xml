@@ -127,7 +127,7 @@
   <!-- EN: mech HMG -->
   <DMS_HeavyMachineGun.label>機兵重機槍</DMS_HeavyMachineGun.label>
   <!-- EN: heavy machine gun for mech soldier or infantry support platform.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
-  <DMS_HeavyMachineGun.description> 一挺發射大口徑機槍彈的重型機槍，普遍用於重型機兵或步兵支援平台。\n\n這種武器是專門為機兵設計的，因為其重量因此所以只有特定的機兵才能操作。</DMS_HeavyMachineGun.description>
+  <DMS_HeavyMachineGun.description>一挺發射大口徑機槍彈的重型機槍，普遍用於重型機兵或步兵支援平台。\n\n這種武器是專門為機兵設計的，因為其重量因此所以只有特定的機兵才能操作。</DMS_HeavyMachineGun.description>
   <!-- EN: stock -->
   <DMS_HeavyMachineGun.tools.stock.label>槍托</DMS_HeavyMachineGun.tools.stock.label>
   <!-- EN: barrel -->
