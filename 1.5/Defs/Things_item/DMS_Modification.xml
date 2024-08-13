@@ -99,6 +99,12 @@
             <offset>-0.15</offset>
           </li>
         </capMods>
+        <damageFactors>
+          <Bomb>0.25</Bomb>
+          <BombSuper>0.1</BombSuper>
+          <Thump>0</Thump>
+          <Extinguish>0</Extinguish>
+        </damageFactors>
         <statOffsets>
           <ArmorRating_Heat>0.5</ArmorRating_Heat>
         </statOffsets>

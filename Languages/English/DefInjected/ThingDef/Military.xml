@@ -26,6 +26,11 @@
   <!-- EN: a soft cap for military man when combat helmet is not required. -->
   <DMS_Apparel_SoftKepi.description>Yet another soft cap headgear for a soldier when a combat helmet is not required. Stylish too.</DMS_Apparel_SoftKepi.description>
   
+  <!-- EN: tactical cloak -->
+  <DMS_Apparel_TacticalCloak.label>Tactical cloak</DMS_Apparel_TacticalCloak.label>
+  <!-- EN: An tactical camouflage cloak equipped by magiers and special forces in colonial fleet. -->
+  <DMS_Apparel_TacticalCloak.description>An tactical camouflage cloak equipped by magiers and special forces in colonial fleet.</DMS_Apparel_TacticalCloak.description>
+    
   <!-- EN: tactical helmet -->
   <DMS_Apparel_TacticalHelmet.label>Tactical helmet</DMS_Apparel_TacticalHelmet.label>
   <!-- EN: A lightweight combat helmet with a complex design, reinforced with plasteel. Not effective against blunt weapons. -->

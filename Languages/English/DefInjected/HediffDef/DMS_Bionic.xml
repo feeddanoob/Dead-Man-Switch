@@ -24,12 +24,26 @@
   <!-- EN: a bionic sensor -->
   <DMS_ProstheticEye.labelNoun>a bionic sensor</DMS_ProstheticEye.labelNoun>
   
+  <!-- EN: mechaneural kidney -->
+  <DMS_ProstheticKidney.label>mechaneural kidney</DMS_ProstheticKidney.label>
+  <!-- EN: An installed neural-mechanical kidney. -->
+  <DMS_ProstheticKidney.description>An installed neural-mechanical kidney.</DMS_ProstheticKidney.description>
+  <!-- EN: a neural-mechanical kidney -->
+  <DMS_ProstheticKidney.labelNoun>a neural-mechanical kidney</DMS_ProstheticKidney.labelNoun>
+  
   <!-- EN: mechaneural leg -->
   <DMS_ProstheticLeg.label>mechaneural leg</DMS_ProstheticLeg.label>
   <!-- EN: An installed neural-mechanical leg. -->
   <DMS_ProstheticLeg.description>An installed neural-mechanical leg.</DMS_ProstheticLeg.description>
   <!-- EN: a neural-mechanical leg -->
   <DMS_ProstheticLeg.labelNoun>a neural-mechanical leg</DMS_ProstheticLeg.labelNoun>
+  
+  <!-- EN: mechaneural lung -->
+  <DMS_ProstheticLung.label>mechaneural lung</DMS_ProstheticLung.label>
+  <!-- EN: An installed neural-mechanical lung. -->
+  <DMS_ProstheticLung.description>An installed neural-mechanical lung.</DMS_ProstheticLung.description>
+  <!-- EN: a neural-mechanical lung -->
+  <DMS_ProstheticLung.labelNoun>a neural-mechanical lung</DMS_ProstheticLung.labelNoun>
   
   <!-- EN: mechaneural neurochord -->
   <DMS_ProstheticSpine.label>mechaneural neurochord</DMS_ProstheticSpine.label>

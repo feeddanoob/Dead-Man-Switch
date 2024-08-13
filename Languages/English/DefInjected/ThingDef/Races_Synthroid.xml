@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: lady -->
+  <DMS_Mech_Lady.label>lady</DMS_Mech_Lady.label>
+  <!-- EN: The MG-1 Lady is a mech that makes heavy use of synthetic mechanical technology. It was originally designed to reduce the cognitive bias syndrome caused by long-term cooperation with machines in the military. Therefore, most of its anatomical structures are similar to humans, and its internal organs can almost be directly transplanted into the human body. However, due to its overly human-like appearance, it is only limitedly equipped for sniper troops and officers as sniper observers or bodyguards. -->
+  <DMS_Mech_Lady.description>The MG-1 Lady is a mech that makes heavy use of synthetic mechanical technology. It was originally designed to reduce the cognitive bias syndrome caused by long-term cooperation with machines in the military. Therefore, most of its anatomical structures are similar to humans, and its internal organs can almost be directly transplanted into the human body. However, due to its overly human-like appearance, it is only limitedly equipped for sniper troops and officers as sniper observers or bodyguards.</DMS_Mech_Lady.description>
+  <!-- EN: head -->
+  <DMS_Mech_Lady.tools.head.label>head</DMS_Mech_Lady.tools.head.label>
+  <!-- EN: left fist -->
+  <DMS_Mech_Lady.tools.left_fist-0.label>left fist</DMS_Mech_Lady.tools.left_fist-0.label>
+  <!-- EN: right fist -->
+  <DMS_Mech_Lady.tools.right_fist-0.label>right fist</DMS_Mech_Lady.tools.right_fist-0.label>
+  <!-- EN: left fist -->
+  <DMS_Mech_Lady.tools.left_fist-1.label>left fist</DMS_Mech_Lady.tools.left_fist-1.label>
+  <!-- EN: right fist -->
+  <DMS_Mech_Lady.tools.right_fist-1.label>right fist</DMS_Mech_Lady.tools.right_fist-1.label>
+  
+</LanguageData>

@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
+  <!-- EN: C-Ration -->
+  <DMS_CombatRation.label>C-Ration</DMS_CombatRation.label>
+  <!-- EN: A block high energy organic polymer ration, invented during World War III as a nutritional supplement for reinforced human troops during combat. For soldiers equipped with nutritional interfaces, it can provide just enough calories for internal organs to function for a long while. But for normal humans, it might cause some slight gastrointestinal discomfort. -->
+  <DMS_CombatRation.description>A block high energy organic polymer ration, invented during World War III as a nutritional supplement for reinforced human troops during combat. For soldiers equipped with nutritional interfaces, it can provide just enough calories for internal organs to function for a long while. But for normal humans, it might cause some slight gastrointestinal discomfort.</DMS_CombatRation.description>
+  <!-- EN: Take {0} -->
+  <DMS_CombatRation.ingestible.ingestCommandString>Take {0}</DMS_CombatRation.ingestible.ingestCommandString>
+  <!-- EN: Taking {0}. -->
+  <DMS_CombatRation.ingestible.ingestReportString>Taking {0}.</DMS_CombatRation.ingestible.ingestReportString>
   
   <!-- EN: Neuroglue -->
   <Neuroglue.label>Neuroglue</Neuroglue.label>

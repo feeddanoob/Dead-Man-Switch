@@ -28,7 +28,21 @@
   <DMS_InstallProstheticLeg.description>Install a neural-mechanical leg.</DMS_InstallProstheticLeg.description>
   <!-- EN: Installing neural-mechanical leg. -->
   <DMS_InstallProstheticLeg.jobString>Installing neural-mechanical leg.</DMS_InstallProstheticLeg.jobString>
+
+  <!-- EN: install mechaneural kidney -->
+  <DMS_InstallProstheticKidney.label>Install a mechaneural kidney</DMS_InstallProstheticKidney.label>
+  <!-- EN: Install a neural-mechanical kidney. -->
+  <DMS_InstallProstheticKidney.description>Install a neural-mechanical kidney.</DMS_InstallProstheticKidney.description>
+  <!-- EN: Installing neural-mechanical kidney. -->
+  <DMS_InstallProstheticKidney.jobString>Installing neural-mechanical kidney.</DMS_InstallProstheticKidney.jobString>
   
+  <!-- EN: install mechaneural lung -->
+  <DMS_InstallProstheticLung.label>Install a mechaneural lung</DMS_InstallProstheticLung.label>
+  <!-- EN: Install a neural-mechanical lung. -->
+  <DMS_InstallProstheticLung.description>Install a neural-mechanical lung.</DMS_InstallProstheticLung.description>
+  <!-- EN: Installing neural-mechanical lung. -->
+  <DMS_InstallProstheticLung.jobString>Installing neural-mechanical lung.</DMS_InstallProstheticLung.jobString>
+
   <!-- EN: install sensory filter -->
   <DMS_InstallSensoryFilter.label>Install a sensory filter</DMS_InstallSensoryFilter.label>
   <!-- EN: Install a sensory filter. -->
