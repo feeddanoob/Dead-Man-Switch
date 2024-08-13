@@ -28,7 +28,7 @@
   <DMS_Mech_Kanonier.tools.right_fist.label>right fist</DMS_Mech_Kanonier.tools.right_fist.label>
   
   <!-- EN: sergeant -->
-  <DMS_Mech_Sergeant.label>sergeant</DMS_Mech_Sergeant.label>
+  <DMS_Mech_Sergeant.label>Sergeant</DMS_Mech_Sergeant.label>
   <!-- EN: As a relay command variant of a mech soldat, it has a very recognizable disc-shaped omnidirectional radar and transceiver antenna. it can be the mechnitor command relay but due to its weight with reduced fire control system, which can only equip a light weapon for self defense. -->
   <DMS_Mech_Sergeant.description>As a relay command variant of a mech soldat, it has a very recognizable disc-shaped omnidirectional radar and transceiver antenna. it can be the mechnitor command relay but due to its weight with reduced fire control system, which can only equip a light weapon for self defense.</DMS_Mech_Sergeant.description>
   <!-- EN: head -->
@@ -39,7 +39,7 @@
   <DMS_Mech_Sergeant.tools.right_fist.label>right fist</DMS_Mech_Sergeant.tools.right_fist.label>
   
   <!-- EN: soldat -->
-  <DMS_Mech_Soldat.label>soldat</DMS_Mech_Soldat.label>
+  <DMS_Mech_Soldat.label>Soldat</DMS_Mech_Soldat.label>
   <!-- EN: A biped humanoid robot imitated design from the combat unit of mechanoids, can equipped with weapons that humans can use. \n\n Although the carried battery backpack having a long battery life, but is also makes it unable to fight like a genuine mech walkers without cover. -->
   <DMS_Mech_Soldat.description>A biped humanoid robot imitated design from the combat unit of mechanoids, can equipped with weapons that humans can use. 
 
