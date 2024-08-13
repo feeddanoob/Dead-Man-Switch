@@ -87,7 +87,7 @@
     <weaponTags><!--武器-->
       <li>SimpleGun</li>
       <li>ShortShots</li>
-      <li>SurvivalRifle</li>
+      <li>IndustrialGun</li>
     </weaponTags>
   </PawnKindDef>
 
@@ -185,6 +185,9 @@
           <li>GrenadeEMP</li>
           <li>GrenadeSmoke</li>
           <li>GrenadeFlame</li>
+          <li>GunGrenadeLauncher</li>
+          <li>CE_GrenadeNeolithic</li>
+          <li>DMS_Grenadier</li>
         </UsableWeaponTags>
         <BypassUsableWeapons>
           <li>Gun_IncendiaryLauncher</li>
@@ -232,7 +235,7 @@
       <li>GrenadeDestructive</li>
       <li>GrenadeEMP</li>
       <li>GrenadeSmoke</li>
-      <li>GrenadeFlame</li>                                                                 
+      <li>GrenadeFlame</li>                                                              
     </weaponTags>
     <weaponMoney>570~3000</weaponMoney>
     <abilities>
@@ -255,6 +258,7 @@
           <li>DMS_MechWeaponLight</li>
           <li>GunSingleUse</li>
           <li>Gun_Recoilless</li>
+          <li>DMS_Kanon</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>

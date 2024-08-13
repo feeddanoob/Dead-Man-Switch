@@ -51,7 +51,6 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<modExtensions/>
 	</ThingDef>
 
 	<ThingDef Name="DMS_BaseMakeableGun" ParentName="DMS_AutomatroidGun" Abstract="True">

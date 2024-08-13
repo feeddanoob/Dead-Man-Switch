@@ -11,7 +11,7 @@
 					<li Class="CombatExtended.LoadoutPropertiesExtension">
 						<primaryMagazineCount>
 							<min>3</min>
-							<max>5</max>
+							<max>6</max>
 						</primaryMagazineCount>
 					</li>
 				</value>
@@ -22,8 +22,8 @@
 				<value>
 					<li Class="CombatExtended.LoadoutPropertiesExtension">
 						<primaryMagazineCount>
-							<min>3</min>
-							<max>6</max>
+							<min>2</min>
+							<max>4</max>
 						</primaryMagazineCount>
 						<forcedSidearm>
 							<sidearmMoney>
@@ -45,7 +45,9 @@
 			<li Class="PatchOperationAddModExtension">
 				<xpath>Defs/PawnKindDef[
 				    defName="DMS_Mech_Soldat" or
-					defName="DMS_Mech_Sergeant"
+					defName="DMS_Mech_Sergeant" or
+					defName="DMS_Mech_Raider" or
+					defName="DMS_Mech_Soldat_B"
 					]</xpath>
 				<value>
 					<li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -91,6 +93,7 @@
 					<ArmorRating_Heat>0.1</ArmorRating_Heat>
 				</value>
 			</li>
+			<!--
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Sergeant"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
@@ -102,7 +105,7 @@
 				<value>
 					<ArmorRating_Sharp>6</ArmorRating_Sharp>
 				</value>
-			</li>
+			</li>-->
 
 			<li Class="PatchOperationConditional">
 				<xpath>Defs/ThingDef[@Name="BaseMechRace_Soldat"]/comps</xpath>
@@ -145,16 +148,38 @@
 				</value>
 			</li>
 
+			<!--patch Grenadier's weapon tag to let it use more CE grenades and launchers-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="DMS_Mech_Grenadier"]/weaponTags</xpath>
+				<value>
+					<li>GunGrenadeLauncher</li>
+                    <li>DMS_Grenadier</li>
+				</value>
+			</li>
+
 			<!--higher capacity for at least 3 single use launchers-->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Kanonier"]</xpath>
 				<value>
 					<statBases>
-						<CarryWeight>60</CarryWeight>
-						<CarryBulk>40</CarryBulk>
+						<CarryWeight>65</CarryWeight>
+						<CarryBulk>45</CarryBulk>
 					</statBases>
 				</value>
 			</li>
+
+			<!--patch Kanonier's weapon tag to let it use more CE launchers, also remove recoilless due to its immense weight-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="DMS_Mech_Kanonier"]/weaponTags</xpath>
+				<value>
+					<weaponTags>
+						<li>GunSingleUse</li>
+						<li>DMS_Kanon</li>                                                          
+					</weaponTags>
+				</value>
+			</li>
+
+
 		</operations>
 	</Operation>
 </Patch>
