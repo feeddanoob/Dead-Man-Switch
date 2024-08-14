@@ -6,16 +6,14 @@
         <operations>
 
 
-            <!--Remove
-            speed penalty-->
+            <!--Remove speed penalty-->
             <li Class="PatchOperationRemove">
                 <xpath>Defs/ThingDef[defName="DMS_SniperGrenadeLauncher" or
-                    defName="DMS_ElephantGun"
-                    ]/equippedStatOffsets/MoveSpeed</xpath>
+                                     defName="DMS_ElephantGun"
+                                    ]/equippedStatOffsets/MoveSpeed</xpath>
             </li>
 
-            <!--=====
-            Pocket Pistol =====-->
+            <!--=====Pocket Pistol =====-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_KnuckledusterRevolver"]/tools</xpath>
                 <value>
@@ -96,8 +94,7 @@
                 </weaponTags>
             </li>
 
-            <!--=====
-            Riot Revolver =====-->
+            <!--=====Riot Revolver =====-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_Revolver"]/tools</xpath>
                 <value>
@@ -165,8 +162,7 @@
                 </weaponTags>
             </li>
 
-            <!--=====
-            Riot Shotgun =====-->
+            <!--=====Riot Shotgun =====-->
             <li Class="PatchOperationReplace">
                 <xpath>
                     Defs/ThingDef[defName="DMS_RiotShotgun"]/tools
@@ -418,6 +414,7 @@
                     <soundCast>DMS_SniperRifle_Shot</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
+                    <recoilAmount>2.63</recoilAmount>
                 </Properties>
                 <AmmoUser>
                     <magazineSize>1</magazineSize>

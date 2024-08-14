@@ -67,7 +67,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="BaseAutomatroidRace"]/statBases</xpath>
 				<value>
-					<PartialArmorBody>4</PartialArmorBody>
+					<PartialArmorBody>0</PartialArmorBody>
 				</value>
 			</li>
 
