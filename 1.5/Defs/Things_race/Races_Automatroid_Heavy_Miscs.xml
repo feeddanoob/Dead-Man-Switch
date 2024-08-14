@@ -7,6 +7,7 @@
     <label>ape</label>
     <description>An prototype design on testing the feasibility of humanoid automatroid, it's designed to equip with heavy weapon.</description>
     <statBases>
+      <StaggerDurationFactor>0.25</StaggerDurationFactor>
       <MoveSpeed>3</MoveSpeed>                                                              <!--移動速度-->
       <ArmorRating_Blunt>0.6</ArmorRating_Blunt>                                            <!--護甲-->
       <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
@@ -27,18 +28,12 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
-          <li>HeavyGun</li><!--重型武器拓展-->
-          <li>WarcasketBasic</li><!--戰棺海盜拓展-->
+          <li MayRequire="vanillaexpanded.vwehw">HeavyGun</li><!--重型武器拓展-->
           <li>DMS_MechWeaponLight</li>
           <li>DMS_MechWeaponMeduim</li>
           <li>A_SuppressWeapon</li>
           <li>DMS_MechWeaponHeavy</li>
           <li>Gun_Recoilless</li>
-          <li>PLA_AssaultRifle</li>
-          <li>PLA_Shotgun</li>
-          <li>PLA_SMG</li>
-          <li>PLA_Pistol</li>
-          <li>PLA_HMG</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>

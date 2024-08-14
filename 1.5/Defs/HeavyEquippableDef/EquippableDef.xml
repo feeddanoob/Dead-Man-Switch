@@ -65,6 +65,7 @@
 			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarineGrenadier</li>
 			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphract</li>
 			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphractPhoenix</li>
+			<!-- TODO <li>DMS_Apparel_MobileDragoonCore</li> -->
 		</EquippableWithApparel>
 	</DMS.HeavyEquippableDef>
     
@@ -75,6 +76,7 @@
 		<EquippableWithHediff/>
 		<EquippableWithApparel>
 			<li>DMS_Apparel_PowerSkelton</li>
+			<!-- TODO <li>DMS_Apparel_MobileDragoonCore</li> -->
 		</EquippableWithApparel>
 	</DMS.HeavyEquippableDef>
 

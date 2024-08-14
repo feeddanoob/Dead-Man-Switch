@@ -17,13 +17,6 @@
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
       <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">30</ControlTakingTime>
     </statBases>
-    <inspectorTabs Inherit="False">
-      <li>ITab_Pawn_Health</li>
-      <li>ITab_Pawn_Needs</li>
-      <li>ITab_Pawn_FormingCaravan</li>
-      <li>ITab_Pawn_Gear</li>
-      <li>ITab_Pawn_Log</li>
-    </inspectorTabs>
     <tools>
       <li>
         <label>left fist</label>
@@ -117,17 +110,10 @@
 		      <li>A_BR_LongRifle</li>
           <li>A_MG_Light</li>
           <li>A_SR_GrenadeLauncher</li>
-          <li>PLA_GrenadeLauncher</li>
-          <li>PLA_AMR</li>
           <li>A_MG_Heavy</li>
           <li>ElephantGun</li>
           <li>SniperRifle</li>
           <li>AssaultRifle</li>
-          <li>PLA_AssaultRifle</li>
-          <li>PLA_Sniper</li>
-          <li>PLA_DMR</li>
-          <li>PLA_Pistol</li>
-          <li>PLA_LMG</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>

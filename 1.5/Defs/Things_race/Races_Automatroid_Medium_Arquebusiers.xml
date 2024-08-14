@@ -41,11 +41,6 @@
           <li>ElephantGun</li>
           <li>SniperRifle</li>
           <li>AssaultRifle</li>
-          <li>PLA_AssaultRifle</li>
-          <li>PLA_Sniper</li>
-          <li>PLA_DMR</li>
-          <li>PLA_Pistol</li>
-          <li>PLA_LMG</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -117,9 +112,6 @@
 		      <li>A_BR_LongRifle</li>
           <li>SniperRifle</li>
           <li>AssaultRifle</li>
-          <li>PLA_AssaultRifle</li>
-          <li>PLA_DMR</li>
-          <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>false</EnableTechLevelFilter>
         <BypassUsableWeapons>
@@ -184,11 +176,6 @@
           <li>A_DMR_LongRifle</li>
           <li>ElephantGun</li>
           <li>AssaultRifle</li>
-          <li>PLA_AssaultRifle</li>
-          <li>PLA_Shotgun</li>
-          <li>PLA_SMG</li>
-          <li>PLA_Pistol</li>
-          <li>PLA_RocketLauncher</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -255,10 +242,6 @@
           <li>A_DMR_LongRifle</li>
           <li>AssaultRifle</li>
           <li>A_SR_GrenadeLauncher</li>
-          <li>PLA_AssaultRifle</li>
-          <li>PLA_GrenadeLauncher</li>
-          <li>PLA_Sniper</li>
-          <li>PLA_AMR</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -266,8 +249,6 @@
         </UsableTechLevels>
         <BypassUsableWeapons>
           <li MayRequire="vanillaexpanded.vwehw">VWE_Gun_UraniumSlugRifle</li><!-- 重武器拓展鈾彈槍 -->
-          <li MayRequire="oskarpotocki.vfe.pirates">VFEP_WarcasketGun_UraniumSlugRifle</li><!-- 戰棺拓展鈾彈槍 -->
-          <li MayRequire="oskarpotocki.vfe.pirates">VFEP_WarcasketGun_ChargeLance</li><!-- 戰棺拓展電荷標槍 -->
         </BypassUsableWeapons>
       </li>
       <li Class="DMS.TurretMannableExtension"/>

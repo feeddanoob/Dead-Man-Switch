@@ -25,7 +25,6 @@
         <UsableWeaponTags>
           <li>SimpleGun</li>
           <li>ShortShots</li>
-          <li>WarcasketBasic</li>
           <li>DMS_MechWeaponShotgun</li>
           <li>DMS_MechWeaponLight</li>
           <li>A_AR_LongRifle</li>
@@ -33,9 +32,6 @@
           <li>MedievalMeleeAdvanced</li>
           <li>DMS_MeleeWeapon</li>
           <li>UltratechMelee</li>
-          <li>PLA_Shotgun</li>
-          <li>PLA_SMG</li>
-          <li>PLA_Pistol</li>
           <li>A_AP</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
@@ -88,6 +84,7 @@
     <label>siegebreaker</label>
     <description>With better armor protection, siegebreaker stands in the most front of the line for sapping and breaching jobs, breaking through enemy defenses.</description>
     <statBases>
+      <StaggerDurationFactor>0.25</StaggerDurationFactor>
       <MoveSpeed>4.3</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0.92</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>1.25</ArmorRating_Sharp>
@@ -106,15 +103,11 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>SimpleGun</li>
-          <li>WarcasketBasic</li><!--海盜拓展的戰棺武器-->
           <li>DMS_MechWeaponBreach</li>
           <li>DMS_MechWeaponLight</li>
           <li>MedievalMeleeBasic</li>
           <li>MedievalMeleeAdvanced</li>
           <li>DMS_MeleeWeapon</li>
-          <li>PLA_Shotgun</li>
-          <li>PLA_SMG</li>
-          <li>PLA_Pistol</li>
           <li>Flamethrower</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
@@ -164,6 +157,7 @@
     <label>protector</label>
     <description>Designed for peacekeeping operations and riot control need, Protector has overall strong armor around the frame, equip with a huge flash shield and close quater weapons like batons or shotguns.</description>
     <statBases>
+      <StaggerDurationFactor>0.25</StaggerDurationFactor>
       <MoveSpeed>5</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0.80</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>1.40</ArmorRating_Sharp>
@@ -184,16 +178,12 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
-          <li>CE_OneHandedWeapon</li><!--CE單手武器-->
           <li>A_RC</li>
           <li>DMS_MechWeaponLight</li>
           <li>DMS_MeleeWeapon</li><!--砍刀和WIP的電棍-->
           <li>MedievalMeleeBasic</li><!--槌子-->
           <li>MedievalMeleeAdvanced</li><!--長劍-->
           <li>ShortShots</li>
-          <li>PLA_Shotgun</li>
-          <li>PLA_SMG</li>
-          <li>PLA_Pistol</li>
           <li>Flamethrower</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
@@ -302,7 +292,6 @@
         <UsableWeaponTags>
           <li>SimpleGun</li>
           <li>ShortShots</li>
-          <li>WarcasketBasic</li>
           <li>DMS_MechWeaponShotgun</li>
           <li>DMS_MechWeaponLight</li>
           <li>A_AR_LongRifle</li>
@@ -312,11 +301,6 @@
           <li>AssaultRifle</li>
           <li>Minigun</li>
           <li>V_Gatling556mm</li>
-          <li>PLA_SimpleGun</li>
-          <li>PLA_SemiAutoRifle</li>
-          <li>PLA_Shotgun</li>
-          <li>PLA_SMG</li>
-          <li>PLA_Pistol</li>
           <li>A_AP</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>

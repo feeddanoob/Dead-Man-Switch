@@ -32,12 +32,7 @@
         <UsableWeaponTags>
           <li>SimpleGun</li>
           <li>ShortShots</li>
-          <li>PLA_SimpleGun</li>
-          <li>PLA_SemiAutoRifle</li>
           <li>CE_SMG</li>
-          <li>PLA_Shotgun</li>
-          <li>PLA_SMG</li>
-          <li>PLA_Pistol</li>
           <li>DMS_MechWeaponLight</li>
           <li>IndustrialGun</li>
         </UsableWeaponTags>
@@ -159,7 +154,6 @@
     <weaponTags><!--武器-->
       <li>SimpleGun</li>
       <li>ShortShots</li>
-      <li>WarcasketBasic</li>
     </weaponTags>
   </PawnKindDef>
 
@@ -177,7 +171,6 @@
         <UsableWeaponTags>
           <li>SimpleGun</li>
           <li>Autopistol</li>
-          <li>PLA_Pistol</li>
           <li>DMS_MechWeaponLight</li>
           <li>A_MG_GrenadeLauncher</li>
           <li>A_SR_GrenadeLauncher</li>
@@ -250,7 +243,6 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>SimpleGun</li>
-          <li>PLA_Pistol</li>
           <li>Autopistol</li>
           <li>DMS_MechWeaponLight</li>
           <li>GunSingleUse</li>
@@ -330,9 +322,6 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
-          <li>CE_OneHandedWeapon</li>
-          <li>CE_AI_Pistol</li>
-          <li>PLA_Pistol</li>
           <li>DMS_MechWeaponLight</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
