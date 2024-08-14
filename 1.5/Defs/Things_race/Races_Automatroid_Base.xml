@@ -34,7 +34,7 @@
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
       <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.33</MechEnergyLossPerHP>
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">1</WastepacksPerRecharge><!--充電/培養時產出廢料-->
-      <WorkSpeedGlobal MayRequire="Ludeon.Rimworld.Biotech">0.75</WorkSpeedGlobal>
+      <WorkSpeedGlobal MayRequire="Ludeon.Rimworld.Biotech">0.8</WorkSpeedGlobal>
       <PsychicSensitivity>0</PsychicSensitivity>
     </statBases>
     <race>
@@ -91,7 +91,7 @@
     <damageMultipliers>
       <li>
         <damageDef>EMP</damageDef>
-        <multiplier>0.5</multiplier>
+        <multiplier>0.3</multiplier>
       </li>
       <li>
         <damageDef>Stun</damageDef>
@@ -103,12 +103,19 @@
       </li>
       <li MayRequire="CETeam.CombatExtended">
         <damageDef>Electrical</damageDef>
-        <multiplier>0.5</multiplier>
+        <multiplier>0.3</multiplier>
       </li>
     </damageMultipliers>
   </ThingDef>
 
   <ThingDef ParentName="BaseAutomatroidRace" Name="BaseAutomatroidWalker" Abstract="True">
+    <inspectorTabs Inherit="False">
+      <li>ITab_Pawn_Health</li>
+      <li>ITab_Pawn_Needs</li>
+      <li>ITab_Pawn_FormingCaravan</li>
+      <li>ITab_Pawn_Gear</li>
+      <li>ITab_Pawn_Log</li>
+    </inspectorTabs>
     <race>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>Mechanoid</thinkTreeMain>
@@ -142,13 +149,6 @@
   </ThingDef>
   
   <ThingDef Name="BaseAutomatroidHumanRace" ParentName="BaseAutomatroidWalker" Abstract="True"> 
-    <inspectorTabs Inherit="False">
-      <li>ITab_Pawn_Health</li>
-      <li>ITab_Pawn_Needs</li>
-      <li>ITab_Pawn_FormingCaravan</li>
-      <li>ITab_Pawn_Gear</li>
-      <li>ITab_Pawn_Log</li>
-    </inspectorTabs>
   </ThingDef>
 
   <PawnKindDef Name="BaseAutomatroidKind" ParentName="BaseMechanoidKind" Abstract="True">

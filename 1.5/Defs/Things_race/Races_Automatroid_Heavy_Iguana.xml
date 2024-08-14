@@ -2,7 +2,7 @@
 <Defs>
     
   <!-- T2 DMS_Automatroid-->
-  <!-- 雙足飛龍 Iguana-->
+  <!-- 鬣蜥 Iguana-->
   <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_Iguana</defName>
     <label>Iguana</label>
@@ -92,15 +92,12 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
-          <li>HeavyGun</li><!--重型武器拓展-->
-          <li>WarcasketBasic</li><!--戰棺海盜拓展-->
-          <li>WarcasketVeteran</li><!--戰棺海盜拓展-->
+          <li MayRequire="vanillaexpanded.vwehw">HeavyGun</li><!--重型武器拓展-->
           <li>A_MG_GrenadeLauncher</li>
           <li>A_SR_GrenadeLauncher</li>
           <li>DMS_MechWeaponHeavy</li>
           <li>H_Gatling20mm</li>
           <li>V_Gatling556mm</li>
-          <li>PLA_HMG</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -306,16 +303,13 @@
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
-          <li>HeavyGun</li><!--重型武器拓展-->
-          <li>WarcasketBasic</li><!--戰棺海盜拓展-->
-          <li>WarcasketVeteran</li><!--戰棺海盜拓展-->
+          <li MayRequire="vanillaexpanded.vwehw">HeavyGun</li><!--重型武器拓展-->
           <li>A_MG_GrenadeLauncher</li>
           <li>A_SR_GrenadeLauncher</li>
           <li>DMS_MechWeaponHeavy</li>
           <li>H_Gatling127mm</li>
           <li>H_Gatling20mm</li>
           <li>V_Gatling556mm</li>
-          <li>PLA_HMG</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>

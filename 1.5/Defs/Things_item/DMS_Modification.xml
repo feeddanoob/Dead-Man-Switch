@@ -100,10 +100,8 @@
           </li>
         </capMods>
         <damageFactors>
+          <Bullet>0.75</Bullet>
           <Bomb>0.25</Bomb>
-          <BombSuper>0.1</BombSuper>
-          <Thump>0</Thump>
-          <Extinguish>0</Extinguish>
         </damageFactors>
         <statOffsets>
           <ArmorRating_Heat>0.5</ArmorRating_Heat>
@@ -668,6 +666,9 @@
           <IncomingDamageFactor>-0.2</IncomingDamageFactor>
           <CarryingCapacity>-50</CarryingCapacity>
         </statOffsets>
+        <damageFactors>
+          <Bullet>0.75</Bullet>
+        </damageFactors>
       </li>
     </stages>
     <renderNodeProperties>

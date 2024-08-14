@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Name="BaseBattleFrame" ParentName="BaseAutomatroidHumanRace" Abstract="True">
-    <statBases>                                               
+    <statBases>
+      <StaggerDurationFactor>0.35</StaggerDurationFactor>
       <ArmorRating_Sharp>0.4</ArmorRating_Sharp><!--銳抗-->
       <ArmorRating_Blunt>0.2</ArmorRating_Blunt><!--鈍抗-->
       <ArmorRating_Heat>1.3</ArmorRating_Heat>  <!--能抗-->
@@ -32,23 +33,14 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags> 
           <li>SimpleGun</li>
-          <li>HeavyGun</li><!--重型武器拓展-->
-          <li>WarcasketBasic</li><!--戰棺海盜拓展-->
-          <li>WarcasketVeteran</li><!--戰棺海盜拓展-->
-          <li>CE_OneHandedWeapon</li>
+          <li MayRequire="vanillaexpanded.vwehw">HeavyGun</li><!--重型武器拓展-->
           <li>DMS_MechWeaponLongRifle</li>
           <li>DMS_MechWeaponLight</li>
-		  <li>A_BR_LongRifle</li>
+		      <li>A_BR_LongRifle</li>
           <li>GrenadeSmoke</li>
           <li>A_MG_Heavy</li>
-          <li>WarcasketBasic</li>
           <li>A_SuppressWeapon</li>
           <li>ShortShots</li>
-          <li>PLA_HMG</li>
-          <li>PLA_LMG</li>
-          <li>PLA_Shotgun</li>
-          <li>PLA_SMG</li>
-          <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -127,10 +119,6 @@
           <li>DMS_MechWeaponLight</li>
           <li>Autopistol</li>
           <li>Revolver</li>
-          <li>CE_SMG</li>
-          <li>PLA_Shotgun</li>
-          <li>PLA_SMG</li>
-          <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -201,12 +189,8 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
-          <li>CE_OneHandedWeapon</li>
           <li>Autopistol</li>
           <li>Revolver</li>
-          <li>PLA_Shotgun</li>
-          <li>PLA_SMG</li>
-          <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -287,7 +271,6 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>DMS_MechWeaponLight</li>
-          <li>PLA_Pistol</li>
           <li>Autopistol</li>
           <li>Revolver</li>
         </UsableWeaponTags>
@@ -358,7 +341,6 @@
       <li>A_MG_Heavy</li>
       <li>A_SuppressWeapon</li>
       <li>V_Gatling556mm</li>
-      <li>PLA_HMG</li>
     </weaponTags>
   </PawnKindDef>
 </Defs>

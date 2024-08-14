@@ -13,14 +13,7 @@
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1</baseHealthScale>
       <mechWeightClass>Light</mechWeightClass>
-    </race>    
-    <inspectorTabs Inherit="False">
-        <li>ITab_Pawn_Health</li>
-        <li>ITab_Pawn_Needs</li>
-        <li>ITab_Pawn_FormingCaravan</li>
-        <li>DMS.ITab_Mech_Gear</li>
-        <li>ITab_Pawn_Log</li>
-      </inspectorTabs>
+    </race>
     <comps>
       <li Class="AnimalBehaviours.CompProperties_Floating">
       </li>
@@ -34,7 +27,7 @@
         <throwRate>1</throwRate>
         <throwTick>5</throwTick>
       </li> 
-	</comps>
+	  </comps>
   </ThingDef>
 
   <AnimationDef>
@@ -81,14 +74,6 @@
           <li>DMS_MechWeaponUltraLight</li>
           <li>RiotLMG</li>
           <li>SurvivalRifle</li>
-          <li>CE_AI_AOE</li>
-          <li>CE_AI_Grenade</li>
-          <li>CE_SMG</li>
-          <li>CE_AI_SMG</li>
-          <li>CE_AI_Pistol</li>
-          <li>PLA_SMG</li>
-          <li>PLA_Pistol</li>
-          <li>PLA_RocketLauncher</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -130,7 +115,6 @@
         <li>RiotLMG</li>
         <li>CE_AI_SMG</li>
         <li>CE_AI_AOE</li>
-        <li>PLA_RocketLauncher</li>
     </weaponTags>
   </PawnKindDef>
 
@@ -155,7 +139,6 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>DMS_MechWeaponUltraLight</li>
-          <li>PLA_Pistol</li>
         </UsableWeaponTags>
         <BypassUsableWeapons>
           <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
@@ -197,7 +180,7 @@
   <!-- 獒犬 -->
   <ThingDef Name="DMS_MechDoggeBase" ParentName="BaseAutomatroidRace">  <!-- DMS_Machine_Hound 獵犬常規型 -->
     <defName>DMS_Mech_Dogge</defName>
-    <label>dogge</label>
+    <label>Dogge</label>
     <description>A four-legged robot dog provide forward reconnaissance and urban combat support during armed operations, can equipped with small-caliber firearms or flamethrowers to provide certain containment capabilities.</description>
     <statBases>
       <MoveSpeed>6</MoveSpeed>
@@ -213,6 +196,26 @@
       <baseHealthScale>1.2</baseHealthScale>
     </race>
     <comps>
+      <li Class="DMS.CompProperties_VehicleWeapon">
+        <defaultWeapon/>
+        <turretRotationFollowPawn>true</turretRotationFollowPawn>
+        <rotationSmoothTime>0.2</rotationSmoothTime>
+        <drawData>
+          <dataNorth>
+            <offset>(0.35,0,0.25)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.35,0,-0.1)</offset>
+          </dataSouth>
+          <dataWest>
+            <offset>(-0.2,0,0.4)</offset>
+            <layer>18</layer>
+          </dataWest>
+          <dataEast>
+            <offset>(0.2,0,0)</offset>
+          </dataEast>
+        </drawData>
+      </li>
       <li Class="DMS.CompPropertiesMultipleTurretGun">
         <subTurrets>
           <li>
@@ -235,19 +238,19 @@
                 <baseLayer>20</baseLayer>
                 <pawnType>Any</pawnType>
                 <drawData>
-                  <defaultData>
-                    <pivot>(0.5,0.5)</pivot>
-                  </defaultData>
                   <dataNorth>
-                    <offset>(0.15,0,0.25)</offset>
+                    <offset>(-0.35,0,0.25)</offset>
                   </dataNorth>
                   <dataSouth>
-                    <offset>(-0.15,0,0)</offset>
+                    <offset>(0.35,0,0)</offset>
                   </dataSouth>
                   <dataWest>
-                    <offset>(-0.1,0,0.1)</offset>
+                    <offset>(-0.1,0,0)</offset>
                     <rotationOffset>180</rotationOffset>
                   </dataWest>
+                  <dataEast>
+                    <offset>(0.1,0,0.4)</offset>
+                  </dataEast>
                 </drawData>
               </li>
             </renderNodeProperties>
@@ -267,7 +270,6 @@
           <li>DMS_Flameblaster</li>
           <li>Revolver</li>
           <li>Autopistol</li>
-          <li>PLA_Pistol</li>
           <li>Flamethrower</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
