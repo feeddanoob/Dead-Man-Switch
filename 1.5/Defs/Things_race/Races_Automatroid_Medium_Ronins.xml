@@ -40,6 +40,7 @@
           <li>Spacer</li>
           <li>Ultra</li>
         </UsableTechLevels>
+        <BypassUsableWeapons/>
       </li>
     </modExtensions>
   </ThingDef>
@@ -114,6 +115,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons/>
       </li>
     </modExtensions>
   </ThingDef>
@@ -190,6 +192,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons/>
       </li>
     </modExtensions>
     <tools Inherit="False">
@@ -307,6 +310,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons/>
       </li>
     </modExtensions>
   </ThingDef>

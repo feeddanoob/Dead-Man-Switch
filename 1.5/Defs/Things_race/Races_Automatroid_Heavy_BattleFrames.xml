@@ -36,7 +36,7 @@
           <li MayRequire="vanillaexpanded.vwehw">HeavyGun</li><!--重型武器拓展-->
           <li>DMS_MechWeaponLongRifle</li>
           <li>DMS_MechWeaponLight</li>
-		      <li>A_BR_LongRifle</li>
+          <li>A_BR_LongRifle</li>
           <li>GrenadeSmoke</li>
           <li>A_MG_Heavy</li>
           <li>A_SuppressWeapon</li>
@@ -46,6 +46,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons/>
       </li>
       <li Class="DMS.TurretMannableExtension">
         <mannableByDefault>false</mannableByDefault>
@@ -124,6 +125,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons/>
       </li>
     </modExtensions>
     <killedLeavingsPlayerHostile>
@@ -196,6 +198,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons/>
       </li>
     </modExtensions>
   </ThingDef>
@@ -278,6 +281,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons/>
       </li>
     </modExtensions>
   </ThingDef>

@@ -40,6 +40,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons/>
       </li>
       <li Class="DMS.TurretMannableExtension">
         <mannableByDefault>false</mannableByDefault>
