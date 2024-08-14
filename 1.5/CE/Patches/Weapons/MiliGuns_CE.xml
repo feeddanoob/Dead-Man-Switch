@@ -4,8 +4,7 @@
     <Operation Class="PatchOperationSequence">
         <operations>
 
-            <!--give
-            toughness to mech weapon (tungsteel stronk)-->
+            <!--givetoughness to mech weapon (tungsteel stronk)-->
 
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[@Name="DMS_AutomatroidGun"]/statBases</xpath>
@@ -14,8 +13,7 @@
                 </value>
             </li>
 
-            <!--Remove
-            speed penalty-->
+            <!--Remove speed penalty-->
             <li Class="PatchOperationRemove">
                 <xpath>Defs/ThingDef[defName="DMS_SemiAutoRifle" or
                     defName="DMS_AntiMaterialRifle" or
@@ -26,8 +24,7 @@
                     defName="DMS_DoorBreaker"
                     ]/equippedStatOffsets/MoveSpeed</xpath>
             </li>
-            <!--=====
-            Patch tools(except pistol) =====-->
+            <!--=====Patch tools(except pistol) =====-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[@Name="DMS_AutomatroidGun"]/tools</xpath>
                 <value>
@@ -140,7 +137,7 @@
                     <Bulk>5</Bulk>
                     <SwayFactor>1.76</SwayFactor>
                     <ShotSpread>0.3</ShotSpread>
-                    <SightsEfficiency>0.7</SightsEfficiency>
+                    <SightsEfficiency>0.75</SightsEfficiency>
                     <RangedWeapon_Cooldown>0.41</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
@@ -308,10 +305,10 @@
                 <defName>DMS_AssaultRifle</defName>
                 <statBases>
                     <Mass>8.15</Mass>
-                    <Bulk>9.85</Bulk>
+                    <Bulk>10.85</Bulk>
                     <SwayFactor>1.57</SwayFactor>
                     <ShotSpread>0.09</ShotSpread>
-                    <SightsEfficiency>1.0</SightsEfficiency>
+                    <SightsEfficiency>1.2</SightsEfficiency>
                     <RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
@@ -341,34 +338,34 @@
                     <li>CE_AI_AR</li>
                 </weaponTags>
             </li>
-            <!--===== Marksman Rifle =====-->
+
 
             <!--===== Marksman Rifle =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_MarksmanRifle</defName>
                 <statBases>
-                    <Mass>12.54</Mass>
-                    <Bulk>14.65</Bulk>
-                    <SwayFactor>1.86</SwayFactor>
-                    <ShotSpread>0.02</ShotSpread>
-                    <SightsEfficiency>2.45</SightsEfficiency>
+                    <Mass>10.04</Mass>
+                    <Bulk>12.37</Bulk>
+                    <SwayFactor>1.37</SwayFactor>
+                    <ShotSpread>0.03</ShotSpread>
+                    <SightsEfficiency>2.85</SightsEfficiency>
                     <RangedWeapon_Cooldown>1.16</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+                    <defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
                     <warmupTime>2.5</warmupTime>
                     <range>86</range>
                     <soundCast>Shot_AssaultRifle</soundCast>
                     <soundCastTail>GunTail_Medium</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
-                    <recoilAmount>2.36</recoilAmount>
+                    <recoilAmount>1.86</recoilAmount>
                 </Properties>
                 <AmmoUser>
                     <magazineSize>15</magazineSize>
-                    <reloadTime>5.3</reloadTime>
-                    <ammoSet>AmmoSet_50BMG</ammoSet>
+                    <reloadTime>4</reloadTime>
+                    <ammoSet>AmmoSet_338Lapua</ammoSet>
                 </AmmoUser>
                 <FireModes>
                     <aiAimMode>AimedShot</aiAimMode>
@@ -377,6 +374,7 @@
                     <li>CE_AI_SR</li>
                 </weaponTags>
             </li>
+
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="DMS_MarksmanRifle"]/modExtensions/li[@Class="DMS.HeavyEquippableExtension"]</xpath>
                 <value>
@@ -395,7 +393,7 @@
                     <Bulk>13.12</Bulk>
                     <SwayFactor>2.02</SwayFactor>
                     <ShotSpread>0.03</ShotSpread>
-                    <SightsEfficiency>1.0</SightsEfficiency>
+                    <SightsEfficiency>1.3</SightsEfficiency>
                     <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
@@ -428,9 +426,9 @@
                 <statBases>
                     <Mass>11.8</Mass>
                     <Bulk>12.7</Bulk>
-                    <SwayFactor>2.16</SwayFactor>
+                    <SwayFactor>2.26</SwayFactor>
                     <ShotSpread>0.11</ShotSpread>
-                    <SightsEfficiency>1.0</SightsEfficiency>
+                    <SightsEfficiency>1.2</SightsEfficiency>
                     <RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
@@ -438,7 +436,7 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
                     <warmupTime>1.3</warmupTime>
-                    <range>62</range>
+                    <range>59</range>
                     <burstShotCount>4</burstShotCount>
 				    <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                     <soundCast>Shot_AssaultRifle</soundCast>
@@ -465,18 +463,18 @@
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_AntiMaterialRifle</defName>
                 <statBases>
-                    <Mass>33</Mass>
-                    <Bulk>17.34</Bulk>
-                    <SwayFactor>2.13</SwayFactor>
+                    <Mass>16.37</Mass>
+                    <Bulk>15.74</Bulk>
+                    <SwayFactor>1.84</SwayFactor>
                     <ShotSpread>0.02</ShotSpread>
-                    <SightsEfficiency>2.85</SightsEfficiency>
+                    <SightsEfficiency>3.05</SightsEfficiency>
                     <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
                     <recoilAmount>2.77</recoilAmount>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>Bullet_145x114mm_FMJ</defaultProjectile>
+                    <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
                     <warmupTime>3.55</warmupTime>
                     <range>95</range>
                     <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
@@ -484,9 +482,9 @@
                     <muzzleFlashScale>16</muzzleFlashScale>
                 </Properties>
                 <AmmoUser>
-                    <magazineSize>8</magazineSize>
+                    <magazineSize>15</magazineSize>
                     <reloadTime>5</reloadTime>
-                    <ammoSet>AmmoSet_145x114mm</ammoSet>
+                    <ammoSet>AmmoSet_50BMG</ammoSet>
                 </AmmoUser>
                 <FireModes>
                     <aiAimMode>AimedShot</aiAimMode>
@@ -513,25 +511,25 @@
                     <Bulk>23.34</Bulk>
                     <SwayFactor>2.37</SwayFactor>
                     <ShotSpread>0.01</ShotSpread>
-                    <SightsEfficiency>2.85</SightsEfficiency>
-                    <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+                    <SightsEfficiency>3.3</SightsEfficiency>
+                    <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
                     <recoilAmount>3.15</recoilAmount>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>Bullet_20x102mmNATO_AP</defaultProjectile>
+                    <defaultProjectile>Bullet_30x173mmNATO_AP</defaultProjectile>
                     <warmupTime>3.75</warmupTime>
                     <range>95</range>
                     <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
-                    <muzzleFlashScale>20</muzzleFlashScale>
+                    <muzzleFlashScale>24</muzzleFlashScale>
                 </Properties>
 
                 <AmmoUser>
                     <magazineSize>5</magazineSize>
-                    <reloadTime>4</reloadTime>
-                    <ammoSet>AmmoSet_20x102mmNATO</ammoSet>
+                    <reloadTime>6</reloadTime>
+                    <ammoSet>AmmoSet_30x173mmNATO</ammoSet>
                 </AmmoUser>
                 <FireModes>
                     <aiAimMode>AimedShot</aiAimMode>
@@ -550,7 +548,7 @@
                     <Bulk>15.5</Bulk>
                     <SwayFactor>1.46</SwayFactor>
                     <ShotSpread>0.16</ShotSpread>
-                    <SightsEfficiency>1.3</SightsEfficiency>
+                    <SightsEfficiency>1</SightsEfficiency>
                     <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
@@ -562,6 +560,7 @@
                     <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
                     <warmupTime>1.85</warmupTime>
                     <range>40</range>
+                    <minRange>5</minRange>
                     <soundCast>Shot_IncendiaryLauncher</soundCast>
                     <soundCastTail>GunTail_Medium</soundCastTail>
                     <muzzleFlashScale>12</muzzleFlashScale>
@@ -575,7 +574,7 @@
                     <ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
                 </AmmoUser>
                 <FireModes>
-                    <aiAimMode>AimedShot</aiAimMode>
+                    <aiAimMode>SuppressFire</aiAimMode>
                 </FireModes>
                 <weaponTags>
                     <li>CE_AI_AOE</li>
@@ -629,7 +628,7 @@
                     <Bulk>25.6</Bulk>
                     <SwayFactor>2.59</SwayFactor>
                     <ShotSpread>0.05</ShotSpread>
-                    <SightsEfficiency>1</SightsEfficiency>
+                    <SightsEfficiency>1.25</SightsEfficiency>
                     <RangedWeapon_Cooldown>0.46</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
@@ -712,36 +711,36 @@
                     <tools>
                         <li Class="CombatExtended.ToolCE">
                             <label>handle</label>
-			    <capacities>
-				<li>Poke</li>
-			    </capacities>
-			    <power>4</power>
-			    <cooldownTime>1.78</cooldownTime>
-			    <chanceFactor>0.10</chanceFactor>
-			    <armorPenetrationBlunt>2.0</armorPenetrationBlunt>
-			    <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
-			</li>
-            <li Class="CombatExtended.ToolCE">
-			    <label>edge</label>
-			    <capacities>
-			        <li>Cut</li>
-			    </capacities>
-			    <power>40</power>
-			    <cooldownTime>1.64</cooldownTime>
-			    <armorPenetrationBlunt>6.48</armorPenetrationBlunt>
-			    <armorPenetrationSharp>14</armorPenetrationSharp>
-			    <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
-            </li>
-            <li Class="CombatExtended.ToolCE">
-			    <label>point</label>
-			    <capacities>
-				<li>Stab</li>
-			    </capacities>
-			    <power>18</power>
-			    <cooldownTime>1.78</cooldownTime>
-			    <armorPenetrationBlunt>2.0</armorPenetrationBlunt>
-                <armorPenetrationSharp>16</armorPenetrationSharp>
-            </li>
+			                <capacities>
+				               <li>Poke</li>
+			                </capacities>
+			                <power>4</power>
+			                <cooldownTime>1.78</cooldownTime>
+			                <chanceFactor>0.10</chanceFactor>
+			                <armorPenetrationBlunt>2.0</armorPenetrationBlunt>
+			                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			            </li>
+                        <li Class="CombatExtended.ToolCE">
+			                <label>edge</label>
+			                <capacities>
+			                   <li>Cut</li>
+			                </capacities>
+			                <power>40</power>
+			                <cooldownTime>1.64</cooldownTime>
+			                <armorPenetrationBlunt>6.48</armorPenetrationBlunt>
+			                <armorPenetrationSharp>14</armorPenetrationSharp>
+			                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+			                <label>point</label>
+			                <capacities>
+				                <li>Stab</li>
+			                </capacities>
+			                <power>18</power>
+			                <cooldownTime>1.78</cooldownTime>
+			                <armorPenetrationBlunt>2.0</armorPenetrationBlunt>
+                            <armorPenetrationSharp>16</armorPenetrationSharp>
+                        </li>
                     </tools>
                 </value>
             </li>

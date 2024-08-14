@@ -58,7 +58,7 @@
 				<muzzleFlashScale>6</muzzleFlashScale>
 			</li>
 		</verbs>
-		<tools>
+		<tools Inherit="False">
 			<li>
 				<label>grip</label>
 				<capacities>
@@ -223,7 +223,7 @@
 			<Steel>50</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
-		<tools>
+		<tools Inherit="False">
 			<li>
 				<label>stock</label>
 				<capacities>
@@ -324,7 +324,7 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
-		<tools>
+		<tools Inherit="False">
 			<li>
 				<label>grip</label>
 				<capacities>
@@ -428,7 +428,7 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
-		<tools>
+		<tools Inherit="False">
 			<li>
 				<label>stock</label>
 				<capacities>
@@ -539,7 +539,7 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
-		<tools>
+		<tools Inherit="False">
 		  <li>
 			<label>grip</label>
 			<capacities>
