@@ -339,6 +339,7 @@
                 </weaponTags>
             </li>
 
+
             <!--===== Marksman Rifle =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_MarksmanRifle</defName>

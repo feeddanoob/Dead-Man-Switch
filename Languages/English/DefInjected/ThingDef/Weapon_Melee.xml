@@ -13,7 +13,7 @@
   <DMS_DoorBreaker.verbs.Verb_Shoot.label>Door Breaker</DMS_DoorBreaker.verbs.Verb_Shoot.label>
   
   <!-- EN: machete -->
-  <DMS_Machete.label>machete</DMS_Machete.label>
+  <DMS_Machete.label>Machete</DMS_Machete.label>
   <!-- EN: May look like a normal machete, but it's a weapon with unique design which specify for mech's melee combat capability.\n\nWith its high frequency vibrating edge, it can cut through most things with ease. -->
   <DMS_Machete.description>It may look like a normal machete, but it's a weapon with unique design which is specifically built for mech's melee combat capability.
 

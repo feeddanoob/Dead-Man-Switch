@@ -20,7 +20,17 @@
   <DMS_ProstheticLeg.label>Mechaneural Leg</DMS_ProstheticLeg.label>
   <!-- EN: An advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way. -->
   <DMS_ProstheticLeg.description>An advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</DMS_ProstheticLeg.description>
+
+  <!-- EN: mechaneural kidney -->
+  <DMS_ProstheticKidney.label>mechaneural kidney</DMS_ProstheticKidney.label>
+  <!-- EN: A columnar liquid filter implant that filters impurities and waste products in the blood through osmotic pressure to ensure the acid-base balance of the implanter's internal circulatory system. -->
+  <DMS_ProstheticKidney.description>A columnar liquid filter implant that filters impurities and waste products in the blood through osmotic pressure to ensure the acid-base balance of the implanter's internal circulatory system.</DMS_ProstheticKidney.description>
   
+  <!-- EN: mechaneural lung -->
+  <DMS_ProstheticLung.label>mechaneural lung</DMS_ProstheticLung.label>
+  <!-- EN: A plastic fiber-based membrane oxygenation prosthesis. it works like an artificial lung or so-called ECMO. During World War III, due to the lack of protective equipment, most soldiers were exposed to high-intensity nuclear, biological, and chemical pollution environments, which caused massive ulceration and paralysis of respiratory organs. these types of prostheses were widely used in the military and gradually perfected in frontline surgery and resocialization treatment for disabled militaries. -->
+  <DMS_ProstheticLung.description>A plastic fiber-based membrane oxygenation prosthesis. it works like an artificial lung or so-called ECMO. During World War III, due to the lack of protective equipment, most soldiers were exposed to high-intensity nuclear, biological, and chemical pollution environments, which caused massive ulceration and paralysis of respiratory organs. these types of prostheses were widely used in the military and gradually perfected in frontline surgery and resocialization treatment for disabled militaries.</DMS_ProstheticLung.description>
+
   <!-- EN: bio-mechanical neurochord -->
   <DMS_ProstheticSpine.label>Bio-mechanical Neurochord</DMS_ProstheticSpine.label>
   <!-- EN: An advanced bio-mechanical spine which also work as a sub-brain to compatible with other prostheses by sharing reflex nerves. -->
