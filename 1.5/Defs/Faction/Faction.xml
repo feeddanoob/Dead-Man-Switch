@@ -4,6 +4,7 @@
     <defName>DMS_Army</defName>
     <label>Colonization Forces</label>
     <!-- <categoryTag>Empire</categoryTag> 不要加這個，不然官位會亂-->
+    <categoryTag>DMS</categoryTag>
     <description>A militarized colonial organization led by AI systems. Their culture is highly based on a military class system. Through a strict responsibility mechanism, anyone can find their places if they proofed their ability. \n\nIt can be determined that behind this colonial force is a huge organization capable of coordinating actions across galaxies even when interstellar voyages take decades.</description>
     <pawnSingular>serviceman</pawnSingular>
     <pawnsPlural>servicemens</pawnsPlural>
@@ -299,6 +300,11 @@
             <li>MedicineUltratech</li>
             <li>Uranium</li>
             <li>MealSurvivalPack</li>
+            <li>DMS_CombatRation</li>
+            <li>Neuroglue</li>
+            <li>ComponentStamped</li>
+            <li>Plasfiber</li>
+            <li>Tungsteel</li>
           </thingDefs>
         </filter>
       </fixedParams>
