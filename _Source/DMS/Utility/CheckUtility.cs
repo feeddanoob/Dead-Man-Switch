@@ -53,27 +53,40 @@ public static partial class CheckUtility
             return false;
         }
         if (BypassedUseable(extension, thing.def.defName)) return true; //指定可用
+
         if (!InTechLevel(extension, thing)) return false;//科技等級可用
 
         if (extension.EnableWeaponFilter)
         {
-            if (!thing.def.weaponTags.ContainsAny(t => extension.UsableWeaponTags.Contains(t)))
+            if (thing.def.weaponTags.ContainsAny(t => extension.UsableWeaponTags.Contains(t)))
             {
-                return false;
+                return true;
             }
         } 
-        else
+        else //Filter沒開的狀況下就單純看武器重量。
         {
             HeavyEquippableExtension heavyEquippableExtension = thing.def.GetModExtension<HeavyEquippableExtension>();
-            if (extension == null && extension.EnableWeaponFilter) return false; 
+            if (heavyEquippableExtension == null) return true; 
         }
-        return true;
+        return false;
     }
     public static bool UseableInRuntime(Thing mech, ThingWithComps weapon)//透過改造或別的因素所以可以用的狀況
     {
         HeavyEquippableExtension extension = weapon.def.GetModExtension<HeavyEquippableExtension>();
-        if (extension ==null ||mech.def.GetModExtension<MechWeaponExtension>().EnableWeaponFilter) return false;//使用過濾器的狀況下就不啟用這個了
-        return extension.CanEquippedBy(mech as Pawn);
+        if (extension != null)//如果是重型武器
+        {
+            return extension.CanEquippedBy(mech as Pawn);
+        }
+        else //非重型武器的狀況
+        {
+            MechWeaponExtension _extension = weapon.def.GetModExtension<MechWeaponExtension>();
+            if (_extension != null)
+            {
+                if (_extension.EnableTechLevelFilter && !_extension.UsableTechLevels.Contains(weapon.def.techLevel)) return false;
+                if (_extension.EnableWeaponFilter == false) return true;
+            }
+        }
+        return false;
     }
     public static bool HasAnyHediffOf(Pawn pawn, List<HediffDef> hediffDefs)
     {

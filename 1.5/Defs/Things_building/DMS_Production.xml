@@ -29,7 +29,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.8</fillPercent>
 		<useHitPoints>True</useHitPoints>
-		<designationCategory>Production</designationCategory>
+		<designationCategory>DMS_Category</designationCategory>
 		<passability>PassThroughOnly</passability>
 		<pathCost>80</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
