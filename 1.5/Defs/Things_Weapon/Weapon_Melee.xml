@@ -103,6 +103,7 @@
 		<techLevel>Industrial</techLevel>
 		<weaponTags>
 			<li>DMS_MeleeWeapon</li>
+			<li>A_Cut_Melee</li>
 		</weaponTags>
 		<statBases>
 			<WorkToMake>3000</WorkToMake>

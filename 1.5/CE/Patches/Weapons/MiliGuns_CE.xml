@@ -479,7 +479,7 @@
                     <range>95</range>
                     <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
-                    <muzzleFlashScale>16</muzzleFlashScale>
+                    <muzzleFlashScale>9</muzzleFlashScale>
                 </Properties>
                 <AmmoUser>
                     <magazineSize>15</magazineSize>
@@ -490,7 +490,7 @@
                     <aiAimMode>AimedShot</aiAimMode>
                 </FireModes>
                 <weaponTags>
-                    <li>Bipod_AMR</li>
+                    <li>Bipod_DMR</li>
                     <li>CE_AI_SR</li>
                 </weaponTags>
             </li>
@@ -523,7 +523,7 @@
                     <range>95</range>
                     <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
-                    <muzzleFlashScale>24</muzzleFlashScale>
+                    <muzzleFlashScale>20</muzzleFlashScale>
                 </Properties>
 
                 <AmmoUser>
