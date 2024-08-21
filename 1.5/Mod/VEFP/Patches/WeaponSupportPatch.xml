@@ -11,7 +11,7 @@
           ]/modExtensions/li[@Class="DMS.MechWeaponExtension"]/BypassUsableWeapons</xpath>
         <value>
           <li>VFEP_WarcasketGun_Autorifle</li><!-- 戰棺自動步槍 -->
-          <li>VFEP_WarcasketGun_UraniumSlugRifle</li><!-- 戰棺鈾彈步槍 -->
+          <!-- <li>VFEP_WarcasketGun_UraniumSlugRifle</li> -->
         </value>
       </li>
 
