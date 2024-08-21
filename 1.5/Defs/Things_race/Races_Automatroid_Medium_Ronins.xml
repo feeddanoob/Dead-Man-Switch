@@ -14,7 +14,7 @@
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge>
     </statBases>
     <race>
-      <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
+      <body>DMS_Humanoid_TypeB_Ronin</body>                                                      <!--身體(另外的def)-->
       <baseBodySize>1.1</baseBodySize>
       <baseHealthScale>1.32</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
@@ -43,7 +43,66 @@
         <BypassUsableWeapons/>
       </li>
     </modExtensions>
+    <tools Inherit="False">
+      <li>
+        <label>right arm blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>6</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+      <li>
+        <label>left arm blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>6</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>
   </ThingDef>
+
   <PawnKindDef ParentName="BaseAutomatroidKind">  <!-- DMS_Mech_Ronin 浪人:均衡型  -->
     <defName>DMS_Mech_Ronin</defName>
     <label>ronin</label>
@@ -70,14 +129,125 @@
     </lifeStages>
     <weaponTags>
       <li>A_SG_LongRifle</li>                                                                     <!--武器-->
-      <li>MedievalMeleeAdvanced</li>
-      <li>DMS_MeleeWeapon</li>
+      <li>A_PDW</li>
+      <li>A_AP</li>
+    <!--  <li>MedievalMeleeAdvanced</li>
+      <li>DMS_MeleeWeapon</li>-->
     </weaponTags>
     <abilities>
       <li>DMS_Infrasound</li>
-      <li>DMS_RepairMode</li>
+      <li>LongjumpMech</li>
     </abilities>
   </PawnKindDef>
+
+
+  <ThingDef ParentName="BaseAutomatroidHumanRace">
+    <defName>DMS_Mech_Gladiator</defName>
+    <label>gladiator</label>
+    <description>Melee specialized variant based on Ronin. While maintain Ronin's mobility and armor, it has better melee combat module, also equip with an assault shield.</description>
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+      <ArmorRating_Heat>1.3</ArmorRating_Heat>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge>
+    </statBases>
+    <race>
+      <body>DMS_Humanoid_TypeB_ShieldS</body>                                                      <!--身體(另外的def)-->
+      <baseBodySize>1.1</baseBodySize>
+      <baseHealthScale>1.32</baseHealthScale>
+      <mechWeightClass>Medium</mechWeightClass>
+    </race>
+    <modExtensions Inherit="False">
+      <li Class="DMS.MechWeaponExtension">
+        <EnableWeaponFilter>true</EnableWeaponFilter>
+        <UsableWeaponTags>
+          <li>MedievalMeleeBasic</li>
+          <li>MedievalMeleeAdvanced</li>
+          <li>DMS_MeleeWeapon</li>
+          <li>UltratechMelee</li>
+        </UsableWeaponTags>
+        <EnableTechLevelFilter>true</EnableTechLevelFilter>
+        <UsableTechLevels>
+          <li>Industrial</li>
+          <li>Spacer</li>
+          <li>Ultra</li>
+        </UsableTechLevels>
+      </li>
+    </modExtensions>
+    <tools Inherit="False">
+      <li>
+        <label>assault shield</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.3</cooldownTime>
+        <linkedBodyPartsGroup>AssaultShield</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>6</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseAutomatroidKind">  <!-- DMS_Mech_Gladiator 角鬥士:近戰特化型  -->
+    <defName>DMS_Mech_Gladiator</defName>
+    <label>galdiator</label>
+    <race>DMS_Mech_Gladiator</race>
+    <isFighter>true</isFighter>
+    <combatPower>150</combatPower>
+    <lifeStages>      
+    <li>
+      <bodyGraphicData>
+        <texPath>Things/Automatroid/gladiator</texPath>
+        <shaderType>CutoutComplex</shaderType>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>1.3</drawSize>
+      </bodyGraphicData>
+    </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/OldTexture/gladiator</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags>
+      <li>A_Cut_Melee</li>                                                                     <!--武器-->
+    </weaponTags>
+    <abilities>
+      <li>DMS_BurstSprint</li>
+    </abilities>
+  </PawnKindDef>
+
 
    <!-- 破城者 Siegebreaker-->
    <ThingDef ParentName="BaseAutomatroidHumanRace">
@@ -86,7 +256,7 @@
     <description>With better armor protection, siegebreaker stands in the most front of the line for sapping and breaching jobs, breaking through enemy defenses.</description>
     <statBases>
       <StaggerDurationFactor>0.25</StaggerDurationFactor>
-      <MoveSpeed>4.3</MoveSpeed>                                                    <!--移動速度-->
+      <MoveSpeed>4.2</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0.92</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>1.25</ArmorRating_Sharp>
       <ArmorRating_Heat>1.5</ArmorRating_Heat>
@@ -118,7 +288,14 @@
         <BypassUsableWeapons/>
       </li>
     </modExtensions>
+    <damageMultipliers>
+      <li>
+        <damageDef>Burn</damageDef>
+        <multiplier>0.8</multiplier>
+      </li>
+    </damageMultipliers>
   </ThingDef>
+
   <PawnKindDef ParentName="BaseAutomatroidKind">  <!-- DMS_Mech_Siegebreaker 破城者 機動破城 -->
     <defName>DMS_Mech_Siegebreaker</defName>
     <label>siegebreaker</label>
@@ -160,7 +337,7 @@
     <description>Designed for peacekeeping operations and riot control need, Protector has overall strong armor around the frame, equip with a huge flash shield and close quater weapons like batons or shotguns.</description>
     <statBases>
       <StaggerDurationFactor>0.25</StaggerDurationFactor>
-      <MoveSpeed>5</MoveSpeed>                                                    <!--移動速度-->
+      <MoveSpeed>4</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0.80</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>1.40</ArmorRating_Sharp>
       <ArmorRating_Heat>1.0</ArmorRating_Heat>
@@ -201,9 +378,10 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>12</power>
+        <power>20</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>BallisticShield</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -218,7 +396,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8.2</power>
+        <power>12</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
         <surpriseAttack>
@@ -229,6 +407,7 @@
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
+        <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
     <damageMultipliers>
@@ -238,6 +417,7 @@
       </li>
     </damageMultipliers>
   </ThingDef>
+
   <PawnKindDef ParentName="BaseAutomatroidKind">  <!-- DMS_Mech_Protector 塔盾手:防禦特化  -->
     <defName>DMS_Mech_Protector</defName>
     <label>protector</label>
@@ -270,13 +450,14 @@
     </abilities>
   </PawnKindDef>
   
+
   <!-- 方陣 phalanx-->
   <ThingDef ParentName="BaseAutomatroidHumanRace">
     <defName>DMS_Mech_Phalanx</defName>
     <label>phalanx</label>
     <description>A cost-saving mass-produced variant specialized for urban combat scenarios, packed with assault armor and high mobility, makes it a fierce unit in close quarters.</description>
     <statBases>
-      <MoveSpeed>5</MoveSpeed>                                                    <!--移動速度-->
+      <MoveSpeed>4.5</MoveSpeed>                                                    <!--移動速度-->
       <ArmorRating_Blunt>0.65</ArmorRating_Blunt>                                     <!--護甲-->
       <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
       <ArmorRating_Heat>1.2</ArmorRating_Heat>
@@ -314,6 +495,7 @@
       </li>
     </modExtensions>
   </ThingDef>
+
   <PawnKindDef ParentName="BaseAutomatroidKind">  <!-- DMS_Mech_Phalanx 方陣:量產近戰型  -->
     <defName>DMS_Mech_Phalanx</defName>
     <label>phalanx</label>

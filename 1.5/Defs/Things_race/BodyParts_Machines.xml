@@ -154,7 +154,19 @@
   <BodyPartDef>
     <defName>DMS_BallisticShield</defName>
     <label>ballistic shield</label>
-    <hitPoints>165</hitPoints>
+    <hitPoints>85</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DMS_AssaultShield</defName>
+    <label>assault shield</label>
+    <hitPoints>40</hitPoints>
     <frostbiteVulnerability>0</frostbiteVulnerability>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
@@ -168,10 +180,15 @@
     <label>ballistic shield</label>
   </BodyPartGroupDef>
 
+  <BodyPartGroupDef>
+    <defName>AssaultShield</defName>
+    <label>assault shield</label>
+  </BodyPartGroupDef>
+
   <BodyPartDef>
     <defName>DMS_DozerBlade</defName>
     <label>dozer blade</label>
-    <hitPoints>150</hitPoints>
+    <hitPoints>100</hitPoints>
     <frostbiteVulnerability>0</frostbiteVulnerability>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
@@ -1456,9 +1473,10 @@
     </corePart>
   </BodyDef>
 
+  <!-- B型機械步兵框架，浪人形額外加上了手臂刀刃-->
   <BodyDef>
-    <defName>DMS_Humanoid_TypeB_ShieldL</defName>
-    <label>shield protector</label>
+    <defName>DMS_Humanoid_TypeB_Ronin</defName>
+    <label>erectus ronin(blade)</label>
     <corePart>
       <def>MechanicalThorax</def>
       <height>Middle</height>
@@ -1466,7 +1484,7 @@
       <parts>
         <li>
           <def>MechanicalNeck</def>
-          <coverage>0.03</coverage>
+          <coverage>0.09</coverage>
           <height>Top</height>
           <parts>
             <li>
@@ -1499,12 +1517,291 @@
         <li>
           <def>MechanicalShoulder</def>
           <customLabel>left shoulder</customLabel>
-          <coverage>0.001</coverage>
+          <coverage>0.10</coverage>
           <parts>
             <li>
               <def>MechanicalArm</def>
               <customLabel>left arm</customLabel>
               <coverage>0.85</coverage>
+              <parts>
+                <li>
+                  <def>Blade</def>
+                  <customLabel>left arm blade</customLabel>
+                  <coverage>0.15</coverage>
+                  <groups>
+                    <li>LeftBlade</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MechanicalHand</def>
+                  <customLabel>left hand</customLabel>
+                  <coverage>0.2</coverage>
+                  <height>Bottom</height>
+                  <parts>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>left pinky</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>left middle finger</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>LeftHand</li>
+                        <li>MiddleFingers</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>left index finger</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>left thumb</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>right mechanical shoulder</customLabel>
+          <coverage>0.10</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>right arm</customLabel>
+              <coverage>0.85</coverage>
+              <parts>
+                <li>
+                  <def>Blade</def>
+                  <customLabel>right arm blade</customLabel>
+                  <coverage>0.15</coverage>
+                  <groups>
+                    <li>RightBlade</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MechanicalHand</def>
+                  <customLabel>right hand</customLabel>
+                  <coverage>0.2</coverage>
+                  <height>Bottom</height>
+                  <parts>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>right pinky</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>right middle finger</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>RightHand</li>
+                        <li>MiddleFingers</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>right index finger</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>right thumb</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>left leg</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>left foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>right leg</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>right foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DMS_ArmourPlate</def>
+          <customLabel>waist armour plate</customLabel>
+          <coverage>0.1</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>DMS_ArmourPlate</def>
+          <customLabel>chest armour plate</customLabel>
+          <coverage>0.1</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>DMS_Battery</def>
+          <customLabel>main battery</customLabel>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>DMS_Battery</def>
+          <customLabel>secondary battery</customLabel>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>DMS_ChestBrain</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+
+  <!--突擊盾特化型 typeB改型-->
+  <BodyDef>
+    <defName>DMS_Humanoid_TypeB_ShieldS</defName>
+    <label>shield assault</label>
+    <corePart>
+      <def>MechanicalThorax</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+          <coverage>0.07</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+              <coverage>0.50</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <!--用的是類似槍手的狙擊頭改裝，額外覆上面甲-->
+              <parts>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>central sight sensor</customLabel>
+                  <coverage>0.15</coverage>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>left infrared sensor</customLabel>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>right infrared sensor</customLabel>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>left sight sensor</customLabel>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>right sight sensor</customLabel>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>left hearing sensor</customLabel>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>right hearing sensor</customLabel>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>DMS_ArmourPlate</def>
+                  <coverage>0.3</coverage>
+                  <depth>Outside</depth>
+                  <height>Top</height>
+                </li>
+              </parts>
+            </li>
+            <li>
+              <def>DMS_ArmourPlate</def>
+              <coverage>0.40</coverage>
+              <height>Top</height>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>left shoulder</customLabel>
+          <coverage>0.25</coverage>
+          <parts>
+          <!--assault shield varaint, has about 1/3 shield coverage compared to ballistic shield-->
+            <li>
+              <def>DMS_AssaultShield</def> 
+              <customLabel>assault shield</customLabel>
+              <coverage>0.65</coverage>
+              <height>Middle</height>
+              <depth>Outside</depth>
+              <groups>
+                <li>AssaultShield</li>
+              </groups>
+            </li>
+         <!--also reduce other parts coverage to make sure shield take most hits-->
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>left arm</customLabel>
+              <coverage>0.2</coverage>
               <parts>
                 <li>
                   <def>MechanicalHand</def>
@@ -1609,7 +1906,236 @@
         <li>
           <def>MechanicalLeg</def>
           <customLabel>left leg</customLabel>
-          <coverage>0.04</coverage>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>left foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>right leg</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>right foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DMS_ArmourPlate</def>
+          <customLabel>waist armour plate</customLabel>
+          <coverage>0.08</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>DMS_ArmourPlate</def>
+          <customLabel>chest armour plate</customLabel>
+          <coverage>0.08</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>DMS_Battery</def>
+          <customLabel>main battery</customLabel>
+          <coverage>0.01</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>DMS_Battery</def>
+          <customLabel>secondary battery</customLabel>
+          <coverage>0.02</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>DMS_ChestBrain</def>
+          <coverage>0.01</coverage>
+          <depth>Inside</depth>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+  
+  <!--塔盾專用身形 typeB改型-->
+  <BodyDef>
+    <defName>DMS_Humanoid_TypeB_ShieldL</defName>
+    <label>shield protector</label>
+    <corePart>
+      <def>MechanicalThorax</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+          <coverage>0.06</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+              <coverage>0.60</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>DMS_HeadRadar</def>
+                  <coverage>0.5</coverage>
+                  <depth>Outside</depth>
+                </li>
+                <li>
+                  <def>DMS_ArmourPlate</def>
+                  <coverage>0.3</coverage>
+                  <depth>Outside</depth>
+                  <height>Top</height>
+                </li>
+              </parts>
+            </li>
+            <li>
+              <def>DMS_ArmourPlate</def>
+              <coverage>0.30</coverage>
+              <height>Top</height>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>left shoulder</customLabel>
+          <coverage>0.65</coverage>
+          <parts>
+            <!--doesn't have custom code for shield block, 
+          so only can put it as core subpart and increase coverage-->
+          <!--ok now we should move this to left hand, or it will die on broken shield :( -->
+            <li>
+              <def>DMS_BallisticShield</def> 
+              <customLabel>ballistic shield</customLabel>
+              <coverage>0.97</coverage>
+              <height>Middle</height>
+              <depth>Outside</depth>
+              <groups>
+                <li>BallisticShield</li>
+              </groups>
+            </li>
+         <!--also reduce other parts coverage to make sure shield take most hits-->
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>left arm</customLabel>
+              <coverage>0.01</coverage>
+              <parts>
+                <li>
+                  <def>MechanicalHand</def>
+                  <customLabel>left hand</customLabel>
+                  <coverage>0.2</coverage>
+                  <height>Bottom</height>
+                  <parts>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>left pinky</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>left middle finger</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>LeftHand</li>
+                        <li>MiddleFingers</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>left index finger</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>left thumb</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>right mechanical shoulder</customLabel>
+          <coverage>0.10</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>right arm</customLabel>
+              <coverage>0.85</coverage>
+              <parts>
+                <li>
+                  <def>MechanicalHand</def>
+                  <customLabel>right hand</customLabel>
+                  <coverage>0.2</coverage>
+                  <height>Bottom</height>
+                  <parts>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>right pinky</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>right middle finger</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>RightHand</li>
+                        <li>MiddleFingers</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>right index finger</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MechanicalFinger</def>
+                      <customLabel>right thumb</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>left leg</customLabel>
+          <coverage>0.03</coverage>
           <height>Bottom</height>
           <parts>
             <li>
@@ -1632,23 +2158,10 @@
             </li>
           </parts>
         </li>
-         <!--doesn't have custom code for shield block, 
-          so only can put it as core subpart and increase coverage-->
-        <li>
-          <def>DMS_BallisticShield</def> 
-          <customLabel>ballistic shield</customLabel>
-          <coverage>0.6</coverage>
-          <height>Middle</height>
-          <depth>Outside</depth>
-          <groups>
-            <li>BallisticShield</li>
-          </groups>
-        </li>
-        <!--also reduce other parts coverage to make sure shield take most hits-->
         <li>
           <def>DMS_ArmourPlate</def>
           <customLabel>waist armour plate</customLabel>
-          <coverage>0.02</coverage>
+          <coverage>0.01</coverage>
           <depth>Outside</depth>
         </li>
         <li>
@@ -1666,17 +2179,17 @@
         <li>
           <def>DMS_Battery</def>
           <customLabel>secondary battery</customLabel>
-          <coverage>0.02</coverage>
+          <coverage>0.01</coverage>
           <depth>Inside</depth>
         </li>
         <li>
           <def>FluidReprocessor</def>
-          <coverage>0.02</coverage>
+          <coverage>0.01</coverage>
           <depth>Inside</depth>
         </li>
         <li>
           <def>DMS_ChestBrain</def>
-          <coverage>0.03</coverage>
+          <coverage>0.01</coverage>
           <depth>Inside</depth>
         </li>
       </parts>

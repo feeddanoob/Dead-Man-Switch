@@ -273,7 +273,7 @@
           <li>Blunt</li>
           <li>Demolish</li>
         </capacities>
-        <power>36</power>
+        <power>76</power>
         <cooldownTime>6.2</cooldownTime>
         <linkedBodyPartsGroup>DozerBlade</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
