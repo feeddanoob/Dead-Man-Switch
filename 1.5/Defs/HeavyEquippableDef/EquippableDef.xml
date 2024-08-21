@@ -45,6 +45,7 @@
 			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarineGrenadier</li>
 			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphract</li>
 			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphractPhoenix</li>
+			<li MayRequire="aoba.deadmanswitch.mobiledragoon">DMS_Apparel_PF3_Core</li>
 		</EquippableWithApparel>
 	</DMS.HeavyEquippableDef>
 
@@ -64,6 +65,7 @@
 			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarineGrenadier</li>
 			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphract</li>
 			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphractPhoenix</li>
+			<li MayRequire="aoba.deadmanswitch.mobiledragoon">DMS_Apparel_PF3_Core</li>
 			<li MayRequire="aoba.deadmanswitch.mobiledragoon">DMS_Apparel_AT34_Core</li>
 			<li MayRequire="aoba.deadmanswitch.mobiledragoon">DMS_Apparel_PV8_Core</li>
 			<li MayRequire="aoba.deadmanswitch.mobiledragoon">DMS_Apparel_FA47_Core</li>
@@ -77,6 +79,7 @@
 		<EquippableWithHediff/>
 		<EquippableWithApparel>
 			<li MayNotRequire="aoba.deadmanswitch.mobiledragoon">DMS_Apparel_PowerSkelton</li>
+			<li MayRequire="aoba.deadmanswitch.mobiledragoon">DMS_Apparel_PF3_Core</li>
 			<li MayRequire="aoba.deadmanswitch.mobiledragoon">DMS_Apparel_AT34_Core</li>
 			<li MayRequire="aoba.deadmanswitch.mobiledragoon">DMS_Apparel_PV8_Core</li>
 			<li MayRequire="aoba.deadmanswitch.mobiledragoon">DMS_Apparel_FA47_Core</li>
@@ -91,7 +94,9 @@
 			<li>DMS_TB_HeavyHydraulicFrame</li>
 		</EquippableWithHediff>
 		<EquippableWithApparel>
-			<!-- TODO <li>DMS_Apparel_MobileDragoonCore</li> -->
+			<li MayRequire="aoba.deadmanswitch.mobiledragoon">DMS_Apparel_AT34_Core</li>
+			<li MayRequire="aoba.deadmanswitch.mobiledragoon">DMS_Apparel_PV8_Core</li>
+			<li MayRequire="aoba.deadmanswitch.mobiledragoon">DMS_Apparel_FA47_Core</li>
 		</EquippableWithApparel>
 	</DMS.HeavyEquippableDef>
 
