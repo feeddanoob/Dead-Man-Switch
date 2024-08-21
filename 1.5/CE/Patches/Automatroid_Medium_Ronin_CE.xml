@@ -53,8 +53,8 @@
 					<MeleeParryChance>0.16</MeleeParryChance>
 					<MaxHitPoints>200</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
-					<AimingDelayFactor>-0.2</AimingDelayFactor>
-					<ReloadSpeed>0.3</ReloadSpeed>
+					<AimingDelayFactor>0.8</AimingDelayFactor>
+					<ReloadSpeed>1.3</ReloadSpeed>
 				</value>
 			</li>
 				
@@ -551,7 +551,7 @@
 					<MeleeParryChance>0.13</MeleeParryChance>
 					<MaxHitPoints>200</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
-					<AimingDelayFactor>0.2</AimingDelayFactor>
+					<AimingDelayFactor>1.2</AimingDelayFactor>
 				</value>
 			</li>
 			
@@ -622,7 +622,7 @@
 					<MeleeParryChance>0.78</MeleeParryChance>
 					<MaxHitPoints>350</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
-					<ReloadSpeed>-0.25</ReloadSpeed>
+					<ReloadSpeed>0.75</ReloadSpeed>
 				</value>
 			</li>
 			
@@ -865,7 +865,7 @@
 					<AimingAccuracy>1</AimingAccuracy>
 					<ShootingAccuracyPawn>1.25</ShootingAccuracyPawn>
 					<MeleeDodgeChance>0.09</MeleeDodgeChance>
-					<MeleeCritChance>0.1</MeleeCritChance>
+					<MeleeCritChance>0.08</MeleeCritChance>
 					<MeleeParryChance>0.12</MeleeParryChance>
 					<MaxHitPoints>300</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
