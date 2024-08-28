@@ -67,7 +67,7 @@
     <label>battle friend</label>
     <race>DMS_Mech_BattleFrame</race>
     <isFighter>true</isFighter>
-    <combatPower>200</combatPower>
+    <combatPower>120</combatPower>
     <maxPerGroup>10</maxPerGroup>
     <lifeStages>
       <li>
@@ -210,7 +210,7 @@
     <label>escort lifter</label>
     <race>DMS_Mech_EscortLifter</race>
     <isFighter>true</isFighter>
-    <combatPower>200</combatPower>
+    <combatPower>80</combatPower>
     <maxPerGroup>10</maxPerGroup>
     <lifeStages>
       <li>
@@ -290,8 +290,8 @@
     <defName>DMS_Mech_ShaftWorker</defName>
     <label>shaft worker</label>
     <race>DMS_Mech_ShaftWorker</race>
-    <isFighter>true</isFighter>
-    <combatPower>200</combatPower>
+    <isFighter>false</isFighter>
+    <combatPower>80</combatPower>
     <maxPerGroup>10</maxPerGroup>
     <lifeStages>
       <li>

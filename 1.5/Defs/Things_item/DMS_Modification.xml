@@ -98,7 +98,7 @@
           <Bomb>0.25</Bomb>
         </damageFactors>
         <statOffsets>
-          <MovingSpeed>-0.25</MovingSpeed>
+          <MoveSpeed>-0.25</MoveSpeed>
           <ArmorRating_Heat>0.5</ArmorRating_Heat>
         </statOffsets>
       </li>
