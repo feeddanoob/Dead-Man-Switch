@@ -4,10 +4,11 @@
     <defName>DMS_Army</defName>
     <label>Colonization Forces</label>
     <!-- <categoryTag>Empire</categoryTag> 不要加這個，不然官位會亂-->
+    <categoryTag>DMS</categoryTag>
     <description>A militarized colonial organization led by AI systems. Their culture is highly based on a military class system. Through a strict responsibility mechanism, anyone can find their places if they proofed their ability. \n\nIt can be determined that behind this colonial force is a huge organization capable of coordinating actions across galaxies even when interstellar voyages take decades.</description>
     <pawnSingular>serviceman</pawnSingular>
     <pawnsPlural>servicemens</pawnsPlural>
-    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <settlementGenerationWeight>1.2</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <maxCountAtGameStart>1</maxCountAtGameStart>
     <canSiege>false</canSiege>
@@ -17,6 +18,15 @@
     <royalFavorIconPath>UI/Faction/ArmyFavor</royalFavorIconPath>
     <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
     <factionIconPath>UI/Faction/VanguardIcon</factionIconPath>
+    <modExtensions>
+      <li Class="DMS_Story.ModExtenson_FactionNegotiant">
+        <goods>
+          <li>VanguardRaidLootMaker</li>
+        </goods>
+        <traderKind>DMS_Caravan_TraderGeneral</traderKind>
+        <nameRule>DMS_VanguardMechStandard</nameRule>
+      </li>
+    </modExtensions>
     <factionNameMaker>DMS_VanguardFaction</factionNameMaker>
     <settlementNameMaker>DMS_VanguardBase</settlementNameMaker>
     <allowedCultures>
@@ -45,7 +55,7 @@
     </structureMemeWeights>
     <xenotypeSet>
       <xenotypeChances>
-        <DMS_AndroidSynth MayRequire="vanillaracesexpanded.android">0.8</DMS_AndroidSynth>
+        <DMS_AndroidSynth MayRequire="vanillaracesexpanded.android">0.6</DMS_AndroidSynth>
       </xenotypeChances>
     </xenotypeSet>
     <techLevel>Spacer</techLevel>
@@ -110,13 +120,14 @@
         <li>(0, 1)</li> <!--Constant 1 at all points levels-->
       </points>
     </raidCommonalityFromPointsCurve>
+    <attackersDownPercentageRangeForAutoFlee>0.9</attackersDownPercentageRangeForAutoFlee>
     <raidLootMaker>VanguardRaidLootMaker</raidLootMaker>
     <maxPawnCostPerTotalPointsCurve>
       <points>
         <li>(500, 100)</li> <!-- Can always use relatively strong pawns, because empire doesn't really have weak ones -->
-        <li>(1000, 150)</li>
-        <li>(2000, 250)</li>
-        <li>(2001, 10000)</li>
+        <li>(1000, 120)</li>
+        <li>(2000, 200)</li>
+        <li>(4000, 10000)</li>
       </points>
     </maxPawnCostPerTotalPointsCurve>
     <pawnGroupMakers>
@@ -299,6 +310,11 @@
             <li>MedicineUltratech</li>
             <li>Uranium</li>
             <li>MealSurvivalPack</li>
+            <li>DMS_CombatRation</li>
+            <li>Neuroglue</li>
+            <li>ComponentStamped</li>
+            <li>Plasfiber</li>
+            <li>Tungsteel</li>
           </thingDefs>
         </filter>
       </fixedParams>

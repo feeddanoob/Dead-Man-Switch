@@ -12,9 +12,12 @@ namespace DMS
         static readonly ThingDef[] Turrets = new ThingDef[0];
         static readonly ThingDef[] WeaponUseableMechs = new ThingDef[0];//所有能切裝備的機兵
         static readonly ThingDef[] AllWeaponDefs = new ThingDef[0];//所有武器
+
+        private static List<ThingDef> caches;
         public static ThingDef[] GetTurrets => Turrets;
         static WeaponTagUtil()
         {
+            caches = new List<ThingDef>();
             AllWeaponDefs = DefDatabase<ThingDef>.AllDefs.Where((ThingDef def) => def.IsWeapon).ToArray();
             foreach (ThingDef def in AllWeaponDefs)//整理所有Tag與對應的所有武器
             {
@@ -70,8 +73,21 @@ namespace DMS
         }
         public static bool WeaponExists(string defname, out ThingDef thing)
         {
-            thing = DefDatabase<ThingDef>.AllDefs.Where((ThingDef def) => def.IsWeapon && def.defName == defname).FirstOrDefault();
-            return thing != null;
+            thing = caches.Where((ThingDef def) => def.defName == defname).FirstOrDefault();
+            if (thing != null)
+            {
+                return true;
+            }
+            else
+            {
+                thing = DefDatabase<ThingDef>.AllDefs.Where((ThingDef def) => def.IsWeapon && def.defName == defname).FirstOrDefault();
+                if (thing != null)
+                {
+                    caches.Add(thing);
+                    return true;
+                }
+            }
+            return false;
         }
         public static bool WeaponExistsInTurretDict(string defname, out ThingDef thing)
         {

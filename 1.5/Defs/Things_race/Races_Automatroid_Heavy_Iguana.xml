@@ -175,7 +175,7 @@
     <label>Iguana</label>
     <race>DMS_Mech_Iguana</race>
     <isFighter>true</isFighter>
-    <combatPower>250</combatPower>
+    <combatPower>300</combatPower>
     <maxPerGroup>7</maxPerGroup>
     <abilities>
       <li>DMS_SmokeLauncher</li>
@@ -387,7 +387,7 @@
     <label>Gecko</label>
     <race>DMS_Mech_Gecko</race>
     <isFighter>true</isFighter>
-    <combatPower>300</combatPower>
+    <combatPower>400</combatPower>
     <maxPerGroup>7</maxPerGroup>
     <abilities>
       <li>DMS_RepairMode</li>

@@ -35,9 +35,8 @@
           <li>DMS_MechWeaponLight</li>
           <li>A_AR_LongRifle</li>
           <li>A_SAR_LongRifle</li>
-		      <li>A_BR_LongRifle</li>
+          <li>A_BR_LongRifle</li>
           <li>A_MG_Light</li>
-          <li>A_MG_Heavy</li>
           <li>ElephantGun</li>
           <li>SniperRifle</li>
           <li>AssaultRifle</li>
@@ -110,7 +109,7 @@
           <li>A_SR_LongRifle</li>
           <li>A_DMR_LongRifle</li>
           <li>A_AR_LongRifle</li>
-		      <li>A_BR_LongRifle</li>
+          <li>A_BR_LongRifle</li>
           <li>SniperRifle</li>
           <li>AssaultRifle</li>
         </UsableWeaponTags>
@@ -172,7 +171,7 @@
           <li>IndustrialGunAdvanced</li>
           <li>DMS_MechWeaponLight</li>
           <li>A_AR_LongRifle</li>
-		      <li>A_BR_LongRifle</li>
+          <li>A_BR_LongRifle</li>
           <li>Simple_LongRange</li>
           <li>A_DMR_LongRifle</li>
           <li>ElephantGun</li>

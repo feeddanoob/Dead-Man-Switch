@@ -67,7 +67,7 @@ namespace DMS
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             if (ParentPawn == null) yield break;
-
+            if (parent is Pawn p && !p.IsColonyMechPlayerControlled) yield break;
             yield return new Command_SelectApparelOutfit
             {
                 defaultLabel = OutfitSource.CurrentApparelPolicy.label,

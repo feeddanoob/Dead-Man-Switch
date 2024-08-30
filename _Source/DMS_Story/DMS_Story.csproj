@@ -31,8 +31,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DialogueDef.cs" />
+    <Compile Include="DialogueOptionExtension.cs" />
+    <Compile Include="DialogueOptionExtension_AnomalyWeather.cs" />
+    <Compile Include="DialogueOptionExtension_NonHostileToFaction.cs" />
+    <Compile Include="DialogueOptionExtension_Nudity.cs" />
+    <Compile Include="DialogueUtility.cs" />
+    <Compile Include="DialogueWorker.cs" />
+    <Compile Include="DialogueWorker_Random.cs" />
+    <Compile Include="DialogueWorker_Time.cs" />
+    <Compile Include="FactionNegotiant.cs" />
+    <Compile Include="GameComponent_DialogueFramework.cs" />
+    <Compile Include="IAvailable.cs" />
+    <Compile Include="ModExtenson_FactionNegotiant.cs" />
+    <Compile Include="OptionEffect.cs" />
+    <Compile Include="OptionEffect_Incident.cs" />
+    <Compile Include="OptionEffect_OpenTradeDialog.cs" />
+    <Compile Include="OptionEffect_Quest.cs" />
+    <Compile Include="OptionEffect_SetGlobalBool.cs" />
+    <Compile Include="OptionEffect_SetGlobalValue.cs" />
+    <Compile Include="OptionWorker.cs" />
     <Compile Include="Patch_FactionDialogMaker.cs" />
-    <Compile Include="DefOf.cs" />
+    <Compile Include="StoryDefOf.cs" />
     <Compile Include="HarmonyEntry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

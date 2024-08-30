@@ -36,7 +36,7 @@
           <li MayRequire="vanillaexpanded.vwehw">HeavyGun</li><!--重型武器拓展-->
           <li>DMS_MechWeaponLongRifle</li>
           <li>DMS_MechWeaponLight</li>
-		      <li>A_BR_LongRifle</li>
+          <li>A_BR_LongRifle</li>
           <li>GrenadeSmoke</li>
           <li>A_MG_Heavy</li>
           <li>A_SuppressWeapon</li>
@@ -46,6 +46,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons/>
       </li>
       <li Class="DMS.TurretMannableExtension">
         <mannableByDefault>false</mannableByDefault>
@@ -66,7 +67,7 @@
     <label>battle friend</label>
     <race>DMS_Mech_BattleFrame</race>
     <isFighter>true</isFighter>
-    <combatPower>200</combatPower>
+    <combatPower>120</combatPower>
     <maxPerGroup>10</maxPerGroup>
     <lifeStages>
       <li>
@@ -124,6 +125,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons/>
       </li>
     </modExtensions>
     <killedLeavingsPlayerHostile>
@@ -196,6 +198,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons/>
       </li>
     </modExtensions>
   </ThingDef>
@@ -207,7 +210,7 @@
     <label>escort lifter</label>
     <race>DMS_Mech_EscortLifter</race>
     <isFighter>true</isFighter>
-    <combatPower>200</combatPower>
+    <combatPower>80</combatPower>
     <maxPerGroup>10</maxPerGroup>
     <lifeStages>
       <li>
@@ -278,6 +281,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons/>
       </li>
     </modExtensions>
   </ThingDef>
@@ -286,8 +290,8 @@
     <defName>DMS_Mech_ShaftWorker</defName>
     <label>shaft worker</label>
     <race>DMS_Mech_ShaftWorker</race>
-    <isFighter>true</isFighter>
-    <combatPower>200</combatPower>
+    <isFighter>false</isFighter>
+    <combatPower>80</combatPower>
     <maxPerGroup>10</maxPerGroup>
     <lifeStages>
       <li>

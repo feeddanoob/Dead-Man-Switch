@@ -217,7 +217,7 @@
     <label>tarbosaurus</label>
     <race>DMS_Mech_Tarbosaurus</race>
     <isFighter>true</isFighter>
-    <combatPower>300</combatPower>                                               <!--威脅點數-->
+    <combatPower>500</combatPower>                                               <!--威脅點數-->
     <maxPerGroup>2</maxPerGroup>                                                 <!--單個集群內的數量-->
     <isBoss>true</isBoss>
     <lifeStages>                                                                 <!--身體圖片-->

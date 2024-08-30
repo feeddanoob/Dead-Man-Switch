@@ -15,24 +15,53 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
+    <defName>DMS_UAVBasis</defName>
+    <label>drone basis</label>
+    <description>Use simple control logic and signal transceivers to unlock the construction of simple mechanical units.</description>
+    <baseCost>200</baseCost>
+    <requiredResearchBuilding/>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Electricity</li>
+      <li>Machining</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->Hive network and unmanned warfare</li>
+        <li>subject->Automata warfare</li>
+
+        <li>subject_story->forced to survive in a highly unmanned military conflict zone</li>
+        <li>subject_story->works as a supervisor for unmanned transportation systems in a warehouse</li>
+        <li>subject_story->performed drone attack during the war againist mechanoids</li>
+        <li>subject_story->established  a special service team composed of mech dogs and quickly achieved outstanding results</li>
+        <li>subject_story->participated in a semiconductor industrial revolution at a midworld planet</li>
+
+        <li>subject_gerund->optimizing machine learning algorithms</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="DMS_BaseTech">
     <defName>DMS_Material</defName>
     <label>material engineering</label>
     <description>"A perfect material can be calculate through a set of scientific methods" this is one of the breakthough mankind are ever achived.</description>
     <baseCost>1000</baseCost>
     <requiredResearchBuilding/>
     <prerequisites>
-      <li>Electricity</li>
+      <li>DMS_UAVBasis</li>
     </prerequisites>
     <researchViewX>1.00</researchViewX>
     <researchViewY>2.50</researchViewY>
     <generalRules>
       <rulesStrings>
-        <li>subject->advanced material</li>
+        <li>subject->Advanced material</li>
 
-        <li>subject_story->acquired a signal chip in shady circumstances</li>
-        <li>subject_story->found an intact signal chip in a diabolus wreck</li>
-        <li>subject_story->survived a mechanoid hive assault</li>
-        <li>subject_story->collated reports of mechanoid attacks, looking for commonalities</li>
+        <li>subject_story->completed the periodic table of chemical elements</li>
+        <li>subject_story->calculated the alloy material ratio of high-strength materials through neutron number</li>
+        <li>subject_story->describes the influence of high pressure environment applied on material</li>
+        <li>subject_story->summarized the metal crystal phase prediction under gravity-free conditions</li>
 
         <li>subject_gerund->calculating perfect material ratio</li>
       </rulesStrings>
@@ -51,21 +80,20 @@
     </prerequisites>
     <researchViewX>2.00</researchViewX>
     <researchViewY>1.15</researchViewY>
-  </ResearchProjectDef>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->artificial fiber</li>
+        <li>subject->chemical industries</li>
+        <li>subject->Acrylic Genesis</li>
 
-  <ResearchProjectDef ParentName="DMS_BaseTech">
-    <defName>DMS_UAVBasis</defName>
-    <label>drone basis</label>
-    <description>Use simple control logic and signal transceivers to unlock the construction of simple mechanical units.</description>
-    <baseCost>200</baseCost>
-    <requiredResearchBuilding/>
-    <techLevel>Industrial</techLevel>
-    <prerequisites>
-      <li>Electricity</li>
-      <li>Machining</li>
-    </prerequisites>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>3.50</researchViewY>
+        <li>subject_story->explained the importance of the chemical industry to the production of synthetic fibers</li>
+        <li>subject_story->summarized the improvement effect of composite fiber blending process on fabric strength</li>
+        <li>subject_story->described the production revolution of traditional textile industry</li>
+        <li>subject_story->summarized the synthetic production under gravity-free conditions</li>
+
+        <li>subject_gerund->synthesising organic compound</li>
+      </rulesStrings>
+    </generalRules>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech" MayRequire="Ludeon.Rimworld.Biotech">
@@ -96,6 +124,24 @@
     </prerequisites>
     <researchViewX>2.00</researchViewX>
     <researchViewY>3.50</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->mecha gear</li>
+        <li>subject->from science fiction to engineering theory</li>
+        <li>subject->bipedal machinery</li>
+        <li>subject->walking upright</li>
+
+        <!-- 解釋了柔性自鎖結構對於全向關節耐用性的大幅優化. -->
+        <li>subject_story->explained the substantial optimization of the flexible self-locking structure for the durability of omnidirectional joints.</li>
+        <!-- 總結了應用電磁軸承對於往復式運動結構的改善 -->
+        <li>subject_story->summarized the improvement of reciprocating motion structures using electromagnetic bearings</li>
+        <!-- 講解了多級嵌套的緩衝齒輪如何在高強度活動時吸收並再利用衝擊力。 -->
+        <li>subject_story->described how multi-level, nested cushioning gears absorb and reuse impact forces during high-intensity activities</li>
+        
+        <li>subject_gerund->working for a mecha manufacture company</li>
+        <li>subject_gerund->piloting a robot for space junk recovery operations</li>
+      </rulesStrings>
+    </generalRules>
   </ResearchProjectDef>
 
   <!-- 軍團是一系列以大規模集群作戰為目的設計的機兵系列，他們大多都有只著極為簡易的武器操作系統，但明確的分工與廉價的生產成本使得他們成為了生產規模最為可觀的戰鬥兵器。-->
@@ -111,6 +157,23 @@
     </prerequisites>
     <researchViewX>2.00</researchViewX>
     <researchViewY>4.15</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->metallic tide</li>
+        <li>subject->marching steel</li>
+        <li>subject->Legion</li>
+
+        <!-- 在歐羅巴戰爭中指揮一個排的軍團機兵防禦了札波羅熱能源中樞 -->
+        <li>subject_story->commanded a Legion company to defend the Zaporizhzhia Energy Center during the Third Europa War</li>
+        <!-- 出於戰爭經驗發展出了機兵裝甲協同學說 -->
+        <li>subject_story->developed The doctrine of machine-armor coordination based on war experience</li>
+        <!-- 在與殖民艦隊的戰爭中竊取到這個技術 -->
+        <li>subject_story->stole this technology during the war with the colonial fleet</li>
+        
+        <li>subject_gerund->operating a Legion task force</li>
+        <li>subject_gerund->serving as a commander in the war</li>
+      </rulesStrings>
+    </generalRules>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">

@@ -46,7 +46,7 @@
 				<value>
 					<CarryWeight>50</CarryWeight>
 					<CarryBulk>20</CarryBulk>
-					<AimingAccuracy>1</AimingAccuracy>
+					<AimingAccuracy>1.2</AimingAccuracy>
 					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
 					<MeleeDodgeChance>0.28</MeleeDodgeChance>
 					<MeleeCritChance>0.18</MeleeCritChance>

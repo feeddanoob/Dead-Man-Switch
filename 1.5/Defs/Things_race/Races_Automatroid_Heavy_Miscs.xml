@@ -35,6 +35,7 @@
           <li>DMS_MechWeaponHeavy</li>
           <li>Gun_Recoilless</li>
         </UsableWeaponTags>
+        <BypassUsableWeapons/>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
           <li>Industrial</li>

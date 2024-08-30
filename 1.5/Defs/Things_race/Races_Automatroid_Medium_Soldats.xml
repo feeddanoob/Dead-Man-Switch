@@ -40,6 +40,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
+        <BypassUsableWeapons/>
       </li>
       <li Class="DMS.TurretMannableExtension">
         <mannableByDefault>false</mannableByDefault>
@@ -92,7 +93,7 @@
     <label>vanguard</label>
     <race>DMS_Mech_Soldat</race>
     <isFighter>true</isFighter>
-    <combatPower>40</combatPower>
+    <combatPower>80</combatPower>
     <maxPerGroup>20</maxPerGroup>
     <skills>
       <li>
@@ -203,7 +204,7 @@
     <label>grenadier</label>
     <race>DMS_Mech_Grenadier</race>
     <isFighter>true</isFighter>
-    <combatPower>40</combatPower>                                               <!--威脅點數-->
+    <combatPower>120</combatPower>                                               <!--威脅點數-->
     <maxPerGroup>20</maxPerGroup>                                                 <!--單個集群內的數量-->
     <lifeStages>                                                                 <!--身體圖片-->
       <li>
@@ -273,7 +274,7 @@
     <label>kanonier</label>
     <race>DMS_Mech_Kanonier</race>
     <isFighter>true</isFighter>
-    <combatPower>40</combatPower>                                               <!--威脅點數-->
+    <combatPower>140</combatPower>                                               <!--威脅點數-->
     <maxPerGroup>20</maxPerGroup>                                                 <!--單個集群內的數量-->
     <lifeStages>                                                                 <!--身體圖片-->
       <li>

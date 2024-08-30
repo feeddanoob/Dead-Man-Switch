@@ -218,7 +218,7 @@
 			<li>DMS_Clothing</li>
 		</tradeTags>
 		<graphicData>
-			<texPath>Things/Apparel/HazardSuit/Apparel</texPath>
+			<texPath>Things/Apparel/HazardSuit/Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingCategories>
@@ -248,6 +248,8 @@
 				<li>Torso</li>
 				<li>Legs</li>
 				<li>Arms</li>
+				<li>Hands</li>
+				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/HazardSuit/Apparel</wornGraphicPath>
 			<blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
