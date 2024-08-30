@@ -6,6 +6,10 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[defName="DMS_Machine_VerlingBirdA"]/weaponTags</xpath>
         <value>
+            <li>GrenadeDestructive</li>
+            <li>GrenadeEMP</li>
+            <li>GrenadeSmoke</li>
+            <li>GrenadeFlame</li>
             <li>CE_GrenadeFlashbang</li>
             <li>CE_GrenadeNeolithic</li>
         </value>
