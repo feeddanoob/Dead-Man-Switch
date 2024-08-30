@@ -8,7 +8,7 @@
           defName="DMS_Mech_Falcon"
           ]/modExtensions/li[@Class="DMS.MechWeaponExtension"]/UsableWeaponTags</xpath>
         <value>
-          <li>CE_AI_AOE</li>
+          <!--<li>CE_AI_AOE</li>-->
           <li>CE_AI_Grenade</li>
           <li>CE_SMG</li>
           <li>CE_AI_SMG</li>
@@ -20,6 +20,7 @@
           defName="DMS_Mech_Falcon"
           ]/weaponTags</xpath>
         <value>
+          <li>CE_AI_SMG</li>
         </value>
       </li>
       <li Class="PatchOperationAdd">
@@ -59,6 +60,7 @@
           ]/modExtensions/li[@Class="DMS.MechWeaponExtension"]/UsableWeaponTags</xpath>
         <value>
           <li>GunGrenadeLauncher</li>
+          <li>DMS_Grenadier</li>
         </value>
       </li>
       <li Class="PatchOperationAdd">
@@ -67,6 +69,24 @@
           ]/weaponTags</xpath>
         <value>
           <li>GunGrenadeLauncher</li>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>
+          Defs/ThingDef[
+          defName="DMS_Mech_Kanonier"
+          ]/modExtensions/li[@Class="DMS.MechWeaponExtension"]/UsableWeaponTags</xpath>
+        <value>
+          <li>DMS_Kanon</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[
+          defName="DMS_Mech_Kanonier"
+          ]/weaponTags</xpath>
+        <value>
+          <li>DMS_Kanon</li>
         </value>
       </li>
 
