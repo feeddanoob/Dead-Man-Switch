@@ -7,7 +7,6 @@
 			<li Class="PatchOperationAddModExtension">
 				<xpath>
 					Defs/PawnKindDef[
-					defName="DMS_Mech_Caretta" or
 					defName="DMS_Mech_Geochelone" or
 					defName="DMS_Mech_Killdozer"
 					]
@@ -19,6 +18,57 @@
 							<max>8</max>
 						</primaryMagazineCount>
 					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="DMS_Mech_Caretta"] </xpath>
+				<value>
+					<inventoryOptions>
+						<skipChance>0</skipChance>
+						<subOptionsChooseOne>
+							<li>
+								<choiceChance>40</choiceChance>
+								<thingDef>Shell_HighExplosive</thingDef>
+								<countRange>
+									<min>20</min>
+									<max>32</max>
+								</countRange>
+							</li>
+							<li>
+								<choiceChance>15</choiceChance>
+								<thingDef>Shell_HighExplosive_HFuzed</thingDef>
+								<countRange>
+									<min>20</min>
+									<max>32</max>
+								</countRange>
+							</li>
+							<li>
+								<choiceChance>30</choiceChance>
+								<thingDef>Shell_Incendiary</thingDef>
+								<countRange>
+									<min>20</min>
+									<max>32</max>
+								</countRange>
+							</li>
+							<li>
+								<choiceChance>10</choiceChance>
+								<thingDef>Shell_EMP</thingDef>
+								<countRange>
+									<min>20</min>
+									<max>32</max>
+								</countRange>
+							</li>
+							<li>
+								<choiceChance>5</choiceChance>
+								<thingDef>Shell_Toxic</thingDef>
+								<countRange>
+									<min>20</min>
+									<max>32</max>
+								</countRange>
+							</li>
+						</subOptionsChooseOne>
+					</inventoryOptions>
 				</value>
 			</li>
 
@@ -53,7 +103,7 @@
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or
 					defName="DMS_Mech_Geochelone"]/statBases</xpath>
 				<value>
-					<CarryWeight>200</CarryWeight>
+					<CarryWeight>250</CarryWeight>
 					<CarryBulk>200</CarryBulk>
 					<AimingAccuracy>1</AimingAccuracy>
 					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
@@ -225,7 +275,7 @@
 								<li>Blunt</li>
 								<li>Demolish</li>
 							</capacities>
-							<power>50</power>
+							<power>76</power>
 							<cooldownTime>6.2</cooldownTime>
 							<linkedBodyPartsGroup>DozerBlade</linkedBodyPartsGroup>
 							<armorPenetrationBlunt>48</armorPenetrationBlunt>

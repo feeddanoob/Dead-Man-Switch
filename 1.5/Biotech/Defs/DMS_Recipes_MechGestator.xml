@@ -432,6 +432,7 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
+
   <!--方陣步兵-->
   <RecipeDef ParentName="DMS_RoninMechanoidRecipe">
     <defName>DMS_Make_Phalanx</defName>
@@ -448,10 +449,18 @@
       <li>
         <filter>
           <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
             <li>Tungsteel</li>
           </thingDefs>
         </filter>
-        <count>60</count>
+        <count>50</count>
       </li>
       <li>
         <filter>
@@ -541,6 +550,7 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
+
   <!-- 先鋒 -->
   <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
     <defName>DMS_Make_Pioneer</defName>
@@ -560,7 +570,15 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>60</count>
+        <count>35</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Tungsteel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
       </li>
       <li>
         <filter>
@@ -595,6 +613,7 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
+
   <!-- 狙擊手 -->
   <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
     <defName>DMS_Make_Sniper</defName>
@@ -658,6 +677,7 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
+
   <!-- 獵兵 -->
   <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
     <defName>DMS_Make_Jaeger</defName>

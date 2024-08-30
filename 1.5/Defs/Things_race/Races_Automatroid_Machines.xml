@@ -221,7 +221,10 @@
           <li>VerlingBird_Weapon</li>
           <li>DMS_MechWeaponUltraLight</li>
           <li>PLA_RocketLauncherSingleUse</li>
-          <li>CE_AI_Grenade</li>
+          <li>GrenadeDestructive</li>
+          <li>GrenadeEMP</li>
+          <li>GrenadeSmoke</li>
+          <li>GrenadeFlame</li>
           <li>DMS_Flameblaster</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>

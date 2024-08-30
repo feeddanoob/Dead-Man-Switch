@@ -54,6 +54,7 @@
       </li>
     </modExtensions>
   </ThingDef>
+
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Mech_Soldat</defName>
     <label>soldat</label>
@@ -178,9 +179,6 @@
           <li>GrenadeEMP</li>
           <li>GrenadeSmoke</li>
           <li>GrenadeFlame</li>
-          <li>GunGrenadeLauncher</li>
-          <li>CE_GrenadeNeolithic</li>
-          <li>DMS_Grenadier</li>
         </UsableWeaponTags>
         <BypassUsableWeapons>
           <li>Gun_IncendiaryLauncher</li>
@@ -199,6 +197,7 @@
       </li>
     </modExtensions>
   </ThingDef>
+  
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Mech_Grenadier</defName>
     <label>grenadier</label>
@@ -250,7 +249,6 @@
           <li>DMS_MechWeaponLight</li>
           <li>GunSingleUse</li>
           <li>Gun_Recoilless</li>
-          <li>DMS_Kanon</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>

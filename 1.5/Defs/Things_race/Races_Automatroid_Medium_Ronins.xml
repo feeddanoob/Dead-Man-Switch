@@ -15,7 +15,7 @@
     </statBases>
     <race>
       <body>DMS_Humanoid_TypeB_Ronin</body>                                                      <!--身體(另外的def)-->
-      <baseBodySize>1.1</baseBodySize>
+      <baseBodySize>1.2</baseBodySize>
       <baseHealthScale>1.32</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
@@ -154,7 +154,7 @@
     </statBases>
     <race>
       <body>DMS_Humanoid_TypeB_ShieldS</body>                                                      <!--身體(另外的def)-->
-      <baseBodySize>1.1</baseBodySize>
+      <baseBodySize>1.2</baseBodySize>
       <baseHealthScale>1.32</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
@@ -217,7 +217,7 @@
 
   <PawnKindDef ParentName="BaseAutomatroidKind">  <!-- DMS_Mech_Gladiator 角鬥士:近戰特化型  -->
     <defName>DMS_Mech_Gladiator</defName>
-    <label>galdiator</label>
+    <label>gladiator</label>
     <race>DMS_Mech_Gladiator</race>
     <isFighter>true</isFighter>
     <combatPower>150</combatPower>
@@ -264,7 +264,7 @@
     </statBases>
     <race>
       <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
-      <baseBodySize>1.1</baseBodySize>
+      <baseBodySize>1.3</baseBodySize>
       <baseHealthScale>1.54</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
@@ -344,7 +344,7 @@
     </statBases>
     <race>
       <body>DMS_Humanoid_TypeB_ShieldL</body>
-      <baseBodySize>1.1</baseBodySize>
+      <baseBodySize>1.3</baseBodySize>
       <baseHealthScale>1.85</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
       <mechEnabledWorkTypes>
@@ -463,7 +463,7 @@
     </statBases>
     <race>
       <body>DMS_Humanoid_TypeB</body>                                                      <!--身體(另外的def)-->
-      <baseBodySize>1</baseBodySize>
+      <baseBodySize>1.1</baseBodySize>
       <baseHealthScale>1.32</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>

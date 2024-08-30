@@ -26,8 +26,8 @@
   <ThingDef ParentName="BaseMechRace_Arquebusier">
     <defName>DMS_Mech_Arquebusier</defName>
     <label>arquebusier</label>
-    <description>Standard Arquebusier model, has good precision fire capability in all ranges, makes it the backbone of robot army.</description>
-    <modExtensions  Inherit="False">
+    <description>Standard Arquebusier model, has good precision fire capability in all ranges, makes it the backbone of automatroid army.</description>
+    <modExtensions>
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
@@ -47,7 +47,7 @@
           <li>Industrial</li>
         </UsableTechLevels>
         <BypassUsableWeapons>
-          <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
+          <!--<li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>-->
           <li MayRequire="vanillaexpanded.vwehw">VWE_Gun_UraniumSlugRifle</li><!-- 重武器拓展鈾彈槍 -->
           <li MayRequire="oskarpotocki.vfe.pirates">VFEP_WarcasketGun_UraniumSlugRifle</li><!-- 戰棺拓展鈾彈槍 -->
         </BypassUsableWeapons>
@@ -87,7 +87,6 @@
     </weaponTags>
     <abilities>
       <li>DMS_RepairMode</li>
-      <li>DMS_BurstSprint</li>
     </abilities>
   </PawnKindDef>
 
@@ -97,10 +96,12 @@
     <label>jaeger</label>
     <description>an arquebusier variant focuses on stealth action and guerilla deployment for sabotage behind enemy lines. has higher mobility and invisibility.</description>
     <statBases>
-      <MoveSpeed>5.6</MoveSpeed>
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost> 
+      <MoveSpeed>5.3</MoveSpeed>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>
+      <AimingDelayFactor>0.75</AimingDelayFactor>
+      <HuntingStealth>0.5</HuntingStealth> 
     </statBases>
-    <modExtensions Inherit="False">
+    <modExtensions>
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
@@ -159,11 +160,11 @@
   <ThingDef ParentName="BaseMechRace_Arquebusier">
     <defName>DMS_Mech_Pioneer</defName>
     <label>pioneer</label>
-    <description>forward reconnaissance variant of Arquebusier. with improved sight sensor equipped, it has better capability in field operations, capable to hunting if needed.</description>
+    <description>forward reconnaissance variant of Arquebusier. with improved sight sensor equipped, it has better capability in field operations, capable of hunting if needed.</description>
     <statBases>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost> 
     </statBases>
-    <modExtensions  Inherit="False">
+    <modExtensions>
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
@@ -218,6 +219,7 @@
       <li>A_AR_LongRifle</li>
     </weaponTags>
     <abilities>
+      <li>DMS_BurstSprint</li>
     </abilities>
   </PawnKindDef>
 
@@ -229,18 +231,18 @@
     <statBases>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost> 
     </statBases>
-    <modExtensions Inherit="False">
+    <modExtensions>
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>SimpleGun</li>
-          <li>IndustrialGunAdvanced</li>
+          <!--<li>IndustrialGunAdvanced</li>-->
           <li>DMS_MechWeaponLight</li>
           <li>SniperRifle</li>
           <li>A_SC_LongRifle</li>
           <li>A_SR_LongRifle</li>
           <li>A_DMR_LongRifle</li>
-          <li>AssaultRifle</li>
+          <!--<li>AssaultRifle</li>-->
           <li>A_SR_GrenadeLauncher</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>

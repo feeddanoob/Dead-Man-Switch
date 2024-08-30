@@ -1197,7 +1197,7 @@
         <li>
           <def>MechanicalLeg</def>
           <customLabel>left leg</customLabel>
-          <coverage>0.10</coverage>
+          <coverage>0.13</coverage>
           <height>Bottom</height>
           <parts>
             <li>
@@ -1210,7 +1210,7 @@
         <li>
           <def>MechanicalLeg</def>
           <customLabel>right leg</customLabel>
-          <coverage>0.10</coverage>
+          <coverage>0.13</coverage>
           <height>Bottom</height>
           <parts>
             <li>
@@ -1223,13 +1223,13 @@
         <li>
           <def>DMS_ArmourPlate</def>
           <customLabel>waist armour plate</customLabel>
-          <coverage>0.15</coverage>
+          <coverage>0.1</coverage>
           <depth>Outside</depth>
         </li>
         <li>
           <def>DMS_ArmourPlate</def>
           <customLabel>chest armour plate</customLabel>
-          <coverage>0.15</coverage>
+          <coverage>0.13</coverage>
           <depth>Outside</depth>
         </li>
         <li>
@@ -1456,7 +1456,7 @@
         <li>
           <def>DMS_Battery</def>
           <customLabel>secondary battery</customLabel>
-          <coverage>0.05</coverage>
+          <coverage>0.04</coverage>
           <depth>Inside</depth>
         </li>
         <li>
@@ -1466,7 +1466,7 @@
         </li>
         <li>
           <def>DMS_ChestBrain</def>
-          <coverage>0.05</coverage>
+          <coverage>0.03</coverage>
           <depth>Inside</depth>
         </li>
       </parts>
@@ -1687,7 +1687,7 @@
         <li>
           <def>DMS_Battery</def>
           <customLabel>secondary battery</customLabel>
-          <coverage>0.05</coverage>
+          <coverage>0.04</coverage>
           <depth>Inside</depth>
         </li>
         <li>
@@ -1697,7 +1697,7 @@
         </li>
         <li>
           <def>DMS_ChestBrain</def>
-          <coverage>0.05</coverage>
+          <coverage>0.03</coverage>
           <depth>Inside</depth>
         </li>
       </parts>

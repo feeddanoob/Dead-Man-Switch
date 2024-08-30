@@ -46,14 +46,14 @@
 				<value>
 					<CarryWeight>50</CarryWeight>
 					<CarryBulk>20</CarryBulk>
-					<AimingAccuracy>1.2</AimingAccuracy>
+					<AimingAccuracy>1</AimingAccuracy>
 					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
 					<MeleeDodgeChance>0.28</MeleeDodgeChance>
 					<MeleeCritChance>0.18</MeleeCritChance>
 					<MeleeParryChance>0.16</MeleeParryChance>
 					<MaxHitPoints>200</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
-					<AimingDelayFactor>0.8</AimingDelayFactor>
+					<AimingDelayFactor>0.85</AimingDelayFactor>
 					<ReloadSpeed>1.3</ReloadSpeed>
 				</value>
 			</li>
@@ -176,14 +176,14 @@
 						<stats>
 							<li>
 								<useStatic>false</useStatic>
-								<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+								<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 								<parts>
 									<li>DMS_HeadRadar</li>
 								</parts>
 							</li>
 							<li>
 								<useStatic>false</useStatic>
-								<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+								<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 								<parts>
 									<li>DMS_HeadRadar</li>
 								</parts>
@@ -543,7 +543,7 @@
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Phalanx"]/statBases</xpath>
 				<value>
 					<CarryWeight>50</CarryWeight>
-					<CarryBulk>20</CarryBulk>
+					<CarryBulk>30</CarryBulk>
 					<AimingAccuracy>1</AimingAccuracy>
 					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
 					<MeleeDodgeChance>0.16</MeleeDodgeChance>
@@ -558,7 +558,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Phalanx"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
-					<ArmorRating_Blunt>24</ArmorRating_Blunt>
+					<ArmorRating_Blunt>28</ArmorRating_Blunt>
 				</value>
 			</li>
 

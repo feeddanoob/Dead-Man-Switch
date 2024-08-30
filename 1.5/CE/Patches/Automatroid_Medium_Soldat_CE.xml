@@ -72,7 +72,7 @@
 					<MeleeParryChance>0.06</MeleeParryChance>
 					<MaxHitPoints>200</MaxHitPoints>
 					<NightVisionEfficiency>0.6</NightVisionEfficiency>
-					<ReloadSpeed>1.2</ReloadSpeed>
+					<!--<ReloadSpeed>1.2</ReloadSpeed>-->
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
