@@ -6,11 +6,11 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[defName="DMS_Machine_VerlingBirdA"]/weaponTags</xpath>
         <value>
-            <li>CE_GrenadeFlashbang</li>
             <li>GrenadeDestructive</li>
             <li>GrenadeEMP</li>
             <li>GrenadeSmoke</li>
             <li>GrenadeFlame</li>
+            <li>CE_GrenadeFlashbang</li>
             <li>CE_GrenadeNeolithic</li>
         </value>
     </Operation>
@@ -63,7 +63,8 @@
 
     <!--CE grenades for Grenadier-->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Weapon_GrenadeFlashbang"]/weaponTags</xpath>
+        <xpath>Defs/ThingDef[defName="Weapon_GrenadeFlashbang" or 
+                            defName="Weapon_GrenadeStickBomb"]/weaponTags</xpath>
         <value>
             <li>DMS_Grenadier</li>
         </value>

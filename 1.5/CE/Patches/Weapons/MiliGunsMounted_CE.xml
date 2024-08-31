@@ -282,10 +282,10 @@
 				<statBases>
 					<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
 					<SightsEfficiency>0.5</SightsEfficiency>
-					<ShotSpread>1</ShotSpread>
+					<ShotSpread>2</ShotSpread>
 					<SwayFactor>2</SwayFactor>
-					<Bulk>101</Bulk>
-					<Mass>94</Mass>
+					<Bulk>115</Bulk>
+					<Mass>376</Mass>
 				</statBases>
 				<Properties>
 					<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
@@ -298,9 +298,13 @@
 					<burstShotCount>4</burstShotCount>
 					<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 					<soundCast>DMS_Shot_VasilekSound</soundCast>
-					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<soundCastTail>GunTail_Heavy</soundCastTail>  
+					<muzzleFlashScale>50</muzzleFlashScale>
 					<requireLineOfSight>false</requireLineOfSight>
-					<indirectFirePenalty>0.75</indirectFirePenalty>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<ignorePartialLoSBlocker>True</ignorePartialLoSBlocker>
+					<circularError>5</circularError>
+					<indirectFirePenalty>0.35</indirectFirePenalty>
 					<targetParams>
 						<canTargetLocations>true</canTargetLocations>
 					</targetParams>
@@ -331,8 +335,8 @@
 							<li>60</li>
 							<li>70</li>
 							<li>90</li>
-							<li>110</li>
-							<li>130</li>
+						<!--	<li>110</li>
+							<li>130</li>-->
 						</chargeSpeeds>
 					</li>
 				</value>

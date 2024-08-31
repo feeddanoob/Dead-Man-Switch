@@ -9,14 +9,26 @@
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[@Name="DMS_AutomatroidGun"]/statBases</xpath>
                 <value>
-                    <ToughnessRating>3</ToughnessRating>
+                    <ToughnessRating>6</ToughnessRating>
                 </value>
             </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DMS_StunBaton" or
+                                     defName="DMS_Machete" or
+                                     defName="DMS_DoorBreaker"
+                                    ]/statBases</xpath>
+                <value>
+                    <ToughnessRating>10</ToughnessRating>
+                </value>
+            </li>
+
 
             <!--Remove speed penalty-->
             <li Class="PatchOperationRemove">
                 <xpath>Defs/ThingDef[defName="DMS_SemiAutoRifle" or
                     defName="DMS_AntiMaterialRifle" or
+                    defName="DMS_SniperCannon" or
                     defName="DMS_AutomaticGrenadeLauncher" or
                     defName="DMS_LightMachineGun" or
                     defName="DMS_HeavyMachineGun" or
@@ -24,6 +36,7 @@
                     defName="DMS_DoorBreaker"
                     ]/equippedStatOffsets/MoveSpeed</xpath>
             </li>
+
             <!--=====Patch tools(except pistol) =====-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[@Name="DMS_AutomatroidGun"]/tools</xpath>
@@ -128,6 +141,7 @@
                     <li>CE_AI_Pistol</li>
                 </weaponTags>
             </li>
+
             <!--===== PDW =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_PDW</defName>
@@ -482,7 +496,7 @@
                     <muzzleFlashScale>9</muzzleFlashScale>
                 </Properties>
                 <AmmoUser>
-                    <magazineSize>15</magazineSize>
+                    <magazineSize>10</magazineSize>
                     <reloadTime>5</reloadTime>
                     <ammoSet>AmmoSet_50BMG</ammoSet>
                 </AmmoUser>
@@ -509,7 +523,7 @@
                 <statBases>
                     <Mass>40</Mass>
                     <Bulk>23.34</Bulk>
-                    <SwayFactor>2.37</SwayFactor>
+                    <SwayFactor>3.07</SwayFactor>
                     <ShotSpread>0.01</ShotSpread>
                     <SightsEfficiency>3.3</SightsEfficiency>
                     <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
@@ -535,7 +549,7 @@
                     <aiAimMode>AimedShot</aiAimMode>
                 </FireModes>
                 <weaponTags>
-                    <li>Bipod_AMR</li>
+                    <li>Bipod_ATR</li>
                     <li>CE_AI_SR</li>
                 </weaponTags>
             </li>
@@ -620,6 +634,7 @@
                     <aiUseBurstMode>TRUE</aiUseBurstMode>
                 </FireModes>
             </li>
+
             <!--===== Heavy MG =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_HeavyMachineGun</defName>
@@ -664,6 +679,7 @@
                     <li>Bipod_LMG</li>
                 </weaponTags>
             </li>
+            
             <!--===== LAC/Autocannon =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Autocannon</defName>
@@ -728,7 +744,7 @@
 			                <power>40</power>
 			                <cooldownTime>1.64</cooldownTime>
 			                <armorPenetrationBlunt>6.48</armorPenetrationBlunt>
-			                <armorPenetrationSharp>14</armorPenetrationSharp>
+			                <armorPenetrationSharp>16</armorPenetrationSharp>
 			                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
                         </li>
                         <li Class="CombatExtended.ToolCE">
@@ -739,7 +755,7 @@
 			                <power>18</power>
 			                <cooldownTime>1.78</cooldownTime>
 			                <armorPenetrationBlunt>2.0</armorPenetrationBlunt>
-                            <armorPenetrationSharp>16</armorPenetrationSharp>
+                            <armorPenetrationSharp>12</armorPenetrationSharp>
                         </li>
                     </tools>
                 </value>
@@ -754,16 +770,16 @@
                 <xpath>Defs/ThingDef[defName="DMS_Machete"]/statBases</xpath>
                 <value>
 		          <Bulk>8</Bulk>
-		          <MeleeCounterParryBonus>0.8</MeleeCounterParryBonus>
+		          <MeleeCounterParryBonus>0.53</MeleeCounterParryBonus>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DMS_Machete"]</xpath>
                 <value>
                     <equippedStatOffsets>
-			          <MeleeCritChance>0.2</MeleeCritChance>
+			          <MeleeCritChance>0.28</MeleeCritChance>
 			          <MeleeParryChance>0.35</MeleeParryChance>
-			          <MeleeDodgeChance>0.2</MeleeDodgeChance>
+			          <MeleeDodgeChance>0.39</MeleeDodgeChance>
                     </equippedStatOffsets>
                 </value>
             </li>

@@ -345,7 +345,7 @@
                 <Properties>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>Bullet_22LR_FMJ</defaultProjectile>
+                    <defaultProjectile>Bullet_22Hornet_FMJ</defaultProjectile>
                     <warmupTime>1.23</warmupTime>
                     <range>30</range>
                     <soundCast>DMS_SurvivalRifle_Shot</soundCast>
@@ -355,6 +355,7 @@
                 </Properties>
                 <AmmoUser>
                     <magazineSize>1</magazineSize>
+                    <AmmoGenPerMagOverride>6</AmmoGenPerMagOverride>
                     <reloadTime>1.35</reloadTime>
                     <ammoSet>AmmoSet_SurvivalRifle</ammoSet>
                 </AmmoUser>
@@ -373,14 +374,15 @@
                     <li Class="CombatExtended.CompProperties_UnderBarrel">
                         <propsUnderBarrel>
                             <magazineSize>1</magazineSize>
+                            <AmmoGenPerMagOverride>3</AmmoGenPerMagOverride>
                             <reloadTime>1.5</reloadTime>
-                            <ammoSet>AmmoSet_SurvivalRifle_UB</ammoSet>
+                            <ammoSet>AmmoSet_410Bore</ammoSet>
                         </propsUnderBarrel>
                         <verbPropsUnderBarrel>
                             <recoilAmount>2.70</recoilAmount>
                             <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                             <hasStandardCommand>true</hasStandardCommand>
-                            <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+                            <defaultProjectile>Bullet_410Bore_Buck</defaultProjectile>
                             <warmupTime>1.08</warmupTime>
                             <range>8</range>
                             <soundCast>Shot_Shotgun_NoRack</soundCast>
@@ -418,6 +420,7 @@
                 </Properties>
                 <AmmoUser>
                     <magazineSize>1</magazineSize>
+                    <AmmoGenPerMagOverride>5</AmmoGenPerMagOverride>
                     <reloadTime>2.5</reloadTime>
                     <ammoSet>AmmoSet_50BMG</ammoSet>
                 </AmmoUser>
@@ -435,7 +438,7 @@
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DMS_SniperGrenadeLauncher"]/statBases</xpath>
                 <value>
-                    <ToughnessRating>3</ToughnessRating>
+                    <ToughnessRating>5</ToughnessRating>
                 </value>
             </li>
 

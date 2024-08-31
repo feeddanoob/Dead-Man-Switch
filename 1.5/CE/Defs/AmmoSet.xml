@@ -6,6 +6,7 @@
 		<defName>AmmoSet_SurvivalRifle</defName>
 		<label>X Calibre</label>
 		<ammoTypes> 
+			<!--
 			<Ammo_12Gauge_Buck>Bullet_12Gauge_Buck</Ammo_12Gauge_Buck>
 			<Ammo_12Gauge_Slug>Bullet_12Gauge_Slug</Ammo_12Gauge_Slug>
 			<Ammo_12Gauge_Beanbag>Bullet_12Gauge_Beanbag</Ammo_12Gauge_Beanbag>
@@ -28,13 +29,17 @@
 			<Ammo_45Colt_FMJ>Bullet_45Colt_FMJ</Ammo_45Colt_FMJ>
 			<Ammo_45Colt_AP>Bullet_45Colt_AP</Ammo_45Colt_AP>
 			<Ammo_45Colt_HP>Bullet_45Colt_HP</Ammo_45Colt_HP>
+		-->
+		    <Ammo_22Hornet_FMJ>Bullet_22Hornet_FMJ</Ammo_22Hornet_FMJ>
+		    <Ammo_22Hornet_AP>Bullet_22Hornet_AP</Ammo_22Hornet_AP>
+		    <Ammo_22Hornet_HP>Bullet_22Hornet_HP</Ammo_22Hornet_HP>
 			
 			<Ammo_22LR_FMJ>Bullet_22LR_FMJ</Ammo_22LR_FMJ>
 			<Ammo_22LR_AP>Bullet_22LR_AP</Ammo_22LR_AP>
 			<Ammo_22LR_HP>Bullet_22LR_HP</Ammo_22LR_HP>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
-
+<!--
 	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_SurvivalRifle_UB</defName>
 		<label>Intermediate X Calibre</label>
@@ -54,5 +59,5 @@
 			<Ammo_545x39mmSoviet_Sabot>Bullet_545x39mmSoviet_Sabot</Ammo_545x39mmSoviet_Sabot>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
-
+-->
 </Defs>

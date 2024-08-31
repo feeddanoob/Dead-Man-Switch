@@ -32,6 +32,7 @@
       </li>
     </ingredients>
   </RecipeDef>
+
   <!--夜蝠-->
   <RecipeDef ParentName="DMS_LegionMechanoidRecipe">
     <defName>DMS_Make_Noctula</defName>
@@ -72,6 +73,7 @@
       </li>
     </ingredients>
   </RecipeDef>
+
   <!--獒犬-->
   <RecipeDef ParentName="DMS_LegionMechanoidRecipe">
     <defName>DMS_Make_Dogge</defName>
@@ -104,6 +106,7 @@
       </li>
     </ingredients>
   </RecipeDef>
+
   <!--士兵-->
   <RecipeDef ParentName="DMS_LegionMechanoidRecipe">
     <defName>DMS_Make_Soldat</defName>
@@ -135,6 +138,7 @@
       </li>
     </ingredients>
   </RecipeDef>
+
   <!--擲彈手-->
   <RecipeDef ParentName="DMS_LegionMechanoidRecipe">
     <defName>DMS_Make_Grenadier</defName>
@@ -188,6 +192,7 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
+  
   <!--軍士-->
   <RecipeDef ParentName="DMS_LegionMechanoidRecipe">
     <defName>DMS_Make_Sergeant</defName>

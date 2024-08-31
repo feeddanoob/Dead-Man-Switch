@@ -10,8 +10,8 @@
     </statBases>
     <race>
       <body>DMS_Chop</body>
-      <baseBodySize>1</baseBodySize>
-      <baseHealthScale>1</baseHealthScale>
+      <baseBodySize>0.5</baseBodySize>
+      <baseHealthScale>0.75</baseHealthScale>
       <mechWeightClass>Light</mechWeightClass>
     </race>
     <comps>
@@ -73,6 +73,10 @@
           <li>VerlingBird_Weapon</li>
           <li>DMS_MechWeaponUltraLight</li>
           <li>RiotLMG</li>
+          <li>GrenadeDestructive</li>
+          <li>GrenadeEMP</li>
+          <li>GrenadeSmoke</li>
+          <li>GrenadeFlame</li>
           <li>SurvivalRifle</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
@@ -86,6 +90,7 @@
       </li>
     </modExtensions>
   </ThingDef>
+
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Mech_Falcon</defName>
     <label>falcon</label>
@@ -99,7 +104,7 @@
           <texPath>Things/Automatroid/falcon</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.5</drawSize>
+          <drawSize>1.2</drawSize>
         </bodyGraphicData>
       </li>
       <li>
@@ -107,14 +112,15 @@
           <texPath>Things/Automatroid/falcon</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.5</drawSize>
+          <drawSize>1.2</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
     <weaponTags>
         <li>RiotLMG</li>
-        <li>CE_AI_SMG</li>
-        <li>CE_AI_AOE</li>
+        <li>GrenadeDestructive</li>
+        <li>GrenadeEMP</li>
+        <li>GrenadeFlame</li>
     </weaponTags>
   </PawnKindDef>
 
@@ -146,6 +152,7 @@
       </li>
     </modExtensions>
   </ThingDef>
+
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Mech_Noctula</defName>
     <label>noctula</label>
@@ -159,7 +166,7 @@
           <texPath>Things/Automatroid/noctula</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.5</drawSize>
+          <drawSize>1.2</drawSize>
         </bodyGraphicData>
       </li>
       <li>
@@ -167,7 +174,7 @@
           <texPath>Things/Automatroid/noctula</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.5</drawSize>
+          <drawSize>1.2</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -284,6 +291,7 @@
       </li>
     </modExtensions>
   </ThingDef>
+
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Mech_Dogge</defName>
     <label>dogge</label>

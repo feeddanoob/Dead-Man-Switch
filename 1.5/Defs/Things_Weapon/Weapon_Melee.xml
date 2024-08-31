@@ -16,7 +16,7 @@
 			<li>DMS_MeleeWeapon</li>
 		</weaponTags>
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
+			<WorkToMake>25000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>
@@ -106,7 +106,7 @@
 			<li>A_Cut_Melee</li>
 		</weaponTags>
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
+			<WorkToMake>35000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>
@@ -140,7 +140,7 @@
 		</tools>
 		<costList>
 			<Tungsteel>90</Tungsteel>
-			<ComponentStamped>2</ComponentStamped>
+			<ComponentStamped>3</ComponentStamped>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
