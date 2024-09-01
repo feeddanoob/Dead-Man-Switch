@@ -40,6 +40,10 @@
       </li>
     </ingredients>
   </RecipeDef>
+
+
+  <!--======框架系=======-->
+
   <!--戰鬥框架-->
   <RecipeDef ParentName="DMS_HeavyMechanoidRecipe">
     <defName>DMS_Make_BattleFrame</defName>
@@ -93,6 +97,7 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
+
   <!--中繼指揮-->
   <RecipeDef ParentName="DMS_HeavyMechanoidRecipe">
     <defName>DMS_Make_FieldCommand</defName>
@@ -155,6 +160,7 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
+
   <!--貨運框架-->
   <RecipeDef ParentName="DMS_HeavyMechanoidRecipe">
     <defName>DMS_Make_EscortLifter</defName>
@@ -173,7 +179,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>100</count>
+        <count>130</count>
       </li>
       <li>
         <filter>
@@ -208,6 +214,7 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
+
   <!--礦井工人-->
   <RecipeDef ParentName="DMS_HeavyMechanoidRecipe">
     <defName>DMS_Make_ShaftWorker</defName>
@@ -262,6 +269,9 @@
     </fixedIngredientFilter>
   </RecipeDef>
 
+
+  <!--======浪人系=======-->
+
   <!--浪人-->
   <RecipeDef ParentName="DMS_RoninMechanoidRecipe">
     <defName>DMS_Make_Ronin</defName>
@@ -270,7 +280,6 @@
     <products>
       <DMS_Mech_Ronin>1</DMS_Mech_Ronin>
     </products>
-    <gestationCycles>2</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Ronin</ThingDef>
     </descriptionHyperlinks>
@@ -316,6 +325,61 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
+
+  <!--角鬥-->
+  <RecipeDef ParentName="DMS_RoninMechanoidRecipe">
+    <defName>DMS_Make_Gladiator</defName>
+    <label>gestate gladiator</label>
+    <description>Gestate a gladiator mechanoid.</description>
+    <products>
+      <DMS_Mech_Gladiator>1</DMS_Mech_Gladiator>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>DMS_Mech_Gladiator</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Tungsteel</li>
+          </thingDefs>
+        </filter>
+        <count>85</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Synthread</li>
+            <li>Polyester</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentStamped</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Polyester</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
   <!--破城者-->
   <RecipeDef ParentName="DMS_RoninMechanoidRecipe">
     <defName>DMS_Make_Siegebreaker</defName>
@@ -324,7 +388,6 @@
     <products>
       <DMS_Mech_Siegebreaker>1</DMS_Mech_Siegebreaker>
     </products>
-    <gestationCycles>2</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Siegebreaker</ThingDef>
     </descriptionHyperlinks>
@@ -378,6 +441,7 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
+  
   <!--塔盾手-->
   <RecipeDef ParentName="DMS_RoninMechanoidRecipe">
     <defName>DMS_Make_Protector</defName>
@@ -386,7 +450,6 @@
     <products>
       <DMS_Mech_Protector>1</DMS_Mech_Protector>
     </products>
-    <gestationCycles>2</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Protector</ThingDef>
     </descriptionHyperlinks>
@@ -496,6 +559,9 @@
     </fixedIngredientFilter>
   </RecipeDef>
 
+
+  <!--=======火槍系=======-->
+
   <!--火槍手-->
   <RecipeDef ParentName="DMS_HumanoidMechanoidRecipe">
     <defName>DMS_Make_Arquebusier</defName>
@@ -504,7 +570,6 @@
     <products>
       <DMS_Mech_Arquebusier>1</DMS_Mech_Arquebusier>
     </products>
-    <gestationCycles>2</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Arquebusier</ThingDef>
     </descriptionHyperlinks>
@@ -622,7 +687,6 @@
     <products>
       <DMS_Mech_Sniper>1</DMS_Mech_Sniper>
     </products>
-    <gestationCycles>2</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>ComponentFireControl</ThingDef>
       <ThingDef>DMS_Mech_Sniper</ThingDef>
@@ -686,7 +750,6 @@
     <products>
       <DMS_Mech_Jaeger>1</DMS_Mech_Jaeger>
     </products>
-    <gestationCycles>2</gestationCycles>
     <descriptionHyperlinks>
       <ThingDef>DMS_Mech_Jaeger</ThingDef>
     </descriptionHyperlinks>

@@ -363,6 +363,7 @@
                     <aiAimMode>AimedShot</aiAimMode>
                 </FireModes>
                 <weaponTags>
+                    <li>SimpleGun</li>
                     <li>CE_OneHandedWeapon</li>
                     <li>CE_AI_SR</li>
                 </weaponTags>
