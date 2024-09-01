@@ -331,7 +331,6 @@
 				<li>Hands</li>
 				<li>Feet</li>
 				<li>Legs</li>
-				<li>Arms</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/ExoSkelton/Apparel</wornGraphicPath>
 			<blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>

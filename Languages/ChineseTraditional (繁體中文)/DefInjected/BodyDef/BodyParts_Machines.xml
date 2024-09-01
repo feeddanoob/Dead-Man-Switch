@@ -160,11 +160,11 @@
   <!-- EN: erectus soldat -->
   <DMS_Humanoid_Soldat.label>士兵型機體</DMS_Humanoid_Soldat.label>
   <!-- EN: central sight sensor -->
-  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>視線感測器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
+  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>視覺感測器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
   <!-- EN: left sight sensor -->
-  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>左視線感測器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>左視覺感測器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
   <!-- EN: right sight sensor -->
-  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>右視線感測器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+  <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>右視覺感測器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
   <!-- EN: left hearing sensor -->
   <DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>左聽覺感測器</DMS_Humanoid_Soldat.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
   <!-- EN: right hearing sensor -->
@@ -223,9 +223,9 @@
   <!-- EN: right infrared sensor -->
   <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_infrared_sensor.customLabel>右紅外感測器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_infrared_sensor.customLabel>
   <!-- EN: left sight sensor -->
-  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_sight_sensor.customLabel>左視線感測器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_sight_sensor.customLabel>
+  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_sight_sensor.customLabel>左視覺感測器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_sight_sensor.customLabel>
   <!-- EN: right sight sensor -->
-  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_sight_sensor.customLabel>右視線感測器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_sight_sensor.customLabel>
+  <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_sight_sensor.customLabel>右視覺感測器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.right_sight_sensor.customLabel>
   <!-- EN: left hearing sensor -->
   <DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_hearing_sensor.customLabel>左聽覺感測器</DMS_Humanoid_TypeA.corePart.parts.MechanicalNeck.parts.DMS_SniperHead.parts.left_hearing_sensor.customLabel>
   <!-- EN: right hearing sensor -->
@@ -322,10 +322,63 @@
   <!-- EN: secondary battery -->
   <DMS_Humanoid_TypeB.corePart.parts.secondary_battery.customLabel>副電池</DMS_Humanoid_TypeB.corePart.parts.secondary_battery.customLabel>
   
+  <!-- EN: erectus ronin(blade) -->
+  <DMS_Humanoid_TypeB_Ronin.label>浪人機體</DMS_Humanoid_TypeB_Ronin.label>
+  <!-- EN: left shoulder -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.customLabel>左肩</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.customLabel>
+  <!-- EN: left arm -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.customLabel>左臂</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <!-- EN: left arm blade -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_arm_blade.customLabel>左手刃</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_arm_blade.customLabel>
+  <!-- EN: left hand -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>左手</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <!-- EN: left pinky -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>左小指</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>
+  <!-- EN: left middle finger -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>左中指</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <!-- EN: left index finger -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>左食指</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <!-- EN: left thumb -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>左拇指</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <!-- EN: right mechanical shoulder -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.customLabel>右機械肩</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.customLabel>
+  <!-- EN: right arm -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>右臂</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>
+  <!-- EN: right arm blade -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_arm_blade.customLabel>右手刃</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_arm_blade.customLabel>
+  <!-- EN: right hand -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>右手</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <!-- EN: right pinky -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>右小指</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>
+  <!-- EN: right middle finger -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>右中指</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <!-- EN: right index finger -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>右食指</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <!-- EN: right thumb -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>右拇指</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <!-- EN: left leg -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_leg.customLabel>左腿</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_leg.customLabel>
+  <!-- EN: left foot -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_leg.parts.left_foot.customLabel>左腳</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <!-- EN: right leg -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_leg.customLabel>右腿</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_leg.customLabel>
+  <!-- EN: right foot -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_leg.parts.right_foot.customLabel>右腳</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <!-- EN: waist armour plate -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.waist_armour_plate.customLabel>腰部裝甲板</DMS_Humanoid_TypeB_Ronin.corePart.parts.waist_armour_plate.customLabel>
+  <!-- EN: chest armour plate -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.chest_armour_plate.customLabel>胸部裝甲板</DMS_Humanoid_TypeB_Ronin.corePart.parts.chest_armour_plate.customLabel>
+  <!-- EN: main battery -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.main_battery.customLabel>主電池</DMS_Humanoid_TypeB_Ronin.corePart.parts.main_battery.customLabel>
+  <!-- EN: secondary battery -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.secondary_battery.customLabel>副電池</DMS_Humanoid_TypeB_Ronin.corePart.parts.secondary_battery.customLabel>
+  
   <!-- EN: shield protector -->
   <DMS_Humanoid_TypeB_ShieldL.label>塔盾手</DMS_Humanoid_TypeB_ShieldL.label>
   <!-- EN: left shoulder -->
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.left_shoulder.customLabel>左肩</DMS_Humanoid_TypeB_ShieldL.corePart.parts.left_shoulder.customLabel>
+  <!-- EN: ballistic shield -->
+  <DMS_Humanoid_TypeB_ShieldL.corePart.parts.left_shoulder.parts.ballistic_shield.customLabel>防彈盾牌</DMS_Humanoid_TypeB_ShieldL.corePart.parts.left_shoulder.parts.ballistic_shield.customLabel>
   <!-- EN: left arm -->
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.left_shoulder.parts.left_arm.customLabel>左臂</DMS_Humanoid_TypeB_ShieldL.corePart.parts.left_shoulder.parts.left_arm.customLabel>
   <!-- EN: left hand -->
@@ -360,8 +413,6 @@
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.right_leg.customLabel>右腿</DMS_Humanoid_TypeB_ShieldL.corePart.parts.right_leg.customLabel>
   <!-- EN: right foot -->
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.right_leg.parts.right_foot.customLabel>右腳</DMS_Humanoid_TypeB_ShieldL.corePart.parts.right_leg.parts.right_foot.customLabel>
-  <!-- EN: ballistic shield -->
-  <DMS_Humanoid_TypeB_ShieldL.corePart.parts.ballistic_shield.customLabel>防彈盾</DMS_Humanoid_TypeB_ShieldL.corePart.parts.ballistic_shield.customLabel>
   <!-- EN: waist armour plate -->
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.waist_armour_plate.customLabel>腰部裝甲板</DMS_Humanoid_TypeB_ShieldL.corePart.parts.waist_armour_plate.customLabel>
   <!-- EN: chest armour plate -->
@@ -370,6 +421,72 @@
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.main_battery.customLabel>主電池</DMS_Humanoid_TypeB_ShieldL.corePart.parts.main_battery.customLabel>
   <!-- EN: secondary battery -->
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.secondary_battery.customLabel>副電池</DMS_Humanoid_TypeB_ShieldL.corePart.parts.secondary_battery.customLabel>
+  
+  <!-- UNUSED -->
+  <DMS_Humanoid_TypeB_ShieldL.corePart.parts.ballistic_shield.customLabel>防彈盾</DMS_Humanoid_TypeB_ShieldL.corePart.parts.ballistic_shield.customLabel>
+  
+  <!-- EN: shield assault -->
+  <DMS_Humanoid_TypeB_ShieldS.label>格鬥士</DMS_Humanoid_TypeB_ShieldS.label>
+  <!-- EN: central sight sensor -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>視覺感測器</DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
+  <!-- EN: left infrared sensor -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_infrared_sensor.customLabel>左紅外感測器</DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_infrared_sensor.customLabel>
+  <!-- EN: right infrared sensor -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_infrared_sensor.customLabel>右紅外感測器</DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_infrared_sensor.customLabel>
+  <!-- EN: left sight sensor -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>左視覺感測器</DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+  <!-- EN: right sight sensor -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>右視覺感測器</DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>左聽覺感測器</DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>右聽覺感測器</DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <!-- EN: left shoulder -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.customLabel>左機械肩</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.customLabel>
+  <!-- EN: assault shield -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.assault_shield.customLabel>格鬥盾牌</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.assault_shield.customLabel>
+  <!-- EN: left arm -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.customLabel>左臂</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <!-- EN: left hand -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>左手</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <!-- EN: left pinky -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>左小指</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>
+  <!-- EN: left middle finger -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>左中指</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <!-- EN: left index finger -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>左食指</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <!-- EN: left thumb -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>左拇指</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <!-- EN: right mechanical shoulder -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.customLabel>右機械肩</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.customLabel>
+  <!-- EN: right arm -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>右臂</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>
+  <!-- EN: right hand -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>右手</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <!-- EN: right pinky -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>右小指</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>
+  <!-- EN: right middle finger -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>右中指</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <!-- EN: right index finger -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>右食指</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <!-- EN: right thumb -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>右拇指</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <!-- EN: left leg -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_leg.customLabel>左腿</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_leg.customLabel>
+  <!-- EN: left foot -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_leg.parts.left_foot.customLabel>左腳</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <!-- EN: right leg -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_leg.customLabel>右腿</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_leg.customLabel>
+  <!-- EN: right foot -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_leg.parts.right_foot.customLabel>右腳</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <!-- EN: waist armour plate -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.waist_armour_plate.customLabel>腰部裝甲板</DMS_Humanoid_TypeB_ShieldS.corePart.parts.waist_armour_plate.customLabel>
+  <!-- EN: chest armour plate -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.chest_armour_plate.customLabel>胸部裝甲板</DMS_Humanoid_TypeB_ShieldS.corePart.parts.chest_armour_plate.customLabel>
+  <!-- EN: main battery -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.main_battery.customLabel>主電池</DMS_Humanoid_TypeB_ShieldS.corePart.parts.main_battery.customLabel>
+  <!-- EN: secondary battery -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.secondary_battery.customLabel>副電池</DMS_Humanoid_TypeB_ShieldS.corePart.parts.secondary_battery.customLabel>
   
   <!-- EN: kill dozer -->
   <DMS_KillDozer.label>突擊破障車體</DMS_KillDozer.label>

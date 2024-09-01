@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: the modification durability on one of your mech has exhausted -->
+  <!-- EN: The modification durability on one of your mechs has exhausted -->
   <DMS_AddonBroken>安装於机械体上的改装模块已完全损坏</DMS_AddonBroken>
-  <!-- EN: Disposable ceramic armor, which protects the mecha from damage until its durability is exhausted. -->
+  <!-- EN: Disposable ceramic armor protects the mecha from damage as ablative armor until its durability is exhausted and needs replacement. -->
   <DMS_PlatingTooltip>能够抵御大多数伤害的一次性防护片，其上限值与机械体体型正相关，无法自然恢复耐久。</DMS_PlatingTooltip>
-  <!-- EN: modification applied -->
+  <!-- EN: Modification applied -->
   <DMS_HasAppliedModification>机械体已完成改装模块的安装</DMS_HasAppliedModification>
-  <!-- EN: system not supported -->
+  <!-- EN: Weapon system not supported -->
   <DMS_WeaponNotSupported>:机体系统不支持</DMS_WeaponNotSupported>
-  <!-- EN: frame not supported -->
+  <!-- EN: Mech frame not supported -->
   <DMS_FrameNotSupported>:机体框架不支持</DMS_FrameNotSupported>
   <!-- EN: DMS: Trigger Safe Actived -->
   <DMS_WillTerminateTheBetrayedUnit>失能机关: 待发状态</DMS_WillTerminateTheBetrayedUnit>
-  <!-- EN: automatroid has disconnected to protect mechanitor -->
-  <DMS_AutomatroidDisconnected>为确保负载安全已自动断连</DMS_AutomatroidDisconnected>
-  <!-- EN: need mechanitor in map -->
+  <!-- EN: Automatroid has disconnected to protect the echanitor -->
+  <DMS_AutomatroidDisconnected>为确保负载安全，N.A.C.S.已自动断连</DMS_AutomatroidDisconnected>
+  <!-- EN: Need mechanitor in map -->
   <CommandCallRoyalAid_NoMechanitorAvaliable>需要机械师</CommandCallRoyalAid_NoMechanitorAvaliable>
-  <!-- EN: must be Mechanitor -->
+  <!-- EN: Must be Mechanitor -->
   <DMS_PawnIsNotMechanitor>:必须是机械师</DMS_PawnIsNotMechanitor>
   <!-- EN: Orbital downlink has established connection with mechanitor -->
   <DMS_BandwidthSupported>轨道下行带宽建立了与机械师的连接协议</DMS_BandwidthSupported>
-  <!-- EN: mounted wepaon -->
+  <!-- EN: Mounted weapon -->
   <DMS_MountedWeapon>挂载型武器</DMS_MountedWeapon>
-  <!-- EN: this weapon can only be equipped with listed automatroid or mechframe -->
+  <!-- EN: This weapon can only be equipped with listed automatroid or mechframe -->
   <DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>此挂载型武器只能由下列机械体或装备衣物与仿生後所使用</DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>
-  <!-- EN: this weapon can be equipped with listed specific apparel or bionics -->
+  <!-- EN: This weapon can be equipped with listed specific apparel or bionics -->
   <DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>此武器也可以由下列机械体或装备衣物与仿生後所使用</DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>
   
   <!-- UNUSED -->

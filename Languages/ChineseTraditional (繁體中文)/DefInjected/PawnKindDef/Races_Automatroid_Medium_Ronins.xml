@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: galdiator -->
+  <DMS_Mech_Gladiator.label>格鬥士</DMS_Mech_Gladiator.label>
+  
   <!-- EN: phalanx -->
   <DMS_Mech_Phalanx.label>方陣步兵</DMS_Mech_Phalanx.label>
   

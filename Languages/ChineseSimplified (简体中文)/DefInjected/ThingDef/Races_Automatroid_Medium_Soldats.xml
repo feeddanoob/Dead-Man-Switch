@@ -15,7 +15,7 @@
   <!-- EN: kanonier -->
   <DMS_Mech_Kanonier.label>炮兵</DMS_Mech_Kanonier.label>
   <!-- EN: A biped humanoid robot imitated design from the combat unit of mechanoids, can equipped with weapons that humans can use. \n\n Although the carried battery backpack having a long battery life, but is also makes it unable to fight like a genuine mech walkers without cover. -->
-  <DMS_Mech_Kanonier.description>使用高强度合金作为骨架的士兵改装型，具有更高的出力来装备火箭筒与无後坐力炮等重武器。\n\n虽然携带的电池背包具有较长的电池寿命，但也使其无法在没有掩护的情况下进行战斗。</DMS_Mech_Kanonier.description>
+  <DMS_Mech_Kanonier.description>一种使用高强度合金作为机体骨架的士兵改装型，具有更高的出力来装备火箭筒与无後坐力炮等重武器。\n\n虽然携带的电池背包具有较长的电池寿命，但也使其无法在没有掩护的情况下进行战斗。</DMS_Mech_Kanonier.description>
   <!-- EN: head -->
   <DMS_Mech_Kanonier.tools.head.label>头部</DMS_Mech_Kanonier.tools.head.label>
   <!-- EN: left fist -->

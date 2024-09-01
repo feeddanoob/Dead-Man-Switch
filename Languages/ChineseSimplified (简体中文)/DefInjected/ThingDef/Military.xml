@@ -4,7 +4,7 @@
   <!-- EN: army cap -->
   <DMS_Apparel_ArmyCap.label>军便帽</DMS_Apparel_ArmyCap.label>
   <!-- EN: a soft cap for service man when combat helmet is not required. -->
-  <DMS_Apparel_ArmyCap.description>在不需要穿戴战斗头盔时，为军人提供的软帽。</DMS_Apparel_ArmyCap.description>
+  <DMS_Apparel_ArmyCap.description>一种提供军人在非战斗场合穿戴并具有一定识别作用的软帽。</DMS_Apparel_ArmyCap.description>
   
   <!-- EN: operator helmet -->
   <DMS_Apparel_ArrayHelmet.label>机控头显</DMS_Apparel_ArrayHelmet.label>
@@ -14,7 +14,7 @@
   <!-- EN: beret -->
   <DMS_Apparel_Beret.label>贝雷帽</DMS_Apparel_Beret.label>
   <!-- EN: a soft cap for military man when combat helmet is not required. -->
-  <DMS_Apparel_Beret.description>在不需要穿戴战斗头盔时，为军人设计的软帽。</DMS_Apparel_Beret.description>
+  <DMS_Apparel_Beret.description>一种提供军人与军官在非战斗场合穿戴并具有一定识别作用的软帽。</DMS_Apparel_Beret.description>
   
   <!-- EN: bionic suit -->
   <DMS_Apparel_BionicSuit.label>仿生战斗服</DMS_Apparel_BionicSuit.label>
@@ -24,7 +24,7 @@
   <!-- EN: soft kepi -->
   <DMS_Apparel_SoftKepi.label>软筒帽</DMS_Apparel_SoftKepi.label>
   <!-- EN: a soft cap for military man when combat helmet is not required. -->
-  <DMS_Apparel_SoftKepi.description>在不需要穿戴战斗头盔时，为军人设计的软帽。</DMS_Apparel_SoftKepi.description>
+  <DMS_Apparel_SoftKepi.description>一种提供军人与军官在非战斗场合穿戴并具有一定识别作用的软帽。</DMS_Apparel_SoftKepi.description>
   
   <!-- EN: tactical cloak -->
   <DMS_Apparel_TacticalCloak.label>战术斗篷</DMS_Apparel_TacticalCloak.label>
@@ -39,6 +39,6 @@
   <!-- EN: tactical vest -->
   <DMS_Apparel_TacticalVest.label>战术装具</DMS_Apparel_TacticalVest.label>
   <!-- EN: A vest with armor plates inserted on the chest and back. While quite effective at deflecting gunshots and stabbing attacks against the chest, it does nothing to protect the limbs. -->
-  <DMS_Apparel_TacticalVest.description>在胸部和背部插入装甲板的背心。虽然能有效抵挡枪弹和刺向胸部的攻击，但它对保护四肢没有任何作用。</DMS_Apparel_TacticalVest.description>
+  <DMS_Apparel_TacticalVest.description>在胸部和背部插入防弹装甲板的战术背心。能有效抵挡枪弹和刺向躯干部位的攻击，但对保护四肢没有任何作用。</DMS_Apparel_TacticalVest.description>
   
 </LanguageData>

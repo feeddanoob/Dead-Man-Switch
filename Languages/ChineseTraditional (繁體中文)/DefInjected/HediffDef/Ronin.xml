@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: infrasound barrage -->
+  <!-- EN: Infrasound barrage -->
   <DMS_InfrasoundWave.label>次聲波屏障</DMS_InfrasoundWave.label>
   <!-- EN: This unit is casting a powerful infrasound waves to interfere with the sensory systems of all creatures within the range. -->
   <DMS_InfrasoundWave.description>這個裝置會發出強大的次聲波，干擾範圍內所有生物的感官系統。</DMS_InfrasoundWave.description>

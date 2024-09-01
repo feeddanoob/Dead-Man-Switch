@@ -248,7 +248,6 @@
     </abilities>
   </PawnKindDef>
 
-
    <!-- 破城者 Siegebreaker-->
    <ThingDef ParentName="BaseAutomatroidHumanRace">
     <defName>DMS_Mech_Siegebreaker</defName>

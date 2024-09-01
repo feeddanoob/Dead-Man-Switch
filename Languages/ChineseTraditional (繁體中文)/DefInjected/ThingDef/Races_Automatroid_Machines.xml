@@ -10,21 +10,21 @@
   
   <!-- EN: trash bin -->
   <DMS_Machine_TrashBin.label>垃圾桶</DMS_Machine_TrashBin.label>
-  <!-- EN: cylindrical service robots used in Midworld cities provide road cleaning, express and food delivery services, and to be the first to assist in evacuation and maintain order when emergencies occur. -->
+  <!-- EN: Cylindrical service robots used in Midworld cities to provide road cleaning, express and food delivery services, and to be the first to assist in evacuation and maintain order when emergencies occur. -->
   <DMS_Machine_TrashBin.description>中世界城市使用的圓柱形服務機器人提供道路清潔、快遞和食品配送服務，並在緊急情況發生時第一時間協助疏散和維持秩序。</DMS_Machine_TrashBin.description>
   <!-- EN: head -->
   <DMS_Machine_TrashBin.tools.head.label>頭部</DMS_Machine_TrashBin.tools.head.label>
   
   <!-- EN: verling bird -->
   <DMS_Machine_VerlingBird.label>百靈鳥</DMS_Machine_VerlingBird.label>
-  <!-- EN: A quad-drone for reconnaissance. It is quite fragile for combat but moves extremely fast. can equipped with small-caliber gun or grenade to provide certain containment capabilities. -->
+  <!-- EN: A quad-drone for reconnaissance. It is quite fragile for combat but moves extremely fast. It can be equipped with a small-caliber gun or grenade to provide certain containment capabilities. -->
   <DMS_Machine_VerlingBird.description>用於偵察的四旋翼無人機。它在戰鬥中相當脆弱，但移動速度極快。可以配備小口徑槍或手榴彈，提供一定的遏制能力。</DMS_Machine_VerlingBird.description>
   <!-- EN: head -->
   <DMS_Machine_VerlingBird.tools.head.label>頭部</DMS_Machine_VerlingBird.tools.head.label>
   
   <!-- EN: verling bird -->
   <DMS_Machine_VerlingBirdA.label>百靈鳥</DMS_Machine_VerlingBirdA.label>
-  <!-- EN: A quad-drone for reconnaissance. It is quite fragile for combat but moves extremely fast. can equipped with small-caliber gun or grenade to provide certain containment capabilities. -->
+  <!-- EN: A quad-drone for reconnaissance. It is quite fragile for combat but moves extremely fast. It can be equipped with a small-caliber gun or grenade to provide certain containment capabilities. -->
   <DMS_Machine_VerlingBirdA.description>用於偵察的四旋翼無人機。它在戰鬥中相當脆弱，但移動速度極快。可以配備小口徑槍或手榴彈，提供一定的遏制能力。</DMS_Machine_VerlingBirdA.description>
   <!-- EN: head -->
   <DMS_Machine_VerlingBirdA.tools.head.label>頭部</DMS_Machine_VerlingBirdA.tools.head.label>

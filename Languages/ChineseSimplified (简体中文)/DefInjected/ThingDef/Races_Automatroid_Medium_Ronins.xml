@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: gladiator -->
+  <DMS_Mech_Gladiator.label>格斗士</DMS_Mech_Gladiator.label>
+  <!-- EN: Melee specialized variant based on Ronin. While maintain Ronin's mobility and armor, it has better melee combat module, also equip with an assault shield. -->
+  <DMS_Mech_Gladiator.description>一种格斗特化的浪人改造型号，其身体结构高度灵活并且加强了对於格斗中的钝击防御，装备有一面灵活的格斗盾牌。</DMS_Mech_Gladiator.description>
+  <!-- EN: assault shield -->
+  <DMS_Mech_Gladiator.tools.assault_shield.label>突击盾</DMS_Mech_Gladiator.tools.assault_shield.label>
+  <!-- EN: right fist -->
+  <DMS_Mech_Gladiator.tools.right_fist.label>右拳</DMS_Mech_Gladiator.tools.right_fist.label>
+  
   <!-- EN: phalanx -->
   <DMS_Mech_Phalanx.label>方阵步兵</DMS_Mech_Phalanx.label>
   <!-- EN: A cost-saving mass-produced variant specialized for urban combat scenarios, packed with assault armor and high mobility, makes it a fierce unit in close quarters. -->
@@ -16,27 +25,31 @@
   <DMS_Mech_Protector.label>塔盾手</DMS_Mech_Protector.label>
   <!-- EN: Designed for peacekeeping operations and riot control need, Protector has overall strong armor around the frame, equip with a huge flash shield and close quater weapons like batons or shotguns. -->
   <DMS_Mech_Protector.description>塔盾手专为维和行动和防暴需求而设计，框架周围有整体坚固的盔甲，配有巨大的闪光盾牌和警棍或霰弹枪等近身武器。</DMS_Mech_Protector.description>
-  <!-- EN: head -->
-  <DMS_Mech_Protector.tools.head.label>头部</DMS_Mech_Protector.tools.head.label>
-  <!-- EN: left fist -->
-  <DMS_Mech_Protector.tools.left_fist.label>左拳</DMS_Mech_Protector.tools.left_fist.label>
-  <!-- EN: right fist -->
-  <DMS_Mech_Protector.tools.right_fist-0.label>右拳</DMS_Mech_Protector.tools.right_fist-0.label>
   <!-- EN: ballistic shield -->
   <DMS_Mech_Protector.tools.ballistic_shield.label>防弹盾</DMS_Mech_Protector.tools.ballistic_shield.label>
   <!-- EN: right fist -->
+  <DMS_Mech_Protector.tools.right_fist.label>右拳</DMS_Mech_Protector.tools.right_fist.label>
+  
+  <!-- UNUSED -->
+  <DMS_Mech_Protector.tools.head.label>头部</DMS_Mech_Protector.tools.head.label>
+  <DMS_Mech_Protector.tools.left_fist.label>左拳</DMS_Mech_Protector.tools.left_fist.label>
   <DMS_Mech_Protector.tools.right_fist-1.label>右拳</DMS_Mech_Protector.tools.right_fist-1.label>
   
   <!-- EN: ronin -->
   <DMS_Mech_Ronin.label>浪人</DMS_Mech_Ronin.label>
   <!-- EN: Humanoid mech model specialized for urban combat scenarios, packed with assault armor and high mobility, makes it a fierce unit in close quater. -->
   <DMS_Mech_Ronin.description>专门用於城市战斗场景的人形机兵，配备了突击装甲和高机动性，使其成为近距离作战的凶猛部队。</DMS_Mech_Ronin.description>
-  <!-- EN: head -->
-  <DMS_Mech_Ronin.tools.head.label>头部</DMS_Mech_Ronin.tools.head.label>
-  <!-- EN: left fist -->
-  <DMS_Mech_Ronin.tools.left_fist.label>左拳</DMS_Mech_Ronin.tools.left_fist.label>
+  <!-- EN: right arm blade -->
+  <DMS_Mech_Ronin.tools.right_arm_blade.label>右手刃</DMS_Mech_Ronin.tools.right_arm_blade.label>
   <!-- EN: right fist -->
   <DMS_Mech_Ronin.tools.right_fist.label>右拳</DMS_Mech_Ronin.tools.right_fist.label>
+  <!-- EN: left arm blade -->
+  <DMS_Mech_Ronin.tools.left_arm_blade.label>左手刃</DMS_Mech_Ronin.tools.left_arm_blade.label>
+  <!-- EN: left fist -->
+  <DMS_Mech_Ronin.tools.left_fist.label>左拳</DMS_Mech_Ronin.tools.left_fist.label>
+  
+  <!-- UNUSED -->
+  <DMS_Mech_Ronin.tools.head.label>头部</DMS_Mech_Ronin.tools.head.label>
   
   <!-- EN: siegebreaker -->
   <DMS_Mech_Siegebreaker.label>袭城者</DMS_Mech_Siegebreaker.label>

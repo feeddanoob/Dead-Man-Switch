@@ -92,6 +92,7 @@
 				</value>
 			</li>
 
+
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Pioneer"]/statBases</xpath>
 				<value>

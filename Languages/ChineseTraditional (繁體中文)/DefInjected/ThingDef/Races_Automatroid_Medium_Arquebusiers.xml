@@ -3,7 +3,7 @@
   
   <!-- EN: arquebusier -->
   <DMS_Mech_Arquebusier.label>火槍手</DMS_Mech_Arquebusier.label>
-  <!-- EN: Standard Arquebusier model, has good precision fire capability in all ranges, makes it the backbone of robot army. -->
+  <!-- EN: Standard Arquebusier model, has good precision fire capability in all ranges, makes it the backbone of automatroid army. -->
   <DMS_Mech_Arquebusier.description>標準型火槍手，在所有射程內都具有良好的精確射擊能力，是機兵部隊的中堅力量。</DMS_Mech_Arquebusier.description>
   <!-- EN: head -->
   <DMS_Mech_Arquebusier.tools.head.label>頭部</DMS_Mech_Arquebusier.tools.head.label>
@@ -25,7 +25,7 @@
   
   <!-- EN: pioneer -->
   <DMS_Mech_Pioneer.label>先鋒</DMS_Mech_Pioneer.label>
-  <!-- EN: forward reconnaissance variant of Arquebusier. with improved sight sensor equipped, it has better capability in field operations, capable to hunting if needed. -->
+  <!-- EN: forward reconnaissance variant of Arquebusier. with improved sight sensor equipped, it has better capability in field operations, capable of hunting if needed. -->
   <DMS_Mech_Pioneer.description>前沿偵察型火槍手。由於配備了改進的瞄準感測器，它在野外作戰中具有更好的能力。</DMS_Mech_Pioneer.description>
   <!-- EN: head -->
   <DMS_Mech_Pioneer.tools.head.label>頭部</DMS_Mech_Pioneer.tools.head.label>

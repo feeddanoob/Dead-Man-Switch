@@ -4,6 +4,6 @@
   <!-- EN: overeat -->
   <DMS_OverEat.stages.overeat.label>过食</DMS_OverEat.stages.overeat.label>
   <!-- EN: the amount of this ration is too much that I think my stomach isn't paired with it. -->
-  <DMS_OverEat.stages.overeat.description>这份口粮的量可能对我的胃而言太多了...</DMS_OverEat.stages.overeat.description>
+  <DMS_OverEat.stages.overeat.description>这份口粮的量对我的胃而言可能太多了...</DMS_OverEat.stages.overeat.description>
   
 </LanguageData>
