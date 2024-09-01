@@ -2,14 +2,14 @@
 <LanguageData>
   
   <!-- EN: [PAWN_nameDef] was a weapons controller at a CIC. Before being temporarily laid off due to a lack of maintenance parts for the control system, [PAWN_pronoun] job was to control the weapons systems of the task force's autonomous robots at the weapons control station to avoid accidents. Senseless killing...and fixing some mechanical issues by the way. -->
-  <DMS_Officer01.description>[PAWN_nameDef]曾是機動指揮中心的武器管制員，在因為控制系統缺乏維修零件而被暫時遣散前[PAWN_pronoun]的工作就是在武器管制站對特遣小組的自動機兵進行武器系統管制以避免發生無意義的殺戮...順便處理一些機械問題。</DMS_Officer01.description>
+  <DMS_Officer01.description>[PAWN_nameDef]曾是機動指揮中心的武器管制員，在因為控制系統缺乏維修零件而被暫時遣散前[PAWN_pronoun]的工作就是在武器管制站對特遣小組的超重型機兵進行武器系統管制以避免發生無意義的殺戮...順便處理一些機械問題。</DMS_Officer01.description>
   <!-- EN: Weapon systems officer -->
   <DMS_Officer01.title>兵器管制官</DMS_Officer01.title>
   <!-- EN: wisso -->
   <DMS_Officer01.titleShort>管制官</DMS_Officer01.titleShort>
   
   <!-- EN: Although it has been more than 3,000 years since humans stepped out of the galaxy, due to the chronology of records and the unavoidable long time of interstellar travel, there are usually errors in everything on the target planet when they arrive. The job of [PAWN_nameDef] is to study everything on this planet, those ecosystems and organisms that change over time and various factors. -->
-  <DMS_Officer02.description>雖然自人類踏出星系已經3000年有餘，但由於紀錄的斷代與星際旅行無法避免的悠長時間使得當來到目標星球之時上面的一切通常存在誤差，[PAWN_nameDef]的工作就是負責研究星球上隨著時間與各種因素下變異的生態圈與生物。</DMS_Officer02.description>
+  <DMS_Officer02.description>雖然自人類踏出星系已經3000年有餘，但由於紀錄的斷代與星際旅行無法避免的悠長時間使得當來到目標星球之時上面的一切通常存在誤差，[PAWN_nameDef]的工作就是負責研究與歸納那些星球上隨著時間與各種因素下變異的生態圈與生物。</DMS_Officer02.description>
   <!-- EN: Xeno researcher -->
   <DMS_Officer02.title>異星研究員</DMS_Officer02.title>
   <!-- EN: researcher -->

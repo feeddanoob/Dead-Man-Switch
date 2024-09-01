@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: demolish rocket round -->
+  <DMS_Bullet_DR.label>聚能穿甲火箭彈</DMS_Bullet_DR.label>
+  
   <!-- EN: deposable launcher -->
   <DMS_DeposableRocketLauncher.label>拋棄式火箭筒</DMS_DeposableRocketLauncher.label>
   <!-- EN: A counterweighted-recoilless rocket-propelled grenade launcher, light-weighted and effective againist bunker or heavy mechs. It has a long fire range, but requires line of sight. -->
@@ -10,9 +13,9 @@
   <!-- EN: on cooldown -->
   <DMS_DeposableRocketLauncher.comps.CompApparelReloadable.cooldownGerund>冷卻中</DMS_DeposableRocketLauncher.comps.CompApparelReloadable.cooldownGerund>
   <!-- EN: deposable launcher -->
-  <DMS_DeposableRocketLauncher.verbs.Verb_LaunchProjectileStaticCE.label>拋棄式火箭筒</DMS_DeposableRocketLauncher.verbs.Verb_LaunchProjectileStaticCE.label>
+  <DMS_DeposableRocketLauncher.verbs.Verb_Shoot.label>拋棄式火箭筒</DMS_DeposableRocketLauncher.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_DeposableRocketLauncher.verbs.Verb_Shoot.label>拋棄式火箭筒</DMS_DeposableRocketLauncher.verbs.Verb_Shoot.label>
+  <DMS_DeposableRocketLauncher.verbs.Verb_LaunchProjectileStaticCE.label>拋棄式火箭筒</DMS_DeposableRocketLauncher.verbs.Verb_LaunchProjectileStaticCE.label>
   
 </LanguageData>

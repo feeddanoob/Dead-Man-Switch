@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: assault shield -->
+  <AssaultShield.label>格鬥盾牌</AssaultShield.label>
+  
   <!-- EN: ballistic shield -->
   <BallisticShield.label>防彈盾牌</BallisticShield.label>
   
