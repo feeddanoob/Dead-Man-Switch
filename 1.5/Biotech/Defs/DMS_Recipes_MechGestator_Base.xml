@@ -45,7 +45,7 @@
   </RecipeDef>
 
   <RecipeDef Name="DMS_HumanoidMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
-    <gestationCycles>5</gestationCycles>
+    <gestationCycles>3</gestationCycles>
     <researchPrerequisite>DMS_HumanoidEngineering</researchPrerequisite>
     <recipeUsers><li>DMS_MechGestatorSamll</li></recipeUsers>
   </RecipeDef>
@@ -89,12 +89,14 @@
         <li>Corpse_DMS_Mech_Pioneer</li>
 
         <li>Corpse_DMS_Mech_Ronin</li>
+        <li>Corpse_DMS_Mech_Gladiator</li>
         <li>Corpse_DMS_Mech_Protector</li>
         <li>Corpse_DMS_Mech_Phalanx</li>
         <li>Corpse_DMS_Mech_Siegebreaker</li>
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
+
   <RecipeDef ParentName="BaseMechanoidResurrectionRecipe">
     <defName>DMS_ResurrectHeavyMech</defName>
     <label>resurrect heavy automatroid</label>
@@ -131,6 +133,7 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
+  
   <RecipeDef ParentName="BaseMechanoidResurrectionRecipe">
     <defName>DMS_ResurrectUltraheavyMech</defName>
     <label>resurrect ultraheavy automatroid</label>

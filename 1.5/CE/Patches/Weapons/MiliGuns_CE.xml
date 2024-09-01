@@ -385,6 +385,7 @@
                     <aiAimMode>AimedShot</aiAimMode>
                 </FireModes>
                 <weaponTags>
+                    <li>Bipod_Rifle</li>
                     <li>CE_AI_SR</li>
                 </weaponTags>
             </li>

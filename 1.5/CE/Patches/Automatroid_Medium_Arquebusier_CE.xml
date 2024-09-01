@@ -85,15 +85,16 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Pioneer"]/statBases/ArmorRating_Blunt</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Pioneer"]/statBases</xpath>
 				<value>
 					<ArmorRating_Blunt>24</ArmorRating_Blunt>
 				</value>
 			</li>
 
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Pioneer"]/statBases/ArmorRating_Sharp</xpath>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Pioneer"]/statBases</xpath>
 				<value>
 					<ArmorRating_Sharp>12</ArmorRating_Sharp>
 				</value>
@@ -146,6 +147,16 @@
 				<MinArmorValueElectric>0.1</MinArmorValueElectric> -->
 					</li>
 				</value>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Pioneer"]/comps</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DMS_Mech_Pioneer"]</xpath>
+					<value>
+						<comps />
+					</value>
+				</nomatch>
 			</li>
 
 			<!--pioneer's armor has more steel, not fully tungsteel, durability a bit weaker-->
