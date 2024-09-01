@@ -20,61 +20,62 @@ namespace DMS_Story
         {
             if (faction.def == StoryDefOf.DMS_Army)
             {
-                Map map = negotiator.Map;
-                Pawn pawn;
-                string text;
-                if (faction.leader != null)
-                {
-                    pawn = faction.leader;
-                    text = faction.leader.Name.ToStringFull.Colorize(ColoredText.NameColor);
-                }
-                else
-                {
-                    Log.Error(string.Concat("Faction ", faction, " has no leader."));
-                    pawn = negotiator;
-                    text = faction.Name;
-                }
-                DiaNode root;
-                if (faction.PlayerRelationKind == FactionRelationKind.Hostile)
-                {
-                    string key = ((!faction.def.permanentEnemy && "FactionGreetingHostileAppreciative".CanTranslate()) ? ((faction.def.dialogFactionGreetingHostileAppreciative == null || !(faction.def.dialogFactionGreetingHostileAppreciative != "")) ? "FactionGreetingHostileAppreciative" : faction.def.dialogFactionGreetingHostileAppreciative) : ((faction.def.dialogFactionGreetingHostile == null || !(faction.def.dialogFactionGreetingHostile != "")) ? "FactionGreetingHostile" : faction.def.dialogFactionGreetingHostile));
-                    root = new DiaNode(key.Translate(text).AdjustedFor(pawn));
-                }
-                else if (faction.PlayerRelationKind == FactionRelationKind.Neutral)
-                {
-                    string key2 = "FactionGreetingWary";
-                    if (faction.def.dialogFactionGreetingWary != null && faction.def.dialogFactionGreetingWary != "")
-                    {
-                        key2 = faction.def.dialogFactionGreetingWary;
-                    }
-                    root = new DiaNode(key2.Translate(text, negotiator.LabelShort, negotiator.Named("NEGOTIATOR"), pawn.Named("LEADER")).AdjustedFor(pawn));
-                }
-                else
-                {
-                    string key3 = "FactionGreetingWarm";
-                    if (faction.def.dialogFactionGreetingWarm != null && faction.def.dialogFactionGreetingWarm != "")
-                    {
-                        key3 = faction.def.dialogFactionGreetingWarm;
-                    }
-                    root = new DiaNode(key3.Translate(text, negotiator.LabelShort, negotiator.Named("NEGOTIATOR"), pawn.Named("LEADER")).AdjustedFor(pawn));
-                }
-                if (map != null && map.IsPlayerHome)
-                {
-                }
-                AddAndDecorateOption(new DiaOption("(" + "Disconnect".Translate() + ")")
-                {
-                    resolveTree = true
-                }, needsSocial: false);
-                __result = root;
-                void AddAndDecorateOption(DiaOption opt, bool needsSocial)
-                {
-                    if (needsSocial && negotiator.skills.GetSkill(SkillDefOf.Social).TotallyDisabled)
-                    {
-                        opt.Disable("WorkTypeDisablesOption".Translate(SkillDefOf.Social.label));
-                    }
-                    root.options.Add(opt);
-                }
-                return false;
+                return true;
+                //Map map = negotiator.Map;
+                //Pawn pawn;
+                //string text;
+                //if (faction.leader != null)
+                //{
+                //    pawn = faction.leader;
+                //    text = faction.leader.Name.ToStringFull.Colorize(ColoredText.NameColor);
+                //}
+                //else
+                //{
+                //    Log.Error(string.Concat("Faction ", faction, " has no leader."));
+                //    pawn = negotiator;
+                //    text = faction.Name;
+                //}
+                //DiaNode root;
+                //if (faction.PlayerRelationKind == FactionRelationKind.Hostile)
+                //{
+                //    string key = ((!faction.def.permanentEnemy && "FactionGreetingHostileAppreciative".CanTranslate()) ? ((faction.def.dialogFactionGreetingHostileAppreciative == null || !(faction.def.dialogFactionGreetingHostileAppreciative != "")) ? "FactionGreetingHostileAppreciative" : faction.def.dialogFactionGreetingHostileAppreciative) : ((faction.def.dialogFactionGreetingHostile == null || !(faction.def.dialogFactionGreetingHostile != "")) ? "FactionGreetingHostile" : faction.def.dialogFactionGreetingHostile));
+                //    root = new DiaNode(key.Translate(text).AdjustedFor(pawn));
+                //}
+                //else if (faction.PlayerRelationKind == FactionRelationKind.Neutral)
+                //{
+                //    string key2 = "FactionGreetingWary";
+                //    if (faction.def.dialogFactionGreetingWary != null && faction.def.dialogFactionGreetingWary != "")
+                //    {
+                //        key2 = faction.def.dialogFactionGreetingWary;
+                //    }
+                //    root = new DiaNode(key2.Translate(text, negotiator.LabelShort, negotiator.Named("NEGOTIATOR"), pawn.Named("LEADER")).AdjustedFor(pawn));
+                //}
+                //else
+                //{
+                //    string key3 = "FactionGreetingWarm";
+                //    if (faction.def.dialogFactionGreetingWarm != null && faction.def.dialogFactionGreetingWarm != "")
+                //    {
+                //        key3 = faction.def.dialogFactionGreetingWarm;
+                //    }
+                //    root = new DiaNode(key3.Translate(text, negotiator.LabelShort, negotiator.Named("NEGOTIATOR"), pawn.Named("LEADER")).AdjustedFor(pawn));
+                //}
+                //if (map != null && map.IsPlayerHome)
+                //{
+                //}
+                //AddAndDecorateOption(new DiaOption("(" + "Disconnect".Translate() + ")")
+                //{
+                //    resolveTree = true
+                //}, needsSocial: false);
+                //__result = root;
+                //void AddAndDecorateOption(DiaOption opt, bool needsSocial)
+                //{
+                //    if (needsSocial && negotiator.skills.GetSkill(SkillDefOf.Social).TotallyDisabled)
+                //    {
+                //        opt.Disable("WorkTypeDisablesOption".Translate(SkillDefOf.Social.label));
+                //    }
+                //    root.options.Add(opt);
+                //}
+                //return false;
             }
             return true;
         }
