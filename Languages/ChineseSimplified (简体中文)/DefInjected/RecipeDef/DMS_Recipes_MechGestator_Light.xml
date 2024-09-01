@@ -11,7 +11,7 @@
   <!-- EN: gestate falcon -->
   <DMS_Make_Falcon.label>组装游隼</DMS_Make_Falcon.label>
   <!-- EN: Gestate a falcon mechanoid. -->
-  <DMS_Make_Falcon.description>组装游隼，一种重型三旋翼无人机，可携带轻型机枪或反坦克火箭筒用於空中武装侦察和反坦克打击。</DMS_Make_Falcon.description>
+  <DMS_Make_Falcon.description>组装游隼，一种重型三旋翼无人机，可携带轻型机枪或反战车火箭筒用於空中武装侦察和反战车打击。</DMS_Make_Falcon.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_Falcon.jobString>组装机械体中</DMS_Make_Falcon.jobString>
   

@@ -11,18 +11,15 @@
   <!-- EN: stock -->
   <DMS_Autocannon.tools.stock.label>枪托</DMS_Autocannon.tools.stock.label>
   <!-- EN: barrel -->
-  <DMS_Autocannon.tools.barrel-0.label>枪管</DMS_Autocannon.tools.barrel-0.label>
-  <!-- EN: muzzle -->
-  <DMS_Autocannon.tools.muzzle-0.label>枪口</DMS_Autocannon.tools.muzzle-0.label>
-  <!-- EN: barrel -->
-  <DMS_Autocannon.tools.barrel-1.label>枪管</DMS_Autocannon.tools.barrel-1.label>
-  <!-- EN: muzzle -->
-  <DMS_Autocannon.tools.muzzle-1.label>枪口</DMS_Autocannon.tools.muzzle-1.label>
+  <DMS_Autocannon.tools.barrel.label>枪管</DMS_Autocannon.tools.barrel.label>
   <!-- EN: mech autocannon -->
-  <DMS_Autocannon.verbs.Verb_ShootCE.label>机兵轻机炮</DMS_Autocannon.verbs.Verb_ShootCE.label>
+  <DMS_Autocannon.verbs.Verb_Shoot.label>机兵轻机炮</DMS_Autocannon.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_Autocannon.verbs.Verb_Shoot.label>机兵轻机炮</DMS_Autocannon.verbs.Verb_Shoot.label>
+  <DMS_Autocannon.tools.muzzle-0.label>枪口</DMS_Autocannon.tools.muzzle-0.label>
+  <DMS_Autocannon.tools.barrel-1.label>枪管</DMS_Autocannon.tools.barrel-1.label>
+  <DMS_Autocannon.tools.muzzle-1.label>枪口</DMS_Autocannon.tools.muzzle-1.label>
+  <DMS_Autocannon.verbs.Verb_ShootCE.label>机兵轻机炮</DMS_Autocannon.verbs.Verb_ShootCE.label>
   
   <!-- EN: heavy grenade round -->
   <DMS_Bullet_DGL.label>重型榴弹</DMS_Bullet_DGL.label>
@@ -40,18 +37,15 @@
   <!-- EN: stock -->
   <DMS_Gun_2A38M.tools.stock.label>枪托</DMS_Gun_2A38M.tools.stock.label>
   <!-- EN: barrel -->
-  <DMS_Gun_2A38M.tools.barrel-0.label>枪管</DMS_Gun_2A38M.tools.barrel-0.label>
-  <!-- EN: muzzle -->
-  <DMS_Gun_2A38M.tools.muzzle-0.label>枪口</DMS_Gun_2A38M.tools.muzzle-0.label>
-  <!-- EN: barrel -->
-  <DMS_Gun_2A38M.tools.barrel-1.label>枪管</DMS_Gun_2A38M.tools.barrel-1.label>
-  <!-- EN: muzzle -->
-  <DMS_Gun_2A38M.tools.muzzle-1.label>枪口</DMS_Gun_2A38M.tools.muzzle-1.label>
+  <DMS_Gun_2A38M.tools.barrel.label>枪管</DMS_Gun_2A38M.tools.barrel.label>
   <!-- EN: 2A38M -->
-  <DMS_Gun_2A38M.verbs.Verb_ShootCE.label>2A38M</DMS_Gun_2A38M.verbs.Verb_ShootCE.label>
+  <DMS_Gun_2A38M.verbs.Verb_Shoot.label>2A38M</DMS_Gun_2A38M.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_Gun_2A38M.verbs.Verb_Shoot.label>2A38M</DMS_Gun_2A38M.verbs.Verb_Shoot.label>
+  <DMS_Gun_2A38M.tools.muzzle-0.label>枪口</DMS_Gun_2A38M.tools.muzzle-0.label>
+  <DMS_Gun_2A38M.tools.barrel-1.label>枪管</DMS_Gun_2A38M.tools.barrel-1.label>
+  <DMS_Gun_2A38M.tools.muzzle-1.label>枪口</DMS_Gun_2A38M.tools.muzzle-1.label>
+  <DMS_Gun_2A38M.verbs.Verb_ShootCE.label>2A38M</DMS_Gun_2A38M.verbs.Verb_ShootCE.label>
   
   <!-- EN: MPQFS-85M "Dawnblade" -->
   <DMS_Gun_DawnbladeM.label>黎明之刃</DMS_Gun_DawnbladeM.label>
@@ -60,14 +54,14 @@
   <!-- EN: stock -->
   <DMS_Gun_DawnbladeM.tools.stock.label>枪托</DMS_Gun_DawnbladeM.tools.stock.label>
   <!-- EN: barrel -->
-  <DMS_Gun_DawnbladeM.tools.barrel-0.label>炮管</DMS_Gun_DawnbladeM.tools.barrel-0.label>
-  <!-- EN: muzzle -->
-  <DMS_Gun_DawnbladeM.tools.muzzle-0.label>炮口</DMS_Gun_DawnbladeM.tools.muzzle-0.label>
-  <!-- EN: barrel -->
-  <DMS_Gun_DawnbladeM.tools.barrel-1.label>炮管</DMS_Gun_DawnbladeM.tools.barrel-1.label>
-  <!-- EN: muzzle -->
-  <DMS_Gun_DawnbladeM.tools.muzzle-1.label>炮口</DMS_Gun_DawnbladeM.tools.muzzle-1.label>
+  <DMS_Gun_DawnbladeM.tools.barrel.label>炮管</DMS_Gun_DawnbladeM.tools.barrel.label>
   <!-- EN: MPQFS-85M "Dawnblade" -->
+  <DMS_Gun_DawnbladeM.verbs.Verb_Shoot.label>黎明之刃</DMS_Gun_DawnbladeM.verbs.Verb_Shoot.label>
+  
+  <!-- UNUSED -->
+  <DMS_Gun_DawnbladeM.tools.muzzle-0.label>炮口</DMS_Gun_DawnbladeM.tools.muzzle-0.label>
+  <DMS_Gun_DawnbladeM.tools.barrel-1.label>炮管</DMS_Gun_DawnbladeM.tools.barrel-1.label>
+  <DMS_Gun_DawnbladeM.tools.muzzle-1.label>炮口</DMS_Gun_DawnbladeM.tools.muzzle-1.label>
   <DMS_Gun_DawnbladeM.verbs.Verb_ShootCE.label>黎明之刃</DMS_Gun_DawnbladeM.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech heavy grenade launcher -->
@@ -77,31 +71,31 @@
   <!-- EN: stock -->
   <DMS_Gun_DragoonGrenade.tools.stock.label>枪托</DMS_Gun_DragoonGrenade.tools.stock.label>
   <!-- EN: barrel -->
-  <DMS_Gun_DragoonGrenade.tools.barrel-0.label>枪管</DMS_Gun_DragoonGrenade.tools.barrel-0.label>
-  <!-- EN: muzzle -->
-  <DMS_Gun_DragoonGrenade.tools.muzzle-0.label>枪口</DMS_Gun_DragoonGrenade.tools.muzzle-0.label>
-  <!-- EN: barrel -->
-  <DMS_Gun_DragoonGrenade.tools.barrel-1.label>枪管</DMS_Gun_DragoonGrenade.tools.barrel-1.label>
-  <!-- EN: muzzle -->
-  <DMS_Gun_DragoonGrenade.tools.muzzle-1.label>枪口</DMS_Gun_DragoonGrenade.tools.muzzle-1.label>
+  <DMS_Gun_DragoonGrenade.tools.barrel.label>枪管</DMS_Gun_DragoonGrenade.tools.barrel.label>
   <!-- EN: mech heavy grenade launcher -->
+  <DMS_Gun_DragoonGrenade.verbs.Verb_Shoot.label>龙骑兵榴弹枪</DMS_Gun_DragoonGrenade.verbs.Verb_Shoot.label>
+  
+  <!-- UNUSED -->
+  <DMS_Gun_DragoonGrenade.tools.muzzle-0.label>枪口</DMS_Gun_DragoonGrenade.tools.muzzle-0.label>
+  <DMS_Gun_DragoonGrenade.tools.barrel-1.label>枪管</DMS_Gun_DragoonGrenade.tools.barrel-1.label>
+  <DMS_Gun_DragoonGrenade.tools.muzzle-1.label>枪口</DMS_Gun_DragoonGrenade.tools.muzzle-1.label>
   <DMS_Gun_DragoonGrenade.verbs.Verb_ShootCE.label>龙骑兵榴弹枪</DMS_Gun_DragoonGrenade.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech anti-tank gun -->
   <DMS_Gun_DragoonRifle.label>龙骑兵重型步枪</DMS_Gun_DragoonRifle.label>
   <!-- EN: A lightweight mass produced anti-tank gun for heavy mechs and dragoon armor.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
-  <DMS_Gun_DragoonRifle.description>一种用於重型机兵与机动龙骑兵的轻量级反坦克炮，使用弹夹供弹来提供持续的反装甲火力输出。\n\n这种武器是专门为机兵设计的，因为其重量因此所以只有特定的机兵才能操作。</DMS_Gun_DragoonRifle.description>
+  <DMS_Gun_DragoonRifle.description>一种用於重型机兵与机动龙骑兵的轻量级反战车炮，使用弹夹供弹来提供持续的反装甲火力输出。\n\n这种武器是专门为机兵设计的，因为其重量因此所以只有特定的机兵才能操作。</DMS_Gun_DragoonRifle.description>
   <!-- EN: stock -->
   <DMS_Gun_DragoonRifle.tools.stock.label>枪托</DMS_Gun_DragoonRifle.tools.stock.label>
   <!-- EN: barrel -->
-  <DMS_Gun_DragoonRifle.tools.barrel-0.label>枪管</DMS_Gun_DragoonRifle.tools.barrel-0.label>
-  <!-- EN: muzzle -->
-  <DMS_Gun_DragoonRifle.tools.muzzle-0.label>枪口</DMS_Gun_DragoonRifle.tools.muzzle-0.label>
-  <!-- EN: barrel -->
-  <DMS_Gun_DragoonRifle.tools.barrel-1.label>枪管</DMS_Gun_DragoonRifle.tools.barrel-1.label>
-  <!-- EN: muzzle -->
-  <DMS_Gun_DragoonRifle.tools.muzzle-1.label>枪口</DMS_Gun_DragoonRifle.tools.muzzle-1.label>
+  <DMS_Gun_DragoonRifle.tools.barrel.label>枪管</DMS_Gun_DragoonRifle.tools.barrel.label>
   <!-- EN: mech anti-tank gun -->
+  <DMS_Gun_DragoonRifle.verbs.Verb_Shoot.label>龙骑兵重型步枪</DMS_Gun_DragoonRifle.verbs.Verb_Shoot.label>
+  
+  <!-- UNUSED -->
+  <DMS_Gun_DragoonRifle.tools.muzzle-0.label>枪口</DMS_Gun_DragoonRifle.tools.muzzle-0.label>
+  <DMS_Gun_DragoonRifle.tools.barrel-1.label>枪管</DMS_Gun_DragoonRifle.tools.barrel-1.label>
+  <DMS_Gun_DragoonRifle.tools.muzzle-1.label>枪口</DMS_Gun_DragoonRifle.tools.muzzle-1.label>
   <DMS_Gun_DragoonRifle.verbs.Verb_ShootCE.label>龙骑兵重步枪</DMS_Gun_DragoonRifle.verbs.Verb_ShootCE.label>
   
   <!-- EN: recoilless cannon -->
@@ -111,18 +105,15 @@
   <!-- EN: stock -->
   <DMS_Gun_Recoilless.tools.stock.label>枪托</DMS_Gun_Recoilless.tools.stock.label>
   <!-- EN: barrel -->
-  <DMS_Gun_Recoilless.tools.barrel-0.label>枪管</DMS_Gun_Recoilless.tools.barrel-0.label>
-  <!-- EN: muzzle -->
-  <DMS_Gun_Recoilless.tools.muzzle-0.label>枪口</DMS_Gun_Recoilless.tools.muzzle-0.label>
-  <!-- EN: barrel -->
-  <DMS_Gun_Recoilless.tools.barrel-1.label>枪管</DMS_Gun_Recoilless.tools.barrel-1.label>
-  <!-- EN: muzzle -->
-  <DMS_Gun_Recoilless.tools.muzzle-1.label>枪口</DMS_Gun_Recoilless.tools.muzzle-1.label>
+  <DMS_Gun_Recoilless.tools.barrel.label>枪管</DMS_Gun_Recoilless.tools.barrel.label>
   <!-- EN: recoilless cannon -->
-  <DMS_Gun_Recoilless.verbs.Verb_ShootCE.label>无後坐力炮</DMS_Gun_Recoilless.verbs.Verb_ShootCE.label>
+  <DMS_Gun_Recoilless.verbs.Verb_Shoot.label>无後坐力炮</DMS_Gun_Recoilless.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_Gun_Recoilless.verbs.Verb_Shoot.label>无後坐力炮</DMS_Gun_Recoilless.verbs.Verb_Shoot.label>
+  <DMS_Gun_Recoilless.tools.muzzle-0.label>枪口</DMS_Gun_Recoilless.tools.muzzle-0.label>
+  <DMS_Gun_Recoilless.tools.barrel-1.label>枪管</DMS_Gun_Recoilless.tools.barrel-1.label>
+  <DMS_Gun_Recoilless.tools.muzzle-1.label>枪口</DMS_Gun_Recoilless.tools.muzzle-1.label>
+  <DMS_Gun_Recoilless.verbs.Verb_ShootCE.label>无後坐力炮</DMS_Gun_Recoilless.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech HMG -->
   <DMS_HeavyMachineGun.label>机兵重机枪</DMS_HeavyMachineGun.label>
@@ -131,18 +122,15 @@
   <!-- EN: stock -->
   <DMS_HeavyMachineGun.tools.stock.label>枪托</DMS_HeavyMachineGun.tools.stock.label>
   <!-- EN: barrel -->
-  <DMS_HeavyMachineGun.tools.barrel-0.label>枪管</DMS_HeavyMachineGun.tools.barrel-0.label>
-  <!-- EN: muzzle -->
-  <DMS_HeavyMachineGun.tools.muzzle-0.label>枪口</DMS_HeavyMachineGun.tools.muzzle-0.label>
-  <!-- EN: barrel -->
-  <DMS_HeavyMachineGun.tools.barrel-1.label>枪管</DMS_HeavyMachineGun.tools.barrel-1.label>
-  <!-- EN: muzzle -->
-  <DMS_HeavyMachineGun.tools.muzzle-1.label>枪口</DMS_HeavyMachineGun.tools.muzzle-1.label>
+  <DMS_HeavyMachineGun.tools.barrel.label>枪管</DMS_HeavyMachineGun.tools.barrel.label>
   <!-- EN: mech HMG -->
-  <DMS_HeavyMachineGun.verbs.Verb_ShootCE.label>机兵重机枪</DMS_HeavyMachineGun.verbs.Verb_ShootCE.label>
+  <DMS_HeavyMachineGun.verbs.Verb_Shoot.label>机兵重机枪</DMS_HeavyMachineGun.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_HeavyMachineGun.verbs.Verb_Shoot.label>机兵重机枪</DMS_HeavyMachineGun.verbs.Verb_Shoot.label>
+  <DMS_HeavyMachineGun.tools.muzzle-0.label>枪口</DMS_HeavyMachineGun.tools.muzzle-0.label>
+  <DMS_HeavyMachineGun.tools.barrel-1.label>枪管</DMS_HeavyMachineGun.tools.barrel-1.label>
+  <DMS_HeavyMachineGun.tools.muzzle-1.label>枪口</DMS_HeavyMachineGun.tools.muzzle-1.label>
+  <DMS_HeavyMachineGun.verbs.Verb_ShootCE.label>机兵重机枪</DMS_HeavyMachineGun.verbs.Verb_ShootCE.label>
   
   <!-- EN: sniper cannon -->
   <DMS_SniperCannon.label>机兵狙击炮</DMS_SniperCannon.label>
@@ -151,17 +139,14 @@
   <!-- EN: stock -->
   <DMS_SniperCannon.tools.stock.label>枪托</DMS_SniperCannon.tools.stock.label>
   <!-- EN: barrel -->
-  <DMS_SniperCannon.tools.barrel-0.label>枪管</DMS_SniperCannon.tools.barrel-0.label>
-  <!-- EN: muzzle -->
-  <DMS_SniperCannon.tools.muzzle-0.label>枪口</DMS_SniperCannon.tools.muzzle-0.label>
-  <!-- EN: barrel -->
-  <DMS_SniperCannon.tools.barrel-1.label>枪管</DMS_SniperCannon.tools.barrel-1.label>
-  <!-- EN: muzzle -->
-  <DMS_SniperCannon.tools.muzzle-1.label>枪口</DMS_SniperCannon.tools.muzzle-1.label>
+  <DMS_SniperCannon.tools.barrel.label>枪管</DMS_SniperCannon.tools.barrel.label>
   <!-- EN: sniper cannon -->
-  <DMS_SniperCannon.verbs.Verb_ShootCE.label>机兵狙击炮</DMS_SniperCannon.verbs.Verb_ShootCE.label>
+  <DMS_SniperCannon.verbs.Verb_Shoot.label>机兵狙击炮</DMS_SniperCannon.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_SniperCannon.verbs.Verb_Shoot.label>机兵狙击炮</DMS_SniperCannon.verbs.Verb_Shoot.label>
+  <DMS_SniperCannon.tools.muzzle-0.label>枪口</DMS_SniperCannon.tools.muzzle-0.label>
+  <DMS_SniperCannon.tools.barrel-1.label>枪管</DMS_SniperCannon.tools.barrel-1.label>
+  <DMS_SniperCannon.tools.muzzle-1.label>枪口</DMS_SniperCannon.tools.muzzle-1.label>
+  <DMS_SniperCannon.verbs.Verb_ShootCE.label>机兵狙击炮</DMS_SniperCannon.verbs.Verb_ShootCE.label>
   
 </LanguageData>

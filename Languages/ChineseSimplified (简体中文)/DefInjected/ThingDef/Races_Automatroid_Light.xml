@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: dogge -->
+  <!-- EN: Dogge -->
   <DMS_Mech_Dogge.label>獒犬</DMS_Mech_Dogge.label>
   <!-- EN: A four-legged robot dog provide forward reconnaissance and urban combat support during armed operations, can equipped with small-caliber firearms or flamethrowers to provide certain containment capabilities. -->
   <DMS_Mech_Dogge.description>一种中型四足机枪平台，其优越的机动性来自於四肢采用的合成人工肌肉束，其高度较低因此适合在开阔平地上提供机动火力支援。</DMS_Mech_Dogge.description>
@@ -16,10 +16,10 @@
   <!-- EN: head -->
   <DMS_Mech_Dogge.tools.head.label>头部</DMS_Mech_Dogge.tools.head.label>
   
-  <!-- EN: falcon -->
+  <!-- EN: Falcon -->
   <DMS_Mech_Falcon.label>游隼</DMS_Mech_Falcon.label>
   <!-- EN: A heavy-duty tri-rotor drone for cooperating in field recon and anti-tank strikes. -->
-  <DMS_Mech_Falcon.description>重型三旋翼无人机，用於空中武装侦察和反坦克打击。</DMS_Mech_Falcon.description>
+  <DMS_Mech_Falcon.description>重型三旋翼无人机，用於空中武装侦察和反战车打击。</DMS_Mech_Falcon.description>
   <!-- EN: head -->
   <DMS_Mech_Falcon.tools.head.label>头部</DMS_Mech_Falcon.tools.head.label>
   

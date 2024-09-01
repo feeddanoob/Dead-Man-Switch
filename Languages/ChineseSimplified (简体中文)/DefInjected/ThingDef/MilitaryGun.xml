@@ -8,20 +8,19 @@
   <Bullet_DMS_LightMachineGun.label>全威力步枪子弹</Bullet_DMS_LightMachineGun.label>
   
   <!-- EN: mech AMR -->
-  <DMS_AntiMaterialRifle.label>机兵反器材步枪</DMS_AntiMaterialRifle.label>
+  <DMS_AntiMaterialRifle.label>反器材步枪</DMS_AntiMaterialRifle.label>
   <!-- EN: High caliber sniper rifle made to be used by MS-4E Jadger automatroids to snipe armored target at long range.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong. -->
-  <DMS_AntiMaterialRifle.description>大口径狙击步枪，用於MS-4E Jadger自动机在远距离狙击装甲目标。\n\n这种武器是专门为机兵设计的，因此如果没有外部辅助设备或超强的力量，普通人可能无法正常使用。</DMS_AntiMaterialRifle.description>
+  <DMS_AntiMaterialRifle.description>一种发射大口径机枪弹的重型狙击步枪，用於在对抗重型装甲单位的战斗中远距离狙击目标</DMS_AntiMaterialRifle.description>
   <!-- EN: stock -->
   <DMS_AntiMaterialRifle.tools.stock.label>枪托</DMS_AntiMaterialRifle.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_AntiMaterialRifle.tools.barrel.label>枪管</DMS_AntiMaterialRifle.tools.barrel.label>
-  <!-- EN: muzzle -->
-  <DMS_AntiMaterialRifle.tools.muzzle.label>枪口</DMS_AntiMaterialRifle.tools.muzzle.label>
   <!-- EN: mech AMR -->
-  <DMS_AntiMaterialRifle.verbs.Verb_ShootCE.label>机兵反器材步枪</DMS_AntiMaterialRifle.verbs.Verb_ShootCE.label>
+  <DMS_AntiMaterialRifle.verbs.Verb_Shoot.label>反器材步枪</DMS_AntiMaterialRifle.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_AntiMaterialRifle.verbs.Verb_Shoot.label>机兵反器材步枪</DMS_AntiMaterialRifle.verbs.Verb_Shoot.label>
+  <DMS_AntiMaterialRifle.tools.muzzle.label>枪口</DMS_AntiMaterialRifle.tools.muzzle.label>
+  <DMS_AntiMaterialRifle.verbs.Verb_ShootCE.label>机兵反器材步枪</DMS_AntiMaterialRifle.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech assault rifle -->
   <DMS_AssaultRifle.label>机兵突击步枪</DMS_AssaultRifle.label>
@@ -31,13 +30,12 @@
   <DMS_AssaultRifle.tools.stock.label>枪托</DMS_AssaultRifle.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_AssaultRifle.tools.barrel.label>枪管</DMS_AssaultRifle.tools.barrel.label>
-  <!-- EN: muzzle -->
-  <DMS_AssaultRifle.tools.muzzle.label>枪口</DMS_AssaultRifle.tools.muzzle.label>
   <!-- EN: mech assault rifle -->
-  <DMS_AssaultRifle.verbs.Verb_ShootCE.label>机兵突击步枪</DMS_AssaultRifle.verbs.Verb_ShootCE.label>
+  <DMS_AssaultRifle.verbs.Verb_Shoot.label>机兵突击步枪</DMS_AssaultRifle.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_AssaultRifle.verbs.Verb_Shoot.label>机兵突击步枪</DMS_AssaultRifle.verbs.Verb_Shoot.label>
+  <DMS_AssaultRifle.tools.muzzle.label>枪口</DMS_AssaultRifle.tools.muzzle.label>
+  <DMS_AssaultRifle.verbs.Verb_ShootCE.label>机兵突击步枪</DMS_AssaultRifle.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech assault shotgun -->
   <DMS_AssaultShotgun.label>机兵突击霰弹枪</DMS_AssaultShotgun.label>
@@ -47,13 +45,12 @@
   <DMS_AssaultShotgun.tools.stock.label>枪托</DMS_AssaultShotgun.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_AssaultShotgun.tools.barrel.label>枪管</DMS_AssaultShotgun.tools.barrel.label>
-  <!-- EN: muzzle -->
-  <DMS_AssaultShotgun.tools.muzzle.label>枪口</DMS_AssaultShotgun.tools.muzzle.label>
   <!-- EN: mech assault shotgun -->
-  <DMS_AssaultShotgun.verbs.Verb_ShootCE.label>机兵突击霰弹枪</DMS_AssaultShotgun.verbs.Verb_ShootCE.label>
+  <DMS_AssaultShotgun.verbs.Verb_Shoot.label>机兵突击霰弹枪</DMS_AssaultShotgun.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_AssaultShotgun.verbs.Verb_Shoot.label>机兵突击霰弹枪</DMS_AssaultShotgun.verbs.Verb_Shoot.label>
+  <DMS_AssaultShotgun.tools.muzzle.label>枪口</DMS_AssaultShotgun.tools.muzzle.label>
+  <DMS_AssaultShotgun.verbs.Verb_ShootCE.label>机兵突击霰弹枪</DMS_AssaultShotgun.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech grenade launcher -->
   <DMS_AutomaticGrenadeLauncher.label>机兵榴弹发射器</DMS_AutomaticGrenadeLauncher.label>
@@ -63,77 +60,72 @@
   <DMS_AutomaticGrenadeLauncher.tools.stock.label>枪托</DMS_AutomaticGrenadeLauncher.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_AutomaticGrenadeLauncher.tools.barrel.label>枪管</DMS_AutomaticGrenadeLauncher.tools.barrel.label>
-  <!-- EN: muzzle -->
-  <DMS_AutomaticGrenadeLauncher.tools.muzzle.label>枪口</DMS_AutomaticGrenadeLauncher.tools.muzzle.label>
   <!-- EN: mech grenade launcher -->
-  <DMS_AutomaticGrenadeLauncher.verbs.Verb_ShootCE.label>机兵榴弹发射器</DMS_AutomaticGrenadeLauncher.verbs.Verb_ShootCE.label>
+  <DMS_AutomaticGrenadeLauncher.verbs.Verb_Shoot.label>机兵榴弹发射器</DMS_AutomaticGrenadeLauncher.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_AutomaticGrenadeLauncher.verbs.Verb_Shoot.label>机兵榴弹发射器</DMS_AutomaticGrenadeLauncher.verbs.Verb_Shoot.label>
+  <DMS_AutomaticGrenadeLauncher.tools.muzzle.label>枪口</DMS_AutomaticGrenadeLauncher.tools.muzzle.label>
+  <DMS_AutomaticGrenadeLauncher.verbs.Verb_ShootCE.label>机兵榴弹发射器</DMS_AutomaticGrenadeLauncher.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech battle rifle -->
   <DMS_BattleRifle.label>机兵战斗步枪</DMS_BattleRifle.label>
   <!-- EN: a full metal battle rifle designed for mech soldiers, it's designed for dangerous mech to mech combat.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong. -->
-  <DMS_BattleRifle.description>一种用於机兵的全金属战斗步枪，被用於危险的机兵对机兵战斗中。\n\n这种武器是专门为机兵设计的，因此如果没有外部辅助设备或超强的力量，普通人可能无法正常使用。</DMS_BattleRifle.description>
+  <DMS_BattleRifle.description>一种用於机兵的全金属战斗步枪，在相对於重机枪而言具有更轻的质量与优秀的射击速度，被用於危险的机兵对机兵战斗中。\n\n这种武器是专门为机兵设计的，因此如果没有外部辅助设备或超强的力量，普通人可能无法正常使用。</DMS_BattleRifle.description>
   <!-- EN: stock -->
   <DMS_BattleRifle.tools.stock.label>枪托</DMS_BattleRifle.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_BattleRifle.tools.barrel.label>枪管</DMS_BattleRifle.tools.barrel.label>
-  <!-- EN: muzzle -->
-  <DMS_BattleRifle.tools.muzzle.label>枪口</DMS_BattleRifle.tools.muzzle.label>
   <!-- EN: mech battle rifle -->
-  <DMS_BattleRifle.verbs.Verb_ShootCE.label>机兵战斗步枪</DMS_BattleRifle.verbs.Verb_ShootCE.label>
+  <DMS_BattleRifle.verbs.Verb_Shoot.label>机兵战斗步枪</DMS_BattleRifle.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_BattleRifle.verbs.Verb_Shoot.label>机兵战斗步枪</DMS_BattleRifle.verbs.Verb_Shoot.label>
+  <DMS_BattleRifle.tools.muzzle.label>枪口</DMS_BattleRifle.tools.muzzle.label>
+  <DMS_BattleRifle.verbs.Verb_ShootCE.label>机兵战斗步枪</DMS_BattleRifle.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech LMG -->
   <DMS_LightMachineGun.label>机兵轻机枪</DMS_LightMachineGun.label>
   <!-- EN: Supressive weapon chambered in full power rifle round.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong. -->
-  <DMS_LightMachineGun.description>使用全威力步枪子弹的压制性武器。\n\n这种武器是专门为机兵设计的，因此如果没有外部辅助设备或超强的力量，普通人可能无法正常使用。</DMS_LightMachineGun.description>
+  <DMS_LightMachineGun.description>使用全威力步枪弹的压制性武器。\n\n这种武器是专门为机兵设计的，因此如果没有外部辅助设备或超强的力量，普通人可能无法正常使用。</DMS_LightMachineGun.description>
   <!-- EN: stock -->
   <DMS_LightMachineGun.tools.stock.label>枪托</DMS_LightMachineGun.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_LightMachineGun.tools.barrel.label>枪管</DMS_LightMachineGun.tools.barrel.label>
-  <!-- EN: muzzle -->
-  <DMS_LightMachineGun.tools.muzzle.label>枪口</DMS_LightMachineGun.tools.muzzle.label>
   <!-- EN: mech LMG -->
-  <DMS_LightMachineGun.verbs.Verb_ShootCE.label>机兵轻机枪</DMS_LightMachineGun.verbs.Verb_ShootCE.label>
-  
-  <!-- UNUSED -->
   <DMS_LightMachineGun.verbs.Verb_Shoot.label>机兵轻机枪</DMS_LightMachineGun.verbs.Verb_Shoot.label>
   
+  <!-- UNUSED -->
+  <DMS_LightMachineGun.tools.muzzle.label>枪口</DMS_LightMachineGun.tools.muzzle.label>
+  <DMS_LightMachineGun.verbs.Verb_ShootCE.label>机兵轻机枪</DMS_LightMachineGun.verbs.Verb_ShootCE.label>
+  
   <!-- EN: mech marksman rifle -->
-  <DMS_MarksmanRifle.label>机兵射手步枪</DMS_MarksmanRifle.label>
+  <DMS_MarksmanRifle.label>射手步枪</DMS_MarksmanRifle.label>
   <!-- EN: An automatic rifle with high shooting accuracy and burst capability. \n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong. -->
-  <DMS_MarksmanRifle.description>一种具有高射击精度和连发能力的自动步枪。\n\n这种武器是专门为机兵设计的，因此如果没有外部辅助设备或超强的力量，普通人可能无法正常使用。</DMS_MarksmanRifle.description>
+  <DMS_MarksmanRifle.description>一种具有高射击精度和快速射击能力的半自动狙击步枪，其优秀的稳定性与制退设计使其对於人类而言也并非无法驾驭。</DMS_MarksmanRifle.description>
   <!-- EN: stock -->
   <DMS_MarksmanRifle.tools.stock.label>枪托</DMS_MarksmanRifle.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_MarksmanRifle.tools.barrel.label>枪管</DMS_MarksmanRifle.tools.barrel.label>
-  <!-- EN: muzzle -->
-  <DMS_MarksmanRifle.tools.muzzle.label>枪口</DMS_MarksmanRifle.tools.muzzle.label>
   <!-- EN: mech marksman rifle -->
-  <DMS_MarksmanRifle.verbs.Verb_ShootCE.label>机兵射手步枪</DMS_MarksmanRifle.verbs.Verb_ShootCE.label>
+  <DMS_MarksmanRifle.verbs.Verb_Shoot.label>射手步枪</DMS_MarksmanRifle.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_MarksmanRifle.verbs.Verb_Shoot.label>机兵射手步枪</DMS_MarksmanRifle.verbs.Verb_Shoot.label>
+  <DMS_MarksmanRifle.tools.muzzle.label>枪口</DMS_MarksmanRifle.tools.muzzle.label>
+  <DMS_MarksmanRifle.verbs.Verb_ShootCE.label>射手步枪</DMS_MarksmanRifle.verbs.Verb_ShootCE.label>
   
   <!-- EN: mech SemiAutoRifle -->
   <DMS_SemiAutoRifle.label>机兵半自动步枪</DMS_SemiAutoRifle.label>
   <!-- EN: a gas action semi-auto rifle used by mech soldier, reliable but too heavy for human.\n\nThis weapon is designed specially for automatroid use, thus normal human may be unable to use them normally without external assistance equipment or being extra strong. -->
-  <DMS_SemiAutoRifle.description>机兵使用的气动半自动步枪，性能可靠，但对人类来说太重。\n\n这种武器是专门为机兵设计的，因此如果没有外部辅助设备或超强的力量，普通人可能无法正常使用。</DMS_SemiAutoRifle.description>
+  <DMS_SemiAutoRifle.description>由机兵使用的导气式半自动步枪，性能可靠，但对人类而言可能太过沉重。\n\n这种武器是专门为机兵设计的，因此如果没有外部辅助设备或超强的力量，普通人可能无法正常使用。</DMS_SemiAutoRifle.description>
   <!-- EN: stock -->
   <DMS_SemiAutoRifle.tools.stock.label>枪托</DMS_SemiAutoRifle.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_SemiAutoRifle.tools.barrel.label>枪管</DMS_SemiAutoRifle.tools.barrel.label>
-  <!-- EN: muzzle -->
-  <DMS_SemiAutoRifle.tools.muzzle.label>枪口</DMS_SemiAutoRifle.tools.muzzle.label>
   <!-- EN: mech SemiAutoRifle -->
-  <DMS_SemiAutoRifle.verbs.Verb_ShootCE.label>机兵半自动步枪</DMS_SemiAutoRifle.verbs.Verb_ShootCE.label>
+  <DMS_SemiAutoRifle.verbs.Verb_Shoot.label>机兵半自动步枪</DMS_SemiAutoRifle.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_SemiAutoRifle.verbs.Verb_Shoot.label>机兵半自动步枪</DMS_SemiAutoRifle.verbs.Verb_Shoot.label>
+  <DMS_SemiAutoRifle.tools.muzzle.label>枪口</DMS_SemiAutoRifle.tools.muzzle.label>
+  <DMS_SemiAutoRifle.verbs.Verb_ShootCE.label>机兵半自动步枪</DMS_SemiAutoRifle.verbs.Verb_ShootCE.label>
   
   <!-- EN: sniper grenade launcher -->
   <DMS_SniperGrenadeLauncher.label>狙击榴弹发射器</DMS_SniperGrenadeLauncher.label>
@@ -143,12 +135,11 @@
   <DMS_SniperGrenadeLauncher.tools.stock.label>枪托</DMS_SniperGrenadeLauncher.tools.stock.label>
   <!-- EN: barrel -->
   <DMS_SniperGrenadeLauncher.tools.barrel.label>枪管</DMS_SniperGrenadeLauncher.tools.barrel.label>
-  <!-- EN: muzzle -->
-  <DMS_SniperGrenadeLauncher.tools.muzzle.label>枪口</DMS_SniperGrenadeLauncher.tools.muzzle.label>
   <!-- EN: sniper grenade launcher -->
-  <DMS_SniperGrenadeLauncher.verbs.Verb_ShootCE.label>狙击榴弹发射器</DMS_SniperGrenadeLauncher.verbs.Verb_ShootCE.label>
+  <DMS_SniperGrenadeLauncher.verbs.Verb_Shoot.label>狙击榴弹发射器</DMS_SniperGrenadeLauncher.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_SniperGrenadeLauncher.verbs.Verb_Shoot.label>狙击榴弹发射器</DMS_SniperGrenadeLauncher.verbs.Verb_Shoot.label>
+  <DMS_SniperGrenadeLauncher.tools.muzzle.label>枪口</DMS_SniperGrenadeLauncher.tools.muzzle.label>
+  <DMS_SniperGrenadeLauncher.verbs.Verb_ShootCE.label>狙击榴弹发射器</DMS_SniperGrenadeLauncher.verbs.Verb_ShootCE.label>
   
 </LanguageData>
