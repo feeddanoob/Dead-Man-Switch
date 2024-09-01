@@ -84,7 +84,7 @@
   <!-- EN: mech anti-tank gun -->
   <DMS_Gun_DragoonRifle.label>龙骑兵重型步枪</DMS_Gun_DragoonRifle.label>
   <!-- EN: A lightweight mass produced anti-tank gun for heavy mechs and dragoon armor.\n\nThis weapon is designed specially for automatroid use, and it's too heavy so only specific automatroid can operate. -->
-  <DMS_Gun_DragoonRifle.description>一种用於重型机兵与机动龙骑兵的轻量级反战车炮，使用弹夹供弹来提供持续的反装甲火力输出。\n\n这种武器是专门为机兵设计的，因为其重量因此所以只有特定的机兵才能操作。</DMS_Gun_DragoonRifle.description>
+  <DMS_Gun_DragoonRifle.description>一种用於重型机兵与机动龙骑兵的轻量级反坦克炮，使用弹夹供弹来提供持续的反装甲火力输出。\n\n这种武器是专门为机兵设计的，因为其重量因此所以只有特定的机兵才能操作。</DMS_Gun_DragoonRifle.description>
   <!-- EN: stock -->
   <DMS_Gun_DragoonRifle.tools.stock.label>枪托</DMS_Gun_DragoonRifle.tools.stock.label>
   <!-- EN: barrel -->

@@ -19,7 +19,7 @@
   <!-- EN: Falcon -->
   <DMS_Mech_Falcon.label>游隼</DMS_Mech_Falcon.label>
   <!-- EN: A heavy-duty tri-rotor drone for cooperating in field recon and anti-tank strikes. -->
-  <DMS_Mech_Falcon.description>重型三旋翼无人机，用於空中武装侦察和反战车打击。</DMS_Mech_Falcon.description>
+  <DMS_Mech_Falcon.description>重型三旋翼无人机，用於空中武装侦察和反坦克打击。</DMS_Mech_Falcon.description>
   <!-- EN: head -->
   <DMS_Mech_Falcon.tools.head.label>头部</DMS_Mech_Falcon.tools.head.label>
   
