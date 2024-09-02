@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Type 85 Multi-Purposed Quick-Firing System -->
+  <DMS_Gun_Dawnblade.verbs.Verb_ShootCE.label>Type 85 Multi-Purposed Quick-Firing System</DMS_Gun_Dawnblade.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: GateKeeper -->
+  <DMS_Gun_GateKeeper.verbs.Verb_ShootCE.label>GateKeeper</DMS_Gun_GateKeeper.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: kord -->
+  <DMS_Gun_Kord.verbs.Verb_ShootCE.label>kord</DMS_Gun_Kord.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: Tunguska -->
+  <DMS_Gun_Tunguska.verbs.Verb_ShootCE.label>Tunguska</DMS_Gun_Tunguska.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: 2B9M vasilek -->
+  <DMS_Gun_Vasilek.verbs.Verb_ShootMortarCE.label>2B9M vasilek</DMS_Gun_Vasilek.verbs.Verb_ShootMortarCE.label>
+  
+</LanguageData>

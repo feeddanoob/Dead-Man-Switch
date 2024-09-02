@@ -18,13 +18,14 @@
   <!-- EN: Single-shot high caliber heavy hunting rifle. While made to hunt giant games or stop large hostile lifeform with sheer kinetic energy, it is also used by early industrial colonies against mechanoids thanks to its simple manufacture requirements. -->
   <DMS_ElephantGun.description>Single-shot high caliber heavy hunting rifle. While made to hunt giant game or stop a large hostile lifeform with sheer kinetic energy, it is also used by early industrial colonies against mechanoids thanks to its simple manufacturing requirements.</DMS_ElephantGun.description>
   <!-- EN: stock -->
-  <DMS_ElephantGun.tools.stock.label>stock</DMS_ElephantGun.tools.stock.label>
+  <!-- <DMS_ElephantGun.tools.stock.label>stock</DMS_ElephantGun.tools.stock.label> -->
   <!-- EN: barrel -->
-  <DMS_ElephantGun.tools.barrel-0.label>barrel</DMS_ElephantGun.tools.barrel-0.label>
+  <DMS_ElephantGun.tools.barrel.label>barrel</DMS_ElephantGun.tools.barrel.label>
   <!-- EN: grip -->
   <DMS_ElephantGun.tools.grip.label>grip</DMS_ElephantGun.tools.grip.label>
   <!-- EN: barrel -->
-  <DMS_ElephantGun.tools.barrel-1.label>barrel</DMS_ElephantGun.tools.barrel-1.label>
+  <!-- Only one barrel tool -->
+  <!-- <DMS_ElephantGun.tools.barrel-1.label>barrel</DMS_ElephantGun.tools.barrel-1.label> -->
   <!-- EN: elephant rifle -->
   <DMS_ElephantGun.verbs.Verb_Shoot.label>elephant rifle</DMS_ElephantGun.verbs.Verb_Shoot.label>
   
@@ -33,9 +34,9 @@
   <!-- EN: Minature self-defense weapon commonly found on midworlds, barely takes up any space when folded. Accepts multiple calibers and may also used as a knuckle in a pinch. -->
   <DMS_KnuckledusterRevolver.description>Miniature self-defense weapon commonly found on midworlds, it barely takes up any space when folded. Accepts multiple calibers and may also used as a knuckleduster in a pinch.</DMS_KnuckledusterRevolver.description>
   <!-- EN: stock -->
-  <DMS_KnuckledusterRevolver.tools.stock.label>stock</DMS_KnuckledusterRevolver.tools.stock.label>
+  <!-- <DMS_KnuckledusterRevolver.tools.stock.label>stock</DMS_KnuckledusterRevolver.tools.stock.label> -->
   <!-- EN: barrel -->
-  <DMS_KnuckledusterRevolver.tools.barrel.label>barrel</DMS_KnuckledusterRevolver.tools.barrel.label>
+  <!-- <DMS_KnuckledusterRevolver.tools.barrel.label>barrel</DMS_KnuckledusterRevolver.tools.barrel.label> -->
   <!-- EN: grip -->
   <DMS_KnuckledusterRevolver.tools.grip.label>grip</DMS_KnuckledusterRevolver.tools.grip.label>
   <!-- EN: blade -->
@@ -61,13 +62,13 @@
   <!-- EN: a double-action revolver designed to load shotgun ammo. it was designed for personal Defense purpose but soon became an optional weapon for mech solders because it can be used against most of enemy types at the same time. -->
   <DMS_Revolver.description>A double-action revolver designed to load shotgun ammo. It was pursposefully designed as a Personal Defense Weapon for rear echelon personnel but soon became an optional weapon for frontline mech solders because it can be used against most enemy types encountered in the field.</DMS_Revolver.description>
   <!-- EN: stock -->
-  <DMS_Revolver.tools.stock.label>stock</DMS_Revolver.tools.stock.label>
+  <!-- <DMS_Revolver.tools.stock.label>stock</DMS_Revolver.tools.stock.label> -->
   <!-- EN: barrel -->
   <DMS_Revolver.tools.barrel-0.label>barrel</DMS_Revolver.tools.barrel-0.label>
   <!-- EN: grip -->
   <DMS_Revolver.tools.grip.label>grip</DMS_Revolver.tools.grip.label>
   <!-- EN: barrel -->
-  <DMS_Revolver.tools.barrel-1.label>barrel</DMS_Revolver.tools.barrel-1.label>
+  <!--  <DMS_Revolver.tools.barrel-1.label>barrel</DMS_Revolver.tools.barrel-1.label> -->
   <!-- EN: Riot Revolver -->
   <DMS_Revolver.verbs.Verb_Shoot.label>Riot Revolver</DMS_Revolver.verbs.Verb_Shoot.label>
   
@@ -80,9 +81,9 @@
   <!-- EN: barrel -->
   <DMS_RiotShotgun.tools.barrel-0.label>barrel</DMS_RiotShotgun.tools.barrel-0.label>
   <!-- EN: stock -->
-  <DMS_RiotShotgun.tools.stock-1.label>stock</DMS_RiotShotgun.tools.stock-1.label>
+  <!-- <DMS_RiotShotgun.tools.stock-1.label>stock</DMS_RiotShotgun.tools.stock-1.label> -->
   <!-- EN: barrel -->
-  <DMS_RiotShotgun.tools.barrel-1.label>barrel</DMS_RiotShotgun.tools.barrel-1.label>
+  <!-- <DMS_RiotShotgun.tools.barrel-1.label>barrel</DMS_RiotShotgun.tools.barrel-1.label> -->
   <!-- EN: slug gun -->
   <DMS_RiotShotgun.verbs.Verb_Shoot.label>slug gun</DMS_RiotShotgun.verbs.Verb_Shoot.label>
   
@@ -95,9 +96,9 @@
   <!-- EN: barrel -->
   <DMS_SurvivalRifle.tools.barrel-0.label>barrel</DMS_SurvivalRifle.tools.barrel-0.label>
   <!-- EN: stock -->
-  <DMS_SurvivalRifle.tools.stock-1.label>stock</DMS_SurvivalRifle.tools.stock-1.label>
+  <!-- <DMS_SurvivalRifle.tools.stock-1.label>stock</DMS_SurvivalRifle.tools.stock-1.label> -->
   <!-- EN: barrel -->
-  <DMS_SurvivalRifle.tools.barrel-1.label>barrel</DMS_SurvivalRifle.tools.barrel-1.label>
+  <!-- <DMS_SurvivalRifle.tools.barrel-1.label>barrel</DMS_SurvivalRifle.tools.barrel-1.label> -->
   <!-- EN: survival rifle -->
   <DMS_SurvivalRifle.verbs.Verb_Shoot.label>survival rifle</DMS_SurvivalRifle.verbs.Verb_Shoot.label>
   

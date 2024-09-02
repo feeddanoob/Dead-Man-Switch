@@ -2,6 +2,7 @@
 <LanguageData>
   
   <!-- UNUSED -->
+  <!--
   <DMS_Artifuscle.generalRules.rulesStrings>
     <li>subject->Innovation's path</li>
     <li>subject_story->Unveiled simple truths behind complex phenomena</li>
@@ -79,8 +80,10 @@
     <li>subject_story->Uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->Piecing together the elements of advancement</li>
   </DMS_Artifuscle.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
+  <!--
   <DMS_Automatroid.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -158,8 +161,10 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Automatroid.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
+  <!--
   <DMS_BattleFrame.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -237,8 +242,10 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_BattleFrame.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
+  <!--
   <DMS_Bionics.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -316,8 +323,10 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Bionics.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
+  <!--
   <DMS_DeadMansSwitch.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -395,8 +404,10 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_DeadMansSwitch.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
+  <!--
   <DMS_EquipmentAdvanced.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -474,8 +485,10 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_EquipmentAdvanced.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
+  <!--
   <DMS_EquipmentBasis.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -553,8 +566,10 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_EquipmentBasis.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
+  <!--
   <DMS_EquipmentElite.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -632,8 +647,10 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_EquipmentElite.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
+  <!--
   <DMS_EquipmentHeavy.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -711,8 +728,10 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_EquipmentHeavy.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
+  <!--
   <DMS_HeavyAutomatroid.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -790,8 +809,10 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_HeavyAutomatroid.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
+  <!--
   <DMS_HumanoidEngineering.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -869,8 +890,10 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_HumanoidEngineering.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
+  <!--
   <DMS_Hybird.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -948,8 +971,10 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Hybird.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
+  <!--
   <DMS_Hypothesis.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1027,6 +1052,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Hypothesis.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
   <DMS_Legion.generalRules.rulesStrings>
@@ -1187,6 +1213,7 @@
   </DMS_MechBasis.generalRules.rulesStrings>
   
   <!-- UNUSED -->
+  <!--
   <DMS_Mechlink.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1264,8 +1291,10 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Mechlink.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
+  <!--
   <DMS_OrganSurgery.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1343,6 +1372,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_OrganSurgery.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
   <DMS_Plasfiber.generalRules.rulesStrings>
@@ -1424,6 +1454,7 @@
   </DMS_Plasfiber.generalRules.rulesStrings>
   
   <!-- UNUSED -->
+  <!--
   <DMS_Prosthetic.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1501,8 +1532,10 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Prosthetic.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
+  <!--
   <DMS_Ronin.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1580,8 +1613,10 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Ronin.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
+  <!--
   <DMS_Synthroid.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1659,6 +1694,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Synthroid.generalRules.rulesStrings>
+  -->
   
   <!-- UNUSED -->
   <DMS_UAVBasis.generalRules.rulesStrings>

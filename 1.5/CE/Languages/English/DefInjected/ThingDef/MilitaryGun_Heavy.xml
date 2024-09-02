@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: mech autocannon -->
+  <DMS_Autocannon.verbs.Verb_ShootCE.label>mech autocannon</DMS_Autocannon.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: 2A38M -->
+  <DMS_Gun_2A38M.verbs.Verb_ShootCE.label>2A38M</DMS_Gun_2A38M.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: MPQFS-85M "Dawnblade" -->
+  <DMS_Gun_DawnbladeM.verbs.Verb_ShootCE.label>MPQFS-85M "Dawnblade"</DMS_Gun_DawnbladeM.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: mech heavy grenade launcher -->
+  <DMS_Gun_DragoonGrenade.verbs.Verb_ShootCE.label>mech heavy grenade launcher</DMS_Gun_DragoonGrenade.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: mech anti-tank gun -->
+  <DMS_Gun_DragoonRifle.verbs.Verb_ShootCE.label>mech anti-tank gun</DMS_Gun_DragoonRifle.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: recoilless cannon -->
+  <DMS_Gun_Recoilless.verbs.Verb_ShootCE.label>recoilless cannon</DMS_Gun_Recoilless.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: mech HMG -->
+  <DMS_HeavyMachineGun.verbs.Verb_ShootCE.label>mech HMG</DMS_HeavyMachineGun.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: sniper cannon -->
+  <DMS_SniperCannon.verbs.Verb_ShootCE.label>sniper cannon</DMS_SniperCannon.verbs.Verb_ShootCE.label>
+  
+</LanguageData>

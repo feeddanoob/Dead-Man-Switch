@@ -9,7 +9,7 @@
   <DMS_Gun_Kord_Vehicle.verbs.Verb_Shoot.label>Kord</DMS_Gun_Kord_Vehicle.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_Gun_Kord_Vehicle.tools.barrel.label>barrel</DMS_Gun_Kord_Vehicle.tools.barrel.label>
+  <!-- <DMS_Gun_Kord_Vehicle.tools.barrel.label>barrel</DMS_Gun_Kord_Vehicle.tools.barrel.label> -->
   
   <!-- EN: 2B9A vasilek -->
   <DMS_Gun_Vasilek_B.label>2B9A Vasilek</DMS_Gun_Vasilek_B.label>
@@ -28,7 +28,7 @@ This weapon is designed specifically for mounted usage, so only specific units c
   <DMS_HeavyMachineGunMounted.verbs.Verb_Shoot.label>Mounted HMG</DMS_HeavyMachineGunMounted.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_HeavyMachineGunMounted.tools.barrel.label>barrel</DMS_HeavyMachineGunMounted.tools.barrel.label>
+  <!-- <DMS_HeavyMachineGunMounted.tools.barrel.label>barrel</DMS_HeavyMachineGunMounted.tools.barrel.label> -->
   
   <!-- EN: mounted LMG -->
   <DMS_LightMachineGunMounted.label>Mounted LMG</DMS_LightMachineGunMounted.label>
@@ -40,7 +40,7 @@ This weapon is designed specially for mounted usage, so only specific units can 
   <DMS_LightMachineGunMounted.verbs.Verb_Shoot.label>Mounted LMG</DMS_LightMachineGunMounted.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_LightMachineGunMounted.tools.barrel.label>barrel</DMS_LightMachineGunMounted.tools.barrel.label>
+  <!-- <DMS_LightMachineGunMounted.tools.barrel.label>barrel</DMS_LightMachineGunMounted.tools.barrel.label> -->
   
   <!-- EN: close inbound defense system -->
   <DMS_ShotgunGunMounted.label>Close Inbound Defense System</DMS_ShotgunGunMounted.label>
@@ -59,6 +59,6 @@ This weapon is designed specially for mounted usage, so only specific units can 
   <DMS_SubMachineGunMounted.verbs.Verb_Shoot.label>Mounted SMG</DMS_SubMachineGunMounted.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_SubMachineGunMounted.tools.barrel.label>barrel</DMS_SubMachineGunMounted.tools.barrel.label>
+  <!-- <DMS_SubMachineGunMounted.tools.barrel.label>barrel</DMS_SubMachineGunMounted.tools.barrel.label> -->
   
 </LanguageData>

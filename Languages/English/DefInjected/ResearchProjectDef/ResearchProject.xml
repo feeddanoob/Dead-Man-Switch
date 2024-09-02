@@ -82,6 +82,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_Artifuscle.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -159,6 +160,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Artifuscle.generalRules.rulesStrings>
+  -->
   
   <!-- EN: automatroid basis -->
   <DMS_Automatroid.label>Automatroid Basis</DMS_Automatroid.label>
@@ -243,6 +245,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_Automatroid.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -320,7 +323,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Automatroid.generalRules.rulesStrings>
-  
+  -->
   <!-- EN: battle friends -->
   <DMS_BattleFrame.label>Battle Friends</DMS_BattleFrame.label>
   <!-- EN: Due to the ages, we have been unable to know the correct name supposed to be "battle frames" or "battle friends", but anyway these are type of automatic exoskeleton that can be a frame of equipment or friend in combat. -->
@@ -402,6 +405,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_BattleFrame.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -479,6 +483,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_BattleFrame.generalRules.rulesStrings>
+  -->
   
   <!-- EN: Biosynthetic -->
   <DMS_Bionics.label>Biosynthetic Prothestics</DMS_Bionics.label>
@@ -561,6 +566,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_Bionics.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -638,7 +644,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Bionics.generalRules.rulesStrings>
-  
+  -->
   <!-- EN: Dead Man's Switch -->
   <DMS_DeadMansSwitch.label>Dead Man's Switch</DMS_DeadMansSwitch.label>
   <!-- EN: The Dead Man's Switch is a mechanical safety mechanism intended to self-terminate device active when the operator becomes incapacitated. \n\n Before human seek into space, they discovered this machanism will eventually made artificial intelligence understand...the meaning of death...\n this discover lead humanity to new era of history....\n\n an era of those fifth level ai. -->
@@ -731,6 +737,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_DeadMansSwitch.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -808,6 +815,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_DeadMansSwitch.generalRules.rulesStrings>
+  -->
   
   <!-- EN: Defense equipment -->
   <DMS_EquipmentAdvanced.label>Defense Equipment</DMS_EquipmentAdvanced.label>
@@ -890,6 +898,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_EquipmentAdvanced.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -967,6 +976,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_EquipmentAdvanced.generalRules.rulesStrings>
+  -->
   
   <!-- EN: pioneer equipment -->
   <DMS_EquipmentBasis.label>Pioneer Equipment</DMS_EquipmentBasis.label>
@@ -1049,6 +1059,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_EquipmentBasis.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1126,6 +1137,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_EquipmentBasis.generalRules.rulesStrings>
+  -->
   
   <!-- EN: military equipment -->
   <DMS_EquipmentElite.label>Military Equipment</DMS_EquipmentElite.label>
@@ -1208,6 +1220,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_EquipmentElite.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1285,6 +1298,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_EquipmentElite.generalRules.rulesStrings>
+  -->
   
   <!-- EN: heavy weaponry -->
   <DMS_EquipmentHeavy.label>Heavy Weaponry</DMS_EquipmentHeavy.label>
@@ -1367,6 +1381,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_EquipmentHeavy.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1444,6 +1459,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_EquipmentHeavy.generalRules.rulesStrings>
+  -->
   
   <!-- EN: heavy automatroid -->
   <DMS_HeavyAutomatroid.label>Heavy Automatroid</DMS_HeavyAutomatroid.label>
@@ -1526,6 +1542,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_HeavyAutomatroid.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1603,6 +1620,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_HeavyAutomatroid.generalRules.rulesStrings>
+  -->
   
   <!-- EN: humanoid engineering -->
   <DMS_HumanoidEngineering.label>Humanoid Automatroid Engineering</DMS_HumanoidEngineering.label>
@@ -1685,6 +1703,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_HumanoidEngineering.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1762,6 +1781,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_HumanoidEngineering.generalRules.rulesStrings>
+  -->
   
   <!-- EN: Hybird Engineering -->
   <DMS_Hybird.label>Hybird Engineering</DMS_Hybird.label>
@@ -1846,6 +1866,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_Hybird.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1923,6 +1944,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Hybird.generalRules.rulesStrings>
+  -->
   
   <!-- EN: in short hypothesis -->
   <DMS_Hypothesis.label>In Short Hypothesis</DMS_Hypothesis.label>
@@ -2007,6 +2029,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_Hypothesis.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -2084,7 +2107,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Hypothesis.generalRules.rulesStrings>
-  
+  -->
   <!-- EN: Legion -->
   <DMS_Legion.label>Legion</DMS_Legion.label>
   <!-- EN: Series of automatroid designed for large-scale warfare. Most of them have only simple weapon operating systems, but their clear division of labor and cheap production costs make them the most impressive combat weapons in terms of service scale. -->
