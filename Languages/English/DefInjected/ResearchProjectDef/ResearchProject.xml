@@ -2530,6 +2530,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_Mechlink.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -2607,6 +2608,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Mechlink.generalRules.rulesStrings>
+  -->
   
   <!-- EN: organ surgery -->
   <DMS_OrganSurgery.label>Organ Surgery</DMS_OrganSurgery.label>
@@ -2689,6 +2691,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_OrganSurgery.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -2766,6 +2769,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_OrganSurgery.generalRules.rulesStrings>
+  -->
   
   <!-- EN: artificial fiber -->
   <DMS_Plasfiber.label>Artificial Fibers</DMS_Plasfiber.label>
@@ -3007,6 +3011,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_Prosthetic.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -3084,6 +3089,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Prosthetic.generalRules.rulesStrings>
+  -->
   
   <!-- EN: Peacekeepers -->
   <DMS_Ronin.label>Peacekeepers</DMS_Ronin.label>
@@ -3166,6 +3172,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_Ronin.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -3243,6 +3250,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Ronin.generalRules.rulesStrings>
+  -->
   
   <!-- EN: Next-Gen weaponry(WIP) -->
   <DMS_Synthroid.label>Next-Gen Weaponry(WIP)</DMS_Synthroid.label>
@@ -3325,6 +3333,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
+  <!--
   <DMS_Synthroid.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -3402,6 +3411,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   </DMS_Synthroid.generalRules.rulesStrings>
+  -->
   
   <!-- EN: drone basis -->
   <DMS_UAVBasis.label>Drone Basis</DMS_UAVBasis.label>
