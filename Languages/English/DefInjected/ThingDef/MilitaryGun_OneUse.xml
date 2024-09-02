@@ -10,6 +10,6 @@
   <!-- EN: on cooldown -->
   <DMS_DeposableRocketLauncher.comps.CompApparelReloadable.cooldownGerund>on cooldown</DMS_DeposableRocketLauncher.comps.CompApparelReloadable.cooldownGerund>
   <!-- EN: deposable launcher -->
-  <DMS_DeposableRocketLauncher.verbs.Verb_LaunchProjectileStaticCE.label>deposable launcher</DMS_DeposableRocketLauncher.verbs.Verb_LaunchProjectileStaticCE.label>
+  <!-- <DMS_DeposableRocketLauncher.verbs.Verb_LaunchProjectileStaticCE.label>deposable launcher</DMS_DeposableRocketLauncher.verbs.Verb_LaunchProjectileStaticCE.label> -->
   
 </LanguageData>

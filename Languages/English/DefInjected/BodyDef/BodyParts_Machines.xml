@@ -361,7 +361,7 @@
   <!-- EN: right foot -->
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.right_leg.parts.right_foot.customLabel>right foot</DMS_Humanoid_TypeB_ShieldL.corePart.parts.right_leg.parts.right_foot.customLabel>
   <!-- EN: ballistic shield -->
-  <DMS_Humanoid_TypeB_ShieldL.corePart.parts.ballistic_shield.customLabel>ballistic shield</DMS_Humanoid_TypeB_ShieldL.corePart.parts.ballistic_shield.customLabel>
+  <DMS_Humanoid_TypeB_ShieldL.corePart.parts.left_shoulder.parts.ballistic_shield.customLabel>ballistic shield</DMS_Humanoid_TypeB_ShieldL.corePart.parts.left_shoulder.parts.ballistic_shield.customLabel>
   <!-- EN: waist armour plate -->
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.waist_armour_plate.customLabel>waist armour plate</DMS_Humanoid_TypeB_ShieldL.corePart.parts.waist_armour_plate.customLabel>
   <!-- EN: chest armour plate -->

@@ -25,12 +25,14 @@
   <DMS_Mech_Ronin.label>Ronin</DMS_Mech_Ronin.label>
   <!-- EN: Humanoid mech model specialized for urban combat scenarios, packed with assault armor and high mobility, makes it a fierce unit in close quarters combat. -->
   <DMS_Mech_Ronin.description>Humanoid mech model specialized for urban combat scenarios, packed with assault armor and high mobility, makes it a fierce unit in close quater.</DMS_Mech_Ronin.description>
-  <!-- EN: head -->
-  <DMS_Mech_Ronin.tools.head.label>head</DMS_Mech_Ronin.tools.head.label>
-  <!-- EN: left fist -->
-  <DMS_Mech_Ronin.tools.left_fist.label>left fist</DMS_Mech_Ronin.tools.left_fist.label>
+   <!-- EN: right arm blade -->
+  <DMS_Mech_Ronin.tools.right_arm_blade.label>right arm blade</DMS_Mech_Ronin.tools.right_arm_blade.label>
   <!-- EN: right fist -->
   <DMS_Mech_Ronin.tools.right_fist.label>right fist</DMS_Mech_Ronin.tools.right_fist.label>
+  <!-- EN: left arm blade -->
+  <DMS_Mech_Ronin.tools.left_arm_blade.label>left arm blade</DMS_Mech_Ronin.tools.left_arm_blade.label>
+  <!-- EN: left fist -->
+  <DMS_Mech_Ronin.tools.left_fist.label>left fist</DMS_Mech_Ronin.tools.left_fist.label>
   
   <!-- EN: siegebreaker -->
   <DMS_Mech_Siegebreaker.label>Siegebreaker</DMS_Mech_Siegebreaker.label>

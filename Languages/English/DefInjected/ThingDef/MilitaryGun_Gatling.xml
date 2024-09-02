@@ -22,7 +22,7 @@ This weapon is designed specifically for automatroid use, thus a standard baseli
   <DMS_GAU4Gatlinggun.verbs.Verb_Shoot.label>GAU-4 "Vulcan"</DMS_GAU4Gatlinggun.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <DMS_GAU4Gatlinggun.tools.barrel.label>barrel</DMS_GAU4Gatlinggun.tools.barrel.label>
+  <!-- <DMS_GAU4Gatlinggun.tools.barrel.label>barrel</DMS_GAU4Gatlinggun.tools.barrel.label> -->
   
   <!-- EN: GAU-4 "Vulcan" -->
   <DMS_GAU4Gatlinggun_Hold.label>GAU-4 "Vulcan"</DMS_GAU4Gatlinggun_Hold.label>
