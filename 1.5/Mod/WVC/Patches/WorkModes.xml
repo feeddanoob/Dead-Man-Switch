@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationSequence">
+  <operations>
     <li Class="WVC_WorkModes.PatchOperation_Settings">
       <settingName>WVC_FindAndDestroy</settingName>
       <active Class="PatchOperationAdd">
@@ -751,6 +752,7 @@
         </operations>
       </active>
     </li>
+  </operations>
   </Operation>
 
 </Patch>
