@@ -40,26 +40,26 @@
 					<CarryWeight>80</CarryWeight>
 					<CarryBulk>50</CarryBulk>
 					<AimingAccuracy>0.75</AimingAccuracy>
-					<ShootingAccuracyPawn>0.9</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>0.8</ShootingAccuracyPawn>
 					<MeleeDodgeChance>0.01</MeleeDodgeChance>
 					<MeleeCritChance>0.02</MeleeCritChance>
 					<MeleeParryChance>0.05</MeleeParryChance>
 					<MaxHitPoints>200</MaxHitPoints>
 					<NightVisionEfficiency>0.25</NightVisionEfficiency>
-					<ReloadSpeed>1.5</ReloadSpeed>
+					<ReloadSpeed>0.7</ReloadSpeed>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[@Name="BaseBattleFrame"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
-					<ArmorRating_Blunt>15</ArmorRating_Blunt>
+					<ArmorRating_Blunt>14</ArmorRating_Blunt>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[@Name="BaseBattleFrame"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
-					<ArmorRating_Sharp>10</ArmorRating_Sharp>
+					<ArmorRating_Sharp>8</ArmorRating_Sharp>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
@@ -83,7 +83,7 @@
 				<xpath>Defs/ThingDef[@Name="BaseBattleFrame"]/comps</xpath>
 				<value>
 					<li Class="CombatExtended.CompProperties_ArmorDurability">
-						<Durability>1390</Durability>
+						<Durability>1190</Durability>
 						<Regenerates>true</Regenerates>
 						<RegenInterval>1250</RegenInterval>
 						<RegenValue>5</RegenValue>
@@ -95,7 +95,7 @@
 						<RepairValue>200</RepairValue>
 						<CanOverHeal>true</CanOverHeal>
 						<MaxOverHeal>135</MaxOverHeal>
-						<MinArmorPct>0.75</MinArmorPct>
+						<MinArmorPct>0.6</MinArmorPct>
 					</li>
 				</value>
 			</li>
@@ -113,20 +113,20 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_ShaftWorker"]/statBases</xpath>
 				<value>
-					<CarryWeight>125</CarryWeight>
-					<CarryBulk>70</CarryBulk>
+					<CarryWeight>100</CarryWeight>
+					<CarryBulk>80</CarryBulk>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_ShaftWorker"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
-					<ArmorRating_Blunt>24</ArmorRating_Blunt>
+					<ArmorRating_Blunt>16</ArmorRating_Blunt>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_ShaftWorker"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
-					<ArmorRating_Sharp>12</ArmorRating_Sharp>
+					<ArmorRating_Sharp>10</ArmorRating_Sharp>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
@@ -143,6 +143,7 @@
 					<CarryBulk>200</CarryBulk>
 				</value>
 			</li>
+			<!--
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_EscortLifter"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
@@ -154,7 +155,7 @@
 				<value>
 					<ArmorRating_Sharp>10</ArmorRating_Sharp>
 				</value>
-			</li>
+			</li>-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_EscortLifter"]/statBases/ArmorRating_Heat</xpath>
 				<value>

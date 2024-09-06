@@ -179,7 +179,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>130</count>
+        <count>100</count>
       </li>
       <li>
         <filter>
@@ -515,7 +515,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>15</count>
+        <count>20</count>
       </li>
       <li>
         <filter>
@@ -523,7 +523,7 @@
             <li>Tungsteel</li>
           </thingDefs>
         </filter>
-        <count>50</count>
+        <count>45</count>
       </li>
       <li>
         <filter>

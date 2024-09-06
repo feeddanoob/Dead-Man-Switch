@@ -16,7 +16,7 @@
       <li>DMS_ReactionChamber</li>
     </recipeUsers>
     <skillRequirements>
-      <Crafting>2</Crafting>
+      <Crafting>3</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <researchPrerequisite>DMS_Plasfiber</researchPrerequisite>
@@ -54,7 +54,7 @@
       <li>DMS_ReactionChamber</li>
     </recipeUsers>
     <skillRequirements>
-      <Crafting>4</Crafting>
+      <Crafting>5</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <researchPrerequisite>DMS_Plasfiber</researchPrerequisite>
@@ -92,7 +92,7 @@
       <li>DMS_ReactionChamber</li>
     </recipeUsers>
     <skillRequirements>
-      <Crafting>2</Crafting>
+      <Crafting>3</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <researchPrerequisite>DMS_Plasfiber</researchPrerequisite>
@@ -132,7 +132,7 @@
       <li>DMS_ReactionChamber</li>
     </recipeUsers>
     <skillRequirements>
-      <Crafting>4</Crafting>
+      <Crafting>5</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <researchPrerequisite>DMS_Plasfiber</researchPrerequisite>
@@ -174,7 +174,7 @@
       <li>DMS_Furnace</li>
     </recipeUsers>
     <skillRequirements>
-      <Crafting>2</Crafting>
+      <Crafting>3</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <researchPrerequisite>DMS_Material</researchPrerequisite>
@@ -237,7 +237,7 @@
       <li>DMS_Furnace</li>
     </recipeUsers>
     <skillRequirements>
-      <Crafting>4</Crafting>
+      <Crafting>5</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <researchPrerequisite>DMS_Material</researchPrerequisite>
@@ -300,7 +300,7 @@
       <li>DMS_Furnace</li>
     </recipeUsers>
     <skillRequirements>
-      <Crafting>1</Crafting>
+      <Crafting>2</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <researchPrerequisite>DMS_Material</researchPrerequisite>
@@ -411,7 +411,7 @@
     </recipeUsers>
     <workAmount>5000</workAmount>
     <skillRequirements>
-      <Crafting>2</Crafting>
+      <Crafting>6</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <researchPrerequisite>DMS_MechBasis</researchPrerequisite>
@@ -458,7 +458,7 @@
     </recipeUsers>
     <workAmount>16000</workAmount>
     <skillRequirements>
-      <Crafting>4</Crafting>
+      <Crafting>8</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <researchPrerequisite>DMS_MechBasis</researchPrerequisite>
@@ -504,7 +504,7 @@
     </recipeUsers>
     <workAmount>15000</workAmount>
     <skillRequirements>
-      <Crafting>3</Crafting>
+      <Crafting>5</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
@@ -542,7 +542,7 @@
     <researchPrerequisite>Fabrication</researchPrerequisite>
     <workAmount>5000</workAmount>
     <skillRequirements>
-      <Crafting>3</Crafting>
+      <Crafting>6</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
