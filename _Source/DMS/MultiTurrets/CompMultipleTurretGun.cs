@@ -182,7 +182,7 @@ namespace DMS
         }
         public void Tick()
         {
-            if (!this.CanShoot)
+            if (this.CanShoot == false)
             {
                 return;
             }
