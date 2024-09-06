@@ -175,10 +175,8 @@
     <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
     <stages>
       <li>
-        <statOffsets>
-          <MoveSpeed>-0.5</MoveSpeed>
-        </statOffsets>
         <statFactors>
+          <MoveSpeed>0.9</MoveSpeed>
           <AimingDelayFactor>0.9</AimingDelayFactor>
           <IncomingDamageFactor>0.9</IncomingDamageFactor>
           <PawnTrapSpringChance>1.1</PawnTrapSpringChance>
