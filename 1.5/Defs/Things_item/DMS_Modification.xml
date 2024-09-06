@@ -176,7 +176,7 @@
     <stages>
       <li>
         <statFactors>
-          <MoveSpeed>-0.5</MoveSpeed>
+          <MoveSpeed>0.8</MoveSpeed>
           <AimingDelayFactor>0.9</AimingDelayFactor>
           <IncomingDamageFactor>0.9</IncomingDamageFactor>
           <PawnTrapSpringChance>1.1</PawnTrapSpringChance>
