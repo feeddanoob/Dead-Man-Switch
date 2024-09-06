@@ -5,59 +5,53 @@
 	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_SurvivalRifle</defName>
 		<label>X Calibre</label>
-		<ammoTypes> 
+		<ammoTypes>
 			<!--
-			<Ammo_12Gauge_Buck>Bullet_12Gauge_Buck</Ammo_12Gauge_Buck>
-			<Ammo_12Gauge_Slug>Bullet_12Gauge_Slug</Ammo_12Gauge_Slug>
-			<Ammo_12Gauge_Beanbag>Bullet_12Gauge_Beanbag</Ammo_12Gauge_Beanbag>
-			<Ammo_12Gauge_ElectroSlug>Bullet_12Gauge_ElectroSlug</Ammo_12Gauge_ElectroSlug>
-
-			<Ammo_20Gauge_Buck>Bullet_20Gauge_Buck</Ammo_20Gauge_Buck>
-			<Ammo_20Gauge_Slug>Bullet_20Gauge_Slug</Ammo_20Gauge_Slug>
-			<Ammo_20Gauge_Beanbag>Bullet_20Gauge_Beanbag</Ammo_20Gauge_Beanbag>
-			<Ammo_20Gauge_ElectroSlug>Bullet_20Gauge_ElectroSlug</Ammo_20Gauge_ElectroSlug>
-			
+			<Ammo_45Schofield_FMJ>Bullet_45Schofield_FMJ</Ammo_45Schofield_FMJ>
+			<Ammo_45Schofield_AP>Bullet_45Schofield_AP</Ammo_45Schofield_AP>
+			<Ammo_45Schofield_HP>Bullet_45Schofield_HP</Ammo_45Schofield_HP>
+			<Ammo_45Colt_FMJ>Bullet_45Colt_FMJ</Ammo_45Colt_FMJ>
+			<Ammo_45Colt_AP>Bullet_45Colt_AP</Ammo_45Colt_AP>
+			<Ammo_45Colt_HP>Bullet_45Colt_HP</Ammo_45Colt_HP>
+			<Ammo_44SWSpecial_FMJ>Bullet_44SWSpecial_FMJ</Ammo_44SWSpecial_FMJ>
+			<Ammo_44SWSpecial_AP>Bullet_44SWSpecial_AP</Ammo_44SWSpecial_AP>
+			<Ammo_44SWSpecial_HP>Bullet_44SWSpecial_HP</Ammo_44SWSpecial_HP>
+			<Ammo_38Special_FMJ>Bullet_38Special_FMJ</Ammo_38Special_FMJ>
+     		<Ammo_38Special_AP>Bullet_38Special_AP</Ammo_38Special_AP>
+			<Ammo_38Special_HP>Bullet_38Special_HP</Ammo_38Special_HP>--> 
+			<Ammo_45ACP_FMJ>Bullet_45ACP_FMJ</Ammo_45ACP_FMJ>
+			<Ammo_45ACP_AP>Bullet_45ACP_AP</Ammo_45ACP_AP>
+			<Ammo_45ACP_HP>Bullet_45ACP_HP</Ammo_45ACP_HP>
+			<Ammo_38ACP_FMJ>Bullet_38ACP_FMJ</Ammo_38ACP_FMJ>
+			<Ammo_38ACP_AP>Bullet_38ACP_AP</Ammo_38ACP_AP>
+			<Ammo_38ACP_HP>Bullet_38ACP_HP</Ammo_38ACP_HP>
+			<Ammo_9x19mmPara_FMJ>Bullet_9x19mmPara_FMJ</Ammo_9x19mmPara_FMJ>
+			<Ammo_9x19mmPara_AP>Bullet_9x19mmPara_AP</Ammo_9x19mmPara_AP>
+			<Ammo_9x19mmPara_HP>Bullet_9x19mmPara_HP</Ammo_9x19mmPara_HP>
+			<Ammo_357Magnum_FMJ>Bullet_357Magnum_FMJ</Ammo_357Magnum_FMJ>
+			<Ammo_357Magnum_AP>Bullet_357Magnum_AP</Ammo_357Magnum_AP>
+			<Ammo_357Magnum_HP>Bullet_357Magnum_HP</Ammo_357Magnum_HP>
+			<Ammo_40SW_FMJ>Bullet_40SW_FMJ</Ammo_40SW_FMJ>
+			<Ammo_40SW_AP>Bullet_40SW_AP</Ammo_40SW_AP>
+			<Ammo_40SW_HP>Bullet_40SW_HP</Ammo_40SW_HP>
+			<Ammo_44Magnum_FMJ>Bullet_44Magnum_FMJ</Ammo_44Magnum_FMJ>
+			<Ammo_44Magnum_AP>Bullet_44Magnum_AP</Ammo_44Magnum_AP>
+			<Ammo_44Magnum_HP>Bullet_44Magnum_HP</Ammo_44Magnum_HP>
 			<Ammo_410Bore_Buck>Bullet_410Bore_Buck</Ammo_410Bore_Buck>
 			<Ammo_410Bore_Slug>Bullet_410Bore_Slug</Ammo_410Bore_Slug>
 			<Ammo_410Bore_Beanbag>Bullet_410Bore_Beanbag</Ammo_410Bore_Beanbag>
 			<Ammo_410Bore_ElectroSlug>Bullet_410Bore_ElectroSlug</Ammo_410Bore_ElectroSlug>
-			
-			<Ammo_44Magnum_FMJ>Bullet_44Magnum_FMJ</Ammo_44Magnum_FMJ>
-			<Ammo_44Magnum_AP>Bullet_44Magnum_AP</Ammo_44Magnum_AP>
-			<Ammo_44Magnum_HP>Bullet_44Magnum_HP</Ammo_44Magnum_HP>
-			
-			<Ammo_45Colt_FMJ>Bullet_45Colt_FMJ</Ammo_45Colt_FMJ>
-			<Ammo_45Colt_AP>Bullet_45Colt_AP</Ammo_45Colt_AP>
-			<Ammo_45Colt_HP>Bullet_45Colt_HP</Ammo_45Colt_HP>
-		-->
-		    <Ammo_22Hornet_FMJ>Bullet_22Hornet_FMJ</Ammo_22Hornet_FMJ>
-		    <Ammo_22Hornet_AP>Bullet_22Hornet_AP</Ammo_22Hornet_AP>
-		    <Ammo_22Hornet_HP>Bullet_22Hornet_HP</Ammo_22Hornet_HP>
-			
-			<Ammo_22LR_FMJ>Bullet_22LR_FMJ</Ammo_22LR_FMJ>
-			<Ammo_22LR_AP>Bullet_22LR_AP</Ammo_22LR_AP>
-			<Ammo_22LR_HP>Bullet_22LR_HP</Ammo_22LR_HP>
+			<Ammo_20Gauge_Buck>Bullet_20Gauge_Buck</Ammo_20Gauge_Buck>
+			<Ammo_20Gauge_Slug>Bullet_20Gauge_Slug</Ammo_20Gauge_Slug>
+			<Ammo_20Gauge_Beanbag>Bullet_20Gauge_Beanbag</Ammo_20Gauge_Beanbag>
+			<Ammo_20Gauge_ElectroSlug>Bullet_20Gauge_ElectroSlug</Ammo_20Gauge_ElectroSlug>
+			<Ammo_12Gauge_Buck>Bullet_12Gauge_Buck</Ammo_12Gauge_Buck>
+			<Ammo_12Gauge_Slug>Bullet_12Gauge_Slug</Ammo_12Gauge_Slug>
+			<Ammo_12Gauge_Beanbag>Bullet_12Gauge_Beanbag</Ammo_12Gauge_Beanbag>
+			<Ammo_12Gauge_ElectroSlug>Bullet_12Gauge_ElectroSlug</Ammo_12Gauge_ElectroSlug>
 		</ammoTypes>
+		<similarTo>AmmoSet_Shotgun</similarTo>
 	</CombatExtended.AmmoSetDef>
-<!--
-	<CombatExtended.AmmoSetDef>
-		<defName>AmmoSet_SurvivalRifle_UB</defName>
-		<label>Intermediate X Calibre</label>
-		<ammoTypes>
-			<Ammo_556x45mmNATO_FMJ>Bullet_556x45mmNATO_FMJ</Ammo_556x45mmNATO_FMJ>
-			<Ammo_556x45mmNATO_AP>Bullet_556x45mmNATO_AP</Ammo_556x45mmNATO_AP>
-			<Ammo_556x45mmNATO_HP>Bullet_556x45mmNATO_HP</Ammo_556x45mmNATO_HP>
-			<Ammo_556x45mmNATO_Incendiary>Bullet_556x45mmNATO_Incendiary</Ammo_556x45mmNATO_Incendiary>
-			<Ammo_556x45mmNATO_HE>Bullet_556x45mmNATO_HE</Ammo_556x45mmNATO_HE>
-			<Ammo_556x45mmNATO_Sabot>Bullet_556x45mmNATO_Sabot</Ammo_556x45mmNATO_Sabot>			
-			
-			<Ammo_545x39mmSoviet_FMJ>Bullet_545x39mmSoviet_FMJ</Ammo_545x39mmSoviet_FMJ>
-			<Ammo_545x39mmSoviet_AP>Bullet_545x39mmSoviet_AP</Ammo_545x39mmSoviet_AP>
-			<Ammo_545x39mmSoviet_HP>Bullet_545x39mmSoviet_HP</Ammo_545x39mmSoviet_HP>
-			<Ammo_545x39mmSoviet_Incendiary>Bullet_545x39mmSoviet_Incendiary</Ammo_545x39mmSoviet_Incendiary>
-			<Ammo_545x39mmSoviet_HE>Bullet_545x39mmSoviet_HE</Ammo_545x39mmSoviet_HE>
-			<Ammo_545x39mmSoviet_Sabot>Bullet_545x39mmSoviet_Sabot</Ammo_545x39mmSoviet_Sabot>
-		</ammoTypes>
-	</CombatExtended.AmmoSetDef>
--->
+
+
 </Defs>

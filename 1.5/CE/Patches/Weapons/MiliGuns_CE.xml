@@ -523,7 +523,7 @@
                 <defName>DMS_SniperCannon</defName>
                 <statBases>
                     <Mass>40</Mass>
-                    <Bulk>23.34</Bulk>
+                    <Bulk>32.17</Bulk>
                     <SwayFactor>3.07</SwayFactor>
                     <ShotSpread>0.01</ShotSpread>
                     <SightsEfficiency>3.3</SightsEfficiency>
@@ -634,6 +634,10 @@
                     <noSingleShot>true</noSingleShot>
                     <aiUseBurstMode>TRUE</aiUseBurstMode>
                 </FireModes>
+                <weaponTags>
+                    <li>CE_AI_Suppressive</li>
+                    <li>bipodSAW</li>
+                </weaponTags>
             </li>
 
             <!--===== Heavy MG =====-->
@@ -670,7 +674,7 @@
                     <ammoSet>AmmoSet_50BMG</ammoSet>
                 </AmmoUser>
                 <FireModes>
-                    <aiAimMode>SuppressFire</aiAimMode>
+                    <aiAimMode>AimedShot</aiAimMode>
                     <aimedBurstShotCount>4</aimedBurstShotCount>
                     <!--<noSingleShot>false</noSingleShot>-->
                     <aiUseBurstMode>TRUE</aiUseBurstMode>
@@ -685,8 +689,8 @@
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Autocannon</defName>
                 <statBases>
-                    <Mass>50</Mass>
-                    <Bulk>23.34</Bulk>
+                    <Mass>73</Mass>
+                    <Bulk>41.34</Bulk>
                     <SwayFactor>3.12</SwayFactor>
                     <ShotSpread>0.04</ShotSpread>
                     <SightsEfficiency>1</SightsEfficiency>
@@ -712,7 +716,7 @@
                 </AmmoUser>
                 <FireModes>
                     <aiUseBurstMode>TRUE</aiUseBurstMode>
-                    <aiAimMode>SuppressFire</aiAimMode>
+                    <aiAimMode>AimedShot</aiAimMode>
                     <aimedBurstShotCount>3</aimedBurstShotCount>
                     <!--<noSingleShot>false</noSingleShot>-->
                 </FireModes>
@@ -756,7 +760,7 @@
 			                <power>18</power>
 			                <cooldownTime>1.78</cooldownTime>
 			                <armorPenetrationBlunt>2.0</armorPenetrationBlunt>
-                            <armorPenetrationSharp>12</armorPenetrationSharp>
+                            <armorPenetrationSharp>10</armorPenetrationSharp>
                         </li>
                     </tools>
                 </value>
@@ -812,9 +816,9 @@
                             <capacities>
                                 <li>Blunt</li>
                             </capacities>
-                            <power>8</power>
+                            <power>16</power>
                             <cooldownTime>1.36</cooldownTime>
-                            <armorPenetrationBlunt>2.88</armorPenetrationBlunt>
+                            <armorPenetrationBlunt>8.68</armorPenetrationBlunt>
                             <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
                             <extraMeleeDamages>
                                 <li>
@@ -829,12 +833,12 @@
                                 <li>Blunt</li>
                             </capacities>
                             <power>10</power>
-                            <cooldownTime>1.54</cooldownTime>
-                            <armorPenetrationBlunt>1.28</armorPenetrationBlunt>
+                            <cooldownTime>1.84</cooldownTime>
+                            <armorPenetrationBlunt>3.28</armorPenetrationBlunt>
                             <extraMeleeDamages>
                                 <li>
                                     <def>EMP</def>
-                                    <amount>6</amount>
+                                    <amount>15</amount>
                                 </li>
                             </extraMeleeDamages>
                         </li>

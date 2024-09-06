@@ -109,13 +109,13 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseAutomatroidRace" Name="BaseAutomatroidWalker" Abstract="True">
-    <inspectorTabs Inherit="False">
+    <!--<inspectorTabs Inherit="False">
       <li>ITab_Pawn_Health</li>
       <li>ITab_Pawn_Needs</li>
       <li>ITab_Pawn_FormingCaravan</li>
       <li>ITab_Pawn_Gear</li>
       <li>ITab_Pawn_Log</li>
-    </inspectorTabs>
+    </inspectorTabs>-->
     <race>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>Mechanoid</thinkTreeMain>

@@ -175,8 +175,10 @@
     <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
     <stages>
       <li>
-        <statFactors>
+        <statOffsets>
           <MoveSpeed>-0.5</MoveSpeed>
+        </statOffsets>
+        <statFactors>
           <AimingDelayFactor>0.9</AimingDelayFactor>
           <IncomingDamageFactor>0.9</IncomingDamageFactor>
           <PawnTrapSpringChance>1.1</PawnTrapSpringChance>
@@ -429,6 +431,7 @@
         <statOffsets>
           <MoveSpeed>-0.5</MoveSpeed>
           <CarryBulk MayRequire="ceteam.combatextended">50</CarryBulk>
+          <CarryWeight MayRequire="ceteam.combatextended">80</CarryWeight>
           <CarryingCapacity>200</CarryingCapacity>
           <MechEnergyUsageFactor>0.15</MechEnergyUsageFactor>
         </statOffsets>

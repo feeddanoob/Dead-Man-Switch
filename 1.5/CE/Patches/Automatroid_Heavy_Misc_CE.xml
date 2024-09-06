@@ -7,17 +7,30 @@
 			<!-- ========== PawnKind Patches ========== -->
 			<li Class="PatchOperationAddModExtension">
 				<xpath>
-					Defs/PawnKindDef[
-					defName="DMS_Mech_Ape" or
-					defName="DMS_Mech_HermitCrab"
-					]
+					Defs/PawnKindDef[defName="DMS_Mech_Ape"]
 				</xpath>
 				<value>
 					<li Class="CombatExtended.LoadoutPropertiesExtension">
 						<primaryMagazineCount>
-							<min>5</min>
-							<max>8</max>
+							<min>4</min>
+							<max>6</max>
 						</primaryMagazineCount>
+						<sidearms>
+							<li>
+								<generateChance>0.5</generateChance>
+								<sidearmMoney>
+									<min>150</min>
+									<max>350</max>
+								</sidearmMoney>
+								<weaponTags>
+									<li>DMS_MechWeaponLight</li>
+								</weaponTags>
+								<magazineCount>
+									<min>2</min>
+									<max>5</max>
+								</magazineCount>
+							</li>				
+						</sidearms>
 					</li>
 				</value>
 			</li>
@@ -37,28 +50,29 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Ape"]/statBases</xpath>
 				<value>
-					<CarryWeight>70</CarryWeight>
-					<CarryBulk>55</CarryBulk>
-					<MeleeDodgeChance>0.09</MeleeDodgeChance>
+					<CarryWeight>75</CarryWeight>
+					<CarryBulk>70</CarryBulk>
+					<MeleeDodgeChance>0.07</MeleeDodgeChance>
 					<MeleeCritChance>0.11</MeleeCritChance>
 					<MeleeParryChance>0.08</MeleeParryChance>
 					<MaxHitPoints>200</MaxHitPoints>
-					<NightVisionEfficiency>0.8</NightVisionEfficiency>
-					<ReloadSpeed>0.75</ReloadSpeed>
+					<NightVisionEfficiency>0.7</NightVisionEfficiency>
+					<ReloadSpeed>0.8</ReloadSpeed>
 					<AimingAccuracy>1</AimingAccuracy>
+					<ShootingAccuracyPawn>1.35</ShootingAccuracyPawn> 
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Ape"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
-					<ArmorRating_Blunt>8</ArmorRating_Blunt>
+					<ArmorRating_Blunt>16</ArmorRating_Blunt>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Ape"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
-					<ArmorRating_Sharp>5</ArmorRating_Sharp>
+					<ArmorRating_Sharp>10</ArmorRating_Sharp>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
@@ -98,38 +112,144 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Ape"]</xpath>
+				<value>
+					<li Class="CombatExtended.PartialArmorExt">
+						<stats>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+								<parts>
+									<li>DMS_HeadRadar</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+								<parts>
+									<li>DMS_HeadRadar</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+								<parts>
+									<li>MechanicalHead</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+								<parts>
+									<li>MechanicalHead</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+								<parts>
+									<li>MechanicalNeck</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+								<parts>
+									<li>MechanicalNeck</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+								<parts>
+									<li>MechanicalShoulder</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+								<parts>
+									<li>MechanicalShoulder</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+								<parts>
+									<li>MechanicalArm</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+								<parts>
+									<li>MechanicalArm</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+								<parts>
+									<li>MechanicalHand</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+								<parts>
+									<li>MechanicalHand</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+								<parts>
+									<li>MechanicalLeg</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+								<parts>
+									<li>MechanicalLeg</li>
+								</parts>
+							</li>
+						</stats>
+					</li>
+				</value>
+			</li>
+
 			<!-- ====== Hermit Crab ======-->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_HermitCrab"]/statBases</xpath>
 				<value>
-					<CarryWeight>175</CarryWeight>
-					<CarryBulk>150</CarryBulk>
-					<AimingAccuracy>1</AimingAccuracy>
-					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
-					<MeleeDodgeChance>0.08</MeleeDodgeChance>
-					<MeleeCritChance>0.31</MeleeCritChance>
-					<MeleeParryChance>0.28</MeleeParryChance>
+					<CarryWeight>65</CarryWeight>
+					<CarryBulk>50</CarryBulk>
+					<MeleeDodgeChance>0.04</MeleeDodgeChance>
+					<MeleeCritChance>0.11</MeleeCritChance>
+					<MeleeParryChance>0.12</MeleeParryChance>
 					<MaxHitPoints>350</MaxHitPoints>
-					<NightVisionEfficiency>0.8</NightVisionEfficiency>
+					<NightVisionEfficiency>0.7</NightVisionEfficiency>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_HermitCrab"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
-					<ArmorRating_Blunt>36</ArmorRating_Blunt>
+					<ArmorRating_Blunt>50</ArmorRating_Blunt>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_HermitCrab"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
-					<ArmorRating_Sharp>12</ArmorRating_Sharp>
+					<ArmorRating_Sharp>15</ArmorRating_Sharp>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_HermitCrab"]/statBases/ArmorRating_Heat</xpath>
 				<value>
-					<ArmorRating_Heat>0.08</ArmorRating_Heat>
+					<ArmorRating_Heat>0.25</ArmorRating_Heat>
 				</value>
 			</li>
 			<li Class="PatchOperationConditional">
@@ -172,16 +292,17 @@
 								<li>Blunt</li>
 							</capacities>
 							<power>25</power>
-							<cooldownTime>3.2</cooldownTime>
+							<cooldownTime>2.2</cooldownTime>
 							<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-							<armorPenetrationBlunt>28</armorPenetrationBlunt>
+							<armorPenetrationBlunt>19.5</armorPenetrationBlunt>
+							<chanceFactor>0.3</chanceFactor>
 						</li>
 						<li Class="CombatExtended.ToolCE">
 							<label>laser cutter</label>
 							<capacities>
 								<li>Cut</li>
 							</capacities>
-							<power>47</power>
+							<power>26</power>
 							<extraMeleeDamages>
 								<li>
 									<def>Flame</def>
@@ -189,7 +310,7 @@
 									<chance>0.3</chance>
 								</li>
 							</extraMeleeDamages>
-							<cooldownTime>2.4</cooldownTime>
+							<cooldownTime>3.6</cooldownTime>
 							<armorPenetrationBlunt>4.06</armorPenetrationBlunt>
 							<armorPenetrationSharp>24</armorPenetrationSharp>
 							<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
@@ -199,15 +320,55 @@
 							<capacities>
 								<li>Stab</li>
 							</capacities>
-							<power>16</power>
-							<cooldownTime>1.8</cooldownTime>
+							<power>14</power>
+							<cooldownTime>1.86</cooldownTime>
 							<armorPenetrationBlunt>1.28</armorPenetrationBlunt>
-							<armorPenetrationSharp>25</armorPenetrationSharp>
+							<armorPenetrationSharp>12</armorPenetrationSharp>
 							<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 						</li>
 					</tools>
 				</value>
 			</li>
+
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="DMS_Mech_HermitCrab"]</xpath>
+				<value>
+					<li Class="CombatExtended.PartialArmorExt">
+						<stats>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+								<parts>
+									<li>DMS_HeadRadar</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+								<parts>
+									<li>DMS_HeadRadar</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+								<parts>
+									<li>MechanicalLeg</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+								<parts>
+									<li>MechanicalLeg</li>
+								</parts>
+							</li>
+						</stats>
+					</li>
+				</value>
+			</li>
+
 
 	    </operations>	
     </Operation>
