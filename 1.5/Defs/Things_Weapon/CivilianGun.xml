@@ -376,7 +376,7 @@
 	<!-- 鎮暴霰彈槍 -->
 	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_RiotShotgun</defName>
-		<label>slug gun</label>
+		<label>rifled slug gun</label>
 		<description>a high caliber rifled shotgun manufactured with stamped component,design for riot operation and disable hostile mech unit.</description>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_RiotShogun</texPath>
