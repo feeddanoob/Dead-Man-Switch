@@ -409,6 +409,7 @@
       </li>
     </comps>
   </ThingDef>
+  
   <HediffDef>
     <defName>DMS_TB_HeavyHydraulicFrame</defName>
     <hediffClass>Hediff</hediffClass>

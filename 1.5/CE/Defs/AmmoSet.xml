@@ -4,7 +4,7 @@
 
 	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_SurvivalRifle</defName>
-		<label>X Calibre</label>
+		<label>X Caliber</label>
 		<ammoTypes>
 			<!--
 			<Ammo_45Schofield_FMJ>Bullet_45Schofield_FMJ</Ammo_45Schofield_FMJ>
