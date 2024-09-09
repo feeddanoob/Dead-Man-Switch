@@ -46,6 +46,7 @@
     <Compile Include="Ability\CompAbilityEffect_AbilitySelfExplosion.cs" />
     <Compile Include="Ability\CompAbilityEffect_DirectionalExplosion.cs" />
     <Compile Include="Ability\CompAbilityEffect_SelfRepairMode.cs" />
+    <Compile Include="Ability\DefOfs_StaticBase.cs" />
     <Compile Include="DMS_DefOf.cs" />
     <Compile Include="Hediff\IngestionOutcomeDoer_GiveHediffIfNoBionic.cs" />
     <Compile Include="HumanlikeMech\Patch_PawnRenderNodeWorker_Apparel_Body_CanDrawNow.cs" />
