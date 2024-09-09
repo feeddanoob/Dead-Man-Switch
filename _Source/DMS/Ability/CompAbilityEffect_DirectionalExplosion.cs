@@ -10,7 +10,7 @@ namespace DMS
     {
         public float range;
         public float lineWidthEnd;
-        public DamageDef explosionDamage = DamageDefOf.Stun;
+        public DamageDef explosionDamage = DefOfs_Static.Stun;
         public int damageAmount = 5;
 
         public CompProperties_AbilityDirectionalExplosion()

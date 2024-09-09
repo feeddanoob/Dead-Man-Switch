@@ -13,7 +13,7 @@ namespace DMS
     public class CompProperties_AbilitySelfExplosion : CompProperties_AbilityEffect
     {
         public float range;
-        public DamageDef explosionDamage = DamageDefOf.Stun;
+        public DamageDef explosionDamage = DefOfs_Static.Stun;
         public int damageAmount = 5;
         public float armorPenetration = 0.2f;
         public SoundDef explosionSound;
