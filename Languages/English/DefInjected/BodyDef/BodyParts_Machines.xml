@@ -93,11 +93,11 @@
   <!-- EN: left armour plate -->
   <DMS_Caterpillar.corePart.parts.left_armour_plate.customLabel>left armour plate</DMS_Caterpillar.corePart.parts.left_armour_plate.customLabel>
   <!-- EN: left leg -->
-  <DMS_Caterpillar.corePart.parts.left_leg.customLabel>left leg</DMS_Caterpillar.corePart.parts.left_leg.customLabel>
+  <DMS_Caterpillar.corePart.parts.left_leg.customLabel>left track</DMS_Caterpillar.corePart.parts.left_leg.customLabel>
   <!-- EN: left wheel -->
   <DMS_Caterpillar.corePart.parts.left_leg.parts.left_wheel.customLabel>left wheel</DMS_Caterpillar.corePart.parts.left_leg.parts.left_wheel.customLabel>
   <!-- EN: right leg -->
-  <DMS_Caterpillar.corePart.parts.right_leg.customLabel>right leg</DMS_Caterpillar.corePart.parts.right_leg.customLabel>
+  <DMS_Caterpillar.corePart.parts.right_leg.customLabel>right track</DMS_Caterpillar.corePart.parts.right_leg.customLabel>
   <!-- EN: right wheel -->
   <DMS_Caterpillar.corePart.parts.right_leg.parts.right_wheel.customLabel>right wheel</DMS_Caterpillar.corePart.parts.right_leg.parts.right_wheel.customLabel>
   
@@ -396,11 +396,11 @@
   <!-- EN: left ERA plate -->
   <DMS_KillDozer.corePart.parts.left_ERA_plate.customLabel>left ERA plate</DMS_KillDozer.corePart.parts.left_ERA_plate.customLabel>
   <!-- EN: left leg -->
-  <DMS_KillDozer.corePart.parts.left_leg.customLabel>left leg</DMS_KillDozer.corePart.parts.left_leg.customLabel>
+  <DMS_KillDozer.corePart.parts.left_leg.customLabel>left track</DMS_KillDozer.corePart.parts.left_leg.customLabel>
   <!-- EN: left wheel -->
   <DMS_KillDozer.corePart.parts.left_leg.parts.left_wheel.customLabel>left wheel</DMS_KillDozer.corePart.parts.left_leg.parts.left_wheel.customLabel>
   <!-- EN: right leg -->
-  <DMS_KillDozer.corePart.parts.right_leg.customLabel>right leg</DMS_KillDozer.corePart.parts.right_leg.customLabel>
+  <DMS_KillDozer.corePart.parts.right_leg.customLabel>right track</DMS_KillDozer.corePart.parts.right_leg.customLabel>
   <!-- EN: right wheel -->
   <DMS_KillDozer.corePart.parts.right_leg.parts.right_wheel.customLabel>right wheel</DMS_KillDozer.corePart.parts.right_leg.parts.right_wheel.customLabel>
   <!-- EN: dozer blade -->

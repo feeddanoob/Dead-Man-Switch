@@ -10,6 +10,9 @@
       <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
       <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
       <ArmorRating_Heat>1.5</ArmorRating_Heat>
+      <MeleeDodgeChance>15</MeleeDodgeChance>
+      <MeleeHitChance>1.2</MeleeHitChance>
+      <AimingDelayFactor>0.9</AimingDelayFactor>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge>
     </statBases>
@@ -36,6 +39,7 @@
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
+          <li>Medieval</li>
           <li>Industrial</li>
           <li>Spacer</li>
           <li>Ultra</li>
@@ -43,6 +47,10 @@
         <BypassUsableWeapons/>
       </li>
     </modExtensions>
+    <butcherProducts>
+      <Tungsteel>5</Tungsteel>
+      <Steel>5</Steel>
+    </butcherProducts>
     <tools Inherit="False">
       <li>
         <label>right arm blade</label>
@@ -150,6 +158,10 @@
       <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
       <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
       <ArmorRating_Heat>1.3</ArmorRating_Heat>
+      <MeleeDodgeChance>9</MeleeDodgeChance>
+      <MeleeHitChance>4</MeleeHitChance>
+      <MeleeCooldownFactor>0.85</MeleeCooldownFactor>
+      <MeleeDamageFactor>1.15</MeleeDamageFactor>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge>
     </statBases>
@@ -170,12 +182,17 @@
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
+          <li>Medieval</li>
           <li>Industrial</li>
           <li>Spacer</li>
           <li>Ultra</li>
         </UsableTechLevels>
       </li>
     </modExtensions>
+    <butcherProducts>
+      <Tungsteel>5</Tungsteel>
+      <Steel>5</Steel>
+    </butcherProducts>
     <tools Inherit="False">
       <li>
         <label>assault shield</label>
@@ -287,10 +304,18 @@
         <BypassUsableWeapons/>
       </li>
     </modExtensions>
+    <butcherProducts>
+      <Tungsteel>5</Tungsteel>
+      <Steel>5</Steel>
+    </butcherProducts>
     <damageMultipliers>
       <li>
         <damageDef>Burn</damageDef>
         <multiplier>0.8</multiplier>
+      </li>
+      <li>
+        <damageDef>Blunt</damageDef>
+        <multiplier>0.85</multiplier>
       </li>
     </damageMultipliers>
   </ThingDef>
@@ -366,11 +391,15 @@
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
+          <li>Medieval</li>
           <li>Industrial</li>
         </UsableTechLevels>
         <BypassUsableWeapons/>
       </li>
     </modExtensions>
+    <butcherProducts>
+      <Tungsteel>10</Tungsteel>
+    </butcherProducts>
     <tools Inherit="False">
       <li>
         <label>ballistic shield</label>
@@ -488,11 +517,15 @@
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
+          <li>Medieval</li>
           <li>Industrial</li>
         </UsableTechLevels>
         <BypassUsableWeapons/>
       </li>
     </modExtensions>
+    <butcherProducts>
+      <Steel>15</Steel>
+    </butcherProducts>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">  <!-- DMS_Mech_Phalanx 方陣:量產近戰型  -->
