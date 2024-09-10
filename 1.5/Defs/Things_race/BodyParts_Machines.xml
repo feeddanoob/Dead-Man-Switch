@@ -2301,7 +2301,7 @@
         </li>
         <li> <!-- 左履帶0.15 -->
           <def>MechanicalLeg</def>
-          <customLabel>left leg</customLabel>
+          <customLabel>left track</customLabel>
           <coverage>0.15</coverage>
           <height>Bottom</height>
           <parts>
@@ -2314,7 +2314,7 @@
         </li>
         <li> <!-- 右履帶0.15 -->
           <def>MechanicalLeg</def>
-          <customLabel>right leg</customLabel>
+          <customLabel>right track</customLabel>
           <coverage>0.15</coverage>
           <height>Bottom</height>
           <parts>
@@ -2422,7 +2422,7 @@
         </li>
         <li> <!-- 左履帶0.15 -->
           <def>MechanicalLeg</def>
-          <customLabel>left leg</customLabel>
+          <customLabel>left track</customLabel>
           <coverage>0.1</coverage>
           <height>Bottom</height>
           <parts>
@@ -2435,7 +2435,7 @@
         </li>
         <li> <!-- 右履帶0.15 -->
           <def>MechanicalLeg</def>
-          <customLabel>right leg</customLabel>
+          <customLabel>right track</customLabel>
           <coverage>0.1</coverage>
           <height>Bottom</height>
           <parts>
