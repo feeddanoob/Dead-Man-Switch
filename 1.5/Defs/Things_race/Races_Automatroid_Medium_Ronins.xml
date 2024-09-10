@@ -22,7 +22,7 @@
       <baseHealthScale>1.32</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
-    <modExtensions Inherit="False">
+    <modExtensions>
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
@@ -139,8 +139,6 @@
       <li>A_SG_LongRifle</li>                                                                     <!--武器-->
       <li>A_PDW</li>
       <li>A_AP</li>
-    <!--  <li>MedievalMeleeAdvanced</li>
-      <li>DMS_MeleeWeapon</li>-->
     </weaponTags>
     <abilities>
       <li>DMS_Infrasound</li>
@@ -171,7 +169,7 @@
       <baseHealthScale>1.32</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
-    <modExtensions Inherit="False">
+    <modExtensions>
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
@@ -285,7 +283,7 @@
       <baseHealthScale>1.54</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
-    <modExtensions  Inherit="False">
+    <modExtensions>
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
@@ -377,7 +375,7 @@
         <li>Warden</li>
       </mechEnabledWorkTypes>
     </race>
-    <modExtensions  Inherit="False">
+    <modExtensions>
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
@@ -498,7 +496,7 @@
       <baseHealthScale>1.32</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
     </race>
-    <modExtensions Inherit="False">
+    <modExtensions>
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
