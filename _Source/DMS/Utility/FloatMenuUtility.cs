@@ -33,7 +33,7 @@ namespace DMS
                         }
                         else
                         {
-                            yield return new FloatMenuOption("CannotEquip".Translate(tmp) + "DMS_WeaponNotSupported".Translate(), null);
+                            yield return new FloatMenuOption("CannotEquip".Translate(tmp) + " " + "DMS_WeaponNotSupported".Translate(), null);
                         }
                     }
                     //裝備相關
@@ -45,7 +45,7 @@ namespace DMS
                         }
                         else
                         {
-                            yield return new FloatMenuOption("CannotEquip".Translate(tmp) + "DMS_FrameNotSupported".Translate(), null);
+                            yield return new FloatMenuOption("CannotEquip".Translate(tmp) + " " + "DMS_FrameNotSupported".Translate(), null);
                         }
                     }
                     //操作砲塔相關
