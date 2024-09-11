@@ -13,7 +13,7 @@ namespace DMS
         new ArgumentType[] { ArgumentType.Normal, ArgumentType.Normal, ArgumentType.Out, ArgumentType.Normal })]
     internal static class Patch_EquipmentUtility_CanEquip
     {
-        static void Postfix(ref bool __result, object __0, object __1, object __2, object __3)
+        static void Postfix(ref bool __result, Thing __0, Pawn __1, ref string __2, bool __3)
         {
             if (__result != true) return;//因為其他原因的不可行(生物鎖之類的)
             if (!(__0 is Thing thing) || !(__1 is Pawn pawn)) return;//天知道拿了個不知道啥的鬼東西，反正也跳過。
@@ -28,7 +28,7 @@ namespace DMS
                     }
                     else
                     {
-                        __2 = "CannotEquip_TooHeavy".Translate();
+                        __2 = " " + "DMS_WeaponNotSupported".Translate();
                         __result = false;
                     }
                 }
@@ -41,7 +41,7 @@ namespace DMS
                     }
                     else
                     {
-                        __2 = "CannotEquip_TooHeavy".Translate();
+                        __2 = " " + "DMS_BodysizeNotSupported".Translate(thing.def.GetModExtension<HeavyEquippableExtension>().EquippableDef.EquippableBaseBodySize.ToString("0.##"));
                         __result = false;
                     }
                 }
