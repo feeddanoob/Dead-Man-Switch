@@ -337,26 +337,26 @@
                 <statBases>
                     <Mass>2</Mass>
                     <Bulk>5.34</Bulk>
-                    <SwayFactor>1.08</SwayFactor>
-                    <ShotSpread>0.09</ShotSpread>
+                    <SwayFactor>1.13</SwayFactor>
+                    <ShotSpread>0.15</ShotSpread>
                     <SightsEfficiency>1.0</SightsEfficiency>
                     <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>Bullet_22Hornet_FMJ</defaultProjectile>
-                    <warmupTime>1.23</warmupTime>
-                    <range>30</range>
+                    <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                    <warmupTime>0.7</warmupTime>
+                    <range>15</range>
                     <soundCast>DMS_SurvivalRifle_Shot</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>6</muzzleFlashScale>
-                    <recoilAmount>0.76</recoilAmount>
+                    <recoilAmount>1.46</recoilAmount>
                 </Properties>
                 <AmmoUser>
                     <magazineSize>1</magazineSize>
                     <AmmoGenPerMagOverride>6</AmmoGenPerMagOverride>
-                    <reloadTime>1.35</reloadTime>
+                    <reloadTime>2.5</reloadTime>
                     <ammoSet>AmmoSet_SurvivalRifle</ammoSet>
                 </AmmoUser>
                 <FireModes>
@@ -375,20 +375,20 @@
                     <li Class="CombatExtended.CompProperties_UnderBarrel">
                         <propsUnderBarrel>
                             <magazineSize>1</magazineSize>
-                            <AmmoGenPerMagOverride>3</AmmoGenPerMagOverride>
-                            <reloadTime>1.5</reloadTime>
-                            <ammoSet>AmmoSet_410Bore</ammoSet>
+                            <AmmoGenPerMagOverride>5</AmmoGenPerMagOverride>
+                            <reloadTime>1</reloadTime>
+                            <ammoSet>AmmoSet_303British</ammoSet>
                         </propsUnderBarrel>
                         <verbPropsUnderBarrel>
-                            <recoilAmount>2.70</recoilAmount>
+                            <recoilAmount>2.12</recoilAmount>
                             <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                             <hasStandardCommand>true</hasStandardCommand>
-                            <defaultProjectile>Bullet_410Bore_Buck</defaultProjectile>
-                            <warmupTime>1.08</warmupTime>
-                            <range>8</range>
+                            <defaultProjectile>Bullet_303British_FMJ</defaultProjectile>
+                            <warmupTime>2</warmupTime>
+                            <range>32</range>
                             <soundCast>Shot_Shotgun_NoRack</soundCast>
                             <soundCastTail>GunTail_Medium</soundCastTail>
-                            <muzzleFlashScale>5</muzzleFlashScale>
+                            <muzzleFlashScale>6</muzzleFlashScale>
                         </verbPropsUnderBarrel>
                         <propsFireModesUnderBarrel>
                             <aiAimMode>Snapshot</aiAimMode>

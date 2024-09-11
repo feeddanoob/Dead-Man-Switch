@@ -60,12 +60,8 @@
         <range>3~8</range>
       </li>
       <li>
-        <skill>Cooking</skill>
-        <range>5~10</range>
-      </li>
-      <li>
         <skill>Social</skill>
-        <range>5~10</range>
+        <range>3~8</range>
       </li>
     </skills>
     <specificApparelRequirements>
@@ -104,7 +100,7 @@
   <skills>
     <li>
       <skill>Shooting</skill>
-      <range>8~16</range>
+      <range>8~12</range>
     </li>
     <li>
       <skill>Melee</skill>
@@ -158,7 +154,7 @@
     <skills>
       <li>
         <skill>Shooting</skill>
-        <range>14~20</range>
+        <range>10~20</range>
       </li>
       <li>
         <skill>Melee</skill>
@@ -206,7 +202,7 @@
     <skills>
       <li>
         <skill>Shooting</skill>
-        <range>8~16</range>
+        <range>8~15</range>
       </li>
       <li>
         <skill>Melee</skill>

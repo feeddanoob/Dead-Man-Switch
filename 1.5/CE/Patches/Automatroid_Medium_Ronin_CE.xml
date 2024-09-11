@@ -41,22 +41,36 @@
 			<!-- ====== 浪人型 ======-->
 			<!--設計為萬能手的初始型號，近戰和中距離騷擾能力都很優秀-->
 			<!-- 坦有塔盾近戰有角鬥跟方陣，讓浪人回去做他的事吧 -->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Ronin"]/statBases</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Ronin"]/statBases/MeleeDodgeChance</xpath>
 				<value>
 					<CarryWeight>50</CarryWeight>
 					<CarryBulk>20</CarryBulk>
 					<AimingAccuracy>1.2</AimingAccuracy>
-					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
-					<MeleeDodgeChance>0.28</MeleeDodgeChance>
+					<ShootingAccuracyPawn>1.4</ShootingAccuracyPawn>
+					<MeleeDodgeChance>0.32</MeleeDodgeChance>
 					<MeleeCritChance>0.18</MeleeCritChance>
 					<MeleeParryChance>0.16</MeleeParryChance>
 					<MaxHitPoints>200</MaxHitPoints>
 					<NightVisionEfficiency>0.8</NightVisionEfficiency>
-					<AimingDelayFactor>0.85</AimingDelayFactor>
 					<ReloadSpeed>1.3</ReloadSpeed>
 				</value>
 			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Ronin"]/statBases/MeleeHitChance</xpath>
+				<value>
+					<MeleeHitChance>0.13</MeleeHitChance>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Ronin"]/statBases/AimingDelayFactor</xpath>
+				<value>
+					<AimingDelayFactor>0.85</AimingDelayFactor>
+				</value>
+			</li>
+
 				
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Ronin"]/statBases/ArmorRating_Blunt</xpath>
@@ -294,13 +308,11 @@
 
 			<!-- ======角鬥士======-->
 			<!--近戰特化的浪人變體，取消掉刀手後直接配備近戰武器，以及一面突擊盾牌-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Gladiator"]/statBases</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Gladiator"]/statBases/MeleeDodgeChance</xpath>
 				<value>
 					<CarryWeight>50</CarryWeight>
 					<CarryBulk>20</CarryBulk>
-					<AimingAccuracy>1</AimingAccuracy>
-					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
 					<MeleeDodgeChance>0.21</MeleeDodgeChance>
 					<MeleeCritChance>0.26</MeleeCritChance>
 					<MeleeParryChance>0.39</MeleeParryChance>
@@ -309,6 +321,13 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Gladiator"]/statBases/MeleeHitChance</xpath>
+				<value>
+					<MeleeHitChance>0.36</MeleeHitChance>
+				</value>
+			</li>
+
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Gladiator"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
@@ -544,8 +563,8 @@
 				<value>
 					<CarryWeight>50</CarryWeight>
 					<CarryBulk>30</CarryBulk>
-					<AimingAccuracy>1</AimingAccuracy>
-					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+					<AimingAccuracy>1.1</AimingAccuracy>
+					<ShootingAccuracyPawn>1.4</ShootingAccuracyPawn>
 					<MeleeDodgeChance>0.16</MeleeDodgeChance>
 					<MeleeCritChance>0.13</MeleeCritChance>
 					<MeleeParryChance>0.13</MeleeParryChance>
@@ -888,7 +907,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Siegebreaker"]/statBases/ArmorRating_Heat</xpath>
 				<value>
-					<ArmorRating_Heat>0.4</ArmorRating_Heat>
+					<ArmorRating_Heat>0.45</ArmorRating_Heat>
 				</value>
 			</li>
 

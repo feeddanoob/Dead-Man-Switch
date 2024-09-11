@@ -176,7 +176,7 @@
     <stages>
       <li>
         <statFactors>
-          <MoveSpeed>-0.5</MoveSpeed>
+          <MoveSpeed>0.9</MoveSpeed>
           <AimingDelayFactor>0.9</AimingDelayFactor>
           <IncomingDamageFactor>0.9</IncomingDamageFactor>
           <PawnTrapSpringChance>1.1</PawnTrapSpringChance>
@@ -409,6 +409,7 @@
       </li>
     </comps>
   </ThingDef>
+  
   <HediffDef>
     <defName>DMS_TB_HeavyHydraulicFrame</defName>
     <hediffClass>Hediff</hediffClass>
@@ -429,6 +430,7 @@
         <statOffsets>
           <MoveSpeed>-0.5</MoveSpeed>
           <CarryBulk MayRequire="ceteam.combatextended">50</CarryBulk>
+          <CarryWeight MayRequire="ceteam.combatextended">80</CarryWeight>
           <CarryingCapacity>200</CarryingCapacity>
           <MechEnergyUsageFactor>0.15</MechEnergyUsageFactor>
         </statOffsets>

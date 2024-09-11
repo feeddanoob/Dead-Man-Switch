@@ -13,6 +13,18 @@
   </BodyPartDef>
 
   <BodyPartDef>
+    <defName>DMS_ArmourPlate_Additional</defName>
+    <label>armour plate(addition)</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef>
     <defName>DMS_SniperHead</defName>
     <label>combined aiming sensor</label>
     <hitPoints>25</hitPoints>
@@ -154,7 +166,7 @@
   <BodyPartDef>
     <defName>DMS_BallisticShield</defName>
     <label>ballistic shield</label>
-    <hitPoints>85</hitPoints>
+    <hitPoints>75</hitPoints>
     <frostbiteVulnerability>0</frostbiteVulnerability>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
@@ -2270,26 +2282,26 @@
           <depth>Inside</depth>
         </li>
         <li> <!-- 附加裝甲0.1 -->
-          <def>DMS_ArmourPlate</def>
+          <def>DMS_ArmourPlate_Additional</def>
           <customLabel>front armour plate</customLabel>
           <coverage>0.1</coverage>
           <depth>Outside</depth>
         </li>
         <li> <!-- 附加裝甲0.1 -->
-          <def>DMS_ArmourPlate</def>
+          <def>DMS_ArmourPlate_Additional</def>
           <customLabel>right armour plate</customLabel>
           <coverage>0.1</coverage>
           <depth>Outside</depth>
         </li>
         <li> <!-- 附加裝甲0.1 -->
-          <def>DMS_ArmourPlate</def>
+          <def>DMS_ArmourPlate_Additional</def>
           <customLabel>left armour plate</customLabel>
           <coverage>0.1</coverage>
           <depth>Outside</depth>
         </li>
         <li> <!-- 左履帶0.15 -->
           <def>MechanicalLeg</def>
-          <customLabel>left leg</customLabel>
+          <customLabel>left track</customLabel>
           <coverage>0.15</coverage>
           <height>Bottom</height>
           <parts>
@@ -2302,7 +2314,7 @@
         </li>
         <li> <!-- 右履帶0.15 -->
           <def>MechanicalLeg</def>
-          <customLabel>right leg</customLabel>
+          <customLabel>right track</customLabel>
           <coverage>0.15</coverage>
           <height>Bottom</height>
           <parts>
@@ -2391,26 +2403,26 @@
           <depth>Inside</depth>
         </li>
         <li> <!-- 附加裝甲0.1 -->
-          <def>DMS_ArmourPlate</def>
+          <def>DMS_ArmourPlate_Additional</def>
           <customLabel>front ERA plate</customLabel>
           <coverage>0.1</coverage>
           <depth>Outside</depth>
         </li>
         <li> <!-- 附加裝甲0.1 -->
-          <def>DMS_ArmourPlate</def>
+          <def>DMS_ArmourPlate_Additional</def>
           <customLabel>right ERA plate</customLabel>
           <coverage>0.1</coverage>
           <depth>Outside</depth>
         </li>
         <li> <!-- 附加裝甲0.1 -->
-          <def>DMS_ArmourPlate</def>
+          <def>DMS_ArmourPlate_Additional</def>
           <customLabel>left ERA plate</customLabel>
           <coverage>0.1</coverage>
           <depth>Outside</depth>
         </li>
         <li> <!-- 左履帶0.15 -->
           <def>MechanicalLeg</def>
-          <customLabel>left leg</customLabel>
+          <customLabel>left track</customLabel>
           <coverage>0.1</coverage>
           <height>Bottom</height>
           <parts>
@@ -2423,7 +2435,7 @@
         </li>
         <li> <!-- 右履帶0.15 -->
           <def>MechanicalLeg</def>
-          <customLabel>right leg</customLabel>
+          <customLabel>right track</customLabel>
           <coverage>0.1</coverage>
           <height>Bottom</height>
           <parts>

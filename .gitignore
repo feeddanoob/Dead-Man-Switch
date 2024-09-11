@@ -362,3 +362,5 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 *.png-autosave.kra
+_Source/DMS/DMS.csproj
+_Source/DMS/.vs/DMS/v17/.suo

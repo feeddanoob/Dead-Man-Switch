@@ -290,6 +290,7 @@
       </li>
     </damageMultipliers>
   </ThingDef>
+  
   <PawnKindDef ParentName="BaseAutomatroidKind">
     <defName>DMS_Mech_Killdozer</defName>
     <label>killdozer</label>
