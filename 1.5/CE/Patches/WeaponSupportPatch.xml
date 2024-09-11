@@ -107,6 +107,7 @@
           <li>CE_OneHandedWeapon</li><!--CE單手武器-->
         </value>
       </li>
+      <!--
       <li Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[
           defName="DMS_Mech_Protector"
@@ -114,7 +115,7 @@
         <value>
           <li>CE_OneHandedWeapon</li>
         </value>
-      </li>
+      </li>-->
 
       <!-- BattleFrames -->
       <li Class="PatchOperationAdd">

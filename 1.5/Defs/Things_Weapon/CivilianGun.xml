@@ -205,7 +205,7 @@
 			<AccuracyShort>0.90</AccuracyShort>
 			<AccuracyMedium>0.80</AccuracyMedium>
 			<AccuracyLong>0.65</AccuracyLong>
-			<WorkToMake>15000</WorkToMake>
+			<WorkToMake>11500</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
 		  <HuntingStealth>0.5</HuntingStealth>
@@ -220,7 +220,7 @@
     		</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<Steel>50</Steel>
+			<Steel>35</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<tools Inherit="False">
@@ -376,7 +376,7 @@
 	<!-- 鎮暴霰彈槍 -->
 	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_RiotShotgun</defName>
-		<label>slug gun</label>
+		<label>rifled slug gun</label>
 		<description>a high caliber rifled shotgun manufactured with stamped component,design for riot operation and disable hostile mech unit.</description>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_RiotShogun</texPath>

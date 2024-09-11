@@ -199,7 +199,7 @@
 				<CasingOffset>(-0.5,-0.5)</CasingOffset>
 			</li>
 		</modExtensions>
-	</ThingDef>	
+	</ThingDef>
 
 	<!--M163(GAU-4陸軍型) Vulcan 20mm 蠵龜的主武器-->
 	<ThingDef ParentName="DMS_AutomatroidTurretGun">

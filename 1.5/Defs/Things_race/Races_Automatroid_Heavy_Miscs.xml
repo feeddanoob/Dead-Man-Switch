@@ -8,13 +8,12 @@
     <description>An prototype design on testing the feasibility of humanoid automatroid, it's designed to equip with heavy weapon.</description>
     <statBases>
       <StaggerDurationFactor>0.25</StaggerDurationFactor>
-      <MoveSpeed>3</MoveSpeed>                                                              <!--移動速度-->
+      <MoveSpeed>3.1</MoveSpeed>                                                              <!--移動速度-->
       <ArmorRating_Blunt>0.6</ArmorRating_Blunt>                                            <!--護甲-->
       <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
       <ArmorRating_Heat>1.2</ArmorRating_Heat>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>                 <!--帶寬消耗-->
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge> <!--充電/培養時產出廢料-->
-      <ShootingAccuracyPawn>0.8</ShootingAccuracyPawn>                                      <!---->
       <AimingDelayFactor>1.2</AimingDelayFactor>                                            <!--瞄準延遲-->
     </statBases>
     <race>
@@ -42,6 +41,9 @@
         </UsableTechLevels>
       </li>
     </modExtensions>
+    <butcherProducts>
+       <Steel>25</Steel>
+    </butcherProducts>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">
@@ -126,6 +128,9 @@
         <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
       </li>
     </comps>
+    <butcherProducts>
+      <Tungsteel>20</Tungsteel>
+    </butcherProducts>
     <tools Inherit="False">
       <li>
         <label>head</label>
@@ -133,17 +138,18 @@
           <li>Blunt</li>
         </capacities>
         <power>25</power>
-        <cooldownTime>5.6</cooldownTime>
+        <cooldownTime>2.3</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
       <li>
         <label>laser cutter</label>
         <capacities>
-          <li>Demolish</li>
+          <li>Cut</li>
         </capacities>
         <power>20</power>
-        <cooldownTime>1.6</cooldownTime>
+        <cooldownTime>2.6</cooldownTime>
+        <armorPenetration>0.7</armorPenetration>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
@@ -153,7 +159,8 @@
           <li>Stab</li>
         </capacities>
         <power>15</power>
-        <cooldownTime>1.6</cooldownTime>
+        <cooldownTime>1.3</cooldownTime>
+        <armorPenetration>0.5</armorPenetration>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
