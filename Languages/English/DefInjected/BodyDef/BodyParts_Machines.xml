@@ -99,7 +99,7 @@
   <!-- EN: right leg -->
   <DMS_Caterpillar.corePart.parts.right_track.customLabel>right track</DMS_Caterpillar.corePart.parts.right_track.customLabel>
   <!-- EN: right wheel -->
-  <DMS_Caterpillar.corePart.parts.right_leg.parts.right_wheel.customLabel>right wheel</DMS_Caterpillar.corePart.parts.right_leg.parts.right_wheel.customLabel>
+  <DMS_Caterpillar.corePart.parts.right_track.parts.right_wheel.customLabel>right wheel</DMS_Caterpillar.corePart.parts.right_track.parts.right_wheel.customLabel>
   
   <!-- EN: vertidrone -->
   <DMS_Chop.label>vertidrone</DMS_Chop.label>
