@@ -245,13 +245,11 @@
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li>SimpleGun</li>
-          <!--<li>IndustrialGunAdvanced</li>-->
           <li>DMS_MechWeaponLight</li>
           <li>SniperRifle</li>
           <li>A_SC_LongRifle</li>
           <li>A_SR_LongRifle</li>
           <li>A_DMR_LongRifle</li>
-          <!--<li>AssaultRifle</li>-->
           <li>A_SR_GrenadeLauncher</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
