@@ -74,6 +74,7 @@
     <Compile Include="TarbosaurusJump\PawnFlyerWithEffect.cs" />
     <Compile Include="Royalty\RoyalTitlePermitWorker_Bandwidth.cs" />
     <Compile Include="Thing\BiochemicalProtectionExtension.cs" />
+    <Compile Include="Thing\Projectile_ConeExplosive.cs" />
     <Compile Include="Utility\CircleConst.cs" />
     <Compile Include="Component\CompAntiBlasterSmoke.cs" />
     <Compile Include="Component\CompCommandRelay.cs" />

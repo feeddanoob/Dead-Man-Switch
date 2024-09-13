@@ -8,7 +8,8 @@ namespace DMS
 {
     //給VFEM機械使用的
     public class WeaponUsableMachine : Machine, IWeaponUsable
-    {
+    { 
+        
         public MechWeaponExtension MechWeapon { get; private set; }
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {

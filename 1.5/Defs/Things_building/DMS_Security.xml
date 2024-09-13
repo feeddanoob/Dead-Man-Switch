@@ -878,7 +878,7 @@
     </costList>
     <researchPrerequisites>
       <li>DMS_EquipmentElite</li>
-      <li>MultibarrelWeapons</li>
+      <li>DMS_EquipmentHeavy</li>
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_DawnBlade</uiIconPath>
     <uiIconScale>2</uiIconScale>
@@ -930,12 +930,15 @@
 <ThingDef ParentName="BaseBullet">
 	<defName>DMS_Bullet_Dawnblade</defName>
 	<label>armor piercing shell</label>
+  <thingClass>DMS.Projectile_ConeExplosive</thingClass>
 	<graphicData>
 		<texPath>Things/Projectile/Bullet_Big</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>2</drawSize>
 	</graphicData>
 	<projectile>
+    <explosionDelay>1</explosionDelay>
+    <soundExplode>Explosion_Rocket</soundExplode>
 		<damageDef>Bullet</damageDef>
 		<damageAmountBase>50</damageAmountBase>
 		<armorPenetrationBase>0.75</armorPenetrationBase>
