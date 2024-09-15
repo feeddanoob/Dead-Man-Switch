@@ -21,6 +21,8 @@
     <PackageReference Include="Krafs.Publicizer" Version="2.2.1" />
 
     <Publicize Include="Assembly-CSharp:RimWorld.CompTargetable.selectedTarget" />
+    <Publicize Include="Assembly-CSharp:RimWorld.LordToil_Siege.SetAsDefender" />
+
   </ItemGroup>
 
 </Project>
