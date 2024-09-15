@@ -19,7 +19,7 @@
     <label>drone basis</label>
     <description>Use simple control logic and signal transceivers to unlock the construction of simple mechanical units.</description>
     <baseCost>200</baseCost>
-    <requiredResearchBuilding/>
+    <requiredResearchBuilding Inherit="False"/>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>Electricity</li>
@@ -48,7 +48,7 @@
     <label>material engineering</label>
     <description>"A perfect material can be calculate through a set of scientific methods" this is one of the breakthough mankind are ever achived.</description>
     <baseCost>1000</baseCost>
-    <requiredResearchBuilding/>
+    <requiredResearchBuilding Inherit="False"/>
     <prerequisites>
       <li>DMS_UAVBasis</li>
     </prerequisites>
@@ -73,7 +73,7 @@
     <label>artificial fiber</label>
     <description>unlock the production of artificial fabrics,these man-made fabric has their pros and cons.</description>
     <baseCost>500</baseCost>
-    <requiredResearchBuilding/>
+    <requiredResearchBuilding Inherit="False"/>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_Material</li>
@@ -101,7 +101,7 @@
     <label>automatroid basis</label>
     <description>because they are not just a weapon but weapon that is capable to eliminate target by themselves, these robots was such a topic and own a name to them "automatroid" \n\n Such a morally outrageous weapon should never acceptable at normal, but since it is widely used by nations during ww3 so it has become a mundane part of the battlefield..</description>
     <baseCost>300</baseCost>
-    <requiredResearchBuilding/>
+    <requiredResearchBuilding Inherit="False"/>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_UAVBasis</li>
@@ -115,7 +115,7 @@
     <label>mecha gear</label>
     <description>"mecha gear"is a tern that cover those near future machining design pattern, was originally satirize exaggerated designs that do not correspond to reality. \n\n However, advanced materials that have been invented and improved over millennia have become the basis for bringing these designs to life.</description>
     <baseCost>500</baseCost>
-    <requiredResearchBuilding/>
+    <requiredResearchBuilding Inherit="False"/>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_Material</li>
@@ -150,7 +150,7 @@
     <label>Legion</label>
     <description>Series of automatroid designed for large-scale warfare. Most of them have only simple weapon operating systems, but their clear division of labor and cheap production costs make them the most impressive combat weapons in terms of service scale.</description>
     <baseCost>500</baseCost>
-    <requiredResearchBuilding/>
+    <requiredResearchBuilding Inherit="False"/>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DMS_Automatroid</li>
@@ -227,7 +227,7 @@
     <description>uniform and equipment designed for human, mainly for colonization purpose include for survival specialist, dropcraft crew and Biotoxicity Handling Squad.</description>
     <baseCost>200</baseCost>
     <techLevel>Industrial</techLevel>
-    <requiredResearchBuilding/>
+    <requiredResearchBuilding Inherit="False"/>
     <prerequisites>
       <li>ComplexClothing</li>
       <li>Gunsmithing</li>
