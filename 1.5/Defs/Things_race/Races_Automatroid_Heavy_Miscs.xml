@@ -32,7 +32,7 @@
           <li>DMS_MechWeaponMeduim</li>
           <li>A_SuppressWeapon</li>
           <li>DMS_MechWeaponHeavy</li>
-          <li>Gun_Recoilless</li>
+          <li>DMS_Gun_Recoilless</li>
         </UsableWeaponTags>
         <BypassUsableWeapons/>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>

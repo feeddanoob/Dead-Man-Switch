@@ -3,6 +3,7 @@ using Verse;
 
 namespace DMS
 {
+    [StaticConstructorOnStartup]
     [DefOf]
     internal class DefOfs_Static
     {

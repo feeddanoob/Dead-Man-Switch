@@ -911,7 +911,7 @@
         <requireLineOfSight>true</requireLineOfSight>
         <warmupTime>2.0</warmupTime>
         <minRange>3.9</minRange>
-	      <range>59.9</range>
+	      <range>69.9</range>
         <ai_AvoidFriendlyFireRadius>2.9</ai_AvoidFriendlyFireRadius>
         <ticksBetweenBurstShots>60</ticksBetweenBurstShots>
         <burstShotCount>4</burstShotCount>
@@ -931,6 +931,7 @@
 	<defName>DMS_Bullet_Dawnblade</defName>
 	<label>armor piercing shell</label>
   <thingClass>DMS.Projectile_ConeExplosive</thingClass>
+  <tickerType>Normal</tickerType>
 	<graphicData>
 		<texPath>Things/Projectile/Bullet_Big</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -941,17 +942,29 @@
     <soundExplode>Explosion_Rocket</soundExplode>
 		<damageDef>Bullet</damageDef>
 		<damageAmountBase>50</damageAmountBase>
-		<armorPenetrationBase>0.75</armorPenetrationBase>
+		<armorPenetrationBase>0.9</armorPenetrationBase>
 		<stoppingPower>10</stoppingPower>
 		<speed>100</speed>
 		<arcHeightFactor>0.2</arcHeightFactor>
 		<shadowSize>0.6</shadowSize>
 	</projectile>
+  <modExtensions>
+    <li Class="DMS.ExplosiveExtension">
+      <damage>Bullet</damage>
+      <damageAmount>30</damageAmount>
+      <armorPen>0.5</armorPen>
+      <preExplosionOffset>4</preExplosionOffset>
+      <range>15</range>
+      <swayAngle>12</swayAngle>
+      <doVisualEffects>false</doVisualEffects>
+      <effecterDef>DMS_ConeExplosion</effecterDef>
+    </li>
+  </modExtensions>
 	<comps>
 		<li Class="CompProperties_Explosive">
 			<explosiveRadius>1.1</explosiveRadius>
-			<explosiveDamageType>Bomb</explosiveDamageType>
-			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<explosiveDamageType>Demolish</explosiveDamageType>
+			<armorPenetrationBase>1.2</armorPenetrationBase>
 			<damageAmountBase>50</damageAmountBase>
 			<explodeOnDestroyed>true</explodeOnDestroyed>
 			<explodeOnKilled>true</explodeOnKilled>

@@ -241,12 +241,12 @@
 			<AccuracyShort>0.95</AccuracyShort>
 			<AccuracyMedium>0.92</AccuracyMedium>
 			<AccuracyLong>0.90</AccuracyLong>
-			<RangedWeapon_Cooldown>8.0</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
 			<Mass>80</Mass>
 		</statBases>
 		<weaponTags>
 			<li>DMS_MechWeaponUltraHeavy</li>
-			<li>Gun_Recoilless</li>
+			<li>DMS_Gun_Recoilless</li>
 			<li>NoSwitch</li>
 		</weaponTags>
 		<recipeMaker>
@@ -263,7 +263,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_RR</defaultProjectile>
-				<warmupTime>8</warmupTime>
+				<warmupTime>3</warmupTime>
 				<minRange>8</minRange>
 				<range>34.9</range>
 				<burstShotCount>1</burstShotCount>
@@ -276,7 +276,7 @@
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
 				<ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
-				<forcedMissRadius>1.5</forcedMissRadius>
+				<forcedMissRadius>3</forcedMissRadius>
 			</li>
 		</verbs>
 		<modExtensions>
@@ -289,30 +289,44 @@
 				<isAlternately>true</isAlternately>
 			</li>
 			<li Class="DMS.HeavyEquippableExtension">
-				<EquippableDef>UltraHeavyAutomatroid</EquippableDef>
+				<EquippableDef>BulkyAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>DMS_Bullet_RR</defName>
-		<label>recoilless grenade round</label>
+		<label>shape-charged grenade</label>
+		<thingClass>DMS.Projectile_ConeExplosive</thingClass>
+		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>2</drawSize>
 		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
 			<speed>80</speed>
 			<damageDef>Bomb</damageDef>
-			<damageAmountBase>80</damageAmountBase>
+			<damageAmountBase>100</damageAmountBase>
+			<armorPenetrationBase>0.7</armorPenetrationBase>
 			<stoppingPower>1.5</stoppingPower>
-			<explosionRadius>3.1</explosionRadius>
 			<ai_IsIncendiary>false</ai_IsIncendiary>
-			<arcHeightFactor>0.5</arcHeightFactor>
+			<arcHeightFactor>0.75</arcHeightFactor>
+			<soundExplode>Explosion_Rocket</soundExplode>
 			<shadowSize>0.6</shadowSize>
 		</projectile>
+		<modExtensions>
+		  <li Class="DMS.ExplosiveExtension">
+			<damage>Bullet</damage>
+			<damageAmount>40</damageAmount>
+			<armorPen>0.75</armorPen>
+			<preExplosionOffset>4</preExplosionOffset>
+			<range>10</range>
+			<swayAngle>30</swayAngle>
+			<doVisualEffects>false</doVisualEffects>
+			<effecterDef>DMS_ConeExplosion</effecterDef>
+		  </li>
+		</modExtensions>
 	</ThingDef>
 
 	<!--2A38M 給駭蜥Boss的武器-->
@@ -411,7 +425,6 @@
 		<weaponTags>
 			<li>DMS_DragoonGun</li>
 			<li>DMS_Tarbosaurus_Gun</li>
-			<li>DMS_MechWeaponHeavy</li>
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Dragoon_Rifle</texPath>
@@ -463,7 +476,7 @@
 				<isAlternately>true</isAlternately>
 			</li>
 			<li Class="DMS.HeavyEquippableExtension">
-				<EquippableDef>HeavyAutomatroid</EquippableDef>
+				<EquippableDef>BulkyAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
