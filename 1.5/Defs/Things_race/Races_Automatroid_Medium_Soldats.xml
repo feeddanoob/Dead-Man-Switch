@@ -249,7 +249,7 @@
           <li>Autopistol</li>
           <li>DMS_MechWeaponLight</li>
           <li>GunSingleUse</li>
-          <li>Gun_Recoilless</li>
+          <li>DMS_Gun_Recoilless</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
@@ -297,7 +297,7 @@
     <weaponMoney>1700~3000</weaponMoney>
     <weaponTags><!--武器-->
       <li>GunSingleUse</li>
-      <li>Gun_Recoilless</li>                                                          
+      <li>DMS_Gun_Recoilless</li>                                                          
     </weaponTags>
   </PawnKindDef>
 
