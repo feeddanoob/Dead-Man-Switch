@@ -13,8 +13,8 @@
 		<description>A flame launcher used by mechs that can effectively ignite flammable materials within a range</description>
 		<statBases>
 			<SightsEfficiency>1</SightsEfficiency>
-			<ShotSpread>0.1</ShotSpread>
-			<SwayFactor>0.86</SwayFactor>
+			<ShotSpread>1.0</ShotSpread>
+			<SwayFactor>1.0</SwayFactor>
 			<RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
 			<Mass>10</Mass>
 		</statBases>
@@ -26,7 +26,7 @@
 				<defaultProjectile>Bullet_DMS_Flamethrower_Napalm</defaultProjectile>
 				<warmupTime>0.75</warmupTime>
 				<range>16</range>
-				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
 				<soundCast>Shot_MiniFlameblaster</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -34,6 +34,13 @@
 				<recoilPattern>Mounted</recoilPattern>
 			</li>
 		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Charges">
+				<chargeSpeeds>
+					<li>30</li>
+				</chargeSpeeds>
+			</li>
+		</comps>
 		<modExtensions>
 			<li Class="DMS.HeavyEquippableExtension">
 				<EquippableDef>MountedWeapon</EquippableDef>
