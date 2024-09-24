@@ -56,6 +56,11 @@
 		  </li>
 		</verbs>
 		<comps>
+			<li Class="CombatExtended.CompProperties_Charges" MayRequire="CETeam.CombatExtended">
+				<chargeSpeeds>
+					<li>30</li>
+				</chargeSpeeds>
+			</li>
 		</comps>
 		<modExtensions>
 			<li Class="DMS.HeavyEquippableExtension">

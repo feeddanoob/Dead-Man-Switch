@@ -60,6 +60,13 @@ namespace DMS
         public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {
             base.PreApplyDamage(ref dinfo, out absorbed);
+
+            if (!dinfo.Def.harmsHealth)
+            {
+                absorbed = true;
+                return;
+            }
+
             if (Hitpoints > 0)
             {
                 var dmg = dinfo.Amount;

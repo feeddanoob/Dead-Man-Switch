@@ -4,6 +4,7 @@ using Verse;
 using RimWorld;
 using UnityEngine;
 using Verse.AI;
+using System.Linq;
 
 namespace DMS
 {
@@ -38,6 +39,21 @@ namespace DMS
                 story.headType = Extension.headTypeOverride;
                 story.SkinColorBase = Color.white;
             }
+        }
+        public override void Kill(DamageInfo? dinfo, Hediff exactCulprit = null)
+        {
+            if (dinfo == null)//解體殺
+            {
+                List<Hediff> hediffs = health.hediffSet.hediffs.Where(h => h.def.spawnThingOnRemoved != null).ToList();
+                foreach (Hediff item in hediffs)
+                {
+                    health.RemoveHediff(item);
+                    Thing thing = ThingMaker.MakeThing(item.def.spawnThingOnRemoved);
+                    thing.stackCount = 1;
+                    GenPlace.TryPlaceThing(thing, this.Position, this.Map, ThingPlaceMode.Near);
+                }
+            }
+            base.Kill(dinfo, exactCulprit);
         }
         public override IEnumerable<FloatMenuOption> GetExtraFloatMenuOptionsFor(IntVec3 sq)
         {

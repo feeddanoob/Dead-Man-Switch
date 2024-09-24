@@ -45,8 +45,8 @@
 					<WorkToMake>8600</WorkToMake>
 					<Mass>10.1</Mass>
 					<Bulk>6.7</Bulk>
-					<SwayFactor>0.1</SwayFactor>
-					<ShotSpread>0.8</ShotSpread>
+					<SwayFactor>1.0</SwayFactor>
+					<ShotSpread>1.0</ShotSpread>
 					<SightsEfficiency>0.70</SightsEfficiency>
 					<RangedWeapon_Cooldown>0.41</RangedWeapon_Cooldown>
 				</statBases>
@@ -61,7 +61,7 @@
 					<minRange>1.5</minRange>
 					<range>16</range>
 					<burstShotCount>10</burstShotCount>
-					<ticksBetweenBurstShots>2.6</ticksBetweenBurstShots>
+					<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 					<soundCast>Shot_MiniFlameblaster</soundCast>
 					<soundCastTail>GunTail_Light</soundCastTail>
 					<muzzleFlashScale>9</muzzleFlashScale>

@@ -21,16 +21,16 @@
   <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_Target>瞄準指定目標</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_Target>
   <!-- EN: toggle turret to manually control mode to prevent unnecessary shooting. -->
   <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_ToggleFire>切換炮塔至手動模式來避免非必要的開火</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_ToggleFire>
-  <!-- EN: Mechanical Head -->
-  <DMS_Mech_Tarbosaurus.tools.Mechanical_Head.label>頭部</DMS_Mech_Tarbosaurus.tools.Mechanical_Head.label>
-  <!-- EN: Left Leg -->
-  <DMS_Mech_Tarbosaurus.tools.Left_Leg.label>左腿</DMS_Mech_Tarbosaurus.tools.Left_Leg.label>
-  <!-- EN: Right Leg -->
-  <DMS_Mech_Tarbosaurus.tools.Right_Leg.label>右腿</DMS_Mech_Tarbosaurus.tools.Right_Leg.label>
+  <!-- EN: left leg -->
+  <DMS_Mech_Tarbosaurus.tools.left_leg.label>左腿</DMS_Mech_Tarbosaurus.tools.left_leg.label>
+  <!-- EN: right leg -->
+  <DMS_Mech_Tarbosaurus.tools.right_leg.label>右腿</DMS_Mech_Tarbosaurus.tools.right_leg.label>
+  <!-- EN: head -->
+  <DMS_Mech_Tarbosaurus.tools.head.label>頭部</DMS_Mech_Tarbosaurus.tools.head.label>
   
   <!-- UNUSED -->
-  <DMS_Mech_Tarbosaurus.tools.left_leg.label>左腿</DMS_Mech_Tarbosaurus.tools.left_leg.label>
-  <DMS_Mech_Tarbosaurus.tools.right_leg.label>右腿</DMS_Mech_Tarbosaurus.tools.right_leg.label>
-  <DMS_Mech_Tarbosaurus.tools.head.label>頭部</DMS_Mech_Tarbosaurus.tools.head.label>
+  <DMS_Mech_Tarbosaurus.tools.Mechanical_Head.label>頭部</DMS_Mech_Tarbosaurus.tools.Mechanical_Head.label>
+  <DMS_Mech_Tarbosaurus.tools.Left_Leg.label>左腿</DMS_Mech_Tarbosaurus.tools.Left_Leg.label>
+  <DMS_Mech_Tarbosaurus.tools.Right_Leg.label>右腿</DMS_Mech_Tarbosaurus.tools.Right_Leg.label>
   
 </LanguageData>

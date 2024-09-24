@@ -48,7 +48,6 @@
     <thingSetMakerTags>
       <li>RewardStandardCore</li>
     </thingSetMakerTags>
-    <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
   <!-- 塑化纖維 玩家能生產的進階纖維，性質接近魔鬼布。製造需要塑鋼。-->  
   <ThingDef ParentName="ResourceBase">
@@ -96,7 +95,6 @@
     <thingSetMakerTags>
       <li>RewardStandardCore</li>
     </thingSetMakerTags>
-    <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
   
   <!-- 鎢鋼合金 強度介於塑鋼與鋼鐵之間的材料，是大多數DMS機兵的製造用料-->  
@@ -153,7 +151,6 @@
       </statFactors>
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
   <!-- 複合陶瓷 強度很高但耐久很低的石質材料，是部分DMS機兵的製造用料-->
   <ThingDef ParentName="ResourceBase">
@@ -209,7 +206,6 @@
     <thingSetMakerTags>
       <li>RewardStandardCore</li>
     </thingSetMakerTags>
-    <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
   
   <!-- 人工肌肉 能拿來造仿生體的人工合成肌肉束，也同時是一些特種機兵的製造用料-->  
@@ -277,7 +273,6 @@
       </li>
     </comps>
     <isTechHediff>true</isTechHediff>
-    <allowedArchonexusCount>10</allowedArchonexusCount>
   </ThingDef>
   <!-- 沖壓機件 DMS裡廣泛使用的零件，機兵與建築等複雜機器都會需要用到，也可以轉換成工業零件-->
   <ThingDef ParentName="ResourceBase">
@@ -311,7 +306,6 @@
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
-    <allowedArchonexusCount>10</allowedArchonexusCount>
   </ThingDef>
   <!-- 生物濕件 重型機兵的關鍵零件，前期只能靠打機兵軍團獲取，後期可以自己生產-->
   <ThingDef ParentName="ResourceBase">
@@ -378,7 +372,6 @@
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
-    <allowedArchonexusCount>10</allowedArchonexusCount>
   </ThingDef>
 
   <!-- 收發組件 可以透過擊殺指揮中樞型號的機兵有一定機率獲取，能拿來造特殊機兵與DMS機絆-->

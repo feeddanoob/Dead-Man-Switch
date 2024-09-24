@@ -66,6 +66,21 @@
 			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphractPhoenix</li>
 		</EquippableWithApparel>
 	</DMS.HeavyEquippableDef>
+
+	<DMS.HeavyEquippableDef>
+		<defName>BulkyAutomatroid</defName>
+		<EquippableBaseBodySize>1.7</EquippableBaseBodySize>
+		<EquippableByRace/>
+		<EquippableWithGene/>
+		<EquippableWithApparel>
+			<li>DMS_Apparel_PowerSkelton</li>
+            <li>Apparel_PowerArmor</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarinePrestige</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorMarineGrenadier</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphract</li>
+			<li MayRequire="ludeon.rimworld.royalty">Apparel_ArmorCataphractPhoenix</li>
+		</EquippableWithApparel>
+	</DMS.HeavyEquippableDef>
     
 	<DMS.HeavyEquippableDef>
 		<defName>HeavyAutomatroid</defName>

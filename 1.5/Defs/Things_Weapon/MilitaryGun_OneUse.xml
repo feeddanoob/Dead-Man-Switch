@@ -23,6 +23,24 @@
 		  <MarketValue>250</MarketValue>
 		  <MaxHitPoints>80</MaxHitPoints>
 		</statBases>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers Inherit="False">
+				<li>DMS_TableMachinePrinter</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+			<researchPrerequisites>
+				<li>DMS_EquipmentElite</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<ComponentStamped>1</ComponentStamped>
+			<Steel>40</Steel>
+			<Chemfuel>60</Chemfuel>
+		</costList>
 		<tickerType>Never</tickerType>
 		<thingCategories>
 		  <li>ApparelUtility</li>

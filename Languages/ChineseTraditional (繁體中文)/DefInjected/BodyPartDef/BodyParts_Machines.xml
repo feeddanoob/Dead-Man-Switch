@@ -4,6 +4,9 @@
   <!-- EN: armour plate -->
   <DMS_ArmourPlate.label>裝甲板</DMS_ArmourPlate.label>
   
+  <!-- EN: armour plate(addition) -->
+  <DMS_ArmourPlate_Additional.label>裝甲板</DMS_ArmourPlate_Additional.label>
+  
   <!-- EN: assault shield -->
   <DMS_AssaultShield.label>格鬥盾牌</DMS_AssaultShield.label>
   

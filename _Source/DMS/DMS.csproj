@@ -1,164 +1,28 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8766CEC8-D11A-432F-B683-4CA0B8395E9B}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DMS</RootNamespace>
-    <AssemblyName>DMS</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\..\1.5\Assemblies</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <TargetFramework>net472</TargetFramework>
+    <OutputPath>$(MSBuildThisFileDirectory)/../../1.5/Assemblies</OutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>10.0</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>..\..\..\Fortification-Industrial\Source\Reference\0Harmony.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
     <Reference Include="VFECore">
-      <HintPath>..\Reference\VFECore.dll</HintPath>
+      <HintPath>$(MSBuildThisFileDirectory)/../Reference/VFECore.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ability\CompAbilityEffect_AbilitySelfExplosion.cs" />
-    <Compile Include="Ability\CompAbilityEffect_DirectionalExplosion.cs" />
-    <Compile Include="Ability\CompAbilityEffect_SelfRepairMode.cs" />
-    <Compile Include="DMS_DefOf.cs" />
-    <Compile Include="Hediff\IngestionOutcomeDoer_GiveHediffIfNoBionic.cs" />
-    <Compile Include="HumanlikeMech\Patch_PawnRenderNodeWorker_Apparel_Body_CanDrawNow.cs" />
-    <Compile Include="HumanlikeMech\Patch_PawnRenderNodeWorker_Apparel_Head_CanDrawNow.cs" />
-    <Compile Include="HumanlikeMech\Patch_Pawn_IsColonistPlayerControlled.cs" />
-    <Compile Include="HumanlikeMech\PawnRenderNode.cs" />
-    <Compile Include="HumanlikeMech\PawnRenderTree_SetupDynamicNodes_Patch.cs" />
-    <Compile Include="HumanlikeMech\StatWorker_Patch.cs" />
-    <Compile Include="MechMaintainBench.cs" />
-    <Compile Include="Modification\ModificationUtility.cs" />
-    <Compile Include="Royalty\Patch_GenerateBestowingCeremonyQuest.cs" />
-    <Compile Include="Royalty\QuestNode_Root_PromotionCeremony.cs" />
-    <Compile Include="TarbosaurusJump\ModExtensionJumper.cs" />
-    <Compile Include="Modification\CompTargetable_AddHediffOnTarget.cs" />
-    <Compile Include="Modification\DMS_JobDefOf.cs" />
-    <Compile Include="Modification\Gizmo_AttachmentShieldStatus.cs" />
-    <Compile Include="Modification\JobDriver_ApplyModification.cs" />
-    <Compile Include="Modification\HediffComp_ProtectiveShield.cs" />
-    <Compile Include="Hediff\HediffComp_SelfHeal.cs" />
-    <Compile Include="Patch\Patch_ApplyToPawns.cs" />
-    <Compile Include="Patch\Patch_CanBeInfected.cs" />
-    <Compile Include="TarbosaurusJump\PawnFlyerWithEffect.cs" />
-    <Compile Include="Royalty\RoyalTitlePermitWorker_Bandwidth.cs" />
-    <Compile Include="Thing\BiochemicalProtectionExtension.cs" />
-    <Compile Include="Utility\CircleConst.cs" />
-    <Compile Include="Component\CompAntiBlasterSmoke.cs" />
-    <Compile Include="Component\CompCommandRelay.cs" />
-    <Compile Include="Component\CompDeadManSwitch.cs" />
-    <Compile Include="Component\CompFlyingFleckThrower.cs" />
-    <Compile Include="Component\CompMechApparel.cs" />
-    <Compile Include="MultiTurrets\CompMultipleTurretGun.cs" />
-    <Compile Include="MultiTurrets\CompPropertiesMultipleTurretGun.cs" />
-    <Compile Include="MultiTurrets\PawnRenderNodeWorker_SubTurretGun.cs" />
-    <Compile Include="MultiTurrets\PawnRenderNode_SubTurretGun.cs" />
-    <Compile Include="MultiTurrets\TurretGizmos.cs" />
-    <Compile Include="Patch\Patch_CanDraftMech.cs" />
-    <Compile Include="Patch\Patch_EquipmentUtility_CanEquip.cs" />
-    <Compile Include="Patch\Patch_IsColonyMechPlayerControlled.cs" />
-    <Compile Include="Patch\vfepatch.cs" />
-    <Compile Include="Thing\HeavyEquippableDef.cs" />
-    <Compile Include="Thing\HeavyEquippableExtension.cs" />
-    <Compile Include="Component\CompUseEffect_CallBossgroupByItem.cs" />
-    <Compile Include="Component\CompVehicleWeapon.cs" />
-    <Compile Include="Hediff\HediffComp_GiveHediffsInRange.cs" />
-    <Compile Include="Hediff\Hediff_BandNode.cs" />
-    <Compile Include="Hediff\HediffComp_RemoveHediffsOnDisappear.cs" />
-    <Compile Include="Hediff\HediffsExtension.cs" />
-    <Compile Include="Patch\Patch_Biocode.cs" />
-    <Compile Include="Patch\Patch_Building_MechGestator.cs" />
-    <Compile Include="Patch\Patch_CanDropWeapon.cs" />
-    <Compile Include="Patch\Patch_CanControlMechs.cs" />
-    <Compile Include="Royalty\Patch_GeneratePawnTitle.cs" />
-    <Compile Include="Patch\Patch_IsMissingWeapon.cs" />
-    <Compile Include="Patch\Patch_Pawn.cs" />
-    <Compile Include="Ability\CompAbilityEffect_DropMech.cs" />
-    <Compile Include="Royalty\RoyalTitlePermitWorker_MechJoin.cs" />
-    <Compile Include="Royalty\RoyalTitlePermitWorker_PawnJoin.cs" />
-    <Compile Include="Component\CompMechanitorRange.cs" />
-    <Compile Include="Hediff\HediffComp_GiveHediffWtihSeverity.cs" />
-    <Compile Include="Hediff\HediffComp_RemoveHediffsOnDeath.cs" />
-    <Compile Include="Hediff\Hediff_SeverityByBandwidth.cs" />
-    <Compile Include="Component\CompForceTargetable.cs" />
-    <Compile Include="Patch\Patch_CommandRelay.cs" />
-    <Compile Include="Patch\Patch_DrawVehicleTurret.cs" />
-    <Compile Include="Patch\Patch_ForceTarget.cs" />
-    <Compile Include="Thing\DefaultTilteFactionExtension.cs" />
-    <Compile Include="Thing\IWeaponUsable.cs" />
-    <Compile Include="Thing\MechWeaponExtension.cs" />
-    <Compile Include="Thing\TurretMannableExtension.cs" />
-    <Compile Include="Thing\WeaponUsableMachine.cs" />
-    <Compile Include="Thing\WeaponUsableMech.cs" />
-    <Compile Include="UI\Command_SelectApparelOutfit.cs" />
-    <Compile Include="UI\ITab_Mech_Gear.cs" />
-    <Compile Include="Utility\CheckUtility.cs" />
-    <Compile Include="Utility\FloatMenuUtility.cs" />
-    <Compile Include="Patch\HarmonyEntry.cs" />
-    <Compile Include="HumanlikeMech\HumanlikeMech.cs" />
-    <Compile Include="HumanlikeMech\HumanlikeMechExtension.cs" />
-    <Compile Include="HumanlikeMech\HumanlikeMechApparelUtility.cs" />
-    <Compile Include="Patch\Patch_CanTakeOrder.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="HumanlikeMech\HumnalikeMechRenderingUtility.cs" />
-    <Compile Include="Utility\StatWorker_HeavyGear.cs" />
-    <Compile Include="Utility\StatWorker_MechWeapon.cs" />
-    <Compile Include="Utility\WeaponTagUtil.cs" />
-    <Compile Include="TarbosaurusJump\Verb_CastAbilitySpecialJump.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Modification\Todo.txt" />
-    <Content Include="MultiTurrets\Todo.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Krafs.Publicizer">
-      <Version>2.2.1</Version>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.5.4104</Version>
-    </PackageReference>
-    <PackageReference Include="Lib.Harmony">
-      <Version>2.3.3</Version>
-    </PackageReference>
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.4104" />
+    <PackageReference Include="Lib.Harmony" Version="2.3.3" />
+    <PackageReference Include="Krafs.Publicizer" Version="2.2.1" />
+
     <Publicize Include="Assembly-CSharp:RimWorld.CompTargetable.selectedTarget" />
+    <Publicize Include="Assembly-CSharp:RimWorld.LordToil_Siege.SetAsDefender" />
+
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Quest\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Hediff\todo" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>
