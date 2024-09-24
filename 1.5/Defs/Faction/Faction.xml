@@ -245,15 +245,14 @@
         <!-- Base defense, mainly ranged with melee mix-ins -->
         <kindDef>Settlement</kindDef>
         <options>
-          <DMS_Mech_BattleFrame>3</DMS_Mech_BattleFrame>
+          <!-- <DMS_Mech_BattleFrame>3</DMS_Mech_BattleFrame> -->
           <DMS_Squad_ServiceMan>5</DMS_Squad_ServiceMan>
-          <DMS_Police_Melee>5</DMS_Police_Melee>         
           <DMS_MinuteMan>4</DMS_MinuteMan>
           <DMS_Police_Pistol>4</DMS_Police_Pistol>
           <DMS_Police_Ranged>3.5</DMS_Police_Ranged>
           <DMS_MinuteMan_Heavy>3</DMS_MinuteMan_Heavy>
           <DMS_Soldier>2</DMS_Soldier>
-          <DMS_Mech_Caretta>1</DMS_Mech_Caretta>
+          <!-- <DMS_Mech_Caretta>1</DMS_Mech_Caretta> -->
       </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">

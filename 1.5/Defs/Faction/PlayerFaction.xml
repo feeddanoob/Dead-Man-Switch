@@ -34,16 +34,6 @@
     </weaponTags>
     <forceWeaponQuality>Masterwork</forceWeaponQuality>
     <techHediffsMoney>9999~9999</techHediffsMoney>
-    <skills>
-      <li>
-        <skill>Intellectual</skill>
-        <range>6~10</range>
-      </li>
-	    <li>
-        <skill>Crafting</skill>
-        <range>6~10</range>
-      </li>	    	     
-	  </skills>
     <techHediffsTags>
       <li>DMS_BM_Bionic</li>
       <li>Advanced</li>
@@ -95,9 +85,10 @@ and until recently, a strange yet familiar broadcast ended the long and anxious 
 			</playerFaction>
 			<parts>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
-          <def>ConfigurePawnsKindDefs</def>
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <summarized>true</summarized>
           <pawnChoiceCount>2</pawnChoiceCount>
-          <leftBehindPawnKind>DMS_Mechanitor</leftBehindPawnKind>
+          <leftBehindPawnKind>DMS_Civilian</leftBehindPawnKind>
           <kindCounts>
             <li>
               <kindDef>DMS_Mechanitor</kindDef>

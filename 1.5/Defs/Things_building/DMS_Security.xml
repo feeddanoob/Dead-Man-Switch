@@ -913,9 +913,9 @@
         <minRange>3.9</minRange>
 	      <range>69.9</range>
         <ai_AvoidFriendlyFireRadius>2.9</ai_AvoidFriendlyFireRadius>
-        <ticksBetweenBurstShots>60</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>40</ticksBetweenBurstShots>
         <burstShotCount>4</burstShotCount>
-        <soundCast>Explosion_Bomb</soundCast>
+        <soundCast>Shot_Autocannon</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>15</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
@@ -952,7 +952,7 @@
     <li Class="DMS.ExplosiveExtension">
       <damage>Bullet</damage>
       <damageAmount>30</damageAmount>
-      <armorPen>0.5</armorPen>
+      <armorPen>1.8</armorPen>
       <preExplosionOffset>4</preExplosionOffset>
       <range>15</range>
       <swayAngle>12</swayAngle>
@@ -968,6 +968,7 @@
 			<damageAmountBase>50</damageAmountBase>
 			<explodeOnDestroyed>true</explodeOnDestroyed>
 			<explodeOnKilled>true</explodeOnKilled>
+      <doSoundEffects>false</doSoundEffects>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 		</li>
 	</comps>

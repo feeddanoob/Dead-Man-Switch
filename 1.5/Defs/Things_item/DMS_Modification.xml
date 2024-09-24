@@ -226,6 +226,7 @@
     <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
     <isBad>false</isBad>
     <defaultInstallPart>DMS_Battery</defaultInstallPart>
+    <spawnThingOnRemoved>DMS_NuclearBattery</spawnThingOnRemoved>
     <stages>
       <li>
         <statFactors>
@@ -346,6 +347,7 @@
     <descriptionHyperlinks>
       <ThingDef>DMS_SyntheticTendon</ThingDef>
     </descriptionHyperlinks>
+    <spawnThingOnRemoved>DMS_SyntheticTendon</spawnThingOnRemoved>
     <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
     <isBad>false</isBad>
     <stages>

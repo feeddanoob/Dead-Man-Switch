@@ -21,7 +21,7 @@ namespace DMS
         {
             if (this.def.HasModExtension<ExplosiveExtension>())
             {
-                Log.Message(Angle.ToAngleFlat());
+                //Log.Message(Angle.ToAngleFlat());
                 ExplosiveExtension ext = this.def.GetModExtension<ExplosiveExtension>();
                 int dmg = ext.damageAmount != -1 ? ext.damageAmount : this.DamageAmount;
                 float armorPen = ext.armorPen != -1 ? ext.armorPen : this.ArmorPenetration;
