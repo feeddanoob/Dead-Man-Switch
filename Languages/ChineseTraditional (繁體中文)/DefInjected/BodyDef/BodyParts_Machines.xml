@@ -92,13 +92,19 @@
   <DMS_Caterpillar.corePart.parts.right_armour_plate.customLabel>右裝甲板</DMS_Caterpillar.corePart.parts.right_armour_plate.customLabel>
   <!-- EN: left armour plate -->
   <DMS_Caterpillar.corePart.parts.left_armour_plate.customLabel>左裝甲板</DMS_Caterpillar.corePart.parts.left_armour_plate.customLabel>
-  <!-- EN: left leg -->
-  <DMS_Caterpillar.corePart.parts.left_leg.customLabel>左腿</DMS_Caterpillar.corePart.parts.left_leg.customLabel>
+  <!-- EN: left track -->
+  <DMS_Caterpillar.corePart.parts.left_track.customLabel>左履帶</DMS_Caterpillar.corePart.parts.left_track.customLabel>
   <!-- EN: left wheel -->
-  <DMS_Caterpillar.corePart.parts.left_leg.parts.left_wheel.customLabel>左輪</DMS_Caterpillar.corePart.parts.left_leg.parts.left_wheel.customLabel>
-  <!-- EN: right leg -->
-  <DMS_Caterpillar.corePart.parts.right_leg.customLabel>右腿</DMS_Caterpillar.corePart.parts.right_leg.customLabel>
+  <DMS_Caterpillar.corePart.parts.left_track.parts.left_wheel.customLabel>左接地輪</DMS_Caterpillar.corePart.parts.left_track.parts.left_wheel.customLabel>
+  <!-- EN: right track -->
+  <DMS_Caterpillar.corePart.parts.right_track.customLabel>右履帶</DMS_Caterpillar.corePart.parts.right_track.customLabel>
   <!-- EN: right wheel -->
+  <DMS_Caterpillar.corePart.parts.right_track.parts.right_wheel.customLabel>右接地輪</DMS_Caterpillar.corePart.parts.right_track.parts.right_wheel.customLabel>
+  
+  <!-- UNUSED -->
+  <DMS_Caterpillar.corePart.parts.left_leg.customLabel>左腿</DMS_Caterpillar.corePart.parts.left_leg.customLabel>
+  <DMS_Caterpillar.corePart.parts.left_leg.parts.left_wheel.customLabel>左輪</DMS_Caterpillar.corePart.parts.left_leg.parts.left_wheel.customLabel>
+  <DMS_Caterpillar.corePart.parts.right_leg.customLabel>右腿</DMS_Caterpillar.corePart.parts.right_leg.customLabel>
   <DMS_Caterpillar.corePart.parts.right_leg.parts.right_wheel.customLabel>右輪</DMS_Caterpillar.corePart.parts.right_leg.parts.right_wheel.customLabel>
   
   <!-- EN: vertidrone -->
@@ -512,16 +518,22 @@
   <DMS_KillDozer.corePart.parts.right_ERA_plate.customLabel>右反應裝甲</DMS_KillDozer.corePart.parts.right_ERA_plate.customLabel>
   <!-- EN: left ERA plate -->
   <DMS_KillDozer.corePart.parts.left_ERA_plate.customLabel>左反應裝甲</DMS_KillDozer.corePart.parts.left_ERA_plate.customLabel>
-  <!-- EN: left leg -->
-  <DMS_KillDozer.corePart.parts.left_leg.customLabel>左行走機構</DMS_KillDozer.corePart.parts.left_leg.customLabel>
+  <!-- EN: left track -->
+  <DMS_KillDozer.corePart.parts.left_track.customLabel>左履帶</DMS_KillDozer.corePart.parts.left_track.customLabel>
   <!-- EN: left wheel -->
-  <DMS_KillDozer.corePart.parts.left_leg.parts.left_wheel.customLabel>左接地輪</DMS_KillDozer.corePart.parts.left_leg.parts.left_wheel.customLabel>
-  <!-- EN: right leg -->
-  <DMS_KillDozer.corePart.parts.right_leg.customLabel>右行走機構</DMS_KillDozer.corePart.parts.right_leg.customLabel>
+  <DMS_KillDozer.corePart.parts.left_track.parts.left_wheel.customLabel>左接地輪</DMS_KillDozer.corePart.parts.left_track.parts.left_wheel.customLabel>
+  <!-- EN: right track -->
+  <DMS_KillDozer.corePart.parts.right_track.customLabel>右履帶</DMS_KillDozer.corePart.parts.right_track.customLabel>
   <!-- EN: right wheel -->
-  <DMS_KillDozer.corePart.parts.right_leg.parts.right_wheel.customLabel>右接地輪</DMS_KillDozer.corePart.parts.right_leg.parts.right_wheel.customLabel>
+  <DMS_KillDozer.corePart.parts.right_track.parts.right_wheel.customLabel>右接地輪</DMS_KillDozer.corePart.parts.right_track.parts.right_wheel.customLabel>
   <!-- EN: dozer blade -->
   <DMS_KillDozer.corePart.parts.dozer_blade.customLabel>裝甲鏟斗</DMS_KillDozer.corePart.parts.dozer_blade.customLabel>
+  
+  <!-- UNUSED -->
+  <DMS_KillDozer.corePart.parts.left_leg.customLabel>左行走機構</DMS_KillDozer.corePart.parts.left_leg.customLabel>
+  <DMS_KillDozer.corePart.parts.left_leg.parts.left_wheel.customLabel>左接地輪</DMS_KillDozer.corePart.parts.left_leg.parts.left_wheel.customLabel>
+  <DMS_KillDozer.corePart.parts.right_leg.customLabel>右行走機構</DMS_KillDozer.corePart.parts.right_leg.customLabel>
+  <DMS_KillDozer.corePart.parts.right_leg.parts.right_wheel.customLabel>右接地輪</DMS_KillDozer.corePart.parts.right_leg.parts.right_wheel.customLabel>
   
   <!-- EN: bin -->
   <DMS_TrashBin.label>筒殼</DMS_TrashBin.label>
