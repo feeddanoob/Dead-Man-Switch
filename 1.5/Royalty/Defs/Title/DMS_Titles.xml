@@ -10,23 +10,6 @@
     <awardThought>DMS_GainedTitle</awardThought>
     <lostThought>DMS_LostTitle</lostThought>
     <canBeInherited>false</canBeInherited>
-    <requiredApparel>
-      <li>
-        <bodyPartGroupsMatchAny>
-          <li>UpperHead</li>
-          <li>FullHead</li>
-        </bodyPartGroupsMatchAny>
-        <requiredTags>
-          <li>DMS_Soldier</li>
-        </requiredTags>
-        <allowedTags>
-          <li>IndustrialMilitaryBasic</li>
-          <li>IndustrialAdvanced</li>
-          <li>DMS_Tactical</li>
-          <li>DMS_Garrision</li>
-        </allowedTags>
-      </li>
-    </requiredApparel>
   </RoyalTitleDef>
 
   <RoyalTitleDef ParentName="BaseDMSTitle">
@@ -69,19 +52,17 @@
       <li>TradeSettlement</li>
       <li>TradeCaravan</li>
     </permits>
-    <requiredApparel>
+    <requiredApparel Inherit="False">
       <li>
         <bodyPartGroupsMatchAny>
           <li>Torso</li>
         </bodyPartGroupsMatchAny>
-        <requiredTags>
-          <li>DMS_Tactical</li>
-        </requiredTags>
         <allowedTags>
           <li>IndustrialMilitaryBasic</li>
           <li>IndustrialAdvanced</li>
           <li>DMS_Tactical</li>
           <li>DMS_Garrision</li>
+          <li>DMS_DragoonArmour</li>
         </allowedTags>
       </li>
       <li>
@@ -89,9 +70,6 @@
           <li>UpperHead</li>
           <li>FullHead</li>
         </bodyPartGroupsMatchAny>
-        <requiredTags>
-          <li>DMS_Tactical</li>
-        </requiredTags>
         <allowedTags>
           <li>IndustrialMilitaryBasic</li>
           <li>IndustrialAdvanced</li>
@@ -158,7 +136,7 @@
         </bodyPartGroupsMatchAny>
         <requiredTags>
           <li>DMS_Kepi</li>
-          <li>DMS_Officer</li>
+          <li>DMS_DragoonHelmet</li>
         </requiredTags>
         <allowedTags>
           <li>IndustrialMilitaryBasic</li>
@@ -166,6 +144,18 @@
           <li>DMS_Tactical</li>
           <li>DMS_Garrision</li>
           <li>DMS_Soldier</li>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <allowedTags>
+          <li>IndustrialMilitaryBasic</li>
+          <li>IndustrialAdvanced</li>
+          <li>DMS_Tactical</li>
+          <li>DMS_Garrision</li>
+          <li>DMS_DragoonArmour</li>
         </allowedTags>
       </li>
     </requiredApparel>
@@ -236,7 +226,7 @@
     <disabledWorkTags>
       <li>Cleaning</li>
     </disabledWorkTags>
-    <requiredApparel>
+    <requiredApparel Inherit="False">
       <li>
         <bodyPartGroupsMatchAny>
           <li>UpperHead</li>
@@ -244,7 +234,7 @@
         </bodyPartGroupsMatchAny>
         <requiredTags>
           <li>DMS_Beret</li>
-          <li>DMS_Officer</li>
+          <li>DMS_DragoonHelmet</li>
         </requiredTags>
         <allowedTags>
           <li>IndustrialMilitaryBasic</li>
@@ -252,6 +242,18 @@
           <li>DMS_Tactical</li>
           <li>DMS_Garrision</li>
           <li>DMS_Soldier</li>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <allowedTags>
+          <li>IndustrialMilitaryBasic</li>
+          <li>IndustrialAdvanced</li>
+          <li>DMS_Tactical</li>
+          <li>DMS_Garrision</li>
+          <li>DMS_DragoonArmour</li>
         </allowedTags>
       </li>
     </requiredApparel>
