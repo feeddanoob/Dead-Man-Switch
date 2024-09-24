@@ -146,7 +146,7 @@
 							<capacities>
 								<li>Blunt</li>
 							</capacities>
-							<power>5</power>
+							<power>10</power>
 							<cooldownTime>0.85</cooldownTime>
 							<chanceFactor>0.2</chanceFactor>
 							<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
@@ -170,7 +170,7 @@
 							<capacities>
 								<li>Blunt</li>
 							</capacities>
-							<power>5</power>
+							<power>10</power>
 							<cooldownTime>0.85</cooldownTime>
 							<chanceFactor>0.2</chanceFactor>
 							<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
@@ -387,7 +387,7 @@
 							<capacities>
 								<li>Blunt</li>
 							</capacities>
-							<power>7</power>
+							<power>10</power>
 							<cooldownTime>1.11</cooldownTime>
 							<chanceFactor>0.2</chanceFactor>
 							<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
@@ -729,7 +729,7 @@
 							<capacities>
 								<li>Blunt</li>
 							</capacities>
-							<power>5</power>
+							<power>7</power>
 							<cooldownTime>1.11</cooldownTime>
 							<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 							<armorPenetrationBlunt>1.688</armorPenetrationBlunt>

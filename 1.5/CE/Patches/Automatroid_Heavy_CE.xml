@@ -69,7 +69,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus"]/statBases/ArmorRating_Heat</xpath>
 				<value>
-					<ArmorRating_Heat>0.5</ArmorRating_Heat>
+					<ArmorRating_Heat>0.8</ArmorRating_Heat>
 				</value>
 			</li>
 

@@ -79,7 +79,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Iguana"]/statBases/ArmorRating_Heat</xpath>
 				<value>
-					<ArmorRating_Heat>0.35</ArmorRating_Heat>
+					<ArmorRating_Heat>0.6</ArmorRating_Heat>
 				</value>
 			</li>
 			<li Class="PatchOperationConditional">

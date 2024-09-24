@@ -98,7 +98,8 @@
 				</value>
 			</li>
 			
-			<!-- ====== Caretta and Geochelone(both are IFV but first one has 20mm cannon)======-->
+			<!-- ====== Caretta and Geochelone(both are IFV but first one has 20mm cannon)
+			            (Actually, one is artillery and the other is shield bearer right now)======-->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or
 					defName="DMS_Mech_Geochelone"]/statBases</xpath>
@@ -123,8 +124,7 @@
 				</value>
 			</li>
 
-			<!--only
-			torso-->
+			<!--only torso-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or
 					defName="DMS_Mech_Geochelone"]/statBases/ArmorRating_Sharp</xpath>
@@ -137,7 +137,7 @@
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Caretta" or
 					defName="DMS_Mech_Geochelone"]/statBases/ArmorRating_Heat</xpath>
 				<value>
-					<ArmorRating_Heat>0.2</ArmorRating_Heat>
+					<ArmorRating_Heat>0.35</ArmorRating_Heat>
 				</value>
 			</li>
 
@@ -229,7 +229,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Killdozer"]/statBases/ArmorRating_Heat</xpath>
 				<value>
-					<ArmorRating_Heat>0.35</ArmorRating_Heat>
+					<ArmorRating_Heat>0.5</ArmorRating_Heat>
 				</value>
 			</li>
 
