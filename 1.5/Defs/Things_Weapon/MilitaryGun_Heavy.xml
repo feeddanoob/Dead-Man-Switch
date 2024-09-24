@@ -484,6 +484,7 @@
 	<ThingDef ParentName="BaseBullet">
 		<defName>DMS_Bullet_Dragoon_Rifle</defName>
 		<label>armor piercing shell</label>
+		<thingClass>DMS.Projectile_ConeExplosive</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -491,24 +492,26 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>35</damageAmountBase>
-			<armorPenetrationBase>0.65</armorPenetrationBase>
+			<damageAmountBase>60</damageAmountBase>
+			<armorPenetrationBase>1.5</armorPenetrationBase>
 			<stoppingPower>10</stoppingPower>
 			<speed>93</speed>
 			<arcHeightFactor>0.3</arcHeightFactor>
 			<shadowSize>0.6</shadowSize>
 		</projectile>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<explosiveRadius>1.1</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-				<armorPenetrationBase>0.5</armorPenetrationBase>
-				<damageAmountBase>5</damageAmountBase>
-				<explodeOnDestroyed>true</explodeOnDestroyed>
-				<explodeOnKilled>true</explodeOnKilled>
-				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-			</li>
-		</comps>
+		<modExtensions>
+		  <li Class="DMS.ExplosiveExtension">
+			<damage>Bullet</damage>
+			<damageAmount>20</damageAmount>
+			<armorPen>0.25</armorPen>
+			<preExplosionOffset>4</preExplosionOffset>
+			<range>8</range>
+			<swayAngle>60</swayAngle>
+			<doVisualEffects>false</doVisualEffects>
+			<sound>Explosion_Rocket</sound>
+			<effecterDef>Damage_HitMechanoid</effecterDef>
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
 	<!--Dragoon Grenade Launcher-->
@@ -523,7 +526,7 @@
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<statBases>
-			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
 			<Mass>35</Mass>
 		</statBases>
 		<weaponTags>
@@ -543,18 +546,18 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_DGL</defaultProjectile>
-				<warmupTime>3</warmupTime>
+				<warmupTime>2</warmupTime>
 				<minRange>8</minRange>
-				<range>25.9</range>
+				<range>29.9</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCast>DMS_Shot_VasilekSound</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>18</muzzleFlashScale>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
-				<forcedMissRadius>1.5</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+				<forcedMissRadius>4</forcedMissRadius>
 			</li>
 		</verbs>
 		<modExtensions>
@@ -581,18 +584,31 @@
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>1.5</drawSize>
 		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
+		<thingClass>DMS.Projectile_ConeExplosive</thingClass>
 		<projectile>
 			<speed>40</speed>
-			<damageDef>Flame</damageDef>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>60</damageAmountBase>
+			<armorPenetrationBase>0.65</armorPenetrationBase>
 			<stoppingPower>1.5</stoppingPower>
-			<explosionRadius>2.9</explosionRadius>
-			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
-			<preExplosionSpawnChance>0.25</preExplosionSpawnChance>
-			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<explosionRadius>1.5</explosionRadius>
+			<soundExplode>DMS_KnuckledusterRevolver_Shot</soundExplode>
 			<arcHeightFactor>0.5</arcHeightFactor>
 			<shadowSize>0.6</shadowSize>
 		</projectile>
+		<modExtensions>
+		  <li Class="DMS.ExplosiveExtension">
+			<damage>Bullet</damage>
+			<damageAmount>25</damageAmount>
+			<armorPen>0.35</armorPen>
+			<preExplosionOffset>4</preExplosionOffset>
+			<range>8</range>
+			<swayAngle>60</swayAngle>
+			<doVisualEffects>false</doVisualEffects>
+			<sound>Explosion_Rocket</sound>
+			<effecterDef>DMS_ConeExplosion_Wide</effecterDef>
+		  </li>
+		</modExtensions>
 	</ThingDef>
 
 	<!--Dawnblade Mech Mount-->
