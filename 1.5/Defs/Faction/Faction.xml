@@ -35,12 +35,12 @@
     <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
     </requiredMemes>
     <allowedMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
     </allowedMemes>
     <disallowedPrecepts>
       <li>Slavery_Classic</li>
@@ -55,7 +55,7 @@
     </structureMemeWeights>
     <xenotypeSet>
       <xenotypeChances>
-        <DMS_AndroidSynth MayRequire="vanillaracesexpanded.android">0.6</DMS_AndroidSynth>
+        <DMS_AndroidSynth MayRequire="vanillaracesexpanded.android">0.1</DMS_AndroidSynth>
       </xenotypeChances>
     </xenotypeSet>
     <techLevel>Spacer</techLevel>

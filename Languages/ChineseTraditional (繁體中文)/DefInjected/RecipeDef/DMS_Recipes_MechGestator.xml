@@ -36,6 +36,13 @@
   <!-- EN: Gestating mech. -->
   <DMS_Make_FieldCommand.jobString>組裝機械體中</DMS_Make_FieldCommand.jobString>
   
+  <!-- EN: gestate gladiator -->
+  <DMS_Make_Gladiator.label>組裝格鬥士</DMS_Make_Gladiator.label>
+  <!-- EN: Gestate a gladiator mechanoid. -->
+  <DMS_Make_Gladiator.description>組裝格鬥士，一種近距離格鬥特化的人型機兵</DMS_Make_Gladiator.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Gladiator.jobString>組裝機械體中</DMS_Make_Gladiator.jobString>
+  
   <!-- EN: gestate jaeger -->
   <DMS_Make_Jaeger.label>組裝獵兵</DMS_Make_Jaeger.label>
   <!-- EN: Gestate a jaeger mechanoid. -->
