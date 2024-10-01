@@ -504,7 +504,7 @@
 		  <li Class="DMS.ExplosiveExtension">
 			<damage>Bullet</damage>
 			<damageAmount>20</damageAmount>
-			<armorPen>0.25</armorPen>
+			<armorPen>0.2</armorPen>
 			<preExplosionOffset>4</preExplosionOffset>
 			<range>8</range>
 			<swayAngle>60</swayAngle>
@@ -601,7 +601,7 @@
 		  <li Class="DMS.ExplosiveExtension">
 			<damage>Bullet</damage>
 			<damageAmount>25</damageAmount>
-			<armorPen>0.35</armorPen>
+			<armorPen>0.1</armorPen>
 			<preExplosionOffset>4</preExplosionOffset>
 			<range>8</range>
 			<swayAngle>60</swayAngle>
