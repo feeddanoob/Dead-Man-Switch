@@ -697,7 +697,7 @@
                     <RangedWeapon_Cooldown>1.85</RangedWeapon_Cooldown>
                 </statBases>
                 <Properties>
-                    <recoilAmount>2.11</recoilAmount>
+                    <recoilAmount>1.87</recoilAmount>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_20x102mmNATO_AP</defaultProjectile>

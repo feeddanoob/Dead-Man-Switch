@@ -3,6 +3,64 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
+            
+            <!--=====Patch tools=====-->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[@Name="DMS_AutomatroidHeavyGun"]/tools</xpath>
+                <value>
+                    <tools Inherit="False">
+                        <li Class="CombatExtended.ToolCE">
+                            <label>stock</label>
+                            <capacities>
+                                <li>Blunt</li>
+                            </capacities>
+                            <power>24</power>
+                            <cooldownTime>3.05</cooldownTime>
+                            <chanceFactor>0.7</chanceFactor>
+                            <armorPenetrationBlunt>5.850</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>barrel</label>
+                            <capacities>
+                                <li>Blunt</li>
+                            </capacities>
+                            <power>16</power>
+                            <cooldownTime>2.55</cooldownTime>
+                            <armorPenetrationBlunt>3.680</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>muzzle</label>
+                            <capacities>
+                                <li>Poke</li>
+                            </capacities>
+                            <power>24</power>
+                            <cooldownTime>2.85</cooldownTime>
+                            <chanceFactor>1.5</chanceFactor>
+                            <armorPenetrationBlunt>5.850</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+                        </li>
+                    </tools>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[@Name="DMS_AutomatroidHeavyGun"]/statBases</xpath>
+                <value>
+                    <ToughnessRating>12</ToughnessRating>
+                </value>
+            </li>
+
+            <!--Remove speed penalty-->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[@Name="DMS_AutomatroidHeavyGun"]/equippedStatOffsets/MoveSpeed</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[@Name="DMS_AutomatroidHeavyGun"]/equippedStatOffsets/MoveSpeed</xpath>
+                </match>
+            </li>
+
+
             <!--===== 2A38 30mm+ 9M311 =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Tarbosaurus_Gun</defName>

@@ -147,7 +147,7 @@
                 <defName>DMS_GAU19Gatlinggun</defName>
                 <statBases>
                     <Mass>58</Mass>
-                    <Bulk>30</Bulk>
+                    <Bulk>37</Bulk>
                     <SwayFactor>1.62</SwayFactor>
                     <ShotSpread>0.05</ShotSpread>
                     <SightsEfficiency>1.2</SightsEfficiency>
