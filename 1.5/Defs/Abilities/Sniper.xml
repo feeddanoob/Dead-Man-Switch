@@ -38,12 +38,15 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>4</ShootingAccuracyPawn>
 				</statOffsets>
+				<statFactors>
+					<MoveSpeed>0.05</MoveSpeed>
+				</statFactors>
 				<capMods>
 					<li>
-						<capacity>Moving</capacity>
-						<setMax>0.20</setMax>
+						<capacity>Sight</capacity>
+						<offset>2</offset>
 					</li>
 				</capMods>
 			</li>
@@ -107,12 +110,9 @@
 			<statOffsets>
 			  	<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
 			</statOffsets>
-			<capMods>
-				<li>
-					  <capacity>Consciousness</capacity>
-					  <setMax>0.60</setMax>
-				</li>
-			</capMods>
+			<statFactors>
+				<MoveSpeed>0.5</MoveSpeed>
+			</statFactors>
 		</li>
 	</stages>
   </HediffDef>
@@ -134,7 +134,8 @@
 	<stages>
 	  <li>
 		<statOffsets>
-		  <ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+		  <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+		  <RangedCooldownFactor>-0.25</RangedCooldownFactor>
 		</statOffsets>
 	  </li>
 	</stages>
