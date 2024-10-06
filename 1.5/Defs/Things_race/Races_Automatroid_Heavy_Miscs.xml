@@ -51,6 +51,7 @@
     <label>ape</label>
     <race>DMS_Mech_Ape</race>
     <isFighter>true</isFighter>
+    <combatPower>140</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -130,6 +131,7 @@
     </comps>
     <butcherProducts>
       <Tungsteel>20</Tungsteel>
+      <ComponentStamped>1</ComponentStamped> 
     </butcherProducts>
     <tools Inherit="False">
       <li>

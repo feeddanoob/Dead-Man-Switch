@@ -39,6 +39,30 @@
         <disarmedByEmpForTicks>3000</disarmedByEmpForTicks>
         <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
       </li>
+      <li Class="DMS.CompProperties_VehicleWeapon">
+        <defaultWeapon>DMS_SubMachineGunMounted</defaultWeapon>
+        <turretRotationFollowPawn>true</turretRotationFollowPawn>
+        <rotationSmoothTime>0.2</rotationSmoothTime>
+        <drawData>
+          <defaultData>
+            <pivot>(0.5,0.5)</pivot>
+          </defaultData>                  
+          <dataEast>
+            <offset>(0.5,0,-0.5)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.75,0,0.6)</offset>
+            <rotationOffset>180</rotationOffset>
+          </dataWest>
+          <dataSouth>
+            <offset>(-0.6,0,-0.5)</offset>
+          </dataSouth>
+          <dataNorth>
+            <offset>(0.6,0,0.9)</offset>
+          </dataNorth>
+        </drawData>
+      </li>
+      <!--
       <li Class="DMS.CompPropertiesMultipleTurretGun">
         <subTurrets>
           <li>
@@ -82,7 +106,7 @@
             </renderNodeProperties>
           </li>
         </subTurrets>
-      </li>
+      </li>-->
     </comps>
     <tools Inherit="False">
       <li>
@@ -96,10 +120,15 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>
+    <butcherProducts>
+      <Tungsteel>30</Tungsteel>
+      <Steel>10</Steel>
+      <ComponentStamped>1</ComponentStamped>
+    </butcherProducts>
     <damageMultipliers>
       <li>
         <damageDef>Blunt</damageDef>
-        <multiplier>0.6</multiplier>
+        <multiplier>0.75</multiplier>
       </li>
       <li>
         <damageDef>Stab</damageDef>
@@ -188,10 +217,15 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>
+    <butcherProducts>
+      <Tungsteel>35</Tungsteel>
+      <Steel>10</Steel>
+      <ComponentStamped>1</ComponentStamped>
+    </butcherProducts>
     <damageMultipliers>
       <li>
         <damageDef>Blunt</damageDef>
-        <multiplier>0.6</multiplier>
+        <multiplier>0.75</multiplier>
       </li>
       <li>
         <damageDef>Stab</damageDef>
@@ -255,6 +289,7 @@
       <mechWeightClass>UltraHeavy</mechWeightClass>
     </race>
     <comps>
+     <!--
       <li Class="DMS.CompProperties_VehicleWeapon">
         <defaultWeapon>DMS_Gun_Kord_Vehicle</defaultWeapon>
         <turretRotationFollowPawn>true</turretRotationFollowPawn>
@@ -265,12 +300,56 @@
           </defaultData>
         </drawData>
       </li>
+      -->
+      <li Class="DMS.CompPropertiesMultipleTurretGun">
+        <subTurrets>
+          <li>
+            <ID>defense machinegun</ID>
+            <turret>DMS_Gun_Kord_Vehicle</turret>
+            <autoAttack>true</autoAttack>
+            <command_ToggleFire>fire at will</command_ToggleFire>
+            <commandDesc_ToggleFire>toggle turret to manually control mode to prevent unnecessary shooting.</commandDesc_ToggleFire>
+            <command_Target>aim target</command_Target>
+            <commandDesc_Target>aim at desinated target</commandDesc_Target>
+            <warmingTime>3</warmingTime>
+            <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>
+            <angleOffset>-90</angleOffset>
+            <renderNodeProperties>
+              <li>
+                <nodeClass>DMS.PawnRenderNode_SubTurretGun</nodeClass>
+                <workerClass>DMS.PawnRenderNodeWorker_SubTurretGun</workerClass>
+                <parentTagDef>Body</parentTagDef>
+                <baseLayer>20</baseLayer>
+                <pawnType>Any</pawnType>
+                <drawSize>1.7</drawSize>
+                <drawData>
+                  <defaultData>
+                    <offset>(0,0,0)</offset>
+                  </defaultData>                  
+                  <dataEast>
+                    <offset>(0,0,0)</offset>
+                  </dataEast>
+                  <dataWest>
+                    <offset>(0,0,0)</offset>
+                    <rotationOffset>180</rotationOffset>
+                  </dataWest>
+                  <dataSouth>
+                    <offset>(0,0,0)</offset>
+                  </dataSouth>
+                  <dataNorth>
+                    <offset>(0,0,0)</offset>
+                  </dataNorth>
+                </drawData>
+              </li>
+            </renderNodeProperties>
+          </li>
+        </subTurrets>
+      </li>
     </comps>
     <tools Inherit="False">
       <li>
         <label>dozer blade</label>
         <capacities>
-          <li>Blunt</li>
           <li>Demolish</li>
         </capacities>
         <power>55</power>
@@ -279,13 +358,23 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>
+    <butcherProducts>
+      <Tungsteel>30</Tungsteel>
+      <Steel>15</Steel>
+      <DMS_Ceramics>10</DMS_Ceramics>
+      <ComponentStamped>1</ComponentStamped> 
+    </butcherProducts>
     <damageMultipliers>
       <li>
         <damageDef>Blunt</damageDef>
-        <multiplier>0.4</multiplier>
+        <multiplier>0.5</multiplier>
       </li>
       <li>
         <damageDef>Stab</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>Bomb</damageDef>
         <multiplier>0.5</multiplier>
       </li>
     </damageMultipliers>
@@ -297,6 +386,8 @@
     <race>DMS_Mech_Killdozer</race>
     <isBoss>true</isBoss>
     <destroyGearOnDrop>true</destroyGearOnDrop>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>
     <combatPower>250</combatPower>
     <maxPerGroup>4</maxPerGroup>
     <abilities>

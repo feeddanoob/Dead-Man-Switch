@@ -95,6 +95,11 @@
         <li>DMS_TableMachinePrinter</li>
       </recipeUsers>
     </recipeMaker>
+    <!--
+    <isTechHediff>true</isTechHediff>
+    <techHediffsTags>
+      <li>CeramicPlating</li>
+    </techHediffsTags>-->
     <comps>
       <li Class="DMS.CompProperties_AddHediffOnTarget">
         <compClass>DMS.CompTargetable_AddHediffOnTarget</compClass>

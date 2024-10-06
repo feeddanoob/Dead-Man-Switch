@@ -37,6 +37,31 @@
 					</li>
 				</value>
 			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="DMS_Mech_Ronin" or 
+										defName="DMS_Mech_Gladiator" or
+										]/combatPower</xpath>
+				<value>
+					<combatPower>210</combatPower>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="DMS_Mech_Protector" or 
+										defName="DMS_Mech_Siegebreaker" or
+										]/combatPower</xpath>
+				<value>
+					<combatPower>250</combatPower>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="DMS_Mech_Phalanx"]/combatPower</xpath>
+				<value>
+					<combatPower>180</combatPower>
+				</value>
+			</li>
 			
 			<!-- ====== 浪人型 ======-->
 			<!--設計為萬能手的初始型號，近戰和中距離騷擾能力都很優秀-->
@@ -89,7 +114,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Ronin"]/statBases/ArmorRating_Heat</xpath>
 				<value>
-					<ArmorRating_Heat>0.2</ArmorRating_Heat>
+					<ArmorRating_Heat>0.3</ArmorRating_Heat>
 				</value>
 			</li>
 
@@ -345,7 +370,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Gladiator"]/statBases/ArmorRating_Heat</xpath>
 				<value>
-					<ArmorRating_Heat>0.2</ArmorRating_Heat>
+					<ArmorRating_Heat>0.3</ArmorRating_Heat>
 				</value>
 			</li>
 			
@@ -665,7 +690,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Protector"]/statBases/ArmorRating_Heat</xpath>
 				<value>
-					<ArmorRating_Heat>0.3</ArmorRating_Heat>
+					<ArmorRating_Heat>0.4</ArmorRating_Heat>
 				</value>
 			</li>
 
@@ -907,7 +932,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Siegebreaker"]/statBases/ArmorRating_Heat</xpath>
 				<value>
-					<ArmorRating_Heat>0.45</ArmorRating_Heat>
+					<ArmorRating_Heat>0.6</ArmorRating_Heat>
 				</value>
 			</li>
 

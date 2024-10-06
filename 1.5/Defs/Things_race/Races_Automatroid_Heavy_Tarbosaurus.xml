@@ -7,8 +7,8 @@
     <description>A bipedal ultra heavy automatoid nicknamed "Armored Rex" for their distinctive body structure vaguely resembling a carnotaurus. Once seen as the nextgen war-changer in the heyday of the arms race back in the early spacer era, it sports numerous cutting-edge technology such as the artificial muscle fibre that drove its oversized legs - the first automatroid of its kind in service.\n\nIt failed to eventually change the field of modern warfare as expected: it was oversized, its artificial muscle fibres were hard to upkeep, and on top of that, railguns and beam weaponry weren't reliable weapons back in those days;\n\nYet all those millennia have passed, there are still numerous manufacturers replicating such automatroids and adding their own improvements to its design. As such, traces of technology adopted in this automatroid can be seen in a great number of weaponry nowadays.</description>
     <statBases>
       <MoveSpeed>4</MoveSpeed>
-      <ArmorRating_Sharp>1.4</ArmorRating_Sharp><!--銳抗-->
-      <ArmorRating_Blunt>0.85</ArmorRating_Blunt><!--鈍抗-->
+      <ArmorRating_Sharp>1.8</ArmorRating_Sharp><!--銳抗-->
+      <ArmorRating_Blunt>1.2</ArmorRating_Blunt><!--鈍抗-->
       <ArmorRating_Heat>2</ArmorRating_Heat>  <!--能抗-->
       <StaggerDurationFactor>0</StaggerDurationFactor>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">8</BandwidthCost>        <!--帶寬消耗-->
@@ -204,7 +204,15 @@
         <damageDef>Blunt</damageDef>
         <multiplier>0.6</multiplier>
       </li>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
     </damageMultipliers>
+    <butcherProducts>
+      <Tungsteel>60</Tungsteel>
+      <ComponentStamped>3</ComponentStamped>
+    </butcherProducts>
     <killedLeavingsPlayerHostile>
       <ComponentFireControl>1</ComponentFireControl>
     </killedLeavingsPlayerHostile>
@@ -220,6 +228,10 @@
     <combatPower>500</combatPower>                                               <!--威脅點數-->
     <maxPerGroup>2</maxPerGroup>                                                 <!--單個集群內的數量-->
     <isBoss>true</isBoss>
+    <!--
+    <techHediffsRequired>
+      <li>DMS_CeramicsPlating</li>
+    </techHediffsRequired>-->
     <lifeStages>                                                                 <!--身體圖片-->
       <li>
         <bodyGraphicData>

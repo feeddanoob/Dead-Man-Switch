@@ -169,6 +169,11 @@
         </surpriseAttack>
       </li>
     </tools>
+    <butcherProducts>
+      <Tungsteel>15</Tungsteel>
+      <Steel>15</Steel>
+      <ComponentStamped>1</ComponentStamped>
+    </butcherProducts>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">
@@ -383,6 +388,17 @@
         </surpriseAttack>
       </li>
     </tools>
+    <butcherProducts>
+      <Tungsteel>15</Tungsteel>
+      <Steel>10</Steel>
+      <ComponentStamped>1</ComponentStamped>
+    </butcherProducts>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.85</multiplier>
+      </li>
+    </damageMultipliers>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">
