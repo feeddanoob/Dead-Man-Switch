@@ -285,7 +285,7 @@
       <body>DMS_KillDozer</body>                                                      <!--身體(另外的def)-->
       <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
       <baseBodySize>3.3</baseBodySize>
-      <baseHealthScale>5</baseHealthScale>
+      <baseHealthScale>5.3</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
     </race>
     <comps>

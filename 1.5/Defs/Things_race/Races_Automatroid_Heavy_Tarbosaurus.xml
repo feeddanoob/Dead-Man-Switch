@@ -11,6 +11,7 @@
       <ArmorRating_Blunt>1.2</ArmorRating_Blunt><!--鈍抗-->
       <ArmorRating_Heat>2</ArmorRating_Heat>  <!--能抗-->
       <StaggerDurationFactor>0</StaggerDurationFactor>
+      <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">8</BandwidthCost>        <!--帶寬消耗-->
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">2</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
@@ -18,7 +19,7 @@
       <body>DMS_Bipedal</body>
       <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
       <baseBodySize>3.5</baseBodySize>
-      <baseHealthScale>5</baseHealthScale>
+      <baseHealthScale>5.7</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
     </race>
     <comps>

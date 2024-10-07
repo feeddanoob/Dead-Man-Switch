@@ -42,8 +42,8 @@
 			
 
 			<!-- ======Tarbosaurus (mech boss1)======-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus"]/statBases</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Tarbosaurus"]/statBases/ShootingAccuracyPawn</xpath>
 				<value>
 					<CarryWeight>300</CarryWeight> <!--ridiculously overweight and over bulk weapon system and ammo :(-->
 					<CarryBulk>230</CarryBulk>

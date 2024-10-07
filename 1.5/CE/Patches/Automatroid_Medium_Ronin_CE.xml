@@ -40,19 +40,19 @@
 
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/PawnKindDef[defName="DMS_Mech_Ronin" or 
-										defName="DMS_Mech_Gladiator" or
+										defName="DMS_Mech_Gladiator" 
 										]/combatPower</xpath>
 				<value>
-					<combatPower>210</combatPower>
+					<combatPower>200</combatPower>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/PawnKindDef[defName="DMS_Mech_Protector" or 
-										defName="DMS_Mech_Siegebreaker" or
+										defName="DMS_Mech_Siegebreaker" 
 										]/combatPower</xpath>
 				<value>
-					<combatPower>250</combatPower>
+					<combatPower>230</combatPower>
 				</value>
 			</li>
 

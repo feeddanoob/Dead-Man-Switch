@@ -89,6 +89,14 @@
 					<ArmorRating_Heat>0.5</ArmorRating_Heat>
 				</value>
 			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Iguana"]/race/baseHealthScale</xpath>
+				<value>
+					<baseHealthScale>3.2</baseHealthScale>
+				</value>
+			</li>
+
 			<li Class="PatchOperationConditional">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Iguana"]/comps</xpath>
 				<nomatch Class="PatchOperationAdd">
@@ -156,6 +164,14 @@
 					<ArmorRating_Heat>0.85</ArmorRating_Heat>
 				</value>
 			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Mech_Gecko"]/race/baseHealthScale</xpath>
+				<value>
+					<baseHealthScale>2.75</baseHealthScale>
+				</value>
+			</li>
+
 			<li Class="PatchOperationConditional">
 				<xpath>Defs/ThingDef[defName="DMS_Mech_Gecko"]/comps</xpath>
 				<nomatch Class="PatchOperationAdd">
