@@ -107,6 +107,9 @@
 	<isBad>false</isBad>
 	<stages>
 		<li>
+			<statOffsets>
+			  	<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+			</statOffsets>
 			<statFactors>
 				<MoveSpeed>0.5</MoveSpeed>
 			</statFactors>

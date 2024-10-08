@@ -292,7 +292,7 @@
 					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Bullet_81mmMortarShell_HE</defaultProjectile>
-					<warmupTime>2.2</warmupTime>
+					<warmupTime>3.2</warmupTime>
 					<minRange>20</minRange>
 					<range>200</range>
 					<burstShotCount>4</burstShotCount>
@@ -318,7 +318,7 @@
                 </FireModes>
 				<AmmoUser>
 					<magazineSize>4</magazineSize>
-					<reloadTime>3</reloadTime>
+					<reloadTime>12</reloadTime>
 					<ammoSet>AmmoSet_81mmMortarShell</ammoSet>
 				</AmmoUser>
 				<weaponTags>
