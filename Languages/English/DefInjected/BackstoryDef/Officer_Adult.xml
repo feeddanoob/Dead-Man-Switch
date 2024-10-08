@@ -2,7 +2,7 @@
 <LanguageData>
   
   <!-- EN: [PAWN_nameDef] was a weapons controller at a CIC. Before being temporarily laid off due to a lack of maintenance parts for the control system, [PAWN_pronoun] job was to control the weapons systems of the task force's autonomous robots at the weapons control station to avoid accidents. Senseless killing...and fixing some mechanical issues by the way. -->
-  <DMS_Officer01.description>[PAWN_nameDef] was a weapons controller at a Command and Control Facility. [PAWN_nameDef] was temporarily laid off due to a lack of maintenance parts for the control system and had to cross-train as a weapons system operator for the task force's autonomous robots at the weapons control station to mitigate friendly fire inicidents.</DMS_Officer01.description>
+  <DMS_Officer01.description>[PAWN_nameDef] was a weapons controller at a Command and Control Facility. [PAWN_nameDef] was temporarily laid off due to a lack of maintenance parts for the control system and had to cross-train as a weapons system operator for the task force's autonomous robots at the weapons control station to mitigate friendly fire inicidents. </DMS_Officer01.description>
   <!-- EN: Weapon systems officer -->
   <DMS_Officer01.title>Weapon Systems Officer</DMS_Officer01.title>
   <!-- EN: wisso -->
@@ -30,7 +30,7 @@
   <DMS_Officer04.titleShort>Engineer</DMS_Officer04.titleShort>
   
   <!-- EN: [PAWN_nameDef] worked for the diplomatic department of the colonial fleet. Before the previous post was suspended due to the change of regime, [PAWN_pronoun], like other military attachés, was posted to various faction bases on the planet to provide contacts and deliver messages. -->
-  <DMS_Officer05.description>[PAWN_nameDef] worked for the diplomatic department of the Colonial Forces. [PAWN_nameDef] was posted to various faction bases on the planet to provide contacts with friendly local militias and mercenary groups alike.</DMS_Officer05.description>
+  <DMS_Officer05.description>[PAWN_nameDef] worked for the diplomatic department of the Colonial Forces. [PAWN_nameDef] was posted to various outposts on the planet to provide contacts with friendly local militias and mercenary groups alike.</DMS_Officer05.description>
   <!-- EN: Military attaché -->
   <DMS_Officer05.title>Military Attaché</DMS_Officer05.title>
   <!-- EN: attaché -->
