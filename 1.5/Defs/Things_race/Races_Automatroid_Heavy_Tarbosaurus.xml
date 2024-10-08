@@ -13,7 +13,7 @@
       <StaggerDurationFactor>0</StaggerDurationFactor>
       <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">8</BandwidthCost>        <!--帶寬消耗-->
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">7</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
     <race>
       <body>DMS_Bipedal</body>
