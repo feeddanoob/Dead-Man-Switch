@@ -547,7 +547,7 @@
   <RecipeDef>
     <defName>DMS_Convert_ComponentIndustrial</defName>
     <label>Convert stamponent</label>
-    <description>Convert a stamponent into a component. </description>
+    <description>Convert a stamponent into a component.</description>
     <jobString>Making component.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>

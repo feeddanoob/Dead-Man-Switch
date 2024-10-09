@@ -50,7 +50,7 @@
   <ThingDef ParentName="DMS_BioMechBionicBase">
     <defName>DMS_ProstheticEye</defName>
     <label>Mechaneural Visual Sensor</label>
-    <description>An artificial light receiver with an integrated nerve-link. The sensor is equipped with night vision and aim assistance making it superior to its biological counterpart. </description>
+    <description>An artificial light receiver with an integrated nerve-link. The sensor is equipped with night vision and aim assistance making it superior to its biological counterpart.</description>
     <descriptionHyperlinks><RecipeDef>DMS_InstallProstheticEye</RecipeDef></descriptionHyperlinks>
     <costList>
       <Tungsteel>15</Tungsteel>
