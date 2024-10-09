@@ -76,6 +76,7 @@
       <thingDefs>
         <li>Corpse_DMS_Mech_Dogge</li>
         <li>Corpse_DMS_Mech_Falcon</li>
+        <li>Corpse_DMS_Mech_Noctula</li>
 
         <li>Corpse_DMS_Mech_Sergeant</li>
         <li>Corpse_DMS_Mech_Soldat</li>
@@ -153,7 +154,15 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>150</count>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Tungsteel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
