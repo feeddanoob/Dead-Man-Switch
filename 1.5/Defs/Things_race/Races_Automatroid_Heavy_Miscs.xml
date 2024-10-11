@@ -4,8 +4,8 @@
   <!-- 猿人 ape-->
   <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_Ape</defName>
-    <label>ape</label>
-    <description>An prototype design on testing the feasibility of humanoid automatroid, it's designed to equip with heavy weapon.</description>
+    <label>Ape</label>
+    <description>A prototype design which tested the feasibility of a large humanoid automatroid capable of equipping heavy weapons.</description>
     <statBases>
       <StaggerDurationFactor>0.25</StaggerDurationFactor>
       <MoveSpeed>3.1</MoveSpeed>                                                              <!--移動速度-->
@@ -13,7 +13,7 @@
       <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
       <ArmorRating_Heat>1.2</ArmorRating_Heat>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>                 <!--帶寬消耗-->
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge> <!--充電/培養時產出廢料-->
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">3</WastepacksPerRecharge> <!--充電/培養時產出廢料-->
       <AimingDelayFactor>1.2</AimingDelayFactor>                                            <!--瞄準延遲-->
     </statBases>
     <race>
@@ -51,6 +51,7 @@
     <label>ape</label>
     <race>DMS_Mech_Ape</race>
     <isFighter>true</isFighter>
+    <combatPower>140</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -77,15 +78,15 @@
   <!-- 寄居蟹 -->
   <ThingDef ParentName="BaseAutomatroidRace">
     <defName>DMS_Mech_HermitCrab</defName>
-    <label>hermit crab</label>
-    <description>These large, expensive, heavy mobile industrial machines are designed and manufactured by worlds that intend to colonize solar systems. Their large and expensive magnetic stabilizer shells integrate many complex-axis CNC tools and precision machinery. its high precision allows it to perform surgical procedures, but only if the patient overcomes their fear of a machine weighing several tons acting as their surgeon.</description>
+    <label>Hermit Crab</label>
+    <description>These large, expensive, and heavy mobile industrial machines are designed to be an all-in-one unit for colonizing new worlds. Their large and expensive magnetic stabilized shells integrate many complex-axis CNC tools and precision machinery. In a pinch, its precision tools allow it to perform surgical procedures as long as the patient overcomes their fear of a machine weighing several tons acting as their surgeon.</description>
     <statBases>
       <MoveSpeed>2.5</MoveSpeed>
       <ArmorRating_Sharp>1.0</ArmorRating_Sharp><!--銳抗-->
       <ArmorRating_Blunt>1.3</ArmorRating_Blunt><!--鈍抗-->
       <ArmorRating_Heat>1.2</ArmorRating_Heat>  <!--能抗-->
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5</BandwidthCost>
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">3</WastepacksPerRecharge>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge>
       <FoodPoisonChance>0</FoodPoisonChance>
       <WorkSpeedGlobal MayRequire="Ludeon.Rimworld.Biotech">2.00</WorkSpeedGlobal>
     </statBases>
@@ -130,6 +131,7 @@
     </comps>
     <butcherProducts>
       <Tungsteel>20</Tungsteel>
+      <ComponentStamped>1</ComponentStamped> 
     </butcherProducts>
     <tools Inherit="False">
       <li>
