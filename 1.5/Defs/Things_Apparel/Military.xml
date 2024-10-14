@@ -529,7 +529,6 @@
 		<defName>DMS_Apparel_TacticalCloak</defName>
 		<label>Tactical Cloak</label>
 		<description>A cloak capable of low-level active camouflage typically equipped by sappers and special operators in the Colonial Forces.</description>
-		<!-- 暫時不給造 -->
 		<recipeMaker />
 		<graphicData>
 			<texPath>Things/Apparel/MagierCloak/icon</texPath>
