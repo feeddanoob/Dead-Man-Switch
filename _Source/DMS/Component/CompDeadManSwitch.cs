@@ -39,7 +39,7 @@ namespace DMS
 
             var overseer = mech.GetOverseer()?.mechanitor;
             if (overseer != null) return;
-            if (mech.Spawned && !overseer.CanOverseeSubject) //在無法連接時自己找其他人連接。
+            if (mech.Spawned && !overseer.CanControlMechs) //在無法連接時自己找其他人連接。
             {
                 var li = mech.Map.mapPawns.FreeColonistsSpawned.Where(c => MechanitorUtility.IsMechanitor(c));
                 if (li.Any())
