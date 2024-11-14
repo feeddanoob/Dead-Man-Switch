@@ -53,8 +53,8 @@
     <description>An artificial light receiver with an integrated nerve-link. The sensor is equipped with night vision and aim assistance making it superior to its biological counterpart.</description>
     <descriptionHyperlinks><RecipeDef>DMS_InstallProstheticEye</RecipeDef></descriptionHyperlinks>
     <costList>
-      <Tungsteel>15</Tungsteel>
       <Plasfiber>5</Plasfiber>
+      <ComponentStamped>3</ComponentStamped>
       <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
@@ -205,9 +205,7 @@
     <description>An advanced artificial arm. Features Silenced mini-servos which provide great strength while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
     <descriptionHyperlinks><RecipeDef>DMS_InstallProstheticArm</RecipeDef></descriptionHyperlinks>
     <costList>
-      <Tungsteel>25</Tungsteel>
-      <Plasfiber>15</Plasfiber>
-      <ComponentStamped>5</ComponentStamped>
+      <ComponentStamped>8</ComponentStamped>
     </costList>
     <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
     <statBases>
@@ -288,9 +286,7 @@
     <description>An advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
     <descriptionHyperlinks><RecipeDef>DMS_InstallProstheticLeg</RecipeDef></descriptionHyperlinks>
     <costList>
-      <Tungsteel>25</Tungsteel>
-      <Plasfiber>15</Plasfiber>
-      <ComponentStamped>5</ComponentStamped>
+      <ComponentStamped>8</ComponentStamped>
     </costList>
     <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
     <statBases>
@@ -372,9 +368,8 @@
     <description>A plasteel fiber-based membrane lung prosthesis. It works like an artificial lung. During World War III, due to the lack of protective equipment, most soldiers were exposed to highly concentrated nuclear, biological, and chemical pollution, which caused massive ulceration and paralysis of respiratory organs. These types of prostheses were widely used in the military and gradually perfected through frontline surgeries and rehabilitation efforts for disabled soldiers.</description>
     <descriptionHyperlinks><RecipeDef>DMS_InstallProstheticLung</RecipeDef></descriptionHyperlinks>
     <costList>
-      <Tungsteel>15</Tungsteel>
       <Plasfiber>50</Plasfiber>
-      <ComponentStamped>3</ComponentStamped>
+      <ComponentStamped>5</ComponentStamped>
     </costList>
     <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
     <statBases>
@@ -457,9 +452,8 @@
     <description>A biocompatible liquid filter implant that filters impurities and waste products out of the blood through osmotic pressure to ensure the acid-base balance of the implantee's internal circulatory system.</description>
     <descriptionHyperlinks><RecipeDef>DMS_InstallProstheticKidney</RecipeDef></descriptionHyperlinks>
     <costList>
-      <Tungsteel>15</Tungsteel>
       <Plasfiber>50</Plasfiber>
-      <ComponentStamped>3</ComponentStamped>
+      <ComponentStamped>5</ComponentStamped>
     </costList>
     <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
     <statBases>
@@ -625,9 +619,8 @@
       <color>(255,255,255)</color>
     </graphicData>
     <costList>
-      <Tungsteel>20</Tungsteel>
       <Plasfiber>10</Plasfiber>
-      <ComponentStamped>5</ComponentStamped>
+      <ComponentStamped>7</ComponentStamped>
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <statBases>
@@ -751,7 +744,7 @@
     <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
     <costList>
       <Plasfiber>15</Plasfiber>
-      <ComponentSpacer>4</ComponentSpacer>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <recipeMaker>
       <researchPrerequisite>DMS_OrganSurgery</researchPrerequisite>
@@ -846,7 +839,7 @@
     <costList>
       <Plasfiber>15</Plasfiber>
       <Neutroamine>20</Neutroamine>
-      <ComponentSpacer>2</ComponentSpacer>
+      <ComponentStamped>3</ComponentStamped>
     </costList>
     <recipeMaker>
       <researchPrerequisite>DMS_OrganSurgery</researchPrerequisite>
@@ -939,9 +932,7 @@
     <description>An advanced artificial arm composed of synthetic muscles and plasfiber skin grown on bone made by tungsteel.</description>
     <descriptionHyperlinks><RecipeDef>DMS_InstallSyntheticArm</RecipeDef></descriptionHyperlinks>
     <costList>
-      <Tungsteel>10</Tungsteel>
-      <Plasfiber>10</Plasfiber>
-      <Artifuscle>25</Artifuscle>
+      <Artifuscle>40</Artifuscle>
     </costList>
     <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
     <statBases>
@@ -1022,9 +1013,7 @@
     <description>An advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
     <descriptionHyperlinks><RecipeDef>DMS_InstallSyntheticLeg</RecipeDef></descriptionHyperlinks>
     <costList>
-      <Tungsteel>10</Tungsteel>
-      <Plasfiber>10</Plasfiber>
-      <Artifuscle>25</Artifuscle>
+      <Artifuscle>40</Artifuscle>
     </costList>
     <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
     <statBases>

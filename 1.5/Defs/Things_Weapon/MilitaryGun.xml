@@ -244,7 +244,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_BattleRifle</texPath>
-			<drawSize>1.5</drawSize>
+			<drawSize>1.75</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>

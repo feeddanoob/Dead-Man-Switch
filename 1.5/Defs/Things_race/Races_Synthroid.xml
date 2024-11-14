@@ -60,7 +60,6 @@
       <body>DMS_Synthroid</body>
       <mechEnabledWorkTypes>
         <li>Hauling</li>
-        <li>Construction</li>
         <li>PlantCutting</li>
         <li>Growing</li>
         <li>Cleaning</li>

@@ -453,7 +453,7 @@
     </comps>
     <building>
       <turretGunDef>DMS_Gun_GateKeeper</turretGunDef>
-      <turretTopDrawSize>6</turretTopDrawSize>
+      <turretTopDrawSize>5</turretTopDrawSize>
       <turretBurstWarmupTime>2.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>3.2</turretBurstCooldownTime>
     </building>
@@ -470,7 +470,7 @@
       <li>MultibarrelWeapons</li>
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_GateKeeper</uiIconPath>
-    <uiIconScale>2</uiIconScale>
+    <uiIconScale>1.2</uiIconScale>
     <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->
     <thingCategories>
       <li>BuildingsSecurity</li>
@@ -483,7 +483,7 @@
     <description>A large-caliber multi-barreled autocannon, also known as the GAU-8 "Avenger". Its an ancient practical design with an extremely high rate of fire and a devastating effect on anything unfortunate enough to stand infront of it.</description>
     <graphicData>
       <texPath>Things/Turrets/DMS_Gun_GateKeeper</texPath>
-      <drawSize>6</drawSize>
+      <drawSize>5</drawSize>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -863,7 +863,7 @@
     </comps>
     <building>
       <turretGunDef>DMS_Gun_Dawnblade</turretGunDef>
-      <turretTopDrawSize>6</turretTopDrawSize>
+      <turretTopDrawSize>5</turretTopDrawSize>
       <turretBurstWarmupTime>2.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>3.2</turretBurstCooldownTime>
       <turretTopOffset>(0,0.4)</turretTopOffset>
@@ -881,7 +881,7 @@
       <li>DMS_EquipmentHeavy</li>
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_DawnBlade</uiIconPath>
-    <uiIconScale>2</uiIconScale>
+    <uiIconScale>1.2</uiIconScale>
     <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->
     <thingCategories>
       <li>BuildingsSecurity</li>
@@ -894,7 +894,7 @@
     <description>An automated artillery system widely used on small to medium-sized frigates and corvettes in colonial fleets.</description>
     <graphicData>
       <texPath>Things/Turrets/DMS_Gun_DawnBlade</texPath>
-      <drawSize>6</drawSize>
+      <drawSize>5</drawSize>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>

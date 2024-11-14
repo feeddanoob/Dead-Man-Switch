@@ -27,17 +27,17 @@
 		  <li Class="DMS.CompProperties_VehicleWeapon">
         <drawData>
           <dataEast>
-            <offset>(0,0,0.85)</offset>
-            <layer>-21</layer>
+            <offset>(0,0,-0.15)</offset>
           </dataEast>
           <dataWest>
-            <offset>(0,0,-0.15)</offset>
+            <offset>(0,0,0.85)</offset>
+            <layer>-21</layer>
           </dataWest>
           <dataSouth>
-            <offset>(0.8,0,0)</offset>
+            <offset>(-0.8,0,0)</offset>
           </dataSouth>
           <dataNorth>
-            <offset>(-0.8,0,0.5)</offset>
+            <offset>(0.8,0,0)</offset>
           </dataNorth>
         </drawData>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>
@@ -247,17 +247,17 @@
 		  <li Class="DMS.CompProperties_VehicleWeapon">
         <drawData>
           <dataEast>
-            <offset>(0,0,0.85)</offset>
-            <layer>-21</layer>
+            <offset>(0,0,-0.15)</offset>
           </dataEast>
           <dataWest>
-            <offset>(0,0,-0.15)</offset>
+            <offset>(0,0,0.85)</offset>
+            <layer>-21</layer>
           </dataWest>
           <dataSouth>
-            <offset>(0.8,0,0)</offset>
+            <offset>(-0.8,0,0)</offset>
           </dataSouth>
           <dataNorth>
-            <offset>(-0.8,0,0.5)</offset>
+            <offset>(0.8,0,0)</offset>
           </dataNorth>
         </drawData>
 			  <turretRotationFollowPawn>true</turretRotationFollowPawn>

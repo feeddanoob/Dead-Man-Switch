@@ -11,14 +11,12 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <costList>
-      <Steel>10</Steel>
       <Chemfuel>10</Chemfuel>
       <DMS_Ceramics>10</DMS_Ceramics>
     </costList>
     <costListForDifficulty>
       <difficultyVar>classicMortars</difficultyVar>
       <costList>
-        <Steel>15</Steel>
         <Chemfuel>15</Chemfuel>
         <DMS_Ceramics>15</DMS_Ceramics>
       </costList>
