@@ -11,7 +11,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_M214</texPath>
-			<drawSize>1.3</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>10</Mass>
@@ -74,7 +74,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_GAU19</texPath>
-			<drawSize>2.25</drawSize>
+			<drawSize>1.75</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>48</Mass>
@@ -141,7 +141,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_M61Vulcan_B</texPath>
-			<drawSize>2.75</drawSize>
+			<drawSize>2.25</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>92</Mass>
@@ -212,7 +212,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_M61Vulcan</texPath>
-			<drawSize>2.75</drawSize>
+			<drawSize>2.25</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>92</Mass>
@@ -271,7 +271,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_GAU8</texPath>
-			<drawSize>3.5</drawSize>
+			<drawSize>2.75</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>281</Mass>

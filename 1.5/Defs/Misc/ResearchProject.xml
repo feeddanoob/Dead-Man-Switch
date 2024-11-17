@@ -179,7 +179,7 @@
   <ResearchProjectDef ParentName="DMS_BaseTech">
     <defName>DMS_Prosthetic</defName>
     <label>Neural Prosthesis</label>
-    <description>Neural prosthetics  designed for disabled soldiers. They're durable and easily adapted to, requiring minimal training for the patient to become comfortable. However, due to the natural wear and tear of its mechanical components, these prosthetic replacements are not as efficient as their original flesh counterparts.</description>
+    <description>Neural prosthetics designed for disabled soldiers. They're durable and easily adapted to, requiring minimal training for the patient to become comfortable. However, due to the natural wear and tear of its mechanical components, these prosthetic replacements are not as efficient as their original flesh counterparts.</description>
     <baseCost>750</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>

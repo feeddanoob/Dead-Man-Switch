@@ -33,7 +33,6 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<statBases>
-			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToMake>8000</WorkToMake>
 			<Mass>7</Mass>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
@@ -42,9 +41,13 @@
 			<Insulation_Cold>18</Insulation_Cold>
 			<Insulation_Heat>18</Insulation_Heat>
 			<EquipDelay>15</EquipDelay>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
 		</statBases>
+		<useHitPoints>false</useHitPoints>
 		<equippedStatOffsets>
-			<MoveSpeed>1.5</MoveSpeed>
+			<MoveSpeed>1.75</MoveSpeed>
+			<RestFallRateFactor>0.25</RestFallRateFactor>
 			<ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<apparel>
@@ -529,7 +532,6 @@
 		<defName>DMS_Apparel_TacticalCloak</defName>
 		<label>Tactical Cloak</label>
 		<description>A cloak capable of low-level active camouflage typically equipped by sappers and special operators in the Colonial Forces.</description>
-		<!-- 暫時不給造 -->
 		<recipeMaker />
 		<graphicData>
 			<texPath>Things/Apparel/MagierCloak/icon</texPath>

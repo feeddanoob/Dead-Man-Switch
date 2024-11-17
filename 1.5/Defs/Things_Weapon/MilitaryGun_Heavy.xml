@@ -625,7 +625,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_DawnBladeM</texPath>
-			<drawSize>5.5</drawSize>
+			<drawSize>5</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>259</Mass>
