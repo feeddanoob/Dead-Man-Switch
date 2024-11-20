@@ -3,6 +3,7 @@
 using Verse;
 using Verse.AI;
 using RimWorld;
+using System;
 
 namespace DMS
 {
@@ -24,6 +25,31 @@ namespace DMS
                 {
                     if (tmp == null) continue;
 
+                    if (tmp == pawn && !pawn.inventory.innerContainer.NullOrEmpty())
+                    {
+                        yield return TryMakeFloatMenuForGearManagement(pawn);
+                    }
+                    else if(tmp.def.selectable&&tmp.def.category == ThingCategory.Item)
+                    {
+                        if (MassUtility.GearAndInventoryMass(pawn) + tmp.GetStatValue(StatDefOf.Mass) > MassUtility.Capacity(pawn))
+                        {
+                            yield return new FloatMenuOption("DMS_NoPayloadCapacity".Translate(), null);
+                        }
+                        else if (tmp.TryGetComp<CompEquippable>(out var comp)&& !CheckUtility.IsMechUseable(pawn, tmp))
+                        {
+                            yield return new FloatMenuOption("DMS_WeaponNotSupported".Translate(), null);
+                        }
+                        else
+                        {
+                            yield return new FloatMenuOption("DMS_TakeToInventory".Translate(tmp), () =>
+                            {
+                                tmp.SetForbidden(false);
+                                Job job = JobMaker.MakeJob(JobDefOf.TakeInventory, tmp);
+                                job.count = tmp.stackCount;
+                                pawn.jobs.TryTakeOrderedJob(job, JobTag.DraftedOrder);
+                            });
+                        }
+                    }
                     //武器相關
                     if (tmp.TryGetComp<CompEquippable>() != null)
                     {
@@ -64,6 +90,14 @@ namespace DMS
                 }
             }
             yield break;
+        }
+
+        private static FloatMenuOption TryMakeFloatMenuForGearManagement(Pawn pawn)
+        {
+                return new FloatMenuOption("DMS_DropGears".Translate(), () =>
+                {
+                    pawn.inventory.DropAllNearPawn(pawn.Position);
+                });
         }
 
         public static FloatMenuOption TryMakeFloatMenu(Pawn pawn, ThingWithComps equipment, string key = "Equip")
