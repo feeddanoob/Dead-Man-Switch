@@ -15,4 +15,12 @@
   <DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>This weapon can only be equipped with listed automatroid or mechframe</DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>
   <DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>This weapon can be equipped with listed specific apparel or bionics</DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>
   
+  <DMS_NoPayloadCapacity>Inventroy fulled</DMS_NoPayloadCapacity>
+  <DMS_TakeToInventory>Take {0}</DMS_TakeToInventory>
+  <DMS_DropGears>Drop inventories</DMS_DropGears>
+  
+  <DMS_BodysizeNotSupported>bodysize not supported (need:{0})</DMS_BodysizeNotSupported>
+  <DMS_Modification_RaceNotSupported>model not supported</DMS_Modification_RaceNotSupported>
+  <DMS_Modification_NoValidPart>no body part to attach modification</DMS_Modification_NoValidPart>
+
 </LanguageData>

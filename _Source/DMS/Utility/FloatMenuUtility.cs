@@ -33,11 +33,11 @@ namespace DMS
                     {
                         if (MassUtility.GearAndInventoryMass(pawn) + tmp.GetStatValue(StatDefOf.Mass) > MassUtility.Capacity(pawn))
                         {
-                            yield return new FloatMenuOption("DMS_NoPayloadCapacity".Translate(), null);
+                            yield return new FloatMenuOption("CannotEquip".Translate(tmp) + " " + "DMS_NoPayloadCapacity".Translate(), null);
                         }
                         else if (tmp.TryGetComp<CompEquippable>(out var comp)&& !CheckUtility.IsMechUseable(pawn, tmp))
                         {
-                            yield return new FloatMenuOption("DMS_WeaponNotSupported".Translate(), null);
+                            yield return new FloatMenuOption("CannotEquip".Translate(tmp) + " " + "DMS_WeaponNotSupported".Translate(), null);
                         }
                         else
                         {

@@ -601,6 +601,9 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
     <tradeability>Buyable</tradeability>
     <comps>  
       <li Class="CompProperties_Usable">
@@ -626,9 +629,6 @@
         <effecterDef>MechbandBuildingDestroyed</effecterDef>
       </li>
     </comps>
-    <thingSetMakerTags>
-      <li>RewardStandardCore</li>
-    </thingSetMakerTags>
   </ThingDef>
   
 </Defs>
