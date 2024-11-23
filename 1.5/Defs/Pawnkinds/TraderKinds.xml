@@ -236,6 +236,9 @@
       <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ExoticMisc</tag></li>
+      <li MayRequire="xmb.ancienturbanruins.mo" Class="StockGenerator_BuyTradeTag"><tag>AM_WeaponRanged</tag></li>
 
     </stockGenerators>
   </TraderKindDef>
@@ -415,10 +418,12 @@
       <li Class="StockGenerator_BuyTradeTag"><tag>HiTechArmor</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
-      <li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>TechHediff</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>Artifact</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ExoticMisc</tag></li>
+      <li MayRequire="xmb.ancienturbanruins.mo" Class="StockGenerator_BuyTradeTag"><tag>AM_WeaponRanged</tag></li>
     </stockGenerators>
   </TraderKindDef>
 
@@ -567,6 +572,9 @@
       <li Class="StockGenerator_BuyTradeTag"><tag>Drugs</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>DMS_WeaponRanged</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>HoraxWeapon</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ExoticMisc</tag></li>
+      <li MayRequire="xmb.ancienturbanruins.mo" Class="StockGenerator_BuyTradeTag"><tag>AM_WeaponRanged</tag></li>
     </stockGenerators>
   </TraderKindDef>
 
@@ -610,10 +618,12 @@
       <li Class="StockGenerator_BuyTradeTag"><tag>HiTechArmor</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
-      <li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>TechHediff</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>Artifact</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ExoticMisc</tag></li>
+      <li MayRequire="xmb.ancienturbanruins.mo" Class="StockGenerator_BuyTradeTag"><tag>AM_WeaponRanged</tag></li>
     </stockGenerators>
   </TraderKindDef>
 

@@ -18,19 +18,18 @@ namespace DMS
                 return;
             }
             List<Pawn> overseenPawns = MechanitorUtility.GetOverseer(mech)?.mechanitor?.OverseenPawns;
+            if (overseenPawns.NullOrEmpty()) return;
             List<Pawn> commandRelay = overseenPawns.Where(temp => temp.TryGetComp<CompCommandRelay>() != null).ToList();
-            if (commandRelay.Count != 0)
+            if (commandRelay.NullOrEmpty()) return;
+
+            foreach (Pawn pawn in overseenPawns.Where(p => p.MapHeld == mech.MapHeld))
             {
-                foreach (Pawn pawn in overseenPawns.Where(p => p.MapHeld == mech.MapHeld))
+                if (commandRelay.Contains(pawn))
                 {
-                    if (commandRelay.Contains(pawn))
-                    {
-                        __result = true;
-                        return;
-                    }
+                    __result = true;
+                    return;
                 }
             }
-            __result = false;
         }
     }
 }

@@ -127,7 +127,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_MiniMachineGun</defaultProjectile>
 				<warmupTime>1.5</warmupTime>
-				<range>30.9</range>
+				<range>19.9</range>
 				<burstShotCount>10</burstShotCount>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<soundCast>DMS_Pistol_Shot</soundCast>

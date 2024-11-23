@@ -35,7 +35,7 @@ namespace DMS
                     __result = true;
                     return;
                 }
-                if (p.apparel.WornApparel.Where(a => a.TryGetComp<CompSubRelay>(out comp)).Any() && InRange(p, target, comp.SquaredDistance))
+                if (p.apparel !=null && p.apparel.WornApparel.Where(a => a.TryGetComp<CompSubRelay>(out comp)).Any() && InRange(p, target, comp.SquaredDistance))
                 {
                     __result = true;
                     return;

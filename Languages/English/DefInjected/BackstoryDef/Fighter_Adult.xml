@@ -30,7 +30,7 @@
   <DMS_Military04.titleShort>Militia</DMS_Military04.titleShort>
   
   <!-- EN: Since the physical examination was passed by rounded off, [PAWN_nameDef], who had no special skills, followed the enlistment order of the colonial fleet and after receiving simple training, became a substitute and was sent to the ground to assist in the colonization work. -->
-  <DMS_Military05.description> [PAWN_nameDef] participated in the Colonist Physical Exam and only passed due to a clerical error. [PAWN_nameDef] has no special skills and followed the enlistment orders of the Colonial Fleet to receive simple training, enough to function as a substitute colonist. [PAWN_nameDef] was sent planetside to assist in the ongoing colonization work.</DMS_Military05.description>
+  <DMS_Military05.description>[PAWN_nameDef] participated in the Colonist Physical Exam and only passed due to a clerical error. [PAWN_nameDef] has no special skills and followed the enlistment orders of the Colonial Fleet to receive simple training, enough to function as a substitute colonist. [PAWN_nameDef] was sent planetside to assist in the ongoing colonization work.</DMS_Military05.description>
   <!-- EN: Reserved colonist -->
   <DMS_Military05.title>Reserve Colonist</DMS_Military05.title>
   <!-- EN: colonist -->
