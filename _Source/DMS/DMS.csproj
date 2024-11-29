@@ -9,6 +9,12 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>10.0</LangVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Melee\**" />
+    <EmbeddedResource Remove="Melee\**" />
+    <None Remove="Melee\**" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="VFECore">
       <HintPath>$(MSBuildThisFileDirectory)/../Reference/VFECore.dll</HintPath>
