@@ -16,7 +16,14 @@
       <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">3</EMPResistance>                                             <!--EMP抵抗力-->
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
       <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">30</ControlTakingTime>
-    </statBases>
+    </statBases>    
+    <inspectorTabs Inherit="False">
+      <li>ITab_Pawn_Health</li>
+      <li>ITab_Pawn_Needs</li>
+      <li>ITab_Pawn_FormingCaravan</li>
+      <li>ITab_Pawn_Gear</li>
+      <li>ITab_Pawn_Log</li>
+    </inspectorTabs>
     <tools>
       <li>
         <label>left fist</label>
