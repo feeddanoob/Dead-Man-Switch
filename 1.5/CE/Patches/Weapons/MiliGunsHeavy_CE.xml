@@ -3,8 +3,9 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
-            
-            <!--=====Patch tools=====-->
+
+            <!--=====Patch
+            tools=====-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[@Name="DMS_AutomatroidHeavyGun"]/tools</xpath>
                 <value>
@@ -52,16 +53,19 @@
                 </value>
             </li>
 
-            <!--Remove speed penalty-->
+            <!--Remove
+            speed penalty-->
             <li Class="PatchOperationConditional">
                 <xpath>Defs/ThingDef[@Name="DMS_AutomatroidHeavyGun"]/equippedStatOffsets/MoveSpeed</xpath>
                 <match Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[@Name="DMS_AutomatroidHeavyGun"]/equippedStatOffsets/MoveSpeed</xpath>
+                    <xpath>
+                        Defs/ThingDef[@Name="DMS_AutomatroidHeavyGun"]/equippedStatOffsets/MoveSpeed</xpath>
                 </match>
             </li>
 
 
-            <!--===== 2A38 30mm+ 9M311 =====-->
+            <!--=====
+            2A38 30mm+ 9M311 =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Tarbosaurus_Gun</defName>
                 <statBases>
@@ -102,7 +106,8 @@
             </li>
 
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="DMS_Tarbosaurus_Gun"]/comps/li[@Class="MVCF.Comps.CompProperties_VerbProps"]/verbProps</xpath>
+                <xpath>
+                    Defs/ThingDef[defName="DMS_Tarbosaurus_Gun"]/comps/li[@Class="MVCF.Comps.CompProperties_VerbProps"]/verbProps</xpath>
                 <value>
                     <verbProps>
                         <li>
@@ -241,7 +246,8 @@
                 </FireModes>
             </li>
 
-            <!--===== 37mm Gun =====-->
+            <!--=====
+            37mm Gun =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Gun_DragoonRifle</defName>
                 <statBases>
@@ -263,13 +269,13 @@
                     <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>20</muzzleFlashScale>
-                <targetParams>
-                    <canTargetLocations>true</canTargetLocations>
-                </targetParams>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                    </targetParams>
                 </Properties>
                 <AmmoUser>
-                    <magazineSize>8</magazineSize>
-                    <reloadTime>8</reloadTime>
+                    <magazineSize>6</magazineSize>
+                    <reloadTime>3</reloadTime>
                     <ammoSet>AmmoSet_37x223mmR</ammoSet>
                 </AmmoUser>
                 <FireModes>
@@ -279,8 +285,9 @@
                 </weaponTags>
             </li>
 
-	    <!--===== 60mm Launcher =====-->
-	    <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+            <!--=====
+            60mm Launcher =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Gun_DragoonGrenade</defName>
                 <statBases>
                     <Mass>45</Mass>
@@ -301,26 +308,27 @@
                     <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>20</muzzleFlashScale>
-                <targetParams>
-                    <canTargetLocations>true</canTargetLocations>
-                </targetParams>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                    </targetParams>
                 </Properties>
-				<AmmoUser>
-					<magazineSize>6</magazineSize>
-					<reloadTime>12</reloadTime>
-					<ammoSet>AmmoSet_60mmMortarShell_DF</ammoSet>
-				</AmmoUser>
-				<FireModes>
-					<aiUseBurstMode>FALSE</aiUseBurstMode>
-					<aiAimMode>SuppressFire</aiAimMode>
-				</FireModes>
-				<weaponTags>
-					<li>CE_AI_AOE</li>
-				</weaponTags>
+                <AmmoUser>
+                    <magazineSize>6</magazineSize>
+                    <reloadTime>12</reloadTime>
+                    <ammoSet>AmmoSet_60mmMortarShell_DF</ammoSet>
+                </AmmoUser>
+                <FireModes>
+                    <aiUseBurstMode>FALSE</aiUseBurstMode>
+                    <aiAimMode>SuppressFire</aiAimMode>
+                </FireModes>
+                <weaponTags>
+                    <li>CE_AI_AOE</li>
+                </weaponTags>
             </li>
 
-			<!--===== 76mm Cannon =====-->
-			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+            <!--=====
+            76mm Cannon =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Gun_DawnbladeM</defName>
                 <statBases>
                     <Mass>245</Mass>
@@ -348,18 +356,18 @@
                     </targetParams>
                     <recoilPattern>Mounted</recoilPattern>
                 </Properties>
-				<AmmoUser>
-					<magazineSize>4</magazineSize>
-					<reloadTime>12</reloadTime>
-					<ammoSet>AmmoSet_762x385mmRCannonShell</ammoSet>
-				</AmmoUser>
-				<FireModes>
-					<aiUseBurstMode>true</aiUseBurstMode>
-					<aiAimMode>AimedShot</aiAimMode>
+                <AmmoUser>
+                    <magazineSize>4</magazineSize>
+                    <reloadTime>12</reloadTime>
+                    <ammoSet>AmmoSet_762x385mmRCannonShell</ammoSet>
+                </AmmoUser>
+                <FireModes>
+                    <aiUseBurstMode>true</aiUseBurstMode>
+                    <aiAimMode>AimedShot</aiAimMode>
                     <aimedBurstShotCount>2</aimedBurstShotCount>
-				</FireModes>
-				<weaponTags>
-				</weaponTags>
+                </FireModes>
+                <weaponTags>
+                </weaponTags>
             </li>
         </operations>
     </Operation>
