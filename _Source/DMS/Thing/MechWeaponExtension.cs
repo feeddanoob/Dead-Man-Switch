@@ -17,6 +17,6 @@ namespace DMS
 
         public List<string> BypassUsableWeapons = new List<string>();
 
-        public List<ApparelLayerDef> acceptedLayers = new List<ApparelLayerDef>();
+        public List<ApparelLayerDef> ApparelLayerBlackLists = new List<ApparelLayerDef>();
     }
 }

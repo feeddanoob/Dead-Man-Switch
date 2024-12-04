@@ -52,6 +52,8 @@ public static partial class CheckUtility
         {
             return false;
         }
+        if (thing.def.weaponTags.NullOrEmpty()) return false;
+
         if (BypassedUseable(extension, thing.def.defName)) return true; //指定可用
 
         if (!InTechLevel(extension, thing)) return false;//科技等級可用
@@ -62,11 +64,11 @@ public static partial class CheckUtility
             {
                 return true;
             }
-        } 
+        }
         else //Filter沒開的狀況下就單純看武器重量。
         {
             HeavyEquippableExtension heavyEquippableExtension = thing.def.GetModExtension<HeavyEquippableExtension>();
-            if (heavyEquippableExtension == null) return true; 
+            if (heavyEquippableExtension == null) return true;
         }
         return false;
     }
@@ -116,16 +118,18 @@ public static partial class CheckUtility
         }
         return false;
     }
-    public static bool Wearable(MechWeaponExtension extension, ThingWithComps equipment)//為可用的科技等級。
+    public static bool Wearable(MechWeaponExtension extension, ThingWithComps equipment)//為可用的衣服層。
     {
-        foreach (ApparelLayerDef item in extension.acceptedLayers)
+        if (extension.ApparelLayerBlackLists.NullOrEmpty()) return true;
+        foreach (ApparelLayerDef item in extension.ApparelLayerBlackLists)
         {
+            if (equipment.def.apparel.layers.NullOrEmpty()) return true;
             if (equipment.def.apparel.layers.Contains(item))
             {
-                return true;
+                return false;
             }
         }
-        return false;
+        return true;
     }
     public static bool InTechLevel(MechWeaponExtension extension, ThingWithComps thing)//為可用的科技等級。
     {

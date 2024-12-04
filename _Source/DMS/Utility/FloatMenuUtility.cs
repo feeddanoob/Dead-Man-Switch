@@ -25,17 +25,39 @@ namespace DMS
                 {
                     if (tmp == null) continue;
 
-                    if (tmp == pawn && !pawn.inventory.innerContainer.NullOrEmpty())
+                    //武器相關
+                    if (tmp.TryGetComp<CompEquippable>() != null)
                     {
-                        yield return TryMakeFloatMenuForGearManagement(pawn);
+                        if (CheckUtility.IsMechUseable(pawn, tmp))
+                        {
+                            yield return TryMakeFloatMenuForWeapon(pawn, tmp);
+                        }
+                        else
+                        {
+                            yield return new FloatMenuOption("CannotEquip".Translate(tmp) + " " + "DMS_WeaponNotSupported".Translate(), null);
+                        }
                     }
-                    else if(tmp.def.selectable&&tmp.def.category == ThingCategory.Item)
+                    //裝備相關
+                    if (tmp.def?.apparel != null && pawn.HasComp<CompMechApparel>())
+                    {
+                        if (CheckUtility.Wearable(MechWeapon, tmp))
+                        {
+                            yield return TryMakeFloatMenuForApparel(pawn, tmp);
+                        }
+                        else
+                        {
+                            yield return new FloatMenuOption("CannotEquip".Translate(tmp) + " " + "DMS_FrameNotSupported".Translate(), null);
+                        }
+                    }
+
+                    //撿起物品
+                    if (tmp.def.selectable && tmp.def.category == ThingCategory.Item)
                     {
                         if (MassUtility.GearAndInventoryMass(pawn) + tmp.GetStatValue(StatDefOf.Mass) > MassUtility.Capacity(pawn))
                         {
                             yield return new FloatMenuOption("CannotEquip".Translate(tmp) + " " + "DMS_NoPayloadCapacity".Translate(), null);
                         }
-                        else if (tmp.TryGetComp<CompEquippable>(out var comp)&& !CheckUtility.IsMechUseable(pawn, tmp))
+                        else if (tmp.TryGetComp<CompEquippable>(out var comp) && !CheckUtility.IsMechUseable(pawn, tmp))
                         {
                             yield return new FloatMenuOption("CannotEquip".Translate(tmp) + " " + "DMS_WeaponNotSupported".Translate(), null);
                         }
@@ -50,30 +72,12 @@ namespace DMS
                             });
                         }
                     }
-                    //武器相關
-                    if (tmp.TryGetComp<CompEquippable>() != null)
+                    //清空物品
+                    if (tmp == pawn && !pawn.inventory.innerContainer.NullOrEmpty())
                     {
-                        if (CheckUtility.IsMechUseable(pawn, tmp))
-                        {
-                            yield return TryMakeFloatMenuForWeapon(pawn, tmp);
-                        }
-                        else
-                        {
-                            yield return new FloatMenuOption("CannotEquip".Translate(tmp) + " " + "DMS_WeaponNotSupported".Translate(), null);
-                        }
+                        yield return TryMakeFloatMenuForGearManagement(pawn);
                     }
-                    //裝備相關
-                    if (tmp.def?.apparel != null && MechWeapon.acceptedLayers?.Count > 0)
-                    {
-                        if (CheckUtility.Wearable(MechWeapon, tmp))
-                        {
-                            yield return TryMakeFloatMenuForApparel(pawn, tmp);
-                        }
-                        else
-                        {
-                            yield return new FloatMenuOption("CannotEquip".Translate(tmp) + " " + "DMS_FrameNotSupported".Translate(), null);
-                        }
-                    }
+
                     //操作砲塔相關
                     if (tmp.def.building?.turretGunDef != null)
                     {
