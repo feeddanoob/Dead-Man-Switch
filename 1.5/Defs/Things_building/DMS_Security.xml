@@ -346,7 +346,7 @@
       <Tungsteel>200</Tungsteel>
       <ComponentStamped>20</ComponentStamped>
       <ComponentIndustrial>15</ComponentIndustrial>
-      <ComponentFireControl>2</ComponentFireControl>
+      <ComponentFireControl>1</ComponentFireControl>
     </costList>
     <researchPrerequisites>
       <li>DMS_EquipmentHeavy</li>
@@ -463,7 +463,7 @@
       <Tungsteel>300</Tungsteel>
       <ComponentStamped>15</ComponentStamped>
       <ComponentIndustrial>10</ComponentIndustrial>
-      <ComponentFireControl>3</ComponentFireControl>
+      <ComponentFireControl>1</ComponentFireControl>
     </costList>
     <researchPrerequisites>
       <li>DMS_EquipmentElite</li>
@@ -874,7 +874,7 @@
       <Tungsteel>300</Tungsteel>
       <ComponentStamped>15</ComponentStamped>
       <ComponentIndustrial>10</ComponentIndustrial>
-      <ComponentFireControl>3</ComponentFireControl>
+      <ComponentFireControl>2</ComponentFireControl>
     </costList>
     <researchPrerequisites>
       <li>DMS_EquipmentElite</li>

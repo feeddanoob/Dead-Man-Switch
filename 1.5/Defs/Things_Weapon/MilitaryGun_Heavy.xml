@@ -630,7 +630,6 @@
 		<statBases>
 			<Mass>259</Mass>
 			<WorkToMake>100000</WorkToMake>
-			<MarketValue>1200</MarketValue>
 		    <AccuracyTouch>0.89</AccuracyTouch>
 		    <AccuracyShort>1.00</AccuracyShort>
 		    <AccuracyMedium>1.00</AccuracyMedium>
@@ -643,8 +642,9 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Tungsteel>200</Tungsteel>
-			<ComponentStamped>16</ComponentStamped>
+			<Tungsteel>325</Tungsteel>
+			<ComponentStamped>28</ComponentStamped>
+      		<ComponentFireControl>1</ComponentFireControl>
 		</costList>
 		<comps Inherit="False">
 			<li>
@@ -659,8 +659,8 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<defaultProjectile>DMS_Bullet_Dawnblade</defaultProjectile>
 				<requireLineOfSight>true</requireLineOfSight>
-				<warmupTime>1.9</warmupTime>
-				<minRange>2.9</minRange>
+				<warmupTime>2.4</warmupTime>
+				<minRange>4.9</minRange>
 				<range>50</range>
 				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
 				<burstShotCount>3</burstShotCount>
@@ -671,7 +671,7 @@
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<forcedMissRadius>0.1</forcedMissRadius>
+				<forcedMissRadius>2</forcedMissRadius>
 			</li>
 		</verbs>
 		<modExtensions>

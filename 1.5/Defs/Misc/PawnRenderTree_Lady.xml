@@ -40,15 +40,6 @@
               <useRottenColor>true</useRottenColor>
               <useSkinShader>true</useSkinShader>
               <children>
-                <!-- <li>
-                  <debugLabel>Hair</debugLabel>
-                  <nodeClass>PawnRenderNode_Hair</nodeClass>
-                  <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-                  <rotDrawMode>Fresh, Rotting</rotDrawMode>
-                  <colorType>Hair</colorType>
-                  <skipFlag>Hair</skipFlag>
-                  <baseLayer>62</baseLayer>
-                </li> -->
                 <li Class="PawnRenderNodeProperties_Parent">
                   <debugLabel>Apparel root</debugLabel>
                   <tagDef>ApparelHead</tagDef>
