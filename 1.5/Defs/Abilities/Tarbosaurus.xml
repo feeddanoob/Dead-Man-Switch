@@ -9,9 +9,7 @@
 		<charges>2</charges>
 		<cooldownPerCharge>true</cooldownPerCharge>
 		<hostile>true</hostile>
-		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
 		<aiCanUse>true</aiCanUse>
-		<casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
 		<verbProperties>
 		  <verbClass>DMS.Verb_CastAbilitySpecialJump</verbClass>
 		  <label>jump</label>
