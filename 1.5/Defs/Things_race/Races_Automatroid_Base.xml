@@ -72,6 +72,7 @@
     <comps>
       <li MayRequire="Ludeon.Rimworld.Biotech" Class="DMS.CompProperties_DeadManSwitch">
         <minDelayUntilDMS>12000</minDelayUntilDMS>
+        <nameRule>DMS_MechAwaken</nameRule>
       </li>
       <li Class="DMS.CompPropertiesInteracte">
         <interacteChance>0.03</interacteChance>
