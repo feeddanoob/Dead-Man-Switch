@@ -74,8 +74,8 @@
         <minDelayUntilDMS>12000</minDelayUntilDMS>
       </li>
       <li Class="DMS.CompPropertiesInteracte">
-        <interacteChance>0.3</interacteChance>
-        <interacte>DMS_Nuzzle</interacte>
+        <interacteChance>0.03</interacteChance>
+        <interacte>Chitchat</interacte>
       </li>
     </comps>
     <butcherProducts>

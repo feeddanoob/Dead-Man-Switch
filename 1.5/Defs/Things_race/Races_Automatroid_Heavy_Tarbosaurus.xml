@@ -264,6 +264,7 @@
     </weaponTags>
     <weaponMoney>9999~9999</weaponMoney>
     <abilities>
+      <li>DMS_Strafing</li>
       <li>DMS_TarbosaurusJump</li>
       <li>DMS_RepairMode</li>
     </abilities>

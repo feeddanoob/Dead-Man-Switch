@@ -2,7 +2,6 @@
 <Defs>
 
 	<!-- 通用的技能，比如各種發射物 -->
-
 	<AbilityDef>
 		<defName>DMS_FlashLauncher</defName>
 		<label>Flashbang barrage</label>
@@ -33,7 +32,7 @@
 		</comps>
 	</AbilityDef>
 
-	
+
 	<ThingDef ParentName="BaseBullet">
 		<defName>DMS_Bullet_FlashBang</defName>
 		<label>Flashbang grenade</label>
@@ -127,22 +126,22 @@
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
-		  <verbClass>Verb_CastAbilityJump</verbClass>
-		  <label>jump</label>
-		  <violent>false</violent>
-		  <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-		  <warmupTime>0.5</warmupTime>
-		  <minRange>5.9</minRange>
-		  <range>9.9</range>
-		  <requireLineOfSight>true</requireLineOfSight>
-		  <soundCast>Longjump_Jump</soundCast>
-		  <soundLanding>Longjump_Land</soundLanding>
-		  <flyWithCarriedThing>true</flyWithCarriedThing>
-		  <targetParams>
-			<canTargetLocations>true</canTargetLocations>
-			<canTargetPawns>false</canTargetPawns>
-			<canTargetBuildings>false</canTargetBuildings>
-		  </targetParams>
+			<verbClass>Verb_CastAbilityJump</verbClass>
+			<label>jump</label>
+			<violent>false</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<warmupTime>0.5</warmupTime>
+			<minRange>5.9</minRange>
+			<range>9.9</range>
+			<requireLineOfSight>true</requireLineOfSight>
+			<soundCast>Longjump_Jump</soundCast>
+			<soundLanding>Longjump_Land</soundLanding>
+			<flyWithCarriedThing>true</flyWithCarriedThing>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
 		</verbProperties>
 	</AbilityDef>
 
@@ -266,12 +265,47 @@
 			<li Class="DMS.CompProperties_AbilitySelfExplosion">
 				<explosionDamage>Demolish</explosionDamage>
 				<explosionSound>Explosion_GiantBomb</explosionSound>
-                <explosionEffect>GiantExplosion</explosionEffect>
+				<explosionEffect>GiantExplosion</explosionEffect>
 				<damageAmount>150</damageAmount>
 				<armorPenetration>2</armorPenetration>
 				<range>7.9</range>
 			</li>
 		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>DMS_Strafing</defName>
+		<label>sector strafing</label>
+		<description>Concentrate firepower to conduct a strafing attack in a specific direction.</description>
+		<iconPath>UI/Abilities/Burner</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<warmupStartSound>TurretAcquireTarget</warmupStartSound>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<verbProperties>
+			<verbClass>DMS.Verb_ArcSprayProjectile</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>DMS_Bullet_CIWS</defaultProjectile>
+			<warmupTime>3</warmupTime>
+			<minRange>9.9</minRange>
+			<range>44.9</range>
+
+			<consumeFuelPerBurst>1</consumeFuelPerBurst>
+			<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+			<sprayWidth>5</sprayWidth>
+			<sprayArching>6</sprayArching>
+			<sprayThicknessCells>3</sprayThicknessCells>
+			<sprayNumExtraCells>20</sprayNumExtraCells>
+			<burstShotCount>20</burstShotCount>
+				
+			<soundCast>Shot_TurretSniper</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>15</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<forcedMissRadius>0.1</forcedMissRadius>
+		</verbProperties>
 	</AbilityDef>
 
 </Defs>

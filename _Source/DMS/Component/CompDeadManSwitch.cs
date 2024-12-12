@@ -11,7 +11,6 @@ using static RimWorld.MechClusterSketch;
 
 namespace DMS
 {
-    //在失去機械師控制後只會自動關機
     public class CompDeadManSwitch : ThingComp
     {
         public CompProperties_DeadManSwitch Props => (CompProperties_DeadManSwitch)props;
@@ -70,8 +69,8 @@ namespace DMS
             {
                 pawn.relations.RemoveDirectRelation(PawnRelationDefOf.Overseer, overseer);
             }
-            Find.LetterStack.ReceiveLetter("MechWake".Translate(this.parent.Label), 
-                "MechWakeDesc".Translate(this.parent.Label),LetterDefOf.PositiveEvent,this.parent);
+            Find.LetterStack.ReceiveLetter("DMS_MechWake".Translate(this.parent.Label),
+                "DMS_MechWakeDesc".Translate(this.parent.Label),LetterDefOf.PositiveEvent,this.parent);
             pawn.interactions = new Pawn_InteractionsTracker(pawn);
         }
         private void TryTriggerDMS()

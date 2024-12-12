@@ -8,8 +8,10 @@
 		<cooldownTicksRange>600</cooldownTicksRange>
 		<charges>2</charges>
 		<cooldownPerCharge>true</cooldownPerCharge>
-		<hostile>false</hostile>
-		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<hostile>true</hostile>
+		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+		<aiCanUse>true</aiCanUse>
+		<casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
 		<verbProperties>
 		  <verbClass>DMS.Verb_CastAbilitySpecialJump</verbClass>
 		  <label>jump</label>
@@ -40,11 +42,12 @@
         <modExtensions>
             <li Class="DMS.ModExtensionJumper">
                 <compExplosive>
-                    <explosiveRadius>5.9</explosiveRadius>
+                    <explosiveRadius>4.9</explosiveRadius>
                     <explosiveDamageType>Bomb</explosiveDamageType>
                     <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
                     <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
                     <chanceToStartFire>0.22</chanceToStartFire>
+		  			<doVisualEffects>false</doVisualEffects>
                     <damageFalloff>true</damageFalloff>
                     <explosionEffect>ExtinguisherExplosion</explosionEffect>
                     <explosionSound>Explosion_Bomb</explosionSound>

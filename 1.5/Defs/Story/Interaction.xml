@@ -3,7 +3,7 @@
 
   <InteractionDef>
     <defName>DMS_Nuzzle</defName>
-    <label>nuzzle</label>
+    <label>talked</label>
     <interactionMote>Mote_Thought</interactionMote>
     <symbol>Things/Mote/SpeechSymbols/Nuzzle</symbol>
     <logRulesInitiator>

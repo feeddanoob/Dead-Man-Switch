@@ -39,7 +39,7 @@ namespace DMS
                 GenSpawn.Spawn(mech, pos, overseer.Map);
             }
             this.timeToReturn = Rand.Range(3 * GenDate.TicksPerDay, 10 * GenDate.TicksPerDay);
-            Find.LetterStack.ReceiveLetter("DMCMechReturn".Translate(), "DMCMechReturnDesc".Translate()
+            Find.LetterStack.ReceiveLetter("DMS_MechReturn".Translate(), "DMS_MechReturnDesc".Translate()
                 ,LetterDefOf.PositiveEvent,mech);
             if (Rand.Chance(comp.Props.wakingChance)) 
             {
