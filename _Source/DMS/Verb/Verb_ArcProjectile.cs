@@ -33,20 +33,18 @@ namespace DMS
         }
         protected override bool TryCastShot()
         {
+            if (burstShotsLeft == verbProps.burstShotCount && !base.TryCastShot())
+            {
+                return false;
+            }
             if (currentTarget.HasThing && currentTarget.Thing.Map != caster.Map)
             {
                 return false;
             }
-            ShootLine resultingLine;
-            bool flag = TryFindShootLineFromTo(caster.Position, currentTarget, out resultingLine);
-            if (verbProps.stopBurstWithoutLos && !flag)
+
+            if (verbProps.stopBurstWithoutLos && !TryFindShootLineFromTo(caster.Position, currentTarget, out _))
             {
                 return false;
-            }
-            if (base.EquipmentSource != null && burstShotsLeft <= 1)
-            {
-                base.EquipmentSource.GetComp<CompChangeableProjectile>()?.Notify_ProjectileLaunched();
-                base.EquipmentSource.GetComp<CompApparelReloadable>()?.UsedOnce();
             }
             HitCell(path[ShotsPerBurst - burstShotsLeft]);
             lastShotTick = Find.TickManager.TicksGame;
@@ -101,8 +99,8 @@ namespace DMS
 
         protected virtual void HitCell(IntVec3 cell)
         {
-            verbProps.sprayEffecterDef?.Spawn(caster.Position, cell, caster.Map); 
-            ((Projectile)GenSpawn.Spawn(verbProps.defaultProjectile, caster.Position, caster.Map, WipeMode.Vanish)).Launch(caster, caster.DrawPos, cell, cell, ProjectileHitFlags.All, false, EquipmentSource?? null, null);
+            verbProps.sprayEffecterDef?.Spawn(caster.Position, cell, caster.Map);
+            ((Projectile)GenSpawn.Spawn(verbProps.defaultProjectile, caster.Position, caster.Map, WipeMode.Vanish)).Launch(caster, caster.DrawPos, cell, cell, ProjectileHitFlags.All, false, EquipmentSource ?? null, null);
         }
 
         public override void ExposeData()
@@ -125,3 +123,4 @@ namespace DMS
         }
     }
 }
+
