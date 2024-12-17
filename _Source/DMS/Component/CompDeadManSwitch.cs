@@ -114,7 +114,7 @@ namespace DMS
         }
         public override string CompInspectStringExtra()
         {  
-            if (!parent.Faction.IsPlayer || parent.GetComp<CompOverseerSubject>() == null) return null;
+            if (!parent.EverSeenByPlayer || parent.GetComp<CompOverseerSubject>() == null) return null;
             if (parent.GetComp<CompOverseerSubject>().State != OverseerSubjectState.Overseen)
             {
                 string str = "DMS_WillTerminateTheBetrayedUnit".Translate();

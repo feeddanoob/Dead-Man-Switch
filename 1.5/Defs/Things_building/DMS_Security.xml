@@ -963,7 +963,7 @@
 	<comps>
 		<li Class="CompProperties_Explosive">
 			<explosiveRadius>1.1</explosiveRadius>
-			<explosiveDamageType>Demolish</explosiveDamageType>
+			<explosiveDamageType>Bullet</explosiveDamageType>
 			<armorPenetrationBase>0.9</armorPenetrationBase>
 			<damageAmountBase>50</damageAmountBase>
 			<explodeOnDestroyed>true</explodeOnDestroyed>

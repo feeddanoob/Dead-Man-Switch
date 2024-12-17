@@ -123,6 +123,13 @@
             </li>
           </subTurrets>
       </li>
+      <li Class="DMS.CompProperties_MeleeSweep">
+        <damageDef>Blunt</damageDef>
+        <damage>40</damage>
+        <armorPenetration>0.5</armorPenetration>
+        <radius>3</radius>
+        <angle>120</angle>
+      </li>
     </comps>
     <modExtensions>
       <li Class="DMS.MechWeaponExtension">
@@ -145,7 +152,7 @@
       <li>
         <label>Mechanical Head</label>
         <capacities>
-          <li>Blunt</li>
+          <li>DMS_HeavySweep</li>
         </capacities>
         <power>35</power>
         <cooldownTime>5.5</cooldownTime>
@@ -164,7 +171,7 @@
       <li>
         <label>Left Leg</label>
         <capacities>
-          <li>Blunt</li>
+          <li>DMS_HeavySweep</li>
         </capacities>
         <power>24</power>
         <cooldownTime>3.5</cooldownTime>
@@ -183,14 +190,14 @@
       <li>
         <label>Right Leg</label>
         <capacities>
-          <li>Blunt</li>
+          <li>DMS_HeavySweep</li>
         </capacities>
         <power>24</power>
         <cooldownTime>3.5</cooldownTime>
         <linkedBodyPartsGroup>RightMechanicalLeg</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
-		    <surpriseAttack>
+        <surpriseAttack>
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
@@ -203,7 +210,7 @@
     <damageMultipliers>
       <li>
         <damageDef>Blunt</damageDef>
-        <multiplier>0.6</multiplier>
+        <multiplier>0.5</multiplier>
       </li>
       <li>
         <damageDef>Bomb</damageDef>
@@ -264,7 +271,6 @@
     </weaponTags>
     <weaponMoney>9999~9999</weaponMoney>
     <abilities>
-      <li>DMS_Strafing</li>
       <li>DMS_TarbosaurusJump</li>
       <li>DMS_RepairMode</li>
     </abilities>
