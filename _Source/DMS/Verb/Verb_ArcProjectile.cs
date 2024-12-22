@@ -41,10 +41,14 @@ namespace DMS
             {
                 return false;
             }
-
             if (verbProps.stopBurstWithoutLos && !TryFindShootLineFromTo(caster.Position, currentTarget, out _))
             {
                 return false;
+            }
+            if (base.EquipmentSource != null && burstShotsLeft <= 1)
+            {
+                base.EquipmentSource.GetComp<CompChangeableProjectile>()?.Notify_ProjectileLaunched();
+                base.EquipmentSource.GetComp<CompApparelReloadable>()?.UsedOnce();
             }
             HitCell(path[ShotsPerBurst - burstShotsLeft]);
             lastShotTick = Find.TickManager.TicksGame;

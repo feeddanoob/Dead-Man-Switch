@@ -114,12 +114,21 @@ namespace DMS
 
             if (pawn is IWeaponUsable weaponUsable)
             {
-                if (equipment is Apparel)
+
+                if (equipment is Apparel apparel)
                 {
-                    return new FloatMenuOption(key.Translate(labelShort, equipment), () =>
+                    if (!apparel.PawnCanWear(pawn, true) || !CheckUtility.Wearable(pawn.def.GetModExtension<MechWeaponExtension>(),apparel))
                     {
-                        weaponUsable.Wear(equipment);
-                    });
+                        return new FloatMenuOption("CannotEquip".Translate(labelShort) + ": " + "DMS_FrameNotSupported".Translate(), null);
+                    }
+                    else
+                    {
+                        return new FloatMenuOption(key.Translate(labelShort, equipment), () =>
+                        {
+                            weaponUsable.Wear(equipment);
+                        });
+                    }
+                    
                 }
                 else
                 {

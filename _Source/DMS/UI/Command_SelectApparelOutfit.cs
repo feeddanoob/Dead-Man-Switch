@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace DMS
 {
-    public class Command_SelectApparelOutfit : Command_Action
+    public class Command_SelectApparelOutfit : Command
     {
         public Pawn_OutfitTracker outfitSource;
 
@@ -20,7 +20,8 @@ namespace DMS
         {
             if (outfitSource == null) yield break;
             List<ApparelPolicy> outfis = Current.Game.outfitDatabase.AllOutfits;
-            foreach (var outfit in outfis) {
+            foreach (var outfit in outfis)
+            {
                 yield return new FloatMenuOption(outfit.label, () =>
                 {
                     outfitSource.CurrentApparelPolicy = outfit;
