@@ -635,6 +635,9 @@
 		    <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
+			<researchPrerequisites>
+				<li>DMS_Synthroid</li>
+			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>

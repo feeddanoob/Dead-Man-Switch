@@ -14,7 +14,7 @@ namespace DMS
 		}
 		public override Graphic GraphicFor(Pawn pawn)
 		{
-			return GraphicDatabase.Get<Graphic_Single>(this.subturret.turretProp.turret.graphicData.texPath, ShaderDatabase.Cutout);
+			return GraphicDatabase.Get<Graphic_Single>(this.subturret.TurretProp.turret.graphicData.texPath, ShaderDatabase.Cutout);
 		}
 		public SubTurret subturret;
 	}
