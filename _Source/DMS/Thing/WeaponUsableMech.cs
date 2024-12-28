@@ -43,6 +43,15 @@ namespace DMS
                 {
                     yield return item;
                 }
+                if (this.TryGetComp<CompDeadManSwitch>() is CompDeadManSwitch comp && comp.woken && sq == this.Position
+                    && MechRepairUtility.CanRepair(this))
+                {
+                    yield return new FloatMenuOption("RepairMech".Translate(this.LabelShort), () =>
+                    {
+                        Job job = JobMaker.MakeJob(DMS_DefOf.DMS_RepairSelf, this);
+                        this.jobs.StartJob(job);
+                    });
+                }
             }
         }
         public override void ExposeData()

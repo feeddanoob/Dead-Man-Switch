@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using Verse;
 
 namespace DMS
 {
@@ -6,6 +7,7 @@ namespace DMS
     public static class DMS_DefOf
     {
         public static ThoughtDef DMS_OverEat;
+        public static JobDef DMS_RepairSelf;
     }
 
 }

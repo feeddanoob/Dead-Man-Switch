@@ -12,7 +12,11 @@ namespace DMS
         private static void Postfix(Pawn mech, LocalTargetInfo target, ref bool __result)
         {
             if (__result) return;
-
+            if (mech.TryGetComp<CompDeadManSwitch>() is CompDeadManSwitch compDMS && compDMS.woken)
+            {
+                __result = true;
+                return;
+            }
             if (mech.TryGetComp<CompCommandRelay>(out var _c))
             {
                 __result = true;

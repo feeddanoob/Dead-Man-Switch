@@ -109,7 +109,7 @@ namespace DMS
                     var _ext = weapon.def.GetModExtension<HeavyEquippableExtension>();
                     if (_ext != null && _ext.EquippableDef != null)
                     {
-                        if (_ext.CanEquippedBy(ThingMaker.MakeThing(mech) as Pawn))
+                        if (_ext.CanEquippedBy(mech))
                         {
                             list.AddDistinct(mech);
                         }
