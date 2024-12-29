@@ -1,31 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: Dogge -->
-  <DMS_Mech_Dogge.label>獒犬</DMS_Mech_Dogge.label>
-  <!-- EN: A four-legged robot dog provide forward reconnaissance and urban combat support during armed operations, can equipped with small-caliber firearms or flamethrowers to provide certain containment capabilities. -->
-  <DMS_Mech_Dogge.description>一种中型四足机枪平台，其优越的机动性来自於四肢采用的合成人工肌肉束，其高度较低因此适合在开阔平地上提供机动火力支援。</DMS_Mech_Dogge.description>
-  <!-- EN: aim target -->
+  <!-- UNUSED -->
   <DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.command_Target>瞄准目标</DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.command_Target>
-  <!-- EN: fire at will -->
   <DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>自由开火</DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>
-  <!-- EN: aim at desinated target -->
   <DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>瞄准指定目标</DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>
-  <!-- EN: toggle turret to manually control mode to prevent unnecessary shooting. -->
   <DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>切换炮塔至手动模式来避免非必要的开火</DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
-  <!-- EN: head -->
-  <DMS_Mech_Dogge.tools.head.label>头部</DMS_Mech_Dogge.tools.head.label>
   
   <!-- EN: Falcon -->
   <DMS_Mech_Falcon.label>游隼</DMS_Mech_Falcon.label>
-  <!-- EN: A heavy-duty tri-rotor drone for cooperating in field recon and anti-tank strikes. -->
+  <!-- EN: A heavy-duty tri-rotor drone built for working in conjunction with recon units and anti-tank units. -->
   <DMS_Mech_Falcon.description>重型三旋翼无人机，用於空中武装侦察和反坦克打击。</DMS_Mech_Falcon.description>
   <!-- EN: head -->
   <DMS_Mech_Falcon.tools.head.label>头部</DMS_Mech_Falcon.tools.head.label>
   
-  <!-- EN: noctula -->
+  <!-- EN: Noctula -->
   <DMS_Mech_Noctula.label>夜蝠</DMS_Mech_Noctula.label>
-  <!-- EN: Stealth operaton command-relay Noctula nicknamed "Night bat" is a command-relay variant of tri-rotor drone falcon. -->
+  <!-- EN: A stealth operaton command-relay drone nicknamed "Night bat". The drone is a command-relay variant of the Falcon. -->
   <DMS_Mech_Noctula.description>匿踪中继无人机，代号“夜蝠”，是游隼的指令中继改装型，用於为猎兵行动时提供指挥链支持。</DMS_Mech_Noctula.description>
   <!-- EN: head -->
   <DMS_Mech_Noctula.tools.head.label>头部</DMS_Mech_Noctula.tools.head.label>

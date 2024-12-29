@@ -26,14 +26,6 @@ namespace DMS
 		public float angleOffset;
 		public bool autoAttack = true;
 		public float warmingTime = 3f;
-
-		public string command_ToggleFire = "ToggleFire";
-		public string commandDesc_ToggleFire = "ToggleFireDesc";
-
-		public string command_Target = "Target";
-		public string commandDesc_Target = "TargetDesc";
-		public string targetCommandIconPath = "";
-
 		public List<PawnRenderNodeProperties> renderNodeProperties;
     }
 }

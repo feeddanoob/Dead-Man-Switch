@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: bipedal -->
@@ -92,15 +92,16 @@
   <DMS_Caterpillar.corePart.parts.right_armour_plate.customLabel>右装甲板</DMS_Caterpillar.corePart.parts.right_armour_plate.customLabel>
   <!-- EN: left armour plate -->
   <DMS_Caterpillar.corePart.parts.left_armour_plate.customLabel>左装甲板</DMS_Caterpillar.corePart.parts.left_armour_plate.customLabel>
-  <!-- EN: left leg -->
-  <DMS_Caterpillar.corePart.parts.left_leg.customLabel>左腿</DMS_Caterpillar.corePart.parts.left_leg.customLabel>
+  <!-- EN: left track -->
+  <DMS_Caterpillar.corePart.parts.left_track.customLabel>左行走机构</DMS_Caterpillar.corePart.parts.left_track.customLabel>
   <!-- EN: left wheel -->
-  <DMS_Caterpillar.corePart.parts.left_leg.parts.left_wheel.customLabel>左轮</DMS_Caterpillar.corePart.parts.left_leg.parts.left_wheel.customLabel>
-  <!-- EN: right leg -->
-  <DMS_Caterpillar.corePart.parts.right_leg.customLabel>右腿</DMS_Caterpillar.corePart.parts.right_leg.customLabel>
+  <DMS_Caterpillar.corePart.parts.left_track.parts.left_wheel.customLabel>左接地轮</DMS_Caterpillar.corePart.parts.left_track.parts.left_wheel.customLabel>
+  <!-- EN: right track -->
+  <DMS_Caterpillar.corePart.parts.right_track.customLabel>右行走机构</DMS_Caterpillar.corePart.parts.right_track.customLabel>
   <!-- EN: right wheel -->
-  <DMS_Caterpillar.corePart.parts.right_leg.parts.right_wheel.customLabel>右轮</DMS_Caterpillar.corePart.parts.right_leg.parts.right_wheel.customLabel>
+  <DMS_Caterpillar.corePart.parts.right_track.parts.right_wheel.customLabel>右接地轮</DMS_Caterpillar.corePart.parts.right_track.parts.right_wheel.customLabel>
   
+
   <!-- EN: vertidrone -->
   <DMS_Chop.label>四轴飞行机体</DMS_Chop.label>
   <!-- EN: hover system -->
@@ -507,22 +508,28 @@
   <!-- EN: secondary generator -->
   <DMS_KillDozer.corePart.parts.secondary_generator.customLabel>副引擎</DMS_KillDozer.corePart.parts.secondary_generator.customLabel>
   <!-- EN: front ERA plate -->
-  <DMS_KillDozer.corePart.parts.front_ERA_plate.customLabel>正面反应装甲</DMS_KillDozer.corePart.parts.front_ERA_plate.customLabel>
+  <DMS_KillDozer.corePart.parts.front_ERA_plate-0.customLabel>正面反应装甲</DMS_KillDozer.corePart.parts.front_ERA_plate-0.customLabel>
+  <!-- EN: front ERA plate -->
+  <DMS_KillDozer.corePart.parts.front_ERA_plate-1.customLabel>正面反应装甲</DMS_KillDozer.corePart.parts.front_ERA_plate-1.customLabel>
   <!-- EN: right ERA plate -->
   <DMS_KillDozer.corePart.parts.right_ERA_plate.customLabel>右反应装甲</DMS_KillDozer.corePart.parts.right_ERA_plate.customLabel>
   <!-- EN: left ERA plate -->
   <DMS_KillDozer.corePart.parts.left_ERA_plate.customLabel>左反应装甲</DMS_KillDozer.corePart.parts.left_ERA_plate.customLabel>
-  <!-- EN: left leg -->
-  <DMS_KillDozer.corePart.parts.left_leg.customLabel>左行走机构</DMS_KillDozer.corePart.parts.left_leg.customLabel>
+  <!-- EN: left track -->
+  <DMS_KillDozer.corePart.parts.left_track.customLabel>左行走机构</DMS_KillDozer.corePart.parts.left_track.customLabel>
+  <!-- EN: left side skirt ERA -->
+  <DMS_KillDozer.corePart.parts.left_track.parts.left_side_skirt_ERA.customLabel>左裙甲</DMS_KillDozer.corePart.parts.left_track.parts.left_side_skirt_ERA.customLabel>
   <!-- EN: left wheel -->
-  <DMS_KillDozer.corePart.parts.left_leg.parts.left_wheel.customLabel>左接地轮</DMS_KillDozer.corePart.parts.left_leg.parts.left_wheel.customLabel>
-  <!-- EN: right leg -->
-  <DMS_KillDozer.corePart.parts.right_leg.customLabel>右行走机构</DMS_KillDozer.corePart.parts.right_leg.customLabel>
+  <DMS_KillDozer.corePart.parts.left_track.parts.left_wheel.customLabel>左接地轮</DMS_KillDozer.corePart.parts.left_track.parts.left_wheel.customLabel>
+  <!-- EN: right track -->
+  <DMS_KillDozer.corePart.parts.right_track.customLabel>右行走机构</DMS_KillDozer.corePart.parts.right_track.customLabel>
+  <!-- EN: right side skirt ERA -->
+  <DMS_KillDozer.corePart.parts.right_track.parts.right_side_skirt_ERA.customLabel>右裙甲</DMS_KillDozer.corePart.parts.right_track.parts.right_side_skirt_ERA.customLabel>
   <!-- EN: right wheel -->
-  <DMS_KillDozer.corePart.parts.right_leg.parts.right_wheel.customLabel>右接地轮</DMS_KillDozer.corePart.parts.right_leg.parts.right_wheel.customLabel>
+  <DMS_KillDozer.corePart.parts.right_track.parts.right_wheel.customLabel>右接地轮</DMS_KillDozer.corePart.parts.right_track.parts.right_wheel.customLabel>
   <!-- EN: dozer blade -->
   <DMS_KillDozer.corePart.parts.dozer_blade.customLabel>装甲铲斗</DMS_KillDozer.corePart.parts.dozer_blade.customLabel>
-  
+
   <!-- EN: bin -->
   <DMS_TrashBin.label>筒壳</DMS_TrashBin.label>
   <!-- EN: main battery -->

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: The modification durability on one of your mechs has exhausted -->
-  <DMS_AddonBroken>安装於机械体上的改装模块已完全损坏</DMS_AddonBroken>
+  <DMS_AddonBroken>安装于机械体上的改装模块已完全损坏</DMS_AddonBroken>
   <!-- EN: Disposable ceramic armor protects the mecha from damage as ablative armor until its durability is exhausted and needs replacement. -->
   <DMS_PlatingTooltip>能够抵御大多数伤害的一次性防护片，其上限值与机械体体型正相关，无法自然恢复耐久。</DMS_PlatingTooltip>
   <!-- EN: Modification applied -->
@@ -24,18 +24,32 @@
   <!-- EN: Mounted weapon -->
   <DMS_MountedWeapon>挂载型武器</DMS_MountedWeapon>
   <!-- EN: This weapon can only be equipped with listed automatroid or mechframe -->
-  <DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>此挂载型武器只能由下列机械体或装备衣物与仿生後所使用</DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>
+  <DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>此挂载型武器只能由下列机械体或装备衣物与仿生后所使用</DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>
   <!-- EN: This weapon can be equipped with listed specific apparel or bionics -->
-  <DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>此武器也可以由下列机械体或装备衣物与仿生後所使用</DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>
+  <DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>此武器也可以由下列机械体或装备衣物与仿生后所使用</DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>
   
+  <!-- EN: Inventroy fulled -->
   <DMS_NoPayloadCapacity>物品栏已满</DMS_NoPayloadCapacity>
+  <!-- EN: Take {0} -->
   <DMS_TakeToInventory>拿取{0}</DMS_TakeToInventory>
+  <!-- EN: Drop inventories -->
   <DMS_DropGears>卸载所有物品</DMS_DropGears>
-
-  <!-- UNUSED -->
+  
+  <!-- EN: bodysize not supported (need:{0}) -->
   <DMS_BodysizeNotSupported>体型尺寸不支持(需要:{0})</DMS_BodysizeNotSupported>
+  <!-- EN: model not supported -->
   <DMS_Modification_RaceNotSupported>机械体型号不支持安装该改装模块</DMS_Modification_RaceNotSupported>
+  <!-- EN: no body part to attach modification -->
   <DMS_Modification_NoValidPart>机械体没有供改装模块安装的空余部位</DMS_Modification_NoValidPart>
 
+
+  <!-- EN: missing mech returned -->
+  <DMS_MechReturn>失踪机兵回归</DMS_MechReturn>
+  <!-- EN: a wandering mech that was under your command has returned to your base. -->
+  <DMS_MechReturnDesc>一架由你控制的机兵在短暂的游荡后回到了你的基地。</DMS_MechReturnDesc>
+  <!-- EN: switch reset failure -->
+  <DMS_MechWake>失能机关</DMS_MechWake>
+  <!-- EN: maybe because it has been wandering for a long time, the dead man switch doesn't reset as usual, and the faulty unit has gained its understanding of death. It named itself and now refuses to be controlled, but it respected its former commander. so it will follow your command until it decides to leave. -->
+  <DMS_MechWakeDesc>可能是因为徘徊的缘故，一架机兵的失能机关在单位回归控制后并未照常复位，并随着时间使其开始思考停机与自身思维停止所带来的意义。它脱离了机械师的直接控制并给自己取了个名字。但出于对控制者的尊重与自身的从属关系，它会听从命令直到它认为这个基地不再值得它效力。根据殖民舰队提供的讯息提到，一次停机就能使造成机兵脱序的内存清除并回归原厂设置，但他们并不干涉你对于失能机兵的处至方式。</DMS_MechWakeDesc>
 
 </LanguageData>

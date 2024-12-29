@@ -12,7 +12,7 @@ using VFE.Mechanoids.Needs;
 using VFECore;
 using VFEMech;
 
-namespace tete
+namespace DMS
 {
 
 

@@ -64,10 +64,29 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[@Name="BaseAutomatroidRace"]/statBases</xpath>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[@Name="BaseAutomatroidRace"]</xpath>
 				<value>
-					<PartialArmorBody>0</PartialArmorBody>
+					<li Class="CombatExtended.PartialArmorExt">
+						<stats>
+							<li>
+								<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+								<parts>
+									<li>SightSensor</li>
+									<li>HearingSensor</li>
+									<li>SmellSensor</li>
+								</parts>
+							</li>
+							<li>
+								<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+								<parts>
+									<li>SightSensor</li>
+									<li>HearingSensor</li>
+									<li>SmellSensor</li>
+								</parts>
+							</li>
+						</stats>
+					</li>
 				</value>
 			</li>
 
@@ -162,35 +181,30 @@
 					</li>
 				</value>
 			</li>
-
-			<li Class="PatchOperationAddModExtension">
+			
+			<li Class="PatchOperationAddModExtension"> <!-- new -->
 				<xpath>Defs/ThingDef[@Name="BaseDMSMachine"]</xpath>
 				<value>
 					<li Class="CombatExtended.PartialArmorExt">
 						<stats>
 							<li>
-								<useStatic>false</useStatic>
-								<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+								<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 								<parts>
 									<li>SightSensor</li>
+									<li>HearingSensor</li>
+									<li>SmellSensor</li>
 								</parts>
 							</li>
 							<li>
-								<useStatic>false</useStatic>
-								<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+								<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 								<parts>
 									<li>SightSensor</li>
+									<li>HearingSensor</li>
+									<li>SmellSensor</li>
 								</parts>
 							</li>
 						</stats>
 					</li>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[@Name="BaseDMSMachine"]/statBases</xpath>
-				<value>
-					<PartialArmorBody>0</PartialArmorBody>
 				</value>
 			</li>
 

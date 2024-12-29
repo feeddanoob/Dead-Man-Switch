@@ -30,15 +30,17 @@ namespace DMS
             Extension = def.GetModExtension<HumanlikeMechExtension>();
             if (Extension != null)
             {
-                if (outfits == null)
+                outfits ??= new Pawn_OutfitTracker(this);
+                story ??= new Pawn_StoryTracker(this)
                 {
-                    outfits = new Pawn_OutfitTracker(this);
-                }
-                if (story == null)
-                    story = new Pawn_StoryTracker(this);
-                story.bodyType = Extension.bodyTypeOverride;
-                story.headType = Extension.headTypeOverride;
-                story.SkinColorBase = Color.white;
+                    bodyType = Extension.bodyTypeOverride,
+                    headType = Extension.headTypeOverride,
+                    SkinColorBase = Color.white
+                };
+
+                interactions ??= new(this);
+                skills ??= new(this);
+                skills.skills.ForEach(s => s.Level = def.race.mechFixedSkillLevel);
             }
         }
         public override void Kill(DamageInfo? dinfo, Hediff exactCulprit = null)
