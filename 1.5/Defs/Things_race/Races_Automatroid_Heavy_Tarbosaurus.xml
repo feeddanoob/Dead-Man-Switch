@@ -48,12 +48,7 @@
               <ID>heavy machinegun</ID>
               <turret>DMS_HeavyMachineGunMounted</turret>
               <autoAttack>true</autoAttack>
-              <command_ToggleFire>Fire at will</command_ToggleFire>
-              <commandDesc_ToggleFire>Toggle turret to manual control mode to prevent unnecessary shooting.</commandDesc_ToggleFire>
-              <command_Target>Aim at a target</command_Target>
-              <commandDesc_Target>Aim at a desinated target</commandDesc_Target>
               <warmingTime>5</warmingTime>
-              <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>
               <angleOffset>-90</angleOffset>
               <renderNodeProperties>
                 <li>
@@ -85,12 +80,7 @@
               <ID>close inbound system</ID>
               <turret>DMS_ShotgunGunMounted</turret>
               <autoAttack>true</autoAttack>
-              <command_ToggleFire>Fire at will</command_ToggleFire>
-              <commandDesc_ToggleFire>Toggle turret to manual control mode to prevent unnecessary shooting.</commandDesc_ToggleFire>
-              <command_Target>Aim at a target</command_Target>
-              <commandDesc_Target>Aim at a desinated target</commandDesc_Target>
               <warmingTime>2</warmingTime>
-              <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>
               <angleOffset>-90</angleOffset>
               <renderNodeProperties>
                 <li>
