@@ -177,9 +177,8 @@
       </li>
     </tools>
     <butcherProducts>
-      <Tungsteel>15</Tungsteel>
-      <Steel>15</Steel>
-      <ComponentStamped>1</ComponentStamped>
+      <DMS_ChunkSlag>3</DMS_ChunkSlag>
+      <Steel>55</Steel>
     </butcherProducts>
   </ThingDef>
 
@@ -391,9 +390,8 @@
       </li>
     </tools>
     <butcherProducts>
-      <Tungsteel>15</Tungsteel>
-      <Steel>10</Steel>
-      <ComponentStamped>1</ComponentStamped>
+      <DMS_ChunkSlag>3</DMS_ChunkSlag>
+      <Steel>55</Steel>
     </butcherProducts>
     <damageMultipliers>
       <li>

@@ -127,9 +127,9 @@
       </li>
     </tools>
     <butcherProducts>
-      <Tungsteel>30</Tungsteel>
-      <Steel>10</Steel>
-      <ComponentStamped>1</ComponentStamped>
+      <DMS_ChunkSlag>5</DMS_ChunkSlag>
+      <Tungsteel>60</Tungsteel>
+      <Steel>24</Steel>
     </butcherProducts>
     <damageMultipliers>
       <li>
@@ -309,9 +309,9 @@
       </li>
     </tools>
     <butcherProducts>
-      <Tungsteel>35</Tungsteel>
-      <Steel>10</Steel>
-      <ComponentStamped>1</ComponentStamped>
+      <DMS_ChunkSlag>5</DMS_ChunkSlag>
+      <Tungsteel>60</Tungsteel>
+      <Steel>24</Steel>
     </butcherProducts>
     <damageMultipliers>
       <li>
@@ -443,10 +443,10 @@
       </li>
     </tools>
     <butcherProducts>
-      <Tungsteel>30</Tungsteel>
-      <Steel>15</Steel>
-      <DMS_Ceramics>10</DMS_Ceramics>
-      <ComponentStamped>1</ComponentStamped> 
+      <DMS_ChunkSlag>5</DMS_ChunkSlag>
+      <Tungsteel>70</Tungsteel>
+      <Steel>30</Steel>
+      <DMS_Ceramics>40</DMS_Ceramics>
     </butcherProducts>
     <damageMultipliers>
       <li>

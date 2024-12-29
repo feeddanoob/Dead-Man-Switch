@@ -78,7 +78,7 @@
   <RecipeDef ParentName="DMS_LegionMechanoidRecipe">
     <defName>DMS_Make_Dogge</defName>
     <label>Gestate Dogge</label>
-    <researchPrerequisite>DMS_DeadMansSwitch</researchPrerequisite>
+    <researchPrerequisite>DMS_MechBasis</researchPrerequisite>
     <description>Gestate a Dogge Automatroid.</description>
     <products>
       <DMS_Mech_Dogge>1</DMS_Mech_Dogge>
@@ -103,6 +103,14 @@
           </thingDefs>
         </filter>
         <count>7</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentStamped</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
       </li>
     </ingredients>
   </RecipeDef>

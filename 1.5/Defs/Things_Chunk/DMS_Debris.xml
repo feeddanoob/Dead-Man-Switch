@@ -33,6 +33,7 @@
     <saveCompressible>false</saveCompressible>
     <randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
     <rotateInShelves>true</rotateInShelves>
+    <scatterableOnMapGen>true</scatterableOnMapGen>
     <smeltProducts>
       <Tungsteel>10</Tungsteel>
       <DMS_Ceramics>5</DMS_Ceramics>

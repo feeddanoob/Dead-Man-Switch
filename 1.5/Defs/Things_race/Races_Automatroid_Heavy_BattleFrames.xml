@@ -60,6 +60,10 @@
         </BypassMannable>
       </li>
     </modExtensions>
+    <butcherProducts>
+      <DMS_ChunkSlag>1</DMS_ChunkSlag>
+      <Steel>30</Steel>
+    </butcherProducts>
   </ThingDef>
   
   <PawnKindDef ParentName="BaseAutomatroidKind">
@@ -131,6 +135,10 @@
     <killedLeavingsPlayerHostile>
       <ComponentTransmitter>1</ComponentTransmitter>
     </killedLeavingsPlayerHostile>
+    <butcherProducts>
+      <DMS_ChunkSlag>1</DMS_ChunkSlag>
+      <Steel>24</Steel>
+    </butcherProducts>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseAutomatroidKind">
@@ -202,7 +210,7 @@
       </li>
     </modExtensions>
     <butcherProducts>
-      <Steel>15</Steel>
+      <Steel>26</Steel>
     </butcherProducts>
   </ThingDef>
 
@@ -288,7 +296,8 @@
       </li>
     </modExtensions>
     <butcherProducts>
-      <Steel>15</Steel>
+      <DMS_ChunkSlag>2</DMS_ChunkSlag>
+      <Steel>32</Steel>
     </butcherProducts>
   </ThingDef>
 

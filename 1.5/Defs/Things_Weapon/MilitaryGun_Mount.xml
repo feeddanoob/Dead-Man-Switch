@@ -320,6 +320,7 @@
 		<verbs>
 		  <li>
 			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Bullet_Shell_HighExplosive</defaultProjectile>
 			<requireLineOfSight>false</requireLineOfSight>
 			<warmupTime>5</warmupTime>

@@ -42,7 +42,8 @@
       </li>
     </modExtensions>
     <butcherProducts>
-       <Steel>25</Steel>
+      <DMS_ChunkSlag>1</DMS_ChunkSlag>
+      <Steel>35</Steel>
     </butcherProducts>
   </ThingDef>
 
@@ -130,6 +131,7 @@
       </li>
     </comps>
     <butcherProducts>
+      <DMS_ChunkSlag>5</DMS_ChunkSlag>
       <Tungsteel>20</Tungsteel>
       <ComponentStamped>1</ComponentStamped> 
     </butcherProducts>
