@@ -23,12 +23,12 @@
       <mechWeightClass>UltraHeavy</mechWeightClass>
       <detritusLeavings>
         <li>
-          <def>DMS_ChunkSlag_Tungsteel</def>
+          <def>DMS_ChunkSlag</def>
           <texOverrideIndex>7</texOverrideIndex>
           <spawnChance>0.4</spawnChance>
         </li>
         <li>
-          <def>DMS_ChunkSlag_Tungsteel</def>
+          <def>DMS_ChunkSlag</def>
           <texOverrideIndex>4</texOverrideIndex>
           <spawnChance>0.4</spawnChance>
         </li>

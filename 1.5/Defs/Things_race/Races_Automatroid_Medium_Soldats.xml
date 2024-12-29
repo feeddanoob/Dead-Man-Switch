@@ -17,12 +17,12 @@
       <mechWeightClass>Medium</mechWeightClass>
       <detritusLeavings Inherit="false">
         <li>
-          <def>DMS_ChunkSlag_Tungsteel</def>
+          <def>DMS_ChunkSlag</def>
           <texOverrideIndex>3</texOverrideIndex>
           <spawnChance>0.1</spawnChance>
         </li>
         <li>
-          <def>DMS_ChunkSlag_Tungsteel</def>
+          <def>DMS_ChunkSlag</def>
           <texOverrideIndex>8</texOverrideIndex>
           <spawnChance>0.1</spawnChance>
         </li>

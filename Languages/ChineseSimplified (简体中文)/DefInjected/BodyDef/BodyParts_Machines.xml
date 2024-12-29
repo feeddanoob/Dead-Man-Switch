@@ -101,7 +101,6 @@
   <!-- EN: right wheel -->
   <DMS_Caterpillar.corePart.parts.right_track.parts.right_wheel.customLabel>右接地轮</DMS_Caterpillar.corePart.parts.right_track.parts.right_wheel.customLabel>
   
-
   <!-- EN: vertidrone -->
   <DMS_Chop.label>四轴飞行机体</DMS_Chop.label>
   <!-- EN: hover system -->
@@ -529,7 +528,7 @@
   <DMS_KillDozer.corePart.parts.right_track.parts.right_wheel.customLabel>右接地轮</DMS_KillDozer.corePart.parts.right_track.parts.right_wheel.customLabel>
   <!-- EN: dozer blade -->
   <DMS_KillDozer.corePart.parts.dozer_blade.customLabel>装甲铲斗</DMS_KillDozer.corePart.parts.dozer_blade.customLabel>
-
+  
   <!-- EN: bin -->
   <DMS_TrashBin.label>筒壳</DMS_TrashBin.label>
   <!-- EN: main battery -->
