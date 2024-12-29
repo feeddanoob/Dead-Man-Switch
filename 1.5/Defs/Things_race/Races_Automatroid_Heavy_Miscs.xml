@@ -204,7 +204,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/hermitCrab</texPath>
+          <texPath>Things/Automatroid/OldTexture/hermitCrab</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2.5</drawSize>

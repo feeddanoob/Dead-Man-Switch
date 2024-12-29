@@ -257,7 +257,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/chad</texPath>
+          <texPath>Things/Automatroid/OldTexture/chad</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.5</drawSize>

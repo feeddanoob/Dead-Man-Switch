@@ -21,6 +21,18 @@
       <baseBodySize>3.5</baseBodySize>
       <baseHealthScale>5.7</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
+      <detritusLeavings>
+        <li>
+          <def>DMS_ChunkSlag_Tungsteel</def>
+          <texOverrideIndex>7</texOverrideIndex>
+          <spawnChance>0.4</spawnChance>
+        </li>
+        <li>
+          <def>DMS_ChunkSlag_Tungsteel</def>
+          <texOverrideIndex>4</texOverrideIndex>
+          <spawnChance>0.4</spawnChance>
+        </li>
+      </detritusLeavings>
     </race>
     <comps>
 		  <li Class="DMS.CompProperties_VehicleWeapon">

@@ -15,6 +15,18 @@
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
+      <detritusLeavings Inherit="false">
+        <li>
+          <def>DMS_ChunkSlag_Tungsteel</def>
+          <texOverrideIndex>3</texOverrideIndex>
+          <spawnChance>0.1</spawnChance>
+        </li>
+        <li>
+          <def>DMS_ChunkSlag_Tungsteel</def>
+          <texOverrideIndex>8</texOverrideIndex>
+          <spawnChance>0.1</spawnChance>
+        </li>
+      </detritusLeavings>
     </race>
   </ThingDef>
 

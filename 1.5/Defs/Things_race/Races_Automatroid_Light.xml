@@ -109,7 +109,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/falcon</texPath>
+          <texPath>Things/Automatroid/OldTexture/falcon</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.2</drawSize>
@@ -171,7 +171,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/noctula</texPath>
+          <texPath>Things/Automatroid/OldTexture/noctula</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.2</drawSize>

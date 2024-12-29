@@ -228,7 +228,7 @@
       <disallowedThingDefs>
         <!-- <li MayRequire="aoba.fortress.industrial">FT_BlocksConcrete</li> -->
         <li MayRequire="aoba.fortress.industrial">FT_WoodConcrete</li>
-		    <li MayRequire="aoba.fortress.industrial">FT_ReinforcedConcreteBag</li>
+        <li MayRequire="aoba.fortress.industrial">FT_ReinforcedConcreteBag</li>
       </disallowedThingDefs>
       <thingDefs>
         <li>Steel</li>

@@ -21,6 +21,18 @@
       <baseBodySize>3</baseBodySize>
       <baseHealthScale>5</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
+      <detritusLeavings>
+        <li>
+          <def>DMS_ChunkSlag_Tungsteel</def>
+          <texOverrideIndex>6</texOverrideIndex>
+          <spawnChance>0.4</spawnChance>
+        </li>
+        <li>
+          <def>DMS_ChunkSlag_Tungsteel</def>
+          <texOverrideIndex>1</texOverrideIndex>
+          <spawnChance>0.4</spawnChance>
+        </li>
+      </detritusLeavings>
     </race>
     <comps>
       <li Class="CompProperties_ProjectileInterceptor">
@@ -230,7 +242,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/geochelone</texPath>
+          <texPath>Things/Automatroid/OldTexture/geochelone</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2.75</drawSize>
@@ -335,7 +347,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/caterpillar</texPath>
+          <texPath>Things/Automatroid/OldTexture/caterpillar</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>3.5</drawSize>
@@ -537,7 +549,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/killdozer_ERA</texPath>
+          <texPath>Things/Automatroid/OldTexture/killdozer_ERA</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>4.05</drawSize>

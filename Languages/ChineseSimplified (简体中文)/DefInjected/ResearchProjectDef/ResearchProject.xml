@@ -73,16 +73,7 @@
   <DMS_Legion.label>军团机兵</DMS_Legion.label>
   <!-- EN: This series of automatroids are designed for large-scale warfare. They have simple weapon control systems and can't wield heavy weapons, but ease of production and cheap costs leads to these units being the backbone of many automatroid gunnery lines. -->
   <DMS_Legion.description>为大规模战争而设计的一系列机兵。它们大多只有简单的武器操作系统，但其明确的分工和低廉的生产成本使其成为服役规模方面最令人印象深刻的作战武器。</DMS_Legion.description>
-  <!-- EN:
-    <li>subject->metallic tide</li>
-    <li>subject->marching steel</li>
-    <li>subject->Legion</li>
-    <li>subject_story->commanded a Legion company to defend the Zaporizhzhia Energy Center during the Third Europa War</li>
-    <li>subject_story->developed The doctrine of machine-armor coordination based on war experience</li>
-    <li>subject_story->stole this technology during the war with the colonial fleet</li>
-    <li>subject_gerund->operating a Legion task force</li>
-    <li>subject_gerund->serving as a commander in the war</li>
-  -->
+
   <DMS_Legion.generalRules.rulesStrings>
     <li>subject->合金浪潮</li>
     <li>subject->钢铁行军</li>
@@ -99,14 +90,7 @@
   <DMS_Material.label>先进材料学</DMS_Material.label>
   <!-- EN: Harness the power of extreme heat and immense pressure to obliterate impurities from steel and stone to create Tungsteel and Ceramic plating. -->
   <DMS_Material.description>"透过科学方法可以计算出完美的材料"，这是人类有史以来取得的重大突破之一。</DMS_Material.description>
-  <!-- EN:
-    <li>subject->Advanced material</li>
-    <li>subject_story->completed the periodic table of chemical elements</li>
-    <li>subject_story->calculated the alloy material ratio of high-strength materials through neutron number</li>
-    <li>subject_story->describes the influence of high pressure environment applied on material</li>
-    <li>subject_story->summarized the metal crystal phase prediction under gravity-free conditions</li>
-    <li>subject_gerund->calculating perfect material ratio</li>
-  -->
+
   <DMS_Material.generalRules.rulesStrings>
     <li>subject->先进材料</li>
     <li>subject_story->总结了如何透过科学方法来提纯自然界中的绝大部分元素</li>
@@ -120,9 +104,7 @@
   <DMS_MechBasis.label>机甲齿轮</DMS_MechBasis.label>
   <!-- EN: Mecha Gear originated as a term for future machinery designs which were unobtainable with old technology. \n\nHowever a millenia of advancements in material construction has seen these previously unrealistic designs become feasible. -->
   <DMS_MechBasis.description>“机甲齿轮”是一个涵盖近代机械工程学设计模式的术语，最初是讽刺那些科幻作品中脱离现实的夸张设计。\n\n 然而，经过数千年的发明和改进，先进的材料已经成为将这些设计付诸实践的基础。</DMS_MechBasis.description>
-  <!-- EN:
 
-  -->
   <DMS_MechBasis.generalRules.rulesStrings>
     <li>subject->机甲齿轮</li>
     <li>subject->从科幻小说到工业设计</li>
@@ -184,12 +166,6 @@
   <DMS_Synthroid.label>次世代兵器</DMS_Synthroid.label>
   <!-- EN: Weapons development centered around biomechanical hybrids continued until World War IV, where it had reached incomprehensible heights.\n\nThis was the beginning of the next-generation weapons that would ultimately lead to the destruction of the planet. Unlocks the Tarbosaurus, a fearsome predatory Automatroid shaped after the mighty carnotaurus capable of hosting enough firepower to destroy entire cities if left unchecked. -->
   <DMS_Synthroid.description>围绕生物-机械混合的军备竞赛一直持续到第四次世界大战，在人类能意识到问题前早已达到了无法想像的高度。\n\n在此之后便是所谓的"次世代武器"及其带来的次世代战争的开始，那是一场几乎终结了地球的战争。</DMS_Synthroid.description>
-
-  <!-- <DMS_Synthroid.generalRules.rulesStrings>
-    <li>subject->次世代战争</li>
-    <li>subject->生物机械混合</li>
-    <li>subject->军用生命</li>
-  </DMS_Synthroid.generalRules.rulesStrings> -->
   
   <!-- EN: Foundational Drone Tech -->
   <DMS_UAVBasis.label>无人机基础</DMS_UAVBasis.label>

@@ -80,7 +80,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/battleFrame</texPath>
+          <texPath>Things/Automatroid/OldTexture/battleFrame</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2.75</drawSize>
@@ -98,7 +98,7 @@
     <!--戰鬥框架的機械師中繼改裝型號-->
   <ThingDef ParentName="BaseBattleFrame">
     <defName>DMS_Mech_FieldCommand</defName>
-    <label>Field Commander</label>
+    <label>Field Command</label>
     <description>A battle friend subvariant. It functions as a mechanitor command relay, however due to the weight of the relay equipment it can only use a light weapon.</description>
     <statBases>
       <MoveSpeed>3.3</MoveSpeed>
@@ -151,7 +151,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/FieldCommand</texPath>
+          <texPath>Things/Automatroid/OldTexture/FieldCommand</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2.75</drawSize>
@@ -226,7 +226,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/escortLifter</texPath>
+          <texPath>Things/Automatroid/OldTexture/escortLifter</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2.75</drawSize>
@@ -310,7 +310,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/shaftWorker</texPath>
+          <texPath>Things/Automatroid/OldTexture/shaftWorker</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>3.5</drawSize>
