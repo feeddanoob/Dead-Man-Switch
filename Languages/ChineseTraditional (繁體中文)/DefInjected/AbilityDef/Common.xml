@@ -16,7 +16,7 @@
   <!-- EN: launch missile -->
   <DMS_MissileLauncher.label>攻頂導彈</DMS_MissileLauncher.label>
   <!-- EN: launch a long range top-down attack missile to destory enemies, the missile takes long time to reload. -->
-  <DMS_MissileLauncher.description>發射一枚制導導彈從上而下的遠程曲射打擊目標，這種導彈十分致命但需要一定的時間來復裝。</DMS_MissileLauncher.description>
+  <DMS_MissileLauncher.description>發射一枚製導導彈從上而下的遠程曲射打擊目標，這種導彈十分致命但需要一定的時間來復裝。</DMS_MissileLauncher.description>
   
   <!-- EN: fission overload -->
   <DMS_NuclearOverload.label>臨界超載</DMS_NuclearOverload.label>
