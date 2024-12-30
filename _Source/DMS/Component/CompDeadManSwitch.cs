@@ -141,11 +141,11 @@ namespace DMS
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            if (Prefs.DevMode) 
+            if (Prefs.DevMode && DebugSettings.godMode) 
             {
                 yield return new Command_Action()
                 {
-                    defaultLabel = "Check State",
+                    defaultLabel = "Debug: Check State",
                     action = () => 
                     {
                         Log.Message(this.woken);
@@ -155,7 +155,7 @@ namespace DMS
                 };
                 yield return new Command_Action()
                 {
-                    defaultLabel = "Wake",
+                    defaultLabel = "Debug: Wake",
                     action = () =>
                     {
                         this.Wake();
@@ -179,7 +179,7 @@ namespace DMS
     public class CompProperties_DeadManSwitch : CompProperties
     {
         public int minDelayUntilDMS = 3000;
-        public float wakingChance= 0.3f;
+        public float wakingChance= 0.5f;
         public RulePackDef nameRule;
         public CompProperties_DeadManSwitch()
         {

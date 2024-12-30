@@ -33,18 +33,16 @@ namespace DMS
             Pawn mech = (Pawn)this.lostMechs.First();
             CompDeadManSwitch comp = mech.GetComp<CompDeadManSwitch>();
             Pawn overseer = comp.Overseer;
-            if (!mech.Spawned && overseer != null && overseer.Map != null && RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 pos,
-                overseer.Map, 0.3f))
+            if (!mech.Spawned && overseer != null && overseer.Map != null && RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 pos, overseer.Map, 0.3f))
             {
                 GenSpawn.Spawn(mech, pos, overseer.Map);
             }
             this.timeToReturn = Rand.Range(3 * GenDate.TicksPerDay, 10 * GenDate.TicksPerDay);
-            Find.LetterStack.ReceiveLetter("DMS_MechReturn".Translate(), "DMS_MechReturnDesc".Translate()
-                ,LetterDefOf.PositiveEvent,mech);
-            if (Rand.Chance(comp.Props.wakingChance)) 
+            Find.LetterStack.ReceiveLetter("DMS_MechReturn".Translate(), "DMS_MechReturnDesc".Translate(), LetterDefOf.PositiveEvent, mech);
+            if (Rand.Chance(comp.Props.wakingChance))
             {
                 comp.woken_Lurk = true;
-                comp.timeToWake = Rand.Range(1 * GenDate.TicksPerDay,2 * GenDate.TicksPerDay);
+                comp.timeToWake = Rand.Range(1 * GenDate.TicksPerDay, 2 * GenDate.TicksPerDay);
             }
         }
 
