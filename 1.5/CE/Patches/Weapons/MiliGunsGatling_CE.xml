@@ -22,7 +22,7 @@
                     <burstShotCount>40</burstShotCount>
                     <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
                     <warmupTime>1.35</warmupTime>
-                    <range>75</range>
+                    <range>80</range>
                     <soundCast>Shot_Autocannon</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>14</muzzleFlashScale>
@@ -67,7 +67,7 @@
 					<burstShotCount>25</burstShotCount>
 					<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
                     <warmupTime>0.8</warmupTime>
-                    <range>62</range>
+                    <range>75</range>
                     <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
                     <soundCastTail>GunTail_Medium</soundCastTail>
                     <muzzleFlashScale>14</muzzleFlashScale>
@@ -114,7 +114,7 @@
 					<burstShotCount>25</burstShotCount>
 					<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
                     <warmupTime>0.8</warmupTime>
-                    <range>62</range>
+                    <range>68</range>
                     <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
                     <soundCastTail>GunTail_Medium</soundCastTail>
                     <muzzleFlashScale>14</muzzleFlashScale>
@@ -161,7 +161,7 @@
 					<burstShotCount>30</burstShotCount>
 					<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
                     <warmupTime>1</warmupTime>
-                    <range>75</range>
+                    <range>78</range>
                     <soundCast>Shot_Autocannon</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>12</muzzleFlashScale>

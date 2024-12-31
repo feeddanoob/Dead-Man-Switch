@@ -46,7 +46,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
 				<warmupTime>1.8</warmupTime>
-				<range>25.9</range>
+				<range>30.9</range>
 				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
 				<burstShotCount>30</burstShotCount>
 				<soundCast>Shot_Minigun</soundCast>
@@ -115,7 +115,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_Kord</defaultProjectile>
 				<warmupTime>2</warmupTime>
-				<range>29.9</range>
+				<range>39.9</range>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<burstShotCount>15</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
@@ -189,7 +189,7 @@
 				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
 				<minRange>8</minRange>
-				<range>34.9</range>
+				<range>39.9</range>
 				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 				<burstShotCount>24</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
@@ -253,7 +253,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
-				<range>34.9</range>
+				<range>44.9</range>
 				<minRange>1.9</minRange>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>30</burstShotCount>
