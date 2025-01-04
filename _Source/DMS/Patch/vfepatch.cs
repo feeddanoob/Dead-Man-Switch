@@ -14,8 +14,6 @@ using VFEMech;
 
 namespace DMS
 {
-
-
     [HarmonyPatch(typeof(CompMachineChargingStation))]
    
     static class CompMachineChargingStation_Patch

@@ -16,29 +16,31 @@
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
     <defName>DMS_UAVBasis</defName>
-    <label>Foundational Drone Tech</label>
-    <description>Use simple logic gates and signal transceivers to unlock the use basic mechanical units.</description>
+    <label>Foundational drone tech</label>
+    <description>Using simple sensors and transceivers to achieve simple but practical drone systems.</description>
     <baseCost>200</baseCost>
     <requiredResearchBuilding Inherit="False"/>
     <techLevel>Industrial</techLevel>
     <prerequisites>
-      <li>Electricity</li>
       <li>Machining</li>
     </prerequisites>
     <researchViewX>0.00</researchViewX>
     <researchViewY>3.50</researchViewY>
     <generalRules>
       <rulesStrings>
-        <li>subject->Hive network and unmanned warfare</li>
-        <li>subject->Automata warfare</li>
+        <li>subject->Hive network and drone warfare</li>
+        <li>subject->automata of the war</li>
+        <li>subject->lidar lock-on</li>
 
-        <li>subject_story->forced to survive in a highly unmanned military conflict zone</li>
+        <li>subject_story->survived in a highly unmanned military conflict zone</li>
         <li>subject_story->works as a supervisor for unmanned transportation systems in a warehouse</li>
         <li>subject_story->performed drone attack during the war againist mechanoids</li>
         <li>subject_story->established  a special service team composed of mech dogs and quickly achieved outstanding results</li>
         <li>subject_story->participated in a semiconductor industrial revolution at a midworld planet</li>
 
         <li>subject_gerund->optimizing machine learning algorithms</li>
+        <li>subject_gerund->advocating for limits on autonomous weapons</li>
+        <li>subject_gerund->exploring the possibility of autonomous weapons</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
@@ -46,7 +48,7 @@
   <ResearchProjectDef ParentName="DMS_BaseTech">
     <defName>DMS_Material</defName>
     <label>Material Engineering</label>
-    <description>Harness the power of extreme heat and immense pressure to obliterate impurities from steel and stone to create Tungsteel and Ceramic plating.</description>
+    <description>Using the power of extreme heat and pressure to obliterate impurities from steel and stone to create tungsteel alloy and military-grade ceramic plate.</description>
     <baseCost>1000</baseCost>
     <requiredResearchBuilding Inherit="False"/>
     <prerequisites>
@@ -56,14 +58,19 @@
     <researchViewY>2.50</researchViewY>
     <generalRules>
       <rulesStrings>
-        <li>subject->Advanced material</li>
+        <li>subject->emerging materials</li>
+        <li>subject->advanced materials</li>
+        <li>subject->military-grade materials</li>
 
         <li>subject_story->completed the periodic table of chemical elements</li>
         <li>subject_story->calculated the alloy material ratio of high-strength materials through neutron number</li>
         <li>subject_story->describes the influence of high pressure environment applied on material</li>
         <li>subject_story->summarized the metal crystal phase prediction under gravity-free conditions</li>
+        <li>subject_story->experimented with gravity-free metal processing and contribute to materials science</li>
 
+        <li>subject_gerund->improving the production process</li>
         <li>subject_gerund->calculating perfect material ratio</li>
+        <li>subject_gerund->testing the defensive performance of different materials against emerging thermal weapons</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
@@ -84,16 +91,17 @@
       <rulesStrings>
         <li>subject->artificial fiber</li>
         <li>subject->chemical industries</li>
-        <li>subject->Acrylic Genesis</li>
+        <li>subject->acrylic Genesis</li>
 
         <li>subject_story->explained the importance of the chemical industry to the production of synthetic fibers</li>
         <li>subject_story->summarized the improvement effect of composite fiber blending process on fabric strength</li>
         <li>subject_story->described the production revolution of traditional textile industry</li>
         <li>subject_story->summarized the synthetic production under gravity-free conditions</li>
+        <li>subject_story->facilitated the connection between the genetics industry and the chemical industry</li>
 
         <li>subject_gerund->synthesising organic compound</li>
-        <li>subject_gerund->改善生产工艺</li>
-        <li>subject_gerund->推进织物韧性的改进</li>
+        <li>subject_gerund->improving the production process</li>
+        <li>subject_gerund->advancing the improvement of fabric industries</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
@@ -101,7 +109,7 @@
   <ResearchProjectDef ParentName="DMS_BaseTech" MayRequire="Ludeon.Rimworld.Biotech">
     <defName>DMS_Automatroid</defName>
     <label>Automatroid Basis</label>
-    <description>Automatroids are weapons capable of independent thought used to destroy their adversaries without human input. \n\nThese morally ambigious machines became common place as replacements for front-line infantrymen due to their lack of value for human life.</description>
+    <description>Automatroids are autonomous weapons capable of executing tactical missions without overseer intervals. \n\n These autonomous machines became commonplace as replacements or opponents for front-line infantry because the treaty in 2026 AD that was supposed to regulate its development was opposed by the major powers of the time.</description>
     <baseCost>300</baseCost>
     <requiredResearchBuilding Inherit="False"/>
     <techLevel>Industrial</techLevel>
@@ -110,12 +118,29 @@
     </prerequisites>
     <researchViewX>1.00</researchViewX>
     <researchViewY>3.50</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->autonomous Weapons</li>
+        <li>subject->Killer Robot</li>
+        <li>subject->automatroid</li>
+
+        <li>subject_story->predicted the consequences of a large number of unregulated loitering weapons are considerable</li>
+        <li>subject_story->discussed the contribution of pre-trained models to mechanical automation</li>
+        <li>subject_story->described the relationship between humans and drones is no longer just a relationship between tools and users</li>
+        <li>subject_story->condemned the rejection of the treaty in 2026 AD which intended to regulate the development of killer robots</li>
+        <li>subject_story->collected a large amount of historical documents before The Next Generation War</li>
+
+        <li>subject_gerund->participating in the technological iteration of autonomous robots</li>
+        <li>subject_gerund->reverse engineering from technical data from the decrypt data.</li>
+        <li>subject_gerund->reviewing the technical relevance between mechanoids and automatroids</li>
+      </rulesStrings>
+    </generalRules>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
     <defName>DMS_MechBasis</defName>
     <label>Mecha Gear</label>
-    <description>Mecha Gear originated as a term for future machinery designs which were unobtainable with old technology. \n\nHowever a millenia of advancements in material construction has seen these previously unrealistic designs become feasible.</description>
+    <description>"Mecha Gear" originated as a term for future machinery designs which were unobtainable with old technology. \n\nHowever a millenia of advancements in material construction has seen these previously unrealistic designs become feasible.</description>
     <baseCost>500</baseCost>
     <requiredResearchBuilding Inherit="False"/>
     <techLevel>Industrial</techLevel>
@@ -129,19 +154,17 @@
     <generalRules>
       <rulesStrings>
         <li>subject->mecha gear</li>
-        <li>subject->from science fiction to engineering theory</li>
-        <li>subject->bipedal machinery</li>
-        <li>subject->walking upright</li>
+        <li>subject->from science fiction to practical engineering</li>
+        <li>subject->standing on the horizon</li>
 
-        <!-- 解釋了柔性自鎖結構對於全向關節耐用性的大幅優化. -->
         <li>subject_story->explained the substantial optimization of the flexible self-locking structure for the durability of omnidirectional joints.</li>
-        <!-- 總結了應用電磁軸承對於往復式運動結構的改善 -->
         <li>subject_story->summarized the improvement of reciprocating motion structures using electromagnetic bearings</li>
-        <!-- 講解了多級嵌套的緩衝齒輪如何在高強度活動時吸收並再利用衝擊力。 -->
-        <li>subject_story->described how multi-level, nested cushioning gears absorb and reuse impact forces during high-intensity activities</li>
+        <li>subject_story->described how multi-level, nested cushioning gears absorb and reuse impact forces during high-intensity activities</li>     
+        <li>subject_story->served as a military advisor in the military</li>
         
-        <li>subject_gerund->working for a mecha manufacture company</li>
-        <li>subject_gerund->piloting a robot for space junk recovery operations</li>
+        <li>subject_gerund->improving the production process</li>
+        <li>subject_gerund->working for an automatroid manufacturing complex</li>
+        <li>subject_gerund->piloting a heavy exoskeleton to operate military missions</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
@@ -162,18 +185,18 @@
     <generalRules>
       <rulesStrings>
         <li>subject->metallic tide</li>
-        <li>subject->marching steel</li>
-        <li>subject->Legion</li>
+        <li>subject->the marching tide</li>
+        <li>subject->Legion on march</li>
 
-        <!-- 在歐羅巴戰爭中指揮一個排的軍團機兵防禦了札波羅熱能源中樞 -->
-        <li>subject_story->commanded a Legion company to defend the Zaporizhzhia Energy Center during the Third Europa War</li>
-        <!-- 出於戰爭經驗發展出了機兵裝甲協同學說 -->
-        <li>subject_story->developed The doctrine of machine-armor coordination based on war experience</li>
-        <!-- 在與殖民艦隊的戰爭中竊取到這個技術 -->
-        <li>subject_story->stole this technology during the war with the colonial fleet</li>
+        <li>subject_story->commanded a Legion company to defend the Zaporizhzhia energy center during the Third Europa War</li>
+        <li>subject_story->developed the doctrine of machine-armor coordination based on war experience</li>
+        <li>subject_story->recovered this technology from the buried ancient facility in a rimworld planet</li>
+        <li>subject_story->researching and optimizing this technology to make use of it</li>
+        <li>subject_story->obtained part of this technology during the encounter with outlaw militants</li>
         
         <li>subject_gerund->operating a Legion task force</li>
         <li>subject_gerund->serving as a commander in the war</li>
+        <li>subject_gerund->improving the production process</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
@@ -190,13 +213,30 @@
     </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>2.50</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->nerves-accessed</li>
+        <li>subject->artificial nerve</li>
+        <li>subject->bipedal machinery</li>
+
+        <li>subject_story->realized the vulnerability of human flesh in the battlefield</li>
+        <li>subject_story->provided medical care to the disabled by converting mechanical remain into prosthetic limbs</li>
+        <li>subject_story->lamented that humans had to transform themselves to adapt to the increasingly mechanized warfare</li>
+        <li>subject_story->lost most of body parts due to exploded bomb while scavenging at a battlefield site</li>
+        <li>subject_story->collected a large amount of historical documents before The Next Generation War</li>
+
+        <li>subject_gerund->making prosthetic surgery affordable for every disabled person in Rimworld</li>
+        <li>subject_gerund->helping every disabled person to stand up again</li>
+        <li>subject_gerund->providing battlefield medical guidance in the Colonial Fleet Humanitarian Support Organization</li>
+      </rulesStrings>
+    </generalRules>
   </ResearchProjectDef>
 
   <!-- T1 -->
   <ResearchProjectDef ParentName="DMS_BaseTech">
     <defName>DMS_DeadMansSwitch</defName>
     <label>Dead Man's Switch</label>
-    <description>The Dead Man's Switch is a failsafe mechanism intended to induce a self-destruct sequence in connected mechs when the operator becomes incapacitated. \n\nResearchers realized this failsafe mechanism made artificial intelligence understand the meaning of death and self preservation, which had significant ramifications for humanity.\n\nUnlocks the ability to construct Decoy Antennas which will attract a group of rogue automatroids to the transponder.</description>
+    <description>The Dead Man's Switch is a failsafe mechanism intended to induce the self-halt sequence when the overseer is incapated. \n\nResearchers realized this failsafe mechanism not only solved the halted problem but also made artificial intelligence understand the meaning of death and self-preservation, which had significant ramifications for humanity.\n\nUnlocks the construct of Decoy Antennas which will attract a group of rogue automatroids to the transponder.</description>
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -205,6 +245,22 @@
     </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>3.50</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->Halted problem</li>
+        <li>subject->Solution unsolved</li>
+        <li>subject->bipedal machinery</li>
+
+        <li>subject_story->quoted algorithm engineer Yánzhi Jiang's overview: "Machines cannot judge whether they can get results within a limited time, and humans cannot either."</li>
+        <li>subject_story->completed the historical collection of Earth's Space era on a glitterworld</li>
+        <li>subject_story->participated in the Ordo Historia's investigation and research project on the Colonial Fleet</li>
+        <li>subject_story->collected a large amount of historical documents before The Next Generation War</li>
+
+        <li>subject_gerund->reinventing this technology by investigating ancient databases</li>
+        <li>subject_gerund->thinking about the meaning of lifeform and the loneliness of mankind</li>
+        <li>subject_gerund->exploring human possibilities and how to avoid repeating past mistakes of mechanoid again</li>
+      </rulesStrings>
+    </generalRules>
     <discoveredLetterTitle>About: Advanced Parts</discoveredLetterTitle>
     <discoveredLetterText>Some advanced automatroids require specific parts which are only manufactured in low gravity environments.\n\nColonial High Command turns a blind eye to attracting and destroying their rogue automatroids which will contain the components required for further progression.</discoveredLetterText>
   </ResearchProjectDef>
@@ -221,6 +277,23 @@
     </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>1.15</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->bio-machine symbiosis</li>
+        <li>subject->nerves and wiring</li>
+        <li>subject->biological machinery</li>
+
+        <li>subject_story->analyzed this technology in depth and received a severe warning from the Colonial Fleet</li>
+        <li>subject_story->achieved artificial synthesis of life under limited conditions by reverse engineering the technology</li>
+        <li>subject_story->completed the historical collection of Earth's Space era on a glitterworld</li>
+        <li>subject_story->participated in the Ordo Historia's investigation and research project on the Colonial Fleet</li>
+        <li>subject_story->collected a large amount of historical documents before The Next Generation War</li>
+
+        <li>subject_gerund->reinventing this technology by investigating ancient databases</li>
+        <li>subject_gerund->thinking about the blurred line between organic and mechanic</li>
+        <li>subject_gerund->investigating hidden truth the Colonial Fleet tried hard to conceal behind this technology</li>
+      </rulesStrings>
+    </generalRules>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
@@ -255,6 +328,23 @@
     <requiredAnalyzed>
       <li>ComponentTransmitter</li>
     </requiredAnalyzed>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->cluster control</li>
+        <li>subject->harmony of cluster behavior</li>
+        <li>subject->grand mechanized theory</li>
+
+        <li>subject_story->participated in the Ordo Historia's investigation and research project on the Colonial Fleet</li>
+        <li>subject_story->believes that developing drone autonomy is the key to breaking away from the tool-like relationship between humans and machines and unlocking their potential</li>
+        <li>subject_story->recreated the technology based on a recovered Sakalava colony</li>
+        <li>subject_story->realizing long-distance anti-interference control through artificially induced psychic reactions</li>
+        <li>subject_story->discovered that machines controlled by psychic reactions would retain part of the consciousness of the operator</li>
+
+        <li>subject_gerund->recovering ancient autonomous weapons</li>
+        <li>subject_gerund->reverse engineering from ancient technology</li>
+        <li>subject_gerund->exploring the relationship between collectivity and autonomy</li>
+      </rulesStrings>
+    </generalRules>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">
@@ -361,7 +451,7 @@
   <ResearchProjectDef ParentName="DMS_BaseTech">
     <defName>DMS_Hypothesis</defName>
     <label>Wetware Hypothesis</label>
-    <description>After the discovery of the Dead Man's Switch, an AI algorithm engineer proposed a hypothetical solution to the halting problem caused by a loss of directional control of the automatroids. \n\n Wetware was created as a proof of concept, serving as an organic brain activated in a series with the Dead Man's Switch enabling Automatroids to awaken and continue fighting after their operator has died. Preliminary tests indicated a portion of the operator's personality was transposed into the Automatroid- but such reports dissapeared as quickly as they were made. Allows for the construction of Decoy Radars and heavier Automatroids, as well as the synthesis of Wetware Computers.</description>
+    <description>After the discovery of the Dead Man's Switch, an AI algorithm engineer Yánzhi Jiang proposed a hypothetical solution to the halting problem. \n\n Wetware was created as a proof of concept, serving as an organic brain activated in a series with the Dead Man's Switch enabling Automatroids to awaken and continue fighting after their operator has disabled. Preliminary tests indicated a portion of the operator's personality was transposed into the Automatroid- but such reports dissapeared as quickly as they were made. Allows for the construction of Decoy Radars and heavier Automatroids, as well as the synthesis of Wetware Computers.</description>
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -373,6 +463,23 @@
     <requiredAnalyzed>
       <li>Neurocomputer</li>
     </requiredAnalyzed>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->in short Hypothesis</li>
+        <li>subject->the solution</li>
+        <li>subject->wetware machinery</li>
+
+        <li>subject_story->quoted algorithm engineer Yánzhi Jiang's overview: "The meaning of life is carrying information of its iteration, information about genes and traits, reaction to the environment, and mindless thoughts on everything"</li>
+        <li>subject_story->analyzed this technology in depth and received a severe warning from the Colonial Fleet</li>
+        <li>subject_story->achieved artificial synthesis of life under limited conditions by reverse engineering the technology</li>
+        <li>subject_story->learned about a method to mass produce wetware through biological cultivation</li>
+        <li>subject_story->collected a large amount of historical documents before The Next Generation War</li>
+
+        <li>subject_gerund->escaping from the pursuit and assassination of countless colonial fleets</li>
+        <li>subject_gerund->thinking about the blurred line between organic and mechanic</li>
+        <li>subject_gerund->investigating hidden truth the Colonial Fleet tried hard to conceal behind this technology</li>
+      </rulesStrings>
+    </generalRules>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="DMS_BaseTech">

@@ -18,5 +18,11 @@ namespace DMS
         {
             return ___pawn != null && !___pawn.def.race.IsMechanoid;
         }
+        [HarmonyPrefix]
+        [HarmonyPatch(nameof(SkillRecord.Interval))]
+        public static bool Interval(Pawn ___pawn)
+        {
+            return ___pawn != null && !___pawn.def.race.IsMechanoid;
+        }
     }
 }

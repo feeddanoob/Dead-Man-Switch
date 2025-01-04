@@ -637,6 +637,7 @@
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>DMS_Synthroid</li>
+				<li>DMS_EquipmentHeavy</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>8</Crafting>

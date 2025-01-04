@@ -16,6 +16,9 @@ namespace DMS
         {
             base.SpawnSetup(map, respawningAfterLoad);
             MechWeapon = def.GetModExtension<MechWeaponExtension>();
+            interactions ??= new(this);
+            skills ??= new(this);
+            skills.skills.ForEach(s => s.Level = def.race.mechFixedSkillLevel);
         }
         public override void Kill(DamageInfo? dinfo, Hediff exactCulprit = null)
         {

@@ -108,13 +108,13 @@
   <DMS_Mechlink.label>集群收发器</DMS_Mechlink.label>
   <DMS_Mechlink.description>集群收发器是人类开发的一种在战争中控制机兵的方式，当然的对于那些产生自我意识的机兵来说，这种方式并不是很舒服。</DMS_Mechlink.description>
   
-  <DMS_MechBasis.generalRules.rulesStrings>
+  <DMS_Mechlink.generalRules.rulesStrings>
     <li>subject->集群控制</li>
     <li>subject_story->认为发展无人机的自主性是脱离人与机械工具式关系来解放其潜力的重要关键</li>
     <li>subject_story->根据一架回收的萨卡拉瓦织鸟机兵重新复现了这项技术</li>
     <li>subject_story->透过人工诱导的灵能反应来实现远距离的抗干扰控制</li>
     <li>subject_gerund->回收古代自动兵器</li>
-  </DMS_MechBasis.generalRules.rulesStrings>
+  </DMS_Mechlink.generalRules.rulesStrings>
   
   <!-- EN: Organ Replacement -->
   <DMS_OrganSurgery.label>器官手术</DMS_OrganSurgery.label>

@@ -877,7 +877,7 @@
       <ComponentFireControl>2</ComponentFireControl>
     </costList>
     <researchPrerequisites>
-      <li>DMS_EquipmentElite</li>
+      <li>DMS_Synthroid</li>
       <li>DMS_EquipmentHeavy</li>
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_DawnBlade</uiIconPath>

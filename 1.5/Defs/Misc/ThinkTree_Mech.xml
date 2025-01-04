@@ -73,12 +73,14 @@
                   </subNodes>
                 </li>
                 <li Class="DMS.ThinkNode_Condition_Wake" MayRequire="Ludeon.RimWorld.Biotech">
-                  <li Class="JobGiver_SeekAllowedArea" />
-                  <li Class="JobGiver_GetEnergy_Charger" />
-                  <li Class="JobGiver_Work">
-                    <emergency>true</emergency>
-                  </li>
-                  <li Class="JobGiver_Work" />
+                  <subNodes>
+                    <li Class="JobGiver_SeekAllowedArea" />
+                    <li Class="JobGiver_GetEnergy_Charger" />
+                    <li Class="JobGiver_Work">
+                      <emergency>true</emergency>
+                    </li>
+                    <li Class="JobGiver_Work" />
+                  </subNodes>
                 </li>
                 <!-- Work modes -->
                 <li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
