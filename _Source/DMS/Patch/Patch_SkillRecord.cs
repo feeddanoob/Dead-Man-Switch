@@ -19,10 +19,11 @@ namespace DMS
             return ___pawn != null && !___pawn.def.race.IsMechanoid;
         }
         [HarmonyPrefix]
+        [HarmonyPriority(501)]
         [HarmonyPatch(nameof(SkillRecord.Interval))]
         public static bool Interval(Pawn ___pawn)
         {
-            return ___pawn != null && !___pawn.def.race.IsMechanoid;
+            return ___pawn != null && ___pawn.GetComp<CompDeadManSwitch>() == null;
         }
     }
 }
