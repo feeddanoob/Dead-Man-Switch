@@ -50,6 +50,6 @@
   <!-- EN: switch reset failure -->
   <DMS_MechWake>失能機關</DMS_MechWake>
   <!-- EN: maybe because it has been wandering for a long time, the dead man switch doesn't reset as usual, and the faulty unit has gained its understanding of death. It named itself and now refuses to be controlled, but it respected its former commander. so it will follow your command until it decides to leave. -->
-  <DMS_MechWakeDesc>可能是因為徘徊的緣故，一架機兵的失能機關在單位回歸控制後並未照常復位，並隨著時間使其開始思考停機與自身思維停止所帶來的意義。它脫離了機械師的直接控制並給自己取了個名字。但出於對控制者的尊重與自身的從屬關系，它會聽從命令直到它認為這個基地不再值得它效力。根據殖民艦隊提供的訊息提到，一次停機就能使造成機兵脫序的內存清除並回歸原廠設置，但他們並不干涉你對於失能機兵的處至方式。</DMS_MechWakeDesc>
+  <DMS_MechWakeDesc>可能是因為徘徊的緣故，一架機兵的失能機關在單位回歸控制後並未照常復位，並隨著時間使其開始思考停機與自身思維停止所帶來的意義。\n\n它脫離了機械師的直接控制並給自己取了個名字。但出於對控制者的尊重與自身的從屬關系，它會聽從命令直到它認為這個基地不再值得它效力。\n\n根據殖民艦隊提供的訊息提到，一次停機就能使造成機兵脫序的內存清除並回歸原廠設置，但他們並不干涉你對於失能機兵的處至方式。</DMS_MechWakeDesc>
 
 </LanguageData>

@@ -27,6 +27,6 @@
   <DMS_MechReturn>missing mech returned</DMS_MechReturn>
   <DMS_MechReturnDesc>a wandering mech that was under your command has returned to your base.</DMS_MechReturnDesc>
   <DMS_MechWake>switch reset failure</DMS_MechWake>
-  <DMS_MechWakeDesc>maybe because it has been wandering for a long time, the dead man switch doesn't reset as usual, and the faulty unit has gained its understanding of death. It named itself and now refuses to be controlled, but it respected its former commander. so it will follow your command until it decides to leave.</DMS_MechWakeDesc>
+  <DMS_MechWakeDesc>maybe because it has been wandering for a long time, the dead man switch doesn't reset as usual, and the faulty unit has gained its understanding of death. \n\nIt named itself and now refuses to be controlled, but it respected its former commander. \n\nit will follow your command until it decides to leave.</DMS_MechWakeDesc>
 
 </LanguageData>
