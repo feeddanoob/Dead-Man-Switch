@@ -11,6 +11,7 @@ using static RimWorld.MechClusterSketch;
 
 namespace DMS
 {
+    //在失去機械師控制後只會自動關機
     public class CompDeadManSwitch : ThingComp
     {
         public CompProperties_DeadManSwitch Props => (CompProperties_DeadManSwitch)props;
@@ -37,6 +38,9 @@ namespace DMS
 
         public bool woken_Lurk;
         public int timeToWake;
+
+        public bool outgoing;
+        public int outgoingTime;
         public override void CompTick()
         {
             if (delayCheck > 0)
@@ -56,6 +60,19 @@ namespace DMS
                     this.Wake();        
                 }
                 this.timeToWake--;
+            }
+            if (this.parent.Spawned && this.outgoing) 
+            {
+                this.outgoingTime++;
+                if (this.outgoingTime >= 60000 * 2 && this.parent is Pawn pawn 
+                    && !pawn.Downed && pawn.CurJobDef != DMS_DefOf.DMS_MechLeave && 
+                    RCellFinder.TryFindBestExitSpot(pawn,out IntVec3 spot)) 
+                {
+                    Find.LetterStack.ReceiveLetter("MechStartLeave".Translate(this.parent.Label), "MechStartLeaveDesc".Translate(this.parent.Label),LetterDefOf.PositiveEvent,this.parent);
+                    Job job = JobMaker.MakeJob(DMS_DefOf.DMS_MechLeave, spot);
+                    job.exitMapOnArrival = true;
+                    pawn.jobs.StartJob(job);
+                }
             }
         }
         public void Wake()
@@ -111,10 +128,21 @@ namespace DMS
         {
             base.PostSpawnSetup(respawningAfterLoad);
             delayCheck = Props.minDelayUntilDMS;
+            if (!respawningAfterLoad && Current.Game.GetComponent<GameComponent_DMS>() is GameComponent_DMS comp
+                && comp.OutgoingMeches.Find(m => m.mech == this.parent) is OutgoingMech mech)
+            {
+                if (comp.removedCache == null) 
+                {
+                    comp.removedCache = new List<Pawn>();
+                }
+                comp.removedCache.Add(this.parent as Pawn);
+                this.outgoing = false;
+                this.outgoingTime = 0;
+            }
         }
         public override string CompInspectStringExtra()
         {  
-            if (!parent.EverSeenByPlayer || parent.GetComp<CompOverseerSubject>() == null) return null;
+            if (!parent.Faction.IsPlayer || parent.GetComp<CompOverseerSubject>() == null) return null;
             if (parent.GetComp<CompOverseerSubject>().State != OverseerSubjectState.Overseen)
             {
                 string str = "DMS_WillTerminateTheBetrayedUnit".Translate();
@@ -127,7 +155,7 @@ namespace DMS
             base.PostDeSpawn(map);
             IThingHolder holder = this.parent.holdingOwner?.Owner;
             if (this.Overseer != null
-                && (holder as Thing == null && holder as Caravan == null) && Current.Game.GetComponent<GameComponent_DMS>()
+                && (holder as Thing == null && holder as Caravan == null) && Current.Game.GetComponent<GameComponent_DMS>() 
                 is GameComponent_DMS dms && !dms.lostMechs.Contains(this.parent) && !this.woken)
             {
                 dms.lostMechs.Add(this.parent);
@@ -141,7 +169,7 @@ namespace DMS
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            if (Prefs.DevMode && DebugSettings.godMode) 
+            if (Prefs.DevMode && DebugSettings.godMode)
             {
                 yield return new Command_Action()
                 {
@@ -161,6 +189,15 @@ namespace DMS
                         this.Wake();
                     }
                 };
+                yield return new Command_Action()
+                {
+                    defaultLabel = "Debug: Outgoing",
+                    action = () =>
+                    {
+                        this.outgoing = true;
+                        this.outgoingTime = 60000 * 2;
+                    }
+                };
             }
             yield break;
         }
@@ -170,7 +207,9 @@ namespace DMS
             Scribe_Values.Look(ref delayCheck, "delayCheck", 0);
             Scribe_Values.Look(ref timeToWake, "timeToWake", 0);
             Scribe_Values.Look(ref woken_Lurk, "woken_Lurk");
-            Scribe_Values.Look(ref woken, "woken");
+            Scribe_Values.Look(ref woken, "woken",false);
+            Scribe_Values.Look(ref outgoing, "outgoing");
+            Scribe_Values.Look(ref outgoingTime, "outgoingTime");
         }
 
 
@@ -179,7 +218,7 @@ namespace DMS
     public class CompProperties_DeadManSwitch : CompProperties
     {
         public int minDelayUntilDMS = 3000;
-        public float wakingChance= 0.5f;
+        public float wakingChance= 0.3f;
         public RulePackDef nameRule;
         public CompProperties_DeadManSwitch()
         {

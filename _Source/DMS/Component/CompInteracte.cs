@@ -38,7 +38,7 @@ namespace DMS
         public override void CompTick()
         {
             base.CompTick();
-            if (this.parent.IsHashIntervalTick(180) && (this.lastInteracte == 0 || Find.TickManager.TicksAbs - this.lastInteracte > 2500)  && this.DMS.woken && Rand.Chance(this.Props.interacteChance))
+            if (this.parent.Spawned && this.parent.IsHashIntervalTick(180) && (this.lastInteracte == 0 || Find.TickManager.TicksAbs - this.lastInteracte > 2500)  && this.DMS.woken && Rand.Chance(this.Props.interacteChance))
             {
                 this.TryInteractRandomly();
             }
@@ -57,19 +57,21 @@ namespace DMS
         }
         private bool TryInteractRandomly()
         {
-            Pawn pawn = this.parent as Pawn;
-            List<Pawn> pawns = new List<Pawn>();
-            List<Pawn> collection = pawn.Map.mapPawns.SpawnedPawnsInFaction(pawn.Faction);
-            pawns.AddRange(collection);
-            pawns.Shuffle<Pawn>();
-            for (int i = 0; i < pawns.Count; i++)
+            if (this.parent is Pawn pawn && pawn.Map != null && pawn.Faction != null)
             {
-                Pawn p = pawns[i];
-                if (p != pawn && InteractionUtility.CanReceiveRandomInteraction(p) && !pawn.HostileTo(p))
+                List<Pawn> pawns = new List<Pawn>();
+                List<Pawn> collection = pawn.Map.mapPawns.SpawnedPawnsInFaction(pawn.Faction);
+                pawns.AddRange(collection);
+                pawns.Shuffle<Pawn>();
+                for (int i = 0; i < pawns.Count; i++)
                 {
-                    if (this.TryInteractWith(p, this.Props.interacte))
+                    Pawn p = pawns[i];
+                    if (p != pawn && InteractionUtility.CanReceiveRandomInteraction(p) && !pawn.HostileTo(p))
                     {
-                        return true;
+                        if (this.TryInteractWith(p, this.Props.interacte))
+                        {
+                            return true;
+                        }
                     }
                 }
             }

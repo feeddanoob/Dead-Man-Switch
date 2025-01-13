@@ -8,6 +8,10 @@ namespace DMS
     {
         public static ThoughtDef DMS_OverEat;
         public static JobDef DMS_RepairSelf;
+        public static JobDef DMS_MechLeave;
+        public static ThingSetMakerDef DMS_OutgoingLoots;
+        public static RulePackDef DMS_Outgoing_Attack;
+        public static RulePackDef DMS_Outgoing_Loot;
     }
 
 }
