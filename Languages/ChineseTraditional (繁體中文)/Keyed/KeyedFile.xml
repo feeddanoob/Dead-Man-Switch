@@ -55,6 +55,6 @@
   <DMS_WokenMechLeave>機兵離開</DMS_WokenMechLeave>
   <DMS_WokenMechLeaveDesc>在經過一段時間的相處後{Mech}認為它是時候離開了。</DMS_WokenMechLeaveDesc>
 
-  <DMS_MechStory_Attack>{Mech}的行蹤</DMS_MechStory_Attack>
-  <DMS_MechStory_Loot>{Mech}的回報</DMS_MechStory_Loot>
+  <DMS_MechStory_Attack>{0}的行蹤</DMS_MechStory_Attack>
+  <DMS_MechStory_Loot>{0}的回報</DMS_MechStory_Loot>
 </LanguageData>

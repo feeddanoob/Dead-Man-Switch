@@ -44,10 +44,15 @@ namespace DMS
                 this.OutgoingMeches.RemoveAll(m => this.removedCache.Contains(m.mech));
                 this.removedCache.Clear();
             }
-            foreach (var item in OutgoingMeches)
+
+            if (!OutgoingMeches.NullOrEmpty())
             {
-                item.Tick();
+                foreach (var item in OutgoingMeches)
+                {
+                    item.Tick();
+                }
             }
+            
             this.timeToTriggerOutgoing++;
             if (this.timeToTriggerOutgoing >= GenDate.TicksPerSeason) 
             {
@@ -137,7 +142,7 @@ namespace DMS
         public void Trigger()
         {
             this.timeToTrigger = Rand.Range(5 * GenDate.TicksPerDay, 30 * GenDate.TicksPerDay);
-            if (Rand.Chance(0.25f))
+            if (Rand.Chance(0.5f))
             {
                 Settlement s = (Settlement)Find.World.worldObjects.AllWorldObjects.FindAll(w => w.def == WorldObjectDefOf.Settlement &&
                 w.Faction != null && !w.Faction.IsPlayer && w.Faction.HostileTo(Find.FactionManager.OfPlayer)).RandomElement();
@@ -149,6 +154,8 @@ namespace DMS
                     },
                     Rules =
                         {
+                            new Rule_String("Faction",s.Faction.Name),
+                            new Rule_String("Settlement",s.Name),
                             new Rule_String("Mech",this.mech.Label),
                             new Rule_String("MechType",this.mech.kindDef.race.label)
                         }
