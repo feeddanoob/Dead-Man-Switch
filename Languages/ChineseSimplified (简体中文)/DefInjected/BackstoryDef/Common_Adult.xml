@@ -58,7 +58,7 @@
   <DMS_Civilian08.titleShort>外交官</DMS_Civilian08.titleShort>
   
   <!-- EN: [PAWN_nameDef] was responsible for cultivating crops for the community as well as testing soil compatibility levels for future projects. [PAWN_pronoun] tracked monitored the growth of different crops and grew those suitable for local conditions. -->
-  <DMS_Civilian09.description>[PAWN_nameDef]负责在殖民地中照护植物，检测土壤酸硷值，湿度。追踪成长情况并选育适应了当地环境的优良作物。</DMS_Civilian09.description>
+  <DMS_Civilian09.description>[PAWN_nameDef]负责在殖民地中照护植物，检测土壤酸碱值，湿度。追踪成长情况并选育适应了当地环境的优良作物。</DMS_Civilian09.description>
   <!-- EN: Colonial Farmer -->
   <DMS_Civilian09.title>殖民地农务员</DMS_Civilian09.title>
   <!-- EN: Farmer -->

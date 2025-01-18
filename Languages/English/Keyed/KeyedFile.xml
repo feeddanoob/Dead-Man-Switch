@@ -29,4 +29,12 @@
   <DMS_MechWake>switch reset failure</DMS_MechWake>
   <DMS_MechWakeDesc>maybe because it has been wandering for a long time, the dead man switch doesn't reset as usual, and the faulty unit has gained its understanding of death. \n\nIt named itself and now refuses to be controlled, but it respected its former commander. \n\nit will follow your command until it decides to leave.</DMS_MechWakeDesc>
 
+  <!-- UNUSED -->
+  <DMS_MechStartLeave>{0} is leaving</DMS_MechStartLeave>
+  <DMS_MechStartLeaveDesc>After spending some time together, {0} decided it is time to leave.</DMS_MechStartLeaveDesc>
+  <DMS_WokenMechLeave>{0} is leaving</DMS_WokenMechLeave>
+  <DMS_WokenMechLeaveDesc>After spending some time together, {0} decided it is time to leave.</DMS_WokenMechLeaveDesc>
+  <DMS_MechStory_Attack>{0}'s after story</DMS_MechStory_Attack>
+  <DMS_MechStory_Loot>{0}'s return of favors</DMS_MechStory_Loot>
+  
 </LanguageData>

@@ -168,7 +168,7 @@
                 <drawData>
                   <defaultData>
                     <pivot>(0.5,0.5)</pivot>
-                  </defaultData>                  
+                  </defaultData>
                   <dataEast>
                     <offset>(0.5,0,-0.5)</offset>
                   </dataEast>
@@ -201,7 +201,7 @@
         <drawData>
           <defaultData>
             <pivot>(0.5,0.5)</pivot>
-          </defaultData>                  
+          </defaultData>
           <dataEast>
             <offset>(0.5,0,-0.5)</offset>
           </dataEast>
@@ -524,7 +524,6 @@
       </li>   
     </comps>
   </ThingDef>
-
   
   <PawnKindDef Name="BaseKillDozerKind" ParentName="BaseAutomatroidKind" Abstract="True">
     <label>killdozer</label>
@@ -570,5 +569,4 @@
     <defName>DMS_Mech_Killdozer_b</defName>
     <race>DMS_Mech_Killdozer_b</race>
   </PawnKindDef>
-
 </Defs>

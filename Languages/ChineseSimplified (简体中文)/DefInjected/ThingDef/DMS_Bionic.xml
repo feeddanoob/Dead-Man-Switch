@@ -19,7 +19,7 @@
   <!-- EN: Mechaneural kidney -->
   <DMS_ProstheticKidney.label>机械透析仪</DMS_ProstheticKidney.label>
   <!-- EN: A biocompatible liquid filter implant that filters impurities and waste products out of the blood through osmotic pressure to ensure the acid-base balance of the implantee's internal circulatory system. -->
-  <DMS_ProstheticKidney.description>一种人工液体过滤器官，能透过渗透压过滤血液中的杂质和废物，确保植入者内循环系统的酸硷平衡。</DMS_ProstheticKidney.description>
+  <DMS_ProstheticKidney.description>一种人工液体过滤器官，能透过渗透压过滤血液中的杂质和废物，确保植入者内循环系统的酸碱平衡。</DMS_ProstheticKidney.description>
   
   <!-- EN: Mechaneural leg -->
   <DMS_ProstheticLeg.label>机械腿</DMS_ProstheticLeg.label>

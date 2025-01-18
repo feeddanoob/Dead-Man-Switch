@@ -5,8 +5,6 @@ using System.Linq;
 
 namespace DMS
 {
-
-
     [HarmonyPatch(typeof(Pawn_MechanitorTracker), nameof(Pawn_MechanitorTracker.CanControlMechs),MethodType.Getter)]
     internal static class Patch_CanControlMechs
     {

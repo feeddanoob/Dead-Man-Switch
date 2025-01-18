@@ -38,14 +38,14 @@ namespace DMS
         public override void CompTick()
         {
             base.CompTick();
-            if (this.parent.Spawned && this.parent.IsHashIntervalTick(180) && (this.lastInteracte == 0 || Find.TickManager.TicksAbs - this.lastInteracte > 2500)  && this.DMS.woken && Rand.Chance(this.Props.interacteChance))
+            if (this.parent.Spawned && this.parent.IsHashIntervalTick(180) && (this.parent is Pawn p && p.health.capacities.CapableOf(PawnCapacityDefOf.Talking)) && (this.lastInteracte == 0 || Find.TickManager.TicksAbs - this.lastInteracte > 2500)  && this.DMS.woken && Rand.Chance(this.Props.interacteChance))
             {
                 this.TryInteractRandomly();
             }
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            if (Prefs.DevMode) 
+            if (Prefs.DevMode && DebugSettings.godMode) 
             {
                 yield return new Command_Action()
                 {

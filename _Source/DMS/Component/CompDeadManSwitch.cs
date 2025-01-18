@@ -7,11 +7,9 @@ using Verse.Noise;
 using System.Linq;
 using RimWorld.Planet;
 using System;
-using static RimWorld.MechClusterSketch;
 
 namespace DMS
 {
-    //在失去機械師控制後只會自動關機
     public class CompDeadManSwitch : ThingComp
     {
         public CompProperties_DeadManSwitch Props => (CompProperties_DeadManSwitch)props;
@@ -49,30 +47,8 @@ namespace DMS
             }
             if (delayCheck <= 0)
             {
-                //TryTriggerDMS();
+                TryTriggerDMS();
                 delayCheck = Props.minDelayUntilDMS;
-            }
-
-            if (!this.woken && this.woken_Lurk) 
-            {
-                if (this.timeToWake <= 0)
-                {
-                    this.Wake();        
-                }
-                this.timeToWake--;
-            }
-            if (this.parent.Spawned && this.outgoing) 
-            {
-                this.outgoingTime++;
-                if (this.outgoingTime >= 60000 * 2 && this.parent is Pawn pawn 
-                    && !pawn.Downed && pawn.CurJobDef != DMS_DefOf.DMS_MechLeave && 
-                    RCellFinder.TryFindBestExitSpot(pawn,out IntVec3 spot)) 
-                {
-                    Find.LetterStack.ReceiveLetter("MechStartLeave".Translate(this.parent.Label), "MechStartLeaveDesc".Translate(this.parent.Label),LetterDefOf.PositiveEvent,this.parent);
-                    Job job = JobMaker.MakeJob(DMS_DefOf.DMS_MechLeave, spot);
-                    job.exitMapOnArrival = true;
-                    pawn.jobs.StartJob(job);
-                }
             }
         }
         public void Wake()
@@ -92,36 +68,31 @@ namespace DMS
         }
         private void TryTriggerDMS()
         {
-            Pawn mech = parent as Pawn;
-            if (mech.IsWorldPawn() && mech.Faction != Faction.OfPlayer && mech.GetOverseer() != null)//媽的，又有機兵覺醒啦。
+            if (this.woken && this.Overseer != null)
             {
-                //得寫個生成讓他自己找回來
+                this.woken = false;
             }
-            
-            if (!mech.Faction.IsPlayer) return;
-            CompOverseerSubject a = parent.GetComp<CompOverseerSubject>();
 
-            var overseer = mech.GetOverseer()?.mechanitor;
-            if (overseer != null) return;
-            if (mech.Spawned && !overseer.CanControlMechs) //在無法連接時自己找其他人連接。
+            if (!this.woken && this.woken_Lurk)
             {
-                var li = mech.Map.mapPawns.FreeColonistsSpawned.Where(c => MechanitorUtility.IsMechanitor(c));
-                if (li.Any())
+                if (this.timeToWake <= 0)
                 {
-                    foreach (var c in li)
-                    {
-                        Log.Message(c.Name);
-                        if (c.mechanitor.CanOverseeSubject(mech))
-                        {
-                            mech.GetOverseer()?.relations.RemoveDirectRelation(PawnRelationDefOf.Overseer, mech);
-                            c.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mech);
-                            Messages.Message("DMS_AutomatroidReconnected".Translate(), new LookTargets(parent), MessageTypeDefOf.PositiveEvent);
-                            return;
-                        }
-                    }
+                    this.Wake();
                 }
-                Messages.Message("DMS_AutomatroidDisconnected".Translate(), new LookTargets(parent), MessageTypeDefOf.NeutralEvent);
-                return;
+                this.timeToWake-= Props.minDelayUntilDMS;
+            }
+            if (this.parent.Spawned && this.outgoing)
+            {
+                this.outgoingTime+= Props.minDelayUntilDMS;
+                if (this.outgoingTime >= 60000 * 2 && this.parent is Pawn pawn
+                    && !pawn.Downed && pawn.CurJobDef != DMS_DefOf.DMS_MechLeave &&
+                    RCellFinder.TryFindBestExitSpot(pawn, out IntVec3 spot))
+                {
+                    Find.LetterStack.ReceiveLetter("DMS_MechStartLeave".Translate(this.parent.Label), "DMS_MechStartLeaveDesc".Translate(this.parent.Label), LetterDefOf.PositiveEvent, this.parent);
+                    Job job = JobMaker.MakeJob(DMS_DefOf.DMS_MechLeave, spot);
+                    job.exitMapOnArrival = true;
+                    pawn.jobs.StartJob(job);
+                }
             }
         }
         public override void PostSpawnSetup(bool respawningAfterLoad)

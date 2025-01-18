@@ -27,11 +27,11 @@ namespace DMS
         public override void GameComponentTick()
         {
             base.GameComponentTick();
-            if (this.lostMechs.Any()) 
+            if (this.lostMechs.Any())
             {
-                if (this.timeToReturn == -1) 
+                if (this.timeToReturn == -1)
                 {
-                    this.timeToReturn = Rand.Range(3 * GenDate.TicksPerDay,10 * GenDate.TicksPerDay);
+                    this.timeToReturn = Rand.Range(3 * GenDate.TicksPerDay, 10 * GenDate.TicksPerDay);
                 }
                 this.timeToReturn--;
                 if (this.timeToReturn <= 0)
@@ -39,7 +39,7 @@ namespace DMS
                     ReturnMech();
                 }
             }
-            if (this.removedCache != null && this.removedCache.Any()) 
+            if (this.removedCache != null && this.removedCache.Any())
             {
                 this.OutgoingMeches.RemoveAll(m => this.removedCache.Contains(m.mech));
                 this.removedCache.Clear();
@@ -52,14 +52,13 @@ namespace DMS
                     item.Tick();
                 }
             }
-            
+
             this.timeToTriggerOutgoing++;
-            if (this.timeToTriggerOutgoing >= GenDate.TicksPerSeason) 
+            if (this.timeToTriggerOutgoing >= GenDate.TicksPerSeason)
             {
                 this.timeToTriggerOutgoing = 0;
                 Map map = Find.AnyPlayerHomeMap;
-                if (map != null && map.mapPawns.SpawnedColonyMechs.Find(m => m.TryGetComp<CompDeadManSwitch>() != null)
-                    is Pawn mech) 
+                if (map != null && map.mapPawns.SpawnedColonyMechs.Find(m => m.TryGetComp<CompDeadManSwitch>() != null) is Pawn mech)
                 {
                     float mood = 0;
                     foreach (var item in map.mapPawns.FreeColonists)
@@ -70,9 +69,9 @@ namespace DMS
                         }
                     }
                     mood /= map.mapPawns.ColonistCount;
-                    if ((mood <= 0.1 || mood >= 0.9) && Rand.Chance(0.25f)) 
+                    if ((mood <= 0.1 || mood >= 0.9) && Rand.Chance(0.25f))
                     {
-                        Find.LetterStack.ReceiveLetter("DMS_WokenMechLeave".Translate(mech.Name.ToString()), "DMS_WokenMechLeaveDesc".Translate(mech.Name.ToString()),LetterDefOf.PositiveEvent,mech);
+                        Find.LetterStack.ReceiveLetter("DMS_WokenMechLeave".Translate(mech.Name.ToString()), "DMS_WokenMechLeaveDesc".Translate(mech.Name.ToString()), LetterDefOf.PositiveEvent, mech);
                         mech.TryGetComp<CompDeadManSwitch>().outgoing = true;
                     }
                 }
@@ -81,22 +80,30 @@ namespace DMS
 
         public void ReturnMech()
         {
+            if (this.lostMechs.NullOrEmpty()) return;
+
             Pawn mech = (Pawn)this.lostMechs.First();
-            CompDeadManSwitch comp = mech.GetComp<CompDeadManSwitch>();
+            if(mech.Spawned) { this.lostMechs.Remove(mech); ReturnMech(); }//已經生成的Pawn當然不會也不應該回歸。
+
+            var comp = mech.GetComp<CompDeadManSwitch>();
+            if (comp == null) { this.lostMechs.Remove(mech); ReturnMech(); }//沒有DMS的話也不會回歸。
+
             Pawn overseer = comp.Overseer;
-            if (!mech.Spawned && overseer != null && overseer.Map != null && RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 pos,
-                overseer.Map, 0.3f))
+            if (overseer == null) { this.lostMechs.Remove(mech); ReturnMech(); }//沒有OverSeer的話就不會回歸了。
+
+            if(overseer.MapHeld == null) return;//如果Overseer並沒有在某張地圖上那麼也不會生成。
+            
+            if (RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 pos,overseer.Map, 0.3f))
             {
                 GenSpawn.Spawn(mech, pos, overseer.Map);
-            }
-            this.timeToReturn = Rand.Range(3 * GenDate.TicksPerDay, 10 * GenDate.TicksPerDay);
+                this.timeToReturn = Rand.Range(3 * GenDate.TicksPerDay, 10 * GenDate.TicksPerDay);
 
-            Find.LetterStack.ReceiveLetter("DMS_MechReturn".Translate(), "DMS_MechReturnDesc".Translate()
-                ,LetterDefOf.PositiveEvent,mech);
-            if (Rand.Chance(comp.Props.wakingChance)) 
-            {
-                comp.woken_Lurk = true;
-                comp.timeToWake = Rand.Range(1 * GenDate.TicksPerDay,2 * GenDate.TicksPerDay);
+                Find.LetterStack.ReceiveLetter("DMS_MechReturn".Translate(), "DMS_MechReturnDesc".Translate(), LetterDefOf.PositiveEvent, mech);
+                if (Rand.Chance(comp.Props.wakingChance))
+                {
+                    comp.woken_Lurk = true;
+                    comp.timeToWake = Rand.Range(1 * GenDate.TicksPerDay, 2 * GenDate.TicksPerDay);
+                }
             }
         }
 
