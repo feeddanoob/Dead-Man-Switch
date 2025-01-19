@@ -18,8 +18,8 @@
   
   <!-- EN: Powered exoskeleton unit -->
   <DMS_Apparel_PowerSkelton.label>Powered Exoskeleton Unit</DMS_Apparel_PowerSkelton.label>
-  <!-- EN: Physical enhancement equipment from array of neural prosthetic skeltons. It can increase the wearer's carry weight and mobility with effectively. -->
-  <DMS_Apparel_PowerSkelton.description>A physical enhancement equipment created from an array of neurally-controlled prosthetic skeletons. It can increase the wearer's carry weight and mobility effectively.</DMS_Apparel_PowerSkelton.description>
+  <!-- EN: A physical enhancement equipment created from an array of neurally-controlled prosthetic skeletons. It can effectively increase the wearer's load-bearing capacity and ensure minimum walking and operating capabilities. --> 
+  <DMS_Apparel_PowerSkelton.description>A physical enhancement equipment created from an array of neurally-controlled prosthetic skeletons. It can effectively increase the wearer's load-bearing capacity and ensure minimum walking and operating capabilities.</DMS_Apparel_PowerSkelton.description>
   
   <!-- EN: uniform -->
   <DMS_Apparel_UnitSuit.label>Jumpsuit Colonial Uniform</DMS_Apparel_UnitSuit.label>

@@ -13,6 +13,12 @@ namespace DMS
     public class GameComponent_DMS : GameComponent
     {
         public GameComponent_DMS(Game game) { }
+        
+
+        public int timeToTriggerOutgoing = 0;
+        public int timeToReturn = -1;
+        public List<Thing> lostMechs = new List<Thing>();
+
         public List<OutgoingMech> OutgoingMeches 
         {
             get 
@@ -26,19 +32,16 @@ namespace DMS
         }
         public override void GameComponentTick()
         {
-            base.GameComponentTick();
-            if (this.lostMechs.Any())
+            if (!this.lostMechs.NullOrEmpty())
             {
-                if (this.timeToReturn == -1)
-                {
-                    this.timeToReturn = Rand.Range(3 * GenDate.TicksPerDay, 10 * GenDate.TicksPerDay);
-                }
                 this.timeToReturn--;
                 if (this.timeToReturn <= 0)
                 {
                     ReturnMech();
+                    this.timeToReturn = Rand.Range(3 * GenDate.TicksPerDay, 10 * GenDate.TicksPerDay);
                 }
             }
+
             if (this.removedCache != null && this.removedCache.Any())
             {
                 this.OutgoingMeches.RemoveAll(m => this.removedCache.Contains(m.mech));
@@ -58,7 +61,7 @@ namespace DMS
             {
                 this.timeToTriggerOutgoing = 0;
                 Map map = Find.AnyPlayerHomeMap;
-                if (map != null && map.mapPawns.SpawnedColonyMechs.Find(m => m.TryGetComp<CompDeadManSwitch>() != null) is Pawn mech)
+                if (map != null && map.mapPawns.SpawnedColonyMechs.Find(m => (m.TryGetComp<CompDeadManSwitch>(out var comp) && comp.woken == true)) is Pawn mech)
                 {
                     float mood = 0;
                     foreach (var item in map.mapPawns.FreeColonists)
@@ -83,17 +86,18 @@ namespace DMS
             if (this.lostMechs.NullOrEmpty()) return;
 
             Pawn mech = (Pawn)this.lostMechs.First();
-            if(mech.Spawned) { this.lostMechs.Remove(mech); ReturnMech(); }//已經生成的Pawn當然不會也不應該回歸。
+            if (mech == null) { this.lostMechs.Remove(mech); ReturnMech(); return; }
+            if (mech.Spawned) { this.lostMechs.Remove(mech); ReturnMech(); return; }//已經生成的Pawn當然不會也不應該回歸。
 
             var comp = mech.GetComp<CompDeadManSwitch>();
-            if (comp == null) { this.lostMechs.Remove(mech); ReturnMech(); }//沒有DMS的話也不會回歸。
+            if (comp == null) { this.lostMechs.Remove(mech); ReturnMech(); return; }//沒有DMS的話也不會回歸。
 
             Pawn overseer = comp.Overseer;
-            if (overseer == null) { this.lostMechs.Remove(mech); ReturnMech(); }//沒有OverSeer的話就不會回歸了。
+            if (overseer == null) { this.lostMechs.Remove(mech); ReturnMech(); return; }//沒有OverSeer的話就不會回歸了。
 
-            if(overseer.MapHeld == null) return;//如果Overseer並沒有在某張地圖上那麼也不會生成。
-            
-            if (RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 pos,overseer.Map, 0.3f))
+            if (overseer.MapHeld == null) return;//如果Overseer並沒有在某張地圖上那麼也不會生成。
+
+            if (RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 pos, overseer.Map, 0.3f))
             {
                 GenSpawn.Spawn(mech, pos, overseer.Map);
                 this.timeToReturn = Rand.Range(3 * GenDate.TicksPerDay, 10 * GenDate.TicksPerDay);
@@ -105,20 +109,44 @@ namespace DMS
                     comp.timeToWake = Rand.Range(1 * GenDate.TicksPerDay, 2 * GenDate.TicksPerDay);
                 }
             }
+            this.lostMechs.Remove(mech);
         }
 
         public override void ExposeData()
         {
             base.ExposeData();
+            if (Scribe.mode == LoadSaveMode.Saving)
+            {
+                Distinct(ref this.lostMechs);
+            }
+
             Scribe_Values.Look(ref this.timeToReturn, "timeToReturn");
             Scribe_Values.Look(ref this.timeToTriggerOutgoing, "timeToTriggerOutgoing");
             Scribe_Collections.Look(ref this.lostMechs, "lostMechs", LookMode.Reference);
             Scribe_Collections.Look(ref this.outgoingMeches, "outgoingMechs", LookMode.Deep);
+
+            if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            {
+                Distinct(ref lostMechs);
+            }
         }
 
-        public int timeToTriggerOutgoing = 0;
-        public int timeToReturn = -1;
-        public List<Thing> lostMechs = new List<Thing>();
+        private void Distinct(ref List<Thing> target)
+        {
+            var _target = target.Distinct().ToList();
+            List<Thing> cache = _target;
+            for (int i = 0; i < cache.Count; i++)
+            {
+                if (cache.NullOrEmpty()) {target.Clear(); break;}
+
+                Thing mech = cache[0];
+                if (mech == null || mech.Spawned || mech.Destroyed || (mech as Pawn).Dead || !mech.TryGetComp<CompDeadManSwitch>(out var comp) || comp.Overseer != null)
+                {
+                    cache.Remove(mech);
+                }
+            }
+            target = cache;
+        }
 
         public List<Pawn> removedCache = new List<Pawn>();
         private List<OutgoingMech> outgoingMeches = new List<OutgoingMech>();

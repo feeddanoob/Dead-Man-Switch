@@ -562,7 +562,7 @@
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<costList>
-			<Polyester>30</Polyester>
+			<Polyester>40</Polyester>
 			<VPE_Eltex MayRequire="vanillaexpanded.vpsycastse">4</VPE_Eltex>
 		</costList>
 		<apparel>

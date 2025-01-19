@@ -53,35 +53,36 @@ namespace DMS
         }
         public void Wake()
         {
-            this.woken = true;
-            Pawn pawn = ((Pawn)this.parent);
-            pawn.Name = new NameSingle(NameGenerator.GenerateName(this.Props.nameRule ?? RulePackDefOf.NamerTraderGeneral));
-
-            Pawn_RelationsTracker relations = pawn.relations;
-            if (relations.GetFirstDirectRelationPawn(PawnRelationDefOf.Overseer, null) is Pawn overseer)
+            this.woken_Lurk = false;
+            if (!this.woken)
             {
-                pawn.relations.RemoveDirectRelation(PawnRelationDefOf.Overseer, overseer);
+                this.woken = true;
+                Pawn pawn = ((Pawn)this.parent);
+                pawn.Name = new NameSingle(NameGenerator.GenerateName(this.Props.nameRule ?? RulePackDefOf.NamerTraderGeneral));
+
+                Pawn_RelationsTracker relations = pawn.relations;
+                if (relations.GetFirstDirectRelationPawn(PawnRelationDefOf.Overseer, null) is Pawn overseer)
+                {
+                    pawn.relations.RemoveDirectRelation(PawnRelationDefOf.Overseer, overseer);
+                }
+                Find.LetterStack.ReceiveLetter("DMS_MechWake".Translate(this.parent.Label), "DMS_MechWakeDesc".Translate(this.parent.Label), LetterDefOf.PositiveEvent, this.parent);
+                pawn.interactions = new Pawn_InteractionsTracker(pawn);
             }
-            Find.LetterStack.ReceiveLetter("DMS_MechWake".Translate(this.parent.Label),
-                "DMS_MechWakeDesc".Translate(this.parent.Label),LetterDefOf.PositiveEvent,this.parent);
-            pawn.interactions = new Pawn_InteractionsTracker(pawn);
         }
         private void TryTriggerDMS()
         {
             if (this.woken && this.Overseer != null)
             {
+                this.woken_Lurk = false;
                 this.woken = false;
             }
 
             if (!this.woken && this.woken_Lurk)
             {
-                if (this.timeToWake <= 0)
-                {
-                    this.Wake();
-                }
+                if (this.timeToWake <= 0) this.Wake();
                 this.timeToWake-= Props.minDelayUntilDMS;
             }
-            if (this.parent.Spawned && this.outgoing)
+            if (this.parent.Spawned && this.woken &&this.outgoing)
             {
                 this.outgoingTime+= Props.minDelayUntilDMS;
                 if (this.outgoingTime >= 60000 * 2 && this.parent is Pawn pawn
@@ -102,10 +103,7 @@ namespace DMS
             if (!respawningAfterLoad && Current.Game.GetComponent<GameComponent_DMS>() is GameComponent_DMS comp
                 && comp.OutgoingMeches.Find(m => m.mech == this.parent) is OutgoingMech mech)
             {
-                if (comp.removedCache == null) 
-                {
-                    comp.removedCache = new List<Pawn>();
-                }
+                comp.removedCache ??= new List<Pawn>();
                 comp.removedCache.Add(this.parent as Pawn);
                 this.outgoing = false;
                 this.outgoingTime = 0;

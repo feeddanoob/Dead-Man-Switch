@@ -19,7 +19,7 @@
   <!-- EN: Powered Exoskeletal Unit -->
   <DMS_Apparel_PowerSkelton.label>機械外骨骼</DMS_Apparel_PowerSkelton.label>
   <!-- EN: A powered exoskeletal suit which mimics the human form and can be worn by an untrained operator. It significantly increases the wearer's strength and running speed. -->
-  <DMS_Apparel_PowerSkelton.description>由一系列神經義肢組成的體能增強設備。它能有效增加佩戴者的負重和移動能力。</DMS_Apparel_PowerSkelton.description>
+  <DMS_Apparel_PowerSkelton.description>由一系列神經義肢組成的體能增強設備。它能有效增加佩戴者的負重能力並保證最低限度的行走與操作能力。</DMS_Apparel_PowerSkelton.description>
   
   <!-- EN: Uniform -->
   <DMS_Apparel_UnitSuit.label>連身製服</DMS_Apparel_UnitSuit.label>

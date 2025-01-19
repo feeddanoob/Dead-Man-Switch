@@ -323,13 +323,14 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.5</MoveSpeed>
-			<CarryingCapacity>100</CarryingCapacity>
+			<VEF_MassCarryCapacity>75</VEF_MassCarryCapacity>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Hands</li>
 				<li>Feet</li>
 				<li>Legs</li>
+				<li>Waist</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/ExoSkelton/Apparel</wornGraphicPath>
 			<blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
@@ -342,6 +343,20 @@
 			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
 		</apparel>
+		<modExtensions>
+			<li Class="VFECore.ApparelExtension">
+				<pawnCapacityMinLevels>
+					<li>
+						<capacity>Moving</capacity>
+						<minLevel>0.75</minLevel>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<minLevel>0.75</minLevel>
+					</li>
+				</pawnCapacityMinLevels>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 </Defs>

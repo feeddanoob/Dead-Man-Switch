@@ -22,7 +22,7 @@
     </butcherProducts>
   </ThingDef>
 
-    <ThingDef ParentName="ChunkSlagSteel">
+  <ThingDef ParentName="ChunkSlagSteel">
     <defName>DMS_ChunkSlag_Old</defName>
     <label>ancient automatroid debris</label>
     <description>The remains of a destoryed automatroid. While useless in its current form, it can be smelted to recover resources.</description>
