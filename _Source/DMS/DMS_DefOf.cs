@@ -10,6 +10,7 @@ namespace DMS
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(DMS_DefOf));
         }
+        public static ThingDef Neurocomputer;
         public static ThoughtDef DMS_OverEat;
         public static JobDef DMS_RepairSelf;
         public static JobDef DMS_MechLeave;

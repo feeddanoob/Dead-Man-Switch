@@ -118,7 +118,7 @@
   <ThingDef ParentName="BaseAutomatroidRace" Name="BaseAutomatroidWalker" Abstract="True">
     <race>
       <intelligence>ToolUser</intelligence>
-      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <thinkTreeMain>DMS_Mechanoid</thinkTreeMain>
       <baseBodySize>1.0</baseBodySize>
       <mechEnabledWorkTypes>
         <li>BasicWorker</li>
@@ -174,8 +174,9 @@
   </ThingDef>
 
   <PawnKindDef Name="BaseAutomatroidKind" ParentName="BaseMechanoidKind" Abstract="True">
-    <defaultFactionType>DMS_Army</defaultFactionType>
-    <allowInMechClusters>false</allowInMechClusters>    <!--是否出現在機械集群-->
+    <!-- <defaultFactionType>DMS_Army</defaultFactionType> 設置成殖民艦隊可能會導致任務隨機Pawnkind時隨機到。 -->
+    <defaultFactionType>Mechanoid</defaultFactionType>
+    <allowInMechClusters>false</allowInMechClusters>
     <isFighter>true</isFighter>
     <destroyGearOnDrop>false</destroyGearOnDrop>
     <canStrip>false</canStrip>

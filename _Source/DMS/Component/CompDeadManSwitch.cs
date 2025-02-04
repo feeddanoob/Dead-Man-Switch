@@ -123,9 +123,7 @@ namespace DMS
         {
             base.PostDeSpawn(map);
             IThingHolder holder = this.parent.holdingOwner?.Owner;
-            if (this.Overseer != null
-                && (holder as Thing == null && holder as Caravan == null) && Current.Game.GetComponent<GameComponent_DMS>() 
-                is GameComponent_DMS dms && !dms.lostMechs.Contains(this.parent) && !this.woken)
+            if (this.Overseer != null && (holder as Thing == null && holder as Caravan == null) && Current.Game.GetComponent<GameComponent_DMS>() is GameComponent_DMS dms && !dms.lostMechs.Contains(this.parent) && !this.woken)
             {
                 dms.lostMechs.Add(this.parent);
             }

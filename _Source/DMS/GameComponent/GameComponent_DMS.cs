@@ -88,6 +88,7 @@ namespace DMS
             Pawn mech = (Pawn)this.lostMechs.First();
             if (mech == null) { this.lostMechs.Remove(mech); ReturnMech(); return; }
             if (mech.Spawned) { this.lostMechs.Remove(mech); ReturnMech(); return; }//已經生成的Pawn當然不會也不應該回歸。
+            if (mech.holdingOwner != null) { this.lostMechs.Remove(mech); ReturnMech(); return; }//被裝在貨櫃裡的也不會回歸。
 
             var comp = mech.GetComp<CompDeadManSwitch>();
             if (comp == null) { this.lostMechs.Remove(mech); ReturnMech(); return; }//沒有DMS的話也不會回歸。

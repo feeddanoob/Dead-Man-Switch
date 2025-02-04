@@ -118,6 +118,10 @@
         <styleDef>DMS_PECA_AssaultRifle</styleDef>
       </li>
       <li>
+        <thingDef>DMS_AssaultShotgun</thingDef>
+        <styleDef>DMS_PECA_AssaultShotgun</styleDef>
+      </li>
+      <li>
         <thingDef>DMS_HeavyMachineGun</thingDef>
         <styleDef>DMS_PECA_HeavyMachineGun</styleDef>
       </li>
