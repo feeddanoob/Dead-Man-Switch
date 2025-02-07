@@ -34,6 +34,7 @@
             </li>
         </modExtensions>
 	</AbilityDef>
+	
     <ThingDef ParentName="PawnFlyerBase">
         <defName>TaborFlyer</defName>
         <thingClass>DMS.PawnFlyerWithEffect</thingClass>

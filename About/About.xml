@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>The Dead Man's Switch</name>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/NaraLogo</modIconPath>
-  	<author>AobaKuma ,Bill Doors, KV4EX</author>
+  	<author>AobaKuma ,Bill Doors, Bread Mo, KV4EX</author>
     <supportedVersions>
 		<li>1.4</li>
 		<li>1.5</li>
@@ -26,6 +26,7 @@
 		<li>ceteam.combatextended</li>
     	<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>vanillaracesexpanded.android</li>
+		<li>breadmo.cinders</li>
   	</loadAfter>
 	<description>Millennia earlier, as the threat of archotech war machines, pirates and awry bio-organic weapons arise. Nara Industries initiated a project of semi-automated war-machines, which aimed at creating a legion of war-machines with low technology and maintenance requirements to aid humans in all galaxy to the war against all those threats.
 	</description>
