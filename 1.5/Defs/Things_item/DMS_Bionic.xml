@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-
   <ThingDef Name="DMS_BioMechBionicBase" ParentName="BodyPartBase" Abstract="True">
     <techLevel>Industrial</techLevel>
     <thingCategories>
@@ -40,7 +39,6 @@
       <displayPriority>300</displayPriority>
     </recipeMaker>
   </ThingDef>
-
   
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase" Name="DMS_SurgeryInstallBase" Abstract="True">
     <surgeryOutcomeEffect IsNull="True" /> <!-- Always succeeds -->
@@ -149,7 +147,6 @@
   </RecipeDef>
 
   <!-- Bionic arm -->
-
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DMS_ProstheticArm</defName>
     <label>Mechaneural Arm</label>

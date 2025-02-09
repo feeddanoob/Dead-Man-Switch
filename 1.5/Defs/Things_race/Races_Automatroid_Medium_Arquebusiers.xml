@@ -24,8 +24,8 @@
       </mechEnabledWorkTypes>
     </race>
     <butcherProducts>
-       <Tungsteel>5</Tungsteel>
-       <Steel>5</Steel>
+      <DMS_ChunkSlag>1</DMS_ChunkSlag>
+      <Tungsteel>55</Tungsteel>
     </butcherProducts>
   </ThingDef>
 
@@ -197,9 +197,6 @@
       </li>
       <li Class="DMS.TurretMannableExtension"/>
     </modExtensions>
-    <butcherProducts>
-      <Steel>15</Steel>
-    </butcherProducts>
   </ThingDef>
   
   <PawnKindDef ParentName="BaseAutomatroidKind">

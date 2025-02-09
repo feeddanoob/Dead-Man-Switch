@@ -8,6 +8,15 @@
 			<drawSize>(1.25,1.25)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>DMS_PECA_AssaultShotgun</defName>
+		<graphicData>
+			<texPath>Things/Style/DMS_MechWeapons/PECA_AssaultShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.25,1.25)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
 
 	<ThingStyleDef>
 		<defName>DMS_PECA_HeavyMachineGun</defName>

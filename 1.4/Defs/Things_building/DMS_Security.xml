@@ -257,7 +257,7 @@
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
         <initialConfigurableTargetFuelLevel>2000</initialConfigurableTargetFuelLevel>
-        <autoRefuelPercent>100</autoRefuelPercent>
+        <autoRefuelPercent>0.8</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
       <li Class="CompProperties_Power">
@@ -374,7 +374,7 @@
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
         <initialConfigurableTargetFuelLevel>1000</initialConfigurableTargetFuelLevel>
-        <autoRefuelPercent>100</autoRefuelPercent>
+        <autoRefuelPercent>0.8</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
       <li Class="CompProperties_Power">
@@ -516,7 +516,7 @@
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
         <initialConfigurableTargetFuelLevel>200</initialConfigurableTargetFuelLevel>
-        <autoRefuelPercent>100</autoRefuelPercent>
+        <autoRefuelPercent>0.8</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
       <li Class="CompProperties_Power">

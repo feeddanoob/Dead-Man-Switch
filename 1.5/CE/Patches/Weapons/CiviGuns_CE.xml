@@ -140,7 +140,7 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_12Gauge_Beanbag</defaultProjectile>
                     <warmupTime>0.6</warmupTime>
-                    <range>14</range>
+                    <range>15</range>
                     <soundCast>Shot_Shotgun</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
@@ -302,7 +302,7 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_22LR_FMJ</defaultProjectile>
                     <warmupTime>1.15</warmupTime>
-                    <range>37</range>
+                    <range>40</range>
                     <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
                     <burstShotCount>15</burstShotCount>
                     <soundCast>DMS_Pistol_Shot</soundCast>
@@ -347,7 +347,7 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
                     <warmupTime>0.7</warmupTime>
-                    <range>15</range>
+                    <range>24</range>
                     <soundCast>DMS_SurvivalRifle_Shot</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>6</muzzleFlashScale>
@@ -458,7 +458,7 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_40x53mmGrenade_HE</defaultProjectile>
                     <warmupTime>1.85</warmupTime>
-                    <range>68</range>
+                    <range>70</range>
                     <soundCast>DMS_SniperRifle_Shot</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>

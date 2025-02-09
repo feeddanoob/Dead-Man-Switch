@@ -128,8 +128,8 @@
 				<defaultProjectile>DMS_Bullet_MiniMachineGun</defaultProjectile>
 				<warmupTime>1.5</warmupTime>
 				<range>19.9</range>
-				<burstShotCount>10</burstShotCount>
-				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>8</burstShotCount>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 				<soundCast>DMS_Pistol_Shot</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -171,8 +171,8 @@
 		  <damageDef>Bullet</damageDef>
 		  <damageAmountBase>4</damageAmountBase>
 		  <armorPenetrationBase>0.04</armorPenetrationBase>	
-		  <stoppingPower>1.0</stoppingPower>
-		  <speed>55</speed>
+		  <stoppingPower>1</stoppingPower>
+		  <speed>50</speed>
 		</projectile>
 	  </ThingDef>
 
@@ -287,8 +287,7 @@
 			<li>RangedLight</li>
 			<li>ShortShots</li>
 			<li>Ranged</li>
-		</weaponClasses>	
-
+		</weaponClasses>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<recipeMaker>
 			<recipeUsers>
@@ -317,7 +316,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_RiotRevolver</defaultProjectile>
-				<warmupTime>0.3</warmupTime>
+				<warmupTime>0.5</warmupTime>
 				<range>12.9</range>
 				<soundCast>Shot_Shotgun</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>

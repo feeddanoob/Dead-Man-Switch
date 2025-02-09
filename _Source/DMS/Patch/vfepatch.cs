@@ -12,10 +12,8 @@ using VFE.Mechanoids.Needs;
 using VFECore;
 using VFEMech;
 
-namespace tete
+namespace DMS
 {
-
-
     [HarmonyPatch(typeof(CompMachineChargingStation))]
    
     static class CompMachineChargingStation_Patch

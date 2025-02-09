@@ -61,7 +61,7 @@
 			</li>
 		</comps>
 		<butcherProducts>
-			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentIndustrial>2</ComponentIndustrial>
 			<Steel>15</Steel>
 		</butcherProducts>
     <tools>
@@ -257,7 +257,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/chad</texPath>
+          <texPath>Things/Automatroid/OldTexture/chad</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.5</drawSize>
@@ -277,6 +277,16 @@
       <thinkTreeMain>Mechanoid</thinkTreeMain>
       <thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>
     </race>
+    <comps>
+      <li Class="DMS.CompProperties_DeadManSwitch">
+        <minDelayUntilDMS>72000</minDelayUntilDMS>
+        <nameRule>DMS_MechAwaken</nameRule>
+      </li>
+      <li Class="DMS.CompPropertiesInteracte">
+        <interacteChance>0.03</interacteChance>
+        <interacte>Chitchat</interacte>
+      </li>
+    </comps>
   </ThingDef>
   
   <PawnKindDef ParentName="BaseAutomatroidKind">

@@ -38,7 +38,7 @@ namespace DMS
     public class HediffComp_ProtectiveShield : HediffComp_PreApplyDamage
     {
         public float DurablePercent => Hitpoints / MaxHitpoints;
-        public float MaxHitpoints => maxHitpoints==0?maxHitpoints = (int)(Props.hitpoints * parent.pawn.BodySize):maxHitpoints;
+        public float MaxHitpoints => maxHitpoints == 0 ? maxHitpoints = (int)(Props.hitpoints * parent.pawn.BodySize) : maxHitpoints;
         public float Hitpoints
         {
             get { return hitpoints; }

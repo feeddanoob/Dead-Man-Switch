@@ -11,7 +11,7 @@
 		</weaponTags>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_Weapon_M214</texPath>
-			<drawSize>1.2</drawSize>
+			<drawSize>1.5</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>10</Mass>
@@ -36,12 +36,18 @@
 		</costList>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>DMS.Verb_ArcSprayProjectile</verbClass>
+				<sprayWidth>2</sprayWidth>
+				<sprayArching>6</sprayArching>
+				<sprayThicknessCells>3</sprayThicknessCells>
+				<sprayNumExtraCells>32</sprayNumExtraCells> <!-- 要大於或等於發射次數 -->
+				<consumeFuelPerBurst>1</consumeFuelPerBurst>
+
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
 				<warmupTime>1.8</warmupTime>
-				<range>25.9</range>
-				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<range>30.9</range>
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
 				<burstShotCount>30</burstShotCount>
 				<soundCast>Shot_Minigun</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
@@ -99,12 +105,18 @@
 		</costList>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>DMS.Verb_ArcSprayProjectile</verbClass>
+				<sprayWidth>3</sprayWidth>
+				<sprayArching>6</sprayArching>
+				<sprayThicknessCells>3</sprayThicknessCells>
+				<sprayNumExtraCells>16</sprayNumExtraCells> <!-- 要大於或等於發射次數 -->
+				<consumeFuelPerBurst>1</consumeFuelPerBurst>
+
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_Kord</defaultProjectile>
 				<warmupTime>2</warmupTime>
-				<range>29.9</range>
-				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<range>39.9</range>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<burstShotCount>15</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -166,13 +178,19 @@
 		</costList>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>DMS.Verb_ArcSprayProjectile</verbClass>
+				<sprayWidth>6</sprayWidth>
+				<sprayArching>5</sprayArching>
+				<sprayThicknessCells>3</sprayThicknessCells>
+				<sprayNumExtraCells>24</sprayNumExtraCells> <!-- 要大於或等於發射次數 -->
+				<consumeFuelPerBurst>1</consumeFuelPerBurst>
+
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
 				<minRange>8</minRange>
-				<range>34.9</range>
-				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<range>39.9</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 				<burstShotCount>24</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -225,11 +243,17 @@
 		</statBases>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>DMS.Verb_ArcSprayProjectile</verbClass>
+				<sprayWidth>4</sprayWidth>
+				<sprayArching>6</sprayArching>
+				<sprayThicknessCells>3</sprayThicknessCells>
+				<sprayNumExtraCells>32</sprayNumExtraCells>
+				<consumeFuelPerBurst>1</consumeFuelPerBurst>
+
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
-				<range>34.9</range>
+				<range>44.9</range>
 				<minRange>1.9</minRange>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>30</burstShotCount>
@@ -297,14 +321,20 @@
 		</costList>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>DMS.Verb_ArcSprayProjectile</verbClass>
+				<sprayWidth>5</sprayWidth>
+				<sprayArching>4</sprayArching>
+				<sprayThicknessCells>3</sprayThicknessCells>
+				<sprayNumExtraCells>20</sprayNumExtraCells>
+				<consumeFuelPerBurst>1</consumeFuelPerBurst>
+
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<burstShotCount>20</burstShotCount>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_CIWS</defaultProjectile>
 				<warmupTime>3</warmupTime>
-				<minRange>5.9</minRange>
-				<range>39.9</range>
-				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-				<burstShotCount>12</burstShotCount>
+				<minRange>9.9</minRange>
+				<range>44.9</range>
 				<soundCast>Shot_TurretSniper</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>15</muzzleFlashScale>

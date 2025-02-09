@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  
+
   <RulePackDef><!-- 先鋒艦隊陣營名稱生成 -->
     <defName>DMS_VanguardFaction</defName>
     <rulePack>
       <rulesStrings>
         <!-- 153rd Frontier Division-->
         <li>r_name->[BrigadeNum0][BrigadeNum1][BrigadeNum2] [BrigadeType] Division</li>
-      
+
         <li>BrigadeType->Pioneer</li>
         <li>BrigadeType->Colonial</li>
         <li>BrigadeType->Frontier</li>
         <li>BrigadeType->Vanguard</li>
         <li>BrigadeType->Logistic</li>
-      
+
         <li>BrigadeNum0->1</li>
         <li>BrigadeNum0->2</li>
         <li>BrigadeNum0->3</li>
@@ -24,7 +24,7 @@
         <li>BrigadeNum0->8</li>
         <li>BrigadeNum0->9</li>
 
-        <li>BrigadeNum1->0</li>	
+        <li>BrigadeNum1->0</li>
         <li>BrigadeNum1->1</li>
         <li>BrigadeNum1->2</li>
         <li>BrigadeNum1->3</li>
@@ -35,7 +35,7 @@
         <li>BrigadeNum1->8</li>
         <li>BrigadeNum1->9</li>
 
-        <li>BrigadeNum2->0th</li>	
+        <li>BrigadeNum2->0th</li>
         <li>BrigadeNum2->1st</li>
         <li>BrigadeNum2->2nd</li>
         <li>BrigadeNum2->3rd</li>
@@ -45,11 +45,11 @@
         <li>BrigadeNum2->7th</li>
         <li>BrigadeNum2->8th</li>
         <li>BrigadeNum2->9th</li>
-	
+
       </rulesStrings>
     </rulePack>
   </RulePackDef>
-  
+
   <RulePackDef><!-- 先鋒艦隊基地名稱生成 -->
     <defName>DMS_VanguardBase</defName>
     <rulePack>
@@ -125,8 +125,8 @@
       <rulesStrings>
         <!-- 常規 二五 "鋼盔A" -->
         <li>r_name->[MechType] [BrigadeNum0]-[BrigadeNum1] "[Callsign][Code]"</li>
-      
-        
+
+
         <li>MechType->Standard</li>
         <li>MechType->Army</li>
         <li>MechType->Combat</li>
@@ -142,7 +142,7 @@
         <li>BrigadeNum0->Eight</li>
         <li>BrigadeNum0->Niner</li>
 
-        <li>BrigadeNum1->O</li>	
+        <li>BrigadeNum1->O</li>
         <li>BrigadeNum1->One</li>
         <li>BrigadeNum1->Two</li>
         <li>BrigadeNum1->Three</li>
@@ -152,7 +152,7 @@
         <li>BrigadeNum1->Seven</li>
         <li>BrigadeNum1->Eight</li>
         <li>BrigadeNum1->Nine</li>
-        
+
 
         <li>Callsign->Skull</li>
         <li>Callsign->Shield</li>
@@ -171,7 +171,7 @@
 
         <li>Callsign->Skelton</li>
 
-        
+
         <li>Code->Alfa</li>
         <li>Code->Bravo</li>
         <li>Code->Charlie</li>
@@ -201,15 +201,15 @@
 
       </rulesStrings>
     </rulePack>
-  </RulePackDef>  
+  </RulePackDef>
 
   <RulePackDef><!-- 重型機兵名稱生成 -->
     <defName>DMS_VanguardMechHeavy</defName>
     <rulePack>
       <rulesStrings>
         <li>r_name->[MechType] [BrigadeNum0]-[BrigadeNum1] "[Callsign]"</li>
-      
-        
+
+
         <li>MechType->Pivot</li>
         <li>MechType->Heavy</li>
         <li>MechType->Armored</li>
@@ -226,7 +226,7 @@
         <li>BrigadeNum0->Eight</li>
         <li>BrigadeNum0->Niner</li>
 
-        <li>BrigadeNum1->O</li>	
+        <li>BrigadeNum1->O</li>
         <li>BrigadeNum1->One</li>
         <li>BrigadeNum1->Two</li>
         <li>BrigadeNum1->Three</li>
@@ -236,10 +236,9 @@
         <li>BrigadeNum1->Seven</li>
         <li>BrigadeNum1->Eight</li>
         <li>BrigadeNum1->Nine</li>
-        
 
 
-        <li>Callsign->Alfa</li>  
+        <li>Callsign->Alfa</li>
         <li>Callsign->Beta</li>
         <li>Callsign->Detla</li>
         <li>Callsign->Gamma</li>
@@ -247,7 +246,7 @@
         <li>Callsign->Arrow head</li>
         <li>Callsign->Hammer</li>
 
-        
+
         <li>Callsign->Wolfram</li>
         <li>Callsign->Stainless</li>
         <li>Callsign->Silver</li>
@@ -270,5 +269,95 @@
 
       </rulesStrings>
     </rulePack>
-  </RulePackDef>  
+  </RulePackDef>
+
+  <RulePackDef><!-- 覺醒機兵名稱生成 -->
+    <defName>DMS_MechAwaken</defName>
+    <rulePack>
+      <rulesStrings>
+
+        <li>r_name->[MechType] [BrigadeNum0]</li>
+        <li>r_name->[MechType] [BrigadeNum0]-[BrigadeNum1]</li>
+        <li>r_name->[Callsign] [BrigadeNum0]</li>
+        <li>r_name->[Callsign] [BrigadeNum0]-[BrigadeNum1]</li>
+        <li>r_name->[Callsign] [Code]</li>
+        <li>r_name->[Code]</li>
+        <li>r_name->[Code] [BrigadeNum0]</li>
+        <li>r_name->[Code] [BrigadeNum0]-[BrigadeNum1]</li>
+
+        <li>MechType->Standard</li>
+        <li>MechType->Army</li>
+        <li>MechType->Combat</li>
+        <li>MechType->Unit</li>
+
+        <li>BrigadeNum0->One</li>
+        <li>BrigadeNum0->Two</li>
+        <li>BrigadeNum0->Three</li>
+        <li>BrigadeNum0->Four</li>
+        <li>BrigadeNum0->Five</li>
+        <li>BrigadeNum0->Six</li>
+        <li>BrigadeNum0->Seven</li>
+        <li>BrigadeNum0->Eight</li>
+        <li>BrigadeNum0->Niner</li>
+
+        <li>BrigadeNum1->O</li>
+        <li>BrigadeNum1->One</li>
+        <li>BrigadeNum1->Two</li>
+        <li>BrigadeNum1->Three</li>
+        <li>BrigadeNum1->Four</li>
+        <li>BrigadeNum1->Five</li>
+        <li>BrigadeNum1->Six</li>
+        <li>BrigadeNum1->Seven</li>
+        <li>BrigadeNum1->Eight</li>
+        <li>BrigadeNum1->Nine</li>
+
+
+        <li>Callsign->Skull</li>
+        <li>Callsign->Shield</li>
+
+        <li>Callsign->Iron</li>
+        <li>Callsign->Stony</li>
+
+        <li>Callsign->Helmet</li>
+
+        <li>Callsign->Bulky</li>
+
+        <li>Callsign->Wolf</li>
+        <li>Callsign->Fox</li>
+        <li>Callsign->Hound</li>
+        <li>Callsign->Lynx</li>
+
+        <li>Callsign->Skelton</li>
+
+
+        <li>Code->Alfa</li>
+        <li>Code->Bravo</li>
+        <li>Code->Charlie</li>
+        <li>Code->Delta</li>
+        <li>Code->Echo</li>
+        <li>Code->Foxtrot</li>
+        <li>Code->Golf</li>
+        <li>Code->Hotel</li>
+        <li>Code->India</li>
+        <li>Code->Juliett</li>
+        <li>Code->Kilo</li>
+        <li>Code->Lima</li>
+        <li>Code->Mike</li>
+        <li>Code->November</li>
+        <li>Code->Oscar</li>
+        <li>Code->Papa</li>
+        <li>Code->Quebec</li>
+        <li>Code->Romeo</li>
+        <li>Code->Sierra</li>
+        <li>Code->Tango</li>
+        <li>Code->Uniform</li>
+        <li>Code->Victor</li>
+        <li>Code->Whiskey</li>
+        <li>Code->X-ray</li>
+        <li>Code->Yankee</li>
+        <li>Code->Zulu</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
 </Defs>

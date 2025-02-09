@@ -13,7 +13,7 @@ namespace DMS
             if (__result) return;
             if (Find.Selector.SingleSelectedThing is Pawn pawn)
             {
-                if (pawn is IWeaponUsable && pawn.Faction.IsPlayer)
+                if (pawn is IWeaponUsable && pawn.Faction != null && pawn.Faction.IsPlayer)
                 {
                     __result = true;
                 }

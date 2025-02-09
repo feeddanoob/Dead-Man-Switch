@@ -15,7 +15,22 @@
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1</baseHealthScale>
       <mechWeightClass>Medium</mechWeightClass>
+      <detritusLeavings Inherit="false">
+        <li>
+          <def>DMS_ChunkSlag</def>
+          <texOverrideIndex>3</texOverrideIndex>
+          <spawnChance>0.05</spawnChance>
+        </li>
+        <li>
+          <def>DMS_ChunkSlag</def>
+          <texOverrideIndex>8</texOverrideIndex>
+          <spawnChance>0.05</spawnChance>
+        </li>
+      </detritusLeavings>
     </race>
+    <butcherProducts>
+      <Steel>20</Steel>
+    </butcherProducts>
   </ThingDef>
 
   <!-- DMS_Mech_Soldat 士兵常規型 -->

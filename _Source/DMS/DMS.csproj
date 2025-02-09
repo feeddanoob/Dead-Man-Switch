@@ -16,6 +16,10 @@
     <EmbeddedResource Remove="Melee\**" />
     <None Remove="Melee\**" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Melee\Verb_MeleeSweep.cs" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="VFECore">
       <HintPath>$(MSBuildThisFileDirectory)/../Reference/VFECore.dll</HintPath>

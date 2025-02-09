@@ -228,7 +228,7 @@
       <disallowedThingDefs>
         <!-- <li MayRequire="aoba.fortress.industrial">FT_BlocksConcrete</li> -->
         <li MayRequire="aoba.fortress.industrial">FT_WoodConcrete</li>
-		    <li MayRequire="aoba.fortress.industrial">FT_ReinforcedConcreteBag</li>
+        <li MayRequire="aoba.fortress.industrial">FT_ReinforcedConcreteBag</li>
       </disallowedThingDefs>
       <thingDefs>
         <li>Steel</li>
@@ -604,6 +604,7 @@
         <filter>
           <thingDefs>
             <li>Gold</li>
+            <li MayRequire="breadmo.cinders">Cinder_AmorphousPolymer</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -612,6 +613,7 @@
         <filter>
           <thingDefs>
             <li>Tungsteel</li>
+            <li MayRequire="breadmo.cinders">Cinder_AmorphousPolymer</li>
           </thingDefs>
         </filter>
         <count>8</count>
@@ -620,6 +622,7 @@
         <filter>
           <thingDefs>
             <li>Plasfiber</li>
+            <li MayRequire="breadmo.cinders">Cinder_AmorphousPolymer</li>
           </thingDefs>
         </filter>
         <count>10</count>
@@ -627,6 +630,7 @@
       <li>
         <filter>
           <thingDefs>
+            <li MayRequire="breadmo.cinders">Cinder_AmorphousPolymer</li>
             <li>Neutroamine</li>
           </thingDefs>
         </filter>
@@ -635,6 +639,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
+        <li MayRequire="breadmo.cinders">Cinder_AmorphousPolymer</li>
         <li>Gold</li>
         <li>Tungsteel</li>
         <li>Plasfiber</li>
@@ -672,6 +677,7 @@
         <filter>
           <thingDefs>
             <li>Gold</li>
+            <li MayRequire="breadmo.cinders">Cinder_AmorphousPolymer</li>
           </thingDefs>
         </filter>
         <count>4</count>
@@ -680,6 +686,7 @@
         <filter>
           <thingDefs>
             <li>Tungsteel</li>
+            <li MayRequire="breadmo.cinders">Cinder_AmorphousPolymer</li>
           </thingDefs>
         </filter>
         <count>32</count>
@@ -688,6 +695,7 @@
         <filter>
           <thingDefs>
             <li>Plasfiber</li>
+            <li MayRequire="breadmo.cinders">Cinder_AmorphousPolymer</li>
           </thingDefs>
         </filter>
         <count>40</count>
@@ -696,6 +704,7 @@
         <filter>
           <thingDefs>
             <li>Neutroamine</li>
+            <li MayRequire="breadmo.cinders">Cinder_AmorphousPolymer</li>
           </thingDefs>
         </filter>
         <count>80</count>
@@ -706,7 +715,8 @@
         <li>Gold</li>
         <li>Tungsteel</li>
         <li>Plasfiber</li>
-        <li>Neutroamine</li>        
+        <li>Neutroamine</li>
+        <li MayRequire="breadmo.cinders">Cinder_AmorphousPolymer</li>    
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -737,6 +747,7 @@
         <filter>
           <thingDefs>
             <li>Gold</li>
+            <li MayRequire="breadmo.cinders">Cinder_AmorphousPolymer</li>
           </thingDefs>
         </filter>
         <count>10</count>
@@ -753,6 +764,7 @@
         <filter>
           <thingDefs>
             <li>Plasfiber</li>
+            <li MayRequire="breadmo.cinders">Cinder_AmorphousPolymer</li>
           </thingDefs>
         </filter>
         <count>20</count>
@@ -761,6 +773,7 @@
         <filter>
           <thingDefs>
             <li>Neutroamine</li>
+            <li MayRequire="breadmo.cinders">Cinder_AmorphousPolymer</li>
           </thingDefs>
         </filter>
         <count>50</count>
@@ -771,7 +784,8 @@
         <li>Gold</li>
         <li>ComponentStamped</li>
         <li>Plasfiber</li>
-        <li>Neutroamine</li>        
+        <li>Neutroamine</li>
+        <li MayRequire="breadmo.cinders">Cinder_AmorphousPolymer</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>

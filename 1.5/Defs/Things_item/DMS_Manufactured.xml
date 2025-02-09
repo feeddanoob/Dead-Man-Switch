@@ -49,6 +49,7 @@
       <li>RewardStandardCore</li>
     </thingSetMakerTags>
   </ThingDef>
+
   <!-- 塑化纖維 玩家能生產的進階纖維，性質接近魔鬼布。製造需要塑鋼。-->  
   <ThingDef ParentName="ResourceBase">
     <defName>Plasfiber</defName>
@@ -152,6 +153,7 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
+
   <!-- 複合陶瓷 強度很高但耐久很低的石質材料，是部分DMS機兵的製造用料-->
   <ThingDef ParentName="ResourceBase">
     <defName>DMS_Ceramics</defName>
@@ -274,6 +276,7 @@
     </comps>
     <isTechHediff>true</isTechHediff>
   </ThingDef>
+
   <!-- 沖壓機件 DMS裡廣泛使用的零件，機兵與建築等複雜機器都會需要用到，也可以轉換成工業零件-->
   <ThingDef ParentName="ResourceBase">
     <defName>ComponentStamped</defName>
@@ -307,6 +310,7 @@
       <li>Manufactured</li>
     </thingCategories>
   </ThingDef>
+  
   <!-- 生物濕件 重型機兵的關鍵零件，前期只能靠打機兵軍團獲取，後期可以自己生產-->
   <ThingDef ParentName="ResourceBase">
     <defName>Neurocomputer</defName>

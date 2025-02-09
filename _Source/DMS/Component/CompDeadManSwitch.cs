@@ -7,11 +7,9 @@ using Verse.Noise;
 using System.Linq;
 using RimWorld.Planet;
 using System;
-using static RimWorld.MechClusterSketch;
 
 namespace DMS
 {
-    //在失去機械師控制後只會自動關機
     public class CompDeadManSwitch : ThingComp
     {
         public CompProperties_DeadManSwitch Props => (CompProperties_DeadManSwitch)props;
@@ -38,6 +36,9 @@ namespace DMS
 
         public bool woken_Lurk;
         public int timeToWake;
+
+        public bool outgoing;
+        public int outgoingTime;
         public override void CompTick()
         {
             if (delayCheck > 0)
@@ -46,72 +47,67 @@ namespace DMS
             }
             if (delayCheck <= 0)
             {
-                //TryTriggerDMS();
+                TryTriggerDMS();
                 delayCheck = Props.minDelayUntilDMS;
-            }
-
-            if (!this.woken && this.woken_Lurk) 
-            {
-                if (this.timeToWake <= 0)
-                {
-                    this.Wake();        
-                }
-                this.timeToWake--;
             }
         }
         public void Wake()
         {
-            this.woken = true;
-            Pawn pawn = ((Pawn)this.parent);
-            pawn.Name = new NameSingle(NameGenerator.GenerateName(this.Props.nameRule ?? RulePackDefOf.NamerTraderGeneral));
-
-            Pawn_RelationsTracker relations = pawn.relations;
-            if (relations.GetFirstDirectRelationPawn(PawnRelationDefOf.Overseer, null) is Pawn overseer)
+            this.woken_Lurk = false;
+            if (!this.woken)
             {
-                pawn.relations.RemoveDirectRelation(PawnRelationDefOf.Overseer, overseer);
+                this.woken = true;
+                Pawn pawn = ((Pawn)this.parent);
+                pawn.Name = new NameSingle(NameGenerator.GenerateName(this.Props.nameRule ?? RulePackDefOf.NamerTraderGeneral));
+
+                Pawn_RelationsTracker relations = pawn.relations;
+                if (relations.GetFirstDirectRelationPawn(PawnRelationDefOf.Overseer, null) is Pawn overseer)
+                {
+                    pawn.relations.RemoveDirectRelation(PawnRelationDefOf.Overseer, overseer);
+                }
+                Find.LetterStack.ReceiveLetter("DMS_MechWake".Translate(this.parent.Label), "DMS_MechWakeDesc".Translate(this.parent.Label), LetterDefOf.PositiveEvent, this.parent);
+                pawn.interactions = new Pawn_InteractionsTracker(pawn);
             }
-            Find.LetterStack.ReceiveLetter("MechWake".Translate(this.parent.Label), 
-                "MechWakeDesc".Translate(this.parent.Label),LetterDefOf.PositiveEvent,this.parent);
-            pawn.interactions = new Pawn_InteractionsTracker(pawn);
         }
         private void TryTriggerDMS()
         {
-            Pawn mech = parent as Pawn;
-            if (mech.IsWorldPawn() && mech.Faction != Faction.OfPlayer && mech.GetOverseer() != null)//媽的，又有機兵覺醒啦。
+            if (this.woken && this.Overseer != null)
             {
-                //得寫個生成讓他自己找回來
+                this.woken_Lurk = false;
+                this.woken = false;
             }
-            
-            if (!mech.Faction.IsPlayer) return;
-            CompOverseerSubject a = parent.GetComp<CompOverseerSubject>();
 
-            var overseer = mech.GetOverseer()?.mechanitor;
-            if (overseer != null) return;
-            if (mech.Spawned && !overseer.CanControlMechs) //在無法連接時自己找其他人連接。
+            if (!this.woken && this.woken_Lurk)
             {
-                var li = mech.Map.mapPawns.FreeColonistsSpawned.Where(c => MechanitorUtility.IsMechanitor(c));
-                if (li.Any())
+                if (this.timeToWake <= 0) this.Wake();
+                this.timeToWake-= Props.minDelayUntilDMS;
+            }
+            if (this.parent.Spawned && this.woken &&this.outgoing)
+            {
+                this.outgoingTime+= Props.minDelayUntilDMS;
+                if (this.outgoingTime >= 60000 * 2 && this.parent is Pawn pawn
+                    && !pawn.Downed && pawn.CurJobDef != DMS_DefOf.DMS_MechLeave &&
+                    RCellFinder.TryFindBestExitSpot(pawn, out IntVec3 spot))
                 {
-                    foreach (var c in li)
-                    {
-                        Log.Message(c.Name);
-                        if (c.mechanitor.CanOverseeSubject(mech))
-                        {
-                            mech.GetOverseer()?.relations.RemoveDirectRelation(PawnRelationDefOf.Overseer, mech);
-                            c.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mech);
-                            Messages.Message("DMS_AutomatroidReconnected".Translate(), new LookTargets(parent), MessageTypeDefOf.PositiveEvent);
-                            return;
-                        }
-                    }
+                    Find.LetterStack.ReceiveLetter("DMS_MechStartLeave".Translate(this.parent.Label), "DMS_MechStartLeaveDesc".Translate(this.parent.Label), LetterDefOf.PositiveEvent, this.parent);
+                    Job job = JobMaker.MakeJob(DMS_DefOf.DMS_MechLeave, spot);
+                    job.exitMapOnArrival = true;
+                    pawn.jobs.StartJob(job);
                 }
-                Messages.Message("DMS_AutomatroidDisconnected".Translate(), new LookTargets(parent), MessageTypeDefOf.NeutralEvent);
-                return;
             }
         }
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
             delayCheck = Props.minDelayUntilDMS;
+            if (!respawningAfterLoad && Current.Game.GetComponent<GameComponent_DMS>() is GameComponent_DMS comp
+                && comp.OutgoingMeches.Find(m => m.mech == this.parent) is OutgoingMech mech)
+            {
+                comp.removedCache ??= new List<Pawn>();
+                comp.removedCache.Add(this.parent as Pawn);
+                this.outgoing = false;
+                this.outgoingTime = 0;
+            }
         }
         public override string CompInspectStringExtra()
         {  
@@ -127,10 +123,8 @@ namespace DMS
         {
             base.PostDeSpawn(map);
             IThingHolder holder = this.parent.holdingOwner?.Owner;
-            if (this.Overseer != null
-                && (holder as Thing == null && holder as Caravan == null))
+            if (this.Overseer != null && (holder as Thing == null && holder as Caravan == null) && Current.Game.GetComponent<GameComponent_DMS>() is GameComponent_DMS dms && !dms.lostMechs.Contains(this.parent) && !this.woken)
             {
-                GameComponent_DMS dms = Current.Game.GetComponent<GameComponent_DMS>();
                 dms.lostMechs.Add(this.parent);
             }
         }
@@ -142,11 +136,11 @@ namespace DMS
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            if (Prefs.DevMode) 
+            if (Prefs.DevMode && DebugSettings.godMode)
             {
                 yield return new Command_Action()
                 {
-                    defaultLabel = "Check State",
+                    defaultLabel = "Debug: Check State",
                     action = () => 
                     {
                         Log.Message(this.woken);
@@ -156,10 +150,19 @@ namespace DMS
                 };
                 yield return new Command_Action()
                 {
-                    defaultLabel = "Wake",
+                    defaultLabel = "Debug: Wake",
                     action = () =>
                     {
                         this.Wake();
+                    }
+                };
+                yield return new Command_Action()
+                {
+                    defaultLabel = "Debug: Outgoing",
+                    action = () =>
+                    {
+                        this.outgoing = true;
+                        this.outgoingTime = 60000 * 2;
                     }
                 };
             }
@@ -171,7 +174,9 @@ namespace DMS
             Scribe_Values.Look(ref delayCheck, "delayCheck", 0);
             Scribe_Values.Look(ref timeToWake, "timeToWake", 0);
             Scribe_Values.Look(ref woken_Lurk, "woken_Lurk");
-            Scribe_Values.Look(ref woken, "woken");
+            Scribe_Values.Look(ref woken, "woken",false);
+            Scribe_Values.Look(ref outgoing, "outgoing");
+            Scribe_Values.Look(ref outgoingTime, "outgoingTime");
         }
 
 

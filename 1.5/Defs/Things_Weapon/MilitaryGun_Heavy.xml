@@ -1,7 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	
-
 	<!--MSC-->
 	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
 		<defName>DMS_SniperCannon</defName>
@@ -97,8 +95,8 @@
 			<WorkToMake>60000</WorkToMake>
 			<AccuracyTouch>0.65</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
-			<AccuracyMedium>0.70</AccuracyMedium>
-			<AccuracyLong>0.65</AccuracyLong>
+			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
 			<Mass>14.50</Mass>
 			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 		</statBases>
@@ -241,7 +239,7 @@
 			<AccuracyShort>0.95</AccuracyShort>
 			<AccuracyMedium>0.92</AccuracyMedium>
 			<AccuracyLong>0.90</AccuracyLong>
-			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
 			<Mass>80</Mass>
 		</statBases>
 		<weaponTags>
@@ -263,7 +261,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_RR</defaultProjectile>
-				<warmupTime>3</warmupTime>
+				<warmupTime>2.2</warmupTime>
 				<minRange>8</minRange>
 				<range>34.9</range>
 				<burstShotCount>1</burstShotCount>
@@ -438,7 +436,7 @@
 			<AccuracyMedium>0.90</AccuracyMedium>
 			<AccuracyLong>0.80</AccuracyLong>
 			<Mass>55</Mass>
-			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.2</MoveSpeed>
@@ -457,7 +455,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_Dragoon_Rifle</defaultProjectile>
-				<warmupTime>3</warmupTime>
+				<warmupTime>2</warmupTime>
 				<range>39.9</range>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>Shot_TurretSniper</soundCast>
@@ -547,7 +545,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_DGL</defaultProjectile>
-				<warmupTime>2</warmupTime>
+				<warmupTime>2.4</warmupTime>
 				<minRange>8</minRange>
 				<range>29.9</range>
 				<burstShotCount>1</burstShotCount>
@@ -634,9 +632,13 @@
 		    <AccuracyShort>1.00</AccuracyShort>
 		    <AccuracyMedium>1.00</AccuracyMedium>
 		    <AccuracyLong>0.99</AccuracyLong>
-		    <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+		    <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
+			<researchPrerequisites>
+				<li>DMS_Synthroid</li>
+				<li>DMS_EquipmentHeavy</li>
+			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -659,19 +661,19 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<defaultProjectile>DMS_Bullet_Dawnblade</defaultProjectile>
 				<requireLineOfSight>true</requireLineOfSight>
-				<warmupTime>2.4</warmupTime>
-				<minRange>4.9</minRange>
+				<warmupTime>2.7</warmupTime>
+				<minRange>6.9</minRange>
 				<range>50</range>
 				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
-				<burstShotCount>3</burstShotCount>
-				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>36</ticksBetweenBurstShots>
 				<soundCast>Explosion_Bomb</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>20</muzzleFlashScale>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<forcedMissRadius>2</forcedMissRadius>
+				<forcedMissRadius>3</forcedMissRadius>
 			</li>
 		</verbs>
 		<modExtensions>

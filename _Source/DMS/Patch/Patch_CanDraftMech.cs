@@ -19,7 +19,7 @@ namespace DMS
             }
             List<Pawn> overseenPawns = MechanitorUtility.GetOverseer(mech)?.mechanitor?.OverseenPawns;
             if (overseenPawns.NullOrEmpty()) return;
-            List<Pawn> commandRelay = overseenPawns.Where(temp => temp.TryGetComp<CompCommandRelay>() != null).ToList();
+            List<Pawn> commandRelay = overseenPawns.Where(temp => temp.GetComp<CompCommandRelay>() != null).ToList();
             if (commandRelay.NullOrEmpty()) return;
 
             foreach (Pawn pawn in overseenPawns.Where(p => p.MapHeld == mech.MapHeld))

@@ -72,7 +72,16 @@
                     <li Class="JobGiver_GetEnergy_Charger" />
                   </subNodes>
                 </li>
-
+                <li Class="DMS.ThinkNode_Condition_Wake" MayRequire="Ludeon.RimWorld.Biotech">
+                  <subNodes>
+                    <li Class="JobGiver_SeekAllowedArea" />
+                    <li Class="JobGiver_GetEnergy_Charger" />
+                    <li Class="JobGiver_Work">
+                      <emergency>true</emergency>
+                    </li>
+                    <li Class="JobGiver_Work" />
+                  </subNodes>
+                </li>
                 <!-- Work modes -->
                 <li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
                   <workMode>Work</workMode>
@@ -83,7 +92,7 @@
                       <emergency>true</emergency>
                     </li>
                     <li Class="JobGiver_Work" />
-                    <li Class="ThinkNode_ConditionalWorkMech"><!-- Combat mechs do patrolling -->
+                    <li Class="ThinkNode_ConditionalWorkMech">                      <!-- Combat mechs do patrolling -->
                       <invert>true</invert>
                       <subNodes>
                         <li Class="JobGiver_AIFightEnemies">

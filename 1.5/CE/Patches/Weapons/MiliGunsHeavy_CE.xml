@@ -4,8 +4,7 @@
     <Operation Class="PatchOperationSequence">
         <operations>
 
-            <!--=====Patch
-            tools=====-->
+            <!--=====Patch tools=====-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[@Name="DMS_AutomatroidHeavyGun"]/tools</xpath>
                 <value>
@@ -64,8 +63,7 @@
             </li>
 
 
-            <!--=====
-            2A38 30mm+ 9M311 =====-->
+            <!--===== 2A38 30mm+ 9M311 =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Tarbosaurus_Gun</defName>
                 <statBases>
@@ -246,8 +244,7 @@
                 </FireModes>
             </li>
 
-            <!--=====
-            37mm Gun =====-->
+            <!--===== 37mm Gun =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Gun_DragoonRifle</defName>
                 <statBases>
@@ -285,8 +282,7 @@
                 </weaponTags>
             </li>
 
-            <!--=====
-            60mm Launcher =====-->
+            <!--===== 60mm Launcher =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>DMS_Gun_DragoonGrenade</defName>
                 <statBases>

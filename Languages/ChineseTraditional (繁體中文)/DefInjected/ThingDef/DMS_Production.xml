@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: sintering furnace -->
+  <!-- EN: Sintering Furnace -->
   <DMS_Furnace.label>燒結爐</DMS_Furnace.label>
-  <!-- EN: A massive industrial equipment use to create an ultra-high temperature environment in a closed space to sinter alloy or ceramics. can also smelt metal. -->
+  <!-- EN: A massive industrial furnace used to heat metals and minerals to a near liquid form to create advanced alloys. Can also be used to smelt metals. -->
   <DMS_Furnace.description>在密閉空間內創造超高溫環境來燒結合金或陶瓷以及冶煉金屬用的大型工業設備。</DMS_Furnace.description>
   
   <!-- EN: Mote -->
@@ -15,24 +15,24 @@
   <!-- EN: Mote -->
   <DMS_MechConstructorForming.label>Mote</DMS_MechConstructorForming.label>
   
-  <!-- EN: automatroid constructor -->
-  <DMS_MechGestatorSamll.label>機械組裝平台</DMS_MechGestatorSamll.label>
-  <!-- EN: A massive industrial equipment use to assemble automatroid. -->
+  <!-- EN: Automatroid Constructor -->
+  <DMS_MechGestatorSamll.label>機械組裝平臺</DMS_MechGestatorSamll.label>
+  <!-- EN: A massive piece of industrial equipment used to assemble Automatroids. -->
   <DMS_MechGestatorSamll.description>用於組裝機械體的大型工業設備。</DMS_MechGestatorSamll.description>
   
-  <!-- EN: pressure chamber -->
+  <!-- EN: Pressure Chamber -->
   <DMS_ReactionChamber.label>高壓反應釜</DMS_ReactionChamber.label>
-  <!-- EN: A massive industrial equipment use to create a high-pressure environment to cause materials to react together. -->
+  <!-- EN: A massive industrial-grade vacuum chamber used to create a high-pressure environment to create mineral alloys. -->
   <DMS_ReactionChamber.description>用於創造高壓環境使材料發生反應的大型工業設備。</DMS_ReactionChamber.description>
   
-  <!-- EN: artifuscle chamber -->
+  <!-- EN: Artifuscle Chamber -->
   <DMS_TableArtifuscle.label>生物培養裝置</DMS_TableArtifuscle.label>
-  <!-- EN: High-end production equipment for cultivating artifuscle and bionic. -->
+  <!-- EN: High-end production equipment for cultivating Artifuscle and bionics. -->
   <DMS_TableArtifuscle.description>培育義肢、仿生的高階生產設備。</DMS_TableArtifuscle.description>
   
-  <!-- EN: machinery printer -->
+  <!-- EN: Machinery Printer -->
   <DMS_TableMachinePrinter.label>機械沖壓機</DMS_TableMachinePrinter.label>
-  <!-- EN: a composite metal printer, which can manufacture and assemble metal products and weapons through cold forging to mass-produce machinery. -->
+  <!-- EN: A composite metal printer which can manufacture and assemble metal products and weapons through cold forging in order to mass-produce machinery. -->
   <DMS_TableMachinePrinter.description>用於加工量產機械的複合金屬打印機，能以冷鍛方式快速製造與組裝金屬製品與武器。</DMS_TableMachinePrinter.description>
   
 </LanguageData>

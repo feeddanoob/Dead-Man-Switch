@@ -23,9 +23,9 @@ namespace DMS
                 return;
             }
             List<Pawn> overseenPawns = MechanitorUtility.GetOverseer(mech)?.mechanitor?.OverseenPawns;
-            foreach (Pawn item in overseenPawns.Where(p => p.Spawned))
+            foreach (Pawn item in overseenPawns.Where(p => p.Spawned && p.MapHeld==mech.MapHeld))
             {
-                if (item.TryGetComp<CompCommandRelay>(out var c) && item.Map == mech.Map && InRange(item, target, c.SquaredDistance))
+                if (item.TryGetComp<CompCommandRelay>(out var c) && InRange(item, target, c.SquaredDistance))
                 {
                     __result = true;
                     return;
@@ -33,8 +33,7 @@ namespace DMS
             }
             foreach (Pawn p in mech.Map.mapPawns.SpawnedPawnsInFaction(RimWorld.Faction.OfPlayer))
             {
-                CompSubRelay comp = null;
-                if (p.TryGetComp<CompSubRelay>(out comp) && InRange(p, target, comp.SquaredDistance))
+                if (p.TryGetComp<CompSubRelay>(out CompSubRelay comp) && InRange(p, target, comp.SquaredDistance))
                 {
                     __result = true;
                     return;

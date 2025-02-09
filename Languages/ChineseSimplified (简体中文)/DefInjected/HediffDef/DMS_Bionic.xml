@@ -1,65 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: nutrition port -->
+  <!-- EN: Nutrition port -->
   <DMS_NutrientPort.label>营养接口</DMS_NutrientPort.label>
   <!-- EN: A total overhaul of the patient's digestive system, replacing it with a fueling port and nutrient storage. -->
   <DMS_NutrientPort.description>对消化系统进行彻底的手术移除，并用加注口和储存营养的容器取代。</DMS_NutrientPort.description>
-  <!-- EN: an nutrition port -->
+  <!-- EN: a nutrition port -->
   <DMS_NutrientPort.labelNoun>营养接口</DMS_NutrientPort.labelNoun>
   
-  <!-- EN: mechaneural arm -->
+  <!-- EN: Mechaneural Arm -->
   <DMS_ProstheticArm.label>机械仿生臂</DMS_ProstheticArm.label>
-  <!-- EN: An installed neural-mechanical arm. -->
+  <!-- EN: An installed neuromechanical arm. -->
   <DMS_ProstheticArm.description>一条安装的神经机械仿生臂</DMS_ProstheticArm.description>
   <!-- EN: fist -->
   <DMS_ProstheticArm.comps.HediffComp_VerbGiver.tools.fist.label>仿生拳头</DMS_ProstheticArm.comps.HediffComp_VerbGiver.tools.fist.label>
-  <!-- EN: a neural-mechanical arm -->
+  <!-- EN: a neuromechanical arm -->
   <DMS_ProstheticArm.labelNoun>一条神经机械仿生臂</DMS_ProstheticArm.labelNoun>
   
-  <!-- EN: visual sensor -->
+  <!-- EN: Visual Sensor -->
   <DMS_ProstheticEye.label>机械传感器</DMS_ProstheticEye.label>
-  <!-- EN: An installed visual sensor, as a replacement of eye. -->
+  <!-- EN: An installed visual sensor serving as a replacement eye. -->
   <DMS_ProstheticEye.description>一颗安装的视觉感应器，作为眼睛的替代品。</DMS_ProstheticEye.description>
   <!-- EN: a bionic sensor -->
   <DMS_ProstheticEye.labelNoun>一颗机械传感器</DMS_ProstheticEye.labelNoun>
   
-  <!-- EN: mechaneural kidney -->
+  <!-- EN: Mechaneural kidney -->
   <DMS_ProstheticKidney.label>机械透析肾</DMS_ProstheticKidney.label>
   <!-- EN: An installed neural-mechanical kidney. -->
   <DMS_ProstheticKidney.description>一颗安装的机械透析肾，作为肾脏的机械替代品。</DMS_ProstheticKidney.description>
   <!-- EN: a neural-mechanical kidney -->
   <DMS_ProstheticKidney.labelNoun>一颗机械透析肾</DMS_ProstheticKidney.labelNoun>
   
-  <!-- EN: mechaneural leg -->
+  <!-- EN: Mechaneural leg -->
   <DMS_ProstheticLeg.label>机械仿生腿</DMS_ProstheticLeg.label>
   <!-- EN: An installed neural-mechanical leg. -->
   <DMS_ProstheticLeg.description>一条安装的神经机械仿生腿</DMS_ProstheticLeg.description>
   <!-- EN: a neural-mechanical leg -->
   <DMS_ProstheticLeg.labelNoun>一条神经机械仿生腿</DMS_ProstheticLeg.labelNoun>
   
-  <!-- EN: mechaneural lung -->
+  <!-- EN: Mechaneural lung -->
   <DMS_ProstheticLung.label>机械肺</DMS_ProstheticLung.label>
   <!-- EN: An installed neural-mechanical lung. -->
   <DMS_ProstheticLung.description>一颗安装的机械肺，作为肺的机械替代品。</DMS_ProstheticLung.description>
   <!-- EN: a neural-mechanical lung -->
   <DMS_ProstheticLung.labelNoun>一颗机械肺</DMS_ProstheticLung.labelNoun>
   
-  <!-- EN: mechaneural neurochord -->
+  <!-- EN: Mechaneural neurochord -->
   <DMS_ProstheticSpine.label>生物机械神经索</DMS_ProstheticSpine.label>
   <!-- EN: An installed bionic spine. -->
   <DMS_ProstheticSpine.description>一条安装的生物机械神经索</DMS_ProstheticSpine.description>
-  <!-- EN: An advanced neural-mechanical spine work as a sub-brain \n\n It can take over the user's reflex nerves and thereby reduce the operator's brain burden, but has some side effects. -->
+  <!-- EN: An advanced neuromechanical spine which functions as a sub-brain. \n\n It takes over the user's reflex nerves and thereby reduces the burden on an operator's brain at the cost of minor side effects. -->
   <DMS_ProstheticSpine.labelNoun>一种先进的生物机械神经索\n\n它可以接管使用者的反射神经，从而减轻操作者的大脑负担，但有一些副作用。</DMS_ProstheticSpine.labelNoun>
   
-  <!-- EN: sensory filter -->
+  <!-- EN: Emotion Neutralizer -->
   <DMS_SensoryFilter.label>情感过滤装置</DMS_SensoryFilter.label>
-  <!-- EN: No will for fear,\nNo more to disgust,\nNo way to feel,\nNo tears to cry... \n\nAnd what else... \nWill this little pawn have to sacrifice? -->
+  <!-- EN: A regulatory implant which hijacks the neural pathways for emotion, severing their connections. The process removes most of what it means to be human. -->
   <DMS_SensoryFilter.description>不再恐惧，不再反感，不再感受，不再悲痛。那麽...还有什麽东西能被省略呢?</DMS_SensoryFilter.description>
-  <!-- EN: a sensory filter -->
+  <!-- EN: an emotion neutralizer -->
   <DMS_SensoryFilter.labelNoun>一个作用中的情感过滤装置，将一条鲜活的生命变成一枚随意操弄的棋子</DMS_SensoryFilter.labelNoun>
   
-  <!-- EN: biosynthetic arm -->
+  <!-- EN: Biosynthetic arm -->
   <DMS_SyntheticArm.label>生物仿生臂</DMS_SyntheticArm.label>
   <!-- EN: An installed biosynthetic arm. -->
   <DMS_SyntheticArm.description>一条安装的生物仿生臂</DMS_SyntheticArm.description>
@@ -68,7 +68,7 @@
   <!-- EN: a biosynthetic arm -->
   <DMS_SyntheticArm.labelNoun>一条生物仿生臂</DMS_SyntheticArm.labelNoun>
   
-  <!-- EN: biosynthetic leg -->
+  <!-- EN: Biosynthetic leg -->
   <DMS_SyntheticLeg.label>生物仿生腿</DMS_SyntheticLeg.label>
   <!-- EN: An installed biosynthetic leg. -->
   <DMS_SyntheticLeg.description>一条安装的生物仿生腿</DMS_SyntheticLeg.description>

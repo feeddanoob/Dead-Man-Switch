@@ -21,7 +21,19 @@
       <nameGenerator>DMS_VanguardMechHeavy</nameGenerator>
       <baseBodySize>2.25</baseBodySize>
       <baseHealthScale>2.75</baseHealthScale>
-      <mechWeightClass>Heavy</mechWeightClass>
+      <mechWeightClass>Heavy</mechWeightClass>      
+      <detritusLeavings>
+        <li>
+          <def>DMS_ChunkSlag</def>
+          <texOverrideIndex>12</texOverrideIndex>
+          <spawnChance>0.1</spawnChance>
+        </li>
+        <li>
+          <def>DMS_ChunkSlag</def>
+          <texOverrideIndex>13</texOverrideIndex>
+          <spawnChance>0.1</spawnChance>
+        </li>
+      </detritusLeavings>
     </race>
     <comps>  
 		  <li Class="DMS.CompProperties_VehicleWeapon">
@@ -49,12 +61,7 @@
             <ID>machine gun</ID>
             <turret>DMS_SubMachineGunMounted</turret>
             <autoAttack>true</autoAttack>
-            <command_ToggleFire>Fire at will</command_ToggleFire>
-            <commandDesc_ToggleFire>Toggle turret to manual control mode to prevent unnecessary shooting.</commandDesc_ToggleFire>
-            <command_Target>Aim at target</command_Target>
-            <commandDesc_Target>Aim at designated target</commandDesc_Target>
             <warmingTime>3.2</warmingTime>
-            <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>
             <angleOffset>-90</angleOffset>
             <renderNodeProperties>
               <li>
@@ -170,9 +177,8 @@
       </li>
     </tools>
     <butcherProducts>
-      <Tungsteel>15</Tungsteel>
-      <Steel>15</Steel>
-      <ComponentStamped>1</ComponentStamped>
+      <DMS_ChunkSlag>3</DMS_ChunkSlag>
+      <Steel>55</Steel>
     </butcherProducts>
   </ThingDef>
 
@@ -202,7 +208,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/Iguana</texPath>
+          <texPath>Things/Automatroid/OldTexture/Iguana</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2.75</drawSize>
@@ -267,12 +273,7 @@
           <li>
             <ID>flame thrower</ID>
             <autoAttack>true</autoAttack>
-            <turret>DMS_Flameblaster</turret>      
-            <command_ToggleFire>Fire at will</command_ToggleFire>
-            <commandDesc_ToggleFire>Toggle turret to manual control mode to prevent unnecessary shooting.</commandDesc_ToggleFire>
-            <command_Target>Aim at a target</command_Target>
-            <commandDesc_Target>Aim at a designated target</commandDesc_Target>
-            <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>
+            <turret>DMS_Flameblaster</turret>
             <angleOffset>-90</angleOffset>
             <renderNodeProperties>
               <li>
@@ -389,9 +390,8 @@
       </li>
     </tools>
     <butcherProducts>
-      <Tungsteel>15</Tungsteel>
-      <Steel>10</Steel>
-      <ComponentStamped>1</ComponentStamped>
+      <DMS_ChunkSlag>3</DMS_ChunkSlag>
+      <Steel>55</Steel>
     </butcherProducts>
     <damageMultipliers>
       <li>
@@ -426,7 +426,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/Gecko</texPath>
+          <texPath>Things/Automatroid/OldTexture/Gecko</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2.75</drawSize>

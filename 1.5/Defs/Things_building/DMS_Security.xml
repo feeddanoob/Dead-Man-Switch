@@ -326,7 +326,7 @@
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
         <initialConfigurableTargetFuelLevel>2000</initialConfigurableTargetFuelLevel>
-        <autoRefuelPercent>100</autoRefuelPercent>
+        <autoRefuelPercent>0.8</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
       <li Class="CompProperties_Power">
@@ -443,7 +443,7 @@
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
         <initialConfigurableTargetFuelLevel>1000</initialConfigurableTargetFuelLevel>
-        <autoRefuelPercent>100</autoRefuelPercent>
+        <autoRefuelPercent>0.8</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
       <li Class="CompProperties_Power">
@@ -585,7 +585,7 @@
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
         <initialConfigurableTargetFuelLevel>200</initialConfigurableTargetFuelLevel>
-        <autoRefuelPercent>100</autoRefuelPercent>
+        <autoRefuelPercent>0.8</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
       <li Class="CompProperties_Power">
@@ -853,7 +853,7 @@
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
         <initialConfigurableTargetFuelLevel>80</initialConfigurableTargetFuelLevel>
-        <autoRefuelPercent>100</autoRefuelPercent>
+        <autoRefuelPercent>0.8</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
       <li Class="CompProperties_Power">
@@ -877,7 +877,7 @@
       <ComponentFireControl>2</ComponentFireControl>
     </costList>
     <researchPrerequisites>
-      <li>DMS_EquipmentElite</li>
+      <li>DMS_Synthroid</li>
       <li>DMS_EquipmentHeavy</li>
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_DawnBlade</uiIconPath>
@@ -942,7 +942,7 @@
     <soundExplode>Explosion_Rocket</soundExplode>
 		<damageDef>Bullet</damageDef>
 		<damageAmountBase>50</damageAmountBase>
-		<armorPenetrationBase>1.2</armorPenetrationBase>
+		<armorPenetrationBase>0.9</armorPenetrationBase>
 		<stoppingPower>10</stoppingPower>
 		<speed>100</speed>
 		<arcHeightFactor>0.2</arcHeightFactor>
@@ -963,8 +963,8 @@
 	<comps>
 		<li Class="CompProperties_Explosive">
 			<explosiveRadius>1.1</explosiveRadius>
-			<explosiveDamageType>Demolish</explosiveDamageType>
-			<armorPenetrationBase>1.2</armorPenetrationBase>
+			<explosiveDamageType>Bullet</explosiveDamageType>
+			<armorPenetrationBase>0.9</armorPenetrationBase>
 			<damageAmountBase>50</damageAmountBase>
 			<explodeOnDestroyed>true</explodeOnDestroyed>
 			<explodeOnKilled>true</explodeOnKilled>

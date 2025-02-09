@@ -139,17 +139,18 @@
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>TransparentPostLight</shaderType>
 		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
+		<thingClass>DMS.Projectile_Parabola</thingClass>
 		<projectile>
 		  <damageDef>Demolish</damageDef>
 		  <soundExplode>Explosion_Rocket</soundExplode>
 		  <damageAmountBase>150</damageAmountBase>
 		  <armorPenetrationBase>1.75</armorPenetrationBase>
           <stoppingPower>5</stoppingPower>
-          <arcHeightFactor>3</arcHeightFactor>
+          <arcHeightFactor>30</arcHeightFactor>
           <shadowSize>1</shadowSize>
 		  <explosionRadius>1.9</explosionRadius>
 		  <speed>75</speed>
+		  <flyOverhead>true</flyOverhead>
 		</projectile>
 		<comps>
 			<li Class="CompProperties_Explosive">

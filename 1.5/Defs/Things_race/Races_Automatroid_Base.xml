@@ -28,11 +28,11 @@
       <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
       <StaggerDurationFactor>0.5</StaggerDurationFactor>
-      <MarketValue>800</MarketValue>
+      <!-- <MarketValue>800</MarketValue> -->
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
       <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">5</ControlTakingTime>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
-      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.33</MechEnergyLossPerHP>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.2</MechEnergyLossPerHP>
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">1</WastepacksPerRecharge>      <!--充電/培養時產出廢料-->
       <WorkSpeedGlobal MayRequire="Ludeon.Rimworld.Biotech">0.8</WorkSpeedGlobal>
       <PsychicSensitivity>0</PsychicSensitivity>
@@ -62,7 +62,7 @@
         </li>
         <li>
           <def>DMS_Automatroid_Damaged</def>
-          <minAge>100</minAge>
+          <minAge>70</minAge>
           <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
           <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
           <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
@@ -72,10 +72,12 @@
     <comps>
       <li MayRequire="Ludeon.Rimworld.Biotech" Class="DMS.CompProperties_DeadManSwitch">
         <minDelayUntilDMS>12000</minDelayUntilDMS>
+        <wakingChance>0.01</wakingChance>
+        <nameRule>DMS_MechAwaken</nameRule>
       </li>
       <li Class="DMS.CompPropertiesInteracte">
-        <interacteChance>0.3</interacteChance>
-        <interacte>DMS_Nuzzle</interacte>
+        <interacteChance>0.01</interacteChance>
+        <interacte>Chitchat</interacte>
       </li>
     </comps>
     <butcherProducts>
@@ -96,11 +98,11 @@
     <damageMultipliers>
       <li>
         <damageDef>EMP</damageDef>
-        <multiplier>0.3</multiplier>
+        <multiplier>0.2</multiplier>
       </li>
       <li>
         <damageDef>Stun</damageDef>
-        <multiplier>0</multiplier>
+        <multiplier>0.1</multiplier>
       </li>
       <li MayRequire="Ludeon.RimWorld.Biotech">
         <damageDef>MechBandShockwave</damageDef>
@@ -108,7 +110,7 @@
       </li>
       <li MayRequire="CETeam.CombatExtended">
         <damageDef>Electrical</damageDef>
-        <multiplier>0.3</multiplier>
+        <multiplier>0.2</multiplier>
       </li>
     </damageMultipliers>
   </ThingDef>
@@ -116,11 +118,26 @@
   <ThingDef ParentName="BaseAutomatroidRace" Name="BaseAutomatroidWalker" Abstract="True">
     <race>
       <intelligence>ToolUser</intelligence>
-      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <thinkTreeMain>DMS_Mechanoid</thinkTreeMain>
       <baseBodySize>1.0</baseBodySize>
       <mechEnabledWorkTypes>
         <li>BasicWorker</li>
       </mechEnabledWorkTypes>
+      <detritusLeavings>
+        <li>
+          <def>DMS_ChunkSlag</def>
+          <texOverrideIndex>5</texOverrideIndex>
+          <spawnChance>0.3</spawnChance>
+        </li>
+        <li>
+          <def>DMS_ChunkSlag</def>
+          <spawnChance>0.2</spawnChance>
+        </li>
+        <li>
+          <def>DMS_ChunkSlag</def>
+          <spawnChance>0.2</spawnChance>
+        </li>
+      </detritusLeavings>
     </race>
     <tools>
       <li>
@@ -157,8 +174,9 @@
   </ThingDef>
 
   <PawnKindDef Name="BaseAutomatroidKind" ParentName="BaseMechanoidKind" Abstract="True">
-    <defaultFactionType>DMS_Army</defaultFactionType>
-    <allowInMechClusters>false</allowInMechClusters>    <!--是否出現在機械集群-->
+    <!-- <defaultFactionType>DMS_Army</defaultFactionType> 設置成殖民艦隊可能會導致任務隨機Pawnkind時隨機到。 -->
+    <defaultFactionType>Mechanoid</defaultFactionType>
+    <allowInMechClusters>false</allowInMechClusters>
     <isFighter>true</isFighter>
     <destroyGearOnDrop>false</destroyGearOnDrop>
     <canStrip>false</canStrip>

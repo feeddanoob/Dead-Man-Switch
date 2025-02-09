@@ -598,6 +598,7 @@
           <MeleeDodgeChance>0.9</MeleeDodgeChance>
         </statFactors>
         <statOffsets>
+          <VEF_MassCarryCapacity>120</VEF_MassCarryCapacity>
           <CarryBulk MayRequire="ceteam.combatextended">75</CarryBulk>
           <CarryWeight MayRequire="ceteam.combatextended">120</CarryWeight>
           <CarryingCapacity>120</CarryingCapacity>

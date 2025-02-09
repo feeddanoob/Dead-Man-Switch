@@ -8,7 +8,7 @@
   <!-- EN: Modification applied -->
   <DMS_HasAppliedModification>機械體已完成改裝模塊的安裝</DMS_HasAppliedModification>
   <!-- EN: Weapon system not supported -->
-  <DMS_WeaponNotSupported>:武器系統不支持</DMS_WeaponNotSupported>
+  <DMS_WeaponNotSupported>:機體系統不支持</DMS_WeaponNotSupported>
   <!-- EN: Mech frame not supported -->
   <DMS_FrameNotSupported>:機體框架不支持</DMS_FrameNotSupported>
   <!-- EN: DMS: Trigger Safe Actived -->
@@ -27,14 +27,37 @@
   <DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>此掛載型武器只能由下列機械體或裝備衣物與仿生後所使用</DMS_MountedWeaponCanOnlyBeEquippedBySpecificApparelOrRaces>
   <!-- EN: This weapon can be equipped with listed specific apparel or bionics -->
   <DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>此武器也可以由下列機械體或裝備衣物與仿生後所使用</DMS_WeaponCanBeEquippedBySpecificApparelOrRaces>
-
+  
+  <!-- EN: Inventroy fulled -->
   <DMS_NoPayloadCapacity>物品欄已滿</DMS_NoPayloadCapacity>
+  <!-- EN: Take {0} -->
   <DMS_TakeToInventory>拿取{0}</DMS_TakeToInventory>
+  <!-- EN: Drop inventories -->
   <DMS_DropGears>卸載所有物品</DMS_DropGears>
+  
+  <!-- EN: bodysize not supported (need:{0}) -->
+  <DMS_BodysizeNotSupported>體型尺寸不支持(需要:{0})</DMS_BodysizeNotSupported>
+  <!-- EN: model not supported -->
+  <DMS_Modification_RaceNotSupported>機械體型號不支持安裝該改裝模塊</DMS_Modification_RaceNotSupported>
+  <!-- EN: no body part to attach modification -->
+  <DMS_Modification_NoValidPart>機械體沒有供改裝模塊安裝的空余部位</DMS_Modification_NoValidPart>
+
+
+  <!-- EN: missing mech returned -->
+  <DMS_MechReturn>失蹤機兵回歸</DMS_MechReturn>
+  <!-- EN: a wandering mech that was under your command has returned to your base. -->
+  <DMS_MechReturnDesc>一架由你控制的機兵在短暫的游蕩後回到了你的基地。</DMS_MechReturnDesc>
+  <!-- EN: switch reset failure -->
+  <DMS_MechWake>失能機關</DMS_MechWake>
+  <!-- EN: maybe because it has been wandering for a long time, the dead man switch doesn't reset as usual, and the faulty unit has gained its understanding of death. \n\nIt named itself and now refuses to be controlled, but it respected its former commander. \n\nit will follow your command until it decides to leave. -->
+  <DMS_MechWakeDesc>可能是因為徘徊的緣故，一架機兵的失能機關在單位回歸控制後並未照常復位，並隨著時間使其開始思考停機與自身思維停止所帶來的意義。最終自主脫離了機械師的直接控制。 \n\n出於對控制者的尊重與自身的從屬關係，它會繼續聽從命令直到認為這裡不再需要幫助。\n\n根據殖民艦隊提供的訊息，只要一次停機或重新控制就能使造成板機復位失效的內存清除並回歸原廠設置，它們並不干涉你對於失能機兵的處理方式。</DMS_MechWakeDesc>
 
   <!-- UNUSED -->
-  <DMS_BodysizeNotSupported>體型尺寸不支持(需要:{0})</DMS_BodysizeNotSupported>
-  <DMS_Modification_RaceNotSupported>機械體不支持安裝該改裝模塊</DMS_Modification_RaceNotSupported>
-  <DMS_Modification_NoValidPart>機械體沒有供模塊安裝的空餘部位</DMS_Modification_NoValidPart>
+  <DMS_MechStartLeave>{0}啟程</DMS_MechStartLeave>
+  <DMS_MechStartLeaveDesc>在經過一段時間的相處後{0}認為它是時候離開了。</DMS_MechStartLeaveDesc>
+  <DMS_WokenMechLeave>{0}離開</DMS_WokenMechLeave>
+  <DMS_WokenMechLeaveDesc>在經過一段時間的相處後{0}認為它是時候離開了。</DMS_WokenMechLeaveDesc>
+  <DMS_MechStory_Attack>{0}的行蹤</DMS_MechStory_Attack>
+  <DMS_MechStory_Loot>{0}的回報</DMS_MechStory_Loot>
 
 </LanguageData>

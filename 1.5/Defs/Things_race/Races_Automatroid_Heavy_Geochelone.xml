@@ -21,6 +21,18 @@
       <baseBodySize>3</baseBodySize>
       <baseHealthScale>5</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
+      <detritusLeavings>
+        <li>
+          <def>DMS_ChunkSlag</def>
+          <texOverrideIndex>6</texOverrideIndex>
+          <spawnChance>0.4</spawnChance>
+        </li>
+        <li>
+          <def>DMS_ChunkSlag</def>
+          <texOverrideIndex>1</texOverrideIndex>
+          <spawnChance>0.4</spawnChance>
+        </li>
+      </detritusLeavings>
     </race>
     <comps>
       <li Class="CompProperties_ProjectileInterceptor">
@@ -68,12 +80,7 @@
             <ID>defense machinegun</ID>
             <turret>DMS_SubMachineGunMounted</turret>
             <autoAttack>true</autoAttack>
-            <command_ToggleFire>fire at will</command_ToggleFire>
-            <commandDesc_ToggleFire>Toggle turret to manually control mode to prevent unnecessary shooting.</commandDesc_ToggleFire>
-            <command_Target>Aim at target</command_Target>
-            <commandDesc_Target>Aim at desinated target</commandDesc_Target>
             <warmingTime>3</warmingTime>
-            <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>
             <angleOffset>-90</angleOffset>
             <renderNodeProperties>
               <li>
@@ -120,9 +127,9 @@
       </li>
     </tools>
     <butcherProducts>
-      <Tungsteel>30</Tungsteel>
-      <Steel>10</Steel>
-      <ComponentStamped>1</ComponentStamped>
+      <DMS_ChunkSlag>5</DMS_ChunkSlag>
+      <Tungsteel>60</Tungsteel>
+      <Steel>24</Steel>
     </butcherProducts>
     <damageMultipliers>
       <li>
@@ -148,12 +155,7 @@
             <ID>defense machinegun</ID>
             <turret>DMS_SubMachineGunMounted</turret>
             <autoAttack>true</autoAttack>
-            <command_ToggleFire>fire at will</command_ToggleFire>
-            <commandDesc_ToggleFire>toggle turret to manually control mode to prevent unnecessary shooting.</commandDesc_ToggleFire>
-            <command_Target>aim target</command_Target>
-            <commandDesc_Target>aim at desinated target</commandDesc_Target>
             <warmingTime>3</warmingTime>
-            <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>
             <angleOffset>-90</angleOffset>
             <renderNodeProperties>
               <li>
@@ -166,7 +168,7 @@
                 <drawData>
                   <defaultData>
                     <pivot>(0.5,0.5)</pivot>
-                  </defaultData>                  
+                  </defaultData>
                   <dataEast>
                     <offset>(0.5,0,-0.5)</offset>
                   </dataEast>
@@ -199,7 +201,7 @@
         <drawData>
           <defaultData>
             <pivot>(0.5,0.5)</pivot>
-          </defaultData>                  
+          </defaultData>
           <dataEast>
             <offset>(0.5,0,-0.5)</offset>
           </dataEast>
@@ -240,7 +242,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/geochelone</texPath>
+          <texPath>Things/Automatroid/OldTexture/geochelone</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2.75</drawSize>
@@ -307,9 +309,9 @@
       </li>
     </tools>
     <butcherProducts>
-      <Tungsteel>35</Tungsteel>
-      <Steel>10</Steel>
-      <ComponentStamped>1</ComponentStamped>
+      <DMS_ChunkSlag>5</DMS_ChunkSlag>
+      <Tungsteel>60</Tungsteel>
+      <Steel>24</Steel>
     </butcherProducts>
     <damageMultipliers>
       <li>
@@ -345,7 +347,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/caterpillar</texPath>
+          <texPath>Things/Automatroid/OldTexture/caterpillar</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>3.5</drawSize>
@@ -394,12 +396,7 @@
             <ID>defense machinegun</ID>
             <turret>DMS_Gun_Kord_Vehicle</turret>
             <autoAttack>true</autoAttack>
-            <command_ToggleFire>fire at will</command_ToggleFire>
-            <commandDesc_ToggleFire>toggle turret to manually control mode to prevent unnecessary shooting.</commandDesc_ToggleFire>
-            <command_Target>aim target</command_Target>
-            <commandDesc_Target>aim at desinated target</commandDesc_Target>
             <warmingTime>3</warmingTime>
-            <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>
             <angleOffset>-90</angleOffset>
             <renderNodeProperties>
               <li>
@@ -446,10 +443,10 @@
       </li>
     </tools>
     <butcherProducts>
-      <Tungsteel>30</Tungsteel>
-      <Steel>15</Steel>
-      <DMS_Ceramics>10</DMS_Ceramics>
-      <ComponentStamped>1</ComponentStamped> 
+      <DMS_ChunkSlag>5</DMS_ChunkSlag>
+      <Tungsteel>70</Tungsteel>
+      <Steel>30</Steel>
+      <DMS_Ceramics>40</DMS_Ceramics>
     </butcherProducts>
     <damageMultipliers>
       <li>
@@ -492,12 +489,7 @@
             <ID>defense machinegun</ID>
             <turret>DMS_Gun_Kord_Vehicle</turret>
             <autoAttack>true</autoAttack>
-            <command_ToggleFire>fire at will</command_ToggleFire>
-            <commandDesc_ToggleFire>toggle turret to manually control mode to prevent unnecessary shooting.</commandDesc_ToggleFire>
-            <command_Target>aim target</command_Target>
-            <commandDesc_Target>aim at desinated target</commandDesc_Target>
             <warmingTime>3</warmingTime>
-            <targetCommandIconPath>UI/Gizmos/ToggleTurret</targetCommandIconPath>
             <angleOffset>-90</angleOffset>
             <renderNodeProperties>
               <li>
@@ -532,7 +524,6 @@
       </li>   
     </comps>
   </ThingDef>
-
   
   <PawnKindDef Name="BaseKillDozerKind" ParentName="BaseAutomatroidKind" Abstract="True">
     <label>killdozer</label>
@@ -557,7 +548,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automatroid/killdozer_ERA</texPath>
+          <texPath>Things/Automatroid/OldTexture/killdozer_ERA</texPath>
           <shaderType>CutoutComplex</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>4.05</drawSize>
@@ -578,5 +569,4 @@
     <defName>DMS_Mech_Killdozer_b</defName>
     <race>DMS_Mech_Killdozer_b</race>
   </PawnKindDef>
-
 </Defs>
