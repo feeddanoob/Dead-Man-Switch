@@ -10,17 +10,17 @@ The severity of these symptoms fit into five levels.</DMS_BionicShock.descriptio
   <!-- EN: bionic syndrome has been cured -->
   <DMS_BionicShock.comps.HediffComp_RemoveIfOtherHediff.message>bionic syndrome has been cured</DMS_BionicShock.comps.HediffComp_RemoveIfOtherHediff.message>
   <!-- EN: initial -->
-  <DMS_BionicShock.stages.initial.label>initial</DMS_BionicShock.stages.initial.label>
+  <DMS_BionicShock.stages.Initial.label>Initial</DMS_BionicShock.stages.Initial.label>
   <!-- EN: LV.1 initial -->
-  <DMS_BionicShock.stages.LV1_initial.label>LV.1 Initial</DMS_BionicShock.stages.LV1_initial.label>
+  <DMS_BionicShock.stages.LV1_Initial.label>LV.1 Initial</DMS_BionicShock.stages.LV1_Initial.label>
   <!-- EN: LV.2 minor -->
-  <DMS_BionicShock.stages.LV2_minor.label>LV.2 Minor</DMS_BionicShock.stages.LV2_minor.label>
+  <DMS_BionicShock.stages.LV2_Minor.label>LV.2 Minor</DMS_BionicShock.stages.LV2_Minor.label>
   <!-- EN: LV.3 serious -->
-  <DMS_BionicShock.stages.LV3_serious.label>LV.3 Serious</DMS_BionicShock.stages.LV3_serious.label>
+  <DMS_BionicShock.stages.LV3_Serious.label>LV.3 Serious</DMS_BionicShock.stages.LV3_Serious.label>
   <!-- EN: LV.4 catatonic -->
-  <DMS_BionicShock.stages.LV4_catatonic.label>LV.4 Catatonic</DMS_BionicShock.stages.LV4_catatonic.label>
+  <DMS_BionicShock.stages.LV4_Catatonic.label>LV.4 Catatonic</DMS_BionicShock.stages.LV4_Catatonic.label>
   <!-- EN: LV.5 disabled -->
-  <DMS_BionicShock.stages.LV5_disabled.label>LV.5 Disabled</DMS_BionicShock.stages.LV5_disabled.label>
+  <DMS_BionicShock.stages.LV5_Disabled.label>LV.5 Disabled</DMS_BionicShock.stages.LV5_Disabled.label>
   
   <!-- EN: phantom limb syndrome -->
   <DMS_BionicShockRemove.label>Phantom Limb Syndrome</DMS_BionicShockRemove.label>
