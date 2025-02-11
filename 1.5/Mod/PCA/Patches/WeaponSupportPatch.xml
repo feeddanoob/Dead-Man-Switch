@@ -3,6 +3,15 @@
   <Operation Class="PatchOperationSequence">
     <operations>
       
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[
+        defName="PCA_Gun_500SWTactical" or
+        defName="PCA_Gun_SWMPTactical"
+        ]/weaponTags</xpath>
+        <value>
+          <li>A_Pistol</li>
+        </value>
+      </li>
       <!-- Falcon-->
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[
@@ -152,7 +161,6 @@
           <li>PCA_Gun_HandheldVektorTactical</li>
         </value>
       </li>
-
     </operations>
   </Operation>
 </Patch>

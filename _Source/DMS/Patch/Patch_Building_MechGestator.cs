@@ -11,7 +11,7 @@ namespace DMS
     {
         static void Postfix(ref Thing __result)
         {
-            if (__result is WeaponUsableMech pawn)
+            if (__result is IWeaponUsable && __result is Pawn pawn)
             {
                 pawn.inventory.DestroyAll();
                 pawn.equipment.DestroyAllEquipment();

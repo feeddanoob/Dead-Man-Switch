@@ -80,6 +80,7 @@
           <li>Bullet_ChargeBlasterHeavy</li>
           <li>Bullet_ChargeRifle</li>
           <li>Bullet_ChargeLance</li>
+          <li>Bullet_CataphractCentipede_SR</li>
         </interceptThings>
         <ignoreThings>
           <li>DMS_Bullet_BlasterSmoke</li> 
