@@ -199,6 +199,16 @@
     <comps>
       <li Class="AnimalBehaviours.CompProperties_Floating">
       </li>
+      <li Class="DMS.CompProperties_FlyingFleckThrower">
+        <burstOffsetRange>(1,1.5)</burstOffsetRange>
+        <fleckOnSoil>DustPuff</fleckOnSoil>
+        <fleckOnSnow>AirPuff</fleckOnSnow>
+        <activeAnimation>DMS_Hover</activeAnimation>
+        <sizeRange>(1,1.2)</sizeRange>
+        <speedRange>(0.75,1)</speedRange>
+        <throwRate>1</throwRate>
+        <throwTick>5</throwTick>
+      </li>
 		</comps>
   </ThingDef>
 

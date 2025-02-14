@@ -55,13 +55,9 @@
         <useDuration>900</useDuration>
         <floatMenuFactionIcon>Mechanoid</floatMenuFactionIcon>
       </li>
-      <li Class="CompProperties_Useable_CallBossgroup">
+      <li Class="DMS.CompProperties_UseEffectSummonRaid">
         <bossgroupDef>DMS_Geochelone</bossgroupDef>
         <effecterDef>BurnoutMechlinkBoosterUsed</effecterDef>
-        <prepareEffecterDef>MechBandAntennaPrepared</prepareEffecterDef>
-        <unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
-        <unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
-        <delayTicks>120</delayTicks>
       </li>
       <li Class="CompProperties_UseEffectDestroySelf">
         <delayTicks>120</delayTicks>
@@ -100,13 +96,9 @@
         <useDuration>900</useDuration>
         <floatMenuFactionIcon>Mechanoid</floatMenuFactionIcon>
       </li>
-      <li Class="CompProperties_Useable_CallBossgroup">
+      <li Class="DMS.CompProperties_UseEffectSummonRaid">
         <bossgroupDef>DMS_Tarbosaurus</bossgroupDef>
         <effecterDef>BurnoutMechlinkBoosterUsed</effecterDef>
-        <prepareEffecterDef>MechBandAntennaPrepared</prepareEffecterDef>
-        <unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
-        <unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
-        <delayTicks>120</delayTicks>
       </li>
       <li Class="CompProperties_UseEffectDestroySelf">
         <delayTicks>120</delayTicks>
