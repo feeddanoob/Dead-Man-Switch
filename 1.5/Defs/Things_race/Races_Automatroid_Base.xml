@@ -45,8 +45,9 @@
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>DMS_Mechanoid</thinkTreeMain>
       <nameGenerator>DMS_VanguardMechStandard</nameGenerator>
-      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundCallIntervalRange>2000~4000</soundCallIntervalRange>
       <soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
+      <soundCallIntervalAggressiveFactor>0.5</soundCallIntervalAggressiveFactor>
       <thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>
       <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
@@ -58,14 +59,14 @@
           <minAge>0</minAge>
           <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
           <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
-          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+          <soundCall>DMS_Pawn_Mech_Call</soundCall>
         </li>
         <li>
           <def>DMS_Automatroid_Damaged</def>
           <minAge>70</minAge>
           <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
           <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
-          <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
+          <soundCall>DMS_Pawn_Mech_Call</soundCall>
         </li>
       </lifeStageAges>
     </race>

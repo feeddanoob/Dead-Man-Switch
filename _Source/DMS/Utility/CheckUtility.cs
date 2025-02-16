@@ -147,7 +147,7 @@ public static partial class CheckUtility
     public static bool BypassedUseable(MechWeaponExtension extension, string defName)//白名單直接可用
     {
         if (extension.BypassUsableWeapons.NullOrEmpty()) return false;
-        return extension.BypassUsableWeapons?.FirstOrDefault(p => p == defName) != null;
+        return extension.BypassUsableWeapons.Contains(defName);
     }
     public static bool WearsApparel(Pawn pawn, ThingDef thingDef)
     {

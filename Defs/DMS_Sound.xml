@@ -161,11 +161,49 @@
     </subSounds>
   </SoundDef>
 
-  
+
   <SoundDef>
-    <defName>DMS_Shot_VasilekSound</defName>  
-    <context>MapOnly</context>  
-    <maxSimultaneous>1</maxSimultaneous>  
+    <defName>DMS_Ability_LockOn</defName>
+    <context>MapOnly</context>
+    <sustain>true</sustain>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_Effect/LockOn</clipPath>
+          </li>
+        </grains>
+        <volumeRange>10~50</volumeRange>
+        <pitchRange>0.75~1</pitchRange>
+        <sustainLoop>true</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>DMS_Pawn_Mech_Call</defName>
+    <context>MapOnly</context>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>DMS_Radio</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>1~5</volumeRange>
+        <pitchRange>0.7311765~1.045882</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>DMS_Shot_VasilekSound</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
     <subSounds>
       <li>
         <grains>

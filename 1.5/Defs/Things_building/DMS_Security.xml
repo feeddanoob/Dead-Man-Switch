@@ -319,7 +319,7 @@
         <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
         <fuelCapacity>2000</fuelCapacity>    <!-- 20 burst -->
         <fuelMultiplier>100</fuelMultiplier><!-- 1 Barrel=100 ammo -->
-        <initialFuelPercent>1</initialFuelPercent>
+        <initialFuelPercent>0.05</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -436,7 +436,7 @@
         <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
         <fuelCapacity>1000</fuelCapacity>    <!-- 20 burst -->
         <fuelMultiplier>100</fuelMultiplier><!-- 1 Barrel=100 ammo -->
-        <initialFuelPercent>1</initialFuelPercent>
+        <initialFuelPercent>0.1</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -557,7 +557,7 @@
     <size>(1,1)</size>
     <rotatable>false</rotatable>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <fillPercent>0.6</fillPercent>
+    <fillPercent>0.7</fillPercent>
     <statBases>   <!--================血量與重量工作量================-->
       <MaxHitPoints>350</MaxHitPoints>
       <Flammability>0.5</Flammability>
@@ -578,14 +578,14 @@
         <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
         <fuelCapacity>300</fuelCapacity>    <!-- 30 burst -->
         <fuelMultiplier>150</fuelMultiplier><!-- 1 Barrel=150 ammo -->
-        <initialFuelPercent>1</initialFuelPercent>
+        <initialFuelPercent>0.5</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-        <initialConfigurableTargetFuelLevel>200</initialConfigurableTargetFuelLevel>
-        <autoRefuelPercent>0.8</autoRefuelPercent>
+        <initialConfigurableTargetFuelLevel>150</initialConfigurableTargetFuelLevel>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
       <li Class="CompProperties_Power">
@@ -720,7 +720,7 @@
         <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
         <fuelCapacity>100</fuelCapacity>    <!-- 25 burst -->
         <fuelMultiplier>25</fuelMultiplier><!-- 1 Barrel=25 ammo -->
-        <initialFuelPercent>1</initialFuelPercent>
+        <initialFuelPercent>0.4</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -846,7 +846,7 @@
         <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
         <fuelCapacity>80</fuelCapacity>    <!-- 20 burst -->
         <fuelMultiplier>8</fuelMultiplier><!-- 1 Barrel=8 ammo -->
-        <initialFuelPercent>1</initialFuelPercent>
+        <initialFuelPercent>0.1</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -927,51 +927,51 @@
     </verbs>
   </ThingDef>
 
-<ThingDef ParentName="BaseBullet">
-	<defName>DMS_Bullet_Dawnblade</defName>
-	<label>armor piercing shell</label>
-  <thingClass>DMS.Projectile_ConeExplosive</thingClass>
-  <tickerType>Normal</tickerType>
-	<graphicData>
-		<texPath>Things/Projectile/Bullet_Big</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>2</drawSize>
-	</graphicData>
-	<projectile>
-    <explosionDelay>1</explosionDelay>
-    <soundExplode>Explosion_Rocket</soundExplode>
-		<damageDef>Bullet</damageDef>
-		<damageAmountBase>50</damageAmountBase>
-		<armorPenetrationBase>0.9</armorPenetrationBase>
-		<stoppingPower>10</stoppingPower>
-		<speed>100</speed>
-		<arcHeightFactor>0.2</arcHeightFactor>
-		<shadowSize>0.6</shadowSize>
-	</projectile>
-  <modExtensions>
-    <li Class="DMS.ExplosiveExtension">
-      <damage>Bullet</damage>
-      <damageAmount>30</damageAmount>
-      <armorPen>0.35</armorPen>
-      <preExplosionOffset>4</preExplosionOffset>
-      <range>15</range>
-      <swayAngle>12</swayAngle>
-      <doVisualEffects>false</doVisualEffects>
-      <effecterDef>DMS_ConeExplosion</effecterDef>
-    </li>
-  </modExtensions>
-	<comps>
-		<li Class="CompProperties_Explosive">
-			<explosiveRadius>1.1</explosiveRadius>
-			<explosiveDamageType>Bullet</explosiveDamageType>
-			<armorPenetrationBase>0.9</armorPenetrationBase>
-			<damageAmountBase>50</damageAmountBase>
-			<explodeOnDestroyed>true</explodeOnDestroyed>
-			<explodeOnKilled>true</explodeOnKilled>
-      <doSoundEffects>false</doSoundEffects>
-			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-		</li>
-	</comps>
-</ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>DMS_Bullet_Dawnblade</defName>
+    <label>armor piercing shell</label>
+    <thingClass>DMS.Projectile_ConeExplosive</thingClass>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionDelay>1</explosionDelay>
+      <soundExplode>Explosion_Rocket</soundExplode>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>50</damageAmountBase>
+      <armorPenetrationBase>0.9</armorPenetrationBase>
+      <stoppingPower>10</stoppingPower>
+      <speed>100</speed>
+      <arcHeightFactor>0.2</arcHeightFactor>
+      <shadowSize>0.6</shadowSize>
+    </projectile>
+    <modExtensions>
+      <li Class="DMS.ExplosiveExtension">
+        <damage>Bullet</damage>
+        <damageAmount>30</damageAmount>
+        <armorPen>0.35</armorPen>
+        <preExplosionOffset>4</preExplosionOffset>
+        <range>15</range>
+        <swayAngle>12</swayAngle>
+        <doVisualEffects>false</doVisualEffects>
+        <effecterDef>DMS_ConeExplosion</effecterDef>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.1</explosiveRadius>
+        <explosiveDamageType>Bullet</explosiveDamageType>
+        <armorPenetrationBase>0.9</armorPenetrationBase>
+        <damageAmountBase>50</damageAmountBase>
+        <explodeOnDestroyed>true</explodeOnDestroyed>
+        <explodeOnKilled>true</explodeOnKilled>
+        <doSoundEffects>false</doSoundEffects>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      </li>
+    </comps>
+  </ThingDef>
 
 </Defs>	

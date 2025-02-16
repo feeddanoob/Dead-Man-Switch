@@ -164,6 +164,7 @@
       <apparelRequired Inherit="false">
         <li>DMS_Apparel_GarrisionCap</li>
         <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ShirtRuffle</li>
+        <li>Apparel_Pants</li>
       </apparelRequired>
       <specificApparelRequirements>
         <li>

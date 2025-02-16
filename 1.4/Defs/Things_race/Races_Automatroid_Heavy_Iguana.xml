@@ -48,9 +48,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
-        <BypassUsableWeapons>
-          <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
-        </BypassUsableWeapons>
+        <BypassUsableWeapons/>
       </li>
     </modExtensions>
     <!--need new melee tools based on their legs, not arms(those "arms" are supporting mechnical arms)-->
@@ -195,9 +193,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
-        <BypassUsableWeapons>
-          <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
-        </BypassUsableWeapons>
+        <BypassUsableWeapons/>
       </li>
     </modExtensions>
     <!--need new melee tools based on their legs, not arms(those "arms" are supporting mechnical arms)-->

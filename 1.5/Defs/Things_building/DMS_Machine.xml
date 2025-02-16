@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <!-- okay so why VE team not just added it into framework ? -->
   <WorkGiverDef>
     <defName>DMS_Mechanoids_RepairMachine</defName>
