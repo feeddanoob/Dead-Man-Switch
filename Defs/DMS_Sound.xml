@@ -166,6 +166,7 @@
     <defName>DMS_Ability_LockOn</defName>
     <context>MapOnly</context>
     <sustain>true</sustain>
+    <priorityMode>PrioritizeNearest</priorityMode>
     <maxSimultaneous>1</maxSimultaneous>
     <subSounds>
       <li>
