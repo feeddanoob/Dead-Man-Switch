@@ -98,7 +98,6 @@ namespace DMS
                 command_Action.Disable("CommandCallRoyalAidNotEnoughFavor".Translate());
             }
 
-
             yield return command_Action;
         }
 

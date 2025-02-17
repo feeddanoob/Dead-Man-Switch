@@ -13,6 +13,8 @@ namespace DMS
         Projectile Projectile => parent as Projectile;
         public bool drawOnProjectile = false;
         private int lifeTime = 0;
+        //Vector3 originVector = Vector3.zero;
+        //Vector3 destinationVector = Vector3.zero;
 
         private Vector3 postPosition = Vector3.zero;
         public override void PostPostMake()
@@ -34,26 +36,32 @@ namespace DMS
         {
             if (parent.Position.ShouldSpawnMotesAt(parent.MapHeld))
             {
-                if (Props.SmokeFleck != null)
+                float rawAngle = angle;
+                for (int i = 0; i < 8; i++)
                 {
-                    FleckCreationData dataStatic = FleckMaker.GetDataStatic(drawPos, Projectile.MapHeld, Props.SmokeFleck);
-                    dataStatic.spawnPosition = drawPos + CircleConst.GetAngle(angle) * 2f;
-                    dataStatic.scale = Rand.Range(0.5f, 1);
-                    dataStatic.rotationRate = Rand.Range(-30, 30);
-                    dataStatic.velocityAngle = angle + Rand.Range(-90, 90);
-                    dataStatic.velocitySpeed = 1;
-                    dataStatic.targetSize = 1.5f;
-                    parent.MapHeld.flecks.CreateFleck(dataStatic);
-                }
-                if (Props.ExhaustFleck != null)
-                {
-                    FleckCreationData dataStatic = FleckMaker.GetDataStatic(drawPos, Projectile.MapHeld, Props.ExhaustFleck);
-                    dataStatic.scale = 1.5f;
-                    dataStatic.rotationRate = Rand.Range(-60, 60);
-                    dataStatic.velocityAngle = Vector3.Angle(drawPos, postPosition);
-                    dataStatic.velocitySpeed = dataStatic.scale * Projectile.def.projectile.SpeedTilesPerTick;
-                    dataStatic.targetSize = 0f;
-                    parent.MapHeld.flecks.CreateFleck(dataStatic);
+                    float variantion = Rand.Range(-60, 60);
+                    if (Props.SmokeFleck != null)
+                    {
+                        FleckCreationData dataStatic = FleckMaker.GetDataStatic(drawPos, Projectile.MapHeld, Props.SmokeFleck);
+                        dataStatic.spawnPosition = drawPos + CircleConst.GetAngle(rawAngle + variantion) * 2f;
+                        dataStatic.orbitSnapStrength = 0.1f;
+                        dataStatic.scale = Rand.Range(0.5f, 4);
+                        dataStatic.rotationRate = Rand.Range(-5, 5);
+                        dataStatic.velocityAngle = rawAngle + variantion;
+                        dataStatic.velocitySpeed = (4.01f - dataStatic.scale) * 2;
+                        dataStatic.targetSize = 5f;
+                        parent.MapHeld.flecks.CreateFleck(dataStatic);
+                    }
+                    if (Props.ExhaustFleck != null)
+                    {
+                        FleckCreationData dataStatic = FleckMaker.GetDataStatic(drawPos, Projectile.MapHeld, Props.ExhaustFleck);
+                        dataStatic.spawnPosition = drawPos + CircleConst.GetAngle(rawAngle) * 2f;
+                        dataStatic.scale = Rand.Range(1f, 3);
+                        dataStatic.velocityAngle = rawAngle;
+                        dataStatic.velocitySpeed = (5 - dataStatic.scale) * 4;
+                        dataStatic.targetSize = 0f;
+                        parent.MapHeld.flecks.CreateFleck(dataStatic);
+                    }
                 }
             }
         }
@@ -61,24 +69,27 @@ namespace DMS
         {
             if (parent.Position.ShouldSpawnMotesAt(parent.MapHeld))
             {
-                if (Props.ExhaustFleck != null)
+                for (int i = 0; i < 3; i++)
                 {
-                    FleckCreationData dataStatic = FleckMaker.GetDataStatic(drawPos, Projectile.MapHeld, Props.ExhaustFleck);
-                    dataStatic.scale = Props.ExhaustCurve.Evaluate(evaluate);
-                    dataStatic.rotationRate = Rand.Range(-60, 60);
-                    dataStatic.velocityAngle = Vector3.Angle(postPosition, drawPos);
-                    dataStatic.velocitySpeed = dataStatic.scale * Projectile.def.projectile.SpeedTilesPerTick;
-                    dataStatic.solidTimeOverride = 0.2f * (1f - (evaluate + 0.1f));
-                    parent.MapHeld.flecks.CreateFleck(dataStatic);
-                }
-                if (Props.SmokeFleck != null)
-                {
-                    FleckCreationData dataStatic = FleckMaker.GetDataStatic(drawPos, Projectile.MapHeld, Props.SmokeFleck);
-                    dataStatic.scale = Props.SmokeCurve.Evaluate(evaluate);
-                    dataStatic.rotationRate = Rand.Range(-30, 30);
-                    dataStatic.velocityAngle = Rand.Range(-180, 180);
-                    dataStatic.velocitySpeed = Mathf.Clamp01(1 - dataStatic.scale);
-                    parent.MapHeld.flecks.CreateFleck(dataStatic);
+                    if (Props.ExhaustFleck != null)
+                    {
+                        FleckCreationData dataStatic = FleckMaker.GetDataStatic(drawPos, Projectile.MapHeld, Props.ExhaustFleck);
+                        dataStatic.scale = Rand.Range(0, Props.ExhaustCurve.Evaluate(evaluate));
+                        dataStatic.rotationRate = Rand.Range(-60, 60);
+                        dataStatic.velocityAngle = Vector3.Angle(postPosition, drawPos);
+                        dataStatic.velocitySpeed = dataStatic.scale * Projectile.def.projectile.SpeedTilesPerTick;
+                        dataStatic.solidTimeOverride = 0.2f * (1f - (evaluate + 0.1f));
+                        parent.MapHeld.flecks.CreateFleck(dataStatic);
+                    }
+                    if (Props.SmokeFleck != null)
+                    {
+                        FleckCreationData dataStatic = FleckMaker.GetDataStatic(drawPos, Projectile.MapHeld, Props.SmokeFleck);
+                        dataStatic.scale = Rand.Range(0, Props.SmokeCurve.Evaluate(evaluate));
+                        dataStatic.rotationRate = Rand.Range(-30, 30);
+                        dataStatic.velocityAngle = Rand.Range(-180, 180);
+                        dataStatic.velocitySpeed = Mathf.Clamp01(1 - dataStatic.scale);
+                        parent.MapHeld.flecks.CreateFleck(dataStatic);
+                    }
                 }
                 postPosition = drawPos;
             }

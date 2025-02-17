@@ -48,17 +48,22 @@ namespace DMS
         }
         private bool isActive;
         protected int tickRemain;
+        protected int interceptCountMax = 2;
+        protected int interceptCount;
         public override void CompTick()
         {
             if (!isActive) return;
+            interceptCount = 0;
             foreach (IntVec3 cell in GenAdj.OccupiedRect(Pawn).ExpandedBy(Props.Radius))
             {
                 List<Thing> list = Pawn.MapHeld.thingGrid.ThingsListAt(cell).Where((v) => v is Projectile p && p.Launcher?.Faction != Pawn.Faction).ToList();
                 for (int i = 0; i < list.Count; i++)
                 {
+                    if (interceptCount >= interceptCountMax) return;
                     Thing thing2 = list[i];
                     if (IsTargetProjectile(thing2) && IsInBound(thing2 as Projectile))
                     {
+                        interceptCount++;
                         if (Rand.Range(0f, 1f) > Props.chanceToFail)
                         {
                             Vector3 pos = thing2.DrawPos;
@@ -88,7 +93,6 @@ namespace DMS
                                 Pawn.Map.flecks.CreateFleck(dataStatic);
                             }
                             DoIntercept(thing2 as Projectile);
-                            return;
                         }
                     }
                 }
@@ -102,7 +106,7 @@ namespace DMS
         public override string CompInspectStringExtra()
         {
             if (isActive)
-                return "DMS_APS_TickRemain".Translate(tickRemain.TicksToSeconds());
+                return "DMS_APS_TickRemain:{0}".Translate(tickRemain.TicksToSeconds());
             else
                 return base.CompInspectStringExtra();
         }
@@ -137,7 +141,7 @@ namespace DMS
                     {
                         FleckCreationData dataStatic = FleckMaker.GetDataStatic(target.DrawPos, target.Map, Props.interceptedFleckDef);
                         dataStatic.scale = Rand.Range(2f, 5f);
-                        var noise = Rand.Bool ? -90 : 90; 
+                        var noise = Rand.Range(-15, 15); 
                         dataStatic.spawnPosition = target.DrawPos + CircleConst.GetAngle(velo.AngleFlat() + noise) * -2f;
                         dataStatic.rotation = velo.AngleFlat() + noise;
                         dataStatic.velocityAngle = velo.AngleFlat() + noise;
@@ -173,6 +177,7 @@ namespace DMS
             base.PostExposeData();
             Scribe_Values.Look(ref isActive, "isActive", false);
             Scribe_Values.Look(ref tickRemain, "tickRemain", 100);
+            Scribe_Values.Look(ref interceptCount, "interceptCount", 0);
         }
     }
     public class CompProperties_ActiveProtectionSystem : CompProperties_AbilityEffect

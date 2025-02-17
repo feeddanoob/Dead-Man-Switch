@@ -91,12 +91,11 @@
 			<wornGraphicPath>Things/Apparel/StealthMask/headgear</wornGraphicPath>
 			<renderSkipFlags>
 				<li>None</li>
-				<li>Hair</li>
 				<li>Beard</li>
 			</renderSkipFlags>
 			<drawData>
 				<defaultData>
-					<layer>51</layer>
+					<layer>65</layer>
 				</defaultData>
 				<dataNorth>
 					<layer>-3</layer>
