@@ -202,6 +202,91 @@
   </SoundDef>
 
   <SoundDef>
+    <defName>DMS_Shot_JusticeGavel</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>DMS_Cannon/JusticeGavel</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>0.945882~1</pitchRange>
+        <volumeRange>40~50</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>DMS_Shot_Dawnblade</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>DMS_Cannon/Dawnblade</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>0.86~0.945882</pitchRange>
+        <volumeRange>50~75</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>DMS_Shot_GAU</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>12</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_Cannon/GAU8/gun_shoot</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.954118~1.045882</pitchRange>
+        <volumeRange>29~31</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>DMS_Shot_Tunguska</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>6</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>DMS_Cannon/2A38</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.954118~1.045882</pitchRange>
+        <volumeRange>29~31</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>DMS_Shot_GSh</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>6</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>DMS_Cannon/2A38</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.854118~0.945882</pitchRange>
+        <volumeRange>20~24</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
     <defName>DMS_Shot_VasilekSound</defName>
     <context>MapOnly</context>
     <maxSimultaneous>1</maxSimultaneous>

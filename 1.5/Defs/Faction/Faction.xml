@@ -139,6 +139,7 @@
           <DMS_Trader>1</DMS_Trader>
         </traders>
         <carriers>
+          <Cinder_Trailer MayRequire="breadmo.cinders">12</Cinder_Trailer>
           <Muffalo>6</Muffalo>
         </carriers>
         <guards>
@@ -160,6 +161,7 @@
           <DMS_Trader>1</DMS_Trader>
         </traders>
         <carriers>
+          <Cinder_Trailer MayRequire="breadmo.cinders">12</Cinder_Trailer>
           <Muffalo>6</Muffalo>
         </carriers>
         <guards>

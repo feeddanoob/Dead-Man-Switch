@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace DMS.Patch
+namespace DMS
 {
     [HarmonyPatch(typeof(CompOverseerSubject), "State",MethodType.Getter)]
     public static class Patch_Overseer

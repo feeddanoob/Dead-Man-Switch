@@ -114,8 +114,8 @@
 
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DMS_Bullet_Kord</defaultProjectile>
-				<warmupTime>2</warmupTime>
-				<range>39.9</range>
+				<warmupTime>3</warmupTime>
+				<range>36.9</range>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<burstShotCount>15</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
@@ -187,7 +187,7 @@
 
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
-				<warmupTime>2.5</warmupTime>
+				<warmupTime>3</warmupTime>
 				<minRange>8</minRange>
 				<range>39.9</range>
 				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
@@ -252,7 +252,7 @@
 
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
-				<warmupTime>2.5</warmupTime>
+				<warmupTime>3</warmupTime>
 				<range>44.9</range>
 				<minRange>1.9</minRange>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
@@ -304,7 +304,7 @@
 			<AccuracyShort>0.48</AccuracyShort>
 			<AccuracyMedium>0.38</AccuracyMedium>
 			<AccuracyLong>0.28</AccuracyLong>
-			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
 			<skillRequirements>
@@ -335,7 +335,7 @@
 				<warmupTime>3</warmupTime>
 				<minRange>9.9</minRange>
 				<range>44.9</range>
-				<soundCast>Shot_TurretSniper</soundCast>
+				<soundCast>DMS_Shot_GAU</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>15</muzzleFlashScale>
 				<targetParams>
@@ -347,11 +347,11 @@
 		<modExtensions>
 			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
 				<def>MF_StandardMuzzleFalsh</def>
-				<drawSize>(1.1,1.1)</drawSize>
+				<drawSize>(3,1.75)</drawSize>
 				<offsets>
-					<li>(1.7,0)</li>
+					<li>(1.36,0)</li>
 				</offsets>
-				<isAlternately>true</isAlternately>
+				<isAlternately>false</isAlternately>
 			</li>
 			<li Class="DMS.HeavyEquippableExtension">
 				<EquippableDef>UltraHeavyAutomatroid</EquippableDef>
