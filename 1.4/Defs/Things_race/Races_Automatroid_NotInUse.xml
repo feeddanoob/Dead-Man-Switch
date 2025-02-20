@@ -82,8 +82,7 @@
       </lifeStageAges>
     </race>
     <comps>
-      <li Class="DMS.CompProperties_MechApparel">
-      </li>
+      <li Class="DMS.CompProperties_MechApparel"/>
     </comps>
     <modExtensions>
       <li Class="DMS.TurretMannableExtension"/>

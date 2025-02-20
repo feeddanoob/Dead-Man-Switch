@@ -33,7 +33,7 @@ namespace DMSCE
             }
             if (parent.CanCast && !parent.Casting)
             {
-                foreach (IntVec3 cell in GenAdj.OccupiedRect(Pawn).ExpandedBy(Props.Radius))
+                foreach (IntVec3 cell in GenAdj.OccupiedRect(Pawn).ExpandedBy(Props.Radius).ClipInsideMap(Pawn.Map))
                 {
                     List<Thing> list = Pawn.MapHeld.thingGrid.ThingsListAt(cell).Where((v) => v is ProjectileCE).ToList();
                     for (int i = 0; i < list.Count; i++)
@@ -60,7 +60,7 @@ namespace DMSCE
             }
             if (!Pawn.Spawned) return;
 
-            foreach (IntVec3 cell in GenAdj.OccupiedRect(Pawn).ExpandedBy(Props.Radius))
+            foreach (IntVec3 cell in GenAdj.OccupiedRect(Pawn).ExpandedBy(Props.Radius).ClipInsideMap(Pawn.Map))
             {
                 List<Thing> list = Pawn.Map.thingGrid.ThingsListAt(cell).Where((v) => v.GetType().IsSubclassOf(typeof(ProjectileCE)) && (v as ProjectileCE).launcher?.Faction != Pawn.Faction).ToList();
                 for (int i = 0; i < list.Count; i++)

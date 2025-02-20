@@ -61,4 +61,9 @@
   <DMS_MechStory_Loot>{0}的回报</DMS_MechStory_Loot>
   
   <DMS_APS_TickRemain>主动防御系统运作剩余时间:{0}</DMS_APS_TickRemain>
+
+  <DMS_WeaponImprinted>适配武器:{0}({1})</DMS_WeaponImprinted>
+  <DMS_Inprinted>武器绑定:{0}</DMS_Inprinted>
+  <DMS_InprintedDesc>由殖民地所控制的 {0} 装备了它的第一个武器，这使得它的自适应能力将与该型号的武器深度绑定，并随着时间逐渐增强与该型武器的契合程度从而提升射击准确性与反应能力。</DMS_InprintedDesc>
+  
 </LanguageData>

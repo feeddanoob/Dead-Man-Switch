@@ -420,4 +420,97 @@
     </stages>
   </HediffDef>
 
+  <HediffDef>
+    <defName>DMS_WeaponInprint</defName>
+    <hediffClass>Hediff_Level</hediffClass>
+    <label>self-calibration</label>
+    <description>MG-1合成人所配備的自適應機制，機體能根據自身對武器操作的經驗養成反射性動作，並讓特定部位的人工肌肉密度增長來更加契合武器。這使得長期使用單一類型武器的MG-1能在使用適應的武器時有更加出色的戰鬥效能。\n\n然而在系統中的過擬合問題使得機體只能夠對一種特定的武器進行自我校準，默認設置是在出廠後裝備的第一種武器。</description>
+    <descriptionShort>對使用特定的武器進行自適應，並在使用適應的武器時有更加出色的戰鬥效能。</descriptionShort>
+    <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity> <!-- Severity is bound to level of implant -->
+    <minSeverity>1</minSeverity>
+    <maxSeverity>6</maxSeverity>
+    <alwaysShowSeverity>true</alwaysShowSeverity>
+    <levelIsQuantity>false</levelIsQuantity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+    <stages>
+      <li>
+        <label>low</label>
+        <minSeverity>1</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.15</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>medium</label>
+        <minSeverity>2</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.15</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>high</label>
+        <minSeverity>3</minSeverity>
+        <statOffsets>
+          <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">-1</BandwidthCost>
+        </statOffsets>
+      </li>
+      <li>
+        <label>very high</label>
+        <minSeverity>4</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.10</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>overloaded</label>
+        <minSeverity>5</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.5</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.25</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>maxed</label>
+        <minSeverity>6</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.5</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.25</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
 </Defs>
