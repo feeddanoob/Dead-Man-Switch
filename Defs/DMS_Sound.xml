@@ -230,7 +230,7 @@
           </li>
         </grains>
         <pitchRange>0.86~0.945882</pitchRange>
-        <volumeRange>50~75</volumeRange>
+        <volumeRange>30~40</volumeRange>
       </li>
     </subSounds>
   </SoundDef>

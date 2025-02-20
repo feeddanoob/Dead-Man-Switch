@@ -300,7 +300,7 @@
 			<texPath>Things/Projectile/Bullet_Big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>2</drawSize>
+			<drawSize>1.8</drawSize>
 		</graphicData>
 		<projectile>
 			<speed>80</speed>
@@ -309,7 +309,7 @@
 			<armorPenetrationBase>0.7</armorPenetrationBase>
 			<stoppingPower>1.5</stoppingPower>
 			<ai_IsIncendiary>false</ai_IsIncendiary>
-			<arcHeightFactor>0.75</arcHeightFactor>
+			<!-- <arcHeightFactor>0.75</arcHeightFactor> -->
 			<soundExplode>Explosion_Rocket</soundExplode>
 			<shadowSize>0.6</shadowSize>
 		</projectile>
@@ -325,6 +325,11 @@
 			<effecterDef>DMS_ConeExplosion</effecterDef>
 		  </li>
 		</modExtensions>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>DMS_LaunchDust_Recoilless</effecterDef>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<!--2A38M 給駭蜥Boss的武器-->
@@ -608,6 +613,11 @@
 			<effecterDef>DMS_ConeExplosion_Wide</effecterDef>
 		  </li>
 		</modExtensions>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>DMS_LaunchDust_Grenade</effecterDef>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<!--Dawnblade Mech Mount-->
@@ -666,7 +676,7 @@
 				<range>50</range>
 				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
 				<burstShotCount>2</burstShotCount>
-				<ticksBetweenBurstShots>36</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>48</ticksBetweenBurstShots>
 				<soundCast>DMS_Shot_Dawnblade</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>20</muzzleFlashScale>

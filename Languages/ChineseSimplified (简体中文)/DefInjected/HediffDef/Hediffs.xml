@@ -81,4 +81,22 @@
   <!-- EN: fever -->
   <DMS_SyntheticRejection.stages.fever.label>免疫反应</DMS_SyntheticRejection.stages.fever.label>
   
+
+  <!-- EN: self-calibration -->
+  <DMS_WeaponInprint.label>武装适应</DMS_WeaponInprint.label>
+  <DMS_WeaponInprint.description>MG-1合成人所配备的自适应机制，机体能根据自身对武器操作的经验养成反射性动作，并让特定部位的人工肌肉密度增长来更加契合武器。这使得长期使用单一类型武器的MG-1能在使用适应的武器时有更加出色的战斗效能。\n\n然而在系统中的过拟合问题使得机体只能够对一种特定的武器进行自我校准，默认设置是在出厂后装备的第一种武器。</DMS_WeaponInprint.description>
+  <DMS_WeaponInprint.descriptionShort>对使用特定的武器进行自适应，并在使用适应的武器时有更加出色的战斗效能。效果会随着时间增强。</DMS_WeaponInprint.descriptionShort>
+  <!-- EN: low -->
+  <DMS_WeaponInprint.stages.low.label>初识</DMS_WeaponInprint.stages.low.label>
+  <!-- EN: medium -->
+  <DMS_WeaponInprint.stages.medium.label>适应</DMS_WeaponInprint.stages.medium.label>
+  <!-- EN: high -->
+  <DMS_WeaponInprint.stages.high.label>优化</DMS_WeaponInprint.stages.high.label>
+  <!-- EN: very high -->
+  <DMS_WeaponInprint.stages.very_high.label>熟练</DMS_WeaponInprint.stages.very_high.label>
+  <!-- EN: overloaded -->
+  <DMS_WeaponInprint.stages.overloaded.label>专精</DMS_WeaponInprint.stages.overloaded.label>
+  <!-- EN: maxed -->
+  <DMS_WeaponInprint.stages.maxed.label>极致</DMS_WeaponInprint.stages.maxed.label>
+
 </LanguageData>

@@ -562,6 +562,11 @@
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
+    <comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>DMS_LaunchDust_Grenade</effecterDef>
+			</li>
+    </comps>
   </ThingDef>
 
 
@@ -1004,6 +1009,9 @@
         <doSoundEffects>false</doSoundEffects>
         <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
       </li>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>DMS_LaunchDust</effecterDef>
+			</li>
     </comps>
   </ThingDef>
 

@@ -93,6 +93,7 @@
       <li Class="DMS.CompProperties_WeaponImprint">
         <imprintDef>DMS_WeaponInprint</imprintDef>
         <bodyPart>Brain</bodyPart>
+        <pointRequire>3600</pointRequire>
       </li>
     </comps>
     <modExtensions>

@@ -83,4 +83,22 @@ The severity of these symptoms fit into five levels.</DMS_BionicShock.descriptio
   <!-- EN: fever -->
   <DMS_SyntheticRejection.stages.fever.label>fever</DMS_SyntheticRejection.stages.fever.label>
   
+
+  <!-- EN: calibration -->
+  <DMS_WeaponInprint.label>calibration</DMS_WeaponInprint.label>
+  <DMS_WeaponInprint.description>This Synth is integrated with an adaptive mechanism that allows its body to develop reflexive actions based on its handling experience and increase the density of artificial muscles in specific parts to better adapt to the weapon. As a result, an MG-1 can achieve superior combat effectiveness when operating the weapon it is adapted to.\n\nHowever, overfitting issues in the system prevent it from calibrating itself to only one weapon, usually the first weapon equipped upon startup.</DMS_WeaponInprint.description>
+  <DMS_WeaponInprint.descriptionShort>Adapt to specific weapons and have better combat effectiveness when using adapted weapons. the effect will increase over time.</DMS_WeaponInprint.descriptionShort>
+  <!-- EN: low -->
+  <DMS_WeaponInprint.stages.acquaintance.label>acquaintance</DMS_WeaponInprint.stages.acquaintance.label>
+  <!-- EN: medium -->
+  <DMS_WeaponInprint.stages.adaptation.label>adaptation</DMS_WeaponInprint.stages.adaptation.label>
+  <!-- EN: high -->
+  <DMS_WeaponInprint.stages.optimization.label>optimization</DMS_WeaponInprint.stages.optimization.label>
+  <!-- EN: very high -->
+  <DMS_WeaponInprint.stages.experienced.label>experienced</DMS_WeaponInprint.stages.experienced.label>
+  <!-- EN: overloaded -->
+  <DMS_WeaponInprint.stages.specialized.label>specialized</DMS_WeaponInprint.stages.specialized.label>
+  <!-- EN: maxed -->
+  <DMS_WeaponInprint.stages.maximized.label>maximized</DMS_WeaponInprint.stages.maximized.label>
+
 </LanguageData>

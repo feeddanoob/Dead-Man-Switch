@@ -422,15 +422,14 @@
 
   <HediffDef>
     <defName>DMS_WeaponInprint</defName>
-    <hediffClass>Hediff_Level</hediffClass>
-    <label>self-calibration</label>
-    <description>MG-1合成人所配備的自適應機制，機體能根據自身對武器操作的經驗養成反射性動作，並讓特定部位的人工肌肉密度增長來更加契合武器。這使得長期使用單一類型武器的MG-1能在使用適應的武器時有更加出色的戰鬥效能。\n\n然而在系統中的過擬合問題使得機體只能夠對一種特定的武器進行自我校準，默認設置是在出廠後裝備的第一種武器。</description>
-    <descriptionShort>對使用特定的武器進行自適應，並在使用適應的武器時有更加出色的戰鬥效能。</descriptionShort>
+    <hediffClass>DMS.Hediff_LevelLabel</hediffClass>
+    <label>calibration</label>
+    <description>This Synth is integrated with an adaptive mechanism that allows its body to develop reflexive actions based on its handling experience and increase the density of artificial muscles in specific parts to better adapt to the weapon. As a result, an MG-1 can achieve superior combat effectiveness when operating the weapon it is adapted to.\n\nHowever, overfitting issues in the system prevent it from calibrating itself to only one weapon, usually the first weapon equipped upon startup.</description>
+    <descriptionShort>Adapt to specific weapons and have better combat effectiveness when using adapted weapons. the effect will increase over time.</descriptionShort>
     <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
     <initialSeverity>1</initialSeverity> <!-- Severity is bound to level of implant -->
     <minSeverity>1</minSeverity>
     <maxSeverity>6</maxSeverity>
-    <alwaysShowSeverity>true</alwaysShowSeverity>
     <levelIsQuantity>false</levelIsQuantity>
     <isBad>false</isBad>
     <comps>
@@ -438,22 +437,25 @@
     </comps>
     <stages>
       <li>
-        <label>low</label>
+        <label>acquaintance</label>
         <minSeverity>1</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>0.15</offset>
-          </li>
-        </capMods>
+        <statOffsets>
+          <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+        </statOffsets>
       </li>
       <li>
-        <label>medium</label>
+        <label>adaptation</label>
         <minSeverity>2</minSeverity>
+        <statOffsets>
+          <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+        </statOffsets>
+        <statFactors>
+          <StaggerDurationFactor>0.8</StaggerDurationFactor>
+        </statFactors>
         <capMods>
           <li>
             <capacity>Moving</capacity>
-            <offset>0.15</offset>
+            <offset>0.1</offset>
           </li>
           <li>
             <capacity>Consciousness</capacity>
@@ -462,19 +464,20 @@
         </capMods>
       </li>
       <li>
-        <label>high</label>
+        <label>optimization</label>
         <minSeverity>3</minSeverity>
         <statOffsets>
-          <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">-1</BandwidthCost>
+          <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
         </statOffsets>
-      </li>
-      <li>
-        <label>very high</label>
-        <minSeverity>4</minSeverity>
+        <statFactors>
+          <AimingDelayFactor>0.9</AimingDelayFactor>
+          <StaggerDurationFactor>0.75</StaggerDurationFactor>
+          <MechEnergyUsageFactor>0.9</MechEnergyUsageFactor>
+        </statFactors>
         <capMods>
           <li>
             <capacity>Moving</capacity>
-            <offset>0.25</offset>
+            <offset>0.2</offset>
           </li>
           <li>
             <capacity>Consciousness</capacity>
@@ -483,22 +486,61 @@
         </capMods>
       </li>
       <li>
-        <label>overloaded</label>
-        <minSeverity>5</minSeverity>
+        <label>experienced</label>
+        <minSeverity>4</minSeverity>
+        <statOffsets>
+          <ShootingAccuracyPawn>6</ShootingAccuracyPawn>
+        </statOffsets>
+        <statFactors>
+          <AimingDelayFactor>0.85</AimingDelayFactor>
+          <StaggerDurationFactor>0.7</StaggerDurationFactor>
+          <MechEnergyUsageFactor>0.85</MechEnergyUsageFactor>
+        </statFactors>
         <capMods>
           <li>
             <capacity>Moving</capacity>
-            <offset>0.5</offset>
+            <offset>0.3</offset>
           </li>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>0.25</offset>
+            <offset>0.15</offset>
           </li>
         </capMods>
       </li>
       <li>
-        <label>maxed</label>
+        <label>specialized</label>
+        <minSeverity>5</minSeverity>
+        <statOffsets>
+          <ShootingAccuracyPawn>8</ShootingAccuracyPawn>
+        </statOffsets>
+        <statFactors>
+          <AimingDelayFactor>0.8</AimingDelayFactor>
+          <StaggerDurationFactor>0.6</StaggerDurationFactor>
+          <MechEnergyUsageFactor>0.8</MechEnergyUsageFactor>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.4</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.20</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>maximized</label>
         <minSeverity>6</minSeverity>
+        <statOffsets>
+          <ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+          <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">-1</BandwidthCost>
+        </statOffsets>
+        <statFactors>
+          <AimingDelayFactor>0.75</AimingDelayFactor>
+          <StaggerDurationFactor>0.5</StaggerDurationFactor>
+          <MechEnergyUsageFactor>0.75</MechEnergyUsageFactor>
+        </statFactors>
         <capMods>
           <li>
             <capacity>Moving</capacity>

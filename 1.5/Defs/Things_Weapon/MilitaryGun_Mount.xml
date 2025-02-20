@@ -330,7 +330,7 @@
 			<ai_AvoidFriendlyFireRadius>9.9</ai_AvoidFriendlyFireRadius>
 			<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 			<burstShotCount>5</burstShotCount>
-			<soundCast>Shot_Autocannon</soundCast>
+			<soundCast>DMS_Shot_VasilekSound</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>10</muzzleFlashScale>
 			<targetParams>
