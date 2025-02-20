@@ -101,7 +101,7 @@ namespace DMS
                     dataStatic.targetSize = 0;
                     dataStatic.velocityAngle = velo.ToAngleFlat();
                     dataStatic.velocitySpeed = Rand.Range(target.def.projectile.speed / 2, target.def.projectile.speed);
-                    dataStatic.scale = dataStatic.velocitySpeed / 2;
+                    dataStatic.scale = 2;
                     parent.Map.flecks.CreateFleck(dataStatic);
                 }
             }
