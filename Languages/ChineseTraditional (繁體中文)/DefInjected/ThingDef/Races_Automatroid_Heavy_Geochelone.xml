@@ -4,21 +4,21 @@
   <!-- EN: Caretta -->
   <DMS_Mech_Caretta.label>蠵龜</DMS_Mech_Caretta.label>
   <!-- EN: mobile artillery platform equipped with a rapid fire mortar launcher, designed to bombardment enemy base and ground forces from afar. -->
-  <DMS_Mech_Caretta.description>一種移動式對空支援平臺，是象龜的改裝型號。</DMS_Mech_Caretta.description>
+  <DMS_Mech_Caretta.description>象龜的泛生型號，作為一種移動式曲射支援平臺來為步兵提供即時的火炮支援。搭載了一座2B9矢車菊迫擊砲作為其主要武器。</DMS_Mech_Caretta.description>
   <!-- EN: head -->
   <DMS_Mech_Caretta.tools.head.label>頭部</DMS_Mech_Caretta.tools.head.label>
   
   <!-- EN: geochelone -->
   <DMS_Mech_Geochelone.label>象龜</DMS_Mech_Geochelone.label>
   <!-- EN: an unmanned all-terrain tracked pulse shield support platform, featuring a diverse range of production models and variants. -->
-  <DMS_Mech_Geochelone.description>一種無人全地形履帶式脈衝防護盾支援平臺，有多種生產型號和變型。</DMS_Mech_Geochelone.description>
+  <DMS_Mech_Geochelone.description>一種無人全地形履帶式脈衝防護盾支援平臺，具有一個小型化的艦載護盾系統來抵擋攻擊。有多種生產型號和變型。</DMS_Mech_Geochelone.description>
   <!-- EN: head -->
   <DMS_Mech_Geochelone.tools.head.label>頭部</DMS_Mech_Geochelone.tools.head.label>
 
   <!-- EN: geochelone -->
   <DMS_Mech_Geochelone_b.label>象龜</DMS_Mech_Geochelone_b.label>
   <!-- EN: an unmanned all-terrain tracked pulse shield support platform, featuring a diverse range of production models and variants. -->
-  <DMS_Mech_Geochelone_b.description>一種無人全地形履帶式脈衝防護盾支援平臺，有多種生產型號和變型。</DMS_Mech_Geochelone_b.description>
+  <DMS_Mech_Geochelone_b.description>一種無人全地形履帶式脈衝防護盾支援平臺，具有一個小型化的艦載護盾系統來抵擋攻擊。有多種生產型號和變型。</DMS_Mech_Geochelone_b.description>
   <!-- EN: head -->
   <DMS_Mech_Geochelone_b.tools.head.label>頭部</DMS_Mech_Geochelone_b.tools.head.label>
   

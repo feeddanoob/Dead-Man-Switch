@@ -39,7 +39,7 @@
   <!-- EN: private -->
   <DMS_Private.label>二等兵</DMS_Private.label>
   <!-- EN: A private is a soldier, usually with the lowest rank in many armies. Soldiers with the rank of private may be conscripts or they may be professional (career) soldiers.. -->
-  <DMS_Private.description>二等兵是一種士兵，通常是許多軍隊中軍銜最低的士兵。擁有二等兵軍銜的士兵可能是應徵入伍者，也可能是專職（職業）士兵。</DMS_Private.description>
+  <DMS_Private.description>二等兵是一種士兵，也通常是大多數軍隊中軍銜最低的士兵。擁有二等兵軍銜的士兵可能是應徵入伍者，也可能是專職（職業）士兵。</DMS_Private.description>
   
   <!-- EN: Reservist -->
   <DMS_Reservist.label>預備役</DMS_Reservist.label>

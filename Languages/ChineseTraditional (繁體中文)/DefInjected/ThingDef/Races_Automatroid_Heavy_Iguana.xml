@@ -12,11 +12,6 @@
   <!-- EN: Right Leg -->
   <DMS_Mech_Gecko.tools.Right_Leg.label>右腿</DMS_Mech_Gecko.tools.Right_Leg.label>
   
-  <!-- UNUSED -->
-  <DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.command_Target>瞄準目標</DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.command_Target>
-  <DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>自由開火</DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>
-  <DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>瞄準指定目標</DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>
-  <DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>切換炮塔至手動模式來避免非必要的開火</DMS_Mech_Gecko.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
   <DMS_Mech_Gecko.tools.left_leg.label>左腿</DMS_Mech_Gecko.tools.left_leg.label>
   <DMS_Mech_Gecko.tools.right_leg.label>右腿</DMS_Mech_Gecko.tools.right_leg.label>
   <DMS_Mech_Gecko.tools.head.label>頭部</DMS_Mech_Gecko.tools.head.label>
@@ -33,10 +28,6 @@
   <DMS_Mech_Iguana.tools.Right_Leg.label>右腿</DMS_Mech_Iguana.tools.Right_Leg.label>
   
   <!-- UNUSED -->
-  <DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.command_Target>瞄準目標</DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.command_Target>
-  <DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>自由開火</DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>
-  <DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>瞄準指定目標</DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>
-  <DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>切換炮塔至手動模式來避免非必要的開火</DMS_Mech_Iguana.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
   <DMS_Mech_Iguana.tools.left_leg.label>左腿</DMS_Mech_Iguana.tools.left_leg.label>
   <DMS_Mech_Iguana.tools.right_leg.label>右腿</DMS_Mech_Iguana.tools.right_leg.label>
   <DMS_Mech_Iguana.tools.head.label>頭部</DMS_Mech_Iguana.tools.head.label>

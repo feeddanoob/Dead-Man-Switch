@@ -64,6 +64,6 @@
 
   <DMS_WeaponImprinted>適配武器:{0}({1})</DMS_WeaponImprinted>
   <DMS_Inprinted>武器綁定:{0}</DMS_Inprinted>
-  <DMS_InprintedDesc>由殖民地所控制的 {0} 裝備了它的第一個武器，這使得它的自適應能力將與該型號的武器深度綁定，並隨著時間逐漸增強與該型武器的契合程度從而提升射擊準確性與反應能力。</DMS_InprintedDesc>
+  <DMS_InprintedDesc>由殖民地所控制的 {0} 裝備了它的第一個武器，這使得它的自適應能力將與該型號的武器深度綁定，並將隨著時間逐漸增強與該型武器的契合程度從而提升射擊準確性與反應能力。</DMS_InprintedDesc>
   
 </LanguageData>

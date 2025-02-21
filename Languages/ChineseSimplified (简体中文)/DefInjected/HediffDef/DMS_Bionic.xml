@@ -55,7 +55,7 @@
   <!-- EN: Emotion Neutralizer -->
   <DMS_SensoryFilter.label>情感过滤装置</DMS_SensoryFilter.label>
   <!-- EN: A regulatory implant which hijacks the neural pathways for emotion, severing their connections. The process removes most of what it means to be human. -->
-  <DMS_SensoryFilter.description>不再恐惧，不再反感，不再感受，不再悲痛。那麽...还有什麽东西能被省略呢?</DMS_SensoryFilter.description>
+  <DMS_SensoryFilter.description>不再恐惧，不再反感，不再感受，不再悲痛。 \n\n那麽...还有什麽东西能被省略呢?</DMS_SensoryFilter.description>
   <!-- EN: an emotion neutralizer -->
   <DMS_SensoryFilter.labelNoun>一个作用中的情感过滤装置，将一条鲜活的生命变成一枚随意操弄的棋子</DMS_SensoryFilter.labelNoun>
   

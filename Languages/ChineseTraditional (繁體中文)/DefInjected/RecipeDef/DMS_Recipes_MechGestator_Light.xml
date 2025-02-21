@@ -4,7 +4,7 @@
   <!-- EN: Gestate Dogge -->
   <DMS_Make_Dogge.label>組裝獒犬</DMS_Make_Dogge.label>
   <!-- EN: Gestate a Dogge Automatroid. -->
-  <DMS_Make_Dogge.description>組裝獒犬，一種四足機槍平臺，安裝了一挺輕型機槍能夠在行進時進行瞄準與射擊，通常被用於清剿戰場上潰逃的士兵與反游擊作戰。</DMS_Make_Dogge.description>
+  <DMS_Make_Dogge.description>組裝獒犬，一種四足機槍平臺，安裝了一挺輕型機槍能夠在行進時射擊，通常被用於清剿戰場上潰逃的士兵與反游擊作戰。</DMS_Make_Dogge.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_Dogge.jobString>組裝機械體中</DMS_Make_Dogge.jobString>
   

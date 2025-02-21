@@ -19,7 +19,7 @@
   <!-- EN: call transport shuttle -->
   <DMS_CallTransportShuttle.label>呼叫太空梭</DMS_CallTransportShuttle.label>
   <!-- EN: Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles. -->
-  <DMS_CallTransportShuttle.description>召喚一艘太空梭供自己使用。它可以將殖民者、物品和動物運送到 70 個世界方格內的任何地方。</DMS_CallTransportShuttle.description>
+  <DMS_CallTransportShuttle.description>召喚一艘太空梭供自己使用。它可以將殖民者、物品和動物運送到70個世界格內的任何地方。</DMS_CallTransportShuttle.description>
   
   <!-- EN: supply cargo mech -->
   <DMS_CargoMech.label>擴編後勤機兵</DMS_CargoMech.label>
@@ -27,9 +27,9 @@
   <DMS_CargoMech.description>申請支援一架後勤機兵編入你的部隊。</DMS_CargoMech.description>
   
   <!-- EN: combat supply drop -->
-  <DMS_CombatDrop.label>空投戰鬥補給</DMS_CombatDrop.label>
+  <DMS_CombatDrop.label>空投應急補給</DMS_CombatDrop.label>
   <!-- EN: Call for a drop of standard combat supply. -->
-  <DMS_CombatDrop.description>呼叫空投標準戰鬥補給。</DMS_CombatDrop.description>
+  <DMS_CombatDrop.description>呼叫空投標準應急補給。</DMS_CombatDrop.description>
   
   <!-- EN: supply combat mech -->
   <DMS_CombatMech.label>擴編戰鬥機兵</DMS_CombatMech.label>
@@ -74,22 +74,22 @@
   <!-- EN: call heavy unit support -->
   <DMS_Platoon_AC.label>呼叫排組支援</DMS_Platoon_AC.label>
   <!-- EN: Call 4 heavy Automatroid to aid you in battle. -->
-  <DMS_Platoon_AC.description>呼叫排組士兵協助你作戰。</DMS_Platoon_AC.description>
+  <DMS_Platoon_AC.description>呼叫排組士兵協助作戰。</DMS_Platoon_AC.description>
   
   <!-- EN: call squad support -->
   <DMS_Platoon_MT.label>呼叫班組支援</DMS_Platoon_MT.label>
   <!-- EN: Call a squad of soldiers to aid you in battle. -->
-  <DMS_Platoon_MT.description>呼叫班組士兵協助你作戰。</DMS_Platoon_MT.description>
+  <DMS_Platoon_MT.description>呼叫班組士兵協助作戰。</DMS_Platoon_MT.description>
   
   <!-- EN: riot control support -->
   <DMS_Squad_RC.label>防暴小組支援</DMS_Squad_RC.label>
   <!-- EN: Call a group of 4 riot control unit to aid you in prison outbreak. -->
-  <DMS_Squad_RC.description>呼叫4名防暴小組協助您處理監獄突發事件。</DMS_Squad_RC.description>
+  <DMS_Squad_RC.description>呼叫4名防暴小組協助處理監獄突發事件。</DMS_Squad_RC.description>
   
   <!-- EN: urban combat support -->
   <DMS_Squad_UC.label>城市戰鬥支援</DMS_Squad_UC.label>
   <!-- EN: Call a group of 4 urban combat unit to aid you in raid or colony defense. -->
-  <DMS_Squad_UC.description>呼叫4名城市戰小組協助您進行突襲或殖民地防禦。</DMS_Squad_UC.description>
+  <DMS_Squad_UC.description>呼叫4名城市戰小組協助進行突襲或殖民地防禦。</DMS_Squad_UC.description>
   
   <!-- EN: call worker group -->
   <DMS_WorkerGroup.label>呼叫工作小組</DMS_WorkerGroup.label>
@@ -100,5 +100,10 @@
   <DMS_WorkerTeam.label>呼叫工人團隊</DMS_WorkerTeam.label>
   <!-- EN: Call a group of 4 worker to assist you for 6 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe. -->
   <DMS_WorkerTeam.description>呼叫4名工人協助您工作6天。這些工人只能從事一般的勞動任務。您可以像控制自己的殖民者一樣控制他們。但必須保證他們的安全。</DMS_WorkerTeam.description>
+  
+  <!-- EN: call dragoon support -->
+  <DMS_Platoon_MD.label>呼叫龍騎兵支援</DMS_Platoon_MD.label>
+  <!-- EN: Call a squad of mobile dragoons to aid you in battle. -->
+  <DMS_Platoon_MD.description>呼叫3架殖民地陸軍序列的 PV-8 "獨眼巨人"龍騎兵協助進行突襲或殖民地防禦。</DMS_Platoon_MD.description>
   
 </LanguageData>

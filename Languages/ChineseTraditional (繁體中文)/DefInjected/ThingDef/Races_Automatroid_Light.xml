@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  
-  <!-- UNUSED -->
-  <DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.command_Target>瞄準目標</DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.command_Target>
-  <DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>自由開火</DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>
-  <DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>瞄準指定目標</DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>
-  <DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>切換炮塔至手動模式來避免非必要的開火</DMS_Mech_Dogge.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
-  
+
   <!-- EN: Falcon -->
   <DMS_Mech_Falcon.label>游隼</DMS_Mech_Falcon.label>
   <!-- EN: A heavy-duty tri-rotor drone built for working in conjunction with recon units and anti-tank units. -->

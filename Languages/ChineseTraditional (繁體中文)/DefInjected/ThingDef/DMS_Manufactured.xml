@@ -4,7 +4,7 @@
   <!-- EN: Artifuscle -->
   <Artifuscle.label>人工肌肉</Artifuscle.label>
   <!-- EN: Artifuscle is a type of prosthetic material made from genetically enhanced lab grown muscle-fiber bundles. -->
-  <Artifuscle.description>一種由基改蜥形綱肌肉束製成的生物有機材料</Artifuscle.description>
+  <Artifuscle.description>一種由基改蜥形綱肌肉束製成的生物有機材料。</Artifuscle.description>
   <!-- EN: Analyze the artificial muscle -->
   <Artifuscle.comps.CompAnalyzableUnlockResearch.activateDescString>分析人工肌肉，解析其透過液態中性胺進行有機分子交換的過程與技術原理，以便後續的培育與人工合成。</Artifuscle.comps.CompAnalyzableUnlockResearch.activateDescString>
   <!-- EN: Analyze... -->
