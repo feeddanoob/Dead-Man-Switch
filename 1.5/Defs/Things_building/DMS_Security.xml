@@ -792,6 +792,7 @@
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
   </ThingDef>
+  
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>DMS_Gun_Vasilek</defName>
     <label>2B9M vasilek</label>
