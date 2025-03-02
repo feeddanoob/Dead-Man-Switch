@@ -170,7 +170,6 @@
 		<projectile>
 		  <damageDef>Bullet</damageDef>
 		  <damageAmountBase>4</damageAmountBase>
-		  <armorPenetrationBase>0.04</armorPenetrationBase>	
 		  <stoppingPower>1</stoppingPower>
 		  <speed>50</speed>
 		</projectile>
@@ -367,7 +366,7 @@
 			<damageDef>Blunt</damageDef>
 			<damageAmountBase>16</damageAmountBase>
 			<stoppingPower>3</stoppingPower>
-			<armorPenetrationBase>0.4</armorPenetrationBase>
+			<armorPenetrationBase>0.2</armorPenetrationBase>
 			<speed>55</speed>
 		</projectile>
 	</ThingDef>
@@ -469,10 +468,10 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Blunt</damageDef>
-			<damageAmountBase>25</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<stoppingPower>4</stoppingPower>
 			<speed>55</speed>
-			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<armorPenetrationBase>0.24</armorPenetrationBase>
 		</projectile>
 	</ThingDef>
 

@@ -97,7 +97,7 @@
 			<damageAmountBase>15</damageAmountBase>
 			<speed>60</speed>
 			<stoppingPower>7</stoppingPower>
-			<armorPenetrationBase>0.14</armorPenetrationBase>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
 		</projectile>
 	</ThingDef>
 

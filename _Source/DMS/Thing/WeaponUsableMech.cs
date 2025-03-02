@@ -38,11 +38,11 @@ namespace DMS
         {
             if (IsColonyMechPlayerControlled)
             {
-                foreach (var item in base.GetExtraFloatMenuOptionsFor(sq))
+                foreach (FloatMenuOption item in base.GetExtraFloatMenuOptionsFor(sq))
                 {
                     yield return item;
                 }
-                foreach (var item in FloatMenuUtility.GetExtraFloatMenuOptionsFor(this, sq, MechWeapon))
+                foreach (FloatMenuOption item in FloatMenuUtility.GetExtraFloatMenuOptionsFor(this, sq, MechWeapon))
                 {
                     yield return item;
                 }

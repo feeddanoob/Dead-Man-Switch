@@ -553,7 +553,7 @@
       <damageDef>Bomb</damageDef>
       <screenShakeFactor>0</screenShakeFactor>
       <damageAmountBase>27</damageAmountBase>
-      <armorPenetrationBase>0.71</armorPenetrationBase>
+      <armorPenetrationBase>0.41</armorPenetrationBase>
       <stoppingPower>8</stoppingPower>
       <explosionRadius>1.4</explosionRadius>
       <ai_IsIncendiary>false</ai_IsIncendiary>
@@ -694,7 +694,7 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>18</damageAmountBase>
-      <armorPenetrationBase>0.40</armorPenetrationBase>
+      <armorPenetrationBase>0.34</armorPenetrationBase>
       <stoppingPower>4</stoppingPower>
       <speed>98</speed>
       <arcHeightFactor>0.3</arcHeightFactor>
@@ -981,7 +981,7 @@
       <soundExplode>Explosion_Rocket</soundExplode>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>50</damageAmountBase>
-      <armorPenetrationBase>0.9</armorPenetrationBase>
+      <armorPenetrationBase>0.82</armorPenetrationBase>
       <stoppingPower>10</stoppingPower>
       <speed>100</speed>
       <arcHeightFactor>0.2</arcHeightFactor>
@@ -1003,7 +1003,7 @@
       <li Class="CompProperties_Explosive">
         <explosiveRadius>1.1</explosiveRadius>
         <explosiveDamageType>Bullet</explosiveDamageType>
-        <armorPenetrationBase>0.9</armorPenetrationBase>
+        <armorPenetrationBase>0.41</armorPenetrationBase>
         <damageAmountBase>50</damageAmountBase>
         <explodeOnDestroyed>true</explodeOnDestroyed>
         <explodeOnKilled>true</explodeOnKilled>
