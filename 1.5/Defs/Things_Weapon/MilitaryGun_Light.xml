@@ -18,7 +18,7 @@
 		<uiIconScale>1.8</uiIconScale>
 		<graphicData>
 			<texPath>Things/Weapons/DMS_TaticalPistol</texPath>
-			<drawSize>1.1</drawSize>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>2.5</Mass>

@@ -10,7 +10,7 @@ namespace DMS
             {
                 if (!def.levelIsQuantity)
                 {
-                    return def.label + " (" + def.stages[level].label + ")";
+                    return def.label + " (" + def.stages[level-1].label + ")";
                 }
                 return def.label + " x" + level;
             }
