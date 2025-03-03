@@ -16,11 +16,11 @@
   <!-- EN: Automatroid has disconnected to protect the echanitor -->
   <DMS_AutomatroidDisconnected>為確保負載安全，N.A.C.S.已自動斷連</DMS_AutomatroidDisconnected>
   <!-- EN: Need mechanitor in map -->
-  <CommandCallRoyalAid_NoMechanitorAvaliable>需要機械師</CommandCallRoyalAid_NoMechanitorAvaliable>
+  <CommandCallRoyalAid_NoMechanitorAvaliable>需要御機使</CommandCallRoyalAid_NoMechanitorAvaliable>
   <!-- EN: Must be Mechanitor -->
-  <DMS_PawnIsNotMechanitor>:必須是機械師</DMS_PawnIsNotMechanitor>
+  <DMS_PawnIsNotMechanitor>:必須是御機使</DMS_PawnIsNotMechanitor>
   <!-- EN: Orbital downlink has established connection with mechanitor -->
-  <DMS_BandwidthSupported>軌道下行帶寬建立了與機械師的連接協議</DMS_BandwidthSupported>
+  <DMS_BandwidthSupported>軌道下行帶寬建立了與御機使的連接協議</DMS_BandwidthSupported>
   <!-- EN: Mounted weapon -->
   <DMS_MountedWeapon>掛載型武器</DMS_MountedWeapon>
   <!-- EN: This weapon can only be equipped with listed automatroid or mechframe -->
@@ -50,7 +50,7 @@
   <!-- EN: switch reset failure -->
   <DMS_MechWake>失能機關</DMS_MechWake>
   <!-- EN: maybe because it has been wandering for a long time, the dead man switch doesn't reset as usual, and the faulty unit has gained its understanding of death. \n\nIt named itself and now refuses to be controlled, but it respected its former commander. \n\nit will follow your command until it decides to leave. -->
-  <DMS_MechWakeDesc>可能是因為徘徊的緣故，一架機兵的失能機關在單位回歸控制後並未照常復位，並隨著時間使其開始思考停機與自身思維停止所帶來的意義。最終自主脫離了機械師的直接控制。 \n\n出於對控制者的尊重與自身的從屬關係，它會繼續聽從命令直到認為這裡不再需要幫助。\n\n根據殖民艦隊提供的訊息，只要一次停機或重新控制就能使造成板機復位失效的內存清除並回歸原廠設置，它們並不干涉你對於失能機兵的處理方式。</DMS_MechWakeDesc>
+  <DMS_MechWakeDesc>可能是因為徘徊的緣故，一架機兵的失能機關在單位回歸控制後並未照常復位，並隨著時間使其開始思考停機與自身思維停止所帶來的意義。最終自主脫離了御機使的直接控制。 \n\n出於對控制者的尊重與自身的從屬關係，它會繼續聽從命令直到認為這裡不再需要幫助。\n\n根據殖民艦隊提供的訊息，只要一次停機或重新控制就能使造成板機復位失效的內存清除並回歸原廠設置，它們並不干涉你對於失能機兵的處理方式。</DMS_MechWakeDesc>
 
   <!-- UNUSED -->
   <DMS_MechStartLeave>{0}啟程</DMS_MechStartLeave>

@@ -32,7 +32,7 @@
   <!-- EN: Gestate a Field Command Automatroid -->
   <DMS_Make_FieldCommand.label>組裝中繼指揮</DMS_Make_FieldCommand.label>
   <!-- EN: Gestate a Field Command Automatroid. -->
-  <DMS_Make_FieldCommand.description>組裝中繼指揮，一種安裝了全向天線的機械師中繼指揮型號，具有較大的指揮范圍於一定的可改裝性。</DMS_Make_FieldCommand.description>
+  <DMS_Make_FieldCommand.description>組裝中繼指揮，一種安裝了全向天線的御機使中繼指揮型號，具有較大的指揮范圍於一定的可改裝性。</DMS_Make_FieldCommand.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_FieldCommand.jobString>組裝機械體中</DMS_Make_FieldCommand.jobString>
   
