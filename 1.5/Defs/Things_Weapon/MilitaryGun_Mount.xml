@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<!--DMS_Flameblaster 火焰發射器.-->
+	<!--DMS_Flameblaster 火焰發射器.-->
 	<ThingDef ParentName="DMS_BaseMakeableGun">
 		<defName>DMS_Flameblaster</defName>
 		<label>Flameblaster</label>
@@ -9,7 +9,7 @@
 		<graphicData>
 		  <texPath>Things/Weapons/DMS_Flameblaster</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <drawSize>1.4</drawSize>
+		  <drawSize>1</drawSize>
 		</graphicData>
 		<costList>
 			<Chemfuel>75</Chemfuel>
@@ -98,7 +98,7 @@
 		<description>A multi-barrel shotgun designed to suppress enemies at close-range.\n\nThis weapon is designed specifically for mounted use, so only specific units can equip it.</description>
 		<graphicData>
 			<texPath>Things/Turrets/DMS_Gun_CIDS</texPath>
-			<drawSize>1.2</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>800</MarketValue>
@@ -141,7 +141,7 @@
 		<description>A Supressive weapon chambered in pistol rounds.\n\nThis weapon is designed specifically for mounted use, so only specific units can equip it.</description>
 		<graphicData>
 			<texPath>Things/Turrets/DMS_Gun_LMG</texPath>
-			<drawSize>1.3</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<AccuracyTouch>0.80</AccuracyTouch>

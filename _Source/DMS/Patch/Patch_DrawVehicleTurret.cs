@@ -42,9 +42,6 @@ namespace DMS
                 graphic_StackCount.SubGraphicForStackCount(1, equipment.def).MatSingle;
 
             Graphics.DrawMesh(mesh, matrix, mat, 0);
-
         }
-
     }
-
 }

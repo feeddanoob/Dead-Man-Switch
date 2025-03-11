@@ -8,10 +8,7 @@ namespace DMS
         {
             get
             {
-                if (!def.levelIsQuantity)
-                {
-                    return def.label + " (" + def.stages[level-1].label + ")";
-                }
+                if (!def.levelIsQuantity) return def.label + " (" + def.stages[level - 1].label + ")";
                 return def.label + " x" + level;
             }
         }
