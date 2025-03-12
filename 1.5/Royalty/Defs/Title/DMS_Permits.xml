@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
   <!-- 物品支援 -->
-
   <RoyalTitlePermitDef Name="DMS_DropSupplyBase" Abstract="True">
     <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
     <faction>DMS_Army</faction>
@@ -51,9 +48,6 @@
       <favorCost>3</favorCost>
     </royalAid>
   </RoyalTitlePermitDef>
-
-
-
   <RoyalTitlePermitDef ParentName="DropResourcesBase">
     <defName>DMS_FoodDrop</defName>
     <label>Food Supply Drop</label>
