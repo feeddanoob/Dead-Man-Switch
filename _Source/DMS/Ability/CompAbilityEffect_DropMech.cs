@@ -72,7 +72,7 @@ namespace DMS
         }
         private IntVec3 Rand(int range)
         {
-            return new IntVec3(Random.Range(-range, range), 0, Random.Range(-range, range));
+            return new IntVec3(Verse.Rand.Range(-range, range), 0, Verse.Rand.Range(-range, range));
         }
         private Pawn mechanitor;
         public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
