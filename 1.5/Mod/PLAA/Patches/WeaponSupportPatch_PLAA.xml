@@ -293,31 +293,6 @@
         </value>
       </li>
 
-      <!-- Lady-->
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[
-          defName="DMS_Mech_Lady"
-          ]/modExtensions/li[@Class="DMS.MechWeaponExtension"]/UsableWeaponTags</xpath>
-        <value>
-          <li>PLA_GrenadeLauncher</li>
-          <li>PLA_AMR</li>
-          <li>PLA_AssaultRifle</li>
-          <li>PLA_Sniper</li>
-          <li>PLA_DMR</li>
-          <li>PLA_Pistol</li>
-          <li>PLA_LMG</li>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/PawnKindDef[
-          defName="DMS_Mech_Lady"
-          ]/weaponTags</xpath>
-        <value>
-          <li>PLA_Sniper</li>
-          <li>PLA_DMR</li>
-          <li>PLA_AMR</li>
-        </value>
-      </li>
       <!-- Ape-->
       <li Class="PatchOperationAdd">
         <xpath>
