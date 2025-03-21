@@ -93,7 +93,7 @@
 		<label>Mounted GAU-19/A</label>
 		<description>A multibarrel turret mounted on shoulder.</description>
 		<graphicData>
-			<texPath>Things/Dragoon/TurretPack/TurretPack_GAU</texPath>
+			<texPath>Things/Weapons/DMS_Weapon_GAU19_Old</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
