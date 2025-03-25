@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
@@ -21,11 +22,23 @@ namespace DMS
 
         public void DoEffect()
         {
+            Targeter targeter = Find.Targeter;
+            var pram = new TargetingParameters
+            {
+                canTargetBuildings = false,
+                canTargetPawns = false,
+                canTargetLocations = true
+            };
+            Find.Targeter.BeginTargeting(pram, DoEffect);
+        }
+
+        public void DoEffect(LocalTargetInfo cell)
+        {
             int delay = Find.TickManager.TicksGame + Props.delayRange.RandomInRange;
             var c = GenRadial.NumCellsInRadius(Props.spreadRadius);
             var ori = CellFinder.RandomEdgeCell(parent.MapHeld).ToVector3Shifted();
 
-            Thing triggerer = parent.ParentHolder is Pawn pawn ? pawn : parent;
+            Thing triggerer = parent.ParentHolder is Pawn_ApparelTracker pawn ? pawn.pawn : parent;
 
             for (int i = 0; i < Props.burstCount; i++)
             {
@@ -33,7 +46,7 @@ namespace DMS
                 {
                     projectileDef = Props.ProjectileDef,
                     map = parent.MapHeld,
-                    targetCell = GenRadial.RadialPattern[Rand.RangeInclusive(0, c)],
+                    targetCell = GenRadial.RadialPattern[Rand.RangeInclusive(0, c)] + cell.Cell,
                     triggerTick = delay,
                     triggerer = triggerer,
                     triggerFaction = triggerer.Faction,

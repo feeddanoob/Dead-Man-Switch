@@ -43,7 +43,6 @@ namespace DMS
         public override void Trigger()
         {
             Projectile projectile = (Projectile)GenSpawn.Spawn(projectileDef, origin.ToIntVec3(), map);
-            projectile.SetFactionDirect(triggerer?.Faction ?? triggerFaction);
             projectile.Launch(triggerer, origin, targetCell, targetCell, ProjectileHitFlags.IntendedTarget);
         }
     }
