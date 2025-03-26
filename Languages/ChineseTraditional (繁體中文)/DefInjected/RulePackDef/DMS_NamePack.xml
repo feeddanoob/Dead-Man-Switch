@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN:
@@ -170,7 +170,6 @@
     <li>Callsign->灰狐</li>
     <li>Callsign->獵犬</li>
     <li>Callsign->骷髏</li>
-
     <li>Code->阿爾法</li>
     <li>Code->貝塔</li>
     <li>Code->德爾塔</li>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: Xeno Limb Syndrome -->
@@ -80,11 +80,12 @@
   <DMS_SyntheticRejection.comps.HediffComp_RemoveIfOtherHediff.message>仿生排異反應已被治愈</DMS_SyntheticRejection.comps.HediffComp_RemoveIfOtherHediff.message>
   <!-- EN: fever -->
   <DMS_SyntheticRejection.stages.fever.label>免疫反應</DMS_SyntheticRejection.stages.fever.label>
-
-
-  <!-- EN: self-calibration -->
+  
+  <!-- EN: calibration -->
   <DMS_WeaponInprint.label>武裝適應</DMS_WeaponInprint.label>
+  <!-- EN: This Synth is integrated with an adaptive mechanism that allows its body to develop reflexive actions based on its handling experience and increase the density of artificial muscles in specific parts to better adapt to the weapon. As a result, an MG-1 can achieve superior combat effectiveness when operating the weapon it is adapted to.\n\nHowever, overfitting issues in the system prevent it from calibrating itself to only one weapon, usually the first weapon equipped upon startup. -->
   <DMS_WeaponInprint.description>MG-1合成人所配備的自適應機制，機體能根據自身對武器操作的經驗養成反射性動作，並讓特定部位的人工肌肉密度增長來更加契合武器。這使得長期使用單一類型武器的MG-1能在使用適應的武器時有更加出色的戰鬥效能。\n\n然而在系統中的過擬合問題使得機體只能夠對一種特定的武器進行自我校準，默認設置是在出廠後裝備的第一種武器。</DMS_WeaponInprint.description>
+  <!-- EN: Adapt to specific weapons and have better combat effectiveness when using adapted weapons. the effect will increase over time. -->
   <DMS_WeaponInprint.descriptionShort>對使用特定的武器進行自適應，並在使用適應的武器時有更加出色的戰鬥效能。效果會隨著時間增強。</DMS_WeaponInprint.descriptionShort>
   <!-- EN: acquaintance -->
   <DMS_WeaponInprint.stages.acquaintance.label>初識</DMS_WeaponInprint.stages.acquaintance.label>
@@ -98,5 +99,5 @@
   <DMS_WeaponInprint.stages.specialized.label>專精</DMS_WeaponInprint.stages.specialized.label>
   <!-- EN: maximized -->
   <DMS_WeaponInprint.stages.maximized.label>極致</DMS_WeaponInprint.stages.maximized.label>
-
+  
 </LanguageData>

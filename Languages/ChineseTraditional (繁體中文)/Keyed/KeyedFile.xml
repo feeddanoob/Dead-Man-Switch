@@ -53,17 +53,27 @@
   <DMS_MechWakeDesc>可能是因為徘徊的緣故，一架機兵的失能機關在單位回歸控制後並未照常復位，並隨著時間使其開始思考停機與自身思維停止所帶來的意義。最終自主脫離了御機使的直接控制。 \n\n出於對控制者的尊重與自身的從屬關係，它會繼續聽從命令直到認為這裡不再需要幫助。\n\n根據殖民艦隊提供的訊息，只要一次停機或重新控制就能使造成板機復位失效的內存清除並回歸原廠設置，它們並不干涉你對於失能機兵的處理方式。</DMS_MechWakeDesc>
 
   <!-- UNUSED -->
+  <!-- EN: {0} is leaving -->
   <DMS_MechStartLeave>{0}啟程</DMS_MechStartLeave>
+  <!-- EN: After spending some time together, {0} decided it is time to leave. -->
   <DMS_MechStartLeaveDesc>在經過一段時間的相處後{0}認為它是時候離開了。</DMS_MechStartLeaveDesc>
+  <!-- EN: {0} is leaving -->
   <DMS_WokenMechLeave>{0}離開</DMS_WokenMechLeave>
+  <!-- EN: After spending some time together, {0} decided it is time to leave. -->
   <DMS_WokenMechLeaveDesc>在經過一段時間的相處後{0}認為它是時候離開了。</DMS_WokenMechLeaveDesc>
+  <!-- EN: {0}'s after story -->
   <DMS_MechStory_Attack>{0}的行蹤</DMS_MechStory_Attack>
+  <!-- EN: {0}'s return of favors -->
   <DMS_MechStory_Loot>{0}的回報</DMS_MechStory_Loot>
 
+  <!-- EN: APS remain time:{0} -->
   <DMS_APS_TickRemain>主動防禦系統運作剩餘時間:{0}</DMS_APS_TickRemain>
 
+  <!-- EN: Imprinted: {0}({1}) -->
   <DMS_WeaponImprinted>適配武器:{0}({1})</DMS_WeaponImprinted>
+  <!-- EN: Imprinted: {0} -->
   <DMS_Inprinted>武器綁定:{0}</DMS_Inprinted>
+  <!-- EN: the colony mech {0} has equipped with its first weapon, this makes its adaptive learning ability bound to that type of weapon. -->
   <DMS_InprintedDesc>由殖民地所控制的 {0} 裝備了它的第一個武器，這使得它的自適應能力將與該型號的武器深度綁定，並將隨著時間逐漸增強與該型武器的契合程度從而提升射擊準確性與反應能力。</DMS_InprintedDesc>
   
 </LanguageData>

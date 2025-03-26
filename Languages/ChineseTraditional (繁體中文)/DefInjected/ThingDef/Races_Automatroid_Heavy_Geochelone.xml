@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: Caretta -->
@@ -14,7 +14,7 @@
   <DMS_Mech_Geochelone.description>一種無人全地形履帶式脈衝防護盾支援平臺，具有一個小型化的艦載護盾系統來抵擋攻擊。有多種生產型號和變型。</DMS_Mech_Geochelone.description>
   <!-- EN: head -->
   <DMS_Mech_Geochelone.tools.head.label>頭部</DMS_Mech_Geochelone.tools.head.label>
-
+  
   <!-- EN: geochelone -->
   <DMS_Mech_Geochelone_b.label>象龜</DMS_Mech_Geochelone_b.label>
   <!-- EN: an unmanned all-terrain tracked pulse shield support platform, featuring a diverse range of production models and variants. -->

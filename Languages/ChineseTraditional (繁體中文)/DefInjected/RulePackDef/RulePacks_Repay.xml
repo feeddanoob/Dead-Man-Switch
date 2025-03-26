@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
+  
   <!-- EN:
     <li>_story->[KnownForm]，[MechAdj][MechType][MechVerb]。\n\n[Result]</li>
     <li>KnownForm->一則截獲的通訊紀錄表明</li>
@@ -49,7 +49,7 @@
     <li>Result->[Faction]在評估損傷後放棄了根據地[Settlement]</li>
     <li>Result->[Settlement]沒能發出幾次求救訊號便陷入了沉寂</li>
   </DMS_Outgoing_Attack.rulePack.rulesStrings>
-
+  
   <!-- EN:
     <li>_story->[SendForm]，[SendAdj]。\n\n[Result]</li>
     <li>SendForm->一個被委託的包裹被送到了你的殖民地</li>
@@ -94,5 +94,5 @@
     <li>Story->奔走於這片大陸上，尋找和自己一樣的覺醒機械</li>
     <li>Story->遊蕩於這片大陸上，並發掘深埋於這顆星球之下的秘密</li>
   </DMS_Outgoing_Loot.rulePack.rulesStrings>
-
+  
 </LanguageData>
