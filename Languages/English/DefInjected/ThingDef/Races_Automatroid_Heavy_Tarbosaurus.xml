@@ -1,31 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: tarbosaurus -->
+  <!-- EN: Tarbosaurus -->
   <DMS_Mech_Tarbosaurus.label>Tarbosaurus</DMS_Mech_Tarbosaurus.label>
-  <!-- EN: bipedal ultra heavy automatoid nickname "Armored Rex" for their distinctive body structure vaguely resembling carnotaurus. Once seen as the nextgen war-changer in the hayday of arm race back in the early spacer era, it sports numerous cutting-edge technology, the artificial muscle fibre that drove its oversized legs-first of its kind for automatoids in service. \n\nWhile it failed to eventually change the modern warfare as expected: it is oversized, its artificial muscle fibre is hard to upkeep, and, on top of that, railguns and beam weaponry aren't a reliable thing back in its days; \n\nAfter all those milenina, there still have been numerous manufacturers replicating such automatroids and adding their own improvements to its design. As such, traces of technology adopted in this automatroid can be seen in a great number of weaponry nowadays. -->
-  <DMS_Mech_Tarbosaurus.description>A bipedal ultra heavy automatoid nicknamed "Armored Rex" for their distinctive body structure vaguely resembling a carnotaurus. Once seen as the nextgen war-changer in the heyday of the arms race back in the early spacer era, it sports numerous cutting-edge technology such as the artificial muscle fibre that drove its oversized legs - the first automatroid of its kind in service.\n\nIt failed to eventually change the field of modern warfare as expected: it was oversized, its artificial muscle fibres were hard to upkeep, and on top of that, railguns and beam weaponry weren't reliable weapons back in those days;\n\nYet all those millennia have passed, there are still numerous manufacturers replicating such automatroids and adding their own improvements to its design. As such, traces of technology adopted in this automatroid can be seen in a great number of weaponry nowadays.</DMS_Mech_Tarbosaurus.description>
-  <!-- EN: aim target -->
-  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.command_Target>aim target</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.command_Target>
-  <!-- EN: fire at will -->
-  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>Fire at will</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>
-  <!-- EN: aim at desinated target -->
-  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>Aim at designated target</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>
-  <!-- EN: toggle turret to manually control mode to prevent unnecessary shooting. -->
-  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>Toggle turret to manual control mode to prevent unnecessary shooting.</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
-  <!-- EN: aim target -->
-  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.command_Target>Aim target</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.command_Target>
-  <!-- EN: fire at will -->
-  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.command_ToggleFire>Fire at will</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.command_ToggleFire>
-  <!-- EN: aim at desinated target -->
-  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_Target>Aim at designated target</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_Target>
-  <!-- EN: toggle turret to manually control mode to prevent unnecessary shooting. -->
-  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_ToggleFire>Toggle turret to manual control mode to prevent unnecessary shooting.</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_ToggleFire>
-<!-- EN: Mechanical Head -->
+  <!-- EN: A bipedal ultra heavy automatoid nicknamed the "Armored Rex" as its distinctive body structure vaguely resembles a carnotaurus. Once seen as the nextgen war-changer in the twilight of the arms races in the early spacer era, it uses artificial muscle fibres to drive its oversized legs.\n\nWhile it failed to change the field of modern warfare as expected, there are still numerous manufacturers replicating it and adding their own improvements to the design. As such, traces of technology adopted in this automatroid can be seen in a great number of weaponry. -->
+  <DMS_Mech_Tarbosaurus.description>A bipedal ultra heavy automatoid nicknamed the "Armored Rex" as its distinctive body structure vaguely resembles a carnotaurus. Once seen as the nextgen war-changer in the twilight of the arms races in the early spacer era, it uses artificial muscle fibres to drive its oversized legs.
+
+While it failed to change the field of modern warfare as expected, there are still numerous manufacturers replicating it and adding their own improvements to the design. As such, traces of technology adopted in this automatroid can be seen in a great number of weaponry.</DMS_Mech_Tarbosaurus.description>
+  <!-- EN: Mechanical Head -->
   <DMS_Mech_Tarbosaurus.tools.Mechanical_Head.label>Mechanical Head</DMS_Mech_Tarbosaurus.tools.Mechanical_Head.label>
   <!-- EN: Left Leg -->
   <DMS_Mech_Tarbosaurus.tools.Left_Leg.label>Left Leg</DMS_Mech_Tarbosaurus.tools.Left_Leg.label>
   <!-- EN: Right Leg -->
   <DMS_Mech_Tarbosaurus.tools.Right_Leg.label>Right Leg</DMS_Mech_Tarbosaurus.tools.Right_Leg.label>
+  
+  <!-- UNUSED -->
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.command_Target>aim target</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.command_Target>
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>Fire at will</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.command_ToggleFire>
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>Aim at designated target</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_Target>
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>Toggle turret to manual control mode to prevent unnecessary shooting.</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.0.commandDesc_ToggleFire>
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.command_Target>Aim target</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.command_Target>
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.command_ToggleFire>Fire at will</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.command_ToggleFire>
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_Target>Aim at designated target</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_Target>
+  <DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_ToggleFire>Toggle turret to manual control mode to prevent unnecessary shooting.</DMS_Mech_Tarbosaurus.comps.CompMultipleTurretGun.subTurrets.1.commandDesc_ToggleFire>
   
 </LanguageData>

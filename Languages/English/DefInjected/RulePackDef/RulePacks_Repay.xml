@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
+  
   <!-- EN:
     <li>_story->[KnownForm]，[MechAdj][MechType][MechVerb]。\n\n[Result]</li>
     <li>KnownForm->一則截獲的通訊紀錄表明</li>
@@ -50,7 +50,7 @@
     <li>Result->[Faction] Abandoned base [Settlement] after assessing damage</li>
     <li>Result->[Settlement] fell into silence after failing to send out a few distress calls.</li>
   </DMS_Outgoing_Attack.rulePack.rulesStrings>
-
+  
   <!-- EN:
     <li>_story->[SendForm]，[SendAdj]。\n\n[Result]</li>
     <li>SendForm->一個被委託的包裹被送到了你的殖民地</li>
@@ -95,5 +95,5 @@
     <li>Story->roaming the continent in search of other awakened mechs like itself</li>
     <li>Story->wandering the continent, uncovering secrets buried deep beneath this planet</li>
   </DMS_Outgoing_Loot.rulePack.rulesStrings>
-
+  
 </LanguageData>

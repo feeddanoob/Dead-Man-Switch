@@ -92,13 +92,19 @@
   <DMS_Caterpillar.corePart.parts.right_armour_plate.customLabel>right armour plate</DMS_Caterpillar.corePart.parts.right_armour_plate.customLabel>
   <!-- EN: left armour plate -->
   <DMS_Caterpillar.corePart.parts.left_armour_plate.customLabel>left armour plate</DMS_Caterpillar.corePart.parts.left_armour_plate.customLabel>
-  <!-- EN: left leg -->
-  <DMS_Caterpillar.corePart.parts.left_leg.customLabel>left track</DMS_Caterpillar.corePart.parts.left_leg.customLabel>
+  <!-- EN: left track -->
+  <DMS_Caterpillar.corePart.parts.left_track.customLabel>left track</DMS_Caterpillar.corePart.parts.left_track.customLabel>
   <!-- EN: left wheel -->
-  <DMS_Caterpillar.corePart.parts.left_leg.parts.left_wheel.customLabel>left wheel</DMS_Caterpillar.corePart.parts.left_leg.parts.left_wheel.customLabel>
-  <!-- EN: right leg -->
-  <DMS_Caterpillar.corePart.parts.right_leg.customLabel>right track</DMS_Caterpillar.corePart.parts.right_leg.customLabel>
+  <DMS_Caterpillar.corePart.parts.left_track.parts.left_wheel.customLabel>left wheel</DMS_Caterpillar.corePart.parts.left_track.parts.left_wheel.customLabel>
+  <!-- EN: right track -->
+  <DMS_Caterpillar.corePart.parts.right_track.customLabel>right track</DMS_Caterpillar.corePart.parts.right_track.customLabel>
   <!-- EN: right wheel -->
+  <DMS_Caterpillar.corePart.parts.right_track.parts.right_wheel.customLabel>right wheel</DMS_Caterpillar.corePart.parts.right_track.parts.right_wheel.customLabel>
+  
+  <!-- UNUSED -->
+  <DMS_Caterpillar.corePart.parts.left_leg.customLabel>left track</DMS_Caterpillar.corePart.parts.left_leg.customLabel>
+  <DMS_Caterpillar.corePart.parts.left_leg.parts.left_wheel.customLabel>left wheel</DMS_Caterpillar.corePart.parts.left_leg.parts.left_wheel.customLabel>
+  <DMS_Caterpillar.corePart.parts.right_leg.customLabel>right track</DMS_Caterpillar.corePart.parts.right_leg.customLabel>
   <DMS_Caterpillar.corePart.parts.right_leg.parts.right_wheel.customLabel>right wheel</DMS_Caterpillar.corePart.parts.right_leg.parts.right_wheel.customLabel>
   
   <!-- EN: vertidrone -->
@@ -322,10 +328,63 @@
   <!-- EN: secondary battery -->
   <DMS_Humanoid_TypeB.corePart.parts.secondary_battery.customLabel>secondary battery</DMS_Humanoid_TypeB.corePart.parts.secondary_battery.customLabel>
   
+  <!-- EN: erectus ronin(blade) -->
+  <DMS_Humanoid_TypeB_Ronin.label>erectus ronin(blade)</DMS_Humanoid_TypeB_Ronin.label>
+  <!-- EN: left shoulder -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.customLabel>left shoulder</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.customLabel>
+  <!-- EN: left arm -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.customLabel>left arm</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <!-- EN: left arm blade -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_arm_blade.customLabel>left arm blade</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_arm_blade.customLabel>
+  <!-- EN: left hand -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>left hand</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <!-- EN: left pinky -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>left pinky</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>
+  <!-- EN: left middle finger -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>left middle finger</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <!-- EN: left index finger -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>left index finger</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <!-- EN: left thumb -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>left thumb</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <!-- EN: right mechanical shoulder -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.customLabel>right mechanical shoulder</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.customLabel>
+  <!-- EN: right arm -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>right arm</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>
+  <!-- EN: right arm blade -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_arm_blade.customLabel>right arm blade</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_arm_blade.customLabel>
+  <!-- EN: right hand -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>right hand</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <!-- EN: right pinky -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>right pinky</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>
+  <!-- EN: right middle finger -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>right middle finger</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <!-- EN: right index finger -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>right index finger</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <!-- EN: right thumb -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>right thumb</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <!-- EN: left leg -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_leg.customLabel>left leg</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_leg.customLabel>
+  <!-- EN: left foot -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.left_leg.parts.left_foot.customLabel>left foot</DMS_Humanoid_TypeB_Ronin.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <!-- EN: right leg -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_leg.customLabel>right leg</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_leg.customLabel>
+  <!-- EN: right foot -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.right_leg.parts.right_foot.customLabel>right foot</DMS_Humanoid_TypeB_Ronin.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <!-- EN: waist armour plate -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.waist_armour_plate.customLabel>waist armour plate</DMS_Humanoid_TypeB_Ronin.corePart.parts.waist_armour_plate.customLabel>
+  <!-- EN: chest armour plate -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.chest_armour_plate.customLabel>chest armour plate</DMS_Humanoid_TypeB_Ronin.corePart.parts.chest_armour_plate.customLabel>
+  <!-- EN: main battery -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.main_battery.customLabel>main battery</DMS_Humanoid_TypeB_Ronin.corePart.parts.main_battery.customLabel>
+  <!-- EN: secondary battery -->
+  <DMS_Humanoid_TypeB_Ronin.corePart.parts.secondary_battery.customLabel>secondary battery</DMS_Humanoid_TypeB_Ronin.corePart.parts.secondary_battery.customLabel>
+  
   <!-- EN: shield protector -->
   <DMS_Humanoid_TypeB_ShieldL.label>shield protector</DMS_Humanoid_TypeB_ShieldL.label>
   <!-- EN: left shoulder -->
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.left_shoulder.customLabel>left shoulder</DMS_Humanoid_TypeB_ShieldL.corePart.parts.left_shoulder.customLabel>
+  <!-- EN: ballistic shield -->
+  <DMS_Humanoid_TypeB_ShieldL.corePart.parts.left_shoulder.parts.ballistic_shield.customLabel>ballistic shield</DMS_Humanoid_TypeB_ShieldL.corePart.parts.left_shoulder.parts.ballistic_shield.customLabel>
   <!-- EN: left arm -->
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.left_shoulder.parts.left_arm.customLabel>left arm</DMS_Humanoid_TypeB_ShieldL.corePart.parts.left_shoulder.parts.left_arm.customLabel>
   <!-- EN: left hand -->
@@ -360,8 +419,6 @@
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.right_leg.customLabel>right leg</DMS_Humanoid_TypeB_ShieldL.corePart.parts.right_leg.customLabel>
   <!-- EN: right foot -->
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.right_leg.parts.right_foot.customLabel>right foot</DMS_Humanoid_TypeB_ShieldL.corePart.parts.right_leg.parts.right_foot.customLabel>
-  <!-- EN: ballistic shield -->
-  <DMS_Humanoid_TypeB_ShieldL.corePart.parts.ballistic_shield.customLabel>ballistic shield</DMS_Humanoid_TypeB_ShieldL.corePart.parts.ballistic_shield.customLabel>
   <!-- EN: waist armour plate -->
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.waist_armour_plate.customLabel>waist armour plate</DMS_Humanoid_TypeB_ShieldL.corePart.parts.waist_armour_plate.customLabel>
   <!-- EN: chest armour plate -->
@@ -370,6 +427,72 @@
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.main_battery.customLabel>main battery</DMS_Humanoid_TypeB_ShieldL.corePart.parts.main_battery.customLabel>
   <!-- EN: secondary battery -->
   <DMS_Humanoid_TypeB_ShieldL.corePart.parts.secondary_battery.customLabel>secondary battery</DMS_Humanoid_TypeB_ShieldL.corePart.parts.secondary_battery.customLabel>
+  
+  <!-- UNUSED -->
+  <DMS_Humanoid_TypeB_ShieldL.corePart.parts.ballistic_shield.customLabel>ballistic shield</DMS_Humanoid_TypeB_ShieldL.corePart.parts.ballistic_shield.customLabel>
+  
+  <!-- EN: shield assault -->
+  <DMS_Humanoid_TypeB_ShieldS.label>shield assault</DMS_Humanoid_TypeB_ShieldS.label>
+  <!-- EN: central sight sensor -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>central sight sensor</DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
+  <!-- EN: left infrared sensor -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_infrared_sensor.customLabel>left infrared sensor</DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_infrared_sensor.customLabel>
+  <!-- EN: right infrared sensor -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_infrared_sensor.customLabel>right infrared sensor</DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_infrared_sensor.customLabel>
+  <!-- EN: left sight sensor -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>left sight sensor</DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+  <!-- EN: right sight sensor -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>right sight sensor</DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>left hearing sensor</DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>right hearing sensor</DMS_Humanoid_TypeB_ShieldS.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <!-- EN: left shoulder -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.customLabel>left shoulder</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.customLabel>
+  <!-- EN: assault shield -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.assault_shield.customLabel>assault shield</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.assault_shield.customLabel>
+  <!-- EN: left arm -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.customLabel>left arm</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <!-- EN: left hand -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>left hand</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <!-- EN: left pinky -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>left pinky</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>
+  <!-- EN: left middle finger -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>left middle finger</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <!-- EN: left index finger -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>left index finger</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <!-- EN: left thumb -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>left thumb</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <!-- EN: right mechanical shoulder -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.customLabel>right mechanical shoulder</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.customLabel>
+  <!-- EN: right arm -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>right arm</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>
+  <!-- EN: right hand -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>right hand</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <!-- EN: right pinky -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>right pinky</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>
+  <!-- EN: right middle finger -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>right middle finger</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <!-- EN: right index finger -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>right index finger</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <!-- EN: right thumb -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>right thumb</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <!-- EN: left leg -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_leg.customLabel>left leg</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_leg.customLabel>
+  <!-- EN: left foot -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_leg.parts.left_foot.customLabel>left foot</DMS_Humanoid_TypeB_ShieldS.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <!-- EN: right leg -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_leg.customLabel>right leg</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_leg.customLabel>
+  <!-- EN: right foot -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_leg.parts.right_foot.customLabel>right foot</DMS_Humanoid_TypeB_ShieldS.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <!-- EN: waist armour plate -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.waist_armour_plate.customLabel>waist armour plate</DMS_Humanoid_TypeB_ShieldS.corePart.parts.waist_armour_plate.customLabel>
+  <!-- EN: chest armour plate -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.chest_armour_plate.customLabel>chest armour plate</DMS_Humanoid_TypeB_ShieldS.corePart.parts.chest_armour_plate.customLabel>
+  <!-- EN: main battery -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.main_battery.customLabel>main battery</DMS_Humanoid_TypeB_ShieldS.corePart.parts.main_battery.customLabel>
+  <!-- EN: secondary battery -->
+  <DMS_Humanoid_TypeB_ShieldS.corePart.parts.secondary_battery.customLabel>secondary battery</DMS_Humanoid_TypeB_ShieldS.corePart.parts.secondary_battery.customLabel>
   
   <!-- EN: kill dozer -->
   <DMS_KillDozer.label>kill dozer</DMS_KillDozer.label>
@@ -390,21 +513,33 @@
   <!-- EN: secondary generator -->
   <DMS_KillDozer.corePart.parts.secondary_generator.customLabel>secondary generator</DMS_KillDozer.corePart.parts.secondary_generator.customLabel>
   <!-- EN: front ERA plate -->
-  <DMS_KillDozer.corePart.parts.front_ERA_plate.customLabel>front ERA plate</DMS_KillDozer.corePart.parts.front_ERA_plate.customLabel>
+  <DMS_KillDozer.corePart.parts.front_ERA_plate-0.customLabel>front ERA plate</DMS_KillDozer.corePart.parts.front_ERA_plate-0.customLabel>
+  <!-- EN: front ERA plate -->
+  <DMS_KillDozer.corePart.parts.front_ERA_plate-1.customLabel>front ERA plate</DMS_KillDozer.corePart.parts.front_ERA_plate-1.customLabel>
   <!-- EN: right ERA plate -->
   <DMS_KillDozer.corePart.parts.right_ERA_plate.customLabel>right ERA plate</DMS_KillDozer.corePart.parts.right_ERA_plate.customLabel>
   <!-- EN: left ERA plate -->
   <DMS_KillDozer.corePart.parts.left_ERA_plate.customLabel>left ERA plate</DMS_KillDozer.corePart.parts.left_ERA_plate.customLabel>
-  <!-- EN: left leg -->
-  <DMS_KillDozer.corePart.parts.left_leg.customLabel>left track</DMS_KillDozer.corePart.parts.left_leg.customLabel>
+  <!-- EN: left track -->
+  <DMS_KillDozer.corePart.parts.left_track.customLabel>left track</DMS_KillDozer.corePart.parts.left_track.customLabel>
+  <!-- EN: left side skirt ERA -->
+  <DMS_KillDozer.corePart.parts.left_track.parts.left_side_skirt_ERA.customLabel>left side skirt ERA</DMS_KillDozer.corePart.parts.left_track.parts.left_side_skirt_ERA.customLabel>
   <!-- EN: left wheel -->
-  <DMS_KillDozer.corePart.parts.left_leg.parts.left_wheel.customLabel>left wheel</DMS_KillDozer.corePart.parts.left_leg.parts.left_wheel.customLabel>
-  <!-- EN: right leg -->
-  <DMS_KillDozer.corePart.parts.right_leg.customLabel>right track</DMS_KillDozer.corePart.parts.right_leg.customLabel>
+  <DMS_KillDozer.corePart.parts.left_track.parts.left_wheel.customLabel>left wheel</DMS_KillDozer.corePart.parts.left_track.parts.left_wheel.customLabel>
+  <!-- EN: right track -->
+  <DMS_KillDozer.corePart.parts.right_track.customLabel>right track</DMS_KillDozer.corePart.parts.right_track.customLabel>
+  <!-- EN: right side skirt ERA -->
+  <DMS_KillDozer.corePart.parts.right_track.parts.right_side_skirt_ERA.customLabel>right side skirt ERA</DMS_KillDozer.corePart.parts.right_track.parts.right_side_skirt_ERA.customLabel>
   <!-- EN: right wheel -->
-  <DMS_KillDozer.corePart.parts.right_leg.parts.right_wheel.customLabel>right wheel</DMS_KillDozer.corePart.parts.right_leg.parts.right_wheel.customLabel>
+  <DMS_KillDozer.corePart.parts.right_track.parts.right_wheel.customLabel>right wheel</DMS_KillDozer.corePart.parts.right_track.parts.right_wheel.customLabel>
   <!-- EN: dozer blade -->
   <DMS_KillDozer.corePart.parts.dozer_blade.customLabel>dozer blade</DMS_KillDozer.corePart.parts.dozer_blade.customLabel>
+  
+  <!-- UNUSED -->
+  <DMS_KillDozer.corePart.parts.left_leg.customLabel>left track</DMS_KillDozer.corePart.parts.left_leg.customLabel>
+  <DMS_KillDozer.corePart.parts.left_leg.parts.left_wheel.customLabel>left wheel</DMS_KillDozer.corePart.parts.left_leg.parts.left_wheel.customLabel>
+  <DMS_KillDozer.corePart.parts.right_leg.customLabel>right track</DMS_KillDozer.corePart.parts.right_leg.customLabel>
+  <DMS_KillDozer.corePart.parts.right_leg.parts.right_wheel.customLabel>right wheel</DMS_KillDozer.corePart.parts.right_leg.parts.right_wheel.customLabel>
   
   <!-- EN: bin -->
   <DMS_TrashBin.label>bin</DMS_TrashBin.label>

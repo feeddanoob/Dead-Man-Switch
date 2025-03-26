@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: grenadier -->
+  <!-- EN: Grenadier -->
   <DMS_Mech_Grenadier.label>Grenadier</DMS_Mech_Grenadier.label>
-  <!-- EN: A biped humanoid robot imitated design from the combat unit of mechanoids, can equipped with weapons that humans can use. \n\n Although the carried battery backpack having a long battery life, but is also makes it unable to fight like a genuine mech walkers without cover. -->
-  <DMS_Mech_Grenadier.description>A biped humanoid-imitated robot design to form as another mechanoid combat unit, it can equipped with the standard weapons that humans can use. 
+  <!-- EN: A bipedal humanoid robot built in the image of other pre-existing mechanoids. Grenadiers are specialized to use light weapons and grenade launchers.\n\nThe Grenadier has to carry a battery backpack which makes it unable to fight like other mechs without cover. -->
+  <DMS_Mech_Grenadier.description>A bipedal humanoid robot built in the image of other pre-existing mechanoids. Grenadiers are specialized to use light weapons and grenade launchers.
 
- These models carry a battery backpack with a long-lasting battery lifespans, but makes it unable to fight effectively without cover as the battery backpack is a vulnerable point.</DMS_Mech_Grenadier.description>
+The Grenadier has to carry a battery backpack which makes it unable to fight like other mechs without cover.</DMS_Mech_Grenadier.description>
   <!-- EN: head -->
   <DMS_Mech_Grenadier.tools.head.label>head</DMS_Mech_Grenadier.tools.head.label>
   <!-- EN: left fist -->
@@ -14,12 +14,12 @@
   <!-- EN: right fist -->
   <DMS_Mech_Grenadier.tools.right_fist.label>right fist</DMS_Mech_Grenadier.tools.right_fist.label>
   
-  <!-- EN: kanonier -->
+  <!-- EN: Kanonier -->
   <DMS_Mech_Kanonier.label>Kanonier</DMS_Mech_Kanonier.label>
-  <!-- EN: A biped humanoid robot imitated design from the combat unit of mechanoids, can equipped with weapons that humans can use. \n\n Although the carried battery backpack having a long battery life, but is also makes it unable to fight like a genuine mech walkers without cover. -->
-  <DMS_Mech_Kanonier.description>A biped humanoid-imitated robot design to form as another mechanoid combat unit, it can equipped with standard weapons that humans can use. 
+  <!-- EN: A bipedal humanoid robot built in the image of other pre-existing mechanoids. Kanoniers are specialized to use rocket launchers or recoilless rifles.\n\nThe Kanonier has to carry a battery backpack which makes it unable to fight like other mechs without cover. -->
+  <DMS_Mech_Kanonier.description>A bipedal humanoid robot built in the image of other pre-existing mechanoids. Kanoniers are specialized to use rocket launchers or recoilless rifles.
 
- These models carry a battery backpack with a long-lasting battery lifespans, but makes it unable to fight effectively without cover as the battery backpack is a vulnerable point.</DMS_Mech_Kanonier.description>
+The Kanonier has to carry a battery backpack which makes it unable to fight like other mechs without cover.</DMS_Mech_Kanonier.description>
   <!-- EN: head -->
   <DMS_Mech_Kanonier.tools.head.label>head</DMS_Mech_Kanonier.tools.head.label>
   <!-- EN: left fist -->
@@ -27,10 +27,10 @@
   <!-- EN: right fist -->
   <DMS_Mech_Kanonier.tools.right_fist.label>right fist</DMS_Mech_Kanonier.tools.right_fist.label>
   
-  <!-- EN: sergeant -->
+  <!-- EN: Sergeant -->
   <DMS_Mech_Sergeant.label>Sergeant</DMS_Mech_Sergeant.label>
-  <!-- EN: As a relay command variant of a mech soldat, it has a very recognizable disc-shaped omnidirectional radar and transceiver antenna. it can be the mechnitor command relay but due to its weight with reduced fire control system, which can only equip a light weapon for self defense. -->
-  <DMS_Mech_Sergeant.description>As a relay command variant of a mech soldat, it has a very recognizable disc-shaped omnidirectional radar and transceiver antenna. it can be the mechnitor command relay but due to its weight with reduced fire control system, which can only equip a light weapon for self defense.</DMS_Mech_Sergeant.description>
+  <!-- EN: As a relay command variant of the Soldat, it has a very recognizable disc-shaped omnidirectional radar and transceiver antenna. Sergeants extend a mechanitor's effective range, but due to the weight of its radar equipment it can only equip a light weapon for self defense. -->
+  <DMS_Mech_Sergeant.description>As a relay command variant of the Soldat, it has a very recognizable disc-shaped omnidirectional radar and transceiver antenna. Sergeants extend a mechanitor's effective range, but due to the weight of its radar equipment it can only equip a light weapon for self defense.</DMS_Mech_Sergeant.description>
   <!-- EN: head -->
   <DMS_Mech_Sergeant.tools.head.label>head</DMS_Mech_Sergeant.tools.head.label>
   <!-- EN: left fist -->
@@ -38,12 +38,12 @@
   <!-- EN: right fist -->
   <DMS_Mech_Sergeant.tools.right_fist.label>right fist</DMS_Mech_Sergeant.tools.right_fist.label>
   
-  <!-- EN: soldat -->
+  <!-- EN: Soldat -->
   <DMS_Mech_Soldat.label>Soldat</DMS_Mech_Soldat.label>
-  <!-- EN: A biped humanoid robot imitated design from the combat unit of mechanoids, can equipped with weapons that humans can use. \n\n Although the carried battery backpack having a long battery life, but is also makes it unable to fight like a genuine mech walkers without cover. -->
-  <DMS_Mech_Soldat.description>A biped humanoid robot imitated design from the combat unit of mechanoids, can equipped with weapons that humans can use. 
+  <!-- EN: A bipedal humanoid robot built in the image of other pre-existing mechanoids. Soldats can be equipped with weapons rated for human use.\n\nThe Soldat has to carry a battery backpack which makes it unable to fight like other mechs without cover. -->
+  <DMS_Mech_Soldat.description>A bipedal humanoid robot built in the image of other pre-existing mechanoids. Soldats can be equipped with weapons rated for human use.
 
- Although the carried battery backpack having a long battery life, but is also makes it unable to fight like a genuine mech walkers without cover.</DMS_Mech_Soldat.description>
+The Soldat has to carry a battery backpack which makes it unable to fight like other mechs without cover.</DMS_Mech_Soldat.description>
   <!-- EN: head -->
   <DMS_Mech_Soldat.tools.head.label>head</DMS_Mech_Soldat.tools.head.label>
   <!-- EN: left fist -->

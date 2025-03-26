@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: This {LEADERKIND_label} was one of the special machines deployed all over this planet. Though it has been out of command for a considerable time due to the loss of their original commander. -->
-  <DMS_Geochelone.leaderDescription>This {LEADERKIND_label} was one of machines deployed all over this plants. Tho it has out of command due to the lost of their commander.</DMS_Geochelone.leaderDescription>
+  <!-- EN: This {LEADERKIND_label} was one of machines deployed as a vanguard for the Colonial Forces hundreds of years ago. It has been out of command due to the loss of its operator for an unknown amount of time and gone feral -->
+  <DMS_Geochelone.leaderDescription>This {LEADERKIND_label} was one of machines deployed as a vanguard for the Colonial Forces hundreds of years ago. It has been out of command due to the loss of its operator for an unknown amount of time and gone feral</DMS_Geochelone.leaderDescription>
   
-  <!-- EN: This {LEADERKIND_label} was one of special machines deployed all over this planet. Though it has been out of command for a long time due to the loss of their original commander. -->
-  <DMS_Sergeant.leaderDescription>This {LEADERKIND_label} was one of machines deployed all over this plants. Tho it has out of command due to the lost of their commander.</DMS_Sergeant.leaderDescription>
+  <!-- EN: This {LEADERKIND_label} was one of machines deployed as a vanguard for the Colonial Forces hundreds of years ago. It has been out of command due to the loss of its operator for an unknown amount of time and gone feral. -->
+  <DMS_Sergeant.leaderDescription>This {LEADERKIND_label} was one of machines deployed as a vanguard for the Colonial Forces hundreds of years ago. It has been out of command due to the loss of its operator for an unknown amount of time and gone feral.</DMS_Sergeant.leaderDescription>
   
-  <!-- EN: This {LEADERKIND_label} was one of special machines deployed all over this planet. Though this unique unit has been out of command for so long due to the death of their original  commander. -->
-  <DMS_Tarbosaurus.leaderDescription>This {LEADERKIND_label} was one of machines deployed all over this plants. Tho it has out of command due to the lost of their commander.</DMS_Tarbosaurus.leaderDescription>
+  <!-- EN: This {LEADERKIND_label} was one of machines deployed as a vanguard for the Colonial Forces hundreds of years ago. It has been out of command due to the loss of its operator for an unknown amount of time and gone feral -->
+  <DMS_Tarbosaurus.leaderDescription>This {LEADERKIND_label} was one of machines deployed as a vanguard for the Colonial Forces hundreds of years ago. It has been out of command due to the loss of its operator for an unknown amount of time and gone feral</DMS_Tarbosaurus.leaderDescription>
   
 </LanguageData>
