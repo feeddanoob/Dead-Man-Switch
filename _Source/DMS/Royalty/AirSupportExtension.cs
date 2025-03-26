@@ -7,15 +7,13 @@ namespace DMS
         public IntRange delayRange = new IntRange(120, 150);
 
         public int preEffectTick = 0;
-        public EffecterDef preEffecterDef;
-
-        public EffecterDef TriggerEffecter;
+        public EffecterDef preSupportEffecterDef;
 
         public ThingDef projectileDef = null;
         public float spreadRadius = 5;
         public int burstCount = 1, burstInterval = 5;
 
         public int postEffectTick = 0;
-        public EffecterDef postEffecterDef;
+        public EffecterDef postSupportEffecterDef;
     }
 }

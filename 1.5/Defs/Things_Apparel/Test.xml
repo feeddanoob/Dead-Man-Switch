@@ -243,7 +243,8 @@
 
 		<comps>
 			<li Class="DMS.CompProperties_AirSupportSummoner">
-				<supportDef>DMS_Artillery_155mm</supportDef>
+				<ProjectileDef>Bullet_Shell_HighExplosive</ProjectileDef>
+				<burstCount>3</burstCount>
 			</li>
 		</comps>
 	</ThingDef>
