@@ -1,5 +1,47 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  <!-- 空襲支援 -->
+  <RoyalTitlePermitDef>
+    <defName>DMS_Call_AirSupport</defName>
+    <label>Call Air Support</label>
+    <description>Call for a drop of combat supplies.</description>
+    <workerClass>DMS.RoyalTitlePermitWorker_AirSupport</workerClass>
+    <faction>DMS_Army</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,4)</uiPosition>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <favorCost>1</favorCost>
+      <aidDurationDays>5</aidDurationDays>
+      <targetingRange>99.9</targetingRange>
+    </royalAid>
+    <minTitle>DMS_PreSergeant</minTitle>
+    <cooldownDays>5</cooldownDays>
+  </RoyalTitlePermitDef>
+
+  <!-- 徵募隊 -->
+  <RoyalTitlePermitDef>
+    <defName>DMS_Call_TributeCollector</defName>
+    <label>Call recruitment agency</label>
+    <description>Call for a group of recruitment agency to transfer prisoners of war to the Colonial fleet.</description>
+    <workerClass>DMS.RoyalTitlePermitWorker_Trader</workerClass>
+    <faction>DMS_Army</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(5,2)</uiPosition>
+    <royalAid>
+      <favorCost>2</favorCost>
+      <aidDurationDays>15</aidDurationDays>
+    </royalAid>
+    <minTitle>DMS_PreSergeant</minTitle>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <cooldownDays>5</cooldownDays>
+    <modExtensions>
+      <li Class="DMS.PermitTraderExtension">
+        <traderKindDef>DMS_Caravan_TributeCollector</traderKindDef>
+      </li>
+    </modExtensions>
+  </RoyalTitlePermitDef>
+
   <!-- 物品支援 -->
   <RoyalTitlePermitDef Name="DMS_DropSupplyBase" Abstract="True">
     <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>

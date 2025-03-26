@@ -25,6 +25,7 @@
 		<li IfModActive="vanillaracesexpanded.android,vanillaracesexpanded.android_steam">1.5/Mod/VREA</li>
 		<li IfModActive="oskarpotocki.vfe.pirates,oskarpotocki.vfe.pirates_steam">1.5/Mod/VFEP</li>
 		
+		<li IfModActive="dimonsever000.factionlanguages,dimonsever000.factionlanguages_steam">1.5/Mod/RimLanguage</li>
 		<li IfModActive="xmb.ancienturbanruins.mo,xmb.ancienturbanruins.mo_steam">1.5/Mod/AUR</li>
 		
 		<li IfModActive="kentington.saveourship2,kentington.saveourship2_steam">1.5/Mod/SaveOurShip2</li>

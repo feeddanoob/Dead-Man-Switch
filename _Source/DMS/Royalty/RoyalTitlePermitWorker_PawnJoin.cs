@@ -12,13 +12,11 @@ namespace DMS
     {
         private Faction faction;
 
-        private static readonly Texture2D CommandTex = ContentFinder<Texture2D>.Get("UI/Commands/CallAid");
 
         public override void OrderForceTarget(LocalTargetInfo target)
         {
             CallPawn(target.Cell);
         }
-
         public override IEnumerable<FloatMenuOption> GetRoyalAidOptions(Map map, Pawn pawn, Faction faction)
         {
             if (faction.HostileTo(Faction.OfPlayer))
@@ -51,7 +49,7 @@ namespace DMS
             {
                 defaultLabel = def.LabelCap + " (" + pawn.LabelShort + ")",
                 defaultDesc = description,
-                icon = CommandTex,
+                icon = ContentFinder<Texture2D>.Get("UI/Commands/CallAid"),
                 action = delegate
                 {
                         CallPawnToCaravan(pawn, faction, free);              

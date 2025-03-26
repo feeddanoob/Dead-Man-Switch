@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- 北約武器 -->
-  <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+  <StyleCategoryDef>
     <defName>DMS_Industrial</defName>
     <label>Nara Industrial</label>
     <iconPath>UI/StyleCategories/NaraIcon</iconPath>
@@ -106,7 +106,7 @@
   </StyleCategoryDef>
 
   <!-- 華約武器 -->
-  <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+  <StyleCategoryDef>
     <defName>DMS_Facility</defName>
     <label>OKB.BM</label>
     <iconPath>UI/StyleCategories/OKBIcon</iconPath>
