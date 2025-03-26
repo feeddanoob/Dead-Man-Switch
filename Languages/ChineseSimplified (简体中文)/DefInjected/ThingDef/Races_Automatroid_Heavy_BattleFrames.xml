@@ -23,7 +23,7 @@
   <!-- EN: right fist -->
   <DMS_Mech_EscortLifter.tools.right_fist.label>右拳</DMS_Mech_EscortLifter.tools.right_fist.label>
   
-  <!-- EN: Field Commander -->
+  <!-- EN: Field Command -->
   <DMS_Mech_FieldCommand.label>中继指挥</DMS_Mech_FieldCommand.label>
   <!-- EN: A battle friend subvariant. It functions as a mechanitor command relay, however due to the weight of the relay equipment it can only use a light weapon. -->
   <DMS_Mech_FieldCommand.description>战斗夥伴的改装型号。能够作为机兵的指挥中继，但由於其重量与削减的火控系统因此只能装备轻武器用於自卫。</DMS_Mech_FieldCommand.description>
