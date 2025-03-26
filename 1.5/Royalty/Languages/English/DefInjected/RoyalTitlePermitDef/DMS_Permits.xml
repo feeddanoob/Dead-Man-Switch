@@ -16,6 +16,11 @@
   <!-- EN: Call a single-impact aerodrone strike at a target position. -->
   <DMS_CallOrbitalStrike.description>Call a single-impact aerodrone strike on a target position.</DMS_CallOrbitalStrike.description>
   
+  <!-- EN: Call recruitment agency -->
+  <DMS_Call_TributeCollector.label>Call recruitment agency</DMS_Call_TributeCollector.label>
+  <!-- EN: Call for a group of recruitment agency to transfer prisoners of war to the Colonial fleet. -->
+  <DMS_Call_TributeCollector.description>Call for a group of recruitment agency to transfer prisoners of war to the Colonial fleet.</DMS_Call_TributeCollector.description>
+  
   <!-- EN: call transport shuttle -->
   <DMS_CallTransportShuttle.label>Call Transport Shuttle</DMS_CallTransportShuttle.label>
   <!-- EN: Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles. -->

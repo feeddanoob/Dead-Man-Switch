@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <!-- 空襲支援 -->
+  <!-- 空襲支援
   <RoyalTitlePermitDef>
     <defName>DMS_Call_AirSupport</defName>
     <label>Call Air Support</label>
@@ -17,7 +17,7 @@
     </royalAid>
     <minTitle>DMS_PreSergeant</minTitle>
     <cooldownDays>5</cooldownDays>
-  </RoyalTitlePermitDef>
+  </RoyalTitlePermitDef> -->
 
   <!-- 徵募隊 -->
   <RoyalTitlePermitDef>
@@ -30,11 +30,10 @@
     <uiPosition>(5,2)</uiPosition>
     <royalAid>
       <favorCost>2</favorCost>
-      <aidDurationDays>15</aidDurationDays>
     </royalAid>
-    <minTitle>DMS_PreSergeant</minTitle>
+    <minTitle>DMS_Corporal</minTitle>
     <usableOnWorldMap>true</usableOnWorldMap>
-    <cooldownDays>5</cooldownDays>
+    <cooldownDays>30</cooldownDays>
     <modExtensions>
       <li Class="DMS.PermitTraderExtension">
         <traderKindDef>DMS_Caravan_TributeCollector</traderKindDef>
