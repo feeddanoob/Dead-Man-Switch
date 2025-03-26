@@ -1,4 +1,4 @@
-﻿using RimWorld;
+﻿using System.Security.Cryptography;
 using UnityEngine;
 using Verse;
 using static UnityEngine.UI.Image;
@@ -9,7 +9,7 @@ namespace DMS
     {
         protected ModExt_FlyByThing ext => def.GetModExtension<ModExt_FlyByThing>();
 
-        protected float ageTicks, angle;
+        public float ageTicks, angle;
 
         public Vector3 vector = Vector3.forward;
 
@@ -40,7 +40,7 @@ namespace DMS
             tempLoc.z += def.skyfaller.zPositionCurve?.Evaluate(ageTicks) ?? 0;
             Graphic.Draw(tempLoc, default, this, angle);
             tempLoc = drawLoc;
-            tempLoc.y = Altitudes.AltitudeFor(AltitudeLayer.FloorCoverings);
+            tempLoc.y = Altitudes.AltitudeFor(AltitudeLayer.Item);
             shadowGraphic?.Draw(tempLoc, default, this, angle);
         }
 
