@@ -226,6 +226,38 @@
     <growthRate>-5</growthRate>
   </FleckDef>
 
+  <EffecterDef>
+    <defName>DMS_Sustainer_JetTrail</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+        <soundDef>EmpDisabled</soundDef>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>DMS_Fleck_RocketFlame</fleckDef>
+        <scale>0.6~1</scale>
+        <spawnLocType>RandomCellOnTarget</spawnLocType>
+        <burstCount>5~10</burstCount>
+        <chancePerTick>0.122</chancePerTick>
+        <positionRadius>0.25</positionRadius>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+        <attachToSpawnThing>true</attachToSpawnThing>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>DMS_Fleck_RocketSmokeTrail</fleckDef>
+        <scale>0.6~1</scale>
+        <spawnLocType>RandomCellOnTarget</spawnLocType>
+        <burstCount>1~2</burstCount>
+        <chancePerTick>0.052</chancePerTick>
+        <positionRadius>0.25</positionRadius>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+        <attachToSpawnThing>true</attachToSpawnThing>
+      </li>
+    </children>
+  </EffecterDef>
+
   <!-- 維修模式 -->
   <EffecterDef>
     <defName>DMS_Sustainer_EMP</defName>
@@ -349,6 +381,7 @@
     <growthRate>0.5</growthRate>
     <collide>true</collide>
   </FleckDef>
+
   <!-- 電荷煙霧 -->
   <EffecterDef>
     <defName>BlasterSmokeReleasing</defName>

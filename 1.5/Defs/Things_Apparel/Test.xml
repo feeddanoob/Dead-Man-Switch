@@ -256,9 +256,10 @@
 			</li>
 			<li Class="DMS.AirSupportComp_Strafe">
 				<ProjectileDef>Bullet_Shell_HighExplosive</ProjectileDef>
-				<burstCount>3</burstCount>
+				<burstCount>4</burstCount>
 				<flyByThingDef>DMS_AirRaidFlyBy</flyByThingDef>
 				<soundDef>Shot_TurretSniper</soundDef>
+				<delayRange>180~480</delayRange>
 			</li>
 		</comps>
 	</DMS.AirSupportDef>
@@ -273,10 +274,10 @@
 		<graphicData>
 			<texPath>Things/Skyfaller/DMS_Mech_Sparrow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>5</drawSize>
+			<drawSize>8</drawSize>
 		</graphicData>
 		<skyfaller>
-			<speed>50</speed>
+			<speed>100</speed>
 		</skyfaller>
 	</ThingDef>
 </Defs>
