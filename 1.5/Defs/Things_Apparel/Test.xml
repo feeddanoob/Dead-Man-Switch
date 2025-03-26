@@ -277,6 +277,26 @@
 		</graphicData>
 		<skyfaller>
 			<speed>50</speed>
+			<zPositionCurve>
+				<points>
+					<li>(-240,5)</li>
+					<li>(-120,3)</li>
+					<li>(0,2)</li>
+					<li>(120,3)</li>
+					<li>(240,5)</li>
+				</points>
+			</zPositionCurve>
 		</skyfaller>
+		<modExtensions>
+			<li Class="DMS.ModExt_FlyByThing">
+				<shadowGraphic>
+					<texPath>Things/Skyfaller/DMS_Mech_Sparrow</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>Transparent</shaderType>
+					<drawSize>5</drawSize>
+					<color>(0,0,0,0.25)</color>
+				</shadowGraphic>
+			</li>
+		</modExtensions>
 	</ThingDef>
 </Defs>

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using RimWorld;
+using UnityEngine;
 using Verse;
 using static UnityEngine.UI.Image;
 
@@ -6,7 +7,9 @@ namespace DMS
 {
     public class FlyByThing : ThingWithComps
     {
-        float ageTicks, angle;
+        protected ModExt_FlyByThing ext => def.GetModExtension<ModExt_FlyByThing>();
+
+        protected float ageTicks, angle;
 
         public Vector3 vector = Vector3.forward;
 
@@ -20,17 +23,25 @@ namespace DMS
             }
         }
 
+        protected Graphic shadowGraphic;
+
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
             vector = vector.Yto0();
             angle = vector.AngleFlat();
+            shadowGraphic = ext?.shadowGraphic?.Graphic;
             if (!respawningAfterLoad) ageTicks = -vector.magnitude * 60 / def.skyfaller.speed;
         }
 
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
-            Graphic.Draw(drawLoc, default, this, angle);
+            var tempLoc = drawLoc;
+            tempLoc.z += def.skyfaller.zPositionCurve?.Evaluate(ageTicks) ?? 0;
+            Graphic.Draw(tempLoc, default, this, angle);
+            tempLoc = drawLoc;
+            tempLoc.y = Altitudes.AltitudeFor(AltitudeLayer.FloorCoverings);
+            shadowGraphic?.Draw(tempLoc, default, this, angle);
         }
 
         public override void Tick()
@@ -50,5 +61,10 @@ namespace DMS
             Scribe_Values.Look(ref ageTicks, "ageTicks");
             Scribe_Values.Look(ref vector, "vector");
         }
+    }
+
+    public class ModExt_FlyByThing : DefModExtension
+    {
+        public GraphicData shadowGraphic;
     }
 }
