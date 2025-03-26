@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Analytics;
 using Verse;
 using Verse.Noise;
+using Verse.Sound;
+using static HarmonyLib.Code;
 
 namespace DMS
 {
@@ -42,38 +44,66 @@ namespace DMS
             Scribe_Defs.Look(ref projectileDef, "projectileDef");
             Scribe_Values.Look(ref origin, "origin");
         }
-        public void Trigger(float angle)
-        {
-            Projectile projectile = (Projectile)GenSpawn.Spawn(projectileDef, Position(angle, map), map);
-            projectile.Launch(triggerer, Position(angle, map).ToVector3(), targetCell, targetCell, ProjectileHitFlags.IntendedTarget);
-        }
-        private IntVec3 Position(float angle, Map map)
-        {
-            float theta = Mathf.Deg2Rad * angle; // 角度轉換為弧度
-
-            // 計算方向向量
-            float dx = Mathf.Sin(theta);
-            float dy = -Mathf.Cos(theta);
-
-            float x = map.Center.x;
-            float y = map.Center.y;
-
-            while (x >= 0 && x < map.Size.x && y >= 0 && y < map.Size.y)
-            {
-                x += dx;
-                y += dy;
-            }
-
-            int edgeX = Mathf.RoundToInt(x - dx);
-            int edgeY = Mathf.RoundToInt(y - dy);
-
-            return new IntVec3(edgeX, 0, edgeY);
-        }
 
         public override void Trigger()
         {
             Projectile projectile = (Projectile)GenSpawn.Spawn(projectileDef, origin.ToIntVec3(), map);
             projectile.Launch(triggerer, origin, targetCell, targetCell, ProjectileHitFlags.IntendedTarget);
+        }
+    }
+
+    public class AirSupportData_SpawnThing : AirSupportData
+    {
+        public ThingDef thingDef;
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Defs.Look(ref thingDef, "thingDef");
+        }
+
+        public override void Trigger()
+        {
+            var t = ThingMaker.MakeThing(thingDef);
+            PreProcess(t);
+            GenSpawn.Spawn(thingDef, targetCell, map);
+        }
+
+        protected virtual void PreProcess(Thing t)
+        {
+
+        }
+    }
+
+    public class AirSupportData_SpawnFlyBy : AirSupportData_SpawnThing
+    {
+        public Vector3 origin;
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref origin, "origin");
+        }
+
+        protected override void PreProcess(Thing t)
+        {
+            var flyby = t as FlyByThing;
+            flyby.vector = targetCell.ToVector3Shifted() - origin;
+        }
+    }
+
+    public class AirSupportData_Sound : AirSupportData
+    {
+        public SoundDef soundDef;
+
+        public override void Trigger()
+        {
+            soundDef.PlayOneShot(SoundInfo.InMap(new TargetInfo(targetCell, map)));
+        }
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Defs.Look(ref soundDef, "soundDef");
         }
     }
 }
