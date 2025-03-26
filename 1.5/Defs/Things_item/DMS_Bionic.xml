@@ -735,8 +735,7 @@
   <ThingDef ParentName="DMS_SynthicBionicBase">
     <defName>DMS_SensoryFilter</defName>
     <label>Emotion Filter</label>
-    <description>An emotion filter which screens most non-essential emotions out of the patient's brain, but leaves basic essential emotionality relatively intact. This allows the patient to still form relationships with others while stile being a perfect soldier during war. While better than an Emotional Neutralizer, the filter is still inhumane.
-	</description>
+    <description>An emotion filter which screens most non-essential emotions out of the patient's brain, but leaves basic essential emotionality relatively intact. This allows the patient to still form relationships with others while stile being a perfect soldier during war. While better than an Emotional Neutralizer, the filter is still inhumane.</description>
     <descriptionHyperlinks><RecipeDef>DMS_InstallSensoryFilter</RecipeDef></descriptionHyperlinks>
     <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
     <costList>
