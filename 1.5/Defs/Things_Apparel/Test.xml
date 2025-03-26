@@ -243,9 +243,40 @@
 
 		<comps>
 			<li Class="DMS.CompProperties_AirSupportSummoner">
-				<ProjectileDef>Bullet_Shell_HighExplosive</ProjectileDef>
-				<burstCount>3</burstCount>
+				<supportDef>DMS_AirRaidTest</supportDef>
 			</li>
 		</comps>
+	</ThingDef>
+
+	<DMS.AirSupportDef>
+		<defName>DMS_AirRaidTest</defName>
+		<label>Air Raid Test</label>
+		<comps>
+			<li Class="DMS.AirSupportComp_SetOriginRandomEdge">
+			</li>
+			<li Class="DMS.AirSupportComp_Strafe">
+				<ProjectileDef>Bullet_Shell_HighExplosive</ProjectileDef>
+				<burstCount>3</burstCount>
+				<flyByThingDef>DMS_AirRaidFlyBy</flyByThingDef>
+				<soundDef>Shot_TurretSniper</soundDef>
+			</li>
+		</comps>
+	</DMS.AirSupportDef>
+
+	<ThingDef ParentName="EtherealThingBase">
+		<defName>DMS_AirRaidFlyBy</defName>
+		<label>jet</label>
+		<thingClass>DMS.FlyByThing</thingClass>
+		<drawerType>RealtimeOnly</drawerType>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Skyfaller</altitudeLayer>
+		<graphicData>
+			<texPath>Things/Skyfaller/DMS_Mech_Sparrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>5</drawSize>
+		</graphicData>
+		<skyfaller>
+			<speed>50</speed>
+		</skyfaller>
 	</ThingDef>
 </Defs>

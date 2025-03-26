@@ -81,7 +81,7 @@ namespace DMS
                     {
                         projectileDef = ext.projectileDef,
                         map = caller.MapHeld,
-                        targetCell = GenRadial.RadialPattern[Rand.RangeInclusive(0, c)] + cell.Cell,
+                        target = GenRadial.RadialPattern[Rand.RangeInclusive(0, c)] + cell.Cell,
                         triggerTick = delay,
                         triggerer = triggerer,
                         triggerFaction = triggerer.Faction,

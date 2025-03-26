@@ -16,7 +16,7 @@ namespace DMS
         {
             get
             {
-                return base.DrawPos + def.skyfaller.speed * vector.normalized * ageTicks;
+                return base.DrawPos + def.skyfaller.speed * vector.normalized * ageTicks / 60;
             }
         }
 
@@ -25,7 +25,7 @@ namespace DMS
             base.SpawnSetup(map, respawningAfterLoad);
             vector = vector.Yto0();
             angle = vector.AngleFlat();
-            if (!respawningAfterLoad) ageTicks = vector.magnitude / def.skyfaller.speed;
+            if (!respawningAfterLoad) ageTicks = -vector.magnitude * 60 / def.skyfaller.speed;
         }
 
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)
@@ -40,7 +40,7 @@ namespace DMS
             if (ShouldDiscard)
             {
                 DeSpawn();
-                Discard();
+                Destroy();
             }
         }
 
