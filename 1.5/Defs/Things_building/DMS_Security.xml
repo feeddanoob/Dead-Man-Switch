@@ -277,7 +277,8 @@
       <li>HeavyTurrets</li>
     </researchPrerequisites>
   </ThingDef>
-  <!--通古斯卡--><!--文本缺失-->
+
+  <!--通古斯卡-->
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_Tunguska</defName>
     <label>Tunguska</label>
@@ -298,7 +299,7 @@
       <WorkToBuild>7500</WorkToBuild>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>0.98</ShootingAccuracyTurret>
-      <Mass>15000</Mass>
+      <!-- <Mass>15000</Mass> -->
     </statBases>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -353,7 +354,7 @@
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_Tunguska</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
-    <minifiedDef></minifiedDef>
+    <!-- <minifiedDef></minifiedDef> -->
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
@@ -428,7 +429,7 @@
       <WorkToBuild>7500</WorkToBuild>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>1.00</ShootingAccuracyTurret>
-      <Mass>10000</Mass>
+      <!-- <Mass>10000</Mass> -->
     </statBases>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -484,10 +485,10 @@
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_GateKeeper</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
-    <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->
-    <thingCategories>
+    <!-- <minifiedDef>MinifiedThing</minifiedDef> -->
+    <!-- <thingCategories>
       <li>BuildingsSecurity</li>
-    </thingCategories>
+    </thingCategories> -->
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
@@ -639,10 +640,10 @@
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_5ETs16U</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
-    <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->
-    <thingCategories>
+    <!-- <minifiedDef>MinifiedThing</minifiedDef> -->
+    <!-- <thingCategories>
       <li>BuildingsSecurity</li>
-    </thingCategories>
+    </thingCategories> -->
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
@@ -854,7 +855,7 @@
       <WorkToBuild>7500</WorkToBuild>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>1.00</ShootingAccuracyTurret>
-      <Mass>10000</Mass>
+      <!-- <Mass>10000</Mass> -->
     </statBases>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -911,10 +912,10 @@
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_DawnBlade</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
-    <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->
-    <thingCategories>
+    <!-- <minifiedDef>MinifiedThing</minifiedDef> -->
+    <!-- <thingCategories>
       <li>BuildingsSecurity</li>
-    </thingCategories>
+    </thingCategories> -->
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
