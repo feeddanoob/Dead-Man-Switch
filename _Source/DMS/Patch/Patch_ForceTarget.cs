@@ -9,7 +9,7 @@ namespace DMS
     {
         public static void Postfix(ref bool __result, Building_TurretGun __instance)
         {
-            if (ThingCompUtility.TryGetComp<CompForceTargetable>(__instance) != null && __instance.Faction != null && __instance.Faction.IsPlayer)
+            if (__instance.TryGetComp<CompForceTargetable>() != null && __instance.Faction != null && __instance.Faction.IsPlayer)
             {
                 __result = true;
             }

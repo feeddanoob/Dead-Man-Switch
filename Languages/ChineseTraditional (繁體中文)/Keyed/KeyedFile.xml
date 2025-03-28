@@ -76,4 +76,9 @@
   <!-- EN: the colony mech {0} has equipped with its first weapon, this makes its adaptive learning ability bound to that type of weapon. -->
   <DMS_InprintedDesc>由殖民地所控制的 {0} 裝備了它的第一個武器，這使得它的自適應能力將與該型號的武器深度綁定，並將隨著時間逐漸增強與該型武器的契合程度從而提升射擊準確性與反應能力。</DMS_InprintedDesc>
   
+  <DMS_Req_TechLevel>必須是下列科技等級的裝備</DMS_Req_TechLevel>
+  <DMS_Req_BodySize>可直接裝備支援體型要求不高於: {0} 的重型武器</DMS_Req_BodySize>
+  <DMS_Req_WeaponFilter>僅能夠使用下列的武器</DMS_Req_WeaponFilter>
+  <DMS_Req_NoWeaponFilter>沒有其他裝備限制</DMS_Req_NoWeaponFilter>
+  
 </LanguageData>
