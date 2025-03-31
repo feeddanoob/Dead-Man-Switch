@@ -132,9 +132,10 @@
         <BypassUsableWeapons/>
       </li>
     </modExtensions>
-    <killedLeavingsPlayerHostile>
+    <killedLeavingsChance>0.05</killedLeavingsChance>
+    <killedLeavings>
       <ComponentTransmitter>1</ComponentTransmitter>
-    </killedLeavingsPlayerHostile>
+    </killedLeavings>
     <butcherProducts>
       <DMS_ChunkSlag>1</DMS_ChunkSlag>
       <Steel>24</Steel>
