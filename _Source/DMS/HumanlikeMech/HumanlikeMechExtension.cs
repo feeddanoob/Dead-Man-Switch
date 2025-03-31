@@ -7,11 +7,12 @@ namespace DMS
 {
     public class HumanlikeMechExtension : DefModExtension
     {
-
+        public bool canChangeHairStyle = false;
         public BodyTypeDef bodyTypeOverride;
         public HeadTypeDef headTypeOverride;
         public Vector3 headOffset;
-        public GraphicData headGraphic;
-        public PawnRenderNode headRenderNode;
+        public GraphicData headGraphic = null;
+        public GraphicData headGraphicHaired = null;
+        public List<SkillRange> skills = null;
     }
 }

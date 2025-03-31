@@ -42,7 +42,7 @@
   <DMS_InprintedDesc>the colony mech {0} has equipped with its first weapon, this makes its adaptive learning ability bound to that type of weapon.</DMS_InprintedDesc>
   
   <DMS_Req_TechLevel>Must be in listed tech level:</DMS_Req_TechLevel>
-  <DMS_Req_BodySize>Can equip heavy weapon with supported bodysize requirement below: {0}</DMS_Req_BodySize>
+  <DMS_Req_BodySize>Can equip heavy weapon with bodysize requirement below:{0}</DMS_Req_BodySize>
   <DMS_Req_WeaponFilter>Limited to use listed weapon below</DMS_Req_WeaponFilter>
   <DMS_Req_NoWeaponFilter>No other weapon restrictions</DMS_Req_NoWeaponFilter>
 

@@ -87,6 +87,7 @@
           <soundCall>Pawn_Mech_Legionary_Call</soundCall>
         </li>
       </lifeStageAges>
+      <mechFixedSkillLevel>8</mechFixedSkillLevel>
     </race>
     <comps>
       <li Class="DMS.CompProperties_MechApparel"/>
@@ -99,6 +100,7 @@
     <modExtensions>
       <li Class="DMS.TurretMannableExtension"/>
       <li Class="DMS.HumanlikeMechExtension">
+        <canChangeHairStyle>true</canChangeHairStyle>
         <bodyTypeOverride>Female</bodyTypeOverride>
         <headTypeOverride>Female_AveragePointy</headTypeOverride>
         <headGraphic>
@@ -106,7 +108,22 @@
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.4</drawSize>
         </headGraphic>
+        <headGraphicHaired>
+          <texPath>Things/Automatroid/seperated/ladyHead_Bald</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+        </headGraphicHaired>
         <headOffset>(0,0,-0.05)</headOffset>
+        <skills>
+          <li>
+            <skill>Shooting</skill>
+            <range>10~16</range>
+          </li>
+          <li>
+            <skill>Medicine</skill>
+            <range>10~16</range>
+          </li>
+        </skills>
       </li>
       <li Class="DMS.MechWeaponExtension">
         <EnableWeaponFilter>false</EnableWeaponFilter>
@@ -125,6 +142,7 @@
     <label>lady</label>
     <race>DMS_Mech_Lady</race>
     <combatPower>150</combatPower>
+    <canStrip>true</canStrip>
     <lifeStages>
       <li>
         <bodyGraphicData>

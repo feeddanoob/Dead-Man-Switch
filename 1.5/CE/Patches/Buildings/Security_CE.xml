@@ -252,7 +252,7 @@
 					<defaultProjectile>Bullet_81mmMortarShell_HE</defaultProjectile>
 					<warmupTime>2.1</warmupTime>
 					<minRange>20</minRange>
-					<range>200</range>
+					<range>240</range>
 					<burstShotCount>4</burstShotCount>
 					<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 					<soundCast>DMS_Shot_VasilekSound</soundCast>

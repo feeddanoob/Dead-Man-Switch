@@ -12,37 +12,28 @@ namespace DMS
 {
     public class HumanlikeMech : Pawn, IWeaponUsable
     {
+        public MechWeaponExtension MechWeapon => def.GetModExtension<MechWeaponExtension>();
+        public HumanlikeMechExtension Extension => def.GetModExtension<HumanlikeMechExtension>();
         private Graphic headGraphic;
-        public MechWeaponExtension MechWeapon { get; private set; }
-        public HumanlikeMechExtension Extension { get; private set; }
         public Graphic HeadGraphic
         {
             get
             {
-                if (headGraphic == null)
-                    headGraphic = Extension.headGraphic.Graphic;
+                headGraphic ??= Extension.headGraphic.Graphic;
+                if (Extension.canChangeHairStyle && HasHair) headGraphic = Extension.headGraphicHaired.Graphic;
                 return headGraphic;
             }
+        }
+        private bool HasHair => story.hairDef != HairDefOf.Bald || story.hairDef == null;
+        public override void PostMake()
+        {
+            base.PostMake();
+            CheckTracker();
         }
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            MechWeapon = def.GetModExtension<MechWeaponExtension>();
-            Extension = def.GetModExtension<HumanlikeMechExtension>();
-            if (Extension != null)
-            {
-                outfits ??= new Pawn_OutfitTracker(this);
-                story ??= new Pawn_StoryTracker(this)
-                {
-                    bodyType = Extension.bodyTypeOverride,
-                    headType = Extension.headTypeOverride,
-                    SkinColorBase = Color.white
-                };
-
-                interactions ??= new(this);
-                skills ??= new(this);
-                skills.skills.ForEach(s => s.Level = def.race.mechFixedSkillLevel);
-            }
+            CheckTracker();
         }
         public override void Kill(DamageInfo? dinfo, Hediff exactCulprit = null)
         {
@@ -61,18 +52,28 @@ namespace DMS
         }
         public override IEnumerable<FloatMenuOption> GetExtraFloatMenuOptionsFor(IntVec3 sq)
         {
+            foreach (var item in base.GetExtraFloatMenuOptionsFor(sq))
+            {
+                yield return item;
+            }
             if (IsColonyMechPlayerControlled)
             {
-                foreach (var item in base.GetExtraFloatMenuOptionsFor(sq))
-                {
-                    yield return item;
-                }
                 foreach (var item in FloatMenuUtility.GetExtraFloatMenuOptionsFor(this, sq, MechWeapon))
                 {
                     yield return item;
                 }
-                if (this.TryGetComp<CompDeadManSwitch>() is CompDeadManSwitch comp && comp.woken && sq == this.Position
-                    && MechRepairUtility.CanRepair(this))
+                List<Thing> things = sq.GetThingList(this.MapHeld);
+                foreach (var item in things)
+                {
+                    if (Extension.canChangeHairStyle && item is Building_StylingStation station)
+                    {
+                        foreach (var item2 in station.GetFloatMenuOptions(this))
+                        {
+                            yield return item2;
+                        }
+                    }
+                }
+                if (this.TryGetComp<CompDeadManSwitch>() is CompDeadManSwitch comp && comp.woken && sq == this.Position && MechRepairUtility.CanRepair(this))
                 {
                     yield return new FloatMenuOption("RepairMech".Translate(this.LabelShort), () =>
                     {
@@ -91,6 +92,44 @@ namespace DMS
                 this.Drawer?.renderer?.SetAllGraphicsDirty();
             }
         }
+        private void CheckTracker()
+        {
+            if (Extension != null)
+            {
+                outfits ??= new Pawn_OutfitTracker(this);
+                story ??= new Pawn_StoryTracker(this);
+                story.bodyType ??= Extension.bodyTypeOverride;
+                story.headType ??= Extension.headTypeOverride;
+                story.SkinColorBase = Color.white;
+
+                if (Extension.canChangeHairStyle)
+                {
+                    story.HairColor = Color.white;
+                    story.hairDef ??= HairDefOf.Bald;
+                }
+
+                style ??= new Pawn_StyleTracker(this)
+                {
+                    beardDef = BeardDefOf.NoBeard,
+                    FaceTattoo = null,
+                    BodyTattoo = null,
+                };
+
+                interactions ??= new(this);
+                if (skills == null)
+                {
+                    skills = new(this);
+                    skills.skills.ForEach(s => s.Level = def.race.mechFixedSkillLevel);
+                    if (!Extension.skills.NullOrEmpty())
+                    {
+                        foreach (SkillRange item in Extension.skills)
+                        {
+                            skills.GetSkill(item.Skill).Level = item.Range.RandomInRange;
+                        }
+                    }
+                }
+            }
+        }
         public void Equip(ThingWithComps equipment)
         {
             equipment.SetForbidden(false);
@@ -102,7 +141,5 @@ namespace DMS
             apparel.SetForbidden(false);
             this.jobs.TryTakeOrderedJob(JobMaker.MakeJob(JobDefOf.Wear, apparel), JobTag.Misc);
         }
-
-
     }
 }
