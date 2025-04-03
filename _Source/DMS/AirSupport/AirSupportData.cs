@@ -30,4 +30,9 @@ namespace DMS
 
         public abstract void Trigger();
     }
+
+    public interface IAttachedToFlyBy
+    {
+        FlyByThing plane { set; }
+    }
 }

@@ -1,4 +1,8 @@
-﻿using System.Security.Cryptography;
+﻿using RimWorld;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Security.Cryptography;
 using UnityEngine;
 using Verse;
 using static UnityEngine.UI.Image;
@@ -11,17 +15,20 @@ namespace DMS
 
         public float ageTicks, angle;
 
-        public Vector3 vector = Vector3.forward;
-
-        public bool ShouldDiscard => ageTicks > 0 && !DrawPos.ToIntVec3().InBounds(Map);
+        public Vector3 vector = Vector3.forward, exactPos = Vector3.negativeInfinity;
+        public virtual bool ShouldDiscard => ageTicks > 0 && !DrawPos.ToIntVec3().InBounds(Map);
 
         public override Vector3 DrawPos
         {
             get
             {
-                return base.DrawPos + def.skyfaller.speed * vector.normalized * ageTicks / 60;
+                var tempLoc = exactPos;
+                tempLoc.z += def.skyfaller.zPositionCurve?.Evaluate(ageTicks) ?? 0;
+                return tempLoc;
             }
         }
+
+        public virtual Vector3 ShadowDrawPos => exactPos;
 
         protected Graphic shadowGraphic;
 
@@ -31,15 +38,20 @@ namespace DMS
             vector = vector.Yto0();
             angle = vector.AngleFlat();
             shadowGraphic = ext?.shadowGraphic?.Graphic;
-            if (!respawningAfterLoad) ageTicks = -vector.magnitude * 60 / def.skyfaller.speed;
+            if (exactPos == Vector3.negativeInfinity) exactPos = Position.ToVector3Shifted();
+            if (!respawningAfterLoad) InitAge();
+            exactPos.y = Altitudes.AltitudeFor(def.altitudeLayer);
+        }
+
+        public virtual void InitAge()
+        {
+            ageTicks = -vector.magnitude * 60 / def.skyfaller.speed;
         }
 
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
-            var tempLoc = drawLoc;
-            tempLoc.z += def.skyfaller.zPositionCurve?.Evaluate(ageTicks) ?? 0;
-            Graphic.Draw(tempLoc, default, this, angle);
-            tempLoc = drawLoc;
+            Graphic.Draw(drawLoc, default, this, angle);
+            var tempLoc = ShadowDrawPos;
             tempLoc.y = Altitudes.AltitudeFor(AltitudeLayer.Item);
             shadowGraphic?.Draw(tempLoc, default, this, angle);
         }
@@ -48,11 +60,24 @@ namespace DMS
         {
             base.Tick();
             ageTicks++;
+            Move();
+
+            var t = DrawPos.ToIntVec3();
+            t.x = Mathf.Clamp(t.x, 0, Map.Size.x);
+            t.z = Mathf.Clamp(t.z, 0, Map.Size.z);
+            Position = t;
+
             if (ShouldDiscard)
             {
                 DeSpawn();
                 Destroy();
             }
+        }
+
+        public virtual void Move()
+        {
+            exactPos += vector.normalized * def.skyfaller.speed / 60;
+            exactPos.y = Altitudes.AltitudeFor(def.altitudeLayer);
         }
 
         public override void ExposeData()

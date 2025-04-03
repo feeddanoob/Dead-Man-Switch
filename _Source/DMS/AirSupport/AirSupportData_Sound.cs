@@ -1,5 +1,7 @@
 ﻿using Verse;
 using Verse.Sound;
+using static UnityEngine.UI.Image;
+using VFECore;
 
 namespace DMS
 {
@@ -17,35 +19,22 @@ namespace DMS
             Scribe_Defs.Look(ref soundDef, "soundDef");
         }
     }
-    public class AirSupportData_Effecter : AirSupportData
+    public class AirSupportData_SoundFromPlane : AirSupportData_Sound, IAttachedToFlyBy
     {
-        public EffecterDef effecterDef;
-
-        public bool onTriggerer = false, hasTargetB = true;
-
+        public FlyByThing plane;
+        FlyByThing IAttachedToFlyBy.plane
+        {
+            set => plane = value;
+        }
         public override void Trigger()
         {
-            if (effecterDef.maintainTicks > 0)
-            {
-                if (onTriggerer) effecterDef.SpawnMaintained(triggerer, hasTargetB ? target.ToTargetInfo(map) : triggerer);
-                else effecterDef.SpawnMaintained(target.ToTargetInfo(map), hasTargetB ? triggerer : target.ToTargetInfo(map));
-            }
-            else
-            {
-                if (onTriggerer)
-                {
-                    if (hasTargetB) effecterDef.Spawn(triggerer, target.ToTargetInfo(map));
-                    else effecterDef.SpawnAttached(triggerer, map);
-                }
-                else effecterDef.Spawn(target.ToTargetInfo(map), hasTargetB ? triggerer : target.ToTargetInfo(map));
-            }
+            if (plane != null && plane.Spawned) target = plane.DrawPos.ToIntVec3();
+            base.Trigger();
         }
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Defs.Look(ref effecterDef, "effecterDef");
-            Scribe_Values.Look(ref onTriggerer, "onTriggerer");
-            Scribe_Values.Look(ref hasTargetB, "hasTargetB");
+            Scribe_References.Look(ref plane, "plane");
         }
     }
 }

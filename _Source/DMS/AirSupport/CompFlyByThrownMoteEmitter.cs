@@ -43,11 +43,9 @@ namespace DMS
 
         private void Emit(FlyByThing v)
         {
-            Vector3 curveOffset = new(0, 0, v.def.skyfaller.zPositionCurve?.Evaluate(v.ageTicks) ?? 0);
-
             for (int i = 0; i < Props.burstCount; i++)
             {
-                var pos = v.DrawPos + curveOffset + EmissionOffset.RotatedBy(v.angle);
+                var pos = v.DrawPos + EmissionOffset.RotatedBy(v.angle);
                 pos.y = Altitudes.AltitudeFor(Props.fleck.altitudeLayer);
                 FleckCreationData dataStatic = FleckMaker.GetDataStatic(pos, parent.Map, Props.fleck, Props.scale.RandomInRange);
                 dataStatic.rotationRate = Props.rotationRate.RandomInRange;

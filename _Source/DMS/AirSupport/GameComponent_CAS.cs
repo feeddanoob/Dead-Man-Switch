@@ -42,16 +42,11 @@ namespace DMS
             base.GameComponentTick();
             if (datas.Any())
             {
-                foreach (AirSupportData data in datas)
-                {
-                    if (data.triggerTick == Find.TickManager.TicksGame)
-                    {
-                        data.Trigger();
-                        tempRemoveDatas.Add(data);
-                    }
-                }
+                tempRemoveDatas = datas.ListFullCopy();
                 foreach (AirSupportData data in tempRemoveDatas)
                 {
+                    if (data.triggerTick > Find.TickManager.TicksGame) break;
+                    data.Trigger();
                     datas.Remove(data);
                 }
                 tempRemoveDatas.Clear();

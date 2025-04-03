@@ -254,11 +254,18 @@
 		<comps>
 			<li Class="DMS.AirSupportComp_SetOriginRandomEdge">
 			</li>
-			<li Class="DMS.AirSupportComp_Strafe">
+			<li Class="DMS.AirSupportComp_StrafeII">
 				<ProjectileDef>Bullet_Shell_HighExplosive</ProjectileDef>
-				<burstCount>3</burstCount>
+				<burstCount>20</burstCount>
+				<burstInterval>5</burstInterval>
+				<delayRange>120~300</delayRange>
+				<lastShotDelayRange>60~120</lastShotDelayRange>
 				<flyByThingDef>DMS_AirRaidFlyBy</flyByThingDef>
 				<soundDef>Shot_TurretSniper</soundDef>
+				<projOffsets>
+					<li>(1, 0, 0)</li>
+					<li>(-1, 0, 0)</li>
+				</projOffsets>
 			</li>
 		</comps>
 	</DMS.AirSupportDef>
