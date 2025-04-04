@@ -85,9 +85,9 @@ namespace DMS
 
         public ThingDef ProjectileDef, flyByThingDef;
 
-        public float spreadRadius = 5;
+        public float spreadRadius = 5, intendedTargetChance = 0.25f;
 
-        public int burstCount = 1, burstInterval = 5;
+        public int burstCount = 1, burstInterval = 5, singleBurstCount = 1;
 
         public IntRange delayRange = new(120, 150), lastShotDelayRange = new(30, 70);
 
@@ -120,42 +120,52 @@ namespace DMS
 
                 for (int i = 0; i < burstCount; i++)
                 {
-                    var cell = GenRadial.RadialPattern[Rand.RangeInclusive(0, c)] + target.Cell;
-                    if (!cell.InBounds(map))
+                    for (int j = 0; j < singleBurstCount; j++)
                     {
-                        i--;
-                        continue;
-                    }
+                        LocalTargetInfo tg = GenRadial.RadialPattern[Rand.RangeInclusive(0, c)] + target.Cell;
 
-                    if (delay > vehicleSpawnTick)
-                    {
-                        var index = i % projOffsets.Count;
-                        d.attachedDatas.Add(new AirSupportData_LaunchProjectileFromPlane()
+                        if (target.HasThing && Rand.Chance(intendedTargetChance))
                         {
-                            projectileDef = ProjectileDef,
-                            map = map,
-                            target = GenRadial.RadialPattern[Rand.RangeInclusive(0, c)] + target.Cell,
-                            triggerTick = delay,
-                            triggerer = triggerer,
-                            triggerFaction = triggerer.Faction,
-                            origin = def.tempOriginCache,
-                            soundDef = soundDef,
-                            offset = projOffsets[index]
-                        });
-                    }
-                    else
-                    {
-                        GameComponent_CAS.AddData(new AirSupportData_LaunchProjectile()
+                            tg = target;
+                        }
+
+                        if (!tg.Cell.InBounds(map))
                         {
-                            projectileDef = ProjectileDef,
-                            map = map,
-                            target = GenRadial.RadialPattern[Rand.RangeInclusive(0, c)] + target.Cell,
-                            triggerTick = delay,
-                            triggerer = triggerer,
-                            triggerFaction = triggerer.Faction,
-                            origin = def.tempOriginCache,
-                            soundDef = soundDef,
-                        });
+                            j--;
+                            continue;
+                        }
+                        var index = (i * singleBurstCount + j) % projOffsets.Count;
+
+                        if (delay > vehicleSpawnTick)
+                        {
+                            d.attachedDatas.Add(new AirSupportData_LaunchProjectileFromPlane()
+                            {
+                                projectileDef = ProjectileDef,
+                                map = map,
+                                target = tg,
+                                triggerTick = delay,
+                                triggerer = triggerer,
+                                triggerFaction = triggerer.Faction,
+                                origin = def.tempOriginCache,
+                                soundDef = soundDef,
+                                offset = projOffsets[index]
+                            });
+                        }
+                        else
+                        {
+                            var ang = (target.Cell.ToVector3Shifted() - def.tempOriginCache).Yto0().AngleFlat();
+                            GameComponent_CAS.AddData(new AirSupportData_LaunchProjectileOnEdge()
+                            {
+                                projectileDef = ProjectileDef,
+                                map = map,
+                                target = tg,
+                                triggerTick = delay,
+                                triggerer = triggerer,
+                                triggerFaction = triggerer.Faction,
+                                origin = def.tempOriginCache + projOffsets[index].RotatedBy(ang),
+                                soundDef = soundDef,
+                            });
+                        }
                     }
                     delay -= burstInterval;
                 }

@@ -255,13 +255,14 @@
 			<li Class="DMS.AirSupportComp_SetOriginRandomEdge">
 			</li>
 			<li Class="DMS.AirSupportComp_StrafeII">
-				<ProjectileDef>Bullet_Shell_HighExplosive</ProjectileDef>
-				<burstCount>20</burstCount>
-				<burstInterval>5</burstInterval>
+				<ProjectileDef>Bullet_CASAC</ProjectileDef>
+				<burstCount>50</burstCount>
+				<burstInterval>2</burstInterval>
+				<singleBurstCount>1</singleBurstCount>
 				<delayRange>120~300</delayRange>
 				<lastShotDelayRange>60~120</lastShotDelayRange>
 				<flyByThingDef>DMS_AirRaidFlyBy</flyByThingDef>
-				<soundDef>Shot_TurretSniper</soundDef>
+				<soundDef>Shot_Autocannon</soundDef>
 				<projOffsets>
 					<li>(1, 0, 0)</li>
 					<li>(-1, 0, 0)</li>
@@ -337,6 +338,22 @@
 				</shadowGraphic>
 			</li>
 		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_CASAC</defName>
+		<label>autocannon shell</label>
+		<thingClass>DMS.Bullet_ForAirSupport</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>27</damageAmountBase>
+			<speed>138</speed>
+			<flyOverhead>true</flyOverhead>
+		</projectile>
 	</ThingDef>
 
 	<FleckDef ParentName="FleckBase_Thrown">

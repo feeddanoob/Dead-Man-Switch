@@ -1,6 +1,4 @@
-﻿using RimWorld;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data;
 using System.Security.Cryptography;
 using UnityEngine;
@@ -63,8 +61,8 @@ namespace DMS
             Move();
 
             var t = DrawPos.ToIntVec3();
-            t.x = Mathf.Clamp(t.x, 0, Map.Size.x);
-            t.z = Mathf.Clamp(t.z, 0, Map.Size.z);
+            t.x = Mathf.Clamp(t.x, 0, Map.Size.x - 1);
+            t.z = Mathf.Clamp(t.z, 0, Map.Size.z - 1);
             Position = t;
 
             if (ShouldDiscard)

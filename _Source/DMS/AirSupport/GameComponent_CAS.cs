@@ -46,7 +46,14 @@ namespace DMS
                 foreach (AirSupportData data in tempRemoveDatas)
                 {
                     if (data.triggerTick > Find.TickManager.TicksGame) break;
-                    data.Trigger();
+                    try
+                    {
+                        data.Trigger();
+                    }
+                    catch (Exception ex)
+                    {
+                        Log.Error($"{ex.Message} {ex.StackTrace}");
+                    }
                     datas.Remove(data);
                 }
                 tempRemoveDatas.Clear();
