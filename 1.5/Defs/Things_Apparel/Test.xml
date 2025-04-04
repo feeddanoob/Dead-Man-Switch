@@ -244,6 +244,11 @@
 		<comps>
 			<li Class="DMS.CompProperties_AirSupportSummoner">
 				<supportDef>DMS_AirRaidTest</supportDef>
+				<label>autocannon strafe</label>
+			</li>
+			<li Class="DMS.CompProperties_AirSupportSummoner">
+				<supportDef>DMS_AirRaidTestII</supportDef>
+				<label>rocket barrage</label>
 			</li>
 		</comps>
 	</ThingDef>
@@ -256,6 +261,7 @@
 			</li>
 			<li Class="DMS.AirSupportComp_StrafeII">
 				<ProjectileDef>Bullet_CASAC</ProjectileDef>
+				<spreadRadius>3</spreadRadius>
 				<burstCount>50</burstCount>
 				<burstInterval>2</burstInterval>
 				<singleBurstCount>1</singleBurstCount>
@@ -263,6 +269,28 @@
 				<lastShotDelayRange>60~120</lastShotDelayRange>
 				<flyByThingDef>DMS_AirRaidFlyBy</flyByThingDef>
 				<soundDef>Shot_Autocannon</soundDef>
+				<projOffsets>
+					<li>(0, 0, 1)</li>
+				</projOffsets>
+			</li>
+		</comps>
+	</DMS.AirSupportDef>
+
+	<DMS.AirSupportDef>
+		<defName>DMS_AirRaidTestII</defName>
+		<label>Air Raid Test</label>
+		<comps>
+			<li Class="DMS.AirSupportComp_SetOriginRandomEdge">
+			</li>
+			<li Class="DMS.AirSupportComp_StrafeII">
+				<ProjectileDef>Proj_RocketCAS</ProjectileDef>
+				<burstCount>2</burstCount>
+				<burstInterval>30</burstInterval>
+				<singleBurstCount>2</singleBurstCount>
+				<delayRange>120~300</delayRange>
+				<lastShotDelayRange>60~120</lastShotDelayRange>
+				<flyByThingDef>DMS_AirRaidFlyBy</flyByThingDef>
+				<soundDef>RocketswarmLauncher_Fire</soundDef>
 				<projOffsets>
 					<li>(1, 0, 0)</li>
 					<li>(-1, 0, 0)</li>
@@ -353,6 +381,30 @@
 			<damageAmountBase>27</damageAmountBase>
 			<speed>138</speed>
 			<flyOverhead>true</flyOverhead>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>Proj_RocketCAS</defName>
+		<label>rocket</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket_Swarm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<explosionRadius>2.9</explosionRadius>
+			<speed>150</speed>
+			<damageAmountBase>24</damageAmountBase>
+			<arcHeightFactor>0.4</arcHeightFactor>
+			<soundExplode>Explosion_Rocket</soundExplode>
 		</projectile>
 	</ThingDef>
 

@@ -32,30 +32,30 @@ namespace DMS
     {
         public override void Trigger()
         {
-            var xEdge = origin.x > target.Cell.x ? map.Size.x - 0.01f : 0;
-            var zEdge = origin.z > target.Cell.z ? map.Size.z - 0.01f : 0;
+            var xEdge = origin.x > target.Cell.x ? map.Size.x - 0.01f : 0.01f;
+            var zEdge = origin.z > target.Cell.z ? map.Size.z - 0.01f : 0.01f;
 
             var xDifference = Math.Abs((xEdge - target.Cell.x) / (origin.x - target.Cell.x));
             var zDifference = Math.Abs((-target.Cell.z) / (origin.z - target.Cell.z));
 
             var deltaZ = origin - target.Cell.ToVector3Shifted();
             var deltaX = deltaZ * xDifference + target.Cell.ToVector3Shifted();
+            deltaX.x = xEdge;
 
             deltaZ *= zDifference;
             deltaZ += target.Cell.ToVector3Shifted();
+            deltaZ.z = zEdge;
 
 
             if (deltaX.InBounds(map))
             {
                 origin = deltaX;
-                origin.x = xEdge;
             }
             else
             {
                 origin = deltaZ;
-                origin.z = zEdge;
             }
-            Log.Message($"{deltaX} {deltaZ} {origin}");
+            Log.Message($"{deltaX.ToIntVec3()} {deltaZ.ToIntVec3()} {origin}");
             base.Trigger();
         }
     }

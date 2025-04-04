@@ -16,7 +16,7 @@ namespace DMS
                 action = new Action(DoEffect),
                 defaultDesc = parent.def.description,
                 icon = parent.def.uiIcon,
-                defaultLabel = "boom",
+                defaultLabel = Props.label,
             };
         }
 
@@ -48,5 +48,7 @@ namespace DMS
         }
 
         public AirSupportDef supportDef;
+
+        public string label = "boom";
     }
 }
