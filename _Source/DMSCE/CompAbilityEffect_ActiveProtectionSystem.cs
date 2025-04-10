@@ -115,7 +115,7 @@ namespace DMSCE
             if (target == null) return;
             var projectile = target as ProjectileCE;
             var velo = (projectile.Destination - projectile.origin).normalized.ToAngle() + 90;
-            Log.Message(velo.ToString());
+            //Log.Message(velo.ToString());
 
             if (Props.fleckDef != null)
             {
@@ -151,10 +151,9 @@ namespace DMSCE
         private bool IsTargetProjectile(Thing target)
         {
             if (target is null) return false;
+            if (target is ProjectileCE_Explosive p && p.landed) return false;
             if (Props.ignoreThings.Contains(target.def.defName)) return false;
             if (!Props.interceptThings.Where((v => target.def.defName == v)).FirstOrDefault().NullOrEmpty()) return true;
-
-            if (target is ProjectileCE_Explosive) return true;
             if (target.TryGetComp<CompExplosiveCE>() != null) return true;
             return false;
         }

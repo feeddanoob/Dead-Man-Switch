@@ -315,7 +315,6 @@ namespace DMS
                     }
                     if (this.burstCooldownTicksLeft <= 0 && this.PawnOwner.IsHashIntervalTick(10))
                     {
-                        
                         if (this.TurretProp.autoAttack && !this.forcedTarget.IsValid)
                         {
                             this.currentTarget = (Thing)AttackTargetFinder.BestShootTargetFromCurrentPosition(this, TargetScanFlags.NeedThreat | TargetScanFlags.NeedAutoTargetable, null, 0f, 9999f);

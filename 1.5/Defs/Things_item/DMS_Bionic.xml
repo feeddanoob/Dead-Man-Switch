@@ -71,7 +71,7 @@
     <woundAnchorRange>0</woundAnchorRange>
     <displayWound>true</displayWound>
     <hediffGivers>
-      <li Class="HediffGiver_Random">
+      <li Class="DMS.HediffGiver_RandomSilent">
         <mtbDays>30</mtbDays>
         <hediff>DMS_BionicShock</hediff>
         <partsToAffect>
@@ -173,7 +173,7 @@
 		</li>
     </comps>
     <hediffGivers>
-      <li Class="HediffGiver_Random">
+      <li Class="DMS.HediffGiver_RandomSilent">
         <mtbDays>60</mtbDays>
         <hediff>DMS_BionicShock</hediff>
         <partsToAffect>
@@ -250,7 +250,7 @@
     <descriptionHyperlinks><ThingDef>DMS_ProstheticLeg</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>DMS_ProstheticLeg</spawnThingOnRemoved>
     <hediffGivers>
-      <li Class="HediffGiver_Random">
+      <li Class="DMS.HediffGiver_RandomSilent">
         <mtbDays>64</mtbDays>
         <hediff>DMS_BionicShock</hediff>
         <partsToAffect>
@@ -331,7 +331,7 @@
     <descriptionHyperlinks><ThingDef>DMS_ProstheticLung</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>DMS_ProstheticLung</spawnThingOnRemoved>
     <hediffGivers>
-      <li Class="HediffGiver_Random">
+      <li Class="DMS.HediffGiver_RandomSilent">
         <mtbDays>64</mtbDays>
         <hediff>DMS_BionicShock</hediff>
         <partsToAffect>
@@ -414,7 +414,7 @@
     <descriptionHyperlinks><ThingDef>DMS_ProstheticKidney</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>DMS_ProstheticKidney</spawnThingOnRemoved>
     <hediffGivers>
-      <li Class="HediffGiver_Random">
+      <li Class="DMS.HediffGiver_RandomSilent">
         <mtbDays>64</mtbDays>
         <hediff>DMS_BionicShock</hediff>
         <partsToAffect>
@@ -509,7 +509,7 @@
           <RestFallRateFactor>-0.15</RestFallRateFactor>
         </statOffsets>
         <hediffGivers>
-          <li Class="HediffGiver_Random">
+          <li Class="DMS.HediffGiver_RandomSilent">
             <mtbDays>120</mtbDays>
             <hediff>DMS_BionicShock</hediff>
             <partsToAffect>
@@ -524,7 +524,7 @@
           <RestFallRateFactor>-0.25</RestFallRateFactor>
         </statOffsets>
         <hediffGivers>
-          <li Class="HediffGiver_Random">
+          <li Class="DMS.HediffGiver_RandomSilent">
             <mtbDays>100</mtbDays>
             <hediff>DMS_BionicShock</hediff>
             <partsToAffect>
@@ -539,7 +539,7 @@
           <RestFallRateFactor>-0.35</RestFallRateFactor>
         </statOffsets>
         <hediffGivers>
-          <li Class="HediffGiver_Random">
+          <li Class="DMS.HediffGiver_RandomSilent">
             <mtbDays>80</mtbDays>
             <hediff>DMS_BionicShock</hediff>
             <partsToAffect>
@@ -554,7 +554,7 @@
           <RestFallRateFactor>-0.45</RestFallRateFactor>
         </statOffsets>
         <hediffGivers>
-          <li Class="HediffGiver_Random">
+          <li Class="DMS.HediffGiver_RandomSilent">
             <mtbDays>60</mtbDays>
             <hediff>DMS_BionicShock</hediff>
             <partsToAffect>
@@ -569,7 +569,7 @@
           <RestFallRateFactor>-0.5</RestFallRateFactor>
         </statOffsets>
         <hediffGivers>
-          <li Class="HediffGiver_Random">
+          <li Class="DMS.HediffGiver_RandomSilent">
             <mtbDays>45</mtbDays>
             <hediff>DMS_BionicShock</hediff>
             <partsToAffect>
@@ -584,7 +584,7 @@
           <RestFallRateFactor>-0.6</RestFallRateFactor>
         </statOffsets>
         <hediffGivers>
-          <li Class="HediffGiver_Random">
+          <li Class="DMS.HediffGiver_RandomSilent">
             <mtbDays>30</mtbDays>
             <hediff>DMS_BionicShock</hediff>
             <partsToAffect>
@@ -661,7 +661,7 @@
       <li>Indoors</li>
     </disablesNeeds>
     <hediffGivers>
-      <li Class="HediffGiver_Random">
+      <li Class="DMS.HediffGiver_RandomSilent">
         <mtbDays>90</mtbDays>
         <hediff>DMS_FilterShock</hediff>
         <partsToAffect>
@@ -899,7 +899,7 @@
 		</li>
     </comps>
     <hediffGivers>
-      <li Class="HediffGiver_Random">
+      <li Class="DMS.HediffGiver_RandomSilent">
         <mtbDays>40</mtbDays>
         <hediff>DMS_SyntheticRejection</hediff>
         <partsToAffect>
@@ -976,7 +976,7 @@
     <descriptionHyperlinks><ThingDef>DMS_SyntheticLeg</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>DMS_SyntheticLeg</spawnThingOnRemoved>
     <hediffGivers>
-      <li Class="HediffGiver_Random">
+      <li Class="DMS.HediffGiver_RandomSilent">
         <mtbDays>40</mtbDays>
         <hediff>DMS_SyntheticRejection</hediff>
         <partsToAffect>

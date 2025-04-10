@@ -23,8 +23,8 @@ namespace DMS
 			Quaternion quaternion = base.RotationFor(node, parms);
 			if (node is PawnRenderNode_SubTurretGun pawnRenderNode_TurretGun)
 			{
-				quaternion *= pawnRenderNode_TurretGun.subturret.curRotation.ToQuat();
-			}
+                quaternion *= pawnRenderNode_TurretGun.subturret.curRotation.ToQuat();
+            }
 			return quaternion;
 		}
 	}
