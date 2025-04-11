@@ -3,7 +3,6 @@ using System.Data;
 using System.Security.Cryptography;
 using UnityEngine;
 using Verse;
-using static UnityEngine.UI.Image;
 
 namespace DMS
 {
@@ -11,6 +10,7 @@ namespace DMS
     {
         protected ModExt_FlyByThing ext => def.GetModExtension<ModExt_FlyByThing>();
 
+        //AgeTicks only really means when we can discard it.
         public float ageTicks, angle;
 
         public Vector3 vector = Vector3.forward, exactPos = Vector3.negativeInfinity;

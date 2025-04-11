@@ -22,5 +22,12 @@ namespace DMS
             //Clear cache afterwards so that it's possible to set origin beforehand.
             tempOriginCache = Vector3.zero;
         }
+        public void DrawHighlight(Map map, IntVec3 callerPos, LocalTargetInfo target)
+        {
+            foreach (AirSupportComp comp in comps)
+            {
+                comp.DrawHighlight(map, callerPos, target);
+            }
+        }
     }
 }

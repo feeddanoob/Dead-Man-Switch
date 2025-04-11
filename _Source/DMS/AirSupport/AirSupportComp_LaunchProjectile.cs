@@ -1,10 +1,6 @@
-﻿using Mono.Unix.Native;
-using RimWorld;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Verse;
-using static HarmonyLib.Code;
-using static UnityEngine.UI.Image;
 
 namespace DMS
 {
@@ -171,6 +167,11 @@ namespace DMS
                 }
                 GameComponent_CAS.AddData(d);
             }
+        }
+
+        public override void DrawHighlight(Map map, IntVec3 callerPos, LocalTargetInfo target)
+        {
+            GenDraw.DrawRadiusRing(callerPos, spreadRadius, Color.white);
         }
     }
 }
