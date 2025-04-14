@@ -16,7 +16,7 @@ namespace DMS
                 action = new Action(DoEffect),
                 defaultDesc = parent.def.description,
                 icon = parent.def.uiIcon,
-                defaultLabel = "boom",
+                defaultLabel = Props.label,
             };
         }
 
@@ -34,26 +34,9 @@ namespace DMS
 
         public void DoEffect(LocalTargetInfo cell)
         {
-            int delay = Find.TickManager.TicksGame + Props.delayRange.RandomInRange;
-            var c = GenRadial.NumCellsInRadius(Props.spreadRadius);
-            var ori = CellFinder.RandomEdgeCell(parent.MapHeld).ToVector3Shifted();
-
             Thing triggerer = parent.ParentHolder is Pawn_ApparelTracker pawn ? pawn.pawn : parent;
 
-            for (int i = 0; i < Props.burstCount; i++)
-            {
-                GameComponent_CAS.AddData(new AirSupportData_LaunchProjectile()
-                {
-                    projectileDef = Props.ProjectileDef,
-                    map = parent.MapHeld,
-                    targetCell = GenRadial.RadialPattern[Rand.RangeInclusive(0, c)] + cell.Cell,
-                    triggerTick = delay,
-                    triggerer = triggerer,
-                    triggerFaction = triggerer.Faction,
-                    origin = ori
-                });
-                delay += Props.burstInterval;
-            }
+            Props.supportDef.Trigger(triggerer, triggerer.MapHeld, cell);
         }
     }
 
@@ -64,12 +47,8 @@ namespace DMS
             compClass = typeof(CompAirSupportSummoner);
         }
 
-        public ThingDef ProjectileDef;
+        public AirSupportDef supportDef;
 
-        public float spreadRadius = 5;
-
-        public int burstCount = 1, burstInterval = 5;
-
-        public IntRange delayRange = new IntRange(120, 150);
+        public string label = "boom";
     }
 }
