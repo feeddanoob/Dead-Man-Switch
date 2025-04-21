@@ -1,8 +1,10 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Data;
 using System.Security.Cryptography;
 using UnityEngine;
 using Verse;
+using Verse.Noise;
 
 namespace DMS
 {
@@ -49,9 +51,15 @@ namespace DMS
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
             Graphic.Draw(drawLoc, default, this, angle);
-            var tempLoc = ShadowDrawPos;
-            tempLoc.y = Altitudes.AltitudeFor(AltitudeLayer.Item);
-            shadowGraphic?.Draw(tempLoc, default, this, angle);
+            if (GenCelestial.IsDaytime(GenCelestial.CurCelestialSunGlow(Map)))
+            {
+                Vector2 vector = GenCelestial.GetLightSourceInfo(Map, GenCelestial.LightType.LightingSun).vector;
+                Log.Message(ageTicks);
+                Vector3 tempLoc = ShadowDrawPos;
+                tempLoc.y = Altitudes.AltitudeFor(AltitudeLayer.Item);
+                tempLoc += new Vector3(vector.x, 0, vector.y) * (def.skyfaller.zPositionCurve?.Evaluate(ageTicks) ?? 1);
+                shadowGraphic?.Draw(tempLoc, default, this, angle);
+            }
         }
 
         public override void Tick()

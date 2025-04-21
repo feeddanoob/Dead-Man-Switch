@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿using RimWorld;
+using RimWorld.Planet;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 using Verse;
 
 namespace DMS
@@ -21,6 +25,21 @@ namespace DMS
             def.tempOriginCache = CellFinder.RandomEdgeCell(map).ToVector3Shifted();
         }
     }
+    public class AirSupportComp_SetOriginFromClosestBase : AirSupportComp_SetOrigin
+    {
+        public override void Trigger(AirSupportDef def, Thing trigger, Map map, LocalTargetInfo target)
+        {
+            base.Trigger(def, trigger, map, target);
+
+            List<WorldObject> list = Find.WorldObjects.AllWorldObjects.Where(x => x is Settlement && x.Faction == Find.FactionManager.FirstFactionOfDef(QuestDefOf.DMS_Army)).ToList();
+            if (list.NullOrEmpty()) CellFinder.RandomEdgeCell(map).ToVector3Shifted();
+            list.OrderBy(x => map.GetRangeBetweenTiles(x.Tile)).ToList();
+            list.Reverse();
+            WorldObject worldObject = list.First();
+            def.tempOriginCache = WorldAngleUtils.Position(map.GetAngleBetweenTiles(worldObject.Tile), map);
+            Messages.Message("DMS_AirSupportFromClosestBase".Translate(worldObject.Label), MessageTypeDefOf.NeutralEvent, false);
+        }
+    }
 
     public class AirSupportComp_SetOriginAngle : AirSupportComp_SetOrigin
     {
@@ -30,30 +49,7 @@ namespace DMS
         {
             base.Trigger(def, trigger, map, target);
 
-            def.tempOriginCache = Position(angleRange.RandomInRange, map);
-        }
-
-        protected Vector3 Position(float angle, Map map)
-        {
-            float theta = Mathf.Deg2Rad * angle; // 角度轉換為弧度
-
-            // 計算方向向量
-            float dx = Mathf.Sin(theta);
-            float dy = -Mathf.Cos(theta);
-
-            float x = map.Center.x;
-            float y = map.Center.y;
-
-            while (x >= 0 && x < map.Size.x && y >= 0 && y < map.Size.y)
-            {
-                x += dx;
-                y += dy;
-            }
-
-            int edgeX = Mathf.RoundToInt(x - dx);
-            int edgeY = Mathf.RoundToInt(y - dy);
-
-            return new Vector3(edgeX, 0, edgeY);
+            def.tempOriginCache = WorldAngleUtils.Position(angleRange.RandomInRange, map);
         }
     }
 }

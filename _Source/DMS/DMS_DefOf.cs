@@ -18,5 +18,4 @@ namespace DMS
         public static RulePackDef DMS_Outgoing_Attack;
         public static RulePackDef DMS_Outgoing_Loot;
     }
-
 }

@@ -23,7 +23,6 @@ namespace DMS
         }
     }
 
-
     [HarmonyPatch(typeof(MechanitorUtility), "CanDraftMech")]
     public static class Patch_MechanitorDraft
     {

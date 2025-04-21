@@ -74,8 +74,8 @@ namespace DMS
         public override void Trigger()
         {
             if (plane != null && plane.Spawned) origin = plane.DrawPos + offset.RotatedBy(plane.angle);
-            origin.x = Mathf.Clamp(origin.x, 0, map.Size.x - 1.01f);
-            origin.z = Mathf.Clamp(origin.z, 0, map.Size.z - 1.01f);
+            origin.x = Mathf.Clamp(origin.x, 0, map.Size.x - 1.02f);
+            origin.z = Mathf.Clamp(origin.z, 0, map.Size.z - 1.02f);
             base.Trigger();
         }
 

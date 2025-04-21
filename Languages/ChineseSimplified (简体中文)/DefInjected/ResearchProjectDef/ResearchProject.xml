@@ -69,15 +69,26 @@
     <li>subject_gerund->thinking about the meaning of lifeform and the loneliness of mankind</li>
     <li>subject_gerund->exploring human possibilities and how to avoid repeating past mistakes of mechanoid again</li>
   -->
-  <DMS_DeadMansSwitch.generalRules.rulesStrings>TODO</DMS_DeadMansSwitch.generalRules.rulesStrings>
+  <DMS_DeadMansSwitch.generalRules.rulesStrings>
+    <li>subject->停機問題</li>
+    <li>subject->未決方案</li>
+    <li>subject->執行悖論</li>
+    <li>subject_story->引用了演算法工程師的概述：「機器無法判斷自己能否在限定的時間內得到結果。而人類也無法判斷，但人類有拒絕判斷的權利。」</li>
+    <li>subject_story->在一處閃耀世界完成了對地球前太空時代的歷史資料收集</li>
+    <li>subject_story->參與了學士團對殖​​民艦隊的調查研究計畫</li>
+    <li>subject_story->收集了關於次世代戰爭前大量的歷史文獻</li>
+    <li>subject_gerund->透過研究古代資料庫重新發掘這項技術</li>
+    <li>subject_gerund->思考生命的意義與人類的孤獨</li>
+    <li>subject_gerund->探索人類的可能性及如何避免再次犯下機械軍團的錯誤</li>
+  </DMS_DeadMansSwitch.generalRules.rulesStrings>
   
   <!-- EN: Defense Equipment -->
-  <DMS_EquipmentAdvanced.label>开拓装备</DMS_EquipmentAdvanced.label>
+  <DMS_EquipmentAdvanced.label>警用装备</DMS_EquipmentAdvanced.label>
   <!-- EN: Equipment designed for humans and automatroids. Its a step above the survivalist equipment Pioneers are issued with better tolerances and quality in its designs. This equipment is better suited for defensive operations due to its limited range. -->
   <DMS_EquipmentAdvanced.description>用于殖民地防御和防暴的装备。</DMS_EquipmentAdvanced.description>
   
   <!-- EN: Pioneer Equipment -->
-  <DMS_EquipmentBasis.label>警用装备</DMS_EquipmentBasis.label>
+  <DMS_EquipmentBasis.label>开拓装备</DMS_EquipmentBasis.label>
   <!-- EN: Uniforms and equipment designed for humans, mainly for civilian use and emergency survival situations. Includes basic uniforms and firearms typically handled by militamen and colonists alike. -->
   <DMS_EquipmentBasis.description>主要用于殖民目设计的制服和装备，包含了一些恶劣环境生存用的密封服。</DMS_EquipmentBasis.description>
   
@@ -123,7 +134,19 @@
     <li>subject_gerund->thinking about the blurred line between organic and mechanic</li>
     <li>subject_gerund->investigating hidden truth the Colonial Fleet tried hard to conceal behind this technology</li>
   -->
-  <DMS_Hypothesis.generalRules.rulesStrings>TODO</DMS_Hypothesis.generalRules.rulesStrings>
+  <DMS_Hypothesis.generalRules.rulesStrings>
+    <li>subject->簡而言之的假設</li>
+    <li>subject->解決方案</li>
+    <li>subject->濕件機關</li>
+    <li>subject_story->引用了演算法工程師簡言之的概述：「生命的意義在於攜帶著自身迭代的信息，基因和性狀的信息，對環境的反應，以及對這世間一切的無意識的思考」</li>
+    <li>subject_story->深入分析了這項技術，並收到了來自殖民艦隊的嚴厲警告</li>
+    <li>subject_story->透過逆向工程技術在有限條件下實現了生命的人工合成</li>
+    <li>subject_story->了解了一種透過生物培養批量生產濕件的方法</li>
+    <li>subject_story->收集了下一代戰爭前大量的歷史文獻</li>
+    <li>subject_gerund->逃避無數殖民艦隊的追捕與暗殺</li>
+    <li>subject_gerund->思考有機與機械之間逐漸模糊的界線</li>
+    <li>subject_gerund->調查殖民艦隊極力掩蓋的封存科技</li>
+  </DMS_Hypothesis.generalRules.rulesStrings>
   
   <!-- EN: Legion -->
   <DMS_Legion.label>军团机兵</DMS_Legion.label>
@@ -148,7 +171,7 @@
     <li>subject->军团</li>
     <li>subject_story->在第三次欧罗巴战争期间指挥了一支军团连队守住了扎波罗热能源核心</li>
     <li>subject_story->根据上一次大战的实战经验编写了机械装甲协同理论</li>
-    <li>subject_story->见识了如同浪潮一般的军团机兵遍布了整个战线</li>
+    <li>subject_story->见识了如同浪潮般的军团机兵遍布了整个战线</li>
     <li>subject_story->在战争中优化了这项技术的部分参数</li>
     <li>subject_gerund->营运一支军团特遣队</li>
     <li>subject_gerund->担任作战指挥官</li>
@@ -229,7 +252,7 @@
   <DMS_Mechlink.generalRules.rulesStrings>
     <li>subject->集群控制</li>
     <li>subject_story->认为发展无人机的自主性是脱离人与机械工具式关系来解放其潜力的重要关键</li>
-    <li>subject_story->根据一架回收的萨卡拉瓦织鸟机兵重新复现了这项技术</li>
+    <li>subject_story->根据一架回收的萨卡拉瓦织鸟重新复现了这项技术</li>
     <li>subject_story->透过人工诱导的灵能反应来实现远距离的抗干扰控制</li>
     <li>subject_gerund->回收古代自动兵器</li>
   </DMS_Mechlink.generalRules.rulesStrings>
@@ -322,7 +345,7 @@
     <li>subject_story->在仓库担任无人运输系统主管</li>
     <li>subject_story->在与机械军团的战争中进行无人机指挥官</li>
     <li>subject_story->组成了由机械犬组成的特种勤务队，迅速取得优异成绩</li>
-    <li>subject_story->促成了中世界星球的半导体工业革命</li>
+    <li>subject_story->促成了中寰世界星球上的半导体工业革命</li>
     <li>subject_gerund->优化机器学习演算法</li>
   </DMS_UAVBasis.generalRules.rulesStrings>
   

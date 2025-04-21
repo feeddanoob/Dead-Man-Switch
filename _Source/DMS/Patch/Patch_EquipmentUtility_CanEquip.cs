@@ -34,7 +34,6 @@ namespace DMS
                 }
                 else if (thing.def.HasModExtension<HeavyEquippableExtension>())
                 {
-                    //Log.Error("pawn isn't weapon usable, and weapon is heavy");
                     if (thing.def.GetModExtension<HeavyEquippableExtension>().CanEquippedBy(pawn))
                     {
                         __result = true;

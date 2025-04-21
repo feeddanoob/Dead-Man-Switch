@@ -332,6 +332,14 @@
 				<li>Legs</li>
 				<li>Waist</li>
 			</bodyPartGroups>
+			<drawData>
+				<defaultData>
+					<layer>30</layer>
+				</defaultData>
+				<dataNorth>
+					<layer>88</layer>
+				</dataNorth>
+			</drawData>
 			<wornGraphicPath>Things/Apparel/ExoSkelton/Apparel</wornGraphicPath>
 			<blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
 			<layers>
