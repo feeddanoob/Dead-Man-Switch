@@ -27,6 +27,7 @@ namespace DMS
     }
     public class AirSupportComp_SetOriginFromClosestBase : AirSupportComp_SetOrigin
     {
+        FloatRange angleRange = new(-30, 30);
         public override void Trigger(AirSupportDef def, Thing trigger, Map map, LocalTargetInfo target)
         {
             base.Trigger(def, trigger, map, target);
@@ -36,8 +37,8 @@ namespace DMS
             list.OrderBy(x => map.GetRangeBetweenTiles(x.Tile)).ToList();
             list.Reverse();
             WorldObject worldObject = list.First();
-            def.tempOriginCache = WorldAngleUtils.Position(map.GetAngleBetweenTiles(worldObject.Tile), map);
-            Messages.Message("DMS_AirSupportFromClosestBase".Translate(worldObject.Label), MessageTypeDefOf.NeutralEvent, false);
+            def.tempOriginCache = WorldAngleUtils.Position(map.GetAngleBetweenTiles(worldObject.Tile) + angleRange.RandomInRange, map);
+            Messages.Message("DMS_AirSupportFromClosestBase".Translate(worldObject.Label, def.label), MessageTypeDefOf.NeutralEvent, false);
         }
     }
 

@@ -249,6 +249,10 @@
 				<supportDef>DMS_AirRaidTestIII</supportDef>
 				<label>rocket barrage from base</label>
 			</li>
+			<li Class="DMS.CompProperties_AirSupportSummoner">
+				<supportDef>DMS_155mm_Bombard</supportDef>
+				<label>shell barrage from base</label>
+			</li>
 		</comps>
 	</ThingDef>
 </Defs>

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
- 
+  
+  <!-- EN: Call artillery bombard -->
+  <DMS_Call_MortarSupport.label>呼叫迫击砲轰炸</DMS_Call_MortarSupport.label>
+  <!-- EN: Apply the access of orbital bandwidth support, the amount of bandwidth is depend on applicant's title. This support will be valid unless death or defection occurs on applicant. -->
+  <DMS_Call_MortarSupport.description>向最近的基地请求81毫米迫击砲支援，他们将向目标位置发射燃烧弹。响应的迫击砲数量并不固定，且砲击精度也有一定的浮动。</DMS_Call_MortarSupport.description>
+  
+  <!-- EN: Call artillery bombard -->
+  <DMS_Call_ArtillerySupport.label>呼叫加农砲轰炸</DMS_Call_ArtillerySupport.label>
+  <!-- EN: Apply the access of orbital bandwidth support, the amount of bandwidth is depend on applicant's title. This support will be valid unless death or defection occurs on applicant. -->
+  <DMS_Call_ArtillerySupport.description>向最近的基地请求155毫米加农砲的砲击支援。响应的火砲数量并不固定，且砲击精度也有一定的浮动。</DMS_Call_ArtillerySupport.description>
+
   <!-- EN: bandwidth support -->
   <DMS_Bandwidth.label>带宽支援</DMS_Bandwidth.label>
   <!-- EN: Apply the access of orbital bandwidth support, the amount of bandwidth is depend on applicant's title. This support will be valid unless death or defection occurs on applicant. -->

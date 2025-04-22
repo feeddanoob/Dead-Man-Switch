@@ -1,5 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
+
+  <!-- EN: Call artillery bombard -->
+  <DMS_Call_MortarSupport.label>Call mortar bombard</DMS_Call_MortarSupport.label>
+  <!-- EN: Apply the access of orbital bandwidth support, the amount of bandwidth is depend on applicant's title. This support will be valid unless death or defection occurs on applicant. -->
+  <DMS_Call_MortarSupport.description>Request 81mm mortar support from the nearest base, they will deliver incendiary shells to the targeted position. The number of available mortars is not fixed, and the bombardment accuracy also has certain differences.</DMS_Call_MortarSupport.description>
+  
+  <!-- EN: Call artillery bombard -->
+  <DMS_Call_ArtillerySupport.label>Call artillery bombard</DMS_Call_ArtillerySupport.label>
+  <!-- EN: Apply the access of orbital bandwidth support, the amount of bandwidth is depend on applicant's title. This support will be valid unless death or defection occurs on applicant. -->
+  <DMS_Call_ArtillerySupport.description>Request 155mm artillery support from the nearest base. The number of available artillery pieces is not fixed, and the bombardment accuracy also has certain differences.</DMS_Call_ArtillerySupport.description>
   
   <!-- EN: bandwidth support -->
   <DMS_Bandwidth.label>Bandwidth Support</DMS_Bandwidth.label>

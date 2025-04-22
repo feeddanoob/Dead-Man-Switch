@@ -46,4 +46,5 @@
   <DMS_Req_WeaponFilter>Limited to use listed weapon below</DMS_Req_WeaponFilter>
   <DMS_Req_NoWeaponFilter>No other weapon restrictions</DMS_Req_NoWeaponFilter>
 
+  <DMS_AirSupportFromClosestBase>{1} from {0} is inbound.</DMS_AirSupportFromClosestBase>
 </LanguageData>

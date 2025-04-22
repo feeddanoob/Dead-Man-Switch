@@ -80,4 +80,6 @@
   <DMS_Req_BodySize>可直接装备支援体型要求不高于: {0} 的重型武器</DMS_Req_BodySize>
   <DMS_Req_WeaponFilter>仅能够使用下列的武器</DMS_Req_WeaponFilter>
   <DMS_Req_NoWeaponFilter>没有其他装备限制</DMS_Req_NoWeaponFilter>
+  
+  <DMS_AirSupportFromClosestBase>来自基地{0}的{1}正在抵达。</DMS_AirSupportFromClosestBase>
 </LanguageData>

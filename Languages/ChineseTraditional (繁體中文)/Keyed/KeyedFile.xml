@@ -81,5 +81,5 @@
   <DMS_Req_WeaponFilter>僅能夠使用下列的武器</DMS_Req_WeaponFilter>
   <DMS_Req_NoWeaponFilter>沒有其他裝備限制</DMS_Req_NoWeaponFilter>
   
-  <DMS_AirSupportFromClosestBase>來自基地{0}的空中支援已經起飛。</DMS_AirSupportFromClosestBase>
+  <DMS_AirSupportFromClosestBase>來自基地{0}的{1}正在抵達。</DMS_AirSupportFromClosestBase>
 </LanguageData>

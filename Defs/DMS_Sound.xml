@@ -268,7 +268,79 @@
       </li>
     </subSounds>
   </SoundDef>
-  
+
+  <SoundDef>
+    <defName>DMS_JetFlyBy</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>6</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>DMS_CAS/JetFlyBy</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.954118~1.045882</pitchRange>
+        <volumeRange>20~30</volumeRange>
+        <distRange>0~200</distRange>
+        <muteWhenPaused>true</muteWhenPaused>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>DMS_Shot_DistanceMortar</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>6</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>DMS_CAS/Artillery/120mmMortar</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.954118~1.045882</pitchRange>
+        <volumeRange>30~60</volumeRange>
+        <distRange>0~200</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>DMS_Shot_DistanceDawnblade</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>6</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>DMS_CAS/Artillery/76mmNavalGun</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.954118~1.045882</pitchRange>
+        <volumeRange>30~40</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>DMS_Shot_DistanceEmpero</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>18</maxSimultaneous>
+    <maxVoices>15</maxVoices>
+    <priorityMode>PrioritizeNewest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>DMS_CAS/Artillery/155mmArtillery</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.90~1.05</pitchRange>
+        <volumeRange>30~60</volumeRange>
+        <distRange>0~200</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
   <SoundDef>
     <defName>DMS_Shot_GSh</defName>
     <context>MapOnly</context>

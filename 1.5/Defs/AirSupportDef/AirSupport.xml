@@ -4,7 +4,7 @@
 		<defName>DMS_AirRaidTest</defName>
 		<label>Air Raid Test</label>
 		<comps>
-			<li Class="DMS.AirSupportComp_SetOriginRandomEdge"/>
+			<li Class="DMS.AirSupportComp_SetOriginRandomEdge" />
 			<li Class="DMS.AirSupportComp_StrafeII">
 				<ProjectileDef>Bullet_CASAC</ProjectileDef>
 				<spreadRadius>3</spreadRadius><!-- 散佈 -->
@@ -18,6 +18,12 @@
 				<projOffsets>
 					<li>(0, 0, 1)</li>
 				</projOffsets>
+			</li>
+			<li Class="DMS.AirSupportComp_Effecter">
+				<effecterDef>DMS_LaunchDust_Grenade</effecterDef>
+			</li>
+			<li Class="DMS.AirSupportComp_Sound">
+				<soundDef>DMS_JetFlyBy</soundDef>
 			</li>
 		</comps>
 	</DMS.AirSupportDef>
@@ -42,20 +48,22 @@
 					<li>(-1, 0, 0)</li>
 				</projOffsets>
 			</li>
+			<li Class="DMS.AirSupportComp_Sound">
+				<soundDef>DMS_JetFlyBy</soundDef>
+			</li>
 		</comps>
 	</DMS.AirSupportDef>
-	
+
 	<DMS.AirSupportDef>
 		<defName>DMS_AirRaidTestIII</defName>
 		<label>Air Raid Test</label>
 		<comps>
-			<li Class="DMS.AirSupportComp_SetOriginFromClosestBase">
-			</li>
+			<li Class="DMS.AirSupportComp_SetOriginFromClosestBase" />
 			<li Class="DMS.AirSupportComp_StrafeII">
 				<ProjectileDef>Proj_RocketCAS</ProjectileDef>
-				<burstCount>2</burstCount>
-				<burstInterval>30</burstInterval>
-				<singleBurstCount>2</singleBurstCount>
+				<burstCount>4</burstCount>
+				<burstInterval>10</burstInterval>
+				<singleBurstCount>1</singleBurstCount>
 				<delayRange>120~300</delayRange>
 				<lastShotDelayRange>60~120</lastShotDelayRange>
 				<flyByThingDef>DMS_AirRaidFlyBy</flyByThingDef>
@@ -65,36 +73,135 @@
 					<li>(-1, 0, 0)</li>
 				</projOffsets>
 			</li>
+			<li Class="DMS.AirSupportComp_Sound">
+				<soundDef>DMS_JetFlyBy</soundDef>
+			</li>
 		</comps>
 	</DMS.AirSupportDef>
 
-	
 	<DMS.AirSupportDef>
-		<defName>DMS_AirRaidTestIV</defName>
-		<label>Bombard Test</label>
+		<defName>DMS_Mortar_Bombard</defName>
+		<label>mortar bombard</label>
 		<comps>
 			<li Class="DMS.AirSupportComp_SetOriginFromClosestBase">
 			</li>
-			<li Class="DMS.AirSupportComp_StrafeII">
-				<ProjectileDef>Proj_RocketCAS</ProjectileDef>
-				<burstCount>2</burstCount>
-				<burstInterval>30</burstInterval>
-				<singleBurstCount>2</singleBurstCount>
-				<delayRange>120~300</delayRange>
-				<lastShotDelayRange>60~120</lastShotDelayRange>
-				<flyByThingDef>DMS_AirRaidFlyBy</flyByThingDef>
-				<soundDef>RocketswarmLauncher_Fire</soundDef>
-				<projOffsets>
-					<li>(1, 0, 0)</li>
-					<li>(-1, 0, 0)</li>
-				</projOffsets>
+			<li Class="DMS.AirSupportComp_Bombard">
+				<ProjectileDef>Bullet_Shell_Incendiary</ProjectileDef>
+				<spreadRadius>14</spreadRadius>
+				<burstCount>3~6</burstCount>
+				<burstInterval>2~100</burstInterval>
+				<delayRange>360~400</delayRange>
+				<delayRangeSound>40~50</delayRangeSound>
+				<soundDef>DMS_Shot_DistanceMortar</soundDef>
 			</li>
 		</comps>
 	</DMS.AirSupportDef>
 
+	<DMS.AirSupportDef>
+		<defName>DMS_155mm_Bombard</defName>
+		<label>artillery bombard</label>
+		<comps>
+			<li Class="DMS.AirSupportComp_SetOriginFromClosestBase">
+			</li>
+			<li Class="DMS.AirSupportComp_Bombard">
+				<ProjectileDef>DMS_Bullet_EmperoExplosive</ProjectileDef>
+				<spreadRadius>10</spreadRadius>
+				<burstCount>3~9</burstCount>
+				<burstInterval>2~100</burstInterval>
+				<delayRange>120~300</delayRange>
+				<delayRangeSound>8~10</delayRangeSound>
+				<soundDef>DMS_Shot_DistanceEmpero</soundDef>
+			</li>
+		</comps>
+	</DMS.AirSupportDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>DMS_Bullet_EmperoExplosive</defName>
+		<label>high-explosive shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/ShellHighExplosive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>DMS.Projectile_ConeExplosive</thingClass>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<neverMultiSelect>true</neverMultiSelect>
+		<projectile>
+			<alwaysFreeIntercept>false</alwaysFreeIntercept>
+			<extraDamages>
+				<li>
+					<def>Stun</def>
+					<amount>10</amount>
+					<chance>0.25</chance>
+				</li>
+			</extraDamages>
+			<damageDef>Bomb</damageDef>
+			<!-- damage amount is the damage def default -->
+			<speed>60</speed>
+			<explosionRadius>4.9</explosionRadius>
+			<flyOverhead>true</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+		<modExtensions>
+			<li Class="DMS.ExplosiveExtension">
+				<damage>Bullet</damage>
+				<damageAmount>100</damageAmount>
+				<armorPen>2</armorPen>
+				<preExplosionOffset>1</preExplosionOffset>
+				<range>7</range>
+				<swayAngle>60</swayAngle>
+				<doVisualEffects>false</doVisualEffects>
+				<effecterDef>DMS_ImpactDust</effecterDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<EffecterDef>
+		<defName>DMS_ImpactDust</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<fleckDef>DustPuff</fleckDef>
+				<burstCount>13</burstCount>
+				<speed>0~0.1</speed>
+				<useTargetAInitialRotation>true</useTargetAInitialRotation>
+				<positionRadiusMin>3</positionRadiusMin>
+				<positionRadius>10</positionRadius>
+				<scale>2~3</scale>
+				<angle>-360~360</angle>
+				<rotationRate>-1~1</rotationRate>
+				<airTime>1~5</airTime>
+				<orbitOrigin>true</orbitOrigin>
+				<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+				<absoluteAngle>false</absoluteAngle>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<fleckDef>DustPuff</fleckDef>
+				<burstCount>8</burstCount>
+				<speed>-1.5~-1</speed>
+				<useTargetAInitialRotation>true</useTargetAInitialRotation>
+				<positionRadiusMin>1</positionRadiusMin>
+				<positionRadius>3</positionRadius>
+				<scale>2~3</scale>
+				<angle>-180~180</angle>
+				<rotationRate>-1~1</rotationRate>
+				<airTime>1~5</airTime>
+				<orbitOrigin>true</orbitOrigin>
+				<positionLerpFactor>0.9</positionLerpFactor>
+				<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+				<absoluteAngle>false</absoluteAngle>
+			</li>
+		</children>
+	</EffecterDef>
+
 	<ThingDef ParentName="EtherealThingBase">
 		<defName>DMS_AirRaidFlyBy</defName>
-		<label>jet</label>
+		<label>sparrow</label>
 		<thingClass>DMS.FlyByThing</thingClass>
 		<drawerType>RealtimeOnly</drawerType>
 		<tickerType>Normal</tickerType>
@@ -109,13 +216,14 @@
 			<speed>60</speed>
 			<zPositionCurve>
 				<points>
-					<li>(-100,5)</li>
-					<li>(-50,2)</li>
-					<li>(-20,1)</li>
-					<li>(0,1)</li>
-					<li>(20,2)</li>
-					<li>(50,5)</li>
-					<li>(100,10)</li>
+					<li>(-100,7)</li>
+					<li>(-40,5)</li>
+					<li>(-20,4)</li>
+					<li>(0,4.25)</li>
+					<li>(10,4.5)</li>
+					<li>(20,4.75)</li>
+					<li>(40,5)</li>
+					<li>(100,6)</li>
 				</points>
 			</zPositionCurve>
 		</skyfaller>
@@ -129,9 +237,11 @@
 				<offsetMin>(0.5, 0, -0.5)</offsetMin>
 				<offsetMax>(0.5, 0, 0.5)</offsetMax>
 				<rotationRate>-90~90</rotationRate>
-				<!--Actually this reads angle-->
+				<!--Actually
+				this reads angle-->
 				<velocityX>179~181</velocityX>
-				<!--Actually this reads speed-->
+				<!--Actually
+				this reads speed-->
 				<velocityY>30~60</velocityY>
 			</li>
 			<li Class="CompProperties_ThrownFleckEmitter">
@@ -143,9 +253,11 @@
 				<offsetMin>(-0.5, 0, -0.5)</offsetMin>
 				<offsetMax>(-0.5, 0, 0.5)</offsetMax>
 				<rotationRate>-90~90</rotationRate>
-				<!--Actually this reads angle-->
+				<!--Actually
+				this reads angle-->
 				<velocityX>179~181</velocityX>
-				<!--Actually this reads speed-->
+				<!--Actually
+				this reads speed-->
 				<velocityY>30~60</velocityY>
 			</li>
 		</comps>
@@ -226,7 +338,8 @@
 		<solidTime>0</solidTime>
 		<fadeOutTime>2.2</fadeOutTime>
 		<growthRate>2</growthRate>
-		<speedPerTime>-40</speedPerTime>
+		<speedPerTime>-40~-10</speedPerTime>
 		<rotateTowardsMoveDirectionExtraAngle>15</rotateTowardsMoveDirectionExtraAngle>
 	</FleckDef>
+
 </Defs>

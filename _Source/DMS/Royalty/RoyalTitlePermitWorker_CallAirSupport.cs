@@ -1,10 +1,12 @@
 ﻿using RimWorld;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Verse;
+using static System.Collections.Specialized.BitVector32;
 
-namespace DMS.Royalty
+namespace DMS
 {
     public class RoyalTitlePermitWorker_CallAirSupport : RoyalTitlePermitWorker_Targeted
     {
@@ -45,6 +47,7 @@ namespace DMS.Royalty
                 action = delegate
                 {
                     BeginCallSupport(pawn, map, faction, free);
+                    AfterCallActions(pawn, map, faction, free);
                 };
             }
             yield return new FloatMenuOption(description, action, faction.def.FactionIcon, faction.Color);
@@ -75,9 +78,13 @@ namespace DMS.Royalty
             };
             Find.Targeter.BeginTargeting(this);
         }
-    }
-    public class AirSupportExtension : DefModExtension
-    {
-        public AirSupportDef airSupportDef;
+        private void AfterCallActions(Pawn caller, Map map, Faction faction, bool free)
+        {
+            caller.royalty.GetPermit(def, faction).Notify_Used();
+            if (!free)
+            {
+                caller.royalty.TryRemoveFavor(faction, def.royalAid.favorCost);
+            }
+        }
     }
 }

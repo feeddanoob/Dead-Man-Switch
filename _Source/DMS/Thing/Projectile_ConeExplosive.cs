@@ -21,16 +21,17 @@ namespace DMS
         {
             if (this.def.HasModExtension<ExplosiveExtension>())
             {
-                //Log.Message(Angle.ToAngleFlat());
                 ExplosiveExtension ext = this.def.GetModExtension<ExplosiveExtension>();
                 int dmg = ext.damageAmount != -1 ? ext.damageAmount : this.DamageAmount;
                 float armorPen = ext.armorPen != -1 ? ext.armorPen : this.ArmorPenetration;
                 IntVec3 offsetPos = Position - (Angle * ext.preExplosionOffset).ToIntVec3();
+                var things = Map.listerThings.ThingsInGroup(ThingRequestGroup.Projectile);
                 GenExplosion.DoExplosion(center: offsetPos, Map, ext.range,
                 ext.damage, this.launcher,
                 dmg, armorPen, ext.sound, this.launcher.def, projectile: this.def,
                 affectedAngle: new FloatRange(Angle.ToAngleFlat() - ext.swayAngle, Angle.ToAngleFlat() + ext.swayAngle),
-                    doVisualEffects: ext.doVisualEffects, doSoundEffects: ext.sound != null);
+                doVisualEffects: ext.doVisualEffects, doSoundEffects: ext.sound != null,
+                ignoredThings: things);
                 ext.effecterDef?.Spawn(offsetPos, DestinationCell, this.Map, 1);
             }
             else //默認值

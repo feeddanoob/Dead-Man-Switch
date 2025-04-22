@@ -1,23 +1,50 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <!-- 空襲支援
+  <!-- 各類支援 -->
   <RoyalTitlePermitDef>
-    <defName>DMS_Call_AirSupport</defName>
-    <label>Call Air Support</label>
-    <description>Call for a drop of combat supplies.</description>
-    <workerClass>DMS.RoyalTitlePermitWorker_AirSupport</workerClass>
+    <defName>DMS_Call_MortarSupport</defName>
+    <label>Call mortar bombard</label>
+    <description>Request 81mm mortar support from the nearest base, they will deliver incendiary shells to the targeted position. The number of available mortars is not fixed, and the bombardment accuracy also has certain differences.</description>
+    <workerClass>DMS.RoyalTitlePermitWorker_CallAirSupport</workerClass>
+    <faction>DMS_Army</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,4)</uiPosition>
+    <royalAid>
+      <favorCost>1</favorCost>
+      <aidDurationDays>2.5</aidDurationDays>
+      <targetingRange>99.9</targetingRange>
+    </royalAid>
+    <minTitle>DMS_Corporal</minTitle>
+    <cooldownDays>1</cooldownDays>
+    <modExtensions>
+      <li Class="DMS.AirSupportExtension">
+        <airSupportDef>DMS_Mortar_Bombard</airSupportDef>
+      </li>
+    </modExtensions>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>DMS_Call_ArtillerySupport</defName>
+    <label>Call artillery bombard</label>
+    <description>Request 155mm artillery support from the nearest base. The number of available artillery pieces is not fixed, and the bombardment accuracy also has certain differences.</description>
+    <workerClass>DMS.RoyalTitlePermitWorker_CallAirSupport</workerClass>
     <faction>DMS_Army</faction>
     <permitPointCost>1</permitPointCost>
     <uiPosition>(1,4)</uiPosition>
-    <usableOnWorldMap>true</usableOnWorldMap>
+    <prerequisite>DMS_Call_MortarSupport</prerequisite>
     <royalAid>
       <favorCost>1</favorCost>
-      <aidDurationDays>5</aidDurationDays>
+      <aidDurationDays>2.5</aidDurationDays>
       <targetingRange>99.9</targetingRange>
     </royalAid>
     <minTitle>DMS_PreSergeant</minTitle>
     <cooldownDays>5</cooldownDays>
-  </RoyalTitlePermitDef> -->
+    <modExtensions>
+      <li Class="DMS.AirSupportExtension">
+        <airSupportDef>DMS_155mm_Bombard</airSupportDef>
+      </li>
+    </modExtensions>
+  </RoyalTitlePermitDef>
 
   <!-- 徵募隊 -->
   <RoyalTitlePermitDef>

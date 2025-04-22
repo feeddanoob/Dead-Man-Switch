@@ -4,6 +4,63 @@ using Verse;
 
 namespace DMS
 {
+    public class AirSupportComp_Bombard : AirSupportComp
+    {
+        public ThingDef ProjectileDef;
+
+        public float spreadRadius = 5;
+
+        public IntRange delayRange = new(120, 150);
+        public IntRange delayRangeSound = new(20, 30);//在這裡是聲音到抵達之間的間隔。
+
+        public IntRange burstCount = new(1, 2), burstInterval = new(5, 20);
+
+        public SoundDef soundDef;
+
+        public override void DrawHighlight(Map map, IntVec3 callerPos, LocalTargetInfo target)
+        {
+            GenDraw.DrawRadiusRing(target.Cell, spreadRadius / 2, Color.white);
+            GenDraw.DrawRadiusRing(target.Cell, spreadRadius * 1.5f, Color.red);
+        }
+        public override void Trigger(AirSupportDef def, Thing triggerer, Map map, LocalTargetInfo target)
+        {
+            int delay = Find.TickManager.TicksGame + delayRange.RandomInRange;
+            var c = GenRadial.NumCellsInRadius(Mathf.Abs(Rand.Gaussian(0, spreadRadius)));
+            var count = burstCount.RandomInRange;
+            for (int i = 0; i < count; i++)
+            {
+                var cell = GenRadial.RadialPattern[Rand.RangeInclusive(0, c)] + target.Cell;
+                if (!cell.InBounds(map))
+                {
+                    i--;
+                    continue;
+                }
+
+                GameComponent_CAS.AddData(new AirSupportData_LaunchProjectile()
+                {
+                    projectileDef = ProjectileDef,
+                    map = map,
+                    target = GenRadial.RadialPattern[Rand.RangeInclusive(0, c)] + target.Cell,
+                    triggerTick = delay,
+                    triggerer = triggerer,
+                    triggerFaction = triggerer.Faction,
+                    origin = def.tempOriginCache
+                });
+                int interval = burstInterval.RandomInRange;
+                if (soundDef != null) GameComponent_CAS.AddData(new AirSupportData_Sound()
+                {
+                    soundDef = soundDef,
+                    map = map,
+                    target = def.tempOriginCache.ToIntVec3(),
+                    triggerTick = Find.TickManager.TicksGame + delayRangeSound.RandomInRange + interval,
+                    triggerer = triggerer,
+                    triggerFaction = triggerer.Faction,
+                });
+
+                delay += interval;
+            }
+        }
+    }
     public class AirSupportComp_Strafe : AirSupportComp
     {
         public ThingDef ProjectileDef, flyByThingDef;
