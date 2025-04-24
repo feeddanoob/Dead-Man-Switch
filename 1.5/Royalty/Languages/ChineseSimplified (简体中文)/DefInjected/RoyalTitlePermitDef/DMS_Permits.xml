@@ -29,7 +29,7 @@
   <!-- EN: Call recruitment agency -->
   <DMS_Call_TributeCollector.label>呼叫征募中介</DMS_Call_TributeCollector.label>
   <!-- EN: Call for a group of recruitment agency to transfer prisoners of war to the Colonial fleet. -->
-  <DMS_Call_TributeCollector.description>呼叫一支征募中介小队来接受殖民地的战俘。</DMS_Call_TributeCollector.description>
+  <DMS_Call_TributeCollector.description>呼叫一支征募中介小队来接收殖民地的战俘。</DMS_Call_TributeCollector.description>
   
   <!-- EN: call transport shuttle -->
   <DMS_CallTransportShuttle.label>呼叫太空梭</DMS_CallTransportShuttle.label>
