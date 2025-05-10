@@ -281,6 +281,7 @@
   <!--通古斯卡-->
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_Tunguska</defName>
+	<thingClass MayRequire="CETeam.CombatExtended">CombatExtended.Building_CIWS_CE</thingClass>
     <label>Tunguska</label>
     <description>A remote-controlled turret composed of two 2A38 autoaconnon and eight missile launchers. Due to its cheap maintenance and modification costs, it is commonly seen in colonial fleet outposts in rim worlds.</description>
     <techLevel>Industrial</techLevel>
@@ -392,7 +393,27 @@
         </targetParams>
         <forcedMissRadius>0.1</forcedMissRadius>
       </li>
+		<!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
+		<li Class="CombatExtended.VerbProperties_CIWSSkyfaller" MayRequire="CETeam.CombatExtended">
+			<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
+			<recoilAmount>0.92</recoilAmount>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_30x165mm_AP</defaultProjectile>
+			<warmupTime>0.1</warmupTime>
+			<range>2500</range>
+			<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+			<burstShotCount>40</burstShotCount>
+			<soundCast>Shot_Autocannon</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>15</muzzleFlashScale>
+			<recoilPattern>Mounted</recoilPattern>
+		</li>
     </verbs>
+	<comps>
+		<li>
+			<compClass MayRequire="CETeam.CombatExtended">CombatExtended.CompVerbDisabler</compClass>
+		</li>
+    </comps>
     <modExtensions>
 			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
 				<def>MF_StandardMuzzleFalsh</def>
@@ -411,6 +432,7 @@
   <!--守門員&方陣融合體-->
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_GateKeeper</defName>
+	<thingClass MayRequire="CETeam.CombatExtended">CombatExtended.Building_CIWS_CE</thingClass>
     <label>Gatekeeper</label>
     <description>A large-caliber multi-barreled machine gun turret typically used on spacecraft and maritime ships. It has an extremely high rates of fire and devastating suppression capabilities.</description>
     <techLevel>Industrial</techLevel>
@@ -527,7 +549,27 @@
         </targetParams>
         <forcedMissRadius>1.5</forcedMissRadius>
       </li>
+		<!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
+		<li Class="CombatExtended.VerbProperties_CIWSSkyfaller" MayRequire="CETeam.CombatExtended">
+			<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
+			<recoilAmount>0.88</recoilAmount>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_30x173mmNATO_AP</defaultProjectile>
+			<warmupTime>0.1</warmupTime>
+			<range>2500</range>
+			<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+			<burstShotCount>50</burstShotCount>
+			<soundCast>Shot_Minigun</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>15</muzzleFlashScale>
+			<recoilPattern>Mounted</recoilPattern>
+		</li>
     </verbs>
+	<comps>
+		<li>
+			<compClass MayRequire="CETeam.CombatExtended">CombatExtended.CompVerbDisabler</compClass>
+		</li>
+    </comps>
     <modExtensions>
 			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
 				<def>MF_StandardMuzzleFalsh</def>
