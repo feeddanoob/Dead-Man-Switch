@@ -67,7 +67,7 @@
 					<defaultProjectile>Bullet_30x165mm_AP</defaultProjectile>
 					<warmupTime>1.2</warmupTime>
 					<range>86</range>
-					<minRange>3.5</minRange>
+					<minRange>12</minRange>
 					<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
 					<burstShotCount>40</burstShotCount>
 					<soundCast>Shot_Autocannon</soundCast>
@@ -117,7 +117,7 @@
 					<defaultProjectile>Bullet_30x173mmNATO_AP</defaultProjectile>
 					<warmupTime>0.8</warmupTime>
 					<range>86</range>
-					<minRange>3.5</minRange>
+					<minRange>9</minRange>
 					<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
 					<burstShotCount>50</burstShotCount>
 					<soundCast>Shot_Minigun</soundCast>
@@ -161,7 +161,7 @@
                     <burstShotCount>4</burstShotCount>
                     <warmupTime>2</warmupTime>
                     <range>110</range>
-                    <minRange>5.2</minRange>
+                    <minRange>6.9</minRange>
                     <soundCast>Explosion_Bomb</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>24</muzzleFlashScale>
@@ -202,7 +202,7 @@
 					<defaultProjectile>Bullet_127x108mm_FMJ</defaultProjectile>
 					<warmupTime>1.4</warmupTime>
 					<range>75</range>
-					<minRange>1.5</minRange>
+					<minRange>3</minRange>
 					<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 					<burstShotCount>8</burstShotCount>
 					<soundCast>Shot_Autocannon</soundCast>
