@@ -54,7 +54,7 @@
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 				<defName>DMS_Gun_Tunguska</defName>
 				<statBases>
-					<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+					<RangedWeapon_Cooldown>0.02</RangedWeapon_Cooldown>
 					<SightsEfficiency>1.5</SightsEfficiency>
 					<ShotSpread>0.05</ShotSpread>
 					<SwayFactor>1.87</SwayFactor>
@@ -104,7 +104,7 @@
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 				<defName>DMS_Gun_GateKeeper</defName>
 				<statBases>
-					<RangedWeapon_Cooldown>0.45</RangedWeapon_Cooldown>
+					<RangedWeapon_Cooldown>0.02</RangedWeapon_Cooldown>
 					<SightsEfficiency>1.5</SightsEfficiency>
 					<ShotSpread>0.05</ShotSpread>
 					<SwayFactor>1.71</SwayFactor>
@@ -189,7 +189,7 @@
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 				<defName>DMS_Gun_Kord</defName>
 				<statBases>
-					<RangedWeapon_Cooldown>0.76</RangedWeapon_Cooldown>
+					<RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
 					<SightsEfficiency>1.2</SightsEfficiency>
 					<ShotSpread>0.05</ShotSpread>
 					<SwayFactor>1.59</SwayFactor>
