@@ -393,21 +393,6 @@
         </targetParams>
         <forcedMissRadius>0.1</forcedMissRadius>
       </li>
-		<!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
-		<li Class="CombatExtended.VerbProperties_CIWSSkyfaller" MayRequire="CETeam.CombatExtended">
-			<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
-			<recoilAmount>0.92</recoilAmount>
-			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_30x165mm_AP</defaultProjectile>
-			<warmupTime>0.01</warmupTime>
-			<range>2500</range>
-			<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-			<burstShotCount>40</burstShotCount>
-			<soundCast>Shot_Autocannon</soundCast>
-			<soundCastTail>GunTail_Heavy</soundCastTail>
-			<muzzleFlashScale>15</muzzleFlashScale>
-			<recoilPattern>Mounted</recoilPattern>
-		</li>
     </verbs>
 	<comps>
 		<li>
@@ -549,21 +534,6 @@
         </targetParams>
         <forcedMissRadius>1.5</forcedMissRadius>
       </li>
-		<!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
-		<li Class="CombatExtended.VerbProperties_CIWSSkyfaller" MayRequire="CETeam.CombatExtended">
-			<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
-			<recoilAmount>0.88</recoilAmount>
-			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_30x173mmNATO_AP</defaultProjectile>
-			<warmupTime>0.01</warmupTime>
-			<range>2500</range>
-			<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-			<burstShotCount>50</burstShotCount>
-			<soundCast>Shot_Minigun</soundCast>
-			<soundCastTail>GunTail_Heavy</soundCastTail>
-			<muzzleFlashScale>15</muzzleFlashScale>
-			<recoilPattern>Mounted</recoilPattern>
-		</li>
     </verbs>
 	<comps>
 		<li>
