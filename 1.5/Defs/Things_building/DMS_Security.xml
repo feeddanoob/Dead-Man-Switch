@@ -281,7 +281,6 @@
   <!--通古斯卡-->
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_Tunguska</defName>
-	<thingClass MayRequire="CETeam.CombatExtended">CombatExtended.Building_CIWS_CE</thingClass>
     <label>Tunguska</label>
     <description>A remote-controlled turret composed of two 2A38 autoaconnon and eight missile launchers. Due to its cheap maintenance and modification costs, it is commonly seen in colonial fleet outposts in rim worlds.</description>
     <techLevel>Industrial</techLevel>
@@ -395,8 +394,8 @@
       </li>
     </verbs>
 	<comps>
-		<li>
-			<compClass MayRequire="CETeam.CombatExtended">CombatExtended.CompVerbDisabler</compClass>
+		<li MayRequire="CETeam.CombatExtended">
+			<compClass>CombatExtended.CompVerbDisabler</compClass>
 		</li>
     </comps>
     <modExtensions>
@@ -417,7 +416,6 @@
   <!--守門員&方陣融合體-->
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_GateKeeper</defName>
-	<thingClass MayRequire="CETeam.CombatExtended">CombatExtended.Building_CIWS_CE</thingClass>
     <label>Gatekeeper</label>
     <description>A large-caliber multi-barreled machine gun turret typically used on spacecraft and maritime ships. It has an extremely high rates of fire and devastating suppression capabilities.</description>
     <techLevel>Industrial</techLevel>
@@ -536,8 +534,8 @@
       </li>
     </verbs>
 	<comps>
-		<li>
-			<compClass MayRequire="CETeam.CombatExtended">CombatExtended.CompVerbDisabler</compClass>
+		<li MayRequire="CETeam.CombatExtended">
+			<compClass>CombatExtended.CompVerbDisabler</compClass>
 		</li>
     </comps>
     <modExtensions>

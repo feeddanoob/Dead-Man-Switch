@@ -4,7 +4,6 @@ using RimWorld;
 using UnityEngine;
 using Verse.AI;
 using System.Linq;
-using static RimWorld.MechClusterSketch;
 
 namespace DMS
 {

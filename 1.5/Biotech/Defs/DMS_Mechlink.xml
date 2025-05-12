@@ -4,7 +4,7 @@
   <!-- Mechlink -->
   <ThingDef ParentName="MechanitorImplantBase">
     <defName>DMS_MechLink</defName>
-    <label>Cluster Transceiver</label>
+    <label>Cluster transceiver</label>
     <description>A man-made bionic implant that allows direct control of mechanoids. No one know if this is the early form of mechlinking or if it's a reverse engineered product of later generations. It functions as a regular mechlink when installed in a colonist.\n\nDue to processing precision issues, these imitation mechlink devices from rim worlds often have installation side effects.</description>
     <thingClass>Mechlink</thingClass>
     <descriptionHyperlinks><HediffDef>MechlinkImplant</HediffDef></descriptionHyperlinks>
