@@ -4,6 +4,8 @@ using RimWorld;
 
 namespace DMS
 {
+    //由於BossgroupDef綁定機械師所以要這樣改。
+
     [StaticConstructorOnStartup]
     [HarmonyPatch(typeof(CallBossgroupUtility), "BossgroupEverCallable")]
     public static class Patch_BossgroupEverCallable

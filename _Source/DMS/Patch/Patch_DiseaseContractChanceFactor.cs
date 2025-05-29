@@ -6,11 +6,13 @@ using System;
 
 namespace DMS
 {
+    //這個是給防化服的，效果是瘟疫事件時不將穿戴者視為感染目標。
+
     [HarmonyPatch(typeof(ImmunityHandler),
         nameof(ImmunityHandler.DiseaseContractChanceFactor),
         new Type[] { typeof(HediffDef), typeof(HediffDef), typeof(BodyPartRecord) },
         new ArgumentType[] { ArgumentType.Normal, ArgumentType.Out, ArgumentType.Normal })]
-    internal static class DiseaseContractChanceFactor
+    internal static class Patch_DiseaseContractChanceFactor
     {
         public static void Postfix(ImmunityHandler __instance, ref float __result)
         {

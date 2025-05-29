@@ -6,7 +6,7 @@ using System;
 namespace DMS
 {
     [StaticConstructorOnStartup]
-    [HarmonyPatch(new Type[] {typeof(PawnGenerationRequest)})]
+    [HarmonyPatch(new Type[] { typeof(PawnGenerationRequest) })]
     [HarmonyPatch(typeof(PawnGenerator))]
     [HarmonyPatch(nameof(PawnGenerator.GeneratePawn))]
 
@@ -14,20 +14,18 @@ namespace DMS
     {
         public static void Postfix(ref Pawn __result)
         {
-            if (ModsConfig.RoyaltyActive)
+            if (!ModsConfig.RoyaltyActive) return;
+            if (__result.ageTracker.AgeBiologicalYears < 1) return;
+            if (!__result.kindDef.HasModExtension<DefaultTilteFactionExtension>()) return;
+
+            Faction faction = Find.FactionManager?.FirstFactionOfDef(__result.kindDef.GetModExtension<DefaultTilteFactionExtension>().faction);
+            if (faction != null)
             {
-                if (__result.kindDef.HasModExtension<DefaultTilteFactionExtension>())
+                foreach (RoyalTitle item in __result.royalty.AllTitlesForReading)
                 {
-                    Faction faction = Find.FactionManager?.FirstFactionOfDef(__result.kindDef.GetModExtension<DefaultTilteFactionExtension>().faction);
-                    if (faction != null)
-                    {
-                        foreach (RoyalTitle item in __result.royalty.AllTitlesForReading)
-                        {
-                            item.faction = faction;
-                        }
-                    }
+                    item.faction = faction;
                 }
-            }       
+            }
         }
     }
 }

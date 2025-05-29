@@ -5,6 +5,10 @@ using System.Linq;
 
 namespace DMS
 {
+    //讓中繼機可以在跟機械師不同地圖時也能控制。
+
+    //此外是讓其他陣營的機械體可以不需要機械師也能受控。
+
     [HarmonyPatch(typeof(Pawn_MechanitorTracker), nameof(Pawn_MechanitorTracker.CanControlMechs), MethodType.Getter)]
     internal static class Patch_CanControlMechs
     {

@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using static RimWorld.MechClusterSketch;
 
 namespace DMS
 {
@@ -17,6 +18,12 @@ namespace DMS
         public static void Postfix(ref OverseerSubjectState __result, CompOverseerSubject __instance)
         {
             if (__instance.parent.TryGetComp<CompDeadManSwitch>() is CompDeadManSwitch comp && comp.woken)
+            {
+                __result = OverseerSubjectState.Overseen;
+            }
+
+            //甚至不確定有沒有效。
+            else if (__instance.parent is Pawn p && p.HostFaction == Faction.OfPlayer)
             {
                 __result = OverseerSubjectState.Overseen;
             }
@@ -33,6 +40,12 @@ namespace DMS
             {
                 __result = true;
             }
+
+            //甚至不確定有沒有效。
+            else if (mech.HostFaction == Faction.OfPlayer)
+            {
+                __result = true;
+            }
         }
     }
     [HarmonyPatch(typeof(Pawn_DraftController), "ShowDraftGizmo",MethodType.Getter)]
@@ -42,6 +55,12 @@ namespace DMS
         public static void Postfix(ref bool __result, Pawn_DraftController __instance)
         {
             if (__instance.pawn.TryGetComp<CompDeadManSwitch>() is CompDeadManSwitch comp && comp.woken)
+            {
+                __result = true;
+            }
+
+            //甚至不確定有沒有效。
+            else if (__instance.pawn.HostFaction == Faction.OfPlayer)
             {
                 __result = true;
             }

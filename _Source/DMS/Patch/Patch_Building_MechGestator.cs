@@ -5,6 +5,8 @@ using Verse;
 
 namespace DMS
 {
+    //確保由玩家所培育的(可裝備武器)機兵不會出廠自帶武器。
+
     [StaticConstructorOnStartup]
     [HarmonyPatch(typeof(Bill_ProductionMech), nameof(Bill_ProductionMech.CreateProducts))]
     static class Patch_Bill_ProductionMech_CreateProducts

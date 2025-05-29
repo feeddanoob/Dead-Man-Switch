@@ -4,11 +4,36 @@ using System.Linq;
 using System.Collections.Generic;
 using RimWorld;
 using System;
-using static RimWorld.MechClusterSketch;
-using static RimWorld.PsychicRitualRoleDef;
 
 public static partial class CheckUtility
 {
+    public static bool InRange(Thing A, LocalTargetInfo B, float squaredRange)
+    {
+        if ((float)IntVec3Utility.DistanceToSquared(A.Position, B.Cell) <= squaredRange)
+        {
+            return true;
+        }
+        return false;
+    }
+    public static bool HasSubRelay(Pawn pawn,out CompSubRelay subRelay)
+    {
+        subRelay = null;
+
+        if(pawn ==null) return false;
+
+        if (pawn.TryGetComp<CompSubRelay>(out subRelay)) return true;
+        if (pawn.apparel != null)
+        {
+            foreach (var item in pawn.apparel.WornApparel)
+            {
+                if (item.TryGetComp<CompSubRelay>(out subRelay))
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
     public static bool IsMech(Pawn pawn)
     {
         bool flag1 = pawn.GetComp<CompOverseerSubject>() != null;

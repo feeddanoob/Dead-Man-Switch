@@ -5,6 +5,8 @@ using HarmonyLib;
 
 namespace DMS
 {
+    //這個是給防化服的，效果是瘟疫事件時不將穿戴者視為感染目標。
+
     [HarmonyPatch(typeof(MetalhorrorUtility), nameof(MetalhorrorUtility.CanBeInfected))]
     internal static class Patch_CanBeInfected
     {
