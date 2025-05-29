@@ -31,7 +31,7 @@ namespace DMSCE
         public override bool TryCastShot()
         {
             currentTarget = new LocalTargetInfo(path[ShotsPerBurst - burstShotsLeft]);
-            ShiftTarget(ShiftVecReportFor(currentTarget), false, false, false);
+            ShiftTarget(ShiftVecReportFor(currentTarget), false, false);
             shotAngle = targetShotAngle;
             originalTargetTemp = originalTarget;
 
@@ -55,7 +55,7 @@ namespace DMSCE
 
             base.WarmupComplete();
 
-            ShiftTarget(ShiftVecReportFor(currentTarget), false, false, false);
+            ShiftTarget(ShiftVecReportFor(currentTarget), false, false);
             targetShotAngle = shotAngle;
             state = VerbState.Bursting;
             TryCastNextBurstShot();

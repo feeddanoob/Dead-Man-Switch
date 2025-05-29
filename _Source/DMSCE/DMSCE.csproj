@@ -40,8 +40,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="CombatExtended">
-      <HintPath>..\..\..\_Dead-Man-Switch-AncientCorps\_source\Reference\CombatExtended.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\Reference\CombatExtended.dll</HintPath>
     </Reference>
     <Reference Include="DMS">
       <HintPath>..\..\1.5\Assemblies\DMS.dll</HintPath>
