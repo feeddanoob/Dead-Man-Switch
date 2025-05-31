@@ -15,12 +15,17 @@
     <iconPath>UI/StyleCategories/NaraIcon_Ingame</iconPath>
     <iconColor>(150, 150, 150)</iconColor>
     <thingStyleCategories>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
+      <li>
         <category>DMS_Industrial</category>
         <priority>1</priority>
       </li>
     </thingStyleCategories>
     <styleItemTags>
+      <li>
+        <tag>Urban</tag>
+        <baseWeight>10</baseWeight>
+        <weightFactor>10</weightFactor>
+      </li>
       <li>
         <tag>NoBeard</tag>
         <baseWeight>1</baseWeight>

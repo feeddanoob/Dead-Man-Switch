@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: Gestate Ape Automatroid -->
@@ -32,14 +32,14 @@
   <!-- EN: Gestate a Field Command Automatroid -->
   <DMS_Make_FieldCommand.label>組裝中繼指揮</DMS_Make_FieldCommand.label>
   <!-- EN: Gestate a Field Command Automatroid. -->
-  <DMS_Make_FieldCommand.description>組裝中繼指揮，一種安裝了全向天線的機械師中繼指揮型號，具有較大的指揮范圍於一定的可改裝性。</DMS_Make_FieldCommand.description>
+  <DMS_Make_FieldCommand.description>組裝中繼指揮，一種安裝了全向天線的御機使中繼指揮型號，具有較大的指揮范圍於一定的可改裝性。</DMS_Make_FieldCommand.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_FieldCommand.jobString>組裝機械體中</DMS_Make_FieldCommand.jobString>
   
   <!-- EN: Gestate Gladiator -->
   <DMS_Make_Gladiator.label>組裝鬥士</DMS_Make_Gladiator.label>
   <!-- EN: Gestate a gladiator Automatroid. -->
-  <DMS_Make_Gladiator.description>組裝鬥士，一種在冷兵器格鬥戰特化的浪人泛生型號。</DMS_Make_Gladiator.description>
+  <DMS_Make_Gladiator.description>組裝鬥士，一種在冷兵器格鬥戰高度特化的浪人泛生型號。</DMS_Make_Gladiator.description>
   <!-- EN: Gestating mech. -->
   <DMS_Make_Gladiator.jobString>組裝機械體中</DMS_Make_Gladiator.jobString>
   

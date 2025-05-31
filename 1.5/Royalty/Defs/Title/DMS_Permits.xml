@@ -1,9 +1,74 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  <!-- 各類支援 -->
+  <RoyalTitlePermitDef>
+    <defName>DMS_Call_MortarSupport</defName>
+    <label>Call mortar bombard</label>
+    <description>Request 81mm mortar support from the nearest base, they will deliver incendiary shells to the targeted position. The number of available mortars is not fixed, and the bombardment accuracy also has certain differences.</description>
+    <workerClass>DMS.RoyalTitlePermitWorker_CallAirSupport</workerClass>
+    <faction>DMS_Army</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,4)</uiPosition>
+    <royalAid>
+      <favorCost>1</favorCost>
+      <aidDurationDays>2.5</aidDurationDays>
+      <targetingRange>99.9</targetingRange>
+    </royalAid>
+    <minTitle>DMS_Corporal</minTitle>
+    <cooldownDays>1</cooldownDays>
+    <modExtensions>
+      <li Class="DMS.AirSupportExtension">
+        <airSupportDef>DMS_Mortar_Bombard</airSupportDef>
+      </li>
+    </modExtensions>
+  </RoyalTitlePermitDef>
 
+  <RoyalTitlePermitDef>
+    <defName>DMS_Call_ArtillerySupport</defName>
+    <label>Call artillery bombard</label>
+    <description>Request 155mm artillery support from the nearest base. The number of available artillery pieces is not fixed, and the bombardment accuracy also has certain differences.</description>
+    <workerClass>DMS.RoyalTitlePermitWorker_CallAirSupport</workerClass>
+    <faction>DMS_Army</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,4)</uiPosition>
+    <prerequisite>DMS_Call_MortarSupport</prerequisite>
+    <royalAid>
+      <favorCost>1</favorCost>
+      <aidDurationDays>2.5</aidDurationDays>
+      <targetingRange>99.9</targetingRange>
+    </royalAid>
+    <minTitle>DMS_PreSergeant</minTitle>
+    <cooldownDays>5</cooldownDays>
+    <modExtensions>
+      <li Class="DMS.AirSupportExtension">
+        <airSupportDef>DMS_155mm_Bombard</airSupportDef>
+      </li>
+    </modExtensions>
+  </RoyalTitlePermitDef>
+
+  <!-- 徵募隊 -->
+  <RoyalTitlePermitDef>
+    <defName>DMS_Call_TributeCollector</defName>
+    <label>Call recruitment agency</label>
+    <description>Call for a group of recruitment agency to transfer prisoners of war to the Colonial fleet.</description>
+    <workerClass>DMS.RoyalTitlePermitWorker_Trader</workerClass>
+    <faction>DMS_Army</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(5,2)</uiPosition>
+    <royalAid>
+      <favorCost>2</favorCost>
+    </royalAid>
+    <minTitle>DMS_Corporal</minTitle>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <cooldownDays>30</cooldownDays>
+    <modExtensions>
+      <li Class="DMS.PermitTraderExtension">
+        <traderKindDef>DMS_Caravan_TributeCollector</traderKindDef>
+      </li>
+    </modExtensions>
+  </RoyalTitlePermitDef>
 
   <!-- 物品支援 -->
-
   <RoyalTitlePermitDef Name="DMS_DropSupplyBase" Abstract="True">
     <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
     <faction>DMS_Army</faction>
@@ -51,9 +116,6 @@
       <favorCost>3</favorCost>
     </royalAid>
   </RoyalTitlePermitDef>
-
-
-
   <RoyalTitlePermitDef ParentName="DropResourcesBase">
     <defName>DMS_FoodDrop</defName>
     <label>Food Supply Drop</label>

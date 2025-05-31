@@ -468,37 +468,6 @@
     </statBases>
     <intricate>true</intricate>
     <isTechHediff>true</isTechHediff>
-    <comps>
-      <li Class="CompProperties_CompAnalyzableUnlockResearch">
-        <analysisID>123417702</analysisID>
-        <requiresMechanitor>false</requiresMechanitor>
-
-        <!-- Analyzable -->
-
-        <analysisDurationHours>0.5</analysisDurationHours>
-        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
-        <completedLetterLabel>Cluster control chipsets studied: {RESEARCH} unlocked</completedLetterLabel>
-        <completedLetter>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
-        <completedLetterDef>PositiveEvent</completedLetterDef>
-
-        <!-- Interactable -->
-
-        <activateTexPath>UI/Icons/Study</activateTexPath>
-
-        <activateLabelString>Analyze...</activateLabelString>
-        <activateDescString>Analyze the cluster control chipsets</activateDescString>
-        <jobString>Analyze the cluster control chipsets</jobString>
-        <guiLabelString>Choose who should analyze this</guiLabelString>
-        <inspectString>Can be analyzed by a colonist.</inspectString>
-
-        <targetingParameters>
-          <canTargetBuildings>false</canTargetBuildings>
-          <canTargetAnimals>false</canTargetAnimals>
-          <canTargetMechs>false</canTargetMechs>
-          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
-        </targetingParameters>
-      </li>
-    </comps>
     <thingSetMakerTags>
       <li>RewardStandardCore</li>
     </thingSetMakerTags>
@@ -616,13 +585,9 @@
         <useDuration>900</useDuration>
         <floatMenuFactionIcon>Mechanoid</floatMenuFactionIcon>
       </li>
-      <li Class="CompProperties_Useable_CallBossgroup">
+      <li Class="DMS.CompProperties_UseEffectSummonRaid">
         <bossgroupDef>DMS_Sergeant</bossgroupDef>
         <effecterDef>BurnoutMechlinkBoosterUsed</effecterDef>
-        <prepareEffecterDef>MechBandAntennaPrepared</prepareEffecterDef>
-        <unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
-        <unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
-        <delayTicks>120</delayTicks>
       </li>
       <li Class="CompProperties_UseEffectPlaySound">
         <soundOnUsed>MechanoidsWakeUp</soundOnUsed>
@@ -634,5 +599,4 @@
       </li>
     </comps>
   </ThingDef>
-  
 </Defs>

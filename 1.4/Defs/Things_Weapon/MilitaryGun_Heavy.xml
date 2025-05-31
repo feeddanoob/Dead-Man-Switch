@@ -351,7 +351,7 @@
 				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<burstShotCount>5</burstShotCount>
-				<soundCast>Shot_Autocannon</soundCast>
+				<soundCast>DMS_Shot_Tunguska</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>15</muzzleFlashScale>
 				<consumeFuelPerShot>1</consumeFuelPerShot>
@@ -364,7 +364,7 @@
 		<modExtensions>
 			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
 				<def>MF_StandardMuzzleFalsh</def>
-				<drawSize>(1.5,1.5)</drawSize>
+				<drawSize>(1.9,1.75)</drawSize>
 				<offsets>
 					<li>(1.0,0)</li>
 					<li>(1.1,-0.1)</li>

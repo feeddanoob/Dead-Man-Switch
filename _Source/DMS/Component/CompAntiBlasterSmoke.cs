@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse;
 using UnityEngine;
+using System.Reflection;
 
 namespace DMS
 {
@@ -84,16 +85,23 @@ namespace DMS
         private void DoIntercept(Projectile target)
         {
             if (target == null) return;
+            var projectile = target as Projectile;
             if (Props.fleckDef != null)
             {
                 if (parent.DrawPos.ShouldSpawnMotesAt(parent.Map, false))
                 {
+                    FieldInfo origin = typeof(Projectile).GetField("origin", BindingFlags.NonPublic | BindingFlags.Instance);
+                    var originVector = (Vector3)origin.GetValue(projectile);
+                    FieldInfo destination = typeof(Projectile).GetField("destination", BindingFlags.NonPublic | BindingFlags.Instance);
+                    var destinationVector = (Vector3)destination.GetValue(projectile);
+                    var velo = (destinationVector - originVector).normalized;
+
                     FleckCreationData dataStatic = FleckMaker.GetDataStatic(target.DrawPos, parent.Map, Props.fleckDef, Rand.Range(0.5f, 1.5f));
                     dataStatic.rotation = target.Rotation.AsAngle;
                     dataStatic.targetSize = 0;
-                    dataStatic.velocityAngle = target.Rotation.AsAngle;
-                    dataStatic.velocity = Vector3.right;
+                    dataStatic.velocityAngle = velo.ToAngleFlat();
                     dataStatic.velocitySpeed = Rand.Range(target.def.projectile.speed / 2, target.def.projectile.speed);
+                    dataStatic.scale = 2;
                     parent.Map.flecks.CreateFleck(dataStatic);
                 }
             }

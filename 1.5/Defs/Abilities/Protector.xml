@@ -11,6 +11,7 @@
 		<verbProperties>
 		  <verbClass>Verb_CastAbility</verbClass>
 		  <range>7.9</range>
+		  <minRange>2</minRange>
 		  <warmupTime>1</warmupTime>
 		  <soundCast>BulletImpact_Metal</soundCast>
 		  <muzzleFlashScale>120</muzzleFlashScale>

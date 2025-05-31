@@ -14,6 +14,6 @@
   <!-- EN: Precision Marksmanship Mode -->
   <DMS_SharpShooting.label>精确狙击模式</DMS_SharpShooting.label>
   <!-- EN: This unit is performing intracate ballistic calculations and cannot move. Once its calculations are complete, it will take a precision shot with deadly accuracy. -->
-  <DMS_SharpShooting.description>该装置处於绝对静止状态，利用内建弹道计算机测量极其详细的射击数据，从而准确击中预定目标。</DMS_SharpShooting.description>
+  <DMS_SharpShooting.description>让机体处于绝对静止状态，利用内建弹道计算机测量极其详细的射击数据，从而准确击中预定目标。</DMS_SharpShooting.description>
   
 </LanguageData>

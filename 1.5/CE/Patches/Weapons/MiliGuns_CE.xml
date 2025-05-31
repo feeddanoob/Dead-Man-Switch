@@ -339,7 +339,7 @@
                     <recoilAmount>1.77</recoilAmount>
                 </Properties>
                 <AmmoUser>
-                    <magazineSize>30</magazineSize>
+                    <magazineSize>24</magazineSize>
                     <reloadTime>4.2</reloadTime>
                     <ammoSet>AmmoSet_338Lapua</ammoSet>
                 </AmmoUser>

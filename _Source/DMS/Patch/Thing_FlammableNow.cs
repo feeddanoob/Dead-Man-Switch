@@ -1,8 +1,11 @@
 ﻿using Verse;
 using HarmonyLib;
+using System;
 
 namespace DMS
 {
+    //機體不可燃。
+
     [HarmonyPatch(typeof(Thing), "get_FlammableNow")]
     public static class Thing_FlammableNow
     {

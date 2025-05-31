@@ -10,7 +10,7 @@ namespace DMS
     {
         static void Postfix(Pawn mech, ref AcceptanceReport __result)
         {
-            if (__result == true || !mech.IsColonyMech || mech.DeadOrDowned) return;
+            if (__result == true || (!mech.IsColonyMech && mech.HostFaction == null) || mech.DeadOrDowned) return;
 
             if (mech.kindDef.race.HasComp(typeof(CompCommandRelay)))
             {

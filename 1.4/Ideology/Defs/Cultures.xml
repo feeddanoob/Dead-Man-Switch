@@ -22,6 +22,11 @@
     </thingStyleCategories>
     <styleItemTags>
       <li>
+        <tag>Urban</tag>
+        <baseWeight>10</baseWeight>
+        <weightFactor>10</weightFactor>
+      </li>
+      <li>
         <tag>NoBeard</tag>
         <baseWeight>1</baseWeight>
         <weightFactor>1</weightFactor>

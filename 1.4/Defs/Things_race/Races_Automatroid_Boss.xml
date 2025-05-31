@@ -44,9 +44,7 @@
         <UsableTechLevels>
           <li>Industrial</li>
         </UsableTechLevels>
-        <BypassUsableWeapons>
-          <li MayRequire="ceteam.combatextended">Gun_BinocularsRadio</li>
-        </BypassUsableWeapons>
+        <BypassUsableWeapons/>
       </li>
     </modExtensions>
     <tools Inherit="False">

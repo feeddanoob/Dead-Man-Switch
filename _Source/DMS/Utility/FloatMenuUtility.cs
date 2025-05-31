@@ -49,7 +49,6 @@ namespace DMS
                             yield return new FloatMenuOption("CannotEquip".Translate(tmp) + " " + "DMS_FrameNotSupported".Translate(), null);
                         }
                     }
-
                     //撿起物品
                     if (tmp.def.selectable && tmp.def.category == ThingCategory.Item)
                     {
@@ -77,7 +76,6 @@ namespace DMS
                     {
                         yield return TryMakeFloatMenuForGearManagement(pawn);
                     }
-
                     //操作砲塔相關
                     if (tmp.def.building?.turretGunDef != null)
                     {
@@ -114,7 +112,6 @@ namespace DMS
 
             if (pawn is IWeaponUsable weaponUsable)
             {
-
                 if (equipment is Apparel apparel)
                 {
                     if (!apparel.PawnCanWear(pawn, true) || !CheckUtility.Wearable(pawn.def.GetModExtension<MechWeaponExtension>(),apparel))
@@ -128,7 +125,6 @@ namespace DMS
                             weaponUsable.Wear(equipment);
                         });
                     }
-                    
                 }
                 else
                 {

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: arquebusier -->
+  <!-- EN: Arquebusier -->
   <DMS_Mech_Arquebusier.label>Arquebusier</DMS_Mech_Arquebusier.label>
-  <!-- EN: Standard Arquebusier model, has good precision fire capability in all ranges, makes it the backbone of robot army. -->
-  <DMS_Mech_Arquebusier.description>Standard Arquebusier model, has good precision fire capability in all ranges, it forms the backbone of any robot army.</DMS_Mech_Arquebusier.description>
+  <!-- EN: Standard Arquebusier model, has good precision fire capability at all ranges making it the backbone of an automatroid army. -->
+  <DMS_Mech_Arquebusier.description>Standard Arquebusier model, has good precision fire capability at all ranges making it the backbone of an automatroid army.</DMS_Mech_Arquebusier.description>
   <!-- EN: head -->
   <DMS_Mech_Arquebusier.tools.head.label>head</DMS_Mech_Arquebusier.tools.head.label>
   <!-- EN: left fist -->
@@ -12,10 +12,10 @@
   <!-- EN: right fist -->
   <DMS_Mech_Arquebusier.tools.right_fist.label>right fist</DMS_Mech_Arquebusier.tools.right_fist.label>
   
-  <!-- EN: jaeger -->
+  <!-- EN: Jaeger -->
   <DMS_Mech_Jaeger.label>Jaeger</DMS_Mech_Jaeger.label>
-  <!-- EN: an arquebusier variant focuses on stealth action and guerilla deployment for sabotage behind enemy lines. has higher mobility and invisibility. -->
-  <DMS_Mech_Jaeger.description>An arquebusier variant that focuses on stealth action and guerilla deployment for sabotage behind enemy lines. It has higher mobility and invisibility.</DMS_Mech_Jaeger.description>
+  <!-- EN: An Arquebusier variant specializing in stealth operations and guerilla warfare sabotaging equipment behind enemy lines. It has high mobility and and an active camouflage ability. -->
+  <DMS_Mech_Jaeger.description>An Arquebusier variant specializing in stealth operations and guerilla warfare sabotaging equipment behind enemy lines. It has high mobility and and an active camouflage ability.</DMS_Mech_Jaeger.description>
   <!-- EN: head -->
   <DMS_Mech_Jaeger.tools.head.label>head</DMS_Mech_Jaeger.tools.head.label>
   <!-- EN: left fist -->
@@ -23,10 +23,10 @@
   <!-- EN: right fist -->
   <DMS_Mech_Jaeger.tools.right_fist.label>right fist</DMS_Mech_Jaeger.tools.right_fist.label>
   
-  <!-- EN: pioneer -->
+  <!-- EN: Pioneer -->
   <DMS_Mech_Pioneer.label>Pioneer</DMS_Mech_Pioneer.label>
-  <!-- EN: forward reconnaissance variant of Arquebusier. with improved sight sensor equipped, it has better capability in field operations, capable to hunting if needed. -->
-  <DMS_Mech_Pioneer.description>A forward reconnaissance variant of Arquebusier with improved sight sensors equipped. It has better capability in field operations, capable of hunting if needed.</DMS_Mech_Pioneer.description>
+  <!-- EN: A gorward reconnaissance variant of the Arquebusier, Pioneers are equipped with an improved sight sensor package giving it better capability in field operations. In a pinch, it can be used to hunt wildlife. -->
+  <DMS_Mech_Pioneer.description>A gorward reconnaissance variant of the Arquebusier, Pioneers are equipped with an improved sight sensor package giving it better capability in field operations. In a pinch, it can be used to hunt wildlife.</DMS_Mech_Pioneer.description>
   <!-- EN: head -->
   <DMS_Mech_Pioneer.tools.head.label>head</DMS_Mech_Pioneer.tools.head.label>
   <!-- EN: left fist -->
@@ -34,10 +34,10 @@
   <!-- EN: right fist -->
   <DMS_Mech_Pioneer.tools.right_fist.label>right fist</DMS_Mech_Pioneer.tools.right_fist.label>
   
-  <!-- EN: sniper -->
+  <!-- EN: Sniper -->
   <DMS_Mech_Sniper.label>Sniper</DMS_Mech_Sniper.label>
-  <!-- EN: Having the improved sight sensor and fire control system, this Arquebusier variant has the best long range fire precision among all other variants. -->
-  <DMS_Mech_Sniper.description>Having not just an improved sight sensor but also a specialized fire control system, this Arquebusier variant has the best precision long range fire among all other variants.</DMS_Mech_Sniper.description>
+  <!-- EN: Snipers have an improved sight sensor package and fire control system. This model Arquebusier has the best long range fire precision among all other variants. -->
+  <DMS_Mech_Sniper.description>Snipers have an improved sight sensor package and fire control system. This model Arquebusier has the best long range fire precision among all other variants.</DMS_Mech_Sniper.description>
   <!-- EN: head -->
   <DMS_Mech_Sniper.tools.head.label>head</DMS_Mech_Sniper.tools.head.label>
   <!-- EN: left fist -->

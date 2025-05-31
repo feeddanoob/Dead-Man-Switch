@@ -76,7 +76,7 @@ namespace DMS
             Vector3 offset = Vector3.zero;
             if (Props.burstOffsetRange != Vector2.zero)
             {
-                float range = Random.Range(Props.burstOffsetRange.x, Props.burstOffsetRange.y);
+                float range = Verse.Rand.Range(Props.burstOffsetRange.x, Props.burstOffsetRange.y);
                 offset = range * CircleConst.GetAngle(angle);
             }
             return parent.DrawPos + offset;

@@ -3,7 +3,7 @@
   
   <!-- EN: overeat -->
   <DMS_OverEat.stages.overeat.label>overeat</DMS_OverEat.stages.overeat.label>
-  <!-- EN: the amount of this ration is too much that I think my stomach isn't paired with it. -->
-  <DMS_OverEat.stages.overeat.description>the amount of this ration is too much that I think my stomach isn't paired with it.</DMS_OverEat.stages.overeat.description>
+  <!-- EN: This ration tastes horrible and is making my stomach turn. I don't like it. -->
+  <DMS_OverEat.stages.overeat.description>This ration tastes horrible and is making my stomach turn. I don't like it.</DMS_OverEat.stages.overeat.description>
   
 </LanguageData>

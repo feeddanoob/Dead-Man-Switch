@@ -277,7 +277,8 @@
       <li>HeavyTurrets</li>
     </researchPrerequisites>
   </ThingDef>
-  <!--通古斯卡--><!--文本缺失-->
+
+  <!--通古斯卡-->
   <ThingDef ParentName="DMS_BaseCannonBuilding">
     <defName>DMS_Turret_Tunguska</defName>
     <label>Tunguska</label>
@@ -298,7 +299,7 @@
       <WorkToBuild>7500</WorkToBuild>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>0.98</ShootingAccuracyTurret>
-      <Mass>15000</Mass>
+      <!-- <Mass>15000</Mass> -->
     </statBases>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -319,7 +320,7 @@
         <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
         <fuelCapacity>2000</fuelCapacity>    <!-- 20 burst -->
         <fuelMultiplier>100</fuelMultiplier><!-- 1 Barrel=100 ammo -->
-        <initialFuelPercent>1</initialFuelPercent>
+        <initialFuelPercent>0.05</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -353,7 +354,7 @@
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_Tunguska</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
-    <minifiedDef></minifiedDef>
+    <!-- <minifiedDef></minifiedDef> -->
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
@@ -382,7 +383,7 @@
         <ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
         <burstShotCount>20</burstShotCount>
-        <soundCast>Shot_Autocannon</soundCast>
+        <soundCast>DMS_Shot_Tunguska</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>15</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
@@ -392,6 +393,24 @@
         <forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
+	<comps>
+		<li MayRequire="CETeam.CombatExtended">
+			<compClass>CombatExtended.CompVerbDisabler</compClass>
+		</li>
+    </comps>
+    <modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1.9,1.75)</drawSize>
+				<offsets>
+					<li>(1.55,0.55)</li>
+					<li>(1.55,-0.55)</li>
+					<li>(1.7,0.675)</li>
+					<li>(1.7,-0.675)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+    </modExtensions>
   </ThingDef>
 
   <!--守門員&方陣融合體-->
@@ -415,7 +434,7 @@
       <WorkToBuild>7500</WorkToBuild>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>1.00</ShootingAccuracyTurret>
-      <Mass>10000</Mass>
+      <!-- <Mass>10000</Mass> -->
     </statBases>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -436,7 +455,7 @@
         <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
         <fuelCapacity>1000</fuelCapacity>    <!-- 20 burst -->
         <fuelMultiplier>100</fuelMultiplier><!-- 1 Barrel=100 ammo -->
-        <initialFuelPercent>1</initialFuelPercent>
+        <initialFuelPercent>0.1</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -471,10 +490,10 @@
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_GateKeeper</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
-    <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->
-    <thingCategories>
+    <!-- <minifiedDef>MinifiedThing</minifiedDef> -->
+    <!-- <thingCategories>
       <li>BuildingsSecurity</li>
-    </thingCategories>
+    </thingCategories> -->
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
@@ -504,7 +523,7 @@
         <ai_AvoidFriendlyFireRadius>4.9</ai_AvoidFriendlyFireRadius>
         <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
         <burstShotCount>18</burstShotCount>
-        <soundCast>Shot_TurretSniper</soundCast>
+        <soundCast>DMS_Shot_GAU</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>15</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
@@ -514,6 +533,21 @@
         <forcedMissRadius>1.5</forcedMissRadius>
       </li>
     </verbs>
+	<comps>
+		<li MayRequire="CETeam.CombatExtended">
+			<compClass>CombatExtended.CompVerbDisabler</compClass>
+		</li>
+    </comps>
+    <modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(3,1.75)</drawSize>
+				<offsets>
+					<li>(2.35,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -530,7 +564,7 @@
       <damageDef>Bomb</damageDef>
       <screenShakeFactor>0</screenShakeFactor>
       <damageAmountBase>27</damageAmountBase>
-      <armorPenetrationBase>0.71</armorPenetrationBase>
+      <armorPenetrationBase>0.41</armorPenetrationBase>
       <stoppingPower>8</stoppingPower>
       <explosionRadius>1.4</explosionRadius>
       <ai_IsIncendiary>false</ai_IsIncendiary>
@@ -539,6 +573,11 @@
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
+    <comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>DMS_LaunchDust_Grenade</effecterDef>
+			</li>
+    </comps>
   </ThingDef>
 
 
@@ -557,7 +596,7 @@
     <size>(1,1)</size>
     <rotatable>false</rotatable>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <fillPercent>0.6</fillPercent>
+    <fillPercent>0.7</fillPercent>
     <statBases>   <!--================血量與重量工作量================-->
       <MaxHitPoints>350</MaxHitPoints>
       <Flammability>0.5</Flammability>
@@ -578,14 +617,14 @@
         <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
         <fuelCapacity>300</fuelCapacity>    <!-- 30 burst -->
         <fuelMultiplier>150</fuelMultiplier><!-- 1 Barrel=150 ammo -->
-        <initialFuelPercent>1</initialFuelPercent>
+        <initialFuelPercent>0.5</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-        <initialConfigurableTargetFuelLevel>200</initialConfigurableTargetFuelLevel>
-        <autoRefuelPercent>0.8</autoRefuelPercent>
+        <initialConfigurableTargetFuelLevel>150</initialConfigurableTargetFuelLevel>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
       <li Class="CompProperties_Power">
@@ -611,10 +650,10 @@
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_5ETs16U</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
-    <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->
-    <thingCategories>
+    <!-- <minifiedDef>MinifiedThing</minifiedDef> -->
+    <!-- <thingCategories>
       <li>BuildingsSecurity</li>
-    </thingCategories>
+    </thingCategories> -->
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
@@ -666,7 +705,7 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>18</damageAmountBase>
-      <armorPenetrationBase>0.40</armorPenetrationBase>
+      <armorPenetrationBase>0.34</armorPenetrationBase>
       <stoppingPower>4</stoppingPower>
       <speed>98</speed>
       <arcHeightFactor>0.3</arcHeightFactor>
@@ -720,7 +759,7 @@
         <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
         <fuelCapacity>100</fuelCapacity>    <!-- 25 burst -->
         <fuelMultiplier>25</fuelMultiplier><!-- 1 Barrel=25 ammo -->
-        <initialFuelPercent>1</initialFuelPercent>
+        <initialFuelPercent>0.4</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -764,6 +803,7 @@
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
   </ThingDef>
+  
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>DMS_Gun_Vasilek</defName>
     <label>2B9M vasilek</label>
@@ -825,7 +865,7 @@
       <WorkToBuild>7500</WorkToBuild>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>1.00</ShootingAccuracyTurret>
-      <Mass>10000</Mass>
+      <!-- <Mass>10000</Mass> -->
     </statBases>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -846,7 +886,7 @@
         <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
         <fuelCapacity>80</fuelCapacity>    <!-- 20 burst -->
         <fuelMultiplier>8</fuelMultiplier><!-- 1 Barrel=8 ammo -->
-        <initialFuelPercent>1</initialFuelPercent>
+        <initialFuelPercent>0.1</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -882,10 +922,10 @@
     </researchPrerequisites>
     <uiIconPath>Things/Turrets/DMS_DawnBlade</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
-    <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->
-    <thingCategories>
+    <!-- <minifiedDef>MinifiedThing</minifiedDef> -->
+    <!-- <thingCategories>
       <li>BuildingsSecurity</li>
-    </thingCategories>
+    </thingCategories> -->
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
@@ -915,7 +955,7 @@
         <ai_AvoidFriendlyFireRadius>2.9</ai_AvoidFriendlyFireRadius>
         <ticksBetweenBurstShots>40</ticksBetweenBurstShots>
         <burstShotCount>4</burstShotCount>
-        <soundCast>Shot_Autocannon</soundCast>
+        <soundCast>DMS_Shot_Dawnblade</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>15</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
@@ -925,53 +965,66 @@
         <forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
+    <modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(2.75,2.75)</drawSize>
+				<offsets>
+					<li>(3,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+    </modExtensions>
   </ThingDef>
 
-<ThingDef ParentName="BaseBullet">
-	<defName>DMS_Bullet_Dawnblade</defName>
-	<label>armor piercing shell</label>
-  <thingClass>DMS.Projectile_ConeExplosive</thingClass>
-  <tickerType>Normal</tickerType>
-	<graphicData>
-		<texPath>Things/Projectile/Bullet_Big</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>2</drawSize>
-	</graphicData>
-	<projectile>
-    <explosionDelay>1</explosionDelay>
-    <soundExplode>Explosion_Rocket</soundExplode>
-		<damageDef>Bullet</damageDef>
-		<damageAmountBase>50</damageAmountBase>
-		<armorPenetrationBase>0.9</armorPenetrationBase>
-		<stoppingPower>10</stoppingPower>
-		<speed>100</speed>
-		<arcHeightFactor>0.2</arcHeightFactor>
-		<shadowSize>0.6</shadowSize>
-	</projectile>
-  <modExtensions>
-    <li Class="DMS.ExplosiveExtension">
-      <damage>Bullet</damage>
-      <damageAmount>30</damageAmount>
-      <armorPen>0.35</armorPen>
-      <preExplosionOffset>4</preExplosionOffset>
-      <range>15</range>
-      <swayAngle>12</swayAngle>
-      <doVisualEffects>false</doVisualEffects>
-      <effecterDef>DMS_ConeExplosion</effecterDef>
-    </li>
-  </modExtensions>
-	<comps>
-		<li Class="CompProperties_Explosive">
-			<explosiveRadius>1.1</explosiveRadius>
-			<explosiveDamageType>Bullet</explosiveDamageType>
-			<armorPenetrationBase>0.9</armorPenetrationBase>
-			<damageAmountBase>50</damageAmountBase>
-			<explodeOnDestroyed>true</explodeOnDestroyed>
-			<explodeOnKilled>true</explodeOnKilled>
-      <doSoundEffects>false</doSoundEffects>
-			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-		</li>
-	</comps>
-</ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>DMS_Bullet_Dawnblade</defName>
+    <label>armor piercing shell</label>
+    <thingClass>DMS.Projectile_ConeExplosive</thingClass>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionDelay>1</explosionDelay>
+      <soundExplode>Explosion_Rocket</soundExplode>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>50</damageAmountBase>
+      <armorPenetrationBase>0.82</armorPenetrationBase>
+      <stoppingPower>10</stoppingPower>
+      <speed>100</speed>
+      <arcHeightFactor>0.2</arcHeightFactor>
+      <shadowSize>0.6</shadowSize>
+    </projectile>
+    <modExtensions>
+      <li Class="DMS.ExplosiveExtension">
+        <damage>Bullet</damage>
+        <damageAmount>30</damageAmount>
+        <armorPen>0.35</armorPen>
+        <preExplosionOffset>4</preExplosionOffset>
+        <range>15</range>
+        <swayAngle>12</swayAngle>
+        <doVisualEffects>false</doVisualEffects>
+        <effecterDef>DMS_ConeExplosion</effecterDef>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.1</explosiveRadius>
+        <explosiveDamageType>Bullet</explosiveDamageType>
+        <armorPenetrationBase>0.41</armorPenetrationBase>
+        <damageAmountBase>50</damageAmountBase>
+        <explodeOnDestroyed>true</explodeOnDestroyed>
+        <explodeOnKilled>true</explodeOnKilled>
+        <doSoundEffects>false</doSoundEffects>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      </li>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>DMS_LaunchDust</effecterDef>
+			</li>
+    </comps>
+  </ThingDef>
 
 </Defs>	

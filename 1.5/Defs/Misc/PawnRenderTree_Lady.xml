@@ -16,10 +16,32 @@
               <useRottenColor>true</useRottenColor>
               <useSkinShader>true</useSkinShader>
               <children>
+                <li Class="PawnRenderNodeProperties_Tattoo" MayRequire="Ludeon.RimWorld.Ideology">
+                  <debugLabel>Body tattoo</debugLabel>
+                  <nodeClass>PawnRenderNode_Tattoo_Body</nodeClass>
+                  <workerClass>PawnRenderNodeWorker_Body_Tattoo</workerClass>
+                  <colorType>Skin</colorType>
+                  <useRottenColor>true</useRottenColor>
+                  <baseLayer>2</baseLayer>
+                  <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                </li>
+                <li Class="PawnRenderNodeProperties_Overlay">
+                  <debugLabel>Wounds - pre apparel</debugLabel>
+                  <workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+                  <overlayLayer>Body</overlayLayer>
+                  <baseLayer>8</baseLayer>
+                </li>
                 <li Class="PawnRenderNodeProperties_Parent">
                   <debugLabel>Apparel root</debugLabel>
                   <tagDef>ApparelBody</tagDef>
                   <baseLayer>20</baseLayer>
+                </li>
+                <li Class="PawnRenderNodeProperties_Overlay">
+                  <debugLabel>Wounds - post apparel</debugLabel>
+                  <workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+                  <overlayOverApparel>true</overlayOverApparel>
+                  <overlayLayer>Body</overlayLayer>
+                  <baseLayer>30</baseLayer>
                 </li>
                 <li Class="PawnRenderNodeProperties_Overlay">
                   <debugLabel>Firefoam</debugLabel>
@@ -40,6 +62,38 @@
               <useRottenColor>true</useRottenColor>
               <useSkinShader>true</useSkinShader>
               <children>
+                <li Class="PawnRenderNodeProperties_Tattoo" MayRequire="Ludeon.RimWorld.Ideology">
+                  <debugLabel>Head tattoo</debugLabel>
+                  <nodeClass>PawnRenderNode_Tattoo_Head</nodeClass>
+                  <workerClass>PawnRenderNodeWorker_Tattoo_Head</workerClass>
+                  <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                  <colorType>Skin</colorType>
+                  <baseLayer>52</baseLayer>
+                </li>
+                <li>
+                  <debugLabel>Beard</debugLabel>
+                  <nodeClass>PawnRenderNode_Beard</nodeClass>
+                  <workerClass>PawnRenderNodeWorker_Beard</workerClass>
+                  <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                  <colorType>Hair</colorType>
+                  <skipFlag>Beard</skipFlag>
+                  <baseLayer>60</baseLayer>
+                </li>
+                <li>
+                  <debugLabel>Hair</debugLabel>
+                  <nodeClass>PawnRenderNode_Hair</nodeClass>
+                  <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                  <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                  <colorType>Hair</colorType>
+                  <skipFlag>Hair</skipFlag>
+                  <baseLayer>62</baseLayer>
+                </li>
+                <li Class="PawnRenderNodeProperties_Overlay">
+                  <debugLabel>Head wounds</debugLabel>
+                  <workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+                  <overlayLayer>Head</overlayLayer>
+                  <baseLayer>65</baseLayer>
+                </li>
                 <li Class="PawnRenderNodeProperties_Parent">
                   <debugLabel>Apparel root</debugLabel>
                   <tagDef>ApparelHead</tagDef>

@@ -4,6 +4,12 @@
   <!-- EN: armour plate -->
   <DMS_ArmourPlate.label>armour plate</DMS_ArmourPlate.label>
   
+  <!-- EN: armour plate(addition) -->
+  <DMS_ArmourPlate_Additional.label>armour plate(addition)</DMS_ArmourPlate_Additional.label>
+  
+  <!-- EN: assault shield -->
+  <DMS_AssaultShield.label>assault shield</DMS_AssaultShield.label>
+  
   <!-- EN: ballistic shield -->
   <DMS_BallisticShield.label>ballistic shield</DMS_BallisticShield.label>
   

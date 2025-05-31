@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+  <BossgroupDef ParentName="BaseBossgroup" Name="BaseBossgroupNonMechanitor" Abstract="True">
+    <modExtensions>
+      <li Class="DMS.CallableExtension"></li>
+    </modExtensions>
+  </BossgroupDef>
+
   <!-- DMS_Mech_Sergeant -->
   <BossDef>
     <defName>DMS_Boss_Sergeant</defName>
     <kindDef>DMS_Mech_Sergeant</kindDef>
     <appearAfterTicks>720000</appearAfterTicks><!-- 2 years -->
   </BossDef>
-  <BossgroupDef ParentName="BaseBossgroup">
+  <BossgroupDef ParentName="BaseBossgroupNonMechanitor">
     <defName>DMS_Sergeant</defName>
     <boss>DMS_Boss_Sergeant</boss>
     <waves>
@@ -115,7 +122,6 @@
     <rewardDef>ComponentTransmitter</rewardDef>
   </BossgroupDef>
 
-
   <!-- DMS_Mech_Geochelone -->
   <BossDef>
     <defName>DMS_Boss_Geochelone</defName>
@@ -123,7 +129,7 @@
     <appearAfterTicks>7200000</appearAfterTicks><!-- 2 years -->
   </BossDef>
 
-  <BossgroupDef ParentName="BaseBossgroup">
+  <BossgroupDef ParentName="BaseBossgroupNonMechanitor">
     <defName>DMS_Geochelone</defName>
     <boss>DMS_Boss_Geochelone</boss>
     <waves>
@@ -224,14 +230,13 @@
   </BossgroupDef>
 
   <!-- DMS_Mech_Tarbosaurus -->
-
   <BossDef>
     <defName>DMS_Boss_Tarbosaurus</defName>
     <kindDef>DMS_Mech_Tarbosaurus</kindDef>
     <appearAfterTicks>7200000</appearAfterTicks><!-- 2 years -->
   </BossDef>
 
-  <BossgroupDef ParentName="BaseBossgroup">
+  <BossgroupDef ParentName="BaseBossgroupNonMechanitor">
     <defName>DMS_Tarbosaurus</defName>
     <boss>DMS_Boss_Tarbosaurus</boss>
     <waves>

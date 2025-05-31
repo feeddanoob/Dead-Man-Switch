@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: sintering furnace -->
+  <!-- EN: Sintering Furnace -->
   <DMS_Furnace.label>Sintering Furnace</DMS_Furnace.label>
-  <!-- EN: A massive industrial equipment use to create an ultra-high temperature environment in a closed space to sinter alloy or ceramics. can also smelt metal. -->
-  <DMS_Furnace.description>A massive industrial equipment used to create an ultra-high temperature environment in a closed space to sinter alloy or ceramics. Can also smelt metal.</DMS_Furnace.description>
+  <!-- EN: A massive industrial furnace used to heat metals and minerals to a near liquid form to create advanced alloys. Can also be used to smelt metals. -->
+  <DMS_Furnace.description>A massive industrial furnace used to heat metals and minerals to a near liquid form to create advanced alloys. Can also be used to smelt metals.</DMS_Furnace.description>
   
   <!-- EN: Mote -->
   <DMS_MechConstructorCycleComplete.label>Mote</DMS_MechConstructorCycleComplete.label>
@@ -15,24 +15,24 @@
   <!-- EN: Mote -->
   <DMS_MechConstructorForming.label>Mote</DMS_MechConstructorForming.label>
   
-  <!-- EN: automatroid constructor -->
+  <!-- EN: Automatroid Constructor -->
   <DMS_MechGestatorSamll.label>Automatroid Constructor</DMS_MechGestatorSamll.label>
-  <!-- EN: A massive industrial equipment use to assemble automatroid. -->
-  <DMS_MechGestatorSamll.description>A massive industrial equipment used to assemble automatroids.</DMS_MechGestatorSamll.description>
+  <!-- EN: A massive piece of industrial equipment used to assemble Automatroids. -->
+  <DMS_MechGestatorSamll.description>A massive piece of industrial equipment used to assemble Automatroids.</DMS_MechGestatorSamll.description>
   
-  <!-- EN: pressure chamber -->
+  <!-- EN: Pressure Chamber -->
   <DMS_ReactionChamber.label>Pressure Chamber</DMS_ReactionChamber.label>
-  <!-- EN: A massive industrial equipment use to create a high-pressure environment to cause materials to react together. -->
-  <DMS_ReactionChamber.description>A massive industrial equipment used to create a high-pressure environment to cause materials to react together.</DMS_ReactionChamber.description>
+  <!-- EN: A massive industrial-grade vacuum chamber used to create a high-pressure environment to create mineral alloys. -->
+  <DMS_ReactionChamber.description>A massive industrial-grade vacuum chamber used to create a high-pressure environment to create mineral alloys.</DMS_ReactionChamber.description>
   
-  <!-- EN: artifuscle chamber -->
+  <!-- EN: Artifuscle Chamber -->
   <DMS_TableArtifuscle.label>Artifuscle Chamber</DMS_TableArtifuscle.label>
-  <!-- EN: High-end production equipment for cultivating artifuscle and bionic. -->
-  <DMS_TableArtifuscle.description>High-end production equipment for cultivating artifuscles and bionics.</DMS_TableArtifuscle.description>
+  <!-- EN: High-end production equipment for cultivating Artifuscle and bionics. -->
+  <DMS_TableArtifuscle.description>High-end production equipment for cultivating Artifuscle and bionics.</DMS_TableArtifuscle.description>
   
-  <!-- EN: machinery printer -->
+  <!-- EN: Machinery Printer -->
   <DMS_TableMachinePrinter.label>Machinery Printer</DMS_TableMachinePrinter.label>
-  <!-- EN: a composite metal printer, which can manufacture and assemble metal products and weapons through cold forging to mass-produce machinery. -->
-  <DMS_TableMachinePrinter.description>A composite metal printer, which can manufacture and assemble metal products and weapons through cold forging for mass-production purposes.</DMS_TableMachinePrinter.description>
+  <!-- EN: A composite metal printer which can manufacture and assemble metal products and weapons through cold forging in order to mass-produce machinery. -->
+  <DMS_TableMachinePrinter.description>A composite metal printer which can manufacture and assemble metal products and weapons through cold forging in order to mass-produce machinery.</DMS_TableMachinePrinter.description>
   
 </LanguageData>

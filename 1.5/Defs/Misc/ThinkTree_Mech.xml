@@ -2,7 +2,6 @@
 
 
 <Defs>
-
   <ThinkTreeDef>
     <defName>DMS_Mechanoid</defName>
     <thinkRoot Class="ThinkNode_Priority">

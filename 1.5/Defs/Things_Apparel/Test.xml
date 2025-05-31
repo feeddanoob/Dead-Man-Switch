@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="ApparelBase" Abstract="True">
+	<ThingDef ParentName="ApparelBase" Abstract="true">
 		<defName>DMS_Apparel_TurretFrame</defName>
 		<label>turret frame</label>
 		<description>一種實驗性的射擊平台，能夠接受指令或獨立於穿戴者進行索敵與射擊。</description>
@@ -106,40 +106,152 @@
 			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
 		<comps>
-			<li Class="DMS.CompProperties_ApparelTurretGun">
-				<angleOffset>-90</angleOffset>
-				<turretDef>DMS_SubMachineGunMounted</turretDef>
-				<autoAttack>true</autoAttack>
-				<attackUndrafted>false</attackUndrafted>
-				<renderNodeProperties>
+			<li Class="DMS.CompPropertiesMultipleTurretGun">
+				<subTurrets>
 					<li>
-						<nodeClass>DMS.PawnRenderNode_ApparelTurretGun</nodeClass>
-						<workerClass>DMS.PawnRenderNodeWorker_ApparelTurretGun</workerClass>
-						<parentTagDef>ApparelBody</parentTagDef>
-						<rotDrawMode>Fresh, Rotting</rotDrawMode>
-						<overrideMeshSize>1</overrideMeshSize>
-						<baseLayer>20</baseLayer>
-						<pawnType>Any</pawnType>
-						<drawData>
-							<defaultData>
-								<pivot>(0.5,0.5)</pivot>
-							</defaultData>
-							<dataEast>
-								<offset>(0.5,0,-0.5)</offset>
-							</dataEast>
-							<dataWest>
-								<offset>(-0.75,0,0.6)</offset>
-								<rotationOffset>180</rotationOffset>
-							</dataWest>
-							<dataSouth>
-								<offset>(-0.6,0,-0.5)</offset>
-							</dataSouth>
-							<dataNorth>
-								<offset>(0.6,0,0.9)</offset>
-							</dataNorth>
-						</drawData>
+						<ID>machine gun</ID>
+						<turret>DMS_SubMachineGunMounted</turret>
+						<autoAttack>true</autoAttack>
+						<warmingTime>3.2</warmingTime>
+						<angleOffset>-90</angleOffset>
+						<renderNodeProperties>
+							<li>
+								<nodeClass>DMS.PawnRenderNode_SubTurretGun</nodeClass>
+								<workerClass>DMS.PawnRenderNodeWorker_SubTurretGun</workerClass>
+								<parentTagDef>ApparelBody</parentTagDef>
+								<drawSize>1.1</drawSize>
+								<baseLayer>-21</baseLayer>
+								<pawnType>Any</pawnType>
+								<drawData>
+									<defaultData>
+										<pivot>(0.4,0.5)</pivot>
+									</defaultData>
+									<dataEast>
+										<offset>(-0.5,0,0.75)</offset>
+									</dataEast>
+									<dataWest>
+										<offset>(0.60,0,0)</offset>
+										<layer>63</layer>
+									</dataWest>
+									<dataSouth>
+										<offset>(0.75,0,0.65)</offset>
+										<layer>1</layer>
+									</dataSouth>
+									<dataNorth>
+										<offset>(-0.8,0,0.65)</offset>
+										<layer>1</layer>
+									</dataNorth>
+								</drawData>
+							</li>
+						</renderNodeProperties>
 					</li>
-				</renderNodeProperties>
+					<li>
+						<ID>close inbound system</ID>
+						<turret>DMS_ShotgunGunMounted</turret>
+						<autoAttack>true</autoAttack>
+						<warmingTime>2</warmingTime>
+						<angleOffset>-90</angleOffset>
+						<renderNodeProperties>
+							<li>
+								<nodeClass>DMS.PawnRenderNode_SubTurretGun</nodeClass>
+								<workerClass>DMS.PawnRenderNodeWorker_SubTurretGun</workerClass>
+								<parentTagDef>ApparelBody</parentTagDef>
+								<drawSize>0.8</drawSize>
+								<baseLayer>20</baseLayer>
+								<pawnType>Any</pawnType>
+								<drawData>
+									<dataEast>
+										<offset>(-0.25,0,0.25)</offset>
+										<layer>-22</layer>
+									</dataEast>
+									<dataWest>
+										<offset>(0.35,0,-0.75)</offset>
+										<layer>63</layer>
+									</dataWest>
+									<dataSouth>
+										<offset>(0.7,0,-0.35)</offset>
+										<rotationOffset>-10</rotationOffset>
+										<layer>-5</layer>
+									</dataSouth>
+									<dataNorth>
+										<offset>(-0.7,0,-0.25)</offset>
+										<rotationOffset>-10</rotationOffset>
+									</dataNorth>
+								</drawData>
+							</li>
+						</renderNodeProperties>
+					</li>
+				</subTurrets>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelArmorHelmetReconBase" Abstract="true">
+		<defName>DMS_AirRaidTest</defName>
+		<label>Air Raid Goggles</label>
+		<description>An optical enhancement device which amplifies existing light in low-light conditions and projects it through the display on to the users eyes. Compatible with most helmets and can be worn stand-alone.</description>
+		<graphicData>
+			<texPath>Things/Apparel/NightVisionGoggles/headgear_icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<statBases>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			<Insulation_Cold>0</Insulation_Cold>
+			<Insulation_Heat>0</Insulation_Heat>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Gunlink</li>
+				<li>DMS_EquipmentAdvanced</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>10</Plasteel>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/NightVisionGoggles/headgear</wornGraphicPath>
+			<renderSkipFlags>
+				<li>Eyes</li>
+			</renderSkipFlags>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups Inherit="False">
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>DMS_NVG</li>
+			</tags>
+			<layers Inherit="False">
+				<li>EyeCover</li>
+			</layers>
+		</apparel>
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+		<thingSetMakerTags Inherit="False">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="DMS.CompProperties_AirSupportSummoner">
+				<supportDef>DMS_AirRaidTest</supportDef>
+				<label>autocannon strafe</label>
+			</li>
+			<li Class="DMS.CompProperties_AirSupportSummoner">
+				<supportDef>DMS_AirRaidTestII</supportDef>
+				<label>rocket barrage</label>
+			</li>
+			<li Class="DMS.CompProperties_AirSupportSummoner">
+				<supportDef>DMS_AirRaidTestIII</supportDef>
+				<label>rocket barrage from base</label>
+			</li>
+			<li Class="DMS.CompProperties_AirSupportSummoner">
+				<supportDef>DMS_155mm_Bombard</supportDef>
+				<label>shell barrage from base</label>
 			</li>
 		</comps>
 	</ThingDef>

@@ -39,6 +39,13 @@
 					defName="DMS_Turret_Dawnblade"
                     ]/comps/li[@Class="CompProperties_Explosive"]</xpath>
 			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Turret_Tunguska" or defName="DMS_Turret_GateKeeper"]</xpath>
+				<value>
+					<thingClass MayRequire="CETeam.CombatExtended">CombatExtended.Building_CIWS_CE</thingClass>
+				</value>
+			</li>
 
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="DMS_BaseCannonBuilding"]/statBases </xpath>
@@ -48,14 +55,27 @@
 				</value>
 			</li>
 
-
 			<!-- ========== Tunguska ========== -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Turret_Tunguska"]/statBases/ShootingAccuracyTurret </xpath>
+				<value>
+					<ShootingAccuracyTurret>3</ShootingAccuracyTurret>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Turret_Tunguska"]/building/turretBurstCooldownTime </xpath>
+				<value>
+					<turretBurstCooldownTime>0.02</turretBurstCooldownTime>
+				</value>
+			</li>
 
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 				<defName>DMS_Gun_Tunguska</defName>
 				<statBases>
-					<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-					<SightsEfficiency>1.5</SightsEfficiency>
+					<RangedWeapon_Cooldown>0.02</RangedWeapon_Cooldown>
+					<SightsEfficiency>5</SightsEfficiency>
 					<ShotSpread>0.05</ShotSpread>
 					<SwayFactor>1.87</SwayFactor>
 					<Bulk>221</Bulk>
@@ -67,7 +87,7 @@
 					<defaultProjectile>Bullet_30x165mm_AP</defaultProjectile>
 					<warmupTime>1.2</warmupTime>
 					<range>86</range>
-					<minRange>12</minRange>
+					<minRange>3.5</minRange>
 					<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
 					<burstShotCount>40</burstShotCount>
 					<soundCast>Shot_Autocannon</soundCast>
@@ -98,14 +118,63 @@
 						<comps />
 					</value>
 				</nomatch>
+			</li>			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Gun_Tunguska"]/verbs </xpath>
+				<value>
+					<li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
+						<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
+						<recoilAmount>0.92</recoilAmount>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_30x165mm_AP</defaultProjectile>
+						<warmupTime>0.01</warmupTime>
+						<range>2500</range>
+						<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+						<burstShotCount>40</burstShotCount>
+						<soundCast>Shot_Autocannon</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>15</muzzleFlashScale>
+						<recoilPattern>Mounted</recoilPattern>
+					</li>
+					<li Class="CombatExtended.VerbProperties_CIWSProjectile">
+						<verbClass>CombatExtended.VerbCIWSProjectile</verbClass>
+						<recoilAmount>0.92</recoilAmount>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_30x165mm_AP</defaultProjectile>
+						<warmupTime>0.01</warmupTime>
+						<range>100</range>
+						<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+						<burstShotCount>40</burstShotCount>
+						<soundCast>Shot_Autocannon</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>15</muzzleFlashScale>
+						<recoilPattern>Mounted</recoilPattern>
+					</li>
+				</value>
 			</li>
 
 			<!-- GateKeeper -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Turret_GateKeeper"]/statBases/ShootingAccuracyTurret </xpath>
+				<value>
+					<ShootingAccuracyTurret>3</ShootingAccuracyTurret>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Turret_GateKeeper"]/building/turretBurstCooldownTime </xpath>
+				<value>
+					<turretBurstCooldownTime>0.02</turretBurstCooldownTime>
+				</value>
+			</li>
+			
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 				<defName>DMS_Gun_GateKeeper</defName>
 				<statBases>
-					<RangedWeapon_Cooldown>0.45</RangedWeapon_Cooldown>
-					<SightsEfficiency>1.5</SightsEfficiency>
+					<RangedWeapon_Cooldown>0.02</RangedWeapon_Cooldown>
+					<SightsEfficiency>5</SightsEfficiency>
 					<ShotSpread>0.05</ShotSpread>
 					<SwayFactor>1.71</SwayFactor>
 					<Bulk>174</Bulk>
@@ -117,7 +186,7 @@
 					<defaultProjectile>Bullet_30x173mmNATO_AP</defaultProjectile>
 					<warmupTime>0.8</warmupTime>
 					<range>86</range>
-					<minRange>9</minRange>
+					<minRange>3.5</minRange>
 					<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
 					<burstShotCount>50</burstShotCount>
 					<soundCast>Shot_Minigun</soundCast>
@@ -140,6 +209,40 @@
 					<aimedBurstShotCount>25</aimedBurstShotCount>
 				</FireModes>
 			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DMS_Gun_GateKeeper"]/verbs </xpath>
+				<value>
+					<li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
+						<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
+						<recoilAmount>0.88</recoilAmount>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_30x173mmNATO_AP</defaultProjectile>
+						<warmupTime>0.01</warmupTime>
+						<range>2500</range>
+						<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+						<burstShotCount>50</burstShotCount>
+						<soundCast>Shot_Minigun</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>15</muzzleFlashScale>
+						<recoilPattern>Mounted</recoilPattern>
+					</li>
+					<li Class="CombatExtended.VerbProperties_CIWSProjectile">
+						<verbClass>CombatExtended.VerbCIWSProjectile</verbClass>
+						<recoilAmount>0.88</recoilAmount>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_30x173mmNATO_AP</defaultProjectile>
+						<warmupTime>0.01</warmupTime>
+						<range>100</range>
+						<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+						<burstShotCount>50</burstShotCount>
+						<soundCast>Shot_Minigun</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>15</muzzleFlashScale>
+						<recoilPattern>Mounted</recoilPattern>
+					</li>
+				</value>
+			</li>
 
 			<!--===== 76mm Cannon =====-->
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -149,7 +252,7 @@
 				    <Bulk>72</Bulk>
 				    <SwayFactor>2.61</SwayFactor>
 				    <ShotSpread>0.03</ShotSpread>
-				    <SightsEfficiency>3</SightsEfficiency>
+				    <SightsEfficiency>7</SightsEfficiency>
 				    <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
 				</statBases>
 				<Properties>
@@ -161,7 +264,7 @@
                     <burstShotCount>4</burstShotCount>
                     <warmupTime>2</warmupTime>
                     <range>110</range>
-                    <minRange>6.9</minRange>
+                    <minRange>5.2</minRange>
                     <soundCast>Explosion_Bomb</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>24</muzzleFlashScale>
@@ -184,13 +287,19 @@
 				</weaponTags>
 			</li>
 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Turret_Dawnblade"]/statBases/ShootingAccuracyTurret </xpath>
+				<value>
+					<ShootingAccuracyTurret>5</ShootingAccuracyTurret>
+				</value>
+			</li>
 
 			<!-- Kord Remote control Turret -->
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 				<defName>DMS_Gun_Kord</defName>
 				<statBases>
-					<RangedWeapon_Cooldown>0.76</RangedWeapon_Cooldown>
-					<SightsEfficiency>1.2</SightsEfficiency>
+					<RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
+					<SightsEfficiency>1.5</SightsEfficiency>
 					<ShotSpread>0.05</ShotSpread>
 					<SwayFactor>1.59</SwayFactor>
 					<Bulk>43</Bulk>
@@ -202,7 +311,7 @@
 					<defaultProjectile>Bullet_127x108mm_FMJ</defaultProjectile>
 					<warmupTime>1.4</warmupTime>
 					<range>75</range>
-					<minRange>3</minRange>
+					<minRange>1.5</minRange>
 					<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 					<burstShotCount>8</burstShotCount>
 					<soundCast>Shot_Autocannon</soundCast>
@@ -225,6 +334,20 @@
 					<aimedBurstShotCount>4</aimedBurstShotCount>
 				</FireModes>
 			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Turret_Okhotnik"]/statBases/ShootingAccuracyTurret </xpath>
+				<value>
+					<ShootingAccuracyTurret>1.5</ShootingAccuracyTurret>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DMS_Turret_Okhotnik"]/building/turretBurstCooldownTime </xpath>
+				<value>
+					<turretBurstCooldownTime>0.1</turretBurstCooldownTime>
+				</value>
+			</li>
 
 			<!-- Vasilek -->
 			<li Class="PatchOperationReplace">
@@ -233,6 +356,7 @@
 					<turretBurstCooldownTime>0</turretBurstCooldownTime>
 				</value>
 			</li>
+			
 			
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 				<defName>DMS_Gun_Vasilek</defName>
@@ -252,7 +376,7 @@
 					<defaultProjectile>Bullet_81mmMortarShell_HE</defaultProjectile>
 					<warmupTime>2.1</warmupTime>
 					<minRange>20</minRange>
-					<range>200</range>
+					<range>240</range>
 					<burstShotCount>4</burstShotCount>
 					<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 					<soundCast>DMS_Shot_VasilekSound</soundCast>

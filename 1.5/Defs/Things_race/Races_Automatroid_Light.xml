@@ -78,6 +78,7 @@
           <li>GrenadeSmoke</li>
           <li>GrenadeFlame</li>
           <li>SurvivalRifle</li>
+          <li MayRequire="ceteam.combatextended">BinocularsRadio</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>

@@ -10,7 +10,7 @@
         <maxLaunchDistance>85</maxLaunchDistance>
     </TransportShipDef>
 
-    <ThingDef Name="ShuttleBase" ParentName="BuildingBase">
+    <ThingDef Name="DMS_ShuttleBase" ParentName="BuildingBase">
         <defName>DMS_Shuttle</defName>
         <label>Heavy Transport Lifter</label>
         <description>A heavy transport shuttle designed for transit between the surface and orbit, it can lift up to 2 tons of cargo in flight.</description>

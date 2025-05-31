@@ -1,29 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: garrision cap -->
-  <DMS_Apparel_GarrisionCap.label>Garrison Cap</DMS_Apparel_GarrisionCap.label>
-  <!-- EN: a soft cap for service man when combat helmet is not required. -->
-  <DMS_Apparel_GarrisionCap.description>A soft cap for service man when combat helmet is not required.</DMS_Apparel_GarrisionCap.description>
+  <!-- EN: Garrision Cap -->
+  <DMS_Apparel_GarrisionCap.label>Garrision Cap</DMS_Apparel_GarrisionCap.label>
+  <!-- EN: A soft cap for servicemen for the times when a helmet is not required or available. -->
+  <DMS_Apparel_GarrisionCap.description>A soft cap for servicemen for the times when a helmet is not required or available.</DMS_Apparel_GarrisionCap.description>
   
-  <!-- EN: garrision coat -->
-  <DMS_Apparel_GarrisionCoat.label>Garrison Coat</DMS_Apparel_GarrisionCoat.label>
-  <!-- EN: A typical coats for army, keep one warm in chilly weather. -->
-  <DMS_Apparel_GarrisionCoat.description>A typical standard-issue coat for the army, it keeps one warm in chilly weather.</DMS_Apparel_GarrisionCoat.description>
+  <!-- EN: Garrision Coat -->
+  <DMS_Apparel_GarrisionCoat.label>Garrision Coat</DMS_Apparel_GarrisionCoat.label>
+  <!-- EN: A typical coat for an enlisted man, designed to keep one warm in chilly weather. -->
+  <DMS_Apparel_GarrisionCoat.description>A typical coat for an enlisted man, designed to keep one warm in chilly weather.</DMS_Apparel_GarrisionCoat.description>
   
-  <!-- EN: hazard suit -->
+  <!-- EN: Hazard Suit -->
   <DMS_Apparel_HazardSuit.label>Hazard Suit</DMS_Apparel_HazardSuit.label>
-  <!-- EN: A large garment that conceals the wearer's entire head and body. worn as reliable protection against hazardous materials such as disease or parasitic infection entities. -->
-  <DMS_Apparel_HazardSuit.description>A multiple-layered suit that conceals the wearer's entire head and body. It is worn as the go-to apparel against hazardous materials such as disease or parasitic infection entities.</DMS_Apparel_HazardSuit.description>
+  <!-- EN: A hazardous material suit covering the wearer's entire body. Used for protection against hazardous biological and chemical agents. -->
+  <DMS_Apparel_HazardSuit.description>A hazardous material suit covering the wearer's entire body. Used for protection against hazardous biological and chemical agents.</DMS_Apparel_HazardSuit.description>
   
-  <!-- EN: Powered exoskeleton unit -->
-  <DMS_Apparel_PowerSkelton.label>Powered Exoskeleton Unit</DMS_Apparel_PowerSkelton.label>
-  <!-- EN: A physical enhancement equipment created from an array of neurally-controlled prosthetic skeletons. It can effectively increase the wearer's load-bearing capacity and ensure minimum walking and operating capabilities. --> 
-  <DMS_Apparel_PowerSkelton.description>A physical enhancement equipment created from an array of neurally-controlled prosthetic skeletons. It can effectively increase the wearer's load-bearing capacity and ensure minimum walking and operating capabilities.</DMS_Apparel_PowerSkelton.description>
+  <!-- EN: Powered Exoskeletal Unit -->
+  <DMS_Apparel_PowerSkelton.label>Powered Exoskeletal Unit</DMS_Apparel_PowerSkelton.label>
+  <!-- EN: A powered exoskeletal suit which mimics the human form and can be worn by an untrained operator. It significantly increases the wearer's strength and running speed. -->
+  <DMS_Apparel_PowerSkelton.description>A powered exoskeletal suit which mimics the human form and can be worn by an untrained operator. It significantly increases the wearer's strength and running speed.</DMS_Apparel_PowerSkelton.description>
   
-  <!-- EN: uniform -->
-  <DMS_Apparel_UnitSuit.label>Jumpsuit Colonial Uniform</DMS_Apparel_UnitSuit.label>
-  <!-- EN: a jumpsuit uniform for colonization fleet crew member and standard combat unit. -->
-  <DMS_Apparel_UnitSuit.description>A standard issue jumpsuit uniform for any colonization fleet crew member and standard combat trooper.</DMS_Apparel_UnitSuit.description>
+  <!-- EN: Uniform -->
+  <DMS_Apparel_UnitSuit.label>Uniform</DMS_Apparel_UnitSuit.label>
+  <!-- EN: A jumpsuit for colonization fleet crew members and standard basic infantrymen. -->
+  <DMS_Apparel_UnitSuit.description>A jumpsuit for colonization fleet crew members and standard basic infantrymen.</DMS_Apparel_UnitSuit.description>
   
 </LanguageData>

@@ -300,7 +300,7 @@
 			<texPath>Things/Projectile/Bullet_Big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>2</drawSize>
+			<drawSize>1.8</drawSize>
 		</graphicData>
 		<projectile>
 			<speed>80</speed>
@@ -309,7 +309,7 @@
 			<armorPenetrationBase>0.7</armorPenetrationBase>
 			<stoppingPower>1.5</stoppingPower>
 			<ai_IsIncendiary>false</ai_IsIncendiary>
-			<arcHeightFactor>0.75</arcHeightFactor>
+			<!-- <arcHeightFactor>0.75</arcHeightFactor> -->
 			<soundExplode>Explosion_Rocket</soundExplode>
 			<shadowSize>0.6</shadowSize>
 		</projectile>
@@ -317,7 +317,7 @@
 		  <li Class="DMS.ExplosiveExtension">
 			<damage>Bullet</damage>
 			<damageAmount>40</damageAmount>
-			<armorPen>0.75</armorPen>
+			<armorPen>0.31</armorPen>
 			<preExplosionOffset>4</preExplosionOffset>
 			<range>10</range>
 			<swayAngle>30</swayAngle>
@@ -325,6 +325,11 @@
 			<effecterDef>DMS_ConeExplosion</effecterDef>
 		  </li>
 		</modExtensions>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>DMS_LaunchDust_Recoilless</effecterDef>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<!--2A38M 給駭蜥Boss的武器-->
@@ -474,7 +479,7 @@
 				<isAlternately>true</isAlternately>
 			</li>
 			<li Class="DMS.HeavyEquippableExtension">
-				<EquippableDef>BulkyAutomatroid</EquippableDef>
+				<EquippableDef>HeavyAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -491,7 +496,7 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>90</damageAmountBase>
-			<armorPenetrationBase>1.5</armorPenetrationBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
 			<stoppingPower>10</stoppingPower>
 			<speed>93</speed>
 			<arcHeightFactor>0.3</arcHeightFactor>
@@ -588,7 +593,7 @@
 			<speed>40</speed>
 			<damageDef>Bomb</damageDef>
 			<damageAmountBase>60</damageAmountBase>
-			<armorPenetrationBase>0.65</armorPenetrationBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
 			<stoppingPower>1.5</stoppingPower>
 			<explosionRadius>1.5</explosionRadius>
 			<soundExplode>DMS_KnuckledusterRevolver_Shot</soundExplode>
@@ -608,6 +613,11 @@
 			<effecterDef>DMS_ConeExplosion_Wide</effecterDef>
 		  </li>
 		</modExtensions>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>DMS_LaunchDust_Grenade</effecterDef>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<!--Dawnblade Mech Mount-->
@@ -666,8 +676,8 @@
 				<range>50</range>
 				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
 				<burstShotCount>2</burstShotCount>
-				<ticksBetweenBurstShots>36</ticksBetweenBurstShots>
-				<soundCast>Explosion_Bomb</soundCast>
+				<ticksBetweenBurstShots>48</ticksBetweenBurstShots>
+				<soundCast>DMS_Shot_Dawnblade</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>20</muzzleFlashScale>
 				<targetParams>

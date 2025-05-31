@@ -8,7 +8,7 @@
 		<description>Launch an indirect-fired flashbang to stun the enemy.</description>
 		<iconPath>UI/Ability/Grenade</iconPath>
 		<aiCanUse>true</aiCanUse>
-		<cooldownTicksRange>6000~7200</cooldownTicksRange>
+		<cooldownTicksRange>30000~60000</cooldownTicksRange>
 		<charges>4</charges>
 		<cooldownPerCharge>true</cooldownPerCharge>
 		<verbProperties>
@@ -61,7 +61,7 @@
 		<description>Launch an antiparticle smoke screen to interfere with incoming charged munitions.</description>
 		<iconPath>UI/Ability/Smoke</iconPath>
 		<aiCanUse>true</aiCanUse>
-		<cooldownTicksRange>3000~3600</cooldownTicksRange>
+		<cooldownTicksRange>30000~60000</cooldownTicksRange>
 		<charges>4</charges>
 		<cooldownPerCharge>true</cooldownPerCharge>
 		<verbProperties>
@@ -297,7 +297,6 @@
 			<sprayThicknessCells>3</sprayThicknessCells>
 			<sprayNumExtraCells>30</sprayNumExtraCells>
 			<burstShotCount>30</burstShotCount>
-				
 			<soundCast>Shot_TurretSniper</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>15</muzzleFlashScale>

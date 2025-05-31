@@ -9,6 +9,7 @@ namespace DMS
     {
         public static ThingDef DMS_BandNode;
     }
+
     public class Hediff_BandNode : Verse.Hediff_BandNode
     {
         private int cachedTunedBandNodesCount;

@@ -64,6 +64,6 @@ namespace DMS
         public int maxWorldMapRadius;
         public float maxRelayRadius;
         public float minRelayRadius;
-        public CompProperties_CommandRelay() { this.compClass = typeof(CompCommandRelay); }
+        public CompProperties_CommandRelay() => compClass = typeof(CompCommandRelay);
     }
 }

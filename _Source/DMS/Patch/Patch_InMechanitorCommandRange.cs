@@ -22,36 +22,26 @@ namespace DMS
                 __result = true;
                 return;
             }
+
             List<Pawn> overseenPawns = MechanitorUtility.GetOverseer(mech)?.mechanitor?.OverseenPawns;
-            foreach (Pawn item in overseenPawns.Where(p => p.Spawned && p.MapHeld==mech.MapHeld))
+            if (overseenPawns.NullOrEmpty()) return;
+            foreach (Pawn item in overseenPawns.Where(p => p.Spawned && p.MapHeld == mech.MapHeld))
             {
-                if (item.TryGetComp<CompCommandRelay>(out var c) && InRange(item, target, c.SquaredDistance))
+                if (item.TryGetComp<CompCommandRelay>(out var c) && CheckUtility.InRange(item, target, c.SquaredDistance))
                 {
                     __result = true;
                     return;
                 }
             }
+
             foreach (Pawn p in mech.Map.mapPawns.SpawnedPawnsInFaction(RimWorld.Faction.OfPlayer))
             {
-                if (p.TryGetComp<CompSubRelay>(out CompSubRelay comp) && InRange(p, target, comp.SquaredDistance))
-                {
-                    __result = true;
-                    return;
-                }
-                if (p.apparel !=null && p.apparel.WornApparel.Where(a => a.TryGetComp<CompSubRelay>(out comp)).Any() && InRange(p, target, comp.SquaredDistance))
+                if (CheckUtility.HasSubRelay(p, out CompSubRelay sub) && CheckUtility.InRange(p, target, sub.SquaredDistance))
                 {
                     __result = true;
                     return;
                 }
             }
-        }
-        private static bool InRange(Thing A, LocalTargetInfo B, float squaredRange)
-        {
-            if ((float)IntVec3Utility.DistanceToSquared(A.Position, B.Cell) <= squaredRange)
-            {
-                return true;
-            }
-            return false;
         }
     }
 }

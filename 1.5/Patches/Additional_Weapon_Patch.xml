@@ -19,22 +19,4 @@
             <li>A_RC_Melee</li>
         </value>
     </Operation>
-
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>PLA-Armory</li>
-        </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="PLA_BaseGrenade"]</xpath>
-                    <value>
-                        <weaponTags>
-                            <li>VerlingBird_Weapon</li>
-                        </weaponTags>
-                    </value>
-                </li>
-            </operations>
-        </match>
-    </Operation>
 </Patch>

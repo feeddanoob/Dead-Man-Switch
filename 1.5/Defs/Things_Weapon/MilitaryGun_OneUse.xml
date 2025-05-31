@@ -175,7 +175,7 @@
 			<stoppingPower>2</stoppingPower>
 			<explosionRadius>1.5</explosionRadius>
 			<ai_IsIncendiary>false</ai_IsIncendiary>
-			<armorPenetrationBase>2</armorPenetrationBase>
+			<armorPenetrationBase>0.8</armorPenetrationBase>
 			<shadowSize>0.6</shadowSize>
 		</projectile>
 	</ThingDef>

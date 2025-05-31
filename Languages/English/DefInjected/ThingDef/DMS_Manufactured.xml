@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: artifuscle -->
+  <!-- EN: Artifuscle -->
   <Artifuscle.label>Artifuscle</Artifuscle.label>
-  <!-- EN: a type of prosthetic material made by genetically engineered sauromorph muscle bundles -->
-  <Artifuscle.description>a type of prosthetic material made by genetically engineered sauromorph muscle bundles</Artifuscle.description>
+  <!-- EN: Artifuscle is a type of prosthetic material made from genetically enhanced lab grown muscle-fiber bundles. -->
+  <Artifuscle.description>Artifuscle is a type of prosthetic material made from genetically enhanced lab grown muscle-fiber bundles.</Artifuscle.description>
   <!-- EN: Analyze the artificial muscle -->
   <Artifuscle.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the artificial muscle</Artifuscle.comps.CompAnalyzableUnlockResearch.activateDescString>
   <!-- EN: Analyze... -->
@@ -16,16 +16,16 @@ Your researchers can now use research benches to begin researching how to actual
   <!-- EN: Artificial muscle studied: {RESEARCH} unlocked -->
   <Artifuscle.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Artificial muscle studied: {RESEARCH} unlocked</Artifuscle.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
   <!-- EN: Choose who should analyze this -->
-  <Artifuscle.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this.</Artifuscle.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <Artifuscle.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this</Artifuscle.comps.CompAnalyzableUnlockResearch.guiLabelString>
   <!-- EN: Can be analyzed by a colonist. -->
-  <Artifuscle.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist</Artifuscle.comps.CompAnalyzableUnlockResearch.inspectString>
+  <Artifuscle.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</Artifuscle.comps.CompAnalyzableUnlockResearch.inspectString>
   <!-- EN: Analyze the artificial muscle -->
   <Artifuscle.comps.CompAnalyzableUnlockResearch.jobString>Analyze the artificial muscle</Artifuscle.comps.CompAnalyzableUnlockResearch.jobString>
   
-  <!-- EN: cluster control chipsets -->
+  <!-- EN: Cluster Control Chipsets -->
   <ComponentControlChip.label>Cluster Control Chipsets</ComponentControlChip.label>
-  <!-- EN: a chipsets for remote machine controller and the core of industrial machines. -->
-  <ComponentControlChip.description>A specialized chipset for the budding remote machine controller and the foundational core of industrial machines.</ComponentControlChip.description>
+  <!-- EN: A chipset for remote machine controllers and the core of industrial machines. -->
+  <ComponentControlChip.description>A chipset for remote machine controllers and the core of industrial machines.</ComponentControlChip.description>
   <!-- EN: Analyze the cluster control chipsets -->
   <ComponentControlChip.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the cluster control chipsets</ComponentControlChip.comps.CompAnalyzableUnlockResearch.activateDescString>
   <!-- EN: Analyze... -->
@@ -35,7 +35,7 @@ Your researchers can now use research benches to begin researching how to actual
 
 Your researchers can now use research benches to begin researching how to actually use the technology.</ComponentControlChip.comps.CompAnalyzableUnlockResearch.completedLetter>
   <!-- EN: Cluster control chipsets studied: {RESEARCH} unlocked -->
-  <ComponentControlChip.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Cluster Control Chipsets studied: {RESEARCH} unlocked</ComponentControlChip.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+  <ComponentControlChip.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Cluster control chipsets studied: {RESEARCH} unlocked</ComponentControlChip.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
   <!-- EN: Choose who should analyze this -->
   <ComponentControlChip.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this</ComponentControlChip.comps.CompAnalyzableUnlockResearch.guiLabelString>
   <!-- EN: Can be analyzed by a colonist. -->
@@ -43,11 +43,11 @@ Your researchers can now use research benches to begin researching how to actual
   <!-- EN: Analyze the cluster control chipsets -->
   <ComponentControlChip.comps.CompAnalyzableUnlockResearch.jobString>Analyze the cluster control chipsets</ComponentControlChip.comps.CompAnalyzableUnlockResearch.jobString>
   
-  <!-- EN: fire control system -->
+  <!-- EN: Fire Control System -->
   <ComponentFireControl.label>Fire Control System</ComponentFireControl.label>
-  <!-- EN: a chipsets designed for weapon control assist and trajectory tracking. -->
-  <ComponentFireControl.description>A specialized chipset designed for weapon control assistance and trajectory tracking.</ComponentFireControl.description>
-  <!-- EN: Analyze the fire control system -->
+  <!-- EN: A chipsets designed for weapon control assistance and trajectory tracking. -->
+  <ComponentFireControl.description>A chipsets designed for weapon control assistance and trajectory tracking.</ComponentFireControl.description>
+  <!-- EN: Analyze the Fire Control System -->
   <ComponentFireControl.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the Fire Control System</ComponentFireControl.comps.CompAnalyzableUnlockResearch.activateDescString>
   <!-- EN: Analyze... -->
   <ComponentFireControl.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</ComponentFireControl.comps.CompAnalyzableUnlockResearch.activateLabelString>
@@ -56,18 +56,18 @@ Your researchers can now use research benches to begin researching how to actual
 
 Your researchers can now use research benches to begin researching how to actually use the technology.</ComponentFireControl.comps.CompAnalyzableUnlockResearch.completedLetter>
   <!-- EN: Fire control system studied: {RESEARCH} unlocked -->
-  <ComponentFireControl.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Fire Control System studied: {RESEARCH} unlocked</ComponentFireControl.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
-  <!-- EN: Choose who should analyze this -->
-  <ComponentFireControl.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this</ComponentFireControl.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <ComponentFireControl.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Fire control system studied: {RESEARCH} unlocked</ComponentFireControl.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+  <!-- EN: Choose who should analyze this. -->
+  <ComponentFireControl.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this.</ComponentFireControl.comps.CompAnalyzableUnlockResearch.guiLabelString>
   <!-- EN: Can be analyzed by a colonist. -->
   <ComponentFireControl.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</ComponentFireControl.comps.CompAnalyzableUnlockResearch.inspectString>
-  <!-- EN: Analyze the fire control system -->
-  <ComponentFireControl.comps.CompAnalyzableUnlockResearch.jobString>Analyze the fire control system</ComponentFireControl.comps.CompAnalyzableUnlockResearch.jobString>
+  <!-- EN: Analyze the Fire Control System -->
+  <ComponentFireControl.comps.CompAnalyzableUnlockResearch.jobString>Analyze the Fire Control System</ComponentFireControl.comps.CompAnalyzableUnlockResearch.jobString>
   
-  <!-- EN: stamponent -->
+  <!-- EN: Stamponent -->
   <ComponentStamped.label>Stamponent</ComponentStamped.label>
-  <!-- EN: Hydraulic integrally formed component. Used in products that require mass production on the assembly line. -->
-  <ComponentStamped.description>Hydraulic integrally formed component. Used in products that require mass production on the assembly line.</ComponentStamped.description>
+  <!-- EN: Hydraulic integrally formed component used in products that require mass production on the assembly line. -->
+  <ComponentStamped.description>Hydraulic integrally formed component used in products that require mass production on the assembly line.</ComponentStamped.description>
   
   <!-- EN: T/R Component -->
   <ComponentTransmitter.label>T/R Component</ComponentTransmitter.label>
@@ -92,24 +92,24 @@ Your researchers can now use research benches to begin researching how to actual
   
   <!-- EN: Ceramics -->
   <DMS_Ceramics.label>Ceramics</DMS_Ceramics.label>
-  <!-- EN: a military standard composite ceramic plate widely used as Defensive Additions for war machines.\n\n As a military standard material, it's durability is somewhat poor, but it is superior in its protection and light weight. -->
-  <DMS_Ceramics.description>A military standard composite ceramic plate widely used as defensive additions/armor upgrades for war machines.
+  <!-- EN: A military standard composite ceramic plate widely used as a defensive additions for war machines.\n\nits durability is somewhat poor, but it provides excellent protection and is light weight. -->
+  <DMS_Ceramics.description>A military standard composite ceramic plate widely used as a defensive additions for war machines.
 
- As a military standard material, it's durability is somewhat poor, but it is superior in its protection and light weight material.</DMS_Ceramics.description>
+its durability is somewhat poor, but it provides excellent protection and is light weight.</DMS_Ceramics.description>
   
-  <!-- EN: encrypted transmitter -->
+  <!-- EN: Encrypted Transmitter -->
   <DMS_EncryptedTransmitter.label>Encrypted Transmitter</DMS_EncryptedTransmitter.label>
-  <!-- EN: A high-power communicator used in the colony for emergency call support. Of course, the identification code of this rescue protocol has long been abandoned, so only those mechanized units that are out of command will take the bait. -->
-  <DMS_EncryptedTransmitter.description>A high-power communicator used in the colony for calling in emergency support. Of course, the identification code of this rescue protocol has long been abandoned, so only those mechanized units that are out of command will take the bait.</DMS_EncryptedTransmitter.description>
+  <!-- EN: A high-power communication relay to be used in the colony for emergency reinforcements. The identification code of this rescue protocol has long been abandoned, so only those mechanized units that are feral will take the bait. -->
+  <DMS_EncryptedTransmitter.description>A high-power communication relay to be used in the colony for emergency reinforcements. The identification code of this rescue protocol has long been abandoned, so only those mechanized units that are feral will take the bait.</DMS_EncryptedTransmitter.description>
   <!-- EN: Attract legion threat -->
   <DMS_EncryptedTransmitter.comps.CompUsable.useLabel>Attract legion threat</DMS_EncryptedTransmitter.comps.CompUsable.useLabel>
   
-  <!-- EN: wetware computer -->
-  <Neurocomputer.label>Wetware Computer</Neurocomputer.label>
-  <!-- EN: an organic computer also be known as an artificial organic brain or a neurocomputer, it's the perfect computer unit source for factions without access to rare metals and precision machining. -->
-  <Neurocomputer.description>An organic computer also known as an artificial organic brain or a neurocomputer, it's the perfect computer unit source for factions without access to rare metals and precision machining.</Neurocomputer.description>
+  <!-- EN: Wetware computer -->
+  <Neurocomputer.label>Wetware computer</Neurocomputer.label>
+  <!-- EN: An organic computer which functions as an artificial organic brain. It fills the role of a cheap computational brain for factions without access to rare metals and precision machining. -->
+  <Neurocomputer.description>An organic computer which functions as an artificial organic brain. It fills the role of a cheap computational brain for factions without access to rare metals and precision machining.</Neurocomputer.description>
   <!-- EN: Analyze the wetware computer -->
-  <Neurocomputer.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the Wetware Computer</Neurocomputer.comps.CompAnalyzableUnlockResearch.activateDescString>
+  <Neurocomputer.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the wetware computer</Neurocomputer.comps.CompAnalyzableUnlockResearch.activateDescString>
   <!-- EN: Analyze... -->
   <Neurocomputer.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</Neurocomputer.comps.CompAnalyzableUnlockResearch.activateLabelString>
   <!-- EN: By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology. -->
@@ -125,21 +125,21 @@ Your researchers can now use research benches to begin researching how to actual
   <!-- EN: Analyze the wetware computer -->
   <Neurocomputer.comps.CompAnalyzableUnlockResearch.jobString>Analyze the wetware computer</Neurocomputer.comps.CompAnalyzableUnlockResearch.jobString>
   
-  <!-- EN: plasticfiber -->
+  <!-- EN: Plasticfiber -->
   <Plasfiber.label>Plasticfiber</Plasfiber.label>
-  <!-- EN: A type of synthetic fiber made of plasteel, which is air-tight and certain degree of sharp-proof performance. However, it does not have much resistance to blunt impact.\n\n Plasticfiber has a importance in the medical field. As a biomimetic surface material, it does not produce rejection reactions from the immune system. -->
-  <Plasfiber.description>A type of synthetic fiber made of plasteel, which is air-tight and has a certain degree of sharp-proof performance. However, it does not have much resistance to blunt impact.
+  <!-- EN: A type of synthetic fiber made with plasteel and is intrinsically resistant to sharp attacks but not blunt impacts.\n\n Plastifiber has a important role in the medical field as a biomimetic surface material as it does not produce rejection reactions from the immune system. -->
+  <Plasfiber.description>A type of synthetic fiber made with plasteel and is intrinsically resistant to sharp attacks but not blunt impacts.
 
- Plasticfiber has an importance in the medical field: as a biomimetic surface material, it does not produce bionic rejection reactions from the immune system.</Plasfiber.description>
+ Plastifiber has a important role in the medical field as a biomimetic surface material as it does not produce rejection reactions from the immune system.</Plasfiber.description>
   
-  <!-- EN: polyester -->
+  <!-- EN: Polyester -->
   <Polyester.label>Polyester</Polyester.label>
-  <!-- EN: A type of synthetic fiber, which might ugly but still widely used in textile materials such as clothing, bedding, and special fabrics for military industry. -->
-  <Polyester.description>A type of synthetic fiber, which might look ugly but is still widely used in textile materials such as clothing, bedding, and special fabrics for the military industry.</Polyester.description>
+  <!-- EN: A type of synthetic fiber that is ugly but still widely used in textile materials such as clothing, bedding, and special fabrics for the military. -->
+  <Polyester.description>A type of synthetic fiber that is ugly but still widely used in textile materials such as clothing, bedding, and special fabrics for the military.</Polyester.description>
   
-  <!-- EN: tungsteel -->
+  <!-- EN: Tungsteel -->
   <Tungsteel.label>Tungsteel</Tungsteel.label>
-  <!-- EN: a military standard alloy, Usually used to manufacture high-performance weapons, armor and special mechanical parts. -->
-  <Tungsteel.description>A military standard alloy, usually used to manufacture high-performance weapons, armor and special mechanical parts.</Tungsteel.description>
+  <!-- EN: A military grade standard alloy, usually used to manufacture high-performance weapons, armor, and special mechanical parts. -->
+  <Tungsteel.description>A military grade standard alloy, usually used to manufacture high-performance weapons, armor, and special mechanical parts.</Tungsteel.description>
   
 </LanguageData>

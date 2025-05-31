@@ -65,10 +65,10 @@
   <DMS_InstallSyntheticLeg.jobString>安装生物合成腿中</DMS_InstallSyntheticLeg.jobString>
   
   <!-- EN: Remove Emotional Neutralizer. -->
-  <DMS_RemoveSensoryFilter.label>去除感官过滤器</DMS_RemoveSensoryFilter.label>
+  <DMS_RemoveSensoryFilter.label>移除感官过滤器</DMS_RemoveSensoryFilter.label>
   <!-- EN: Remove an Emotional Neutralizer. May cause serious mental trauma. -->
-  <DMS_RemoveSensoryFilter.description>去除感官过滤器</DMS_RemoveSensoryFilter.description>
+  <DMS_RemoveSensoryFilter.description>移除感官过滤器，这可能会导致短时间的严重精神创伤</DMS_RemoveSensoryFilter.description>
   <!-- EN: Removing sensory filter. -->
-  <DMS_RemoveSensoryFilter.jobString>去除感官过滤器中</DMS_RemoveSensoryFilter.jobString>
+  <DMS_RemoveSensoryFilter.jobString>移除感官过滤器中</DMS_RemoveSensoryFilter.jobString>
   
 </LanguageData>

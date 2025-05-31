@@ -87,14 +87,20 @@
           <soundCall>Pawn_Mech_Legionary_Call</soundCall>
         </li>
       </lifeStageAges>
+      <mechFixedSkillLevel>8</mechFixedSkillLevel>
     </race>
     <comps>
-      <li Class="DMS.CompProperties_MechApparel">
+      <li Class="DMS.CompProperties_MechApparel"/>
+      <li Class="DMS.CompProperties_WeaponImprint">
+        <imprintDef>DMS_WeaponInprint</imprintDef>
+        <bodyPart>Brain</bodyPart>
+        <pointRequire>3600</pointRequire>
       </li>
     </comps>
     <modExtensions>
       <li Class="DMS.TurretMannableExtension"/>
       <li Class="DMS.HumanlikeMechExtension">
+        <canChangeHairStyle>true</canChangeHairStyle>
         <bodyTypeOverride>Female</bodyTypeOverride>
         <headTypeOverride>Female_AveragePointy</headTypeOverride>
         <headGraphic>
@@ -102,27 +108,30 @@
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.4</drawSize>
         </headGraphic>
+        <headGraphicHaired>
+          <texPath>Things/Automatroid/seperated/ladyHead_Bald</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+        </headGraphicHaired>
         <headOffset>(0,0,-0.05)</headOffset>
+        <skills>
+          <li>
+            <skill>Shooting</skill>
+            <range>10~16</range>
+          </li>
+          <li>
+            <skill>Medicine</skill>
+            <range>10~16</range>
+          </li>
+        </skills>
       </li>
       <li Class="DMS.MechWeaponExtension">
-        <EnableWeaponFilter>true</EnableWeaponFilter>
-        <UsableWeaponTags>
-          <li>Gun</li>
-          <li>DMS_MechWeaponLight</li>
-          <li>A_AR_LongRifle</li>
-          <li>A_SAR_LongRifle</li>
-          <li>A_BR_LongRifle</li>
-          <li>A_MG_Light</li>
-          <li>A_SR_GrenadeLauncher</li>
-          <li>A_MG_Heavy</li>
-          <li>ElephantGun</li>
-          <li>SniperRifle</li>
-          <li>AssaultRifle</li>
-        </UsableWeaponTags>
+        <EnableWeaponFilter>false</EnableWeaponFilter>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
-          <li>Industrial</li>
           <li>Spacer</li>
+          <li>Industrial</li>
+          <li>Medieval</li>
         </UsableTechLevels>
       </li>
     </modExtensions>
@@ -133,6 +142,7 @@
     <label>lady</label>
     <race>DMS_Mech_Lady</race>
     <combatPower>150</combatPower>
+    <canStrip>true</canStrip>
     <lifeStages>
       <li>
         <bodyGraphicData>

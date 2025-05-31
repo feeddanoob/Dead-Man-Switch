@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
+using System.Security.Cryptography;
 
 namespace DMS
 {
@@ -68,16 +69,38 @@ namespace DMS
 
         public override string GetExplanationFinalizePart(StatRequest req, ToStringNumberSense numberSense, float finalVal)
         {
-            return "";
-        }
-        public override string GetExplanationUnfinalized(StatRequest req, ToStringNumberSense numberSense)
-        {
-            return "";
-        }
+            string s = "";
+            MechWeaponExtension ext = req.Def.GetModExtension<MechWeaponExtension>();
+            if (ext != null)
+            {
+                if (ext.EnableTechLevelFilter)
+                {
+                    //必須是下列科技等級的裝備
+                    s += "DMS_Req_TechLevel".Translate() + "\n";
+                    foreach (TechLevel item in ext.UsableTechLevels)
+                    {
+                        s += "- "+item.ToStringHuman().Translate() + "\n";
+                    }
+                }
+                s += "\n";
+                if (!ext.EnableWeaponFilter)
+                {
+                    if (req.Def is ThingDef def && def.race?.baseBodySize > 1)
+                    {
+                        //在無額外裝備的情況下能直接使用支援體型要求不高於: {0} 的武器。
+                        s += "DMS_Req_BodySize".Translate(def.race.baseBodySize) + "\n\n";
+                    }
 
-        public override string GetStatDrawEntryLabel(StatDef stat, float value, ToStringNumberSense numberSense, StatRequest optionalReq, bool finalized = true)
-        {
-            return "";
+                    //沒有其他裝備限制。
+                    s += "DMS_Req_NoWeaponFilter".Translate();
+                }
+                else
+                {
+                    //僅能夠使用下列的武器。
+                    s += "DMS_Req_WeaponFilter".Translate();
+                }
+            }
+            return s;
         }
     }
 }
